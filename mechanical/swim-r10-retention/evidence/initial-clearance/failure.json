@@ -1,0 +1,11 @@
+{
+  "result": "FAIL",
+  "scope": "Analytical bounded-motion clearance only; no CAD export was run for this candidate.",
+  "finding": "U12 to carrier ledge: 0.175 mm versus 0.2 mm requirement.",
+  "files": {
+    "fit-profile.json": "c99a46d678915641ca7ef76fef658a6444f0b3e94279fc0be2a52cd7531370b4",
+    "parameters.json": "5400a1a7fde33e767d2d854e62cf79eade3d33ace83b4f0c995d9e301eeb40e2",
+    "retention-checks.json": "3201b05ae5e4a7fb341d67e39b104c8aab0578d3e71bfab7e06b745ed98de874",
+    "retention.json": "954c0b54f46616c5b06333a4ca7ee872921e1ce23d8b3d36139311cd7fd22453"
+  }
+}

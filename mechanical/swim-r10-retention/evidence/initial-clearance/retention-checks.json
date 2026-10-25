@@ -1,0 +1,1242 @@
+{
+  "result": "FAIL",
+  "pcb_sha256": "241c84d6ba98793c37344e1e46ddc4918e7b05322ba87daea7c9a90ffb8379b3",
+  "base_inputs": {
+    "mechanical/swim-r09-pack-request/parameters.json": "8b168db6a9f4cd4c46e09420f385e39ccdf164fe2493eec8e454954da225d4de",
+    "mechanical/swim-r09-pack-request/components.native.json": "448db77589a4f1355f7f7a953590fef540bec405dd1edbf7ffd6e66885c1331c",
+    "mechanical/swim-r09-pack-request/fit-profile.json": "5d951ab23e43953a50d4729b2e45b13dd3ce95e773ee4dd423dbd57675534f2b",
+    "mechanical/swim-r09-pack-request/routing-controls.json": "8d08d896abeb26a4fbf41f3abea52e24cf8cdc0a01bdf1596e11968801289920",
+    "mechanical/swim-r09-pack-request/enclosure.scad": "ce2abb998af3344713ccc9fff3c5c334d69080b297a3f21e425cdb4b16caa913",
+    "mechanical/swim-r09-pack-request/pack.scad": "63d9073d110e2a92961b9464c1d6c590716e3a138e5a58ad08c0fbd385f73c1c"
+  },
+  "retention_input_sha256": "954c0b54f46616c5b06333a4ca7ee872921e1ce23d8b3d36139311cd7fd22453",
+  "checker_sha256": "92a2cc8fd9a867b8c1bd8d139892b65cdd1ce9376c994de0dee6d6d9cebb6ce4",
+  "checks": [
+    {
+      "name": "Swept component envelopes versus retention",
+      "pass_": false,
+      "failures": [
+        {
+          "ref": "U12",
+          "gap_mm": 0.17500000000000068,
+          "obstacle": "carrier ledge"
+        }
+      ]
+    },
+    {
+      "name": "Lid closes at assigned stack limits",
+      "pass_": true,
+      "minimum_gap_mm": -1.7763568394002505e-15
+    },
+    {
+      "name": "Upper PCB capture plane matches motion screen",
+      "pass_": true,
+      "maximum_top_z_mm": 11.75
+    },
+    {
+      "name": "Retainer outline inside cavity",
+      "pass_": true
+    },
+    {
+      "name": "lid hold-down to LTE CAPH SZK-C-3L30 envelope",
+      "pass_": true,
+      "gap_mm": 5.000000000000002
+    },
+    {
+      "name": "lid hold-down to GNSS ZETA SZK-C-0G04 envelope",
+      "pass_": true,
+      "gap_mm": 11.450000000000001
+    },
+    {
+      "name": "lid hold-down to LTE CAPH SZK-C-3L30 envelope",
+      "pass_": true,
+      "gap_mm": 5.000000000000002
+    },
+    {
+      "name": "lid hold-down to GNSS ZETA SZK-C-0G04 envelope",
+      "pass_": true,
+      "gap_mm": 11.450000000000001
+    },
+    {
+      "name": "lid hold-down to LTE CAPH SZK-C-3L30 envelope",
+      "pass_": true,
+      "gap_mm": 15.5
+    },
+    {
+      "name": "lid hold-down to GNSS ZETA SZK-C-0G04 envelope",
+      "pass_": true,
+      "gap_mm": 0.7000000000000011
+    },
+    {
+      "name": "lid hold-down to LTE CAPH SZK-C-3L30 envelope",
+      "pass_": true,
+      "gap_mm": 15.759838197138956
+    },
+    {
+      "name": "lid hold-down to GNSS ZETA SZK-C-0G04 envelope",
+      "pass_": true,
+      "gap_mm": 0.7000000000000011
+    }
+  ],
+  "minimum_component_gaps": {
+    "C1": {
+      "gap_mm": 2.8418523888478124,
+      "obstacle": "carrier ledge"
+    },
+    "C10": {
+      "gap_mm": 0.20000000000000284,
+      "obstacle": "carrier ledge"
+    },
+    "C13": {
+      "gap_mm": 11.143107735277443,
+      "obstacle": "carrier ledge"
+    },
+    "C14": {
+      "gap_mm": 11.951880605160012,
+      "obstacle": "carrier ledge"
+    },
+    "C15": {
+      "gap_mm": 9.748038264184236,
+      "obstacle": "retainer frame"
+    },
+    "C16": {
+      "gap_mm": 7.555,
+      "obstacle": "retainer frame"
+    },
+    "C17": {
+      "gap_mm": 6.16864044988845,
+      "obstacle": "retainer frame"
+    },
+    "C18": {
+      "gap_mm": 2.1499999999999986,
+      "obstacle": "retainer frame"
+    },
+    "C19": {
+      "gap_mm": 1.414999999999999,
+      "obstacle": "retainer frame"
+    },
+    "C2": {
+      "gap_mm": 3.0615763913382965,
+      "obstacle": "carrier ledge"
+    },
+    "C20": {
+      "gap_mm": 1.7550000000000008,
+      "obstacle": "retainer frame"
+    },
+    "C21": {
+      "gap_mm": 3.455,
+      "obstacle": "retainer frame"
+    },
+    "C23": {
+      "gap_mm": 4.347576279607326,
+      "obstacle": "retainer frame"
+    },
+    "C24": {
+      "gap_mm": 4.480228788800861,
+      "obstacle": "carrier ledge"
+    },
+    "C25": {
+      "gap_mm": 1.995000000000001,
+      "obstacle": "carrier ledge"
+    },
+    "C26": {
+      "gap_mm": 6.725,
+      "obstacle": "carrier ledge"
+    },
+    "C27": {
+      "gap_mm": 0.934050319843637,
+      "obstacle": "carrier ledge"
+    },
+    "C28": {
+      "gap_mm": 2.0365289096892294,
+      "obstacle": "carrier ledge"
+    },
+    "C29": {
+      "gap_mm": 0.2550000000000008,
+      "obstacle": "retainer frame"
+    },
+    "C3": {
+      "gap_mm": 1.581779061689715,
+      "obstacle": "retainer frame"
+    },
+    "C30": {
+      "gap_mm": 1.1302433366315432,
+      "obstacle": "carrier ledge"
+    },
+    "C31": {
+      "gap_mm": 1.1163556780883055,
+      "obstacle": "retainer frame"
+    },
+    "C32": {
+      "gap_mm": 0.7697077367416805,
+      "obstacle": "carrier ledge"
+    },
+    "C33": {
+      "gap_mm": 0.4350000000000005,
+      "obstacle": "carrier ledge"
+    },
+    "C34": {
+      "gap_mm": 0.6919898843191279,
+      "obstacle": "carrier ledge"
+    },
+    "C35": {
+      "gap_mm": 5.0649629811085495,
+      "obstacle": "carrier ledge"
+    },
+    "C36": {
+      "gap_mm": 3.9761947889911022,
+      "obstacle": "retainer frame"
+    },
+    "C4": {
+      "gap_mm": 4.916871464661242,
+      "obstacle": "retainer frame"
+    },
+    "C5": {
+      "gap_mm": 6.824606215746077,
+      "obstacle": "carrier ledge"
+    },
+    "C6": {
+      "gap_mm": 6.10809708501756,
+      "obstacle": "carrier ledge"
+    },
+    "C7": {
+      "gap_mm": 7.364999999999999,
+      "obstacle": "retainer frame"
+    },
+    "C8": {
+      "gap_mm": 5.570000000000004,
+      "obstacle": "carrier ledge"
+    },
+    "C9": {
+      "gap_mm": 2.200000000000003,
+      "obstacle": "carrier ledge"
+    },
+    "D1": {
+      "gap_mm": 0.22500000000000317,
+      "obstacle": "carrier guide rail"
+    },
+    "D2": {
+      "gap_mm": 8.354037945808003,
+      "obstacle": "retainer frame"
+    },
+    "FB1": {
+      "gap_mm": 2.7007128688551876,
+      "obstacle": "carrier ledge"
+    },
+    "J1": {
+      "gap_mm": 3.946422430505887,
+      "obstacle": "carrier ledge"
+    },
+    "J2": {
+      "gap_mm": 5.9291019556084565,
+      "obstacle": "carrier ledge"
+    },
+    "J3": {
+      "gap_mm": 1.5054069217324595,
+      "obstacle": "retainer frame"
+    },
+    "J4": {
+      "gap_mm": 2.3450000000000006,
+      "obstacle": "carrier ledge"
+    },
+    "J5": {
+      "gap_mm": 3.16,
+      "obstacle": "carrier ledge"
+    },
+    "J6": {
+      "gap_mm": 2.7450000000000006,
+      "obstacle": "carrier ledge"
+    },
+    "J7": {
+      "gap_mm": 3.341593931045484,
+      "obstacle": "carrier leg"
+    },
+    "L1": {
+      "gap_mm": 12.18156188672044,
+      "obstacle": "carrier ledge"
+    },
+    "Q1": {
+      "gap_mm": 1.2049999999999983,
+      "obstacle": "retainer frame"
+    },
+    "R1": {
+      "gap_mm": 2.5550000000000033,
+      "obstacle": "carrier ledge"
+    },
+    "R12": {
+      "gap_mm": 0.9122773701018791,
+      "obstacle": "carrier ledge"
+    },
+    "R13": {
+      "gap_mm": 1.2350000000000012,
+      "obstacle": "retainer frame"
+    },
+    "R14": {
+      "gap_mm": 9.754999999999999,
+      "obstacle": "carrier ledge"
+    },
+    "R15": {
+      "gap_mm": 9.70311032607586,
+      "obstacle": "retainer frame"
+    },
+    "R16": {
+      "gap_mm": 0.7585842075867388,
+      "obstacle": "carrier ledge"
+    },
+    "R17": {
+      "gap_mm": 2.4150000000000005,
+      "obstacle": "carrier ledge"
+    },
+    "R18": {
+      "gap_mm": 2.7298809497851746,
+      "obstacle": "carrier ledge"
+    },
+    "R19": {
+      "gap_mm": 1.2057570236162842,
+      "obstacle": "carrier ledge"
+    },
+    "R2": {
+      "gap_mm": 5.115000000000004,
+      "obstacle": "carrier ledge"
+    },
+    "R20": {
+      "gap_mm": 1.1888019178988571,
+      "obstacle": "carrier ledge"
+    },
+    "R21": {
+      "gap_mm": 1.0949999999999989,
+      "obstacle": "retainer frame"
+    },
+    "R22": {
+      "gap_mm": 0.7585842075867398,
+      "obstacle": "carrier ledge"
+    },
+    "R23": {
+      "gap_mm": 1.1888019178988587,
+      "obstacle": "carrier ledge"
+    },
+    "R24": {
+      "gap_mm": 4.4350000000000005,
+      "obstacle": "retainer frame"
+    },
+    "R25": {
+      "gap_mm": 2.983362197253294,
+      "obstacle": "carrier ledge"
+    },
+    "R26": {
+      "gap_mm": 3.562056989998897,
+      "obstacle": "carrier ledge"
+    },
+    "R27": {
+      "gap_mm": 0.8113260750154654,
+      "obstacle": "carrier ledge"
+    },
+    "R28": {
+      "gap_mm": 2.3109197303238385,
+      "obstacle": "retainer frame"
+    },
+    "R29": {
+      "gap_mm": 0.2000000000000011,
+      "obstacle": "carrier ledge"
+    },
+    "R3": {
+      "gap_mm": 8.4788118271371,
+      "obstacle": "carrier ledge"
+    },
+    "R30": {
+      "gap_mm": 0.6449999999999997,
+      "obstacle": "retainer frame"
+    },
+    "R4": {
+      "gap_mm": 9.295388641686802,
+      "obstacle": "retainer frame"
+    },
+    "R5": {
+      "gap_mm": 8.07999071781645,
+      "obstacle": "carrier ledge"
+    },
+    "R6": {
+      "gap_mm": 3.0224576092974407,
+      "obstacle": "carrier ledge"
+    },
+    "R7": {
+      "gap_mm": 3.0224576092974407,
+      "obstacle": "carrier ledge"
+    },
+    "R8": {
+      "gap_mm": 2.192110854861132,
+      "obstacle": "retainer frame"
+    },
+    "R9": {
+      "gap_mm": 2.755000000000001,
+      "obstacle": "carrier ledge"
+    },
+    "U1": {
+      "gap_mm": 4.7843547109302,
+      "obstacle": "retainer frame"
+    },
+    "U10": {
+      "gap_mm": 2.0582152462752763,
+      "obstacle": "retainer frame"
+    },
+    "U11": {
+      "gap_mm": 0.9051243008559648,
+      "obstacle": "carrier ledge"
+    },
+    "U12": {
+      "gap_mm": 0.17500000000000068,
+      "obstacle": "carrier ledge"
+    },
+    "U2": {
+      "gap_mm": 11.262914809231223,
+      "obstacle": "carrier ledge"
+    },
+    "U3": {
+      "gap_mm": 3.9,
+      "obstacle": "retainer frame"
+    },
+    "U4": {
+      "gap_mm": 1.107361729517504,
+      "obstacle": "retainer frame"
+    },
+    "U5": {
+      "gap_mm": 4.655000000000001,
+      "obstacle": "retainer frame"
+    },
+    "U6": {
+      "gap_mm": 0.8566504538024835,
+      "obstacle": "carrier ledge"
+    },
+    "U7": {
+      "gap_mm": 4.095000000000001,
+      "obstacle": "carrier ledge"
+    },
+    "U8": {
+      "gap_mm": 1.2057570236162842,
+      "obstacle": "carrier ledge"
+    },
+    "U9": {
+      "gap_mm": 1.331211853913573,
+      "obstacle": "carrier ledge"
+    }
+  },
+  "cable_motion": {
+    "cases": [
+      {
+        "pcb_pose_mm": [
+          -0.3,
+          -0.3,
+          11.06
+        ],
+        "cables": [
+          {
+            "name": "LTE",
+            "handle_mm": 6.382167816162109,
+            "length_mm": 98.50039980425626,
+            "minimum_radius_mm": 4.238066301116615,
+            "minimum_component_gap_mm": 1.0490832359716926,
+            "limiting_ref": "R3",
+            "pass_": true
+          },
+          {
+            "name": "GNSS",
+            "handle_mm": 4.498767852783203,
+            "length_mm": 98.50060150836808,
+            "minimum_radius_mm": 3.4952419530357264,
+            "minimum_component_gap_mm": 0.587772915915494,
+            "limiting_ref": "U5",
+            "pass_": true
+          }
+        ],
+        "cable_gap_mm": 0.2119374786615171,
+        "guide_center_shift_mm": 0.0,
+        "pass_": true
+      },
+      {
+        "pcb_pose_mm": [
+          -0.3,
+          -0.3,
+          11.24088
+        ],
+        "cables": [
+          {
+            "name": "LTE",
+            "handle_mm": 6.677013397216797,
+            "length_mm": 98.50039601220794,
+            "minimum_radius_mm": 4.238066301116615,
+            "minimum_component_gap_mm": 1.0358588146234073,
+            "limiting_ref": "R3",
+            "pass_": true
+          },
+          {
+            "name": "GNSS",
+            "handle_mm": 4.595447540283203,
+            "length_mm": 98.50060058632658,
+            "minimum_radius_mm": 3.4952419530357264,
+            "minimum_component_gap_mm": 0.5317584338459339,
+            "limiting_ref": "U5",
+            "pass_": true
+          }
+        ],
+        "cable_gap_mm": 0.2119374786615171,
+        "guide_center_shift_mm": 0.0,
+        "pass_": true
+      },
+      {
+        "pcb_pose_mm": [
+          -0.3,
+          -0.3,
+          11.75
+        ],
+        "cables": [
+          {
+            "name": "LTE",
+            "handle_mm": 7.432254791259766,
+            "length_mm": 98.50039012857098,
+            "minimum_radius_mm": 4.238066301116615,
+            "minimum_component_gap_mm": 1.0059146717588314,
+            "limiting_ref": "R3",
+            "pass_": true
+          },
+          {
+            "name": "GNSS",
+            "handle_mm": 4.825954437255859,
+            "length_mm": 98.50059644811864,
+            "minimum_radius_mm": 3.4952419530357264,
+            "minimum_component_gap_mm": 0.3842134292661041,
+            "limiting_ref": "U5",
+            "pass_": true
+          }
+        ],
+        "cable_gap_mm": 0.21034071428773782,
+        "guide_center_shift_mm": 0.0,
+        "pass_": true
+      },
+      {
+        "pcb_pose_mm": [
+          -0.3,
+          0,
+          11.06
+        ],
+        "cables": [
+          {
+            "name": "LTE",
+            "handle_mm": 7.067920684814453,
+            "length_mm": 98.50039973822646,
+            "minimum_radius_mm": 4.238066301116615,
+            "minimum_component_gap_mm": 1.0424948797972875,
+            "limiting_ref": "R3",
+            "pass_": true
+          },
+          {
+            "name": "GNSS",
+            "handle_mm": 5.183147430419922,
+            "length_mm": 98.50058699606453,
+            "minimum_radius_mm": 3.4952419530357264,
+            "minimum_component_gap_mm": 0.5209359569053732,
+            "limiting_ref": "U5",
+            "pass_": true
+          }
+        ],
+        "cable_gap_mm": 0.21143371660707375,
+        "guide_center_shift_mm": 0.0,
+        "pass_": true
+      },
+      {
+        "pcb_pose_mm": [
+          -0.3,
+          0,
+          11.24088
+        ],
+        "cables": [
+          {
+            "name": "LTE",
+            "handle_mm": 7.360500335693359,
+            "length_mm": 98.50039922965786,
+            "minimum_radius_mm": 4.238066301116615,
+            "minimum_component_gap_mm": 1.030365519003534,
+            "limiting_ref": "R3",
+            "pass_": true
+          },
+          {
+            "name": "GNSS",
+            "handle_mm": 5.276325225830078,
+            "length_mm": 98.50058950901295,
+            "minimum_radius_mm": 3.4952419530357264,
+            "minimum_component_gap_mm": 0.4704846548855514,
+            "limiting_ref": "U5",
+            "pass_": true
+          }
+        ],
+        "cable_gap_mm": 0.21055597765443704,
+        "guide_center_shift_mm": 0.0,
+        "pass_": true
+      },
+      {
+        "pcb_pose_mm": [
+          -0.3,
+          0,
+          11.75
+        ],
+        "cables": [
+          {
+            "name": "LTE",
+            "handle_mm": 8.111621856689453,
+            "length_mm": 98.50040038193,
+            "minimum_radius_mm": 4.238066301116615,
+            "minimum_component_gap_mm": 1.0036743810777515,
+            "limiting_ref": "R3",
+            "pass_": true
+          },
+          {
+            "name": "GNSS",
+            "handle_mm": 5.498661041259766,
+            "length_mm": 98.50059079498337,
+            "minimum_radius_mm": 3.4952419530357264,
+            "minimum_component_gap_mm": 0.3381081331311923,
+            "limiting_ref": "U5",
+            "pass_": true
+          }
+        ],
+        "cable_gap_mm": 0.20830261309144876,
+        "guide_center_shift_mm": 0.0,
+        "pass_": true
+      },
+      {
+        "pcb_pose_mm": [
+          -0.3,
+          0.3,
+          11.06
+        ],
+        "cables": [
+          {
+            "name": "LTE",
+            "handle_mm": 7.714946746826172,
+            "length_mm": 98.50040385699543,
+            "minimum_radius_mm": 4.238066301116615,
+            "minimum_component_gap_mm": 1.0358244989652217,
+            "limiting_ref": "R3",
+            "pass_": true
+          },
+          {
+            "name": "GNSS",
+            "handle_mm": 5.798450469970703,
+            "length_mm": 98.5005965012932,
+            "minimum_radius_mm": 3.4952419530357264,
+            "minimum_component_gap_mm": 0.46328722984310095,
+            "limiting_ref": "U5",
+            "pass_": true
+          }
+        ],
+        "cable_gap_mm": 0.2094926384210386,
+        "guide_center_shift_mm": 0.0,
+        "pass_": true
+      },
+      {
+        "pcb_pose_mm": [
+          -0.3,
+          0.3,
+          11.24088
+        ],
+        "cables": [
+          {
+            "name": "LTE",
+            "handle_mm": 8.005878448486328,
+            "length_mm": 98.50040451159202,
+            "minimum_radius_mm": 4.238066301116615,
+            "minimum_component_gap_mm": 1.0251446216130256,
+            "limiting_ref": "R3",
+            "pass_": true
+          },
+          {
+            "name": "GNSS",
+            "handle_mm": 5.888401031494141,
+            "length_mm": 98.50059237291597,
+            "minimum_radius_mm": 3.4952419530357264,
+            "minimum_component_gap_mm": 0.41777077927219247,
+            "limiting_ref": "U5",
+            "pass_": true
+          }
+        ],
+        "cable_gap_mm": 0.20861984331605812,
+        "guide_center_shift_mm": 0.0,
+        "pass_": true
+      },
+      {
+        "pcb_pose_mm": [
+          -0.3,
+          0.3,
+          11.75
+        ],
+        "cables": [
+          {
+            "name": "LTE",
+            "handle_mm": 8.754253387451172,
+            "length_mm": 98.50040071715918,
+            "minimum_radius_mm": 4.238066301116615,
+            "minimum_component_gap_mm": 1.0014077804717276,
+            "limiting_ref": "R3",
+            "pass_": true
+          },
+          {
+            "name": "GNSS",
+            "handle_mm": 6.103252410888672,
+            "length_mm": 98.5006002068024,
+            "minimum_radius_mm": 3.4952419530357264,
+            "minimum_component_gap_mm": 0.2986513452182783,
+            "limiting_ref": "U5",
+            "pass_": true
+          }
+        ],
+        "cable_gap_mm": 0.20628158361909768,
+        "guide_center_shift_mm": 0.0,
+        "pass_": true
+      },
+      {
+        "pcb_pose_mm": [
+          0,
+          -0.3,
+          11.06
+        ],
+        "cables": [
+          {
+            "name": "LTE",
+            "handle_mm": 4.786334991455078,
+            "length_mm": 98.5003933725817,
+            "minimum_radius_mm": 4.238066301116615,
+            "minimum_component_gap_mm": 1.1023173726168582,
+            "limiting_ref": "R3",
+            "pass_": true
+          },
+          {
+            "name": "GNSS",
+            "handle_mm": 3.9132652282714844,
+            "length_mm": 98.5006002862281,
+            "minimum_radius_mm": 3.4952419530357264,
+            "minimum_component_gap_mm": 0.6593486871698725,
+            "limiting_ref": "U5",
+            "pass_": true
+          }
+        ],
+        "cable_gap_mm": 0.2119374786615171,
+        "guide_center_shift_mm": 0.0,
+        "pass_": true
+      },
+      {
+        "pcb_pose_mm": [
+          0,
+          -0.3,
+          11.24088
+        ],
+        "cables": [
+          {
+            "name": "LTE",
+            "handle_mm": 5.114963531494141,
+            "length_mm": 98.50039848936188,
+            "minimum_radius_mm": 4.238066301116615,
+            "minimum_component_gap_mm": 1.0795627143480127,
+            "limiting_ref": "R3",
+            "pass_": true
+          },
+          {
+            "name": "GNSS",
+            "handle_mm": 4.010150909423828,
+            "length_mm": 98.50060569236116,
+            "minimum_radius_mm": 3.4952419530357264,
+            "minimum_component_gap_mm": 0.5978728809484647,
+            "limiting_ref": "U5",
+            "pass_": true
+          }
+        ],
+        "cable_gap_mm": 0.2119374786615171,
+        "guide_center_shift_mm": 0.0,
+        "pass_": true
+      },
+      {
+        "pcb_pose_mm": [
+          0,
+          -0.3,
+          11.75
+        ],
+        "cables": [
+          {
+            "name": "LTE",
+            "handle_mm": 5.952053070068359,
+            "length_mm": 98.50038964375722,
+            "minimum_radius_mm": 4.238066301116615,
+            "minimum_component_gap_mm": 1.0326330625644455,
+            "limiting_ref": "R3",
+            "pass_": true
+          },
+          {
+            "name": "GNSS",
+            "handle_mm": 4.240795135498047,
+            "length_mm": 98.50058821741891,
+            "minimum_radius_mm": 3.4952419530357264,
+            "minimum_component_gap_mm": 0.42741476247210225,
+            "limiting_ref": "J1",
+            "pass_": true
+          }
+        ],
+        "cable_gap_mm": 0.2119374786615171,
+        "guide_center_shift_mm": 0.0,
+        "pass_": true
+      },
+      {
+        "pcb_pose_mm": [
+          0,
+          0,
+          11.06
+        ],
+        "cables": [
+          {
+            "name": "LTE",
+            "handle_mm": 5.548236846923828,
+            "length_mm": 98.50039523178233,
+            "minimum_radius_mm": 4.238066301116615,
+            "minimum_component_gap_mm": 1.0864304378994591,
+            "limiting_ref": "R3",
+            "pass_": true
+          },
+          {
+            "name": "GNSS",
+            "handle_mm": 4.621334075927734,
+            "length_mm": 98.50058977125126,
+            "minimum_radius_mm": 3.4952419530357264,
+            "minimum_component_gap_mm": 0.5883464029773616,
+            "limiting_ref": "U5",
+            "pass_": true
+          }
+        ],
+        "cable_gap_mm": 0.2119374786615171,
+        "guide_center_shift_mm": 0.0,
+        "pass_": true
+      },
+      {
+        "pcb_pose_mm": [
+          0,
+          0,
+          11.24088
+        ],
+        "cables": [
+          {
+            "name": "LTE",
+            "handle_mm": 5.872882843017578,
+            "length_mm": 98.50039708213504,
+            "minimum_radius_mm": 4.238066301116615,
+            "minimum_component_gap_mm": 1.0678226255901182,
+            "limiting_ref": "R3",
+            "pass_": true
+          },
+          {
+            "name": "GNSS",
+            "handle_mm": 4.714511871337891,
+            "length_mm": 98.50059100244505,
+            "minimum_radius_mm": 3.4952419530357264,
+            "minimum_component_gap_mm": 0.5325615115294721,
+            "limiting_ref": "U5",
+            "pass_": true
+          }
+        ],
+        "cable_gap_mm": 0.2119374786615171,
+        "guide_center_shift_mm": 0.0,
+        "pass_": true
+      },
+      {
+        "pcb_pose_mm": [
+          0,
+          0,
+          11.75
+        ],
+        "cables": [
+          {
+            "name": "LTE",
+            "handle_mm": 6.702693939208984,
+            "length_mm": 98.50038834500319,
+            "minimum_radius_mm": 4.238066301116615,
+            "minimum_component_gap_mm": 1.0289412578487365,
+            "limiting_ref": "R3",
+            "pass_": true
+          },
+          {
+            "name": "GNSS",
+            "handle_mm": 4.936641693115234,
+            "length_mm": 98.5005927266633,
+            "minimum_radius_mm": 3.4952419530357264,
+            "minimum_component_gap_mm": 0.3853208463882016,
+            "limiting_ref": "U5",
+            "pass_": true
+          }
+        ],
+        "cable_gap_mm": 0.2119374786615171,
+        "guide_center_shift_mm": 0.0,
+        "pass_": true
+      },
+      {
+        "pcb_pose_mm": [
+          0,
+          0.3,
+          11.06
+        ],
+        "cables": [
+          {
+            "name": "LTE",
+            "handle_mm": 6.265850067138672,
+            "length_mm": 98.50039317655376,
+            "minimum_radius_mm": 4.238066301116615,
+            "minimum_component_gap_mm": 1.0744258095837804,
+            "limiting_ref": "R3",
+            "pass_": true
+          },
+          {
+            "name": "GNSS",
+            "handle_mm": 5.258884429931641,
+            "length_mm": 98.50059365179156,
+            "minimum_radius_mm": 3.4952419530357264,
+            "minimum_component_gap_mm": 0.5254612044327202,
+            "limiting_ref": "U5",
+            "pass_": true
+          }
+        ],
+        "cable_gap_mm": 0.2119374786615171,
+        "guide_center_shift_mm": 0.0,
+        "pass_": true
+      },
+      {
+        "pcb_pose_mm": [
+          0,
+          0.3,
+          11.24088
+        ],
+        "cables": [
+          {
+            "name": "LTE",
+            "handle_mm": 6.587749481201172,
+            "length_mm": 98.5003963535273,
+            "minimum_radius_mm": 4.238066301116615,
+            "minimum_component_gap_mm": 1.0588521776086186,
+            "limiting_ref": "R3",
+            "pass_": true
+          },
+          {
+            "name": "GNSS",
+            "handle_mm": 5.348697662353516,
+            "length_mm": 98.50058328890395,
+            "minimum_radius_mm": 3.4952419530357264,
+            "minimum_component_gap_mm": 0.4749059673143809,
+            "limiting_ref": "U5",
+            "pass_": true
+          }
+        ],
+        "cable_gap_mm": 0.2119374786615171,
+        "guide_center_shift_mm": 0.0,
+        "pass_": true
+      },
+      {
+        "pcb_pose_mm": [
+          0,
+          0.3,
+          11.75
+        ],
+        "cables": [
+          {
+            "name": "LTE",
+            "handle_mm": 7.412891387939453,
+            "length_mm": 98.50039444132042,
+            "minimum_radius_mm": 4.238066301116615,
+            "minimum_component_gap_mm": 1.0243234987667686,
+            "limiting_ref": "R3",
+            "pass_": true
+          },
+          {
+            "name": "GNSS",
+            "handle_mm": 5.563068389892578,
+            "length_mm": 98.50058964506677,
+            "minimum_radius_mm": 3.4952419530357264,
+            "minimum_component_gap_mm": 0.3418883747300389,
+            "limiting_ref": "U5",
+            "pass_": true
+          }
+        ],
+        "cable_gap_mm": 0.21039880449769877,
+        "guide_center_shift_mm": 0.0,
+        "pass_": true
+      },
+      {
+        "pcb_pose_mm": [
+          0.3,
+          -0.3,
+          11.06
+        ],
+        "cables": [
+          {
+            "name": "LTE",
+            "handle_mm": 2.791423797607422,
+            "length_mm": 98.50039968500968,
+            "minimum_radius_mm": 4.238066301116615,
+            "minimum_component_gap_mm": 1.2172528795113953,
+            "limiting_ref": "R3",
+            "pass_": true
+          },
+          {
+            "name": "GNSS",
+            "handle_mm": 3.306476593017578,
+            "length_mm": 98.50060496564166,
+            "minimum_radius_mm": 3.4952419530357264,
+            "minimum_component_gap_mm": 0.7350528275194469,
+            "limiting_ref": "U5",
+            "pass_": true
+          }
+        ],
+        "cable_gap_mm": 0.2119374786615171,
+        "guide_center_shift_mm": 0.0,
+        "pass_": true
+      },
+      {
+        "pcb_pose_mm": [
+          0.3,
+          -0.3,
+          11.24088
+        ],
+        "cables": [
+          {
+            "name": "LTE",
+            "handle_mm": 3.1678428649902344,
+            "length_mm": 98.50039370921442,
+            "minimum_radius_mm": 4.238066301116615,
+            "minimum_component_gap_mm": 1.174061630415107,
+            "limiting_ref": "R3",
+            "pass_": true
+          },
+          {
+            "name": "GNSS",
+            "handle_mm": 3.4037742614746094,
+            "length_mm": 98.50058782912524,
+            "minimum_radius_mm": 3.4952419530357264,
+            "minimum_component_gap_mm": 0.6679445526727691,
+            "limiting_ref": "U5",
+            "pass_": true
+          }
+        ],
+        "cable_gap_mm": 0.2119374786615171,
+        "guide_center_shift_mm": 0.0,
+        "pass_": true
+      },
+      {
+        "pcb_pose_mm": [
+          0.3,
+          -0.3,
+          11.75
+        ],
+        "cables": [
+          {
+            "name": "LTE",
+            "handle_mm": 4.114795684814453,
+            "length_mm": 98.50039115528813,
+            "minimum_radius_mm": 4.238066301116615,
+            "minimum_component_gap_mm": 1.0860742968344501,
+            "limiting_ref": "R3",
+            "pass_": true
+          },
+          {
+            "name": "GNSS",
+            "handle_mm": 3.6353797912597656,
+            "length_mm": 98.5005902192151,
+            "minimum_radius_mm": 3.4952419530357264,
+            "minimum_component_gap_mm": 0.4185958579884596,
+            "limiting_ref": "J1",
+            "pass_": true
+          }
+        ],
+        "cable_gap_mm": 0.2119374786615171,
+        "guide_center_shift_mm": 0.0,
+        "pass_": true
+      },
+      {
+        "pcb_pose_mm": [
+          0.3,
+          0,
+          11.06
+        ],
+        "cables": [
+          {
+            "name": "LTE",
+            "handle_mm": 3.6524085998535156,
+            "length_mm": 98.50040080552824,
+            "minimum_radius_mm": 4.238066301116615,
+            "minimum_component_gap_mm": 1.1784275457346107,
+            "limiting_ref": "R3",
+            "pass_": true
+          },
+          {
+            "name": "GNSS",
+            "handle_mm": 4.039539337158203,
+            "length_mm": 98.50060206863695,
+            "minimum_radius_mm": 3.4952419530357264,
+            "minimum_component_gap_mm": 0.6614515386237353,
+            "limiting_ref": "U5",
+            "pass_": true
+          }
+        ],
+        "cable_gap_mm": 0.2119374786615171,
+        "guide_center_shift_mm": 0.0,
+        "pass_": true
+      },
+      {
+        "pcb_pose_mm": [
+          0.3,
+          0,
+          11.24088
+        ],
+        "cables": [
+          {
+            "name": "LTE",
+            "handle_mm": 4.019901275634766,
+            "length_mm": 98.50039808463427,
+            "minimum_radius_mm": 4.238066301116615,
+            "minimum_component_gap_mm": 1.1438040426028209,
+            "limiting_ref": "R3",
+            "pass_": true
+          },
+          {
+            "name": "GNSS",
+            "handle_mm": 4.132923126220703,
+            "length_mm": 98.50059158917469,
+            "minimum_radius_mm": 3.4952419530357264,
+            "minimum_component_gap_mm": 0.6000832007644771,
+            "limiting_ref": "U5",
+            "pass_": true
+          }
+        ],
+        "cable_gap_mm": 0.2119374786615171,
+        "guide_center_shift_mm": 0.0,
+        "pass_": true
+      },
+      {
+        "pcb_pose_mm": [
+          0.3,
+          0,
+          11.75
+        ],
+        "cables": [
+          {
+            "name": "LTE",
+            "handle_mm": 4.950855255126953,
+            "length_mm": 98.50038875938492,
+            "minimum_radius_mm": 4.238066301116615,
+            "minimum_component_gap_mm": 1.0732944876260688,
+            "limiting_ref": "R3",
+            "pass_": true
+          },
+          {
+            "name": "GNSS",
+            "handle_mm": 4.355396270751953,
+            "length_mm": 98.50059017040786,
+            "minimum_radius_mm": 3.4952419530357264,
+            "minimum_component_gap_mm": 0.4185958579884596,
+            "limiting_ref": "J1",
+            "pass_": true
+          }
+        ],
+        "cable_gap_mm": 0.2119374786615171,
+        "guide_center_shift_mm": 0.0,
+        "pass_": true
+      },
+      {
+        "pcb_pose_mm": [
+          0.3,
+          0.3,
+          11.06
+        ],
+        "cables": [
+          {
+            "name": "LTE",
+            "handle_mm": 4.457569122314453,
+            "length_mm": 98.50039520422209,
+            "minimum_radius_mm": 4.238066301116615,
+            "minimum_component_gap_mm": 1.1490899148673106,
+            "limiting_ref": "R3",
+            "pass_": true
+          },
+          {
+            "name": "GNSS",
+            "handle_mm": 4.700298309326172,
+            "length_mm": 98.50059733233653,
+            "minimum_radius_mm": 3.4952419530357264,
+            "minimum_component_gap_mm": 0.5944429019782712,
+            "limiting_ref": "U5",
+            "pass_": true
+          }
+        ],
+        "cable_gap_mm": 0.2119374786615171,
+        "guide_center_shift_mm": 0.0,
+        "pass_": true
+      },
+      {
+        "pcb_pose_mm": [
+          0.3,
+          0.3,
+          11.24088
+        ],
+        "cables": [
+          {
+            "name": "LTE",
+            "handle_mm": 4.819293975830078,
+            "length_mm": 98.50040118932392,
+            "minimum_radius_mm": 4.238066301116615,
+            "minimum_component_gap_mm": 1.1208924084763112,
+            "limiting_ref": "R3",
+            "pass_": true
+          },
+          {
+            "name": "GNSS",
+            "handle_mm": 4.790180206298828,
+            "length_mm": 98.50058341949781,
+            "minimum_radius_mm": 3.4952419530357264,
+            "minimum_component_gap_mm": 0.5384410057095751,
+            "limiting_ref": "U5",
+            "pass_": true
+          }
+        ],
+        "cable_gap_mm": 0.2119374786615171,
+        "guide_center_shift_mm": 0.0,
+        "pass_": true
+      },
+      {
+        "pcb_pose_mm": [
+          0.3,
+          0.3,
+          11.75
+        ],
+        "cables": [
+          {
+            "name": "LTE",
+            "handle_mm": 5.740016937255859,
+            "length_mm": 98.50039001930898,
+            "minimum_radius_mm": 4.238066301116615,
+            "minimum_component_gap_mm": 1.0631869129261189,
+            "limiting_ref": "R3",
+            "pass_": true
+          },
+          {
+            "name": "GNSS",
+            "handle_mm": 5.004550933837891,
+            "length_mm": 98.50059219483981,
+            "minimum_radius_mm": 3.4952419530357264,
+            "minimum_component_gap_mm": 0.3903274090718682,
+            "limiting_ref": "U5",
+            "pass_": true
+          }
+        ],
+        "cable_gap_mm": 0.2119374786615171,
+        "guide_center_shift_mm": 0.0,
+        "pass_": true
+      }
+    ],
+    "all_sampled_cases_pass": true,
+    "scope": "27 sampled endpoint poses with a fixed-length initial-handle adjustment. Component swept volumes are conservative; this cable pose sampling is not proof of every continuous deformation or physical flex life."
+  },
+  "physical_retention_qualified": false,
+  "physical_ingress_qualified": false,
+  "scope": "Captivity and geometric clearances at assigned manufacturing limits. No supplier process, strength, shock, wear, anti-rattle or physical sealing acceptance."
+}

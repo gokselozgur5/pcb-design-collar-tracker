@@ -1,0 +1,2662 @@
+{
+  "result": "SAMPLED_CABLE_CLEARANCE_PASS",
+  "inputs": {
+    "mechanical/swim-r10-retention/parameters.json": "5400a1a7fde33e767d2d854e62cf79eade3d33ace83b4f0c995d9e301eeb40e2",
+    "mechanical/swim-r10-retention/retention.json": "0470bb172aca503e63b0fc34958d351efeac3be130e7e6a4d0161f45dc692ceb",
+    "mechanical/swim-r10-retention/routing-controls.json": "22d91389c5885d0d83c948b5bfb2ad27b3dcee2069e4eb9ed227c517ece3614b",
+    "mechanical/swim-r10-retention/retention-checks.json": "eb90af612ce652e76887e3c93b14259c92531ab9aa0b75a380ec43ccdb909f32",
+    "scripts/check_retention_cables.py": "32e68bf42525aa970cae50afffe85955795b355ee0d24106beecfae8124b4ae8",
+    "scripts/check_retention_assembly.py": "fa3a3b0b5239bdda4d429c38b9f06f6810abb40713c590aed93673ee21bec82d",
+    "scripts/antenna_cable_geometry.py": "9be973b21970d964a87b94dcddedfc2521d140c4ce45aec985fbc720cd249125"
+  },
+  "cases": [
+    {
+      "pcb_pose_mm": [
+        -0.3,
+        -0.3,
+        11.06
+      ],
+      "cables": [
+        {
+          "name": "LTE",
+          "checks": [
+            {
+              "name": "cavity wall",
+              "pass_": true,
+              "gap_mm": 3.6320895588984423
+            },
+            {
+              "name": "lid",
+              "pass_": true,
+              "gap_mm": 0.029300000000000596
+            },
+            {
+              "name": "nonlocal self clearance",
+              "pass_": true,
+              "gap_mm": 1.4695204290380466
+            },
+            {
+              "name": "new retention solids",
+              "pass_": true,
+              "gap_mm": 3.7409475941118404,
+              "obstacle": "lid hold-down"
+            },
+            {
+              "name": "LTE CAPH SZK-C-3L30 envelope",
+              "pass_": true,
+              "gap_mm": 0.5112414399999969,
+              "intentional_feed_joint_excluded": true
+            },
+            {
+              "name": "GNSS ZETA SZK-C-0G04 envelope",
+              "pass_": true,
+              "gap_mm": 0.5142999999999964,
+              "intentional_feed_joint_excluded": false
+            },
+            {
+              "name": "all bottom-side bodies",
+              "pass_": true,
+              "gap_mm": 0.9343000000000017
+            }
+          ],
+          "pass_": true
+        },
+        {
+          "name": "GNSS",
+          "checks": [
+            {
+              "name": "cavity wall",
+              "pass_": true,
+              "gap_mm": 3.0590149835944236
+            },
+            {
+              "name": "lid",
+              "pass_": true,
+              "gap_mm": 0.03178337764740051
+            },
+            {
+              "name": "nonlocal self clearance",
+              "pass_": true,
+              "gap_mm": 1.4538330028802735
+            },
+            {
+              "name": "new retention solids",
+              "pass_": true,
+              "gap_mm": 2.828505654538484,
+              "obstacle": "retainer frame"
+            },
+            {
+              "name": "LTE CAPH SZK-C-3L30 envelope",
+              "pass_": true,
+              "gap_mm": 0.2878112871794502,
+              "intentional_feed_joint_excluded": false
+            },
+            {
+              "name": "GNSS ZETA SZK-C-0G04 envelope",
+              "pass_": true,
+              "gap_mm": 0.2834100354295132,
+              "intentional_feed_joint_excluded": true
+            },
+            {
+              "name": "all bottom-side bodies",
+              "pass_": true,
+              "gap_mm": 0.9367833776474016
+            }
+          ],
+          "pass_": true
+        }
+      ],
+      "pass_": true
+    },
+    {
+      "pcb_pose_mm": [
+        -0.3,
+        -0.3,
+        11.24088
+      ],
+      "cables": [
+        {
+          "name": "LTE",
+          "checks": [
+            {
+              "name": "cavity wall",
+              "pass_": true,
+              "gap_mm": 3.6320895588984423
+            },
+            {
+              "name": "lid",
+              "pass_": true,
+              "gap_mm": 0.029300000000000596
+            },
+            {
+              "name": "nonlocal self clearance",
+              "pass_": true,
+              "gap_mm": 1.4695204290380466
+            },
+            {
+              "name": "new retention solids",
+              "pass_": true,
+              "gap_mm": 3.7409475941118404,
+              "obstacle": "lid hold-down"
+            },
+            {
+              "name": "LTE CAPH SZK-C-3L30 envelope",
+              "pass_": true,
+              "gap_mm": 0.5112414399999969,
+              "intentional_feed_joint_excluded": true
+            },
+            {
+              "name": "GNSS ZETA SZK-C-0G04 envelope",
+              "pass_": true,
+              "gap_mm": 0.5142999999999964,
+              "intentional_feed_joint_excluded": false
+            },
+            {
+              "name": "all bottom-side bodies",
+              "pass_": true,
+              "gap_mm": 1.115180000000002
+            }
+          ],
+          "pass_": true
+        },
+        {
+          "name": "GNSS",
+          "checks": [
+            {
+              "name": "cavity wall",
+              "pass_": true,
+              "gap_mm": 3.055970562479207
+            },
+            {
+              "name": "lid",
+              "pass_": true,
+              "gap_mm": 0.03178337764740051
+            },
+            {
+              "name": "nonlocal self clearance",
+              "pass_": true,
+              "gap_mm": 1.4538330028802735
+            },
+            {
+              "name": "new retention solids",
+              "pass_": true,
+              "gap_mm": 2.8292213944700455,
+              "obstacle": "retainer frame"
+            },
+            {
+              "name": "LTE CAPH SZK-C-3L30 envelope",
+              "pass_": true,
+              "gap_mm": 0.2878112871794502,
+              "intentional_feed_joint_excluded": false
+            },
+            {
+              "name": "GNSS ZETA SZK-C-0G04 envelope",
+              "pass_": true,
+              "gap_mm": 0.2834100354295132,
+              "intentional_feed_joint_excluded": true
+            },
+            {
+              "name": "all bottom-side bodies",
+              "pass_": true,
+              "gap_mm": 1.1176633776474019
+            }
+          ],
+          "pass_": true
+        }
+      ],
+      "pass_": true
+    },
+    {
+      "pcb_pose_mm": [
+        -0.3,
+        -0.3,
+        11.75
+      ],
+      "cables": [
+        {
+          "name": "LTE",
+          "checks": [
+            {
+              "name": "cavity wall",
+              "pass_": true,
+              "gap_mm": 3.6304927945246632
+            },
+            {
+              "name": "lid",
+              "pass_": true,
+              "gap_mm": 0.027703235626221304
+            },
+            {
+              "name": "nonlocal self clearance",
+              "pass_": true,
+              "gap_mm": 1.4663269002904882
+            },
+            {
+              "name": "new retention solids",
+              "pass_": true,
+              "gap_mm": 3.7393508297380613,
+              "obstacle": "lid hold-down"
+            },
+            {
+              "name": "LTE CAPH SZK-C-3L30 envelope",
+              "pass_": true,
+              "gap_mm": 0.5096446756262177,
+              "intentional_feed_joint_excluded": true
+            },
+            {
+              "name": "GNSS ZETA SZK-C-0G04 envelope",
+              "pass_": true,
+              "gap_mm": 0.5127032356262172,
+              "intentional_feed_joint_excluded": false
+            },
+            {
+              "name": "all bottom-side bodies",
+              "pass_": true,
+              "gap_mm": 1.622703235626222
+            }
+          ],
+          "pass_": true
+        },
+        {
+          "name": "GNSS",
+          "checks": [
+            {
+              "name": "cavity wall",
+              "pass_": true,
+              "gap_mm": 3.0485884929088187
+            },
+            {
+              "name": "lid",
+              "pass_": true,
+              "gap_mm": 0.03178337764740051
+            },
+            {
+              "name": "nonlocal self clearance",
+              "pass_": true,
+              "gap_mm": 1.4538330028802735
+            },
+            {
+              "name": "new retention solids",
+              "pass_": true,
+              "gap_mm": 2.832590691456741,
+              "obstacle": "retainer frame"
+            },
+            {
+              "name": "LTE CAPH SZK-C-3L30 envelope",
+              "pass_": true,
+              "gap_mm": 0.2878112871794502,
+              "intentional_feed_joint_excluded": false
+            },
+            {
+              "name": "GNSS ZETA SZK-C-0G04 envelope",
+              "pass_": true,
+              "gap_mm": 0.2834100354295132,
+              "intentional_feed_joint_excluded": true
+            },
+            {
+              "name": "all bottom-side bodies",
+              "pass_": true,
+              "gap_mm": 1.6267833776474012
+            }
+          ],
+          "pass_": true
+        }
+      ],
+      "pass_": true
+    },
+    {
+      "pcb_pose_mm": [
+        -0.3,
+        0,
+        11.06
+      ],
+      "cables": [
+        {
+          "name": "LTE",
+          "checks": [
+            {
+              "name": "cavity wall",
+              "pass_": true,
+              "gap_mm": 3.631585796843999
+            },
+            {
+              "name": "lid",
+              "pass_": true,
+              "gap_mm": 0.02879623794555724
+            },
+            {
+              "name": "nonlocal self clearance",
+              "pass_": true,
+              "gap_mm": 1.4685129049291599
+            },
+            {
+              "name": "new retention solids",
+              "pass_": true,
+              "gap_mm": 3.740443832057397,
+              "obstacle": "lid hold-down"
+            },
+            {
+              "name": "LTE CAPH SZK-C-3L30 envelope",
+              "pass_": true,
+              "gap_mm": 0.5107376779455536,
+              "intentional_feed_joint_excluded": true
+            },
+            {
+              "name": "GNSS ZETA SZK-C-0G04 envelope",
+              "pass_": true,
+              "gap_mm": 0.5137962379455531,
+              "intentional_feed_joint_excluded": false
+            },
+            {
+              "name": "all bottom-side bodies",
+              "pass_": true,
+              "gap_mm": 0.9337962379455583
+            }
+          ],
+          "pass_": true
+        },
+        {
+          "name": "GNSS",
+          "checks": [
+            {
+              "name": "cavity wall",
+              "pass_": true,
+              "gap_mm": 3.026500180828469
+            },
+            {
+              "name": "lid",
+              "pass_": true,
+              "gap_mm": 0.03178337764740051
+            },
+            {
+              "name": "nonlocal self clearance",
+              "pass_": true,
+              "gap_mm": 1.4538330028802735
+            },
+            {
+              "name": "new retention solids",
+              "pass_": true,
+              "gap_mm": 2.79586801569493,
+              "obstacle": "retainer frame"
+            },
+            {
+              "name": "LTE CAPH SZK-C-3L30 envelope",
+              "pass_": true,
+              "gap_mm": 0.2878112871794502,
+              "intentional_feed_joint_excluded": false
+            },
+            {
+              "name": "GNSS ZETA SZK-C-0G04 envelope",
+              "pass_": true,
+              "gap_mm": 0.2834100354295132,
+              "intentional_feed_joint_excluded": true
+            },
+            {
+              "name": "all bottom-side bodies",
+              "pass_": true,
+              "gap_mm": 0.9367833776474016
+            }
+          ],
+          "pass_": true
+        }
+      ],
+      "pass_": true
+    },
+    {
+      "pcb_pose_mm": [
+        -0.3,
+        0,
+        11.24088
+      ],
+      "cables": [
+        {
+          "name": "LTE",
+          "checks": [
+            {
+              "name": "cavity wall",
+              "pass_": true,
+              "gap_mm": 3.630708057891362
+            },
+            {
+              "name": "lid",
+              "pass_": true,
+              "gap_mm": 0.02791849899292052
+            },
+            {
+              "name": "nonlocal self clearance",
+              "pass_": true,
+              "gap_mm": 1.4667574270238866
+            },
+            {
+              "name": "new retention solids",
+              "pass_": true,
+              "gap_mm": 3.7395660931047603,
+              "obstacle": "lid hold-down"
+            },
+            {
+              "name": "LTE CAPH SZK-C-3L30 envelope",
+              "pass_": true,
+              "gap_mm": 0.5098599389929169,
+              "intentional_feed_joint_excluded": true
+            },
+            {
+              "name": "GNSS ZETA SZK-C-0G04 envelope",
+              "pass_": true,
+              "gap_mm": 0.5129184989929164,
+              "intentional_feed_joint_excluded": false
+            },
+            {
+              "name": "all bottom-side bodies",
+              "pass_": true,
+              "gap_mm": 1.113798498992922
+            }
+          ],
+          "pass_": true
+        },
+        {
+          "name": "GNSS",
+          "checks": [
+            {
+              "name": "cavity wall",
+              "pass_": true,
+              "gap_mm": 3.023233130484775
+            },
+            {
+              "name": "lid",
+              "pass_": true,
+              "gap_mm": 0.03178337764740051
+            },
+            {
+              "name": "nonlocal self clearance",
+              "pass_": true,
+              "gap_mm": 1.4538330028802735
+            },
+            {
+              "name": "new retention solids",
+              "pass_": true,
+              "gap_mm": 2.7968272715142475,
+              "obstacle": "retainer frame"
+            },
+            {
+              "name": "LTE CAPH SZK-C-3L30 envelope",
+              "pass_": true,
+              "gap_mm": 0.2878112871794502,
+              "intentional_feed_joint_excluded": false
+            },
+            {
+              "name": "GNSS ZETA SZK-C-0G04 envelope",
+              "pass_": true,
+              "gap_mm": 0.2834100354295132,
+              "intentional_feed_joint_excluded": true
+            },
+            {
+              "name": "all bottom-side bodies",
+              "pass_": true,
+              "gap_mm": 1.1176633776474019
+            }
+          ],
+          "pass_": true
+        }
+      ],
+      "pass_": true
+    },
+    {
+      "pcb_pose_mm": [
+        -0.3,
+        0,
+        11.75
+      ],
+      "cables": [
+        {
+          "name": "LTE",
+          "checks": [
+            {
+              "name": "cavity wall",
+              "pass_": true,
+              "gap_mm": 3.6284546933283743
+            },
+            {
+              "name": "lid",
+              "pass_": true,
+              "gap_mm": 0.025665134429932242
+            },
+            {
+              "name": "nonlocal self clearance",
+              "pass_": true,
+              "gap_mm": 1.46225069789791
+            },
+            {
+              "name": "new retention solids",
+              "pass_": true,
+              "gap_mm": 3.7373127285417724,
+              "obstacle": "lid hold-down"
+            },
+            {
+              "name": "LTE CAPH SZK-C-3L30 envelope",
+              "pass_": true,
+              "gap_mm": 0.5076065744299286,
+              "intentional_feed_joint_excluded": true
+            },
+            {
+              "name": "GNSS ZETA SZK-C-0G04 envelope",
+              "pass_": true,
+              "gap_mm": 0.5106651344299281,
+              "intentional_feed_joint_excluded": false
+            },
+            {
+              "name": "all bottom-side bodies",
+              "pass_": true,
+              "gap_mm": 1.620665134429933
+            }
+          ],
+          "pass_": true
+        },
+        {
+          "name": "GNSS",
+          "checks": [
+            {
+              "name": "cavity wall",
+              "pass_": true,
+              "gap_mm": 3.015297638451795
+            },
+            {
+              "name": "lid",
+              "pass_": true,
+              "gap_mm": 0.03178337764740051
+            },
+            {
+              "name": "nonlocal self clearance",
+              "pass_": true,
+              "gap_mm": 1.4538330028802735
+            },
+            {
+              "name": "new retention solids",
+              "pass_": true,
+              "gap_mm": 2.801009312635337,
+              "obstacle": "retainer frame"
+            },
+            {
+              "name": "LTE CAPH SZK-C-3L30 envelope",
+              "pass_": true,
+              "gap_mm": 0.2878112871794502,
+              "intentional_feed_joint_excluded": false
+            },
+            {
+              "name": "GNSS ZETA SZK-C-0G04 envelope",
+              "pass_": true,
+              "gap_mm": 0.2834100354295132,
+              "intentional_feed_joint_excluded": true
+            },
+            {
+              "name": "all bottom-side bodies",
+              "pass_": true,
+              "gap_mm": 1.6267833776474012
+            }
+          ],
+          "pass_": true
+        }
+      ],
+      "pass_": true
+    },
+    {
+      "pcb_pose_mm": [
+        -0.3,
+        0.3,
+        11.06
+      ],
+      "cables": [
+        {
+          "name": "LTE",
+          "checks": [
+            {
+              "name": "cavity wall",
+              "pass_": true,
+              "gap_mm": 3.629644718657964
+            },
+            {
+              "name": "lid",
+              "pass_": true,
+              "gap_mm": 0.026855159759522084
+            },
+            {
+              "name": "nonlocal self clearance",
+              "pass_": true,
+              "gap_mm": 1.4646307485570897
+            },
+            {
+              "name": "new retention solids",
+              "pass_": true,
+              "gap_mm": 3.738502753871362,
+              "obstacle": "lid hold-down"
+            },
+            {
+              "name": "LTE CAPH SZK-C-3L30 envelope",
+              "pass_": true,
+              "gap_mm": 0.5087965997595185,
+              "intentional_feed_joint_excluded": true
+            },
+            {
+              "name": "GNSS ZETA SZK-C-0G04 envelope",
+              "pass_": true,
+              "gap_mm": 0.511855159759518,
+              "intentional_feed_joint_excluded": false
+            },
+            {
+              "name": "all bottom-side bodies",
+              "pass_": true,
+              "gap_mm": 0.9318551597595233
+            }
+          ],
+          "pass_": true
+        },
+        {
+          "name": "GNSS",
+          "checks": [
+            {
+              "name": "cavity wall",
+              "pass_": true,
+              "gap_mm": 2.9927751047509554
+            },
+            {
+              "name": "lid",
+              "pass_": true,
+              "gap_mm": 0.03178337764740051
+            },
+            {
+              "name": "nonlocal self clearance",
+              "pass_": true,
+              "gap_mm": 1.4538330028802735
+            },
+            {
+              "name": "new retention solids",
+              "pass_": true,
+              "gap_mm": 2.7611591745119894,
+              "obstacle": "retainer frame"
+            },
+            {
+              "name": "LTE CAPH SZK-C-3L30 envelope",
+              "pass_": true,
+              "gap_mm": 0.2878112871794502,
+              "intentional_feed_joint_excluded": false
+            },
+            {
+              "name": "GNSS ZETA SZK-C-0G04 envelope",
+              "pass_": true,
+              "gap_mm": 0.2834100354295132,
+              "intentional_feed_joint_excluded": true
+            },
+            {
+              "name": "all bottom-side bodies",
+              "pass_": true,
+              "gap_mm": 0.9367833776474016
+            }
+          ],
+          "pass_": true
+        }
+      ],
+      "pass_": true
+    },
+    {
+      "pcb_pose_mm": [
+        -0.3,
+        0.3,
+        11.24088
+      ],
+      "cables": [
+        {
+          "name": "LTE",
+          "checks": [
+            {
+              "name": "cavity wall",
+              "pass_": true,
+              "gap_mm": 3.6287719235529834
+            },
+            {
+              "name": "lid",
+              "pass_": true,
+              "gap_mm": 0.025982364654541616
+            },
+            {
+              "name": "nonlocal self clearance",
+              "pass_": true,
+              "gap_mm": 1.4628851583471287
+            },
+            {
+              "name": "new retention solids",
+              "pass_": true,
+              "gap_mm": 3.7376299587663815,
+              "obstacle": "lid hold-down"
+            },
+            {
+              "name": "LTE CAPH SZK-C-3L30 envelope",
+              "pass_": true,
+              "gap_mm": 0.507923804654538,
+              "intentional_feed_joint_excluded": true
+            },
+            {
+              "name": "GNSS ZETA SZK-C-0G04 envelope",
+              "pass_": true,
+              "gap_mm": 0.5109823646545375,
+              "intentional_feed_joint_excluded": false
+            },
+            {
+              "name": "all bottom-side bodies",
+              "pass_": true,
+              "gap_mm": 1.111862364654543
+            }
+          ],
+          "pass_": true
+        },
+        {
+          "name": "GNSS",
+          "checks": [
+            {
+              "name": "cavity wall",
+              "pass_": true,
+              "gap_mm": 2.989248800172142
+            },
+            {
+              "name": "lid",
+              "pass_": true,
+              "gap_mm": 0.03178337764740051
+            },
+            {
+              "name": "nonlocal self clearance",
+              "pass_": true,
+              "gap_mm": 1.4538330028802735
+            },
+            {
+              "name": "new retention solids",
+              "pass_": true,
+              "gap_mm": 2.7624079267150563,
+              "obstacle": "retainer frame"
+            },
+            {
+              "name": "LTE CAPH SZK-C-3L30 envelope",
+              "pass_": true,
+              "gap_mm": 0.2878112871794502,
+              "intentional_feed_joint_excluded": false
+            },
+            {
+              "name": "GNSS ZETA SZK-C-0G04 envelope",
+              "pass_": true,
+              "gap_mm": 0.2834100354295132,
+              "intentional_feed_joint_excluded": true
+            },
+            {
+              "name": "all bottom-side bodies",
+              "pass_": true,
+              "gap_mm": 1.1176633776474019
+            }
+          ],
+          "pass_": true
+        }
+      ],
+      "pass_": true
+    },
+    {
+      "pcb_pose_mm": [
+        -0.3,
+        0.3,
+        11.75
+      ],
+      "cables": [
+        {
+          "name": "LTE",
+          "checks": [
+            {
+              "name": "cavity wall",
+              "pass_": true,
+              "gap_mm": 3.626526798736089
+            },
+            {
+              "name": "lid",
+              "pass_": true,
+              "gap_mm": 0.023737239837647084
+            },
+            {
+              "name": "nonlocal self clearance",
+              "pass_": true,
+              "gap_mm": 1.4583949087133397
+            },
+            {
+              "name": "new retention solids",
+              "pass_": true,
+              "gap_mm": 3.735384833949487,
+              "obstacle": "lid hold-down"
+            },
+            {
+              "name": "LTE CAPH SZK-C-3L30 envelope",
+              "pass_": true,
+              "gap_mm": 0.5056786798376435,
+              "intentional_feed_joint_excluded": true
+            },
+            {
+              "name": "GNSS ZETA SZK-C-0G04 envelope",
+              "pass_": true,
+              "gap_mm": 0.508737239837643,
+              "intentional_feed_joint_excluded": false
+            },
+            {
+              "name": "all bottom-side bodies",
+              "pass_": true,
+              "gap_mm": 1.6187372398376478
+            }
+          ],
+          "pass_": true
+        },
+        {
+          "name": "GNSS",
+          "checks": [
+            {
+              "name": "cavity wall",
+              "pass_": true,
+              "gap_mm": 2.98056232308757
+            },
+            {
+              "name": "lid",
+              "pass_": true,
+              "gap_mm": 0.031690242767334585
+            },
+            {
+              "name": "nonlocal self clearance",
+              "pass_": true,
+              "gap_mm": 1.4536467331201417
+            },
+            {
+              "name": "new retention solids",
+              "pass_": true,
+              "gap_mm": 2.767479116833288,
+              "obstacle": "retainer frame"
+            },
+            {
+              "name": "LTE CAPH SZK-C-3L30 envelope",
+              "pass_": true,
+              "gap_mm": 0.28771815229938424,
+              "intentional_feed_joint_excluded": false
+            },
+            {
+              "name": "GNSS ZETA SZK-C-0G04 envelope",
+              "pass_": true,
+              "gap_mm": 0.28331690054944725,
+              "intentional_feed_joint_excluded": true
+            },
+            {
+              "name": "all bottom-side bodies",
+              "pass_": true,
+              "gap_mm": 1.6266902427673353
+            }
+          ],
+          "pass_": true
+        }
+      ],
+      "pass_": true
+    },
+    {
+      "pcb_pose_mm": [
+        0,
+        -0.3,
+        11.06
+      ],
+      "cables": [
+        {
+          "name": "LTE",
+          "checks": [
+            {
+              "name": "cavity wall",
+              "pass_": true,
+              "gap_mm": 3.6320895588984423
+            },
+            {
+              "name": "lid",
+              "pass_": true,
+              "gap_mm": 0.029300000000000596
+            },
+            {
+              "name": "nonlocal self clearance",
+              "pass_": true,
+              "gap_mm": 1.4695204290380466
+            },
+            {
+              "name": "new retention solids",
+              "pass_": true,
+              "gap_mm": 3.7409475941118404,
+              "obstacle": "lid hold-down"
+            },
+            {
+              "name": "LTE CAPH SZK-C-3L30 envelope",
+              "pass_": true,
+              "gap_mm": 0.5112414399999969,
+              "intentional_feed_joint_excluded": true
+            },
+            {
+              "name": "GNSS ZETA SZK-C-0G04 envelope",
+              "pass_": true,
+              "gap_mm": 0.5142999999999964,
+              "intentional_feed_joint_excluded": false
+            },
+            {
+              "name": "all bottom-side bodies",
+              "pass_": true,
+              "gap_mm": 0.9343000000000017
+            }
+          ],
+          "pass_": true
+        },
+        {
+          "name": "GNSS",
+          "checks": [
+            {
+              "name": "cavity wall",
+              "pass_": true,
+              "gap_mm": 3.076824608249275
+            },
+            {
+              "name": "lid",
+              "pass_": true,
+              "gap_mm": 0.03178337764740051
+            },
+            {
+              "name": "nonlocal self clearance",
+              "pass_": true,
+              "gap_mm": 1.4538330028802735
+            },
+            {
+              "name": "new retention solids",
+              "pass_": true,
+              "gap_mm": 2.8460929010533875,
+              "obstacle": "retainer frame"
+            },
+            {
+              "name": "LTE CAPH SZK-C-3L30 envelope",
+              "pass_": true,
+              "gap_mm": 0.2878112871794502,
+              "intentional_feed_joint_excluded": false
+            },
+            {
+              "name": "GNSS ZETA SZK-C-0G04 envelope",
+              "pass_": true,
+              "gap_mm": 0.2834100354295132,
+              "intentional_feed_joint_excluded": true
+            },
+            {
+              "name": "all bottom-side bodies",
+              "pass_": true,
+              "gap_mm": 0.9367833776474016
+            }
+          ],
+          "pass_": true
+        }
+      ],
+      "pass_": true
+    },
+    {
+      "pcb_pose_mm": [
+        0,
+        -0.3,
+        11.24088
+      ],
+      "cables": [
+        {
+          "name": "LTE",
+          "checks": [
+            {
+              "name": "cavity wall",
+              "pass_": true,
+              "gap_mm": 3.6320895588984423
+            },
+            {
+              "name": "lid",
+              "pass_": true,
+              "gap_mm": 0.029300000000000596
+            },
+            {
+              "name": "nonlocal self clearance",
+              "pass_": true,
+              "gap_mm": 1.4695204290380466
+            },
+            {
+              "name": "new retention solids",
+              "pass_": true,
+              "gap_mm": 3.7409475941118404,
+              "obstacle": "lid hold-down"
+            },
+            {
+              "name": "LTE CAPH SZK-C-3L30 envelope",
+              "pass_": true,
+              "gap_mm": 0.5112414399999969,
+              "intentional_feed_joint_excluded": true
+            },
+            {
+              "name": "GNSS ZETA SZK-C-0G04 envelope",
+              "pass_": true,
+              "gap_mm": 0.5142999999999964,
+              "intentional_feed_joint_excluded": false
+            },
+            {
+              "name": "all bottom-side bodies",
+              "pass_": true,
+              "gap_mm": 1.115180000000002
+            }
+          ],
+          "pass_": true
+        },
+        {
+          "name": "GNSS",
+          "checks": [
+            {
+              "name": "cavity wall",
+              "pass_": true,
+              "gap_mm": 3.073946638253162
+            },
+            {
+              "name": "lid",
+              "pass_": true,
+              "gap_mm": 0.03178337764740051
+            },
+            {
+              "name": "nonlocal self clearance",
+              "pass_": true,
+              "gap_mm": 1.4538330028802735
+            },
+            {
+              "name": "new retention solids",
+              "pass_": true,
+              "gap_mm": 2.8467453259736164,
+              "obstacle": "retainer frame"
+            },
+            {
+              "name": "LTE CAPH SZK-C-3L30 envelope",
+              "pass_": true,
+              "gap_mm": 0.2878112871794502,
+              "intentional_feed_joint_excluded": false
+            },
+            {
+              "name": "GNSS ZETA SZK-C-0G04 envelope",
+              "pass_": true,
+              "gap_mm": 0.2834100354295132,
+              "intentional_feed_joint_excluded": true
+            },
+            {
+              "name": "all bottom-side bodies",
+              "pass_": true,
+              "gap_mm": 1.1176633776474019
+            }
+          ],
+          "pass_": true
+        }
+      ],
+      "pass_": true
+    },
+    {
+      "pcb_pose_mm": [
+        0,
+        -0.3,
+        11.75
+      ],
+      "cables": [
+        {
+          "name": "LTE",
+          "checks": [
+            {
+              "name": "cavity wall",
+              "pass_": true,
+              "gap_mm": 3.6320895588984423
+            },
+            {
+              "name": "lid",
+              "pass_": true,
+              "gap_mm": 0.029300000000000596
+            },
+            {
+              "name": "nonlocal self clearance",
+              "pass_": true,
+              "gap_mm": 1.4695204290380466
+            },
+            {
+              "name": "new retention solids",
+              "pass_": true,
+              "gap_mm": 3.7409475941118404,
+              "obstacle": "lid hold-down"
+            },
+            {
+              "name": "LTE CAPH SZK-C-3L30 envelope",
+              "pass_": true,
+              "gap_mm": 0.5112414399999969,
+              "intentional_feed_joint_excluded": true
+            },
+            {
+              "name": "GNSS ZETA SZK-C-0G04 envelope",
+              "pass_": true,
+              "gap_mm": 0.5142999999999964,
+              "intentional_feed_joint_excluded": false
+            },
+            {
+              "name": "all bottom-side bodies",
+              "pass_": true,
+              "gap_mm": 1.6243000000000014
+            }
+          ],
+          "pass_": true
+        },
+        {
+          "name": "GNSS",
+          "checks": [
+            {
+              "name": "cavity wall",
+              "pass_": true,
+              "gap_mm": 3.0669892101567062
+            },
+            {
+              "name": "lid",
+              "pass_": true,
+              "gap_mm": 0.03178337764740051
+            },
+            {
+              "name": "nonlocal self clearance",
+              "pass_": true,
+              "gap_mm": 1.4538330028802735
+            },
+            {
+              "name": "new retention solids",
+              "pass_": true,
+              "gap_mm": 2.8498525898411335,
+              "obstacle": "retainer frame"
+            },
+            {
+              "name": "LTE CAPH SZK-C-3L30 envelope",
+              "pass_": true,
+              "gap_mm": 0.2878112871794502,
+              "intentional_feed_joint_excluded": false
+            },
+            {
+              "name": "GNSS ZETA SZK-C-0G04 envelope",
+              "pass_": true,
+              "gap_mm": 0.2834100354295132,
+              "intentional_feed_joint_excluded": true
+            },
+            {
+              "name": "all bottom-side bodies",
+              "pass_": true,
+              "gap_mm": 1.6267833776474012
+            }
+          ],
+          "pass_": true
+        }
+      ],
+      "pass_": true
+    },
+    {
+      "pcb_pose_mm": [
+        0,
+        0,
+        11.06
+      ],
+      "cables": [
+        {
+          "name": "LTE",
+          "checks": [
+            {
+              "name": "cavity wall",
+              "pass_": true,
+              "gap_mm": 3.6320895588984423
+            },
+            {
+              "name": "lid",
+              "pass_": true,
+              "gap_mm": 0.029300000000000596
+            },
+            {
+              "name": "nonlocal self clearance",
+              "pass_": true,
+              "gap_mm": 1.4695204290380466
+            },
+            {
+              "name": "new retention solids",
+              "pass_": true,
+              "gap_mm": 3.7409475941118404,
+              "obstacle": "lid hold-down"
+            },
+            {
+              "name": "LTE CAPH SZK-C-3L30 envelope",
+              "pass_": true,
+              "gap_mm": 0.5112414399999969,
+              "intentional_feed_joint_excluded": true
+            },
+            {
+              "name": "GNSS ZETA SZK-C-0G04 envelope",
+              "pass_": true,
+              "gap_mm": 0.5142999999999964,
+              "intentional_feed_joint_excluded": false
+            },
+            {
+              "name": "all bottom-side bodies",
+              "pass_": true,
+              "gap_mm": 0.9343000000000017
+            }
+          ],
+          "pass_": true
+        },
+        {
+          "name": "GNSS",
+          "checks": [
+            {
+              "name": "cavity wall",
+              "pass_": true,
+              "gap_mm": 3.045480524475407
+            },
+            {
+              "name": "lid",
+              "pass_": true,
+              "gap_mm": 0.03178337764740051
+            },
+            {
+              "name": "nonlocal self clearance",
+              "pass_": true,
+              "gap_mm": 1.4538330028802735
+            },
+            {
+              "name": "new retention solids",
+              "pass_": true,
+              "gap_mm": 2.81500883054838,
+              "obstacle": "retainer frame"
+            },
+            {
+              "name": "LTE CAPH SZK-C-3L30 envelope",
+              "pass_": true,
+              "gap_mm": 0.2878112871794502,
+              "intentional_feed_joint_excluded": false
+            },
+            {
+              "name": "GNSS ZETA SZK-C-0G04 envelope",
+              "pass_": true,
+              "gap_mm": 0.2834100354295132,
+              "intentional_feed_joint_excluded": true
+            },
+            {
+              "name": "all bottom-side bodies",
+              "pass_": true,
+              "gap_mm": 0.9367833776474016
+            }
+          ],
+          "pass_": true
+        }
+      ],
+      "pass_": true
+    },
+    {
+      "pcb_pose_mm": [
+        0,
+        0,
+        11.24088
+      ],
+      "cables": [
+        {
+          "name": "LTE",
+          "checks": [
+            {
+              "name": "cavity wall",
+              "pass_": true,
+              "gap_mm": 3.6320895588984423
+            },
+            {
+              "name": "lid",
+              "pass_": true,
+              "gap_mm": 0.029300000000000596
+            },
+            {
+              "name": "nonlocal self clearance",
+              "pass_": true,
+              "gap_mm": 1.4695204290380466
+            },
+            {
+              "name": "new retention solids",
+              "pass_": true,
+              "gap_mm": 3.7409475941118404,
+              "obstacle": "lid hold-down"
+            },
+            {
+              "name": "LTE CAPH SZK-C-3L30 envelope",
+              "pass_": true,
+              "gap_mm": 0.5112414399999969,
+              "intentional_feed_joint_excluded": true
+            },
+            {
+              "name": "GNSS ZETA SZK-C-0G04 envelope",
+              "pass_": true,
+              "gap_mm": 0.5142999999999964,
+              "intentional_feed_joint_excluded": false
+            },
+            {
+              "name": "all bottom-side bodies",
+              "pass_": true,
+              "gap_mm": 1.115180000000002
+            }
+          ],
+          "pass_": true
+        },
+        {
+          "name": "GNSS",
+          "checks": [
+            {
+              "name": "cavity wall",
+              "pass_": true,
+              "gap_mm": 3.0424140946449896
+            },
+            {
+              "name": "lid",
+              "pass_": true,
+              "gap_mm": 0.03178337764740051
+            },
+            {
+              "name": "nonlocal self clearance",
+              "pass_": true,
+              "gap_mm": 1.4538330028802735
+            },
+            {
+              "name": "new retention solids",
+              "pass_": true,
+              "gap_mm": 2.8158877364466393,
+              "obstacle": "retainer frame"
+            },
+            {
+              "name": "LTE CAPH SZK-C-3L30 envelope",
+              "pass_": true,
+              "gap_mm": 0.2878112871794502,
+              "intentional_feed_joint_excluded": false
+            },
+            {
+              "name": "GNSS ZETA SZK-C-0G04 envelope",
+              "pass_": true,
+              "gap_mm": 0.2834100354295132,
+              "intentional_feed_joint_excluded": true
+            },
+            {
+              "name": "all bottom-side bodies",
+              "pass_": true,
+              "gap_mm": 1.1176633776474019
+            }
+          ],
+          "pass_": true
+        }
+      ],
+      "pass_": true
+    },
+    {
+      "pcb_pose_mm": [
+        0,
+        0,
+        11.75
+      ],
+      "cables": [
+        {
+          "name": "LTE",
+          "checks": [
+            {
+              "name": "cavity wall",
+              "pass_": true,
+              "gap_mm": 3.6320895588984423
+            },
+            {
+              "name": "lid",
+              "pass_": true,
+              "gap_mm": 0.029300000000000596
+            },
+            {
+              "name": "nonlocal self clearance",
+              "pass_": true,
+              "gap_mm": 1.4695204290380466
+            },
+            {
+              "name": "new retention solids",
+              "pass_": true,
+              "gap_mm": 3.7409475941118404,
+              "obstacle": "lid hold-down"
+            },
+            {
+              "name": "LTE CAPH SZK-C-3L30 envelope",
+              "pass_": true,
+              "gap_mm": 0.5112414399999969,
+              "intentional_feed_joint_excluded": true
+            },
+            {
+              "name": "GNSS ZETA SZK-C-0G04 envelope",
+              "pass_": true,
+              "gap_mm": 0.5142999999999964,
+              "intentional_feed_joint_excluded": false
+            },
+            {
+              "name": "all bottom-side bodies",
+              "pass_": true,
+              "gap_mm": 1.6243000000000014
+            }
+          ],
+          "pass_": true
+        },
+        {
+          "name": "GNSS",
+          "checks": [
+            {
+              "name": "cavity wall",
+              "pass_": true,
+              "gap_mm": 3.034973958340804
+            },
+            {
+              "name": "lid",
+              "pass_": true,
+              "gap_mm": 0.03178337764740051
+            },
+            {
+              "name": "nonlocal self clearance",
+              "pass_": true,
+              "gap_mm": 1.4538330028802735
+            },
+            {
+              "name": "new retention solids",
+              "pass_": true,
+              "gap_mm": 2.8197374342809667,
+              "obstacle": "retainer frame"
+            },
+            {
+              "name": "LTE CAPH SZK-C-3L30 envelope",
+              "pass_": true,
+              "gap_mm": 0.2878112871794502,
+              "intentional_feed_joint_excluded": false
+            },
+            {
+              "name": "GNSS ZETA SZK-C-0G04 envelope",
+              "pass_": true,
+              "gap_mm": 0.2834100354295132,
+              "intentional_feed_joint_excluded": true
+            },
+            {
+              "name": "all bottom-side bodies",
+              "pass_": true,
+              "gap_mm": 1.6267833776474012
+            }
+          ],
+          "pass_": true
+        }
+      ],
+      "pass_": true
+    },
+    {
+      "pcb_pose_mm": [
+        0,
+        0.3,
+        11.06
+      ],
+      "cables": [
+        {
+          "name": "LTE",
+          "checks": [
+            {
+              "name": "cavity wall",
+              "pass_": true,
+              "gap_mm": 3.6320895588984423
+            },
+            {
+              "name": "lid",
+              "pass_": true,
+              "gap_mm": 0.029300000000000596
+            },
+            {
+              "name": "nonlocal self clearance",
+              "pass_": true,
+              "gap_mm": 1.4695204290380466
+            },
+            {
+              "name": "new retention solids",
+              "pass_": true,
+              "gap_mm": 3.7409475941118404,
+              "obstacle": "lid hold-down"
+            },
+            {
+              "name": "LTE CAPH SZK-C-3L30 envelope",
+              "pass_": true,
+              "gap_mm": 0.5112414399999969,
+              "intentional_feed_joint_excluded": true
+            },
+            {
+              "name": "GNSS ZETA SZK-C-0G04 envelope",
+              "pass_": true,
+              "gap_mm": 0.5142999999999964,
+              "intentional_feed_joint_excluded": false
+            },
+            {
+              "name": "all bottom-side bodies",
+              "pass_": true,
+              "gap_mm": 0.9343000000000017
+            }
+          ],
+          "pass_": true
+        },
+        {
+          "name": "GNSS",
+          "checks": [
+            {
+              "name": "cavity wall",
+              "pass_": true,
+              "gap_mm": 3.013106537285424
+            },
+            {
+              "name": "lid",
+              "pass_": true,
+              "gap_mm": 0.03178337764740051
+            },
+            {
+              "name": "nonlocal self clearance",
+              "pass_": true,
+              "gap_mm": 1.4538330028802735
+            },
+            {
+              "name": "new retention solids",
+              "pass_": true,
+              "gap_mm": 2.7822000680236143,
+              "obstacle": "retainer frame"
+            },
+            {
+              "name": "LTE CAPH SZK-C-3L30 envelope",
+              "pass_": true,
+              "gap_mm": 0.2878112871794502,
+              "intentional_feed_joint_excluded": false
+            },
+            {
+              "name": "GNSS ZETA SZK-C-0G04 envelope",
+              "pass_": true,
+              "gap_mm": 0.2834100354295132,
+              "intentional_feed_joint_excluded": true
+            },
+            {
+              "name": "all bottom-side bodies",
+              "pass_": true,
+              "gap_mm": 0.9367833776474016
+            }
+          ],
+          "pass_": true
+        }
+      ],
+      "pass_": true
+    },
+    {
+      "pcb_pose_mm": [
+        0,
+        0.3,
+        11.24088
+      ],
+      "cables": [
+        {
+          "name": "LTE",
+          "checks": [
+            {
+              "name": "cavity wall",
+              "pass_": true,
+              "gap_mm": 3.6320895588984423
+            },
+            {
+              "name": "lid",
+              "pass_": true,
+              "gap_mm": 0.029300000000000596
+            },
+            {
+              "name": "nonlocal self clearance",
+              "pass_": true,
+              "gap_mm": 1.4695204290380466
+            },
+            {
+              "name": "new retention solids",
+              "pass_": true,
+              "gap_mm": 3.7409475941118404,
+              "obstacle": "lid hold-down"
+            },
+            {
+              "name": "LTE CAPH SZK-C-3L30 envelope",
+              "pass_": true,
+              "gap_mm": 0.5112414399999969,
+              "intentional_feed_joint_excluded": true
+            },
+            {
+              "name": "GNSS ZETA SZK-C-0G04 envelope",
+              "pass_": true,
+              "gap_mm": 0.5142999999999964,
+              "intentional_feed_joint_excluded": false
+            },
+            {
+              "name": "all bottom-side bodies",
+              "pass_": true,
+              "gap_mm": 1.115180000000002
+            }
+          ],
+          "pass_": true
+        },
+        {
+          "name": "GNSS",
+          "checks": [
+            {
+              "name": "cavity wall",
+              "pass_": true,
+              "gap_mm": 3.009815497631021
+            },
+            {
+              "name": "lid",
+              "pass_": true,
+              "gap_mm": 0.03178337764740051
+            },
+            {
+              "name": "nonlocal self clearance",
+              "pass_": true,
+              "gap_mm": 1.4538330028802735
+            },
+            {
+              "name": "new retention solids",
+              "pass_": true,
+              "gap_mm": 2.7833447633360606,
+              "obstacle": "retainer frame"
+            },
+            {
+              "name": "LTE CAPH SZK-C-3L30 envelope",
+              "pass_": true,
+              "gap_mm": 0.2878112871794502,
+              "intentional_feed_joint_excluded": false
+            },
+            {
+              "name": "GNSS ZETA SZK-C-0G04 envelope",
+              "pass_": true,
+              "gap_mm": 0.2834100354295132,
+              "intentional_feed_joint_excluded": true
+            },
+            {
+              "name": "all bottom-side bodies",
+              "pass_": true,
+              "gap_mm": 1.1176633776474019
+            }
+          ],
+          "pass_": true
+        }
+      ],
+      "pass_": true
+    },
+    {
+      "pcb_pose_mm": [
+        0,
+        0.3,
+        11.75
+      ],
+      "cables": [
+        {
+          "name": "LTE",
+          "checks": [
+            {
+              "name": "cavity wall",
+              "pass_": true,
+              "gap_mm": 3.630550884734624
+            },
+            {
+              "name": "lid",
+              "pass_": true,
+              "gap_mm": 0.02776132583618224
+            },
+            {
+              "name": "nonlocal self clearance",
+              "pass_": true,
+              "gap_mm": 1.46644308071041
+            },
+            {
+              "name": "new retention solids",
+              "pass_": true,
+              "gap_mm": 3.7394089199480223,
+              "obstacle": "lid hold-down"
+            },
+            {
+              "name": "LTE CAPH SZK-C-3L30 envelope",
+              "pass_": true,
+              "gap_mm": 0.5097027658361787,
+              "intentional_feed_joint_excluded": true
+            },
+            {
+              "name": "GNSS ZETA SZK-C-0G04 envelope",
+              "pass_": true,
+              "gap_mm": 0.5127613258361782,
+              "intentional_feed_joint_excluded": false
+            },
+            {
+              "name": "all bottom-side bodies",
+              "pass_": true,
+              "gap_mm": 1.622761325836183
+            }
+          ],
+          "pass_": true
+        },
+        {
+          "name": "GNSS",
+          "checks": [
+            {
+              "name": "cavity wall",
+              "pass_": true,
+              "gap_mm": 3.0018165086234068
+            },
+            {
+              "name": "lid",
+              "pass_": true,
+              "gap_mm": 0.03178337764740051
+            },
+            {
+              "name": "nonlocal self clearance",
+              "pass_": true,
+              "gap_mm": 1.4538330028802735
+            },
+            {
+              "name": "new retention solids",
+              "pass_": true,
+              "gap_mm": 2.788073731710432,
+              "obstacle": "retainer frame"
+            },
+            {
+              "name": "LTE CAPH SZK-C-3L30 envelope",
+              "pass_": true,
+              "gap_mm": 0.2878112871794502,
+              "intentional_feed_joint_excluded": false
+            },
+            {
+              "name": "GNSS ZETA SZK-C-0G04 envelope",
+              "pass_": true,
+              "gap_mm": 0.2834100354295132,
+              "intentional_feed_joint_excluded": true
+            },
+            {
+              "name": "all bottom-side bodies",
+              "pass_": true,
+              "gap_mm": 1.6267833776474012
+            }
+          ],
+          "pass_": true
+        }
+      ],
+      "pass_": true
+    },
+    {
+      "pcb_pose_mm": [
+        0.3,
+        -0.3,
+        11.06
+      ],
+      "cables": [
+        {
+          "name": "LTE",
+          "checks": [
+            {
+              "name": "cavity wall",
+              "pass_": true,
+              "gap_mm": 3.6320895588984423
+            },
+            {
+              "name": "lid",
+              "pass_": true,
+              "gap_mm": 0.029300000000000596
+            },
+            {
+              "name": "nonlocal self clearance",
+              "pass_": true,
+              "gap_mm": 1.4695204290380466
+            },
+            {
+              "name": "new retention solids",
+              "pass_": true,
+              "gap_mm": 3.7409475941118404,
+              "obstacle": "lid hold-down"
+            },
+            {
+              "name": "LTE CAPH SZK-C-3L30 envelope",
+              "pass_": true,
+              "gap_mm": 0.5112414399999969,
+              "intentional_feed_joint_excluded": true
+            },
+            {
+              "name": "GNSS ZETA SZK-C-0G04 envelope",
+              "pass_": true,
+              "gap_mm": 0.5142999999999964,
+              "intentional_feed_joint_excluded": false
+            },
+            {
+              "name": "all bottom-side bodies",
+              "pass_": true,
+              "gap_mm": 0.9343000000000017
+            }
+          ],
+          "pass_": true
+        },
+        {
+          "name": "GNSS",
+          "checks": [
+            {
+              "name": "cavity wall",
+              "pass_": true,
+              "gap_mm": 3.094238584562174
+            },
+            {
+              "name": "lid",
+              "pass_": true,
+              "gap_mm": 0.03178337764740051
+            },
+            {
+              "name": "nonlocal self clearance",
+              "pass_": true,
+              "gap_mm": 1.4538330028802735
+            },
+            {
+              "name": "new retention solids",
+              "pass_": true,
+              "gap_mm": 2.863122805049626,
+              "obstacle": "retainer frame"
+            },
+            {
+              "name": "LTE CAPH SZK-C-3L30 envelope",
+              "pass_": true,
+              "gap_mm": 0.2878112871794502,
+              "intentional_feed_joint_excluded": false
+            },
+            {
+              "name": "GNSS ZETA SZK-C-0G04 envelope",
+              "pass_": true,
+              "gap_mm": 0.2834100354295132,
+              "intentional_feed_joint_excluded": true
+            },
+            {
+              "name": "all bottom-side bodies",
+              "pass_": true,
+              "gap_mm": 0.9367833776474016
+            }
+          ],
+          "pass_": true
+        }
+      ],
+      "pass_": true
+    },
+    {
+      "pcb_pose_mm": [
+        0.3,
+        -0.3,
+        11.24088
+      ],
+      "cables": [
+        {
+          "name": "LTE",
+          "checks": [
+            {
+              "name": "cavity wall",
+              "pass_": true,
+              "gap_mm": 3.6320895588984423
+            },
+            {
+              "name": "lid",
+              "pass_": true,
+              "gap_mm": 0.029300000000000596
+            },
+            {
+              "name": "nonlocal self clearance",
+              "pass_": true,
+              "gap_mm": 1.4695204290380466
+            },
+            {
+              "name": "new retention solids",
+              "pass_": true,
+              "gap_mm": 3.7409475941118404,
+              "obstacle": "lid hold-down"
+            },
+            {
+              "name": "LTE CAPH SZK-C-3L30 envelope",
+              "pass_": true,
+              "gap_mm": 0.5112414399999969,
+              "intentional_feed_joint_excluded": true
+            },
+            {
+              "name": "GNSS ZETA SZK-C-0G04 envelope",
+              "pass_": true,
+              "gap_mm": 0.5142999999999964,
+              "intentional_feed_joint_excluded": false
+            },
+            {
+              "name": "all bottom-side bodies",
+              "pass_": true,
+              "gap_mm": 1.115180000000002
+            }
+          ],
+          "pass_": true
+        },
+        {
+          "name": "GNSS",
+          "checks": [
+            {
+              "name": "cavity wall",
+              "pass_": true,
+              "gap_mm": 3.091514732247216
+            },
+            {
+              "name": "lid",
+              "pass_": true,
+              "gap_mm": 0.03178337764740051
+            },
+            {
+              "name": "nonlocal self clearance",
+              "pass_": true,
+              "gap_mm": 1.4538330028802735
+            },
+            {
+              "name": "new retention solids",
+              "pass_": true,
+              "gap_mm": 2.86371084528369,
+              "obstacle": "retainer frame"
+            },
+            {
+              "name": "LTE CAPH SZK-C-3L30 envelope",
+              "pass_": true,
+              "gap_mm": 0.2878112871794502,
+              "intentional_feed_joint_excluded": false
+            },
+            {
+              "name": "GNSS ZETA SZK-C-0G04 envelope",
+              "pass_": true,
+              "gap_mm": 0.2834100354295132,
+              "intentional_feed_joint_excluded": true
+            },
+            {
+              "name": "all bottom-side bodies",
+              "pass_": true,
+              "gap_mm": 1.1176633776474019
+            }
+          ],
+          "pass_": true
+        }
+      ],
+      "pass_": true
+    },
+    {
+      "pcb_pose_mm": [
+        0.3,
+        -0.3,
+        11.75
+      ],
+      "cables": [
+        {
+          "name": "LTE",
+          "checks": [
+            {
+              "name": "cavity wall",
+              "pass_": true,
+              "gap_mm": 3.6320895588984423
+            },
+            {
+              "name": "lid",
+              "pass_": true,
+              "gap_mm": 0.029300000000000596
+            },
+            {
+              "name": "nonlocal self clearance",
+              "pass_": true,
+              "gap_mm": 1.4695204290380466
+            },
+            {
+              "name": "new retention solids",
+              "pass_": true,
+              "gap_mm": 3.7409475941118404,
+              "obstacle": "lid hold-down"
+            },
+            {
+              "name": "LTE CAPH SZK-C-3L30 envelope",
+              "pass_": true,
+              "gap_mm": 0.5112414399999969,
+              "intentional_feed_joint_excluded": true
+            },
+            {
+              "name": "GNSS ZETA SZK-C-0G04 envelope",
+              "pass_": true,
+              "gap_mm": 0.5142999999999964,
+              "intentional_feed_joint_excluded": false
+            },
+            {
+              "name": "all bottom-side bodies",
+              "pass_": true,
+              "gap_mm": 1.6243000000000014
+            }
+          ],
+          "pass_": true
+        },
+        {
+          "name": "GNSS",
+          "checks": [
+            {
+              "name": "cavity wall",
+              "pass_": true,
+              "gap_mm": 3.0849220437318405
+            },
+            {
+              "name": "lid",
+              "pass_": true,
+              "gap_mm": 0.03178337764740051
+            },
+            {
+              "name": "nonlocal self clearance",
+              "pass_": true,
+              "gap_mm": 1.4538330028802735
+            },
+            {
+              "name": "new retention solids",
+              "pass_": true,
+              "gap_mm": 2.866561938161419,
+              "obstacle": "retainer frame"
+            },
+            {
+              "name": "LTE CAPH SZK-C-3L30 envelope",
+              "pass_": true,
+              "gap_mm": 0.2878112871794502,
+              "intentional_feed_joint_excluded": false
+            },
+            {
+              "name": "GNSS ZETA SZK-C-0G04 envelope",
+              "pass_": true,
+              "gap_mm": 0.2834100354295132,
+              "intentional_feed_joint_excluded": true
+            },
+            {
+              "name": "all bottom-side bodies",
+              "pass_": true,
+              "gap_mm": 1.6267833776474012
+            }
+          ],
+          "pass_": true
+        }
+      ],
+      "pass_": true
+    },
+    {
+      "pcb_pose_mm": [
+        0.3,
+        0,
+        11.06
+      ],
+      "cables": [
+        {
+          "name": "LTE",
+          "checks": [
+            {
+              "name": "cavity wall",
+              "pass_": true,
+              "gap_mm": 3.6320895588984423
+            },
+            {
+              "name": "lid",
+              "pass_": true,
+              "gap_mm": 0.029300000000000596
+            },
+            {
+              "name": "nonlocal self clearance",
+              "pass_": true,
+              "gap_mm": 1.4695204290380466
+            },
+            {
+              "name": "new retention solids",
+              "pass_": true,
+              "gap_mm": 3.7409475941118404,
+              "obstacle": "lid hold-down"
+            },
+            {
+              "name": "LTE CAPH SZK-C-3L30 envelope",
+              "pass_": true,
+              "gap_mm": 0.5112414399999969,
+              "intentional_feed_joint_excluded": true
+            },
+            {
+              "name": "GNSS ZETA SZK-C-0G04 envelope",
+              "pass_": true,
+              "gap_mm": 0.5142999999999964,
+              "intentional_feed_joint_excluded": false
+            },
+            {
+              "name": "all bottom-side bodies",
+              "pass_": true,
+              "gap_mm": 0.9343000000000017
+            }
+          ],
+          "pass_": true
+        },
+        {
+          "name": "GNSS",
+          "checks": [
+            {
+              "name": "cavity wall",
+              "pass_": true,
+              "gap_mm": 3.063961834367353
+            },
+            {
+              "name": "lid",
+              "pass_": true,
+              "gap_mm": 0.03178337764740051
+            },
+            {
+              "name": "nonlocal self clearance",
+              "pass_": true,
+              "gap_mm": 1.4538330028802735
+            },
+            {
+              "name": "new retention solids",
+              "pass_": true,
+              "gap_mm": 2.833412897653494,
+              "obstacle": "retainer frame"
+            },
+            {
+              "name": "LTE CAPH SZK-C-3L30 envelope",
+              "pass_": true,
+              "gap_mm": 0.2878112871794502,
+              "intentional_feed_joint_excluded": false
+            },
+            {
+              "name": "GNSS ZETA SZK-C-0G04 envelope",
+              "pass_": true,
+              "gap_mm": 0.2834100354295132,
+              "intentional_feed_joint_excluded": true
+            },
+            {
+              "name": "all bottom-side bodies",
+              "pass_": true,
+              "gap_mm": 0.9367833776474016
+            }
+          ],
+          "pass_": true
+        }
+      ],
+      "pass_": true
+    },
+    {
+      "pcb_pose_mm": [
+        0.3,
+        0,
+        11.24088
+      ],
+      "cables": [
+        {
+          "name": "LTE",
+          "checks": [
+            {
+              "name": "cavity wall",
+              "pass_": true,
+              "gap_mm": 3.6320895588984423
+            },
+            {
+              "name": "lid",
+              "pass_": true,
+              "gap_mm": 0.029300000000000596
+            },
+            {
+              "name": "nonlocal self clearance",
+              "pass_": true,
+              "gap_mm": 1.4695204290380466
+            },
+            {
+              "name": "new retention solids",
+              "pass_": true,
+              "gap_mm": 3.7409475941118404,
+              "obstacle": "lid hold-down"
+            },
+            {
+              "name": "LTE CAPH SZK-C-3L30 envelope",
+              "pass_": true,
+              "gap_mm": 0.5112414399999969,
+              "intentional_feed_joint_excluded": true
+            },
+            {
+              "name": "GNSS ZETA SZK-C-0G04 envelope",
+              "pass_": true,
+              "gap_mm": 0.5142999999999964,
+              "intentional_feed_joint_excluded": false
+            },
+            {
+              "name": "all bottom-side bodies",
+              "pass_": true,
+              "gap_mm": 1.115180000000002
+            }
+          ],
+          "pass_": true
+        },
+        {
+          "name": "GNSS",
+          "checks": [
+            {
+              "name": "cavity wall",
+              "pass_": true,
+              "gap_mm": 3.0610726312994996
+            },
+            {
+              "name": "lid",
+              "pass_": true,
+              "gap_mm": 0.03178337764740051
+            },
+            {
+              "name": "nonlocal self clearance",
+              "pass_": true,
+              "gap_mm": 1.4538330028802735
+            },
+            {
+              "name": "new retention solids",
+              "pass_": true,
+              "gap_mm": 2.8342104397954717,
+              "obstacle": "retainer frame"
+            },
+            {
+              "name": "LTE CAPH SZK-C-3L30 envelope",
+              "pass_": true,
+              "gap_mm": 0.2878112871794502,
+              "intentional_feed_joint_excluded": false
+            },
+            {
+              "name": "GNSS ZETA SZK-C-0G04 envelope",
+              "pass_": true,
+              "gap_mm": 0.2834100354295132,
+              "intentional_feed_joint_excluded": true
+            },
+            {
+              "name": "all bottom-side bodies",
+              "pass_": true,
+              "gap_mm": 1.1176633776474019
+            }
+          ],
+          "pass_": true
+        }
+      ],
+      "pass_": true
+    },
+    {
+      "pcb_pose_mm": [
+        0.3,
+        0,
+        11.75
+      ],
+      "cables": [
+        {
+          "name": "LTE",
+          "checks": [
+            {
+              "name": "cavity wall",
+              "pass_": true,
+              "gap_mm": 3.6320895588984423
+            },
+            {
+              "name": "lid",
+              "pass_": true,
+              "gap_mm": 0.029300000000000596
+            },
+            {
+              "name": "nonlocal self clearance",
+              "pass_": true,
+              "gap_mm": 1.4695204290380466
+            },
+            {
+              "name": "new retention solids",
+              "pass_": true,
+              "gap_mm": 3.7409475941118404,
+              "obstacle": "lid hold-down"
+            },
+            {
+              "name": "LTE CAPH SZK-C-3L30 envelope",
+              "pass_": true,
+              "gap_mm": 0.5112414399999969,
+              "intentional_feed_joint_excluded": true
+            },
+            {
+              "name": "GNSS ZETA SZK-C-0G04 envelope",
+              "pass_": true,
+              "gap_mm": 0.5142999999999964,
+              "intentional_feed_joint_excluded": false
+            },
+            {
+              "name": "all bottom-side bodies",
+              "pass_": true,
+              "gap_mm": 1.6243000000000014
+            }
+          ],
+          "pass_": true
+        },
+        {
+          "name": "GNSS",
+          "checks": [
+            {
+              "name": "cavity wall",
+              "pass_": true,
+              "gap_mm": 3.054072021140745
+            },
+            {
+              "name": "lid",
+              "pass_": true,
+              "gap_mm": 0.03178337764740051
+            },
+            {
+              "name": "nonlocal self clearance",
+              "pass_": true,
+              "gap_mm": 1.4538330028802735
+            },
+            {
+              "name": "new retention solids",
+              "pass_": true,
+              "gap_mm": 2.8377444881572123,
+              "obstacle": "retainer frame"
+            },
+            {
+              "name": "LTE CAPH SZK-C-3L30 envelope",
+              "pass_": true,
+              "gap_mm": 0.2878112871794502,
+              "intentional_feed_joint_excluded": false
+            },
+            {
+              "name": "GNSS ZETA SZK-C-0G04 envelope",
+              "pass_": true,
+              "gap_mm": 0.2834100354295132,
+              "intentional_feed_joint_excluded": true
+            },
+            {
+              "name": "all bottom-side bodies",
+              "pass_": true,
+              "gap_mm": 1.6267833776474012
+            }
+          ],
+          "pass_": true
+        }
+      ],
+      "pass_": true
+    },
+    {
+      "pcb_pose_mm": [
+        0.3,
+        0.3,
+        11.06
+      ],
+      "cables": [
+        {
+          "name": "LTE",
+          "checks": [
+            {
+              "name": "cavity wall",
+              "pass_": true,
+              "gap_mm": 3.6320895588984423
+            },
+            {
+              "name": "lid",
+              "pass_": true,
+              "gap_mm": 0.029300000000000596
+            },
+            {
+              "name": "nonlocal self clearance",
+              "pass_": true,
+              "gap_mm": 1.4695204290380466
+            },
+            {
+              "name": "new retention solids",
+              "pass_": true,
+              "gap_mm": 3.7409475941118404,
+              "obstacle": "lid hold-down"
+            },
+            {
+              "name": "LTE CAPH SZK-C-3L30 envelope",
+              "pass_": true,
+              "gap_mm": 0.5112414399999969,
+              "intentional_feed_joint_excluded": true
+            },
+            {
+              "name": "GNSS ZETA SZK-C-0G04 envelope",
+              "pass_": true,
+              "gap_mm": 0.5142999999999964,
+              "intentional_feed_joint_excluded": false
+            },
+            {
+              "name": "all bottom-side bodies",
+              "pass_": true,
+              "gap_mm": 0.9343000000000017
+            }
+          ],
+          "pass_": true
+        },
+        {
+          "name": "GNSS",
+          "checks": [
+            {
+              "name": "cavity wall",
+              "pass_": true,
+              "gap_mm": 3.0328127575717194
+            },
+            {
+              "name": "lid",
+              "pass_": true,
+              "gap_mm": 0.03178337764740051
+            },
+            {
+              "name": "nonlocal self clearance",
+              "pass_": true,
+              "gap_mm": 1.4538330028802735
+            },
+            {
+              "name": "new retention solids",
+              "pass_": true,
+              "gap_mm": 2.8022615794810517,
+              "obstacle": "retainer frame"
+            },
+            {
+              "name": "LTE CAPH SZK-C-3L30 envelope",
+              "pass_": true,
+              "gap_mm": 0.2878112871794502,
+              "intentional_feed_joint_excluded": false
+            },
+            {
+              "name": "GNSS ZETA SZK-C-0G04 envelope",
+              "pass_": true,
+              "gap_mm": 0.2834100354295132,
+              "intentional_feed_joint_excluded": true
+            },
+            {
+              "name": "all bottom-side bodies",
+              "pass_": true,
+              "gap_mm": 0.9367833776474016
+            }
+          ],
+          "pass_": true
+        }
+      ],
+      "pass_": true
+    },
+    {
+      "pcb_pose_mm": [
+        0.3,
+        0.3,
+        11.24088
+      ],
+      "cables": [
+        {
+          "name": "LTE",
+          "checks": [
+            {
+              "name": "cavity wall",
+              "pass_": true,
+              "gap_mm": 3.6320895588984423
+            },
+            {
+              "name": "lid",
+              "pass_": true,
+              "gap_mm": 0.029300000000000596
+            },
+            {
+              "name": "nonlocal self clearance",
+              "pass_": true,
+              "gap_mm": 1.4695204290380466
+            },
+            {
+              "name": "new retention solids",
+              "pass_": true,
+              "gap_mm": 3.7409475941118404,
+              "obstacle": "lid hold-down"
+            },
+            {
+              "name": "LTE CAPH SZK-C-3L30 envelope",
+              "pass_": true,
+              "gap_mm": 0.5112414399999969,
+              "intentional_feed_joint_excluded": true
+            },
+            {
+              "name": "GNSS ZETA SZK-C-0G04 envelope",
+              "pass_": true,
+              "gap_mm": 0.5142999999999964,
+              "intentional_feed_joint_excluded": false
+            },
+            {
+              "name": "all bottom-side bodies",
+              "pass_": true,
+              "gap_mm": 1.115180000000002
+            }
+          ],
+          "pass_": true
+        },
+        {
+          "name": "GNSS",
+          "checks": [
+            {
+              "name": "cavity wall",
+              "pass_": true,
+              "gap_mm": 3.0297255818992364
+            },
+            {
+              "name": "lid",
+              "pass_": true,
+              "gap_mm": 0.03178337764740051
+            },
+            {
+              "name": "nonlocal self clearance",
+              "pass_": true,
+              "gap_mm": 1.4538330028802735
+            },
+            {
+              "name": "new retention solids",
+              "pass_": true,
+              "gap_mm": 2.8033038635432854,
+              "obstacle": "retainer frame"
+            },
+            {
+              "name": "LTE CAPH SZK-C-3L30 envelope",
+              "pass_": true,
+              "gap_mm": 0.2878112871794502,
+              "intentional_feed_joint_excluded": false
+            },
+            {
+              "name": "GNSS ZETA SZK-C-0G04 envelope",
+              "pass_": true,
+              "gap_mm": 0.2834100354295132,
+              "intentional_feed_joint_excluded": true
+            },
+            {
+              "name": "all bottom-side bodies",
+              "pass_": true,
+              "gap_mm": 1.1176633776474019
+            }
+          ],
+          "pass_": true
+        }
+      ],
+      "pass_": true
+    },
+    {
+      "pcb_pose_mm": [
+        0.3,
+        0.3,
+        11.75
+      ],
+      "cables": [
+        {
+          "name": "LTE",
+          "checks": [
+            {
+              "name": "cavity wall",
+              "pass_": true,
+              "gap_mm": 3.6320895588984423
+            },
+            {
+              "name": "lid",
+              "pass_": true,
+              "gap_mm": 0.029300000000000596
+            },
+            {
+              "name": "nonlocal self clearance",
+              "pass_": true,
+              "gap_mm": 1.4695204290380466
+            },
+            {
+              "name": "new retention solids",
+              "pass_": true,
+              "gap_mm": 3.7409475941118404,
+              "obstacle": "lid hold-down"
+            },
+            {
+              "name": "LTE CAPH SZK-C-3L30 envelope",
+              "pass_": true,
+              "gap_mm": 0.5112414399999969,
+              "intentional_feed_joint_excluded": true
+            },
+            {
+              "name": "GNSS ZETA SZK-C-0G04 envelope",
+              "pass_": true,
+              "gap_mm": 0.5142999999999964,
+              "intentional_feed_joint_excluded": false
+            },
+            {
+              "name": "all bottom-side bodies",
+              "pass_": true,
+              "gap_mm": 1.6243000000000014
+            }
+          ],
+          "pass_": true
+        },
+        {
+          "name": "GNSS",
+          "checks": [
+            {
+              "name": "cavity wall",
+              "pass_": true,
+              "gap_mm": 3.0222404220494608
+            },
+            {
+              "name": "lid",
+              "pass_": true,
+              "gap_mm": 0.03178337764740051
+            },
+            {
+              "name": "nonlocal self clearance",
+              "pass_": true,
+              "gap_mm": 1.4538330028802735
+            },
+            {
+              "name": "new retention solids",
+              "pass_": true,
+              "gap_mm": 2.8076336657921135,
+              "obstacle": "retainer frame"
+            },
+            {
+              "name": "LTE CAPH SZK-C-3L30 envelope",
+              "pass_": true,
+              "gap_mm": 0.2878112871794502,
+              "intentional_feed_joint_excluded": false
+            },
+            {
+              "name": "GNSS ZETA SZK-C-0G04 envelope",
+              "pass_": true,
+              "gap_mm": 0.2834100354295132,
+              "intentional_feed_joint_excluded": true
+            },
+            {
+              "name": "all bottom-side bodies",
+              "pass_": true,
+              "gap_mm": 1.6267833776474012
+            }
+          ],
+          "pass_": true
+        }
+      ],
+      "pass_": true
+    }
+  ],
+  "physical_flex_qualified": false,
+  "scope": "27 sampled endpoint poses: new retention solids, walls/lid, antennas, nonlocal self clearance and bottom-side thickness bound. Own feed-joint exclusion matches the preserved antenna model. No full continuous-motion or physical qualification."
+}

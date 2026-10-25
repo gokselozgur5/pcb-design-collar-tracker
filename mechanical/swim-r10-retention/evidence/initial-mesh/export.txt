@@ -1,0 +1,20 @@
+{
+  "source_sha256": "241c84d6ba98793c37344e1e46ddc4918e7b05322ba87daea7c9a90ffb8379b3",
+  "all_declared_geometry_checks_pass": true,
+  "external_size_mm": [
+    57.4,
+    49.4,
+    21.0
+  ],
+  "hydrostatic_design_pressure_kPa": 19.6133
+}
+Traceback (most recent call last):
+  File "/Users/gok/codex/projects/collar-tracker/scripts/export_retention_enclosure.py", line 79, in <module>
+    rows=[inspect(OUT/f'{n}.stl') for n in parts]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/gok/codex/projects/collar-tracker/scripts/export_retention_enclosure.py", line 79, in <listcomp>
+    rows=[inspect(OUT/f'{n}.stl') for n in parts]
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/gok/codex/projects/collar-tracker/scripts/export_retention_enclosure.py", line 76, in inspect
+    assert result['closed_oriented_manifold'],result
+AssertionError: {'file': 'carrier.stl', 'sha256': 'a849e6aa48cb37ed13148c75c1b67a9ca7a380014ed731c2c4512901678d56d6', 'triangles': 1096, 'vertices': 516, 'bounds_mm': [[-20.800003051757812, -16.800003051757812, 5.722046125811175e-07], [20.800003051757812, 16.800003051757812, 9.699999809265137]], 'dimensions_mm': [41.600006103515625, 33.600006103515625, 9.699999237060524], 'signed_volume_mm3': 385.29321376282985, 'bad_edge_count': 75, 'collapsed_faces_at_1e_5mm': 64, 'connected_surfaces': 1, 'closed_oriented_manifold': False}

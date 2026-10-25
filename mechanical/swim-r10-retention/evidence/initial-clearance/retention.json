@@ -1,0 +1,34 @@
+{
+  "status": "PROTOTYPE_GEOMETRY_NOT_PRODUCTION_QUALIFICATION",
+  "frame": {"outer_mm": [41.8, 33.8], "inner_mm": [40.7, 32.7], "outer_radius_mm": 1.9, "inner_radius_mm": 1.35, "bottom_z_mm": 11.5, "height_mm": 1.2},
+  "capture_tabs_xy_mm": [[-20.9,-9.5,-19.05,-6.5],[19.05,-9.5,20.9,-6.5]],
+  "north_tabs_xy_mm": [[-12,15.05,-10.4,16.9],[18.2,15.05,20.9,16.9]],
+  "lid_posts_xy_mm": [[-20.85,-9.5,-20.35,-6.5],[20.35,-9.5,20.85,-6.5],[-12,16.35,-10.4,16.85],[18.2,16.35,19.5,16.85]],
+  "lid_post_bottom_z_mm": 12.85,
+  "locator_ribs_xy_mm": [[-21,-1,-20.85,1],[20.85,-1,21,1],[-1,-17,1,-16.85],[-1,16.85,1,17]],
+  "guide_rails_xy_mm": [[-20.8,-15.5,-20.1,15.5],[20.1,-15.5,20.8,15.5],[-19.5,-16.8,19.5,-16.1],[-19.5,16.1,19.5,16.8]],
+  "guide_top_z_mm": 11.5,
+  "sim_bridge_bottom_z_mm": 10.65,
+  "sim_bridge_relief_xy_mm": [3.8,14.8,17.78,18.8],
+  "orientation_key": {"xy_mm": [-20.9,4.2,-20.4,5.8], "bottom_z_mm": 10.6, "slot_xy_mm": [-21,4.1,-20.1,5.9], "slot_bottom_z_mm": 10.5},
+  "dimension_requirements": {
+    "pcb_outline_overall_tolerance_mm": 0.1,
+    "frame_and_carrier_overall_tolerance_mm": 0.05,
+    "body_locator_aperture_overall_tolerance_mm": 0.04,
+    "body_cavity_overall_tolerance_mm": 0.05,
+    "axial_feature_tolerance_mm": 0.05,
+    "note": "Assigned manufacturing requirements, not a claim that a printer or supplier achieves them. Inspect before assembly. No forced lid closure."
+  },
+  "motion_screen": {
+    "pcb_to_carrier_xy_mm": 0.18,
+    "pcb_to_body_xy_mm": 0.3,
+    "retainer_to_body_xy_mm": 0.15,
+    "pcb_top_z_mm": [11.06,11.75],
+    "retainer_bottom_z_mm": [11.45,11.75],
+    "minimum_component_gap_mm": 0.2,
+    "note": "Conservative translational envelopes; cable endpoint cases are sampled. Physical assembly, impact, vibration, wear and coupled rotational motion are not qualified."
+  },
+  "prototype_retainer_material": "Unfilled, electrically insulating POM-C; TECAFORM AH natural candidate. Manufacturing acceptance and physical retention tests remain open.",
+  "physical_retention_qualified": false,
+  "physical_ingress_qualified": false
+}

@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1123" height="794" viewBox="0 0 1123 794">
+<rect width="1123" height="794" fill="white"/>
+<style>text{font-family:Arial,sans-serif;fill:#172b3c}</style>
+<text x="36" y="43" font-size="27" font-weight="700">CT-RET-001 | Captive PCB frame / r10</text>
+<rect x="36" y="60" width="1051" height="42" fill="#fff1d4" stroke="#e3b252" rx="5"/>
+<text x="50" y="88" font-size="17" font-weight="700">PROTOTYPE — manufacturing, thermal fit, retention strength and ingress remain unqualified</text>
+<text x="36" y="132" font-size="20" font-weight="700">Retainer plan</text>
+<defs><clipPath id="outline"><rect x="76.44" y="182.04" width="351.12" height="283.92" rx="15.959999999999999"/></clipPath></defs>
+<rect x="76.44" y="182.04" width="351.12" height="283.92" fill="#a66dae" stroke="#63366b" rx="15.959999999999999"/>
+<rect x="81.05999999999997" y="186.65999999999997" width="341.88000000000005" height="274.68000000000006" fill="white" stroke="none" rx="11.340000000000002"/>
+<g clip-path="url(#outline)">
+<rect x="76.44" y="378.6" width="15.539999999999983" height="25.200000000000003" fill="#a66dae" stroke="none" rx="0"/>
+<rect x="412.02" y="378.6" width="15.539999999999983" height="25.200000000000003" fill="#a66dae" stroke="none" rx="0"/>
+<rect x="151.2" y="182.04" width="13.439999999999998" height="15.539999999999983" fill="#a66dae" stroke="none" rx="0"/>
+<rect x="404.88" y="182.04" width="22.679999999999996" height="15.539999999999983" fill="#a66dae" stroke="none" rx="0"/>
+</g>
+<rect x="84.0" y="189.6" width="336.0" height="268.8" fill="none" stroke="#1d906d" stroke-width="1.4" stroke-dasharray="7 4"/>
+<rect x="76.44" y="275.28" width="4.2" height="13.439999999999998" fill="#e7a748" stroke="none" rx="0"/>
+<text x="168" y="169" font-size="16" font-weight="700">41.8 mm overall</text>
+<text x="439" y="317" font-size="16" font-weight="700">33.8</text>
+<text x="439" y="338" font-size="14" font-weight="400">mm</text>
+<text x="116" y="307" font-size="17" font-weight="400">40 x 32mm PCB outline</text>
+<text x="115" y="333" font-size="17" font-weight="400">Four inward capture tabs</text>
+<text x="112" y="359" font-size="16" font-weight="400">Key shown in orange</text>
+<text x="36" y="500" font-size="16" font-weight="400">Frame thickness: 1.2mm; aperture: 40.7 x 32.7mm.</text>
+<text x="36" y="526" font-size="15" font-weight="400">Board and its all-green Gerber remain unchanged.</text>
+<text x="36" y="551" font-size="15" font-weight="400">Rigid enclosure: 57.4 x 49.4 x 21.0mm, plus docking key.</text>
+<text x="510" y="132" font-size="20" font-weight="700">Assembly datums and checks</text>
+<rect x="504" y="145" width="583" height="30" fill="#f3f6f8" stroke="none" rx="0"/>
+<text x="512" y="165" font-size="13" font-weight="700">PCB support</text>
+<text x="672" y="165" font-size="13" font-weight="400">Z=10.40mm; thickness 0.71–0.91mm</text>
+<text x="512" y="196" font-size="13" font-weight="700">Guide / frame bottom</text>
+<text x="672" y="196" font-size="13" font-weight="400">Z=11.50mm nominal</text>
+<rect x="504" y="207" width="583" height="30" fill="#f3f6f8" stroke="none" rx="0"/>
+<text x="512" y="227" font-size="13" font-weight="700">Lid stop plane</text>
+<text x="672" y="227" font-size="13" font-weight="400">Z=12.85mm nominal</text>
+<text x="512" y="258" font-size="13" font-weight="700">Maximum PCB top</text>
+<text x="672" y="258" font-size="13" font-weight="400">Z=11.75mm in this model</text>
+<rect x="504" y="269" width="583" height="30" fill="#f3f6f8" stroke="none" rx="0"/>
+<text x="512" y="289" font-size="13" font-weight="700">SIM bridge</text>
+<text x="672" y="289" font-size="13" font-weight="400">Z=10.70mm; seated gap ≥0.20mm</text>
+<text x="512" y="320" font-size="13" font-weight="700">Component sweep</text>
+<text x="672" y="320" font-size="13" font-weight="400">85 envelopes; minimum gap 0.205mm</text>
+<rect x="504" y="331" width="583" height="30" fill="#f3f6f8" stroke="none" rx="0"/>
+<text x="512" y="351" font-size="13" font-weight="700">Cable endpoint poses</text>
+<text x="672" y="351" font-size="13" font-weight="400">27 cases; minimum body gap 0.299mm</text>
+<text x="512" y="382" font-size="13" font-weight="700">Tab overlap</text>
+<text x="672" y="382" font-size="13" font-weight="400">27 offset/yaw cases; ≥0.321mm² per tab</text>
+<rect x="504" y="393" width="583" height="30" fill="#f3f6f8" stroke="none" rx="0"/>
+<text x="512" y="413" font-size="13" font-weight="700">Manufacturing limits</text>
+<text x="672" y="413" font-size="13" font-weight="400">Assigned requirements; inspect actual parts</text>
+<text x="512" y="444" font-size="13" font-weight="700">Free play</text>
+<text x="672" y="444" font-size="13" font-weight="400">Captive frame; zero movement is not claimed</text>
+<rect x="504" y="455" width="583" height="30" fill="#f3f6f8" stroke="none" rx="0"/>
+<text x="512" y="475" font-size="13" font-weight="700">Material</text>
+<text x="672" y="475" font-size="13" font-weight="400">Insulating POM-C candidate; not approved</text>
+<text x="510" y="543" font-size="18" font-weight="700">Factory closure and service</text>
+<text x="510" y="568" font-size="13" font-weight="400">Insert SIM with power off and the board seated in the lifted carrier.</text>
+<text x="510" y="590" font-size="13" font-weight="400">Fit the key, inspect all tabs and cables, then close without force.</text>
+<rect x="36" y="620" width="1051" height="136" fill="#f3f6f8" stroke="none" rx="5"/>
+<text x="49" y="645" font-size="14" font-weight="400">Dimensions describe the ambient prototype. Verify manufacturing limits and thermal expansion before ordering.</text>
+<text x="49" y="668" font-size="14" font-weight="400">The PCB remains captive within assigned bounds; shock, vibration, stiffness, wear and anti-rattle behavior need testing.</text>
+<text x="49" y="691" font-size="14" font-weight="400">Cable checks sample endpoint movement. They do not prove every continuous deformation or physical flex life.</text>
+<text x="49" y="714" font-size="14" font-weight="400">The pack is still an unapproved supplier request. Pack retention, harness/dock and firmware remain unfinished.</text>
+<text x="49" y="737" font-size="14" font-weight="400">No supplier message, order or physical water/dust qualification is implied by this drawing.</text>
+<text x="36" y="780" font-size="13" font-weight="400">2026-10-26 | Units: mm | Plan schematic / dimensions govern | Prototype review | 1 / 1</text>
+</svg>

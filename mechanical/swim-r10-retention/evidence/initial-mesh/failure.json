@@ -1,0 +1,11 @@
+{
+  "result": "FAIL",
+  "finding": "Carrier STL collapses 64 triangles at 0.00001 mm and has 75 bad oriented edges; no accepted mesh receipt.",
+  "files": {
+    "carrier.stl": "a849e6aa48cb37ed13148c75c1b67a9ca7a380014ed731c2c4512901678d56d6",
+    "enclosure.scad": "8440ff063a7776004b45d1387d277a16b07c4fd4dd7287db0703d07abaa3af07",
+    "retention.scad": "2db8c07e6a3ba4475be607addc55994ff43c1fb968deb0544ce437d0b0e3e931",
+    "retention-checks.json": "a9b127abf3dfb38239c40bb3ae77f4f8bef9823a2ea8914d1efb2a57c50aa96b",
+    "export.txt": "08db0cfa0f10fcf6c8374760aa51695ce12d755811f2dbdc47fea4ef0b3c7661"
+  }
+}
