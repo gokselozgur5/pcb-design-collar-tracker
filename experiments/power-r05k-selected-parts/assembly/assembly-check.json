@@ -1,0 +1,31 @@
+{
+  "source_sha256": "bea6c52a7f045b5fb21ac9714f3db0c70207f150aab3e9587b891f08e4e2b4d3",
+  "schematic_sha256": "fcb47f41d004b507394d275c48a8d412292cb65f8ed52438a0113ba8d1647f60",
+  "exact_fitted_mpn_references": 65,
+  "unique_mpns": 38,
+  "dnp": [
+    "C11",
+    "C12"
+  ],
+  "unplaced_interfaces": [
+    "J3",
+    "J4",
+    "J5",
+    "J7"
+  ],
+  "coordinate_convention": "KiCad native drill/place origin (100,128) mm: X right, Y up, no bottom X negation; angles reduced modulo 360 only.",
+  "supplier_rotation_qualified": false,
+  "procurement_accepted": false,
+  "smt_dfm_analyzed": false,
+  "inputs": {
+    "experiments/power-r05k-selected-parts/hardware/bom.csv": "4a75f2a8d2b8999e5c7810bca29cba8f7bfefddf9da3dad08f4991cf5814a47f",
+    "experiments/power-r05k-selected-parts/assembly/native-positions.csv": "9099706b0eceb06cb99e1050528a63d0930bbd78f47852102f00ec39ad2dcc45",
+    "experiments/power-r05k-selected-parts/evidence/components.native.json": "3f32a1470f0548efc62930c3ee7028ad044a80d0da8d18afefc599624fbb682e",
+    "experiments/power-r05k-selected-parts/evidence/native-netlist.json": "d21a3a3788244c486fc5a066a547eec4bd4b0136f6a285d0d88f0dca113fb75f",
+    "scripts/build_r05k_assembly.py": "4fe61ec6e7fa66aa53ccc08721713e32812126edf2698d7d2ad7ae23bda4c96d"
+  },
+  "outputs": {
+    "candidate-bom.csv": "6b5c25ffdcf4a1ebd3f1637a923ea14e92ebf0ae604a677ae52b4657624c0111",
+    "candidate-cpl.csv": "a4b01c73ffb5aaf823014d0d9d457133797c26fba64d734b6deb378403cf15af"
+  }
+}
