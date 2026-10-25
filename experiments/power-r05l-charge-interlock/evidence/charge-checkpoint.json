@@ -1,0 +1,1128 @@
+{
+  "revision": "r05l charge interlock",
+  "source_sha256": "241c84d6ba98793c37344e1e46ddc4918e7b05322ba87daea7c9a90ffb8379b3",
+  "package": "experiments/power-r05l-charge-interlock/evidence/collar-tracker-05l-charge-final4-40x32-dfm.zip",
+  "zip_sha256": "c736c5d35ddfe4c4662e57606120f00f7358492e11d5fbb32eaf1d0ff6caf5d2",
+  "supplier_evidence": [
+    "evidence/jlc-check1",
+    "evidence/jlc-check2"
+  ],
+  "supplier_records": [
+    "637366592129687553",
+    "637366801595977730"
+  ],
+  "native_drc": {
+    "violations": 0,
+    "unconnected_items": 0,
+    "schematic_parity": 0
+  },
+  "electrical_acceptance": "HOLD",
+  "rf_acceptance": "HOLD",
+  "manufacturing_release": false,
+  "physical_ingress_test": false,
+  "external_inputs": {
+    "assembly/charge-interlock-r01/README.md": "f4507588a7837519946957ca5fdb9d4ededdcb0975ad3c5dbee8dbdd3272385a",
+    "assembly/charge-interlock-r01/sources.json": "50ca34787d645372b99baf6097792784037a3381bc2aa035e29cefdbe475c85f",
+    "mechanical/swim-r07-charge-interlock/README.md": "0ec155457fd9b65d423b58767c598099076a82e9bbcc0a6f236eba0dd9997816",
+    "mechanical/swim-r07-charge-interlock/body.stl": "5763ed2b6a0dcaf534ed4a8beba34a2e9f523cf8b71a286e0b6fb33326bd9259",
+    "mechanical/swim-r07-charge-interlock/boot.stl": "a1c77e77737ce555b62d80ec083bd381eae3fbe769c296a64e1d621016abc1cc",
+    "mechanical/swim-r07-charge-interlock/carrier.stl": "6d618636327859703c95fa33bc5eb0987c7072d0b5623e846c36a974c84062d1",
+    "mechanical/swim-r07-charge-interlock/checks.json": "329e5515aa73f7feebc74367d9cf09351a8359a766d76fee0715733717c3adf3",
+    "mechanical/swim-r07-charge-interlock/components.native.json": "448db77589a4f1355f7f7a953590fef540bec405dd1edbf7ffd6e66885c1331c",
+    "mechanical/swim-r07-charge-interlock/contact.stl": "74affd9bc90ea7fd0e57a819ebadc3e38008f09c475df4df877a845d22e4c5fc",
+    "mechanical/swim-r07-charge-interlock/contact_seal.stl": "309155bd7fe66d11baa5d0c4c2e9514fffb0d2ed44eb2ef7e21ebc39af609eac",
+    "mechanical/swim-r07-charge-interlock/dock.stl": "4fc9208972863c98dc03e07dfca8fee7e374eb8cf3aed368431121087f43ccdb",
+    "mechanical/swim-r07-charge-interlock/enclosure.scad": "fccff2175c5acec8b053b1752f8ea1a3f837301c1262fd35f18987be94da2b78",
+    "mechanical/swim-r07-charge-interlock/exploded.png": "829b901cede6873e7b62b0075348e1e582250d68c032572b6dc2815a853885c1",
+    "mechanical/swim-r07-charge-interlock/fit-profile.json": "5d951ab23e43953a50d4729b2e45b13dd3ce95e773ee4dd423dbd57675534f2b",
+    "mechanical/swim-r07-charge-interlock/lid.stl": "1088953cb6a57fa478cd0f046446ae8153e99eaf01b5d9f6f1af6d2856e230d5",
+    "mechanical/swim-r07-charge-interlock/magnet_plug.stl": "1bfe436b31b425f5976cf7c830fee9278e13a6979fc562ba9260b005d03105d2",
+    "mechanical/swim-r07-charge-interlock/mesh-checks.json": "cf25547d47517cc5b7abf6ad99bcf4572d6d59992df440954af7484bcb2bb578",
+    "mechanical/swim-r07-charge-interlock/mounted.png": "d14f14adddea81e53d77f42f0c3400fc040c0aa4f204a13dfca54568daaef749",
+    "mechanical/swim-r07-charge-interlock/parameters.json": "b879d64367d2a2288a60ef786c34a18bcb18ec0488e0413577a9fd39053761a0",
+    "mechanical/swim-r07-charge-interlock/parameters.scad": "d0bdf93a562cd18965026817c034a2834246ce3515d2c75da76a203e3e000676",
+    "mechanical/swim-r07-charge-interlock/populated-fit.json": "21762f1114c376f3fa201fa2d19a97b00c8c31113da68aa1d9fc5cc684c53b74",
+    "mechanical/swim-r07-charge-interlock/populated.png": "3c16f00417a3a776faf166fb2cd3dfc681f5911f457003f16bee7eb788651059",
+    "mechanical/swim-r07-charge-interlock/populated.scad": "0fda43bd09f07fac668756b5309be66447872b15a303bc6bd7677966507b759b",
+    "mechanical/swim-r07-charge-interlock/section.png": "0941ec0ccd25fb5d351120ffdc96d323190781e96d3e4b8f349faadd340432ed",
+    "scripts/build_charge_assembly.py": "d1e85d47b78857eb9d8ae671a37ac695f342c22fa9999526f4c11513f8053838",
+    "scripts/check_charge_fit.py": "3eb6a034a69a11cec3b555f875739c1d11ac9703720f167368b60a5985eec21c",
+    "scripts/check_charge_preservation.py": "7a5a8dfe22fbb51b8e02b5683294360f2b10be60461d4ffba91162efdcd465d1",
+    "scripts/check_charge_r05l.py": "3f8d5b278ea641e539ebba5972b3c1eac612f0fe72e643cbd27e53928c54d47b",
+    "scripts/export_charge_enclosure.py": "131bae9a044f586443fc50e70fbd71aad29acd7e604a3b5a380233dbdbde23a8",
+    "scripts/verify_charge_candidate.py": "f185ae7820c5d6cff12f52953bbad9f438a6f3a5247e9e5dd38d830602171e43",
+    "tests/test_charge_r05l.py": "32fe4b8eb1e4de5db96e9a2bcd09cad4af9a94407291663ee07b9d4dedbe8e48"
+  },
+  "files": [
+    {
+      "path": "hardware/Collar.kicad_sym",
+      "bytes": 48871,
+      "sha256": "5f4864d3fca574c2afe54286f2f26062485f5f493f471c143c8ef4b0ac734c30"
+    },
+    {
+      "path": "hardware/Collar.pretty/Contact_1x05_P1.27mm.kicad_mod",
+      "bytes": 1861,
+      "sha256": "3981af8d7bd8fe3a38038ed006ce564639b6e7d3f7ae8b94c6c00a047ac3e2cb"
+    },
+    {
+      "path": "hardware/Collar.pretty/Contact_2x03_P1.27mm.kicad_mod",
+      "bytes": 2043,
+      "sha256": "7ab465696aed4386ecb0f4dadc669ec2360785256c6dcc53b0e3c33c0aadd230"
+    },
+    {
+      "path": "hardware/Collar.pretty/Contact_2x06_P1.27mm.kicad_mod",
+      "bytes": 3039,
+      "sha256": "d0dfe837bdb6a9dada5e2e5e993b89f17463169351cfff57469739d7086ff309"
+    },
+    {
+      "path": "hardware/Collar.pretty/LGA_9151_12.1x11.1mm.kicad_mod",
+      "bytes": 19847,
+      "sha256": "6f9c2671f9240494f57498bf9ae4f9246e20ae1e968c71be27b7ec9aecc0ed7a"
+    },
+    {
+      "path": "hardware/Collar.pretty/SKY65943_DK10171.kicad_mod",
+      "bytes": 5922,
+      "sha256": "1574637b0ccd24ab853a098e6dfb7afd983df622603f8102d69540bc5795a483"
+    },
+    {
+      "path": "hardware/Collar.pretty/Solder_1x02_P2.5mm.kicad_mod",
+      "bytes": 1391,
+      "sha256": "71bf37b1cf9b18b30c3803baf4bd32b3e9df5c55fa3c118a3c46cac8f001b92a"
+    },
+    {
+      "path": "hardware/Collar.pretty/Solder_1x03_P2.5mm.kicad_mod",
+      "bytes": 1540,
+      "sha256": "ebe32c51b1c2e764de90efee342f6f37b77fd42be004aa99b742eea2416de9e1"
+    },
+    {
+      "path": "hardware/Collar.pretty/nRF9151_DK10171.kicad_mod",
+      "bytes": 24320,
+      "sha256": "97522259b3f159dd2fc2b9ba0d44aec470e340679b3ea67f3335e08f39d3491f"
+    },
+    {
+      "path": "hardware/Collar033.pretty/C10_C_0402_1005Metric.kicad_mod",
+      "bytes": 3224,
+      "sha256": "c6979daf2bb9cc6d11a949704faa5e831247dd17cf694da33e51e3ffbd6103da"
+    },
+    {
+      "path": "hardware/Collar033.pretty/C11_C_0402_1005Metric.kicad_mod",
+      "bytes": 3181,
+      "sha256": "2abf2cc6b1570567d5bd615b1cee383d01e99f51a5a16dafc7fb5261be33bf6e"
+    },
+    {
+      "path": "hardware/Collar033.pretty/C12_C_0402_1005Metric.kicad_mod",
+      "bytes": 3181,
+      "sha256": "62ac1c006f1057cf7031fdd98e13873c73151e9cec7927809278d9f6b866b354"
+    },
+    {
+      "path": "hardware/Collar033.pretty/C13_C_0402_1005Metric.kicad_mod",
+      "bytes": 3174,
+      "sha256": "2b9312fd2e4330ae40e9272e7c6ba9daf2846575a1b7ad01a83141fad0d93600"
+    },
+    {
+      "path": "hardware/Collar033.pretty/C14_C_0402_1005Metric.kicad_mod",
+      "bytes": 3174,
+      "sha256": "b3c9e22fe35cb49e6aa93c8736a9e47fa3478ba9ea11bef51dd894aa96cf8ae3"
+    },
+    {
+      "path": "hardware/Collar033.pretty/C15_C_0402_1005Metric.kicad_mod",
+      "bytes": 3168,
+      "sha256": "3a913e4711191967dcff66077f568c66478bdf760843a90f613f754e5b289e80"
+    },
+    {
+      "path": "hardware/Collar033.pretty/C16_C_0402_1005Metric.kicad_mod",
+      "bytes": 3170,
+      "sha256": "0e185c617b5ef69fa5d994b0fe1fa69f364f500eb778f78befbb5d4ced381498"
+    },
+    {
+      "path": "hardware/Collar033.pretty/C17_C_0402_1005Metric.kicad_mod",
+      "bytes": 3215,
+      "sha256": "05b6a16cdeb69b5c6389c31593a02cad537f6eae01def5538dd8023e804bafa8"
+    },
+    {
+      "path": "hardware/Collar033.pretty/C18_C_0603_1608Metric.kicad_mod",
+      "bytes": 3164,
+      "sha256": "6657e6b516e85dee22d528ea983b52682cd6d9b4367b00d831508d1ebb1a1eee"
+    },
+    {
+      "path": "hardware/Collar033.pretty/C19_C_0402_1005Metric.kicad_mod",
+      "bytes": 3171,
+      "sha256": "0b5f63f1b8dc4984e3ebcd86d635547c669ff5745df36cb6398065a3113aeec7"
+    },
+    {
+      "path": "hardware/Collar033.pretty/C1_C_0201_0603Metric.kicad_mod",
+      "bytes": 3249,
+      "sha256": "7763dff61e6199dbf3eaef9894893f7034ee100e6bb7b06ca1a30822384d2b5e"
+    },
+    {
+      "path": "hardware/Collar033.pretty/C20_C_0402_1005Metric.kicad_mod",
+      "bytes": 3166,
+      "sha256": "cc773c272221884fe7fd2de08db18f7c7ef0d8c8b4f46c3e0682dba68012ee38"
+    },
+    {
+      "path": "hardware/Collar033.pretty/C21_C_0402_1005Metric.kicad_mod",
+      "bytes": 3166,
+      "sha256": "a34dbb59f4dcc06ee4ec1fc1d8489edf82a055ccc6ab9feba3e0c10501e9e9d7"
+    },
+    {
+      "path": "hardware/Collar033.pretty/C22_C_0402_1005Metric.kicad_mod",
+      "bytes": 3223,
+      "sha256": "110409f187231e12a41f27c13c386184f8ddc347d4566295235a604e76f66cab"
+    },
+    {
+      "path": "hardware/Collar033.pretty/C23_C_0402_1005Metric.kicad_mod",
+      "bytes": 3168,
+      "sha256": "250d977ef3220995de51b326bc63ed1f505a055c511af24f301d6d20fb1eb6c6"
+    },
+    {
+      "path": "hardware/Collar033.pretty/C24_C_0402_1005Metric.kicad_mod",
+      "bytes": 3168,
+      "sha256": "0a9de50b2e2d1e8c55101763838ae866b2915fe6fbdc3c70450d4257c4f696fb"
+    },
+    {
+      "path": "hardware/Collar033.pretty/C2_C_0201_0603Metric.kicad_mod",
+      "bytes": 3253,
+      "sha256": "d85e88bcd34d7f29e3cb3ad5c1be072bd87bc8a8e19ccbdcc591014a04e53314"
+    },
+    {
+      "path": "hardware/Collar033.pretty/C3_C_0805_2012Metric.kicad_mod",
+      "bytes": 3286,
+      "sha256": "405776fef0e2e1600e1b1a26a2590a0f7b3bc3934df879f017e955c607b5fb1b"
+    },
+    {
+      "path": "hardware/Collar033.pretty/C4_C_0603_1608Metric.kicad_mod",
+      "bytes": 3236,
+      "sha256": "a15bb79f398400efb19cb1585167216ee4c674a6d2c466c3a8874bc39c12f5f9"
+    },
+    {
+      "path": "hardware/Collar033.pretty/C5_C_0201_0603Metric.kicad_mod",
+      "bytes": 3246,
+      "sha256": "1473b6bf4c844075dec24fe9668ef5e95ec06ef1a30ca4aa7d0b31cb4931ae89"
+    },
+    {
+      "path": "hardware/Collar033.pretty/C6_C_0402_1005Metric.kicad_mod",
+      "bytes": 3184,
+      "sha256": "ae9619ad00b2dbfcc2f013fd4f2dcead095eb0b8b0f85eab762b25e2bb79c4d4"
+    },
+    {
+      "path": "hardware/Collar033.pretty/C7_C_0402_1005Metric.kicad_mod",
+      "bytes": 3184,
+      "sha256": "cd8a0758a3706568db3c39191831ffda7f8c7c3876d7eeba245df9d312a2a397"
+    },
+    {
+      "path": "hardware/Collar033.pretty/C8_C_0201_0603Metric.kicad_mod",
+      "bytes": 3285,
+      "sha256": "d5708e53aff9dd88db27242ef8635db325fd7e3392ef6887ad0d1a5b96549828"
+    },
+    {
+      "path": "hardware/Collar033.pretty/C9_C_0402_1005Metric.kicad_mod",
+      "bytes": 3211,
+      "sha256": "f75f9550952af02e2fae9f00b30a55191dc96431f3c4c2a39766fea1a1b566c8"
+    },
+    {
+      "path": "hardware/Collar033.pretty/FB1_L_0603_1608Metric.kicad_mod",
+      "bytes": 3248,
+      "sha256": "3535a30a95541b65ace816f04f60d067ff1d8f7cd9030a7edfa38d85c2131c07"
+    },
+    {
+      "path": "hardware/Collar033.pretty/J1_U.FL_Hirose_U.FL-R-SMT-1_Vertical.kicad_mod",
+      "bytes": 31017,
+      "sha256": "e7fd1891b15d3b7b9f69aeb333b63bef2d4bde30f0181c6ec41177f38ed4598b"
+    },
+    {
+      "path": "hardware/Collar033.pretty/J2_U.FL_Hirose_U.FL-R-SMT-1_Vertical.kicad_mod",
+      "bytes": 31038,
+      "sha256": "1f37c60c94f442bc48cfcabff152b07f00f8329c2709261f58125f9a7ea271c1"
+    },
+    {
+      "path": "hardware/Collar033.pretty/J3_Solder_1x02_P2.5mm.kicad_mod",
+      "bytes": 1924,
+      "sha256": "6a9d7f3e2cf4bf56909daccc19221b7f12e91998db966a0d4781c806c47df9d5"
+    },
+    {
+      "path": "hardware/Collar033.pretty/J4_Solder_1x03_P2.5mm.kicad_mod",
+      "bytes": 2156,
+      "sha256": "5ed2b9fa2c5114b68d2bd717ee6698c58bab29eedb34e81c249fd9a33d428e26"
+    },
+    {
+      "path": "hardware/Collar033.pretty/J5_Contact_2x06_P1.27mm.kicad_mod",
+      "bytes": 3916,
+      "sha256": "a9a69d41dcd5b654020a97ab24c98a6a9dc1cf04c401b1e222728ace2b32cc70"
+    },
+    {
+      "path": "hardware/Collar033.pretty/J6_Contact_1x05_P1.27mm.kicad_mod",
+      "bytes": 2535,
+      "sha256": "0b733e47472e02efaa666a21d11ee8feb46b9894dd34ad4b3e26110eff134757"
+    },
+    {
+      "path": "hardware/Collar033.pretty/J7_Contact_2x03_P1.27mm.kicad_mod",
+      "bytes": 2732,
+      "sha256": "a62ac7c8a4dc07aa263cbd6727fab20858231c7cf5f4f675d5bfd88ee52bcd0c"
+    },
+    {
+      "path": "hardware/Collar033.pretty/L1_L_0402_1005Metric.kicad_mod",
+      "bytes": 2797,
+      "sha256": "f981b11953bab8a25bc5c156c6f9d0324e9d5fa7ac655b42bef55193b6f6fb8a"
+    },
+    {
+      "path": "hardware/Collar033.pretty/R10_R_0402_1005Metric.kicad_mod",
+      "bytes": 3222,
+      "sha256": "fdda4c1ebd4d2109a069dee8d05eedc8c20614fea296b8e186030b60f99cf8fa"
+    },
+    {
+      "path": "hardware/Collar033.pretty/R11_R_0402_1005Metric.kicad_mod",
+      "bytes": 3222,
+      "sha256": "12e51c40219b4de8438f7a37b3d6969abd3380ac5fadb26dfcb02eee7d3e1339"
+    },
+    {
+      "path": "hardware/Collar033.pretty/R12_R_0402_1005Metric.kicad_mod",
+      "bytes": 3168,
+      "sha256": "11a841a9038df488bbba7bef06b251423f47560dd8cd702ffb2b2f4005afdfaf"
+    },
+    {
+      "path": "hardware/Collar033.pretty/R13_R_0402_1005Metric.kicad_mod",
+      "bytes": 3168,
+      "sha256": "8ef24daa15698c0d6a94b361f044c203b7bb3a7203800245dc16e71551456ed4"
+    },
+    {
+      "path": "hardware/Collar033.pretty/R14_R_0402_1005Metric.kicad_mod",
+      "bytes": 3224,
+      "sha256": "45f19e41bedde28933868be87888d2c1d7c2b96d79b4a20b628873cd524a1337"
+    },
+    {
+      "path": "hardware/Collar033.pretty/R15_R_0402_1005Metric.kicad_mod",
+      "bytes": 3224,
+      "sha256": "ac9e19ba62c986234cfe79096d4d43438bca5d5c6f4d130b9fb3676450fe5702"
+    },
+    {
+      "path": "hardware/Collar033.pretty/R1_R_0402_1005Metric.kicad_mod",
+      "bytes": 3210,
+      "sha256": "7ddc0b254b8e38208f589f134068b95213714a020050120c4bdbc7f65ad1a309"
+    },
+    {
+      "path": "hardware/Collar033.pretty/R2_R_0402_1005Metric.kicad_mod",
+      "bytes": 3221,
+      "sha256": "241b741c690eda6f40d7f57a1397ecdff1b6905cb598acca77765740954e2776"
+    },
+    {
+      "path": "hardware/Collar033.pretty/R3_R_0402_1005Metric.kicad_mod",
+      "bytes": 3172,
+      "sha256": "a4f6a3bb7a3aa2e353a322bf4ba80e3521841f500786302edc77a5fd81838d80"
+    },
+    {
+      "path": "hardware/Collar033.pretty/R4_R_0402_1005Metric.kicad_mod",
+      "bytes": 3165,
+      "sha256": "ab0e3d95b0a76b3fccc4c63aaaf3062b80c93d5f42063717cc2ef302cffe12c3"
+    },
+    {
+      "path": "hardware/Collar033.pretty/R5_R_0402_1005Metric.kicad_mod",
+      "bytes": 3167,
+      "sha256": "16cd27a2f21f244ff96b74a0abb1761652b8633a62eb780e935e0c65c7ef86d5"
+    },
+    {
+      "path": "hardware/Collar033.pretty/R6_R_0402_1005Metric.kicad_mod",
+      "bytes": 3203,
+      "sha256": "372d21b7cf3a97a0441379572637a159046de9ffd484d7d9508196ad82cbfe76"
+    },
+    {
+      "path": "hardware/Collar033.pretty/R7_R_0402_1005Metric.kicad_mod",
+      "bytes": 3204,
+      "sha256": "18516556324a6b554e96fb63fd5241882921fcaabbe2a2bb82e5ee82da5fb372"
+    },
+    {
+      "path": "hardware/Collar033.pretty/R8_R_0402_1005Metric.kicad_mod",
+      "bytes": 3222,
+      "sha256": "2210d68f15e57fb6855d1807796d43414d69998d9f5b4804bcf15ce71d66fef9"
+    },
+    {
+      "path": "hardware/Collar033.pretty/R9_R_0402_1005Metric.kicad_mod",
+      "bytes": 3222,
+      "sha256": "751cb577bd5a956af2f03dd54ae8acd7a6f844c0d358b541cffd27691547bd43"
+    },
+    {
+      "path": "hardware/Collar033.pretty/U1_LGA_9151_12.1x11.1mm.kicad_mod",
+      "bytes": 26726,
+      "sha256": "85f27d9f23a7de99ed89a79ac72e134676806cbda51075ba72601f37597a14e9"
+    },
+    {
+      "path": "hardware/Collar033.pretty/U2_SKY65943_DK10171.kicad_mod",
+      "bytes": 7215,
+      "sha256": "d6baf9ece136a2771f548473fc3354c29c51a503faf7a2d8cd1d04533b974e43"
+    },
+    {
+      "path": "hardware/Collar033.pretty/U3_Texas_DLH0010A_WSON-10-1EP_2.2x2mm_P0.4mm_EP0.9x1.5mm.kicad_mod",
+      "bytes": 6904,
+      "sha256": "2cf557f6eb65938bef781888a0366065d26b4dd01e2d07b120878d7febd92006"
+    },
+    {
+      "path": "hardware/Collar033.pretty/U4_SOT-23-5.kicad_mod",
+      "bytes": 7157,
+      "sha256": "b177e0f440415042888117f9b0bc1b7c04844dbcfdf4eaa6c615b08443e79c16"
+    },
+    {
+      "path": "hardware/Collar033.pretty/U5_LGA-12_2x2mm_P0.5mm.kicad_mod",
+      "bytes": 7206,
+      "sha256": "dee83f6942dba70edbd45f20d3044d6c938434626b7261030e9a2f9e87d14824"
+    },
+    {
+      "path": "hardware/Collar04.pretty/SIM8051_6_0_14_00_A.kicad_mod",
+      "bytes": 6311,
+      "sha256": "60162a9ca77948d0e80159e9bf13bc0d72917df7c2cf07662d20c4e6dc84955e"
+    },
+    {
+      "path": "hardware/Collar04.pretty/TPD4E1U06DCKR.kicad_mod",
+      "bytes": 4891,
+      "sha256": "621c291775e4fcf642ba210e6d6e869c74a77e75b85d8bb8edec45ad6e2c9241"
+    },
+    {
+      "path": "hardware/Collar05.pretty/C25_C_0805_2012Metric.kicad_mod",
+      "bytes": 2889,
+      "sha256": "3cbcaba30c28dac348f77112c50a81c8ed08fd890ed2cd6cbd10a22fd7bfe92d"
+    },
+    {
+      "path": "hardware/Collar05.pretty/C26_C_0402_1005Metric.kicad_mod",
+      "bytes": 2795,
+      "sha256": "18f6d4fb59ee4bc128dd13628d5f495e591bc61f1ca732c84af6a3461cd22a05"
+    },
+    {
+      "path": "hardware/Collar05.pretty/C27_C_0402_1005Metric.kicad_mod",
+      "bytes": 2795,
+      "sha256": "a68a5b1ec52363a8ab6d480780b75e7f9b5c36450a621b41e1c9b94e4b5e8923"
+    },
+    {
+      "path": "hardware/Collar05.pretty/C28_C_0402_1005Metric.kicad_mod",
+      "bytes": 2795,
+      "sha256": "69c4fad6fe233fa83142164d3334a89447eefa77b236c80d93b8bc3b6ab2dd8e"
+    },
+    {
+      "path": "hardware/Collar05.pretty/C29_C_0402_1005Metric.kicad_mod",
+      "bytes": 2795,
+      "sha256": "e82a93c6db27ab65b7100d5e36a1166e753f4f46776fe65c3fd7efcd5d341e64"
+    },
+    {
+      "path": "hardware/Collar05.pretty/C30_C_0402_1005Metric.kicad_mod",
+      "bytes": 2795,
+      "sha256": "dafcb73692b8913a8f93f30c022cae9f58ecb64482e172c10ea0980e635264f3"
+    },
+    {
+      "path": "hardware/Collar05.pretty/C9_C_0805_2012Metric.kicad_mod",
+      "bytes": 2888,
+      "sha256": "4b9ff8e926bb4cd758cc737033659dba6a8e198f55696431e6a9fd1fd6d46973"
+    },
+    {
+      "path": "hardware/Collar05.pretty/MAX17048_T822_3_90_0065E.kicad_mod",
+      "bytes": 1951,
+      "sha256": "eecda9d5269c546ff417ce3f702e7867276bbf5b430b546031354e2fd90825ad"
+    },
+    {
+      "path": "hardware/Collar05.pretty/Q1_SOT-363_SC-70-6.kicad_mod",
+      "bytes": 6513,
+      "sha256": "ae04e9f3e1c116faa85efd92ec49f4535ad93d8139be6abd95eb31bf417fe01f"
+    },
+    {
+      "path": "hardware/Collar05.pretty/R16_R_0402_1005Metric.kicad_mod",
+      "bytes": 2796,
+      "sha256": "3fe768c861837cea1fca72faf9d6f75537353f80ff617aaafad5e52161a85545"
+    },
+    {
+      "path": "hardware/Collar05.pretty/R17_R_0402_1005Metric.kicad_mod",
+      "bytes": 2796,
+      "sha256": "26a16df58719fb76b41a268fac2a01c00d048b64ede799de2273ee549056a24d"
+    },
+    {
+      "path": "hardware/Collar05.pretty/R18_R_0402_1005Metric.kicad_mod",
+      "bytes": 2796,
+      "sha256": "9d4ffa4ac61b8cac804a9c5e0f5eff7cfb777e785c62c1584a3b3a7db0e3c6ad"
+    },
+    {
+      "path": "hardware/Collar05.pretty/R19_R_0402_1005Metric.kicad_mod",
+      "bytes": 2796,
+      "sha256": "53e2bc814cb26fc26edf81fd5483f60a42efa8524ae989763e85f1105698f236"
+    },
+    {
+      "path": "hardware/Collar05.pretty/R20_R_0402_1005Metric.kicad_mod",
+      "bytes": 2796,
+      "sha256": "247d0df682a89c7c529185fc852a0de50b286b282de4d5663bf767ba53308948"
+    },
+    {
+      "path": "hardware/Collar05.pretty/R21_R_0402_1005Metric.kicad_mod",
+      "bytes": 2796,
+      "sha256": "bff1e3617bb1d0a242e04c408595ecbdd73ffcc24fac69e0c351067b923c2d1b"
+    },
+    {
+      "path": "hardware/Collar05.pretty/R22_R_0402_1005Metric.kicad_mod",
+      "bytes": 2796,
+      "sha256": "233c3dedfe0ff78c96ae368130e76a2fe6c1ad2eee723936ff3f7f9a0603f83d"
+    },
+    {
+      "path": "hardware/Collar05.pretty/R23_R_0402_1005Metric.kicad_mod",
+      "bytes": 2796,
+      "sha256": "be071c0787eeb594987aac241d74aa5f2bad7893a0ef0f6fa17d25ed2a905aad"
+    },
+    {
+      "path": "hardware/Collar05.pretty/U6_SOT-23-6.kicad_mod",
+      "bytes": 6549,
+      "sha256": "00b0c96de5d66b3ce8ed030f9ea91e44cf86203257884621169f80a044740d7c"
+    },
+    {
+      "path": "hardware/Collar05.pretty/U7_SOT-23-6.kicad_mod",
+      "bytes": 6550,
+      "sha256": "19af64815fa10df77c6c1b7444c27d933e1a988378fb0c851147464a274bfde9"
+    },
+    {
+      "path": "hardware/Collar05.pretty/U8_SOT-353_SC-70-5.kicad_mod",
+      "bytes": 7341,
+      "sha256": "0d5b6e921eca231faaffa26eb5dc1cddd6cd253b2ed144e9e50f2acd133a083c"
+    },
+    {
+      "path": "hardware/Collar05.pretty/U9_MAX17048_T822_3_90_0065E.kicad_mod",
+      "bytes": 3458,
+      "sha256": "9d4de6cbde58d054bf4646d1bfefc9a89f9887aff2da02568599d09ccf71bb74"
+    },
+    {
+      "path": "hardware/Collar05L.pretty/TI_DCK0005A.kicad_mod",
+      "bytes": 1444,
+      "sha256": "f6451604244defcf0ea6a6e409443a9dce9e2c1f5e51eb83e80b9d7cfde18a70"
+    },
+    {
+      "path": "hardware/Collar05L.pretty/TI_DCK0006A.kicad_mod",
+      "bytes": 1574,
+      "sha256": "d1cda9d6e460620baa263ed075ba8c37640d8284fec070ba40fc33db819e8fa9"
+    },
+    {
+      "path": "hardware/bom.csv",
+      "bytes": 13496,
+      "sha256": "c5e37c75362fd27b008fc32d9fef383f6660857f5968af63cafa0d59a87c03e4"
+    },
+    {
+      "path": "hardware/collar-tracker.detour-proposal.json",
+      "bytes": 9741,
+      "sha256": "21b301a3a81b9525dd8e0cb71261105a48adf8f28f63f5f580715506b7515342"
+    },
+    {
+      "path": "hardware/collar-tracker.kicad_dru",
+      "bytes": 245,
+      "sha256": "e6523f50e6e0f12cea613a984946bb5d9be0111d7ed8610b04b246e8650651d0"
+    },
+    {
+      "path": "hardware/collar-tracker.kicad_pcb",
+      "bytes": 1333629,
+      "sha256": "241c84d6ba98793c37344e1e46ddc4918e7b05322ba87daea7c9a90ffb8379b3"
+    },
+    {
+      "path": "hardware/collar-tracker.kicad_pro",
+      "bytes": 11992,
+      "sha256": "7b2a7d53dfd2850ae3cd1452937d2de5bb32d828768fa116adc964212fbe26b8"
+    },
+    {
+      "path": "hardware/collar-tracker.kicad_sch",
+      "bytes": 205035,
+      "sha256": "0a8d89c01db6d0211a9048467b728214da175750f6b670ebf3d6ffa9adeefb0e"
+    },
+    {
+      "path": "hardware/collar-tracker.local-routing.json",
+      "bytes": 7523,
+      "sha256": "ae956e61f4498545b50968d374feac309b2b0a44eb8cbb53c41d0444eddc8606"
+    },
+    {
+      "path": "hardware/design.json",
+      "bytes": 41777,
+      "sha256": "56b08b1e908539cb8e70101ad6c5d899fa3a46c2d6e166358e3a90625a360f2c"
+    },
+    {
+      "path": "hardware/fp-lib-table",
+      "bytes": 1753,
+      "sha256": "5921e1ffff0c797d5f1f949dc23868ef6860b660573132d50b6bcc879dc0a906"
+    },
+    {
+      "path": "hardware/sym-lib-table",
+      "bytes": 141,
+      "sha256": "7f69c609efcdf192f698900b9fd8121e47bd93aafb093c01d9ddbf7cc0e76fdc"
+    },
+    {
+      "path": "assembly/assembly-check.json",
+      "bytes": 1492,
+      "sha256": "86854ad62cb9ee640d4efbbcddff9ffa4f8762007c9b5643cb69c857a8c87094"
+    },
+    {
+      "path": "assembly/candidate-bom.csv",
+      "bytes": 5201,
+      "sha256": "215e76eade5a6ee19ceaf0124dfabb0f2425795e2710f040830c283f3c3dfff8"
+    },
+    {
+      "path": "assembly/candidate-cpl.csv",
+      "bytes": 3468,
+      "sha256": "33802aca79bfb2a50e9ab29c653cc76c65f6d5418b9d709b3de15a2980c7962c"
+    },
+    {
+      "path": "assembly/fit-profile.json",
+      "bytes": 31290,
+      "sha256": "5d951ab23e43953a50d4729b2e45b13dd3ce95e773ee4dd423dbd57675534f2b"
+    },
+    {
+      "path": "assembly/native-positions.csv",
+      "bytes": 6270,
+      "sha256": "83d60d94091907cafa17f560231779078119df961e97673b489e715c28c3d09b"
+    },
+    {
+      "path": "evidence/attachment-review.json",
+      "bytes": 93386,
+      "sha256": "0ed66e805576a32ac260bd7f21194583172609a027f537e191e1601487694e9d"
+    },
+    {
+      "path": "evidence/card-insertion-review.json",
+      "bytes": 9543,
+      "sha256": "6203d087562f881b4b6ad9e9241cdc8fe475fe75afede72d62f8e4d3d2a5f845"
+    },
+    {
+      "path": "evidence/charge-check.json",
+      "bytes": 2746,
+      "sha256": "fe23e728bf01d509685ff791352f2a0f268713a7e532eabe7d5f9b1c088b15f7"
+    },
+    {
+      "path": "evidence/collar-tracker-05l-charge-40x32-dfm/drc.json",
+      "bytes": 1594,
+      "sha256": "7268ad8dc89a2b2cd5aa721fc47e91a7a2c843d2482ecd2788eb6afcd0063177"
+    },
+    {
+      "path": "evidence/collar-tracker-05l-charge-final-40x32-dfm/drc.json",
+      "bytes": 1595,
+      "sha256": "59090561eeb607a8113b9a515a16252e114781ea1dd48e38e9be6fbc5a04ec15"
+    },
+    {
+      "path": "evidence/collar-tracker-05l-charge-final2-40x32-dfm/drc.json",
+      "bytes": 1092,
+      "sha256": "625685324260ec0db47155845b3e6198531d93c91546119b0be107d831bdb087"
+    },
+    {
+      "path": "evidence/collar-tracker-05l-charge-final2-40x32-dfm/drill-report.txt",
+      "bytes": 793,
+      "sha256": "dfddfdce69e1b510275820078db5d09ef0c722efcdf27ea9fe079c4b8aa0582e"
+    },
+    {
+      "path": "evidence/collar-tracker-05l-charge-final2-40x32-dfm/erc.json",
+      "bytes": 1008,
+      "sha256": "9f92674cc7bd85855bf6b53f7445fa554839a486610eb54f635cf919a5633b2d"
+    },
+    {
+      "path": "evidence/collar-tracker-05l-charge-final2-40x32-dfm/gerbers/collar-tracker-B_Cu.gbl",
+      "bytes": 53487,
+      "sha256": "ca7054bc18f0198379afc034af397c36edde6ea970ce057764e6735b28b908e5"
+    },
+    {
+      "path": "evidence/collar-tracker-05l-charge-final2-40x32-dfm/gerbers/collar-tracker-B_Mask.gbs",
+      "bytes": 5250,
+      "sha256": "92da9d43427c7854b7ad36ff68d0db6f1778e444cde79f1cd25e8bcee606f8d0"
+    },
+    {
+      "path": "evidence/collar-tracker-05l-charge-final2-40x32-dfm/gerbers/collar-tracker-B_Paste.gbp",
+      "bytes": 4439,
+      "sha256": "ab524b73c16e6c7df909aad5628515fdf4ade08b0d0eabc7911346a6c22a182d"
+    },
+    {
+      "path": "evidence/collar-tracker-05l-charge-final2-40x32-dfm/gerbers/collar-tracker-B_Silkscreen.gbo",
+      "bytes": 14226,
+      "sha256": "9d72f3a284ae333fdff20446bf91e28beb62594b63f1eb35223e91099f77dac3"
+    },
+    {
+      "path": "evidence/collar-tracker-05l-charge-final2-40x32-dfm/gerbers/collar-tracker-Edge_Cuts.gm1",
+      "bytes": 684,
+      "sha256": "76d9b4babac99b5eff284fc207a53e3ec094f6f0b68572be6a3226042885c0a2"
+    },
+    {
+      "path": "evidence/collar-tracker-05l-charge-final2-40x32-dfm/gerbers/collar-tracker-F_Cu.gtl",
+      "bytes": 75376,
+      "sha256": "237d03adeeda3775585922c99446269e66fdb2fdbb2c547616b90eaf01a0fa55"
+    },
+    {
+      "path": "evidence/collar-tracker-05l-charge-final2-40x32-dfm/gerbers/collar-tracker-F_Mask.gts",
+      "bytes": 57052,
+      "sha256": "50e80a38e14a89b89677ab63af3c7cb3a3f76e76e403970d6d04518801f01b59"
+    },
+    {
+      "path": "evidence/collar-tracker-05l-charge-final2-40x32-dfm/gerbers/collar-tracker-F_Paste.gtp",
+      "bytes": 12597,
+      "sha256": "dd35c4e755b6348c12b1d636e25b2f99898476e84246bb5783b508c28298b895"
+    },
+    {
+      "path": "evidence/collar-tracker-05l-charge-final2-40x32-dfm/gerbers/collar-tracker-F_Silkscreen.gto",
+      "bytes": 59050,
+      "sha256": "b888c8d5cb666f9dd86d3adb52b5a05b699f585d8488394466a9eea76c22f43b"
+    },
+    {
+      "path": "evidence/collar-tracker-05l-charge-final2-40x32-dfm/gerbers/collar-tracker-In1_Cu.g1",
+      "bytes": 172942,
+      "sha256": "f14567a3d7a8fcea662a2745cb9d826d405d3e0f35cad151a433bb96cf61c322"
+    },
+    {
+      "path": "evidence/collar-tracker-05l-charge-final2-40x32-dfm/gerbers/collar-tracker-In2_Cu.g2",
+      "bytes": 25411,
+      "sha256": "3546053d2b77010a38c52259d4844d0f92d7b566c07cd696643186073f5595ad"
+    },
+    {
+      "path": "evidence/collar-tracker-05l-charge-final2-40x32-dfm/gerbers/collar-tracker-In3_Cu.g3",
+      "bytes": 21726,
+      "sha256": "1c61ee0747b7b64be9ecbb083d002f32f0a6b88ccac2324d8d430a636fdc17fc"
+    },
+    {
+      "path": "evidence/collar-tracker-05l-charge-final2-40x32-dfm/gerbers/collar-tracker-In4_Cu.g4",
+      "bytes": 172942,
+      "sha256": "f342c76a239ef091916cdc4448692db4705d65f211545cddbbcc4e579c7de751"
+    },
+    {
+      "path": "evidence/collar-tracker-05l-charge-final2-40x32-dfm/gerbers/collar-tracker-NPTH.drl",
+      "bytes": 264,
+      "sha256": "1d871855e143b83d61d9072d0b9cd7f907a362d99d8af457680640a271b0769e"
+    },
+    {
+      "path": "evidence/collar-tracker-05l-charge-final2-40x32-dfm/gerbers/collar-tracker-PTH.drl",
+      "bytes": 3606,
+      "sha256": "f29961eb4ec914ea316bda95c12cfd90516b7ebb89ed76a25b2b480cc4eb76ad"
+    },
+    {
+      "path": "evidence/collar-tracker-05l-charge-final2-40x32-dfm/gerbers/collar-tracker-job.gbrjob",
+      "bytes": 4940,
+      "sha256": "4f107d30c92bef2acb5e55791677ee9b08ee527780486c9d0d9bcd48c68783fb"
+    },
+    {
+      "path": "evidence/collar-tracker-05l-charge-final2-40x32-dfm/manifest.json",
+      "bytes": 3839,
+      "sha256": "c4142e3ec62d99a530e274dfd63f97a701b8381f3da7e9e19afb7955176d5586"
+    },
+    {
+      "path": "evidence/collar-tracker-05l-charge-final2-40x32-dfm.zip",
+      "bytes": 163799,
+      "sha256": "895d0b471cbc899c7aca8a05830326b8ee5715ff3bc1a83f47d1915680dfd05b"
+    },
+    {
+      "path": "evidence/collar-tracker-05l-charge-final3-40x32-dfm/drc.json",
+      "bytes": 2759,
+      "sha256": "ed7cfcbb560c35b62c20aee09cf082e82eabae58a7a1603dcf781c599514a377"
+    },
+    {
+      "path": "evidence/collar-tracker-05l-charge-final4-40x32-dfm/drc.json",
+      "bytes": 1092,
+      "sha256": "c8f6150b0e8881001b34c7bd48ae83ec43d2732e3358ef312ba0d1f609bad361"
+    },
+    {
+      "path": "evidence/collar-tracker-05l-charge-final4-40x32-dfm/drill-report.txt",
+      "bytes": 793,
+      "sha256": "1c98b4d370dc06eb74ab4618f955e30447a5c7c46196e7d1714bb008b95dbe85"
+    },
+    {
+      "path": "evidence/collar-tracker-05l-charge-final4-40x32-dfm/erc.json",
+      "bytes": 1008,
+      "sha256": "c5b6d3d5d7c71951b71f347a9a1c3067a365157b12e1e79190c48af49ae4ac3b"
+    },
+    {
+      "path": "evidence/collar-tracker-05l-charge-final4-40x32-dfm/gerbers/collar-tracker-B_Cu.gbl",
+      "bytes": 53487,
+      "sha256": "4d596102ef38e78f2ad8544c2ab10f702a4bcbad085912f3497783e3927ac0e7"
+    },
+    {
+      "path": "evidence/collar-tracker-05l-charge-final4-40x32-dfm/gerbers/collar-tracker-B_Mask.gbs",
+      "bytes": 5250,
+      "sha256": "4c6a455312f43126c89fdf2f774ebb874a5fce1aee6e4384fbeba2126b65b70e"
+    },
+    {
+      "path": "evidence/collar-tracker-05l-charge-final4-40x32-dfm/gerbers/collar-tracker-B_Paste.gbp",
+      "bytes": 4439,
+      "sha256": "3dc68c0a3a2818df82844bd5a6f00b3c77e78c057e168be3e4e7ce2d9663a8b6"
+    },
+    {
+      "path": "evidence/collar-tracker-05l-charge-final4-40x32-dfm/gerbers/collar-tracker-B_Silkscreen.gbo",
+      "bytes": 14226,
+      "sha256": "2e6c1801146e7469e368a877a1f8c1fae676d8f5cf627db07e08b33daaeb85e2"
+    },
+    {
+      "path": "evidence/collar-tracker-05l-charge-final4-40x32-dfm/gerbers/collar-tracker-Edge_Cuts.gm1",
+      "bytes": 684,
+      "sha256": "8f20294052cabf354bf5010ad0805e50d4fb3e8aa80f56b740d073ab0f572cff"
+    },
+    {
+      "path": "evidence/collar-tracker-05l-charge-final4-40x32-dfm/gerbers/collar-tracker-F_Cu.gtl",
+      "bytes": 75376,
+      "sha256": "b92e313d282d0398c299a1f94b24ea733e10ab39fc6efac184068d862257b375"
+    },
+    {
+      "path": "evidence/collar-tracker-05l-charge-final4-40x32-dfm/gerbers/collar-tracker-F_Mask.gts",
+      "bytes": 57052,
+      "sha256": "5bceb8173bf7963a91325248e1631895f79b55cd1827cdaafc5d44983863b347"
+    },
+    {
+      "path": "evidence/collar-tracker-05l-charge-final4-40x32-dfm/gerbers/collar-tracker-F_Paste.gtp",
+      "bytes": 12597,
+      "sha256": "f12cea46196be5e51386a58e52352a8e8abcf41a1452c41898b38851ab34c35e"
+    },
+    {
+      "path": "evidence/collar-tracker-05l-charge-final4-40x32-dfm/gerbers/collar-tracker-F_Silkscreen.gto",
+      "bytes": 59047,
+      "sha256": "07cfe6c52e61ef596fa17cf537048a3a9df658ea467e9ee47d259a5132f9c462"
+    },
+    {
+      "path": "evidence/collar-tracker-05l-charge-final4-40x32-dfm/gerbers/collar-tracker-In1_Cu.g1",
+      "bytes": 172940,
+      "sha256": "68e3442c88384270d7cb8e2a022380d26ec0d62be19c57c6a134fe186a983d75"
+    },
+    {
+      "path": "evidence/collar-tracker-05l-charge-final4-40x32-dfm/gerbers/collar-tracker-In2_Cu.g2",
+      "bytes": 25411,
+      "sha256": "26cca0cb4a6d54c0b7c6855859dc43c53fd2333ed9f602625c74e2ca1fc31326"
+    },
+    {
+      "path": "evidence/collar-tracker-05l-charge-final4-40x32-dfm/gerbers/collar-tracker-In3_Cu.g3",
+      "bytes": 21726,
+      "sha256": "776f76e9f9396056873c4ff2c15e2ca40c602913538581e5fd20e9d0c02e5bc3"
+    },
+    {
+      "path": "evidence/collar-tracker-05l-charge-final4-40x32-dfm/gerbers/collar-tracker-In4_Cu.g4",
+      "bytes": 172940,
+      "sha256": "fc28129b2e8931c9a3e12b05aaa340b9e6002ae531a8b3bd122c428cf32cbc6a"
+    },
+    {
+      "path": "evidence/collar-tracker-05l-charge-final4-40x32-dfm/gerbers/collar-tracker-NPTH.drl",
+      "bytes": 264,
+      "sha256": "66a72128d9ced09aa1457a49de1615de02a59c6341aa0a5d63e8972347927fd4"
+    },
+    {
+      "path": "evidence/collar-tracker-05l-charge-final4-40x32-dfm/gerbers/collar-tracker-PTH.drl",
+      "bytes": 3608,
+      "sha256": "ddf7224f4d5eef841341bfc1ddcdb2220ae4e9a360238ad5ba3845483afd72c4"
+    },
+    {
+      "path": "evidence/collar-tracker-05l-charge-final4-40x32-dfm/gerbers/collar-tracker-job.gbrjob",
+      "bytes": 4940,
+      "sha256": "0b86c5bbade86367c7658a6d0cc4af2da0e5aa1263555d77d7287b1097a22bb4"
+    },
+    {
+      "path": "evidence/collar-tracker-05l-charge-final4-40x32-dfm/manifest.json",
+      "bytes": 3839,
+      "sha256": "0bdb58554dbd4d272433ab4be840d6808c65911fdac471d56f7b58e0a1c60fc0"
+    },
+    {
+      "path": "evidence/collar-tracker-05l-charge-final4-40x32-dfm.zip",
+      "bytes": 163809,
+      "sha256": "c736c5d35ddfe4c4662e57606120f00f7358492e11d5fbb32eaf1d0ff6caf5d2"
+    },
+    {
+      "path": "evidence/components-placed.native.json",
+      "bytes": 52583,
+      "sha256": "aec43367079c3f007d2d4a5c3acfbb401d3b35d53c42d6d783b696b488745c1e"
+    },
+    {
+      "path": "evidence/components.native.json",
+      "bytes": 52583,
+      "sha256": "448db77589a4f1355f7f7a953590fef540bec405dd1edbf7ffd6e66885c1331c"
+    },
+    {
+      "path": "evidence/contact-components.json",
+      "bytes": 329874,
+      "sha256": "e162c4f6da13da62632bcb47a31a619acdb0bf3105fa5b86c8c80b1ff02e4a9b"
+    },
+    {
+      "path": "evidence/drc-ce-vin.json",
+      "bytes": 6869,
+      "sha256": "9caf1ac97e67b8d8bcecde3ba84833300f67ac4f9a59fde7a4815518aa820857"
+    },
+    {
+      "path": "evidence/drc-final.json",
+      "bytes": 1092,
+      "sha256": "d27a2f231df9130b3404c6124859929be5f83a4429f2a9a929315e2d1f235c85"
+    },
+    {
+      "path": "evidence/drc-logic-open.json",
+      "bytes": 9513,
+      "sha256": "aac956049915dc6dcb412e1289ae9ab0842894563fabb09b276217412b0517b1"
+    },
+    {
+      "path": "evidence/drc-placed.json",
+      "bytes": 28107,
+      "sha256": "9e066b3f82c7eaaae2a2d051f65d5b4a2f4e2913e4423c24d5ea6ae3b8270ce9"
+    },
+    {
+      "path": "evidence/drc-routed1.json",
+      "bytes": 5050,
+      "sha256": "8d0545e656ece9da0cbd2f8246ff5c5027c195bf2a212c6a9d41aebd035af556"
+    },
+    {
+      "path": "evidence/drc-routed2.json",
+      "bytes": 2402,
+      "sha256": "d86950b045dc519f84e9e7fc20e74ab8df37a4c3f2355c7ab5d419b1901aabc3"
+    },
+    {
+      "path": "evidence/drc-vin-open.json",
+      "bytes": 8980,
+      "sha256": "c5a2ea0eb5af9e2da96c11870a591222b4f5d35d78b5b68b03661d2143e429ee"
+    },
+    {
+      "path": "evidence/erc-seed.json",
+      "bytes": 2930,
+      "sha256": "2d4850d1eeb78bc56ac139ff4a98e8fd60677f47cb8c38f2eeabd0ef2c2a62fa"
+    },
+    {
+      "path": "evidence/erc.json",
+      "bytes": 1008,
+      "sha256": "9ccdf2a28ea7b8a565f71fb5bfb4e8958b1049d981dc137c117a6dacb09645ce"
+    },
+    {
+      "path": "evidence/esd-paths.json",
+      "bytes": 14278,
+      "sha256": "f6409c654b0fa3e21620b9af0d60393a32867a5e561360431f45982b4c8a27ee"
+    },
+    {
+      "path": "evidence/final-tail-trim.json",
+      "bytes": 300,
+      "sha256": "6d6154ef807d5d91b39603aff3efeec17724a02eb86b08e0709ba7e732dd58dc"
+    },
+    {
+      "path": "evidence/fit-placed.json",
+      "bytes": 53344,
+      "sha256": "d78268332b6b168554765b8eb1af1fdb1f72d93c067a52255f4cee5e0664dbda"
+    },
+    {
+      "path": "evidence/jlc-check1/dfm.json",
+      "bytes": 115695,
+      "sha256": "dd4520bbe924cfe8e725dfdce6ba1d566a7ce588449d8063b41fd63221b7fa35"
+    },
+    {
+      "path": "evidence/jlc-check1/receipt.json",
+      "bytes": 232,
+      "sha256": "60e4207f06413e4e39093b181456ff4b5dd57f3d0c28a4aa3cc3a0584b4fea72"
+    },
+    {
+      "path": "evidence/jlc-check1/report.pdf",
+      "bytes": 3440848,
+      "sha256": "98ffff69aa139bbb2998cd4b1a1643e6d8a04bc6a3159a2f3bac5a7ea1247982"
+    },
+    {
+      "path": "evidence/jlc-check1/rows.txt",
+      "bytes": 1051,
+      "sha256": "48bcda4c95f44f13b2544078796161315beef34da1709f41619364b8ccab30bb"
+    },
+    {
+      "path": "evidence/jlc-check1/rules.json",
+      "bytes": 52347,
+      "sha256": "f1bebb3b2b5ac2ba0579f882fc0605d169c1d6a3a852a07beb8652b719e0a725"
+    },
+    {
+      "path": "evidence/jlc-check1/screen.png",
+      "bytes": 250066,
+      "sha256": "d1fa91b5d4a6b6bcc7fa5b7e046b1614899544006fe08433ea7514ed9cab93e8"
+    },
+    {
+      "path": "evidence/jlc-check1/summary.json",
+      "bytes": 437,
+      "sha256": "624a4e47ece64cc3dc3b7f1760a783fcf26aa1715d71e22b45650474316970a7"
+    },
+    {
+      "path": "evidence/jlc-check2/dfm.json",
+      "bytes": 115704,
+      "sha256": "b63d90acf016f4192e4a855670c1a1330d93f096ccdf705b97022caa63221ec5"
+    },
+    {
+      "path": "evidence/jlc-check2/receipt.json",
+      "bytes": 232,
+      "sha256": "da1adfc82d3d72f02cb4718ac3014d81cd0ad539cb02f4ac8aa040ac301bbc3e"
+    },
+    {
+      "path": "evidence/jlc-check2/report.pdf",
+      "bytes": 3429425,
+      "sha256": "8bf1bd071947ed00c5d3a12f1f9ddbf3a3979d28c032c3a43c602853f2f3a0c2"
+    },
+    {
+      "path": "evidence/jlc-check2/rows.txt",
+      "bytes": 1051,
+      "sha256": "48bcda4c95f44f13b2544078796161315beef34da1709f41619364b8ccab30bb"
+    },
+    {
+      "path": "evidence/jlc-check2/rules.json",
+      "bytes": 52347,
+      "sha256": "f1bebb3b2b5ac2ba0579f882fc0605d169c1d6a3a852a07beb8652b719e0a725"
+    },
+    {
+      "path": "evidence/jlc-check2/screen.png",
+      "bytes": 250066,
+      "sha256": "d1fa91b5d4a6b6bcc7fa5b7e046b1614899544006fe08433ea7514ed9cab93e8"
+    },
+    {
+      "path": "evidence/jlc-check2/summary.json",
+      "bytes": 437,
+      "sha256": "42f0360eb462132e15565ae82718f8573b15696d5140d1f5041cd63bf287a793"
+    },
+    {
+      "path": "evidence/jlc-initial-findings/dfm.json",
+      "bytes": 116295,
+      "sha256": "9c93ddcb80201112f8346cd700eb3ba3450214df503f7e296b781450d785bb86"
+    },
+    {
+      "path": "evidence/jlc-initial-findings/receipt.json",
+      "bytes": 232,
+      "sha256": "5a6c8e351c1bda32234ae6d51d5fa132d2b21dd91cbba5512f61cb18d7e85b59"
+    },
+    {
+      "path": "evidence/jlc-initial-findings/report.pdf",
+      "bytes": 3463348,
+      "sha256": "4bf79458a0ac10e3cbead271815545ed0448e3581eb9a8b41b2e362137646291"
+    },
+    {
+      "path": "evidence/jlc-initial-findings/rows.txt",
+      "bytes": 1051,
+      "sha256": "78af905831042d1a53ac0f2b92982bd8a04f07292301648946a2db7b4a8ed0ea"
+    },
+    {
+      "path": "evidence/jlc-initial-findings/rules.json",
+      "bytes": 52347,
+      "sha256": "f1bebb3b2b5ac2ba0579f882fc0605d169c1d6a3a852a07beb8652b719e0a725"
+    },
+    {
+      "path": "evidence/jlc-initial-findings/screen.png",
+      "bytes": 249740,
+      "sha256": "93399b2217c1008e6e5aa43be49df6822de2020bff8f1a60dbe109eea781eaab"
+    },
+    {
+      "path": "evidence/jlc-initial-findings/summary.json",
+      "bytes": 437,
+      "sha256": "a62b43f4d343a845c5880bf29e8ecb2973d1369708abe2cb6c30ed93b0448480"
+    },
+    {
+      "path": "evidence/jlc-label-repair-applied.json",
+      "bytes": 690,
+      "sha256": "fdda248dc162c30027b63c79b367c31fb603d07a217ec028744b9f8cdf573891"
+    },
+    {
+      "path": "evidence/jlc-label-repair-plan.json",
+      "bytes": 621,
+      "sha256": "b13b8ec54fa34ff304948b467e78b6dfebe35566d324ebc90b4e02fdffba5ed5"
+    },
+    {
+      "path": "evidence/jlc-vin-via-clearance-repair.json",
+      "bytes": 647,
+      "sha256": "8f377e840a1fa7bd2c35d236333e2a41a147810d523ab001cf74fbce004c3ac2"
+    },
+    {
+      "path": "evidence/jlc-vin-via-repair.json",
+      "bytes": 595,
+      "sha256": "a870bbc4d280fc00ea786a384d6f85eda3e8da565cf6aeb31c533b1fbd5b39f5"
+    },
+    {
+      "path": "evidence/layout-inventory.json",
+      "bytes": 33214,
+      "sha256": "124d61da8b03ce7cd2985f79efb405972b5143708a9b98776ae7114bb736011a"
+    },
+    {
+      "path": "evidence/logic-trunk-rework.json",
+      "bytes": 4773,
+      "sha256": "45552161ba3d2b4b9fc932cad3afb33156d9fd6ba4d514698e3cc273133a319e"
+    },
+    {
+      "path": "evidence/native-netlist.json",
+      "bytes": 14874,
+      "sha256": "4c88b83f1af96f3924d63761ab09681049cce83cc0b364aaa669a27b19e9be28"
+    },
+    {
+      "path": "evidence/netlist.xml",
+      "bytes": 156819,
+      "sha256": "d49c522380aa5f62423f85b0b637546c732451d95a437e65fc5cb7daf14109e6"
+    },
+    {
+      "path": "evidence/passive-copper-review.json",
+      "bytes": 49749,
+      "sha256": "e90012b8700f38fc41b9051b3e78936c7672f8c290b63ad887f58fa05b43beb5"
+    },
+    {
+      "path": "evidence/pcb-seed.json",
+      "bytes": 698,
+      "sha256": "7eb1a39a3ca4217849bc305badf2990ac64c1299ec8dcc90f94d0a02ac2a7673"
+    },
+    {
+      "path": "evidence/placement-apply.json",
+      "bytes": 438,
+      "sha256": "48aa796bbe1148f90c6306df24b9473acbd2e83e218c330ef525370b0cc726bd"
+    },
+    {
+      "path": "evidence/placement-extra.json",
+      "bytes": 3493,
+      "sha256": "1079db27442d9f4e9375482eb4b3350cd699de7342f9ac2f5c3dd8cac90f2743"
+    },
+    {
+      "path": "evidence/placement-input.json",
+      "bytes": 1187075,
+      "sha256": "c265bb21cf97cb21a923e401e66d1bd8d8107166d848c09ce2b3af4dc1855e64"
+    },
+    {
+      "path": "evidence/placement-plan.json",
+      "bytes": 25046,
+      "sha256": "ffef415f08a33b152b525446a86dc409a0cd13243e9aea09dfd254be8dc2744c"
+    },
+    {
+      "path": "evidence/placement-progress.json",
+      "bytes": 25046,
+      "sha256": "ffef415f08a33b152b525446a86dc409a0cd13243e9aea09dfd254be8dc2744c"
+    },
+    {
+      "path": "evidence/power-path-review.json",
+      "bytes": 38396,
+      "sha256": "66f3ef9008810544252f325a011806673d97d20761db2e491fc90a290a2d049f"
+    },
+    {
+      "path": "evidence/protected-pin-exits.json",
+      "bytes": 100803,
+      "sha256": "f47b43db37e2c9c05526c3e731d7d98ff2c62a6c3837b38b499e1aaf87a454ae"
+    },
+    {
+      "path": "evidence/rf-reference-check.json",
+      "bytes": 18056,
+      "sha256": "e03985d04e1d02d211cdfaed7761dd1140bfa184634a31a216834fe910d4a806"
+    },
+    {
+      "path": "evidence/rf-reference.native.json",
+      "bytes": 625890,
+      "sha256": "5fbfa0ee4e404ddfc3658bb03dfe93d87ef38bf947f3103c9bb7f5c0e7467cad"
+    },
+    {
+      "path": "evidence/route-geometry.json",
+      "bytes": 1793961,
+      "sha256": "81729d50d614be899e831362cbd4e9a7021a3337cb7dbb1841b9563edf46156b"
+    },
+    {
+      "path": "evidence/schematic-seed.json",
+      "bytes": 695,
+      "sha256": "77e71905e99ba97616ec493e20dc174a0a535235bd301112a447b9592078d6b8"
+    },
+    {
+      "path": "evidence/source-preservation.json",
+      "bytes": 1389,
+      "sha256": "620f8119898413d256e2459aec0476e01d6817b8acfa30013e7e2eb1283b7356"
+    },
+    {
+      "path": "evidence/swd-label-applied.json",
+      "bytes": 263,
+      "sha256": "912bd2a720225ff8242ab06119b25f46acd0e1a3792ea1f385b5f02cc1f73544"
+    },
+    {
+      "path": "evidence/swd-label-plan.json",
+      "bytes": 285,
+      "sha256": "7d2057e0961fe61fd57fab110bce3d256b83f793affed1e9bc080f350aa2a676"
+    },
+    {
+      "path": "evidence/unused-hot-reference-branch.json",
+      "bytes": 492,
+      "sha256": "40d221483776593f9c0f460c0f46ae1b03370fcc33c15cc535eb264931b6769b"
+    },
+    {
+      "path": "evidence/via-cleanup-plan-applied.json",
+      "bytes": 551,
+      "sha256": "f8f90b4cfb74ff717a7e01b1b5ae41eeff0d35d9038101a6dc606faa35cb9cd1"
+    },
+    {
+      "path": "evidence/via-cleanup-plan.json",
+      "bytes": 1147,
+      "sha256": "6a6284f1e7735e64ec4cf593a9e3e5856d0bc69a25bc047cdd02f306ec5f86c6"
+    },
+    {
+      "path": "evidence/vin-escape-rework.json",
+      "bytes": 2106,
+      "sha256": "7bc60bc50e4fc832a66b0b1d6a4e7238e585ab56056f03e0eafdb0606e6ed6c5"
+    }
+  ]
+}
