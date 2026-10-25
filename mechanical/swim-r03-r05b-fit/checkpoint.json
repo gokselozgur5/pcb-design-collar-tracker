@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "source_sha256": "4c047c3a5b69110ad758f83091236c7aa2c25a96f374732dcd8bda79bb88027e",
+  "revision": "swim-r03-r05b-fit",
+  "physical_ingress_test": false,
+  "mesh_acceptance": false,
+  "production_assembly_complete": false,
+  "scope": "Preliminary populated-envelope and analytical shell checks only.",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 2835,
+      "sha256": "89c8291a7939af5c781f4618b7ce5c5223741a913095e131cd3319d6e19012fe"
+    },
+    {
+      "path": "checks.json",
+      "bytes": 4846,
+      "sha256": "e82667ed26b137b72a52e0d7a71abe211b7200396e9a31db4523fec38683830a"
+    },
+    {
+      "path": "components.native.json",
+      "bytes": 42925,
+      "sha256": "7ba3c2d17ee871ba83b3b29404989d05aae4fa4fd08a73bfad5682795db8726d"
+    },
+    {
+      "path": "enclosure.scad",
+      "bytes": 9119,
+      "sha256": "3fef4f508ef9b551b7f47ed14b1328cb9d7a64ad84ee43cf42821607080f6894"
+    },
+    {
+      "path": "fit-profile.json",
+      "bytes": 25523,
+      "sha256": "2a0aef067fb78be6ddd0826b5f40c3f67cedef6d92420eb4ddcba4364d476f07"
+    },
+    {
+      "path": "parameters.json",
+      "bytes": 4026,
+      "sha256": "148afb432bdbd9f394de0bf71cb6d4f359690f045db765c286141c5ca14d7859"
+    },
+    {
+      "path": "parameters.scad",
+      "bytes": 1224,
+      "sha256": "f41d988d5c8d38e35f487737ddf4d0b7a98120c73e48240e1a329cb4525e9af5"
+    },
+    {
+      "path": "populated-fit.json",
+      "bytes": 44654,
+      "sha256": "cb9ba8298f30bb7be5289e8de1928ff10235fd31fd29073a63870b952b62b10a"
+    },
+    {
+      "path": "populated.png",
+      "bytes": 95345,
+      "sha256": "1d0f2e4f4f6f5da155b8c1e9277ca317e566abde89ab6af6065f4a87c52fcca4"
+    },
+    {
+      "path": "populated.scad",
+      "bytes": 8353,
+      "sha256": "3edf5c724bd5903b35d5324e52a43734b3c72dc41945f2e3dd3ccdc8c862fd12"
+    }
+  ]
+}

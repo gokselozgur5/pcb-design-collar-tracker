@@ -1,0 +1,202 @@
+{
+  "source_sha256": "4c047c3a5b69110ad758f83091236c7aa2c25a96f374732dcd8bda79bb88027e",
+  "parameter_sha256": "148afb432bdbd9f394de0bf71cb6d4f359690f045db765c286141c5ca14d7859",
+  "checker_sha256": "b5d2f1b17c0a03446e76708bc5e1053e9b04446cad17bd8cc2a8f5c1c69dcb37",
+  "checks": [
+    {
+      "name": "PCB reservation matches native outline and thickness",
+      "pass_": true,
+      "native_size_mm": [
+        40.0,
+        32.0,
+        0.8
+      ]
+    },
+    {
+      "name": "PCB corner inside cavity",
+      "pass_": true,
+      "corner": [
+        -20.0,
+        -16.0
+      ]
+    },
+    {
+      "name": "PCB corner inside cavity",
+      "pass_": true,
+      "corner": [
+        -20.0,
+        16.0
+      ]
+    },
+    {
+      "name": "PCB corner inside cavity",
+      "pass_": true,
+      "corner": [
+        20.0,
+        -16.0
+      ]
+    },
+    {
+      "name": "PCB corner inside cavity",
+      "pass_": true,
+      "corner": [
+        20.0,
+        16.0
+      ]
+    },
+    {
+      "name": "Battery reservation below bottom components",
+      "pass_": true,
+      "gap_mm": 0.39999999999999947
+    },
+    {
+      "name": "Battery reservation above floor",
+      "pass_": true,
+      "gap_mm": 0.19999999999999996
+    },
+    {
+      "name": "Battery corner inside cavity",
+      "pass_": true
+    },
+    {
+      "name": "Battery corner inside cavity",
+      "pass_": true
+    },
+    {
+      "name": "Battery corner inside cavity",
+      "pass_": true
+    },
+    {
+      "name": "Battery corner inside cavity",
+      "pass_": true
+    },
+    {
+      "name": "Antenna reservation vertical clearance",
+      "pass_": true,
+      "name_of_reservation": "LTE FPC reservation",
+      "component_gap_mm": 0.5999999999999996,
+      "lid_gap_mm": 0.3000000000000007
+    },
+    {
+      "name": "Antenna reservation inside cavity",
+      "pass_": true
+    },
+    {
+      "name": "Antenna reservation inside cavity",
+      "pass_": true
+    },
+    {
+      "name": "Antenna reservation inside cavity",
+      "pass_": true
+    },
+    {
+      "name": "Antenna reservation inside cavity",
+      "pass_": true
+    },
+    {
+      "name": "Antenna reservation vertical clearance",
+      "pass_": true,
+      "name_of_reservation": "GNSS FPC reservation",
+      "component_gap_mm": 0.5999999999999996,
+      "lid_gap_mm": 0.3000000000000007
+    },
+    {
+      "name": "Antenna reservation inside cavity",
+      "pass_": true
+    },
+    {
+      "name": "Antenna reservation inside cavity",
+      "pass_": true
+    },
+    {
+      "name": "Antenna reservation inside cavity",
+      "pass_": true
+    },
+    {
+      "name": "Antenna reservation inside cavity",
+      "pass_": true
+    },
+    {
+      "name": "Main seal declared tolerance screen",
+      "pass_": true,
+      "stretch": [
+        0.022853720436666558,
+        0.04299874447307128
+      ],
+      "squeeze": [
+        0.17697403129899292,
+        0.2876964381558166
+      ],
+      "fill": [
+        0.6260120755458511,
+        0.8321358052902982
+      ]
+    },
+    {
+      "name": "Main seal nominal inner circumference stretched",
+      "pass_": true,
+      "inner_perimeter_mm": 161.84513020910302,
+      "nominal_free_id_circumference_mm": 158.71326085935635
+    },
+    {
+      "name": "Contact seal declared tolerance screen",
+      "pass_": true,
+      "stretch": [
+        0.006521739130434856,
+        0.05681818181818166
+      ],
+      "squeeze": [
+        0.18591760732661777,
+        0.28604477374671655
+      ],
+      "fill": [
+        0.6097214847285435,
+        0.8186579271355496
+      ]
+    },
+    {
+      "name": "Fastener holes outside main seal",
+      "pass_": true,
+      "minimum_web_mm": 0.9838095116624284
+    },
+    {
+      "name": "Cavity-to-groove corner web",
+      "pass_": true,
+      "minimum_sampled_web_mm": 2.042893218813451
+    },
+    {
+      "name": "Captive nut pockets inside shell",
+      "pass_": true,
+      "minimum_conservative_web_mm": 1.0094434444543308
+    },
+    {
+      "name": "Contact shaft spans side wall",
+      "pass_": true
+    },
+    {
+      "name": "Contact threads clear battery reservation",
+      "pass_": true,
+      "gap_mm": 0.5
+    },
+    {
+      "name": "Contact retaining nut clears PCB edge",
+      "pass_": true,
+      "minimum_gap_mm": 0.45854811567261944
+    }
+  ],
+  "all_declared_geometry_checks_pass": true,
+  "external_size_mm": [
+    57.4,
+    49.4,
+    17.6
+  ],
+  "docking_key_adds_to_positive_x_mm": 1.3,
+  "overall_without_mount_mm": [
+    58.699999999999996,
+    49.4,
+    17.6
+  ],
+  "hydrostatic_design_pressure_kPa": 19.6133,
+  "approx_inward_lid_force_N": 27.94044759677061,
+  "scope": "Analytical checks of declared CAD envelopes and seal tolerances. Does not prove component heights, selected pack/antennas, groove surface finish, seal compatibility, deformation, retention, physical fit, RF, swimming or IP68."
+}
