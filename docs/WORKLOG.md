@@ -306,3 +306,40 @@ Their evidence is dated; do not transfer an older pass to a newer source file.
   electrical source/timing bounds, actual BOM/pack/antennas and assembly before
   production. New final Gerbers still need two real same-byte JLC analyses.
   No new supplier upload, order, payment, message or physical test occurred.
+
+## 2026-10-25 — Close nine connections across r05c and r05f
+
+- Event: Continued the unfinished power-layout routing after the user's status request.
+- Decision: Preserve r05b and all earlier tested sources. Compare isolated routes
+  using fresh native results; retain the existing circuit, lands and rules. Keep
+  the more successful preserved-signal path instead of the broad joint reroute.
+- Result: r05c closed six connections (14 to eight). r05d's strict Freerouting
+  attempt stayed at eight without importing an SES; r05e ended at 17 and is not
+  selected. r05f closed POWER_GOOD, relocated/connected C9 and closed VDD_NRF,
+  leaving five opens and zero other native violations/warnings or parity issues.
+  Source SHA256: `1b2b4bd7b90c3931bd8cbb151637408902332a94260d4a2a820ae6df04838a09`.
+- Result: All 94 unique GND terminals retain local paths; 97 physical GND pads,
+  83 GND vias, both continuous inner planes, all 24 RF segments, four no-bypass
+  SIM clamp paths, clear card entry and 12 original power backbones remain checked.
+  Return-only stitches were deliberately released; 44 of 129 signal vias remain
+  outside the inherited return screen. The 68.085 mm POWER_GOOD detour needs review.
+- Result: Cleanup removed unused exits and replaced unnecessary single-layer via
+  junctions while preserving native terminal groups. Whole-segment deletion was
+  refused where a dangling segment also carried a live branch; only its loose
+  end was trimmed. Repeated native LoadBoard produced wx initialization warnings
+  with normal exit; isolated probe processes avoid that path. No native crash
+  was observed in these completed operations; the older finalization crash is
+  still unattributed. Four raster regressions pass.
+- Result: Fresh r05f preliminary fit checks 69 populated envelopes and 30 shell
+  checks. C9 clears the carrier and the original D1 interference control remains
+  effective. PCB and populated previews were inspected. No new mesh/physical
+  qualification or component purchasing approval is claimed.
+- Result: Rechecked Nordic's explicit exception for power-off order when the
+  application tolerates undefined GPIO states. The follow-up records that scope
+  and requires an actual collar shutdown-behavior review before using it; the
+  circuit and electrical HOLD were not changed on that basis.
+- Next: Resolve the specific barriers at U7/U4/gauge connections in an isolated
+  copy, finish routing and restore returns, then refresh fit and obtain two
+  same-ZIP JLC runs. Electrical source/BOM, pack, antennas, factory assembly and
+  ingress qualification remain open. No new supplier upload, order, payment,
+  supplier message or physical test occurred.

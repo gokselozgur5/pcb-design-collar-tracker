@@ -13,13 +13,14 @@ except (ValueError, OSError, KeyError) as error:
     sys.exit(1)
 print(f'Project: {root}')
 print('Baseline: 0.3.4 saved PCB DFM evidence verified; not production acceptance.')
-print('Current: r04i native/geometry evidence and two unchanged-rule JLC PCB passes verified.')
-candidate = result['power_pin_candidate']
-print(f"Active: r05b pin-exit candidate; {candidate['native_drc']['unconnected_items']} open connections, "
-      f"{candidate['return_screen_gaps']} return-screen gaps; no new Gerber or supplier analysis.")
-print('Native warnings: 27 dangling vias; zero other violations or schematic mismatches.')
+print('Preserved PCB: r04i native/geometry evidence and two unchanged-rule JLC PCB passes verified.')
+candidate = result['routing_candidate']
+print(f"Active: r05f routing candidate; {candidate['native_drc']['unconnected_items']} open connections, "
+      f"{candidate['returns_outside_2mm']} return-screen gaps; no new Gerber or supplier analysis.")
+print(f"Other native violations/warnings: {candidate['native_drc']['violations']}; "
+      f"schematic mismatches: {candidate['native_drc']['schematic_parity']}.")
 print('Electrical: HOLD; conditional circuit calculations do not establish powered behavior.')
-print('Mechanical: r03 preliminary fit checks 69 populated envelopes; nine component requirements remain unqualified.')
+print('Mechanical: r05 preliminary fit checks 69 populated envelopes; nine component requirements remain unqualified.')
 print('Preserved: r04i/swim-r02 review bundle; pack, antennas, assembly and physical qualification remain open.')
 print('Git:')
 sys.stdout.flush()

@@ -51,6 +51,13 @@ uploads to JLC DFM are in scope. Orders, payments and supplier messages are not.
   matching hashes/rules, fully analyzed rows, raw results and PDF evidence.
 - No claim that the active revision is routed, DRC-clean or all-green until its
   own evidence exists. Read STATUS for the current experiment directory.
+- A dangling-track warning can identify a segment that also carries a live branch.
+  Preserve native terminal groups; trim only its unused end when deleting the
+  whole segment would disconnect pins. Unused single-layer via junctions can be
+  replaced only with checked planar connections and fresh full native DRC.
+- On this Mac, use one native LoadBoard per probe process. Repeated initialization
+  produced wx duplicate-handler warnings; separate probes avoid that path. Check
+  process exit codes and source identities; do not suppress crash dialogs globally.
 - Check card insertion/removal against populated bodies and their swept volume;
   a footprint courtyard pass is insufficient. Check SIM copper for a route that
   bypasses the clamp land, even when all native nets are connected.
