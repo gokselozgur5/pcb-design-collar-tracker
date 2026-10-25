@@ -1,0 +1,522 @@
+{
+  "revision": "swim-r02-fit",
+  "reviewed_date": "2026-10-25",
+  "scope": "Drawing-derived Z limits at actual native placements; conservative native Fab plus land XY boxes, not a complete approved 3D assembly or released assembly BOM.",
+  "xy_allowance_mm": 0.2,
+  "solder_allowance_mm": 0.15,
+  "board_warp_allowance_mm": 0.1,
+  "minimum_mechanical_gap_mm": 0.2,
+  "carrier_reliefs": [
+    {
+      "name": "SIM entry",
+      "bounds_mm": [
+        3.8,
+        14.8,
+        14.4,
+        18.8
+      ]
+    },
+    {
+      "name": "D1 tolerance clearance",
+      "bounds_mm": [
+        13.4,
+        14.8,
+        17.6,
+        18.8
+      ]
+    },
+    {
+      "name": "Negative-Y contact backing stack",
+      "bounds_mm": [
+        17.8,
+        -9.6,
+        21.8,
+        -2.4
+      ],
+      "depth_mm": 0.5
+    },
+    {
+      "name": "Positive-Y contact backing stack",
+      "bounds_mm": [
+        17.8,
+        2.4,
+        21.8,
+        9.6
+      ],
+      "depth_mm": 0.5
+    }
+  ],
+  "parts": [
+    {
+      "ref": "C1",
+      "mpn": "GRM033R61A105ME15D",
+      "height_max_mm": 0.39,
+      "status": "existing_bom_part",
+      "source_url": "https://www.murata.com/en-us/products/productdetail?partno=GRM033R61A105ME15%23",
+      "basis": "0.30 +/- 0.09 mm thickness"
+    },
+    {
+      "ref": "C10",
+      "mpn": "GRM155R71C104KA88D",
+      "height_max_mm": 0.55,
+      "status": "candidate_part",
+      "source_url": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71C104KA88-01A.pdf",
+      "basis": "0.50 +/- 0.05 mm thickness; 100 nF, 16 V X7R candidate"
+    },
+    {
+      "ref": "C11",
+      "mpn": null,
+      "height_max_mm": 0,
+      "status": "dnp",
+      "source_url": null,
+      "basis": "Do not populate; any RF tuning population requires a fresh fit profile"
+    },
+    {
+      "ref": "C12",
+      "mpn": null,
+      "height_max_mm": 0,
+      "status": "dnp",
+      "source_url": null,
+      "basis": "Do not populate; any RF tuning population requires a fresh fit profile"
+    },
+    {
+      "ref": "C13",
+      "mpn": "GJM1555C1H390FB01D",
+      "height_max_mm": 0.55,
+      "status": "candidate_part",
+      "source_url": "https://ds.murata.com/simsurfing/mlcc.html?oripartnumbers=%5B%22GJM1555C1H390FB01D%22%5D&partnumbers=%5B%22GJM1555C1H390FB01%22%5D&rgear=suaykx&rgearinfo=com",
+      "basis": "T maximum 0.55 mm; 39 pF, 50 V, 1%, C0G High-Q candidate"
+    },
+    {
+      "ref": "C14",
+      "mpn": "GJM1555C1H390FB01D",
+      "height_max_mm": 0.55,
+      "status": "candidate_part",
+      "source_url": "https://ds.murata.com/simsurfing/mlcc.html?oripartnumbers=%5B%22GJM1555C1H390FB01D%22%5D&partnumbers=%5B%22GJM1555C1H390FB01%22%5D&rgear=suaykx&rgearinfo=com",
+      "basis": "T maximum 0.55 mm; 39 pF, 50 V, 1%, C0G High-Q candidate"
+    },
+    {
+      "ref": "C15",
+      "mpn": "GRM155R71C104KA88D",
+      "height_max_mm": 0.55,
+      "status": "candidate_part",
+      "source_url": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71C104KA88-01A.pdf",
+      "basis": "0.50 +/- 0.05 mm thickness; 100 nF, 16 V X7R candidate"
+    },
+    {
+      "ref": "C16",
+      "mpn": "GRM155R61A105KE15D",
+      "height_max_mm": 0.55,
+      "status": "candidate_part",
+      "source_url": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R61A105KE15-01A.pdf",
+      "basis": "0.50 +/- 0.05 mm thickness; 1 uF, 10 V X5R candidate"
+    },
+    {
+      "ref": "C17",
+      "mpn": "GRM155R61A105KE15D",
+      "height_max_mm": 0.55,
+      "status": "candidate_part",
+      "source_url": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R61A105KE15-01A.pdf",
+      "basis": "0.50 +/- 0.05 mm thickness; 1 uF, 10 V X5R candidate"
+    },
+    {
+      "ref": "C18",
+      "mpn": "GRM188R61A106MAALD",
+      "height_max_mm": 0.95,
+      "status": "candidate_part",
+      "source_url": "https://www.murata.com/en-us/products/productdetail?partno=GRM188R61A106MAAL%23",
+      "basis": "0.80 +/- 0.15 mm thickness"
+    },
+    {
+      "ref": "C19",
+      "mpn": "GRM155R61A105KE15D",
+      "height_max_mm": 0.55,
+      "status": "candidate_part",
+      "source_url": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R61A105KE15-01A.pdf",
+      "basis": "0.50 +/- 0.05 mm thickness; 1 uF, 10 V X5R candidate"
+    },
+    {
+      "ref": "C2",
+      "mpn": "GRM033R61A105ME15D",
+      "height_max_mm": 0.39,
+      "status": "existing_bom_part",
+      "source_url": "https://www.murata.com/en-us/products/productdetail?partno=GRM033R61A105ME15%23",
+      "basis": "0.30 +/- 0.09 mm thickness"
+    },
+    {
+      "ref": "C20",
+      "mpn": "GRM155R61A105KE15D",
+      "height_max_mm": 0.55,
+      "status": "candidate_part",
+      "source_url": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R61A105KE15-01A.pdf",
+      "basis": "0.50 +/- 0.05 mm thickness; 1 uF, 10 V X5R candidate"
+    },
+    {
+      "ref": "C21",
+      "mpn": "GRM155R61A105KE15D",
+      "height_max_mm": 0.55,
+      "status": "candidate_part",
+      "source_url": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R61A105KE15-01A.pdf",
+      "basis": "0.50 +/- 0.05 mm thickness; 1 uF, 10 V X5R candidate"
+    },
+    {
+      "ref": "C22",
+      "mpn": "GRM155R71H103KA88D",
+      "height_max_mm": 0.55,
+      "status": "candidate_part",
+      "source_url": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71H103KA88-01A.pdf",
+      "basis": "0.50 +/- 0.05 mm thickness; 10 nF, 50 V X7R candidate"
+    },
+    {
+      "ref": "C23",
+      "mpn": "GRM155R71C104KA88D",
+      "height_max_mm": 0.55,
+      "status": "candidate_part",
+      "source_url": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71C104KA88-01A.pdf",
+      "basis": "0.50 +/- 0.05 mm thickness; 100 nF, 16 V X7R candidate"
+    },
+    {
+      "ref": "C24",
+      "mpn": "GRM155R71C104KA88D",
+      "height_max_mm": 0.55,
+      "status": "candidate_part",
+      "source_url": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71C104KA88-01A.pdf",
+      "basis": "0.50 +/- 0.05 mm thickness; 100 nF, 16 V X7R candidate"
+    },
+    {
+      "ref": "C3",
+      "mpn": "GRM21BR61A476ME15L",
+      "height_max_mm": 1.45,
+      "status": "existing_bom_part",
+      "source_url": "https://ds.murata.com/simsurfing/mlcc.html?partnumbers=%5B%22GRM21BR61A476ME15%22%5D",
+      "basis": "T maximum 1.45 mm; packaging suffix is a candidate"
+    },
+    {
+      "ref": "C4",
+      "mpn": "GRM188R61A106MAALD",
+      "height_max_mm": 0.95,
+      "status": "existing_bom_part",
+      "source_url": "https://www.murata.com/en-us/products/productdetail?partno=GRM188R61A106MAAL%23",
+      "basis": "0.80 +/- 0.15 mm thickness"
+    },
+    {
+      "ref": "C5",
+      "mpn": "GRM033R60J104ME19D",
+      "height_max_mm": 0.33,
+      "status": "existing_bom_part",
+      "source_url": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM033R60J104ME19-01.pdf",
+      "basis": "0.30 +/- 0.03 mm thickness"
+    },
+    {
+      "ref": "C6",
+      "mpn": "GRM155R60J475ME47D",
+      "height_max_mm": 0.6,
+      "status": "existing_bom_part",
+      "source_url": "https://static6.arrow.com/aropdfconversion/5f188a2d4a9666b8d440c40328154137ed369910/grm155r60j475me47.pdf",
+      "basis": "Murata-authored reference sheet, dated 2025-01-24, served by Arrow; 0.50 +/- 0.10 mm thickness"
+    },
+    {
+      "ref": "C7",
+      "mpn": "GRM155R60J475ME47D",
+      "height_max_mm": 0.6,
+      "status": "existing_bom_part",
+      "source_url": "https://static6.arrow.com/aropdfconversion/5f188a2d4a9666b8d440c40328154137ed369910/grm155r60j475me47.pdf",
+      "basis": "Murata-authored reference sheet, dated 2025-01-24, served by Arrow; 0.50 +/- 0.10 mm thickness"
+    },
+    {
+      "ref": "C8",
+      "mpn": "GRM033R60J104ME19D",
+      "height_max_mm": 0.33,
+      "status": "candidate_part",
+      "source_url": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM033R60J104ME19-01.pdf",
+      "basis": "0.30 +/- 0.03 mm thickness"
+    },
+    {
+      "ref": "C9",
+      "mpn": "GRM155R71C104KA88D",
+      "height_max_mm": 0.55,
+      "status": "candidate_part",
+      "source_url": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71C104KA88-01A.pdf",
+      "basis": "0.50 +/- 0.05 mm thickness; 100 nF, 16 V X7R candidate"
+    },
+    {
+      "ref": "D1",
+      "mpn": "TPD4E1U06DCKR",
+      "height_max_mm": 1.1,
+      "status": "existing_bom_part",
+      "source_url": "https://www.ti.com/lit/ds/symlink/tpd4e1u06.pdf",
+      "basis": "Package DCK0006A: 1.10 mm maximum"
+    },
+    {
+      "ref": "D2",
+      "mpn": "TPD4E1U06DCKR",
+      "height_max_mm": 1.1,
+      "status": "existing_bom_part",
+      "source_url": "https://www.ti.com/lit/ds/symlink/tpd4e1u06.pdf",
+      "basis": "Package DCK0006A: 1.10 mm maximum"
+    },
+    {
+      "ref": "FB1",
+      "mpn": "BLM18SD220SN1D",
+      "height_max_mm": 0.95,
+      "status": "existing_bom_part",
+      "source_url": "https://www.murata.com/en-us/products/productdetail?partno=BLM18SD220SN1%23",
+      "basis": "0.80 +/- 0.15 mm thickness"
+    },
+    {
+      "ref": "J1",
+      "mpn": "U.FL-R-SMT-1(10)",
+      "height_max_mm": 2.5,
+      "status": "existing_bom_with_mate_requirement",
+      "source_url": "https://www.hirose.com/product/download/?distributor=all&lang=en&series=U.FL&type=catalogue",
+      "basis": "Catalog pp.2/7/9: conservative 2.50 mm maximum mated height. Cable vendor/plug remains unselected; this is a mate requirement, not bare receptacle height",
+      "mated_sweep_radius_mm": 3.0
+    },
+    {
+      "ref": "J2",
+      "mpn": "U.FL-R-SMT-1(10)",
+      "height_max_mm": 2.5,
+      "status": "existing_bom_with_mate_requirement",
+      "source_url": "https://www.hirose.com/product/download/?distributor=all&lang=en&series=U.FL&type=catalogue",
+      "basis": "Catalog pp.2/7/9: conservative 2.50 mm maximum mated height. Cable vendor/plug remains unselected; this is a mate requirement, not bare receptacle height",
+      "mated_sweep_radius_mm": 3.0
+    },
+    {
+      "ref": "J3",
+      "mpn": null,
+      "height_max_mm": 1.5,
+      "status": "harness_reservation",
+      "source_url": null,
+      "basis": "Factory soldered wire termination must remain within this 1.50 mm height requirement; harness drawing and cable bend path remain unapproved"
+    },
+    {
+      "ref": "J4",
+      "mpn": null,
+      "height_max_mm": 1.5,
+      "status": "harness_reservation",
+      "source_url": null,
+      "basis": "Factory soldered wire termination must remain within this 1.50 mm height requirement; harness drawing and cable bend path remain unapproved"
+    },
+    {
+      "ref": "J5",
+      "mpn": null,
+      "height_max_mm": 0.1,
+      "status": "bare_pads",
+      "source_url": null,
+      "basis": "Bare contact pads; no installed connector. External test fixture is removed before lid closure"
+    },
+    {
+      "ref": "J6",
+      "mpn": "SIM8051-6-0-14-00-A",
+      "height_max_mm": 1.5,
+      "status": "existing_bom_part",
+      "source_url": "https://www.mouser.cn/datasheet/2/837/SIM8051-2888021.pdf",
+      "basis": "Archived D6 drawing sheet 1: 1.35 mm profile plus title-block X.XX tolerance 0.15 mm; no locating pegs. Includes inserted nano-SIM; does not add card thickness again",
+      "local_source": "references/paul-nanosim-r04/SIM8051-drawing-D6.pdf",
+      "local_source_sha256": "4fa95562ce295d7916c8badd8efcfac60280980af34d3ce6f330e888c6da475a"
+    },
+    {
+      "ref": "J7",
+      "mpn": null,
+      "height_max_mm": 0.1,
+      "status": "bare_pads",
+      "source_url": null,
+      "basis": "Bare contact pads; no installed connector. External test fixture is removed before lid closure"
+    },
+    {
+      "ref": "L1",
+      "mpn": "LQW15AN9N1J00D",
+      "height_max_mm": 0.6,
+      "status": "existing_bom_part",
+      "source_url": "https://docs.rs-online.com/7d11/0900766b814fc1af.pdf",
+      "basis": "Murata-authored reference sheet dated 2016-06-14, served by RS; T 0.50 +/- 0.10 mm. Current supplier drawing approval still required"
+    },
+    {
+      "ref": "R1",
+      "mpn": "RC0402FR-0710KL",
+      "height_max_mm": 0.4,
+      "status": "candidate_part",
+      "source_url": "https://www.yageogroup.com/component-documentation/download/specsheet/RC0402FR-071KL",
+      "basis": "RC0402 family: T 0.35 +/- 0.05 mm. 1 kOhm representative drawing; exact-value MPNs are candidates, not a released AVL"
+    },
+    {
+      "ref": "R10",
+      "mpn": "RC0402FR-072ML",
+      "height_max_mm": 0.4,
+      "status": "candidate_part",
+      "source_url": "https://www.yageogroup.com/component-documentation/download/specsheet/RC0402FR-071KL",
+      "basis": "RC0402 family: T 0.35 +/- 0.05 mm. 1 kOhm representative drawing; exact-value MPNs are candidates, not a released AVL"
+    },
+    {
+      "ref": "R11",
+      "mpn": "RC0402FR-071ML",
+      "height_max_mm": 0.4,
+      "status": "candidate_part",
+      "source_url": "https://www.yageogroup.com/component-documentation/download/specsheet/RC0402FR-071KL",
+      "basis": "RC0402 family: T 0.35 +/- 0.05 mm. 1 kOhm representative drawing; exact-value MPNs are candidates, not a released AVL"
+    },
+    {
+      "ref": "R12",
+      "mpn": "RC0402FR-074K7L",
+      "height_max_mm": 0.4,
+      "status": "candidate_part",
+      "source_url": "https://www.yageogroup.com/component-documentation/download/specsheet/RC0402FR-071KL",
+      "basis": "RC0402 family: T 0.35 +/- 0.05 mm. 1 kOhm representative drawing; exact-value MPNs are candidates, not a released AVL"
+    },
+    {
+      "ref": "R13",
+      "mpn": "RC0402FR-074K7L",
+      "height_max_mm": 0.4,
+      "status": "candidate_part",
+      "source_url": "https://www.yageogroup.com/component-documentation/download/specsheet/RC0402FR-071KL",
+      "basis": "RC0402 family: T 0.35 +/- 0.05 mm. 1 kOhm representative drawing; exact-value MPNs are candidates, not a released AVL"
+    },
+    {
+      "ref": "R14",
+      "mpn": "RC0402FR-07100KL",
+      "height_max_mm": 0.4,
+      "status": "candidate_part",
+      "source_url": "https://www.yageogroup.com/component-documentation/download/specsheet/RC0402FR-071KL",
+      "basis": "RC0402 family: T 0.35 +/- 0.05 mm. 1 kOhm representative drawing; exact-value MPNs are candidates, not a released AVL"
+    },
+    {
+      "ref": "R15",
+      "mpn": "RC0402FR-07100KL",
+      "height_max_mm": 0.4,
+      "status": "candidate_part",
+      "source_url": "https://www.yageogroup.com/component-documentation/download/specsheet/RC0402FR-071KL",
+      "basis": "RC0402 family: T 0.35 +/- 0.05 mm. 1 kOhm representative drawing; exact-value MPNs are candidates, not a released AVL"
+    },
+    {
+      "ref": "R2",
+      "mpn": "RC0402FR-071KL",
+      "height_max_mm": 0.4,
+      "status": "candidate_part",
+      "source_url": "https://www.yageogroup.com/component-documentation/download/specsheet/RC0402FR-071KL",
+      "basis": "RC0402 family: T 0.35 +/- 0.05 mm. 1 kOhm representative drawing; exact-value MPNs are candidates, not a released AVL"
+    },
+    {
+      "ref": "R3",
+      "mpn": "RC0402JR-070RL",
+      "height_max_mm": 0.4,
+      "status": "candidate_part",
+      "source_url": "https://www.yageogroup.com/component-documentation/download/specsheet/RC0402JR-070RL",
+      "basis": "0.35 +/- 0.05 mm thickness; jumper candidate"
+    },
+    {
+      "ref": "R4",
+      "mpn": "RC0402FR-071KL",
+      "height_max_mm": 0.4,
+      "status": "candidate_part",
+      "source_url": "https://www.yageogroup.com/component-documentation/download/specsheet/RC0402FR-071KL",
+      "basis": "RC0402 family: T 0.35 +/- 0.05 mm. 1 kOhm representative drawing; exact-value MPNs are candidates, not a released AVL"
+    },
+    {
+      "ref": "R5",
+      "mpn": "RC0402FR-07100KL",
+      "height_max_mm": 0.4,
+      "status": "candidate_part",
+      "source_url": "https://www.yageogroup.com/component-documentation/download/specsheet/RC0402FR-071KL",
+      "basis": "RC0402 family: T 0.35 +/- 0.05 mm. 1 kOhm representative drawing; exact-value MPNs are candidates, not a released AVL"
+    },
+    {
+      "ref": "R6",
+      "mpn": "RC0402FR-0718KL",
+      "height_max_mm": 0.4,
+      "status": "candidate_part",
+      "source_url": "https://www.yageogroup.com/component-documentation/download/specsheet/RC0402FR-071KL",
+      "basis": "RC0402 family: T 0.35 +/- 0.05 mm. 1 kOhm representative drawing; exact-value MPNs are candidates, not a released AVL"
+    },
+    {
+      "ref": "R7",
+      "mpn": "RC0402FR-073KL",
+      "height_max_mm": 0.4,
+      "status": "candidate_part",
+      "source_url": "https://www.yageogroup.com/component-documentation/download/specsheet/RC0402FR-071KL",
+      "basis": "RC0402 family: T 0.35 +/- 0.05 mm. 1 kOhm representative drawing; exact-value MPNs are candidates, not a released AVL"
+    },
+    {
+      "ref": "R8",
+      "mpn": "RC0402FR-0710KL",
+      "height_max_mm": 0.4,
+      "status": "candidate_part",
+      "source_url": "https://www.yageogroup.com/component-documentation/download/specsheet/RC0402FR-071KL",
+      "basis": "RC0402 family: T 0.35 +/- 0.05 mm. 1 kOhm representative drawing; exact-value MPNs are candidates, not a released AVL"
+    },
+    {
+      "ref": "R9",
+      "mpn": "RC0402FR-0710KL",
+      "height_max_mm": 0.4,
+      "status": "candidate_part",
+      "source_url": "https://www.yageogroup.com/component-documentation/download/specsheet/RC0402FR-071KL",
+      "basis": "RC0402 family: T 0.35 +/- 0.05 mm. 1 kOhm representative drawing; exact-value MPNs are candidates, not a released AVL"
+    },
+    {
+      "ref": "U1",
+      "mpn": "NRF9151-LACA-R",
+      "height_max_mm": 1.3,
+      "status": "existing_bom_part",
+      "source_url": "https://docs.nordicsemi.com/r/bundle/ps_nrf9151/page/mec_spec.html",
+      "basis": "Package A maximum 1.30 mm, not nominal 1.20 mm"
+    },
+    {
+      "ref": "U2",
+      "mpn": "SKY65943-11",
+      "height_max_mm": 0.7,
+      "status": "existing_bom_part",
+      "source_url": "https://www.skyworksinc.com/-/media/SkyWorks/Documents/Products/2801-2900/SKY65943-11_204404H.pdf",
+      "basis": "Figure 6, drawing p.8: 0.65 +/- 0.05 mm"
+    },
+    {
+      "ref": "U3",
+      "mpn": "BQ25185DLHR",
+      "height_max_mm": 0.8,
+      "status": "existing_bom_part",
+      "source_url": "https://www.ti.com/lit/ds/symlink/bq25185.pdf",
+      "basis": "Package DLH0010A, WSON: 0.80 mm maximum"
+    },
+    {
+      "ref": "U4",
+      "mpn": "TPS7A0218PDBVR",
+      "height_max_mm": 1.45,
+      "status": "existing_bom_part",
+      "source_url": "https://www.ti.com/lit/ds/symlink/tps7a02.pdf",
+      "basis": "Package DBV0005A, SOT-23-5: 1.45 mm maximum"
+    },
+    {
+      "ref": "U5",
+      "mpn": "LIS2DW12TR",
+      "height_max_mm": 0.7,
+      "status": "existing_bom_part",
+      "source_url": "https://www.st.com/resource/en/datasheet/lis2dw12.pdf",
+      "basis": "LGA-12 mechanical drawing, p.56: A maximum 0.70 mm"
+    }
+  ],
+  "open_items": [
+    "Battery protected pack drawing and NTC approval",
+    "Antennas, their feed/cable geometry, clearance and RF qualification",
+    "Harness terminations, strain relief and bend paths",
+    "Exact capacitor DC-bias and resistor electrical approval",
+    "Supplier assembly tolerances and material thermal expansion",
+    "Physical fit, impact, vibration, water and dust qualification",
+    "Charging contact nut torque, anti-loosening and <=1 mm washer/lug stack within 6.4 mm diameter",
+    "PCB retention against lifting and shock; carrier ledge fit is not retention qualification"
+  ],
+  "contact_retention": {
+    "nut_mpn": "HFN-M3-A2",
+    "source_url": "https://www.accu.co.uk/thin-hexagon-nuts/73054-HFN-M3-A2",
+    "thread_major_mm": 3.0,
+    "pitch_mm": 0.5,
+    "nut_thickness_max_mm": 1.8,
+    "nut_across_flats_max_mm": 5.5,
+    "all_orientation_diameter_mm": 6.4,
+    "washer_and_lug_stack_max_mm": 1.0,
+    "minimum_exposed_thread_mm": 0.5,
+    "status": "M3 thin nut dimensional candidate; washer, wire lug, torque and anti-loosening method remain unapproved",
+    "original_M4_envelope": {
+      "across_flats_mm": 7.0,
+      "thickness_mm": 2.2,
+      "center_z_mm": 5.8
+    }
+  }
+}
