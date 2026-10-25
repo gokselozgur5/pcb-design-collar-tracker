@@ -1,0 +1,67 @@
+{
+  "scope": "Before/after actual exported copper pad, mask and paste apertures; not supplier DFM or powered testing.",
+  "capacitors": {
+    "C1": {
+      "old_copper_gap_mm": 0.17999999999999994,
+      "new_copper_gap_mm": 0.25,
+      "new_mask_bridge_mm": 0.19999999999999996,
+      "paste_copper_overlap_ratio": [
+        1.0,
+        1.0
+      ]
+    },
+    "C2": {
+      "old_copper_gap_mm": 0.17999999999999972,
+      "new_copper_gap_mm": 0.25000000000000355,
+      "new_mask_bridge_mm": 0.1999999999999993,
+      "paste_copper_overlap_ratio": [
+        0.9999999999999993,
+        0.9999999999999993
+      ]
+    },
+    "C5": {
+      "old_copper_gap_mm": 0.17999999999999972,
+      "new_copper_gap_mm": 0.25,
+      "new_mask_bridge_mm": 0.1999999999999993,
+      "paste_copper_overlap_ratio": [
+        1.0,
+        1.0
+      ]
+    },
+    "C8": {
+      "old_copper_gap_mm": 0.17999999999999883,
+      "new_copper_gap_mm": 0.2499999999999991,
+      "new_mask_bridge_mm": 0.20000000000000018,
+      "paste_copper_overlap_ratio": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  "contact_minimum_expansion_mm": {
+    "J3": 0.04999832669586927,
+    "J4": 0.049998326695868775,
+    "J5": 0.0499983266958666,
+    "J6": 0.049998326695868685,
+    "J7": 0.049998326695867186
+  },
+  "ufl": {
+    "J1": {
+      "old_shapes": 4,
+      "new_shapes": 1,
+      "polygon_model_boundary_change_mm": 1.3656268906593339e-06,
+      "maximum_arc_polygonization_error_mm": 1.1e-05
+    },
+    "J2": {
+      "old_shapes": 4,
+      "new_shapes": 1,
+      "polygon_model_boundary_change_mm": 1.3656268919154077e-06,
+      "maximum_arc_polygonization_error_mm": 1.1e-05
+    }
+  },
+  "mask_components_under_010": [],
+  "all_unlisted_pad_copper_unchanged": true,
+  "u2_1_to_control_track_mask_gap_mm": 0.21000000000000796,
+  "passed": true,
+  "arc_model_quadrant_segments": 96
+}

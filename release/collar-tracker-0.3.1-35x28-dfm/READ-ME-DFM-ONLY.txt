@@ -1,0 +1,39 @@
+COLLAR TRACKER 0.3.1 - 35 x 28 mm - DFM REVIEW CANDIDATE ONLY
+
+4 copper layers, proposed 0.8 mm thickness. In1 is reserved GND; In2 carries
+signals/power and GND fill. 53 footprints, 792 track segments, 77 tented
+0.60/0.20 mm through vias. Minimum drawn trace/fill width 0.20 mm.
+No native DRC errors, opens or schematic parity violations. 47 explicit
+library-footprint-difference warnings remain; no severity downgrade.
+
+Changes from 0.3:
+- C1/C2/C5/C8: GRM03-family reflow land candidate, 0.30 x 0.35 mm lands,
+  0.55 mm pitch, 0.25 mm copper gap (previously 0.18 mm), +0.025 mm mask.
+  Separate paste apertures updated to match the new lands. This follows
+  the common a/b/c window in Murata's GRM03 guidance; final assembly
+  evaluation and exact-SKU BOM verification remain required.
+- J3/J4/J5/J6/J7 contacts: +0.05 mm mask registration allowance.
+- J1/J2 U.FL: one union polygon per existing shared mask opening;
+  copper, paste and keepout unchanged. Not proof of supplier warning closure.
+- Only 3 GNSS_LNA_EN control trace segments moved. U2.1 mask-to-trace gap
+  increased from 0.1517 mm to 0.2100 mm. RF traces and all vias unchanged.
+- GND-zone clearance increased 0.20 -> 0.25 mm; refill/connectivity checked.
+- Two legends moved 0.10 mm and revision legend now reads 0.3.1 TEST.
+
+SUPPLIER STATUS: This revision HAS NOT been run through JLCDFM.
+The latest user-supplied 0.3 report (2026-10-25 00:42:22) still has
+0 Danger / 67 Warning. Those counts do NOT describe this 0.3.1 file.
+No promise of zero orange warnings. Fixed-pitch U5/U2 mask/pad spacings,
+U2's DK-derived partly mask-defined center pad, and U1 land/mask/stencil
+review remain. SMT DFM, assembled hardware, power and RF tests are absent.
+
+Assembly goal: factory-assembled, programmed and function-tested delivery,
+with no user hand soldering. This is NOT a completed PCBA order package.
+Exact BOM/part sourcing, battery/NTC/ESD/UVLO/VDD_GPIO sequencing,
+actual eSIM/operator, antennas/50-ohm stackup/body effects, sensor and
+enclosure remain unresolved. J6 is SIM contacts, J5 is a digital expansion
+interface, not installed eSIM or heart-rate hardware. U1 paste remains 1:1
+input for the assembly partner to adjust; final stencil has not been approved.
+
+Original 0.3 and earlier releases preserved. No upload/order/physical test.
+Source: experiments/35x28-mask-r031/hardware.

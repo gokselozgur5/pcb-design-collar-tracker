@@ -1,0 +1,38 @@
+[
+  {
+    "id": "0ec40e7d-1fc2-4667-aea3-5f855b37a10a",
+    "text": "1V8 SWD",
+    "delta_mm": [
+      0.0,
+      -0.1
+    ],
+    "distance_mm": 0.1
+  },
+  {
+    "id": "9835f16e-3e95-4096-92b8-7a46a020a715",
+    "text": "SIM EXT",
+    "delta_mm": [
+      0.1,
+      0.0
+    ],
+    "distance_mm": 0.1
+  },
+  {
+    "id": "fb8a6e54-0b2d-4224-83ce-3a8f2f018cbb",
+    "text": "COLLAR 0.3.1 TEST",
+    "delta_mm": [
+      0.0,
+      0.0
+    ],
+    "distance_mm": 0.0
+  },
+  {
+    "id": "ccefe960-8ac1-4d54-b738-7902c3591b1d",
+    "text": "HEALTH EXT",
+    "delta_mm": [
+      0.0,
+      0.0
+    ],
+    "distance_mm": 0.0
+  }
+]

@@ -1,0 +1,5 @@
+(version 1)
+# Fixed package pad pitch; this exception never applies to tracks or vias.
+(rule "Unchanged package pad spacing"
+  (condition "A.Type == 'Pad' && B.Type == 'Pad' && A.Reference == B.Reference")
+  (constraint clearance (min 0.15mm)))

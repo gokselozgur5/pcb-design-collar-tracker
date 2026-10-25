@@ -1,0 +1,128 @@
+{
+  "base_sha256": "e43296f852e2b1f9a789794bd66c97c7418bf79f2dd2b295e2a6412c608d19d2",
+  "initial_output_sha256": "22afd8d712f2b40d28a6b7ef5beb499cedd2975ab8f0535d6c94c839f1d5fc9b",
+  "changes": [
+    {
+      "ref": "C1",
+      "change": "GRM03 family reflow candidate: a=0.25 gap, b=0.30 land length, c=0.35 land width; pitch 0.55. Matched paste-only pads, +0.025 mask."
+    },
+    {
+      "ref": "J2",
+      "change": "One union mask polygon, same aperture geometry within polygon tolerance; copper/paste/keepout unchanged."
+    },
+    {
+      "ref": "C5",
+      "change": "GRM03 family reflow candidate: a=0.25 gap, b=0.30 land length, c=0.35 land width; pitch 0.55. Matched paste-only pads, +0.025 mask."
+    },
+    {
+      "ref": "C2",
+      "change": "GRM03 family reflow candidate: a=0.25 gap, b=0.30 land length, c=0.35 land width; pitch 0.55. Matched paste-only pads, +0.025 mask."
+    },
+    {
+      "ref": "J1",
+      "change": "One union mask polygon, same aperture geometry within polygon tolerance; copper/paste/keepout unchanged."
+    },
+    {
+      "ref": "J3",
+      "change": "Add 0.05 mm mask expansion to exposed contact copper; no component or copper geometry change."
+    },
+    {
+      "ref": "J7",
+      "change": "Add 0.05 mm mask expansion to exposed contact copper; no component or copper geometry change."
+    },
+    {
+      "ref": "J5",
+      "change": "Add 0.05 mm mask expansion to exposed contact copper; no component or copper geometry change."
+    },
+    {
+      "ref": "J6",
+      "change": "Add 0.05 mm mask expansion to exposed contact copper; no component or copper geometry change."
+    },
+    {
+      "ref": "C8",
+      "change": "GRM03 family reflow candidate: a=0.25 gap, b=0.30 land length, c=0.35 land width; pitch 0.55. Matched paste-only pads, +0.025 mask."
+    },
+    {
+      "ref": "J4",
+      "change": "Add 0.05 mm mask expansion to exposed contact copper; no component or copper geometry change."
+    },
+    {
+      "net": "/GNSS_LNA_EN",
+      "tracks": [
+        {
+          "id": "623202d5-9d9d-4aab-8057-7aa98301ea52",
+          "before": [
+            [
+              124.7017,
+              117.0
+            ],
+            [
+              124.7017,
+              119.2778
+            ]
+          ],
+          "after": [
+            [
+              124.76,
+              117.0
+            ],
+            [
+              124.76,
+              119.2195
+            ]
+          ]
+        },
+        {
+          "id": "6b5d4c50-3553-4d4a-8fca-8e81a61c3808",
+          "before": [
+            [
+              124.1875,
+              117.0
+            ],
+            [
+              124.7017,
+              117.0
+            ]
+          ],
+          "after": [
+            [
+              124.1875,
+              117.0
+            ],
+            [
+              124.76,
+              117.0
+            ]
+          ]
+        },
+        {
+          "id": "86fe62c8-bf2a-4fcf-b3bd-cbbd80495d56",
+          "before": [
+            [
+              124.7017,
+              119.2778
+            ],
+            [
+              124.3583,
+              119.6212
+            ]
+          ],
+          "after": [
+            [
+              124.76,
+              119.2195
+            ],
+            [
+              124.3583,
+              119.6212
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "zone_clearance_mm": 0.25,
+      "reason": "Leave >=0.20 mm nominal mask-to-foreign-pour margin for +0.05 mm apertures. Refill/connectivity must pass."
+    }
+  ]
+}
