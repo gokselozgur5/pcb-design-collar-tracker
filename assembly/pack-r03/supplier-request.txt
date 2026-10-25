@@ -1,0 +1,26 @@
+To: DesignMyBattery@eemb.com
+Subject: Small protected LiPo pack for an nRF9151 tracker
+Attachment: request-sheet.pdf
+
+Hi,
+
+We are designing a small GPS/cellular tracker and need a complete protected 1S pack with a cell-mounted NTC.
+
+The attached CT-BAT-001-A drawing sets the available space and electrical interface.
+
+- At least 300 mAh, preferably around 350 mAh.
+- Complete pack body within 32 x 30.5 x 5.3 mm, including PCM and insulation. Please confirm the maximum thickness in service, including swelling.
+- 600 mA continuous complete-pack capability as our design allowance. Please provide the pulse/duty/temperature limits, voltage drop and PCM protection/recovery specification.
+- Charging at 4.2 V +/-0.5%, nominal 100 mA, about 10 mA termination and a nominal six-hour fast-charge safety timer. Please check the 112 mA current screen and 0–45 C cell-temperature range against your specification.
+- 10k +/-1%, B3435 +/-1% NTC attached to the cell. Three insulated outputs: protected positive, protected negative/sensor return, and NTC.
+
+The LP503030-PCM-LD sheet we found rates its PCM at 350 mA continuous, so we cannot treat the 700 mA bare-cell rating as the pack rating.
+
+Can you provide a current part or controlled variant meeting these requirements, with its drawing, safety documents, prototype availability, MOQ and lead time?
+
+If the size or current requirement is not achievable, please send the nearest supported configuration.
+
+This is a technical enquiry, not an order.
+
+Thanks,
+Goksel

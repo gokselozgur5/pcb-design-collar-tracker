@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1123" height="794" viewBox="0 0 1123 794">
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto-start-reverse"><path d="M8 0L0 4L8 8" fill="none" stroke="#34485c"/></marker></defs>
+<rect width="1123" height="794" fill="white"/>
+<style>text{font-family:Arial,sans-serif;fill:#172b3c}.small{font-size:14px}.body{font-size:17px}.dim{stroke:#34485c;stroke-width:1.2;fill:none;marker-start:url(#arrow);marker-end:url(#arrow)}</style>
+<text x="36" y="45" font-size="27" style="fill:#172b3c;font-weight:700">CT-BAT-001-A | Protected pack + temperature sensor</text>
+<rect x="36" y="62" width="1051" height="42" fill="#fff1d4" stroke="#e3b252" rx="5"/>
+<text x="51" y="90" font-size="19" style="fill:#172b3c;font-weight:700">SUPPLIER REQUEST — dimensions and ratings need written confirmation</text>
+<text x="36" y="135" font-size="20" style="fill:#172b3c;font-weight:700">Requested pack body</text>
+<rect x="82" y="181" width="272.0" height="259.25" fill="#e6edf2" stroke="#405769" rx="8"/>
+<rect x="107.5" y="293.2" width="221.0" height="34.849999999999994" fill="#eeba66" stroke="#a06b28" rx="2"/>
+<text x="100" y="225" font-size="16" style="fill:#172b3c;font-weight:400">Complete protected 1S pack</text>
+<text x="114" y="351" font-size="16" style="fill:#172b3c;font-weight:400">Flat NTC attachment</text>
+<text x="108" y="376" font-size="13" style="fill:#172b3c;font-weight:400">Active sensing area: confirm</text>
+<path d="M82 158H354.0" class="dim"/>
+<text x="165" y="148" font-size="16" style="fill:#172b3c;font-weight:400">32 mm MAX</text>
+<path d="M379.0 181V440.25" class="dim"/>
+<text x="390.0" y="310.625" font-size="16" style="fill:#172b3c;font-weight:400">30.5</text>
+<text x="390.0" y="330.625" font-size="14" style="fill:#172b3c;font-weight:400">mm</text>
+<text x="36" y="481" font-size="17" style="fill:#172b3c;font-weight:700">Side section — budgets, not a supplier-approved stack</text>
+<rect x="82" y="505" width="272.0" height="45.05" fill="#e6edf2" stroke="#405769" rx="0"/>
+<rect x="107.5" y="503.725" width="221.0" height="1.275" fill="#d6cba8" stroke="#405769" rx="0"/>
+<rect x="107.5" y="499.475" width="221.0" height="4.25" fill="#eeba66" stroke="#405769" rx="0"/>
+<path d="M376.0 505V550.05" class="dim"/>
+<text x="389" y="532" font-size="16" style="fill:#172b3c;font-weight:400">5.3 mm</text>
+<text x="36" y="580" font-size="14" style="fill:#172b3c;font-weight:400">Body limit must include PCM, insulation and service swelling.</text>
+<text x="36" y="603" font-size="14" style="fill:#172b3c;font-weight:400">NTC: 26 x 4.1 x 0.5 mm; bond ≤0.15 mm; cover ≤0.10 mm.</text>
+<text x="36" y="626" font-size="14" style="fill:#172b3c;font-weight:400">Available complete assembly envelope: 33 x 31.5 x 6.2 mm.</text>
+<text x="505" y="135" font-size="20" style="fill:#172b3c;font-weight:700">Electrical requirements</text>
+<rect x="500" y="148" width="587" height="30" fill="#f3f6f8" stroke="none" rx="0"/>
+<text x="510" y="168" font-size="14" style="fill:#172b3c;font-weight:700">Capacity</text>
+<text x="655" y="168" font-size="14" style="fill:#172b3c;font-weight:400">≥300 mAh; about 350 mAh preferred</text>
+<text x="510" y="199" font-size="14" style="fill:#172b3c;font-weight:700">Pack voltage</text>
+<text x="655" y="199" font-size="14" style="fill:#172b3c;font-weight:400">1S, 3.7 V nominal</text>
+<rect x="500" y="210" width="587" height="30" fill="#f3f6f8" stroke="none" rx="0"/>
+<text x="510" y="230" font-size="14" style="fill:#172b3c;font-weight:700">Charge voltage</text>
+<text x="655" y="230" font-size="14" style="fill:#172b3c;font-weight:400">4.2 V ±0.5%; confirm compatible limits</text>
+<text x="510" y="261" font-size="14" style="fill:#172b3c;font-weight:700">Charge current</text>
+<text x="655" y="261" font-size="14" style="fill:#172b3c;font-weight:400">100 mA nominal; check 112 mA screen</text>
+<rect x="500" y="272" width="587" height="30" fill="#f3f6f8" stroke="none" rx="0"/>
+<text x="510" y="292" font-size="14" style="fill:#172b3c;font-weight:700">Cell charging</text>
+<text x="655" y="292" font-size="14" style="fill:#172b3c;font-weight:400">0–45°C; hardware temperature interlock</text>
+<text x="510" y="323" font-size="14" style="fill:#172b3c;font-weight:700">Pack discharge</text>
+<text x="655" y="323" font-size="14" style="fill:#172b3c;font-weight:400">600 mA continuous design allowance</text>
+<rect x="500" y="334" width="587" height="30" fill="#f3f6f8" stroke="none" rx="0"/>
+<text x="510" y="354" font-size="14" style="fill:#172b3c;font-weight:700">Charge finish</text>
+<text x="655" y="354" font-size="14" style="fill:#172b3c;font-weight:400">About 10 mA termination; 6 h nominal safety timer</text>
+<text x="510" y="385" font-size="14" style="fill:#172b3c;font-weight:700">Pulse rating</text>
+<text x="655" y="385" font-size="14" style="fill:#172b3c;font-weight:400">Return duration, duty and temperature limits</text>
+<rect x="500" y="396" width="587" height="30" fill="#f3f6f8" stroke="none" rx="0"/>
+<text x="510" y="416" font-size="14" style="fill:#172b3c;font-weight:700">Sensor</text>
+<text x="655" y="416" font-size="14" style="fill:#172b3c;font-weight:400">10k ±1%; B3435 ±1%; attached to cell</text>
+<text x="510" y="447" font-size="14" style="fill:#172b3c;font-weight:700">Protection</text>
+<text x="655" y="447" font-size="14" style="fill:#172b3c;font-weight:400">Return thresholds, delays and recovery</text>
+<rect x="500" y="458" width="587" height="30" fill="#f3f6f8" stroke="none" rx="0"/>
+<text x="510" y="478" font-size="14" style="fill:#172b3c;font-weight:700">Termination</text>
+<text x="655" y="478" font-size="14" style="fill:#172b3c;font-weight:400">Three insulated, factory-assembled outputs</text>
+<text x="505" y="545" font-size="20" style="fill:#172b3c;font-weight:700">Native board interface</text>
+<text x="510" y="575" font-size="16" style="fill:#172b3c;font-weight:400">J4.1  RED      protected positive / VBAT</text>
+<text x="510" y="600" font-size="16" style="fill:#172b3c;font-weight:400">J4.2  BLACK  protected negative + NTC return</text>
+<text x="510" y="625" font-size="16" style="fill:#172b3c;font-weight:400">J4.3  WHITE  NTC signal / BAT_NTC</text>
+<rect x="36" y="655" width="1051" height="101" fill="#f3f6f8" stroke="none" rx="5"/>
+<text x="49" y="678" font-size="14" style="fill:#172b3c;font-weight:400">Please return a controlled part/drawing, complete-pack limits, NTC construction, safety documents, MOQ and lead time.</text>
+<text x="49" y="700" font-size="14" style="fill:#172b3c;font-weight:400">The reference EEMB LP503030-PCM-LD sheet limits its PCM to 350 mA continuous. It is NOT approved for this request.</text>
+<text x="49" y="722" font-size="14" style="fill:#172b3c;font-weight:400">If these limits cannot be met, propose a supported alternative. This enquiry is not an order or a manufacturing release.</text>
+<text x="49" y="744" font-size="14" style="fill:#172b3c;font-weight:400">No end-user soldering. Lead length, routing, strain relief, sensor lag and physical qualification are still open.</text>
+<text x="36" y="780" font-size="13" style="fill:#172b3c;font-weight:400">2026-10-26  |  Engineering request  |  Units: mm  |  Not to scale  |  1 / 1</text>
+</svg>

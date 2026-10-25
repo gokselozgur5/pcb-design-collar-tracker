@@ -1,0 +1,56 @@
+{
+  "revision": "CT-BAT-001-A",
+  "status": "SUPPLIER_REQUEST_NOT_AN_APPROVED_PART",
+  "manufacturer_confirmed": false,
+  "reference_only": "EEMB LP503030-PCM-LD, ZJQM-RD-SPC-A04005 rev 0.0. Its 350 mA PCM is not accepted for this request.",
+  "configuration": "1S rechargeable lithium-ion polymer, complete protected pack",
+  "capacity_mAh": {"minimum_requested": 300, "preferred_nominal": 350},
+  "voltage": {"nominal_V": 3.7, "charge_nominal_V": 4.2, "charger_accuracy_fraction": 0.005},
+  "charge": {"nominal_A": 0.1, "design_upper_A": 0.112, "safety_timer_nominal_h": 6, "cell_temperature_C": [0, 45]},
+  "discharge": {
+    "continuous_requested_A": 0.6,
+    "basis": "Engineering headroom for the whole device. Nordic specifies approximately 500 mA peak at 3.7 V, not 600 mA continuous.",
+    "pulse_qualification": "Return the complete pack current-versus-duration/duty/temperature rating and PCM trip/recovery limits. Do not substitute a cell rating or an overcurrent-trip threshold for a load rating.",
+    "recommended_device_cutoff_V": 3.0,
+    "temperature_requested_C": [-10, 45]
+  },
+  "mechanical": {
+    "maximum_complete_pack_body_mm": [32, 30.5, 5.3],
+    "dimension_scope": "Requested bound including PCM, insulation and service swelling; supplier must explicitly confirm or return a revised drawing. The old EEMB drawing does not establish its end-of-life bound.",
+    "body_bottom_z_mm": 2.1,
+    "assembly_envelope_mm": [33, 31.5, 6.2],
+    "assembly_envelope_bottom_z_mm": 2.0,
+    "ntc": {
+      "candidate": "SEMITEC 103JT-025",
+      "body_maximum_mm": [26, 4.1, 0.5],
+      "center_xy_mm": [0, 0],
+      "r25_ohm": 10000,
+      "r25_tolerance_fraction": 0.01,
+      "beta_25_85_K": 3435,
+      "beta_tolerance_fraction": 0.01,
+      "attachment": "Flat against the broad insulated cell face; no fold or bare-cell soldering. Confirm the active sensing-area location, insulation, process and thermal lag before release.",
+      "bond_candidate": "3M 8805",
+      "bond_thickness_budget_mm": 0.15,
+      "cover_candidate": "3M 5419",
+      "cover_thickness_budget_mm": 0.1,
+      "tape_budget_basis": "Assigned maximums, not manufacturer-guaranteed maxima. Typical published thicknesses are 0.125 mm and 0.07 mm; conversion tolerance and cell compatibility need approval."
+    }
+  },
+  "factory_interface": [
+    {"pin": "J4.1", "signal": "VBAT", "wire": "red", "connection": "PCM protected positive output"},
+    {"pin": "J4.2", "signal": "GND", "wire": "black", "connection": "PCM protected negative output and sensor return"},
+    {"pin": "J4.3", "signal": "BAT_NTC", "wire": "white", "connection": "Other NTC terminal; no connection to cell positive"}
+  ],
+  "factory_assembly_required": true,
+  "end_user_soldering": false,
+  "lead_and_connector_drawing_approved": false,
+  "supplier_response_required": [
+    "Controlled complete-pack part number, revision and dimensions including service swelling",
+    "Cell and PCM load limits, resistance, protection thresholds/delays and recovery behavior",
+    "Compatibility with 4.2 V charger tolerance, 112 mA upper current screen and charge termination",
+    "Cell-mounted NTC R/T limits, sensor placement, attachment and thermal response",
+    "Insulated wire/termination construction, current rating and strain relief",
+    "Current UN38.3 test summary and applicable cell/pack safety documents",
+    "Prototype availability, MOQ and lead time; no order is authorized"
+  ]
+}

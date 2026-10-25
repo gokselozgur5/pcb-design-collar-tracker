@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-26",
+  "sources": [
+    {
+      "label": "EEMB reference pack",
+      "url": "https://macrogroup.ru/upload/iblock/806/l9ka6axlc8lwl5b0dbf2xov43s2g5l33/LP503030.pdf",
+      "sha256": "fb61a5d2e2c1c15d95d20a75bc3b4cdc1870c16e971840f380b8a7f897b8d7f5",
+      "reviewed": "ZJQM-RD-SPC-A04005 rev 0.0, 2018-07-30; pages 3, 7, 8"
+    },
+    {
+      "label": "Jauch 252538",
+      "url": "https://www.jauch.com/downloadfile/6791ed8abd374f1eabe17db59037d0cd3/matd_252538_lp503030jupcm2icntcmol._78172-3_50mm.pdf",
+      "sha256": "4e889669540549f778a63c2fb7e067798c08444a02048ca70d6393342e87d092",
+      "reviewed": "Rev 1.2, August 2024; page 1"
+    },
+    {
+      "label": "Jauch 246510",
+      "url": "https://www.jauch.com/downloadfile/677e39d5dc1812655afe7605fec75d931/matd_246510_20200507_680mah_-_lp102530ju_1s1p_2_wire_50mm.pdf",
+      "sha256": "b4a09a0d8636b9561446d64fa4d85b43e2ccf89e7a7e88ecd5e73ff9c8e53ee8",
+      "reviewed": "Rev 1.2, December 2024; page 1 including actual dimension drawing"
+    },
+    {
+      "label": "SEMITEC JT",
+      "url": "https://www.semitec-global.com/uploads/2022/01/P9-JT-Thermistor.pdf",
+      "sha256": "b430302b8002752e077803c594dac29ce98e86361444394faba51096d723b266",
+      "reviewed": "JT catalogue page 9"
+    },
+    {
+      "label": "BQ25185",
+      "url": "https://www.ti.com/lit/ds/symlink/bq25185.pdf",
+      "sha256": "c73ed7d63e6532bb05e26df30edd37c6ac2de310c1222a84a77625e15e133684",
+      "reviewed": "SLUSF65B; voltage/current and timer conditions"
+    },
+    {
+      "label": "Nordic peak guidance",
+      "url": "https://docs.nordicsemi.com/r/bundle/nwp_056/page/wp/nwp_056/power_supply/maximum_output_power.html",
+      "reviewed": "Approximately 500 mA peak at 3.7 V; source selection guidance",
+      "access": "Primary page/PDF inspected with web tool; no local snapshot hash asserted"
+    },
+    {
+      "label": "Nordic PC3 TX tables",
+      "url": "https://docs.nordicsemi.com/r/bundle/nwp_056/page/wp/nwp_056/vdd_current_p3.html",
+      "reviewed": "Typical TX current is averaged over 1 ms subframes; microsecond peaks exceed table values",
+      "access": "Primary page/PDF inspected with web tool; no local snapshot hash asserted"
+    },
+    {
+      "label": "3M 8805",
+      "url": "https://multimedia.3m.com/mws/media/122119O/3m-thermally-conductive-adhesive-transfer-tapes-8800-series.pdf",
+      "reviewed": "Published typical 0.125 mm thickness; not a guaranteed converted-part maximum",
+      "access": "Primary page/PDF inspected with web tool; no local snapshot hash asserted"
+    },
+    {
+      "label": "3M 5419",
+      "url": "https://multimedia.3m.com/mws/media/136012O/3mtm-low-static-polyimide-film-tape-5419.pdf?fn=20351_R2.pdf",
+      "reviewed": "July 2021 sheet; typical 0.07 mm total thickness; not guaranteed maximum",
+      "access": "Primary page/PDF inspected with web tool; no local snapshot hash asserted"
+    },
+    {
+      "label": "EEMB custom-pack contact",
+      "url": "https://www.eemb.com/custom",
+      "reviewed": "Published technical contact DesignMyBattery@eemb.com; no enquiry sent",
+      "access": "Primary page/PDF inspected with web tool; no local snapshot hash asserted"
+    }
+  ],
+  "qualification": "Source review only; no pack release or supplier confirmation"
+}

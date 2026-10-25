@@ -1,0 +1,94 @@
+{
+  "result": "REQUESTED_ENVELOPE_GEOMETRY_PASS",
+  "supplier_part_selected": false,
+  "electrical_release": false,
+  "physical_thermal_qualified": false,
+  "physical_ingress_qualified": false,
+  "request_sha256": "c45f7910427b9a5e7562caa943e12bd85e8b1e8e27e9e4803a6741d4334fdfd2",
+  "checker_sha256": "1dd0fc9143c87d37bd66a7a97376d77b08435096e298e8ce5e320705618315a7",
+  "pcb_sha256": "241c84d6ba98793c37344e1e46ddc4918e7b05322ba87daea7c9a90ffb8379b3",
+  "base_inputs": {
+    "mechanical/swim-r08-antennas/parameters.json": "375333c9fecf8a5a912d09c31e762849ca58ab73862eff720ba080b691855bd8",
+    "mechanical/swim-r08-antennas/components.native.json": "448db77589a4f1355f7f7a953590fef540bec405dd1edbf7ffd6e66885c1331c",
+    "mechanical/swim-r08-antennas/fit-profile.json": "5d951ab23e43953a50d4729b2e45b13dd3ce95e773ee4dd423dbd57675534f2b",
+    "mechanical/swim-r08-antennas/routing-controls.json": "82e90a0cd686a7231b91cd5f51238393e451bca4e0f59691ef80b823fdf83de5"
+  },
+  "native_netlist_sha256": "4c88b83f1af96f3924d63761ab09681049cce83cc0b364aaa669a27b19e9be28",
+  "stack": {
+    "pack_top_mm": 7.4,
+    "sensor_bottom_mm": 7.550000000000001,
+    "sensor_top_mm": 8.05,
+    "cover_top_mm": 8.15,
+    "remaining_envelope_mm": 0.049999999999998934
+  },
+  "checks": [
+    {
+      "name": "Requested body inside assembly XY allowance",
+      "pass_": true
+    },
+    {
+      "name": "Requested sensor stack inside assembly",
+      "pass_": true,
+      "margin_mm": 0.049999999999998934
+    },
+    {
+      "name": "Pack to carrier leg",
+      "center_mm": [
+        -19.8,
+        -12
+      ],
+      "gap_mm": 2.8000000000000007,
+      "pass_": true
+    },
+    {
+      "name": "Pack to carrier leg",
+      "center_mm": [
+        -19.8,
+        10
+      ],
+      "gap_mm": 2.8000000000000007,
+      "pass_": true
+    },
+    {
+      "name": "Pack to carrier leg",
+      "center_mm": [
+        19.8,
+        -12
+      ],
+      "gap_mm": 2.8000000000000007,
+      "pass_": true
+    },
+    {
+      "name": "Pack to carrier leg",
+      "center_mm": [
+        19.8,
+        12
+      ],
+      "gap_mm": 2.8000000000000007,
+      "pass_": true
+    },
+    {
+      "name": "Pack to contact thread",
+      "y_mm": -6.0,
+      "gap_mm": 1.0,
+      "pass_": true
+    },
+    {
+      "name": "Pack to contact thread",
+      "y_mm": 6.0,
+      "gap_mm": 1.0,
+      "pass_": true
+    }
+  ],
+  "rigid_size_mm": [
+    57.4,
+    49.4,
+    21.0
+  ],
+  "change_from_r08_mm": [
+    0,
+    0,
+    0.4
+  ],
+  "scope": "Dimensional study of a supplier request. Existing EEMB PCM is not electrically approved. Leads, attachment strength, thermal lag, service swelling and retention remain open."
+}
