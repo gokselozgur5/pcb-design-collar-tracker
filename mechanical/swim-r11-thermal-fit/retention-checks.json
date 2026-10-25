@@ -1,0 +1,5078 @@
+{
+  "result": "CONDITIONAL_RETENTION_GEOMETRY_PASS",
+  "pcb_sha256": "241c84d6ba98793c37344e1e46ddc4918e7b05322ba87daea7c9a90ffb8379b3",
+  "base_inputs": {
+    "mechanical/swim-r09-pack-request/parameters.json": "8b168db6a9f4cd4c46e09420f385e39ccdf164fe2493eec8e454954da225d4de",
+    "mechanical/swim-r09-pack-request/components.native.json": "448db77589a4f1355f7f7a953590fef540bec405dd1edbf7ffd6e66885c1331c",
+    "mechanical/swim-r09-pack-request/fit-profile.json": "5d951ab23e43953a50d4729b2e45b13dd3ce95e773ee4dd423dbd57675534f2b",
+    "mechanical/swim-r09-pack-request/routing-controls.json": "8d08d896abeb26a4fbf41f3abea52e24cf8cdc0a01bdf1596e11968801289920",
+    "mechanical/swim-r09-pack-request/enclosure.scad": "ce2abb998af3344713ccc9fff3c5c334d69080b297a3f21e425cdb4b16caa913",
+    "mechanical/swim-r09-pack-request/pack.scad": "63d9073d110e2a92961b9464c1d6c590716e3a138e5a58ad08c0fbd385f73c1c"
+  },
+  "retention_input_sha256": "9a4b3c0126f3542c8d0bff03cb1c57dfd097c8927ad84b9af780185673585fbd",
+  "checker_sha256": "e7952082c8c4e71b8d61f2e26aaa996781be2c23173598138ccde2c32e17cc6a",
+  "checks": [
+    {
+      "name": "Declared thermal interface bounds",
+      "pass_": true,
+      "failures": []
+    },
+    {
+      "name": "Motion screens cover thermal stack",
+      "pass_": true
+    },
+    {
+      "name": "Thermal/motion component envelopes versus retention",
+      "pass_": true,
+      "failures": []
+    },
+    {
+      "name": "Four tabs overlap the guaranteed board interior",
+      "pass_": true,
+      "contact_areas_mm2": [
+        0.22124999999999784,
+        0.22124999999999784,
+        0.27124999999999816,
+        0.16187499999999913
+      ],
+      "pointwise_relative_bound_mm": 0.8
+    },
+    {
+      "name": "Nominal frame outline inside cavity",
+      "pass_": true
+    },
+    {
+      "name": "lid hold-down to LTE CAPH SZK-C-3L30 envelope",
+      "pass_": true,
+      "gap_mm": 5.000000000000002
+    },
+    {
+      "name": "lid hold-down to GNSS ZETA SZK-C-0G04 envelope",
+      "pass_": true,
+      "gap_mm": 11.450000000000001
+    },
+    {
+      "name": "lid hold-down to LTE CAPH SZK-C-3L30 envelope",
+      "pass_": true,
+      "gap_mm": 5.000000000000002
+    },
+    {
+      "name": "lid hold-down to GNSS ZETA SZK-C-0G04 envelope",
+      "pass_": true,
+      "gap_mm": 11.450000000000001
+    },
+    {
+      "name": "lid hold-down to LTE CAPH SZK-C-3L30 envelope",
+      "pass_": true,
+      "gap_mm": 15.5
+    },
+    {
+      "name": "lid hold-down to GNSS ZETA SZK-C-0G04 envelope",
+      "pass_": true,
+      "gap_mm": 0.7000000000000011
+    },
+    {
+      "name": "lid hold-down to LTE CAPH SZK-C-3L30 envelope",
+      "pass_": true,
+      "gap_mm": 15.759838197138956
+    },
+    {
+      "name": "lid hold-down to GNSS ZETA SZK-C-0G04 envelope",
+      "pass_": true,
+      "gap_mm": 0.7000000000000011
+    }
+  ],
+  "minimum_component_gaps": {
+    "C1": {
+      "gap_mm": 2.4546333738462875,
+      "obstacle": "carrier ledge"
+    },
+    "C10": {
+      "gap_mm": 0.22499999999999964,
+      "obstacle": "carrier ledge"
+    },
+    "C13": {
+      "gap_mm": 10.767323251393542,
+      "obstacle": "carrier ledge"
+    },
+    "C14": {
+      "gap_mm": 11.576461030902323,
+      "obstacle": "carrier ledge"
+    },
+    "C15": {
+      "gap_mm": 9.349612291426851,
+      "obstacle": "retainer frame"
+    },
+    "C16": {
+      "gap_mm": 7.205000000000001,
+      "obstacle": "retainer frame"
+    },
+    "C17": {
+      "gap_mm": 5.848002658396771,
+      "obstacle": "retainer frame"
+    },
+    "C18": {
+      "gap_mm": 1.8000000000000007,
+      "obstacle": "retainer frame"
+    },
+    "C19": {
+      "gap_mm": 1.0650000000000013,
+      "obstacle": "retainer frame"
+    },
+    "C2": {
+      "gap_mm": 2.675042055744174,
+      "obstacle": "carrier ledge"
+    },
+    "C20": {
+      "gap_mm": 1.3049999999999997,
+      "obstacle": "retainer frame"
+    },
+    "C21": {
+      "gap_mm": 3.0049999999999986,
+      "obstacle": "retainer frame"
+    },
+    "C23": {
+      "gap_mm": 3.777730800361508,
+      "obstacle": "retainer frame"
+    },
+    "C24": {
+      "gap_mm": 4.097493136052825,
+      "obstacle": "carrier ledge"
+    },
+    "C25": {
+      "gap_mm": 1.625,
+      "obstacle": "carrier ledge"
+    },
+    "C26": {
+      "gap_mm": 6.354999999999998,
+      "obstacle": "carrier ledge"
+    },
+    "C27": {
+      "gap_mm": 0.6036969438385442,
+      "obstacle": "carrier ledge"
+    },
+    "C28": {
+      "gap_mm": 1.6475588001646546,
+      "obstacle": "carrier ledge"
+    },
+    "C29": {
+      "gap_mm": 0.20500000000000185,
+      "obstacle": "retainer frame"
+    },
+    "C3": {
+      "gap_mm": 1.2300000000000004,
+      "obstacle": "retainer frame"
+    },
+    "C30": {
+      "gap_mm": 0.7644932962426813,
+      "obstacle": "carrier ledge"
+    },
+    "C31": {
+      "gap_mm": 0.6649999999999991,
+      "obstacle": "retainer frame"
+    },
+    "C32": {
+      "gap_mm": 0.5190857347298216,
+      "obstacle": "carrier ledge"
+    },
+    "C33": {
+      "gap_mm": 0.22499999999999962,
+      "obstacle": "carrier ledge"
+    },
+    "C34": {
+      "gap_mm": 0.5050000000000008,
+      "obstacle": "carrier guide rail"
+    },
+    "C35": {
+      "gap_mm": 4.683401541614811,
+      "obstacle": "carrier ledge"
+    },
+    "C36": {
+      "gap_mm": 3.67384472897477,
+      "obstacle": "retainer frame"
+    },
+    "C4": {
+      "gap_mm": 4.486661909773869,
+      "obstacle": "retainer frame"
+    },
+    "C5": {
+      "gap_mm": 6.445607031149199,
+      "obstacle": "carrier ledge"
+    },
+    "C6": {
+      "gap_mm": 5.72819779686421,
+      "obstacle": "carrier ledge"
+    },
+    "C7": {
+      "gap_mm": 7.0150000000000015,
+      "obstacle": "retainer frame"
+    },
+    "C8": {
+      "gap_mm": 5.200000000000002,
+      "obstacle": "carrier ledge"
+    },
+    "C9": {
+      "gap_mm": 1.8300000000000018,
+      "obstacle": "carrier ledge"
+    },
+    "D1": {
+      "gap_mm": 0.2250000000000014,
+      "obstacle": "carrier guide rail"
+    },
+    "D2": {
+      "gap_mm": 7.946757835281992,
+      "obstacle": "retainer frame"
+    },
+    "FB1": {
+      "gap_mm": 2.313060742825404,
+      "obstacle": "carrier ledge"
+    },
+    "J1": {
+      "gap_mm": 3.5624219289691093,
+      "obstacle": "carrier ledge"
+    },
+    "J2": {
+      "gap_mm": 5.548950351192558,
+      "obstacle": "carrier ledge"
+    },
+    "J3": {
+      "gap_mm": 1.0204165815979287,
+      "obstacle": "retainer frame"
+    },
+    "J4": {
+      "gap_mm": 1.9749999999999999,
+      "obstacle": "carrier ledge"
+    },
+    "J5": {
+      "gap_mm": 2.7899999999999987,
+      "obstacle": "carrier ledge"
+    },
+    "J6": {
+      "gap_mm": 2.3749999999999996,
+      "obstacle": "carrier ledge"
+    },
+    "J7": {
+      "gap_mm": 2.998041027070847,
+      "obstacle": "carrier leg"
+    },
+    "L1": {
+      "gap_mm": 11.806237758066704,
+      "obstacle": "carrier ledge"
+    },
+    "Q1": {
+      "gap_mm": 0.8550000000000004,
+      "obstacle": "retainer frame"
+    },
+    "R1": {
+      "gap_mm": 2.1850000000000023,
+      "obstacle": "carrier ledge"
+    },
+    "R12": {
+      "gap_mm": 0.588600033978931,
+      "obstacle": "carrier ledge"
+    },
+    "R13": {
+      "gap_mm": 1.1850000000000005,
+      "obstacle": "retainer frame"
+    },
+    "R14": {
+      "gap_mm": 9.384999999999998,
+      "obstacle": "carrier ledge"
+    },
+    "R15": {
+      "gap_mm": 9.329649516065206,
+      "obstacle": "retainer frame"
+    },
+    "R16": {
+      "gap_mm": 0.49500000000000277,
+      "obstacle": "south radial key"
+    },
+    "R17": {
+      "gap_mm": 2.045,
+      "obstacle": "carrier ledge"
+    },
+    "R18": {
+      "gap_mm": 2.34231722872885,
+      "obstacle": "carrier ledge"
+    },
+    "R19": {
+      "gap_mm": 0.8332166584988552,
+      "obstacle": "carrier ledge"
+    },
+    "R2": {
+      "gap_mm": 4.745000000000003,
+      "obstacle": "carrier ledge"
+    },
+    "R20": {
+      "gap_mm": 0.8175879157619678,
+      "obstacle": "carrier ledge"
+    },
+    "R21": {
+      "gap_mm": 0.7450000000000011,
+      "obstacle": "retainer frame"
+    },
+    "R22": {
+      "gap_mm": 0.5169622810225122,
+      "obstacle": "carrier ledge"
+    },
+    "R23": {
+      "gap_mm": 0.8175879157619691,
+      "obstacle": "carrier ledge"
+    },
+    "R24": {
+      "gap_mm": 3.9849999999999994,
+      "obstacle": "retainer frame"
+    },
+    "R25": {
+      "gap_mm": 2.596584294799612,
+      "obstacle": "carrier ledge"
+    },
+    "R26": {
+      "gap_mm": 3.1770190430653695,
+      "obstacle": "carrier ledge"
+    },
+    "R27": {
+      "gap_mm": 0.5324002253943914,
+      "obstacle": "carrier ledge"
+    },
+    "R28": {
+      "gap_mm": 1.8690532610430577,
+      "obstacle": "retainer frame"
+    },
+    "R29": {
+      "gap_mm": 0.22499999999999962,
+      "obstacle": "carrier ledge"
+    },
+    "R3": {
+      "gap_mm": 8.10138568394321,
+      "obstacle": "carrier ledge"
+    },
+    "R30": {
+      "gap_mm": 0.3449999999999989,
+      "obstacle": "retainer frame"
+    },
+    "R4": {
+      "gap_mm": 8.945000000000002,
+      "obstacle": "retainer frame"
+    },
+    "R5": {
+      "gap_mm": 7.702236688131571,
+      "obstacle": "carrier ledge"
+    },
+    "R6": {
+      "gap_mm": 2.6358015858558077,
+      "obstacle": "carrier ledge"
+    },
+    "R7": {
+      "gap_mm": 2.6358015858558077,
+      "obstacle": "carrier ledge"
+    },
+    "R8": {
+      "gap_mm": 1.7493884910492834,
+      "obstacle": "retainer frame"
+    },
+    "R9": {
+      "gap_mm": 2.3849999999999993,
+      "obstacle": "carrier ledge"
+    },
+    "U1": {
+      "gap_mm": 4.370703604684263,
+      "obstacle": "retainer frame"
+    },
+    "U10": {
+      "gap_mm": 1.5054069217324584,
+      "obstacle": "retainer frame"
+    },
+    "U11": {
+      "gap_mm": 0.5838236034968078,
+      "obstacle": "carrier ledge"
+    },
+    "U12": {
+      "gap_mm": 0.22499999999999962,
+      "obstacle": "carrier ledge"
+    },
+    "U2": {
+      "gap_mm": 10.887187423756423,
+      "obstacle": "carrier ledge"
+    },
+    "U3": {
+      "gap_mm": 3.550000000000002,
+      "obstacle": "retainer frame"
+    },
+    "U4": {
+      "gap_mm": 0.5533985905294647,
+      "obstacle": "retainer frame"
+    },
+    "U5": {
+      "gap_mm": 4.605,
+      "obstacle": "retainer frame"
+    },
+    "U6": {
+      "gap_mm": 0.5543013620766224,
+      "obstacle": "carrier ledge"
+    },
+    "U7": {
+      "gap_mm": 3.7249999999999996,
+      "obstacle": "carrier ledge"
+    },
+    "U8": {
+      "gap_mm": 0.8332166584988552,
+      "obstacle": "carrier ledge"
+    },
+    "U9": {
+      "gap_mm": 0.9514331295472139,
+      "obstacle": "carrier ledge"
+    }
+  },
+  "guaranteed_tab_contacts": [
+    0.22124999999999784,
+    0.22124999999999784,
+    0.27124999999999816,
+    0.16187499999999913
+  ],
+  "thermal": {
+    "result": "CONDITIONAL_INTERFACE_BOUNDS_PASS",
+    "checks": [
+      {
+        "name": "Guide/PCB X",
+        "minimum_mm": 0.09478999999999616,
+        "maximum_mm": 0.3718524999999957,
+        "required_minimum_mm": 0.05,
+        "pass_": true,
+        "minimum_witness": {
+          "carrier": {
+            "scale": 0.9967,
+            "temperature_C": -10,
+            "cte_ppm_per_K": 100
+          },
+          "board_xy": {
+            "scale": 1.00055,
+            "temperature_C": 45,
+            "cte_ppm_per_K": 25
+          }
+        }
+      },
+      {
+        "name": "Locator/carrier X",
+        "minimum_mm": 0.07990200000000414,
+        "maximum_mm": 0.5397570000000016,
+        "required_minimum_mm": 0.05,
+        "pass_": true,
+        "minimum_witness": {
+          "body": {
+            "scale": 0.9967,
+            "temperature_C": -10,
+            "cte_ppm_per_K": 100
+          },
+          "carrier": {
+            "scale": 1.0022,
+            "temperature_C": 45,
+            "cte_ppm_per_K": 100
+          }
+        }
+      },
+      {
+        "name": "Cavity/frame X",
+        "minimum_mm": 0.2681750000000065,
+        "maximum_mm": 0.7312750000000037,
+        "required_minimum_mm": 0.05,
+        "pass_": true,
+        "minimum_witness": {
+          "body": {
+            "scale": 0.9967,
+            "temperature_C": -10,
+            "cte_ppm_per_K": 100
+          },
+          "frame": {
+            "scale": 1.0022,
+            "temperature_C": 45,
+            "cte_ppm_per_K": 100
+          }
+        }
+      },
+      {
+        "name": "Guide/PCB Y",
+        "minimum_mm": 0.12558999999999543,
+        "maximum_mm": 0.34765250000000236,
+        "required_minimum_mm": 0.05,
+        "pass_": true,
+        "minimum_witness": {
+          "carrier": {
+            "scale": 0.9967,
+            "temperature_C": -10,
+            "cte_ppm_per_K": 100
+          },
+          "board_xy": {
+            "scale": 1.00055,
+            "temperature_C": 45,
+            "cte_ppm_per_K": 25
+          }
+        }
+      },
+      {
+        "name": "Locator/carrier Y",
+        "minimum_mm": 0.12390200000000107,
+        "maximum_mm": 0.49575699999999756,
+        "required_minimum_mm": 0.05,
+        "pass_": true,
+        "minimum_witness": {
+          "body": {
+            "scale": 0.9967,
+            "temperature_C": -10,
+            "cte_ppm_per_K": 100
+          },
+          "carrier": {
+            "scale": 1.0022,
+            "temperature_C": 45,
+            "cte_ppm_per_K": 100
+          }
+        }
+      },
+      {
+        "name": "Cavity/frame Y",
+        "minimum_mm": 0.1100850000000122,
+        "maximum_mm": 0.48958500000001237,
+        "required_minimum_mm": 0.05,
+        "pass_": true,
+        "minimum_witness": {
+          "body": {
+            "scale": 0.9967,
+            "temperature_C": -10,
+            "cte_ppm_per_K": 100
+          },
+          "frame": {
+            "scale": 1.0022,
+            "temperature_C": 45,
+            "cte_ppm_per_K": 100
+          }
+        }
+      },
+      {
+        "name": "Lid closure",
+        "minimum_mm": 0.058480000000000365,
+        "maximum_mm": 0.5411899999999965,
+        "required_minimum_mm": 0,
+        "pass_": true,
+        "minimum_witness": {
+          "body": {
+            "scale": 0.9967,
+            "temperature_C": -10,
+            "cte_ppm_per_K": 100
+          },
+          "lid": {
+            "scale": 1.0022,
+            "temperature_C": 45,
+            "cte_ppm_per_K": 100
+          },
+          "carrier": {
+            "scale": 1.0022,
+            "temperature_C": 45,
+            "cte_ppm_per_K": 100
+          },
+          "frame": {
+            "scale": 1.0022,
+            "temperature_C": 45,
+            "cte_ppm_per_K": 100
+          }
+        }
+      },
+      {
+        "name": "west key tangential fit",
+        "minimum_mm": 0.08592000000000076,
+        "maximum_mm": 0.2139150000000004,
+        "required_minimum_mm": 0.05,
+        "pass_": true,
+        "minimum_witness": {
+          "carrier": {
+            "scale": 0.9967,
+            "temperature_C": -10,
+            "cte_ppm_per_K": 100
+          },
+          "frame": {
+            "scale": 1.0022,
+            "temperature_C": 45,
+            "cte_ppm_per_K": 100
+          }
+        }
+      },
+      {
+        "name": "west key radial low",
+        "minimum_mm": 0.08397750000000324,
+        "maximum_mm": 0.4157475000000018,
+        "required_minimum_mm": 0.05,
+        "pass_": true,
+        "minimum_witness": {
+          "frame": {
+            "scale": 1.0022,
+            "temperature_C": 45,
+            "cte_ppm_per_K": 100
+          },
+          "carrier": {
+            "scale": 0.9967,
+            "temperature_C": -10,
+            "cte_ppm_per_K": 100
+          }
+        }
+      },
+      {
+        "name": "west key radial high",
+        "minimum_mm": 0.05930150000000377,
+        "maximum_mm": 0.380456500000001,
+        "required_minimum_mm": 0.05,
+        "pass_": true,
+        "minimum_witness": {
+          "carrier": {
+            "scale": 1.0022,
+            "temperature_C": 45,
+            "cte_ppm_per_K": 100
+          },
+          "frame": {
+            "scale": 0.9967,
+            "temperature_C": -10,
+            "cte_ppm_per_K": 100
+          }
+        }
+      },
+      {
+        "name": "east key tangential fit",
+        "minimum_mm": 0.09031999999999983,
+        "maximum_mm": 0.20951499999999978,
+        "required_minimum_mm": 0.05,
+        "pass_": true,
+        "minimum_witness": {
+          "carrier": {
+            "scale": 0.9967,
+            "temperature_C": -10,
+            "cte_ppm_per_K": 100
+          },
+          "frame": {
+            "scale": 1.0022,
+            "temperature_C": 45,
+            "cte_ppm_per_K": 100
+          }
+        }
+      },
+      {
+        "name": "east key radial low",
+        "minimum_mm": 0.05930150000000377,
+        "maximum_mm": 0.380456500000001,
+        "required_minimum_mm": 0.05,
+        "pass_": true,
+        "minimum_witness": {
+          "frame": {
+            "scale": 0.9967,
+            "temperature_C": -10,
+            "cte_ppm_per_K": 100
+          },
+          "carrier": {
+            "scale": 1.0022,
+            "temperature_C": 45,
+            "cte_ppm_per_K": 100
+          }
+        }
+      },
+      {
+        "name": "east key radial high",
+        "minimum_mm": 0.08397750000000324,
+        "maximum_mm": 0.4157475000000018,
+        "required_minimum_mm": 0.05,
+        "pass_": true,
+        "minimum_witness": {
+          "carrier": {
+            "scale": 0.9967,
+            "temperature_C": -10,
+            "cte_ppm_per_K": 100
+          },
+          "frame": {
+            "scale": 1.0022,
+            "temperature_C": 45,
+            "cte_ppm_per_K": 100
+          }
+        }
+      },
+      {
+        "name": "south key tangential fit",
+        "minimum_mm": 0.09031999999999983,
+        "maximum_mm": 0.20951499999999978,
+        "required_minimum_mm": 0.05,
+        "pass_": true,
+        "minimum_witness": {
+          "carrier": {
+            "scale": 0.9967,
+            "temperature_C": -10,
+            "cte_ppm_per_K": 100
+          },
+          "frame": {
+            "scale": 1.0022,
+            "temperature_C": 45,
+            "cte_ppm_per_K": 100
+          }
+        }
+      },
+      {
+        "name": "south key radial low",
+        "minimum_mm": 0.1544375000000039,
+        "maximum_mm": 0.4452325000000029,
+        "required_minimum_mm": 0.05,
+        "pass_": true,
+        "minimum_witness": {
+          "frame": {
+            "scale": 1.0022,
+            "temperature_C": 45,
+            "cte_ppm_per_K": 100
+          },
+          "carrier": {
+            "scale": 0.9967,
+            "temperature_C": -10,
+            "cte_ppm_per_K": 100
+          }
+        }
+      },
+      {
+        "name": "south key radial high",
+        "minimum_mm": 0.11092750000000616,
+        "maximum_mm": 0.38879750000000246,
+        "required_minimum_mm": 0.05,
+        "pass_": true,
+        "minimum_witness": {
+          "carrier": {
+            "scale": 1.0022,
+            "temperature_C": 45,
+            "cte_ppm_per_K": 100
+          },
+          "frame": {
+            "scale": 0.9967,
+            "temperature_C": -10,
+            "cte_ppm_per_K": 100
+          }
+        }
+      },
+      {
+        "name": "north key tangential fit",
+        "minimum_mm": 0.09031999999999983,
+        "maximum_mm": 0.20951499999999978,
+        "required_minimum_mm": 0.05,
+        "pass_": true,
+        "minimum_witness": {
+          "carrier": {
+            "scale": 0.9967,
+            "temperature_C": -10,
+            "cte_ppm_per_K": 100
+          },
+          "frame": {
+            "scale": 1.0022,
+            "temperature_C": 45,
+            "cte_ppm_per_K": 100
+          }
+        }
+      },
+      {
+        "name": "north key radial low",
+        "minimum_mm": 0.11092750000000616,
+        "maximum_mm": 0.38879750000000246,
+        "required_minimum_mm": 0.05,
+        "pass_": true,
+        "minimum_witness": {
+          "frame": {
+            "scale": 0.9967,
+            "temperature_C": -10,
+            "cte_ppm_per_K": 100
+          },
+          "carrier": {
+            "scale": 1.0022,
+            "temperature_C": 45,
+            "cte_ppm_per_K": 100
+          }
+        }
+      },
+      {
+        "name": "north key radial high",
+        "minimum_mm": 0.1544375000000039,
+        "maximum_mm": 0.4452325000000029,
+        "required_minimum_mm": 0.05,
+        "pass_": true,
+        "minimum_witness": {
+          "carrier": {
+            "scale": 0.9967,
+            "temperature_C": -10,
+            "cte_ppm_per_K": 100
+          },
+          "frame": {
+            "scale": 1.0022,
+            "temperature_C": 45,
+            "cte_ppm_per_K": 100
+          }
+        }
+      },
+      {
+        "name": "west key remains engaged",
+        "minimum_mm": 0.16635350000000365,
+        "maximum_mm": 0.8930635000000033,
+        "required_minimum_mm": 0.1,
+        "pass_": true,
+        "minimum_witness": {
+          "carrier": {
+            "scale": 0.9967,
+            "temperature_C": -10,
+            "cte_ppm_per_K": 100
+          },
+          "frame": {
+            "scale": 1.0022,
+            "temperature_C": 45,
+            "cte_ppm_per_K": 100
+          }
+        }
+      },
+      {
+        "name": "west key/PCB centered clearance",
+        "minimum_mm": 0.06732900000000086,
+        "maximum_mm": 0.20597025000000002,
+        "required_minimum_mm": 0.05,
+        "pass_": true,
+        "minimum_witness": {
+          "frame": {
+            "scale": 0.9967,
+            "temperature_C": -10,
+            "cte_ppm_per_K": 100
+          },
+          "board_xy": {
+            "scale": 1.00055,
+            "temperature_C": 45,
+            "cte_ppm_per_K": 25
+          }
+        }
+      },
+      {
+        "name": "east key remains engaged",
+        "minimum_mm": 0.16635350000000365,
+        "maximum_mm": 0.8930635000000033,
+        "required_minimum_mm": 0.1,
+        "pass_": true,
+        "minimum_witness": {
+          "carrier": {
+            "scale": 0.9967,
+            "temperature_C": -10,
+            "cte_ppm_per_K": 100
+          },
+          "frame": {
+            "scale": 1.0022,
+            "temperature_C": 45,
+            "cte_ppm_per_K": 100
+          }
+        }
+      },
+      {
+        "name": "east key/PCB centered clearance",
+        "minimum_mm": 0.06732900000000086,
+        "maximum_mm": 0.20597025000000002,
+        "required_minimum_mm": 0.05,
+        "pass_": true,
+        "minimum_witness": {
+          "frame": {
+            "scale": 0.9967,
+            "temperature_C": -10,
+            "cte_ppm_per_K": 100
+          },
+          "board_xy": {
+            "scale": 1.00055,
+            "temperature_C": 45,
+            "cte_ppm_per_K": 25
+          }
+        }
+      },
+      {
+        "name": "south key remains engaged",
+        "minimum_mm": 0.10817750000000409,
+        "maximum_mm": 0.7913275000000044,
+        "required_minimum_mm": 0.1,
+        "pass_": true,
+        "minimum_witness": {
+          "carrier": {
+            "scale": 0.9967,
+            "temperature_C": -10,
+            "cte_ppm_per_K": 100
+          },
+          "frame": {
+            "scale": 1.0022,
+            "temperature_C": 45,
+            "cte_ppm_per_K": 100
+          }
+        }
+      },
+      {
+        "name": "south key/PCB centered clearance",
+        "minimum_mm": 0.16246500000000097,
+        "maximum_mm": 0.2740462500000014,
+        "required_minimum_mm": 0.05,
+        "pass_": true,
+        "minimum_witness": {
+          "frame": {
+            "scale": 0.9967,
+            "temperature_C": -10,
+            "cte_ppm_per_K": 100
+          },
+          "board_xy": {
+            "scale": 1.00055,
+            "temperature_C": 45,
+            "cte_ppm_per_K": 25
+          }
+        }
+      },
+      {
+        "name": "north key remains engaged",
+        "minimum_mm": 0.10817750000000409,
+        "maximum_mm": 0.7913275000000044,
+        "required_minimum_mm": 0.1,
+        "pass_": true,
+        "minimum_witness": {
+          "carrier": {
+            "scale": 0.9967,
+            "temperature_C": -10,
+            "cte_ppm_per_K": 100
+          },
+          "frame": {
+            "scale": 1.0022,
+            "temperature_C": 45,
+            "cte_ppm_per_K": 100
+          }
+        }
+      },
+      {
+        "name": "north key/PCB centered clearance",
+        "minimum_mm": 0.16246500000000097,
+        "maximum_mm": 0.2740462500000014,
+        "required_minimum_mm": 0.05,
+        "pass_": true,
+        "minimum_witness": {
+          "frame": {
+            "scale": 0.9967,
+            "temperature_C": -10,
+            "cte_ppm_per_K": 100
+          },
+          "board_xy": {
+            "scale": 1.00055,
+            "temperature_C": 45,
+            "cte_ppm_per_K": 25
+          }
+        }
+      },
+      {
+        "name": "Key bottom/slot floor",
+        "minimum_mm": 0.19383999999999899,
+        "maximum_mm": 0.4058299999999989,
+        "required_minimum_mm": 0.05,
+        "pass_": true,
+        "minimum_witness": {
+          "body": {
+            "scale": 0.9967,
+            "temperature_C": -10,
+            "cte_ppm_per_K": 100
+          },
+          "carrier": {
+            "scale": 0.9967,
+            "temperature_C": -10,
+            "cte_ppm_per_K": 100
+          },
+          "frame": {
+            "scale": 1.0022,
+            "temperature_C": 45,
+            "cte_ppm_per_K": 100
+          }
+        }
+      },
+      {
+        "name": "Keys remain vertically engaged",
+        "minimum_mm": 0.3558400000000022,
+        "maximum_mm": 0.8434999999999995,
+        "required_minimum_mm": 0.2,
+        "pass_": true,
+        "minimum_witness": {
+          "body": {
+            "scale": 1.0022,
+            "temperature_C": 45,
+            "cte_ppm_per_K": 100
+          },
+          "carrier": {
+            "scale": 0.9967,
+            "temperature_C": -10,
+            "cte_ppm_per_K": 100
+          },
+          "lid": {
+            "scale": 0.9967,
+            "temperature_C": -10,
+            "cte_ppm_per_K": 100
+          },
+          "frame": {
+            "scale": 0.9967,
+            "temperature_C": -10,
+            "cte_ppm_per_K": 100
+          }
+        }
+      }
+    ],
+    "states": {
+      "body": [
+        {
+          "scale": 0.9967,
+          "temperature_C": -10,
+          "cte_ppm_per_K": 100
+        },
+        {
+          "scale": 1.0022,
+          "temperature_C": 45,
+          "cte_ppm_per_K": 100
+        }
+      ],
+      "carrier": [
+        {
+          "scale": 0.9967,
+          "temperature_C": -10,
+          "cte_ppm_per_K": 100
+        },
+        {
+          "scale": 1.0022,
+          "temperature_C": 45,
+          "cte_ppm_per_K": 100
+        }
+      ],
+      "lid": [
+        {
+          "scale": 0.9967,
+          "temperature_C": -10,
+          "cte_ppm_per_K": 100
+        },
+        {
+          "scale": 1.0022,
+          "temperature_C": 45,
+          "cte_ppm_per_K": 100
+        }
+      ],
+      "frame": [
+        {
+          "scale": 0.9967,
+          "temperature_C": -10,
+          "cte_ppm_per_K": 100
+        },
+        {
+          "scale": 1.0022,
+          "temperature_C": 45,
+          "cte_ppm_per_K": 100
+        }
+      ],
+      "board_xy": [
+        {
+          "scale": 0.999175,
+          "temperature_C": -10,
+          "cte_ppm_per_K": 25
+        },
+        {
+          "scale": 1.00055,
+          "temperature_C": 45,
+          "cte_ppm_per_K": 25
+        }
+      ],
+      "board_z": [
+        {
+          "scale": 0.99703,
+          "temperature_C": -10,
+          "cte_ppm_per_K": 90
+        },
+        {
+          "scale": 1.00198,
+          "temperature_C": 45,
+          "cte_ppm_per_K": 90
+        }
+      ]
+    },
+    "pcb_to_carrier_pointwise_mm": 0.38595374999999804,
+    "carrier_to_body_xy_mm": 0.3598014999999961,
+    "pcb_to_body_pointwise_mm": 0.7457552499999942,
+    "pcb_top_z_mm": [
+      11.0234613,
+      11.96303
+    ],
+    "retainer_bottom_z_mm": [
+      11.41194,
+      11.96303
+    ],
+    "radial_key_pointwise_bound_mm": 0.24066274828328485,
+    "radial_keys": [
+      {
+        "name": "west",
+        "tangential_motion_mm": 0.2319574999999997,
+        "radius_min_mm": 20.492152
+      },
+      {
+        "name": "east",
+        "tangential_motion_mm": 0.22975750000000006,
+        "radius_min_mm": 20.492152
+      },
+      {
+        "name": "south",
+        "tangential_motion_mm": 0.22975750000000006,
+        "radius_min_mm": 16.6698075
+      },
+      {
+        "name": "north",
+        "tangential_motion_mm": 0.22975750000000006,
+        "radius_min_mm": 16.6698075
+      }
+    ],
+    "physical_thermal_qualified": false,
+    "scope": "Affine dimensional sensitivity under declared CTE bounds and independent part temperatures. No moisture, stress/creep, sealed assembly or physical qualification."
+  },
+  "thermal_input_sha256": "55cb55db9aaec80aa4fd10eb98c3ca98b1e73db440f6999883a5eda2562d0896",
+  "thermal_checker_sha256": "41aae94c6ed21c2ddbdc013c3b4a7a6974ee2a688c75253b2de6075bf586ec73",
+  "cable_evaluator_sha256": "ce275bc960cd1b384f5e7ad29975da9e67f056a8d12cac58e385d4a93fb473a9",
+  "cable_motion": {
+    "cases": [
+      {
+        "pcb_pose_mm": [
+          -0.76,
+          -0.76,
+          11.02
+        ],
+        "cables": [
+          {
+            "name": "LTE",
+            "handle_mm": 6.696335220336914,
+            "plug_azimuth_change_degrees": 15,
+            "control_points_mm": [
+              [
+                -0.46,
+                -9.06,
+                12.67
+              ],
+              [
+                -6.928163130812524,
+                -10.793139087413978,
+                12.67
+              ],
+              [
+                -11.363382434844969,
+                -7.744719586372375,
+                16.849999999999998
+              ],
+              [
+                -16.795777416229246,
+                2.7992962360382077,
+                16.849999999999998
+              ],
+              [
+                -14.929579925537107,
+                12.1302836894989,
+                16.849999999999998
+              ],
+              [
+                0.0,
+                13.063382434844968,
+                16.849999999999998
+              ],
+              [
+                16.795777416229246,
+                11.19718494415283,
+                16.849999999999998
+              ],
+              [
+                16.795777416229246,
+                -9.330987453460692,
+                16.849999999999998
+              ],
+              [
+                8.397888708114623,
+                -13.996481180191038,
+                17.65
+              ],
+              [
+                3.0,
+                -7.0,
+                17.735
+              ],
+              [
+                -3.9,
+                -7.0,
+                17.735
+              ]
+            ],
+            "length_mm": 98.50042145690261,
+            "minimum_radius_mm": 4.260817578034708,
+            "minimum_component_gap_mm": 0.9987364356058804,
+            "limiting_ref": "U6",
+            "pass_": true
+          },
+          {
+            "name": "GNSS",
+            "handle_mm": 4.065713119506835,
+            "plug_azimuth_change_degrees": 0,
+            "control_points_mm": [
+              [
+                9.540000000000001,
+                1.4400000000000002,
+                12.67
+              ],
+              [
+                9.540000000000001,
+                5.505713119506836,
+                12.67
+              ],
+              [
+                9.108311176300047,
+                13.66246676445007,
+                15.05
+              ],
+              [
+                -9.108311176300047,
+                13.66246676445007,
+                15.05
+              ],
+              [
+                -16.394960117340084,
+                2.732493352890014,
+                15.05
+              ],
+              [
+                -16.394960117340084,
+                -11.840804529190061,
+                15.05
+              ],
+              [
+                0.0,
+                -12.751635646820066,
+                16.55
+              ],
+              [
+                14.573297882080075,
+                -9.108311176300047,
+                15.05
+              ],
+              [
+                10.929973411560056,
+                1.8216622352600094,
+                15.05
+              ],
+              [
+                0.0,
+                0.0,
+                17.735
+              ],
+              [
+                0.0,
+                5.3,
+                17.735
+              ]
+            ],
+            "length_mm": 98.5006076020684,
+            "minimum_radius_mm": 3.4952419530357264,
+            "minimum_component_gap_mm": 0.517709388523835,
+            "limiting_ref": "U5",
+            "pass_": true
+          }
+        ],
+        "cable_gap_mm": 0.3296828789899968,
+        "guide_center_shift_mm": 0.0,
+        "pass_": true
+      },
+      {
+        "pcb_pose_mm": [
+          -0.76,
+          -0.76,
+          11.24088
+        ],
+        "cables": [
+          {
+            "name": "LTE",
+            "handle_mm": 6.886859512329101,
+            "plug_azimuth_change_degrees": 15,
+            "control_points_mm": [
+              [
+                -0.46,
+                -9.06,
+                12.890880000000001
+              ],
+              [
+                -7.112195464983217,
+                -10.84245040273623,
+                12.890880000000001
+              ],
+              [
+                -11.363382434844969,
+                -7.744719586372375,
+                16.849999999999998
+              ],
+              [
+                -16.795777416229246,
+                2.7992962360382077,
+                16.849999999999998
+              ],
+              [
+                -14.929579925537107,
+                12.1302836894989,
+                16.849999999999998
+              ],
+              [
+                0.0,
+                13.063382434844968,
+                16.849999999999998
+              ],
+              [
+                16.795777416229246,
+                11.19718494415283,
+                16.849999999999998
+              ],
+              [
+                16.795777416229246,
+                -9.330987453460692,
+                16.849999999999998
+              ],
+              [
+                8.397888708114623,
+                -13.996481180191038,
+                17.65
+              ],
+              [
+                3.0,
+                -7.0,
+                17.735
+              ],
+              [
+                -3.9,
+                -7.0,
+                17.735
+              ]
+            ],
+            "length_mm": 98.50044039546222,
+            "minimum_radius_mm": 4.260817578034708,
+            "minimum_component_gap_mm": 0.9702538320555747,
+            "limiting_ref": "U6",
+            "pass_": true
+          },
+          {
+            "name": "GNSS",
+            "handle_mm": 4.192805099487304,
+            "plug_azimuth_change_degrees": 0,
+            "control_points_mm": [
+              [
+                9.540000000000001,
+                1.4400000000000002,
+                12.890880000000001
+              ],
+              [
+                9.540000000000001,
+                5.632805099487304,
+                12.890880000000001
+              ],
+              [
+                9.108311176300047,
+                13.66246676445007,
+                15.05
+              ],
+              [
+                -9.108311176300047,
+                13.66246676445007,
+                15.05
+              ],
+              [
+                -16.394960117340084,
+                2.732493352890014,
+                15.05
+              ],
+              [
+                -16.394960117340084,
+                -11.840804529190061,
+                15.05
+              ],
+              [
+                0.0,
+                -12.751635646820066,
+                16.55
+              ],
+              [
+                14.573297882080075,
+                -9.108311176300047,
+                15.05
+              ],
+              [
+                10.929973411560056,
+                1.8216622352600094,
+                15.05
+              ],
+              [
+                0.0,
+                0.0,
+                17.735
+              ],
+              [
+                0.0,
+                5.3,
+                17.735
+              ]
+            ],
+            "length_mm": 98.50059523720823,
+            "minimum_radius_mm": 3.4952419530357264,
+            "minimum_component_gap_mm": 0.44855161511819247,
+            "limiting_ref": "U5",
+            "pass_": true
+          }
+        ],
+        "cable_gap_mm": 0.3297598565890243,
+        "guide_center_shift_mm": 0.0,
+        "pass_": true
+      },
+      {
+        "pcb_pose_mm": [
+          -0.76,
+          -0.76,
+          11.97
+        ],
+        "cables": [
+          {
+            "name": "LTE",
+            "handle_mm": 7.438538742065429,
+            "plug_azimuth_change_degrees": 15,
+            "control_points_mm": [
+              [
+                -0.46,
+                -9.06,
+                13.620000000000001
+              ],
+              [
+                -7.645076680812796,
+                -10.98523549417948,
+                13.620000000000001
+              ],
+              [
+                -11.363382434844969,
+                -7.744719586372375,
+                16.849999999999998
+              ],
+              [
+                -16.795777416229246,
+                2.7992962360382077,
+                16.849999999999998
+              ],
+              [
+                -14.929579925537107,
+                12.1302836894989,
+                16.849999999999998
+              ],
+              [
+                0.0,
+                13.063382434844968,
+                16.849999999999998
+              ],
+              [
+                16.795777416229246,
+                11.19718494415283,
+                16.849999999999998
+              ],
+              [
+                16.795777416229246,
+                -9.330987453460692,
+                16.849999999999998
+              ],
+              [
+                8.397888708114623,
+                -13.996481180191038,
+                17.65
+              ],
+              [
+                3.0,
+                -7.0,
+                17.735
+              ],
+              [
+                -3.9,
+                -7.0,
+                17.735
+              ]
+            ],
+            "length_mm": 98.50044065689241,
+            "minimum_radius_mm": 4.260817578034708,
+            "minimum_component_gap_mm": 0.8836333728377599,
+            "limiting_ref": "U6",
+            "pass_": true
+          },
+          {
+            "name": "GNSS",
+            "handle_mm": 4.524858474731445,
+            "plug_azimuth_change_degrees": 0,
+            "control_points_mm": [
+              [
+                9.540000000000001,
+                1.4400000000000002,
+                13.620000000000001
+              ],
+              [
+                9.540000000000001,
+                5.964858474731446,
+                13.620000000000001
+              ],
+              [
+                9.108311176300047,
+                13.66246676445007,
+                15.05
+              ],
+              [
+                -9.108311176300047,
+                13.66246676445007,
+                15.05
+              ],
+              [
+                -16.394960117340084,
+                2.732493352890014,
+                15.05
+              ],
+              [
+                -16.394960117340084,
+                -11.840804529190061,
+                15.05
+              ],
+              [
+                0.0,
+                -12.751635646820066,
+                16.55
+              ],
+              [
+                14.573297882080075,
+                -9.108311176300047,
+                15.05
+              ],
+              [
+                10.929973411560056,
+                1.8216622352600094,
+                15.05
+              ],
+              [
+                0.0,
+                0.0,
+                17.735
+              ],
+              [
+                0.0,
+                5.3,
+                17.735
+              ]
+            ],
+            "length_mm": 98.50059291100263,
+            "minimum_radius_mm": 3.4952419530357264,
+            "minimum_component_gap_mm": 0.2408893082781162,
+            "limiting_ref": "U5",
+            "pass_": true
+          }
+        ],
+        "cable_gap_mm": 0.32839859861958065,
+        "guide_center_shift_mm": 0.0,
+        "pass_": true
+      },
+      {
+        "pcb_pose_mm": [
+          -0.76,
+          0,
+          11.02
+        ],
+        "cables": [
+          {
+            "name": "LTE",
+            "handle_mm": 7.7344425201416005,
+            "plug_azimuth_change_degrees": 15,
+            "control_points_mm": [
+              [
+                -0.46,
+                -8.3,
+                12.67
+              ],
+              [
+                -7.930897782153079,
+                -10.301821027463383,
+                12.67
+              ],
+              [
+                -11.363382434844969,
+                -7.744719586372375,
+                16.849999999999998
+              ],
+              [
+                -16.795777416229246,
+                2.7992962360382077,
+                16.849999999999998
+              ],
+              [
+                -14.929579925537107,
+                12.1302836894989,
+                16.849999999999998
+              ],
+              [
+                0.0,
+                13.063382434844968,
+                16.849999999999998
+              ],
+              [
+                16.795777416229246,
+                11.19718494415283,
+                16.849999999999998
+              ],
+              [
+                16.795777416229246,
+                -9.330987453460692,
+                16.849999999999998
+              ],
+              [
+                8.397888708114623,
+                -13.996481180191038,
+                17.65
+              ],
+              [
+                3.0,
+                -7.0,
+                17.735
+              ],
+              [
+                -3.9,
+                -7.0,
+                17.735
+              ]
+            ],
+            "length_mm": 98.50044528554511,
+            "minimum_radius_mm": 4.260817578034708,
+            "minimum_component_gap_mm": 0.7783345939472592,
+            "limiting_ref": "U6",
+            "pass_": true
+          },
+          {
+            "name": "GNSS",
+            "handle_mm": 5.883196640014649,
+            "plug_azimuth_change_degrees": 0,
+            "control_points_mm": [
+              [
+                9.540000000000001,
+                2.2,
+                12.67
+              ],
+              [
+                9.540000000000001,
+                8.083196640014648,
+                12.67
+              ],
+              [
+                9.108311176300047,
+                13.66246676445007,
+                15.05
+              ],
+              [
+                -9.108311176300047,
+                13.66246676445007,
+                15.05
+              ],
+              [
+                -16.394960117340084,
+                2.732493352890014,
+                15.05
+              ],
+              [
+                -16.394960117340084,
+                -11.840804529190061,
+                15.05
+              ],
+              [
+                0.0,
+                -12.751635646820066,
+                16.55
+              ],
+              [
+                14.573297882080075,
+                -9.108311176300047,
+                15.05
+              ],
+              [
+                10.929973411560056,
+                1.8216622352600094,
+                15.05
+              ],
+              [
+                0.0,
+                0.0,
+                17.735
+              ],
+              [
+                0.0,
+                5.3,
+                17.735
+              ]
+            ],
+            "length_mm": 98.50059866934492,
+            "minimum_radius_mm": 3.4952419530357264,
+            "minimum_component_gap_mm": 0.3456373625858313,
+            "limiting_ref": "U5",
+            "pass_": true
+          }
+        ],
+        "cable_gap_mm": 0.32717554118110426,
+        "guide_center_shift_mm": 0.0,
+        "pass_": true
+      },
+      {
+        "pcb_pose_mm": [
+          -0.76,
+          0,
+          11.24088
+        ],
+        "cables": [
+          {
+            "name": "LTE",
+            "handle_mm": 7.925876235961914,
+            "plug_azimuth_change_degrees": 15,
+            "control_points_mm": [
+              [
+                -0.46,
+                -8.3,
+                12.890880000000001
+              ],
+              [
+                -8.115808552286403,
+                -10.351367718992424,
+                12.890880000000001
+              ],
+              [
+                -11.363382434844969,
+                -7.744719586372375,
+                16.849999999999998
+              ],
+              [
+                -16.795777416229246,
+                2.7992962360382077,
+                16.849999999999998
+              ],
+              [
+                -14.929579925537107,
+                12.1302836894989,
+                16.849999999999998
+              ],
+              [
+                0.0,
+                13.063382434844968,
+                16.849999999999998
+              ],
+              [
+                16.795777416229246,
+                11.19718494415283,
+                16.849999999999998
+              ],
+              [
+                16.795777416229246,
+                -9.330987453460692,
+                16.849999999999998
+              ],
+              [
+                8.397888708114623,
+                -13.996481180191038,
+                17.65
+              ],
+              [
+                3.0,
+                -7.0,
+                17.735
+              ],
+              [
+                -3.9,
+                -7.0,
+                17.735
+              ]
+            ],
+            "length_mm": 98.50043018700933,
+            "minimum_radius_mm": 4.260817578034708,
+            "minimum_component_gap_mm": 0.7456604440667917,
+            "limiting_ref": "U6",
+            "pass_": true
+          },
+          {
+            "name": "GNSS",
+            "handle_mm": 5.99903450012207,
+            "plug_azimuth_change_degrees": 0,
+            "control_points_mm": [
+              [
+                9.540000000000001,
+                2.2,
+                12.890880000000001
+              ],
+              [
+                9.540000000000001,
+                8.199034500122071,
+                12.890880000000001
+              ],
+              [
+                9.108311176300047,
+                13.66246676445007,
+                15.05
+              ],
+              [
+                -9.108311176300047,
+                13.66246676445007,
+                15.05
+              ],
+              [
+                -16.394960117340084,
+                2.732493352890014,
+                15.05
+              ],
+              [
+                -16.394960117340084,
+                -11.840804529190061,
+                15.05
+              ],
+              [
+                0.0,
+                -12.751635646820066,
+                16.55
+              ],
+              [
+                14.573297882080075,
+                -9.108311176300047,
+                15.05
+              ],
+              [
+                10.929973411560056,
+                1.8216622352600094,
+                15.05
+              ],
+              [
+                0.0,
+                0.0,
+                17.735
+              ],
+              [
+                0.0,
+                5.3,
+                17.735
+              ]
+            ],
+            "length_mm": 98.50060974839946,
+            "minimum_radius_mm": 3.4952419530357264,
+            "minimum_component_gap_mm": 0.29420557255762864,
+            "limiting_ref": "U5",
+            "pass_": true
+          }
+        ],
+        "cable_gap_mm": 0.32667822600199226,
+        "guide_center_shift_mm": 0.0,
+        "pass_": true
+      },
+      {
+        "pcb_pose_mm": [
+          -0.76,
+          0,
+          11.97
+        ],
+        "cables": [
+          {
+            "name": "LTE",
+            "handle_mm": 8.482102584838866,
+            "plug_azimuth_change_degrees": 15,
+            "control_points_mm": [
+              [
+                -0.46,
+                -8.3,
+                13.620000000000001
+              ],
+              [
+                -8.653081947929126,
+                -10.495329691469617,
+                13.620000000000001
+              ],
+              [
+                -11.363382434844969,
+                -7.744719586372375,
+                16.849999999999998
+              ],
+              [
+                -16.795777416229246,
+                2.7992962360382077,
+                16.849999999999998
+              ],
+              [
+                -14.929579925537107,
+                12.1302836894989,
+                16.849999999999998
+              ],
+              [
+                0.0,
+                13.063382434844968,
+                16.849999999999998
+              ],
+              [
+                16.795777416229246,
+                11.19718494415283,
+                16.849999999999998
+              ],
+              [
+                16.795777416229246,
+                -9.330987453460692,
+                16.849999999999998
+              ],
+              [
+                8.397888708114623,
+                -13.996481180191038,
+                17.65
+              ],
+              [
+                3.0,
+                -7.0,
+                17.735
+              ],
+              [
+                -3.9,
+                -7.0,
+                17.735
+              ]
+            ],
+            "length_mm": 98.50043780014951,
+            "minimum_radius_mm": 4.260817578034708,
+            "minimum_component_gap_mm": 0.6469411368935288,
+            "limiting_ref": "U6",
+            "pass_": true
+          },
+          {
+            "name": "GNSS",
+            "handle_mm": 4.538954544067382,
+            "plug_azimuth_change_degrees": -15,
+            "control_points_mm": [
+              [
+                9.540000000000001,
+                2.2,
+                13.620000000000001
+              ],
+              [
+                10.714767880859267,
+                6.584293418466807,
+                13.620000000000001
+              ],
+              [
+                9.108311176300047,
+                13.66246676445007,
+                15.05
+              ],
+              [
+                -9.108311176300047,
+                13.66246676445007,
+                15.05
+              ],
+              [
+                -16.394960117340084,
+                2.732493352890014,
+                15.05
+              ],
+              [
+                -16.394960117340084,
+                -11.840804529190061,
+                15.05
+              ],
+              [
+                0.0,
+                -12.751635646820066,
+                16.55
+              ],
+              [
+                14.573297882080075,
+                -9.108311176300047,
+                15.05
+              ],
+              [
+                10.929973411560056,
+                1.8216622352600094,
+                15.05
+              ],
+              [
+                0.0,
+                0.0,
+                17.735
+              ],
+              [
+                0.0,
+                5.3,
+                17.735
+              ]
+            ],
+            "length_mm": 98.50061173198333,
+            "minimum_radius_mm": 3.4952419530357264,
+            "minimum_component_gap_mm": 0.2751666618555441,
+            "limiting_ref": "U5",
+            "pass_": true
+          }
+        ],
+        "cable_gap_mm": 0.3252639238333502,
+        "guide_center_shift_mm": 0.0,
+        "pass_": true
+      },
+      {
+        "pcb_pose_mm": [
+          -0.76,
+          0.76,
+          11.02
+        ],
+        "cables": [
+          {
+            "name": "LTE",
+            "handle_mm": 8.690474319458007,
+            "plug_azimuth_change_degrees": 15,
+            "control_points_mm": [
+              [
+                -0.46,
+                -7.540000000000001,
+                12.67
+              ],
+              [
+                -8.854353587866404,
+                -9.7892602648501,
+                12.67
+              ],
+              [
+                -11.363382434844969,
+                -7.744719586372375,
+                16.849999999999998
+              ],
+              [
+                -16.795777416229246,
+                2.7992962360382077,
+                16.849999999999998
+              ],
+              [
+                -14.929579925537107,
+                12.1302836894989,
+                16.849999999999998
+              ],
+              [
+                0.0,
+                13.063382434844968,
+                16.849999999999998
+              ],
+              [
+                16.795777416229246,
+                11.19718494415283,
+                16.849999999999998
+              ],
+              [
+                16.795777416229246,
+                -9.330987453460692,
+                16.849999999999998
+              ],
+              [
+                8.397888708114623,
+                -13.996481180191038,
+                17.65
+              ],
+              [
+                3.0,
+                -7.0,
+                17.735
+              ],
+              [
+                -3.9,
+                -7.0,
+                17.735
+              ]
+            ],
+            "length_mm": 98.50041699064386,
+            "minimum_radius_mm": 4.260817578034708,
+            "minimum_component_gap_mm": 0.5545500761289478,
+            "limiting_ref": "U6",
+            "pass_": true
+          },
+          {
+            "name": "GNSS",
+            "handle_mm": 5.37516975402832,
+            "plug_azimuth_change_degrees": -15,
+            "control_points_mm": [
+              [
+                9.540000000000001,
+                2.96,
+                12.67
+              ],
+              [
+                10.931196303001562,
+                8.152015286103813,
+                12.67
+              ],
+              [
+                9.108311176300047,
+                13.66246676445007,
+                15.05
+              ],
+              [
+                -9.108311176300047,
+                13.66246676445007,
+                15.05
+              ],
+              [
+                -16.394960117340084,
+                2.732493352890014,
+                15.05
+              ],
+              [
+                -16.394960117340084,
+                -11.840804529190061,
+                15.05
+              ],
+              [
+                0.0,
+                -12.751635646820066,
+                16.55
+              ],
+              [
+                14.573297882080075,
+                -9.108311176300047,
+                15.05
+              ],
+              [
+                10.929973411560056,
+                1.8216622352600094,
+                15.05
+              ],
+              [
+                0.0,
+                0.0,
+                17.735
+              ],
+              [
+                0.0,
+                5.3,
+                17.735
+              ]
+            ],
+            "length_mm": 98.50062860747708,
+            "minimum_radius_mm": 3.4952419530357264,
+            "minimum_component_gap_mm": 0.4550235052568858,
+            "limiting_ref": "U5",
+            "pass_": true
+          }
+        ],
+        "cable_gap_mm": 0.32430377007638567,
+        "guide_center_shift_mm": 0.0,
+        "pass_": true
+      },
+      {
+        "pcb_pose_mm": [
+          -0.76,
+          0.76,
+          11.24088
+        ],
+        "cables": [
+          {
+            "name": "LTE",
+            "handle_mm": 8.884636306762692,
+            "plug_azimuth_change_degrees": 15,
+            "control_points_mm": [
+              [
+                -0.46,
+                -7.540000000000001,
+                12.890880000000001
+              ],
+              [
+                -9.04189966588761,
+                -9.839513084999506,
+                12.890880000000001
+              ],
+              [
+                -11.363382434844969,
+                -7.744719586372375,
+                16.849999999999998
+              ],
+              [
+                -16.795777416229246,
+                2.7992962360382077,
+                16.849999999999998
+              ],
+              [
+                -14.929579925537107,
+                12.1302836894989,
+                16.849999999999998
+              ],
+              [
+                0.0,
+                13.063382434844968,
+                16.849999999999998
+              ],
+              [
+                16.795777416229246,
+                11.19718494415283,
+                16.849999999999998
+              ],
+              [
+                16.795777416229246,
+                -9.330987453460692,
+                16.849999999999998
+              ],
+              [
+                8.397888708114623,
+                -13.996481180191038,
+                17.65
+              ],
+              [
+                3.0,
+                -7.0,
+                17.735
+              ],
+              [
+                -3.9,
+                -7.0,
+                17.735
+              ]
+            ],
+            "length_mm": 98.50045621104039,
+            "minimum_radius_mm": 4.08680518630555,
+            "minimum_component_gap_mm": 0.5178686304717259,
+            "limiting_ref": "U6",
+            "pass_": true
+          },
+          {
+            "name": "GNSS",
+            "handle_mm": 5.452129745483399,
+            "plug_azimuth_change_degrees": -15,
+            "control_points_mm": [
+              [
+                9.540000000000001,
+                2.96,
+                12.890880000000001
+              ],
+              [
+                10.951115014501063,
+                8.226352929441259,
+                12.890880000000001
+              ],
+              [
+                9.108311176300047,
+                13.66246676445007,
+                15.05
+              ],
+              [
+                -9.108311176300047,
+                13.66246676445007,
+                15.05
+              ],
+              [
+                -16.394960117340084,
+                2.732493352890014,
+                15.05
+              ],
+              [
+                -16.394960117340084,
+                -11.840804529190061,
+                15.05
+              ],
+              [
+                0.0,
+                -12.751635646820066,
+                16.55
+              ],
+              [
+                14.573297882080075,
+                -9.108311176300047,
+                15.05
+              ],
+              [
+                10.929973411560056,
+                1.8216622352600094,
+                15.05
+              ],
+              [
+                0.0,
+                0.0,
+                17.735
+              ],
+              [
+                0.0,
+                5.3,
+                17.735
+              ]
+            ],
+            "length_mm": 98.50064471183823,
+            "minimum_radius_mm": 3.4952419530357264,
+            "minimum_component_gap_mm": 0.39691002932688496,
+            "limiting_ref": "U5",
+            "pass_": true
+          }
+        ],
+        "cable_gap_mm": 0.32379827196071215,
+        "guide_center_shift_mm": 0.0,
+        "pass_": true
+      },
+      {
+        "pcb_pose_mm": [
+          -0.76,
+          0.76,
+          11.97
+        ],
+        "cables": [
+          {
+            "name": "LTE",
+            "handle_mm": 9.449729537963869,
+            "plug_azimuth_change_degrees": 15,
+            "control_points_mm": [
+              [
+                -0.46,
+                -7.540000000000001,
+                13.620000000000001
+              ],
+              [
+                -9.587737812165967,
+                -9.985769975492893,
+                13.620000000000001
+              ],
+              [
+                -11.363382434844969,
+                -7.744719586372375,
+                16.849999999999998
+              ],
+              [
+                -16.795777416229246,
+                2.7992962360382077,
+                16.849999999999998
+              ],
+              [
+                -14.929579925537107,
+                12.1302836894989,
+                16.849999999999998
+              ],
+              [
+                0.0,
+                13.063382434844968,
+                16.849999999999998
+              ],
+              [
+                16.795777416229246,
+                11.19718494415283,
+                16.849999999999998
+              ],
+              [
+                16.795777416229246,
+                -9.330987453460692,
+                16.849999999999998
+              ],
+              [
+                8.397888708114623,
+                -13.996481180191038,
+                17.65
+              ],
+              [
+                3.0,
+                -7.0,
+                17.735
+              ],
+              [
+                -3.9,
+                -7.0,
+                17.735
+              ]
+            ],
+            "length_mm": 98.50041464226788,
+            "minimum_radius_mm": 3.373555977475122,
+            "minimum_component_gap_mm": 0.4051589795240565,
+            "limiting_ref": "U6",
+            "pass_": true
+          },
+          {
+            "name": "GNSS",
+            "handle_mm": 4.481888198852538,
+            "plug_azimuth_change_degrees": -30,
+            "control_points_mm": [
+              [
+                9.540000000000001,
+                2.96,
+                13.620000000000001
+              ],
+              [
+                11.78094409942627,
+                6.841429037127979,
+                13.620000000000001
+              ],
+              [
+                9.108311176300047,
+                13.66246676445007,
+                15.05
+              ],
+              [
+                -9.108311176300047,
+                13.66246676445007,
+                15.05
+              ],
+              [
+                -16.394960117340084,
+                2.732493352890014,
+                15.05
+              ],
+              [
+                -16.394960117340084,
+                -11.840804529190061,
+                15.05
+              ],
+              [
+                0.0,
+                -12.751635646820066,
+                16.55
+              ],
+              [
+                14.573297882080075,
+                -9.108311176300047,
+                15.05
+              ],
+              [
+                10.929973411560056,
+                1.8216622352600094,
+                15.05
+              ],
+              [
+                0.0,
+                0.0,
+                17.735
+              ],
+              [
+                0.0,
+                5.3,
+                17.735
+              ]
+            ],
+            "length_mm": 98.50064447300294,
+            "minimum_radius_mm": 3.4952419530357264,
+            "minimum_component_gap_mm": 0.3474564633945147,
+            "limiting_ref": "U5",
+            "pass_": true
+          }
+        ],
+        "cable_gap_mm": 0.32235737226816696,
+        "guide_center_shift_mm": 0.0,
+        "pass_": true
+      },
+      {
+        "pcb_pose_mm": [
+          0,
+          -0.76,
+          11.02
+        ],
+        "cables": [
+          {
+            "name": "LTE",
+            "handle_mm": 7.209136581420898,
+            "plug_azimuth_change_degrees": 0,
+            "control_points_mm": [
+              [
+                0.3,
+                -9.06,
+                12.67
+              ],
+              [
+                -6.909136581420898,
+                -9.06,
+                12.67
+              ],
+              [
+                -11.363382434844969,
+                -7.744719586372375,
+                16.849999999999998
+              ],
+              [
+                -16.795777416229246,
+                2.7992962360382077,
+                16.849999999999998
+              ],
+              [
+                -14.929579925537107,
+                12.1302836894989,
+                16.849999999999998
+              ],
+              [
+                0.0,
+                13.063382434844968,
+                16.849999999999998
+              ],
+              [
+                16.795777416229246,
+                11.19718494415283,
+                16.849999999999998
+              ],
+              [
+                16.795777416229246,
+                -9.330987453460692,
+                16.849999999999998
+              ],
+              [
+                8.397888708114623,
+                -13.996481180191038,
+                17.65
+              ],
+              [
+                3.0,
+                -7.0,
+                17.735
+              ],
+              [
+                -3.9,
+                -7.0,
+                17.735
+              ]
+            ],
+            "length_mm": 98.50040616138494,
+            "minimum_radius_mm": 4.260817578034708,
+            "minimum_component_gap_mm": 0.84734034992896,
+            "limiting_ref": "R3",
+            "pass_": true
+          },
+          {
+            "name": "GNSS",
+            "handle_mm": 2.5157138824462884,
+            "plug_azimuth_change_degrees": 0,
+            "control_points_mm": [
+              [
+                10.3,
+                1.4400000000000002,
+                12.67
+              ],
+              [
+                10.3,
+                3.9557138824462887,
+                12.67
+              ],
+              [
+                9.108311176300047,
+                13.66246676445007,
+                15.05
+              ],
+              [
+                -9.108311176300047,
+                13.66246676445007,
+                15.05
+              ],
+              [
+                -16.394960117340084,
+                2.732493352890014,
+                15.05
+              ],
+              [
+                -16.394960117340084,
+                -11.840804529190061,
+                15.05
+              ],
+              [
+                0.0,
+                -12.751635646820066,
+                16.55
+              ],
+              [
+                14.573297882080075,
+                -9.108311176300047,
+                15.05
+              ],
+              [
+                10.929973411560056,
+                1.8216622352600094,
+                15.05
+              ],
+              [
+                0.0,
+                0.0,
+                17.735
+              ],
+              [
+                0.0,
+                5.3,
+                17.735
+              ]
+            ],
+            "length_mm": 98.5005964022628,
+            "minimum_radius_mm": 3.4952419530357264,
+            "minimum_component_gap_mm": 0.703595610003522,
+            "limiting_ref": "U5",
+            "pass_": true
+          }
+        ],
+        "cable_gap_mm": 0.32875384629158505,
+        "guide_center_shift_mm": 0.0,
+        "pass_": true
+      },
+      {
+        "pcb_pose_mm": [
+          0,
+          -0.76,
+          11.24088
+        ],
+        "cables": [
+          {
+            "name": "LTE",
+            "handle_mm": 7.549033737182617,
+            "plug_azimuth_change_degrees": 0,
+            "control_points_mm": [
+              [
+                0.3,
+                -9.06,
+                12.890880000000001
+              ],
+              [
+                -7.249033737182617,
+                -9.06,
+                12.890880000000001
+              ],
+              [
+                -11.363382434844969,
+                -7.744719586372375,
+                16.849999999999998
+              ],
+              [
+                -16.795777416229246,
+                2.7992962360382077,
+                16.849999999999998
+              ],
+              [
+                -14.929579925537107,
+                12.1302836894989,
+                16.849999999999998
+              ],
+              [
+                0.0,
+                13.063382434844968,
+                16.849999999999998
+              ],
+              [
+                16.795777416229246,
+                11.19718494415283,
+                16.849999999999998
+              ],
+              [
+                16.795777416229246,
+                -9.330987453460692,
+                16.849999999999998
+              ],
+              [
+                8.397888708114623,
+                -13.996481180191038,
+                17.65
+              ],
+              [
+                3.0,
+                -7.0,
+                17.735
+              ],
+              [
+                -3.9,
+                -7.0,
+                17.735
+              ]
+            ],
+            "length_mm": 98.50040587243836,
+            "minimum_radius_mm": 4.260817578034708,
+            "minimum_component_gap_mm": 0.8352454325069977,
+            "limiting_ref": "R3",
+            "pass_": true
+          },
+          {
+            "name": "GNSS",
+            "handle_mm": 2.6442836761474604,
+            "plug_azimuth_change_degrees": 0,
+            "control_points_mm": [
+              [
+                10.3,
+                1.4400000000000002,
+                12.890880000000001
+              ],
+              [
+                10.3,
+                4.084283676147461,
+                12.890880000000001
+              ],
+              [
+                9.108311176300047,
+                13.66246676445007,
+                15.05
+              ],
+              [
+                -9.108311176300047,
+                13.66246676445007,
+                15.05
+              ],
+              [
+                -16.394960117340084,
+                2.732493352890014,
+                15.05
+              ],
+              [
+                -16.394960117340084,
+                -11.840804529190061,
+                15.05
+              ],
+              [
+                0.0,
+                -12.751635646820066,
+                16.55
+              ],
+              [
+                14.573297882080075,
+                -9.108311176300047,
+                15.05
+              ],
+              [
+                10.929973411560056,
+                1.8216622352600094,
+                15.05
+              ],
+              [
+                0.0,
+                0.0,
+                17.735
+              ],
+              [
+                0.0,
+                5.3,
+                17.735
+              ]
+            ],
+            "length_mm": 98.5006024756497,
+            "minimum_radius_mm": 3.4952419530357264,
+            "minimum_component_gap_mm": 0.6176595449438592,
+            "limiting_ref": "U5",
+            "pass_": true
+          }
+        ],
+        "cable_gap_mm": 0.3278105327907107,
+        "guide_center_shift_mm": 0.0,
+        "pass_": true
+      },
+      {
+        "pcb_pose_mm": [
+          0,
+          -0.76,
+          11.97
+        ],
+        "cables": [
+          {
+            "name": "LTE",
+            "handle_mm": 8.532234573364258,
+            "plug_azimuth_change_degrees": 0,
+            "control_points_mm": [
+              [
+                0.3,
+                -9.06,
+                13.620000000000001
+              ],
+              [
+                -8.232234573364257,
+                -9.06,
+                13.620000000000001
+              ],
+              [
+                -11.363382434844969,
+                -7.744719586372375,
+                16.849999999999998
+              ],
+              [
+                -16.795777416229246,
+                2.7992962360382077,
+                16.849999999999998
+              ],
+              [
+                -14.929579925537107,
+                12.1302836894989,
+                16.849999999999998
+              ],
+              [
+                0.0,
+                13.063382434844968,
+                16.849999999999998
+              ],
+              [
+                16.795777416229246,
+                11.19718494415283,
+                16.849999999999998
+              ],
+              [
+                16.795777416229246,
+                -9.330987453460692,
+                16.849999999999998
+              ],
+              [
+                8.397888708114623,
+                -13.996481180191038,
+                17.65
+              ],
+              [
+                3.0,
+                -7.0,
+                17.735
+              ],
+              [
+                -3.9,
+                -7.0,
+                17.735
+              ]
+            ],
+            "length_mm": 98.50040832671874,
+            "minimum_radius_mm": 4.260817578034708,
+            "minimum_component_gap_mm": 0.8062425055414982,
+            "limiting_ref": "R3",
+            "pass_": true
+          },
+          {
+            "name": "GNSS",
+            "handle_mm": 2.978496932983398,
+            "plug_azimuth_change_degrees": 0,
+            "control_points_mm": [
+              [
+                10.3,
+                1.4400000000000002,
+                13.620000000000001
+              ],
+              [
+                10.3,
+                4.418496932983398,
+                13.620000000000001
+              ],
+              [
+                9.108311176300047,
+                13.66246676445007,
+                15.05
+              ],
+              [
+                -9.108311176300047,
+                13.66246676445007,
+                15.05
+              ],
+              [
+                -16.394960117340084,
+                2.732493352890014,
+                15.05
+              ],
+              [
+                -16.394960117340084,
+                -11.840804529190061,
+                15.05
+              ],
+              [
+                0.0,
+                -12.751635646820066,
+                16.55
+              ],
+              [
+                14.573297882080075,
+                -9.108311176300047,
+                15.05
+              ],
+              [
+                10.929973411560056,
+                1.8216622352600094,
+                15.05
+              ],
+              [
+                0.0,
+                0.0,
+                17.735
+              ],
+              [
+                0.0,
+                5.3,
+                17.735
+              ]
+            ],
+            "length_mm": 98.50060868465688,
+            "minimum_radius_mm": 3.4952419530357264,
+            "minimum_component_gap_mm": 0.353730827189159,
+            "limiting_ref": "U5",
+            "pass_": true
+          }
+        ],
+        "cable_gap_mm": 0.3251135866989642,
+        "guide_center_shift_mm": 0.0,
+        "pass_": true
+      },
+      {
+        "pcb_pose_mm": [
+          0,
+          0,
+          11.02
+        ],
+        "cables": [
+          {
+            "name": "LTE",
+            "handle_mm": 8.848259353637692,
+            "plug_azimuth_change_degrees": 0,
+            "control_points_mm": [
+              [
+                0.3,
+                -8.3,
+                12.67
+              ],
+              [
+                -8.548259353637691,
+                -8.3,
+                12.67
+              ],
+              [
+                -11.363382434844969,
+                -7.744719586372375,
+                16.849999999999998
+              ],
+              [
+                -16.795777416229246,
+                2.7992962360382077,
+                16.849999999999998
+              ],
+              [
+                -14.929579925537107,
+                12.1302836894989,
+                16.849999999999998
+              ],
+              [
+                0.0,
+                13.063382434844968,
+                16.849999999999998
+              ],
+              [
+                16.795777416229246,
+                11.19718494415283,
+                16.849999999999998
+              ],
+              [
+                16.795777416229246,
+                -9.330987453460692,
+                16.849999999999998
+              ],
+              [
+                8.397888708114623,
+                -13.996481180191038,
+                17.65
+              ],
+              [
+                3.0,
+                -7.0,
+                17.735
+              ],
+              [
+                -3.9,
+                -7.0,
+                17.735
+              ]
+            ],
+            "length_mm": 98.50040820350972,
+            "minimum_radius_mm": 4.260817578034708,
+            "minimum_component_gap_mm": 0.8366764695503204,
+            "limiting_ref": "R3",
+            "pass_": true
+          },
+          {
+            "name": "GNSS",
+            "handle_mm": 4.48995933532715,
+            "plug_azimuth_change_degrees": 0,
+            "control_points_mm": [
+              [
+                10.3,
+                2.2,
+                12.67
+              ],
+              [
+                10.3,
+                6.68995933532715,
+                12.67
+              ],
+              [
+                9.108311176300047,
+                13.66246676445007,
+                15.05
+              ],
+              [
+                -9.108311176300047,
+                13.66246676445007,
+                15.05
+              ],
+              [
+                -16.394960117340084,
+                2.732493352890014,
+                15.05
+              ],
+              [
+                -16.394960117340084,
+                -11.840804529190061,
+                15.05
+              ],
+              [
+                0.0,
+                -12.751635646820066,
+                16.55
+              ],
+              [
+                14.573297882080075,
+                -9.108311176300047,
+                15.05
+              ],
+              [
+                10.929973411560056,
+                1.8216622352600094,
+                15.05
+              ],
+              [
+                0.0,
+                0.0,
+                17.735
+              ],
+              [
+                0.0,
+                5.3,
+                17.735
+              ]
+            ],
+            "length_mm": 98.5005873943056,
+            "minimum_radius_mm": 3.4952419530357264,
+            "minimum_component_gap_mm": 0.5051334518127265,
+            "limiting_ref": "U5",
+            "pass_": true
+          }
+        ],
+        "cable_gap_mm": 0.32383009748670244,
+        "guide_center_shift_mm": 0.0,
+        "pass_": true
+      },
+      {
+        "pcb_pose_mm": [
+          0,
+          0,
+          11.24088
+        ],
+        "cables": [
+          {
+            "name": "LTE",
+            "handle_mm": 9.180312728881836,
+            "plug_azimuth_change_degrees": 0,
+            "control_points_mm": [
+              [
+                0.3,
+                -8.3,
+                12.890880000000001
+              ],
+              [
+                -8.880312728881835,
+                -8.3,
+                12.890880000000001
+              ],
+              [
+                -11.363382434844969,
+                -7.744719586372375,
+                16.849999999999998
+              ],
+              [
+                -16.795777416229246,
+                2.7992962360382077,
+                16.849999999999998
+              ],
+              [
+                -14.929579925537107,
+                12.1302836894989,
+                16.849999999999998
+              ],
+              [
+                0.0,
+                13.063382434844968,
+                16.849999999999998
+              ],
+              [
+                16.795777416229246,
+                11.19718494415283,
+                16.849999999999998
+              ],
+              [
+                16.795777416229246,
+                -9.330987453460692,
+                16.849999999999998
+              ],
+              [
+                8.397888708114623,
+                -13.996481180191038,
+                17.65
+              ],
+              [
+                3.0,
+                -7.0,
+                17.735
+              ],
+              [
+                -3.9,
+                -7.0,
+                17.735
+              ]
+            ],
+            "length_mm": 98.50041456402022,
+            "minimum_radius_mm": 4.260817578034708,
+            "minimum_component_gap_mm": 0.8278769919352,
+            "limiting_ref": "R3",
+            "pass_": true
+          },
+          {
+            "name": "GNSS",
+            "handle_mm": 4.605456161499024,
+            "plug_azimuth_change_degrees": 0,
+            "control_points_mm": [
+              [
+                10.3,
+                2.2,
+                12.890880000000001
+              ],
+              [
+                10.3,
+                6.805456161499024,
+                12.890880000000001
+              ],
+              [
+                9.108311176300047,
+                13.66246676445007,
+                15.05
+              ],
+              [
+                -9.108311176300047,
+                13.66246676445007,
+                15.05
+              ],
+              [
+                -16.394960117340084,
+                2.732493352890014,
+                15.05
+              ],
+              [
+                -16.394960117340084,
+                -11.840804529190061,
+                15.05
+              ],
+              [
+                0.0,
+                -12.751635646820066,
+                16.55
+              ],
+              [
+                14.573297882080075,
+                -9.108311176300047,
+                15.05
+              ],
+              [
+                10.929973411560056,
+                1.8216622352600094,
+                15.05
+              ],
+              [
+                0.0,
+                0.0,
+                17.735
+              ],
+              [
+                0.0,
+                5.3,
+                17.735
+              ]
+            ],
+            "length_mm": 98.5006110876183,
+            "minimum_radius_mm": 3.4952419530357264,
+            "minimum_component_gap_mm": 0.4379919119213504,
+            "limiting_ref": "U5",
+            "pass_": true
+          }
+        ],
+        "cable_gap_mm": 0.32291038048426024,
+        "guide_center_shift_mm": 0.0,
+        "pass_": true
+      },
+      {
+        "pcb_pose_mm": [
+          0,
+          0,
+          11.97
+        ],
+        "cables": [
+          {
+            "name": "LTE",
+            "handle_mm": 6.710431289672851,
+            "plug_azimuth_change_degrees": 15,
+            "control_points_mm": [
+              [
+                0.3,
+                -8.3,
+                13.620000000000001
+              ],
+              [
+                -6.181778888233266,
+                -10.036787418619205,
+                13.620000000000001
+              ],
+              [
+                -11.363382434844969,
+                -7.744719586372375,
+                16.849999999999998
+              ],
+              [
+                -16.795777416229246,
+                2.7992962360382077,
+                16.849999999999998
+              ],
+              [
+                -14.929579925537107,
+                12.1302836894989,
+                16.849999999999998
+              ],
+              [
+                0.0,
+                13.063382434844968,
+                16.849999999999998
+              ],
+              [
+                16.795777416229246,
+                11.19718494415283,
+                16.849999999999998
+              ],
+              [
+                16.795777416229246,
+                -9.330987453460692,
+                16.849999999999998
+              ],
+              [
+                8.397888708114623,
+                -13.996481180191038,
+                17.65
+              ],
+              [
+                3.0,
+                -7.0,
+                17.735
+              ],
+              [
+                -3.9,
+                -7.0,
+                17.735
+              ]
+            ],
+            "length_mm": 98.50040668640412,
+            "minimum_radius_mm": 4.260817578034708,
+            "minimum_component_gap_mm": 0.9009067538398672,
+            "limiting_ref": "U6",
+            "pass_": true
+          },
+          {
+            "name": "GNSS",
+            "handle_mm": 4.906816482543945,
+            "plug_azimuth_change_degrees": 0,
+            "control_points_mm": [
+              [
+                10.3,
+                2.2,
+                13.620000000000001
+              ],
+              [
+                10.3,
+                7.1068164825439455,
+                13.620000000000001
+              ],
+              [
+                9.108311176300047,
+                13.66246676445007,
+                15.05
+              ],
+              [
+                -9.108311176300047,
+                13.66246676445007,
+                15.05
+              ],
+              [
+                -16.394960117340084,
+                2.732493352890014,
+                15.05
+              ],
+              [
+                -16.394960117340084,
+                -11.840804529190061,
+                15.05
+              ],
+              [
+                0.0,
+                -12.751635646820066,
+                16.55
+              ],
+              [
+                14.573297882080075,
+                -9.108311176300047,
+                15.05
+              ],
+              [
+                10.929973411560056,
+                1.8216622352600094,
+                15.05
+              ],
+              [
+                0.0,
+                0.0,
+                17.735
+              ],
+              [
+                0.0,
+                5.3,
+                17.735
+              ]
+            ],
+            "length_mm": 98.50060561229635,
+            "minimum_radius_mm": 3.4952419530357264,
+            "minimum_component_gap_mm": 0.23540744697416685,
+            "limiting_ref": "U5",
+            "pass_": true
+          }
+        ],
+        "cable_gap_mm": 0.33001842529378833,
+        "guide_center_shift_mm": 0.0,
+        "pass_": true
+      },
+      {
+        "pcb_pose_mm": [
+          0,
+          0.76,
+          11.02
+        ],
+        "cables": [
+          {
+            "name": "LTE",
+            "handle_mm": 6.905502700805664,
+            "plug_azimuth_change_degrees": 15,
+            "control_points_mm": [
+              [
+                0.3,
+                -7.540000000000001,
+                12.67
+              ],
+              [
+                -6.370203402217105,
+                -9.3272756149754,
+                12.67
+              ],
+              [
+                -11.363382434844969,
+                -7.744719586372375,
+                16.849999999999998
+              ],
+              [
+                -16.795777416229246,
+                2.7992962360382077,
+                16.849999999999998
+              ],
+              [
+                -14.929579925537107,
+                12.1302836894989,
+                16.849999999999998
+              ],
+              [
+                0.0,
+                13.063382434844968,
+                16.849999999999998
+              ],
+              [
+                16.795777416229246,
+                11.19718494415283,
+                16.849999999999998
+              ],
+              [
+                16.795777416229246,
+                -9.330987453460692,
+                16.849999999999998
+              ],
+              [
+                8.397888708114623,
+                -13.996481180191038,
+                17.65
+              ],
+              [
+                3.0,
+                -7.0,
+                17.735
+              ],
+              [
+                -3.9,
+                -7.0,
+                17.735
+              ]
+            ],
+            "length_mm": 98.500421802908,
+            "minimum_radius_mm": 4.260817578034708,
+            "minimum_component_gap_mm": 0.8060185854729368,
+            "limiting_ref": "U6",
+            "pass_": true
+          },
+          {
+            "name": "GNSS",
+            "handle_mm": 6.002444839477539,
+            "plug_azimuth_change_degrees": 0,
+            "control_points_mm": [
+              [
+                10.3,
+                2.96,
+                12.67
+              ],
+              [
+                10.3,
+                8.962444839477538,
+                12.67
+              ],
+              [
+                9.108311176300047,
+                13.66246676445007,
+                15.05
+              ],
+              [
+                -9.108311176300047,
+                13.66246676445007,
+                15.05
+              ],
+              [
+                -16.394960117340084,
+                2.732493352890014,
+                15.05
+              ],
+              [
+                -16.394960117340084,
+                -11.840804529190061,
+                15.05
+              ],
+              [
+                0.0,
+                -12.751635646820066,
+                16.55
+              ],
+              [
+                14.573297882080075,
+                -9.108311176300047,
+                15.05
+              ],
+              [
+                10.929973411560056,
+                1.8216622352600094,
+                15.05
+              ],
+              [
+                0.0,
+                0.0,
+                17.735
+              ],
+              [
+                0.0,
+                5.3,
+                17.735
+              ]
+            ],
+            "length_mm": 98.50060145575385,
+            "minimum_radius_mm": 3.4952419530357264,
+            "minimum_component_gap_mm": 0.3587057304612981,
+            "limiting_ref": "U5",
+            "pass_": true
+          }
+        ],
+        "cable_gap_mm": 0.3296669109390682,
+        "guide_center_shift_mm": 0.0,
+        "pass_": true
+      },
+      {
+        "pcb_pose_mm": [
+          0,
+          0.76,
+          11.24088
+        ],
+        "cables": [
+          {
+            "name": "LTE",
+            "handle_mm": 7.128766250610351,
+            "plug_azimuth_change_degrees": 15,
+            "control_points_mm": [
+              [
+                0.3,
+                -7.540000000000001,
+                12.890880000000001
+              ],
+              [
+                -6.585859431042428,
+                -9.385060473742048,
+                12.890880000000001
+              ],
+              [
+                -11.363382434844969,
+                -7.744719586372375,
+                16.849999999999998
+              ],
+              [
+                -16.795777416229246,
+                2.7992962360382077,
+                16.849999999999998
+              ],
+              [
+                -14.929579925537107,
+                12.1302836894989,
+                16.849999999999998
+              ],
+              [
+                0.0,
+                13.063382434844968,
+                16.849999999999998
+              ],
+              [
+                16.795777416229246,
+                11.19718494415283,
+                16.849999999999998
+              ],
+              [
+                16.795777416229246,
+                -9.330987453460692,
+                16.849999999999998
+              ],
+              [
+                8.397888708114623,
+                -13.996481180191038,
+                17.65
+              ],
+              [
+                3.0,
+                -7.0,
+                17.735
+              ],
+              [
+                -3.9,
+                -7.0,
+                17.735
+              ]
+            ],
+            "length_mm": 98.50042394525823,
+            "minimum_radius_mm": 4.260817578034708,
+            "minimum_component_gap_mm": 0.7668683639659528,
+            "limiting_ref": "U6",
+            "pass_": true
+          },
+          {
+            "name": "GNSS",
+            "handle_mm": 6.107938003540038,
+            "plug_azimuth_change_degrees": 0,
+            "control_points_mm": [
+              [
+                10.3,
+                2.96,
+                12.890880000000001
+              ],
+              [
+                10.3,
+                9.06793800354004,
+                12.890880000000001
+              ],
+              [
+                9.108311176300047,
+                13.66246676445007,
+                15.05
+              ],
+              [
+                -9.108311176300047,
+                13.66246676445007,
+                15.05
+              ],
+              [
+                -16.394960117340084,
+                2.732493352890014,
+                15.05
+              ],
+              [
+                -16.394960117340084,
+                -11.840804529190061,
+                15.05
+              ],
+              [
+                0.0,
+                -12.751635646820066,
+                16.55
+              ],
+              [
+                14.573297882080075,
+                -9.108311176300047,
+                15.05
+              ],
+              [
+                10.929973411560056,
+                1.8216622352600094,
+                15.05
+              ],
+              [
+                0.0,
+                0.0,
+                17.735
+              ],
+              [
+                0.0,
+                5.3,
+                17.735
+              ]
+            ],
+            "length_mm": 98.5005826975417,
+            "minimum_radius_mm": 3.4952419530357264,
+            "minimum_component_gap_mm": 0.30649026075272545,
+            "limiting_ref": "U5",
+            "pass_": true
+          }
+        ],
+        "cable_gap_mm": 0.3289667895923919,
+        "guide_center_shift_mm": 0.0,
+        "pass_": true
+      },
+      {
+        "pcb_pose_mm": [
+          0,
+          0.76,
+          11.97
+        ],
+        "cables": [
+          {
+            "name": "LTE",
+            "handle_mm": 7.7766170501709,
+            "plug_azimuth_change_degrees": 15,
+            "control_points_mm": [
+              [
+                0.3,
+                -7.540000000000001,
+                13.620000000000001
+              ],
+              [
+                -7.2116352499199845,
+                -9.552736599053214,
+                13.620000000000001
+              ],
+              [
+                -11.363382434844969,
+                -7.744719586372375,
+                16.849999999999998
+              ],
+              [
+                -16.795777416229246,
+                2.7992962360382077,
+                16.849999999999998
+              ],
+              [
+                -14.929579925537107,
+                12.1302836894989,
+                16.849999999999998
+              ],
+              [
+                0.0,
+                13.063382434844968,
+                16.849999999999998
+              ],
+              [
+                16.795777416229246,
+                11.19718494415283,
+                16.849999999999998
+              ],
+              [
+                16.795777416229246,
+                -9.330987453460692,
+                16.849999999999998
+              ],
+              [
+                8.397888708114623,
+                -13.996481180191038,
+                17.65
+              ],
+              [
+                3.0,
+                -7.0,
+                17.735
+              ],
+              [
+                -3.9,
+                -7.0,
+                17.735
+              ]
+            ],
+            "length_mm": 98.50042412440345,
+            "minimum_radius_mm": 4.260817578034708,
+            "minimum_component_gap_mm": 0.647894349333168,
+            "limiting_ref": "U6",
+            "pass_": true
+          },
+          {
+            "name": "GNSS",
+            "handle_mm": 4.702309799194335,
+            "plug_azimuth_change_degrees": -15,
+            "control_points_mm": [
+              [
+                10.3,
+                2.96,
+                13.620000000000001
+              ],
+              [
+                11.517047332003704,
+                7.50208247825397,
+                13.620000000000001
+              ],
+              [
+                9.108311176300047,
+                13.66246676445007,
+                15.05
+              ],
+              [
+                -9.108311176300047,
+                13.66246676445007,
+                15.05
+              ],
+              [
+                -16.394960117340084,
+                2.732493352890014,
+                15.05
+              ],
+              [
+                -16.394960117340084,
+                -11.840804529190061,
+                15.05
+              ],
+              [
+                0.0,
+                -12.751635646820066,
+                16.55
+              ],
+              [
+                14.573297882080075,
+                -9.108311176300047,
+                15.05
+              ],
+              [
+                10.929973411560056,
+                1.8216622352600094,
+                15.05
+              ],
+              [
+                0.0,
+                0.0,
+                17.735
+              ],
+              [
+                0.0,
+                5.3,
+                17.735
+              ]
+            ],
+            "length_mm": 98.50059514037945,
+            "minimum_radius_mm": 3.4952419530357264,
+            "minimum_component_gap_mm": 0.29033627215308505,
+            "limiting_ref": "U5",
+            "pass_": true
+          }
+        ],
+        "cable_gap_mm": 0.3273844503449579,
+        "guide_center_shift_mm": 0.0,
+        "pass_": true
+      },
+      {
+        "pcb_pose_mm": [
+          0.76,
+          -0.76,
+          11.02
+        ],
+        "cables": [
+          {
+            "name": "LTE",
+            "handle_mm": 3.0578441619873042,
+            "plug_azimuth_change_degrees": 0,
+            "control_points_mm": [
+              [
+                1.06,
+                -9.06,
+                12.67
+              ],
+              [
+                -1.9978441619873042,
+                -9.06,
+                12.67
+              ],
+              [
+                -11.363382434844969,
+                -7.744719586372375,
+                16.849999999999998
+              ],
+              [
+                -16.795777416229246,
+                2.7992962360382077,
+                16.849999999999998
+              ],
+              [
+                -14.929579925537107,
+                12.1302836894989,
+                16.849999999999998
+              ],
+              [
+                0.0,
+                13.063382434844968,
+                16.849999999999998
+              ],
+              [
+                16.795777416229246,
+                11.19718494415283,
+                16.849999999999998
+              ],
+              [
+                16.795777416229246,
+                -9.330987453460692,
+                16.849999999999998
+              ],
+              [
+                8.397888708114623,
+                -13.996481180191038,
+                17.65
+              ],
+              [
+                3.0,
+                -7.0,
+                17.735
+              ],
+              [
+                -3.9,
+                -7.0,
+                17.735
+              ]
+            ],
+            "length_mm": 98.50038727340095,
+            "minimum_radius_mm": 4.260817578034708,
+            "minimum_component_gap_mm": 1.0108485200908544,
+            "limiting_ref": "R3",
+            "pass_": true
+          },
+          {
+            "name": "GNSS",
+            "handle_mm": 2.931206893920898,
+            "plug_azimuth_change_degrees": 30,
+            "control_points_mm": [
+              [
+                11.06,
+                1.4400000000000002,
+                12.67
+              ],
+              [
+                9.594396553039552,
+                3.978499633883576,
+                12.67
+              ],
+              [
+                9.108311176300047,
+                13.66246676445007,
+                15.05
+              ],
+              [
+                -9.108311176300047,
+                13.66246676445007,
+                15.05
+              ],
+              [
+                -16.394960117340084,
+                2.732493352890014,
+                15.05
+              ],
+              [
+                -16.394960117340084,
+                -11.840804529190061,
+                15.05
+              ],
+              [
+                0.0,
+                -12.751635646820066,
+                16.55
+              ],
+              [
+                14.573297882080075,
+                -9.108311176300047,
+                15.05
+              ],
+              [
+                10.929973411560056,
+                1.8216622352600094,
+                15.05
+              ],
+              [
+                0.0,
+                0.0,
+                17.735
+              ],
+              [
+                0.0,
+                5.3,
+                17.735
+              ]
+            ],
+            "length_mm": 98.50060310160636,
+            "minimum_radius_mm": 3.4952419530357264,
+            "minimum_component_gap_mm": 0.898745076253269,
+            "limiting_ref": "U5",
+            "pass_": true
+          }
+        ],
+        "cable_gap_mm": 0.32969945091317854,
+        "guide_center_shift_mm": 0.0,
+        "pass_": true
+      },
+      {
+        "pcb_pose_mm": [
+          0.76,
+          -0.76,
+          11.24088
+        ],
+        "cables": [
+          {
+            "name": "LTE",
+            "handle_mm": 3.5222187042236324,
+            "plug_azimuth_change_degrees": 0,
+            "control_points_mm": [
+              [
+                1.06,
+                -9.06,
+                12.890880000000001
+              ],
+              [
+                -2.4622187042236323,
+                -9.06,
+                12.890880000000001
+              ],
+              [
+                -11.363382434844969,
+                -7.744719586372375,
+                16.849999999999998
+              ],
+              [
+                -16.795777416229246,
+                2.7992962360382077,
+                16.849999999999998
+              ],
+              [
+                -14.929579925537107,
+                12.1302836894989,
+                16.849999999999998
+              ],
+              [
+                0.0,
+                13.063382434844968,
+                16.849999999999998
+              ],
+              [
+                16.795777416229246,
+                11.19718494415283,
+                16.849999999999998
+              ],
+              [
+                16.795777416229246,
+                -9.330987453460692,
+                16.849999999999998
+              ],
+              [
+                8.397888708114623,
+                -13.996481180191038,
+                17.65
+              ],
+              [
+                3.0,
+                -7.0,
+                17.735
+              ],
+              [
+                -3.9,
+                -7.0,
+                17.735
+              ]
+            ],
+            "length_mm": 98.50038640954199,
+            "minimum_radius_mm": 4.260817578034708,
+            "minimum_component_gap_mm": 0.9605937940417004,
+            "limiting_ref": "R3",
+            "pass_": true
+          },
+          {
+            "name": "GNSS",
+            "handle_mm": 3.3661388397216796,
+            "plug_azimuth_change_degrees": 30,
+            "control_points_mm": [
+              [
+                11.06,
+                1.4400000000000002,
+                12.890880000000001
+              ],
+              [
+                9.376930580139161,
+                4.355161747864449,
+                12.890880000000001
+              ],
+              [
+                9.108311176300047,
+                13.66246676445007,
+                15.05
+              ],
+              [
+                -9.108311176300047,
+                13.66246676445007,
+                15.05
+              ],
+              [
+                -16.394960117340084,
+                2.732493352890014,
+                15.05
+              ],
+              [
+                -16.394960117340084,
+                -11.840804529190061,
+                15.05
+              ],
+              [
+                0.0,
+                -12.751635646820066,
+                16.55
+              ],
+              [
+                14.573297882080075,
+                -9.108311176300047,
+                15.05
+              ],
+              [
+                10.929973411560056,
+                1.8216622352600094,
+                15.05
+              ],
+              [
+                0.0,
+                0.0,
+                17.735
+              ],
+              [
+                0.0,
+                5.3,
+                17.735
+              ]
+            ],
+            "length_mm": 98.50059576808003,
+            "minimum_radius_mm": 3.4952419530357264,
+            "minimum_component_gap_mm": 0.8328435458441609,
+            "limiting_ref": "U5",
+            "pass_": true
+          }
+        ],
+        "cable_gap_mm": 0.32977523495378125,
+        "guide_center_shift_mm": 0.0,
+        "pass_": true
+      },
+      {
+        "pcb_pose_mm": [
+          0.76,
+          -0.76,
+          11.97
+        ],
+        "cables": [
+          {
+            "name": "LTE",
+            "handle_mm": 4.832243728637696,
+            "plug_azimuth_change_degrees": 0,
+            "control_points_mm": [
+              [
+                1.06,
+                -9.06,
+                13.620000000000001
+              ],
+              [
+                -3.772243728637696,
+                -9.06,
+                13.620000000000001
+              ],
+              [
+                -11.363382434844969,
+                -7.744719586372375,
+                16.849999999999998
+              ],
+              [
+                -16.795777416229246,
+                2.7992962360382077,
+                16.849999999999998
+              ],
+              [
+                -14.929579925537107,
+                12.1302836894989,
+                16.849999999999998
+              ],
+              [
+                0.0,
+                13.063382434844968,
+                16.849999999999998
+              ],
+              [
+                16.795777416229246,
+                11.19718494415283,
+                16.849999999999998
+              ],
+              [
+                16.795777416229246,
+                -9.330987453460692,
+                16.849999999999998
+              ],
+              [
+                8.397888708114623,
+                -13.996481180191038,
+                17.65
+              ],
+              [
+                3.0,
+                -7.0,
+                17.735
+              ],
+              [
+                -3.9,
+                -7.0,
+                17.735
+              ]
+            ],
+            "length_mm": 98.50039048065409,
+            "minimum_radius_mm": 4.260817578034708,
+            "minimum_component_gap_mm": 0.858708918713915,
+            "limiting_ref": "R3",
+            "pass_": true
+          },
+          {
+            "name": "GNSS",
+            "handle_mm": 2.1152263641357423,
+            "plug_azimuth_change_degrees": 15,
+            "control_points_mm": [
+              [
+                11.06,
+                1.4400000000000002,
+                13.620000000000001
+              ],
+              [
+                10.512539132258711,
+                3.483151773566238,
+                13.620000000000001
+              ],
+              [
+                9.108311176300047,
+                13.66246676445007,
+                15.05
+              ],
+              [
+                -9.108311176300047,
+                13.66246676445007,
+                15.05
+              ],
+              [
+                -16.394960117340084,
+                2.732493352890014,
+                15.05
+              ],
+              [
+                -16.394960117340084,
+                -11.840804529190061,
+                15.05
+              ],
+              [
+                0.0,
+                -12.751635646820066,
+                16.55
+              ],
+              [
+                14.573297882080075,
+                -9.108311176300047,
+                15.05
+              ],
+              [
+                10.929973411560056,
+                1.8216622352600094,
+                15.05
+              ],
+              [
+                0.0,
+                0.0,
+                17.735
+              ],
+              [
+                0.0,
+                5.3,
+                17.735
+              ]
+            ],
+            "length_mm": 98.50059039349848,
+            "minimum_radius_mm": 3.4952419530357264,
+            "minimum_component_gap_mm": 0.38928497998901673,
+            "limiting_ref": "J1",
+            "pass_": true
+          }
+        ],
+        "cable_gap_mm": 0.3300263366632217,
+        "guide_center_shift_mm": 0.0,
+        "pass_": true
+      },
+      {
+        "pcb_pose_mm": [
+          0.76,
+          0,
+          11.02
+        ],
+        "cables": [
+          {
+            "name": "LTE",
+            "handle_mm": 5.249328231811523,
+            "plug_azimuth_change_degrees": 0,
+            "control_points_mm": [
+              [
+                1.06,
+                -8.3,
+                12.67
+              ],
+              [
+                -4.189328231811523,
+                -8.3,
+                12.67
+              ],
+              [
+                -11.363382434844969,
+                -7.744719586372375,
+                16.849999999999998
+              ],
+              [
+                -16.795777416229246,
+                2.7992962360382077,
+                16.849999999999998
+              ],
+              [
+                -14.929579925537107,
+                12.1302836894989,
+                16.849999999999998
+              ],
+              [
+                0.0,
+                13.063382434844968,
+                16.849999999999998
+              ],
+              [
+                16.795777416229246,
+                11.19718494415283,
+                16.849999999999998
+              ],
+              [
+                16.795777416229246,
+                -9.330987453460692,
+                16.849999999999998
+              ],
+              [
+                8.397888708114623,
+                -13.996481180191038,
+                17.65
+              ],
+              [
+                3.0,
+                -7.0,
+                17.735
+              ],
+              [
+                -3.9,
+                -7.0,
+                17.735
+              ]
+            ],
+            "length_mm": 98.50039738248782,
+            "minimum_radius_mm": 4.260817578034708,
+            "minimum_component_gap_mm": 0.9287748121546902,
+            "limiting_ref": "R3",
+            "pass_": true
+          },
+          {
+            "name": "GNSS",
+            "handle_mm": 2.9656513214111326,
+            "plug_azimuth_change_degrees": 0,
+            "control_points_mm": [
+              [
+                11.06,
+                2.2,
+                12.67
+              ],
+              [
+                11.06,
+                5.165651321411133,
+                12.67
+              ],
+              [
+                9.108311176300047,
+                13.66246676445007,
+                15.05
+              ],
+              [
+                -9.108311176300047,
+                13.66246676445007,
+                15.05
+              ],
+              [
+                -16.394960117340084,
+                2.732493352890014,
+                15.05
+              ],
+              [
+                -16.394960117340084,
+                -11.840804529190061,
+                15.05
+              ],
+              [
+                0.0,
+                -12.751635646820066,
+                16.55
+              ],
+              [
+                14.573297882080075,
+                -9.108311176300047,
+                15.05
+              ],
+              [
+                10.929973411560056,
+                1.8216622352600094,
+                15.05
+              ],
+              [
+                0.0,
+                0.0,
+                17.735
+              ],
+              [
+                0.0,
+                5.3,
+                17.735
+              ]
+            ],
+            "length_mm": 98.50060077483461,
+            "minimum_radius_mm": 3.4952419530357264,
+            "minimum_component_gap_mm": 0.7011514858150266,
+            "limiting_ref": "U5",
+            "pass_": true
+          }
+        ],
+        "cable_gap_mm": 0.32969045153335763,
+        "guide_center_shift_mm": 0.0,
+        "pass_": true
+      },
+      {
+        "pcb_pose_mm": [
+          0.76,
+          0,
+          11.24088
+        ],
+        "cables": [
+          {
+            "name": "LTE",
+            "handle_mm": 5.687329483032226,
+            "plug_azimuth_change_degrees": 0,
+            "control_points_mm": [
+              [
+                1.06,
+                -8.3,
+                12.890880000000001
+              ],
+              [
+                -4.627329483032225,
+                -8.3,
+                12.890880000000001
+              ],
+              [
+                -11.363382434844969,
+                -7.744719586372375,
+                16.849999999999998
+              ],
+              [
+                -16.795777416229246,
+                2.7992962360382077,
+                16.849999999999998
+              ],
+              [
+                -14.929579925537107,
+                12.1302836894989,
+                16.849999999999998
+              ],
+              [
+                0.0,
+                13.063382434844968,
+                16.849999999999998
+              ],
+              [
+                16.795777416229246,
+                11.19718494415283,
+                16.849999999999998
+              ],
+              [
+                16.795777416229246,
+                -9.330987453460692,
+                16.849999999999998
+              ],
+              [
+                8.397888708114623,
+                -13.996481180191038,
+                17.65
+              ],
+              [
+                3.0,
+                -7.0,
+                17.735
+              ],
+              [
+                -3.9,
+                -7.0,
+                17.735
+              ]
+            ],
+            "length_mm": 98.50040022352422,
+            "minimum_radius_mm": 4.260817578034708,
+            "minimum_component_gap_mm": 0.9027852362336937,
+            "limiting_ref": "R3",
+            "pass_": true
+          },
+          {
+            "name": "GNSS",
+            "handle_mm": 3.082739639282227,
+            "plug_azimuth_change_degrees": 0,
+            "control_points_mm": [
+              [
+                11.06,
+                2.2,
+                12.890880000000001
+              ],
+              [
+                11.06,
+                5.282739639282227,
+                12.890880000000001
+              ],
+              [
+                9.108311176300047,
+                13.66246676445007,
+                15.05
+              ],
+              [
+                -9.108311176300047,
+                13.66246676445007,
+                15.05
+              ],
+              [
+                -16.394960117340084,
+                2.732493352890014,
+                15.05
+              ],
+              [
+                -16.394960117340084,
+                -11.840804529190061,
+                15.05
+              ],
+              [
+                0.0,
+                -12.751635646820066,
+                16.55
+              ],
+              [
+                14.573297882080075,
+                -9.108311176300047,
+                15.05
+              ],
+              [
+                10.929973411560056,
+                1.8216622352600094,
+                15.05
+              ],
+              [
+                0.0,
+                0.0,
+                17.735
+              ],
+              [
+                0.0,
+                5.3,
+                17.735
+              ]
+            ],
+            "length_mm": 98.50059558522415,
+            "minimum_radius_mm": 3.4952419530357264,
+            "minimum_component_gap_mm": 0.6163006260008436,
+            "limiting_ref": "U5",
+            "pass_": true
+          }
+        ],
+        "cable_gap_mm": 0.3297664031134677,
+        "guide_center_shift_mm": 0.0,
+        "pass_": true
+      },
+      {
+        "pcb_pose_mm": [
+          0.76,
+          0,
+          11.97
+        ],
+        "cables": [
+          {
+            "name": "LTE",
+            "handle_mm": 6.946540451049804,
+            "plug_azimuth_change_degrees": 0,
+            "control_points_mm": [
+              [
+                1.06,
+                -8.3,
+                13.620000000000001
+              ],
+              [
+                -5.886540451049804,
+                -8.3,
+                13.620000000000001
+              ],
+              [
+                -11.363382434844969,
+                -7.744719586372375,
+                16.849999999999998
+              ],
+              [
+                -16.795777416229246,
+                2.7992962360382077,
+                16.849999999999998
+              ],
+              [
+                -14.929579925537107,
+                12.1302836894989,
+                16.849999999999998
+              ],
+              [
+                0.0,
+                13.063382434844968,
+                16.849999999999998
+              ],
+              [
+                16.795777416229246,
+                11.19718494415283,
+                16.849999999999998
+              ],
+              [
+                16.795777416229246,
+                -9.330987453460692,
+                16.849999999999998
+              ],
+              [
+                8.397888708114623,
+                -13.996481180191038,
+                17.65
+              ],
+              [
+                3.0,
+                -7.0,
+                17.735
+              ],
+              [
+                -3.9,
+                -7.0,
+                17.735
+              ]
+            ],
+            "length_mm": 98.5003973682081,
+            "minimum_radius_mm": 4.260817578034708,
+            "minimum_component_gap_mm": 0.8476236099584619,
+            "limiting_ref": "R3",
+            "pass_": true
+          },
+          {
+            "name": "GNSS",
+            "handle_mm": 3.387282943725586,
+            "plug_azimuth_change_degrees": 0,
+            "control_points_mm": [
+              [
+                11.06,
+                2.2,
+                13.620000000000001
+              ],
+              [
+                11.06,
+                5.587282943725587,
+                13.620000000000001
+              ],
+              [
+                9.108311176300047,
+                13.66246676445007,
+                15.05
+              ],
+              [
+                -9.108311176300047,
+                13.66246676445007,
+                15.05
+              ],
+              [
+                -16.394960117340084,
+                2.732493352890014,
+                15.05
+              ],
+              [
+                -16.394960117340084,
+                -11.840804529190061,
+                15.05
+              ],
+              [
+                0.0,
+                -12.751635646820066,
+                16.55
+              ],
+              [
+                14.573297882080075,
+                -9.108311176300047,
+                15.05
+              ],
+              [
+                10.929973411560056,
+                1.8216622352600094,
+                15.05
+              ],
+              [
+                0.0,
+                0.0,
+                17.735
+              ],
+              [
+                0.0,
+                5.3,
+                17.735
+              ]
+            ],
+            "length_mm": 98.50058886332218,
+            "minimum_radius_mm": 3.4952419530357264,
+            "minimum_component_gap_mm": 0.3543436493567093,
+            "limiting_ref": "U5",
+            "pass_": true
+          }
+        ],
+        "cable_gap_mm": 0.32987826234286405,
+        "guide_center_shift_mm": 0.0,
+        "pass_": true
+      },
+      {
+        "pcb_pose_mm": [
+          0.76,
+          0.76,
+          11.02
+        ],
+        "cables": [
+          {
+            "name": "LTE",
+            "handle_mm": 7.101938247680664,
+            "plug_azimuth_change_degrees": 0,
+            "control_points_mm": [
+              [
+                1.06,
+                -7.540000000000001,
+                12.67
+              ],
+              [
+                -6.041938247680664,
+                -7.540000000000001,
+                12.67
+              ],
+              [
+                -11.363382434844969,
+                -7.744719586372375,
+                16.849999999999998
+              ],
+              [
+                -16.795777416229246,
+                2.7992962360382077,
+                16.849999999999998
+              ],
+              [
+                -14.929579925537107,
+                12.1302836894989,
+                16.849999999999998
+              ],
+              [
+                0.0,
+                13.063382434844968,
+                16.849999999999998
+              ],
+              [
+                16.795777416229246,
+                11.19718494415283,
+                16.849999999999998
+              ],
+              [
+                16.795777416229246,
+                -9.330987453460692,
+                16.849999999999998
+              ],
+              [
+                8.397888708114623,
+                -13.996481180191038,
+                17.65
+              ],
+              [
+                3.0,
+                -7.0,
+                17.735
+              ],
+              [
+                -3.9,
+                -7.0,
+                17.735
+              ]
+            ],
+            "length_mm": 98.50040150969815,
+            "minimum_radius_mm": 4.260817578034708,
+            "minimum_component_gap_mm": 0.8930085029468879,
+            "limiting_ref": "R3",
+            "pass_": true
+          },
+          {
+            "name": "GNSS",
+            "handle_mm": 4.627623367309569,
+            "plug_azimuth_change_degrees": 0,
+            "control_points_mm": [
+              [
+                11.06,
+                2.96,
+                12.67
+              ],
+              [
+                11.06,
+                7.587623367309569,
+                12.67
+              ],
+              [
+                9.108311176300047,
+                13.66246676445007,
+                15.05
+              ],
+              [
+                -9.108311176300047,
+                13.66246676445007,
+                15.05
+              ],
+              [
+                -16.394960117340084,
+                2.732493352890014,
+                15.05
+              ],
+              [
+                -16.394960117340084,
+                -11.840804529190061,
+                15.05
+              ],
+              [
+                0.0,
+                -12.751635646820066,
+                16.55
+              ],
+              [
+                14.573297882080075,
+                -9.108311176300047,
+                15.05
+              ],
+              [
+                10.929973411560056,
+                1.8216622352600094,
+                15.05
+              ],
+              [
+                0.0,
+                0.0,
+                17.735
+              ],
+              [
+                0.0,
+                5.3,
+                17.735
+              ]
+            ],
+            "length_mm": 98.5006116070351,
+            "minimum_radius_mm": 3.4952419530357264,
+            "minimum_component_gap_mm": 0.5288062141500559,
+            "limiting_ref": "U5",
+            "pass_": true
+          }
+        ],
+        "cable_gap_mm": 0.3290772209623333,
+        "guide_center_shift_mm": 0.0,
+        "pass_": true
+      },
+      {
+        "pcb_pose_mm": [
+          0.76,
+          0.76,
+          11.24088
+        ],
+        "cables": [
+          {
+            "name": "LTE",
+            "handle_mm": 7.5290264129638675,
+            "plug_azimuth_change_degrees": 0,
+            "control_points_mm": [
+              [
+                1.06,
+                -7.540000000000001,
+                12.890880000000001
+              ],
+              [
+                -6.469026412963867,
+                -7.540000000000001,
+                12.890880000000001
+              ],
+              [
+                -11.363382434844969,
+                -7.744719586372375,
+                16.849999999999998
+              ],
+              [
+                -16.795777416229246,
+                2.7992962360382077,
+                16.849999999999998
+              ],
+              [
+                -14.929579925537107,
+                12.1302836894989,
+                16.849999999999998
+              ],
+              [
+                0.0,
+                13.063382434844968,
+                16.849999999999998
+              ],
+              [
+                16.795777416229246,
+                11.19718494415283,
+                16.849999999999998
+              ],
+              [
+                16.795777416229246,
+                -9.330987453460692,
+                16.849999999999998
+              ],
+              [
+                8.397888708114623,
+                -13.996481180191038,
+                17.65
+              ],
+              [
+                3.0,
+                -7.0,
+                17.735
+              ],
+              [
+                -3.9,
+                -7.0,
+                17.735
+              ]
+            ],
+            "length_mm": 98.50039609738624,
+            "minimum_radius_mm": 4.260817578034708,
+            "minimum_component_gap_mm": 0.8756816390027341,
+            "limiting_ref": "R3",
+            "pass_": true
+          },
+          {
+            "name": "GNSS",
+            "handle_mm": 4.7333438873291005,
+            "plug_azimuth_change_degrees": 0,
+            "control_points_mm": [
+              [
+                11.06,
+                2.96,
+                12.890880000000001
+              ],
+              [
+                11.06,
+                7.6933438873291005,
+                12.890880000000001
+              ],
+              [
+                9.108311176300047,
+                13.66246676445007,
+                15.05
+              ],
+              [
+                -9.108311176300047,
+                13.66246676445007,
+                15.05
+              ],
+              [
+                -16.394960117340084,
+                2.732493352890014,
+                15.05
+              ],
+              [
+                -16.394960117340084,
+                -11.840804529190061,
+                15.05
+              ],
+              [
+                0.0,
+                -12.751635646820066,
+                16.55
+              ],
+              [
+                14.573297882080075,
+                -9.108311176300047,
+                15.05
+              ],
+              [
+                10.929973411560056,
+                1.8216622352600094,
+                15.05
+              ],
+              [
+                0.0,
+                0.0,
+                17.735
+              ],
+              [
+                0.0,
+                5.3,
+                17.735
+              ]
+            ],
+            "length_mm": 98.50058244513036,
+            "minimum_radius_mm": 3.4952419530357264,
+            "minimum_component_gap_mm": 0.46019351265639646,
+            "limiting_ref": "U5",
+            "pass_": true
+          }
+        ],
+        "cable_gap_mm": 0.3278720029290272,
+        "guide_center_shift_mm": 0.0,
+        "pass_": true
+      },
+      {
+        "pcb_pose_mm": [
+          0.76,
+          0.76,
+          11.97
+        ],
+        "cables": [
+          {
+            "name": "LTE",
+            "handle_mm": 8.769707870483398,
+            "plug_azimuth_change_degrees": 0,
+            "control_points_mm": [
+              [
+                1.06,
+                -7.540000000000001,
+                13.620000000000001
+              ],
+              [
+                -7.709707870483397,
+                -7.540000000000001,
+                13.620000000000001
+              ],
+              [
+                -11.363382434844969,
+                -7.744719586372375,
+                16.849999999999998
+              ],
+              [
+                -16.795777416229246,
+                2.7992962360382077,
+                16.849999999999998
+              ],
+              [
+                -14.929579925537107,
+                12.1302836894989,
+                16.849999999999998
+              ],
+              [
+                0.0,
+                13.063382434844968,
+                16.849999999999998
+              ],
+              [
+                16.795777416229246,
+                11.19718494415283,
+                16.849999999999998
+              ],
+              [
+                16.795777416229246,
+                -9.330987453460692,
+                16.849999999999998
+              ],
+              [
+                8.397888708114623,
+                -13.996481180191038,
+                17.65
+              ],
+              [
+                3.0,
+                -7.0,
+                17.735
+              ],
+              [
+                -3.9,
+                -7.0,
+                17.735
+              ]
+            ],
+            "length_mm": 98.50040140573526,
+            "minimum_radius_mm": 4.260817578034708,
+            "minimum_component_gap_mm": 0.8361702971954785,
+            "limiting_ref": "R3",
+            "pass_": true
+          },
+          {
+            "name": "GNSS",
+            "handle_mm": 5.009467697143554,
+            "plug_azimuth_change_degrees": 0,
+            "control_points_mm": [
+              [
+                11.06,
+                2.96,
+                13.620000000000001
+              ],
+              [
+                11.06,
+                7.969467697143554,
+                13.620000000000001
+              ],
+              [
+                9.108311176300047,
+                13.66246676445007,
+                15.05
+              ],
+              [
+                -9.108311176300047,
+                13.66246676445007,
+                15.05
+              ],
+              [
+                -16.394960117340084,
+                2.732493352890014,
+                15.05
+              ],
+              [
+                -16.394960117340084,
+                -11.840804529190061,
+                15.05
+              ],
+              [
+                0.0,
+                -12.751635646820066,
+                16.55
+              ],
+              [
+                14.573297882080075,
+                -9.108311176300047,
+                15.05
+              ],
+              [
+                10.929973411560056,
+                1.8216622352600094,
+                15.05
+              ],
+              [
+                0.0,
+                0.0,
+                17.735
+              ],
+              [
+                0.0,
+                5.3,
+                17.735
+              ]
+            ],
+            "length_mm": 98.50059106084254,
+            "minimum_radius_mm": 3.4952419530357264,
+            "minimum_component_gap_mm": 0.25145109564899554,
+            "limiting_ref": "U5",
+            "pass_": true
+          }
+        ],
+        "cable_gap_mm": 0.3244016636815869,
+        "guide_center_shift_mm": 0.0,
+        "pass_": true
+      }
+    ],
+    "all_sampled_cases_pass": true,
+    "scope": "27 sampled endpoint poses. Fixed-length shape search adjusts the first tangent length and in-plane azimuth; guide centers stay fixed. Plug orientation, reaction force, continuous deformation and physical flex life are unqualified."
+  },
+  "physical_retention_qualified": false,
+  "physical_ingress_qualified": false,
+  "scope": "Captivity and geometric clearances at assigned manufacturing limits. No supplier process, strength, shock, wear, anti-rattle or physical sealing acceptance."
+}

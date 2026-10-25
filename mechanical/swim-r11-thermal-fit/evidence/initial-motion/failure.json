@@ -1,0 +1,116 @@
+{
+  "result": "FAIL",
+  "files": {
+    "parameters.json": "c45a1479ba4f8f2bb9ff20589536000bc7f6f6f2b2168a25072e6222e4bcd30b",
+    "retention.json": "d0134b7f8cf5305f7743f5331b134c5a3ab0e70e5428886558038fb690850cff",
+    "fit-profile.json": "1dd96e873736339c1425fdf169fe1d10fa92d9033352d44b36ba3af17065c178",
+    "routing-controls.json": "22d91389c5885d0d83c948b5bfb2ad27b3dcee2069e4eb9ed227c517ece3614b"
+  },
+  "checks": [
+    {
+      "name": "Declared thermal interface bounds",
+      "pass_": false,
+      "failures": [
+        {
+          "name": "west key tangential fit",
+          "minimum_mm": 0.03608500000000091,
+          "maximum_mm": 0.1638050000000003,
+          "required_minimum_mm": 0.05,
+          "pass_": false,
+          "minimum_witness": {
+            "carrier": {
+              "scale": 0.9967,
+              "temperature_C": -10,
+              "cte_ppm_per_K": 100
+            },
+            "frame": {
+              "scale": 1.0022,
+              "temperature_C": 45,
+              "cte_ppm_per_K": 100
+            }
+          }
+        },
+        {
+          "name": "east key tangential fit",
+          "minimum_mm": 0.04048499999999998,
+          "maximum_mm": 0.15940499999999969,
+          "required_minimum_mm": 0.05,
+          "pass_": false,
+          "minimum_witness": {
+            "carrier": {
+              "scale": 0.9967,
+              "temperature_C": -10,
+              "cte_ppm_per_K": 100
+            },
+            "frame": {
+              "scale": 1.0022,
+              "temperature_C": 45,
+              "cte_ppm_per_K": 100
+            }
+          }
+        },
+        {
+          "name": "south key tangential fit",
+          "minimum_mm": 0.04048499999999998,
+          "maximum_mm": 0.15940499999999969,
+          "required_minimum_mm": 0.05,
+          "pass_": false,
+          "minimum_witness": {
+            "carrier": {
+              "scale": 0.9967,
+              "temperature_C": -10,
+              "cte_ppm_per_K": 100
+            },
+            "frame": {
+              "scale": 1.0022,
+              "temperature_C": 45,
+              "cte_ppm_per_K": 100
+            }
+          }
+        },
+        {
+          "name": "north key tangential fit",
+          "minimum_mm": 0.04048499999999998,
+          "maximum_mm": 0.15940499999999969,
+          "required_minimum_mm": 0.05,
+          "pass_": false,
+          "minimum_witness": {
+            "carrier": {
+              "scale": 0.9967,
+              "temperature_C": -10,
+              "cte_ppm_per_K": 100
+            },
+            "frame": {
+              "scale": 1.0022,
+              "temperature_C": 45,
+              "cte_ppm_per_K": 100
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Thermal/motion component envelopes versus retention",
+      "pass_": false,
+      "failures": [
+        {
+          "ref": "C29",
+          "gap_mm": 0.005000000000002558,
+          "obstacle": "carrier guide rail"
+        },
+        {
+          "ref": "C33",
+          "gap_mm": 0.06499999999999949,
+          "obstacle": "carrier ledge"
+        },
+        {
+          "ref": "U12",
+          "gap_mm": 0.025000000000002128,
+          "obstacle": "carrier guide rail"
+        }
+      ]
+    }
+  ],
+  "reproducer": "tests/test_thermal_assembly.py",
+  "scope": "Initial enlarged clearances before guide/C33 reliefs and key position tolerance correction. Reproduced from preserved input dimensions; not a physical failure."
+}

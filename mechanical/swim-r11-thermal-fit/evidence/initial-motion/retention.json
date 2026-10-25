@@ -1,0 +1,231 @@
+{
+  "status": "PROTOTYPE_GEOMETRY_NOT_PRODUCTION_QUALIFICATION",
+  "frame": {
+    "outer_mm": [
+      41.8,
+      34.3
+    ],
+    "inner_mm": [
+      40.8,
+      33.3
+    ],
+    "outer_radius_mm": 1.9,
+    "inner_radius_mm": 1.4,
+    "bottom_z_mm": 11.5,
+    "height_mm": 1.2
+  },
+  "capture_tabs_xy_mm": [
+    [
+      -20.9,
+      -9.5,
+      -19.05,
+      -6.5
+    ],
+    [
+      19.05,
+      -9.5,
+      20.9,
+      -6.5
+    ]
+  ],
+  "north_tabs_xy_mm": [
+    [
+      -12,
+      14.95,
+      -10.4,
+      17.15
+    ],
+    [
+      18.2,
+      14.95,
+      20.9,
+      17.15
+    ]
+  ],
+  "lid_posts_xy_mm": [
+    [
+      -20.85,
+      -9.5,
+      -20.35,
+      -6.5
+    ],
+    [
+      20.35,
+      -9.5,
+      20.85,
+      -6.5
+    ],
+    [
+      -12,
+      16.35,
+      -10.4,
+      16.85
+    ],
+    [
+      18.2,
+      16.35,
+      19.5,
+      16.85
+    ]
+  ],
+  "lid_post_bottom_z_mm": 13.0,
+  "locator_ribs_xy_mm": [
+    [
+      -21.2,
+      -1,
+      -21,
+      1
+    ],
+    [
+      21,
+      -1,
+      21.2,
+      1
+    ],
+    [
+      -1,
+      -17.3,
+      1,
+      -17
+    ],
+    [
+      -1,
+      17,
+      1,
+      17.3
+    ]
+  ],
+  "guide_rails_xy_mm": [
+    [
+      -20.8,
+      -15.5,
+      -20.2,
+      15.5
+    ],
+    [
+      20.2,
+      -15.5,
+      20.8,
+      15.5
+    ],
+    [
+      -19.5,
+      -16.8,
+      19.5,
+      -16.2
+    ],
+    [
+      -19.5,
+      16.2,
+      19.5,
+      16.8
+    ]
+  ],
+  "guide_top_z_mm": 11.5,
+  "sim_bridge_bottom_z_mm": 11.5,
+  "sim_bridge_relief_xy_mm": [
+    3.8,
+    14.8,
+    17.95,
+    18.8
+  ],
+  "dimension_requirements": {
+    "pcb_outline_overall_tolerance_mm": 0.1,
+    "frame_and_carrier_overall_tolerance_mm": 0.05,
+    "body_locator_aperture_overall_tolerance_mm": 0.04,
+    "body_cavity_overall_tolerance_mm": 0.05,
+    "axial_feature_tolerance_mm": 0.05,
+    "note": "Assigned manufacturing requirements, not a claim that a printer or supplier achieves them. Inspect before assembly. No forced lid closure.",
+    "key_position_tolerance_per_axis_mm": 0.025
+  },
+  "motion_screen": {
+    "pcb_to_carrier_xy_mm": 0.4,
+    "pcb_to_body_xy_mm": 0.76,
+    "retainer_to_body_xy_mm": 0.58,
+    "pcb_top_z_mm": [
+      11.02,
+      11.97
+    ],
+    "retainer_bottom_z_mm": [
+      11.4,
+      11.97
+    ],
+    "minimum_component_gap_mm": 0.2,
+    "note": "Conservative thermal/dimensional sensitivity and in-plane movement bounds. Four radial slots constrain relative frame/carrier translation and yaw; PCB tilt, elastic loads and physical qualification remain open.",
+    "retainer_to_carrier_pointwise_mm": 0.22,
+    "thermal_xy_allowance_mm": 0.15,
+    "thermal_z_allowance_mm": 0.08
+  },
+  "prototype_retainer_material": "TECANAT natural PC candidate, CNC machined with body/lid/carrier. Material bounds are engineering requirements; the datasheet is not a guarantee.",
+  "physical_retention_qualified": false,
+  "physical_ingress_qualified": false,
+  "sim_bridge_present": false,
+  "radial_keys": [
+    {
+      "name": "west",
+      "xy_mm": [
+        -20.9,
+        -1.2,
+        -20.22,
+        1.2
+      ],
+      "slot_xy_mm": [
+        -21.2,
+        -1.3,
+        -19.95,
+        1.3
+      ],
+      "axis": "x"
+    },
+    {
+      "name": "east",
+      "xy_mm": [
+        20.22,
+        -0.8,
+        20.9,
+        0.8
+      ],
+      "slot_xy_mm": [
+        19.95,
+        -0.9,
+        21.2,
+        0.9
+      ],
+      "axis": "x"
+    },
+    {
+      "name": "south",
+      "xy_mm": [
+        -0.8,
+        -17.15,
+        0.8,
+        -16.3
+      ],
+      "slot_xy_mm": [
+        -0.9,
+        -17.5,
+        0.9,
+        -16.0
+      ],
+      "axis": "y"
+    },
+    {
+      "name": "north",
+      "xy_mm": [
+        -0.8,
+        16.3,
+        0.8,
+        17.15
+      ],
+      "slot_xy_mm": [
+        -0.9,
+        16.0,
+        0.9,
+        17.5
+      ],
+      "axis": "y"
+    }
+  ],
+  "key_bottom_z_mm": 10.6,
+  "key_slot_bottom_z_mm": 10.3
+}

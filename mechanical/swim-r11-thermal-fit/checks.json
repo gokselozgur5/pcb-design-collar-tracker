@@ -1,0 +1,225 @@
+{
+  "source_sha256": "241c84d6ba98793c37344e1e46ddc4918e7b05322ba87daea7c9a90ffb8379b3",
+  "parameter_sha256": "6a3e51619b56502d3ccf91c7749f115f585b488fc4a21c867df6318c8f150de9",
+  "checker_sha256": "27c72b652a0be43d4f56318ef25bb17c422614343052b257c8d81cdd3fbaf2d8",
+  "checks": [
+    {
+      "name": "PCB reservation matches native outline and thickness",
+      "pass_": true,
+      "native_size_mm": [
+        40.0,
+        32.0,
+        0.84088
+      ]
+    },
+    {
+      "name": "PCB corner inside cavity",
+      "pass_": true,
+      "corner": [
+        -20.0,
+        -16.0
+      ]
+    },
+    {
+      "name": "PCB corner inside cavity",
+      "pass_": true,
+      "corner": [
+        -20.0,
+        16.0
+      ]
+    },
+    {
+      "name": "PCB corner inside cavity",
+      "pass_": true,
+      "corner": [
+        20.0,
+        -16.0
+      ]
+    },
+    {
+      "name": "PCB corner inside cavity",
+      "pass_": true,
+      "corner": [
+        20.0,
+        16.0
+      ]
+    },
+    {
+      "name": "Battery reservation below bottom components",
+      "pass_": true,
+      "gap_mm": 0.40000000000000036
+    },
+    {
+      "name": "Battery reservation above floor",
+      "pass_": true,
+      "gap_mm": 0.19999999999999996
+    },
+    {
+      "name": "Battery corner inside cavity",
+      "pass_": true
+    },
+    {
+      "name": "Battery corner inside cavity",
+      "pass_": true
+    },
+    {
+      "name": "Battery corner inside cavity",
+      "pass_": true
+    },
+    {
+      "name": "Battery corner inside cavity",
+      "pass_": true
+    },
+    {
+      "name": "Antenna reservation vertical clearance",
+      "pass_": true,
+      "name_of_reservation": "LTE CAPH SZK-C-3L30 envelope",
+      "component_gap_mm": 3.859119999999997,
+      "lid_gap_mm": 3.552713678800501e-15
+    },
+    {
+      "name": "Antenna reservation inside cavity",
+      "pass_": true
+    },
+    {
+      "name": "Antenna reservation inside cavity",
+      "pass_": true
+    },
+    {
+      "name": "Antenna reservation inside cavity",
+      "pass_": true
+    },
+    {
+      "name": "Antenna reservation inside cavity",
+      "pass_": true
+    },
+    {
+      "name": "Antenna reservation vertical clearance",
+      "pass_": true,
+      "name_of_reservation": "GNSS ZETA SZK-C-0G04 envelope",
+      "component_gap_mm": 3.859119999999997,
+      "lid_gap_mm": 3.552713678800501e-15
+    },
+    {
+      "name": "Antenna reservation inside cavity",
+      "pass_": true
+    },
+    {
+      "name": "Antenna reservation inside cavity",
+      "pass_": true
+    },
+    {
+      "name": "Antenna reservation inside cavity",
+      "pass_": true
+    },
+    {
+      "name": "Antenna reservation inside cavity",
+      "pass_": true
+    },
+    {
+      "name": "Main seal declared tolerance screen",
+      "pass_": true,
+      "stretch": [
+        0.022853720436666558,
+        0.04299874447307128
+      ],
+      "squeeze": [
+        0.17697403129899292,
+        0.2876964381558166
+      ],
+      "fill": [
+        0.6260120755458511,
+        0.8321358052902982
+      ]
+    },
+    {
+      "name": "Main seal nominal inner circumference stretched",
+      "pass_": true,
+      "inner_perimeter_mm": 161.84513020910302,
+      "nominal_free_id_circumference_mm": 158.71326085935635
+    },
+    {
+      "name": "Contact seal declared tolerance screen",
+      "pass_": true,
+      "stretch": [
+        0.006521739130434856,
+        0.05681818181818166
+      ],
+      "squeeze": [
+        0.18591760732661777,
+        0.28604477374671655
+      ],
+      "fill": [
+        0.6097214847285435,
+        0.8186579271355496
+      ]
+    },
+    {
+      "name": "Fastener holes outside main seal",
+      "pass_": true,
+      "minimum_web_mm": 0.9838095116624284
+    },
+    {
+      "name": "Cavity-to-groove corner web",
+      "pass_": true,
+      "minimum_sampled_web_mm": 1.648888366425155
+    },
+    {
+      "name": "Captive nut pockets inside shell",
+      "pass_": true,
+      "minimum_conservative_web_mm": 1.0094434444543308
+    },
+    {
+      "name": "Contact shaft spans side wall",
+      "pass_": true
+    },
+    {
+      "name": "Contact threads clear battery reservation",
+      "pass_": true,
+      "gap_mm": 1.1999999999999993
+    },
+    {
+      "name": "Contact retaining nut clears PCB edge",
+      "pass_": true,
+      "minimum_gap_mm": 0.8585481156726198
+    },
+    {
+      "name": "Fastener tips clear blind boot pockets",
+      "pass_": true,
+      "tip_z_mm": [
+        -1.0,
+        0.0
+      ],
+      "minimum_gap_mm": 0.7
+    },
+    {
+      "name": "Fasteners pass the complete captive nut",
+      "pass_": true,
+      "highest_tip_z_mm": 0.0
+    },
+    {
+      "name": "Blind tip pockets retain boot floor",
+      "pass_": true,
+      "remaining_mm": 2.3
+    },
+    {
+      "name": "Tip pockets outside maximum collar lane",
+      "pass_": true
+    }
+  ],
+  "all_declared_geometry_checks_pass": true,
+  "external_size_mm": [
+    57.4,
+    49.4,
+    21.0
+  ],
+  "docking_key_adds_to_positive_x_mm": 1.3,
+  "overall_without_mount_mm": [
+    58.699999999999996,
+    49.4,
+    21.0
+  ],
+  "hydrostatic_design_pressure_kPa": 19.6133,
+  "approx_inward_lid_force_N": 28.78931122077061,
+  "scope": "Analytical checks of declared CAD envelopes and seal tolerances. Does not prove component heights, selected pack/antennas, groove surface finish, seal compatibility, deformation, retention, physical fit, RF, swimming or IP68."
+}

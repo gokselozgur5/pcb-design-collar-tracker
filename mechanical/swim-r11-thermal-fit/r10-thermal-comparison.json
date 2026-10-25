@@ -1,0 +1,243 @@
+{
+  "result": "THERMAL_ASSEMBLY_HOLD",
+  "checks": [
+    {
+      "name": "Guide/PCB X",
+      "minimum_mm": -0.10454999999999615,
+      "maximum_mm": 0.1714125000000024,
+      "required_minimum_mm": 0.05,
+      "pass_": false,
+      "minimum_witness": {
+        "carrier": {
+          "scale": 0.9967,
+          "temperature_C": -10,
+          "cte_ppm_per_K": 100
+        },
+        "board_xy": {
+          "scale": 1.00055,
+          "temperature_C": 45,
+          "cte_ppm_per_K": 25
+        }
+      }
+    },
+    {
+      "name": "Locator/carrier X",
+      "minimum_mm": -0.21910799999999853,
+      "maximum_mm": 0.239097000000001,
+      "required_minimum_mm": 0.05,
+      "pass_": false,
+      "minimum_witness": {
+        "body": {
+          "scale": 0.9967,
+          "temperature_C": -10,
+          "cte_ppm_per_K": 100
+        },
+        "carrier": {
+          "scale": 1.0022,
+          "temperature_C": 45,
+          "cte_ppm_per_K": 100
+        }
+      }
+    },
+    {
+      "name": "Cavity/frame X",
+      "minimum_mm": -0.1857469999999921,
+      "maximum_mm": 0.4132580000000061,
+      "required_minimum_mm": 0.05,
+      "pass_": false,
+      "minimum_witness": {
+        "body": {
+          "scale": 0.9967,
+          "temperature_C": -10,
+          "cte_ppm_per_K": 100
+        },
+        "frame": {
+          "scale": 1.00352,
+          "temperature_C": 45,
+          "cte_ppm_per_K": 160
+        }
+      }
+    },
+    {
+      "name": "Guide/PCB Y",
+      "minimum_mm": -0.07374999999999687,
+      "maximum_mm": 0.14721250000000197,
+      "required_minimum_mm": 0.05,
+      "pass_": false,
+      "minimum_witness": {
+        "carrier": {
+          "scale": 0.9967,
+          "temperature_C": -10,
+          "cte_ppm_per_K": 100
+        },
+        "board_xy": {
+          "scale": 1.00055,
+          "temperature_C": 45,
+          "cte_ppm_per_K": 25
+        }
+      }
+    },
+    {
+      "name": "Locator/carrier Y",
+      "minimum_mm": -0.1751079999999945,
+      "maximum_mm": 0.19509700000000407,
+      "required_minimum_mm": 0.05,
+      "pass_": false,
+      "minimum_witness": {
+        "body": {
+          "scale": 0.9967,
+          "temperature_C": -10,
+          "cte_ppm_per_K": 100
+        },
+        "carrier": {
+          "scale": 1.0022,
+          "temperature_C": 45,
+          "cte_ppm_per_K": 100
+        }
+      }
+    },
+    {
+      "name": "Cavity/frame Y",
+      "minimum_mm": -0.13118699999998995,
+      "maximum_mm": 0.3534180000000049,
+      "required_minimum_mm": 0.05,
+      "pass_": false,
+      "minimum_witness": {
+        "body": {
+          "scale": 0.9967,
+          "temperature_C": -10,
+          "cte_ppm_per_K": 100
+        },
+        "frame": {
+          "scale": 1.00352,
+          "temperature_C": 45,
+          "cte_ppm_per_K": 160
+        }
+      }
+    },
+    {
+      "name": "Lid closure",
+      "minimum_mm": -0.09363199999999997,
+      "maximum_mm": 0.3942589999999986,
+      "required_minimum_mm": 0,
+      "pass_": false,
+      "minimum_witness": {
+        "body": {
+          "scale": 0.9967,
+          "temperature_C": -10,
+          "cte_ppm_per_K": 100
+        },
+        "lid": {
+          "scale": 1.0022,
+          "temperature_C": 45,
+          "cte_ppm_per_K": 100
+        },
+        "carrier": {
+          "scale": 1.0022,
+          "temperature_C": 45,
+          "cte_ppm_per_K": 100
+        },
+        "frame": {
+          "scale": 1.00352,
+          "temperature_C": 45,
+          "cte_ppm_per_K": 160
+        }
+      }
+    }
+  ],
+  "states": {
+    "body": [
+      {
+        "scale": 0.9967,
+        "temperature_C": -10,
+        "cte_ppm_per_K": 100
+      },
+      {
+        "scale": 1.0022,
+        "temperature_C": 45,
+        "cte_ppm_per_K": 100
+      }
+    ],
+    "carrier": [
+      {
+        "scale": 0.9967,
+        "temperature_C": -10,
+        "cte_ppm_per_K": 100
+      },
+      {
+        "scale": 1.0022,
+        "temperature_C": 45,
+        "cte_ppm_per_K": 100
+      }
+    ],
+    "lid": [
+      {
+        "scale": 0.9967,
+        "temperature_C": -10,
+        "cte_ppm_per_K": 100
+      },
+      {
+        "scale": 1.0022,
+        "temperature_C": 45,
+        "cte_ppm_per_K": 100
+      }
+    ],
+    "frame": [
+      {
+        "scale": 0.99472,
+        "temperature_C": -10,
+        "cte_ppm_per_K": 160
+      },
+      {
+        "scale": 1.00352,
+        "temperature_C": 45,
+        "cte_ppm_per_K": 160
+      }
+    ],
+    "board_xy": [
+      {
+        "scale": 0.999175,
+        "temperature_C": -10,
+        "cte_ppm_per_K": 25
+      },
+      {
+        "scale": 1.00055,
+        "temperature_C": 45,
+        "cte_ppm_per_K": 25
+      }
+    ],
+    "board_z": [
+      {
+        "scale": 0.99703,
+        "temperature_C": -10,
+        "cte_ppm_per_K": 90
+      },
+      {
+        "scale": 1.00198,
+        "temperature_C": 45,
+        "cte_ppm_per_K": 90
+      }
+    ]
+  },
+  "pcb_to_carrier_pointwise_mm": 0.28573374999999784,
+  "carrier_to_body_xy_mm": 0.20947149999999937,
+  "pcb_to_body_pointwise_mm": 0.4952052499999972,
+  "pcb_top_z_mm": [
+    11.023395299999999,
+    11.816033000000001
+  ],
+  "retainer_bottom_z_mm": [
+    11.411874,
+    11.816033000000001
+  ],
+  "radial_key_pointwise_bound_mm": null,
+  "radial_keys": [],
+  "physical_thermal_qualified": false,
+  "scope": "Affine dimensional sensitivity under declared CTE bounds and independent part temperatures. No moisture, stress/creep, sealed assembly or physical qualification.",
+  "inputs": {
+    "mechanical/swim-r10-retention/parameters.json": "5400a1a7fde33e767d2d854e62cf79eade3d33ace83b4f0c995d9e301eeb40e2",
+    "mechanical/swim-r10-retention/retention.json": "0470bb172aca503e63b0fc34958d351efeac3be130e7e6a4d0161f45dc692ceb",
+    "mechanical/swim-r11-thermal-fit/thermal.json": "55cb55db9aaec80aa4fd10eb98c3ca98b1e73db440f6999883a5eda2562d0896",
+    "scripts/thermal_fit_bounds.py": "41aae94c6ed21c2ddbdc013c3b4a7a6974ee2a688c75253b2de6075bf586ec73"
+  }
+}

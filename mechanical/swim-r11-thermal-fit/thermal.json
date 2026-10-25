@@ -1,0 +1,22 @@
+{
+  "reference_C": 23,
+  "corner_rotation_allowance_mm": 0.05,
+  "component_body_cte_upper_ppm_per_K": 200,
+  "temperature_C": [-10, 45],
+  "temperature_scope": "Requested battery operating range used as a prototype mechanical screen. Not an approved complete-product or storage-temperature rating. Each part can be at either endpoint independently.",
+  "materials": {
+    "pc": {"candidate": "Ensinger TECANAT natural, CNC body/lid/carrier/retainer", "cte_ppm_per_K": [60, 100], "published_guideline_ppm_per_K": 80, "published_interval_C": [23, 60]},
+    "pom": {"candidate": "Preserved r10 TECAFORM AH natural retainer candidate", "cte_ppm_per_K": [110, 160], "published_guideline_ppm_per_K": 130, "published_interval_C": [23, 60]},
+    "board_xy": {"candidate": "Actual JLC laminate not yet supplier-confirmed", "cte_ppm_per_K": [8, 25]},
+    "board_z": {"candidate": "Actual JLC laminate not yet supplier-confirmed", "cte_ppm_per_K": [30, 90]}
+  },
+  "limits_status": "Engineering requirements for supplier confirmation or measurement; not guaranteed datasheet extrema. Cold extrapolation, transverse properties and actual laminate require validation. Water mass uptake is not converted into dimensional strain.",
+  "sources": [
+    {"id": "pc", "url": "https://www.ensinger-online.com/modules/public/sheet/createsheet.php?FILENAME=TECANAT_natural_0.PDF&FL=0&SID=1346&ZOOM=1.2", "document": "2023-07-19, version AF", "finding": "80 ppm/K longitudinal guideline over 23-60 C; insulating and machinable, stress-cracking sensitivity; values are not guaranteed limits."},
+    {"id": "pom", "url": "https://www.ensinger-online.com/modules/public/sheet/createsheet.php?FILENAME=TECAFORM_AH_natural_18.PDF&FL=18&SID=1344&ZOOM=1.0", "document": "2023-07-19, version AF", "finding": "130 ppm/K longitudinal guideline over 23-60 C; comparison only, not a cold-temperature guarantee."},
+    {"id": "jlc-laminate", "url": "https://rs.jlcpcb.com/static/file/s1000h-datasheet.pdf", "finding": "Supplier-hosted S1000H document is not confirmation of the material actually supplied for this PCB."},
+    {"id": "fr4-comparison", "url": "https://www.isola-group.com/pcb-laminates-prepreg/fr408hr-laminate-and-prepreg/", "finding": "FR408HR typical pre-Tg CTE is 16 ppm/K XY and 55 ppm/K Z. This is comparative context, not a selected JLC laminate or guaranteed bound."}
+  ],
+  "physical_thermal_qualified": false,
+  "physical_ingress_qualified": false
+}

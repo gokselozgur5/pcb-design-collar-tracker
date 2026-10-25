@@ -1,0 +1,218 @@
+{
+  "revision": "swim-r11-thermal-fit",
+  "status": "Thermal dimensional prototype with radial retention keys; physical thermal, retention and ingress acceptance open",
+  "pcb": {
+    "trial": "experiments/power-r05l-charge-interlock",
+    "size": [
+      40.0,
+      32.0,
+      0.84088
+    ],
+    "bottom_z": 10.4,
+    "top_component_budget": 3.0,
+    "bottom_component_budget": 1.8
+  },
+  "body": {
+    "size": [
+      57.4,
+      49.4,
+      18.5
+    ],
+    "corner_radius": 4.0,
+    "cavity": [
+      42.4,
+      34.7
+    ],
+    "cavity_radius": 2.0,
+    "floor": 1.8,
+    "lid_thickness": 2.5
+  },
+  "gland": {
+    "centerline_size": [
+      49,
+      41
+    ],
+    "corner_radius": 6.0,
+    "width": 2.5,
+    "width_tolerance": 0.05,
+    "depth": 1.34,
+    "depth_tolerance": 0.02,
+    "flatness_budget": 0.01,
+    "bottom_radius": 0.2,
+    "id": 50.52,
+    "id_tolerance": 0.43,
+    "cross_section": 1.78,
+    "cross_section_tolerance": 0.08,
+    "compound": "EPDM 70 Shore A; water-compatible compound approval pending",
+    "size_reference": "AS568-033 / Parker 2-033"
+  },
+  "fasteners": {
+    "centers": [
+      [
+        -25.1,
+        -21.1
+      ],
+      [
+        -25.1,
+        21.1
+      ],
+      [
+        25.1,
+        -21.1
+      ],
+      [
+        25.1,
+        21.1
+      ]
+    ],
+    "hole": 2.2,
+    "head_recess_diameter": 4.0,
+    "head_recess_depth": 1.5,
+    "nut_across_flats": 4.2,
+    "nut_pocket_depth": 1.8,
+    "screw": "M2 x 20 DIN 84, A2 stainless steel; 3.8 mm head diameter / 1.3 mm head height candidate. Drawing tolerances and torque qualification remain open.",
+    "nut": "M2 stainless hex nut, 4.0 mm across flats, 1.6 mm thick",
+    "length_mm": 20,
+    "length_tolerance_mm": 0.3,
+    "stack_height_allowance_mm": 0.2,
+    "boot_tip_relief_diameter_mm": 3.0,
+    "boot_tip_relief_depth_mm": 1.7
+  },
+  "battery_reservation": {
+    "size": [
+      33,
+      31.5,
+      6.2
+    ],
+    "bottom_z": 2.0,
+    "nominal_cell": [
+      32,
+      30.5,
+      5.3
+    ],
+    "note": "CT-BAT-001-A requested complete-pack/NTC envelope; not an approved EEMB substitution."
+  },
+  "antenna_reservations": [
+    {
+      "label": "LTE CAPH SZK-C-3L30 envelope",
+      "center": [
+        0,
+        -7,
+        18.299999999999997
+      ],
+      "size": [
+        30.7,
+        15.7,
+        0.4
+      ],
+      "mount": "lid_underside",
+      "nominal_size": [
+        30,
+        15,
+        0.2
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "label": "GNSS ZETA SZK-C-0G04 envelope",
+      "center": [
+        0,
+        10.3,
+        18.299999999999997
+      ],
+      "size": [
+        40.7,
+        10.7,
+        0.4
+      ],
+      "mount": "lid_underside",
+      "nominal_size": [
+        40,
+        10,
+        0.2
+      ]
+    }
+  ],
+  "contacts": {
+    "side_x": 28.7,
+    "centers_y": [
+      -6.0,
+      6.0
+    ],
+    "center_z": 5.5,
+    "head_diameter": 8.5,
+    "head_thickness": 0.8,
+    "bore": 7.34,
+    "bore_tolerance": 0.02,
+    "shaft": 7.28,
+    "groove_root": 4.64,
+    "groove_root_tolerance": 0.01,
+    "groove_width": 2.8,
+    "groove_width_tolerance": 0.05,
+    "groove_center_from_face": 3.85,
+    "stem_length": 7.7,
+    "thread_major": 3.0,
+    "thread_length": 3.5,
+    "oring_id": 4.5,
+    "oring_id_tolerance": 0.1,
+    "oring_cs": 1.8,
+    "oring_cs_tolerance": 0.08,
+    "note": "Custom turned contact with unchanged radial seal land and M3 x 0.5 rear retention, 3.5 mm thread length. Prototype candidate; coating, resistance, pull and wet-cycle tests required."
+  },
+  "magnets": {
+    "centers_y": [
+      -13,
+      13
+    ],
+    "center_z": 5.8,
+    "diameter": 3.0,
+    "thickness": 1.0,
+    "pocket_diameter": 3.1,
+    "outer_wall": 1.0,
+    "note": "External blind slots opened from the underside; no connection to the dry cavity or lid gland. Encapsulation and plugs retained by the boot are required."
+  },
+  "target": {
+    "selection": "Swimming / IP68 design target selected by user",
+    "depth_m": 2.0,
+    "duration_min": 60,
+    "water": "fresh water",
+    "conditions_status": "Provisional engineering assumption; user has not confirmed depth/time",
+    "charging_choice_status": "Provisional magnetic contacts; preference question pending",
+    "qualified": false
+  },
+  "mount": {
+    "collar_width_mm": 20,
+    "wall_mm": 1.5,
+    "strap_clearance_mm": 2.5,
+    "note": "TPU retention boot is required with magnetic contacts to capture magnet plugs. Default 20 mm collar; supported prototype CAD range 12-25 mm. Pull/fit testing pending."
+  },
+  "carrier_leg_centers_mm": [
+    [
+      -19.8,
+      -12
+    ],
+    [
+      -19.8,
+      9.4
+    ],
+    [
+      19.8,
+      -12
+    ],
+    [
+      19.8,
+      12
+    ]
+  ],
+  "cable_model": {
+    "diameter_mm": 1.13,
+    "centerline_position_allowance_mm": 0.15,
+    "minimum_gap_mm": 0.2,
+    "minimum_bend_radius_mm": 3.0,
+    "sample_max_step_mm": 0.08,
+    "bend_radius_basis": "Provisional engineering constraint; exact supplied coax minimum bend radius and cyclic flex not qualified.",
+    "plug_centerline_above_pcb_mm": 1.65,
+    "plug_datum_basis": "Provisional MHF1 exit centerline; verify supplied plug drawing and real assembled parts before release.",
+    "authored_pcb_thickness_mm": 0.84088
+  }
+}
