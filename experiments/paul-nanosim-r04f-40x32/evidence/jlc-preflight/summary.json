@@ -1,0 +1,74 @@
+{
+  "source_sha256": "240be3bbab528ffb123737fe75c54bb642ec2f204b32a6533e704f794691a6d2",
+  "zip_sha256": "b91c94dba2b69d1c44f0d9fe8b33179999470c4b4d9b78e57ae97dc70b4533d2",
+  "record_id": "637217298994909185",
+  "danger": 0,
+  "warning": 2,
+  "analyzed_rows": 29,
+  "rules_sha256": "f1bebb3b2b5ac2ba0579f882fc0605d169c1d6a3a852a07beb8652b719e0a725",
+  "measurements": [
+    {
+      "category": "pad2pad",
+      "layer": "collar-tracker-B_Cu.gbl",
+      "measured_mm": 0.150037800000001,
+      "green_minimum_mm": 0.15239999999999998,
+      "native_span_mm": [
+        [
+          125.0999752,
+          116.000024
+        ],
+        [
+          125.250013,
+          116.000024
+        ]
+      ],
+      "raw_measurement": {
+        "cat_num": 9,
+        "disp_num": 0,
+        "meas_shape": [
+          988.188,
+          472.44,
+          "L",
+          994.095,
+          472.44
+        ],
+        "name1": "r23.622",
+        "name2": "rect35.432x15.748",
+        "type1": 0,
+        "type2": 0
+      }
+    },
+    {
+      "category": "coverage",
+      "layer": "collar-tracker-F_Mask.gts",
+      "measured_mm": 0.15021560000000003,
+      "green_minimum_mm": 0.15239999999999998,
+      "native_span_mm": [
+        [
+          100.499999,
+          127.0499892
+        ],
+        [
+          100.499999,
+          127.2002048
+        ]
+      ],
+      "raw_measurement": {
+        "cat_num": 1,
+        "disp_num": 0,
+        "meas_shape": [
+          19.685,
+          37.402,
+          "L",
+          19.685,
+          31.488
+        ],
+        "name1": "r7.87402",
+        "name2": "i274x.RoundRect.d33",
+        "type1": 0,
+        "type2": 0
+      }
+    }
+  ],
+  "scope": "Actual preliminary JLC PCB DFM result: 0 Danger / 2 Warning. SMT unchecked; not final acceptance. Supplier default thickness1.6mm is parser metadata, not a purchase or the proposed0.8mm stackup."
+}
