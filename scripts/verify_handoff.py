@@ -328,6 +328,8 @@ def verify(include_review_bundle=True):
     routing_candidate = verify_routing(ROOT / 'experiments/power-r05h-six-layer')
     from verify_rf_candidate import verify as verify_rf
     rf_candidate = verify_rf()
+    from verify_rf_junction_candidate import verify as verify_rf_junction
+    rf_junction_candidate = verify_rf_junction()
     routing_alternatives = [verify_routing(ROOT / 'experiments' / name) for name in [
         'power-r05c-return-corridors', 'power-r05d-joint-routing', 'power-r05e-native-joint',
         'power-r05f-return-reset', 'power-r05g-local-crossings']]
@@ -339,6 +341,7 @@ def verify(include_review_bundle=True):
             'power_pin_candidate': power_pin_candidate,
             'routing_candidate': routing_candidate,
             'rf_candidate': rf_candidate,
+            'rf_junction_candidate': rf_junction_candidate,
             'routing_alternatives': routing_alternatives,
             'review_bundle':verify_review_bundle() if include_review_bundle else 'Rebuild in progress',
             'populated_review_bundle':verify_review_bundle('release/collar-tracker-r04i-swim-r02-fit-review.json') if include_review_bundle else 'Rebuild in progress',

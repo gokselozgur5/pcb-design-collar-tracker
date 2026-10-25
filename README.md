@@ -4,7 +4,7 @@ A small GPS and cellular tracker for dog collars, starting with Türkiye.
 The aim is one electronics design with different collar mounts. Fit, weight and
 comfort across dog sizes and coat types still need physical validation.
 
-**The current r05i PCB passed two actual JLC PCB DFM analyses at 0 Danger / 0 Warning.**
+**The current r05j PCB passed two actual JLC PCB DFM analyses at 0 Danger / 0 Warning.**
 Both used the same ZIP and unchanged rules: 29 analyzed rows, 450 green measurements
 per run. Native DRC/ERC/parity also pass.
 
@@ -12,15 +12,18 @@ The board is 40 × 32 mm with six copper layers and a physical nano-SIM. The RF
 candidate uses a documented 7628 stack and 0.36 mm main port routes; In1.Cu and
 In4.Cu remain dedicated GND. All 128 signal vias pass the local return screen.
 
-[Gerber ZIP](experiments/power-r05i-rf-stack/evidence/collar-tracker-05i-rf-40x32-dfm.zip) ·
-[RF before / after](experiments/power-r05i-rf-stack/evidence/rf-review.pdf) ·
-[JLC report 1](experiments/power-r05i-rf-stack/evidence/jlc-check1/report.pdf) ·
-[JLC report 2](experiments/power-r05i-rf-stack/evidence/jlc-check2/report.pdf)
+[Gerber ZIP](experiments/power-r05j-rf-junctions/evidence/collar-tracker-05j-rf-40x32-dfm.zip) ·
+[R3 before / after](experiments/power-r05j-rf-junctions/evidence/rf-junction-review.pdf) ·
+[JLC report 1](experiments/power-r05j-rf-junctions/evidence/jlc-check1/report.pdf) ·
+[JLC report 2](experiments/power-r05j-rf-junctions/evidence/jlc-check2/report.pdf)
+
+R3 now has one equal-width copper entry on each land and nearly equal contour
+ratios. The LTE tuning stubs are reduced, with a longer main feed as the tradeoff.
 
 **Electrical, RF and manufacturing release remain on hold.** Supplier stack/etch/mask
-confirmation, module-pad treatment, R3 assembly balance, power timing, exact BOM,
+confirmation, module-pad qualification, assembly process, power timing, exact BOM,
 pack/NTC, antennas and factory programming/test remain open. See the
-[r05i review](experiments/power-r05i-rf-stack/README.md). PCB DFM does not prove a working PCBA.
+[r05j review](experiments/power-r05j-rf-junctions/README.md). PCB DFM does not prove a working PCBA.
 
 The enclosure's 69 populated envelopes pass the modeled 0.71–0.91 mm board-thickness
 interval. IP68 remains a design target, with provisional 2 m fresh-water / 60-minute
@@ -94,7 +97,8 @@ a finished, working PCBA.**
 
 - Validated PCB DFM baseline: `experiments/35x28-clearance-r034/hardware/`.
 - Preserved 35 × 28 mm checkpoint: `experiments/paul-nanosim-r04e/hardware/`.
-- Current six-layer PCB: `experiments/power-r05h-six-layer/`.
+- Current six-layer PCB: `experiments/power-r05j-rf-junctions/`.
+- Preserved six-layer baselines: `experiments/power-r05i-rf-stack/` and `experiments/power-r05h-six-layer/`.
 - Preserved four-layer nano-SIM PCB: `experiments/paul-nanosim-r04i-sim-access-40x32/`.
 - Preserved 40 × 32 mm DFM checkpoint: `experiments/paul-nanosim-r04g-returns-40x32/`.
 - Earlier r04 routing and rejected r04c experiment are preserved separately.
@@ -110,7 +114,8 @@ either 35 × 28 mm or 40 × 32 mm. Its 250 mAh example targets a 38 × 30 × 14 
 enclosure, or 14.6 mm including an assumed contact protrusion. Antennas, the heart-rate head and much of
 the electronics are reserved volumes, not fitted production components.
 
-The current `mechanical/swim-r06-six-layer-fit/` model uses the r05h 40 × 32 mm board.
+The preserved `mechanical/swim-r06-six-layer-fit/` profile is checked against the
+current r05j placements and thickness interval in its `evidence/thickness-fit.json`.
 Battery capacity, charge interval, position-update rate and final antennas remain open. Earlier cost ranges were estimates, not supplier quotes, and did not
 include heart-rate hardware.
 
@@ -119,7 +124,7 @@ include heart-rate hardware.
 | Path | Purpose |
 |---|---|
 | `experiments/35x28-clearance-r034/hardware/` | Native source that passed local and JLC PCB DFM checks |
-| `experiments/power-r05h-six-layer/` | Current six-layer source, final Gerber and two verified JLC passes |
+| `experiments/power-r05j-rf-junctions/` | Current six-layer source, final Gerber and two verified JLC passes |
 | `experiments/paul-nanosim-r04i-sim-access-40x32/` | Preserved four-layer source and supplier evidence |
 | `mechanical/swim-r02-fit/` | Parametric swimming enclosure prototype; physical qualification pending |
 | `scripts/finalize_clearance034.py` | Binds source, local checks, JLC reports and the exact delivered ZIP |

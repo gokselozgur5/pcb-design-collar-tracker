@@ -1,21 +1,21 @@
 # Current state — 2026-10-25
 
-**Active r05i RF candidate: native DRC/ERC/parity clean; two actual JLC PCB runs at 0 Danger / 0 Warning.**
+**Active r05j RF junction candidate: native DRC/ERC/parity clean; two actual JLC PCB runs at 0 Danger / 0 Warning.**
 **Electrical / RF / manufacturing release: HOLD. IP68 remains unqualified.**
 
 Repository: [gokselozgur5/pcb-design-collar-tracker](https://github.com/gokselozgur5/pcb-design-collar-tracker).
 All authored repository/GitHub content is English. Continue from
-`experiments/power-r05i-rf-stack/hardware/`; preserve this tested source before changing it.
+`experiments/power-r05j-rf-junctions/hardware/`; preserve this tested source before changing it.
 
-[Gerber ZIP](../experiments/power-r05i-rf-stack/evidence/collar-tracker-05i-rf-40x32-dfm.zip) ·
-[Before / after review](../experiments/power-r05i-rf-stack/evidence/rf-review.pdf) ·
-[JLC report 1](../experiments/power-r05i-rf-stack/evidence/jlc-check1/report.pdf) ·
-[JLC report 2](../experiments/power-r05i-rf-stack/evidence/jlc-check2/report.pdf)
+[Gerber ZIP](../experiments/power-r05j-rf-junctions/evidence/collar-tracker-05j-rf-40x32-dfm.zip) ·
+[Before / after review](../experiments/power-r05j-rf-junctions/evidence/rf-junction-review.pdf) ·
+[JLC report 1](../experiments/power-r05j-rf-junctions/evidence/jlc-check1/report.pdf) ·
+[JLC report 2](../experiments/power-r05j-rf-junctions/evidence/jlc-check2/report.pdf)
 
-## Active r05i layout
+## Active r05j layout
 
-PCB SHA256: `0db809c4ecefbf577db1001164886709708f02ab6ba54f7a572e948583d726a1`.
-ZIP SHA256: `f662f1db64ef1958e7e15c63b44869413883fd36e80b82642b9e8262f0e72f2d`.
+PCB SHA256: `51fc05ccc66009995daa8c5d5466aa983436e00e7ff338f0ddfb0927c92b4580`.
+ZIP SHA256: `8fd625d3da7b8bd3c59ea9aa0fd625dc93d458fe23b64a6fd7bc69d4c6915e50`.
 
 | Check | Result |
 |---|---|
@@ -23,24 +23,25 @@ ZIP SHA256: `f662f1db64ef1958e7e15c63b44869413883fd36e80b82642b9e8262f0e72f2d`.
 | Stack candidate | JLC06081H-7628, nominal 0.8 mm class; explicit CAD including mask 0.84088 mm |
 | Native DRC / ERC / parity | Zero violations, warnings, opens or mismatches |
 | Ground / returns | 94 unique GND terminals local; 110 GND vias; two continuous GND planes; 128/128 return screens pass |
-| RF change | Six port nets at 0.36 mm with bounded 0.20/0.28 mm module escapes; GNSS elbow moved |
-| RF reference | 1,761 native probes agree; entire revised RF track projection backed by In1.Cu |
-| Unchanged geometry | All pads, vias, non-port tracks, component placements and DRC limits |
-| JLC PCB DFM | `637347019288170498` and `637347305582972929`; 29 rows / 450 green measurements each; same ZIP/rules; SMT off |
+| RF change | R3 moves 0.30 mm, one 0.36 mm entry per land; C11 branch shortened; C12 branch removed |
+| R3 copper ratios | 2.288 / 2.413 / 2.090 → 1.004 / 1.003 / 1.001 at the three review contours |
+| RF reference | 1,742 native probes agree; entire RF track projection backed by In1.Cu |
+| Unchanged geometry | All other placements, lands, vias, non-LTE routes, inner copper, planes and DRC limits |
+| JLC PCB DFM | `637352328236847105` and `637352583225630721`; 29 rows / 450 green measurements each; same ZIP/rules; SMT off |
 | Mechanical | 69 populated envelopes pass at 0.71 / 0.81 / 0.84088 / 0.91 mm; old carrier still fails |
 
-Read the [r05i decisions and limits](../experiments/power-r05i-rf-stack/README.md).
-The new width is a prototype candidate from the actual supplier calculator, not a
-measured 50-ohm result. Its live Er/etch/mask inputs differ from the catalog/guide.
-Supplier confirmation and physical RF qualification remain open. Native stack
-values retain the catalog dimensions and expose the finished-thickness discrepancy.
+Read the [r05j decisions and limits](../experiments/power-r05j-rf-junctions/README.md).
+The main LTE feed length grows from 5.89 to 8.91 mm while reducing tuning stubs.
+This is a copper-balance improvement, not a measured RF improvement. The inherited
+0.36 mm width remains a prototype candidate: the supplier's Er/etch/mask and
+finished-thickness conventions still differ. In1.Cu remains under the module RF
+pads to avoid exposing lower VBAT; transition qualification remains open.
 
-**Next local work:** in a new copy, resolve R3's two-entry passive attachment and
-review the DNP matching stubs / module-pad capacitance. VBAT runs under both module
-RF pads on In2.Cu; moving that route must precede any In1.Cu cutout. Preserve the
-continuous reference and verify the intended stack/etch/mask model. Then finish
-exact R1/R16–R23 MPN/tolerance/TCR, power timing/source, battery/NTC, antenna and
-factory BOM/CPL/programming/test definitions. Review the
+**Next local work:** select exact R1/R16–R23 MPN/tolerance/TCR and qualify effective
+C9/C25/C26 bounds in the power model. Do not start another routing revision merely
+to repeat green checks. Then finish battery/NTC, antenna and factory BOM/CPL/
+programming/test definitions. Preserve the reference and resolve stack/process
+parameters before claiming controlled impedance. Review the
 [sequencing follow-up](power-sequence-followup.md) before changing the circuit.
 Complete retention/harness/dock/seal selection and physical water/dust qualification.
 
@@ -48,11 +49,10 @@ PCB DFM is complete for the delivered bytes. Do not order this as a finished wor
 PCBA yet. Every subsequent PCB edit needs fresh native checks/export/two supplier runs.
 `python3 scripts/resume.py` verifies saved evidence; it does not repeat physical tests.
 
-The preceding [r05h](../experiments/power-r05h-six-layer/README.md), its two actual
-0/0/449 supplier records, and all earlier releases remain immutable. r05h closed the
-five remaining routes and restored local returns; r05i changes only the bounded RF
-geometry and physical stack metadata. Its SIM protection, insertion lane and power
-backbones are inherited through exact unchanged copper/pad/via checks.
+The preceding [r05i](../experiments/power-r05i-rf-stack/README.md),
+[r05h](../experiments/power-r05h-six-layer/README.md) and earlier releases remain
+immutable. SIM protection and the bottom-side card lane are inherited through
+unchanged copper and placement; all 12 original power backbones remain connected.
 
 ## Preserved tested PCB
 

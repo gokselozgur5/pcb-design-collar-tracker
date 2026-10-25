@@ -187,7 +187,7 @@ SMT was off. See STATUS and the r04i checkpoint for hashes and record identities
 
 ## r05h six-layer completion
 
-The current board uses F/In2/In3/B for routing and In1/In4 as dedicated GND. The
+The preserved r05h uses F/In2/In3/B for routing and In1/In4 as dedicated GND. The
 unchanged 71-part circuit is fully connected with clear native DRC/ERC/parity.
 All 94 unique ground terminals (97 physical pads) have local paths; 110 GND vias
 are contained in both continuous planes. All 128 signal vias pass the inherited
@@ -218,3 +218,18 @@ differ, both module pads have lower-layer VBAT beneath them, and R3's two-entry
 attachment still needs correction or assembly acceptance. Its measured unique-copper
 ratio is 2.09–2.41; DFM cannot establish solder balance. C11/C12 are DNP. Do not
 call this a completed physical RF or factory-assembly qualification.
+
+## r05j R3 and tuning-junction follow-up
+
+The new R3 location moves 0.30 mm and has one 0.36 mm copper entry per land.
+Unique-copper ratios at 0.05/0.15/0.30 mm are 1.004/1.003/1.001. The first local
+trial still crossed the outer contours; it is preserved separately. C11's branch
+shortens to 0.42 mm and C12 moves onto the main route without moving its footprint.
+The total main feed is 3.02 mm longer; no RF performance improvement is claimed.
+
+All other placements, lands, vias, inner copper, planes and rules stay unchanged.
+Native DRC/ERC/parity are clean and two actual same-ZIP JLC runs each return
+0/0/450. Module-pad GND is retained to avoid exposing underlying VBAT; its RF
+qualification remains open. The copper balance addresses the layout finding,
+while reflow and physical RF acceptance still require evidence. See the
+[r05j review](../experiments/power-r05j-rf-junctions/README.md).

@@ -390,3 +390,28 @@ Their evidence is dated; do not transfer an older pass to a newer source file.
 - Next: Fix/review that local geometry in a new successor, resolve stack/process
   parameters, then close power/component/pack/antenna/factory/enclosure requirements.
   No supplier message, order, payment or physical test occurred. Release stays HOLD.
+
+## 2026-10-25 — R3 balance, shorter tuning branches and two clean r05j reports
+
+- Decision: Preserve r05i and isolate the two LTE route changes. Move R3 0.30 mm
+  after the first local trial improved the immediate entry but worsened its outer
+  contour. Keep that trial's native source and reports as evidence.
+- Result: One 0.36 mm entry per R3 land; unique-copper ratios improve from
+  2.288/2.413/2.090 to 1.004/1.003/1.001. C11 branch is 0.42 mm; C12's former
+  2.84 mm branch is removed. Main feed length grows from 5.89 to 8.91 mm.
+- Result: Native DRC/ERC/parity have zero findings. All other placements, lands,
+  vias, non-LTE copper, planes, module escapes, stack and rules are unchanged.
+  1,742 native probes agree and all RF trace copper is backed by In1.Cu. All 94
+  local grounds, 128 return screens and 12 power backbones pass. 69 populated
+  envelopes pass four thickness cases; original-carrier control still fails.
+- Result: Same ZIP `8fd625d3da7b8bd3c59ea9aa0fd625dc93d458fe23b64a6fd7bc69d4c6915e50`
+  passed JLC records `637352328236847105` and `637352583225630721`, each 0/0/450,
+  29 rows and unchanged rules, SMT off. Both complete PDFs and the actual copper
+  drawing were inspected. No order, payment, supplier message or physical test.
+- Decision: Retain module-pad In1.Cu for this prototype to avoid exposing lower
+  VBAT. Width alone does not establish excess pad capacitance; this is not full
+  implementation of Nordic's cutout recommendation or RF acceptance.
+- Next: Exact R1/R16–R23 MPN/tolerance/TCR and effective C9/C25/C26 bounds, then
+  power, pack/NTC, antennas, factory delivery and enclosure definitions. Do not
+  reroute a completed DFM milestone without new evidence. Electrical, RF,
+  manufacturing and physical ingress qualification remain open.

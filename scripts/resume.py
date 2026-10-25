@@ -14,12 +14,13 @@ except (ValueError, OSError, KeyError) as error:
 print(f'Project: {root}')
 print('Baseline: 0.3.4 saved PCB DFM evidence verified; not production acceptance.')
 print('Preserved PCB: r04i native/geometry evidence and two unchanged-rule JLC PCB passes verified.')
-candidate = result['rf_candidate']
-print(f"Active: r05i RF geometry candidate; {candidate['native_drc']['unconnected_items']} open connections; "
+candidate = result['rf_junction_candidate']
+print(f"Active: r05j RF junction candidate; {candidate['native_drc']['unconnected_items']} open connections; "
       f"{len(candidate['supplier_records'])} verified same-ZIP JLC PCB passes.")
 print(f"Other native violations/warnings: {candidate['native_drc']['violations']}; "
       f"schematic mismatches: {candidate['native_drc']['schematic_parity']}.")
-print('Electrical/RF: HOLD; stack/etch/mask confirmation, module pad treatment, R3 balance and powered measurements remain open.')
+print('R3: equal-width land entries and 1.001–1.004 contour ratios; RF/assembly qualification remains open.')
+print('Next: exact power resistors and effective timing capacitance. Electrical/RF release remains HOLD.')
 print('Mechanical: 69 populated envelopes pass the modeled 0.71–0.91 mm thickness interval; nine part requirements remain unqualified.')
 print('Preserved: r04i/swim-r02 review bundle; pack, antennas, assembly and physical qualification remain open.')
 print('Git:')
