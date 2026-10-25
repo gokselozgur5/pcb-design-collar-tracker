@@ -1,0 +1,171 @@
+{
+  "revision": "swim-r04-power-fit",
+  "status": "Preliminary populated fit; electrical, assembly and ingress acceptance remain open",
+  "pcb": {
+    "trial": "experiments/power-r05c-return-corridors",
+    "size": [
+      40.0,
+      32.0,
+      0.8
+    ],
+    "bottom_z": 10.0,
+    "top_component_budget": 3.0,
+    "bottom_component_budget": 1.8
+  },
+  "body": {
+    "size": [
+      57.4,
+      49.4,
+      15.1
+    ],
+    "corner_radius": 4.0,
+    "cavity": [
+      42.0,
+      34.0
+    ],
+    "cavity_radius": 2.0,
+    "floor": 1.8,
+    "lid_thickness": 2.5
+  },
+  "gland": {
+    "centerline_size": [
+      49,
+      41
+    ],
+    "corner_radius": 6.0,
+    "width": 2.5,
+    "width_tolerance": 0.05,
+    "depth": 1.34,
+    "depth_tolerance": 0.02,
+    "flatness_budget": 0.01,
+    "bottom_radius": 0.2,
+    "id": 50.52,
+    "id_tolerance": 0.43,
+    "cross_section": 1.78,
+    "cross_section_tolerance": 0.08,
+    "compound": "EPDM 70 Shore A; water-compatible compound approval pending",
+    "size_reference": "AS568-033 / Parker 2-033"
+  },
+  "fasteners": {
+    "centers": [
+      [
+        -25.1,
+        -21.1
+      ],
+      [
+        -25.1,
+        21.1
+      ],
+      [
+        25.1,
+        -21.1
+      ],
+      [
+        25.1,
+        21.1
+      ]
+    ],
+    "hole": 2.2,
+    "head_recess_diameter": 4.0,
+    "head_recess_depth": 1.5,
+    "nut_across_flats": 4.2,
+    "nut_pocket_depth": 1.8,
+    "screw": "M2 x 16, stainless steel, head height <= 1.5 mm; verify selected drawing",
+    "nut": "M2 stainless hex nut, 4.0 mm across flats, 1.6 mm thick"
+  },
+  "battery_reservation": {
+    "size": [
+      34.0,
+      23.5,
+      5.8
+    ],
+    "bottom_z": 2.0,
+    "nominal_cell": [
+      32.0,
+      20.5,
+      5.3
+    ],
+    "note": "Envelope includes initial cable/PCM/swelling allowance, not an approved protected pack. Capacity and runtime remain unqualified."
+  },
+  "antenna_reservations": [
+    {
+      "center": [
+        0,
+        12.5,
+        14.6
+      ],
+      "size": [
+        30,
+        5.0,
+        0.4
+      ],
+      "label": "LTE FPC reservation"
+    },
+    {
+      "center": [
+        0,
+        -12.5,
+        14.6
+      ],
+      "size": [
+        30,
+        5.0,
+        0.4
+      ],
+      "label": "GNSS FPC reservation"
+    }
+  ],
+  "contacts": {
+    "side_x": 28.7,
+    "centers_y": [
+      -6.0,
+      6.0
+    ],
+    "center_z": 5.5,
+    "head_diameter": 8.5,
+    "head_thickness": 0.8,
+    "bore": 7.34,
+    "bore_tolerance": 0.02,
+    "shaft": 7.28,
+    "groove_root": 4.64,
+    "groove_root_tolerance": 0.01,
+    "groove_width": 2.8,
+    "groove_width_tolerance": 0.05,
+    "groove_center_from_face": 3.85,
+    "stem_length": 7.7,
+    "thread_major": 3.0,
+    "thread_length": 3.5,
+    "oring_id": 4.5,
+    "oring_id_tolerance": 0.1,
+    "oring_cs": 1.8,
+    "oring_cs_tolerance": 0.08,
+    "note": "Custom turned contact with unchanged radial seal land and M3 x 0.5 rear retention, 3.5 mm thread length. Prototype candidate; coating, resistance, pull and wet-cycle tests required."
+  },
+  "magnets": {
+    "centers_y": [
+      -13,
+      13
+    ],
+    "center_z": 5.8,
+    "diameter": 3.0,
+    "thickness": 1.0,
+    "pocket_diameter": 3.1,
+    "outer_wall": 1.0,
+    "note": "External blind slots opened from the underside; no connection to the dry cavity or lid gland. Encapsulation and plugs retained by the boot are required."
+  },
+  "target": {
+    "selection": "Swimming / IP68 design target selected by user",
+    "depth_m": 2.0,
+    "duration_min": 60,
+    "water": "fresh water",
+    "conditions_status": "Provisional engineering assumption; user has not confirmed depth/time",
+    "charging_choice_status": "Provisional magnetic contacts; preference question pending",
+    "qualified": false
+  },
+  "mount": {
+    "collar_width_mm": 20,
+    "wall_mm": 1.5,
+    "strap_clearance_mm": 2.5,
+    "note": "TPU retention boot is required with magnetic contacts to capture magnet plugs. Default 20 mm collar; supported prototype CAD range 12-25 mm. Pull/fit testing pending."
+  }
+}

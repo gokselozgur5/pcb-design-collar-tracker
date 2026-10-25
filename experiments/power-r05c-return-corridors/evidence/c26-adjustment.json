@@ -1,0 +1,14 @@
+{
+  "before_sha256": "736027d080814668c487cf091848bbd33bbef05a5ebf194542d18181f23d9e6a",
+  "source_sha256": "0f5929271661a831b75df65567160845302c78be4b1dfce9a58e0218ee366bde",
+  "c26_position_mm": [
+    113.25,
+    122.05
+  ],
+  "ntc_position_mm": [
+    113.25,
+    120.05
+  ],
+  "ntc_angle": 0,
+  "acceptance": "Fresh native DRC required"
+}

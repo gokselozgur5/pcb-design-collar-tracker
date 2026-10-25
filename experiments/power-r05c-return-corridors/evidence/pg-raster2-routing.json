@@ -1,0 +1,30 @@
+{
+  "before_sha256": "74db248dedc96a0dd6f137ae8d443dc26bd2ce7fbad404614d4f19424e5acfd1",
+  "protected_sim_input_ids": [],
+  "route_anchors": {},
+  "first_nets": [],
+  "low_current_branch_nets": [],
+  "existing_power_backbone_pins": {},
+  "only_nets": [
+    "/POWER_GOOD"
+  ],
+  "router_script_sha256": "6ab90bd9e99f63df704f06505c74acaf704a1320f6f71fea29cf5a37ad54b534",
+  "raster_script_sha256": "bd9f094b342a8c81940b3e5dc7ce4904e6a8e6c940dfb47411c1ac10de3d520d",
+  "relocatable_via_input_sha256": null,
+  "removed_return_vias": [],
+  "route_limit_mm": 40,
+  "board_bounds_mm": [
+    98.0,
+    98.0,
+    138.0,
+    130.0
+  ],
+  "source_sha256": "74db248dedc96a0dd6f137ae8d443dc26bd2ce7fbad404614d4f19424e5acfd1",
+  "routes": [],
+  "ground_stitches": [],
+  "failed": [
+    "('/POWER_GOOD', 'no route', 16080, 'dfa7c919788f4a4b24b1598f24469b964cb837ce2729bb038274794aea4db692')"
+  ],
+  "interrupted": false,
+  "acceptance": "Pending native DRC and independent geometry audit"
+}

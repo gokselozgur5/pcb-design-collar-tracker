@@ -1,0 +1,59 @@
+{
+  "before_sha256": "74db248dedc96a0dd6f137ae8d443dc26bd2ce7fbad404614d4f19424e5acfd1",
+  "protected_sim_input_ids": [],
+  "route_anchors": {},
+  "first_nets": [
+    "/NRF_ENABLE",
+    "/VIO_ENABLE",
+    "/VDD_NRF"
+  ],
+  "low_current_branch_nets": [
+    "/VDD_NRF",
+    "/VBAT"
+  ],
+  "existing_power_backbone_pins": {
+    "/VDD_NRF": [
+      "C3.1",
+      "C4.1",
+      "FB1.2",
+      "U1.14"
+    ],
+    "/VBAT": [
+      "C19.1",
+      "J4.1",
+      "U3.2"
+    ]
+  },
+  "only_nets": [
+    "/NRF_ENABLE",
+    "/VIO_ENABLE",
+    "/VDD_NRF",
+    "/VBAT",
+    "/FG_ALERT"
+  ],
+  "router_script_sha256": "6ab90bd9e99f63df704f06505c74acaf704a1320f6f71fea29cf5a37ad54b534",
+  "raster_script_sha256": "bd9f094b342a8c81940b3e5dc7ce4904e6a8e6c940dfb47411c1ac10de3d520d",
+  "relocatable_via_input_sha256": null,
+  "removed_return_vias": [],
+  "route_limit_mm": 40,
+  "board_bounds_mm": [
+    98.0,
+    98.0,
+    138.0,
+    130.0
+  ],
+  "source_sha256": "74db248dedc96a0dd6f137ae8d443dc26bd2ce7fbad404614d4f19424e5acfd1",
+  "routes": [],
+  "ground_stitches": [],
+  "failed": [
+    "('/NRF_ENABLE', 'no route', 7124, '31a33c2856813a3070df3da7360fa6c2eb53afcfa35dc1ec37ea843da86acbc8')",
+    "('/NRF_ENABLE', 'no route', 44072, 'ad975481dd7b7b0bdf7db4d1fb18956eedab5c58da81d9c8f29156e5dea4c425')",
+    "('/VIO_ENABLE', 'no route', 147491, 'b32238a69dac6fc096ecaa4921d6e0730fcdb6bbb58abac10d80bc8cc4b9175a')",
+    "('/VIO_ENABLE', 'no route', 684, '0e254aa61c63bbab10490306f6633a1c90e3190e1e902eae271030133a440056')",
+    "('/VDD_NRF', 'no route', 63595, '0dca237b9c973a5b4ab500af5c158095e4ab2c384d343a60a806c83a88797bc9')",
+    "('/VBAT', 'no route', 3761, '5d0c48516a858dd2bb41a4f069b042cd26b4dfe02e885696fa3e50850267e5d2')",
+    "('/FG_ALERT', 'no route', 169591, 'ffda29511f0df7af3cdab033287a87087549ddbb3d2bd1ec5debd71be9424878')"
+  ],
+  "interrupted": false,
+  "acceptance": "Pending native DRC and independent geometry audit"
+}

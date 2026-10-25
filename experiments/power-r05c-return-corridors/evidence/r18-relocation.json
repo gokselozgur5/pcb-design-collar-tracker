@@ -1,0 +1,89 @@
+{
+  "before_sha256": "71364de00ffe26ecae85ad8493e267c2dbfc590a265a6d44be37d09ad56aaf10",
+  "source_sha256": "6c4a99754af3b099fece8979528ff2ea9463a002a1e5e0730f6c0c08732a7ea2",
+  "ref": "R18",
+  "position_mm": [
+    118.4,
+    126.1
+  ],
+  "side": "F",
+  "angle": 0,
+  "removed_dedicated_branches": [
+    {
+      "id": "bbdcb991-2576-4b04-b079-63a88fa454a7",
+      "net": "/UV_SENSE",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "0ef0fdd4-c7f2-4804-a6ac-9880768daf01",
+      "net": "/UV_SENSE",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "eb48afa7-521d-456f-bb35-1274c50c2b4b",
+      "net": "/UV_SENSE",
+      "kind": "PCB_VIA"
+    },
+    {
+      "id": "e975356e-bf2f-4556-8e23-0615f210be4c",
+      "net": "/GND",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "95d49691-c075-420f-bcf6-477d2bb29c6a",
+      "net": "/GND",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "b89968d3-9f1e-4d09-9f8a-690ea8b58b76",
+      "net": "/GND",
+      "kind": "PCB_VIA"
+    }
+  ],
+  "added_ground_via": {
+    "id": "b3e2ec67-e662-462b-9252-d88d12706a96",
+    "pos": [
+      119,
+      127
+    ]
+  },
+  "paths": {
+    "/UV_SENSE": [
+      [
+        117.89,
+        126.1
+      ],
+      [
+        117.89,
+        126.45
+      ],
+      [
+        117.49,
+        126.85
+      ],
+      [
+        115.0,
+        126.85
+      ],
+      [
+        114.85,
+        127.0
+      ]
+    ],
+    "/GND": [
+      [
+        118.91,
+        126.1
+      ],
+      [
+        118.91,
+        126.91
+      ],
+      [
+        119,
+        127
+      ]
+    ]
+  },
+  "acceptance": "Fresh native geometry, connectivity, return and populated-fit checks required"
+}

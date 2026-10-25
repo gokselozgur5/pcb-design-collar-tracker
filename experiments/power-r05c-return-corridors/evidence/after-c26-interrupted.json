@@ -1,0 +1,27 @@
+{
+  "before_sha256": "0f5929271661a831b75df65567160845302c78be4b1dfce9a58e0218ee366bde",
+  "protected_sim_input_ids": [],
+  "route_anchors": {},
+  "first_nets": [],
+  "low_current_branch_nets": [],
+  "existing_power_backbone_pins": {},
+  "only_nets": [
+    "/VIO_ENABLE"
+  ],
+  "router_script_sha256": "20b60af1ab464d8b9339f1c34ca6344c382b6042d6aaa3470954ef472a7e907b",
+  "relocatable_via_input_sha256": null,
+  "removed_return_vias": [],
+  "route_limit_mm": 40,
+  "board_bounds_mm": [
+    98.0,
+    98.0,
+    138.0,
+    130.0
+  ],
+  "source_sha256": "0f5929271661a831b75df65567160845302c78be4b1dfce9a58e0218ee366bde",
+  "routes": [],
+  "ground_stitches": [],
+  "failed": [],
+  "interrupted": true,
+  "acceptance": "Pending native DRC and independent geometry audit"
+}

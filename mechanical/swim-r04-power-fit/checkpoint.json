@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "source_sha256": "74db248dedc96a0dd6f137ae8d443dc26bd2ce7fbad404614d4f19424e5acfd1",
+  "physical_ingress_test": false,
+  "manufacturing_release": false,
+  "mesh_acceptance": false,
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 1061,
+      "sha256": "8d376564ef6532fb6fa1afd712a8ea485cd6411b596cc6eaa0fedd2ac156c635"
+    },
+    {
+      "path": "checks.json",
+      "bytes": 4846,
+      "sha256": "211ab76754be7ea432a6bf645a1b161a01bf4a273e2bfeefda1049f42008024e"
+    },
+    {
+      "path": "components.native.json",
+      "bytes": 42935,
+      "sha256": "94b879dcc33ee3ab5ad77f1e8dcb2025aad4639ff620e4e5e3f4f5ee76b6929b"
+    },
+    {
+      "path": "enclosure.scad",
+      "bytes": 9119,
+      "sha256": "3fef4f508ef9b551b7f47ed14b1328cb9d7a64ad84ee43cf42821607080f6894"
+    },
+    {
+      "path": "fit-profile.json",
+      "bytes": 25563,
+      "sha256": "4e3168dff9500eb8c72f7d5593cbcb21dd92966bcddd12f37e5dbdd91d1457fc"
+    },
+    {
+      "path": "parameters.json",
+      "bytes": 4029,
+      "sha256": "fa4fb16d8570a94197b7cd6c328288fb8d89c1dbba816eda22cdd5fb17db57d9"
+    },
+    {
+      "path": "parameters.scad",
+      "bytes": 1224,
+      "sha256": "f41d988d5c8d38e35f487737ddf4d0b7a98120c73e48240e1a329cb4525e9af5"
+    },
+    {
+      "path": "populated-fit.json",
+      "bytes": 44596,
+      "sha256": "04f4f4f2d8cfc6d9a869f7aa87e6c65dfd9c0158bd37fe31d9048b2f6d130246"
+    },
+    {
+      "path": "populated.png",
+      "bytes": 95141,
+      "sha256": "edc0c13485c1d0f46f32c6586e79fc7d41898d0a5aa5212a67dd7ad3dd1fc5d4"
+    },
+    {
+      "path": "populated.scad",
+      "bytes": 8312,
+      "sha256": "f97b70eda9cf82836b0627f6cbedf680faed97612eae3014ea59d5f36d5e1f2f"
+    }
+  ]
+}

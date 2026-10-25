@@ -1,0 +1,30 @@
+{
+  "before_sha256": "71364de00ffe26ecae85ad8493e267c2dbfc590a265a6d44be37d09ad56aaf10",
+  "protected_sim_input_ids": [],
+  "route_anchors": {},
+  "first_nets": [],
+  "low_current_branch_nets": [],
+  "existing_power_backbone_pins": {},
+  "only_nets": [
+    "/UV_SENSE"
+  ],
+  "router_script_sha256": "20b60af1ab464d8b9339f1c34ca6344c382b6042d6aaa3470954ef472a7e907b",
+  "relocatable_via_input_sha256": null,
+  "removed_return_vias": [],
+  "route_limit_mm": 40,
+  "board_bounds_mm": [
+    98.0,
+    98.0,
+    138.0,
+    130.0
+  ],
+  "source_sha256": "71364de00ffe26ecae85ad8493e267c2dbfc590a265a6d44be37d09ad56aaf10",
+  "routes": [],
+  "ground_stitches": [],
+  "failed": [
+    "('/UV_SENSE', 'no route', 41569, {'F.Cu': {'states': 12968, 'x': [101.65, 117.7], 'y': [108.4, 125.30000000000001]}, 'B.Cu': {'states': 28601, 'x': [101.30000000000001, 115.9], 'y': [107.10000000000001, 124.95]}})",
+    "('/UV_SENSE', 'no route', 192510, {'F.Cu': {'states': 103879, 'x': [98.55000000000001, 137.45000000000002], 'y': [98.55000000000001, 129.45000000000002]}, 'B.Cu': {'states': 88631, 'x': [98.55000000000001, 137.45000000000002], 'y': [98.55000000000001, 129.45000000000002]}})"
+  ],
+  "interrupted": false,
+  "acceptance": "Pending native DRC and independent geometry audit"
+}

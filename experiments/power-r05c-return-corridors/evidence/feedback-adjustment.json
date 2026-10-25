@@ -1,0 +1,19 @@
+{
+  "before_sha256": "6577af975dc1fad12ee6c6e6461fe01c798b53d76574d800bca04d0d08fc3f76",
+  "source_sha256": "74db248dedc96a0dd6f137ae8d443dc26bd2ce7fbad404614d4f19424e5acfd1",
+  "r19_position_mm": [
+    117.92,
+    127.73
+  ],
+  "vdd_via_position_mm": [
+    118.55,
+    128.56
+  ],
+  "removed_old_r19_tails": [
+    "58654a27-9422-4017-9987-591fd4e0b8ea",
+    "838d0e9c-0d0f-42e0-a3b8-c4ca23779578",
+    "eaeb5469-406d-4c87-a9e2-9a70238d5997"
+  ],
+  "pad_islands_preserved": true,
+  "acceptance": "Fresh native DRC required"
+}

@@ -1,0 +1,533 @@
+{
+  "source_sha256": "4c047c3a5b69110ad758f83091236c7aa2c25a96f374732dcd8bda79bb88027e",
+  "candidates": [
+    {
+      "id": "13b7d4d7-b736-4049-97ed-7562d75b41ac",
+      "net": "/GND",
+      "pos": [
+        123.6,
+        122.8
+      ],
+      "diameter": 0.6,
+      "drill": 0.2,
+      "layers": [
+        "F.Cu",
+        "In1.Cu",
+        "In2.Cu",
+        "B.Cu"
+      ],
+      "outer_ground_gap_mm": 2.4964896805125494,
+      "rf_gap_mm": 5.057555664629592
+    },
+    {
+      "id": "1e194a0f-ee7c-4779-ad33-da06a2b82eb4",
+      "net": "/GND",
+      "pos": [
+        107.4,
+        106.2
+      ],
+      "diameter": 0.6,
+      "drill": 0.2,
+      "layers": [
+        "F.Cu",
+        "In1.Cu",
+        "In2.Cu",
+        "B.Cu"
+      ],
+      "outer_ground_gap_mm": 1.3154305828820778,
+      "rf_gap_mm": 12.882887783781586
+    },
+    {
+      "id": "1f5294d3-ba04-4847-b2e7-fd2cb4ff51d0",
+      "net": "/GND",
+      "pos": [
+        122.0,
+        99.4
+      ],
+      "diameter": 0.6,
+      "drill": 0.2,
+      "layers": [
+        "F.Cu",
+        "In1.Cu",
+        "In2.Cu",
+        "B.Cu"
+      ],
+      "outer_ground_gap_mm": 6.799999999999997,
+      "rf_gap_mm": 12.887741824146428
+    },
+    {
+      "id": "2c0f4a21-577a-4aca-8fca-ce08ef7290d3",
+      "net": "/GND",
+      "pos": [
+        122.5,
+        128.5
+      ],
+      "diameter": 0.6,
+      "drill": 0.2,
+      "layers": [
+        "F.Cu",
+        "In1.Cu",
+        "In2.Cu",
+        "B.Cu"
+      ],
+      "outer_ground_gap_mm": 1.5724360963788548,
+      "rf_gap_mm": 8.034601813872316
+    },
+    {
+      "id": "2fee4144-5bdf-4fb2-b9d3-96d3967e9280",
+      "net": "/GND",
+      "pos": [
+        99.2,
+        103.6
+      ],
+      "diameter": 0.6,
+      "drill": 0.2,
+      "layers": [
+        "F.Cu",
+        "In1.Cu",
+        "In2.Cu",
+        "B.Cu"
+      ],
+      "outer_ground_gap_mm": 1.9006835012728491,
+      "rf_gap_mm": 19.80844489001133
+    },
+    {
+      "id": "47f28894-0b00-485e-a2df-8699d666fdbe",
+      "net": "/GND",
+      "pos": [
+        100.6,
+        104.95
+      ],
+      "diameter": 0.6,
+      "drill": 0.2,
+      "layers": [
+        "F.Cu",
+        "In1.Cu",
+        "In2.Cu",
+        "B.Cu"
+      ],
+      "outer_ground_gap_mm": 1.9697155523625685,
+      "rf_gap_mm": 17.8649108525177
+    },
+    {
+      "id": "49d9aefa-ea17-4239-90ca-15aaa0461393",
+      "net": "/GND",
+      "pos": [
+        131.4,
+        101.5
+      ],
+      "diameter": 0.6,
+      "drill": 0.2,
+      "layers": [
+        "F.Cu",
+        "In1.Cu",
+        "In2.Cu",
+        "B.Cu"
+      ],
+      "outer_ground_gap_mm": 1.3743452933563824,
+      "rf_gap_mm": 10.890910382165307
+    },
+    {
+      "id": "4d7a7169-a37b-416c-8c9c-3e36587d89f6",
+      "net": "/GND",
+      "pos": [
+        124.98,
+        99.65
+      ],
+      "diameter": 0.6,
+      "drill": 0.2,
+      "layers": [
+        "F.Cu",
+        "In1.Cu",
+        "In2.Cu",
+        "B.Cu"
+      ],
+      "outer_ground_gap_mm": 6.120204244957847,
+      "rf_gap_mm": 11.882357615237394
+    },
+    {
+      "id": "5139d461-0220-48f9-94c4-096906aeaf31",
+      "net": "/GND",
+      "pos": [
+        125.8,
+        104.4
+      ],
+      "diameter": 0.6,
+      "drill": 0.2,
+      "layers": [
+        "F.Cu",
+        "In1.Cu",
+        "In2.Cu",
+        "B.Cu"
+      ],
+      "outer_ground_gap_mm": 3.0487420336509294,
+      "rf_gap_mm": 7.064182758723303
+    },
+    {
+      "id": "515ba8bc-ec25-4ea1-9e66-fadbb0a1f721",
+      "net": "/GND",
+      "pos": [
+        115.6,
+        128.45
+      ],
+      "diameter": 0.6,
+      "drill": 0.2,
+      "layers": [
+        "F.Cu",
+        "In1.Cu",
+        "In2.Cu",
+        "B.Cu"
+      ],
+      "outer_ground_gap_mm": 1.4999999999999858,
+      "rf_gap_mm": 5.649999999999977
+    },
+    {
+      "id": "6bf8e5a7-f5a0-4dc7-8c50-d4a6585f3abe",
+      "net": "/GND",
+      "pos": [
+        103.8,
+        114.4
+      ],
+      "diameter": 0.6,
+      "drill": 0.2,
+      "layers": [
+        "F.Cu",
+        "In1.Cu",
+        "In2.Cu",
+        "B.Cu"
+      ],
+      "outer_ground_gap_mm": 1.0501124877364443,
+      "rf_gap_mm": 9.444416646926847
+    },
+    {
+      "id": "6cf75027-1c05-443b-a2df-8967fbea2f9a",
+      "net": "/GND",
+      "pos": [
+        122.3,
+        105.8
+      ],
+      "diameter": 0.6,
+      "drill": 0.2,
+      "layers": [
+        "F.Cu",
+        "In1.Cu",
+        "In2.Cu",
+        "B.Cu"
+      ],
+      "outer_ground_gap_mm": 0.4074579675593361,
+      "rf_gap_mm": 7.085481413888055
+    },
+    {
+      "id": "6f09285b-3f53-41f9-bb7e-6a06d64358a0",
+      "net": "/GND",
+      "pos": [
+        113.0,
+        100.4
+      ],
+      "diameter": 0.6,
+      "drill": 0.2,
+      "layers": [
+        "F.Cu",
+        "In1.Cu",
+        "In2.Cu",
+        "B.Cu"
+      ],
+      "outer_ground_gap_mm": 5.005454353820732,
+      "rf_gap_mm": 16.41474345217273
+    },
+    {
+      "id": "74fbe503-f077-45d3-8867-694c503ceacf",
+      "net": "/GND",
+      "pos": [
+        125.7,
+        127.8
+      ],
+      "diameter": 0.6,
+      "drill": 0.2,
+      "layers": [
+        "F.Cu",
+        "In1.Cu",
+        "In2.Cu",
+        "B.Cu"
+      ],
+      "outer_ground_gap_mm": 3.5954939638492394,
+      "rf_gap_mm": 10.083869442970467
+    },
+    {
+      "id": "768c18b7-cee7-4249-ab87-6b1a95f89577",
+      "net": "/GND",
+      "pos": [
+        135.25,
+        105.55
+      ],
+      "diameter": 0.6,
+      "drill": 0.2,
+      "layers": [
+        "F.Cu",
+        "In1.Cu",
+        "In2.Cu",
+        "B.Cu"
+      ],
+      "outer_ground_gap_mm": 1.500833101980335,
+      "rf_gap_mm": 10.130790189491178
+    },
+    {
+      "id": "7edd38c9-2674-4fd4-8ada-65a925e82b17",
+      "net": "/GND",
+      "pos": [
+        136.3,
+        123.5
+      ],
+      "diameter": 0.6,
+      "drill": 0.2,
+      "layers": [
+        "F.Cu",
+        "In1.Cu",
+        "In2.Cu",
+        "B.Cu"
+      ],
+      "outer_ground_gap_mm": 1.3820178051377034,
+      "rf_gap_mm": 14.195387309350327
+    },
+    {
+      "id": "7f109cc6-97fb-40f7-ba22-7d7429fe1236",
+      "net": "/GND",
+      "pos": [
+        103.3,
+        124.7
+      ],
+      "diameter": 0.6,
+      "drill": 0.2,
+      "layers": [
+        "F.Cu",
+        "In1.Cu",
+        "In2.Cu",
+        "B.Cu"
+      ],
+      "outer_ground_gap_mm": 0.46829236487855314,
+      "rf_gap_mm": 9.064914965413715
+    },
+    {
+      "id": "840370c1-6753-4deb-bce7-cb9c1e6e4a34",
+      "net": "/GND",
+      "pos": [
+        132.5,
+        120.7
+      ],
+      "diameter": 0.6,
+      "drill": 0.2,
+      "layers": [
+        "F.Cu",
+        "In1.Cu",
+        "In2.Cu",
+        "B.Cu"
+      ],
+      "outer_ground_gap_mm": 1.0012488399215438,
+      "rf_gap_mm": 9.481749090005898
+    },
+    {
+      "id": "85522ca3-5fae-4bbc-bb34-a6d9b04f71a0",
+      "net": "/GND",
+      "pos": [
+        121.3,
+        112.1
+      ],
+      "diameter": 0.6,
+      "drill": 0.2,
+      "layers": [
+        "F.Cu",
+        "In1.Cu",
+        "In2.Cu",
+        "B.Cu"
+      ],
+      "outer_ground_gap_mm": 2.1005058251771773,
+      "rf_gap_mm": 2.498377751934909
+    },
+    {
+      "id": "93678f8b-5db4-40ac-ba15-f70ff9f774b1",
+      "net": "/GND",
+      "pos": [
+        136.25,
+        101.45
+      ],
+      "diameter": 0.6,
+      "drill": 0.2,
+      "layers": [
+        "F.Cu",
+        "In1.Cu",
+        "In2.Cu",
+        "B.Cu"
+      ],
+      "outer_ground_gap_mm": 0.6118908150085738,
+      "rf_gap_mm": 13.63243967345468
+    },
+    {
+      "id": "a487eef0-d55c-4817-b122-238a88ef82d0",
+      "net": "/GND",
+      "pos": [
+        132.6,
+        117.5
+      ],
+      "diameter": 0.6,
+      "drill": 0.2,
+      "layers": [
+        "F.Cu",
+        "In1.Cu",
+        "In2.Cu",
+        "B.Cu"
+      ],
+      "outer_ground_gap_mm": 2.804466912106141,
+      "rf_gap_mm": 7.749909707697242
+    },
+    {
+      "id": "a4dfefca-403c-4d95-adc0-015a6c505b30",
+      "net": "/GND",
+      "pos": [
+        135.5,
+        114.5
+      ],
+      "diameter": 0.6,
+      "drill": 0.2,
+      "layers": [
+        "F.Cu",
+        "In1.Cu",
+        "In2.Cu",
+        "B.Cu"
+      ],
+      "outer_ground_gap_mm": 1.3467460358030674,
+      "rf_gap_mm": 8.733222003002066
+    },
+    {
+      "id": "b0840afc-fa1f-46ea-9c2e-cfbb0b513193",
+      "net": "/GND",
+      "pos": [
+        128.95,
+        128.5
+      ],
+      "diameter": 0.6,
+      "drill": 0.2,
+      "layers": [
+        "F.Cu",
+        "In1.Cu",
+        "In2.Cu",
+        "B.Cu"
+      ],
+      "outer_ground_gap_mm": 1.9744295671294778,
+      "rf_gap_mm": 12.592462207703445
+    },
+    {
+      "id": "b652eb5c-0353-4441-8c70-5c27149e3f86",
+      "net": "/GND",
+      "pos": [
+        120.05,
+        112.975
+      ],
+      "diameter": 0.6,
+      "drill": 0.2,
+      "layers": [
+        "F.Cu",
+        "In1.Cu",
+        "In2.Cu",
+        "B.Cu"
+      ],
+      "outer_ground_gap_mm": 1.9548516407731575,
+      "rf_gap_mm": 2.4262818940772473
+    },
+    {
+      "id": "b70909eb-fe7c-45a0-b15d-dc1e5bda013f",
+      "net": "/GND",
+      "pos": [
+        124.2854,
+        103.55
+      ],
+      "diameter": 0.6,
+      "drill": 0.2,
+      "layers": [
+        "F.Cu",
+        "In1.Cu",
+        "In2.Cu",
+        "B.Cu"
+      ],
+      "outer_ground_gap_mm": 3.31278436482984,
+      "rf_gap_mm": 8.217459933469303
+    },
+    {
+      "id": "d56c16ba-8ab7-488f-8f77-08b29395a1ef",
+      "net": "/GND",
+      "pos": [
+        133.1,
+        125.05
+      ],
+      "diameter": 0.6,
+      "drill": 0.2,
+      "layers": [
+        "F.Cu",
+        "In1.Cu",
+        "In2.Cu",
+        "B.Cu"
+      ],
+      "outer_ground_gap_mm": 2.2198620570820173,
+      "rf_gap_mm": 12.768377167181207
+    },
+    {
+      "id": "e0edac71-d54b-4c8b-8d8d-038a78e1425f",
+      "net": "/GND",
+      "pos": [
+        100.9,
+        113.2
+      ],
+      "diameter": 0.6,
+      "drill": 0.2,
+      "layers": [
+        "F.Cu",
+        "In1.Cu",
+        "In2.Cu",
+        "B.Cu"
+      ],
+      "outer_ground_gap_mm": 1.830542959754331,
+      "rf_gap_mm": 12.508084071509572
+    },
+    {
+      "id": "e118b311-95ac-4a25-ba64-cfe9914efb2a",
+      "net": "/GND",
+      "pos": [
+        119.4,
+        103.6
+      ],
+      "diameter": 0.6,
+      "drill": 0.2,
+      "layers": [
+        "F.Cu",
+        "In1.Cu",
+        "In2.Cu",
+        "B.Cu"
+      ],
+      "outer_ground_gap_mm": 2.251863343627692,
+      "rf_gap_mm": 10.16412888798857
+    },
+    {
+      "id": "e5c626af-d99f-439d-bc87-877ca56b5a9d",
+      "net": "/GND",
+      "pos": [
+        120.6,
+        122.1
+      ],
+      "diameter": 0.6,
+      "drill": 0.2,
+      "layers": [
+        "F.Cu",
+        "In1.Cu",
+        "In2.Cu",
+        "B.Cu"
+      ],
+      "outer_ground_gap_mm": 1.2160044859642332,
+      "rf_gap_mm": 3.429461280510011
+    }
+  ],
+  "counts": {
+    "local-ground": 79,
+    "candidate": 29,
+    "near-RF": 5
+  },
+  "scope": "Return-only geometric candidates; preserve local GND attachments and verify return coverage after any relocation."
+}

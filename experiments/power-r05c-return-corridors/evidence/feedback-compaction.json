@@ -1,0 +1,95 @@
+{
+  "before_sha256": "6c4a99754af3b099fece8979528ff2ea9463a002a1e5e0730f6c0c08732a7ea2",
+  "source_sha256": "6577af975dc1fad12ee6c6e6461fe01c798b53d76574d800bca04d0d08fc3f76",
+  "parts": {
+    "R16": [
+      116.45,
+      128,
+      90,
+      "F"
+    ],
+    "R19": [
+      117.94,
+      127.75,
+      0,
+      "F"
+    ]
+  },
+  "removed_dedicated_sense_branch": [
+    {
+      "id": "6595a883-48f5-471a-aa78-951b2d01af01",
+      "net": "/UV_SENSE",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "8c7a2e05-3e13-449e-ba1f-3dce1d8500ba",
+      "net": "/UV_SENSE",
+      "kind": "PCB_VIA"
+    }
+  ],
+  "via_moves": [
+    {
+      "id": "a65aa264-a3b2-48a6-8f73-d29488281c73",
+      "net": "/POWER_GOOD",
+      "before_position_mm": [
+        115.75,
+        127.5
+      ],
+      "position_mm": [
+        115.55,
+        127.46
+      ]
+    },
+    {
+      "id": "835319c4-fff3-4f95-b80d-f45512d84930",
+      "net": "/VDD_NRF",
+      "before_position_mm": [
+        118.55,
+        128.5
+      ],
+      "position_mm": [
+        118.55,
+        128.65
+      ]
+    }
+  ],
+  "paths": {
+    "/POWER_GOOD": [
+      [
+        117.43,
+        127.75
+      ],
+      [
+        117.17,
+        127.49
+      ],
+      [
+        116.45,
+        127.49
+      ]
+    ],
+    "/UV_SENSE": [
+      [
+        118.45,
+        127.75
+      ],
+      [
+        118.1,
+        127.4
+      ],
+      [
+        118.1,
+        127.0
+      ],
+      [
+        117.95,
+        126.85
+      ],
+      [
+        117.49,
+        126.85
+      ]
+    ]
+  },
+  "acceptance": "Fresh full native connectivity, geometry and fit checks required"
+}

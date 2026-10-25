@@ -1,0 +1,39 @@
+{
+  "before_sha256": "928e6589335b96ab8eca77dfe7876580ff1c9326ca33b7e574179712d48299c0",
+  "source_sha256": "736027d080814668c487cf091848bbd33bbef05a5ebf194542d18181f23d9e6a",
+  "ref": "C26",
+  "position_mm": [
+    113.25,
+    122
+  ],
+  "side": "B",
+  "angle": 180,
+  "removed_dedicated_branches": [
+    {
+      "id": "f15810e5-a868-46e4-9869-eb955df2d6e1",
+      "net": "/VIO_DELAY",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "ad32d438-1281-4793-ae52-f8405afac423",
+      "net": "/VIO_DELAY",
+      "kind": "PCB_VIA"
+    },
+    {
+      "id": "1adf9a89-fed6-4722-b6ac-95f5b7487367",
+      "net": "/GND",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "2b31e6bb-57b1-49fc-bcf2-691b2f43a91b",
+      "net": "/GND",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "cf8a6754-542c-44b9-b5cc-813230636171",
+      "net": "/GND",
+      "kind": "PCB_VIA"
+    }
+  ],
+  "acceptance": "Fresh native DRC and populated fit required."
+}
