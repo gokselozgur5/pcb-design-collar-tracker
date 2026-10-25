@@ -1,0 +1,33 @@
+{
+  "pcb": "experiments/power-r05k-selected-parts/hardware/collar-tracker.kicad_pcb",
+  "pcb_sha256": "bea6c52a7f045b5fb21ac9714f3db0c70207f150aab3e9587b891f08e4e2b4d3",
+  "tool": "KiCad CLI 10.0.7",
+  "operations": [
+    {
+      "side": "top",
+      "layers": "F.Cu,F.Silkscreen,Edge.Cuts",
+      "mirror": false
+    },
+    {
+      "side": "bottom",
+      "layers": "B.Cu,B.Silkscreen,Edge.Cuts",
+      "mirror": true
+    }
+  ],
+  "flags": [
+    "--mode-single",
+    "--fit-page-to-board",
+    "--exclude-drawing-sheet"
+  ],
+  "native_exit_codes": [
+    0,
+    0
+  ],
+  "files": {
+    "top.svg": "05442d3bc48d9cb0f280d781e55c8bf6bb5974a58a96d749f6edd15301690d7f",
+    "bottom.svg": "f6f308561d68e787798c1c5748558a1e77db71045541c6ed461b4e1d328b1323",
+    "top.png": "88b7b72647f8a74fadca857a6b1f4ec5a4b1909aa2efee9d242e4faefb262822",
+    "bottom.png": "aace21dbab3db129e8a028482b8f8e60e7557389513a7c163f8dad5c237c5830"
+  },
+  "scope": "Read-only exports of saved PCB; no zone refill or CAD mutation. Native SVG and raster review, not a 3D assembled product."
+}

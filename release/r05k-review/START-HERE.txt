@@ -1,0 +1,20 @@
+COLLAR TRACKER r05k — PCB REVIEW, NOT A WORKING-DEVICE ORDER RELEASE
+
+Open review.pdf first. Upload only gerber.zip to a PCB DFM analyzer.
+The outer review ZIP also contains CAD, BOM/CPL and reports; do not upload it as Gerbers.
+
+Two actual same-byte JLC analyses: 0 Danger / 0 Warning / 450 Good each.
+All 29 PCB categories analyzed with unchanged rules; SMT was off.
+Native connectivity, DRC, ERC and schematic parity have zero findings.
+
+CHARGING HOLD: the direct 10k/B3435 NTC allows charging at 50 C,
+above the reviewed candidate pack 45 C limit. CE is grounded.
+The charge interlock is not implemented. See pack-charge/README.md.
+Pack/antennas, sealed assembly, firmware and factory tests are incomplete.
+No IP68, physical ingress, powered, RF or working-PCBA acceptance is claimed.
+
+pcb/native contains the editable KiCad project with local libraries.
+assembly contains candidate BOM/CPL; rotations, purchasing and SMT remain unapproved.
+manifest.json binds every file to the repository source and SHA256.
+Full engineering history and continuation:
+https://github.com/gokselozgur5/pcb-design-collar-tracker
