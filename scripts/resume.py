@@ -14,16 +14,16 @@ except (ValueError, OSError, KeyError) as error:
 print(f'Project: {root}')
 print('Baseline: 0.3.4 saved PCB DFM evidence verified; not production acceptance.')
 print('Preserved PCB: r04i native/geometry evidence and two unchanged-rule JLC PCB passes verified.')
-candidate = result['selected_parts_candidate']
-print(f"Active: r05k selected component candidate; {candidate['native_drc']['unconnected_items']} open connections; "
+candidate = result['charge_candidate']
+print(f"Active: r05l hardware charge interlock; {candidate['native_drc']['unconnected_items']} open connections; "
       f"{len(candidate['supplier_records'])} verified same-ZIP JLC PCB passes.")
 print(f"Other native violations/warnings: {candidate['native_drc']['violations']}; "
       f"schematic mismatches: {candidate['native_drc']['schematic_parity']}.")
-print('Parts: 65 fitted references / 38 exact candidate MPNs; four value changes; all r05j copper/placements preserved.')
+print('Parts: 81 fitted references / 44 exact candidate MPNs; original 71 footprints and 27 RF segments preserved.')
 print('Power: tolerance/TCR/leakage and typical-capacitance screens pass conditionally; powered and RF acceptance remain HOLD.')
-print('Mechanical: 69 populated envelopes pass at 0.71–0.91 mm, with sourced heights replacing the nine resistor reservations.')
-print('Charge HOLD: direct 10k/B3435 NTC permits charging at 50 C; candidate pack maximum is 45 C; /CE is grounded.')
-print('Next: implement a cell-temperature charge interlock, then protected pack/antennas, harness/dock/retention and factory firmware/test.')
+print('Mechanical: r07 has 85 populated envelopes passing at four thicknesses, eight checked meshes and CAD interference controls.')
+print('Charge: independent hot/cold comparators and NAND now drive /CE. Corner model passes conditionally; physical startup/thermal tests remain open.')
+print('Next: select protected pack/NTC attachment and antennas, then harness/dock/retention and factory firmware/test.')
 print('Preserved: r04i/swim-r02 review bundle; pack, antennas, assembly and physical qualification remain open.')
 print('Git:')
 sys.stdout.flush()

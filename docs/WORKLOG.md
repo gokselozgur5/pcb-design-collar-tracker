@@ -467,3 +467,28 @@ Their evidence is dated; do not transfer an older pass to a newer source file.
   boot/reset/low-cell/sensor-fault behavior. Then finish full pack/NTC selection,
   antenna/harness/retention/sealed assembly and firmware/factory acceptance.
   No new supplier upload, message, order, payment, account switch or physical test.
+
+
+## 2026-10-25 — r05l charge interlock and r07 carrier
+
+Implemented a VSYS-powered hot/cold window using two TLV3012B comparators and a
+SN74LVC1G00 NAND driving BQ25185 /CE. Sixteen parts are added; all original 71
+footprints/lands and 27 RF segments remain unchanged. Only original pin U3.4
+changes net; local VIN routing changed to open its escape. The temperature model
+and four regressions pass conditionally; powered startup/thermal tests remain open.
+
+The first JLC run found 3 Danger / 4 Warning. Three full-size labels and one VIN
+via moved; a fresh native check also caught and corrected its VBAT clearance.
+Final PCB `241c84d6...379b3` and ZIP `c736c5d3...af5d2` pass native DRC/ERC/parity.
+Two actual records, `637366592129687553` and `637366801595977730`, each have
+0 Danger / 0 Warning / 455 Good across all 29 rows, with unchanged rules and SMT off.
+All 109 physical GND pads have local via paths and all 154 signal vias pass the
+inherited 2mm return screen. Candidate assembly exports contain 81 parts / 44 MPNs.
+
+The r07 carrier has a U12 relief and one moved leg. Eight meshes pass integrity
+checks, 85 envelopes pass four thickness cases, and the independent CAD intersection
+is empty; restoring the previous carrier produces 1.234mm³ interference. Four
+previews and both supplier PDFs were inspected. No physical ingress or powered
+acceptance is claimed. New source-bound verification and a PCB/enclosure review
+bundle provide the continuation point. Next: protected pack/NTC attachment and
+actual antennas, then harness/dock/retention and firmware/factory test.

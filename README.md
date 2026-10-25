@@ -4,48 +4,40 @@ A small GPS and cellular tracker for dog collars, starting with Türkiye.
 The aim is one electronics design with different collar mounts. Fit, weight and
 comfort across dog sizes and coat types still need physical validation.
 
-**The current r05k PCB passed two actual JLC PCB DFM analyses at 0 Danger / 0 Warning.**
-Both used the same ZIP and unchanged rules: 29 analyzed rows, 450 green measurements
-per run. Native DRC/ERC/parity also pass.
+**The r05l PCB passed two actual JLC PCB DFM analyses: 0 Danger / 0 Warning / 455 Good each.**
+Both used the same ZIP and unchanged rules, with all 29 rows analyzed. Native
+DRC/ERC/connectivity/parity have zero findings.
 
-The board is 40 × 32 mm with six copper layers and a physical nano-SIM. The RF
-candidate uses a documented 7628 stack and 0.36 mm main port routes; In1.Cu and
-In4.Cu remain dedicated GND. All 128 signal vias pass the local return screen.
+The 40 × 32mm, six-layer nano-SIM board now implements a hardware hot/cold charging
+interlock independent of the MCU. Original component lands, placements and RF
+segments are preserved. The board has 87 footprints, including 81 fitted references
+with 44 exact candidate MPNs. The revised carrier clears the additional components.
 
-[Gerber ZIP](experiments/power-r05k-selected-parts/evidence/collar-tracker-05k-parts-40x32-dfm.zip) ·
-[Current review PDF](release/r05k-review/review.pdf) ·
-[PCB review bundle](release/collar-tracker-r05k-pcb-review.zip) ·
-[R3 before / after](experiments/power-r05j-rf-junctions/evidence/rf-junction-review.pdf) ·
-[JLC report 1](experiments/power-r05k-selected-parts/evidence/jlc-check1/report.pdf) ·
-[JLC report 2](experiments/power-r05k-selected-parts/evidence/jlc-check2/report.pdf)
+[Gerber ZIP](experiments/power-r05l-charge-interlock/evidence/collar-tracker-05l-charge-final4-40x32-dfm.zip) ·
+[Two-page PCB/enclosure review](release/r05l-review/review.pdf) ·
+[Review bundle](release/collar-tracker-r05l-review.zip) ·
+[JLC report 1](experiments/power-r05l-charge-interlock/evidence/jlc-check1/report.pdf) ·
+[JLC report 2](experiments/power-r05l-charge-interlock/evidence/jlc-check2/report.pdf)
 
-R3 now has one equal-width copper entry on each land and nearly equal contour
-ratios. The LTE tuning stubs are reduced, with a longer main feed as the tradeoff.
+**Electrical, RF and manufacturing release remain on hold.** The charge model
+passes with explicit thermal/leakage assumptions; powered startup and sensor tests
+remain open. Protected pack/NTC attachment, actual antennas, harness/dock/retention,
+firmware and factory programming/test are not finished. Supplier procurement, CPL
+rotations and SMT acceptance remain open. PCB DFM does not prove a working device.
 
-**Electrical, RF and manufacturing release remain on hold.** Supplier stack/etch/mask
-confirmation, module-pad qualification, assembly process and powered timing,
-pack/NTC, antennas and factory programming/test remain open. See the
-[r05k review](experiments/power-r05k-selected-parts/README.md). PCB DFM does not prove a working PCBA.
+[Candidate BOM](experiments/power-r05l-charge-interlock/assembly/candidate-bom.csv) ·
+[Candidate CPL](experiments/power-r05l-charge-interlock/assembly/candidate-cpl.csv) ·
+[Charge review](assembly/charge-interlock-r01/README.md) ·
+[r05l source and limits](experiments/power-r05l-charge-interlock/README.md)
 
-The [battery review](assembly/pack-charge-r01/README.md) found that a direct
-10k/B3435 NTC permits charging at 50°C while the reviewed pack stops at 45°C.
-Charge enable is grounded; a cell-temperature interlock is not implemented.
-Neither the NTC nor a pack is selected. This does not change the tested Gerber bytes.
+The enclosure has 85 populated envelopes passing four PCB thickness cases, eight
+checked meshes and actual CAD interference controls. IP68 swimming/dust resistance
+is a design target with provisional 2m fresh-water / 60-minute conditions; no
+physical ingress test is claimed. See the [r07 model](mechanical/swim-r07-charge-interlock/README.md).
 
-All 65 fitted references now have exact candidate MPNs.
-[Candidate BOM](experiments/power-r05k-selected-parts/assembly/candidate-bom.csv) and
-[CPL](experiments/power-r05k-selected-parts/assembly/candidate-cpl.csv) are exported.
-The [power component model](assembly/power-parts-r01/README.md) includes tolerance,
-TCR and leakage; its remaining physical assumptions are explicit. Supplier
-procurement, rotations and SMT acceptance are still open.
-
-The enclosure's 69 populated envelopes pass the modeled 0.71–0.91 mm board-thickness
-interval. IP68 remains a design target, with provisional 2 m fresh-water / 60-minute
-conditions. No physical water/dust test is claimed.
-[STATUS](docs/STATUS.md) records the exact source and next action.
-
-The earlier r04i PCB and [r02 review bundle](release/collar-tracker-r04i-swim-r02-fit-review.zip)
-remain preserved. Upload only the Gerber ZIP to PCB DFM.
+[STATUS](docs/STATUS.md) records the exact source and next action. The earlier r05k,
+r04i and all prior tested files remain preserved. Upload only the Gerber ZIP to PCB
+DFM; the outer review archive also contains native CAD, assembly candidates and reports.
 
 ## Continue in a new session
 

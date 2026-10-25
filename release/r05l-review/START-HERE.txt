@@ -1,0 +1,17 @@
+COLLAR TRACKER r05l / r07 — PCB AND ENCLOSURE REVIEW
+
+Open review.pdf. Upload only gerber.zip to PCB DFM, not this outer archive.
+Two actual JLC runs: 0 Danger / 0 Warning / 455 Good, same bytes and rules.
+Native connectivity/DRC/ERC/parity: zero findings.
+The hardware charge-temperature interlock is now implemented.
+Model results are conditional; powered startup/thermal tests remain open.
+
+Native PCB and candidate BOM/CPL: experiments/power-r05l-charge-interlock/
+Enclosure CAD/STL/previews: mechanical/swim-r07-charge-interlock/
+Manufacturer sources and limits: assembly/charge-interlock-r01/
+Pack/NTC attachment, antennas, harness/dock/retention, firmware and factory tests remain open.
+No assembled, RF or physical IP68/water/dust qualification is claimed.
+This is not a working-PCBA order release.
+
+Continue from the repository STATUS and RESUME instructions:
+https://github.com/gokselozgur5/pcb-design-collar-tracker

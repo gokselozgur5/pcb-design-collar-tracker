@@ -1,78 +1,72 @@
 # Current state — 2026-10-25
 
-**Active r05k selected-component PCB: native DRC/ERC/parity clean; two actual JLC PCB runs at 0 Danger / 0 Warning.**
-**Electrical / RF / manufacturing release: HOLD. IP68 remains unqualified.**
+**Active r05l: hardware charge-temperature interlock implemented; native DRC/ERC/parity clean; two actual JLC PCB runs at 0 Danger / 0 Warning / 455 Good each.**
+**Working-device / RF / manufacturing release: HOLD. IP68 remains unqualified.**
 
-Repository: [gokselozgur5/pcb-design-collar-tracker](https://github.com/gokselozgur5/pcb-design-collar-tracker).
-All authored repository/GitHub content is English. Continue from
-`experiments/power-r05k-selected-parts/hardware/`; preserve the tested source before changing it.
+Continue from `experiments/power-r05l-charge-interlock/hardware/`.
+The preserved r05k and earlier sources remain immutable. All authored repository/GitHub
+content is English. Run `python3 scripts/resume.py` before making another revision.
 
-[Gerber ZIP](../experiments/power-r05k-selected-parts/evidence/collar-tracker-05k-parts-40x32-dfm.zip) ·
-[JLC report 1](../experiments/power-r05k-selected-parts/evidence/jlc-check1/report.pdf) ·
-[JLC report 2](../experiments/power-r05k-selected-parts/evidence/jlc-check2/report.pdf) ·
-[Candidate BOM](../experiments/power-r05k-selected-parts/assembly/candidate-bom.csv) ·
-[Candidate CPL](../experiments/power-r05k-selected-parts/assembly/candidate-cpl.csv)
+[Gerber ZIP](../experiments/power-r05l-charge-interlock/evidence/collar-tracker-05l-charge-final4-40x32-dfm.zip) ·
+[JLC report 1](../experiments/power-r05l-charge-interlock/evidence/jlc-check1/report.pdf) ·
+[JLC report 2](../experiments/power-r05l-charge-interlock/evidence/jlc-check2/report.pdf) ·
+[Two-page review](../release/r05l-review/review.pdf) ·
+[Review bundle](../release/collar-tracker-r05l-review.zip)
 
-[Current review PDF](../release/r05k-review/review.pdf) ·
-[PCB review bundle](../release/collar-tracker-r05k-pcb-review.zip)
-
-**New charge-temperature finding:** the direct 10k/B3435 NTC option permits
-charging at 50°C, above the reviewed candidate pack's 45°C maximum. U3 /CE is
-tied to GND, so firmware alone cannot repair this source. The charge interlock
-is not implemented. See the [source-bound battery review](../assembly/pack-charge-r01/README.md).
-The candidate EEMB pack is also limited to 350mA continuous by its PCM despite
-its 700mA bare-cell rating. No pack or NTC has been selected.
-
-## Active r05k layout and parts
-
-PCB SHA256: `bea6c52a7f045b5fb21ac9714f3db0c70207f150aab3e9587b891f08e4e2b4d3`.
-ZIP SHA256: `673c1d30bf2192f8abe60cf211ac183210472b8924f3fd4c3b5b46bd992412fc`.
-
-| Check | Result |
+| Check | Current result |
 |---|---|
-| Size / topology | 40 × 32 mm, six Cu, unchanged 71-footprint r05 topology |
-| Stack candidate | JLC06081H-7628, nominal 0.8 mm class; explicit CAD including mask 0.84088 mm |
-| Native DRC / ERC / parity | Zero violations, warnings, opens or mismatches |
-| Copper / placement | Entire saved structure identical to r05j except value/MPN/status fields and revision label |
-| Ground / returns | Inherited 94 local GND terminals, 110 GND vias, two dedicated GND planes, 128/128 return screens |
-| Values | R17 200 kΩ; R18 26.1 kΩ; R19 3.4 MΩ; C25 1 µF / 16 V X7R |
-| Exact candidate MPNs | 65 fitted references / 38 unique parts; candidate BOM/CPL exported |
-| Component analysis | Tolerance/TCR/leakage and typical-capacitance screens pass with explicit remaining assumptions |
-| JLC PCB DFM | `637356580811132930` / `637356797304328193`; 29 rows / 450 green measurements each; same ZIP/rules; SMT off |
-| Mechanical | 69 populated envelopes pass at 0.71 / 0.81 / 0.84088 / 0.91 mm; all nine resistor heights now sourced |
+| Board | 40 × 32mm; six Cu layers; 87 footprints |
+| Assembly candidates | 81 fitted references / 44 exact MPNs; BOM/CPL exported |
+| Native DRC / ERC / opens / parity | Zero findings |
+| Charge circuit | Two VSYS-powered TLV3012B comparators and SN74LVC1G00 NAND drive /CE independently of MCU/VIO |
+| Temperature model | Conditional pass; nominal 6.29–36.21°C sensor window; original 50°C case disabled |
+| Original source preservation | 71 footprints/lands, 27 RF segments, stack, rules and keepouts unchanged; only U3.4 original pin changes net |
+| Local routing | New charge nets and supply/sensor branches; local VIN escape rerouted |
+| Ground / returns | 109 physical GND pads have local via paths; 122 GND vias; two dedicated planes; 154/154 signal-via return screens |
+| JLC PCB DFM | Records `637366592129687553` / `637366801595977730`; same ZIP/rules; 29 rows; SMT off |
+| Mechanical r07 | 85 populated envelopes pass four thickness cases; eight closed meshes; actual CAD intersection empty, old carrier rejected |
 
-Read the [r05k decisions and limits](../experiments/power-r05k-selected-parts/README.md)
-and [component review](../assembly/power-parts-r01/README.md). The manufacturer-listed
-lower-impedance divider adds a nominal 13.39 µA at 3.6 V. C25 replaces an NRND part
-with the in-production C9 MPN; its modeled reset delay is 2.057–10.121 s. Its increased
-height still leaves 0.60 mm to the battery reservation. No powered behavior is claimed.
+PCB SHA256: `241c84d6ba98793c37344e1e46ddc4918e7b05322ba87daea7c9a90ffb8379b3`.
+Gerber SHA256: `c736c5d35ddfe4c4662e57606120f00f7358492e11d5fbb32eaf1d0ff6caf5d2`.
+Stack candidate: JLC06081H-7628, nominal 0.8mm class, explicit CAD thickness 0.84088mm.
+In1/In4 are dedicated GND planes; F/In2/In3/B carry signals.
 
-The component model includes −40..85°C TCR, both PG leakage signs, RESET sink current,
-a 0.5% additional resistance-drift sensitivity and typical Murata small-signal curves.
-The provisional firmware wait is 1 s; the former 600 ms fails the model. Effective
-capacitance, timer scaling, drift and fast collapse still need assembled validation.
-UVLO leaves pull-up current flowing; protected-cell cutoff/recharge behavior matters.
+Read the [r05l evidence](../experiments/power-r05l-charge-interlock/README.md),
+[charge review](../assembly/charge-interlock-r01/README.md) and
+[r07 carrier](../mechanical/swim-r07-charge-interlock/README.md).
+The first supplier run failed 3 Danger / 4 Warning; full-size label moves and a
+VIN-via relocation fixed them without weakening rules or shrinking lands.
+The final ZIP passed two fresh analyses. Preserve those exact bytes.
 
-**Next local work:** implement a cell-temperature charge interlock that remains
-effective during boot, reset, low-cell recovery and sensor faults. Select the
-protected pack/NTC against the full pack current and charge limits, then select
-the actual LTE/GNSS antennas and check their occupied volumes. Complete
-harness/dock/positive retention/seal definitions, firmware, programming and factory
-functional test. The 65 fitted MPNs are candidates, not supplier procurement or SMT
-acceptance; check their electrical suitability, availability and CPL library rotations.
-Do not reroute or repeat DFM without a real source change. Review the
-[sequencing exception](power-sequence-followup.md) before adding retention hardware.
+The [r05k battery finding](../assembly/pack-charge-r01/README.md) remains historical
+evidence: that source grounded /CE and permitted 50°C charging with a direct
+10k/B3435 sensor. The new source implements the interlock. SEMITEC 103JT-025 is a
+candidate sensor; no protected pack or factory cell attachment is selected.
+The reviewed EEMB PCM supports 350mA continuous despite its 700mA bare-cell rating.
 
-The inherited RF route uses 0.36 mm main feeds; R3 has one equal-width land entry
-and 1.001–1.004 contour ratios. Supplier Er/etch/mask/thickness differences, module
-transitions, actual antennas and physical RF acceptance remain open. In1.Cu remains
-under module RF pads to avoid exposing underlying VBAT. See the preserved
-[r05j RF review](../experiments/power-r05j-rf-junctions/README.md).
+**Next local work:** select a protected pack and NTC attachment against complete-pack
+current, protection and charging limits, then actual LTE/GNSS antennas and their
+occupied volumes. Complete harness/dock/positive PCB retention, material/seal and
+fastener definitions, firmware and factory programming/functional test. Do not
+reroute or repeat DFM without a real source change. For a PCB edit, create a
+successor and rerun native/export/two actual supplier checks.
 
-PCB DFM is complete for the delivered bytes. This is not a finished working-PCBA
-order package. Subsequent PCB edits need fresh native/export/two supplier checks.
-`python3 scripts/resume.py` verifies saved evidence without repeating physical tests.
-All previous r05j/r05i/r05h and earlier tested sources remain immutable.
+Charge bounds depend on sensor R/T and full-temperature leakage assumptions and a
+2°C cell-to-sensor allocation including lag. Startup, brownout, low-cell recovery,
+sensor-insertion transients, actual current and thermal coupling require assembled
+measurements. The prior component-selection model still requires a provisional
+1s firmware VIO wait; 600ms fails that model. Review the
+[sequencing exception](power-sequence-followup.md) before adding hardware.
+Supplier procurement, CPL rotations, SMT/reflow, actual stack/impedance and RF
+qualification remain open. A conditional calculation is not an electrical release.
+
+IP68 swimming/dust resistance is the design target; 2m fresh water / 60 minutes
+and magnetic charging remain engineering assumptions. The r07 carrier clears U12
+with a local ledge relief and one shifted support leg. Shell/seal/contact geometry
+is unchanged. Rigid envelope is 57.4 × 49.4 × 17.6mm excluding the docking key;
+boot is 60.4 × 52.4 × 22.4mm. Pack and antenna boxes remain reservations.
+No physical water/dust, powered or RF result exists. This is not yet a complete
+working-PCBA order package.
 
 ## Preserved tested PCB
 
@@ -124,7 +118,7 @@ Neither establishes this collar's activated service or moving-device performance
 Keep nRF9151 as the prototype candidate; verify a local subscription and both
 radio modes on a development kit before production antenna/pack release.
 
-## Active mechanical work
+## Preserved mechanical baselines
 
 The user selected swimming / an IP68 design target. The provisional condition is
 2 m fresh water for 60 minutes; depth/time and magnetic charging remain engineering

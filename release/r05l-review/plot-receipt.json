@@ -1,0 +1,33 @@
+{
+  "pcb": "experiments/power-r05l-charge-interlock/hardware/collar-tracker.kicad_pcb",
+  "pcb_sha256": "241c84d6ba98793c37344e1e46ddc4918e7b05322ba87daea7c9a90ffb8379b3",
+  "tool": "KiCad CLI 10.0.7",
+  "operations": [
+    {
+      "side": "top",
+      "layers": "F.Cu,F.Silkscreen,Edge.Cuts",
+      "mirror": false
+    },
+    {
+      "side": "bottom",
+      "layers": "B.Cu,B.Silkscreen,Edge.Cuts",
+      "mirror": true
+    }
+  ],
+  "flags": [
+    "--mode-single",
+    "--fit-page-to-board",
+    "--exclude-drawing-sheet"
+  ],
+  "native_exit_codes": [
+    0,
+    0
+  ],
+  "files": {
+    "bottom.png": "33dccea67a0a4795e0af951b6c99dfd8291e911b7bfeab7bfc29dce9b2711704",
+    "bottom.svg": "7eafedc7b25996bdf2ec5ed15209a0cd904db9f5bbbeabf14ec706ace1273bde",
+    "top.png": "0072871596f056aaa1bb9ff4fb8a2bb9cd58152ffe706a2a95395f2f12eaf495",
+    "top.svg": "db9b30ab3fd9356623dd594504da4e6e8c8dafe862fec0f65939fa0eb7ff0e20"
+  },
+  "scope": "Read-only native PCB exports; no zone refill. Copper/silkscreen views, not a physical assembly."
+}
