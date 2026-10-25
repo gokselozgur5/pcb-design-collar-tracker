@@ -16,11 +16,20 @@ parser.add_argument('drc_json',type=Path)
 parser.add_argument('output_board',type=Path,nargs='?')
 parser.add_argument('--route-limit-mm',type=float,default=40,
                     help='Candidate detour review screen, not a DRC rule or signal qualification')
+parser.add_argument('--sim-inputs', type=Path,
+                    help='JSON list of incoming track IDs; reserve these and J6 pins 1/2/3 as obstacles')
+parser.add_argument('--anchors', type=Path,
+                    help='JSON net-to-via mapping; start from its F.Cu anchor when that island is selected')
+parser.add_argument('--first-net', action='append', default=[],
+                    help='Route this exact net name first; repeat to define a deliberate order')
 args=parser.parse_args()
 assert math.isfinite(args.route_limit_mm) and args.route_limit_mm>0
 PCB=args.board;DRC=args.drc_json;OUTPUT=args.output_board or PCB
 b=k.LoadBoard(str(PCB));d=json.loads(DRC.read_text());layers=[k.F_Cu,k.B_Cu];STEP=.05
 source_sha=hashlib.sha256(PCB.read_bytes()).hexdigest()
+sim_inputs=set(json.loads(args.sim_inputs.read_text())) if args.sim_inputs else set()
+anchors=json.loads(args.anchors.read_text()) if args.anchors else {}
+assert sim_inputs <= {t.m_Uuid.AsString() for t in b.GetTracks()}, 'Stale protected input IDs'
 assert 'paul-nanosim' in str(PCB), 'Use an isolated nano-SIM trial'
 edges=[item for item in b.GetDrawings() if item.GetLayer()==k.Edge_Cuts]
 assert len(edges)==4 and all(item.GetShape()==k.SHAPE_T_SEGMENT for item in edges), 'Planner requires a rectangular outline'
@@ -54,14 +63,17 @@ def geometry():
         for p in f.Pads():
             bb=p.GetBoundingBox();box=(bb.GetLeft()/1e6,bb.GetTop()/1e6,bb.GetRight()/1e6,bb.GetBottom()/1e6)
             for l in layers:
-                if p.IsOnLayer(l):objects.append(('pad',l,p.GetNetname(),box,box))
+                if p.IsOnLayer(l):
+                    net='protected_sim_input' if args.sim_inputs and f.GetReference()=='J6' and p.GetNumber() in ['1','2','3'] else p.GetNetname()
+                    objects.append(('pad',l,net,box,box))
     for t in b.GetTracks():
         if t.GetClass()=='PCB_VIA':
             v=k.Cast_to_PCB_VIA(t);x,y=xy(v.GetPosition());r=v.GetWidth(k.F_Cu)/2e6
             for l in layers:objects.append(('via',l,t.GetNetname(),(x,y,r),(x-r,y-r,x+r,y+r)))
         else:
             ax,ay=xy(t.GetStart());bx,by=xy(t.GetEnd());r=t.GetWidth()/2e6
-            objects.append(('track',t.GetLayer(),t.GetNetname(),(ax,ay,bx,by,r),(min(ax,bx)-r,min(ay,by)-r,max(ax,bx)+r,max(ay,by)+r)))
+            net='protected_sim_input' if t.m_Uuid.AsString() in sim_inputs else t.GetNetname()
+            objects.append(('track',t.GetLayer(),net,(ax,ay,bx,by,r),(min(ax,bx)-r,min(ay,by)-r,max(ax,bx)+r,max(ay,by)+r)))
     for z in [*b.Zones(), *(z for f in b.GetFootprints() for z in f.Zones())]:
         if not z.GetIsRuleArea():continue
         bb=z.GetBoundingBox();box=(bb.GetLeft()/1e6,bb.GetTop()/1e6,bb.GetRight()/1e6,bb.GetBottom()/1e6)
@@ -125,6 +137,11 @@ def item_points(item):
                         if t.GetNetname()==obj.GetNetname())
             todo.extend(p for p in connectivity.GetConnectedPads(current)
                         if p.GetNetname()==obj.GetNetname())
+        anchor=anchors.get(obj.GetNetname())
+        if anchor and anchor['id'] in seen:
+            via=next(t for t in b.GetTracks() if t.m_Uuid.AsString()==anchor['id'])
+            assert via.GetClass()=='PCB_VIA' and math.dist(xy(via.GetPosition()),anchor['pos'])<.000001
+            return [(*anchor['pos'],k.F_Cu)]
         return list(dict.fromkeys(points))
     l=next(l for l in layers if b.GetLayerName(l) in item['description'])
     return [(item['pos']['x'],item['pos']['y'],l)]
@@ -204,6 +221,10 @@ def route(opening):
         simplified.append(p)
     length=sum(math.dist(aa[:2],zz[:2]) for aa,zz in zip(simplified,simplified[1:]))
     if length>args.route_limit_mm:
+        proposal=OUTPUT.with_suffix('.detour-proposal.json')
+        proposal.write_text(json.dumps({'before_sha256':source_sha,'net':net,
+            'length_mm':length,'starts':starts_exact,'ends':ends_exact,'points':simplified,
+            'scope':'Rejected routing proposal; these points were not added to the board.'},indent=2)+'\n')
         raise RuntimeError((net,'detour needs topology review',round(length,3),visited))
     for aa,zz in zip(simplified,simplified[1:]):
         if aa[2]!=zz[2]:addvia(aa[0],aa[1],net)
@@ -214,8 +235,8 @@ def route(opening):
     return {'net':net,'points':simplified,'visited':visited,'trunk_width_mm':width,'pad_escape_width_mm':.2,'escape_radius_mm':1.0}
 results=[];failures=[];interrupted=False
 print('Routing',len(d['unconnected_items']),'opens; footprint keepouts enabled',flush=True)
-priority={net:i for i,net in enumerate(['/SPI_SCK','/SIM_IO','/SIM_CLK',
-    '/ILIM_VSET','/ISET','/BAT_NTC','/VIN_5V','/VBAT','/CHG_STAT','/CHG_FAULT','/VSYS'])}
+priority={net:i for i,net in enumerate(dict.fromkeys(args.first_net + ['/SPI_SCK','/SIM_IO','/SIM_CLK',
+    '/ILIM_VSET','/ISET','/BAT_NTC','/VIN_5V','/VBAT','/CHG_STAT','/CHG_FAULT','/VSYS']))}
 try:
     for opening in sorted(d['unconnected_items'],key=lambda op:priority.get(re.search(r'\[([^]]+)\]',op['items'][0]['description'])[1],len(priority))):
         if any('Zone ' in item['description'] for item in opening['items']):continue
@@ -226,6 +247,7 @@ except KeyboardInterrupt:
     print('Interrupted; preserving completed routes for native review',flush=True)
 k.ZONE_FILLER(b).Fill(b.Zones());assert k.SaveBoard(str(OUTPUT),b)
 OUTPUT.with_suffix('.local-routing.json').write_text(json.dumps({'before_sha256':source_sha,
+    'protected_sim_input_ids':sorted(sim_inputs),'route_anchors':anchors,'first_nets':args.first_net,
     'route_limit_mm':args.route_limit_mm,'board_bounds_mm':[xmin,ymin,xmax,ymax],
     'source_sha256':hashlib.sha256(OUTPUT.read_bytes()).hexdigest(),'routes':results,
     'ground_stitches':stitches,'failed':failures,'interrupted':interrupted,
