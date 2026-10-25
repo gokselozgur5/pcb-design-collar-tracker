@@ -1,0 +1,758 @@
+{
+  "pcb_sha256": "f4be0288708733aaa6092a703ffa1bfebb3dc059fd21112a8cfed94028acc3b0",
+  "dfm_zip_sha256": "6304b66623a473e4c5405c6db7181b3f1879fa93088f9812802d43e814f90898",
+  "supplier_records": [
+    "637245503244296194",
+    "637247002053398530"
+  ],
+  "mechanical_revision": "swim-r01",
+  "ingress_qualified": false,
+  "files": [
+    {
+      "archive_path": "PCB/DFM.zip",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/evidence/collar-tracker-04i-final-40x32-dfm.zip",
+      "bytes": 109835,
+      "sha256": "6304b66623a473e4c5405c6db7181b3f1879fa93088f9812802d43e814f90898"
+    },
+    {
+      "archive_path": "PCB/attachment-review.json",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/evidence/attachment-review.json",
+      "bytes": 62198,
+      "sha256": "5e43817500751e065293a7749342f2d80b4900f2a74d1fb7a684f0cf07f28bc0"
+    },
+    {
+      "archive_path": "PCB/back.png",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/evidence/back.png",
+      "bytes": 269581,
+      "sha256": "0746d753f1f8e7b9b7faad3b500d1fc44d4bfab2de2b5bd8606e0f0ff9eae3f4"
+    },
+    {
+      "archive_path": "PCB/card-insertion-review.json",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/evidence/card-insertion-review.json",
+      "bytes": 7445,
+      "sha256": "da7fe0a8f5a5edd9a7e2ccfb738a6ef8c8c4bafb1a02b045c216f151ef3c7ec0"
+    },
+    {
+      "archive_path": "PCB/contact-components.json",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/evidence/contact-components.json",
+      "bytes": 126886,
+      "sha256": "b699cd46605184d0544583e858566073528c88654e5ba82d5f5a6ba792ecc641"
+    },
+    {
+      "archive_path": "PCB/esd-paths.json",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/evidence/esd-paths.json",
+      "bytes": 14278,
+      "sha256": "eed5bb556e270c2081b5ce6d6b965ee6f47acae03fa9171c2585f5f3e896322b"
+    },
+    {
+      "archive_path": "PCB/front.png",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/evidence/front.png",
+      "bytes": 229823,
+      "sha256": "af1de230add599a9b84f5c8e4c09feff4a4a505fd875d7283345226a8950c927"
+    },
+    {
+      "archive_path": "PCB/jlc-check1/dfm.json",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/evidence/jlc-check1/dfm.json",
+      "bytes": 113245,
+      "sha256": "a415514012ef9eaa7c9474f938b4bf36ae238a7ed0182f9d53545d62f820bb6d"
+    },
+    {
+      "archive_path": "PCB/jlc-check1/receipt.json",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/evidence/jlc-check1/receipt.json",
+      "bytes": 231,
+      "sha256": "13d51f0c9427c271d70967fe8832c8fa4c628e0b4c352774fd7a47942efbd2fa"
+    },
+    {
+      "archive_path": "PCB/jlc-check1/report.pdf",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/evidence/jlc-check1/report.pdf",
+      "bytes": 3129945,
+      "sha256": "24b7c8ac6036400ff7d96cb8914fb8292cb7dffed1f11c1972d9e29e18a6e36d"
+    },
+    {
+      "archive_path": "PCB/jlc-check1/rows.txt",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/evidence/jlc-check1/rows.txt",
+      "bytes": 1051,
+      "sha256": "9264cd366cb10b2f7cab8ad7ca1a72d3364b8b815252e9536cae379387a06d9c"
+    },
+    {
+      "archive_path": "PCB/jlc-check1/rules.json",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/evidence/jlc-check1/rules.json",
+      "bytes": 52347,
+      "sha256": "f1bebb3b2b5ac2ba0579f882fc0605d169c1d6a3a852a07beb8652b719e0a725"
+    },
+    {
+      "archive_path": "PCB/jlc-check1/screen.png",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/evidence/jlc-check1/screen.png",
+      "bytes": 209178,
+      "sha256": "6583c7fde1aecb8de70831b898073a3abd47d17cadbecc6bcb43fac61077131f"
+    },
+    {
+      "archive_path": "PCB/jlc-check1/summary.json",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/evidence/jlc-check1/summary.json",
+      "bytes": 437,
+      "sha256": "7b83a303b9772b00b1782b37f1429f5084d065c4366b92db2a382137eec1b58c"
+    },
+    {
+      "archive_path": "PCB/jlc-check2/dfm.json",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/evidence/jlc-check2/dfm.json",
+      "bytes": 113246,
+      "sha256": "95da79cd896df43e02ed07811d261e0ef598c73e81a7b8004dfad4a44982c4bb"
+    },
+    {
+      "archive_path": "PCB/jlc-check2/receipt.json",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/evidence/jlc-check2/receipt.json",
+      "bytes": 231,
+      "sha256": "511b9a1669d53ca932ea4ae961be846d4a173bdc7c14d21b98aaabdf6b2366fd"
+    },
+    {
+      "archive_path": "PCB/jlc-check2/report.pdf",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/evidence/jlc-check2/report.pdf",
+      "bytes": 3135125,
+      "sha256": "8e20e7a45642a517dcc276888a4802c8b883b0202882f427c7277fd0676e266d"
+    },
+    {
+      "archive_path": "PCB/jlc-check2/rows.txt",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/evidence/jlc-check2/rows.txt",
+      "bytes": 1051,
+      "sha256": "9264cd366cb10b2f7cab8ad7ca1a72d3364b8b815252e9536cae379387a06d9c"
+    },
+    {
+      "archive_path": "PCB/jlc-check2/rules.json",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/evidence/jlc-check2/rules.json",
+      "bytes": 52347,
+      "sha256": "f1bebb3b2b5ac2ba0579f882fc0605d169c1d6a3a852a07beb8652b719e0a725"
+    },
+    {
+      "archive_path": "PCB/jlc-check2/screen.png",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/evidence/jlc-check2/screen.png",
+      "bytes": 209176,
+      "sha256": "e33888b3cb747a6988de78855d7e3cdb0fdcad5f6b3036646da00d89676cbe65"
+    },
+    {
+      "archive_path": "PCB/jlc-check2/summary.json",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/evidence/jlc-check2/summary.json",
+      "bytes": 437,
+      "sha256": "d7309047942c251157ac85c329a432609e17926a959b6aef7ad662ac65d67886"
+    },
+    {
+      "archive_path": "PCB/layout-inventory.json",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/evidence/layout-inventory.json",
+      "bytes": 21388,
+      "sha256": "2d62dc1f2c8c6fe0fe2170257a1fe0e49d2b6dc894e3116fd5a73495efcaed1e"
+    },
+    {
+      "archive_path": "PCB/native-drc.json",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/evidence/native-drc.json",
+      "bytes": 1092,
+      "sha256": "4fb8a8c180afe4a9b7b386845bf05e056bfbc58baa7f76926e8f85f981db2e8d"
+    },
+    {
+      "archive_path": "PCB/native-erc.json",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/evidence/native-erc.json",
+      "bytes": 1008,
+      "sha256": "6f8abb9784429fb711b5cf1ce215103212cd2457e3943da40a216d4c093a6d40"
+    },
+    {
+      "archive_path": "PCB/native/Collar.kicad_sym",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/hardware/Collar.kicad_sym",
+      "bytes": 40496,
+      "sha256": "86c29b99b5d063eea3357c734dec4caf3c301edc6ee8ee3aeff470ca47df6c6f"
+    },
+    {
+      "archive_path": "PCB/native/Collar.pretty/Contact_1x05_P1.27mm.kicad_mod",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/hardware/Collar.pretty/Contact_1x05_P1.27mm.kicad_mod",
+      "bytes": 1861,
+      "sha256": "3981af8d7bd8fe3a38038ed006ce564639b6e7d3f7ae8b94c6c00a047ac3e2cb"
+    },
+    {
+      "archive_path": "PCB/native/Collar.pretty/Contact_2x03_P1.27mm.kicad_mod",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/hardware/Collar.pretty/Contact_2x03_P1.27mm.kicad_mod",
+      "bytes": 2043,
+      "sha256": "7ab465696aed4386ecb0f4dadc669ec2360785256c6dcc53b0e3c33c0aadd230"
+    },
+    {
+      "archive_path": "PCB/native/Collar.pretty/Contact_2x06_P1.27mm.kicad_mod",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/hardware/Collar.pretty/Contact_2x06_P1.27mm.kicad_mod",
+      "bytes": 3039,
+      "sha256": "d0dfe837bdb6a9dada5e2e5e993b89f17463169351cfff57469739d7086ff309"
+    },
+    {
+      "archive_path": "PCB/native/Collar.pretty/LGA_9151_12.1x11.1mm.kicad_mod",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/hardware/Collar.pretty/LGA_9151_12.1x11.1mm.kicad_mod",
+      "bytes": 19847,
+      "sha256": "6f9c2671f9240494f57498bf9ae4f9246e20ae1e968c71be27b7ec9aecc0ed7a"
+    },
+    {
+      "archive_path": "PCB/native/Collar.pretty/SKY65943_DK10171.kicad_mod",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/hardware/Collar.pretty/SKY65943_DK10171.kicad_mod",
+      "bytes": 5922,
+      "sha256": "1574637b0ccd24ab853a098e6dfb7afd983df622603f8102d69540bc5795a483"
+    },
+    {
+      "archive_path": "PCB/native/Collar.pretty/Solder_1x02_P2.5mm.kicad_mod",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/hardware/Collar.pretty/Solder_1x02_P2.5mm.kicad_mod",
+      "bytes": 1391,
+      "sha256": "71bf37b1cf9b18b30c3803baf4bd32b3e9df5c55fa3c118a3c46cac8f001b92a"
+    },
+    {
+      "archive_path": "PCB/native/Collar.pretty/Solder_1x03_P2.5mm.kicad_mod",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/hardware/Collar.pretty/Solder_1x03_P2.5mm.kicad_mod",
+      "bytes": 1540,
+      "sha256": "ebe32c51b1c2e764de90efee342f6f37b77fd42be004aa99b742eea2416de9e1"
+    },
+    {
+      "archive_path": "PCB/native/Collar.pretty/nRF9151_DK10171.kicad_mod",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/hardware/Collar.pretty/nRF9151_DK10171.kicad_mod",
+      "bytes": 24320,
+      "sha256": "97522259b3f159dd2fc2b9ba0d44aec470e340679b3ea67f3335e08f39d3491f"
+    },
+    {
+      "archive_path": "PCB/native/Collar033.pretty/C10_C_0402_1005Metric.kicad_mod",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/hardware/Collar033.pretty/C10_C_0402_1005Metric.kicad_mod",
+      "bytes": 3224,
+      "sha256": "c6979daf2bb9cc6d11a949704faa5e831247dd17cf694da33e51e3ffbd6103da"
+    },
+    {
+      "archive_path": "PCB/native/Collar033.pretty/C11_C_0402_1005Metric.kicad_mod",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/hardware/Collar033.pretty/C11_C_0402_1005Metric.kicad_mod",
+      "bytes": 3181,
+      "sha256": "2abf2cc6b1570567d5bd615b1cee383d01e99f51a5a16dafc7fb5261be33bf6e"
+    },
+    {
+      "archive_path": "PCB/native/Collar033.pretty/C12_C_0402_1005Metric.kicad_mod",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/hardware/Collar033.pretty/C12_C_0402_1005Metric.kicad_mod",
+      "bytes": 3181,
+      "sha256": "62ac1c006f1057cf7031fdd98e13873c73151e9cec7927809278d9f6b866b354"
+    },
+    {
+      "archive_path": "PCB/native/Collar033.pretty/C13_C_0402_1005Metric.kicad_mod",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/hardware/Collar033.pretty/C13_C_0402_1005Metric.kicad_mod",
+      "bytes": 3174,
+      "sha256": "2b9312fd2e4330ae40e9272e7c6ba9daf2846575a1b7ad01a83141fad0d93600"
+    },
+    {
+      "archive_path": "PCB/native/Collar033.pretty/C14_C_0402_1005Metric.kicad_mod",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/hardware/Collar033.pretty/C14_C_0402_1005Metric.kicad_mod",
+      "bytes": 3174,
+      "sha256": "b3c9e22fe35cb49e6aa93c8736a9e47fa3478ba9ea11bef51dd894aa96cf8ae3"
+    },
+    {
+      "archive_path": "PCB/native/Collar033.pretty/C15_C_0402_1005Metric.kicad_mod",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/hardware/Collar033.pretty/C15_C_0402_1005Metric.kicad_mod",
+      "bytes": 3168,
+      "sha256": "3a913e4711191967dcff66077f568c66478bdf760843a90f613f754e5b289e80"
+    },
+    {
+      "archive_path": "PCB/native/Collar033.pretty/C16_C_0402_1005Metric.kicad_mod",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/hardware/Collar033.pretty/C16_C_0402_1005Metric.kicad_mod",
+      "bytes": 3170,
+      "sha256": "0e185c617b5ef69fa5d994b0fe1fa69f364f500eb778f78befbb5d4ced381498"
+    },
+    {
+      "archive_path": "PCB/native/Collar033.pretty/C17_C_0402_1005Metric.kicad_mod",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/hardware/Collar033.pretty/C17_C_0402_1005Metric.kicad_mod",
+      "bytes": 3215,
+      "sha256": "05b6a16cdeb69b5c6389c31593a02cad537f6eae01def5538dd8023e804bafa8"
+    },
+    {
+      "archive_path": "PCB/native/Collar033.pretty/C18_C_0603_1608Metric.kicad_mod",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/hardware/Collar033.pretty/C18_C_0603_1608Metric.kicad_mod",
+      "bytes": 3164,
+      "sha256": "6657e6b516e85dee22d528ea983b52682cd6d9b4367b00d831508d1ebb1a1eee"
+    },
+    {
+      "archive_path": "PCB/native/Collar033.pretty/C19_C_0402_1005Metric.kicad_mod",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/hardware/Collar033.pretty/C19_C_0402_1005Metric.kicad_mod",
+      "bytes": 3171,
+      "sha256": "0b5f63f1b8dc4984e3ebcd86d635547c669ff5745df36cb6398065a3113aeec7"
+    },
+    {
+      "archive_path": "PCB/native/Collar033.pretty/C1_C_0201_0603Metric.kicad_mod",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/hardware/Collar033.pretty/C1_C_0201_0603Metric.kicad_mod",
+      "bytes": 3249,
+      "sha256": "7763dff61e6199dbf3eaef9894893f7034ee100e6bb7b06ca1a30822384d2b5e"
+    },
+    {
+      "archive_path": "PCB/native/Collar033.pretty/C20_C_0402_1005Metric.kicad_mod",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/hardware/Collar033.pretty/C20_C_0402_1005Metric.kicad_mod",
+      "bytes": 3166,
+      "sha256": "cc773c272221884fe7fd2de08db18f7c7ef0d8c8b4f46c3e0682dba68012ee38"
+    },
+    {
+      "archive_path": "PCB/native/Collar033.pretty/C21_C_0402_1005Metric.kicad_mod",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/hardware/Collar033.pretty/C21_C_0402_1005Metric.kicad_mod",
+      "bytes": 3166,
+      "sha256": "a34dbb59f4dcc06ee4ec1fc1d8489edf82a055ccc6ab9feba3e0c10501e9e9d7"
+    },
+    {
+      "archive_path": "PCB/native/Collar033.pretty/C22_C_0402_1005Metric.kicad_mod",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/hardware/Collar033.pretty/C22_C_0402_1005Metric.kicad_mod",
+      "bytes": 3223,
+      "sha256": "110409f187231e12a41f27c13c386184f8ddc347d4566295235a604e76f66cab"
+    },
+    {
+      "archive_path": "PCB/native/Collar033.pretty/C23_C_0402_1005Metric.kicad_mod",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/hardware/Collar033.pretty/C23_C_0402_1005Metric.kicad_mod",
+      "bytes": 3168,
+      "sha256": "250d977ef3220995de51b326bc63ed1f505a055c511af24f301d6d20fb1eb6c6"
+    },
+    {
+      "archive_path": "PCB/native/Collar033.pretty/C24_C_0402_1005Metric.kicad_mod",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/hardware/Collar033.pretty/C24_C_0402_1005Metric.kicad_mod",
+      "bytes": 3168,
+      "sha256": "0a9de50b2e2d1e8c55101763838ae866b2915fe6fbdc3c70450d4257c4f696fb"
+    },
+    {
+      "archive_path": "PCB/native/Collar033.pretty/C2_C_0201_0603Metric.kicad_mod",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/hardware/Collar033.pretty/C2_C_0201_0603Metric.kicad_mod",
+      "bytes": 3253,
+      "sha256": "d85e88bcd34d7f29e3cb3ad5c1be072bd87bc8a8e19ccbdcc591014a04e53314"
+    },
+    {
+      "archive_path": "PCB/native/Collar033.pretty/C3_C_0805_2012Metric.kicad_mod",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/hardware/Collar033.pretty/C3_C_0805_2012Metric.kicad_mod",
+      "bytes": 3286,
+      "sha256": "405776fef0e2e1600e1b1a26a2590a0f7b3bc3934df879f017e955c607b5fb1b"
+    },
+    {
+      "archive_path": "PCB/native/Collar033.pretty/C4_C_0603_1608Metric.kicad_mod",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/hardware/Collar033.pretty/C4_C_0603_1608Metric.kicad_mod",
+      "bytes": 3236,
+      "sha256": "a15bb79f398400efb19cb1585167216ee4c674a6d2c466c3a8874bc39c12f5f9"
+    },
+    {
+      "archive_path": "PCB/native/Collar033.pretty/C5_C_0201_0603Metric.kicad_mod",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/hardware/Collar033.pretty/C5_C_0201_0603Metric.kicad_mod",
+      "bytes": 3246,
+      "sha256": "1473b6bf4c844075dec24fe9668ef5e95ec06ef1a30ca4aa7d0b31cb4931ae89"
+    },
+    {
+      "archive_path": "PCB/native/Collar033.pretty/C6_C_0402_1005Metric.kicad_mod",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/hardware/Collar033.pretty/C6_C_0402_1005Metric.kicad_mod",
+      "bytes": 3184,
+      "sha256": "ae9619ad00b2dbfcc2f013fd4f2dcead095eb0b8b0f85eab762b25e2bb79c4d4"
+    },
+    {
+      "archive_path": "PCB/native/Collar033.pretty/C7_C_0402_1005Metric.kicad_mod",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/hardware/Collar033.pretty/C7_C_0402_1005Metric.kicad_mod",
+      "bytes": 3184,
+      "sha256": "cd8a0758a3706568db3c39191831ffda7f8c7c3876d7eeba245df9d312a2a397"
+    },
+    {
+      "archive_path": "PCB/native/Collar033.pretty/C8_C_0201_0603Metric.kicad_mod",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/hardware/Collar033.pretty/C8_C_0201_0603Metric.kicad_mod",
+      "bytes": 3285,
+      "sha256": "d5708e53aff9dd88db27242ef8635db325fd7e3392ef6887ad0d1a5b96549828"
+    },
+    {
+      "archive_path": "PCB/native/Collar033.pretty/C9_C_0402_1005Metric.kicad_mod",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/hardware/Collar033.pretty/C9_C_0402_1005Metric.kicad_mod",
+      "bytes": 3211,
+      "sha256": "f75f9550952af02e2fae9f00b30a55191dc96431f3c4c2a39766fea1a1b566c8"
+    },
+    {
+      "archive_path": "PCB/native/Collar033.pretty/FB1_L_0603_1608Metric.kicad_mod",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/hardware/Collar033.pretty/FB1_L_0603_1608Metric.kicad_mod",
+      "bytes": 3248,
+      "sha256": "3535a30a95541b65ace816f04f60d067ff1d8f7cd9030a7edfa38d85c2131c07"
+    },
+    {
+      "archive_path": "PCB/native/Collar033.pretty/J1_U.FL_Hirose_U.FL-R-SMT-1_Vertical.kicad_mod",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/hardware/Collar033.pretty/J1_U.FL_Hirose_U.FL-R-SMT-1_Vertical.kicad_mod",
+      "bytes": 31017,
+      "sha256": "e7fd1891b15d3b7b9f69aeb333b63bef2d4bde30f0181c6ec41177f38ed4598b"
+    },
+    {
+      "archive_path": "PCB/native/Collar033.pretty/J2_U.FL_Hirose_U.FL-R-SMT-1_Vertical.kicad_mod",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/hardware/Collar033.pretty/J2_U.FL_Hirose_U.FL-R-SMT-1_Vertical.kicad_mod",
+      "bytes": 31038,
+      "sha256": "1f37c60c94f442bc48cfcabff152b07f00f8329c2709261f58125f9a7ea271c1"
+    },
+    {
+      "archive_path": "PCB/native/Collar033.pretty/J3_Solder_1x02_P2.5mm.kicad_mod",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/hardware/Collar033.pretty/J3_Solder_1x02_P2.5mm.kicad_mod",
+      "bytes": 1924,
+      "sha256": "6a9d7f3e2cf4bf56909daccc19221b7f12e91998db966a0d4781c806c47df9d5"
+    },
+    {
+      "archive_path": "PCB/native/Collar033.pretty/J4_Solder_1x03_P2.5mm.kicad_mod",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/hardware/Collar033.pretty/J4_Solder_1x03_P2.5mm.kicad_mod",
+      "bytes": 2156,
+      "sha256": "5ed2b9fa2c5114b68d2bd717ee6698c58bab29eedb34e81c249fd9a33d428e26"
+    },
+    {
+      "archive_path": "PCB/native/Collar033.pretty/J5_Contact_2x06_P1.27mm.kicad_mod",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/hardware/Collar033.pretty/J5_Contact_2x06_P1.27mm.kicad_mod",
+      "bytes": 3916,
+      "sha256": "a9a69d41dcd5b654020a97ab24c98a6a9dc1cf04c401b1e222728ace2b32cc70"
+    },
+    {
+      "archive_path": "PCB/native/Collar033.pretty/J6_Contact_1x05_P1.27mm.kicad_mod",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/hardware/Collar033.pretty/J6_Contact_1x05_P1.27mm.kicad_mod",
+      "bytes": 2535,
+      "sha256": "0b733e47472e02efaa666a21d11ee8feb46b9894dd34ad4b3e26110eff134757"
+    },
+    {
+      "archive_path": "PCB/native/Collar033.pretty/J7_Contact_2x03_P1.27mm.kicad_mod",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/hardware/Collar033.pretty/J7_Contact_2x03_P1.27mm.kicad_mod",
+      "bytes": 2732,
+      "sha256": "a62ac7c8a4dc07aa263cbd6727fab20858231c7cf5f4f675d5bfd88ee52bcd0c"
+    },
+    {
+      "archive_path": "PCB/native/Collar033.pretty/L1_L_0402_1005Metric.kicad_mod",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/hardware/Collar033.pretty/L1_L_0402_1005Metric.kicad_mod",
+      "bytes": 2797,
+      "sha256": "f981b11953bab8a25bc5c156c6f9d0324e9d5fa7ac655b42bef55193b6f6fb8a"
+    },
+    {
+      "archive_path": "PCB/native/Collar033.pretty/R10_R_0402_1005Metric.kicad_mod",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/hardware/Collar033.pretty/R10_R_0402_1005Metric.kicad_mod",
+      "bytes": 3222,
+      "sha256": "fdda4c1ebd4d2109a069dee8d05eedc8c20614fea296b8e186030b60f99cf8fa"
+    },
+    {
+      "archive_path": "PCB/native/Collar033.pretty/R11_R_0402_1005Metric.kicad_mod",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/hardware/Collar033.pretty/R11_R_0402_1005Metric.kicad_mod",
+      "bytes": 3222,
+      "sha256": "12e51c40219b4de8438f7a37b3d6969abd3380ac5fadb26dfcb02eee7d3e1339"
+    },
+    {
+      "archive_path": "PCB/native/Collar033.pretty/R12_R_0402_1005Metric.kicad_mod",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/hardware/Collar033.pretty/R12_R_0402_1005Metric.kicad_mod",
+      "bytes": 3168,
+      "sha256": "11a841a9038df488bbba7bef06b251423f47560dd8cd702ffb2b2f4005afdfaf"
+    },
+    {
+      "archive_path": "PCB/native/Collar033.pretty/R13_R_0402_1005Metric.kicad_mod",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/hardware/Collar033.pretty/R13_R_0402_1005Metric.kicad_mod",
+      "bytes": 3168,
+      "sha256": "8ef24daa15698c0d6a94b361f044c203b7bb3a7203800245dc16e71551456ed4"
+    },
+    {
+      "archive_path": "PCB/native/Collar033.pretty/R14_R_0402_1005Metric.kicad_mod",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/hardware/Collar033.pretty/R14_R_0402_1005Metric.kicad_mod",
+      "bytes": 3224,
+      "sha256": "45f19e41bedde28933868be87888d2c1d7c2b96d79b4a20b628873cd524a1337"
+    },
+    {
+      "archive_path": "PCB/native/Collar033.pretty/R15_R_0402_1005Metric.kicad_mod",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/hardware/Collar033.pretty/R15_R_0402_1005Metric.kicad_mod",
+      "bytes": 3224,
+      "sha256": "ac9e19ba62c986234cfe79096d4d43438bca5d5c6f4d130b9fb3676450fe5702"
+    },
+    {
+      "archive_path": "PCB/native/Collar033.pretty/R1_R_0402_1005Metric.kicad_mod",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/hardware/Collar033.pretty/R1_R_0402_1005Metric.kicad_mod",
+      "bytes": 3210,
+      "sha256": "7ddc0b254b8e38208f589f134068b95213714a020050120c4bdbc7f65ad1a309"
+    },
+    {
+      "archive_path": "PCB/native/Collar033.pretty/R2_R_0402_1005Metric.kicad_mod",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/hardware/Collar033.pretty/R2_R_0402_1005Metric.kicad_mod",
+      "bytes": 3221,
+      "sha256": "241b741c690eda6f40d7f57a1397ecdff1b6905cb598acca77765740954e2776"
+    },
+    {
+      "archive_path": "PCB/native/Collar033.pretty/R3_R_0402_1005Metric.kicad_mod",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/hardware/Collar033.pretty/R3_R_0402_1005Metric.kicad_mod",
+      "bytes": 3172,
+      "sha256": "a4f6a3bb7a3aa2e353a322bf4ba80e3521841f500786302edc77a5fd81838d80"
+    },
+    {
+      "archive_path": "PCB/native/Collar033.pretty/R4_R_0402_1005Metric.kicad_mod",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/hardware/Collar033.pretty/R4_R_0402_1005Metric.kicad_mod",
+      "bytes": 3165,
+      "sha256": "ab0e3d95b0a76b3fccc4c63aaaf3062b80c93d5f42063717cc2ef302cffe12c3"
+    },
+    {
+      "archive_path": "PCB/native/Collar033.pretty/R5_R_0402_1005Metric.kicad_mod",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/hardware/Collar033.pretty/R5_R_0402_1005Metric.kicad_mod",
+      "bytes": 3167,
+      "sha256": "16cd27a2f21f244ff96b74a0abb1761652b8633a62eb780e935e0c65c7ef86d5"
+    },
+    {
+      "archive_path": "PCB/native/Collar033.pretty/R6_R_0402_1005Metric.kicad_mod",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/hardware/Collar033.pretty/R6_R_0402_1005Metric.kicad_mod",
+      "bytes": 3203,
+      "sha256": "372d21b7cf3a97a0441379572637a159046de9ffd484d7d9508196ad82cbfe76"
+    },
+    {
+      "archive_path": "PCB/native/Collar033.pretty/R7_R_0402_1005Metric.kicad_mod",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/hardware/Collar033.pretty/R7_R_0402_1005Metric.kicad_mod",
+      "bytes": 3204,
+      "sha256": "18516556324a6b554e96fb63fd5241882921fcaabbe2a2bb82e5ee82da5fb372"
+    },
+    {
+      "archive_path": "PCB/native/Collar033.pretty/R8_R_0402_1005Metric.kicad_mod",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/hardware/Collar033.pretty/R8_R_0402_1005Metric.kicad_mod",
+      "bytes": 3222,
+      "sha256": "2210d68f15e57fb6855d1807796d43414d69998d9f5b4804bcf15ce71d66fef9"
+    },
+    {
+      "archive_path": "PCB/native/Collar033.pretty/R9_R_0402_1005Metric.kicad_mod",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/hardware/Collar033.pretty/R9_R_0402_1005Metric.kicad_mod",
+      "bytes": 3222,
+      "sha256": "751cb577bd5a956af2f03dd54ae8acd7a6f844c0d358b541cffd27691547bd43"
+    },
+    {
+      "archive_path": "PCB/native/Collar033.pretty/U1_LGA_9151_12.1x11.1mm.kicad_mod",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/hardware/Collar033.pretty/U1_LGA_9151_12.1x11.1mm.kicad_mod",
+      "bytes": 26726,
+      "sha256": "85f27d9f23a7de99ed89a79ac72e134676806cbda51075ba72601f37597a14e9"
+    },
+    {
+      "archive_path": "PCB/native/Collar033.pretty/U2_SKY65943_DK10171.kicad_mod",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/hardware/Collar033.pretty/U2_SKY65943_DK10171.kicad_mod",
+      "bytes": 7215,
+      "sha256": "d6baf9ece136a2771f548473fc3354c29c51a503faf7a2d8cd1d04533b974e43"
+    },
+    {
+      "archive_path": "PCB/native/Collar033.pretty/U3_Texas_DLH0010A_WSON-10-1EP_2.2x2mm_P0.4mm_EP0.9x1.5mm.kicad_mod",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/hardware/Collar033.pretty/U3_Texas_DLH0010A_WSON-10-1EP_2.2x2mm_P0.4mm_EP0.9x1.5mm.kicad_mod",
+      "bytes": 6904,
+      "sha256": "2cf557f6eb65938bef781888a0366065d26b4dd01e2d07b120878d7febd92006"
+    },
+    {
+      "archive_path": "PCB/native/Collar033.pretty/U4_SOT-23-5.kicad_mod",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/hardware/Collar033.pretty/U4_SOT-23-5.kicad_mod",
+      "bytes": 7157,
+      "sha256": "b177e0f440415042888117f9b0bc1b7c04844dbcfdf4eaa6c615b08443e79c16"
+    },
+    {
+      "archive_path": "PCB/native/Collar033.pretty/U5_LGA-12_2x2mm_P0.5mm.kicad_mod",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/hardware/Collar033.pretty/U5_LGA-12_2x2mm_P0.5mm.kicad_mod",
+      "bytes": 7206,
+      "sha256": "dee83f6942dba70edbd45f20d3044d6c938434626b7261030e9a2f9e87d14824"
+    },
+    {
+      "archive_path": "PCB/native/Collar04.pretty/SIM8051_6_0_14_00_A.kicad_mod",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/hardware/Collar04.pretty/SIM8051_6_0_14_00_A.kicad_mod",
+      "bytes": 6311,
+      "sha256": "60162a9ca77948d0e80159e9bf13bc0d72917df7c2cf07662d20c4e6dc84955e"
+    },
+    {
+      "archive_path": "PCB/native/Collar04.pretty/TPD4E1U06DCKR.kicad_mod",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/hardware/Collar04.pretty/TPD4E1U06DCKR.kicad_mod",
+      "bytes": 4891,
+      "sha256": "621c291775e4fcf642ba210e6d6e869c74a77e75b85d8bb8edec45ad6e2c9241"
+    },
+    {
+      "archive_path": "PCB/native/bom.csv",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/hardware/bom.csv",
+      "bytes": 4881,
+      "sha256": "902496bafc40fd9d5f26a3c2ee1428ae1522b4196c3a75af7293411366615db7"
+    },
+    {
+      "archive_path": "PCB/native/collar-tracker.kicad_dru",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/hardware/collar-tracker.kicad_dru",
+      "bytes": 245,
+      "sha256": "e6523f50e6e0f12cea613a984946bb5d9be0111d7ed8610b04b246e8650651d0"
+    },
+    {
+      "archive_path": "PCB/native/collar-tracker.kicad_pcb",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/hardware/collar-tracker.kicad_pcb",
+      "bytes": 759093,
+      "sha256": "f4be0288708733aaa6092a703ffa1bfebb3dc059fd21112a8cfed94028acc3b0"
+    },
+    {
+      "archive_path": "PCB/native/collar-tracker.kicad_pro",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/hardware/collar-tracker.kicad_pro",
+      "bytes": 11981,
+      "sha256": "284b012adf394e1ce66fbc8664f97469f2c5cd49401707de5b49f2badf1686a8"
+    },
+    {
+      "archive_path": "PCB/native/collar-tracker.kicad_sch",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/hardware/collar-tracker.kicad_sch",
+      "bytes": 140347,
+      "sha256": "cb7bba3d7911e83a3507a38ab0f5061fddb0292492df89d7e3aedc90709eb698"
+    },
+    {
+      "archive_path": "PCB/native/design.json",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/hardware/design.json",
+      "bytes": 22602,
+      "sha256": "968ed3f30dea39a7ffb2ee12ffe2ae88c7659144228db9bb81538a01b84da815"
+    },
+    {
+      "archive_path": "PCB/native/fp-lib-table",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/hardware/fp-lib-table",
+      "bytes": 1470,
+      "sha256": "01e4bbdc8ec7d1878174fe0630661dc8ea6fdfd8c98fdb0ca08f465796c68f96"
+    },
+    {
+      "archive_path": "PCB/native/sym-lib-table",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/hardware/sym-lib-table",
+      "bytes": 147,
+      "sha256": "50ea27efc7de404cb2df963684b208f00a21fc821fb74d9f9b1a1fe958a70baa"
+    },
+    {
+      "archive_path": "PCB/passive-copper-review.json",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/evidence/passive-copper-review.json",
+      "bytes": 31486,
+      "sha256": "db3bafdc56c9c9581ae17b50465b5fda660a59583e9018a14017d22dd3fa003f"
+    },
+    {
+      "archive_path": "PCB/power-path-review.json",
+      "source_path": "experiments/paul-nanosim-r04i-sim-access-40x32/evidence/power-path-review.json",
+      "bytes": 37592,
+      "sha256": "28d07d7ac01e24ef946067031c20ba580e563471d46eb08a891573b1bf61fa5f"
+    },
+    {
+      "archive_path": "START-HERE.txt",
+      "source_path": null,
+      "bytes": 1522,
+      "sha256": "6be2734e6253d9dd1827589c31a2565508f8481f00f1fda9537a279e0d366d9f"
+    },
+    {
+      "archive_path": "mechanical/README.md",
+      "source_path": "mechanical/swim-r01/README.md",
+      "bytes": 9258,
+      "sha256": "f2fb3a7108f9e64ecfde70f581f8475a800e3eb85a2782f0aa254b2f198c54a8"
+    },
+    {
+      "archive_path": "mechanical/body.stl",
+      "source_path": "mechanical/swim-r01/body.stl",
+      "bytes": 1041884,
+      "sha256": "43990bb96baecf8d046ee9c75e513cf65be3cb556556378c8401f75891941092"
+    },
+    {
+      "archive_path": "mechanical/boot.stl",
+      "source_path": "mechanical/swim-r01/boot.stl",
+      "bytes": 61884,
+      "sha256": "0cb7c7064516b1cb77d4474fbc47943505f526937302ad31346d3aba10752a34"
+    },
+    {
+      "archive_path": "mechanical/carrier.stl",
+      "source_path": "mechanical/swim-r01/carrier.stl",
+      "bytes": 47884,
+      "sha256": "250eaf0f9c51ea76767c0750771fe7691219bbdb3e01807b31beeadf79c8f105"
+    },
+    {
+      "archive_path": "mechanical/checks.json",
+      "source_path": "mechanical/swim-r01/checks.json",
+      "bytes": 4846,
+      "sha256": "14d4e0446f7173389e2544ad33f0404d6d53d4dcb76e407eeab2caf763eae864"
+    },
+    {
+      "archive_path": "mechanical/contact.stl",
+      "source_path": "mechanical/swim-r01/contact.stl",
+      "bytes": 95884,
+      "sha256": "0f1ab4d70f90d8d088449aaaed73a0f6f8d23d742f71ebbc66eee6a6eac97310"
+    },
+    {
+      "archive_path": "mechanical/contact_seal.stl",
+      "source_path": "mechanical/swim-r01/contact_seal.stl",
+      "bytes": 921684,
+      "sha256": "309155bd7fe66d11baa5d0c4c2e9514fffb0d2ed44eb2ef7e21ebc39af609eac"
+    },
+    {
+      "archive_path": "mechanical/dock.stl",
+      "source_path": "mechanical/swim-r01/dock.stl",
+      "bytes": 117084,
+      "sha256": "c4f45452dabe81fa5ecab6c04b1e049215521cbbd85755e55e94f31c79298c58"
+    },
+    {
+      "archive_path": "mechanical/drawing.pdf",
+      "source_path": "mechanical/swim-r01/drawing.pdf",
+      "bytes": 125836,
+      "sha256": "ff1fd0c3d93821a4d19cc0038e482965eda82278a1cbc557a52d8583476dc5fa"
+    },
+    {
+      "archive_path": "mechanical/drawing.png",
+      "source_path": "mechanical/swim-r01/drawing.png",
+      "bytes": 244258,
+      "sha256": "339adf1b27d630108ea16c56ce60d968f4c18091452bad677403407c7a255923"
+    },
+    {
+      "archive_path": "mechanical/drawing.svg",
+      "source_path": "mechanical/swim-r01/drawing.svg",
+      "bytes": 4936,
+      "sha256": "2e7d6515569b4807750dca4958ddc6672711d456859bfee67c9482609a65bd14"
+    },
+    {
+      "archive_path": "mechanical/enclosure.scad",
+      "source_path": "mechanical/swim-r01/enclosure.scad",
+      "bytes": 7885,
+      "sha256": "d25ef42141270225bb56e873c6cc3b6d3937f7f161a4abe64f7a24ca1eedfb99"
+    },
+    {
+      "archive_path": "mechanical/exploded.png",
+      "source_path": "mechanical/swim-r01/exploded.png",
+      "bytes": 87877,
+      "sha256": "3c0592cafcc6353e17bfaccc709611973bb0ca478e84172baab6660d56be9726"
+    },
+    {
+      "archive_path": "mechanical/lid.stl",
+      "source_path": "mechanical/swim-r01/lid.stl",
+      "bytes": 174284,
+      "sha256": "055abadc8c17a5bbed6be42840e5c4653a1382d2670064d2f40193be5ad64b65"
+    },
+    {
+      "archive_path": "mechanical/magnet_plug.stl",
+      "source_path": "mechanical/swim-r01/magnet_plug.stl",
+      "bytes": 19884,
+      "sha256": "1bfe436b31b425f5976cf7c830fee9278e13a6979fc562ba9260b005d03105d2"
+    },
+    {
+      "archive_path": "mechanical/mechanical-bom.csv",
+      "source_path": "mechanical/swim-r01/mechanical-bom.csv",
+      "bytes": 1732,
+      "sha256": "1ddafbc355477b19b8a8548bee5533f1432ba558253ec4a7b3bd12ce23042880"
+    },
+    {
+      "archive_path": "mechanical/mesh-checks.json",
+      "source_path": "mechanical/swim-r01/mesh-checks.json",
+      "bytes": 6305,
+      "sha256": "248286252e231584146ec2114c0d33a4b963705bdf354ada494026ab5bf61c3d"
+    },
+    {
+      "archive_path": "mechanical/mounted.png",
+      "source_path": "mechanical/swim-r01/mounted.png",
+      "bytes": 82886,
+      "sha256": "605c71e19170b0fd27109a6ab8641bad0e8d51440a1bcdfa24517100e1fa9a43"
+    },
+    {
+      "archive_path": "mechanical/overview.pdf",
+      "source_path": "mechanical/swim-r01/overview.pdf",
+      "bytes": 351057,
+      "sha256": "2933e4c2ff002a897fa8dafe39b27602293ce28f8147cc5d37b58db342b10544"
+    },
+    {
+      "archive_path": "mechanical/overview.png",
+      "source_path": "mechanical/swim-r01/overview.png",
+      "bytes": 346011,
+      "sha256": "8739f6e55dd7e091b9d60e56525654b33c80c86a8049d935098732de31b5d0da"
+    },
+    {
+      "archive_path": "mechanical/overview.svg",
+      "source_path": "mechanical/swim-r01/overview.svg",
+      "bytes": 480000,
+      "sha256": "ac61093ddf5c7027a167738eb4f395110db66a2a29e78a5d2524ead5ccddd46c"
+    },
+    {
+      "archive_path": "mechanical/parameters.json",
+      "source_path": "mechanical/swim-r01/parameters.json",
+      "bytes": 3969,
+      "sha256": "f1afd779e52a872c9da8fea4351b54ed7e82b2790a3cb5352a274883a7b8dae5"
+    },
+    {
+      "archive_path": "mechanical/parameters.scad",
+      "source_path": "mechanical/swim-r01/parameters.scad",
+      "bytes": 1224,
+      "sha256": "645cf573e7154bd1de78ce9229fee5a1070e216f2b4f75295c43726038eb8c37"
+    },
+    {
+      "archive_path": "mechanical/section.png",
+      "source_path": "mechanical/swim-r01/section.png",
+      "bytes": 60225,
+      "sha256": "cf25d02ad34b5cc182ae6d1d8e54331755abeac6ac6853d4785de27f333fe06b"
+    },
+    {
+      "archive_path": "review.pdf",
+      "source_path": "mechanical/swim-r01/review.pdf",
+      "bytes": 478338,
+      "sha256": "ccd1b2a0fbb346ed5b6c4b4906f51a163bdb5f5f9a521c5a1bb7139580a33bb9"
+    }
+  ],
+  "package": "release/collar-tracker-r04i-swim-r01-review.zip",
+  "zip_sha256": "21e3f0573d7cc0b6ef8b13118e3d23182f1fe0f6fd29d14bfad34404460a6805"
+}

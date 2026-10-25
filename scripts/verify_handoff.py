@@ -32,7 +32,121 @@ def sha(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
-def verify():
+def verify_current():
+    trial=ROOT/'experiments/paul-nanosim-r04i-sim-access-40x32'
+    evidence=trial/'evidence'
+    checkpoint=json.loads((evidence/'routing-checkpoint.json').read_text())
+    for item in checkpoint['files']:
+        path=(trial/item['path']).resolve()
+        require(path.is_relative_to(trial),'Current evidence path escapes trial')
+        require(path.stat().st_size==item['bytes'] and sha(path)==item['sha256'],f'Current evidence changed: {item["path"]}')
+    source=sha(trial/'hardware/collar-tracker.kicad_pcb')
+    require(source==checkpoint['source_sha256'],'Current PCB identity mismatch')
+    package=ROOT/checkpoint['package']
+    require(sha(package)==checkpoint['zip_sha256'],'Current ZIP identity mismatch')
+    exported=json.loads((package.with_suffix('')/'manifest.json').read_text())
+    require(exported['source_sha256']==source and exported['zip_sha256']==checkpoint['zip_sha256'],'Export does not match current PCB/ZIP')
+    require(all(sha(trial/'hardware'/n)==digest for n,digest in exported['native_input_sha256'].items()),'Export inputs differ from current native project')
+    with zipfile.ZipFile(package) as z:
+        require(z.testzip() is None and len(z.namelist())==14,'Invalid current ZIP')
+        for name in z.namelist():
+            require(Path(name).name==name,'Unexpected current ZIP path')
+            require(z.read(name)==(package.with_suffix('')/'gerbers'/name).read_bytes(),f'Current package mismatch: {name}')
+    drc=json.loads((evidence/'native-drc.json').read_text())
+    require(not any(drc[k] for k in ['violations','unconnected_items','schematic_parity']),'Current saved DRC failed')
+    erc=json.loads((evidence/'native-erc.json').read_text())
+    require(all(not s['violations'] for s in erc['sheets']),'Current saved ERC failed')
+    reports={name:json.loads((evidence/(name+'.json')).read_text()) for name in ['layout-inventory','contact-components','esd-paths','card-insertion-review','attachment-review','passive-copper-review','power-path-review','route-geometry']}
+    require(all(d['source_sha256']==source for d in reports.values()),'Stale current geometry report')
+    inv=reports['layout-inventory']
+    require(inv['returns_outside_2mm']==inv['inner_tracks']==0 and inv['rf_segments_preserved'],'Current layout screen failed')
+    require(all(p['filled_outline_count']==1 and p['zone_nets']==['/GND'] and not p['ground_vias_outside'] for p in inv['planes'].values()),'Current inner GND fill failed')
+    require(not reports['contact-components']['ground_pads_without_track_path_to_via'],'Missing local GND path')
+    paths=reports['esd-paths']['paths']
+    require(len(paths)==4 and all(not p['bypasses_esd_land'] and p['connector_to_esd'] and p['esd_to_modem'] for p in paths),'Current SIM protection topology failed')
+    require(reports['card-insertion-review']['pcb_entry_projection_clear'],'Current card-entry projection failed')
+    records=set()
+    for n in [1,2]:
+        folder=evidence/f'jlc-check{n}'
+        receipt=json.loads((folder/'receipt.json').read_text());records.add(receipt['record_id'])
+        require(receipt['zip_sha256']==checkpoint['zip_sha256'],'Wrong current supplier input')
+        require(sha(folder/'rules.json')==RULES_SHA,'Current supplier rules changed')
+        rows=re.findall(r'([^\n]+)\t(\d+),\s*(\d+),\s*(\d+)\tDetails',(folder/'rows.txt').read_text())
+        require(len(rows)==29 and all(int(d)==int(w)==0 for _,d,w,_ in rows),'Current JLC rows not green')
+        report=json.loads((folder/'dfm.json').read_text())
+        for action in report['actions']:
+            if action['name']=='jlc_analysis_smt':
+                require(not action['results'],'Current SMT scope changed');continue
+            require(action['results'],f'Current unanalyzed action: {action["name"]}')
+            for layer in action['results']:
+                for m in layer.get('meas') or []:
+                    c=action['categories'][m['cat_num']];s=m['meas_shape']
+                    require(c['type']=='CGT_LINE_SEGMENT' and len(s)==5 and s[2]=='L','Unknown current supplier geometry')
+                    require(math.hypot(s[3]-s[0],s[4]-s[1])>=c['range'][1],'Current supplier measurement not green')
+    require(len(records)==2 and records==set(checkpoint['supplier_records']),'Wrong current supplier records')
+    return {'revision':'r04i','files':len(checkpoint['files']),'source_sha256':source,'supplier_records':sorted(records),'result':'PASS'}
+
+
+def verify_mechanical(pcb_sha):
+    folder = ROOT / 'mechanical/swim-r01'
+    parameters = json.loads((folder / 'parameters.json').read_text())
+    checks = json.loads((folder / 'checks.json').read_text())
+    meshes = json.loads((folder / 'mesh-checks.json').read_text())
+    require(checks['source_sha256'] == meshes['pcb_sha256'] == pcb_sha,
+            'Mechanical evidence references another PCB')
+    require(checks['parameter_sha256'] == sha(folder / 'parameters.json'),
+            'Stale mechanical parameter checks')
+    require(checks['checker_sha256'] == sha(ROOT / 'scripts/build_swim_enclosure.py'),
+            'Mechanical checker changed since saved results')
+    require(checks['all_declared_geometry_checks_pass'] and len(checks['checks']) == 30
+            and all(c['pass_'] for c in checks['checks']), 'Mechanical geometry screen failed')
+    require(not parameters['target']['qualified'], 'Prototype unexpectedly claims qualification')
+    require(set(meshes['cad_input_sha256']) == {'parameters.json', 'parameters.scad', 'enclosure.scad'},
+            'Incomplete mechanical CAD identity')
+    for name, digest in meshes['cad_input_sha256'].items():
+        require(sha(folder / name) == digest, f'CAD changed since mesh export: {name}')
+    expected = {n + '.stl' for n in ['body', 'lid', 'carrier', 'contact', 'contact_seal',
+                                    'magnet_plug', 'dock', 'boot']}
+    require(len(meshes['meshes']) == 8 and {m['file'] for m in meshes['meshes']} == expected,
+            'Incomplete exported mesh set')
+    for mesh in meshes['meshes']:
+        require(sha(folder / mesh['file']) == mesh['sha256'], f'Mesh changed: {mesh["file"]}')
+        require(mesh['closed_oriented_manifold'] and mesh['connected_surfaces'] == 1
+                and mesh['bad_edge_count'] == mesh['collapsed_faces_at_1e_5mm'] == 0,
+                f'Exported mesh failed: {mesh["file"]}')
+    require(set(meshes['previews']) == {'exploded.png', 'section.png', 'mounted.png'},
+            'Incomplete mechanical preview set')
+    for name, digest in meshes['previews'].items():
+        require(sha(folder / name) == digest, f'Mechanical preview changed: {name}')
+    return {'revision': 'swim-r01', 'analytical_checks': 30, 'closed_meshes': 8,
+            'result': 'PASS', 'ingress_qualified': False}
+
+
+def verify_review_bundle():
+    sidecar = read_json('release/collar-tracker-r04i-swim-r01-review.json')
+    path = ROOT / sidecar['package']
+    require(path.is_relative_to(ROOT / 'release') and sha(path) == sidecar['zip_sha256'],
+            'Review bundle identity mismatch')
+    with zipfile.ZipFile(path) as z:
+        require(z.testzip() is None, 'Corrupt review bundle')
+        manifest = json.loads(z.read('manifest.json'))
+        require(manifest == {k: v for k, v in sidecar.items() if k not in {'package', 'zip_sha256'}},
+                'Review bundle manifest differs from sidecar')
+        names = [f['archive_path'] for f in manifest['files']]
+        require(len(names) == len(set(names)) and set(z.namelist()) == set(names) | {'manifest.json'},
+                'Unexpected or duplicate review bundle entries')
+        for item in manifest['files']:
+            data = z.read(item['archive_path'])
+            require(len(data) == item['bytes'] and hashlib.sha256(data).hexdigest() == item['sha256'],
+                    f'Review bundle entry changed: {item["archive_path"]}')
+            if item.get('source_path'):
+                source = (ROOT / item['source_path']).resolve()
+                require(source.is_relative_to(ROOT) and sha(source) == item['sha256'],
+                        f'Review bundle is stale: {item["source_path"]}')
+    return {'files': len(names), 'zip_sha256': sidecar['zip_sha256'], 'result': 'PASS'}
+
+
+def verify(include_review_bundle=True):
     for rel, expected in ANCHORS.items():
         require(sha(ROOT / rel) == expected, f'Baseline changed: {rel}')
     manifest = read_json('evidence/release-034/manifest.json')
@@ -93,9 +207,13 @@ def verify():
         path = Path(name)
         require(not forbidden.intersection(path.parts) and path.name not in {'.env', 'CLAUDE.local.md'},
                 f'Local/private runtime tracked: {name}')
+    current=verify_current()
+    mechanical=verify_mechanical(current['source_sha256'])
     return {'baseline_revision': '0.3.4', 'evidence_files': len(manifest['files']),
             'supplier_records': sorted(records), 'result': 'PASS',
-            'scope': 'Saved baseline/evidence integrity only. No new KiCad/JLC run or r04/SMT/functional acceptance.'}
+            'current':current, 'mechanical':mechanical,
+            'review_bundle':verify_review_bundle() if include_review_bundle else 'Rebuild in progress',
+            'scope': 'Saved PCB evidence, declared mechanical checks and artifact integrity. No new KiCad/JLC run or PCBA, powered, RF or ingress acceptance.'}
 
 
 if __name__ == '__main__':
