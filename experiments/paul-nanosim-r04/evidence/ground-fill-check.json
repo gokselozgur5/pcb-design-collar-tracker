@@ -1,0 +1,23 @@
+{
+  "scope": "Saved filled-polygon containment and GND via count; not RF/thermal qualification.",
+  "boards": [
+    {
+      "file": "build/ground-base.kicad_pcb",
+      "sha256": "bc87b18575485921808684b6f6e7c5d039d0125ed641bc6e5465c03b981890bf",
+      "gnd_vias": 68,
+      "centers_inside_filled_planes": {
+        "In1.Cu": 68,
+        "In2.Cu": 68
+      }
+    },
+    {
+      "file": "hardware/collar-tracker.kicad_pcb",
+      "sha256": "f225195ee9a4e6b0f508f8fd2e578679c09bd7a38e89e916c5a9fb433f5718c2",
+      "gnd_vias": 68,
+      "centers_inside_filled_planes": {
+        "In1.Cu": 68,
+        "In2.Cu": 68
+      }
+    }
+  ]
+}

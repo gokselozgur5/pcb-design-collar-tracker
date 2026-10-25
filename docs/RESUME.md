@@ -13,8 +13,8 @@ cd /Users/gok/codex/projects/collar-tracker
 python3 scripts/resume.py
 ```
 
-For a new checkout, clone `https://github.com/gokselozgur5/collar-tracker.git`
-to a working directory, enter it and run the same command. The repository is private.
+For a new checkout, clone `https://github.com/gokselozgur5/pcb-design-collar-tracker.git`
+to a working directory, enter it and run the same command. The repository is public.
 Read-only verification uses only Python 3's standard library. Opening the native
 project also works without rerunning the historical generators.
 
@@ -40,15 +40,35 @@ browser normally if needed; no profile or credentials are distributed in Git.
 
 ## Working commands
 
-Start by resolving the documented builder error, then run:
+Continue from the saved r04 PCB. First inspect
+`experiments/paul-nanosim-r04/evidence/routed-1-drc.json`: 14 open connections and
+three dangling vias remain after the first import. Do not rerun the builder over
+this board or discard its ground fanout.
+
+To reproduce initial placement in a **new** experiment only:
 
 ```sh
-scripts/kicad-python scripts/build_paul_nanosim.py --name paul-nanosim-r04
+LC_ALL=C scripts/kicad-python scripts/build_paul_nanosim.py --name paul-nanosim-r04-rebuild
 ```
 
-That builder is WIP. It is not a complete rerouting pipeline. It preserves the
-0.3.4 hash, writes the new SIM schematic/footprints and tries to build placement.
-Ground fanout and GND-excluded DSN export still need implementation.
+The builder now saves placement, protecting the 0.3.4 hash. Its overwrite guard is
+intentional. The pipeline remains WIP; it is not a complete accepted board.
+
+Implemented stages are `plan_ground_fanout.py` (geometry Python),
+`apply_ground_fanout.py` (KiCad Python), `export_paul_route.py` (KiCad Python),
+Freerouting and `import_paul_route.py` (KiCad Python). Each script takes the trial
+directory; import also takes its SES path. Read their guards before replaying them.
+`build/ground-base.kicad_pcb` preserves the clean ground-only stage;
+`build/routed-1.ses` is the first completed router output. The imported board keeps
+all 190 GND items and restores the original 24 RF segments exactly.
+
+The first router reported 19 opens / 12 router violations. The native imported
+board reports 14 opens / three dangling vias / zero parity issues. These are
+different checks, not evidence that the remaining routing is accepted.
+
+Before using `finish_size_trial.py`, adapt its hardcoded 0.2 mm power routing and
+add footprint-zone keepouts: it currently considers board zones only. Respect the
+SIM moving-contact areas, U.FL keepouts, local grounds and short power escapes.
 
 Use `build_size_trial.py`, `import_size_trial.py`, `finish_size_trial.py` and
 `dfm_geometry.py` as existing implementation references. Read before executing:
@@ -90,6 +110,9 @@ The baseline rule SHA256 is in `evidence/release-034/manifest.json`'s rules entr
 - Use `SetLibDescription()` for footprint descriptions.
 - Build an `LSET()` then `AddLayer(...)`; `LSET([layers])` failed here.
 - Use `round(mm * 1e6)` for internal units; `FromMM` can truncate by 1 nm.
+- Snapshot tracks/zones/drawings before mutation and use `Delete` for removed
+  in-memory objects; iterating with `Remove` broke SWIG ownership here.
+- Use `LC_ALL=C` on this Mac to avoid unsupported-locale errors.
 - Duplicate pad numbers exist (U.FL grounds and nano-SIM shield). Index by UUID
   or ref/pad/index instead of assuming one pad per number.
 - Check GND via containment against saved filled polygons on both inner layers.
@@ -101,7 +124,8 @@ The baseline rule SHA256 is in `evidence/release-034/manifest.json`'s rules entr
 
 One coherent change per commit. Update STATUS after measurable progress and
 WORKLOG after a checkpoint. Run `python3 scripts/verify_handoff.py`, inspect the
-staged paths, commit and normally push to the existing private origin.
+staged paths, commit and normally push to the existing origin.
+Keep all repository/GitHub text in English, including generated labels.
 Never commit `.runtime`, browser captures/profile, venvs or personal memory files.
 
 Repository verification checks saved evidence and hashes. It does not rerun KiCad,

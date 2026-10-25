@@ -14,3 +14,15 @@
 
 Earlier engineering decisions are in `docs/decisions.md` and the revision reports.
 Their evidence is dated; do not transfer an older pass to a newer source file.
+
+## 2026-10-25 — Nano-SIM ground layout and first route
+
+- Event: Continued the authorized Paul/nano-SIM implementation after publication.
+- Decision: Preserve 0.3.4; use two inner GND planes and local pad-to-via stubs.
+- Result: Fixed KiCad board mutation; saved 54-footprint placement. Connected
+  81 ground pads through 68 vias; ground-stage native DRC has zero violations,
+  zero parity issues, no open GND and 84 remaining non-GND connections. Imported
+  the first route while preserving ground and RF geometry. Native result:
+  14 opens, three dangling vias, zero parity issues. No new JLC acceptance.
+- Next: Finish routing, review returns/power/copper balance and run the new
+  revision's own native and supplier checks. See STATUS for exact source/evidence.

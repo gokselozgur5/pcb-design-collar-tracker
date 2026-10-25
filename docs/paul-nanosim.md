@@ -23,8 +23,9 @@ demonstrated product failure. Fewer vias is not the goal; connected local return
 ## Socket and ESD
 
 GCT SIM8051-6-0-14-00-A is the no-peg SMT nano-SIM candidate. Manufacturer drawing D5
-was inspected locally; its land pattern and six moving-contact keepouts were
-transcribed. Do not add the optional peg holes to this part. Verify insertion and
+was inspected locally; revision D6 was subsequently obtained from Mouser and its
+full drawing and enlarged land pattern were also inspected. The relevant dimensions
+match. Do not add the optional peg holes to this part. Verify insertion and
 removal access before placement acceptance. Reference files and hashes are in
 `references/paul-nanosim-r04/sources.json`.
 
@@ -62,11 +63,18 @@ mobility behavior still need qualification. These are open product checks.
 
 ## Existing candidate placement
 
-The intended overrides in the builder are J6 (127,108), D1 (126,116.2),
-J5 (125,125), R14 (123,118), R15 (126,118), C10 (123,115.7), all on B.Cu.
-They have not passed PCB placement/DRC review. Do not treat them as final.
+The current overrides are J6 (127,108), D1 (126.8,116.2), J5 (125,125),
+R14 (121.5,119), R15 (126,118), C10 (123,115.7), all on B.Cu.
+D1 and R14 moved to free local ground-via sites. The ground-stage native DRC has
+zero violations/parity and no open GND connections; signal routing remains open.
 Power trunks are provisionally 0.4 mm, VIO 0.3 mm, signal minimum 0.2 mm;
 via target 0.60/0.20 mm. A width setting is not an ampacity or voltage-drop test.
+
+81 GND pads now connect through short local stubs to 68 through vias. All 68 via
+centers are inside the filled GND regions on both In1.Cu and In2.Cu. The longest
+planned stub is 2.1071 mm; perimeter nRF ground necks are 0.25 mm to leave clearance
+beside the 0.5-mm-pitch contacts. Adjacent IC ground pins may share a local connection;
+the planner does not route a ground bus through separate passive components.
 
 Preserve the 0.3.4 source. Its RF segments are locked/copied by the WIP builder;
 their original 50 Ω stackup/body/antenna qualification is still open.

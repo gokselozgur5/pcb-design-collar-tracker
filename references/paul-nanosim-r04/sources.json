@@ -18,6 +18,18 @@
       "source_url": "https://www.ti.com/lit/ds/symlink/tpd4e1u06.pdf",
       "sha256": "aaf78b3eda253f43ce9f7cc6150d88dac876f9aaafe8a4cc0d03a9773660f418",
       "note": "TI manufacturer datasheet; SIM ESD choice TPD4E1U06DCKR. Pin table inspected; final footprint and layout acceptance still pending."
+    },
+    {
+      "file": "SIM8051-drawing-D6.pdf",
+      "source_url": "https://www.mouser.cn/datasheet/2/837/SIM8051-2888021.pdf",
+      "sha256": "4fa95562ce295d7916c8badd8efcfac60280980af34d3ce6f330e888c6da475a",
+      "note": "GCT D6 14 July 2022. Downloaded again from the stated URL; identical SHA256. Full sheet and enlarged land view inspected. Pins, land and keepout dimensions match the D5 transcription."
+    },
+    {
+      "file": "SIM8051-D6-land.png",
+      "source_url": null,
+      "sha256": "5b7824f5322e06706619ee89e11bcc8872d2661c7f8fd49d1f65d386402197f5",
+      "note": "Enlarged local rendering of D6 land pattern; visually inspected."
     }
   ],
   "parts": [
@@ -34,6 +46,6 @@
   ],
   "limits": [
     "No live factory stock reservation or PCBA acceptance.",
-    "D5 drawing is the inspected footprint reference; recheck newer drawing before manufacture."
+    "D5 and D6 land drawings inspected; insertion clearance and assembly qualification remain separate checks."
   ]
 }

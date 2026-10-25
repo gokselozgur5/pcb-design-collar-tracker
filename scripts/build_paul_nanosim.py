@@ -14,6 +14,7 @@ import os
 from pathlib import Path
 import re
 import shutil
+import subprocess
 import sys
 import xml.etree.ElementTree as ET
 
@@ -135,14 +136,20 @@ with (HW/'bom.csv').open('w') as stream:
         writer.writerow(row)
 (HW/'design.json').write_text(json.dumps({'parts':sch.parts,'root_uuid':sch.ROOT_UUID},indent=2)+'\n')
 
-# Remove old routes and all pours in this in-memory copy only.
-for t in list(b.GetTracks()):b.Remove(t)
-for z in list(b.Zones()):b.Remove(z)
-for g in list(b.GetDrawings()):b.Remove(g)
-b.Remove(oldfps['J6'])
+# Snapshot the owning containers before mutation. Delete releases the removed
+# C++ objects; Remove returns an unmanaged pointer and leaked in KiCad 10 SWIG.
+# This board is an in-memory copy; the released source file stays untouched.
+discard = list(b.GetTracks()) + list(b.Zones()) + list(b.GetDrawings())
+for item in discard:
+    b.Delete(item)
+b.Delete(oldfps['J6'])
 for ref,f in [('J6',nano),('D1',esd)]:
     b.Add(f);f.SetReference(ref);f.SetPath(k.KIID_PATH('/'+sch.ROOT_UUID+'/'+sch.uid(ref)))
     part=next(p for p in sch.parts if p['ref']==ref)
+    f.SetField('MPN',part['mpn'])
+    f.GetField('MPN').SetVisible(False)
+    f.SetField('Design status',part['status'])
+    f.GetField('Design status').SetVisible(False)
     for pad in f.Pads():
         pn=pad.GetNumber();net=part['nets'].get(pn)
         name='/'+net if net else f'unconnected-({ref}-'+('C6_VPP_UNUSED' if ref=='J6' else 'NC')+'-Pad'+pn+')'
@@ -153,8 +160,8 @@ for ref,f in [('J6',nano),('D1',esd)]:
     oldfps[ref]=f
 
 placement={ref:[*xy(f.GetPosition()),f.GetOrientationDegrees(),'B' if f.IsFlipped() else 'F'] for ref,f in oldfps.items()}
-placement.update(J6=[127,108,0,'B'],D1=[126,116.2,0,'B'],J5=[125,125,0,'B'],
-                 R14=[123,118,0,'B'],R15=[126,118,0,'B'],C10=[123,115.7,0,'B'])
+placement.update(J6=[127,108,0,'B'],D1=[126.8,116.2,0,'B'],J5=[125,125,0,'B'],
+                 R14=[121.5,119,0,'B'],R15=[126,118,0,'B'],C10=[123,115.7,0,'B'])
 for ref,pos in placement.items():
     f=oldfps[ref];x,y,angle,side=pos
     if f.IsFlipped() != (side=='B'):f.SetLayerAndFlip(k.B_Cu if side=='B' else k.F_Cu)
@@ -194,6 +201,17 @@ for t in board.GetTracks():
 title=b.GetTitleBlock();title.SetRevision('0.4');title.SetDate('2026-10-25');b.SetTitleBlock(title)
 assert k.SaveBoard(str(PCB),b)
 (BUILD/'placement.json').write_text(json.dumps(placement,indent=2)+'\n')
+extra={'footprints':{},'keepouts':[],'bounds':[100,100,100+args.width,100+args.height]}
+for f in b.GetFootprints():
+    extra['footprints'][f.GetReference()]={'pos':xy(f.GetPosition()),'side':b.GetLayerName(f.GetLayer())}
+    for z in f.Zones():
+        if z.GetIsRuleArea():
+            ol=z.Outline()
+            extra['keepouts'].append({'ref':f.GetReference(),'layer':b.GetLayerName(z.GetLayer()),
+                'tracks':z.GetDoNotAllowTracks(),'vias':z.GetDoNotAllowVias(),
+                'poly':[[xy(ol.COutline(n).CPoint(i)) for i in range(ol.COutline(n).PointCount())] for n in range(ol.OutlineCount())]})
+(E/'placement-extra.json').write_text(json.dumps(extra,indent=2)+'\n')
+subprocess.run([sys.executable,str(ROOT/'scripts/dfm_geometry.py'),str(PCB),str(E/'placement-geometry.json')],check=True)
 (E/'source.json').write_text(json.dumps({'source':str(source),'source_sha256':hashlib.sha256(source.read_bytes()).hexdigest(),
     'size_mm':[args.width,args.height,.8],'inner2_signal':False,'stage':'placement; ground fanout and autorouting pending',
     'physical_sim':'GCT SIM8051-6-0-14-00-A','sim_esd':'TPD4E1U06DCKR'},indent=2)+'\n')

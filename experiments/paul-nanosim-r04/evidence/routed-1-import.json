@@ -1,0 +1,11 @@
+{
+  "before_sha256": "bc87b18575485921808684b6f6e7c5d039d0125ed641bc6e5465c03b981890bf",
+  "source_sha256": "f225195ee9a4e6b0f508f8fd2e578679c09bd7a38e89e916c5a9fb433f5718c2",
+  "session": "build/routed-1.ses",
+  "session_sha256": "37b520ec36be36ffd3a236415a68bb6896956f9b6ffa2c6eac50edb2a81f0a4e",
+  "ground_items_preserved": 190,
+  "rf_segments_restored_exactly": 24,
+  "narrow_segments_widened_to_020": 3,
+  "inner_tracks": 0,
+  "scope": "Import invariants only; native DRC and remaining opens must be checked."
+}

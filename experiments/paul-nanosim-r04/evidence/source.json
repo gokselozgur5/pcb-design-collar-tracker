@@ -1,0 +1,13 @@
+{
+  "source": "/Users/gok/codex/projects/collar-tracker/experiments/35x28-clearance-r034/hardware/collar-tracker.kicad_pcb",
+  "source_sha256": "597ebdee59550b6d07eb104274eabee57b038ea6c87da2dec38c1201f78c89b2",
+  "size_mm": [
+    35,
+    28,
+    0.8
+  ],
+  "inner2_signal": false,
+  "stage": "placement; ground fanout and autorouting pending",
+  "physical_sim": "GCT SIM8051-6-0-14-00-A",
+  "sim_esd": "TPD4E1U06DCKR"
+}

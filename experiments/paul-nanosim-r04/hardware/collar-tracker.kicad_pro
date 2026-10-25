@@ -285,15 +285,23 @@
         "via_drill": 0.2
       },
       {
+        "bus_width": 12,
         "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
         "name": "Power",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": -1,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.25,
+        "track_width": 0.4,
         "tuning_profile": "",
         "via_diameter": 0.6,
-        "via_drill": 0.2
+        "via_drill": 0.2,
+        "wire_width": 6
       },
       {
         "clearance": 0.2,
@@ -305,6 +313,25 @@
         "tuning_profile": "",
         "via_diameter": 0.6,
         "via_drill": 0.2
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "VIO",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": -1,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.3,
+        "tuning_profile": "",
+        "via_diameter": 0.6,
+        "via_drill": 0.2,
+        "wire_width": 6
       }
     ],
     "meta": {
@@ -360,6 +387,10 @@
       {
         "netclass": "RF",
         "pattern": "/AMP_IN"
+      },
+      {
+        "netclass": "VIO",
+        "pattern": "/VIO_1V8"
       }
     ]
   },
