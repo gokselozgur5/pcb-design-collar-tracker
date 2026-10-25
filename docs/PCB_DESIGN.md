@@ -322,3 +322,15 @@ not a growing diary inside this guide.
 - A joint signal-via/ground-via move can open a site that isolated placement
   searches miss. Record the coupled geometry and recheck every affected net,
   filled plane and return-screen point instead of weakening the target.
+- A loaded supplier page is not an uploaded or analyzed design. Bind acceptance
+  to an actual upload request, final ZIP hash, distinct record ID, complete rows,
+  raw measurements and unchanged rule bytes. Preserve failed runs separately.
+- Check seal tolerance extremes using the installed geometry and rubber volume.
+  Include stretch, groove-bottom radii and cavity-corner webs; a nominal squeeze
+  value alone misses overfilled grooves and thin corners. Retain rejected cases.
+- Inspect exported mechanical solids as well as CAD previews. Bind mesh checks
+  to their inputs and verify bounds, edge closure and connected surfaces. This
+  detects export/model defects; it does not establish physical sealing.
+- Specify immersion conditions separately from an IP68 design target. Complete
+  battery, antenna, charging and assembly definitions before tooling; qualify
+  the final assembly for ingress, power, RF and retention with physical tests.

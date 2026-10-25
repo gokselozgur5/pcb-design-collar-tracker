@@ -28,6 +28,7 @@ project also works without rerunning the historical generators.
 | Router | Java + Freerouting 2.5.0. Pinned JAR `/Volumes/GOKSSD/codex/tools/freerouting/freerouting-2.5.0.jar`; SHA256 `f6f51bb02245e8e717f9359bd260cc9c5c0b1bc0acc8b7cb2cd5b8ffeb5de3c7`. |
 | JLC browser | Node + Playwright 1.64.1; `COLLAR_PLAYWRIGHT_MODULE` can select a local installation. |
 | PDF/image review | `pdftotext`, `pdftoppm`, `rsvg-convert`; render locally and actually inspect. |
+| Mechanical CAD | OpenSCAD (`COLLAR_OPENSCAD` can select the executable); `pdfunite` joins the review sheets. |
 
 Mount GOKSSD before using its paths. Do not silently create a substitute mount.
 Set `COLLAR_KICAD_PYTHON` or `COLLAR_KICAD_CLI` to absolute executables for another
@@ -40,17 +41,22 @@ browser normally if needed; no profile or credentials are distributed in Git.
 
 ## Working commands
 
-Continue from `experiments/paul-nanosim-r04h-review-40x32/hardware/collar-tracker.kicad_pcb`.
-Read STATUS and current hash-bound evidence first. r04e is the preserved 35 × 28 mm
-checkpoint; r04f expanded the outline after measured routing failures. r04g preserves
-the earlier DFM result. r04h adds the complete return repair, split SIM protection
-and passive-copper review.
+Continue from `experiments/paul-nanosim-r04i-sim-access-40x32/hardware/`.
+The final r04i PCB and its ZIP passed native checks and two actual JLC analyses;
+read STATUS and `evidence/routing-checkpoint.json` for the exact identities.
+Do not overwrite the tested source/package. Start a new revision for PCB changes.
 
-The current native result is zero opens, violations, warnings or parity findings;
-ERC and all 91 return-via screens also pass. There is no r04h supplier result.
-First move D1/C10 out of the projected SIM insertion corridor identified in STATUS.
-The exact source and current evidence are in r04h `routing-checkpoint.json`.
-No router remains running at this checkpoint. Work in a new experiment.
+The active unfinished work is the swimming enclosure in `mechanical/swim-r01/`.
+Read its README, two-page `review.pdf` and parameter/check files. The exported
+meshes and dimensioned review package are complete at prototype scope. Replace
+reservations with approved battery, antenna, component-height and charging-dock
+parts next; preserve r01 evidence when starting a new mechanical revision. The user chose swimming/IP68;
+2 m / 60 min and magnetic contacts are provisional engineering assumptions.
+No physical IP, powered, RF or factory assembly acceptance exists.
+
+The r04i builder records only the initial isolated placement, not all subsequent
+manual routing. The saved native source and hash-bound evidence are authoritative.
+Ignored routing trials are unnecessary for continuation. Preserve r04h/r04g/0.3.4.
 
 These review commands leave the native design unchanged and refresh its reports:
 

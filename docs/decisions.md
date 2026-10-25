@@ -9,7 +9,10 @@
 | SIM | Physical nano-SIM for this revision, decided 2026-10-25; eSIM deferred |
 | nRF9151 | Draft candidate; qualify LTE-M/NB-IoT service and intended coverage |
 | Heart rate | Requested; physical measurement method and sensor unselected |
-| Battery, enclosure and board dimensions | Open; runtime between charges unspecified |
+| PCB dimensions | Current r04i: 40 × 32 × 0.8 mm; four copper layers |
+| Water/dust protection | Owner selected swimming and an IP68 design target on 2026-10-25; no qualified assembly yet |
+| Depth/time and charging | Provisional engineering assumptions: 2 m fresh water / 60 min, magnetic contacts; preference replies pending |
+| Battery and enclosure | Protected pack/runtime open; current rigid prototype 57.4 × 49.4 × 17.6 mm, 58.7 mm including the key |
 | Delivery | Factory assembled, programmed and function-tested; avoid user hand soldering |
 
 The 2026-10-24 delivery requirement is to avoid leaving module installation,
@@ -22,8 +25,10 @@ not supplier acceptance, an order or evidence of operation. See
 500 mAh is not a fixed requirement. The owner asked about a smaller enclosure,
 using Apple Watch Ultra as an example. Earlier size estimates are not lower bounds.
 Develop the board outline, battery, antennas, sensor contact and enclosure together.
-An initial OpenSCAD study exists; there is no physical enclosure. Capacity and charge
-interval remain unselected.
+The current [swimming prototype](../mechanical/swim-r01/README.md) has a continuous
+lid seal, individually sealed charging contacts and a collar boot. Its checked
+CAD is not a physical enclosure or an ingress-test result. Capacity and charge
+interval remain unselected. The original size study below is historical.
 
 ## First mechanical study
 
@@ -44,8 +49,10 @@ NTC, cable exit and swelling allowance still need verification.
 Reserved volumes fit inside rounded walls, floor and lid without overlap. This is
 not actual BOM placement/routing or proof of a working product. Orange LTE/GNSS
 blocks are not selected antennas; their real clearances may enlarge the enclosure.
-The heart-rate head is hypothetical. Seals, mounts, charging contacts, assembly
-and durability remain undesigned. Evidence/reproduction: [mechanical notes](../mechanical/README.md).
+The heart-rate head is hypothetical. That first study did not design seals,
+mounts or charging contacts; the separate swim-r01 prototype now defines them.
+Assembly and durability qualification remain open. Evidence/reproduction:
+[mechanical notes](../mechanical/README.md).
 
 ## What was inspected from Apple Watch Ultra
 

@@ -4,16 +4,25 @@ A small GPS and cellular tracker for dog collars, starting with Türkiye.
 The aim is one electronics design with different collar mounts. Fit, weight and
 comfort across dog sizes and coat types still need physical validation.
 
-**Active work:** apply Paul's layout feedback, add a physical nano-SIM socket,
-and get the new revision through real JLC DFM with zero Danger / zero Warning.
-eSIM is deferred.
+**The r04i PCB is native-clean and passed two actual JLC PCB DFM analyses at
+0 Danger / 0 Warning, using identical ZIP bytes and unchanged rules.** It is
+40 × 32 mm with four copper layers, two continuous inner GND planes, no remaining
+return-via screen gaps and a clear projected nano-SIM entry lane. eSIM is deferred.
 
-The current 40 × 32 mm board passes native checks, has two continuous inner GND
-planes and no remaining return-via screen gaps. SIM insertion clearance still
-needs a placement correction. The earlier r04g source passed two actual JLC PCB
-DFM runs at **0 Danger / 0 Warning**; the new r04h source has not been submitted.
-SMT and functional testing are not qualified.
-See [STATUS](docs/STATUS.md) for the current source and exact next step.
+The [swimming enclosure prototype](mechanical/swim-r01/README.md) adds a sealed lid,
+charging-contact seals and collar mount. IP68 is the design target, not a test
+result. Battery/antenna fit, SMT assembly and powered/RF/ingress qualification
+remain open. [STATUS](docs/STATUS.md) records the exact evidence and next action.
+
+[Design review PDF](mechanical/swim-r01/review.pdf) ·
+[Complete review bundle](release/collar-tracker-r04i-swim-r01-review.zip) ·
+[Current Gerber ZIP](experiments/paul-nanosim-r04i-sim-access-40x32/evidence/collar-tracker-04i-final-40x32-dfm.zip) ·
+[JLC report 1](experiments/paul-nanosim-r04i-sim-access-40x32/evidence/jlc-check1/report.pdf) ·
+[JLC report 2](experiments/paul-nanosim-r04i-sim-access-40x32/evidence/jlc-check2/report.pdf)
+
+The review bundle contains editable native PCB/CAD, eight mechanical STL files
+and the two supplier reports. Upload only the Gerber ZIP for PCB DFM. The bundle
+is for design review; its enclosure is a prototype awaiting physical qualification.
 
 ## Continue in a new session
 
@@ -78,7 +87,7 @@ a finished, working PCBA.**
 
 - Validated PCB DFM baseline: `experiments/35x28-clearance-r034/hardware/`.
 - Preserved 35 × 28 mm checkpoint: `experiments/paul-nanosim-r04e/hardware/`.
-- Active 40 × 32 mm nano-SIM work: `experiments/paul-nanosim-r04h-review-40x32/`.
+- Current 40 × 32 mm nano-SIM PCB: `experiments/paul-nanosim-r04i-sim-access-40x32/`.
 - Preserved 40 × 32 mm DFM checkpoint: `experiments/paul-nanosim-r04g-returns-40x32/`.
 - Earlier r04 routing and rejected r04c experiment are preserved separately.
 - Legacy 30 × 22 mm / 0.2.1 source: `hardware/`, preserved with its original ZIPs.
@@ -93,8 +102,8 @@ either 35 × 28 mm or 40 × 32 mm. Its 250 mAh example targets a 38 × 30 × 14 
 enclosure, or 14.6 mm including an assumed contact protrusion. Antennas, the heart-rate head and much of
 the electronics are reserved volumes, not fitted production components.
 
-Battery capacity, charge interval, position-update rate, enclosure and antennas
-remain open. Earlier cost ranges were estimates, not supplier quotes, and did not
+The new `mechanical/swim-r01/` model targets the current 40 × 32 mm board.
+Battery capacity, charge interval, position-update rate and final antennas remain open. Earlier cost ranges were estimates, not supplier quotes, and did not
 include heart-rate hardware.
 
 ## Files
@@ -102,7 +111,8 @@ include heart-rate hardware.
 | Path | Purpose |
 |---|---|
 | `experiments/35x28-clearance-r034/hardware/` | Native source that passed local and JLC PCB DFM checks |
-| `experiments/paul-nanosim-r04h-review-40x32/` | Active native-clean source; returns and SIM copper topology checked, card-entry placement unresolved |
+| `experiments/paul-nanosim-r04i-sim-access-40x32/` | Current native source, access/topology/ground checks and two verified JLC passes |
+| `mechanical/swim-r01/` | Parametric swimming enclosure prototype; physical qualification pending |
 | `scripts/finalize_clearance034.py` | Binds source, local checks, JLC reports and the exact delivered ZIP |
 | `hardware/` | Legacy KiCad project, PCB, five-section A2 schematic and draft BOM |
 | `scripts/build_pcb.py` | Builds the legacy PCB from the real XML netlist |

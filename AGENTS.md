@@ -24,6 +24,10 @@ If another session has advanced STATUS, use that newer state.
 - Factory assembly, programming and functional testing are required; avoid hand soldering.
 - Heart-rate sensing is requested but not implemented. J5 is a digital expansion port.
 - Battery capacity is not fixed at 500 mAh. Cell, runtime and update interval remain open.
+- The device must resist dust and water while the dog swims. IP68 is the selected
+  design target; immersion depth/time must be recorded explicitly. Enclosure,
+  gasket, charging interface and service access belong to the current scope.
+  PCB DFM does not prove ingress protection; retain whole-assembly test evidence.
 
 ## Work already authorized
 

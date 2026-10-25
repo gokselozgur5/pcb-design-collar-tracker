@@ -1,4 +1,10 @@
-# Initial mechanical volume study
+# Mechanical designs
+
+The current [swim-r01 prototype](swim-r01/README.md) fits the 40 × 32 mm r04i
+board and adds the seal, charging interfaces and collar mount. Its physical
+qualification is pending. The older sizing study below remains historical.
+
+## Initial mechanical volume study
 
 This model evaluates PCB, battery, enclosure and antenna space together. It is not
 a placed/routed PCB or a production-ready enclosure.

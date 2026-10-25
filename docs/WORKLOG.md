@@ -153,3 +153,37 @@ Their evidence is dated; do not transfer an older pass to a newer source file.
   This placement is WIP. Relocate their bodies before the next manufacturing
   package, then rerun topology/native/geometry checks and two actual same-byte
   JLC analyses. No r04h supplier upload, order or powered test occurred.
+
+## 2026-10-25 — Clear SIM access and verify r04i supplier DFM
+
+- Event: Resumed under the new complete-design/DFM goal; swimming/IP68 was added.
+- Decision: Move D1/C10 outside the card lane, preserve the protected SIM topology
+  and reject the long reset detour. Keep physical qualification separate.
+- Result: r04i is native-clean, with 82 local GND pads, 91 plane-connected GND
+  vias, 93 of 93 return screens, 24 preserved RF segments and zero card-lane body
+  overlaps or clamp bypasses. R12 moved and obsolete clock copper was removed.
+- Supplier evidence: Initial 5 Danger / 2 Warning at the SIM legend resolved by
+  moving that legend 1.476 mm. Final ZIP 6304b66623a473e4c5405c6db7181b3f1879fa93088f9812802d43e814f90898
+  passed records 637245503244296194 and 637247002053398530 at 0/0, with 29 rows
+  and 442 green measurements each. Rules unchanged; SMT off. Both complete PDFs
+  and native views inspected. A no-upload browser attempt was excluded.
+- Next: Complete the swim-r01 review/mesh package and resolve actual fit/part
+  selections. No physical IP, powered, RF, PCBA or production acceptance exists.
+
+## 2026-10-25 — Package the swimming enclosure prototype for review
+
+- Event: Added a serviceable shell/lid, carrier, independent radial contact seals,
+  external blind magnet slots, captured plugs, dock alignment shell and TPU boot.
+- Decision: Use provisional 2 m fresh water / 60 min and magnetic charging while
+  preference replies are pending. Keep actual production part selections open.
+- Result: Rigid body 57.4 × 49.4 × 17.6 mm; 58.7 mm with the key. The boot is
+  60.4 × 52.4 × 22.4 mm. Thirty declared geometry checks pass. Four regressions
+  retain the rejected gland/cell cases. All eight exported meshes have closed,
+  oriented edges and one connected surface; actual bounds match the CAD screen.
+- Review: Inspected the exploded/section/mounted previews and both review sheets.
+  The 124-file bundle includes editable PCB/CAD, meshes, the tested Gerber ZIP and
+  both full JLC reports. Bundle SHA256:
+  `21e3f0573d7cc0b6ef8b13118e3d23182f1fe0f6fd29d14bfad34404460a6805`.
+- Next: Select the actual protected pack, antennas, dock/harness, seal compounds
+  and fasteners; replace component-height reservations and review fit/assembly.
+  Qualify the final physical assembly. No IP rating or production readiness is claimed.
