@@ -1,0 +1,2962 @@
+{
+  "schema": 1,
+  "source": "experiments/power-r05l-charge-interlock/hardware/collar-tracker.kicad_pcb",
+  "source_sha256": "241c84d6ba98793c37344e1e46ddc4918e7b05322ba87daea7c9a90ffb8379b3",
+  "exporter_sha256": "6b8036547318658d865be9d288f0b54c7699a919b52e9ed7a3a8335b72464b8c",
+  "coordinate_transform": "X = native X - center X; Y = center Y - native Y; Z is set by enclosure parameters",
+  "native_center_mm": [
+    118.0,
+    114.0
+  ],
+  "native_bounds_mm": [
+    98.0,
+    98.0,
+    138.0,
+    130.0
+  ],
+  "board_size_mm": [
+    40.0,
+    32.0,
+    0.84088
+  ],
+  "parts": [
+    {
+      "ref": "C1",
+      "value": "1uF /10V",
+      "footprint": "C1_C_0201_0603Metric",
+      "side": "top",
+      "native_position_mm": [
+        102.0,
+        110.7
+      ],
+      "position_mm": [
+        -16.0,
+        3.3
+      ],
+      "native_angle_degrees": 0.0,
+      "dnp": false,
+      "fab_bounds_mm": [
+        -16.35,
+        3.1,
+        -15.65,
+        3.5
+      ],
+      "land_bounds_mm": [
+        -16.425,
+        3.125,
+        -15.575,
+        3.475
+      ],
+      "body_and_land_bounds_mm": [
+        -16.425,
+        3.1,
+        -15.575,
+        3.5
+      ]
+    },
+    {
+      "ref": "C10",
+      "value": "100nF",
+      "footprint": "C10_C_0402_1005Metric",
+      "side": "bottom",
+      "native_position_mm": [
+        136.4,
+        100.35
+      ],
+      "position_mm": [
+        18.4,
+        13.65
+      ],
+      "native_angle_degrees": 0.0,
+      "dnp": false,
+      "fab_bounds_mm": [
+        17.85,
+        13.23,
+        18.95,
+        14.07
+      ],
+      "land_bounds_mm": [
+        17.64,
+        13.34,
+        19.16,
+        13.96
+      ],
+      "body_and_land_bounds_mm": [
+        17.64,
+        13.23,
+        19.16,
+        14.07
+      ]
+    },
+    {
+      "ref": "C11",
+      "value": "DNP / tune",
+      "footprint": "C11_C_0402_1005Metric",
+      "side": "top",
+      "native_position_mm": [
+        111.2,
+        120.3
+      ],
+      "position_mm": [
+        -6.8,
+        -6.3
+      ],
+      "native_angle_degrees": 180.0,
+      "dnp": true,
+      "fab_bounds_mm": [
+        -7.35,
+        -6.72,
+        -6.25,
+        -5.88
+      ],
+      "land_bounds_mm": [
+        -7.56,
+        -6.61,
+        -6.04,
+        -5.99
+      ],
+      "body_and_land_bounds_mm": [
+        -7.56,
+        -6.72,
+        -6.04,
+        -5.88
+      ]
+    },
+    {
+      "ref": "C12",
+      "value": "DNP / tune",
+      "footprint": "C12_C_0402_1005Metric",
+      "side": "top",
+      "native_position_mm": [
+        113.5,
+        122.4
+      ],
+      "position_mm": [
+        -4.5,
+        -8.4
+      ],
+      "native_angle_degrees": 180.0,
+      "dnp": true,
+      "fab_bounds_mm": [
+        -5.05,
+        -8.82,
+        -3.95,
+        -7.98
+      ],
+      "land_bounds_mm": [
+        -5.26,
+        -8.71,
+        -3.74,
+        -8.09
+      ],
+      "body_and_land_bounds_mm": [
+        -5.26,
+        -8.82,
+        -3.74,
+        -7.98
+      ]
+    },
+    {
+      "ref": "C13",
+      "value": "39pF RF",
+      "footprint": "C13_C_0402_1005Metric",
+      "side": "top",
+      "native_position_mm": [
+        119.3,
+        117.65
+      ],
+      "position_mm": [
+        1.3,
+        -3.65
+      ],
+      "native_angle_degrees": 180.0,
+      "dnp": false,
+      "fab_bounds_mm": [
+        0.75,
+        -4.07,
+        1.85,
+        -3.23
+      ],
+      "land_bounds_mm": [
+        0.54,
+        -3.96,
+        2.06,
+        -3.34
+      ],
+      "body_and_land_bounds_mm": [
+        0.54,
+        -4.07,
+        2.06,
+        -3.23
+      ]
+    },
+    {
+      "ref": "C14",
+      "value": "39pF RF",
+      "footprint": "C14_C_0402_1005Metric",
+      "side": "top",
+      "native_position_mm": [
+        124.5,
+        113.1
+      ],
+      "position_mm": [
+        6.5,
+        0.9
+      ],
+      "native_angle_degrees": 180.0,
+      "dnp": false,
+      "fab_bounds_mm": [
+        5.95,
+        0.48,
+        7.05,
+        1.32
+      ],
+      "land_bounds_mm": [
+        5.74,
+        0.59,
+        7.26,
+        1.21
+      ],
+      "body_and_land_bounds_mm": [
+        5.74,
+        0.48,
+        7.26,
+        1.32
+      ]
+    },
+    {
+      "ref": "C15",
+      "value": "100nF",
+      "footprint": "C15_C_0402_1005Metric",
+      "side": "top",
+      "native_position_mm": [
+        126.0,
+        117.8
+      ],
+      "position_mm": [
+        8.0,
+        -3.8
+      ],
+      "native_angle_degrees": 0.0,
+      "dnp": false,
+      "fab_bounds_mm": [
+        7.45,
+        -4.22,
+        8.55,
+        -3.38
+      ],
+      "land_bounds_mm": [
+        7.24,
+        -4.11,
+        8.76,
+        -3.49
+      ],
+      "body_and_land_bounds_mm": [
+        7.24,
+        -4.22,
+        8.76,
+        -3.38
+      ]
+    },
+    {
+      "ref": "C16",
+      "value": "1uF",
+      "footprint": "C16_C_0402_1005Metric",
+      "side": "top",
+      "native_position_mm": [
+        128.4,
+        119.5
+      ],
+      "position_mm": [
+        10.4,
+        -5.5
+      ],
+      "native_angle_degrees": 90.0,
+      "dnp": false,
+      "fab_bounds_mm": [
+        9.98,
+        -6.05,
+        10.82,
+        -4.95
+      ],
+      "land_bounds_mm": [
+        10.09,
+        -6.26,
+        10.71,
+        -4.74
+      ],
+      "body_and_land_bounds_mm": [
+        9.98,
+        -6.26,
+        10.82,
+        -4.74
+      ]
+    },
+    {
+      "ref": "C17",
+      "value": "1uF /10V",
+      "footprint": "C17_C_0402_1005Metric",
+      "side": "bottom",
+      "native_position_mm": [
+        106.2,
+        120.25
+      ],
+      "position_mm": [
+        -11.8,
+        -6.25
+      ],
+      "native_angle_degrees": 90.0,
+      "dnp": false,
+      "fab_bounds_mm": [
+        -12.22,
+        -6.8,
+        -11.38,
+        -5.7
+      ],
+      "land_bounds_mm": [
+        -12.11,
+        -7.01,
+        -11.49,
+        -5.49
+      ],
+      "body_and_land_bounds_mm": [
+        -12.22,
+        -7.01,
+        -11.38,
+        -5.49
+      ]
+    },
+    {
+      "ref": "C18",
+      "value": "10uF /10V",
+      "footprint": "C18_C_0603_1608Metric",
+      "side": "top",
+      "native_position_mm": [
+        103.0,
+        120.85
+      ],
+      "position_mm": [
+        -15.0,
+        -6.85
+      ],
+      "native_angle_degrees": 0.0,
+      "dnp": false,
+      "fab_bounds_mm": [
+        -15.85,
+        -7.42,
+        -14.15,
+        -6.28
+      ],
+      "land_bounds_mm": [
+        -16.225,
+        -7.325,
+        -13.775,
+        -6.375
+      ],
+      "body_and_land_bounds_mm": [
+        -16.225,
+        -7.42,
+        -13.775,
+        -6.28
+      ]
+    },
+    {
+      "ref": "C19",
+      "value": "1uF /10V",
+      "footprint": "C19_C_0402_1005Metric",
+      "side": "top",
+      "native_position_mm": [
+        101.8,
+        122.5
+      ],
+      "position_mm": [
+        -16.2,
+        -8.5
+      ],
+      "native_angle_degrees": 180.0,
+      "dnp": false,
+      "fab_bounds_mm": [
+        -16.75,
+        -8.92,
+        -15.65,
+        -8.08
+      ],
+      "land_bounds_mm": [
+        -16.96,
+        -8.81,
+        -15.44,
+        -8.19
+      ],
+      "body_and_land_bounds_mm": [
+        -16.96,
+        -8.92,
+        -15.44,
+        -8.08
+      ]
+    },
+    {
+      "ref": "C2",
+      "value": "1uF /10V",
+      "footprint": "C2_C_0201_0603Metric",
+      "side": "top",
+      "native_position_mm": [
+        102.0,
+        109.1
+      ],
+      "position_mm": [
+        -16.0,
+        4.9
+      ],
+      "native_angle_degrees": 90.0,
+      "dnp": false,
+      "fab_bounds_mm": [
+        -16.2,
+        4.55,
+        -15.8,
+        5.25
+      ],
+      "land_bounds_mm": [
+        -16.175,
+        4.475,
+        -15.825,
+        5.325
+      ],
+      "body_and_land_bounds_mm": [
+        -16.2,
+        4.475,
+        -15.8,
+        5.325
+      ]
+    },
+    {
+      "ref": "C20",
+      "value": "1uF",
+      "footprint": "C20_C_0402_1005Metric",
+      "side": "top",
+      "native_position_mm": [
+        106.0,
+        101.8
+      ],
+      "position_mm": [
+        -12.0,
+        12.2
+      ],
+      "native_angle_degrees": 0.0,
+      "dnp": false,
+      "fab_bounds_mm": [
+        -12.55,
+        11.78,
+        -11.45,
+        12.62
+      ],
+      "land_bounds_mm": [
+        -12.76,
+        11.89,
+        -11.24,
+        12.51
+      ],
+      "body_and_land_bounds_mm": [
+        -12.76,
+        11.78,
+        -11.24,
+        12.62
+      ]
+    },
+    {
+      "ref": "C21",
+      "value": "1uF",
+      "footprint": "C21_C_0402_1005Metric",
+      "side": "top",
+      "native_position_mm": [
+        106.0,
+        103.5
+      ],
+      "position_mm": [
+        -12.0,
+        10.5
+      ],
+      "native_angle_degrees": 0.0,
+      "dnp": false,
+      "fab_bounds_mm": [
+        -12.55,
+        10.08,
+        -11.45,
+        10.92
+      ],
+      "land_bounds_mm": [
+        -12.76,
+        10.19,
+        -11.24,
+        10.81
+      ],
+      "body_and_land_bounds_mm": [
+        -12.76,
+        10.08,
+        -11.24,
+        10.92
+      ]
+    },
+    {
+      "ref": "C23",
+      "value": "100nF",
+      "footprint": "C23_C_0402_1005Metric",
+      "side": "top",
+      "native_position_mm": [
+        132.0,
+        103.4
+      ],
+      "position_mm": [
+        14.0,
+        10.6
+      ],
+      "native_angle_degrees": 0.0,
+      "dnp": false,
+      "fab_bounds_mm": [
+        13.45,
+        10.18,
+        14.55,
+        11.02
+      ],
+      "land_bounds_mm": [
+        13.24,
+        10.29,
+        14.76,
+        10.91
+      ],
+      "body_and_land_bounds_mm": [
+        13.24,
+        10.18,
+        14.76,
+        11.02
+      ]
+    },
+    {
+      "ref": "C24",
+      "value": "100nF",
+      "footprint": "C24_C_0402_1005Metric",
+      "side": "top",
+      "native_position_mm": [
+        132.0,
+        105.5
+      ],
+      "position_mm": [
+        14.0,
+        8.5
+      ],
+      "native_angle_degrees": 0.0,
+      "dnp": false,
+      "fab_bounds_mm": [
+        13.45,
+        8.08,
+        14.55,
+        8.92
+      ],
+      "land_bounds_mm": [
+        13.24,
+        8.19,
+        14.76,
+        8.81
+      ],
+      "body_and_land_bounds_mm": [
+        13.24,
+        8.08,
+        14.76,
+        8.92
+      ]
+    },
+    {
+      "ref": "C25",
+      "value": "1uF /16V X7R",
+      "footprint": "C25_C_0805_2012Metric",
+      "side": "bottom",
+      "native_position_mm": [
+        111.75,
+        125.75
+      ],
+      "position_mm": [
+        -6.25,
+        -11.75
+      ],
+      "native_angle_degrees": -90.0,
+      "dnp": false,
+      "fab_bounds_mm": [
+        -7.045,
+        -12.8,
+        -5.455,
+        -10.7
+      ],
+      "land_bounds_mm": [
+        -6.975,
+        -13.2,
+        -5.525,
+        -10.3
+      ],
+      "body_and_land_bounds_mm": [
+        -7.045,
+        -13.2,
+        -5.455,
+        -10.3
+      ]
+    },
+    {
+      "ref": "C26",
+      "value": "47nF /16V X7R",
+      "footprint": "C26_C_0402_1005Metric",
+      "side": "bottom",
+      "native_position_mm": [
+        113.25,
+        122.05
+      ],
+      "position_mm": [
+        -4.75,
+        -8.05
+      ],
+      "native_angle_degrees": 180.0,
+      "dnp": false,
+      "fab_bounds_mm": [
+        -5.3,
+        -8.47,
+        -4.2,
+        -7.63
+      ],
+      "land_bounds_mm": [
+        -5.51,
+        -8.36,
+        -3.99,
+        -7.74
+      ],
+      "body_and_land_bounds_mm": [
+        -5.51,
+        -8.47,
+        -3.99,
+        -7.63
+      ]
+    },
+    {
+      "ref": "C27",
+      "value": "100nF /16V X7R",
+      "footprint": "C27_C_0402_1005Metric",
+      "side": "top",
+      "native_position_mm": [
+        109.25,
+        127.75
+      ],
+      "position_mm": [
+        -8.75,
+        -13.75
+      ],
+      "native_angle_degrees": 90.0,
+      "dnp": false,
+      "fab_bounds_mm": [
+        -9.17,
+        -14.3,
+        -8.33,
+        -13.2
+      ],
+      "land_bounds_mm": [
+        -9.06,
+        -14.51,
+        -8.44,
+        -12.99
+      ],
+      "body_and_land_bounds_mm": [
+        -9.17,
+        -14.51,
+        -8.33,
+        -12.99
+      ]
+    },
+    {
+      "ref": "C28",
+      "value": "100nF /16V X7R",
+      "footprint": "C28_C_0402_1005Metric",
+      "side": "top",
+      "native_position_mm": [
+        121.0,
+        126.5
+      ],
+      "position_mm": [
+        3.0,
+        -12.5
+      ],
+      "native_angle_degrees": 90.0,
+      "dnp": false,
+      "fab_bounds_mm": [
+        2.58,
+        -13.05,
+        3.42,
+        -11.95
+      ],
+      "land_bounds_mm": [
+        2.69,
+        -13.26,
+        3.31,
+        -11.74
+      ],
+      "body_and_land_bounds_mm": [
+        2.58,
+        -13.26,
+        3.42,
+        -11.74
+      ]
+    },
+    {
+      "ref": "C29",
+      "value": "100nF /16V X7R",
+      "footprint": "C29_C_0402_1005Metric",
+      "side": "top",
+      "native_position_mm": [
+        131.0,
+        129.0
+      ],
+      "position_mm": [
+        13.0,
+        -15.0
+      ],
+      "native_angle_degrees": 0.0,
+      "dnp": false,
+      "fab_bounds_mm": [
+        12.45,
+        -15.42,
+        13.55,
+        -14.58
+      ],
+      "land_bounds_mm": [
+        12.24,
+        -15.31,
+        13.76,
+        -14.69
+      ],
+      "body_and_land_bounds_mm": [
+        12.24,
+        -15.42,
+        13.76,
+        -14.58
+      ]
+    },
+    {
+      "ref": "C3",
+      "value": "47uF /10V",
+      "footprint": "C3_C_0805_2012Metric",
+      "side": "top",
+      "native_position_mm": [
+        102.0,
+        118.3
+      ],
+      "position_mm": [
+        -16.0,
+        -4.3
+      ],
+      "native_angle_degrees": 90.0,
+      "dnp": false,
+      "fab_bounds_mm": [
+        -16.795,
+        -5.35,
+        -15.205,
+        -3.25
+      ],
+      "land_bounds_mm": [
+        -16.725,
+        -5.75,
+        -15.275,
+        -2.85
+      ],
+      "body_and_land_bounds_mm": [
+        -16.795,
+        -5.75,
+        -15.205,
+        -2.85
+      ]
+    },
+    {
+      "ref": "C30",
+      "value": "100nF /16V X7R",
+      "footprint": "C30_C_0402_1005Metric",
+      "side": "top",
+      "native_position_mm": [
+        135.5,
+        108.5
+      ],
+      "position_mm": [
+        17.5,
+        5.5
+      ],
+      "native_angle_degrees": 0.0,
+      "dnp": false,
+      "fab_bounds_mm": [
+        16.95,
+        5.08,
+        18.05,
+        5.92
+      ],
+      "land_bounds_mm": [
+        16.74,
+        5.19,
+        18.26,
+        5.81
+      ],
+      "body_and_land_bounds_mm": [
+        16.74,
+        5.08,
+        18.26,
+        5.92
+      ]
+    },
+    {
+      "ref": "C31",
+      "value": "100nF /16V",
+      "footprint": "C30_C_0402_1005Metric",
+      "side": "top",
+      "native_position_mm": [
+        108.75,
+        101.5
+      ],
+      "position_mm": [
+        -9.25,
+        12.5
+      ],
+      "native_angle_degrees": -90.0,
+      "dnp": false,
+      "fab_bounds_mm": [
+        -9.67,
+        11.95,
+        -8.83,
+        13.05
+      ],
+      "land_bounds_mm": [
+        -9.56,
+        11.74,
+        -8.94,
+        13.26
+      ],
+      "body_and_land_bounds_mm": [
+        -9.67,
+        11.74,
+        -8.83,
+        13.26
+      ]
+    },
+    {
+      "ref": "C32",
+      "value": "100nF /16V",
+      "footprint": "C30_C_0402_1005Metric",
+      "side": "top",
+      "native_position_mm": [
+        114.75,
+        100.0
+      ],
+      "position_mm": [
+        -3.25,
+        14.0
+      ],
+      "native_angle_degrees": 90.0,
+      "dnp": false,
+      "fab_bounds_mm": [
+        -3.67,
+        13.45,
+        -2.83,
+        14.55
+      ],
+      "land_bounds_mm": [
+        -3.56,
+        13.24,
+        -2.94,
+        14.76
+      ],
+      "body_and_land_bounds_mm": [
+        -3.67,
+        13.24,
+        -2.83,
+        14.76
+      ]
+    },
+    {
+      "ref": "C33",
+      "value": "100nF /16V",
+      "footprint": "C30_C_0402_1005Metric",
+      "side": "bottom",
+      "native_position_mm": [
+        102.0,
+        100.0
+      ],
+      "position_mm": [
+        -16.0,
+        14.0
+      ],
+      "native_angle_degrees": 90.0,
+      "dnp": false,
+      "fab_bounds_mm": [
+        -16.42,
+        13.45,
+        -15.58,
+        14.55
+      ],
+      "land_bounds_mm": [
+        -16.31,
+        13.24,
+        -15.69,
+        14.76
+      ],
+      "body_and_land_bounds_mm": [
+        -16.42,
+        13.24,
+        -15.58,
+        14.76
+      ]
+    },
+    {
+      "ref": "C34",
+      "value": "1nF /50V C0G",
+      "footprint": "C30_C_0402_1005Metric",
+      "side": "top",
+      "native_position_mm": [
+        110.25,
+        99.5
+      ],
+      "position_mm": [
+        -7.75,
+        14.5
+      ],
+      "native_angle_degrees": 0.0,
+      "dnp": false,
+      "fab_bounds_mm": [
+        -8.3,
+        14.08,
+        -7.2,
+        14.92
+      ],
+      "land_bounds_mm": [
+        -8.51,
+        14.19,
+        -6.99,
+        14.81
+      ],
+      "body_and_land_bounds_mm": [
+        -8.51,
+        14.08,
+        -6.99,
+        14.92
+      ]
+    },
+    {
+      "ref": "C35",
+      "value": "1nF /50V C0G",
+      "footprint": "C30_C_0402_1005Metric",
+      "side": "top",
+      "native_position_mm": [
+        117.0,
+        104.25
+      ],
+      "position_mm": [
+        -1.0,
+        9.75
+      ],
+      "native_angle_degrees": 0.0,
+      "dnp": false,
+      "fab_bounds_mm": [
+        -1.55,
+        9.33,
+        -0.45,
+        10.17
+      ],
+      "land_bounds_mm": [
+        -1.76,
+        9.44,
+        -0.24,
+        10.06
+      ],
+      "body_and_land_bounds_mm": [
+        -1.76,
+        9.33,
+        -0.24,
+        10.17
+      ]
+    },
+    {
+      "ref": "C36",
+      "value": "1nF /50V C0G",
+      "footprint": "C30_C_0402_1005Metric",
+      "side": "bottom",
+      "native_position_mm": [
+        104.0,
+        121.0
+      ],
+      "position_mm": [
+        -14.0,
+        -7.0
+      ],
+      "native_angle_degrees": -90.0,
+      "dnp": false,
+      "fab_bounds_mm": [
+        -14.42,
+        -7.55,
+        -13.58,
+        -6.45
+      ],
+      "land_bounds_mm": [
+        -14.31,
+        -7.76,
+        -13.69,
+        -6.24
+      ],
+      "body_and_land_bounds_mm": [
+        -14.42,
+        -7.76,
+        -13.58,
+        -6.24
+      ]
+    },
+    {
+      "ref": "C4",
+      "value": "10uF /10V",
+      "footprint": "C4_C_0603_1608Metric",
+      "side": "bottom",
+      "native_position_mm": [
+        105.2,
+        117.0
+      ],
+      "position_mm": [
+        -12.8,
+        -3.0
+      ],
+      "native_angle_degrees": 0.0,
+      "dnp": false,
+      "fab_bounds_mm": [
+        -13.65,
+        -3.57,
+        -11.95,
+        -2.43
+      ],
+      "land_bounds_mm": [
+        -14.025,
+        -3.475,
+        -11.575,
+        -2.525
+      ],
+      "body_and_land_bounds_mm": [
+        -14.025,
+        -3.57,
+        -11.575,
+        -2.43
+      ]
+    },
+    {
+      "ref": "C5",
+      "value": "100nF",
+      "footprint": "C5_C_0201_0603Metric",
+      "side": "top",
+      "native_position_mm": [
+        113.75,
+        105.8
+      ],
+      "position_mm": [
+        -4.25,
+        8.2
+      ],
+      "native_angle_degrees": 0.0,
+      "dnp": false,
+      "fab_bounds_mm": [
+        -4.6,
+        8.0,
+        -3.9,
+        8.4
+      ],
+      "land_bounds_mm": [
+        -4.675,
+        8.025,
+        -3.825,
+        8.375
+      ],
+      "body_and_land_bounds_mm": [
+        -4.675,
+        8.0,
+        -3.825,
+        8.4
+      ]
+    },
+    {
+      "ref": "C6",
+      "value": "4.7uF",
+      "footprint": "C6_C_0402_1005Metric",
+      "side": "top",
+      "native_position_mm": [
+        116.0,
+        105.3
+      ],
+      "position_mm": [
+        -2.0,
+        8.7
+      ],
+      "native_angle_degrees": 0.0,
+      "dnp": false,
+      "fab_bounds_mm": [
+        -2.55,
+        8.28,
+        -1.45,
+        9.12
+      ],
+      "land_bounds_mm": [
+        -2.76,
+        8.39,
+        -1.24,
+        9.01
+      ],
+      "body_and_land_bounds_mm": [
+        -2.76,
+        8.28,
+        -1.24,
+        9.12
+      ]
+    },
+    {
+      "ref": "C7",
+      "value": "4.7uF",
+      "footprint": "C7_C_0402_1005Metric",
+      "side": "top",
+      "native_position_mm": [
+        107.75,
+        121.0
+      ],
+      "position_mm": [
+        -10.25,
+        -7.0
+      ],
+      "native_angle_degrees": 0.0,
+      "dnp": false,
+      "fab_bounds_mm": [
+        -10.8,
+        -7.42,
+        -9.7,
+        -6.58
+      ],
+      "land_bounds_mm": [
+        -11.01,
+        -7.31,
+        -9.49,
+        -6.69
+      ],
+      "body_and_land_bounds_mm": [
+        -11.01,
+        -7.42,
+        -9.49,
+        -6.58
+      ]
+    },
+    {
+      "ref": "C8",
+      "value": "100nF",
+      "footprint": "C8_C_0201_0603Metric",
+      "side": "bottom",
+      "native_position_mm": [
+        104.8,
+        112.0
+      ],
+      "position_mm": [
+        -13.2,
+        2.0
+      ],
+      "native_angle_degrees": 0.0,
+      "dnp": false,
+      "fab_bounds_mm": [
+        -13.55,
+        1.8,
+        -12.85,
+        2.2
+      ],
+      "land_bounds_mm": [
+        -13.625,
+        1.825,
+        -12.775,
+        2.175
+      ],
+      "body_and_land_bounds_mm": [
+        -13.625,
+        1.8,
+        -12.775,
+        2.2
+      ]
+    },
+    {
+      "ref": "C9",
+      "value": "1uF /16V X7R",
+      "footprint": "C9_C_0805_2012Metric",
+      "side": "bottom",
+      "native_position_mm": [
+        101.8,
+        114.3
+      ],
+      "position_mm": [
+        -16.2,
+        -0.3
+      ],
+      "native_angle_degrees": -90.0,
+      "dnp": false,
+      "fab_bounds_mm": [
+        -16.995,
+        -1.35,
+        -15.405,
+        0.75
+      ],
+      "land_bounds_mm": [
+        -16.925,
+        -1.75,
+        -15.475,
+        1.15
+      ],
+      "body_and_land_bounds_mm": [
+        -16.995,
+        -1.75,
+        -15.405,
+        1.15
+      ]
+    },
+    {
+      "ref": "D1",
+      "value": "TPD4E1U06DCKR",
+      "footprint": "TPD4E1U06DCKR",
+      "side": "bottom",
+      "native_position_mm": [
+        133.4,
+        99.7
+      ],
+      "position_mm": [
+        15.4,
+        14.3
+      ],
+      "native_angle_degrees": 0.0,
+      "dnp": false,
+      "fab_bounds_mm": [
+        14.02,
+        12.96,
+        16.195,
+        15.47
+      ],
+      "land_bounds_mm": [
+        13.85,
+        13.45,
+        16.95,
+        15.15
+      ],
+      "body_and_land_bounds_mm": [
+        13.85,
+        12.96,
+        16.95,
+        15.47
+      ]
+    },
+    {
+      "ref": "D2",
+      "value": "TPD4E1U06DCKR",
+      "footprint": "TPD4E1U06DCKR",
+      "side": "bottom",
+      "native_position_mm": [
+        126.8,
+        116.2
+      ],
+      "position_mm": [
+        8.8,
+        -2.2
+      ],
+      "native_angle_degrees": 0.0,
+      "dnp": false,
+      "fab_bounds_mm": [
+        7.42,
+        -3.54,
+        9.595,
+        -1.03
+      ],
+      "land_bounds_mm": [
+        7.25,
+        -3.05,
+        10.35,
+        -1.35
+      ],
+      "body_and_land_bounds_mm": [
+        7.25,
+        -3.54,
+        10.35,
+        -1.03
+      ]
+    },
+    {
+      "ref": "FB1",
+      "value": "22R @100MHz",
+      "footprint": "FB1_L_0603_1608Metric",
+      "side": "top",
+      "native_position_mm": [
+        102.0,
+        114.0
+      ],
+      "position_mm": [
+        -16.0,
+        0.0
+      ],
+      "native_angle_degrees": 90.0,
+      "dnp": false,
+      "fab_bounds_mm": [
+        -16.57,
+        -0.85,
+        -15.43,
+        0.85
+      ],
+      "land_bounds_mm": [
+        -16.475,
+        -1.225,
+        -15.525,
+        1.225
+      ],
+      "body_and_land_bounds_mm": [
+        -16.57,
+        -1.225,
+        -15.43,
+        1.225
+      ]
+    },
+    {
+      "ref": "J1",
+      "value": "LTE antenna / 50R",
+      "footprint": "J1_U.FL_Hirose_U.FL-R-SMT-1_Vertical",
+      "side": "top",
+      "native_position_mm": [
+        118.3,
+        122.3
+      ],
+      "position_mm": [
+        0.3,
+        -8.3
+      ],
+      "native_angle_degrees": 0.0,
+      "dnp": false,
+      "fab_bounds_mm": [
+        -1.75,
+        -9.85,
+        1.72,
+        -6.75
+      ],
+      "land_bounds_mm": [
+        -1.75,
+        -10.3,
+        1.4,
+        -6.3
+      ],
+      "body_and_land_bounds_mm": [
+        -1.75,
+        -10.3,
+        1.72,
+        -6.3
+      ]
+    },
+    {
+      "ref": "J2",
+      "value": "GNSS antenna / passive",
+      "footprint": "J2_U.FL_Hirose_U.FL-R-SMT-1_Vertical",
+      "side": "top",
+      "native_position_mm": [
+        128.3,
+        111.8
+      ],
+      "position_mm": [
+        10.3,
+        2.2
+      ],
+      "native_angle_degrees": 0.0,
+      "dnp": false,
+      "fab_bounds_mm": [
+        8.25,
+        0.65,
+        11.72,
+        3.75
+      ],
+      "land_bounds_mm": [
+        8.25,
+        0.2,
+        11.4,
+        4.2
+      ],
+      "body_and_land_bounds_mm": [
+        8.25,
+        0.2,
+        11.72,
+        4.2
+      ]
+    },
+    {
+      "ref": "J3",
+      "value": "5V charging input",
+      "footprint": "J3_Solder_1x02_P2.5mm",
+      "side": "top",
+      "native_position_mm": [
+        102.5,
+        126.2
+      ],
+      "position_mm": [
+        -15.5,
+        -12.2
+      ],
+      "native_angle_degrees": 0.0,
+      "dnp": false,
+      "fab_bounds_mm": null,
+      "land_bounds_mm": [
+        -17.5,
+        -13.0,
+        -13.5,
+        -11.4
+      ],
+      "body_and_land_bounds_mm": [
+        -17.5,
+        -13.0,
+        -13.5,
+        -11.4
+      ]
+    },
+    {
+      "ref": "J4",
+      "value": "Protected cell + NTC",
+      "footprint": "J4_Solder_1x03_P2.5mm",
+      "side": "bottom",
+      "native_position_mm": [
+        106.0,
+        126.05
+      ],
+      "position_mm": [
+        -12.0,
+        -12.05
+      ],
+      "native_angle_degrees": 0.0,
+      "dnp": false,
+      "fab_bounds_mm": null,
+      "land_bounds_mm": [
+        -15.25,
+        -12.85,
+        -8.75,
+        -11.25
+      ],
+      "body_and_land_bounds_mm": [
+        -15.25,
+        -12.85,
+        -8.75,
+        -11.25
+      ]
+    },
+    {
+      "ref": "J5",
+      "value": "DIGITAL health sensor interface",
+      "footprint": "J5_Contact_2x06_P1.27mm",
+      "side": "bottom",
+      "native_position_mm": [
+        125.0,
+        125.0
+      ],
+      "position_mm": [
+        7.0,
+        -11.0
+      ],
+      "native_angle_degrees": 0.0,
+      "dnp": false,
+      "fab_bounds_mm": null,
+      "land_bounds_mm": [
+        3.425,
+        -12.035,
+        10.575,
+        -9.965
+      ],
+      "body_and_land_bounds_mm": [
+        3.425,
+        -12.035,
+        10.575,
+        -9.965
+      ]
+    },
+    {
+      "ref": "J6",
+      "value": "SIM8051-6-0-14-00-A",
+      "footprint": "SIM8051_6_0_14_00_A",
+      "side": "bottom",
+      "native_position_mm": [
+        127.0,
+        108.0
+      ],
+      "position_mm": [
+        9.0,
+        6.0
+      ],
+      "native_angle_degrees": 0.0,
+      "dnp": false,
+      "fab_bounds_mm": [
+        4.48,
+        -0.15,
+        13.52,
+        12.15
+      ],
+      "land_bounds_mm": [
+        3.2,
+        -0.45,
+        14.8,
+        12.45
+      ],
+      "body_and_land_bounds_mm": [
+        3.2,
+        -0.45,
+        14.8,
+        12.45
+      ]
+    },
+    {
+      "ref": "J7",
+      "value": "SWD / debug",
+      "footprint": "J7_Contact_2x03_P1.27mm",
+      "side": "bottom",
+      "native_position_mm": [
+        104.0,
+        106.0
+      ],
+      "position_mm": [
+        -14.0,
+        8.0
+      ],
+      "native_angle_degrees": 0.0,
+      "dnp": false,
+      "fab_bounds_mm": null,
+      "land_bounds_mm": [
+        -15.67,
+        6.965,
+        -12.33,
+        9.035
+      ],
+      "body_and_land_bounds_mm": [
+        -15.67,
+        6.965,
+        -12.33,
+        9.035
+      ]
+    },
+    {
+      "ref": "L1",
+      "value": "9.1nH",
+      "footprint": "L1_L_0402_1005Metric",
+      "side": "top",
+      "native_position_mm": [
+        120.5,
+        116.25
+      ],
+      "position_mm": [
+        2.5,
+        -2.25
+      ],
+      "native_angle_degrees": -90.0,
+      "dnp": false,
+      "fab_bounds_mm": [
+        2.2,
+        -2.8,
+        2.8,
+        -1.7
+      ],
+      "land_bounds_mm": [
+        2.18,
+        -3.03,
+        2.82,
+        -1.47
+      ],
+      "body_and_land_bounds_mm": [
+        2.18,
+        -3.03,
+        2.82,
+        -1.47
+      ]
+    },
+    {
+      "ref": "Q1",
+      "value": "DMN62D2UDW-7",
+      "footprint": "Q1_SOT-363_SC-70-6",
+      "side": "top",
+      "native_position_mm": [
+        134.0,
+        121.25
+      ],
+      "position_mm": [
+        16.0,
+        -7.25
+      ],
+      "native_angle_degrees": 90.0,
+      "dnp": false,
+      "fab_bounds_mm": [
+        14.66,
+        -8.63,
+        17.17,
+        -6.455
+      ],
+      "land_bounds_mm": [
+        15.14,
+        -8.5,
+        16.86,
+        -6.0
+      ],
+      "body_and_land_bounds_mm": [
+        14.66,
+        -8.63,
+        17.17,
+        -6.0
+      ]
+    },
+    {
+      "ref": "R1",
+      "value": "22k /1%",
+      "footprint": "R1_R_0402_1005Metric",
+      "side": "bottom",
+      "native_position_mm": [
+        101.8,
+        110.0
+      ],
+      "position_mm": [
+        -16.2,
+        4.0
+      ],
+      "native_angle_degrees": 90.0,
+      "dnp": false,
+      "fab_bounds_mm": [
+        -16.64,
+        3.425,
+        -15.76,
+        4.575
+      ],
+      "land_bounds_mm": [
+        -16.52,
+        3.22,
+        -15.88,
+        4.78
+      ],
+      "body_and_land_bounds_mm": [
+        -16.64,
+        3.22,
+        -15.76,
+        4.78
+      ]
+    },
+    {
+      "ref": "R12",
+      "value": "4.7k",
+      "footprint": "R12_R_0402_1005Metric",
+      "side": "top",
+      "native_position_mm": [
+        120.5,
+        99.9
+      ],
+      "position_mm": [
+        2.5,
+        14.1
+      ],
+      "native_angle_degrees": 0.0,
+      "dnp": false,
+      "fab_bounds_mm": [
+        1.925,
+        13.66,
+        3.075,
+        14.54
+      ],
+      "land_bounds_mm": [
+        1.72,
+        13.78,
+        3.28,
+        14.42
+      ],
+      "body_and_land_bounds_mm": [
+        1.72,
+        13.66,
+        3.28,
+        14.54
+      ]
+    },
+    {
+      "ref": "R13",
+      "value": "4.7k",
+      "footprint": "R13_R_0402_1005Metric",
+      "side": "top",
+      "native_position_mm": [
+        126.4,
+        100.0
+      ],
+      "position_mm": [
+        8.4,
+        14.0
+      ],
+      "native_angle_degrees": 0.0,
+      "dnp": false,
+      "fab_bounds_mm": [
+        7.825,
+        13.56,
+        8.975,
+        14.44
+      ],
+      "land_bounds_mm": [
+        7.62,
+        13.68,
+        9.18,
+        14.32
+      ],
+      "body_and_land_bounds_mm": [
+        7.62,
+        13.56,
+        9.18,
+        14.44
+      ]
+    },
+    {
+      "ref": "R14",
+      "value": "100k",
+      "footprint": "R14_R_0402_1005Metric",
+      "side": "bottom",
+      "native_position_mm": [
+        121.5,
+        119.0
+      ],
+      "position_mm": [
+        3.5,
+        -5.0
+      ],
+      "native_angle_degrees": 0.0,
+      "dnp": false,
+      "fab_bounds_mm": [
+        2.925,
+        -5.44,
+        4.075,
+        -4.56
+      ],
+      "land_bounds_mm": [
+        2.72,
+        -5.32,
+        4.28,
+        -4.68
+      ],
+      "body_and_land_bounds_mm": [
+        2.72,
+        -5.44,
+        4.28,
+        -4.56
+      ]
+    },
+    {
+      "ref": "R15",
+      "value": "100k",
+      "footprint": "R15_R_0402_1005Metric",
+      "side": "bottom",
+      "native_position_mm": [
+        126.0,
+        118.0
+      ],
+      "position_mm": [
+        8.0,
+        -4.0
+      ],
+      "native_angle_degrees": 0.0,
+      "dnp": false,
+      "fab_bounds_mm": [
+        7.425,
+        -4.44,
+        8.575,
+        -3.56
+      ],
+      "land_bounds_mm": [
+        7.22,
+        -4.32,
+        8.78,
+        -3.68
+      ],
+      "body_and_land_bounds_mm": [
+        7.22,
+        -4.44,
+        8.78,
+        -3.56
+      ]
+    },
+    {
+      "ref": "R16",
+      "value": "10k /1%",
+      "footprint": "R16_R_0402_1005Metric",
+      "side": "top",
+      "native_position_mm": [
+        116.45,
+        128.0
+      ],
+      "position_mm": [
+        -1.55,
+        -14.0
+      ],
+      "native_angle_degrees": 90.0,
+      "dnp": false,
+      "fab_bounds_mm": [
+        -1.99,
+        -14.575,
+        -1.11,
+        -13.425
+      ],
+      "land_bounds_mm": [
+        -1.87,
+        -14.78,
+        -1.23,
+        -13.22
+      ],
+      "body_and_land_bounds_mm": [
+        -1.99,
+        -14.78,
+        -1.11,
+        -13.22
+      ]
+    },
+    {
+      "ref": "R17",
+      "value": "200k /0.1%",
+      "footprint": "R17_R_0402_1005Metric",
+      "side": "bottom",
+      "native_position_mm": [
+        113.75,
+        126.0
+      ],
+      "position_mm": [
+        -4.25,
+        -12.0
+      ],
+      "native_angle_degrees": -90.0,
+      "dnp": false,
+      "fab_bounds_mm": [
+        -4.69,
+        -12.575,
+        -3.81,
+        -11.425
+      ],
+      "land_bounds_mm": [
+        -4.57,
+        -12.78,
+        -3.93,
+        -11.22
+      ],
+      "body_and_land_bounds_mm": [
+        -4.69,
+        -12.78,
+        -3.81,
+        -11.22
+      ]
+    },
+    {
+      "ref": "R18",
+      "value": "26.1k /0.1%",
+      "footprint": "R18_R_0402_1005Metric",
+      "side": "top",
+      "native_position_mm": [
+        118.4,
+        126.1
+      ],
+      "position_mm": [
+        0.4,
+        -12.1
+      ],
+      "native_angle_degrees": 0.0,
+      "dnp": false,
+      "fab_bounds_mm": [
+        -0.175,
+        -12.54,
+        0.975,
+        -11.66
+      ],
+      "land_bounds_mm": [
+        -0.38,
+        -12.42,
+        1.18,
+        -11.78
+      ],
+      "body_and_land_bounds_mm": [
+        -0.38,
+        -12.54,
+        1.18,
+        -11.66
+      ]
+    },
+    {
+      "ref": "R19",
+      "value": "3.4M /1%",
+      "footprint": "R19_R_0402_1005Metric",
+      "side": "top",
+      "native_position_mm": [
+        117.92,
+        127.73
+      ],
+      "position_mm": [
+        -0.08,
+        -13.73
+      ],
+      "native_angle_degrees": 0.0,
+      "dnp": false,
+      "fab_bounds_mm": [
+        -0.655,
+        -14.17,
+        0.495,
+        -13.29
+      ],
+      "land_bounds_mm": [
+        -0.86,
+        -14.05,
+        0.7,
+        -13.41
+      ],
+      "body_and_land_bounds_mm": [
+        -0.86,
+        -14.17,
+        0.7,
+        -13.29
+      ]
+    },
+    {
+      "ref": "R2",
+      "value": "1k",
+      "footprint": "R2_R_0402_1005Metric",
+      "side": "bottom",
+      "native_position_mm": [
+        104.7,
+        110.0
+      ],
+      "position_mm": [
+        -13.3,
+        4.0
+      ],
+      "native_angle_degrees": 0.0,
+      "dnp": false,
+      "fab_bounds_mm": [
+        -13.875,
+        3.56,
+        -12.725,
+        4.44
+      ],
+      "land_bounds_mm": [
+        -14.08,
+        3.68,
+        -12.52,
+        4.32
+      ],
+      "body_and_land_bounds_mm": [
+        -14.08,
+        3.56,
+        -12.52,
+        4.44
+      ]
+    },
+    {
+      "ref": "R20",
+      "value": "10k /1%",
+      "footprint": "R20_R_0402_1005Metric",
+      "side": "top",
+      "native_position_mm": [
+        122.5,
+        127.75
+      ],
+      "position_mm": [
+        4.5,
+        -13.75
+      ],
+      "native_angle_degrees": 0.0,
+      "dnp": false,
+      "fab_bounds_mm": [
+        3.925,
+        -14.19,
+        5.075,
+        -13.31
+      ],
+      "land_bounds_mm": [
+        3.72,
+        -14.07,
+        5.28,
+        -13.43
+      ],
+      "body_and_land_bounds_mm": [
+        3.72,
+        -14.19,
+        5.28,
+        -13.31
+      ]
+    },
+    {
+      "ref": "R21",
+      "value": "22R /1%",
+      "footprint": "R21_R_0402_1005Metric",
+      "side": "top",
+      "native_position_mm": [
+        134.5,
+        124.25
+      ],
+      "position_mm": [
+        16.5,
+        -10.25
+      ],
+      "native_angle_degrees": 0.0,
+      "dnp": false,
+      "fab_bounds_mm": [
+        15.925,
+        -10.69,
+        17.075,
+        -9.81
+      ],
+      "land_bounds_mm": [
+        15.72,
+        -10.57,
+        17.28,
+        -9.93
+      ],
+      "body_and_land_bounds_mm": [
+        15.72,
+        -10.69,
+        17.28,
+        -9.81
+      ]
+    },
+    {
+      "ref": "R22",
+      "value": "1M /1%",
+      "footprint": "R22_R_0402_1005Metric",
+      "side": "top",
+      "native_position_mm": [
+        136.0,
+        125.5
+      ],
+      "position_mm": [
+        18.0,
+        -11.5
+      ],
+      "native_angle_degrees": 0.0,
+      "dnp": false,
+      "fab_bounds_mm": [
+        17.425,
+        -11.94,
+        18.575,
+        -11.06
+      ],
+      "land_bounds_mm": [
+        17.22,
+        -11.82,
+        18.78,
+        -11.18
+      ],
+      "body_and_land_bounds_mm": [
+        17.22,
+        -11.94,
+        18.78,
+        -11.06
+      ]
+    },
+    {
+      "ref": "R23",
+      "value": "100k /1%",
+      "footprint": "R23_R_0402_1005Metric",
+      "side": "top",
+      "native_position_mm": [
+        135.75,
+        103.5
+      ],
+      "position_mm": [
+        17.75,
+        10.5
+      ],
+      "native_angle_degrees": 90.0,
+      "dnp": false,
+      "fab_bounds_mm": [
+        17.31,
+        9.925,
+        18.19,
+        11.075
+      ],
+      "land_bounds_mm": [
+        17.43,
+        9.72,
+        18.07,
+        11.28
+      ],
+      "body_and_land_bounds_mm": [
+        17.31,
+        9.72,
+        18.19,
+        11.28
+      ]
+    },
+    {
+      "ref": "R24",
+      "value": "196k /0.1%",
+      "footprint": "R16_R_0402_1005Metric",
+      "side": "top",
+      "native_position_mm": [
+        108.5,
+        104.5
+      ],
+      "position_mm": [
+        -9.5,
+        9.5
+      ],
+      "native_angle_degrees": 0.0,
+      "dnp": false,
+      "fab_bounds_mm": [
+        -10.075,
+        9.06,
+        -8.925,
+        9.94
+      ],
+      "land_bounds_mm": [
+        -10.28,
+        9.18,
+        -8.72,
+        9.82
+      ],
+      "body_and_land_bounds_mm": [
+        -10.28,
+        9.06,
+        -8.72,
+        9.94
+      ]
+    },
+    {
+      "ref": "R25",
+      "value": "49.9k /0.1%",
+      "footprint": "R16_R_0402_1005Metric",
+      "side": "top",
+      "native_position_mm": [
+        114.25,
+        102.5
+      ],
+      "position_mm": [
+        -3.75,
+        11.5
+      ],
+      "native_angle_degrees": 90.0,
+      "dnp": false,
+      "fab_bounds_mm": [
+        -4.19,
+        10.925,
+        -3.31,
+        12.075
+      ],
+      "land_bounds_mm": [
+        -4.07,
+        10.72,
+        -3.43,
+        12.28
+      ],
+      "body_and_land_bounds_mm": [
+        -4.19,
+        10.72,
+        -3.31,
+        12.28
+      ]
+    },
+    {
+      "ref": "R26",
+      "value": "27.4k /0.1%",
+      "footprint": "R16_R_0402_1005Metric",
+      "side": "top",
+      "native_position_mm": [
+        119.75,
+        102.75
+      ],
+      "position_mm": [
+        1.75,
+        11.25
+      ],
+      "native_angle_degrees": 180.0,
+      "dnp": false,
+      "fab_bounds_mm": [
+        1.175,
+        10.81,
+        2.325,
+        11.69
+      ],
+      "land_bounds_mm": [
+        0.97,
+        10.93,
+        2.53,
+        11.57
+      ],
+      "body_and_land_bounds_mm": [
+        0.97,
+        10.81,
+        2.53,
+        11.69
+      ]
+    },
+    {
+      "ref": "R27",
+      "value": "49.9k /0.1%",
+      "footprint": "R16_R_0402_1005Metric",
+      "side": "top",
+      "native_position_mm": [
+        113.25,
+        99.75
+      ],
+      "position_mm": [
+        -4.75,
+        14.25
+      ],
+      "native_angle_degrees": 0.0,
+      "dnp": false,
+      "fab_bounds_mm": [
+        -5.325,
+        13.81,
+        -4.175,
+        14.69
+      ],
+      "land_bounds_mm": [
+        -5.53,
+        13.93,
+        -3.97,
+        14.57
+      ],
+      "body_and_land_bounds_mm": [
+        -5.53,
+        13.81,
+        -3.97,
+        14.69
+      ]
+    },
+    {
+      "ref": "R28",
+      "value": "100k",
+      "footprint": "R16_R_0402_1005Metric",
+      "side": "bottom",
+      "native_position_mm": [
+        104.0,
+        102.5
+      ],
+      "position_mm": [
+        -14.0,
+        11.5
+      ],
+      "native_angle_degrees": -90.0,
+      "dnp": false,
+      "fab_bounds_mm": [
+        -14.44,
+        10.925,
+        -13.56,
+        12.075
+      ],
+      "land_bounds_mm": [
+        -14.32,
+        10.72,
+        -13.68,
+        12.28
+      ],
+      "body_and_land_bounds_mm": [
+        -14.44,
+        10.72,
+        -13.56,
+        12.28
+      ]
+    },
+    {
+      "ref": "R29",
+      "value": "100k",
+      "footprint": "R16_R_0402_1005Metric",
+      "side": "bottom",
+      "native_position_mm": [
+        104.0,
+        99.25
+      ],
+      "position_mm": [
+        -14.0,
+        14.75
+      ],
+      "native_angle_degrees": 0.0,
+      "dnp": false,
+      "fab_bounds_mm": [
+        -14.575,
+        14.31,
+        -13.425,
+        15.19
+      ],
+      "land_bounds_mm": [
+        -14.78,
+        14.43,
+        -13.22,
+        15.07
+      ],
+      "body_and_land_bounds_mm": [
+        -14.78,
+        14.31,
+        -13.22,
+        15.19
+      ]
+    },
+    {
+      "ref": "R3",
+      "value": "0R / tune",
+      "footprint": "R3_R_0402_1005Metric",
+      "side": "top",
+      "native_position_mm": [
+        113.8,
+        120.3
+      ],
+      "position_mm": [
+        -4.2,
+        -6.3
+      ],
+      "native_angle_degrees": 0.0,
+      "dnp": false,
+      "fab_bounds_mm": [
+        -4.775,
+        -6.74,
+        -3.625,
+        -5.86
+      ],
+      "land_bounds_mm": [
+        -4.98,
+        -6.62,
+        -3.42,
+        -5.98
+      ],
+      "body_and_land_bounds_mm": [
+        -4.98,
+        -6.74,
+        -3.42,
+        -5.86
+      ]
+    },
+    {
+      "ref": "R30",
+      "value": "100k",
+      "footprint": "R16_R_0402_1005Metric",
+      "side": "top",
+      "native_position_mm": [
+        99.75,
+        102.0
+      ],
+      "position_mm": [
+        -18.25,
+        12.0
+      ],
+      "native_angle_degrees": 180.0,
+      "dnp": false,
+      "fab_bounds_mm": [
+        -18.825,
+        11.56,
+        -17.675,
+        12.44
+      ],
+      "land_bounds_mm": [
+        -19.03,
+        11.68,
+        -17.47,
+        12.32
+      ],
+      "body_and_land_bounds_mm": [
+        -19.03,
+        11.56,
+        -17.47,
+        12.44
+      ]
+    },
+    {
+      "ref": "R4",
+      "value": "1k",
+      "footprint": "R4_R_0402_1005Metric",
+      "side": "top",
+      "native_position_mm": [
+        126.3,
+        119.3
+      ],
+      "position_mm": [
+        8.3,
+        -5.3
+      ],
+      "native_angle_degrees": 0.0,
+      "dnp": false,
+      "fab_bounds_mm": [
+        7.725,
+        -5.74,
+        8.875,
+        -4.86
+      ],
+      "land_bounds_mm": [
+        7.52,
+        -5.62,
+        9.08,
+        -4.98
+      ],
+      "body_and_land_bounds_mm": [
+        7.52,
+        -5.74,
+        9.08,
+        -4.86
+      ]
+    },
+    {
+      "ref": "R5",
+      "value": "100k",
+      "footprint": "R5_R_0402_1005Metric",
+      "side": "top",
+      "native_position_mm": [
+        126.3,
+        120.7
+      ],
+      "position_mm": [
+        8.3,
+        -6.7
+      ],
+      "native_angle_degrees": 0.0,
+      "dnp": false,
+      "fab_bounds_mm": [
+        7.725,
+        -7.14,
+        8.875,
+        -6.26
+      ],
+      "land_bounds_mm": [
+        7.52,
+        -7.02,
+        9.08,
+        -6.38
+      ],
+      "body_and_land_bounds_mm": [
+        7.52,
+        -7.14,
+        9.08,
+        -6.26
+      ]
+    },
+    {
+      "ref": "R6",
+      "value": "18k /1%",
+      "footprint": "R6_R_0402_1005Metric",
+      "side": "top",
+      "native_position_mm": [
+        106.0,
+        125.8
+      ],
+      "position_mm": [
+        -12.0,
+        -11.8
+      ],
+      "native_angle_degrees": 0.0,
+      "dnp": false,
+      "fab_bounds_mm": [
+        -12.575,
+        -12.24,
+        -11.425,
+        -11.36
+      ],
+      "land_bounds_mm": [
+        -12.78,
+        -12.12,
+        -11.22,
+        -11.48
+      ],
+      "body_and_land_bounds_mm": [
+        -12.78,
+        -12.24,
+        -11.22,
+        -11.36
+      ]
+    },
+    {
+      "ref": "R7",
+      "value": "3k /1%",
+      "footprint": "R7_R_0402_1005Metric",
+      "side": "top",
+      "native_position_mm": [
+        108.2,
+        125.8
+      ],
+      "position_mm": [
+        -9.8,
+        -11.8
+      ],
+      "native_angle_degrees": 0.0,
+      "dnp": false,
+      "fab_bounds_mm": [
+        -10.375,
+        -12.24,
+        -9.225,
+        -11.36
+      ],
+      "land_bounds_mm": [
+        -10.58,
+        -12.12,
+        -9.02,
+        -11.48
+      ],
+      "body_and_land_bounds_mm": [
+        -10.58,
+        -12.24,
+        -9.02,
+        -11.36
+      ]
+    },
+    {
+      "ref": "R8",
+      "value": "10k",
+      "footprint": "R8_R_0402_1005Metric",
+      "side": "bottom",
+      "native_position_mm": [
+        110.0,
+        102.0
+      ],
+      "position_mm": [
+        -8.0,
+        12.0
+      ],
+      "native_angle_degrees": 0.0,
+      "dnp": false,
+      "fab_bounds_mm": [
+        -8.575,
+        11.56,
+        -7.425,
+        12.44
+      ],
+      "land_bounds_mm": [
+        -8.78,
+        11.68,
+        -7.22,
+        12.32
+      ],
+      "body_and_land_bounds_mm": [
+        -8.78,
+        11.56,
+        -7.22,
+        12.44
+      ]
+    },
+    {
+      "ref": "R9",
+      "value": "10k",
+      "footprint": "R9_R_0402_1005Metric",
+      "side": "bottom",
+      "native_position_mm": [
+        113.0,
+        102.0
+      ],
+      "position_mm": [
+        -5.0,
+        12.0
+      ],
+      "native_angle_degrees": 0.0,
+      "dnp": false,
+      "fab_bounds_mm": [
+        -5.575,
+        11.56,
+        -4.425,
+        12.44
+      ],
+      "land_bounds_mm": [
+        -5.78,
+        11.68,
+        -4.22,
+        12.32
+      ],
+      "body_and_land_bounds_mm": [
+        -5.78,
+        11.56,
+        -4.22,
+        12.44
+      ]
+    },
+    {
+      "ref": "U1",
+      "value": "nRF9151-LACA",
+      "footprint": "U1_LGA_9151_12.1x11.1mm",
+      "side": "top",
+      "native_position_mm": [
+        111.0,
+        113.0
+      ],
+      "position_mm": [
+        -7.0,
+        1.0
+      ],
+      "native_angle_degrees": 0.0,
+      "dnp": false,
+      "fab_bounds_mm": [
+        -13.72,
+        -4.72,
+        -0.78,
+        7.22
+      ],
+      "land_bounds_mm": [
+        -12.85,
+        -4.35,
+        -1.15,
+        6.35001
+      ],
+      "body_and_land_bounds_mm": [
+        -13.72,
+        -4.72,
+        -0.78,
+        7.22
+      ]
+    },
+    {
+      "ref": "U10",
+      "value": "TLV3012BIDCKR / HOT",
+      "footprint": "TI_DCK0006A",
+      "side": "top",
+      "native_position_mm": [
+        111.0,
+        102.5
+      ],
+      "position_mm": [
+        -7.0,
+        11.5
+      ],
+      "native_angle_degrees": 90.0,
+      "dnp": false,
+      "fab_bounds_mm": [
+        -8.15,
+        10.75,
+        -5.85,
+        12.25
+      ],
+      "land_bounds_mm": [
+        -7.85,
+        9.95,
+        -6.15,
+        13.05
+      ],
+      "body_and_land_bounds_mm": [
+        -8.15,
+        9.95,
+        -5.85,
+        13.05
+      ]
+    },
+    {
+      "ref": "U11",
+      "value": "TLV3012BIDCKR / COLD",
+      "footprint": "TI_DCK0006A",
+      "side": "top",
+      "native_position_mm": [
+        117.0,
+        101.0
+      ],
+      "position_mm": [
+        -1.0,
+        13.0
+      ],
+      "native_angle_degrees": 90.0,
+      "dnp": false,
+      "fab_bounds_mm": [
+        -2.15,
+        12.25,
+        0.15,
+        13.75
+      ],
+      "land_bounds_mm": [
+        -1.85,
+        11.45,
+        -0.15,
+        14.55
+      ],
+      "body_and_land_bounds_mm": [
+        -2.15,
+        11.45,
+        0.15,
+        14.55
+      ]
+    },
+    {
+      "ref": "U12",
+      "value": "SN74LVC1G00DCKR",
+      "footprint": "TI_DCK0005A",
+      "side": "bottom",
+      "native_position_mm": [
+        99.75,
+        101.0
+      ],
+      "position_mm": [
+        -18.25,
+        13.0
+      ],
+      "native_angle_degrees": 90.0,
+      "dnp": false,
+      "fab_bounds_mm": [
+        -19.4,
+        12.25,
+        -17.1,
+        13.75
+      ],
+      "land_bounds_mm": [
+        -19.1,
+        11.425,
+        -17.4,
+        14.575
+      ],
+      "body_and_land_bounds_mm": [
+        -19.4,
+        11.425,
+        -17.1,
+        14.575
+      ]
+    },
+    {
+      "ref": "U2",
+      "value": "SKY65943-11",
+      "footprint": "U2_SKY65943_DK10171",
+      "side": "top",
+      "native_position_mm": [
+        123.0,
+        116.5
+      ],
+      "position_mm": [
+        5.0,
+        -2.5
+      ],
+      "native_angle_degrees": 180.0,
+      "dnp": false,
+      "fab_bounds_mm": [
+        3.55,
+        -3.95,
+        6.44999,
+        -1.05
+      ],
+      "land_bounds_mm": [
+        3.59999,
+        -3.901,
+        6.4,
+        -1.099
+      ],
+      "body_and_land_bounds_mm": [
+        3.55,
+        -3.95,
+        6.44999,
+        -1.05
+      ]
+    },
+    {
+      "ref": "U3",
+      "value": "BQ25185DLHR",
+      "footprint": "U3_Texas_DLH0010A_WSON-10-1EP_2.2x2mm_P0.4mm_EP0.9x1.5mm",
+      "side": "top",
+      "native_position_mm": [
+        105.0,
+        123.0
+      ],
+      "position_mm": [
+        -13.0,
+        -9.0
+      ],
+      "native_angle_degrees": 0.0,
+      "dnp": false,
+      "fab_bounds_mm": [
+        -14.3,
+        -10.22,
+        -11.73,
+        -7.58
+      ],
+      "land_bounds_mm": [
+        -14.475,
+        -9.9,
+        -11.525,
+        -8.1
+      ],
+      "body_and_land_bounds_mm": [
+        -14.475,
+        -10.22,
+        -11.525,
+        -7.58
+      ]
+    },
+    {
+      "ref": "U4",
+      "value": "TPS7A0218PDBVR",
+      "footprint": "U4_SOT-23-5",
+      "side": "top",
+      "native_position_mm": [
+        103.0,
+        102.5
+      ],
+      "position_mm": [
+        -15.0,
+        11.5
+      ],
+      "native_angle_degrees": 0.0,
+      "dnp": false,
+      "fab_bounds_mm": [
+        -16.75,
+        9.88,
+        -14.03,
+        13.4
+      ],
+      "land_bounds_mm": [
+        -16.8,
+        10.25,
+        -13.2,
+        12.75
+      ],
+      "body_and_land_bounds_mm": [
+        -16.8,
+        9.88,
+        -13.2,
+        13.4
+      ]
+    },
+    {
+      "ref": "U5",
+      "value": "LIS2DW12TR",
+      "footprint": "U5_LGA-12_2x2mm_P0.5mm",
+      "side": "top",
+      "native_position_mm": [
+        129.0,
+        104.5
+      ],
+      "position_mm": [
+        11.0,
+        9.5
+      ],
+      "native_angle_degrees": 0.0,
+      "dnp": false,
+      "fab_bounds_mm": [
+        9.48,
+        8.34,
+        12.16,
+        11.02
+      ],
+      "land_bounds_mm": [
+        10.05,
+        8.55,
+        11.95,
+        10.45
+      ],
+      "body_and_land_bounds_mm": [
+        9.48,
+        8.34,
+        12.16,
+        11.02
+      ]
+    },
+    {
+      "ref": "U6",
+      "value": "TPS3808G01DBVR",
+      "footprint": "U6_SOT-23-6",
+      "side": "top",
+      "native_position_mm": [
+        112.5,
+        127.0
+      ],
+      "position_mm": [
+        -5.5,
+        -13.0
+      ],
+      "native_angle_degrees": 0.0,
+      "dnp": false,
+      "fab_bounds_mm": [
+        -7.25,
+        -14.62,
+        -4.53,
+        -11.1
+      ],
+      "land_bounds_mm": [
+        -7.35,
+        -14.25,
+        -3.65,
+        -11.75
+      ],
+      "body_and_land_bounds_mm": [
+        -7.35,
+        -14.62,
+        -3.65,
+        -11.1
+      ]
+    },
+    {
+      "ref": "U7",
+      "value": "TPS3808G30DBVR",
+      "footprint": "U7_SOT-23-6",
+      "side": "bottom",
+      "native_position_mm": [
+        116.0,
+        123.25
+      ],
+      "position_mm": [
+        -2.0,
+        -9.25
+      ],
+      "native_angle_degrees": 90.0,
+      "dnp": false,
+      "fab_bounds_mm": [
+        -3.62,
+        -11.0,
+        -0.1,
+        -8.28
+      ],
+      "land_bounds_mm": [
+        -3.25,
+        -11.1,
+        -0.75,
+        -7.4
+      ],
+      "body_and_land_bounds_mm": [
+        -3.62,
+        -11.1,
+        -0.1,
+        -7.4
+      ]
+    },
+    {
+      "ref": "U8",
+      "value": "SN74LVC1G14DCKR",
+      "footprint": "U8_SOT-353_SC-70-5",
+      "side": "top",
+      "native_position_mm": [
+        133.0,
+        127.0
+      ],
+      "position_mm": [
+        15.0,
+        -13.0
+      ],
+      "native_angle_degrees": 0.0,
+      "dnp": false,
+      "fab_bounds_mm": [
+        13.62,
+        -14.17,
+        15.795,
+        -11.66
+      ],
+      "land_bounds_mm": [
+        13.425,
+        -13.85,
+        16.575,
+        -12.15
+      ],
+      "body_and_land_bounds_mm": [
+        13.425,
+        -14.17,
+        16.575,
+        -11.66
+      ]
+    },
+    {
+      "ref": "U9",
+      "value": "MAX17048G+T10",
+      "footprint": "U9_MAX17048_T822_3_90_0065E",
+      "side": "top",
+      "native_position_mm": [
+        134.75,
+        111.75
+      ],
+      "position_mm": [
+        16.75,
+        2.25
+      ],
+      "native_angle_degrees": -90.0,
+      "dnp": false,
+      "fab_bounds_mm": [
+        15.7,
+        1.2,
+        18.025,
+        4.025
+      ],
+      "land_bounds_mm": [
+        15.85,
+        0.91,
+        17.65,
+        3.59
+      ],
+      "body_and_land_bounds_mm": [
+        15.7,
+        0.91,
+        18.025,
+        4.025
+      ]
+    }
+  ]
+}

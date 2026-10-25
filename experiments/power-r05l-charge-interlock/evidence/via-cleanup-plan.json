@@ -1,0 +1,49 @@
+{
+  "source_sha256": "604391fc005280a48756fb7b9cda81d339e6ec916a2a4875ba2c54bc2d2e0dea",
+  "drc_sha256": "d86950b045dc519f84e9e7fc20e74ab8df37a4c3f2355c7ab5d419b1901aabc3",
+  "accepted": [
+    {
+      "via": {
+        "id": "e075c8ac-a965-4a08-b4c1-417b8f9d3c82",
+        "net": "/CHG_HOT_REF",
+        "pos": [
+          109.1,
+          98.85
+        ],
+        "diameter": 0.6,
+        "drill": 0.2,
+        "layers": [
+          "F.Cu",
+          "In1.Cu",
+          "In2.Cu",
+          "In3.Cu",
+          "In4.Cu",
+          "B.Cu"
+        ]
+      },
+      "paths": [
+        {
+          "start": [
+            109.1,
+            98.85
+          ],
+          "end": [
+            109.12,
+            98.85
+          ],
+          "width": 0.2,
+          "layer": "F.Cu",
+          "net": "/CHG_HOT_REF"
+        }
+      ],
+      "outside_mm2": 0.0,
+      "extension_clearance_mm": null,
+      "touching_track_ids": [
+        "b5e0a7fc-3c17-4dc6-ac3f-615f7ab03ce4",
+        "e81fa9c6-75ae-40f5-bd20-223ae9f8d80a"
+      ]
+    }
+  ],
+  "rejected": [],
+  "scope": "Geometric proposal only; native terminal-group and DRC checks remain required."
+}

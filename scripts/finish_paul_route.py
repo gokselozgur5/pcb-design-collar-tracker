@@ -42,7 +42,7 @@ assert math.isfinite(args.route_limit_mm) and args.route_limit_mm>0
 PCB=args.board;DRC=args.drc_json;OUTPUT=args.output_board or PCB
 b=k.LoadBoard(str(PCB));d=json.loads(DRC.read_text());layers=[k.F_Cu,k.B_Cu];STEP=.05
 if args.six_layer_signals:
-    assert PCB.resolve().parent.parent.name == 'power-r05h-six-layer'
+    assert PCB.resolve().parent.parent.name in {'power-r05h-six-layer', 'power-r05l-charge-interlock'}
     assert b.GetCopperLayerCount() == 6
     assert {z.GetLayer() for z in b.Zones() if not z.GetIsRuleArea()} == {k.In1_Cu,k.In4_Cu}
     assert all(z.GetNetname() == '/GND' for z in b.Zones() if not z.GetIsRuleArea())
@@ -55,14 +55,17 @@ assert ('paul-nanosim' in str(PCB) or PCB.resolve().parent.parent.name in
         {'power-r05-supervised', 'power-r05b-pin-exits', 'power-r05c-return-corridors',
          'power-r05d-joint-routing', 'power-r05e-native-joint',
          'power-r05f-return-reset', 'power-r05g-local-crossings',
-         'power-r05h-six-layer'}), 'Use an isolated nano-SIM trial'
+         'power-r05h-six-layer', 'power-r05l-charge-interlock'}), 'Use an isolated nano-SIM trial'
 branch_backbones={}
 if args.low_current_net:
     assert PCB.resolve().parent.parent.name in {'power-r05b-pin-exits', 'power-r05c-return-corridors',
                                              'power-r05d-joint-routing', 'power-r05e-native-joint',
                                              'power-r05f-return-reset', 'power-r05g-local-crossings',
-                                             'power-r05h-six-layer'}
-    assert set(args.low_current_net)<={'/VDD_NRF','/VBAT','/VIO_1V8'}
+                                             'power-r05h-six-layer', 'power-r05l-charge-interlock'}
+    allowed_low_current={'/VDD_NRF','/VBAT','/VIO_1V8'}
+    if PCB.resolve().parent.parent.name=='power-r05l-charge-interlock':
+        allowed_low_current.add('/VSYS')
+    assert set(args.low_current_net)<=allowed_low_current
     from trim_power_r05_tails import islands
     old=json.loads((Path(__file__).resolve().parents[1]/
         'experiments/paul-nanosim-r04i-sim-access-40x32/hardware/design.json').read_text())

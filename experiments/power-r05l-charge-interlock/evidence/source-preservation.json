@@ -1,0 +1,45 @@
+{
+  "source_sha256": "241c84d6ba98793c37344e1e46ddc4918e7b05322ba87daea7c9a90ffb8379b3",
+  "baseline_sha256": "bea6c52a7f045b5fb21ac9714f3db0c70207f150aab3e9587b891f08e4e2b4d3",
+  "preserved_original_footprints": 71,
+  "only_original_pin_net_change": "U3.4: GND -> CHARGE_DISABLE",
+  "original_copper_items_preserved": 2292,
+  "removed_original_items": [
+    "039348dc-67c2-4313-abc4-71ee3b7a4fd9",
+    "042c526c-cdad-4711-9e09-f6e868bb9118",
+    "2548f90f-5f4d-478e-995d-79194c03d34d",
+    "45c72d1b-b93f-4d60-a295-a08e45592df5",
+    "5b1cb9de-973b-4c30-87a8-2d574546eaa6",
+    "60bd205c-256a-434e-8e8b-5a69aa3abf18",
+    "a4490e07-effb-4f77-a98c-bd7a2b0b09cf",
+    "f8206ed0-2bb9-4195-9ab6-9f6a08f9b37e"
+  ],
+  "added_copper_items": 483,
+  "unchanged_rf_segments": 27,
+  "unchanged_rules_stack_lands_and_keepouts": true,
+  "repositioned_full_size_labels": [
+    "5V",
+    "BAT+",
+    "SWD"
+  ],
+  "added_refs": [
+    "C31",
+    "C32",
+    "C33",
+    "C34",
+    "C35",
+    "C36",
+    "R24",
+    "R25",
+    "R26",
+    "R27",
+    "R28",
+    "R29",
+    "R30",
+    "U10",
+    "U11",
+    "U12"
+  ],
+  "checker_sha256": "7a5a8dfe22fbb51b8e02b5683294360f2b10be60461d4ffba91162efdcd465d1",
+  "scope": "Source identity and bounded geometry differences. New routing has its own native DRC, ground, power, RF-reference, fit and supplier evidence; this comparison is not functional qualification."
+}

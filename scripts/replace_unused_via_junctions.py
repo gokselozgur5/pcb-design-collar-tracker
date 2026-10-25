@@ -93,7 +93,7 @@ if __name__=='__main__':
     p.add_argument('--drc',type=Path);p.add_argument('--output',type=Path,required=True)
     p.add_argument('--allow-clear-extension',action='store_true')
     p.add_argument('--apply',action='store_true');a=p.parse_args()
-    assert a.trial.name=='power-r05f-return-reset'
+    assert a.trial.name in {'power-r05f-return-reset', 'power-r05l-charge-interlock'}
     if a.apply:apply(a)
     else:
         assert a.drc is not None

@@ -1,0 +1,19 @@
+{
+  "before_sha256": "d51ff41c9736a6e64d3cd8916e523998a1df3d5735b50729fc3eeebc5119ada3",
+  "source_sha256": "241c84d6ba98793c37344e1e46ddc4918e7b05322ba87daea7c9a90ffb8379b3",
+  "via_id": "69f9de45-8706-41c5-be76-d34e55ae2c31",
+  "from_mm": [
+    101.5,
+    124.85
+  ],
+  "to_mm": [
+    101.45,
+    124.85
+  ],
+  "changed_tracks": [
+    "1e2ed98c-e418-4c60-8879-47203e2ac8eb",
+    "fd61442b-6db3-447f-9006-1b1d97ccf589"
+  ],
+  "native_terminal_groups_preserved": 218,
+  "reason": "Retain 0.200 mm mask gap while restoring clearance to adjacent VBAT; move VIN via and attached endpoints 0.050 mm left. Lands, drill, annulus and rules unchanged."
+}

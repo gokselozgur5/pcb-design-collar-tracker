@@ -1,0 +1,13 @@
+{
+  "before_sha256": "604391fc005280a48756fb7b9cda81d339e6ec916a2a4875ba2c54bc2d2e0dea",
+  "source_sha256": "cab20a778ca8b953a2b418f7085dd401fe68a3a74f1e9188f4f57e24febb7c15",
+  "plan_sha256": "6a6284f1e7735e64ec4cf593a9e3e5856d0bc69a25bc047cdd02f306ec5f86c6",
+  "removed_vias": [
+    "e075c8ac-a965-4a08-b4c1-417b8f9d3c82"
+  ],
+  "added_tracks": [
+    "bd0abb6e-b5b4-4b76-98b5-7b36c0c4cb0d"
+  ],
+  "native_terminal_groups_preserved": 218,
+  "scope": "Junctions replaced with native terminal groups preserved. Fresh DRC and return checks required."
+}

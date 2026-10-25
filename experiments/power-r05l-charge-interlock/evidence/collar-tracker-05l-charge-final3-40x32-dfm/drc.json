@@ -1,0 +1,84 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-25T23:46:00",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "collar-tracker.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Clearance violation (netclass 'Power' clearance 0.2000 mm; actual 0.1801 mm)",
+            "items": [
+                {
+                    "description": "Via [/VIN_5V] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 101.5,
+                        "y": 124.85
+                    },
+                    "uuid": "69f9de45-8706-41c5-be76-d34e55ae2c31"
+                },
+                {
+                    "description": "Track [/VBAT] on B.Cu, length 1.2728 mm",
+                    "pos": {
+                        "x": 102.05,
+                        "y": 124.45
+                    },
+                    "uuid": "a7f70428-c0a4-4171-9168-4e8c7c2ab9d3"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Power' clearance 0.2000 mm; actual 0.1801 mm)",
+            "items": [
+                {
+                    "description": "Via [/VIN_5V] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 101.5,
+                        "y": 124.85
+                    },
+                    "uuid": "69f9de45-8706-41c5-be76-d34e55ae2c31"
+                },
+                {
+                    "description": "Track [/VBAT] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 102.05,
+                        "y": 124.4
+                    },
+                    "uuid": "d5345cca-56d9-40da-91cb-360e0769e088"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        }
+    ]
+}

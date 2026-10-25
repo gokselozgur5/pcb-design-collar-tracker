@@ -1,0 +1,9 @@
+{
+  "before_sha256": "cab20a778ca8b953a2b418f7085dd401fe68a3a74f1e9188f4f57e24febb7c15",
+  "source_sha256": "90a561a14626de4bb136467ccb870e1add9202b1a3a01b84bc2d8a28b22e4931",
+  "delta_mm": [
+    0.9,
+    0.4
+  ],
+  "scope": "SWD label only; no copper change."
+}

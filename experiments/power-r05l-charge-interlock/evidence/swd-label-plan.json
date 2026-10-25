@@ -1,0 +1,10 @@
+{
+  "source_sha256": "cab20a778ca8b953a2b418f7085dd401fe68a3a74f1e9188f4f57e24febb7c15",
+  "id": "3203121b-c36c-414f-ab8a-142c2774d6a2",
+  "text": "SWD",
+  "delta_mm": [
+    0.9,
+    0.4
+  ],
+  "rule": "Full-size glyphs; >=0.17 mm mask, >=0.31 mm drill and >=0.3 mm edge clearance."
+}

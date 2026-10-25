@@ -1,0 +1,106 @@
+{
+  "before_sha256": "98a821e36d298d63329566e432fd3b6b16ad174a94d5e97833e90de9b269b8a0",
+  "source_sha256": "008f82b03abd2cde4293a47d52a1239de4c12688507bd6ada273312119ec9361",
+  "removed": [
+    {
+      "uuid": "60bd205c-256a-434e-8e8b-5a69aa3abf18",
+      "kind": "PCB_TRACK",
+      "start": [
+        101.8017,
+        124.9983
+      ],
+      "end": [
+        102.7,
+        124.1
+      ],
+      "width": 0.4,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "5b1cb9de-973b-4c30-87a8-2d574546eaa6",
+      "kind": "PCB_VIA",
+      "start": [
+        102.7,
+        124.1
+      ],
+      "end": [
+        102.7,
+        124.1
+      ],
+      "width": 0.6,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "039348dc-67c2-4313-abc4-71ee3b7a4fd9",
+      "kind": "PCB_TRACK",
+      "start": [
+        103.55,
+        123.95
+      ],
+      "end": [
+        105.8,
+        121.7
+      ],
+      "width": 0.4,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "042c526c-cdad-4711-9e09-f6e868bb9118",
+      "kind": "PCB_TRACK",
+      "start": [
+        102.8,
+        124.0
+      ],
+      "end": [
+        102.85,
+        124.0
+      ],
+      "width": 0.4,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "2548f90f-5f4d-478e-995d-79194c03d34d",
+      "kind": "PCB_TRACK",
+      "start": [
+        102.85,
+        124.0
+      ],
+      "end": [
+        102.9,
+        123.95
+      ],
+      "width": 0.4,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "45c72d1b-b93f-4d60-a295-a08e45592df5",
+      "kind": "PCB_TRACK",
+      "start": [
+        102.9,
+        123.95
+      ],
+      "end": [
+        103.55,
+        123.95
+      ],
+      "width": 0.4,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "f8206ed0-2bb9-4195-9ab6-9f6a08f9b37e",
+      "kind": "PCB_TRACK",
+      "start": [
+        102.7,
+        124.1
+      ],
+      "end": [
+        102.8,
+        124.0
+      ],
+      "width": 0.4,
+      "layer": "B.Cu"
+    }
+  ],
+  "preserved_other_terminal_groups": 221,
+  "reason": "Existing VIN transfer via and local 0.4 mm branch enclosed the new CE pin escape. Reconnect VIN at original widths after routing CE."
+}

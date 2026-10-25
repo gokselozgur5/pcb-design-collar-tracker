@@ -1,0 +1,76 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-25T23:42:29",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "collar-tracker.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [/CHG_HOT_REF] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 109.1,
+                        "y": 98.85
+                    },
+                    "uuid": "e075c8ac-a965-4a08-b4c1-417b8f9d3c82"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "PCB text 'SWD' on B.Silkscreen",
+                    "pos": {
+                        "x": 104.0,
+                        "y": 103.7
+                    },
+                    "uuid": "3203121b-c36c-414f-ab8a-142c2774d6a2"
+                },
+                {
+                    "description": "Pad 2 [/CHARGE_DISABLE] of R28 on B.Cu",
+                    "pos": {
+                        "x": 104.0,
+                        "y": 103.01
+                    },
+                    "uuid": "80d584c6-d331-42a2-988e-45848552e3d8"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        }
+    ]
+}

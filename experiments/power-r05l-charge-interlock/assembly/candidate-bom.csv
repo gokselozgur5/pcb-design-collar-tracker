@@ -1,0 +1,45 @@
+Designators,Quantity,Manufacturer Part Number,Values,Package,Status
+FB1,1,BLM18SD220SN1D,22R @100MHz,L_0603_1608Metric,Prototype candidate; procurement and SMT acceptance open
+U3,1,BQ25185DLHR,BQ25185DLHR,Texas_DLH0010A_WSON-10-1EP_2.2x2mm_P0.4mm_EP0.9x1.5mm,Prototype candidate; procurement and SMT acceptance open
+R21,1,CRCW040222R0FKEDHP,22R /1%,R_0402_1005Metric,Prototype candidate; procurement and SMT acceptance open
+Q1,1,DMN62D2UDW-7,DMN62D2UDW-7,SOT-363_SC-70-6,Prototype candidate; procurement and SMT acceptance open
+"C13,C14",2,GJM1555C1H390FB01D,39pF RF,C_0402_1005Metric,Prototype candidate; procurement and SMT acceptance open
+"C5,C8",2,GRM033R60J104ME19D,100nF,C_0201_0603Metric,Prototype candidate; procurement and SMT acceptance open
+"C1,C2",2,GRM033R61A105ME15D,1uF /10V,C_0201_0603Metric,Prototype candidate; procurement and SMT acceptance open
+"C34,C35,C36",3,GRM1555C1H102JA01D,1nF /50V C0G,C30_C_0402_1005Metric,Prototype candidate; procurement and SMT acceptance open
+"C6,C7",2,GRM155R60J475ME47D,4.7uF,C_0402_1005Metric,Prototype candidate; procurement and SMT acceptance open
+"C16,C17,C19,C20,C21",5,GRM155R61A105KE15D,1uF; 1uF /10V,C_0402_1005Metric,Prototype candidate; procurement and SMT acceptance open
+"C10,C15,C23,C24,C27,C28,C29,C30,C31,C32,C33",11,GRM155R71C104KA88D,100nF; 100nF /16V; 100nF /16V X7R,C30_C_0402_1005Metric; C_0402_1005Metric,Prototype candidate; procurement and SMT acceptance open
+C26,1,GRM155R71C473KA01D,47nF /16V X7R,C_0402_1005Metric,Prototype candidate; procurement and SMT acceptance open
+"C18,C4",2,GRM188R61A106MAALD,10uF /10V,C_0603_1608Metric,Prototype candidate; procurement and SMT acceptance open
+C3,1,GRM21BR61A476ME15L,47uF /10V,C_0805_2012Metric,Prototype candidate; procurement and SMT acceptance open
+"C25,C9",2,GRM21BR71C105KA01L,1uF /16V X7R,C_0805_2012Metric,Prototype candidate; procurement and SMT acceptance open
+U5,1,LIS2DW12TR,LIS2DW12TR,LGA-12_2x2mm_P0.5mm,Prototype candidate; procurement and SMT acceptance open
+L1,1,LQW15AN9N1J00D,9.1nH,L_0402_1005Metric,Prototype candidate; procurement and SMT acceptance open
+U9,1,MAX17048G+T10,MAX17048G+T10,MAX17048_T822_3_90_0065E,Prototype candidate; procurement and SMT acceptance open
+U1,1,NRF9151-LACA-R,nRF9151-LACA,LGA_9151_12.1x11.1mm,Prototype candidate; procurement and SMT acceptance open
+"R14,R15,R23,R28,R29,R30,R5",7,RC0402FR-07100KL,100k; 100k /1%,R16_R_0402_1005Metric; R_0402_1005Metric,Prototype candidate; procurement and SMT acceptance open
+"R16,R20,R8,R9",4,RC0402FR-0710KL,10k; 10k /1%,R_0402_1005Metric,Prototype candidate; procurement and SMT acceptance open
+R6,1,RC0402FR-0718KL,18k /1%,R_0402_1005Metric,Prototype candidate; procurement and SMT acceptance open
+"R2,R4",2,RC0402FR-071KL,1k,R_0402_1005Metric,Prototype candidate; procurement and SMT acceptance open
+R22,1,RC0402FR-071ML,1M /1%,R_0402_1005Metric,Prototype candidate; procurement and SMT acceptance open
+R1,1,RC0402FR-0722KL,22k /1%,R_0402_1005Metric,Prototype candidate; procurement and SMT acceptance open
+R7,1,RC0402FR-073KL,3k /1%,R_0402_1005Metric,Prototype candidate; procurement and SMT acceptance open
+R19,1,RC0402FR-073M4L,3.4M /1%,R_0402_1005Metric,Prototype candidate; procurement and SMT acceptance open
+"R12,R13",2,RC0402FR-074K7L,4.7k,R_0402_1005Metric,Prototype candidate; procurement and SMT acceptance open
+R3,1,RC0402JR-070RL,0R / tune,R_0402_1005Metric,Prototype candidate; procurement and SMT acceptance open
+R24,1,RT0402BRD07196KL,196k /0.1%,R16_R_0402_1005Metric,Prototype candidate; procurement and SMT acceptance open
+R17,1,RT0402BRD07200KL,200k /0.1%,R_0402_1005Metric,Prototype candidate; procurement and SMT acceptance open
+R18,1,RT0402BRD0726K1L,26.1k /0.1%,R_0402_1005Metric,Prototype candidate; procurement and SMT acceptance open
+R26,1,RT0402BRD0727K4L,27.4k /0.1%,R16_R_0402_1005Metric,Prototype candidate; procurement and SMT acceptance open
+"R25,R27",2,RT0402BRD0749K9L,49.9k /0.1%,R16_R_0402_1005Metric,Prototype candidate; procurement and SMT acceptance open
+J6,1,SIM8051-6-0-14-00-A,SIM8051-6-0-14-00-A,SIM8051_6_0_14_00_A,Prototype candidate; procurement and SMT acceptance open
+U2,1,SKY65943-11,SKY65943-11,SKY65943_DK10171,Prototype candidate; procurement and SMT acceptance open
+U12,1,SN74LVC1G00DCKR,SN74LVC1G00DCKR,TI_DCK0005A,Prototype candidate; procurement and SMT acceptance open
+U8,1,SN74LVC1G14DCKR,SN74LVC1G14DCKR,SOT-353_SC-70-5,Prototype candidate; procurement and SMT acceptance open
+"U10,U11",2,TLV3012BIDCKR,TLV3012BIDCKR / COLD; TLV3012BIDCKR / HOT,TI_DCK0006A,Prototype candidate; procurement and SMT acceptance open
+"D1,D2",2,TPD4E1U06DCKR,TPD4E1U06DCKR,TPD4E1U06DCKR,Prototype candidate; procurement and SMT acceptance open
+U6,1,TPS3808G01DBVR,TPS3808G01DBVR,SOT-23-6,Prototype candidate; procurement and SMT acceptance open
+U7,1,TPS3808G30DBVR,TPS3808G30DBVR,SOT-23-6,Prototype candidate; procurement and SMT acceptance open
+U4,1,TPS7A0218PDBVR,TPS7A0218PDBVR,SOT-23-5,Prototype candidate; procurement and SMT acceptance open
+"J1,J2",2,U.FL-R-SMT-1(10),GNSS antenna / passive; LTE antenna / 50R,U.FL_Hirose_U.FL-R-SMT-1_Vertical,Prototype candidate; procurement and SMT acceptance open

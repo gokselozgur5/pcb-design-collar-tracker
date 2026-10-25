@@ -1,0 +1,31 @@
+{
+  "before_sha256": "3291a8d0e4ff363a80a52ba6736448412c93ff42b804fe4a6b4f8ecdb195373c",
+  "source_sha256": "d51ff41c9736a6e64d3cd8916e523998a1df3d5735b50729fc3eeebc5119ada3",
+  "changes": [
+    {
+      "id": "c6892060-344a-4968-ae5b-b7c7440905ce",
+      "text": "5V",
+      "delta_mm": [
+        -0.8,
+        0.0
+      ]
+    },
+    {
+      "id": "3ffa03c4-dc3e-408b-b283-38cc8134e7a1",
+      "text": "BAT+",
+      "delta_mm": [
+        0.0,
+        -0.5
+      ]
+    },
+    {
+      "id": "3203121b-c36c-414f-ab8a-142c2774d6a2",
+      "text": "SWD",
+      "delta_mm": [
+        0.5,
+        0.0
+      ]
+    }
+  ],
+  "scope": "Full-size labels only. No copper, mask, pad or rule changes."
+}

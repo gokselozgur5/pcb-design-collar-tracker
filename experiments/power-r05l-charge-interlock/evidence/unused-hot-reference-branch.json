@@ -1,0 +1,10 @@
+{
+  "before_sha256": "c2299dc419c4614296a306e3b52db1968fc793b3011e04f31a67f453e80f5e79",
+  "source_sha256": "f465353a7f4203fc1255080dd3050ac6be5ba2cc8dd1e09f25938e832d569c82",
+  "removed_ids": [
+    "e81fa9c6-75ae-40f5-bd20-223ae9f8d80a",
+    "b5e0a7fc-3c17-4dc6-ac3f-615f7ab03ce4"
+  ],
+  "native_terminal_groups_preserved": 218,
+  "reason": "The removed single-layer via left a redundant diagonal spur from the connected C34 pad. Both whole segments are unused by every native pad group."
+}

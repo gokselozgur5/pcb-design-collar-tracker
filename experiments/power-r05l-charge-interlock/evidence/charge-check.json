@@ -1,0 +1,82 @@
+{
+  "result": "CONDITIONAL_DESIGN_PASS",
+  "electrical_release": false,
+  "hot_threshold": {
+    "nominal_V": 0.25203660024400165,
+    "range_V": [
+      0.21618034823739596,
+      0.2878995566198899
+    ],
+    "comparator_error_allowance_V": 0.02732265149756343
+  },
+  "cold_threshold": {
+    "nominal_V": 0.8017567917205692,
+    "range_V": [
+      0.7547364987099088,
+      0.8484558245918167
+    ],
+    "comparator_error_allowance_V": 0.025114033336961116
+  },
+  "nominal_sensor_window_C": [
+    6.29,
+    36.21
+  ],
+  "possible_enable_sensor_window_C": [
+    3.22,
+    42.64
+  ],
+  "guaranteed_normal_sensor_window_C": [
+    9.41,
+    30.63
+  ],
+  "cell_sensor_offset_assumption_C": 2,
+  "cell_45C_cutoff_margin_V": 0.00257869493594301,
+  "cell_0C_cutoff_margin_V": 0.04544875728973574,
+  "room_temperature_margin_V": 0.0678767433801104,
+  "original_50C_regression": {
+    "ts": {
+      "nominal_V": 0.15758600000000003,
+      "range_V": [
+        0.14623123517906308,
+        0.1694486803330579
+      ]
+    },
+    "charge_enabled": false
+  },
+  "fault_truth_table": [
+    {
+      "hot_ok": false,
+      "cold_ok": false,
+      "charge_enabled": false
+    },
+    {
+      "hot_ok": false,
+      "cold_ok": true,
+      "charge_enabled": false
+    },
+    {
+      "hot_ok": true,
+      "cold_ok": false,
+      "charge_enabled": false
+    },
+    {
+      "hot_ok": true,
+      "cold_ok": true,
+      "charge_enabled": true
+    }
+  ],
+  "battery_only_branch_estimate_uA": 74.31810404738619,
+  "current_estimate_scope": "Illustrative 3.6 V battery-only state, one comparator output high. Not a total-current maximum or a runtime claim. NAND partial-input delta-ICC, transients, CE loading and the rest of the board are excluded; measure actual levels and current.",
+  "assumptions": [
+    "NTC R/T interpolation, B variation and additional 1% curve uncertainty require full-curve verification.",
+    "Cell-to-sensor error including lag must remain within 2 C at 100 mA charging.",
+    "Comparator input leakage is screened at 100 nA each over temperature; only 25 C is guaranteed in the table.",
+    "Comparator output swing away from its 5 V test condition and CE input loading require measurement.",
+    "VSYS/TS/POR startup, slow ramp, battery absence, brownout and sensor insertion transient waveforms require bench qualification.",
+    "No single-component-fault safety certification or physical battery/RF/IP68 qualification is asserted."
+  ],
+  "checked_pin_assignments": 46,
+  "schematic_sha256": "0a8d89c01db6d0211a9048467b728214da175750f6b670ebf3d6ffa9adeefb0e",
+  "netlist_sha256": "4c88b83f1af96f3924d63761ab09681049cce83cc0b364aaa669a27b19e9be28",
+  "checker_sha256": "3f8d5b278ea641e539ebba5972b3c1eac612f0fe72e643cbd27e53928c54d47b"
+}

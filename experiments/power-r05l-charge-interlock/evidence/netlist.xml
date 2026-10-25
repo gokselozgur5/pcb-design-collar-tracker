@@ -1,0 +1,3591 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/Users/gok/codex/projects/collar-tracker/experiments/power-r05l-charge-interlock/hardware/collar-tracker.kicad_sch</source>
+    <date>2026-10-25T23:34:20</date>
+    <tool>Eeschema 10.0.7</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>Collar tracker — r05l hardware charge interlock</title>
+        <company/>
+        <rev>0.5l-charge-WIP</rev>
+        <date>2026-10-25</date>
+        <source>collar-tracker.kicad_sch</source>
+        <comment number="1" value="Native and supplier evidence belong to this exact revision; see STATUS"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>1uF /10V</value>
+      <footprint>Collar033:C1_C_0201_0603Metric</footprint>
+      <fields>
+        <field name="MPN">GRM033R61A105ME15D</field>
+        <field name="Design status">Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open</field>
+        <field name="Footprint">Collar033:C1_C_0201_0603Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="C" description=""/>
+      <property name="MPN" value="GRM033R61A105ME15D"/>
+      <property name="Design status" value="Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>54966c17-f661-51c5-ba48-de88e059677f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C2">
+      <value>1uF /10V</value>
+      <footprint>Collar033:C2_C_0201_0603Metric</footprint>
+      <fields>
+        <field name="MPN">GRM033R61A105ME15D</field>
+        <field name="Design status">Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open</field>
+        <field name="Footprint">Collar033:C2_C_0201_0603Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="C" description=""/>
+      <property name="MPN" value="GRM033R61A105ME15D"/>
+      <property name="Design status" value="Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f7e0d349-29e6-5255-aaff-83923f6a91e2</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C3">
+      <value>47uF /10V</value>
+      <footprint>Collar033:C3_C_0805_2012Metric</footprint>
+      <fields>
+        <field name="MPN">GRM21BR61A476ME15L</field>
+        <field name="Design status">Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open</field>
+        <field name="Footprint">Collar033:C3_C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="C" description=""/>
+      <property name="MPN" value="GRM21BR61A476ME15L"/>
+      <property name="Design status" value="Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8681ffa1-b18c-5156-bf4f-21853ad0453c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C4">
+      <value>10uF /10V</value>
+      <footprint>Collar033:C4_C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">GRM188R61A106MAALD</field>
+        <field name="Design status">Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open</field>
+        <field name="Footprint">Collar033:C4_C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="C" description=""/>
+      <property name="MPN" value="GRM188R61A106MAALD"/>
+      <property name="Design status" value="Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e9482163-4acd-5618-872d-2c57a479d9e0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C5">
+      <value>100nF</value>
+      <footprint>Collar033:C5_C_0201_0603Metric</footprint>
+      <fields>
+        <field name="MPN">GRM033R60J104ME19D</field>
+        <field name="Design status">Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open</field>
+        <field name="Footprint">Collar033:C5_C_0201_0603Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="C" description=""/>
+      <property name="MPN" value="GRM033R60J104ME19D"/>
+      <property name="Design status" value="Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>571a4968-b5aa-5d59-93e5-1493bfde4b4a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C6">
+      <value>4.7uF</value>
+      <footprint>Collar033:C6_C_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">GRM155R60J475ME47D</field>
+        <field name="Design status">Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open</field>
+        <field name="Footprint">Collar033:C6_C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="C" description=""/>
+      <property name="MPN" value="GRM155R60J475ME47D"/>
+      <property name="Design status" value="Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b6e20664-19b1-5c07-9ac6-4111100ab144</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C7">
+      <value>4.7uF</value>
+      <footprint>Collar033:C7_C_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">GRM155R60J475ME47D</field>
+        <field name="Design status">Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open</field>
+        <field name="Footprint">Collar033:C7_C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="C" description=""/>
+      <property name="MPN" value="GRM155R60J475ME47D"/>
+      <property name="Design status" value="Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8a67681b-0cd1-5754-9eb6-0252204e67b2</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C8">
+      <value>100nF</value>
+      <footprint>Collar033:C8_C_0201_0603Metric</footprint>
+      <fields>
+        <field name="MPN">GRM033R60J104ME19D</field>
+        <field name="Design status">Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open</field>
+        <field name="Footprint">Collar033:C8_C_0201_0603Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="C" description=""/>
+      <property name="MPN" value="GRM033R60J104ME19D"/>
+      <property name="Design status" value="Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>89beec69-a279-5839-acef-7a2fe41b12e1</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C9">
+      <value>1uF /16V X7R</value>
+      <footprint>Collar05:C9_C_0805_2012Metric</footprint>
+      <fields>
+        <field name="MPN">GRM21BR71C105KA01L</field>
+        <field name="Design status">Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open</field>
+        <field name="Footprint">Collar05:C9_C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="C" description=""/>
+      <property name="MPN" value="GRM21BR71C105KA01L"/>
+      <property name="Design status" value="Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ae7bd64a-ed68-5756-a8f0-0bb3fa38b110</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C10">
+      <value>100nF</value>
+      <footprint>Collar033:C10_C_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">GRM155R71C104KA88D</field>
+        <field name="Design status">Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open</field>
+        <field name="Footprint">Collar033:C10_C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="C" description=""/>
+      <property name="MPN" value="GRM155R71C104KA88D"/>
+      <property name="Design status" value="Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>69e59a38-d975-51ca-ace0-ad9544917477</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C11">
+      <value>DNP / tune</value>
+      <footprint>Collar033:C11_C_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN"/>
+        <field name="Design status">candidate</field>
+        <field name="Footprint">Collar033:C11_C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="C" description=""/>
+      <property name="MPN" value=""/>
+      <property name="Design status" value="candidate"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <property name="dnp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>da4c364d-08d7-54de-921f-990ad84e7141</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C12">
+      <value>DNP / tune</value>
+      <footprint>Collar033:C12_C_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN"/>
+        <field name="Design status">candidate</field>
+        <field name="Footprint">Collar033:C12_C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="C" description=""/>
+      <property name="MPN" value=""/>
+      <property name="Design status" value="candidate"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <property name="dnp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1c8465bd-a779-550e-9395-3f77c15d8cfc</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C13">
+      <value>39pF RF</value>
+      <footprint>Collar033:C13_C_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">GJM1555C1H390FB01D</field>
+        <field name="Design status">Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open</field>
+        <field name="Footprint">Collar033:C13_C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="C" description=""/>
+      <property name="MPN" value="GJM1555C1H390FB01D"/>
+      <property name="Design status" value="Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fc161fbe-5743-569c-afe6-cb9471c0fb9b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C14">
+      <value>39pF RF</value>
+      <footprint>Collar033:C14_C_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">GJM1555C1H390FB01D</field>
+        <field name="Design status">Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open</field>
+        <field name="Footprint">Collar033:C14_C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="C" description=""/>
+      <property name="MPN" value="GJM1555C1H390FB01D"/>
+      <property name="Design status" value="Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7113192b-7a62-519b-8396-083fc05227e6</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C15">
+      <value>100nF</value>
+      <footprint>Collar033:C15_C_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">GRM155R71C104KA88D</field>
+        <field name="Design status">Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open</field>
+        <field name="Footprint">Collar033:C15_C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="C" description=""/>
+      <property name="MPN" value="GRM155R71C104KA88D"/>
+      <property name="Design status" value="Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ab1d4173-d3cc-5169-8f8c-ccc28b63dacc</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C16">
+      <value>1uF</value>
+      <footprint>Collar033:C16_C_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">GRM155R61A105KE15D</field>
+        <field name="Design status">Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open</field>
+        <field name="Footprint">Collar033:C16_C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="C" description=""/>
+      <property name="MPN" value="GRM155R61A105KE15D"/>
+      <property name="Design status" value="Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4535491e-9e78-5178-90ee-dc2884c5d904</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C17">
+      <value>1uF /10V</value>
+      <footprint>Collar033:C17_C_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">GRM155R61A105KE15D</field>
+        <field name="Design status">Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open</field>
+        <field name="Footprint">Collar033:C17_C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="C" description=""/>
+      <property name="MPN" value="GRM155R61A105KE15D"/>
+      <property name="Design status" value="Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>dfce4d5c-c631-58c4-ab8a-b46c3a8782c4</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C18">
+      <value>10uF /10V</value>
+      <footprint>Collar033:C18_C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">GRM188R61A106MAALD</field>
+        <field name="Design status">Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open</field>
+        <field name="Footprint">Collar033:C18_C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="C" description=""/>
+      <property name="MPN" value="GRM188R61A106MAALD"/>
+      <property name="Design status" value="Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ee78c8ce-0edf-545d-a2c6-0fe2637b19c1</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C19">
+      <value>1uF /10V</value>
+      <footprint>Collar033:C19_C_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">GRM155R61A105KE15D</field>
+        <field name="Design status">Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open</field>
+        <field name="Footprint">Collar033:C19_C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="C" description=""/>
+      <property name="MPN" value="GRM155R61A105KE15D"/>
+      <property name="Design status" value="Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fbbf882d-9e06-50c0-95fc-4d1aea1b5df2</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C20">
+      <value>1uF</value>
+      <footprint>Collar033:C20_C_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">GRM155R61A105KE15D</field>
+        <field name="Design status">Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open</field>
+        <field name="Footprint">Collar033:C20_C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="C" description=""/>
+      <property name="MPN" value="GRM155R61A105KE15D"/>
+      <property name="Design status" value="Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5018db8b-0879-5e51-8aab-4ce93be34a65</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C21">
+      <value>1uF</value>
+      <footprint>Collar033:C21_C_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">GRM155R61A105KE15D</field>
+        <field name="Design status">Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open</field>
+        <field name="Footprint">Collar033:C21_C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="C" description=""/>
+      <property name="MPN" value="GRM155R61A105KE15D"/>
+      <property name="Design status" value="Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2443db7d-366c-56e9-925f-9a30d6645b4d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C23">
+      <value>100nF</value>
+      <footprint>Collar033:C23_C_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">GRM155R71C104KA88D</field>
+        <field name="Design status">Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open</field>
+        <field name="Footprint">Collar033:C23_C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="C" description=""/>
+      <property name="MPN" value="GRM155R71C104KA88D"/>
+      <property name="Design status" value="Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>48c0ab20-2fe0-51b2-b218-91204fcf12f6</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C24">
+      <value>100nF</value>
+      <footprint>Collar033:C24_C_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">GRM155R71C104KA88D</field>
+        <field name="Design status">Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open</field>
+        <field name="Footprint">Collar033:C24_C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="C" description=""/>
+      <property name="MPN" value="GRM155R71C104KA88D"/>
+      <property name="Design status" value="Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e7e4544a-c252-5907-9bae-aba92d738754</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C25">
+      <value>1uF /16V X7R</value>
+      <footprint>Collar05:C25_C_0805_2012Metric</footprint>
+      <fields>
+        <field name="MPN">GRM21BR71C105KA01L</field>
+        <field name="Design status">Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open</field>
+        <field name="Footprint">Collar05:C25_C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="C" description=""/>
+      <property name="MPN" value="GRM21BR71C105KA01L"/>
+      <property name="Design status" value="Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1208574e-5f70-5d22-b29f-cc9528011597</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C26">
+      <value>47nF /16V X7R</value>
+      <footprint>Collar05:C26_C_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">GRM155R71C473KA01D</field>
+        <field name="Design status">Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open</field>
+        <field name="Footprint">Collar05:C26_C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="C" description=""/>
+      <property name="MPN" value="GRM155R71C473KA01D"/>
+      <property name="Design status" value="Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5c898fa9-7141-5fc5-814c-2d1f001f4cc6</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C27">
+      <value>100nF /16V X7R</value>
+      <footprint>Collar05:C27_C_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">GRM155R71C104KA88D</field>
+        <field name="Design status">Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open</field>
+        <field name="Footprint">Collar05:C27_C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="C" description=""/>
+      <property name="MPN" value="GRM155R71C104KA88D"/>
+      <property name="Design status" value="Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>da726b52-ea11-5549-9d40-330efe0e0bc2</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C28">
+      <value>100nF /16V X7R</value>
+      <footprint>Collar05:C28_C_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">GRM155R71C104KA88D</field>
+        <field name="Design status">Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open</field>
+        <field name="Footprint">Collar05:C28_C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="C" description=""/>
+      <property name="MPN" value="GRM155R71C104KA88D"/>
+      <property name="Design status" value="Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e8d2c3a6-784b-5d94-8846-77798fdb0c57</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C29">
+      <value>100nF /16V X7R</value>
+      <footprint>Collar05:C29_C_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">GRM155R71C104KA88D</field>
+        <field name="Design status">Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open</field>
+        <field name="Footprint">Collar05:C29_C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="C" description=""/>
+      <property name="MPN" value="GRM155R71C104KA88D"/>
+      <property name="Design status" value="Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>afd9948f-3b1a-5ade-a3f4-c2e8337ea71d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C30">
+      <value>100nF /16V X7R</value>
+      <footprint>Collar05:C30_C_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">GRM155R71C104KA88D</field>
+        <field name="Design status">Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open</field>
+        <field name="Footprint">Collar05:C30_C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="C" description=""/>
+      <property name="MPN" value="GRM155R71C104KA88D"/>
+      <property name="Design status" value="Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ab831f9e-7436-5d0f-b386-1a39c7235df8</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C31">
+      <value>100nF /16V</value>
+      <footprint>Collar05:C30_C_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">GRM155R71C104KA88D</field>
+        <field name="Design status">Hardware charge-window candidate; assembled temperature/boot/fault qualification required</field>
+        <field name="Footprint">Collar05:C30_C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="C" description=""/>
+      <property name="MPN" value="GRM155R71C104KA88D"/>
+      <property name="Design status" value="Hardware charge-window candidate; assembled temperature/boot/fault qualification required"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0bcd13bd-9206-5b62-83ae-a8e61ffe0db4</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C32">
+      <value>100nF /16V</value>
+      <footprint>Collar05:C30_C_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">GRM155R71C104KA88D</field>
+        <field name="Design status">Hardware charge-window candidate; assembled temperature/boot/fault qualification required</field>
+        <field name="Footprint">Collar05:C30_C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="C" description=""/>
+      <property name="MPN" value="GRM155R71C104KA88D"/>
+      <property name="Design status" value="Hardware charge-window candidate; assembled temperature/boot/fault qualification required"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>81a9b3f6-608a-5688-a55a-43d88c658059</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C33">
+      <value>100nF /16V</value>
+      <footprint>Collar05:C30_C_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">GRM155R71C104KA88D</field>
+        <field name="Design status">Hardware charge-window candidate; assembled temperature/boot/fault qualification required</field>
+        <field name="Footprint">Collar05:C30_C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="C" description=""/>
+      <property name="MPN" value="GRM155R71C104KA88D"/>
+      <property name="Design status" value="Hardware charge-window candidate; assembled temperature/boot/fault qualification required"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d328b1f7-da10-5f85-80ec-762316d13656</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C34">
+      <value>1nF /50V C0G</value>
+      <footprint>Collar05:C30_C_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">GRM1555C1H102JA01D</field>
+        <field name="Design status">Hardware charge-window candidate; assembled temperature/boot/fault qualification required</field>
+        <field name="Footprint">Collar05:C30_C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="C" description=""/>
+      <property name="MPN" value="GRM1555C1H102JA01D"/>
+      <property name="Design status" value="Hardware charge-window candidate; assembled temperature/boot/fault qualification required"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6fd04f2b-4c7f-5b60-bcbd-4d5ecb124fd7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C35">
+      <value>1nF /50V C0G</value>
+      <footprint>Collar05:C30_C_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">GRM1555C1H102JA01D</field>
+        <field name="Design status">Hardware charge-window candidate; assembled temperature/boot/fault qualification required</field>
+        <field name="Footprint">Collar05:C30_C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="C" description=""/>
+      <property name="MPN" value="GRM1555C1H102JA01D"/>
+      <property name="Design status" value="Hardware charge-window candidate; assembled temperature/boot/fault qualification required"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>625c9037-0ab4-5b89-a8a5-471068ebf65f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C36">
+      <value>1nF /50V C0G</value>
+      <footprint>Collar05:C30_C_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">GRM1555C1H102JA01D</field>
+        <field name="Design status">Hardware charge-window candidate; assembled temperature/boot/fault qualification required</field>
+        <field name="Footprint">Collar05:C30_C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="C" description=""/>
+      <property name="MPN" value="GRM1555C1H102JA01D"/>
+      <property name="Design status" value="Hardware charge-window candidate; assembled temperature/boot/fault qualification required"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b80cba23-b310-5320-b328-abc925f91391</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D1">
+      <value>TPD4E1U06DCKR</value>
+      <footprint>Collar04:TPD4E1U06DCKR</footprint>
+      <fields>
+        <field name="MPN">TPD4E1U06DCKR</field>
+        <field name="Design status">Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open</field>
+        <field name="Footprint">Collar04:TPD4E1U06DCKR</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="TPD4E1U06" description=""/>
+      <property name="MPN" value="TPD4E1U06DCKR"/>
+      <property name="Design status" value="Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b86ed68e-47a5-52fc-b2e5-2592efaf9047</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="6"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D2">
+      <value>TPD4E1U06DCKR</value>
+      <footprint>Collar04:TPD4E1U06DCKR</footprint>
+      <fields>
+        <field name="MPN">TPD4E1U06DCKR</field>
+        <field name="Design status">Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open</field>
+        <field name="Footprint">Collar04:TPD4E1U06DCKR</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="TPD4E1U06" description=""/>
+      <property name="MPN" value="TPD4E1U06DCKR"/>
+      <property name="Design status" value="Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ab8c9b39-81a4-5477-b8d3-4129a0127237</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="6"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="FB1">
+      <value>22R @100MHz</value>
+      <footprint>Collar033:FB1_L_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">BLM18SD220SN1D</field>
+        <field name="Design status">Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open</field>
+        <field name="Footprint">Collar033:FB1_L_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="L" description=""/>
+      <property name="MPN" value="BLM18SD220SN1D"/>
+      <property name="Design status" value="Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9abc34af-5463-5eef-9d79-e40877b847c8</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J1">
+      <value>LTE antenna / 50R</value>
+      <footprint>Collar033:J1_U.FL_Hirose_U.FL-R-SMT-1_Vertical</footprint>
+      <fields>
+        <field name="MPN">U.FL-R-SMT-1(10)</field>
+        <field name="Design status">Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open</field>
+        <field name="Footprint">Collar033:J1_U.FL_Hirose_U.FL-R-SMT-1_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="Port2" description=""/>
+      <property name="MPN" value="U.FL-R-SMT-1(10)"/>
+      <property name="Design status" value="Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3dc79bd7-1576-5b80-b0c2-cb5a17017807</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J2">
+      <value>GNSS antenna / passive</value>
+      <footprint>Collar033:J2_U.FL_Hirose_U.FL-R-SMT-1_Vertical</footprint>
+      <fields>
+        <field name="MPN">U.FL-R-SMT-1(10)</field>
+        <field name="Design status">Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open</field>
+        <field name="Footprint">Collar033:J2_U.FL_Hirose_U.FL-R-SMT-1_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="Port2" description=""/>
+      <property name="MPN" value="U.FL-R-SMT-1(10)"/>
+      <property name="Design status" value="Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>759ef3b1-af46-5383-bb63-25c9f549613f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J3">
+      <value>5V charging input</value>
+      <footprint>Collar033:J3_Solder_1x02_P2.5mm</footprint>
+      <fields>
+        <field name="MPN"/>
+        <field name="Design status">onboard contact pads; external device/fixture not selected</field>
+        <field name="Footprint">Collar033:J3_Solder_1x02_P2.5mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="Port2" description=""/>
+      <property name="MPN" value=""/>
+      <property name="Design status" value="onboard contact pads; external device/fixture not selected"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>dcd9f892-d8dd-590f-9c69-11678a44d503</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J4">
+      <value>Protected cell + NTC</value>
+      <footprint>Collar033:J4_Solder_1x03_P2.5mm</footprint>
+      <fields>
+        <field name="MPN"/>
+        <field name="Design status">onboard contact pads; external device/fixture not selected</field>
+        <field name="Footprint">Collar033:J4_Solder_1x03_P2.5mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="Port3" description=""/>
+      <property name="MPN" value=""/>
+      <property name="Design status" value="onboard contact pads; external device/fixture not selected"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c0355879-cfe1-527a-93a7-4c3954206b32</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J5">
+      <value>DIGITAL health sensor interface</value>
+      <footprint>Collar033:J5_Contact_2x06_P1.27mm</footprint>
+      <fields>
+        <field name="MPN"/>
+        <field name="Design status">onboard contact pads; external device/fixture not selected</field>
+        <field name="Footprint">Collar033:J5_Contact_2x06_P1.27mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="Port12" description=""/>
+      <property name="MPN" value=""/>
+      <property name="Design status" value="onboard contact pads; external device/fixture not selected"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f64b6dff-c1d7-5663-acad-11f990352b99</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J6">
+      <value>SIM8051-6-0-14-00-A</value>
+      <footprint>Collar04:SIM8051_6_0_14_00_A</footprint>
+      <fields>
+        <field name="MPN">SIM8051-6-0-14-00-A</field>
+        <field name="Design status">Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open</field>
+        <field name="Footprint">Collar04:SIM8051_6_0_14_00_A</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="SIM8051" description=""/>
+      <property name="MPN" value="SIM8051-6-0-14-00-A"/>
+      <property name="Design status" value="Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>391c6cdb-e4a4-5857-b098-243b389b15cb</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="7"/>
+            <pin num="6"/>
+            <pin num="5"/>
+            <pin num="8"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J7">
+      <value>SWD / debug</value>
+      <footprint>Collar033:J7_Contact_2x03_P1.27mm</footprint>
+      <fields>
+        <field name="MPN"/>
+        <field name="Design status">onboard contact pads; external device/fixture not selected</field>
+        <field name="Footprint">Collar033:J7_Contact_2x03_P1.27mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="Port6" description=""/>
+      <property name="MPN" value=""/>
+      <property name="Design status" value="onboard contact pads; external device/fixture not selected"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>227d60f7-1b8c-55fc-9ab6-39046b7911ac</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="L1">
+      <value>9.1nH</value>
+      <footprint>Collar033:L1_L_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">LQW15AN9N1J00D</field>
+        <field name="Design status">Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open</field>
+        <field name="Footprint">Collar033:L1_L_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="L" description=""/>
+      <property name="MPN" value="LQW15AN9N1J00D"/>
+      <property name="Design status" value="Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0f0e4317-5001-5738-9cc4-b62da80b7afa</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="Q1">
+      <value>DMN62D2UDW-7</value>
+      <footprint>Collar05:Q1_SOT-363_SC-70-6</footprint>
+      <fields>
+        <field name="MPN">DMN62D2UDW-7</field>
+        <field name="Design status">Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open</field>
+        <field name="Footprint">Collar05:Q1_SOT-363_SC-70-6</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="DMN62D2UDW" description=""/>
+      <property name="MPN" value="DMN62D2UDW-7"/>
+      <property name="Design status" value="Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>98c33229-2cb6-5df7-b2e8-f1ece77d6d5a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R1">
+      <value>22k /1%</value>
+      <footprint>Collar033:R1_R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402FR-0722KL</field>
+        <field name="Design status">Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open</field>
+        <field name="Footprint">Collar033:R1_R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="R" description=""/>
+      <property name="MPN" value="RC0402FR-0722KL"/>
+      <property name="Design status" value="Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>aad505f5-1edf-599c-a59f-556ace35f15f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R2">
+      <value>1k</value>
+      <footprint>Collar033:R2_R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402FR-071KL</field>
+        <field name="Design status">Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open</field>
+        <field name="Footprint">Collar033:R2_R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="R" description=""/>
+      <property name="MPN" value="RC0402FR-071KL"/>
+      <property name="Design status" value="Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cdd934e1-e3bd-508d-97ae-1a9c4fbb5897</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R3">
+      <value>0R / tune</value>
+      <footprint>Collar033:R3_R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402JR-070RL</field>
+        <field name="Design status">Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open</field>
+        <field name="Footprint">Collar033:R3_R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="R" description=""/>
+      <property name="MPN" value="RC0402JR-070RL"/>
+      <property name="Design status" value="Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>be59b230-e4fc-5b22-9dd8-baf65b23e6d1</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R4">
+      <value>1k</value>
+      <footprint>Collar033:R4_R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402FR-071KL</field>
+        <field name="Design status">Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open</field>
+        <field name="Footprint">Collar033:R4_R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="R" description=""/>
+      <property name="MPN" value="RC0402FR-071KL"/>
+      <property name="Design status" value="Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8e2270ce-6646-55c8-8c2a-4b2ddd7106ad</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R5">
+      <value>100k</value>
+      <footprint>Collar033:R5_R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402FR-07100KL</field>
+        <field name="Design status">Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open</field>
+        <field name="Footprint">Collar033:R5_R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="R" description=""/>
+      <property name="MPN" value="RC0402FR-07100KL"/>
+      <property name="Design status" value="Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>085bd4de-35e8-55a8-a393-77bfb798ec65</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R6">
+      <value>18k /1%</value>
+      <footprint>Collar033:R6_R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402FR-0718KL</field>
+        <field name="Design status">Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open</field>
+        <field name="Footprint">Collar033:R6_R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="R" description=""/>
+      <property name="MPN" value="RC0402FR-0718KL"/>
+      <property name="Design status" value="Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ee2c695b-9883-532e-a752-6c5d2bfa50c9</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R7">
+      <value>3k /1%</value>
+      <footprint>Collar033:R7_R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402FR-073KL</field>
+        <field name="Design status">Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open</field>
+        <field name="Footprint">Collar033:R7_R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="R" description=""/>
+      <property name="MPN" value="RC0402FR-073KL"/>
+      <property name="Design status" value="Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>eb8e9da2-33e5-5839-95dc-6f4ef27e6c5f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R8">
+      <value>10k</value>
+      <footprint>Collar033:R8_R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402FR-0710KL</field>
+        <field name="Design status">Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open</field>
+        <field name="Footprint">Collar033:R8_R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="R" description=""/>
+      <property name="MPN" value="RC0402FR-0710KL"/>
+      <property name="Design status" value="Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fe17ee5d-5fac-5aac-94fb-f4d24b00663f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R9">
+      <value>10k</value>
+      <footprint>Collar033:R9_R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402FR-0710KL</field>
+        <field name="Design status">Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open</field>
+        <field name="Footprint">Collar033:R9_R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="R" description=""/>
+      <property name="MPN" value="RC0402FR-0710KL"/>
+      <property name="Design status" value="Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>61251908-34e5-5395-8b18-722394e63a52</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R12">
+      <value>4.7k</value>
+      <footprint>Collar033:R12_R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402FR-074K7L</field>
+        <field name="Design status">Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open</field>
+        <field name="Footprint">Collar033:R12_R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="R" description=""/>
+      <property name="MPN" value="RC0402FR-074K7L"/>
+      <property name="Design status" value="Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3a34f30e-bc34-545e-99a0-afd2fed7a423</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R13">
+      <value>4.7k</value>
+      <footprint>Collar033:R13_R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402FR-074K7L</field>
+        <field name="Design status">Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open</field>
+        <field name="Footprint">Collar033:R13_R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="R" description=""/>
+      <property name="MPN" value="RC0402FR-074K7L"/>
+      <property name="Design status" value="Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>88387fcd-b13e-5a81-aeee-3a02d60708cb</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R14">
+      <value>100k</value>
+      <footprint>Collar033:R14_R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402FR-07100KL</field>
+        <field name="Design status">Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open</field>
+        <field name="Footprint">Collar033:R14_R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="R" description=""/>
+      <property name="MPN" value="RC0402FR-07100KL"/>
+      <property name="Design status" value="Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ca8c78c0-26dc-5a67-8196-ecf9c52ed56b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R15">
+      <value>100k</value>
+      <footprint>Collar033:R15_R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402FR-07100KL</field>
+        <field name="Design status">Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open</field>
+        <field name="Footprint">Collar033:R15_R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="R" description=""/>
+      <property name="MPN" value="RC0402FR-07100KL"/>
+      <property name="Design status" value="Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>18b59cf0-322b-5b3c-a4a8-f6d4712a85f2</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R16">
+      <value>10k /1%</value>
+      <footprint>Collar05:R16_R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402FR-0710KL</field>
+        <field name="Design status">Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open</field>
+        <field name="Footprint">Collar05:R16_R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="R" description=""/>
+      <property name="MPN" value="RC0402FR-0710KL"/>
+      <property name="Design status" value="Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>06ca48ba-0b85-5aee-86b6-e99025931eb3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R17">
+      <value>200k /0.1%</value>
+      <footprint>Collar05:R17_R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RT0402BRD07200KL</field>
+        <field name="Design status">Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open</field>
+        <field name="Footprint">Collar05:R17_R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="R" description=""/>
+      <property name="MPN" value="RT0402BRD07200KL"/>
+      <property name="Design status" value="Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>63f8ebdb-3c47-5fef-bb64-ce7820211e97</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R18">
+      <value>26.1k /0.1%</value>
+      <footprint>Collar05:R18_R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RT0402BRD0726K1L</field>
+        <field name="Design status">Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open</field>
+        <field name="Footprint">Collar05:R18_R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="R" description=""/>
+      <property name="MPN" value="RT0402BRD0726K1L"/>
+      <property name="Design status" value="Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e6f3f889-67d2-5827-87ae-e7e955b382ff</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R19">
+      <value>3.4M /1%</value>
+      <footprint>Collar05:R19_R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402FR-073M4L</field>
+        <field name="Design status">Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open</field>
+        <field name="Footprint">Collar05:R19_R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="R" description=""/>
+      <property name="MPN" value="RC0402FR-073M4L"/>
+      <property name="Design status" value="Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f81d4ea4-bf4b-5736-a6f9-dc34e4aa4563</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R20">
+      <value>10k /1%</value>
+      <footprint>Collar05:R20_R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402FR-0710KL</field>
+        <field name="Design status">Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open</field>
+        <field name="Footprint">Collar05:R20_R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="R" description=""/>
+      <property name="MPN" value="RC0402FR-0710KL"/>
+      <property name="Design status" value="Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>72da3d7d-cae0-5783-be0a-0057a427fe8d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R21">
+      <value>22R /1%</value>
+      <footprint>Collar05:R21_R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">CRCW040222R0FKEDHP</field>
+        <field name="Design status">Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open</field>
+        <field name="Footprint">Collar05:R21_R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="R" description=""/>
+      <property name="MPN" value="CRCW040222R0FKEDHP"/>
+      <property name="Design status" value="Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>45a89af2-a4ba-5a81-a598-f4bb9a6b8770</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R22">
+      <value>1M /1%</value>
+      <footprint>Collar05:R22_R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402FR-071ML</field>
+        <field name="Design status">Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open</field>
+        <field name="Footprint">Collar05:R22_R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="R" description=""/>
+      <property name="MPN" value="RC0402FR-071ML"/>
+      <property name="Design status" value="Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0ed63528-cb6f-5c43-873d-125c79dbea40</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R23">
+      <value>100k /1%</value>
+      <footprint>Collar05:R23_R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402FR-07100KL</field>
+        <field name="Design status">Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open</field>
+        <field name="Footprint">Collar05:R23_R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="R" description=""/>
+      <property name="MPN" value="RC0402FR-07100KL"/>
+      <property name="Design status" value="Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b37b0d51-50aa-58c6-bc62-846195515f3b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R24">
+      <value>196k /0.1%</value>
+      <footprint>Collar05:R16_R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RT0402BRD07196KL</field>
+        <field name="Design status">Hardware charge-window candidate; assembled temperature/boot/fault qualification required</field>
+        <field name="Footprint">Collar05:R16_R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="R" description=""/>
+      <property name="MPN" value="RT0402BRD07196KL"/>
+      <property name="Design status" value="Hardware charge-window candidate; assembled temperature/boot/fault qualification required"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>140a6a81-dae2-5c4b-85bf-29fdb6131024</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R25">
+      <value>49.9k /0.1%</value>
+      <footprint>Collar05:R16_R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RT0402BRD0749K9L</field>
+        <field name="Design status">Hardware charge-window candidate; assembled temperature/boot/fault qualification required</field>
+        <field name="Footprint">Collar05:R16_R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="R" description=""/>
+      <property name="MPN" value="RT0402BRD0749K9L"/>
+      <property name="Design status" value="Hardware charge-window candidate; assembled temperature/boot/fault qualification required"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e31db26e-55b5-57c8-b741-a8e2c14bbaac</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R26">
+      <value>27.4k /0.1%</value>
+      <footprint>Collar05:R16_R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RT0402BRD0727K4L</field>
+        <field name="Design status">Hardware charge-window candidate; assembled temperature/boot/fault qualification required</field>
+        <field name="Footprint">Collar05:R16_R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="R" description=""/>
+      <property name="MPN" value="RT0402BRD0727K4L"/>
+      <property name="Design status" value="Hardware charge-window candidate; assembled temperature/boot/fault qualification required"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>04e38b39-3682-5dc0-824a-f6ba4ed12469</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R27">
+      <value>49.9k /0.1%</value>
+      <footprint>Collar05:R16_R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RT0402BRD0749K9L</field>
+        <field name="Design status">Hardware charge-window candidate; assembled temperature/boot/fault qualification required</field>
+        <field name="Footprint">Collar05:R16_R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="R" description=""/>
+      <property name="MPN" value="RT0402BRD0749K9L"/>
+      <property name="Design status" value="Hardware charge-window candidate; assembled temperature/boot/fault qualification required"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>60cd05b1-28c5-516a-8dc3-4a20e04158fc</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R28">
+      <value>100k</value>
+      <footprint>Collar05:R16_R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402FR-07100KL</field>
+        <field name="Design status">Hardware charge-window candidate; assembled temperature/boot/fault qualification required</field>
+        <field name="Footprint">Collar05:R16_R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="R" description=""/>
+      <property name="MPN" value="RC0402FR-07100KL"/>
+      <property name="Design status" value="Hardware charge-window candidate; assembled temperature/boot/fault qualification required"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>04691ba1-4748-5c62-8349-1fe24c10b6f5</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R29">
+      <value>100k</value>
+      <footprint>Collar05:R16_R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402FR-07100KL</field>
+        <field name="Design status">Hardware charge-window candidate; assembled temperature/boot/fault qualification required</field>
+        <field name="Footprint">Collar05:R16_R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="R" description=""/>
+      <property name="MPN" value="RC0402FR-07100KL"/>
+      <property name="Design status" value="Hardware charge-window candidate; assembled temperature/boot/fault qualification required"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>478e964e-e317-5a38-9f18-1d8dc6d657e5</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R30">
+      <value>100k</value>
+      <footprint>Collar05:R16_R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402FR-07100KL</field>
+        <field name="Design status">Hardware charge-window candidate; assembled temperature/boot/fault qualification required</field>
+        <field name="Footprint">Collar05:R16_R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="R" description=""/>
+      <property name="MPN" value="RC0402FR-07100KL"/>
+      <property name="Design status" value="Hardware charge-window candidate; assembled temperature/boot/fault qualification required"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c8fea512-f59c-51d0-8c19-a881abd58d7b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U1">
+      <value>nRF9151-LACA</value>
+      <footprint>Collar033:U1_LGA_9151_12.1x11.1mm</footprint>
+      <fields>
+        <field name="MPN">NRF9151-LACA-R</field>
+        <field name="Design status">Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open</field>
+        <field name="Footprint">Collar033:U1_LGA_9151_12.1x11.1mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="nRF9151-LACA" description=""/>
+      <property name="MPN" value="NRF9151-LACA-R"/>
+      <property name="Design status" value="Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5101c98f-2a38-587a-a98e-a9d1f0a650f0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="56"/>
+            <pin num="57"/>
+            <pin num="58"/>
+            <pin num="59"/>
+            <pin num="61"/>
+            <pin num="62"/>
+            <pin num="63"/>
+            <pin num="64"/>
+            <pin num="67"/>
+            <pin num="68"/>
+            <pin num="69"/>
+            <pin num="70"/>
+            <pin num="72"/>
+            <pin num="73"/>
+            <pin num="74"/>
+            <pin num="75"/>
+            <pin num="77"/>
+            <pin num="78"/>
+            <pin num="79"/>
+            <pin num="80"/>
+            <pin num="2"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="8"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="44"/>
+            <pin num="45"/>
+            <pin num="47"/>
+            <pin num="48"/>
+            <pin num="49"/>
+            <pin num="50"/>
+            <pin num="33"/>
+            <pin num="82"/>
+            <pin num="32"/>
+            <pin num="31"/>
+            <pin num="83"/>
+            <pin num="84"/>
+            <pin num="85"/>
+            <pin num="86"/>
+            <pin num="87"/>
+            <pin num="88"/>
+            <pin num="89"/>
+            <pin num="90"/>
+            <pin num="91"/>
+            <pin num="92"/>
+            <pin num="93"/>
+            <pin num="94"/>
+            <pin num="95"/>
+            <pin num="96"/>
+            <pin num="97"/>
+            <pin num="98"/>
+            <pin num="99"/>
+            <pin num="100"/>
+            <pin num="101"/>
+            <pin num="103"/>
+            <pin num="104"/>
+            <pin num="102"/>
+            <pin num="81"/>
+            <pin num="1"/>
+            <pin num="20"/>
+            <pin num="55"/>
+            <pin num="113"/>
+            <pin num="112"/>
+            <pin num="111"/>
+            <pin num="66"/>
+            <pin num="110"/>
+            <pin num="51"/>
+            <pin num="46"/>
+            <pin num="43"/>
+            <pin num="71"/>
+            <pin num="109"/>
+            <pin num="41"/>
+            <pin num="40"/>
+            <pin num="39"/>
+            <pin num="76"/>
+            <pin num="38"/>
+            <pin num="108"/>
+            <pin num="36"/>
+            <pin num="107"/>
+            <pin num="34"/>
+            <pin num="30"/>
+            <pin num="106"/>
+            <pin num="105"/>
+            <pin num="7"/>
+            <pin num="13"/>
+            <pin num="25"/>
+            <pin num="15"/>
+            <pin num="60"/>
+            <pin num="14"/>
+            <pin num="65"/>
+            <pin num="24"/>
+            <pin num="10"/>
+            <pin num="9"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="19"/>
+            <pin num="16"/>
+            <pin num="18"/>
+            <pin num="17"/>
+            <pin num="26"/>
+            <pin num="35"/>
+            <pin num="42"/>
+            <pin num="37"/>
+            <pin num="52"/>
+            <pin num="53"/>
+            <pin num="54"/>
+            <pin num="21"/>
+            <pin num="22"/>
+            <pin num="23"/>
+            <pin num="27"/>
+            <pin num="28"/>
+            <pin num="29"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U2">
+      <value>SKY65943-11</value>
+      <footprint>Collar033:U2_SKY65943_DK10171</footprint>
+      <fields>
+        <field name="MPN">SKY65943-11</field>
+        <field name="Design status">Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open</field>
+        <field name="Footprint">Collar033:U2_SKY65943_DK10171</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="SKY65943-11" description=""/>
+      <property name="MPN" value="SKY65943-11"/>
+      <property name="Design status" value="Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5a5ad8b1-0d31-5da4-a758-b5b434274ef9</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="5"/>
+            <pin num="3"/>
+            <pin num="2"/>
+            <pin num="1"/>
+            <pin num="4"/>
+            <pin num="6"/>
+            <pin num="9"/>
+            <pin num="11"/>
+            <pin num="10"/>
+            <pin num="7"/>
+            <pin num="8"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U3">
+      <value>BQ25185DLHR</value>
+      <footprint>Collar033:U3_Texas_DLH0010A_WSON-10-1EP_2.2x2mm_P0.4mm_EP0.9x1.5mm</footprint>
+      <fields>
+        <field name="MPN">BQ25185DLHR</field>
+        <field name="Design status">Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open</field>
+        <field name="Footprint">Collar033:U3_Texas_DLH0010A_WSON-10-1EP_2.2x2mm_P0.4mm_EP0.9x1.5mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="BQ25185" description=""/>
+      <property name="MPN" value="BQ25185DLHR"/>
+      <property name="Design status" value="Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>aa98f17c-44db-5f6a-bb24-0d0517a5a301</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="10"/>
+            <pin num="4"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="6"/>
+            <pin num="5"/>
+            <pin num="11"/>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="9"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U4">
+      <value>TPS7A0218PDBVR</value>
+      <footprint>Collar033:U4_SOT-23-5</footprint>
+      <fields>
+        <field name="MPN">TPS7A0218PDBVR</field>
+        <field name="Design status">Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open</field>
+        <field name="Footprint">Collar033:U4_SOT-23-5</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="TPS7A0218-DBV" description=""/>
+      <property name="MPN" value="TPS7A0218PDBVR"/>
+      <property name="Design status" value="Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c6f13fab-3415-5d5e-87f2-f03a7efa25aa</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="3"/>
+            <pin num="2"/>
+            <pin num="5"/>
+            <pin num="4"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U5">
+      <value>LIS2DW12TR</value>
+      <footprint>Collar033:U5_LGA-12_2x2mm_P0.5mm</footprint>
+      <fields>
+        <field name="MPN">LIS2DW12TR</field>
+        <field name="Design status">Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open</field>
+        <field name="Footprint">Collar033:U5_LGA-12_2x2mm_P0.5mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="LIS2DW12" description=""/>
+      <property name="MPN" value="LIS2DW12TR"/>
+      <property name="Design status" value="Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c2a3df40-6458-54fa-81f7-44b5fa68bced</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="1"/>
+            <pin num="4"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="12"/>
+            <pin num="11"/>
+            <pin num="5"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U6">
+      <value>TPS3808G01DBVR</value>
+      <footprint>Collar05:U6_SOT-23-6</footprint>
+      <fields>
+        <field name="MPN">TPS3808G01DBVR</field>
+        <field name="Design status">Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open</field>
+        <field name="Footprint">Collar05:U6_SOT-23-6</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="TPS3808-DBV" description=""/>
+      <property name="MPN" value="TPS3808G01DBVR"/>
+      <property name="Design status" value="Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d06bb327-ee55-55dc-bcf4-6b83fe14ee85</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="6"/>
+            <pin num="5"/>
+            <pin num="3"/>
+            <pin num="2"/>
+            <pin num="1"/>
+            <pin num="4"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U7">
+      <value>TPS3808G30DBVR</value>
+      <footprint>Collar05:U7_SOT-23-6</footprint>
+      <fields>
+        <field name="MPN">TPS3808G30DBVR</field>
+        <field name="Design status">Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open</field>
+        <field name="Footprint">Collar05:U7_SOT-23-6</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="TPS3808-DBV" description=""/>
+      <property name="MPN" value="TPS3808G30DBVR"/>
+      <property name="Design status" value="Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a60b23f1-06e1-5177-9378-44b72b669c11</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="6"/>
+            <pin num="5"/>
+            <pin num="3"/>
+            <pin num="2"/>
+            <pin num="1"/>
+            <pin num="4"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U8">
+      <value>SN74LVC1G14DCKR</value>
+      <footprint>Collar05:U8_SOT-353_SC-70-5</footprint>
+      <fields>
+        <field name="MPN">SN74LVC1G14DCKR</field>
+        <field name="Design status">Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open</field>
+        <field name="Footprint">Collar05:U8_SOT-353_SC-70-5</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="SN74LVC1G14-DCK" description=""/>
+      <property name="MPN" value="SN74LVC1G14DCKR"/>
+      <property name="Design status" value="Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e4ff0d12-0259-5061-8e65-975acb122ae2</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="5"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U9">
+      <value>MAX17048G+T10</value>
+      <footprint>Collar05:U9_MAX17048_T822_3_90_0065E</footprint>
+      <fields>
+        <field name="MPN">MAX17048G+T10</field>
+        <field name="Design status">Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open</field>
+        <field name="Footprint">Collar05:U9_MAX17048_T822_3_90_0065E</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="MAX17048-TDFN" description=""/>
+      <property name="MPN" value="MAX17048G+T10"/>
+      <property name="Design status" value="Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8a7e8ee6-de18-5eba-8f62-d42867d4cbb2</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="3"/>
+            <pin num="2"/>
+            <pin num="7"/>
+            <pin num="6"/>
+            <pin num="1"/>
+            <pin num="4"/>
+            <pin num="9"/>
+            <pin num="8"/>
+            <pin num="5"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U10">
+      <value>TLV3012BIDCKR / HOT</value>
+      <footprint>Collar05L:TI_DCK0006A</footprint>
+      <fields>
+        <field name="MPN">TLV3012BIDCKR</field>
+        <field name="Design status">Hardware charge-window candidate; assembled temperature/boot/fault qualification required</field>
+        <field name="Footprint">Collar05L:TI_DCK0006A</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="TLV3012B-DCK" description=""/>
+      <property name="MPN" value="TLV3012BIDCKR"/>
+      <property name="Design status" value="Hardware charge-window candidate; assembled temperature/boot/fault qualification required"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>09eaf904-7f31-5ceb-bd34-45fd1177e4a7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="6"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="2"/>
+            <pin num="1"/>
+            <pin num="5"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U11">
+      <value>TLV3012BIDCKR / COLD</value>
+      <footprint>Collar05L:TI_DCK0006A</footprint>
+      <fields>
+        <field name="MPN">TLV3012BIDCKR</field>
+        <field name="Design status">Hardware charge-window candidate; assembled temperature/boot/fault qualification required</field>
+        <field name="Footprint">Collar05L:TI_DCK0006A</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="TLV3012B-DCK" description=""/>
+      <property name="MPN" value="TLV3012BIDCKR"/>
+      <property name="Design status" value="Hardware charge-window candidate; assembled temperature/boot/fault qualification required"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3cbeaa64-5a8a-5ba1-93f9-69f9197b42c8</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="6"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="2"/>
+            <pin num="1"/>
+            <pin num="5"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U12">
+      <value>SN74LVC1G00DCKR</value>
+      <footprint>Collar05L:TI_DCK0005A</footprint>
+      <fields>
+        <field name="MPN">SN74LVC1G00DCKR</field>
+        <field name="Design status">Hardware charge-window candidate; assembled temperature/boot/fault qualification required</field>
+        <field name="Footprint">Collar05L:TI_DCK0005A</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Collar" part="SN74LVC1G00-DCK" description=""/>
+      <property name="MPN" value="SN74LVC1G00DCKR"/>
+      <property name="Design status" value="Hardware charge-window candidate; assembled temperature/boot/fault qualification required"/>
+      <property name="Sheetname" value="collar-tracker"/>
+      <property name="Sheetfile" value="collar-tracker.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0fd4394b-750b-5217-9452-65a9667dea62</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="5"/>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Collar" part="BQ25185">
+      <docs>https://www.ti.com/lit/ds/symlink/bq25185.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">BQ25185</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/bq25185.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="SYS" type="power_out"/>
+        <pin num="2" name="BAT" type="passive"/>
+        <pin num="3" name="STAT2" type="open_collector"/>
+        <pin num="4" name="nCE" type="input"/>
+        <pin num="5" name="GND" type="power_in"/>
+        <pin num="6" name="TS_MR" type="input"/>
+        <pin num="7" name="ILIM_VSET" type="input"/>
+        <pin num="8" name="ISET" type="input"/>
+        <pin num="9" name="STAT1" type="open_collector"/>
+        <pin num="10" name="IN" type="power_in"/>
+        <pin num="11" name="GND" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Collar" part="C">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Collar" part="DMN62D2UDW">
+      <docs>https://www.diodes.com/datasheet/download/DMN62D2UDW.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">DMN62D2UDW</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.diodes.com/datasheet/download/DMN62D2UDW.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="S1" type="passive"/>
+        <pin num="2" name="G1" type="input"/>
+        <pin num="3" name="D2" type="passive"/>
+        <pin num="4" name="S2" type="passive"/>
+        <pin num="5" name="G2" type="input"/>
+        <pin num="6" name="D1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Collar" part="L">
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">L</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Collar" part="LIS2DW12">
+      <docs>https://www.st.com/resource/en/application_note/an5038-lis2dw12-alwayson-3d-accelerometer-stmicroelectronics.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LIS2DW12</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.st.com/resource/en/application_note/an5038-lis2dw12-alwayson-3d-accelerometer-stmicroelectronics.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="SCL" type="input"/>
+        <pin num="2" name="CS" type="input"/>
+        <pin num="3" name="SA0" type="input"/>
+        <pin num="4" name="SDA" type="bidirectional"/>
+        <pin num="5" name="NC" type="no_connect"/>
+        <pin num="6" name="GND" type="power_in"/>
+        <pin num="7" name="GND" type="passive"/>
+        <pin num="8" name="GND" type="passive"/>
+        <pin num="9" name="VDD" type="power_in"/>
+        <pin num="10" name="VDD_IO" type="power_in"/>
+        <pin num="11" name="INT2" type="output"/>
+        <pin num="12" name="INT1" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="Collar" part="MAX17048-TDFN">
+      <docs>https://www.analog.com/media/en/technical-documentation/data-sheets/MAX17048-MAX17049.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MAX17048-TDFN</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.analog.com/media/en/technical-documentation/data-sheets/MAX17048-MAX17049.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="CELL_NC_CONNECT_BAT" type="passive"/>
+        <pin num="3" name="VDD" type="power_in"/>
+        <pin num="4" name="GND" type="passive"/>
+        <pin num="5" name="ALRT_N" type="open_collector"/>
+        <pin num="6" name="QSTRT" type="input"/>
+        <pin num="7" name="SCL" type="input"/>
+        <pin num="8" name="SDA" type="bidirectional"/>
+        <pin num="9" name="GND" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Collar" part="Port12">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">Port12</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+        <pin num="5" name="5" type="passive"/>
+        <pin num="6" name="6" type="passive"/>
+        <pin num="7" name="7" type="passive"/>
+        <pin num="8" name="8" type="passive"/>
+        <pin num="9" name="9" type="passive"/>
+        <pin num="10" name="10" type="passive"/>
+        <pin num="11" name="11" type="passive"/>
+        <pin num="12" name="12" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Collar" part="Port2">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">Port2</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Collar" part="Port3">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">Port3</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Collar" part="Port6">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">Port6</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+        <pin num="5" name="5" type="passive"/>
+        <pin num="6" name="6" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Collar" part="R">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Collar" part="SIM8051">
+      <docs>https://gct.co/connector/sim8051</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SIM8051</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://gct.co/connector/sim8051</field>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="C1_VCC" type="passive"/>
+        <pin num="2" name="C2_RST" type="passive"/>
+        <pin num="3" name="C3_CLK" type="passive"/>
+        <pin num="5" name="GND" type="power_in"/>
+        <pin num="6" name="C6_VPP_UNUSED" type="no_connect"/>
+        <pin num="7" name="C7_IO" type="passive"/>
+        <pin num="8" name="GND" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Collar" part="SKY65943-11">
+      <docs>https://www.skyworksinc.com/-/media/SkyWorks/Documents/Products/2801-2900/SKY65943-11_204404H.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SKY65943-11</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.skyworksinc.com/-/media/SkyWorks/Documents/Products/2801-2900/SKY65943-11_204404H.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="VEN" type="input"/>
+        <pin num="3" name="VCC" type="power_in"/>
+        <pin num="4" name="GND" type="passive"/>
+        <pin num="5" name="RF_IN" type="input"/>
+        <pin num="6" name="GND" type="passive"/>
+        <pin num="7" name="FILT_OUT" type="output"/>
+        <pin num="8" name="AMP_IN" type="input"/>
+        <pin num="9" name="GND" type="passive"/>
+        <pin num="10" name="RF_OUT" type="output"/>
+        <pin num="11" name="GND" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Collar" part="SN74LVC1G00-DCK">
+      <docs>https://www.ti.com/lit/ds/symlink/sn74lvc1g00.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SN74LVC1G00-DCK</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/sn74lvc1g00.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="A_HOT_OK" type="input"/>
+        <pin num="2" name="B_COLD_OK" type="input"/>
+        <pin num="3" name="GND" type="power_in"/>
+        <pin num="4" name="Y_DISABLE" type="output"/>
+        <pin num="5" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Collar" part="SN74LVC1G14-DCK">
+      <docs>https://www.ti.com/lit/ds/symlink/sn74lvc1g14.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SN74LVC1G14-DCK</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/sn74lvc1g14.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="NC" type="no_connect"/>
+        <pin num="2" name="A" type="input"/>
+        <pin num="3" name="GND" type="power_in"/>
+        <pin num="4" name="Y" type="output"/>
+        <pin num="5" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Collar" part="TLV3012B-DCK">
+      <docs>https://www.ti.com/lit/ds/symlink/tlv3012b.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TLV3012B-DCK</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/tlv3012b.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="OUT" type="output"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="IN+" type="input"/>
+        <pin num="4" name="IN-" type="input"/>
+        <pin num="5" name="REF_1V242" type="output"/>
+        <pin num="6" name="V+" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Collar" part="TPD4E1U06">
+      <docs>https://www.ti.com/lit/ds/symlink/tpd4e1u06.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TPD4E1U06</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/tpd4e1u06.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="D1+" type="passive"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="D2+" type="passive"/>
+        <pin num="4" name="D2-" type="passive"/>
+        <pin num="5" name="NC" type="no_connect"/>
+        <pin num="6" name="D1-" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Collar" part="TPS3808-DBV">
+      <docs>https://www.ti.com/lit/ds/symlink/tps3808.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TPS3808-DBV</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/tps3808.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="RESET_N" type="open_collector"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="MR_N" type="input"/>
+        <pin num="4" name="CT" type="passive"/>
+        <pin num="5" name="SENSE" type="input"/>
+        <pin num="6" name="VDD" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Collar" part="TPS7A0218-DBV">
+      <docs>https://www.ti.com/lit/ds/symlink/tps7a02.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TPS7A0218-DBV</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/tps7a02.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="IN" type="power_in"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="EN" type="input"/>
+        <pin num="4" name="NC" type="no_connect"/>
+        <pin num="5" name="OUT_1V8" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="Collar" part="nRF9151-LACA">
+      <docs>https://docs.nordicsemi.com/r/bundle/nwp_056/page/wp/nwp_056/pinout.html</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">nRF9151-LACA</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://docs.nordicsemi.com/r/bundle/nwp_056/page/wp/nwp_056/pinout.html</field>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="P0.20" type="bidirectional"/>
+        <pin num="3" name="SWDCLK" type="input"/>
+        <pin num="4" name="SWDIO" type="bidirectional"/>
+        <pin num="5" name="P0.21" type="bidirectional"/>
+        <pin num="6" name="P0.22" type="bidirectional"/>
+        <pin num="7" name="GND" type="passive"/>
+        <pin num="8" name="P0.23" type="bidirectional"/>
+        <pin num="9" name="nRESET_2V2" type="bidirectional"/>
+        <pin num="10" name="ENABLE" type="input"/>
+        <pin num="11" name="P0.24" type="bidirectional"/>
+        <pin num="12" name="P0.25" type="bidirectional"/>
+        <pin num="13" name="GND" type="passive"/>
+        <pin num="14" name="VDD" type="power_in"/>
+        <pin num="15" name="GND" type="passive"/>
+        <pin num="16" name="SIM_RST" type="output"/>
+        <pin num="17" name="SIM_IO" type="bidirectional"/>
+        <pin num="18" name="SIM_CLK" type="output"/>
+        <pin num="19" name="SIM_1V8" type="power_out"/>
+        <pin num="20" name="GND" type="passive"/>
+        <pin num="21" name="MAGPIO0" type="bidirectional"/>
+        <pin num="22" name="MAGPIO1" type="bidirectional"/>
+        <pin num="23" name="MAGPIO2" type="bidirectional"/>
+        <pin num="24" name="DEC0" type="power_out"/>
+        <pin num="25" name="GND" type="passive"/>
+        <pin num="26" name="SIM_DET_UNUSED" type="no_connect"/>
+        <pin num="27" name="SDATA" type="bidirectional"/>
+        <pin num="28" name="SCLK" type="output"/>
+        <pin num="29" name="VIO" type="power_out"/>
+        <pin num="30" name="GND" type="passive"/>
+        <pin num="31" name="RESERVED_NC" type="no_connect"/>
+        <pin num="32" name="RESERVED_NC" type="no_connect"/>
+        <pin num="33" name="RESERVED_NC" type="no_connect"/>
+        <pin num="34" name="GND" type="passive"/>
+        <pin num="35" name="ANT" type="passive"/>
+        <pin num="36" name="GND" type="passive"/>
+        <pin num="37" name="AUX" type="passive"/>
+        <pin num="38" name="GND" type="passive"/>
+        <pin num="39" name="GND" type="passive"/>
+        <pin num="40" name="GND" type="passive"/>
+        <pin num="41" name="GND" type="passive"/>
+        <pin num="42" name="GPS" type="input"/>
+        <pin num="43" name="GND" type="passive"/>
+        <pin num="44" name="P0.26" type="bidirectional"/>
+        <pin num="45" name="P0.27" type="bidirectional"/>
+        <pin num="46" name="GND" type="passive"/>
+        <pin num="47" name="P0.28" type="bidirectional"/>
+        <pin num="48" name="P0.29" type="bidirectional"/>
+        <pin num="49" name="P0.30" type="bidirectional"/>
+        <pin num="50" name="P0.31" type="bidirectional"/>
+        <pin num="51" name="GND" type="passive"/>
+        <pin num="52" name="COEX0" type="bidirectional"/>
+        <pin num="53" name="COEX1" type="bidirectional"/>
+        <pin num="54" name="COEX2" type="bidirectional"/>
+        <pin num="55" name="GND" type="passive"/>
+        <pin num="56" name="P0.00" type="bidirectional"/>
+        <pin num="57" name="P0.01" type="bidirectional"/>
+        <pin num="58" name="P0.02" type="bidirectional"/>
+        <pin num="59" name="P0.03" type="bidirectional"/>
+        <pin num="60" name="GND" type="passive"/>
+        <pin num="61" name="P0.04" type="bidirectional"/>
+        <pin num="62" name="P0.05" type="bidirectional"/>
+        <pin num="63" name="P0.06" type="bidirectional"/>
+        <pin num="64" name="P0.07" type="bidirectional"/>
+        <pin num="65" name="VDD_GPIO" type="power_in"/>
+        <pin num="66" name="GND" type="passive"/>
+        <pin num="67" name="P0.08" type="bidirectional"/>
+        <pin num="68" name="P0.09" type="bidirectional"/>
+        <pin num="69" name="P0.10" type="bidirectional"/>
+        <pin num="70" name="P0.11" type="bidirectional"/>
+        <pin num="71" name="GND" type="passive"/>
+        <pin num="72" name="P0.12" type="bidirectional"/>
+        <pin num="73" name="P0.13" type="bidirectional"/>
+        <pin num="74" name="P0.14" type="bidirectional"/>
+        <pin num="75" name="P0.15" type="bidirectional"/>
+        <pin num="76" name="GND" type="passive"/>
+        <pin num="77" name="P0.16" type="bidirectional"/>
+        <pin num="78" name="P0.17" type="bidirectional"/>
+        <pin num="79" name="P0.18" type="bidirectional"/>
+        <pin num="80" name="P0.19" type="bidirectional"/>
+        <pin num="81" name="RESERVED_NC" type="no_connect"/>
+        <pin num="82" name="RESERVED_NC" type="no_connect"/>
+        <pin num="83" name="RESERVED_NC" type="no_connect"/>
+        <pin num="84" name="RESERVED_NC" type="no_connect"/>
+        <pin num="85" name="RESERVED_NC" type="no_connect"/>
+        <pin num="86" name="RESERVED_NC" type="no_connect"/>
+        <pin num="87" name="RESERVED_NC" type="no_connect"/>
+        <pin num="88" name="RESERVED_NC" type="no_connect"/>
+        <pin num="89" name="RESERVED_NC" type="no_connect"/>
+        <pin num="90" name="RESERVED_NC" type="no_connect"/>
+        <pin num="91" name="RESERVED_NC" type="no_connect"/>
+        <pin num="92" name="RESERVED_NC" type="no_connect"/>
+        <pin num="93" name="RESERVED_NC" type="no_connect"/>
+        <pin num="94" name="RESERVED_NC" type="no_connect"/>
+        <pin num="95" name="RESERVED_NC" type="no_connect"/>
+        <pin num="96" name="RESERVED_NC" type="no_connect"/>
+        <pin num="97" name="RESERVED_NC" type="no_connect"/>
+        <pin num="98" name="RESERVED_NC" type="no_connect"/>
+        <pin num="99" name="RESERVED_NC" type="no_connect"/>
+        <pin num="100" name="RESERVED_NC" type="no_connect"/>
+        <pin num="101" name="RESERVED_NC" type="no_connect"/>
+        <pin num="102" name="RESERVED_NC" type="no_connect"/>
+        <pin num="103" name="RESERVED_NC" type="no_connect"/>
+        <pin num="104" name="RESERVED_NC" type="no_connect"/>
+        <pin num="105" name="GND" type="passive"/>
+        <pin num="106" name="GND" type="passive"/>
+        <pin num="107" name="GND" type="passive"/>
+        <pin num="108" name="GND" type="passive"/>
+        <pin num="109" name="GND" type="passive"/>
+        <pin num="110" name="GND" type="passive"/>
+        <pin num="111" name="GND" type="passive"/>
+        <pin num="112" name="GND" type="passive"/>
+        <pin num="113" name="GND" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Collar">
+      <uri>${KIPRJMOD}/Collar.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/ACC_INT" class="Default">
+      <node ref="U1" pin="58" pinfunction="P0.02_58" pintype="bidirectional"/>
+      <node ref="U5" pin="12" pinfunction="INT1_12" pintype="output"/>
+    </net>
+    <net code="2" name="/AMP_IN" class="Default,Default">
+      <node ref="L1" pin="2" pintype="passive"/>
+      <node ref="U2" pin="8" pinfunction="AMP_IN_8" pintype="input"/>
+    </net>
+    <net code="3" name="/BAT_NTC" class="Default">
+      <node ref="C36" pin="1" pintype="passive"/>
+      <node ref="J4" pin="3" pinfunction="3_3" pintype="passive"/>
+      <node ref="U10" pin="3" pinfunction="IN+_3" pintype="input"/>
+      <node ref="U11" pin="4" pinfunction="IN-_4" pintype="input"/>
+      <node ref="U3" pin="6" pinfunction="TS_MR_6" pintype="input"/>
+    </net>
+    <net code="4" name="/CHARGE_DISABLE" class="Default">
+      <node ref="R28" pin="2" pintype="passive"/>
+      <node ref="U12" pin="4" pinfunction="Y_DISABLE_4" pintype="output"/>
+      <node ref="U3" pin="4" pinfunction="nCE_4" pintype="input"/>
+    </net>
+    <net code="5" name="/CHG_COLD_LIMIT" class="Default">
+      <node ref="R26" pin="2" pintype="passive"/>
+      <node ref="R27" pin="1" pintype="passive"/>
+      <node ref="U11" pin="3" pinfunction="IN+_3" pintype="input"/>
+    </net>
+    <net code="6" name="/CHG_COLD_OK" class="Default">
+      <node ref="R30" pin="1" pintype="passive"/>
+      <node ref="U11" pin="1" pinfunction="OUT_1" pintype="output"/>
+      <node ref="U12" pin="2" pinfunction="B_COLD_OK_2" pintype="input"/>
+    </net>
+    <net code="7" name="/CHG_COLD_REF" class="Default">
+      <node ref="C35" pin="1" pintype="passive"/>
+      <node ref="R26" pin="1" pintype="passive"/>
+      <node ref="U11" pin="5" pinfunction="REF_1V242_5" pintype="output"/>
+    </net>
+    <net code="8" name="/CHG_FAULT" class="Default">
+      <node ref="R9" pin="1" pintype="passive"/>
+      <node ref="U1" pin="70" pinfunction="P0.11_70" pintype="bidirectional"/>
+      <node ref="U3" pin="3" pinfunction="STAT2_3" pintype="open_collector"/>
+    </net>
+    <net code="9" name="/CHG_HOT_LIMIT" class="Default">
+      <node ref="R24" pin="2" pintype="passive"/>
+      <node ref="R25" pin="1" pintype="passive"/>
+      <node ref="U10" pin="4" pinfunction="IN-_4" pintype="input"/>
+    </net>
+    <net code="10" name="/CHG_HOT_OK" class="Default">
+      <node ref="R29" pin="1" pintype="passive"/>
+      <node ref="U10" pin="1" pinfunction="OUT_1" pintype="output"/>
+      <node ref="U12" pin="1" pinfunction="A_HOT_OK_1" pintype="input"/>
+    </net>
+    <net code="11" name="/CHG_HOT_REF" class="Default">
+      <node ref="C34" pin="1" pintype="passive"/>
+      <node ref="R24" pin="1" pintype="passive"/>
+      <node ref="U10" pin="5" pinfunction="REF_1V242_5" pintype="output"/>
+    </net>
+    <net code="12" name="/CHG_STAT" class="Default">
+      <node ref="R8" pin="1" pintype="passive"/>
+      <node ref="U1" pin="69" pinfunction="P0.10_69" pintype="bidirectional"/>
+      <node ref="U3" pin="9" pinfunction="STAT1_9" pintype="open_collector"/>
+    </net>
+    <net code="13" name="/COEX0" class="Default">
+      <node ref="R4" pin="1" pintype="passive"/>
+      <node ref="U1" pin="52" pinfunction="COEX0_52" pintype="bidirectional"/>
+    </net>
+    <net code="14" name="/DEBUG_RESET" class="Default">
+      <node ref="J7" pin="5" pinfunction="5_5" pintype="passive"/>
+      <node ref="R2" pin="2" pintype="passive"/>
+    </net>
+    <net code="15" name="/DEC0" class="Default">
+      <node ref="C7" pin="1" pintype="passive"/>
+      <node ref="U1" pin="24" pinfunction="DEC0_24" pintype="power_out"/>
+    </net>
+    <net code="16" name="/FG_ALERT" class="Default">
+      <node ref="R23" pin="2" pintype="passive"/>
+      <node ref="U1" pin="73" pinfunction="P0.13_73" pintype="bidirectional"/>
+      <node ref="U9" pin="5" pinfunction="ALRT_N_5" pintype="open_collector"/>
+    </net>
+    <net code="17" name="/FILT_OUT" class="Default,Default">
+      <node ref="L1" pin="1" pintype="passive"/>
+      <node ref="U2" pin="7" pinfunction="FILT_OUT_7" pintype="output"/>
+    </net>
+    <net code="18" name="/GND" class="Default">
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="C10" pin="2" pintype="passive"/>
+      <node ref="C11" pin="2" pintype="passive"/>
+      <node ref="C12" pin="2" pintype="passive"/>
+      <node ref="C15" pin="2" pintype="passive"/>
+      <node ref="C16" pin="2" pintype="passive"/>
+      <node ref="C17" pin="2" pintype="passive"/>
+      <node ref="C18" pin="2" pintype="passive"/>
+      <node ref="C19" pin="2" pintype="passive"/>
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="C20" pin="2" pintype="passive"/>
+      <node ref="C21" pin="2" pintype="passive"/>
+      <node ref="C23" pin="2" pintype="passive"/>
+      <node ref="C24" pin="2" pintype="passive"/>
+      <node ref="C25" pin="2" pintype="passive"/>
+      <node ref="C26" pin="2" pintype="passive"/>
+      <node ref="C27" pin="2" pintype="passive"/>
+      <node ref="C28" pin="2" pintype="passive"/>
+      <node ref="C29" pin="2" pintype="passive"/>
+      <node ref="C3" pin="2" pintype="passive"/>
+      <node ref="C30" pin="2" pintype="passive"/>
+      <node ref="C31" pin="2" pintype="passive"/>
+      <node ref="C32" pin="2" pintype="passive"/>
+      <node ref="C33" pin="2" pintype="passive"/>
+      <node ref="C34" pin="2" pintype="passive"/>
+      <node ref="C35" pin="2" pintype="passive"/>
+      <node ref="C36" pin="2" pintype="passive"/>
+      <node ref="C4" pin="2" pintype="passive"/>
+      <node ref="C5" pin="2" pintype="passive"/>
+      <node ref="C6" pin="2" pintype="passive"/>
+      <node ref="C7" pin="2" pintype="passive"/>
+      <node ref="C8" pin="2" pintype="passive"/>
+      <node ref="C9" pin="2" pintype="passive"/>
+      <node ref="D1" pin="2" pinfunction="GND_2" pintype="power_in"/>
+      <node ref="D2" pin="2" pinfunction="GND_2" pintype="power_in"/>
+      <node ref="J1" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="J2" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="J3" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="J4" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="J5" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="J6" pin="5" pinfunction="GND_5" pintype="power_in"/>
+      <node ref="J6" pin="8" pinfunction="GND_8" pintype="passive"/>
+      <node ref="J7" pin="3" pinfunction="3_3" pintype="passive"/>
+      <node ref="Q1" pin="1" pinfunction="S1_1" pintype="passive"/>
+      <node ref="Q1" pin="4" pinfunction="S2_4" pintype="passive"/>
+      <node ref="R15" pin="2" pintype="passive"/>
+      <node ref="R18" pin="2" pintype="passive"/>
+      <node ref="R22" pin="2" pintype="passive"/>
+      <node ref="R25" pin="2" pintype="passive"/>
+      <node ref="R27" pin="2" pintype="passive"/>
+      <node ref="R29" pin="2" pintype="passive"/>
+      <node ref="R30" pin="2" pintype="passive"/>
+      <node ref="R5" pin="2" pintype="passive"/>
+      <node ref="R6" pin="2" pintype="passive"/>
+      <node ref="R7" pin="2" pintype="passive"/>
+      <node ref="U1" pin="1" pinfunction="GND_1" pintype="power_in"/>
+      <node ref="U1" pin="105" pinfunction="GND_105" pintype="passive"/>
+      <node ref="U1" pin="106" pinfunction="GND_106" pintype="passive"/>
+      <node ref="U1" pin="107" pinfunction="GND_107" pintype="passive"/>
+      <node ref="U1" pin="108" pinfunction="GND_108" pintype="passive"/>
+      <node ref="U1" pin="109" pinfunction="GND_109" pintype="passive"/>
+      <node ref="U1" pin="110" pinfunction="GND_110" pintype="passive"/>
+      <node ref="U1" pin="111" pinfunction="GND_111" pintype="passive"/>
+      <node ref="U1" pin="112" pinfunction="GND_112" pintype="passive"/>
+      <node ref="U1" pin="113" pinfunction="GND_113" pintype="passive"/>
+      <node ref="U1" pin="13" pinfunction="GND_13" pintype="passive"/>
+      <node ref="U1" pin="15" pinfunction="GND_15" pintype="passive"/>
+      <node ref="U1" pin="20" pinfunction="GND_20" pintype="passive"/>
+      <node ref="U1" pin="25" pinfunction="GND_25" pintype="passive"/>
+      <node ref="U1" pin="30" pinfunction="GND_30" pintype="passive"/>
+      <node ref="U1" pin="34" pinfunction="GND_34" pintype="passive"/>
+      <node ref="U1" pin="36" pinfunction="GND_36" pintype="passive"/>
+      <node ref="U1" pin="38" pinfunction="GND_38" pintype="passive"/>
+      <node ref="U1" pin="39" pinfunction="GND_39" pintype="passive"/>
+      <node ref="U1" pin="40" pinfunction="GND_40" pintype="passive"/>
+      <node ref="U1" pin="41" pinfunction="GND_41" pintype="passive"/>
+      <node ref="U1" pin="43" pinfunction="GND_43" pintype="passive"/>
+      <node ref="U1" pin="46" pinfunction="GND_46" pintype="passive"/>
+      <node ref="U1" pin="51" pinfunction="GND_51" pintype="passive"/>
+      <node ref="U1" pin="55" pinfunction="GND_55" pintype="passive"/>
+      <node ref="U1" pin="60" pinfunction="GND_60" pintype="passive"/>
+      <node ref="U1" pin="66" pinfunction="GND_66" pintype="passive"/>
+      <node ref="U1" pin="7" pinfunction="GND_7" pintype="passive"/>
+      <node ref="U1" pin="71" pinfunction="GND_71" pintype="passive"/>
+      <node ref="U1" pin="76" pinfunction="GND_76" pintype="passive"/>
+      <node ref="U10" pin="2" pinfunction="GND_2" pintype="power_in"/>
+      <node ref="U11" pin="2" pinfunction="GND_2" pintype="power_in"/>
+      <node ref="U12" pin="3" pinfunction="GND_3" pintype="power_in"/>
+      <node ref="U2" pin="1" pinfunction="GND_1" pintype="power_in"/>
+      <node ref="U2" pin="11" pinfunction="GND_11" pintype="passive"/>
+      <node ref="U2" pin="4" pinfunction="GND_4" pintype="passive"/>
+      <node ref="U2" pin="6" pinfunction="GND_6" pintype="passive"/>
+      <node ref="U2" pin="9" pinfunction="GND_9" pintype="passive"/>
+      <node ref="U3" pin="11" pinfunction="GND_11" pintype="passive"/>
+      <node ref="U3" pin="5" pinfunction="GND_5" pintype="power_in"/>
+      <node ref="U4" pin="2" pinfunction="GND_2" pintype="power_in"/>
+      <node ref="U5" pin="6" pinfunction="GND_6" pintype="power_in"/>
+      <node ref="U5" pin="7" pinfunction="GND_7" pintype="passive"/>
+      <node ref="U5" pin="8" pinfunction="GND_8" pintype="passive"/>
+      <node ref="U6" pin="2" pinfunction="GND_2" pintype="power_in"/>
+      <node ref="U7" pin="2" pinfunction="GND_2" pintype="power_in"/>
+      <node ref="U8" pin="3" pinfunction="GND_3" pintype="power_in"/>
+      <node ref="U9" pin="1" pinfunction="GND_1" pintype="power_in"/>
+      <node ref="U9" pin="4" pinfunction="GND_4" pintype="passive"/>
+      <node ref="U9" pin="6" pinfunction="QSTRT_6" pintype="input"/>
+      <node ref="U9" pin="9" pinfunction="GND_9" pintype="passive"/>
+    </net>
+    <net code="19" name="/GNSS_ANT" class="RF,Default">
+      <node ref="C14" pin="1" pintype="passive"/>
+      <node ref="J2" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="20" name="/GNSS_FEM_IN" class="RF,Default">
+      <node ref="C14" pin="2" pintype="passive"/>
+      <node ref="U2" pin="5" pinfunction="RF_IN_5" pintype="input"/>
+    </net>
+    <net code="21" name="/GNSS_FEM_OUT" class="RF,Default">
+      <node ref="C13" pin="1" pintype="passive"/>
+      <node ref="U2" pin="10" pinfunction="RF_OUT_10" pintype="output"/>
+    </net>
+    <net code="22" name="/GNSS_LNA_EN" class="Default">
+      <node ref="R4" pin="2" pintype="passive"/>
+      <node ref="R5" pin="1" pintype="passive"/>
+      <node ref="U2" pin="2" pinfunction="VEN_2" pintype="input"/>
+    </net>
+    <net code="23" name="/GPS_RF" class="RF,Default">
+      <node ref="C13" pin="2" pintype="passive"/>
+      <node ref="U1" pin="42" pinfunction="GPS_42" pintype="input"/>
+    </net>
+    <net code="24" name="/HEALTH_CS" class="Default">
+      <node ref="J5" pin="10" pinfunction="10_10" pintype="passive"/>
+      <node ref="R14" pin="1" pintype="passive"/>
+      <node ref="U1" pin="64" pinfunction="P0.07_64" pintype="bidirectional"/>
+    </net>
+    <net code="25" name="/HEALTH_EN" class="Default">
+      <node ref="J5" pin="12" pinfunction="12_12" pintype="passive"/>
+      <node ref="R15" pin="1" pintype="passive"/>
+      <node ref="U1" pin="68" pinfunction="P0.09_68" pintype="bidirectional"/>
+    </net>
+    <net code="26" name="/HEALTH_INT" class="Default">
+      <node ref="J5" pin="6" pinfunction="6_6" pintype="passive"/>
+      <node ref="U1" pin="59" pinfunction="P0.03_59" pintype="bidirectional"/>
+    </net>
+    <net code="27" name="/HEALTH_RESET" class="Default">
+      <node ref="J5" pin="11" pinfunction="11_11" pintype="passive"/>
+      <node ref="U1" pin="67" pinfunction="P0.08_67" pintype="bidirectional"/>
+    </net>
+    <net code="28" name="/I2C_SCL" class="Default">
+      <node ref="J5" pin="5" pinfunction="5_5" pintype="passive"/>
+      <node ref="R13" pin="1" pintype="passive"/>
+      <node ref="U1" pin="57" pinfunction="P0.01_57" pintype="bidirectional"/>
+      <node ref="U5" pin="1" pinfunction="SCL_1" pintype="input"/>
+      <node ref="U9" pin="7" pinfunction="SCL_7" pintype="input"/>
+    </net>
+    <net code="29" name="/I2C_SDA" class="Default">
+      <node ref="J5" pin="4" pinfunction="4_4" pintype="passive"/>
+      <node ref="R12" pin="1" pintype="passive"/>
+      <node ref="U1" pin="56" pinfunction="P0.00_56" pintype="bidirectional"/>
+      <node ref="U5" pin="4" pinfunction="SDA_4" pintype="bidirectional"/>
+      <node ref="U9" pin="8" pinfunction="SDA_8" pintype="bidirectional"/>
+    </net>
+    <net code="30" name="/ILIM_VSET" class="Default">
+      <node ref="R6" pin="1" pintype="passive"/>
+      <node ref="U3" pin="7" pinfunction="ILIM_VSET_7" pintype="input"/>
+    </net>
+    <net code="31" name="/ISET" class="Default">
+      <node ref="R7" pin="1" pintype="passive"/>
+      <node ref="U3" pin="8" pinfunction="ISET_8" pintype="input"/>
+    </net>
+    <net code="32" name="/LTE_ANT" class="RF,Default">
+      <node ref="C12" pin="1" pintype="passive"/>
+      <node ref="J1" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R3" pin="2" pintype="passive"/>
+    </net>
+    <net code="33" name="/LTE_RF" class="RF,Default">
+      <node ref="C11" pin="1" pintype="passive"/>
+      <node ref="R3" pin="1" pintype="passive"/>
+      <node ref="U1" pin="35" pinfunction="ANT_35" pintype="passive"/>
+    </net>
+    <net code="34" name="/NRF_ENABLE" class="Default">
+      <node ref="C9" pin="1" pintype="passive"/>
+      <node ref="R1" pin="2" pintype="passive"/>
+      <node ref="U1" pin="10" pinfunction="ENABLE_10" pintype="input"/>
+      <node ref="U7" pin="5" pinfunction="SENSE_5" pintype="input"/>
+    </net>
+    <net code="35" name="/NRF_RESET" class="Default">
+      <node ref="C8" pin="1" pintype="passive"/>
+      <node ref="R2" pin="1" pintype="passive"/>
+      <node ref="U1" pin="9" pinfunction="nRESET_2V2_9" pintype="bidirectional"/>
+    </net>
+    <net code="36" name="/POWER_FAULT" class="Default">
+      <node ref="Q1" pin="2" pinfunction="G1_2" pintype="input"/>
+      <node ref="Q1" pin="5" pinfunction="G2_5" pintype="input"/>
+      <node ref="R22" pin="1" pintype="passive"/>
+      <node ref="U8" pin="4" pinfunction="Y_4" pintype="output"/>
+    </net>
+    <net code="37" name="/POWER_GOOD" class="Default">
+      <node ref="R1" pin="1" pintype="passive"/>
+      <node ref="R16" pin="2" pintype="passive"/>
+      <node ref="R19" pin="1" pintype="passive"/>
+      <node ref="U6" pin="1" pinfunction="RESET_N_1" pintype="open_collector"/>
+      <node ref="U7" pin="3" pinfunction="MR_N_3" pintype="input"/>
+      <node ref="U8" pin="2" pinfunction="A_2" pintype="input"/>
+    </net>
+    <net code="38" name="/SIM_1V8" class="Default">
+      <node ref="C10" pin="1" pintype="passive"/>
+      <node ref="D1" pin="6" pinfunction="D1-_6" pintype="passive"/>
+      <node ref="J6" pin="1" pinfunction="C1_VCC_1" pintype="passive"/>
+      <node ref="U1" pin="19" pinfunction="SIM_1V8_19" pintype="power_out"/>
+    </net>
+    <net code="39" name="/SIM_CLK" class="Default">
+      <node ref="D1" pin="3" pinfunction="D2+_3" pintype="passive"/>
+      <node ref="J6" pin="3" pinfunction="C3_CLK_3" pintype="passive"/>
+      <node ref="U1" pin="18" pinfunction="SIM_CLK_18" pintype="output"/>
+    </net>
+    <net code="40" name="/SIM_IO" class="Default">
+      <node ref="D2" pin="3" pinfunction="D2+_3" pintype="passive"/>
+      <node ref="J6" pin="7" pinfunction="C7_IO_7" pintype="passive"/>
+      <node ref="U1" pin="17" pinfunction="SIM_IO_17" pintype="bidirectional"/>
+    </net>
+    <net code="41" name="/SIM_RST" class="Default">
+      <node ref="D1" pin="1" pinfunction="D1+_1" pintype="passive"/>
+      <node ref="J6" pin="2" pinfunction="C2_RST_2" pintype="passive"/>
+      <node ref="U1" pin="16" pinfunction="SIM_RST_16" pintype="output"/>
+    </net>
+    <net code="42" name="/SPI_MISO" class="Default">
+      <node ref="J5" pin="9" pinfunction="9_9" pintype="passive"/>
+      <node ref="U1" pin="63" pinfunction="P0.06_63" pintype="bidirectional"/>
+    </net>
+    <net code="43" name="/SPI_MOSI" class="Default">
+      <node ref="J5" pin="8" pinfunction="8_8" pintype="passive"/>
+      <node ref="U1" pin="62" pinfunction="P0.05_62" pintype="bidirectional"/>
+    </net>
+    <net code="44" name="/SPI_SCK" class="Default">
+      <node ref="J5" pin="7" pinfunction="7_7" pintype="passive"/>
+      <node ref="U1" pin="61" pinfunction="P0.04_61" pintype="bidirectional"/>
+    </net>
+    <net code="45" name="/SWDCLK" class="Default">
+      <node ref="J7" pin="4" pinfunction="4_4" pintype="passive"/>
+      <node ref="U1" pin="3" pinfunction="SWDCLK_3" pintype="input"/>
+    </net>
+    <net code="46" name="/SWDIO" class="Default">
+      <node ref="J7" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U1" pin="4" pinfunction="SWDIO_4" pintype="bidirectional"/>
+    </net>
+    <net code="47" name="/UV_DELAY" class="Default">
+      <node ref="C25" pin="1" pintype="passive"/>
+      <node ref="U6" pin="4" pinfunction="CT_4" pintype="passive"/>
+    </net>
+    <net code="48" name="/UV_SENSE" class="Default">
+      <node ref="R17" pin="2" pintype="passive"/>
+      <node ref="R18" pin="1" pintype="passive"/>
+      <node ref="R19" pin="2" pintype="passive"/>
+      <node ref="U6" pin="5" pinfunction="SENSE_5" pintype="input"/>
+    </net>
+    <net code="49" name="/VBAT" class="Power">
+      <node ref="C19" pin="1" pintype="passive"/>
+      <node ref="C30" pin="1" pintype="passive"/>
+      <node ref="J4" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U3" pin="2" pinfunction="BAT_2" pintype="passive"/>
+      <node ref="U9" pin="2" pinfunction="CELL_NC_CONNECT_BAT_2" pintype="passive"/>
+      <node ref="U9" pin="3" pinfunction="VDD_3" pintype="power_in"/>
+    </net>
+    <net code="50" name="/VDD_NRF" class="Power">
+      <node ref="C27" pin="1" pintype="passive"/>
+      <node ref="C28" pin="1" pintype="passive"/>
+      <node ref="C29" pin="1" pintype="passive"/>
+      <node ref="C3" pin="1" pintype="passive"/>
+      <node ref="C4" pin="1" pintype="passive"/>
+      <node ref="FB1" pin="2" pintype="passive"/>
+      <node ref="R16" pin="1" pintype="passive"/>
+      <node ref="R17" pin="1" pintype="passive"/>
+      <node ref="R20" pin="1" pintype="passive"/>
+      <node ref="U1" pin="14" pinfunction="VDD_14" pintype="power_in"/>
+      <node ref="U6" pin="3" pinfunction="MR_N_3" pintype="input"/>
+      <node ref="U6" pin="6" pinfunction="VDD_6" pintype="power_in"/>
+      <node ref="U7" pin="6" pinfunction="VDD_6" pintype="power_in"/>
+      <node ref="U8" pin="5" pinfunction="VCC_5" pintype="power_in"/>
+    </net>
+    <net code="51" name="/VIN_5V" class="Power">
+      <node ref="C17" pin="1" pintype="passive"/>
+      <node ref="J3" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U3" pin="10" pinfunction="IN_10" pintype="power_in"/>
+    </net>
+    <net code="52" name="/VIO_1V8" class="VIO">
+      <node ref="C15" pin="1" pintype="passive"/>
+      <node ref="C16" pin="1" pintype="passive"/>
+      <node ref="C21" pin="1" pintype="passive"/>
+      <node ref="C23" pin="1" pintype="passive"/>
+      <node ref="C24" pin="1" pintype="passive"/>
+      <node ref="C5" pin="1" pintype="passive"/>
+      <node ref="C6" pin="1" pintype="passive"/>
+      <node ref="J5" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="J7" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R12" pin="2" pintype="passive"/>
+      <node ref="R13" pin="2" pintype="passive"/>
+      <node ref="R14" pin="2" pintype="passive"/>
+      <node ref="R21" pin="1" pintype="passive"/>
+      <node ref="R23" pin="1" pintype="passive"/>
+      <node ref="R8" pin="2" pintype="passive"/>
+      <node ref="R9" pin="2" pintype="passive"/>
+      <node ref="U1" pin="65" pinfunction="VDD_GPIO_65" pintype="power_in"/>
+      <node ref="U2" pin="3" pinfunction="VCC_3" pintype="power_in"/>
+      <node ref="U4" pin="5" pinfunction="OUT_1V8_5" pintype="power_out"/>
+      <node ref="U5" pin="10" pinfunction="VDD_IO_10" pintype="power_in"/>
+      <node ref="U5" pin="2" pinfunction="CS_2" pintype="input"/>
+      <node ref="U5" pin="3" pinfunction="SA0_3" pintype="input"/>
+      <node ref="U5" pin="9" pinfunction="VDD_9" pintype="power_in"/>
+    </net>
+    <net code="53" name="/VIO_DELAY" class="Default">
+      <node ref="C26" pin="1" pintype="passive"/>
+      <node ref="U7" pin="4" pinfunction="CT_4" pintype="passive"/>
+    </net>
+    <net code="54" name="/VIO_DISCHARGE" class="Default">
+      <node ref="Q1" pin="6" pinfunction="D1_6" pintype="passive"/>
+      <node ref="R21" pin="2" pintype="passive"/>
+    </net>
+    <net code="55" name="/VIO_ENABLE" class="Default">
+      <node ref="Q1" pin="3" pinfunction="D2_3" pintype="passive"/>
+      <node ref="R20" pin="2" pintype="passive"/>
+      <node ref="U4" pin="3" pinfunction="EN_3" pintype="input"/>
+      <node ref="U7" pin="1" pinfunction="RESET_N_1" pintype="open_collector"/>
+    </net>
+    <net code="56" name="/VSYS" class="Power">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="C18" pin="1" pintype="passive"/>
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="C20" pin="1" pintype="passive"/>
+      <node ref="C31" pin="1" pintype="passive"/>
+      <node ref="C32" pin="1" pintype="passive"/>
+      <node ref="C33" pin="1" pintype="passive"/>
+      <node ref="FB1" pin="1" pintype="passive"/>
+      <node ref="J5" pin="3" pinfunction="3_3" pintype="passive"/>
+      <node ref="J7" pin="6" pinfunction="6_6" pintype="passive"/>
+      <node ref="R28" pin="1" pintype="passive"/>
+      <node ref="U10" pin="6" pinfunction="V+_6" pintype="power_in"/>
+      <node ref="U11" pin="6" pinfunction="V+_6" pintype="power_in"/>
+      <node ref="U12" pin="5" pinfunction="VCC_5" pintype="power_in"/>
+      <node ref="U3" pin="1" pinfunction="SYS_1" pintype="power_out"/>
+      <node ref="U4" pin="1" pinfunction="IN_1" pintype="power_in"/>
+    </net>
+    <net code="57" name="unconnected-(D1-D2--Pad4)" class="Default">
+      <node ref="D1" pin="4" pinfunction="D2-_4" pintype="passive+no_connect"/>
+    </net>
+    <net code="58" name="unconnected-(D1-NC-Pad5)" class="Default">
+      <node ref="D1" pin="5" pinfunction="NC_5" pintype="no_connect"/>
+    </net>
+    <net code="59" name="unconnected-(D2-D1+-Pad1)" class="Default">
+      <node ref="D2" pin="1" pinfunction="D1+_1" pintype="passive+no_connect"/>
+    </net>
+    <net code="60" name="unconnected-(D2-D1--Pad6)" class="Default">
+      <node ref="D2" pin="6" pinfunction="D1-_6" pintype="passive+no_connect"/>
+    </net>
+    <net code="61" name="unconnected-(D2-D2--Pad4)" class="Default">
+      <node ref="D2" pin="4" pinfunction="D2-_4" pintype="passive+no_connect"/>
+    </net>
+    <net code="62" name="unconnected-(D2-NC-Pad5)" class="Default">
+      <node ref="D2" pin="5" pinfunction="NC_5" pintype="no_connect"/>
+    </net>
+    <net code="63" name="unconnected-(J6-C6_VPP_UNUSED-Pad6)" class="Default">
+      <node ref="J6" pin="6" pinfunction="C6_VPP_UNUSED_6" pintype="no_connect"/>
+    </net>
+    <net code="64" name="unconnected-(U1-AUX-Pad37)" class="Default">
+      <node ref="U1" pin="37" pinfunction="AUX_37" pintype="passive+no_connect"/>
+    </net>
+    <net code="65" name="unconnected-(U1-COEX1-Pad53)" class="Default">
+      <node ref="U1" pin="53" pinfunction="COEX1_53" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="66" name="unconnected-(U1-COEX2-Pad54)" class="Default">
+      <node ref="U1" pin="54" pinfunction="COEX2_54" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="67" name="unconnected-(U1-MAGPIO0-Pad21)" class="Default">
+      <node ref="U1" pin="21" pinfunction="MAGPIO0_21" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="68" name="unconnected-(U1-MAGPIO1-Pad22)" class="Default">
+      <node ref="U1" pin="22" pinfunction="MAGPIO1_22" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="69" name="unconnected-(U1-MAGPIO2-Pad23)" class="Default">
+      <node ref="U1" pin="23" pinfunction="MAGPIO2_23" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="70" name="unconnected-(U1-P0.12-Pad72)" class="Default">
+      <node ref="U1" pin="72" pinfunction="P0.12_72" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="71" name="unconnected-(U1-P0.14-Pad74)" class="Default">
+      <node ref="U1" pin="74" pinfunction="P0.14_74" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="72" name="unconnected-(U1-P0.15-Pad75)" class="Default">
+      <node ref="U1" pin="75" pinfunction="P0.15_75" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="73" name="unconnected-(U1-P0.16-Pad77)" class="Default">
+      <node ref="U1" pin="77" pinfunction="P0.16_77" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="74" name="unconnected-(U1-P0.17-Pad78)" class="Default">
+      <node ref="U1" pin="78" pinfunction="P0.17_78" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="75" name="unconnected-(U1-P0.18-Pad79)" class="Default">
+      <node ref="U1" pin="79" pinfunction="P0.18_79" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="76" name="unconnected-(U1-P0.19-Pad80)" class="Default">
+      <node ref="U1" pin="80" pinfunction="P0.19_80" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="77" name="unconnected-(U1-P0.20-Pad2)" class="Default">
+      <node ref="U1" pin="2" pinfunction="P0.20_2" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="78" name="unconnected-(U1-P0.21-Pad5)" class="Default">
+      <node ref="U1" pin="5" pinfunction="P0.21_5" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="79" name="unconnected-(U1-P0.22-Pad6)" class="Default">
+      <node ref="U1" pin="6" pinfunction="P0.22_6" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="80" name="unconnected-(U1-P0.23-Pad8)" class="Default">
+      <node ref="U1" pin="8" pinfunction="P0.23_8" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="81" name="unconnected-(U1-P0.24-Pad11)" class="Default">
+      <node ref="U1" pin="11" pinfunction="P0.24_11" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="82" name="unconnected-(U1-P0.25-Pad12)" class="Default">
+      <node ref="U1" pin="12" pinfunction="P0.25_12" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="83" name="unconnected-(U1-P0.26-Pad44)" class="Default">
+      <node ref="U1" pin="44" pinfunction="P0.26_44" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="84" name="unconnected-(U1-P0.27-Pad45)" class="Default">
+      <node ref="U1" pin="45" pinfunction="P0.27_45" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="85" name="unconnected-(U1-P0.28-Pad47)" class="Default">
+      <node ref="U1" pin="47" pinfunction="P0.28_47" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="86" name="unconnected-(U1-P0.29-Pad48)" class="Default">
+      <node ref="U1" pin="48" pinfunction="P0.29_48" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="87" name="unconnected-(U1-P0.30-Pad49)" class="Default">
+      <node ref="U1" pin="49" pinfunction="P0.30_49" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="88" name="unconnected-(U1-P0.31-Pad50)" class="Default">
+      <node ref="U1" pin="50" pinfunction="P0.31_50" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="89" name="unconnected-(U1-RESERVED_NC-Pad31)" class="Default">
+      <node ref="U1" pin="31" pinfunction="RESERVED_NC_31" pintype="no_connect"/>
+    </net>
+    <net code="90" name="unconnected-(U1-RESERVED_NC-Pad32)" class="Default">
+      <node ref="U1" pin="32" pinfunction="RESERVED_NC_32" pintype="no_connect"/>
+    </net>
+    <net code="91" name="unconnected-(U1-RESERVED_NC-Pad33)" class="Default">
+      <node ref="U1" pin="33" pinfunction="RESERVED_NC_33" pintype="no_connect"/>
+    </net>
+    <net code="92" name="unconnected-(U1-RESERVED_NC-Pad81)" class="Default">
+      <node ref="U1" pin="81" pinfunction="RESERVED_NC_81" pintype="no_connect"/>
+    </net>
+    <net code="93" name="unconnected-(U1-RESERVED_NC-Pad82)" class="Default">
+      <node ref="U1" pin="82" pinfunction="RESERVED_NC_82" pintype="no_connect"/>
+    </net>
+    <net code="94" name="unconnected-(U1-RESERVED_NC-Pad83)" class="Default">
+      <node ref="U1" pin="83" pinfunction="RESERVED_NC_83" pintype="no_connect"/>
+    </net>
+    <net code="95" name="unconnected-(U1-RESERVED_NC-Pad84)" class="Default">
+      <node ref="U1" pin="84" pinfunction="RESERVED_NC_84" pintype="no_connect"/>
+    </net>
+    <net code="96" name="unconnected-(U1-RESERVED_NC-Pad85)" class="Default">
+      <node ref="U1" pin="85" pinfunction="RESERVED_NC_85" pintype="no_connect"/>
+    </net>
+    <net code="97" name="unconnected-(U1-RESERVED_NC-Pad86)" class="Default">
+      <node ref="U1" pin="86" pinfunction="RESERVED_NC_86" pintype="no_connect"/>
+    </net>
+    <net code="98" name="unconnected-(U1-RESERVED_NC-Pad87)" class="Default">
+      <node ref="U1" pin="87" pinfunction="RESERVED_NC_87" pintype="no_connect"/>
+    </net>
+    <net code="99" name="unconnected-(U1-RESERVED_NC-Pad88)" class="Default">
+      <node ref="U1" pin="88" pinfunction="RESERVED_NC_88" pintype="no_connect"/>
+    </net>
+    <net code="100" name="unconnected-(U1-RESERVED_NC-Pad89)" class="Default">
+      <node ref="U1" pin="89" pinfunction="RESERVED_NC_89" pintype="no_connect"/>
+    </net>
+    <net code="101" name="unconnected-(U1-RESERVED_NC-Pad90)" class="Default">
+      <node ref="U1" pin="90" pinfunction="RESERVED_NC_90" pintype="no_connect"/>
+    </net>
+    <net code="102" name="unconnected-(U1-RESERVED_NC-Pad91)" class="Default">
+      <node ref="U1" pin="91" pinfunction="RESERVED_NC_91" pintype="no_connect"/>
+    </net>
+    <net code="103" name="unconnected-(U1-RESERVED_NC-Pad92)" class="Default">
+      <node ref="U1" pin="92" pinfunction="RESERVED_NC_92" pintype="no_connect"/>
+    </net>
+    <net code="104" name="unconnected-(U1-RESERVED_NC-Pad93)" class="Default">
+      <node ref="U1" pin="93" pinfunction="RESERVED_NC_93" pintype="no_connect"/>
+    </net>
+    <net code="105" name="unconnected-(U1-RESERVED_NC-Pad94)" class="Default">
+      <node ref="U1" pin="94" pinfunction="RESERVED_NC_94" pintype="no_connect"/>
+    </net>
+    <net code="106" name="unconnected-(U1-RESERVED_NC-Pad95)" class="Default">
+      <node ref="U1" pin="95" pinfunction="RESERVED_NC_95" pintype="no_connect"/>
+    </net>
+    <net code="107" name="unconnected-(U1-RESERVED_NC-Pad96)" class="Default">
+      <node ref="U1" pin="96" pinfunction="RESERVED_NC_96" pintype="no_connect"/>
+    </net>
+    <net code="108" name="unconnected-(U1-RESERVED_NC-Pad97)" class="Default">
+      <node ref="U1" pin="97" pinfunction="RESERVED_NC_97" pintype="no_connect"/>
+    </net>
+    <net code="109" name="unconnected-(U1-RESERVED_NC-Pad98)" class="Default">
+      <node ref="U1" pin="98" pinfunction="RESERVED_NC_98" pintype="no_connect"/>
+    </net>
+    <net code="110" name="unconnected-(U1-RESERVED_NC-Pad99)" class="Default">
+      <node ref="U1" pin="99" pinfunction="RESERVED_NC_99" pintype="no_connect"/>
+    </net>
+    <net code="111" name="unconnected-(U1-RESERVED_NC-Pad100)" class="Default">
+      <node ref="U1" pin="100" pinfunction="RESERVED_NC_100" pintype="no_connect"/>
+    </net>
+    <net code="112" name="unconnected-(U1-RESERVED_NC-Pad101)" class="Default">
+      <node ref="U1" pin="101" pinfunction="RESERVED_NC_101" pintype="no_connect"/>
+    </net>
+    <net code="113" name="unconnected-(U1-RESERVED_NC-Pad102)" class="Default">
+      <node ref="U1" pin="102" pinfunction="RESERVED_NC_102" pintype="no_connect"/>
+    </net>
+    <net code="114" name="unconnected-(U1-RESERVED_NC-Pad103)" class="Default">
+      <node ref="U1" pin="103" pinfunction="RESERVED_NC_103" pintype="no_connect"/>
+    </net>
+    <net code="115" name="unconnected-(U1-RESERVED_NC-Pad104)" class="Default">
+      <node ref="U1" pin="104" pinfunction="RESERVED_NC_104" pintype="no_connect"/>
+    </net>
+    <net code="116" name="unconnected-(U1-SCLK-Pad28)" class="Default">
+      <node ref="U1" pin="28" pinfunction="SCLK_28" pintype="output+no_connect"/>
+    </net>
+    <net code="117" name="unconnected-(U1-SDATA-Pad27)" class="Default">
+      <node ref="U1" pin="27" pinfunction="SDATA_27" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="118" name="unconnected-(U1-SIM_DET_UNUSED-Pad26)" class="Default">
+      <node ref="U1" pin="26" pinfunction="SIM_DET_UNUSED_26" pintype="no_connect"/>
+    </net>
+    <net code="119" name="unconnected-(U1-VIO-Pad29)" class="Default">
+      <node ref="U1" pin="29" pinfunction="VIO_29" pintype="power_out+no_connect"/>
+    </net>
+    <net code="120" name="unconnected-(U4-NC-Pad4)" class="Default">
+      <node ref="U4" pin="4" pinfunction="NC_4" pintype="no_connect"/>
+    </net>
+    <net code="121" name="unconnected-(U5-INT2-Pad11)" class="Default">
+      <node ref="U5" pin="11" pinfunction="INT2_11" pintype="output+no_connect"/>
+    </net>
+    <net code="122" name="unconnected-(U5-NC-Pad5)" class="Default">
+      <node ref="U5" pin="5" pinfunction="NC_5" pintype="no_connect"/>
+    </net>
+    <net code="123" name="unconnected-(U8-NC-Pad1)" class="Default">
+      <node ref="U8" pin="1" pinfunction="NC_1" pintype="no_connect"/>
+    </net>
+  </nets>
+</export>

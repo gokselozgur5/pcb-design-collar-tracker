@@ -1,0 +1,30 @@
+{
+  "base_pcb_sha256": "bea6c52a7f045b5fb21ac9714f3db0c70207f150aab3e9587b891f08e4e2b4d3",
+  "base_schematic_sha256": "fcb47f41d004b507394d275c48a8d412292cb65f8ed52438a0113ba8d1647f60",
+  "schematic_sha256": "0a8d89c01db6d0211a9048467b728214da175750f6b670ebf3d6ffa9adeefb0e",
+  "changed_original_pins": {
+    "U3.4": {
+      "before": "GND",
+      "after": "CHARGE_DISABLE"
+    }
+  },
+  "new_refs": [
+    "U10",
+    "U11",
+    "U12",
+    "R24",
+    "R25",
+    "R26",
+    "R27",
+    "R28",
+    "R29",
+    "R30",
+    "C31",
+    "C32",
+    "C33",
+    "C34",
+    "C35",
+    "C36"
+  ],
+  "scope": "Schematic implementation only. PCB is still an untouched seed until the separate PCB builder runs."
+}

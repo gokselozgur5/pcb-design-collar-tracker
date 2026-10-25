@@ -1,0 +1,19 @@
+{
+  "before_sha256": "f465353a7f4203fc1255080dd3050ac6be5ba2cc8dd1e09f25938e832d569c82",
+  "source_sha256": "3291a8d0e4ff363a80a52ba6736448412c93ff42b804fe4a6b4f8ecdb195373c",
+  "via_id": "69f9de45-8706-41c5-be76-d34e55ae2c31",
+  "from_mm": [
+    101.5,
+    124.9
+  ],
+  "to_mm": [
+    101.5,
+    124.85
+  ],
+  "changed_tracks": [
+    "1e2ed98c-e418-4c60-8879-47203e2ac8eb",
+    "fd61442b-6db3-447f-9006-1b1d97ccf589"
+  ],
+  "native_terminal_groups_preserved": 218,
+  "reason": "Increase J3 mask-opening to via-copper gap from 0.150 mm to 0.200 mm; retain land, drill, annulus and all rules."
+}

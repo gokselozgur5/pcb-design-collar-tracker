@@ -1,0 +1,31 @@
+{
+  "source_sha256": "241c84d6ba98793c37344e1e46ddc4918e7b05322ba87daea7c9a90ffb8379b3",
+  "schematic_sha256": "0a8d89c01db6d0211a9048467b728214da175750f6b670ebf3d6ffa9adeefb0e",
+  "exact_fitted_mpn_references": 81,
+  "unique_mpns": 44,
+  "dnp": [
+    "C11",
+    "C12"
+  ],
+  "unplaced_interfaces": [
+    "J3",
+    "J4",
+    "J5",
+    "J7"
+  ],
+  "coordinate_convention": "KiCad native drill/place origin (100,128) mm: X right, Y up, no bottom X negation; angles reduced modulo 360 only.",
+  "supplier_rotation_qualified": false,
+  "procurement_accepted": false,
+  "smt_dfm_analyzed": false,
+  "inputs": {
+    "experiments/power-r05l-charge-interlock/hardware/bom.csv": "c5e37c75362fd27b008fc32d9fef383f6660857f5968af63cafa0d59a87c03e4",
+    "experiments/power-r05l-charge-interlock/assembly/native-positions.csv": "83d60d94091907cafa17f560231779078119df961e97673b489e715c28c3d09b",
+    "experiments/power-r05l-charge-interlock/evidence/components.native.json": "448db77589a4f1355f7f7a953590fef540bec405dd1edbf7ffd6e66885c1331c",
+    "experiments/power-r05l-charge-interlock/evidence/native-netlist.json": "4c88b83f1af96f3924d63761ab09681049cce83cc0b364aaa669a27b19e9be28",
+    "scripts/build_charge_assembly.py": "d1e85d47b78857eb9d8ae671a37ac695f342c22fa9999526f4c11513f8053838"
+  },
+  "outputs": {
+    "candidate-bom.csv": "215e76eade5a6ee19ceaf0124dfabb0f2425795e2710f040830c283f3c3dfff8",
+    "candidate-cpl.csv": "33802aca79bfb2a50e9ab29c653cc76c65f6d5418b9d709b3de15a2980c7962c"
+  }
+}

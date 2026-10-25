@@ -1,0 +1,60 @@
+{
+  "review_date": "2026-10-25",
+  "sources": [
+    {
+      "mpn": "TLV3012BIDCKR",
+      "url": "https://www.ti.com/lit/ds/symlink/tlv3012b.pdf",
+      "downloaded_pdf_sha256": "02993c016420887ee4f1ab2fa640e7596c9c1324a73f4f72bee3b32adec38df3",
+      "bytes": 1624948,
+      "reviewed": "SBOS300C, April 2023; pin table, electrical limits, POR and DCK0006A land pattern"
+    },
+    {
+      "mpn": "SN74LVC1G00DCKR",
+      "url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g00.pdf",
+      "downloaded_pdf_sha256": "1264f79853e6119b66d60fe54f1f6e87995c12c00138bd820981fe68febb1063",
+      "bytes": 2845572,
+      "reviewed": "SCES212AC, August 2026; pin table, logic/current limits and DCK0005A land pattern"
+    },
+    {
+      "mpn": "103JT-025",
+      "url": "https://www.semitec-global.com/uploads/2022/01/P9-JT-Thermistor.pdf",
+      "downloaded_pdf_sha256": "b430302b8002752e077803c594dac29ce98e86361444394faba51096d723b266",
+      "bytes": 89848,
+      "reviewed": "JT R/T table; 10k R25 and B3435 tolerances"
+    },
+    {
+      "mpn": "BQ25185",
+      "url": "https://www.ti.com/lit/ds/symlink/bq25185.pdf",
+      "downloaded_pdf_sha256": "c73ed7d63e6532bb05e26df30edd37c6ac2de310c1222a84a77625e15e133684",
+      "bytes": 1544774,
+      "reviewed": "SLUSF65B, August 2026; TS current, CE, supply and charge thresholds"
+    },
+    {
+      "mpn": "RT0402BRD07196KL",
+      "url": "https://www.yageogroup.com/component-documentation/download/specsheet/RT0402BRD07196KL",
+      "downloaded_pdf_sha256": "8c3d91cf768c14d80a07b9c4ffde32b141bfd7469977d39416ec603d54e31a34",
+      "bytes": 55927,
+      "reviewed": "Exact MPN; 0.1%, 25ppm/C, 0402 dimensions"
+    },
+    {
+      "mpn": "RT0402BRD0749K9L",
+      "url": "https://www.yageogroup.com/component-documentation/download/specsheet/RT0402BRD0749K9L",
+      "downloaded_pdf_sha256": "142390249ee61926a9ccb7896df3e0475e96bdacb8479afa0f559b1528b81762",
+      "bytes": 55758,
+      "reviewed": "Exact MPN; 0.1%, 25ppm/C, 0402 dimensions"
+    },
+    {
+      "mpn": "RT0402BRD0727K4L",
+      "url": "https://www.yageogroup.com/component-documentation/download/specsheet/RT0402BRD0727K4L",
+      "downloaded_pdf_sha256": "b4de4f5d0d95e9838b6618384d7c896a989684a5d8ed161cd480e59b96eec08c",
+      "bytes": 55567,
+      "reviewed": "Exact MPN; 0.1%, 25ppm/C, 0402 dimensions"
+    },
+    {
+      "mpn": "GRM1555C1H102JA01D",
+      "url": "https://www.murata.com/en-us/products/productdetail?partno=GRM1555C1H102JA01%23",
+      "reviewed": "Manufacturer product page: 1000pF \u00b15%, 50V C0G, 1.0 \u00d7 0.5mm, maximum height 0.55mm. PDF API returned HTML and is not treated as a downloaded datasheet."
+    }
+  ],
+  "scope": "Manufacturer sources used for design calculations and candidate footprints. No supplier stock, purchasing or component qualification acceptance."
+}

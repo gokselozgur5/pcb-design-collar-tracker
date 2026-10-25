@@ -1,0 +1,39 @@
+{
+  "base_pcb_sha256": "bea6c52a7f045b5fb21ac9714f3db0c70207f150aab3e9587b891f08e4e2b4d3",
+  "source_sha256": "f54e23e44d15369f60afbead1bfd56881e60b6131c8df612de7cf1df0c993b3d",
+  "added_refs": [
+    "C31",
+    "C32",
+    "C33",
+    "C34",
+    "C35",
+    "C36",
+    "R24",
+    "R25",
+    "R26",
+    "R27",
+    "R28",
+    "R29",
+    "R30",
+    "U10",
+    "U11",
+    "U12"
+  ],
+  "removed_ce_ground_branch": [
+    {
+      "uuid": "a4490e07-effb-4f77-a98c-bd7a2b0b09cf",
+      "start": [
+        103.9,
+        123.4
+      ],
+      "end": [
+        105.0,
+        123.4
+      ]
+    }
+  ],
+  "changed_original_pins": [
+    "U3.4"
+  ],
+  "scope": "Unplaced/unrouted candidate. No new DFM acceptance."
+}

@@ -1,0 +1,83 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-25T23:34:20",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/451a5990-6c32-5202-82bb-1920decebc4e",
+            "violations": [
+                {
+                    "description": "Symbol 'TLV3012B-DCK' not found in symbol library 'Collar'",
+                    "items": [
+                        {
+                            "description": "Symbol U10 [TLV3012B-DCK]",
+                            "pos": {
+                                "x": 105.41,
+                                "y": 619.76
+                            },
+                            "uuid": "09eaf904-7f31-5ceb-bd34-45fd1177e4a7"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Symbol 'TLV3012B-DCK' not found in symbol library 'Collar'",
+                    "items": [
+                        {
+                            "description": "Symbol U11 [TLV3012B-DCK]",
+                            "pos": {
+                                "x": 304.8,
+                                "y": 619.76
+                            },
+                            "uuid": "3cbeaa64-5a8a-5ba1-93f9-69f9197b42c8"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Symbol 'SN74LVC1G00-DCK' not found in symbol library 'Collar'",
+                    "items": [
+                        {
+                            "description": "Symbol U12 [SN74LVC1G00-DCK]",
+                            "pos": {
+                                "x": 505.46,
+                                "y": 619.76
+                            },
+                            "uuid": "0fd4394b-750b-5217-9452-65a9667dea62"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                }
+            ]
+        }
+    ],
+    "source": "collar-tracker.kicad_sch"
+}

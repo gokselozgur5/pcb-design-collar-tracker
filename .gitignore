@@ -23,6 +23,8 @@ CLAUDE.local.md
 !/experiments/power-r05g-local-crossings/build/placement.json
 /experiments/power-r05h-six-layer/build/*
 !/experiments/power-r05h-six-layer/build/placement.json
+/experiments/power-r05l-charge-interlock/build/*
+!/experiments/power-r05l-charge-interlock/build/placement.json
 **/browser-profile/
 **/browser-tmp/
 **/st-browser/
