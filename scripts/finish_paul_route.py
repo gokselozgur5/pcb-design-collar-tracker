@@ -6,13 +6,29 @@ Include footprint keepouts. Grid sampling is a planner, not DRC acceptance.
 Usage: kicad-python finish_paul_route.py BOARD DRC_JSON [OUTPUT_BOARD]
 """
 from pathlib import Path
+import argparse
 import collections,hashlib,heapq,itertools,json,math,re,sys
 import pcbnew as k
 
-PCB=Path(sys.argv[1]);DRC=Path(sys.argv[2]);OUTPUT=Path(sys.argv[3]) if len(sys.argv)>3 else PCB
+parser=argparse.ArgumentParser(description=__doc__)
+parser.add_argument('board',type=Path)
+parser.add_argument('drc_json',type=Path)
+parser.add_argument('output_board',type=Path,nargs='?')
+parser.add_argument('--route-limit-mm',type=float,default=40,
+                    help='Candidate detour review screen, not a DRC rule or signal qualification')
+args=parser.parse_args()
+assert math.isfinite(args.route_limit_mm) and args.route_limit_mm>0
+PCB=args.board;DRC=args.drc_json;OUTPUT=args.output_board or PCB
 b=k.LoadBoard(str(PCB));d=json.loads(DRC.read_text());layers=[k.F_Cu,k.B_Cu];STEP=.05
 source_sha=hashlib.sha256(PCB.read_bytes()).hexdigest()
 assert 'paul-nanosim' in str(PCB), 'Use an isolated nano-SIM trial'
+edges=[item for item in b.GetDrawings() if item.GetLayer()==k.Edge_Cuts]
+assert len(edges)==4 and all(item.GetShape()==k.SHAPE_T_SEGMENT for item in edges), 'Planner requires a rectangular outline'
+corners={(p.x/1e6,p.y/1e6) for item in edges for p in [item.GetStart(),item.GetEnd()]}
+xmin,ymin=min(p[0] for p in corners),min(p[1] for p in corners)
+xmax,ymax=max(p[0] for p in corners),max(p[1] for p in corners)
+assert corners=={(xmin,ymin),(xmin,ymax),(xmax,ymin),(xmax,ymax)}, 'Planner requires a rectangular outline'
+assert all(item.GetStart().x==item.GetEnd().x or item.GetStart().y==item.GetEnd().y for item in edges)
 vec=lambda x,y:k.VECTOR2I(round(x*1e6),round(y*1e6))
 def xy(v):return (v.x/1e6,v.y/1e6)
 def point_segment(px,py,ax,ay,bx,by):
@@ -61,7 +77,7 @@ def geometry():
 def clearance_checker(net,width,cells):
     def clear(x,y,layer,r=None,via=False):
         r=width/2 if r is None else r
-        if not (100.401+r<=x<=134.599-r and 100.401+r<=y<=127.599-r):return False
+        if not (xmin+.401+r<=x<=xmax-.401-r and ymin+.401+r<=y<=ymax-.401-r):return False
         for kind,l,oname,data,box in cells[(layer,math.floor(x),math.floor(y))]:
             if kind=='via_keepout' and not via:continue
             if oname==net and not (via and kind in ['pad','via']):continue
@@ -187,7 +203,7 @@ def route(opening):
             if (abs((zz[0]-aa[0])*(p[1]-zz[1])-(zz[1]-aa[1])*(p[0]-zz[0]))<1e-9 and route_width(*aa)==route_width(*zz)==route_width(*p)):simplified.pop()
         simplified.append(p)
     length=sum(math.dist(aa[:2],zz[:2]) for aa,zz in zip(simplified,simplified[1:]))
-    if length>40:
+    if length>args.route_limit_mm:
         raise RuntimeError((net,'detour needs topology review',round(length,3),visited))
     for aa,zz in zip(simplified,simplified[1:]):
         if aa[2]!=zz[2]:addvia(aa[0],aa[1],net)
@@ -210,6 +226,7 @@ except KeyboardInterrupt:
     print('Interrupted; preserving completed routes for native review',flush=True)
 k.ZONE_FILLER(b).Fill(b.Zones());assert k.SaveBoard(str(OUTPUT),b)
 OUTPUT.with_suffix('.local-routing.json').write_text(json.dumps({'before_sha256':source_sha,
+    'route_limit_mm':args.route_limit_mm,'board_bounds_mm':[xmin,ymin,xmax,ymax],
     'source_sha256':hashlib.sha256(OUTPUT.read_bytes()).hexdigest(),'routes':results,
     'ground_stitches':stitches,'failed':failures,'interrupted':interrupted,
     'acceptance':'Pending native DRC and independent geometry audit'},indent=2)+'\n')
