@@ -1,0 +1,17 @@
+ref,qty,description,material_or_part,status
+M1,1,Main shell,CNC polycarbonate grade pending,Prototype geometry complete; supplier process review pending
+M2,1,Lid,CNC polycarbonate grade pending,Prototype geometry complete; flatness and clamp validation pending
+M3,1,PCB lift-out carrier,Insulating polymer grade pending,r02 D1 relief and 0.5 mm contact reliefs; 1 mm connected bridge; retention/strength unqualified
+S1,1,Main O-ring,AS568-033 EPDM 70A compound pending,Drawing and tolerance approval required
+S2-S3,2,Radial contact O-ring,4.50x1.80 mm EPDM 70A,Specified dimensions; sourcing and compound approval pending
+J8-J9,2,Custom sealed charging target; M3x0.5 rear thread,Turned brass with qualified nickel/gold coating,Prototype drawing; contact and corrosion tests pending
+N1-N2,2,Contact retaining nut,HFN-M3-A2 thin nut; M3x0.5; 5.5 mm AF; 1.8 mm maximum thickness,Dimensional candidate selected; <=1.0 mm washer/lug stack and 6.4 mm maximum diameter; torque and locking pending
+H1-H4,4,Lid screw,M2x16 stainless head height <=1.5 mm,Actual part drawing and torque validation pending
+H5-H8,4,Captive lid nut,M2 stainless 4.0 mm AF x1.6 mm,Actual part drawing pending
+MG1-MG2,2,Captive docking magnet,3 mm diameter x1 mm; coated and encapsulated,Grade and retention validation pending
+P1-P2,2,Magnet retaining plug,Insulating polymer,Fit to bottom-entry blind slot; encapsulate and capture with boot
+W1,1,Factory charging harness,Two insulated leads and ring terminals,Wire and fixture selection pending
+W2,1,Protected battery and NTC harness,Approved protected pack with NTC pending,Envelope only; no battery approval
+A1-A2,2,LTE and GNSS antennas,Unselected FPCs,Reservations only; RF design and testing pending
+DCK1,1,Dock alignment shell,Insulating polymer,Mechanical fixture only; spring contacts and power circuit incomplete
+MT1,1,Collar retention boot,TPU grade pending,Required with magnet plugs; 20 mm default; pull and fit tests pending
