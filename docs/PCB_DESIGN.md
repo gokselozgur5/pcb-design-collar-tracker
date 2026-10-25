@@ -386,6 +386,18 @@ not a growing diary inside this guide.
   contour and real internal overlap, then repeat the same edge/manifold checks.
   Preserve the failed export instead of relaxing mesh precision to hide it.
 
+
+- Separate guaranteed material bounds from engineering sensitivity intervals.
+  A longitudinal CLTE guideline over 23–60°C does not establish cold or transverse
+  behavior. Keep actual laminate identity and moisture/creep effects explicit.
+- Define axial tolerance chains precisely. If 0.05mm is an assembled-plane budget,
+  its constituent length errors must fit that total; do not silently allow each
+  part its own 0.05mm. Preserve shared-part temperatures when summing lengths.
+- A cable optimizer can find a collision-free curve while asking a connector to
+  rotate or carry excessive load. Record the admitted endpoint orientation and
+  leave actual connector force, continuous movement and flex life unqualified
+  until they are supported by construction limits and physical evidence.
+
 ### Routing a congested board without losing ground references
 
 Measure the blocked regions before rerunning the same search. If extra routing

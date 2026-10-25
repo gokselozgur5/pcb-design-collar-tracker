@@ -63,7 +63,7 @@ continuous demand. The PC3 source tables describe typical 1ms TX-subframe averag
 and additional microsecond peaks, not a guaranteed reporting-cycle load profile.
 The reviewed EEMB 350mA PCM is not accepted by the new geometry study. Larger
 Jauch/VARTA alternatives have explicit size/charge limitations in the review.
-Proceed independently with r10 material/thermal fit and controlled harness/dock details
+Proceed independently with pack retention and controlled harness/dock details
 while awaiting a supplier response. Reconcile a returned specification against
 voltage, current, protection/recovery, NTC and in-service dimensions before selection.
 CAPH/ZETA are now prototype antenna candidates; cable end datums/tolerance fit,
@@ -109,27 +109,30 @@ Only regenerate its CAD deliberately using `scripts/export_pack_enclosure.py`.
 The command also checks mesh integrity and actual CAD intersections; it takes
 several minutes. Read-only verification does not need OpenSCAD or the geometry venv.
 
-The latest mechanical source is `mechanical/swim-r10-retention/`. It adds a
-keyed frame and four capture tabs without changing the PCB or enclosure size.
-Read its README and dimensioned retention sheet. All 85 swept component envelopes,
-27 cable endpoint poses, four tab contacts and nine exported meshes pass the saved
-ambient checks. Current CAD intersections are empty; the reversed key and restored
-old support/undersized guides produce interference. Six regressions cover the
-original clearance, missing reliefs/tabs, closing stack, cable lift and SIM bridge.
-Both the initial U12 clearance and first invalid carrier mesh are preserved.
+The latest mechanical source is `mechanical/swim-r11-thermal-fit/`. Read its README
+and dimensioned sheet. Four radial keys and larger guide/cavity clearances address
+the r10 thermal interference calculation; component reliefs and cable paths cover
+the larger assigned movement. The contact stem is now 7.50mm, matching the wall.
+The PCB, outside size, prior CAD and all-green JLC evidence are preserved.
 
 ```sh
-python3 scripts/verify_retention_assembly.py
-.venv-dfm/bin/python -m unittest discover -s tests -p test_retention_assembly.py -v
+python3 scripts/verify_thermal_assembly.py
+.venv-dfm/bin/python -m unittest discover -s tests -p test_thermal_assembly.py -v
 ```
 
-Regenerate deliberately with the commands in its README. The CAD exporter checks
-all solids before rendering previews; do not accept a partial output after failure.
-The assigned manufacturing dimensions are not demonstrated process capability.
-Resolve material expansion over the operating range next: the POM-C candidate has
-no thermal-fit acceptance. Captive geometry does not qualify strength, vibration,
-anti-rattle behavior or the still-undefined battery retention. Keep r08/r09 and
-their packaged evidence unchanged; no new PCB DFM is needed for this mechanical work.
+The saved study includes 85 component envelopes, 27 cable poses, four capture tabs,
+nine meshes, eight CAD controls and five views. Seven regressions reproduce the
+old thermal/clearance problems, missing key/tab, closing-stack and key-tolerance
+failures, and compare the fast cable evaluator against the preserved implementation.
+Only deliberately regenerate using the README commands; saved verification is
+read-only and works without the geometry environment or OpenSCAD.
+
+The -10 to +45°C model uses assigned CTE/tolerance limits, not supplier guarantees.
+Cable pose search can change plug azimuth; permissible force/orientation, complete
+continuous movement and flex life remain unqualified. Tilt/load, moisture/creep,
+actual machining limits and physical thermal fit must also be checked. Next local
+work is pack retention and controlled harness/dock; supplier selection, firmware
+and factory/physical acceptance remain open. Do not describe this as order-ready.
 
 Saved native files are authoritative. Do not rerun one-shot seed/routing scripts
 against an existing target. Use a successor for further circuit/PCB edits and
@@ -179,8 +182,8 @@ snapshot can substitute default rules and overwrite the real project's settings
 on save. The r05 placement helper now checks design-rule and net-class identity.
 
 Protected NTC pack selection and antenna assembly qualification follow the
-implemented r05l circuit. r10 adds prototype PCB capture; thermal/material and
-physical retention acceptance, dock/harness and battery retention remain open.
+implemented r05l circuit. r11 adds conditional thermal capture geometry; actual
+material/physical acceptance, dock/harness and battery retention remain open.
 Read `mechanical/swim-r08-antennas/README.md`, the current pack/antenna review and
 `docs/turkiye-connectivity.md` before assuming a modem/plan is field-qualified.
 The r05l/r08 thickness review checks 85 populated envelopes over 0.71–0.91mm;

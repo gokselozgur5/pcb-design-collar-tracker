@@ -19,10 +19,11 @@ Latest battery work: [CT-BAT-001-A request sheet](../assembly/pack-r03/request-s
 This study is not an approved battery substitution. Supplier-message authorization
 has been requested separately; no response or sending authorization is recorded yet.
 
-Latest mechanical work: [r10 captive-PCB prototype](../mechanical/swim-r10-retention/README.md)
-and its [dimensioned drawing](../mechanical/swim-r10-retention/retention-sheet.pdf).
-The frame, four capture tabs, carrier rails and lid stops bound board movement.
-These are ambient geometry results, not material, strength or physical retention acceptance.
+Latest mechanical work: [r11 thermal-fit prototype](../mechanical/swim-r11-thermal-fit/README.md)
+and its [dimensioned drawing](../mechanical/swim-r11-thermal-fit/retention-sheet.pdf).
+Four radial keys locate the frame while allowing expansion. Component reliefs,
+guide clearances and cable paths cover the enlarged assigned motion. These are
+conditional geometric results; material properties and physical qualification remain open.
 
 | Check | Current result |
 |---|---|
@@ -38,6 +39,7 @@ These are ambient geometry results, not material, strength or physical retention
 | Preserved mechanical r08 | 85 populated envelopes pass four thickness cases; eight closed meshes; current CAD intersections empty, old carrier and undersized cable guides rejected |
 | Requested-pack study r09 | Same PCB; requested pack/NTC envelope fits with a 0.4mm height increase; no supplier pack approval |
 | Captive-PCB prototype r10 | 85 swept component envelopes, 27 cable poses, four tab contacts and nine closed meshes; current CAD intersections empty and reversed key rejected |
+| Thermal-fit prototype r11 | 85 swept envelopes; 27 cable poses; nine closed meshes; four radial keys; conditional -10 to +45°C screen with independently varying part temperatures |
 | Antenna candidates | Synzen CAPH SZK-C-3L30 LTE and ZETA SZK-C-0G04 GNSS; separate nominal 100mm cable assemblies and four internal lid guides |
 
 PCB SHA256: `241c84d6ba98793c37344e1e46ddc4918e7b05322ba87daea7c9a90ffb8379b3`.
@@ -75,22 +77,27 @@ and the r05l PCB are unchanged. The original board height fails the wider-pack
 clearance control. No supplier part, wire route, adhesive strength or physical
 thermal result is approved by this fit calculation.
 
-**Next independent local step:** resolve material choice and thermal fit for the
-r10 frame/carrier/shell before ordering. POM-C is only a candidate; its expansion
-is not covered by the ambient model. Then define pack retention and the controlled
-harness/dock, cable tolerance/opening motion, firmware and factory tests. Do not
-reroute or repeat DFM without a real source change. For a PCB edit, create a
-successor and rerun native/export/two actual supplier checks.
+**Next independent local step:** define battery retention and the controlled
+harness/dock around CT-BAT-001-A. Do not select or order a pack from unconfirmed
+request dimensions. Supplier-message approval is still unanswered. Then close
+cable/material/process requirements, firmware and factory tests. Do not reroute
+or repeat DFM without a real source change.
 
-r10 preserves r09 dimensions and the r05l PCB. The carrier reliefs and one support
-leg accommodate bounded PCB movement; GNSS/LTE initial cable paths were adjusted
-without moving the lid guides. The assigned motion includes PCB-to-carrier XY
-of 0.20mm, PCB-to-shell XY of 0.30mm and PCB top Z=11.06–11.75mm. This is captive
-geometry with free play, not an anti-rattle or shock rating. Minimum swept component
-clearance is 0.205mm; the smallest tab-contact area is 0.321mm². Cable sampling is
-finite and does not prove continuous motion or flex life. The old GNSS route and
-undersized SIM bridge fail regressions. The first STL's degenerate triangles are
-preserved; shared carrier contours fix the mesh without relaxing acceptance.
+r11 preserves the PCB and outside size. Under the declared CTE bounds, the r10
+comparison shows calculated guide and closing-stack interference. r11 widens the
+cavity and guides, uses a PC retainer candidate with four radial carrier keys,
+opens the SIM lane, enlarges component reliefs and adjusts the antenna paths.
+The custom contact stem is shortened 0.20mm to match the wider cavity; its seal
+land and thread are unchanged. No previously released CAD file is overwritten.
+
+At the assigned bounds, minimum component gap is 0.205mm, tab overlap 0.162mm²,
+and closing clearance 0.058mm. The sampled cable/component minimum is 0.235mm;
+cable shape search changes initial tangent length and plug azimuth by up to 30°.
+These sampled shapes do not establish permissible connector force/rotation,
+continuous cable flex or physical thermal behavior. Guide rotation allocation,
+board tilt/load, moisture, creep and actual material/process capability remain
+unqualified. The selected PC and PCB CTE intervals are engineering requirements,
+not guaranteed datasheet limits. All previous r10 evidence remains preserved.
 
 Charge bounds depend on sensor R/T and full-temperature leakage assumptions and a
 2°C cell-to-sensor allocation including lag. Startup, brownout, low-cell recovery,

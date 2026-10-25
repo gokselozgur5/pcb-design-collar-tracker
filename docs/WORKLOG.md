@@ -598,3 +598,34 @@ construction. The battery request remains unsent pending separate authorization.
 No PCB edit, new JLC upload, native KiCad process, supplier message, order, payment
 or physical test occurred. The whole-device release and IP68 qualification remain
 open; preserve earlier checked revisions and their review packages.
+
+
+## 2026-10-26 — Conditional thermal-fit prototype r11
+
+Added four radial retainer/carrier keys, larger cavity/guide clearances, component
+reliefs and revised LTE/GNSS paths. The SIM guide lane is open. The custom contact
+stem is shortened from 7.70 to 7.50mm for the wider cavity; seal land/thread,
+outside size and the all-green r05l PCB remain unchanged.
+
+The preserved r10 candidate fails seven interface/closing checks under the same
+assigned CTE intervals and independent -10 to +45°C part temperatures. r11 passes
+29 thermal interface checks, 85 component envelopes, 27 cable poses, four nominal
+thickness cases and 34 shell checks. Minimum component gap is 0.205mm, tab contact
+0.162mm² and closing gap 0.058mm. Cable/body minimum is 0.235mm, bend radius
+3.374mm and cable separation 0.322mm. The initial clearance failures are preserved.
+
+Seven regressions pass, including the old thermal failures and comparison with
+the preserved cable evaluator. Nine actual meshes and eight CAD controls pass:
+current carrier/guide/retention/key intersections are empty; restoring the old
+support, reducing guide bores and reversing the key produce interference.
+The prototype drawing and generated views accompany the source-bound checkpoint.
+
+Material bounds and machining tolerances remain engineering requirements. Cable
+shape search changes plug azimuth by up to 30 degrees and does not qualify actual
+connector loads, continuous deformation or flex life. Tilt/load, moisture/creep,
+physical thermal fit and ingress remain open. No PCB change, new JLC upload,
+native KiCad process, order/payment or supplier message occurred.
+
+Next: battery retention and controlled harness/dock, supplier-pack confirmation
+once sending is authorized, firmware and factory/physical qualification. Saved
+handoff verification includes r11 while preserving all previous checkpoints.
