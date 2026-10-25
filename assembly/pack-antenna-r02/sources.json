@@ -1,0 +1,107 @@
+{
+  "date": "2026-10-26",
+  "sources": [
+    {
+      "id": "caph",
+      "url": "https://synzen.com.tw/uploads/product-specs/CAPH-SZK-C-3L30---Datasheet---4G-LTE-NB-IoT-FPC-Adhesive-Antenna---Rev-A.pdf",
+      "revision": "Rev A, 2026",
+      "review_pages": [
+        3,
+        13
+      ],
+      "sha256": "09faa39118c8464fc438e590a74fcccf8dd595f9654960d68dfffa3f36e81a9b",
+      "bytes": 8400416
+    },
+    {
+      "id": "zeta",
+      "url": "https://synzen.com.tw/uploads/product-specs/zeta-szk-c-0g04---datasheet---gnss-fpc-antenna---rev-a.pdf",
+      "revision": "Rev A, 2026",
+      "review_pages": [
+        3,
+        7
+      ],
+      "sha256": "4e99b92de2f0e71f796762d1372d3b899d5cde002764b1abc985f0f69a02a757",
+      "bytes": 1858082
+    },
+    {
+      "id": "varta_s",
+      "url": "https://www.varta-ag.com/fileadmin/varta_storage/downloads/products/power/cellpac-lite/design-library/VARTA_Design_Library_EASYPACK_S_56455_701_014.zip",
+      "revision": "Easy Pack S Rev No. 1-0225",
+      "review_pages": [
+        1
+      ],
+      "sha256": "53cee28c2305eab80a6f13862bda648d20947868471238666177cf4e61dcdd9c",
+      "bytes": 354539,
+      "archive_member": "VARTA Design Library_EASYPACK S_56455 701 014/Data Sheet/Easy Pack S_Rev No. 1- 0225.pdf"
+    },
+    {
+      "id": "varta_connector",
+      "url": "https://www.varta-ag.com/fileadmin/varta_storage/downloads/products/power/cellpac-lite/design-library/VARTA_Design_Library_EASYPACK_S_56455_701_014.zip",
+      "revision": "June 2026",
+      "review_pages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "sha256": "07d5cf2bfb05e8b502e10a48ac858e071bc6bb960676c592e94dcfa196f2d59e",
+      "bytes": 557964,
+      "archive_member": "VARTA Design Library_EASYPACK S_56455 701 014/Data Sheet/VARTA EasyPack Connector Details_0626.pdf"
+    },
+    {
+      "id": "aky1581",
+      "url": "https://elektronik.ropla.eu/pdf/stock/aky/aky1581.pdf",
+      "revision": "Release 1, 2022-10-11",
+      "review_pages": [
+        2,
+        3,
+        5
+      ],
+      "sha256": "2eac0009b256bf1443da37b4155d22ac0f514099361073a9733439fe1fbbc6b8",
+      "bytes": 1018044
+    },
+    {
+      "id": "aky1604",
+      "url": "https://elektronik.ropla.eu/pdf/stock/aky/aky1604.pdf",
+      "revision": "Release 1, 2022-10-20",
+      "review_pages": [
+        2,
+        3,
+        5
+      ],
+      "sha256": "ddfb2e8315983ce262a70fdadef7824441e64ca8f7a2fa1a5682a7897623d5c9",
+      "bytes": 949104
+    },
+    {
+      "id": "bq25185",
+      "url": "https://www.ti.com/lit/ds/symlink/bq25185.pdf",
+      "revision": "SLUSF65B, August 2026",
+      "review_pages": [
+        7,
+        8
+      ],
+      "sha256": "c73ed7d63e6532bb05e26df30edd37c6ac2de310c1222a84a77625e15e133684",
+      "bytes": 1544774
+    }
+  ],
+  "web_sources": [
+    {
+      "id": "caph_cable",
+      "url": "https://synzen.com.tw/products/caph",
+      "finding": "1.13 mm coax, 100 mm nominal. Page has a PETRA2 name typo; exact SZK-C-3L30 datasheet identifies CAPH."
+    },
+    {
+      "id": "nrf_peak",
+      "url": "https://docs.nordicsemi.com/r/bundle/nwp_056/page/wp/nwp_056/power_supply/maximum_output_power.html",
+      "finding": "Approximately 500 mA peak at 3.7 V; temperature, VSWR, output power and supply voltage affect demand. This is not a 600 mA continuous requirement."
+    },
+    {
+      "id": "screw_candidate",
+      "url": "https://www.vital-parts.co.uk/cheese-head-slotted-screws/19703-sch84-m2-20-a2",
+      "finding": "Supplier-owned SCH84-M2-20-A2 candidate: M2 x 20, 0.4 mm pitch, 3.8 mm head diameter, 1.3 mm head height, A2, DIN 84. Length/process tolerance and torque not established."
+    }
+  ],
+  "original_documents_redistributed": false
+}

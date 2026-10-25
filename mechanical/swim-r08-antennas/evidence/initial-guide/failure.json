@@ -1,0 +1,24 @@
+{
+  "result": "FAIL",
+  "intersection_volume_mm3": 0.03165584423949172,
+  "bounds_mm": [
+    [
+      1.717791199684143,
+      1.8999996185302734,
+      16.201841354370117
+    ],
+    [
+      2.171945571899414,
+      2.4567902088165283,
+      17.541994094848633
+    ]
+  ],
+  "finding": "The curved GNSS feed exit exceeds the initial straight 1.8 mm guide bore. No PCB or supplier DFM finding.",
+  "files": {
+    "antenna-fit.json": "773f5b8a91b6bace52580850105b56b381f7fc065a13ff8be6395d739101cd17",
+    "cables.scad": "ae53ee8c35f5392f7f6d2ccfece9d41ff5ed2db587908b17306f257a42b72bb1",
+    "enclosure.scad": "9a0a12d90728d09c516a22665b329c506c45cc94d17d639096f455989c5a6315",
+    "intersection.log": "f7f93e56aea39f8742fdd4e4d915474b398790e1f2bbb3a781a9e939765b7069",
+    "intersection.stl": "00b51d1edd711cb5669b786f758e09ac8d8118dbee6d813fb4d39ecd140b7865"
+  }
+}

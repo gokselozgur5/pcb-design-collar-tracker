@@ -1,0 +1,11 @@
+{
+  "result": "FAIL",
+  "intersection_volume_mm3": 0.01308841957984171,
+  "finding": "A 2.0 mm straight bore still clips the curved GNSS exit. The final channel follows the actual centerline and has a wider surrounding body.",
+  "files": {
+    "intersection.log": "f11b0074cef802fd432489b62b74d1dc9e7503714901301927d8eb2e33baf0ec",
+    "enclosure.scad": "9ee10733744b2a3994a4799aeaff02254300bb583b0aa15fd4403a7a12fd7d62",
+    "cables.scad": "0dd1d21c3b8e5500414079011133a72927ec20688e0ee6e6e6d5e17d740136c2",
+    "intersection.stl": "d2c90d82d947eb5d60915080c8ab60481d93c1fe9d24b7a5026ec5d1cae9e1e5"
+  }
+}
