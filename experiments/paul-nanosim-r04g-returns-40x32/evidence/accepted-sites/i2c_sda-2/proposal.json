@@ -1,0 +1,38 @@
+{
+  "source_sha256": "920004e81ab6f5d43b75666fa222c85e41076e42e93f1fff40ab8e3f4a69ff30",
+  "candidate": {
+    "position": [
+      124.2854,
+      103.4031
+    ],
+    "signal": "6881bd6a-108d-4929-b3d0-ca9ee2a60fe6",
+    "net": "/I2C_SDA",
+    "return_mm": 0.8062257748298408,
+    "covered": [
+      "6881bd6a-108d-4929-b3d0-ca9ee2a60fe6"
+    ],
+    "tracks": [
+      {
+        "id": "7b7fa5e3-4ecc-4963-a0a8-56ee502a5f7a",
+        "net": "/ACC_INT",
+        "start": [
+          125.1327,
+          103.6562
+        ],
+        "end": [
+          120.5673,
+          103.6562
+        ],
+        "layer": "F.Cu",
+        "width": 0.2
+      }
+    ],
+    "nets": [
+      "/ACC_INT"
+    ],
+    "removed_length_mm": 4.565399999999997,
+    "score": 3.308892577482984
+  },
+  "added_via_id": "f8d8ab3c-8af6-4c02-9d2f-cd689ab04874",
+  "applied_sha256": "a0f5742731a61646dbff6d58250b570d91507b00be75715f0cd10cbd7b384d6a"
+}

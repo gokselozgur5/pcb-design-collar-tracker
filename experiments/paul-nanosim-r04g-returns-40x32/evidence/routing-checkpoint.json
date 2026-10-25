@@ -1,0 +1,87 @@
+{
+  "source_sha256": "e68faf7db8b588cb69afdca76b0ab6b106ad0eed400cc95a2cf140a8f7142f79",
+  "dimensions_mm": [
+    40,
+    32
+  ],
+  "native_drc": "collar-tracker-04g-preflight-40x32/drc.json",
+  "native_erc": "collar-tracker-04g-preflight-40x32/erc.json",
+  "native_opens": 0,
+  "native_violations": 0,
+  "parity": 0,
+  "ground_pads": 81,
+  "ground_vias": 86,
+  "non_ground_vias": 88,
+  "returns_outside_2mm": 2,
+  "inner_tracks": 0,
+  "rf_segments": 24,
+  "zip_sha256": "b739e0baf4286482b9b195b88327967fc1d0db63208c7ec1c8a6d93fe854dc53",
+  "supplier_records": [
+    "637221644721938434",
+    "637222172922957825"
+  ],
+  "evidence": [
+    {
+      "path": "evidence/collar-tracker-04g-preflight-40x32/manifest.json",
+      "sha256": "8d255858aaf9a5e11673b3a563f8edd02bf166f582e3897eb955d538d29a17ff"
+    },
+    {
+      "path": "evidence/collar-tracker-04g-preflight-40x32/drc.json",
+      "sha256": "91aab2a5d49000fa7b2a6e4805676b7468fc2cc0679d216551b7c5fa47013224"
+    },
+    {
+      "path": "evidence/collar-tracker-04g-preflight-40x32/erc.json",
+      "sha256": "48b59839e93924edcbf8f62cba62b888b0cad8e9abba784c7fb9d46875ed50ec"
+    },
+    {
+      "path": "evidence/layout-inventory.json",
+      "sha256": "5e4cd9352a194734197ed8751159e2722d5c32a46eff80ac26a48d7cd313fb99"
+    },
+    {
+      "path": "evidence/route-geometry.json",
+      "sha256": "d8f4d116f9548ac2a22ac5e8e7ede2b294bf6b9b2a95415aeba3182b3037e8bb"
+    },
+    {
+      "path": "evidence/power-path-review.json",
+      "sha256": "3f1b893af109c9bc51e492960e563b2e3bf85025d412dc26fcce960d0cbff584"
+    },
+    {
+      "path": "evidence/contact-components.json",
+      "sha256": "ab4fc8028c2b3a901431b9de83a5c052253f4b5bf37ccb662fb25aa3a474ea70"
+    },
+    {
+      "path": "evidence/protected-fanout.json",
+      "sha256": "fd5cb6bd1dee0774722dc2af57beae9c54adf51f33f0c1f59f1df2b99a956dda"
+    },
+    {
+      "path": "evidence/placement-extra.json",
+      "sha256": "09ef58ce2a6ab8d195646bb0ae8980ea026dcadcae2c4a264ac38a33e9c50c35"
+    },
+    {
+      "path": "evidence/rework-provenance.json",
+      "sha256": "d0907bd63b847d6899156fbfb730bd5911960151dadd73d6fccfe0db319e930d"
+    },
+    {
+      "path": "evidence/label-validation.json",
+      "sha256": "795153aec7eb15b8a348ca8c4f0f2f6e8c2201ffe1f051dd8131c8e7f9325d22"
+    },
+    {
+      "path": "evidence/silk-placement.json",
+      "sha256": "95b9638832e4f33189034a66404891151d52ff2e6ba884f6c9ea69ed6771c3ba"
+    },
+    {
+      "path": "evidence/silk-applied.json",
+      "sha256": "d3d29bcbda0ed1b42332e500bafc2427f501ebcd517c80df24d3391638fd1855"
+    },
+    {
+      "path": "evidence/jlc-check1/summary.json",
+      "sha256": "61605dce111bf8a47802eca1411139d26a89ccc8cab01bb2cad0400537420c60"
+    },
+    {
+      "path": "evidence/jlc-check2/summary.json",
+      "sha256": "9d81879e6d55ee75f33d9445f222148bcdf1f5d21aaef5bf2530011befc2ee0e"
+    }
+  ],
+  "next": "Resolve SIM_IO and COEX0 return-screen gaps and finish power/ESD/passive review; rerun native and two same-byte JLC checks after any layout change.",
+  "scope": "Native checks and two real PCB DFM runs pass. Two return-screen gaps remain; no full Paul, SMT, RF or physical acceptance."
+}

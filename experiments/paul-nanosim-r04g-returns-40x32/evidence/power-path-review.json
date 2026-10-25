@@ -1,0 +1,655 @@
+{
+  "source_sha256": "e68faf7db8b588cb69afdca76b0ab6b106ad0eed400cc95a2cf140a8f7142f79",
+  "assumptions": {
+    "copper_um": 35,
+    "plating_um": 20,
+    "thickness_mm": 0.8,
+    "temperature_C": 20,
+    "current_note": "1 A is a design case, not a measured or specified modem peak. The auxiliary-port load is unspecified."
+  },
+  "scope": "Centerline DCR estimate with ideal pad/junction spreading. Excludes cell, ferrite, IC, contacts, temperature rise and dynamic impedance. Not bench or thermal acceptance.",
+  "paths": [
+    {
+      "net": "/VIN_5V",
+      "start": "J3.1",
+      "end": "U3.10",
+      "connected": true,
+      "estimated_ohms_20C": 0.012038760038544812,
+      "design_case_A": 0.5,
+      "estimated_drop_mV": 6.019380019272406,
+      "track_length_mm": 7.50576855841922,
+      "narrow_length_mm": 0.6500000000000057,
+      "widths_mm": [
+        0.2,
+        0.4
+      ],
+      "vias": 2,
+      "steps": [
+        {
+          "kind": "track",
+          "id": "0556c27a-eaff-4672-8299-9393211ffb34",
+          "length_mm": 1.2017000000000024,
+          "width_mm": 0.4,
+          "layer": "F.Cu",
+          "ohms": 0.0014798077142857175
+        },
+        {
+          "kind": "track",
+          "id": "c762c842-674f-4162-9821-96e065a5822f",
+          "length_mm": 0.5516999999999967,
+          "width_mm": 0.4,
+          "layer": "F.Cu",
+          "ohms": 0.0006793791428571389
+        },
+        {
+          "kind": "track",
+          "id": "60bd205c-256a-434e-8e8b-5a69aa3abf18",
+          "length_mm": 1.2703880430797598,
+          "width_mm": 0.4,
+          "layer": "F.Cu",
+          "ohms": 0.0015643921330496474
+        },
+        {
+          "kind": "via",
+          "id": "5b1cb9de-973b-4c30-87a8-2d574546eaa6",
+          "drill_mm": 0.2,
+          "ohms": 0.0009977568068742823
+        },
+        {
+          "kind": "track",
+          "id": "45c72d1b-b93f-4d60-a295-a08e45592df5",
+          "length_mm": 0.6499999999999915,
+          "width_mm": 0.4,
+          "layer": "B.Cu",
+          "ohms": 0.000800428571428561
+        },
+        {
+          "kind": "track",
+          "id": "039348dc-67c2-4313-abc4-71ee3b7a4fd9",
+          "length_mm": 3.181980515339464,
+          "width_mm": 0.4,
+          "layer": "B.Cu",
+          "ohms": 0.003918381720318026
+        },
+        {
+          "kind": "via",
+          "id": "729a3dd2-fc4f-4fd8-b788-4fc3e37fe187",
+          "drill_mm": 0.2,
+          "ohms": 0.0009977568068742823
+        },
+        {
+          "kind": "track",
+          "id": "f1f94c55-fe7a-45ec-a537-c1d66d870387",
+          "length_mm": 0.6500000000000057,
+          "width_mm": 0.2,
+          "layer": "F.Cu",
+          "ohms": 0.0016008571428571571
+        }
+      ]
+    },
+    {
+      "net": "/VBAT",
+      "start": "J4.1",
+      "end": "U3.2",
+      "connected": true,
+      "estimated_ohms_20C": 0.010153741420218548,
+      "design_case_A": 1.0,
+      "estimated_drop_mV": 10.153741420218548,
+      "track_length_mm": 6.685254326381654,
+      "narrow_length_mm": 0.75,
+      "widths_mm": [
+        0.2,
+        0.4
+      ],
+      "vias": 1,
+      "steps": [
+        {
+          "kind": "track",
+          "id": "620692d1-ab41-486a-b4bf-93cfd082e451",
+          "length_mm": 1.131370849898482,
+          "width_mm": 0.4,
+          "layer": "B.Cu",
+          "ohms": 0.0013932023894464166
+        },
+        {
+          "kind": "track",
+          "id": "5d2e14c7-4aa8-4063-85d9-5e210e35caeb",
+          "length_mm": 0.6499999999999915,
+          "width_mm": 0.4,
+          "layer": "B.Cu",
+          "ohms": 0.000800428571428561
+        },
+        {
+          "kind": "track",
+          "id": "7673f322-44b1-4999-ab38-b70ab2ab3434",
+          "length_mm": 1.0999999999999943,
+          "width_mm": 0.4,
+          "layer": "B.Cu",
+          "ohms": 0.0013545714285714218
+        },
+        {
+          "kind": "track",
+          "id": "5088b749-4f02-42f8-8687-53acbab268bd",
+          "length_mm": 0.8838834764831844,
+          "width_mm": 0.4,
+          "layer": "B.Cu",
+          "ohms": 0.0010884393667550075
+        },
+        {
+          "kind": "via",
+          "id": "cc0dc2e5-2f8a-4b9f-ab5e-35e29fbdb17f",
+          "drill_mm": 0.2,
+          "ohms": 0.0009977568068742823
+        },
+        {
+          "kind": "track",
+          "id": "4f584770-1444-4657-b0f5-3167fa4491a7",
+          "length_mm": 1.0300000000000011,
+          "width_mm": 0.4,
+          "layer": "F.Cu",
+          "ohms": 0.00126837142857143
+        },
+        {
+          "kind": "track",
+          "id": "cff99615-b52a-4996-8b26-a2f317acd5e9",
+          "length_mm": 0.7000000000000028,
+          "width_mm": 0.4,
+          "layer": "F.Cu",
+          "ohms": 0.0008620000000000035
+        },
+        {
+          "kind": "track",
+          "id": "284dd189-231a-47e5-a753-63de8900c971",
+          "length_mm": 0.43999999999999767,
+          "width_mm": 0.4,
+          "layer": "F.Cu",
+          "ohms": 0.0005418285714285685
+        },
+        {
+          "kind": "track",
+          "id": "10be16d8-70d7-47cb-99f4-090f4e658542",
+          "length_mm": 0.75,
+          "width_mm": 0.2,
+          "layer": "F.Cu",
+          "ohms": 0.0018471428571428573
+        }
+      ]
+    },
+    {
+      "net": "/VSYS",
+      "start": "U3.1",
+      "end": "FB1.1",
+      "connected": true,
+      "estimated_ohms_20C": 0.014303258026880681,
+      "design_case_A": 1.0,
+      "estimated_drop_mV": 14.30325802688068,
+      "track_length_mm": 8.368342441777292,
+      "narrow_length_mm": 1.6263455967290674,
+      "widths_mm": [
+        0.2,
+        0.4
+      ],
+      "vias": 2,
+      "steps": [
+        {
+          "kind": "track",
+          "id": "d62d43cf-60b9-497d-8a8e-f2c8fdbedeaa",
+          "length_mm": 0.6363961030678968,
+          "width_mm": 0.2,
+          "layer": "F.Cu",
+          "ohms": 0.0015673526881272203
+        },
+        {
+          "kind": "track",
+          "id": "86ef8e2f-c85a-4020-8ed5-99bec8c7bcf3",
+          "length_mm": 0.32500000000000284,
+          "width_mm": 0.4,
+          "layer": "F.Cu",
+          "ohms": 0.0004002142857142893
+        },
+        {
+          "kind": "track",
+          "id": "b292e22a-24ba-40a4-9648-aa831d15d6ab",
+          "length_mm": 0.7154327763362868,
+          "width_mm": 0.4,
+          "layer": "F.Cu",
+          "ohms": 0.0008810043617169703
+        },
+        {
+          "kind": "track",
+          "id": "ff3dfcd5-3525-4737-aec3-6bacfa8867c3",
+          "length_mm": 0.9899494936611706,
+          "width_mm": 0.2,
+          "layer": "F.Cu",
+          "ohms": 0.002438104181531226
+        },
+        {
+          "kind": "track",
+          "id": "33a29915-81f2-488d-bc63-cb2c86537031",
+          "length_mm": 0.42426406871192446,
+          "width_mm": 0.4,
+          "layer": "F.Cu",
+          "ohms": 0.0005224508960423984
+        },
+        {
+          "kind": "track",
+          "id": "30d190b3-2440-442b-9314-b84b86425c31",
+          "length_mm": 0.5999999999999943,
+          "width_mm": 0.4,
+          "layer": "F.Cu",
+          "ohms": 0.0007388571428571358
+        },
+        {
+          "kind": "via",
+          "id": "96da1110-931f-425b-961b-3c3dc9cba543",
+          "drill_mm": 0.2,
+          "ohms": 0.0009977568068742823
+        },
+        {
+          "kind": "track",
+          "id": "74fd2091-50e5-424c-94b7-a689bb6b93f6",
+          "length_mm": 1.4500000000000028,
+          "width_mm": 0.4,
+          "layer": "B.Cu",
+          "ohms": 0.0017855714285714324
+        },
+        {
+          "kind": "track",
+          "id": "bee0f485-69d2-4df8-9860-c5900a3ddfaf",
+          "length_mm": 2.6625000000000085,
+          "width_mm": 0.4,
+          "layer": "B.Cu",
+          "ohms": 0.003278678571428582
+        },
+        {
+          "kind": "via",
+          "id": "afc6dbbb-92ff-492b-8dc4-8ef71b595cdc",
+          "drill_mm": 0.2,
+          "ohms": 0.0009977568068742823
+        },
+        {
+          "kind": "track",
+          "id": "0a94e834-a0e4-4c28-b374-043ada8296b1",
+          "length_mm": 0.5648000000000053,
+          "width_mm": 0.4,
+          "layer": "F.Cu",
+          "ohms": 0.0006955108571428637
+        }
+      ]
+    },
+    {
+      "net": "/VSYS",
+      "start": "U3.1",
+      "end": "J5.3",
+      "connected": true,
+      "estimated_ohms_20C": 0.05216481053667833,
+      "design_case_A": null,
+      "estimated_drop_mV": null,
+      "track_length_mm": 39.50012610960833,
+      "narrow_length_mm": 2.899845596729052,
+      "widths_mm": [
+        0.2,
+        0.3,
+        0.4
+      ],
+      "vias": 1,
+      "steps": [
+        {
+          "kind": "track",
+          "id": "d62d43cf-60b9-497d-8a8e-f2c8fdbedeaa",
+          "length_mm": 0.6363961030678968,
+          "width_mm": 0.2,
+          "layer": "F.Cu",
+          "ohms": 0.0015673526881272203
+        },
+        {
+          "kind": "track",
+          "id": "86ef8e2f-c85a-4020-8ed5-99bec8c7bcf3",
+          "length_mm": 0.32500000000000284,
+          "width_mm": 0.4,
+          "layer": "F.Cu",
+          "ohms": 0.0004002142857142893
+        },
+        {
+          "kind": "track",
+          "id": "b292e22a-24ba-40a4-9648-aa831d15d6ab",
+          "length_mm": 0.7154327763362868,
+          "width_mm": 0.4,
+          "layer": "F.Cu",
+          "ohms": 0.0008810043617169703
+        },
+        {
+          "kind": "track",
+          "id": "ff3dfcd5-3525-4737-aec3-6bacfa8867c3",
+          "length_mm": 0.9899494936611706,
+          "width_mm": 0.2,
+          "layer": "F.Cu",
+          "ohms": 0.002438104181531226
+        },
+        {
+          "kind": "track",
+          "id": "33a29915-81f2-488d-bc63-cb2c86537031",
+          "length_mm": 0.42426406871192446,
+          "width_mm": 0.4,
+          "layer": "F.Cu",
+          "ohms": 0.0005224508960423984
+        },
+        {
+          "kind": "track",
+          "id": "30d190b3-2440-442b-9314-b84b86425c31",
+          "length_mm": 0.5999999999999943,
+          "width_mm": 0.4,
+          "layer": "F.Cu",
+          "ohms": 0.0007388571428571358
+        },
+        {
+          "kind": "via",
+          "id": "96da1110-931f-425b-961b-3c3dc9cba543",
+          "drill_mm": 0.2,
+          "ohms": 0.0009977568068742823
+        },
+        {
+          "kind": "track",
+          "id": "05baa29a-7a29-4a06-b032-500bd7df3090",
+          "length_mm": 0.8088000000000051,
+          "width_mm": 0.4,
+          "layer": "B.Cu",
+          "ohms": 0.000995979428571435
+        },
+        {
+          "kind": "track",
+          "id": "b5ee90f2-e0cf-4dd9-b944-e7296afb4772",
+          "length_mm": 3.73196816974635,
+          "width_mm": 0.4,
+          "layer": "B.Cu",
+          "ohms": 0.004595652231887648
+        },
+        {
+          "kind": "track",
+          "id": "04164677-0ecd-4741-abb9-babb4b00d377",
+          "length_mm": 0.5241000000000042,
+          "width_mm": 0.4,
+          "layer": "B.Cu",
+          "ohms": 0.0006453917142857196
+        },
+        {
+          "kind": "track",
+          "id": "19dc8fea-c4ab-427b-883b-dac0613a755f",
+          "length_mm": 0.6880148980945201,
+          "width_mm": 0.4,
+          "layer": "B.Cu",
+          "ohms": 0.0008472412030821091
+        },
+        {
+          "kind": "track",
+          "id": "7bf89922-ab93-41d1-bcb8-18f0f472323f",
+          "length_mm": 0.4054000000000002,
+          "width_mm": 0.4,
+          "layer": "B.Cu",
+          "ohms": 0.0004992211428571431
+        },
+        {
+          "kind": "track",
+          "id": "9aa3d3aa-745d-4cbc-9190-3d023d9d2933",
+          "length_mm": 0.42449999999999477,
+          "width_mm": 0.3,
+          "layer": "B.Cu",
+          "ohms": 0.0006969885714285629
+        },
+        {
+          "kind": "track",
+          "id": "e0c23a54-4078-4481-a37a-339cbaa7569f",
+          "length_mm": 0.8255000000000052,
+          "width_mm": 0.4,
+          "layer": "B.Cu",
+          "ohms": 0.0010165442857142922
+        },
+        {
+          "kind": "track",
+          "id": "6b0ffc51-9bf2-4add-924c-8295af02281e",
+          "length_mm": 0.42449999999999477,
+          "width_mm": 0.3,
+          "layer": "B.Cu",
+          "ohms": 0.0006969885714285629
+        },
+        {
+          "kind": "track",
+          "id": "b9ab5539-d23b-4299-a396-c6a8c87bb52f",
+          "length_mm": 6.207973274749172,
+          "width_mm": 0.4,
+          "layer": "B.Cu",
+          "ohms": 0.007644675661191123
+        },
+        {
+          "kind": "track",
+          "id": "fa746b68-f785-431b-ab26-a7c9cbda3ddd",
+          "length_mm": 2.5253000000000014,
+          "width_mm": 0.4,
+          "layer": "B.Cu",
+          "ohms": 0.003109726571428574
+        },
+        {
+          "kind": "track",
+          "id": "aea59c4a-684d-4214-898d-7a5546168ef4",
+          "length_mm": 0.42449999999999477,
+          "width_mm": 0.3,
+          "layer": "B.Cu",
+          "ohms": 0.0006969885714285629
+        },
+        {
+          "kind": "track",
+          "id": "101727e1-481b-469a-a0f9-4ec82d8744ee",
+          "length_mm": 14.016300000000001,
+          "width_mm": 0.4,
+          "layer": "B.Cu",
+          "ohms": 0.01726007228571429
+        },
+        {
+          "kind": "track",
+          "id": "5ca95cc9-fc85-4d44-909a-9da13a6f328b",
+          "length_mm": 4.000527325241013,
+          "width_mm": 0.4,
+          "layer": "B.Cu",
+          "ohms": 0.004926363649082505
+        },
+        {
+          "kind": "track",
+          "id": "49c9a7ce-9251-42b3-9dff-68d2de01b1ad",
+          "length_mm": 0.8016999999999967,
+          "width_mm": 0.4,
+          "layer": "B.Cu",
+          "ohms": 0.0009872362857142817
+        }
+      ]
+    },
+    {
+      "net": "/VDD_NRF",
+      "start": "FB1.2",
+      "end": "U1.14",
+      "connected": true,
+      "estimated_ohms_20C": 0.007833355608431609,
+      "design_case_A": 1.0,
+      "estimated_drop_mV": 7.833355608431609,
+      "track_length_mm": 5.307640258945168,
+      "narrow_length_mm": 1.0535533905932624,
+      "widths_mm": [
+        0.2,
+        0.4
+      ],
+      "vias": 0,
+      "steps": [
+        {
+          "kind": "track",
+          "id": "94893997-2a1f-431e-bac2-2cb89174a4c2",
+          "length_mm": 0.2573868683518863,
+          "width_mm": 0.4,
+          "layer": "F.Cu",
+          "ohms": 0.0003169535435990371
+        },
+        {
+          "kind": "track",
+          "id": "c4b386e4-c85c-4adf-953d-0e0adcb68eb3",
+          "length_mm": 1.61160000000001,
+          "width_mm": 0.4,
+          "layer": "F.Cu",
+          "ohms": 0.0019845702857142983
+        },
+        {
+          "kind": "track",
+          "id": "1a0f511a-d99b-4419-b210-47a37f270dae",
+          "length_mm": 2.3851000000000084,
+          "width_mm": 0.4,
+          "layer": "F.Cu",
+          "ohms": 0.002937080285714296
+        },
+        {
+          "kind": "track",
+          "id": "983ce439-f76f-4b47-b10c-4d875205e9a1",
+          "length_mm": 0.3535533905932738,
+          "width_mm": 0.2,
+          "layer": "F.Cu",
+          "ohms": 0.0008707514934040058
+        },
+        {
+          "kind": "track",
+          "id": "85c056c3-65b2-4a80-99d7-b7b8cb7f76f4",
+          "length_mm": 0.6999999999999886,
+          "width_mm": 0.2,
+          "layer": "F.Cu",
+          "ohms": 0.001723999999999972
+        }
+      ]
+    },
+    {
+      "net": "/VDD_NRF",
+      "start": "C3.1",
+      "end": "U1.14",
+      "connected": true,
+      "estimated_ohms_20C": 0.00969138691079006,
+      "design_case_A": 1.0,
+      "estimated_drop_mV": 9.69138691079006,
+      "track_length_mm": 6.562282383830218,
+      "narrow_length_mm": 1.8161533905932685,
+      "widths_mm": [
+        0.2,
+        0.3,
+        0.4
+      ],
+      "vias": 0,
+      "steps": [
+        {
+          "kind": "track",
+          "id": "625fff6a-8a71-4708-9115-fcc7af348f67",
+          "length_mm": 1.0071289932369445,
+          "width_mm": 0.4,
+          "layer": "F.Cu",
+          "ohms": 0.0012402074173860661
+        },
+        {
+          "kind": "track",
+          "id": "77b61382-feae-4a0d-8749-84bef872c09f",
+          "length_mm": 0.6787999999999954,
+          "width_mm": 0.4,
+          "layer": "F.Cu",
+          "ohms": 0.0008358937142857087
+        },
+        {
+          "kind": "track",
+          "id": "bc8cc7c6-36f8-489d-8c70-144c5d7d09e2",
+          "length_mm": 0.7626000000000062,
+          "width_mm": 0.3,
+          "layer": "F.Cu",
+          "ohms": 0.0012521165714285817
+        },
+        {
+          "kind": "track",
+          "id": "f13ccbe0-14c5-46d7-9758-275b56dd16d3",
+          "length_mm": 0.6751000000000005,
+          "width_mm": 0.4,
+          "layer": "F.Cu",
+          "ohms": 0.0008313374285714292
+        },
+        {
+          "kind": "track",
+          "id": "1a0f511a-d99b-4419-b210-47a37f270dae",
+          "length_mm": 2.3851000000000084,
+          "width_mm": 0.4,
+          "layer": "F.Cu",
+          "ohms": 0.002937080285714296
+        },
+        {
+          "kind": "track",
+          "id": "983ce439-f76f-4b47-b10c-4d875205e9a1",
+          "length_mm": 0.3535533905932738,
+          "width_mm": 0.2,
+          "layer": "F.Cu",
+          "ohms": 0.0008707514934040058
+        },
+        {
+          "kind": "track",
+          "id": "85c056c3-65b2-4a80-99d7-b7b8cb7f76f4",
+          "length_mm": 0.6999999999999886,
+          "width_mm": 0.2,
+          "layer": "F.Cu",
+          "ohms": 0.001723999999999972
+        }
+      ]
+    },
+    {
+      "net": "/VDD_NRF",
+      "start": "C4.1",
+      "end": "U1.14",
+      "connected": true,
+      "estimated_ohms_20C": 0.0060071582294504555,
+      "design_case_A": 1.0,
+      "estimated_drop_mV": 6.0071582294504555,
+      "track_length_mm": 3.0144060012899403,
+      "narrow_length_mm": 1.0535533905932624,
+      "widths_mm": [
+        0.2,
+        0.4
+      ],
+      "vias": 1,
+      "steps": [
+        {
+          "kind": "track",
+          "id": "9aa71593-b57a-4233-b46c-737a3cde31e4",
+          "length_mm": 0.8728526106966699,
+          "width_mm": 0.4,
+          "layer": "B.Cu",
+          "ohms": 0.0010748556434578994
+        },
+        {
+          "kind": "track",
+          "id": "2786a57a-4d58-4dae-9385-c9bf8b604990",
+          "length_mm": 1.088000000000008,
+          "width_mm": 0.4,
+          "layer": "B.Cu",
+          "ohms": 0.0013397942857142958
+        },
+        {
+          "kind": "via",
+          "id": "ac684157-c763-4647-9439-17f081fde757",
+          "drill_mm": 0.2,
+          "ohms": 0.0009977568068742823
+        },
+        {
+          "kind": "track",
+          "id": "983ce439-f76f-4b47-b10c-4d875205e9a1",
+          "length_mm": 0.3535533905932738,
+          "width_mm": 0.2,
+          "layer": "F.Cu",
+          "ohms": 0.0008707514934040058
+        },
+        {
+          "kind": "track",
+          "id": "85c056c3-65b2-4a80-99d7-b7b8cb7f76f4",
+          "length_mm": 0.6999999999999886,
+          "width_mm": 0.2,
+          "layer": "F.Cu",
+          "ohms": 0.001723999999999972
+        }
+      ]
+    }
+  ]
+}

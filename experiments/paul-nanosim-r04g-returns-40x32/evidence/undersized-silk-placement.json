@@ -1,0 +1,93 @@
+{
+  "source_sha256": "331f327f3106ee84f21d9d1b473198a846813eb9ac61284cd15079cdea992f36",
+  "board_bounds_mm": [
+    98.0,
+    98.0,
+    138.0,
+    130.0
+  ],
+  "items": [
+    {
+      "id": "c6892060-344a-4968-ae5b-b7c7440905ce",
+      "text": "5V",
+      "delta_mm": [
+        0.0,
+        0.0
+      ],
+      "distance_mm": 0.0
+    },
+    {
+      "id": "85e888cd-ad65-4f16-a9b5-df8b3a8b32e8",
+      "text": "GND",
+      "delta_mm": [
+        -0.6000000000000001,
+        3.5
+      ],
+      "distance_mm": 3.5510561809129406
+    },
+    {
+      "id": "3ffa03c4-dc3e-408b-b283-38cc8134e7a1",
+      "text": "BAT+",
+      "delta_mm": [
+        0.0,
+        -1.1
+      ],
+      "distance_mm": 1.1
+    },
+    {
+      "id": "3203121b-c36c-414f-ab8a-142c2774d6a2",
+      "text": "SWD",
+      "delta_mm": [
+        0.0,
+        0.0
+      ],
+      "distance_mm": 0.0
+    },
+    {
+      "id": "d37174b8-699b-4eb7-a3de-491abb7f2a9b",
+      "text": "GND",
+      "delta_mm": [
+        0.8,
+        -1.6
+      ],
+      "distance_mm": 1.788854381999832
+    },
+    {
+      "id": "a143989f-9bba-458b-b097-e8a7d7e35472",
+      "text": "NTC",
+      "delta_mm": [
+        0.9,
+        -0.6000000000000001
+      ],
+      "distance_mm": 1.0816653826391969
+    },
+    {
+      "id": "b62719ab-aacb-44c5-8450-d2c650cf0ee5",
+      "text": "CT 0.4",
+      "delta_mm": [
+        1.1,
+        1.0
+      ],
+      "distance_mm": 1.4866068747318506
+    },
+    {
+      "id": "cc3e2b77-cf00-4ecc-9e15-a3408a78b0ac",
+      "text": "EXT",
+      "delta_mm": [
+        0.2,
+        0.2
+      ],
+      "distance_mm": 0.282842712474619
+    },
+    {
+      "id": "af9a8335-84ad-43d0-9e52-59a5a8bba294",
+      "text": "SIM",
+      "delta_mm": [
+        0.9,
+        0.0
+      ],
+      "distance_mm": 0.9
+    }
+  ],
+  "scope": "Actual glyph/mask/drill placement only; inspect interface association and native checks."
+}

@@ -1,0 +1,9 @@
+{
+  "source": "build/incomplete-return-gap-rework.kicad_pcb",
+  "source_sha256": "3f82b7de41164536223bf0c7575e540d344ba736f2e29e4eb4e905a4dad30655",
+  "native_opens": 1,
+  "native_violations": 2,
+  "parity": 0,
+  "returns_outside_2mm": 0,
+  "scope": "Exploratory alternative only; not the active board or accepted package. Moving SIM_IO/COEX0 improves spacing but leaves HEALTH_INT routing unfinished."
+}

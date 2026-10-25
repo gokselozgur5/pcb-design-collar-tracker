@@ -1,0 +1,44 @@
+{
+  "source_sha256": "240be3bbab528ffb123737fe75c54bb642ec2f204b32a6533e704f794691a6d2",
+  "proposals": [
+    {
+      "via_id": "0f463d15-7246-4bce-bcdb-392ebd96b0c9",
+      "net": "/SPI_MOSI",
+      "old": [
+        115.25,
+        108.6285
+      ],
+      "new": [
+        115.2,
+        108.6285
+      ],
+      "move_mm": 0.04999999999999716,
+      "return_mm": 1.9501185220391122,
+      "tracks": [
+        {
+          "id": "f8f0cd0c-7d99-44f0-b1dd-197e813a12d8",
+          "start": [
+            115.2,
+            108.6285
+          ],
+          "end": [
+            115.25,
+            107.875
+          ]
+        },
+        {
+          "id": "7d267c4c-a348-424c-985e-fc3e5787d77c",
+          "start": [
+            115.25,
+            109.4258
+          ],
+          "end": [
+            115.2,
+            108.6285
+          ]
+        }
+      ]
+    }
+  ],
+  "scope": "Independently planned via movements; simultaneous conflicts and native acceptance still require checking."
+}

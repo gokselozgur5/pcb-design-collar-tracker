@@ -1,0 +1,11 @@
+{
+  "source_sha256": "e68faf7db8b588cb69afdca76b0ab6b106ad0eed400cc95a2cf140a8f7142f79",
+  "stale_plan_rejected": true,
+  "source_unchanged": true,
+  "native_drc": "collar-tracker-04g-preflight-40x32/drc.json",
+  "rendered_views": [
+    "top-review.png",
+    "bottom-review.png"
+  ],
+  "review": "Both native copper/fabrication/label views inspected. Connector labels are readable on their component side; bottom is mirrored for viewing. This is not physical enclosure or assembly acceptance."
+}

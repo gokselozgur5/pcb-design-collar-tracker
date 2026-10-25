@@ -1,0 +1,88 @@
+{
+  "before_sha256": "a21bea5820ff50c0f80c46088ee93a26ac2ddee70530dad7c7a5ce3ad729c794",
+  "source_sha256": "331f327f3106ee84f21d9d1b473198a846813eb9ac61284cd15079cdea992f36",
+  "labels": [
+    {
+      "id": "c6892060-344a-4968-ae5b-b7c7440905ce",
+      "text": "5V",
+      "position_mm": [
+        101.25,
+        124.4
+      ],
+      "layer": "F.Silkscreen"
+    },
+    {
+      "id": "85e888cd-ad65-4f16-a9b5-df8b3a8b32e8",
+      "text": "GND",
+      "position_mm": [
+        103.75,
+        124.4
+      ],
+      "layer": "F.Silkscreen"
+    },
+    {
+      "id": "3ffa03c4-dc3e-408b-b283-38cc8134e7a1",
+      "text": "BAT+",
+      "position_mm": [
+        103.5,
+        124.4
+      ],
+      "layer": "B.Silkscreen"
+    },
+    {
+      "id": "d37174b8-699b-4eb7-a3de-491abb7f2a9b",
+      "text": "GND",
+      "position_mm": [
+        106,
+        124.4
+      ],
+      "layer": "B.Silkscreen"
+    },
+    {
+      "id": "a143989f-9bba-458b-b097-e8a7d7e35472",
+      "text": "NTC",
+      "position_mm": [
+        108.5,
+        124.4
+      ],
+      "layer": "B.Silkscreen"
+    },
+    {
+      "id": "3203121b-c36c-414f-ab8a-142c2774d6a2",
+      "text": "SWD",
+      "position_mm": [
+        104,
+        103.7
+      ],
+      "layer": "B.Silkscreen"
+    },
+    {
+      "id": "af9a8335-84ad-43d0-9e52-59a5a8bba294",
+      "text": "SIM",
+      "position_mm": [
+        133.4,
+        103.8
+      ],
+      "layer": "B.Silkscreen"
+    },
+    {
+      "id": "cc3e2b77-cf00-4ecc-9e15-a3408a78b0ac",
+      "text": "EXT",
+      "position_mm": [
+        125,
+        122.9
+      ],
+      "layer": "B.Silkscreen"
+    },
+    {
+      "id": "b62719ab-aacb-44c5-8450-d2c650cf0ee5",
+      "text": "CT 0.4",
+      "position_mm": [
+        116,
+        117
+      ],
+      "layer": "B.Silkscreen"
+    }
+  ],
+  "scope": "Initial positions only. Run actual glyph/mask/drill placement and review proximity to each connector before export."
+}

@@ -1,0 +1,1275 @@
+{
+	"jlc_analysis_drill": {
+		"description": "钻孔层分析",
+		"language": {
+			"description": {
+				"cn": "钻孔层分析",
+				"en": "Drill layer analysis"
+			}
+		},
+		"name": "jlc_analysis_drill",
+		"ranges": {
+			"miss_pth": {
+				"description": "检测顶层与底层存在同位焊盘，但是没有包含任何钻孔图元",
+				"details": "如果顶层和底层的焊盘坐标相同，但是没有对应的孔，有可能是设计异常，如果是故意设计的可以忽略（比如两边同位置的mark点）。",
+				"language": {
+					"description": {
+						"cn": "检测顶层与底层存在同位焊盘，但是没有包含任何钻孔图元",
+						"en": "Detect top and bottom pads at the same location without plated through-holes"
+					},
+					"details": {
+						"cn": "如果顶层和底层的焊盘坐标相同，但是没有对应的孔，有可能是设计异常，如果是故意设计的可以忽略（比如两边同位置的mark点）。",
+						"en": "If top and bottom pads are co-located without plated holes, it may be a design error, unless intended (such as alignment fiducials)."
+					},
+					"title": {
+						"cn": "丢失PTH孔",
+						"en": "Missing plated through-hole"
+					}
+				},
+				"range": null,
+				"title": "丢失PTH孔",
+				"type": "CGT_WARNING_VALUE"
+			},
+			"pth_2_pth": {
+				"description": "测量两个PTH孔的间距",
+				"details": "金属化孔间距太近，孔间容易短路，钻孔落粉尘等问题。内层线路容易因板材的灯芯效应造成短路（注意：尽量不要用次品板材，比如只有6张布的FR4）",
+				"language": {
+					"description": {
+						"cn": "测量两个PTH孔的间距",
+						"en": "Measure spacing between plated through-holes"
+					},
+					"details": {
+						"cn": "金属化孔间距太近，孔间容易短路，钻孔落粉尘等问题。内层线路容易因板材的灯芯效应造成短路（注意：尽量不要用次品板材，比如只有6张布的FR4）",
+						"en": "Plated through-holes spaced too close can cause shorts and drill debris issues. Inner layers may short due to the board's fiber weave effect (note: avoid substandard materials like FR4 with only 6 fibreglass layers)."
+					},
+					"title": {
+						"cn": "PTH孔间距",
+						"en": "Plated through-hole spacing"
+					}
+				},
+				"range": [
+					7,
+					8,
+					10
+				],
+				"title": "PTH孔间距",
+				"type": "CGT_LINE_SEGMENT"
+			},
+			"short_slot": {
+				"description": "检测槽长小于槽宽2倍的槽孔",
+				"details": "短槽生产时容易导致断钻咀及槽变形的问题。",
+				"language": {
+					"description": {
+						"cn": "检测槽长小于槽宽2倍的槽孔",
+						"en": "Detect slots shorter than twice their width"
+					},
+					"details": {
+						"cn": "短槽生产时容易导致断钻咀及槽变形的问题。",
+						"en": "Short slots can cause drill bit breakage and slot deformation during manufacturing."
+					},
+					"title": {
+						"cn": "短槽检测",
+						"en": "Short slot detection"
+					}
+				},
+				"range": null,
+				"title": "短槽检测",
+				"type": "CGT_WARNING_VALUE"
+			},
+			"slot_width": {
+				"description": "检测槽孔的宽度",
+				"details": "槽孔有加工能力限制，槽的宽度越小，加工难度越高。",
+				"language": {
+					"description": {
+						"cn": "检测槽孔的宽度",
+						"en": "Measure slot width"
+					},
+					"details": {
+						"cn": "槽孔有加工能力限制，槽的宽度越小，加工难度越高。",
+						"en": "There are manufacturing limits on slot widths, with smaller widths being more difficult to produce."
+					},
+					"title": {
+						"cn": "测量槽宽",
+						"en": "Slot width check"
+					}
+				},
+				"range": [
+					24,
+					32,
+					40
+				],
+				"title": "测量槽宽",
+				"type": "CGT_LINE_SEGMENT"
+			},
+			"via_2_pth": {
+				"description": "测量过孔与插件孔的间距",
+				"details": "当过孔需要塞树指的时候，如果该过孔与其它孔太近，会导致树脂流向旁边的其它孔。如果不是塞树脂的盘中孔工艺，可以忽略这个检测结果",
+				"language": {
+					"description": {
+						"cn": "测量过孔与插件孔的间距",
+						"en": "Measure spacing of vias to plated through-holes"
+					},
+					"details": {
+						"cn": "当过孔需要塞树指的时候，如果该过孔与其它孔太近，会导致树脂流向旁边的其它孔。如果不是塞树脂的盘中孔工艺，可以忽略这个检测结果",
+						"en": "If vias require filling, and they are too close to plated through-holes, the filling material may flow into adjacent holes. This is only relevant for filled via-in-pad processes."
+					},
+					"title": {
+						"cn": "过孔与插件孔的间距",
+						"en": "Via to PTH spacing"
+					}
+				},
+				"range": [
+					40,
+					44,
+					48
+				],
+				"title": "过孔与插件孔的间距",
+				"type": "CGT_LINE_SEGMENT"
+			}
+		},
+		"unit": "inch"
+	},
+	"jlc_analysis_signal_inner": {
+		"description": "内层线路层分析",
+		"language": {
+			"description": {
+				"cn": "内层线路层分析",
+				"en": "Inner routing layer anaysis"
+			}
+		},
+		"name": "jlc_analysis_signal",
+		"ranges": {
+			"acute_line": {
+				"description": "检测相连接的两条走线夹角是否为锐角",
+				"details": "良好的设计，走线拐角一般是圆弧或者钝角拐线，如果是锐角拐线，被视为不好的设计。",
+				"language": {
+					"description": {
+						"cn": "检测相连接的两条走线夹角是否为锐角",
+						"en": "Check for sharp corners in traces"
+					},
+					"details": {
+						"cn": "良好的设计，走线拐角一般是圆弧或者钝角拐线，如果是锐角拐线，被视为不好的设计。",
+						"en": "Good design practices have trace corners as arcs or obtuse angles. Acute angled trace corners are considered poor design."
+					},
+					"title": {
+						"cn": "锐角拐线",
+						"en": "Sharp trace corner"
+					}
+				},
+				"range": null,
+				"time_limit": 5000,
+				"title": "锐角拐线",
+				"type": "CGT_WARNING_VALUE"
+			},
+			"bga_pad": {
+				"description": "检测板子上的BGA焊盘",
+				"details": "该检测结果仅用于一个提示作用，在可视化界面上便于定位BGA位置。",
+				"language": {
+					"description": {
+						"cn": "检测板子上的BGA焊盘",
+						"en": "Check BGA pads on the board"
+					},
+					"details": {
+						"cn": "该检测结果仅用于一个提示作用，在可视化界面上便于定位BGA位置。",
+						"en": "This detection result is only used as an indicator to easily locate BGA pads in the GUI."
+					},
+					"title": {
+						"cn": "BGA焊盘",
+						"en": "BGA pad"
+					}
+				},
+				"range": null,
+				"time_limit": 5000,
+				"title": "BGA焊盘",
+				"type": "CGT_WARNING_VALUE"
+			},
+			"hole_on_pad": {
+				"description": "检测焊盘上是否有非常的孔",
+				"details": "非插件孔落在焊盘上，有可能会影响元件焊接质量，是不好的设计。如果是塞树脂的盘中孔工艺可以忽略此类警告",
+				"language": {
+					"description": {
+						"cn": "检测焊盘上是否有非常的孔",
+						"en": "Check if there is a via placed within a pad"
+					},
+					"details": {
+						"cn": "非插件孔落在焊盘上，有可能会影响元件焊接质量，是不好的设计。如果是塞树脂的盘中孔工艺可以忽略此类警告",
+						"en": "Non through-hole vias placed within pads may affect component soldering quality. This is considered poor design. If it uses a via-in-pad plating process, these warnings can be ignored."
+					},
+					"title": {
+						"cn": "孔落在焊盘上",
+						"en": "Via placed within a pad"
+					}
+				},
+				"range": null,
+				"time_limit": 5000,
+				"title": "孔落在焊盘上",
+				"type": "CGT_WARNING_VALUE"
+			},
+			"line2edge": {
+				"description": "检测距板边太近的走线",
+				"details": "走线距板边太近，在成型时容易被铣刀割伤。注意：如果所在边缘是VCUT边缘，需要更大的安全距离（一般是0.4mm以上）",
+				"language": {
+					"description": {
+						"cn": "检测距板边太近的走线",
+						"en": "Detect traces too close to the board edge"
+					},
+					"details": {
+						"cn": "走线距板边太近，在成型时容易被铣刀割伤。注意：如果所在边缘是VCUT边缘，需要更大的安全距离（一般是0.4mm以上）",
+						"en": "Traces too close to the board edge may get cut by the routing bit during outline forming. Note: For V-cut board edges, a larger clearance is needed (typically 0.4 mm or more)."
+					},
+					"title": {
+						"cn": "走线距板边",
+						"en": "Trace to board edge"
+					}
+				},
+				"range": [
+					6,
+					8,
+					10
+				],
+				"time_limit": 5000,
+				"title": "走线距板边",
+				"type": "CGT_LINE_SEGMENT"
+			},
+			"line2line": {
+				"description": "测量相邻两条平行走线间的间距",
+				"details": "走线间距如果太近，生产图形电镀时容易引起电镀夹膜，很容易短路报废，给生产带来困难。",
+				"language": {
+					"description": {
+						"cn": "测量相邻两条平行走线间的间距",
+						"en": "Measure spacing between adjacent parallel traces"
+					},
+					"details": {
+						"cn": "走线间距如果太近，生产图形电镀时容易引起电镀夹膜，很容易短路报废，给生产带来困难。",
+						"en": "If traces are too close, dry film breakage may happen during electroplating, resulting in short circuits and lowering yield."
+					},
+					"title": {
+						"cn": "走线间距",
+						"en": "Trace spacing"
+					}
+				},
+				"range": [
+					4,
+					6,
+					8
+				],
+				"time_limit": 5000,
+				"title": "走线间距",
+				"type": "CGT_LINE_SEGMENT"
+			},
+			"line_stub": {
+				"description": "没有焊盘连接的独立走线头",
+				"details": "良好的设计，走线的终点总是其它元素衔接（比如焊盘），裸线头被视为不好的走线设计，特殊设计可忽略。",
+				"language": {
+					"description": {
+						"cn": "没有焊盘连接的独立走线头",
+						"en": "Free-standing trace ends not connected to pads"
+					},
+					"details": {
+						"cn": "良好的设计，走线的终点总是其它元素衔接（比如焊盘），裸线头被视为不好的走线设计，特殊设计可忽略。",
+						"en": "Good design practices have trace ends always connecting to other elements (like pads). Unconnected trace ends are considered poor routing design, unless by special design."
+					},
+					"title": {
+						"cn": "裸线头",
+						"en": "Unconnected trace end"
+					}
+				},
+				"range": null,
+				"time_limit": 5000,
+				"title": "裸线头",
+				"type": "CGT_WARNING_VALUE"
+			},
+			"lines": {
+				"description": "走线宽度信息",
+				"details": "走线宽度如果太细，很容易蚀刻断掉，将给生产带来困难。",
+				"language": {
+					"description": {
+						"cn": "走线宽度信息",
+						"en": "Trace width information"
+					},
+					"details": {
+						"cn": "走线宽度如果太细，很容易蚀刻断掉，将给生产带来困难。",
+						"en": "If traces are too thin, they can easily get etched away, causing production difficulties."
+					},
+					"title": {
+						"cn": "线宽",
+						"en": "Trace width"
+					}
+				},
+				"range": [
+					4,
+					5,
+					8
+				],
+				"time_limit": 10000,
+				"title": "线宽",
+				"type": "CGT_LINE_SEGMENT"
+			},
+			"marks": {
+				"description": "检测板子上的定位标记点",
+				"details": "mark点一般用于SMT的定位标志，在板子上是一个独立的圆形焊盘，一般设计两到三个，常见于在板子对角位置摆放，另外也有见在BGA这类大芯片元件旁边放置以提高贴片对位精度。该检测结果仅用于一个提示作用，在可视化界面上便于定位BGA位置。",
+				"language": {
+					"description": {
+						"cn": "检测板子上的定位标记点",
+						"en": "Detect fiducial marks on the board"
+					},
+					"details": {
+						"cn": "mark点一般用于SMT的定位标志，在板子上是一个独立的圆形焊盘，一般设计两到三个，常见于在板子对角位置摆放，另外也有见在BGA这类大芯片元件旁边放置以提高贴片对位精度。该检测结果仅用于一个提示作用，在可视化界面上便于定位BGA位置。",
+						"en": "Fiducials are typically round pads used for SMT alignment, with 2-3 placed at opposite corners of the board. They are also sometimes placed next to large components like BGAs to improve placement accuracy. This detection is only an indicator to easily locate fiducials in the GUI."
+					},
+					"title": {
+						"cn": "mark点",
+						"en": "Fiducial"
+					}
+				},
+				"range": null,
+				"time_limit": 5000,
+				"title": "mark点",
+				"type": "CGT_WARNING_VALUE"
+			},
+			"pad2edge": {
+				"description": "测量距焊盘距外型线的距离",
+				"details": "焊盘如果距板边太近，锣边成型时，锣刀会伤到焊盘，使用铜裸露出来，容易氧化。",
+				"language": {
+					"description": {
+						"cn": "测量距焊盘距外型线的距离",
+						"en": "Measure distance of pads from the board edge"
+					},
+					"details": {
+						"cn": "焊盘如果距板边太近，锣边成型时，锣刀会伤到焊盘，使用铜裸露出来，容易氧化。",
+						"en": "If pads are too close to the board edge, the routing bit can cut into them during outline forming, exposing bare copper to oxidation."
+					},
+					"title": {
+						"cn": "焊盘距外型线",
+						"en": "Pad to board edge"
+					}
+				},
+				"range": [
+					5,
+					8,
+					16
+				],
+				"time_limit": 5000,
+				"title": "焊盘距外型线",
+				"type": "CGT_LINE_SEGMENT"
+			},
+			"pad2pad": {
+				"description": "测量焊盘到焊盘的距离",
+				"details": "两焊盘如果太近，容易短路，焊锡时也容易连锡。",
+				"language": {
+					"description": {
+						"cn": "测量焊盘到焊盘的距离",
+						"en": "Measure pad to pad spacing"
+					},
+					"details": {
+						"cn": "两焊盘如果太近，容易短路，焊锡时也容易连锡。",
+						"en": "If pads are too close, they can short or cause solder bridging during soldering."
+					},
+					"title": {
+						"cn": "焊盘距焊盘",
+						"en": "Pad spacing"
+					}
+				},
+				"range": [
+					4,
+					6,
+					8
+				],
+				"time_limit": 5000,
+				"title": "焊盘距焊盘",
+				"type": "CGT_LINE_SEGMENT"
+			},
+			"pth2line": {
+				"description": "测量PTH孔到走线的距离",
+				"details": "走线距PTH孔太近的话，容易引起短路。内层线路容易因板材的灯芯效应造成短路（注意：尽量不要用次品板材，比如只有6张布的FR4）",
+				"language": {
+					"description": {
+						"cn": "测量PTH孔到走线的距离",
+						"en": "Measure clearance of plated through-holes to traces"
+					},
+					"details": {
+						"cn": "走线距PTH孔太近的话，容易引起短路。内层线路容易因板材的灯芯效应造成短路（注意：尽量不要用次品板材，比如只有6张布的FR4）",
+						"en": "If traces are too close to plated through-holes, it can cause shorts. Inner layers may short due to the board's fiber weave effect (note: avoid using substandard materials like FR4 with only 6 fibreglass layers)."
+					},
+					"title": {
+						"cn": "PTH孔到线",
+						"en": "Plated through-hole to trace clearance"
+					}
+				},
+				"range": [
+					7,
+					9,
+					12
+				],
+				"time_limit": 5000,
+				"title": "PTH孔到线",
+				"type": "CGT_LINE_SEGMENT"
+			},
+			"pth_ar": {
+				"description": "焊盘与孔的关系，焊盘比孔多出来的部分的环宽度",
+				"details": "插件孔的焊盘如果比孔大的不是足够多，生产时容易偏位误差导致孔焊盘破环。备注：程序会误将过孔识别为插件孔，如果是过孔可忽略。",
+				"language": {
+					"description": {
+						"cn": "焊盘与孔的关系，焊盘比孔多出来的部分的环宽度",
+						"en": "Annular ring width of pads compared to holes"
+					},
+					"details": {
+						"cn": "插件孔的焊盘如果比孔大的不是足够多，生产时容易偏位误差导致孔焊盘破环。备注：程序会误将过孔识别为插件孔，如果是过孔可忽略。",
+						"en": "If through-hole pad annular rings are too small, manufacturing misalignment can cause broken annular rings. Note: The software may misidentify vias as through-holes, so via violations can be ignored."
+					},
+					"title": {
+						"cn": "焊盘孔环",
+						"en": "Annular ring"
+					}
+				},
+				"range": [
+					4,
+					6,
+					8
+				],
+				"time_limit": 5000,
+				"title": "焊盘孔环",
+				"type": "CGT_LINE_SEGMENT"
+			}
+		},
+		"unit": "inch"
+	},
+	"jlc_analysis_signal_outer": {
+		"description": "外层线路层分析",
+		"language": {
+			"description": {
+				"cn": "外层线路层分析",
+				"en": "Outer routing layer analysis"
+			}
+		},
+		"name": "jlc_analysis_signal",
+		"ranges": {
+			"acute_line": {
+				"description": "检测相连接的两条走线夹角是否为锐角",
+				"details": "良好的设计，走线拐角一般是圆弧或者钝角拐线，如果是锐角拐线，被视为不好的设计。",
+				"language": {
+					"description": {
+						"cn": "检测相连接的两条走线夹角是否为锐角",
+						"en": "Check for sharp corners in traces"
+					},
+					"details": {
+						"cn": "良好的设计，走线拐角一般是圆弧或者钝角拐线，如果是锐角拐线，被视为不好的设计。",
+						"en": "Good design practices have trace corners as arcs or obtuse angles. Acute angled trace corners are considered poor design."
+					},
+					"title": {
+						"cn": "锐角拐线",
+						"en": "Sharp trace corner"
+					}
+				},
+				"range": null,
+				"time_limit": 5000,
+				"title": "锐角拐线",
+				"type": "CGT_WARNING_VALUE"
+			},
+			"bga_pad": {
+				"description": "检测板子上的BGA焊盘",
+				"details": "该检测结果仅用于一个提示作用，在可视化界面上便于定位BGA位置。",
+				"language": {
+					"description": {
+						"cn": "检测板子上的BGA焊盘",
+						"en": "Check BGA pads on the board"
+					},
+					"details": {
+						"cn": "该检测结果仅用于一个提示作用，在可视化界面上便于定位BGA位置。",
+						"en": "This detection result is only used as an indicator to easily locate BGA pads in the GUI."
+					},
+					"title": {
+						"cn": "BGA焊盘",
+						"en": "BGA pad"
+					}
+				},
+				"range": null,
+				"time_limit": 5000,
+				"title": "BGA焊盘",
+				"type": "CGT_WARNING_VALUE"
+			},
+			"hole_on_pad": {
+				"description": "检测焊盘上是否有非常的孔",
+				"details": "非插件孔落在焊盘上，有可能会影响元件焊接质量，是不好的设计。如果是塞树脂的盘中孔工艺可以忽略此类警告",
+				"language": {
+					"description": {
+						"cn": "检测焊盘上是否有非常的孔",
+						"en": "Check if there is a via placed within a pad"
+					},
+					"details": {
+						"cn": "非插件孔落在焊盘上，有可能会影响元件焊接质量，是不好的设计。如果是塞树脂的盘中孔工艺可以忽略此类警告",
+						"en": "Non through-hole vias placed within pads may affect component soldering quality. This is considered poor design. If it uses a via-in-pad plating process, these warnings can be ignored."
+					},
+					"title": {
+						"cn": "孔落在焊盘上",
+						"en": "Via placed within a pad"
+					}
+				},
+				"range": null,
+				"time_limit": 5000,
+				"title": "孔落在焊盘上",
+				"type": "CGT_WARNING_VALUE"
+			},
+			"line2edge": {
+				"description": "检测距板边太近的走线",
+				"details": "走线距板边太近，在成型时容易被铣刀割伤。注意：如果所在边缘是VCUT边缘，需要更大的安全距离（一般是0.4mm以上）",
+				"language": {
+					"description": {
+						"cn": "检测距板边太近的走线",
+						"en": "Detect traces too close to the board edge"
+					},
+					"details": {
+						"cn": "走线距板边太近，在成型时容易被铣刀割伤。注意：如果所在边缘是VCUT边缘，需要更大的安全距离（一般是0.4mm以上）",
+						"en": "Traces too close to the board edge may get cut by the routing bit during outline forming. Note: For V-cut board edges, a larger clearance is needed (typically 0.4 mm or more)."
+					},
+					"title": {
+						"cn": "走线距板边",
+						"en": "Trace to board edge"
+					}
+				},
+				"range": [
+					6,
+					8,
+					10
+				],
+				"time_limit": 5000,
+				"title": "走线距板边",
+				"type": "CGT_LINE_SEGMENT"
+			},
+			"line2line": {
+				"description": "测量相邻两条平行走线间的间距",
+				"details": "走线间距如果太近，生产图形电镀时容易引起电镀夹膜，很容易短路报废，给生产带来困难。",
+				"language": {
+					"description": {
+						"cn": "测量相邻两条平行走线间的间距",
+						"en": "Measure spacing between adjacent parallel traces"
+					},
+					"details": {
+						"cn": "走线间距如果太近，生产图形电镀时容易引起电镀夹膜，很容易短路报废，给生产带来困难。",
+						"en": "If traces are too close, dry film breakage may happen during electroplating, resulting in short circuits and lowering yield."
+					},
+					"title": {
+						"cn": "走线间距",
+						"en": "Trace spacing"
+					}
+				},
+				"range": [
+					4,
+					6,
+					8
+				],
+				"time_limit": 5000,
+				"title": "走线间距",
+				"type": "CGT_LINE_SEGMENT"
+			},
+			"line_stub": {
+				"description": "没有焊盘连接的独立走线头",
+				"details": "良好的设计，走线的终点总是其它元素衔接（比如焊盘），裸线头被视为不好的走线设计，特殊设计可忽略。",
+				"language": {
+					"description": {
+						"cn": "没有焊盘连接的独立走线头",
+						"en": "Free-standing trace ends not connected to pads"
+					},
+					"details": {
+						"cn": "良好的设计，走线的终点总是其它元素衔接（比如焊盘），裸线头被视为不好的走线设计，特殊设计可忽略。",
+						"en": "Good design practices have trace ends always connecting to other elements (like pads). Unconnected trace ends are considered poor routing design, unless by special design."
+					},
+					"title": {
+						"cn": "裸线头",
+						"en": "Unconnected trace end"
+					}
+				},
+				"range": null,
+				"time_limit": 5000,
+				"title": "裸线头",
+				"type": "CGT_WARNING_VALUE"
+			},
+			"lines": {
+				"description": "走线宽度信息",
+				"details": "走线宽度如果太细，很容易蚀刻断掉，将给生产带来困难。",
+				"language": {
+					"description": {
+						"cn": "走线宽度信息",
+						"en": "Trace width information"
+					},
+					"details": {
+						"cn": "走线宽度如果太细，很容易蚀刻断掉，将给生产带来困难。",
+						"en": "If traces are too thin, they can easily get etched away, causing production difficulties."
+					},
+					"title": {
+						"cn": "线宽",
+						"en": "Trace width"
+					}
+				},
+				"range": [
+					4,
+					5,
+					8
+				],
+				"time_limit": 10000,
+				"title": "线宽",
+				"type": "CGT_LINE_SEGMENT"
+			},
+			"marks": {
+				"description": "检测板子上的定位标记点",
+				"details": "mark点一般用于SMT的定位标志，在板子上是一个独立的圆形焊盘，一般设计两到三个，常见于在板子对角位置摆放，另外也有见在BGA这类大芯片元件旁边放置以提高贴片对位精度。该检测结果仅用于一个提示作用，在可视化界面上便于定位BGA位置。",
+				"language": {
+					"description": {
+						"cn": "检测板子上的定位标记点",
+						"en": "Detect fiducial marks on the board"
+					},
+					"details": {
+						"cn": "mark点一般用于SMT的定位标志，在板子上是一个独立的圆形焊盘，一般设计两到三个，常见于在板子对角位置摆放，另外也有见在BGA这类大芯片元件旁边放置以提高贴片对位精度。该检测结果仅用于一个提示作用，在可视化界面上便于定位BGA位置。",
+						"en": "Fiducials are typically round pads used for SMT alignment, with 2-3 placed at opposite corners of the board. They are also sometimes placed next to large components like BGAs to improve placement accuracy. This detection is only an indicator to easily locate fiducials in the GUI."
+					},
+					"title": {
+						"cn": "mark点",
+						"en": "Fiducial"
+					}
+				},
+				"range": null,
+				"time_limit": 5000,
+				"title": "mark点",
+				"type": "CGT_WARNING_VALUE"
+			},
+			"pad2edge": {
+				"description": "测量距焊盘距外型线的距离",
+				"details": "焊盘如果距板边太近，锣边成型时，锣刀会伤到焊盘，使用铜裸露出来，容易氧化。",
+				"language": {
+					"description": {
+						"cn": "测量距焊盘距外型线的距离",
+						"en": "Measure distance of pads from the board edge"
+					},
+					"details": {
+						"cn": "焊盘如果距板边太近，锣边成型时，锣刀会伤到焊盘，使用铜裸露出来，容易氧化。",
+						"en": "If pads are too close to the board edge, the routing bit can cut into them during outline forming, exposing bare copper to oxidation."
+					},
+					"title": {
+						"cn": "焊盘距外型线",
+						"en": "Pad to board edge"
+					}
+				},
+				"range": [
+					5,
+					8,
+					16
+				],
+				"time_limit": 5000,
+				"title": "焊盘距外型线",
+				"type": "CGT_LINE_SEGMENT"
+			},
+			"pad2pad": {
+				"description": "测量焊盘到焊盘的距离",
+				"details": "两焊盘如果太近，容易短路，焊锡时也容易连锡。",
+				"language": {
+					"description": {
+						"cn": "测量焊盘到焊盘的距离",
+						"en": "Measure pad to pad spacing"
+					},
+					"details": {
+						"cn": "两焊盘如果太近，容易短路，焊锡时也容易连锡。",
+						"en": "If pads are too close, they can short or cause solder bridging during soldering."
+					},
+					"title": {
+						"cn": "焊盘距焊盘",
+						"en": "Pad spacing"
+					}
+				},
+				"range": [
+					4,
+					6,
+					8
+				],
+				"time_limit": 5000,
+				"title": "焊盘距焊盘",
+				"type": "CGT_LINE_SEGMENT"
+			},
+			"pth2line": {
+				"description": "测量PTH孔到走线的距离",
+				"details": "走线距PTH孔太近的话，容易引起短路。内层线路容易因板材的灯芯效应造成短路（注意：尽量不要用次品板材，比如只有6张布的FR4）",
+				"language": {
+					"description": {
+						"cn": "测量PTH孔到走线的距离",
+						"en": "Measure clearance of plated through-holes to traces"
+					},
+					"details": {
+						"cn": "走线距PTH孔太近的话，容易引起短路。内层线路容易因板材的灯芯效应造成短路（注意：尽量不要用次品板材，比如只有6张布的FR4）",
+						"en": "If traces are too close to plated through-holes, it can cause shorts. Inner layers may short due to the board's fiber weave effect (note: avoid using substandard materials like FR4 with only 6 fibreglass layers)."
+					},
+					"title": {
+						"cn": "PTH孔到线",
+						"en": "Plated through-hole to trace clearance"
+					}
+				},
+				"range": [
+					7,
+					9,
+					12
+				],
+				"time_limit": 5000,
+				"title": "PTH孔到线",
+				"type": "CGT_LINE_SEGMENT"
+			},
+			"pth_ar": {
+				"description": "焊盘与孔的关系，焊盘比孔多出来的部分的环宽度",
+				"details": "插件孔的焊盘如果比孔大的不是足够多，生产时容易偏位误差导致孔焊盘破环。备注：程序会误将过孔识别为插件孔，如果是过孔可忽略。",
+				"language": {
+					"description": {
+						"cn": "焊盘与孔的关系，焊盘比孔多出来的部分的环宽度",
+						"en": "Annular ring width of pads compared to holes"
+					},
+					"details": {
+						"cn": "插件孔的焊盘如果比孔大的不是足够多，生产时容易偏位误差导致孔焊盘破环。备注：程序会误将过孔识别为插件孔，如果是过孔可忽略。",
+						"en": "If through-hole pad annular rings are too small, manufacturing misalignment can cause broken annular rings. Note: The software may misidentify vias as through-holes, so via violations can be ignored."
+					},
+					"title": {
+						"cn": "焊盘孔环",
+						"en": "Annular ring"
+					}
+				},
+				"range": [
+					4,
+					6,
+					8
+				],
+				"time_limit": 5000,
+				"title": "焊盘孔环",
+				"type": "CGT_LINE_SEGMENT"
+			}
+		},
+		"unit": "inch"
+	},
+	"jlc_analysis_sm": {
+		"description": "阻焊层分析",
+		"language": {
+			"description": {
+				"cn": "阻焊层分析",
+				"en": "Soldermask layer analysis"
+			}
+		},
+		"name": "jlc_analysis_sm",
+		"ranges": {
+			"bridge": {
+				"description": "检测相邻两阻焊开窗平行边缘间距",
+				"details": "相邻两开窗间的缝隙生产后就是一个阻焊桥，将两边的焊盘隔开，如果这个桥宽度太小，会导致两开窗之间的油墨（阻焊桥）容易脱落，影响最终的焊锡品质。",
+				"language": {
+					"description": {
+						"cn": "检测相邻两阻焊开窗平行边缘间距",
+						"en": "Detect distance between parallel soldermask opening edges"
+					},
+					"details": {
+						"cn": "相邻两开窗间的缝隙生产后就是一个阻焊桥，将两边的焊盘隔开，如果这个桥宽度太小，会导致两开窗之间的油墨（阻焊桥）容易脱落，影响最终的焊锡品质。",
+						"en": "The gap between parallel solder mask openings is called a soldermask bridge and it separates the two pads. If this bridge is too narrow, the solder mask may flake off, affecting solder joint quality."
+					},
+					"title": {
+						"cn": "阻焊桥",
+						"en": "Soldermask bridge"
+					}
+				},
+				"range": [
+					4,
+					6,
+					8
+				],
+				"title": "阻焊桥",
+				"type": "CGT_LINE_SEGMENT"
+			},
+			"coverage": {
+				"description": "检测阻焊开窗距周边走线的安全间距",
+				"details": "如果阻焊开窗距周边走线太近，会导致周边走线也会曝露出来，容易氧化或焊接时短路。",
+				"language": {
+					"description": {
+						"cn": "检测阻焊开窗距周边走线的安全间距",
+						"en": "Detect clearance of solder mask openings to nearby traces"
+					},
+					"details": {
+						"cn": "如果阻焊开窗距周边走线太近，会导致周边走线也会曝露出来，容易氧化或焊接时短路。",
+						"en": "If solder mask openings are too close to traces, the nearby traces may be exposed, causing oxidation or shorts during soldering."
+					},
+					"title": {
+						"cn": "开窗露线",
+						"en": "Solder mask opening exposing trace"
+					}
+				},
+				"range": [
+					3,
+					6,
+					8
+				],
+				"time_limit": 5000,
+				"title": "开窗露线",
+				"type": "CGT_LINE_SEGMENT"
+			},
+			"fills": {
+				"description": "检测阻焊开窗是不是由多个几何图元填充后形成的开窗",
+				"details": "只要超过一个图元组合形成的开窗都称为碎线填充（可以把视图模式切换到“骨架线框”查看），会增加数据分析的复杂度，导致系统无法有效分析这个阻焊开窗的设计安全问题，请人工自行检查该位置阻焊开窗的设计合理性。",
+				"language": {
+					"description": {
+						"cn": "检测阻焊开窗是不是由多个几何图元填充后形成的开窗",
+						"en": "Check if solder mask openings are constructed from multiple geometric shapes"
+					},
+					"details": {
+						"cn": "只要超过一个图元组合形成的开窗都称为碎线填充（可以把视图模式切换到“骨架线框”查看），会增加数据分析的复杂度，导致系统无法有效分析这个阻焊开窗的设计安全问题，请人工自行检查该位置阻焊开窗的设计合理性。",
+						"en": "Solder mask openings constructed from multiple shapes (switch to \"skeleton\" view to see) increase analysis complexity, preventing effective checking of the opening design. Manually inspect such openings."
+					},
+					"title": {
+						"cn": "碎线填充",
+						"en": "Soldermask opening with multiple segments"
+					}
+				},
+				"range": null,
+				"title": "碎线填充",
+				"type": "CGT_WARNING_VALUE"
+			},
+			"neg_pad_ar": {
+				"description": "检测比焊盘小的阻焊开窗",
+				"details": "如果焊盘开窗比焊盘小，焊盘有部分会被阻焊油墨覆盖，如果是故意这样设计，可以忽略这个检测结果。",
+				"language": {
+					"description": {
+						"cn": "检测比焊盘小的阻焊开窗",
+						"en": "Detect solder mask openings smaller than their corresponding pads"
+					},
+					"details": {
+						"cn": "如果焊盘开窗比焊盘小，焊盘有部分会被阻焊油墨覆盖，如果是故意这样设计，可以忽略这个检测结果。",
+						"en": "If a solder mask opening is smaller than its pad, the pad will have areas covered by solder mask. Ignore this if intended."
+					},
+					"title": {
+						"cn": "焊盘负开窗",
+						"en": "Negative soldermask expansion"
+					}
+				},
+				"range": null,
+				"time_limit": 5000,
+				"title": "焊盘负开窗",
+				"type": "CGT_WARNING_VALUE"
+			}
+		},
+		"unit": "inch"
+	},
+	"jlc_analysis_smt": {
+		"description": "元件组装分析",
+		"language": {
+			"description": {
+				"cn": "元件组装分析",
+				"en": "Component assembly analysis"
+			}
+		},
+		"name": "jlc_analysis_smt",
+		"ranges": {
+			"c2c_size": {
+				"description": "元件碰撞预警;元件1;元件2",
+				"details": "元件太近会导致贴装碰撞，不同大小的元件对安全间距有不同要求，本检测项是根据元件大小来检测元件碰撞安全风险，尺寸越大要求的间距越大。检测方式是元件按比例放大进行碰撞，结果值就是放大比例，比如：0.06表示放大 6% 后，两元件就碰撞了。",
+				"language": {
+					"description": {
+						"cn": "元件碰撞预警;元件1;元件2",
+						"en": "Component collision warning;Component 1;Component 2"
+					},
+					"details": {
+						"cn": "元件太近会导致贴装碰撞，不同大小的元件对安全间距有不同要求，本检测项是根据元件大小来检测元件碰撞安全风险，尺寸越大要求的间距越大。检测方式是元件按比例放大进行碰撞，结果值就是放大比例，比如：0.06表示放大 6% 后，两元件就碰撞了。",
+						"en": "Components placed too close can collide during assembly. Different sized components require different clearances, with larger sizes needing more spacing. Collision detection inflates components and reports the scale factor when collision occurs, e.g. 0.06 means 6% inflation caused a collision."
+					},
+					"title": {
+						"cn": "元件碰撞预警",
+						"en": "Component collision warning"
+					}
+				},
+				"range": [
+					0.06,
+					0.1,
+					0.15
+				],
+				"title": "元件碰撞预警",
+				"type": "CGT_DOUBLE_VALUE"
+			},
+			"comp2comp": {
+				"description": "元件距元件;元件1;元件2",
+				"details": "两个元件间距太近，在生产过程中会有碰撞的风险。",
+				"language": {
+					"description": {
+						"cn": "元件距元件;元件1;元件2",
+						"en": "Component to component spacing;Component 1;Component 2"
+					},
+					"details": {
+						"cn": "两个元件间距太近，在生产过程中会有碰撞的风险。",
+						"en": "Components spaced too close risk collisions during assembly."
+					},
+					"title": {
+						"cn": "元件距元件",
+						"en": "Component spacing"
+					}
+				},
+				"range": [
+					8,
+					12,
+					16
+				],
+				"title": "元件距元件",
+				"type": "CGT_LINE_SEGMENT"
+			},
+			"comp2edge": {
+				"description": "测量元件的边界与板子边缘的距离",
+				"details": "元件距板边太近，会导致与贴装设备有碰撞的风险。",
+				"language": {
+					"description": {
+						"cn": "测量元件的边界与板子边缘的距离",
+						"en": "Measure distance from component outline to the board edge"
+					},
+					"details": {
+						"cn": "元件距板边太近，会导致与贴装设备有碰撞的风险。",
+						"en": "Components too close to the board edge risk colliding with assembly equipment."
+					},
+					"title": {
+						"cn": "元件距板边的距离",
+						"en": "Component to board edge distance"
+					}
+				},
+				"range": [
+					20,
+					32,
+					40
+				],
+				"title": "元件距板边的距离",
+				"type": "CGT_LINE_SEGMENT"
+			},
+			"comp2hole": {
+				"description": "检测贴装元件焊脚到孔的距离",
+				"details": "贴装元件焊脚与周边的PTH孔太近，会导致流锡虚焊风险。",
+				"language": {
+					"description": {
+						"cn": "检测贴装元件焊脚到孔的距离",
+						"en": "Detect clearance of component leads to holes"
+					},
+					"details": {
+						"cn": "贴装元件焊脚与周边的PTH孔太近，会导致流锡虚焊风险。",
+						"en": "Component leads too close to plated through-holes risk unstable solder joints from solder wicking."
+					},
+					"title": {
+						"cn": "元件焊脚到孔的距离",
+						"en": "Lead to hole distance"
+					}
+				},
+				"range": [
+					8,
+					10,
+					12
+				],
+				"title": "元件焊脚到孔的距离",
+				"type": "CGT_LINE_SEGMENT"
+			},
+			"comp_p2p": {
+				"description": "检测同一元件各焊脚焊盘之间的间距",
+				"details": "检测贴片元件各pin对应的焊盘间的间距，间距太小容易积锡短路。",
+				"language": {
+					"description": {
+						"cn": "检测同一元件各焊脚焊盘之间的间距",
+						"en": "Detect clearance between pads of the same component"
+					},
+					"details": {
+						"cn": "检测贴片元件各pin对应的焊盘间的间距，间距太小容易积锡短路。",
+						"en": "Checks spacing between pads of the same SMD component, as spacing too tight can cause solder bridging."
+					},
+					"title": {
+						"cn": "元件焊盘间距",
+						"en": "Coponent pad spacing"
+					}
+				},
+				"range": [
+					6,
+					8,
+					10
+				],
+				"title": "元件焊盘间距",
+				"type": "CGT_LINE_SEGMENT"
+			},
+			"comp_x_edge": {
+				"description": "检测元件超出板边时与板边相交形成的交叉线",
+				"details": "元件在板子边缘，并超出板外，元件装配时容易撞机器脱落，特殊设计的元件可忽略这类错误（比如：USB接头）。注意：当PCB不能识别出外型层的时候，不会报告这类错误",
+				"language": {
+					"description": {
+						"cn": "检测元件超出板边时与板边相交形成的交叉线",
+						"en": "Detect component boundary clipping by the board outline"
+					},
+					"details": {
+						"cn": "元件在板子边缘，并超出板外，元件装配时容易撞机器脱落，特殊设计的元件可忽略这类错误（比如：USB接头）。注意：当PCB不能识别出外型层的时候，不会报告这类错误",
+						"en": "Components overhanging the board edge can collide with assembly equipment and dislodge, unless by special design (like USB connectors). Note: These errors are not reported when no board outline has been detected."
+					},
+					"title": {
+						"cn": "元件与板框相交",
+						"en": "Component clipped by board outline"
+					}
+				},
+				"range": null,
+				"title": "元件与板框相交",
+				"type": "CGT_WARNING_VALUE"
+			},
+			"pin_i_edge": {
+				"description": "测量l元件引脚边界是否超出了焊盘边界",
+				"details": "本项检测引脚内侧边缘是否会超出焊盘边缘，元件引脚焊接区域超出焊盘，影响焊接品质，如果是特殊设计可忽略。",
+				"language": {
+					"description": {
+						"cn": "测量l元件引脚边界是否超出了焊盘边界",
+						"en": "Measure if component pin edges extend past pad edges"
+					},
+					"details": {
+						"cn": "本项检测引脚内侧边缘是否会超出焊盘边缘，元件引脚焊接区域超出焊盘，影响焊接品质，如果是特殊设计可忽略。",
+						"en": "Checks if a pin's inner edge extends past its corresponding pad edge, as this can affect solderability if excessive, unless by special design."
+					},
+					"title": {
+						"cn": "PIN脚内边界",
+						"en": "Pin inner edge"
+					}
+				},
+				"range": null,
+				"title": "PIN脚内边界",
+				"type": "CGT_ERROR_VALUE"
+			},
+			"pin_l_edge": {
+				"description": "测量元件引脚边界是否超出了焊盘边界",
+				"details": "本项检测引脚左侧边缘是否会超出焊盘边缘，元件引脚焊接区域超出焊盘，影响焊接品质，如果是特殊设计可忽略。",
+				"language": {
+					"description": {
+						"cn": "测量元件引脚边界是否超出了焊盘边界",
+						"en": "Measure if component pin edges extend past pad edges"
+					},
+					"details": {
+						"cn": "本项检测引脚左侧边缘是否会超出焊盘边缘，元件引脚焊接区域超出焊盘，影响焊接品质，如果是特殊设计可忽略。",
+						"en": "Checks if a pin's left edge extends past its corresponding pad edge, as this can affect solderability if excessive, unless by special design."
+					},
+					"title": {
+						"cn": "PIN脚左边界",
+						"en": "Pin left edge"
+					}
+				},
+				"range": null,
+				"title": "PIN脚左边界",
+				"type": "CGT_ERROR_VALUE"
+			},
+			"pin_non_pad": {
+				"description": "检测贴装元件的焊脚是否有焊盘",
+				"details": "大多数PIN都是有焊盘的，出现这种情况的大部分是一般是角度不对，或者是元件没有对齐，如果是特殊设计请忽略。",
+				"language": {
+					"description": {
+						"cn": "检测贴装元件的焊脚是否有焊盘",
+						"en": "Detect if component pins without pads"
+					},
+					"details": {
+						"cn": "大多数PIN都是有焊盘的，出现这种情况的大部分是一般是角度不对，或者是元件没有对齐，如果是特殊设计请忽略。",
+						"en": "Most pins require pads, so missing pads are generally due to misalignment or orientation issues, unless by special design."
+					},
+					"title": {
+						"cn": "PIN脚无焊盘",
+						"en": "Pin without pad"
+					}
+				},
+				"range": null,
+				"title": "PIN脚无焊盘",
+				"type": "CGT_ERROR_VALUE"
+			},
+			"pin_o_edge": {
+				"description": "测量元件引脚边界是否超出了焊盘边界",
+				"details": "本项检测引脚外侧边缘是否会超出焊盘边缘，元件引脚焊接区域超出焊盘，影响焊接品质，如果是特殊设计可忽略。",
+				"language": {
+					"description": {
+						"cn": "测量元件引脚边界是否超出了焊盘边界",
+						"en": "Measure if component pin edges extend past pad edges"
+					},
+					"details": {
+						"cn": "本项检测引脚外侧边缘是否会超出焊盘边缘，元件引脚焊接区域超出焊盘，影响焊接品质，如果是特殊设计可忽略。",
+						"en": "Checks if a pin's outer edge extends past its corresponding pad edge, as this can affect solderability if excessive, unless by special design."
+					},
+					"title": {
+						"cn": "PIN脚外边界",
+						"en": "Pin outer edge"
+					}
+				},
+				"range": null,
+				"title": "PIN脚外边界",
+				"type": "CGT_ERROR_VALUE"
+			},
+			"pin_r_edge": {
+				"description": "测量元件引脚边界是否超出了焊盘边界",
+				"details": "本项检测引脚右侧边缘是否会超出焊盘边缘，元件引脚焊接区域超出焊盘，影响焊接品质，如果是特殊设计可忽略。",
+				"language": {
+					"description": {
+						"cn": "测量元件引脚边界是否超出了焊盘边界",
+						"en": "Measure if component pin edges extend past pad edges"
+					},
+					"details": {
+						"cn": "本项检测引脚右侧边缘是否会超出焊盘边缘，元件引脚焊接区域超出焊盘，影响焊接品质，如果是特殊设计可忽略。",
+						"en": "Checks if a pin's right edge extends past its corresponding pad edge, as this can affect solderability if excessive, unless by special design."
+					},
+					"title": {
+						"cn": "PIN脚右边界",
+						"en": "Pin right edge"
+					}
+				},
+				"range": null,
+				"title": "PIN脚右边界",
+				"type": "CGT_ERROR_VALUE"
+			},
+			"tht2hole": {
+				"description": "检测元件插脚与对应的孔的中心点的对齐数据",
+				"details": "元件的插脚pin与孔中心如果有偏差会导致难以插件，偏差越大，越难插。设计层面很少会犯这样的错误，大多数是元件摆放没有对齐引起的。",
+				"language": {
+					"description": {
+						"cn": "检测元件插脚与对应的孔的中心点的对齐数据",
+						"en": "Detect misalignment of component through-hole pins to pad holes"
+					},
+					"details": {
+						"cn": "元件的插脚pin与孔中心如果有偏差会导致难以插件，偏差越大，越难插。设计层面很少会犯这样的错误，大多数是元件摆放没有对齐引起的。",
+						"en": "Misalignment between component through-hole lpins and pad holes can make components difficult to insert. Larger offsets make insertion more difficult. Misalignment is rarely a design issue, usually caused by component positioning/rotation."
+					},
+					"title": {
+						"cn": "元件插件孔",
+						"en": "Component through-hole"
+					}
+				},
+				"range": [
+					8,
+					6,
+					3
+				],
+				"title": "元件插件孔",
+				"type": "CGT_LINE_SEGMENT"
+			},
+			"tht_miss_hole": {
+				"description": "检测没有插件孔的元件插脚",
+				"details": "插件的元件引脚，对应的肯定有一个孔，一般设计层面不会出现这样的错误，大多数是元件角度放错了或者没有对齐引起的。",
+				"language": {
+					"description": {
+						"cn": "检测没有插件孔的元件插脚",
+						"en": "Detect component through-hole pins without corresponding holes"
+					},
+					"details": {
+						"cn": "插件的元件引脚，对应的肯定有一个孔，一般设计层面不会出现这样的错误，大多数是元件角度放错了或者没有对齐引起的。",
+						"en": "Through-hole component pins should have corresponding holes. Missing holes are generally due to misalignment/orientation issues, not design issues."
+					},
+					"title": {
+						"cn": "元件插脚无孔",
+						"en": "Missing hole for component pin"
+					}
+				},
+				"range": null,
+				"title": "元件插脚无孔",
+				"type": "CGT_ERROR_VALUE"
+			},
+			"weld2paste": {
+				"description": "检测贴装元件的焊脚与对应的焊盘是否充分接触",
+				"details": "如果引脚焊接区域与焊盘不能充分接触，可能会导致焊接不良。该检测结果的值是一个比值，比如：0.75 表示引脚焊接区域与焊盘的接触面积占引脚焊接区域面积 75%",
+				"language": {
+					"description": {
+						"cn": "检测贴装元件的焊脚与对应的焊盘是否充分接触",
+						"en": "Detect insufficient overlap between component pins and pads"
+					},
+					"details": {
+						"cn": "如果引脚焊接区域与焊盘不能充分接触，可能会导致焊接不良。该检测结果的值是一个比值，比如：0.75 表示引脚焊接区域与焊盘的接触面积占引脚焊接区域面积 75%",
+						"en": "If the lead/pad overlap area is insufficient, solderability may be affected. The result is a ratio, e.g. 0.75 means the lead/pad overlap is 75% of the lead area."
+					},
+					"title": {
+						"cn": "焊脚和焊盘相交区域",
+						"en": "Lead area overlapping pad"
+					}
+				},
+				"range": [
+					0.75,
+					0.9,
+					1.0
+				],
+				"title": "焊脚和焊盘相交区域",
+				"type": "CGT_DOUBLE_VALUE"
+			}
+		},
+		"unit": "inch"
+	},
+	"jlc_analysis_ss": {
+		"description": "丝印层分析",
+		"language": {
+			"description": {
+				"cn": "丝印层分析",
+				"en": "Silkscreen layer analysis"
+			}
+		},
+		"name": "jlc_analysis_ss",
+		"ranges": {
+			"ss2pad": {
+				"description": "检测距焊盘的安全间距",
+				"details": "如果丝印离焊盘太近，生产时会压在焊盘上面影响焊接。备注：在嘉立创的处理方式是直接把压在焊盘上的丝印掏掉，这会导致字符残缺不全",
+				"language": {
+					"description": {
+						"cn": "检测距焊盘的安全间距",
+						"en": "Detect clearance of silkscreen to pads"
+					},
+					"details": {
+						"cn": "如果丝印离焊盘太近，生产时会压在焊盘上面影响焊接。备注：在嘉立创的处理方式是直接把压在焊盘上的丝印掏掉，这会导致字符残缺不全",
+						"en": "If silkscreen is too close to pads, it may print on top, affecting solderability. Note: Common practice is to remove silkscreen overlapping pads, causing character voids."
+					},
+					"title": {
+						"cn": "丝印距焊盘",
+						"en": "Silkscreen to pad"
+					}
+				},
+				"range": [
+					5,
+					7,
+					10
+				],
+				"time_limit": 5000,
+				"title": "丝印距焊盘",
+				"type": "CGT_LINE_SEGMENT"
+			},
+			"ss2pth": {
+				"description": "检测丝印到孔的距离",
+				"details": "如果丝印到孔的中离太近，会导致油墨进入孔内。一般工厂的处理方式是直接掏开孔周围的丝印（较小的过孔可以忽略），这会导致字符残缺不全。",
+				"language": {
+					"description": {
+						"cn": "检测丝印到孔的距离",
+						"en": "Detect clearance of silkscreen to holes"
+					},
+					"details": {
+						"cn": "如果丝印到孔的中离太近，会导致油墨进入孔内。一般工厂的处理方式是直接掏开孔周围的丝印（较小的过孔可以忽略），这会导致字符残缺不全。",
+						"en": "If silkscreen is too close to holes, ink may bleed into the holes. Common practice is to remove silkscreen around holes (smaller vias can be ignored), causing character voids."
+					},
+					"title": {
+						"cn": "丝印距孔",
+						"en": "Silkscreen to hole"
+					}
+				},
+				"range": [
+					5,
+					7,
+					10
+				],
+				"time_limit": 3000,
+				"title": "丝印距孔",
+				"type": "CGT_LINE_SEGMENT"
+			},
+			"ssl_w": {
+				"description": "检测丝印的线条宽度",
+				"details": "丝印的线条宽度如果太细，实际生产可能印刷不出来，一般工厂的处理方式是直接加粗线条，但如果字体的尺寸太小，会导致字符模糊",
+				"language": {
+					"description": {
+						"cn": "检测丝印的线条宽度",
+						"en": "Check silkscreen line width"
+					},
+					"details": {
+						"cn": "丝印的线条宽度如果太细，实际生产可能印刷不出来，一般工厂的处理方式是直接加粗线条，但如果字体的尺寸太小，会导致字符模糊",
+						"en": "If silkscreen lines are too thin, they may not print properly. Common practice is to thicken lines, but this can make small text blurry."
+					},
+					"title": {
+						"cn": "丝印线条宽度",
+						"en": "Silkscreen line width"
+					}
+				},
+				"range": [
+					4,
+					6,
+					8
+				],
+				"time_limit": 3000,
+				"title": "丝印线条宽度",
+				"type": "CGT_LINE_SEGMENT"
+			}
+		},
+		"unit": "inch"
+	}
+}

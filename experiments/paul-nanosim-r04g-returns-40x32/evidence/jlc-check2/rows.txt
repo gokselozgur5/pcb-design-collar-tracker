@@ -1,0 +1,29 @@
+Sharp trace corner	0,  0,  0	Details
+BGA pad	0,  0,  0	Details
+Via placed within a pad	0,  0,  0	Details
+Trace to board edge	0,  0,  0	Details
+Trace spacing	0,  0,  31	Details
+Unconnected trace end	0,  0,  0	Details
+Trace width	0,  0,  100	Details
+Fiducial	0,  0,  0	Details
+Pad to board edge	0,  0,  0	Details
+Pad spacing	0,  0,  100	Details
+Plated through-hole to trace clearance	0,  0,  0	Details
+Annular ring	0,  0,  100	Details
+tht to smd	0,  0,  0	Details
+Via to pad	0,  0,  0	Details
+Soldermask bridge	0,  0,  51	Details
+Solder mask opening exposing trace	0,  0,  58	Details
+Soldermask opening with multiple segments	0,  0,  0	Details
+Negative soldermask expansion	0,  0,  0	Details
+Silkscreen to pad	0,  0,  0	Details
+Silkscreen to hole	0,  0,  0	Details
+Silkscreen line width	0,  0,  10	Details
+Unconnected via	0,  0,  0	Details
+Missing plated through-hole	0,  0,  0	Details
+Unconnected via	0,  0,  0	Details
+Plated through-hole spacing	0,  0,  0	Details
+Short slot detection	0,  0,  0	Details
+Slot width check	0,  0,  0	Details
+Via to PTH spacing	0,  0,  0	Details
+Unconnected via	0,  0,  0	Details

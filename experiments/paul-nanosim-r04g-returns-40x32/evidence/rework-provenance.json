@@ -1,0 +1,227 @@
+{
+  "parent": "experiments/paul-nanosim-r04f-40x32/hardware/collar-tracker.kicad_pcb",
+  "parent_sha256": "240be3bbab528ffb123737fe75c54bb642ec2f204b32a6533e704f794691a6d2",
+  "pre_label_sha256": "a21bea5820ff50c0f80c46088ee93a26ac2ddee70530dad7c7a5ce3ad729c794",
+  "moved_pullups": {
+    "R12": {
+      "old": [
+        124.8,
+        102.3
+      ],
+      "new": [
+        123.6,
+        100.0
+      ]
+    },
+    "R13": {
+      "old": [
+        124.8,
+        104.5
+      ],
+      "new": [
+        126.4,
+        100.0
+      ]
+    }
+  },
+  "dfm_fixes": {
+    "D1_ground_via": {
+      "old": [
+        124.8,
+        116
+      ],
+      "new": [
+        124.78,
+        116
+      ],
+      "nominal_pad_gap_mm": 0.17
+    },
+    "CHG_STAT": {
+      "old_y_mm": 127.3002,
+      "new_y_mm": 127.4502
+    }
+  },
+  "site_search": [
+    {
+      "target": "/I2C_SDA",
+      "index": 1,
+      "position": [
+        122.7854,
+        102.9531
+      ],
+      "accepted": false,
+      "reason": "Routing/native checks incomplete",
+      "elapsed_seconds": 3.59,
+      "source_sha256": "920004e81ab6f5d43b75666fa222c85e41076e42e93f1fff40ab8e3f4a69ff30"
+    },
+    {
+      "target": "/I2C_SDA",
+      "index": 2,
+      "position": [
+        124.2854,
+        103.4031
+      ],
+      "accepted": true,
+      "reason": "",
+      "elapsed_seconds": 3.44,
+      "source_sha256": "81e0bc7f0598fa4f6113286d21a5dad3b9e3da812cc4ccd2c699a966eb89538d"
+    },
+    {
+      "target": "/SIM_IO",
+      "index": 1,
+      "position": [
+        117.5105,
+        110.5211
+      ],
+      "accepted": false,
+      "reason": "Routing/native checks incomplete",
+      "elapsed_seconds": 3.49,
+      "source_sha256": "81e0bc7f0598fa4f6113286d21a5dad3b9e3da812cc4ccd2c699a966eb89538d"
+    },
+    {
+      "target": "/SIM_IO",
+      "index": 2,
+      "position": [
+        119.4605,
+        110.3211
+      ],
+      "accepted": false,
+      "reason": "Routing/native checks incomplete",
+      "elapsed_seconds": 3.8,
+      "source_sha256": "81e0bc7f0598fa4f6113286d21a5dad3b9e3da812cc4ccd2c699a966eb89538d"
+    },
+    {
+      "target": "/SIM_IO",
+      "index": 3,
+      "position": [
+        117.3605,
+        111.8211
+      ],
+      "accepted": false,
+      "reason": "Routing/native checks incomplete",
+      "elapsed_seconds": 3.4,
+      "source_sha256": "81e0bc7f0598fa4f6113286d21a5dad3b9e3da812cc4ccd2c699a966eb89538d"
+    },
+    {
+      "target": "/SIM_IO",
+      "index": 4,
+      "position": [
+        119.2605,
+        112.4211
+      ],
+      "accepted": false,
+      "reason": "Routing/native checks incomplete",
+      "elapsed_seconds": 14.36,
+      "source_sha256": "81e0bc7f0598fa4f6113286d21a5dad3b9e3da812cc4ccd2c699a966eb89538d"
+    },
+    {
+      "target": "/SIM_IO",
+      "index": 5,
+      "position": [
+        118.1105,
+        109.6211
+      ],
+      "accepted": false,
+      "reason": "Routing/native checks incomplete",
+      "elapsed_seconds": 10.39,
+      "source_sha256": "81e0bc7f0598fa4f6113286d21a5dad3b9e3da812cc4ccd2c699a966eb89538d"
+    },
+    {
+      "target": "/SIM_CLK",
+      "index": 1,
+      "position": [
+        125.577,
+        114.5762
+      ],
+      "accepted": false,
+      "reason": "Routing/native checks incomplete",
+      "elapsed_seconds": 3.18,
+      "source_sha256": "81e0bc7f0598fa4f6113286d21a5dad3b9e3da812cc4ccd2c699a966eb89538d"
+    },
+    {
+      "target": "/SIM_CLK",
+      "index": 2,
+      "position": [
+        125.977,
+        114.7762
+      ],
+      "accepted": false,
+      "reason": "Routing/native checks incomplete",
+      "elapsed_seconds": 3.51,
+      "source_sha256": "81e0bc7f0598fa4f6113286d21a5dad3b9e3da812cc4ccd2c699a966eb89538d"
+    },
+    {
+      "target": "/SIM_CLK",
+      "index": 3,
+      "position": [
+        126.477,
+        114.9762
+      ],
+      "accepted": true,
+      "reason": "",
+      "elapsed_seconds": 3.89,
+      "source_sha256": "a21bea5820ff50c0f80c46088ee93a26ac2ddee70530dad7c7a5ce3ad729c794"
+    },
+    {
+      "target": "/COEX0",
+      "index": 1,
+      "position": [
+        117.3668,
+        110.6266
+      ],
+      "accepted": false,
+      "reason": "Routing/native checks incomplete",
+      "elapsed_seconds": 3.22,
+      "source_sha256": "a21bea5820ff50c0f80c46088ee93a26ac2ddee70530dad7c7a5ce3ad729c794"
+    },
+    {
+      "target": "/COEX0",
+      "index": 2,
+      "position": [
+        117.3668,
+        111.8266
+      ],
+      "accepted": false,
+      "reason": "Routing/native checks incomplete",
+      "elapsed_seconds": 3.39,
+      "source_sha256": "a21bea5820ff50c0f80c46088ee93a26ac2ddee70530dad7c7a5ce3ad729c794"
+    },
+    {
+      "target": "/COEX0",
+      "index": 3,
+      "position": [
+        119.4668,
+        113.0266
+      ],
+      "accepted": false,
+      "reason": "Routing/native checks incomplete",
+      "elapsed_seconds": 15.51,
+      "source_sha256": "a21bea5820ff50c0f80c46088ee93a26ac2ddee70530dad7c7a5ce3ad729c794"
+    },
+    {
+      "target": "/COEX0",
+      "index": 4,
+      "position": [
+        119.8168,
+        113.2266
+      ],
+      "accepted": false,
+      "reason": "Routing/native checks incomplete",
+      "elapsed_seconds": 15.97,
+      "source_sha256": "a21bea5820ff50c0f80c46088ee93a26ac2ddee70530dad7c7a5ce3ad729c794"
+    },
+    {
+      "target": "/COEX0",
+      "index": 5,
+      "position": [
+        119.2668,
+        112.4266
+      ],
+      "accepted": false,
+      "reason": "Routing/native checks incomplete",
+      "elapsed_seconds": 14.17,
+      "source_sha256": "a21bea5820ff50c0f80c46088ee93a26ac2ddee70530dad7c7a5ce3ad729c794"
+    }
+  ],
+  "scope": "Native-clean intermediate source; two return-screen gaps still remain. No supplier acceptance transferred."
+}

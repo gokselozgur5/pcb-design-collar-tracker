@@ -1,0 +1,38 @@
+{
+  "source_sha256": "81e0bc7f0598fa4f6113286d21a5dad3b9e3da812cc4ccd2c699a966eb89538d",
+  "candidate": {
+    "position": [
+      126.477,
+      114.9762
+    ],
+    "signal": "b63703eb-8e0f-4140-a58f-005a0678629c",
+    "net": "/SIM_CLK",
+    "return_mm": 1.486606874731856,
+    "covered": [
+      "b63703eb-8e0f-4140-a58f-005a0678629c"
+    ],
+    "tracks": [
+      {
+        "id": "85fa7319-c95e-4d7e-99a0-6d0a9c4041e3",
+        "net": "/SIM_IO",
+        "start": [
+          126.8233,
+          115.55
+        ],
+        "end": [
+          125.2617,
+          113.9884
+        ],
+        "layer": "B.Cu",
+        "width": 0.2
+      }
+    ],
+    "nets": [
+      "/SIM_IO"
+    ],
+    "removed_length_mm": 2.2084358990018234,
+    "score": 3.2590824824232767
+  },
+  "added_via_id": "cedeacb0-8378-48fa-abfc-a49c7dff5fd1",
+  "applied_sha256": "29c5a8d730b97c6ced162e19d8f6efccc16b308b342dd55ef9f54a7fee4de3e5"
+}

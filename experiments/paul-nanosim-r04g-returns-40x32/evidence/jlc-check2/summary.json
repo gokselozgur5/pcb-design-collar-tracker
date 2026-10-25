@@ -1,0 +1,19 @@
+{
+  "source_sha256": "e68faf7db8b588cb69afdca76b0ab6b106ad0eed400cc95a2cf140a8f7142f79",
+  "zip_sha256": "b739e0baf4286482b9b195b88327967fc1d0db63208c7ec1c8a6d93fe854dc53",
+  "record_id": "637222172922957825",
+  "danger": 0,
+  "warning": 0,
+  "analyzed_rows": 29,
+  "rules_sha256": "f1bebb3b2b5ac2ba0579f882fc0605d169c1d6a3a852a07beb8652b719e0a725",
+  "raw_measurements_verified": true,
+  "scope": "PCB DFM only; SMT unchecked. Intermediate board still has two return-screen gaps; this is not full Paul or production acceptance.",
+  "files": {
+    "screen.png": "81fa9ddda2b70f07cfbc544f1e62c50f94c04e2d35518f67c39474e722e5c3f6",
+    "rules.json": "f1bebb3b2b5ac2ba0579f882fc0605d169c1d6a3a852a07beb8652b719e0a725",
+    "dfm.json": "9af392a9b4413a975a2a99456b46bdb4ae36f444d9f0aa1656508270280cdb6f",
+    "report.pdf": "4a70cf99965aa85eaeb9be956e4801450e01052ada4a292eaa7ae89d8d4c0ffc",
+    "rows.txt": "76f348e7e29a0c48ce8ab48262f4dffc49f9d68508b3c790921b2e88583f3f8c",
+    "receipt.json": "f03394b5e6d4f077d2ba77821f34b931cec356e5ed3b0329e3d0078cfbeebdb6"
+  }
+}
