@@ -7,9 +7,9 @@ Repository: [gokselozgur5/pcb-design-collar-tracker](https://github.com/gokseloz
 All authored repository/GitHub content is English. Original supplier reports retain
 their original metadata.
 
-Review: [two-page PDF](../mechanical/swim-r01/review.pdf) and
-[124-file bundle](../release/collar-tracker-r04i-swim-r01-review.zip).
-Bundle SHA256: `21e3f0573d7cc0b6ef8b13118e3d23182f1fe0f6fd29d14bfad34404460a6805`.
+Review: [updated two-page PDF](../mechanical/swim-r02-fit/review.pdf) and
+[132-file bundle](../release/collar-tracker-r04i-swim-r02-fit-review.zip).
+Bundle SHA256: `ea960e01f39e7b31aef930359a82b7b360e9e6c4a1fb232dad78c8d7f7032206`.
 `python3 scripts/verify_handoff.py` verifies the saved PCB, mechanical checks and
 every bundled file against the checkout; it performs no new supplier/physical test.
 
@@ -49,24 +49,42 @@ The user selected swimming / an IP68 design target. The provisional condition is
 2 m fresh water for 60 minutes; depth/time and magnetic charging remain engineering
 assumptions pending the user's preference replies.
 
-`mechanical/swim-r01/` contains the parametric shell, lid, lift-out carrier, two
-radially sealed charging targets, magnet plugs, dock alignment shell and TPU boot.
-Current rigid body: 57.4 × 49.4 × 17.6 mm; 58.7 mm including the docking key.
-With the retention boot: 60.4 × 52.4 × 22.4 mm. The initial smaller gland and contact
-groove failed geometric screens; four regression tests retain those cases.
-The two-page `review.pdf`, dimensioned drawing and eight exported closed STL
-surfaces are ready for review. `checks.json` binds the 30 analytical checks to the
-PCB and parameters; `mesh-checks.json` binds the actual mesh/previews to the CAD.
+`mechanical/swim-r02-fit/` is the active populated-board fit revision. It retains
+the shell, lid, lift-out carrier, independently sealed charging targets, magnet
+plugs, dock alignment shell and required TPU boot. Rigid size remains
+57.4 × 49.4 × 17.6 mm, 58.7 mm including the key; boot 60.4 × 52.4 × 22.4 mm.
 
-This is a **prototype, not a completed production design**. Component-height,
-protected battery and antenna reservations still need approved drawings. The dock's
-spring contacts/power circuit, actual fasteners, seal compounds, material/coating,
-wire terminations and assembly torque are not qualified. No physical ingress or
-powered result exists. Read the mechanical README before continuing.
+The actual native placements now have 49 drawing-derived component-height
+envelopes, two factory wire-termination requirements and two bare test-pad areas;
+C11/C12 remain DNP. Maximum height including solder/warp allowances is 2.75 mm
+above and 1.75 mm below the board. All 53 entries pass the declared fit screen;
+the narrowest component gap is C10 to the carrier, 0.24 mm against a 0.20 mm target.
+These are dimensional screens, not component or PCBA purchasing approval.
 
-Next: replace the reserved pack, antennas and component heights with approved
-drawings, finish the dock/harness selections and recheck physical fit. Before
-tooling or full PCBA release, complete actual
+D1's tolerance envelope required a local carrier relief. The original M4 backing
+hardware envelope failed floor/board clearance; r02 uses a dimensional M3 thin-nut
+candidate, a 3.5 mm M3 × 0.5 contact thread and Z=5.5 mm contact centers. Two shallow
+carrier reliefs clear the backing stack while retaining 1 mm connecting bridges.
+The terminal/washer stack is still a constrained reservation, not a selected harness.
+
+Six regressions pass, including the original interference cases and an oversized
+J4 wire termination. An independent CAD boolean is empty for the revised geometry
+and nonempty when the original carrier is restored. All eight exported meshes
+are closed, oriented and connected; four previews and both review sheets were
+inspected. The 30 inherited shell/seal checks also pass. r01 and its bundle remain
+byte-preserved.
+
+This is a **prototype, not a completed production design**. The
+[selection review](../mechanical/swim-r02-fit/selection-review.md) explains why the
+researched protected packs and antennas are not yet released: size alone does not
+prove modem pulse capability or RF performance. The 30 × 5 mm antenna rectangles
+still represent reservations. Dock electronics, harness routing/strain relief,
+positive PCB retention, material/seal grades, actual lid fasteners and torque remain
+open. No physical ingress, powered or RF result exists.
+
+Next: select the actual protected NTC pack and LTE/GNSS antennas, fit their
+feeds/cables and clearances, then finish the dock/harness and retention details.
+Before tooling or full PCBA release, complete actual
 assembly/RF/power review and whole-assembly dust/immersion testing. Türkiye operator
 service and moving-animal coverage remain open. Factory assembly/programming/test
 is still required; no end-user soldering is intended.

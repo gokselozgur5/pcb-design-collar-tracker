@@ -9,13 +9,14 @@ comfort across dog sizes and coat types still need physical validation.
 40 × 32 mm with four copper layers, two continuous inner GND planes, no remaining
 return-via screen gaps and a clear projected nano-SIM entry lane. eSIM is deferred.
 
-The [swimming enclosure prototype](mechanical/swim-r01/README.md) adds a sealed lid,
-charging-contact seals and collar mount. IP68 is the design target, not a test
+The [swimming enclosure prototype](mechanical/swim-r02-fit/README.md) adds a sealed lid,
+charging-contact seals and collar mount. Its r02 revision checks component heights
+at actual placements and clears the carrier/contact hardware. IP68 is the design target, not a test
 result. Battery/antenna fit, SMT assembly and powered/RF/ingress qualification
 remain open. [STATUS](docs/STATUS.md) records the exact evidence and next action.
 
-[Design review PDF](mechanical/swim-r01/review.pdf) ·
-[Complete review bundle](release/collar-tracker-r04i-swim-r01-review.zip) ·
+[Design review PDF](mechanical/swim-r02-fit/review.pdf) ·
+[Complete review bundle](release/collar-tracker-r04i-swim-r02-fit-review.zip) ·
 [Current Gerber ZIP](experiments/paul-nanosim-r04i-sim-access-40x32/evidence/collar-tracker-04i-final-40x32-dfm.zip) ·
 [JLC report 1](experiments/paul-nanosim-r04i-sim-access-40x32/evidence/jlc-check1/report.pdf) ·
 [JLC report 2](experiments/paul-nanosim-r04i-sim-access-40x32/evidence/jlc-check2/report.pdf)
@@ -102,7 +103,7 @@ either 35 × 28 mm or 40 × 32 mm. Its 250 mAh example targets a 38 × 30 × 14 
 enclosure, or 14.6 mm including an assumed contact protrusion. Antennas, the heart-rate head and much of
 the electronics are reserved volumes, not fitted production components.
 
-The new `mechanical/swim-r01/` model targets the current 40 × 32 mm board.
+The new `mechanical/swim-r02-fit/` model targets the current 40 × 32 mm board.
 Battery capacity, charge interval, position-update rate and final antennas remain open. Earlier cost ranges were estimates, not supplier quotes, and did not
 include heart-rate hardware.
 
@@ -112,7 +113,7 @@ include heart-rate hardware.
 |---|---|
 | `experiments/35x28-clearance-r034/hardware/` | Native source that passed local and JLC PCB DFM checks |
 | `experiments/paul-nanosim-r04i-sim-access-40x32/` | Current native source, access/topology/ground checks and two verified JLC passes |
-| `mechanical/swim-r01/` | Parametric swimming enclosure prototype; physical qualification pending |
+| `mechanical/swim-r02-fit/` | Parametric swimming enclosure prototype; physical qualification pending |
 | `scripts/finalize_clearance034.py` | Binds source, local checks, JLC reports and the exact delivered ZIP |
 | `hardware/` | Legacy KiCad project, PCB, five-section A2 schematic and draft BOM |
 | `scripts/build_pcb.py` | Builds the legacy PCB from the real XML netlist |

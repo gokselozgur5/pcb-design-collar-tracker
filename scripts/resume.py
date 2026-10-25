@@ -14,7 +14,7 @@ except (ValueError, OSError, KeyError) as error:
 print(f'Project: {root}')
 print('Baseline: 0.3.4 saved PCB DFM evidence verified; not production acceptance.')
 print('Current: r04i native/geometry evidence and two unchanged-rule JLC PCB passes verified.')
-print('Mechanical: swim-r01 is a prototype; read its README for remaining fit and qualification work.')
+print('Mechanical: swim-r02 populated fit verified; pack, antennas, final assembly and physical qualification remain open.')
 print('Git:')
 sys.stdout.flush()
 subprocess.run(['git', 'status', '--short', '--branch'], cwd=root, check=True)

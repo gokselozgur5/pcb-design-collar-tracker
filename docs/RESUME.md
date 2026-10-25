@@ -46,13 +46,21 @@ The final r04i PCB and its ZIP passed native checks and two actual JLC analyses;
 read STATUS and `evidence/routing-checkpoint.json` for the exact identities.
 Do not overwrite the tested source/package. Start a new revision for PCB changes.
 
-The active unfinished work is the swimming enclosure in `mechanical/swim-r01/`.
-Read its README, two-page `review.pdf` and parameter/check files. The exported
-meshes and dimensioned review package are complete at prototype scope. Replace
-reservations with approved battery, antenna, component-height and charging-dock
-parts next; preserve r01 evidence when starting a new mechanical revision. The user chose swimming/IP68;
-2 m / 60 min and magnetic contacts are provisional engineering assumptions.
-No physical IP, powered, RF or factory assembly acceptance exists.
+The active unfinished work is the protected NTC pack and LTE/GNSS antenna
+selection, followed by their actual cable/clearance fit, dock/harness and positive
+PCB retention. Read `mechanical/swim-r02-fit/README.md` and its selection review.
+The 49 component-height entries and four pad/harness areas have passed their
+current dimensional screen, not factory or physical qualification.
+
+```sh
+.venv-dfm/bin/python -m unittest discover -s tests -p test_populated_fit.py -v
+python3 scripts/verify_handoff.py
+```
+
+For a deliberate mechanical revision, copy the active directory first and follow
+its reproduction commands. Do not overwrite checked r01/r02 bundles or their
+inputs while experimenting. The exact next action is in STATUS.
+
 
 The r04i builder records only the initial isolated placement, not all subsequent
 manual routing. The saved native source and hash-bound evidence are authoritative.

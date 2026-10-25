@@ -122,8 +122,61 @@ def verify_mechanical(pcb_sha):
             'result': 'PASS', 'ingress_qualified': False}
 
 
-def verify_review_bundle():
-    sidecar = read_json('release/collar-tracker-r04i-swim-r01-review.json')
+def verify_populated_fit(pcb_sha):
+    folder = ROOT / 'mechanical/swim-r02-fit'
+    native = json.loads((folder / 'components.native.json').read_text())
+    profile = json.loads((folder / 'fit-profile.json').read_text())
+    fit = json.loads((folder / 'populated-fit.json').read_text())
+    shell = json.loads((folder / 'checks.json').read_text())
+    meshes = json.loads((folder / 'mesh-checks.json').read_text())
+    require(native['source_sha256'] == fit['pcb_sha256'] == shell['source_sha256']
+            == meshes['pcb_sha256'] == pcb_sha, 'Populated fit references another PCB')
+    require(sha(ROOT / native['source']) == pcb_sha, 'Populated native input changed')
+    require(native['exporter_sha256'] == sha(ROOT / 'scripts/export_populated_geometry.py'),
+            'Populated exporter changed; regenerate geometry')
+    require(fit['checker_sha256'] == sha(ROOT / 'scripts/audit_populated_fit.py'),
+            'Populated checker changed; regenerate fit report')
+    require(len(native['parts']) == len(profile['parts']) == 55,
+            'Incomplete populated footprint/profile count')
+    require(fit['checked'] == 53 and fit['checked_geometry_pass'] and not fit['violations']
+            and all(c['pass_'] for c in fit['hardware_checks']), 'Populated geometry screen failed')
+    require(not fit['production_assembly_complete'] and fit['open_items'],
+            'Fit prototype unexpectedly claims complete assembly')
+    require(any(v['ref'] == 'D1' and v['obstacle'] == 'carrier ledge'
+                for v in fit['original_carrier_violations']), 'Missing original carrier regression')
+    for name, digest in fit['input_sha256'].items():
+        require(sha(folder / name) == digest, f'Populated fit input changed: {name}')
+    require(shell['parameter_sha256'] == sha(folder / 'parameters.json')
+            and shell['checker_sha256'] == sha(ROOT / 'scripts/build_swim_enclosure.py')
+            and len(shell['checks']) == 30 and all(c['pass_'] for c in shell['checks']),
+            'Populated shell checks stale or failed')
+    for name, digest in meshes['cad_input_sha256'].items():
+        require(sha(folder / name) == digest, f'Populated CAD input changed: {name}')
+    require(meshes['exporter_sha256'] == sha(ROOT / 'scripts/export_populated_enclosure.py'),
+            'Populated mesh exporter changed')
+    require(len(meshes['meshes']) == 8 and len(meshes['previews']) == 4,
+            'Incomplete populated mesh/preview set')
+    for mesh in meshes['meshes']:
+        require(sha(folder / mesh['file']) == mesh['sha256'] and mesh['closed_oriented_manifold']
+                and mesh['connected_surfaces'] == 1 and mesh['bad_edge_count'] == 0,
+                f'Populated mesh failed or changed: {mesh["file"]}')
+    for name, digest in meshes['previews'].items():
+        require(sha(folder / name) == digest, f'Populated preview changed: {name}')
+    controls = {c['case']: c for c in meshes['intersection_controls']}
+    require(set(controls) == {'current-carrier', 'original-carrier'}, 'Incomplete CAD controls')
+    require(controls['current-carrier']['source_sha256'] == sha(folder / 'enclosure.scad')
+            and controls['current-carrier']['empty'] and controls['current-carrier']['returncode'] == 1
+            and controls['current-carrier']['interference_volume_mm3'] == 0,
+            'Current CAD interference control failed')
+    require(not controls['original-carrier']['empty'] and controls['original-carrier']['returncode'] == 0
+            and controls['original-carrier']['interference_volume_mm3'] > 0,
+            'Original CAD interference control did not detect the defect')
+    return {'revision': 'swim-r02-fit', 'checked_entries': 53, 'closed_meshes': 8,
+            'result': 'PASS', 'ingress_qualified': False, 'production_assembly_complete': False}
+
+
+def verify_review_bundle(sidecar_path='release/collar-tracker-r04i-swim-r01-review.json'):
+    sidecar = read_json(sidecar_path)
     path = ROOT / sidecar['package']
     require(path.is_relative_to(ROOT / 'release') and sha(path) == sidecar['zip_sha256'],
             'Review bundle identity mismatch')
@@ -143,6 +196,10 @@ def verify_review_bundle():
                 source = (ROOT / item['source_path']).resolve()
                 require(source.is_relative_to(ROOT) and sha(source) == item['sha256'],
                         f'Review bundle is stale: {item["source_path"]}')
+            if item.get('derived_from'):
+                source = (ROOT / item['derived_from']).resolve()
+                require(source.is_relative_to(ROOT) and sha(source) == item['derived_from_sha256'],
+                        f'Derived review input is stale: {item["derived_from"]}')
     return {'files': len(names), 'zip_sha256': sidecar['zip_sha256'], 'result': 'PASS'}
 
 
@@ -209,10 +266,12 @@ def verify(include_review_bundle=True):
                 f'Local/private runtime tracked: {name}')
     current=verify_current()
     mechanical=verify_mechanical(current['source_sha256'])
+    populated_fit=verify_populated_fit(current['source_sha256'])
     return {'baseline_revision': '0.3.4', 'evidence_files': len(manifest['files']),
             'supplier_records': sorted(records), 'result': 'PASS',
-            'current':current, 'mechanical':mechanical,
+            'current':current, 'mechanical':mechanical, 'populated_fit':populated_fit,
             'review_bundle':verify_review_bundle() if include_review_bundle else 'Rebuild in progress',
+            'populated_review_bundle':verify_review_bundle('release/collar-tracker-r04i-swim-r02-fit-review.json') if include_review_bundle else 'Rebuild in progress',
             'scope': 'Saved PCB evidence, declared mechanical checks and artifact integrity. No new KiCad/JLC run or PCBA, powered, RF or ingress acceptance.'}
 
 

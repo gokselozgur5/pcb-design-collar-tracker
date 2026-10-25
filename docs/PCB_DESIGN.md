@@ -331,6 +331,14 @@ not a growing diary inside this guide.
 - Inspect exported mechanical solids as well as CAD previews. Bind mesh checks
   to their inputs and verify bounds, edge closure and connected surfaces. This
   detects export/model defects; it does not establish physical sealing.
+- Check component heights at actual PCB placements, including mated connectors,
+  solder/warp allowances and factory wire terminations. Treat unresolved harness
+  limits as requirements, not purchased parts. Native board bounding boxes can
+  include Edge.Cuts stroke width; use the physical outline for board dimensions.
+- Check contact backing hardware and carrier topology together. A relief that
+  clears a nut can split a carrier into disconnected pieces. Retain bridging
+  material, inspect the exported mesh, and use a deliberately failing CAD variant
+  to prove that the interference checker can detect the original problem.
 - Specify immersion conditions separately from an IP68 design target. Complete
   battery, antenna, charging and assembly definitions before tooling; qualify
   the final assembly for ingress, power, RF and retention with physical tests.

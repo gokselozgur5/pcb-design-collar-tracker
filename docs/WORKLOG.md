@@ -187,3 +187,26 @@ Their evidence is dated; do not transfer an older pass to a newer source file.
 - Next: Select the actual protected pack, antennas, dock/harness, seal compounds
   and fasteners; replace component-height reservations and review fit/assembly.
   Qualify the final physical assembly. No IP rating or production readiness is claimed.
+
+## 2026-10-25 — Check populated fit and revise the carrier/contact retention
+
+- Event: Replaced blanket component-height reservations with the actual r04i
+  placement export and sourced height profiles, preserving the tested PCB bytes.
+- Decision: Treat generic-part MPNs and harness bounds as candidates/requirements.
+  Retain the old carrier and M4 hardware as rejected fit cases; keep battery and
+  antenna approval open when available drawings do not establish suitability.
+- Result: 49 component entries, two harness requirements and two bare-pad areas
+  pass the declared geometry screen. D1 gets a carrier relief. Contact retention
+  changes to M3 with centers at Z=5.5 mm and shallow carrier underside reliefs;
+  the 1 mm bridges retain a single connected carrier. Outer dimensions unchanged.
+  Six regressions pass; the revised CAD interference is empty and the old carrier
+  produces a positive interference solid. Eight actual meshes and four previews
+  pass integrity checks; both updated review pages were visually inspected.
+- Package: 132 files with native PCB/CAD, both clean JLC reports, fit evidence and
+  self-contained source-reference links. SHA256:
+  `ea960e01f39e7b31aef930359a82b7b360e9e6c4a1fb232dad78c8d7f7032206`.
+  The first local packaging attempt was retained under ignored runtime storage;
+  the final bundle fixes relative documentation links. r01 is unchanged.
+- Next: Final protected pack/NTC and antenna/feed/cable selections, harness/dock,
+  positive PCB retention, material/seal/fastener/torque definition and physical
+  fit, ingress, power, RF and assembly qualification. The active goal is unfinished.
