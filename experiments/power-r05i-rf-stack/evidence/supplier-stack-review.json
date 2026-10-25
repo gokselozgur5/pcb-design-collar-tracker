@@ -1,0 +1,224 @@
+{
+  "observed_date": "2026-10-25",
+  "source": "https://jlcpcb.com/pcb-impedance-calculator",
+  "guide": "https://jlcpcb.com/help/article/user-guide-to-the-jlcpcb-impedance-calculator",
+  "scope": "Sanitized technical fields from anonymous public calculator. Request access IDs, staff fields and session/browser state omitted. Calculator output is not supplier acceptance.",
+  "catalog": [
+    {
+      "name": "JLC06081H-7628",
+      "display_name": "JLC06081H-7628(Finished thickness0.81\u00b10.10mm)",
+      "layers": 6,
+      "nominal_mm": 0.8,
+      "materials": [
+        {
+          "layerName": "L1",
+          "material": "Copper",
+          "materialName": "1oz",
+          "dielectricThick": 0.0,
+          "dielectricConstant": 4.2,
+          "topConductorThick": 0.035,
+          "botConductorThick": 0.0
+        },
+        {
+          "layerName": null,
+          "material": "Prepreg",
+          "materialName": "7628, RC 49%, 8.6 mil",
+          "dielectricThick": 0.2104,
+          "dielectricConstant": 4.4,
+          "topConductorThick": 0.0,
+          "botConductorThick": 0.0
+        },
+        {
+          "layerName": "L2/L3",
+          "material": "Core",
+          "materialName": "0.075mm H/HOZ without copper",
+          "dielectricThick": 0.075,
+          "dielectricConstant": 3.99,
+          "topConductorThick": 0.0152,
+          "botConductorThick": 0.0152
+        },
+        {
+          "layerName": null,
+          "material": "Prepreg",
+          "materialName": "2116  RC54% 4.9mil",
+          "dielectricThick": 0.1088,
+          "dielectricConstant": 4.16,
+          "topConductorThick": 0.0,
+          "botConductorThick": 0.0
+        },
+        {
+          "layerName": "L4/L5",
+          "material": "Core",
+          "materialName": "0.075mm H/HOZ without copper",
+          "dielectricThick": 0.075,
+          "dielectricConstant": 3.99,
+          "topConductorThick": 0.0152,
+          "botConductorThick": 0.0152
+        },
+        {
+          "layerName": null,
+          "material": "Prepreg",
+          "materialName": "7628, RC 49%, 8.6 mil",
+          "dielectricThick": 0.2104,
+          "dielectricConstant": 4.4,
+          "topConductorThick": 0.0,
+          "botConductorThick": 0.0
+        },
+        {
+          "layerName": "L6",
+          "material": "Copper",
+          "materialName": "1oz",
+          "dielectricThick": 0.0,
+          "dielectricConstant": 4.2,
+          "topConductorThick": 0.035,
+          "botConductorThick": 0.0
+        }
+      ]
+    },
+    {
+      "name": "JLC06081H-2116",
+      "display_name": "JLC06081H-2116(Standard/Finished thickness0.83\u00b10.10mm)",
+      "layers": 6,
+      "nominal_mm": 0.8,
+      "materials": [
+        {
+          "layerName": "L1",
+          "material": "Copper",
+          "materialName": "1oz",
+          "dielectricThick": 0.0,
+          "dielectricConstant": 4.2,
+          "topConductorThick": 0.035,
+          "botConductorThick": 0.0
+        },
+        {
+          "layerName": null,
+          "material": "Prepreg",
+          "materialName": "2116  RC54% 4.9mil",
+          "dielectricThick": 0.1164,
+          "dielectricConstant": 4.16,
+          "topConductorThick": 0.0,
+          "botConductorThick": 0.0
+        },
+        {
+          "layerName": "L2/L3",
+          "material": "Core",
+          "materialName": "0.13mm H/HOZ without copper",
+          "dielectricThick": 0.13,
+          "dielectricConstant": 4.17,
+          "topConductorThick": 0.0152,
+          "botConductorThick": 0.0152
+        },
+        {
+          "layerName": null,
+          "material": "Prepreg",
+          "materialName": "7628, RC 49%, 8.6 mil",
+          "dielectricThick": 0.2028,
+          "dielectricConstant": 4.4,
+          "topConductorThick": 0.0,
+          "botConductorThick": 0.0
+        },
+        {
+          "layerName": "L4/L5",
+          "material": "Core",
+          "materialName": "0.13mm H/HOZ without copper",
+          "dielectricThick": 0.13,
+          "dielectricConstant": 4.17,
+          "topConductorThick": 0.0152,
+          "botConductorThick": 0.0152
+        },
+        {
+          "layerName": null,
+          "material": "Prepreg",
+          "materialName": "2116  RC54% 4.9mil",
+          "dielectricThick": 0.1164,
+          "dielectricConstant": 4.16,
+          "topConductorThick": 0.0,
+          "botConductorThick": 0.0
+        },
+        {
+          "layerName": "L6",
+          "material": "Copper",
+          "materialName": "1oz",
+          "dielectricThick": 0.0,
+          "dielectricConstant": 4.2,
+          "topConductorThick": 0.035,
+          "botConductorThick": 0.0
+        }
+      ]
+    }
+  ],
+  "calculations": [
+    {
+      "stack": "JLC06081H-7628",
+      "model": "W2_CoatedMicrostrip1B",
+      "arguments_mil": {
+        "H1": 8.2835,
+        "Er1": 4.3,
+        "W1": 8,
+        "W2": 7.5,
+        "T1": 1.6,
+        "C1": 1,
+        "C2": 0.6,
+        "CEr": 3.8,
+        "Zo": 50,
+        "dCalculateMode": 3,
+        "isLinkComputingMode": false,
+        "W2LinkW1Incr": 0.5,
+        "ZoTol": 0.5,
+        "MinW2": 2,
+        "MaxW2": 150
+      },
+      "result": {
+        "dCer": 122.03268389,
+        "dDelay": 6081.67817995,
+        "dErEff": 3.32420958834,
+        "dImpedance": 49.8364699201,
+        "dInductance": 303.089371679,
+        "dResultValid": 1,
+        "jBackCalc": {
+          "W1": 14.123046875,
+          "W2": 13.623046875
+        }
+      }
+    },
+    {
+      "stack": "JLC06081H-2116",
+      "model": "W2_CoatedMicrostrip1B",
+      "arguments_mil": {
+        "H1": 4.5827,
+        "Er1": 4.3,
+        "W1": 8,
+        "W2": 7.5,
+        "T1": 1.6,
+        "C1": 1,
+        "C2": 0.6,
+        "CEr": 3.8,
+        "Zo": 50,
+        "dCalculateMode": 3,
+        "isLinkComputingMode": false,
+        "W2LinkW1Incr": 0.5,
+        "ZoTol": 0.5,
+        "MinW2": 2,
+        "MaxW2": 150
+      },
+      "result": {
+        "dCer": 121.996947021,
+        "dDelay": 6104.53225364,
+        "dErEff": 3.34924033612,
+        "dImpedance": 50.0384018018,
+        "dInductance": 305.46103772,
+        "dResultValid": 1,
+        "jBackCalc": {
+          "W1": 7.140625,
+          "W2": 6.640625
+        }
+      }
+    }
+  ],
+  "discrepancies": [
+    "Calculator requests use Er1=4.3; catalog outer prepreg lists 4.4 (7628) and 4.16 (2116).",
+    "Guide specifies trace base-to-top difference 0.7 mil and base mask 1.2 mil; live request uses 0.5 mil and 1.0 mil.",
+    "Catalog 7628 copper/dielectric sum is 0.8104 mm before explicit mask, while finished label is 0.81 +/- 0.10 mm."
+  ],
+  "decision": "7628/.36 mm is a prototype candidate, pending supplier stack/material/etch/mask confirmation and RF measurement. Do not call it qualified 50 ohms."
+}

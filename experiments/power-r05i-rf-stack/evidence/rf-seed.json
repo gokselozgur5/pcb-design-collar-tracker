@@ -1,0 +1,305 @@
+{
+  "baseline_sha256": "aecb8e431819fa2aa23dfecc98ff1f6a064b5ae81afe7679a6e317f3571c3171",
+  "source_sha256": "0db809c4ecefbf577db1001164886709708f02ab6ba54f7a572e948583d726a1",
+  "schematic_sha256": "32313876fa5865fffa32f9b993970a1ffb4405f1824c1104e18ddba8bcc8ba96",
+  "changed_original_tracks": [
+    {
+      "id": "662c563f-519d-453e-afc4-45cf30562d63",
+      "net": "/GNSS_FEM_OUT",
+      "old_start": [
+        121.812,
+        117.644
+      ],
+      "old_end": [
+        121.8125,
+        117.6435
+      ],
+      "old_width_mm": 0.2
+    },
+    {
+      "id": "9c993c9b-0101-4d5a-9639-4ebb303ea8e8",
+      "net": "/GNSS_FEM_OUT",
+      "old_start": [
+        119.78,
+        117.65
+      ],
+      "old_end": [
+        121.81249,
+        117.6435
+      ],
+      "old_width_mm": 0.2
+    },
+    {
+      "id": "16cf6c80-2479-4275-a6a3-6b6e21512ee6",
+      "net": "/GPS_RF",
+      "old_start": [
+        118.3,
+        117.65
+      ],
+      "old_end": [
+        118.82,
+        117.65
+      ],
+      "old_width_mm": 0.2
+    },
+    {
+      "id": "40cfe113-2fc7-45db-914f-8fb4a0092882",
+      "net": "/GPS_RF",
+      "old_start": [
+        117.9,
+        117.25037
+      ],
+      "old_end": [
+        118.3,
+        117.65
+      ],
+      "old_width_mm": 0.2
+    },
+    {
+      "id": "9406690b-d2da-4ce9-b30b-2d877d4e1765",
+      "net": "/GPS_RF",
+      "old_start": [
+        116.625,
+        117.25
+      ],
+      "old_end": [
+        117.9,
+        117.25037
+      ],
+      "old_width_mm": 0.2
+    },
+    {
+      "id": "05141ad2-65f9-4262-b546-5bd6532f5f34",
+      "net": "/GNSS_ANT",
+      "old_start": [
+        125.475,
+        113.1
+      ],
+      "old_end": [
+        126.775,
+        111.8
+      ],
+      "old_width_mm": 0.2
+    },
+    {
+      "id": "c2c89658-325d-4429-a026-1494006ae5bd",
+      "net": "/GNSS_ANT",
+      "old_start": [
+        124.98,
+        113.1
+      ],
+      "old_end": [
+        125.475,
+        113.1
+      ],
+      "old_width_mm": 0.2
+    },
+    {
+      "id": "22d6dd2d-1fd0-41f6-a2ac-10b576bbee88",
+      "net": "/LTE_RF",
+      "old_start": [
+        113.25003,
+        118.125
+      ],
+      "old_end": [
+        113.25,
+        120.04
+      ],
+      "old_width_mm": 0.2
+    },
+    {
+      "id": "260a5bab-f3fe-4bf3-b9ba-6ca7e7ba543f",
+      "net": "/LTE_RF",
+      "old_start": [
+        111.68,
+        120.3
+      ],
+      "old_end": [
+        112.99,
+        120.3
+      ],
+      "old_width_mm": 0.2
+    },
+    {
+      "id": "f3a68b86-a912-40e8-a52a-ce822e3d7de0",
+      "net": "/LTE_RF",
+      "old_start": [
+        113.25,
+        120.04
+      ],
+      "old_end": [
+        112.99,
+        120.3
+      ],
+      "old_width_mm": 0.2
+    },
+    {
+      "id": "1a9038ae-88c5-4078-baa0-d72f92b8129e",
+      "net": "/GNSS_FEM_IN",
+      "old_start": [
+        124.1875,
+        115.3565
+      ],
+      "old_end": [
+        124.188,
+        115.356
+      ],
+      "old_width_mm": 0.2
+    },
+    {
+      "id": "492968a3-88b2-4bc0-9854-e628f624f48c",
+      "net": "/GNSS_FEM_IN",
+      "old_start": [
+        124.1875,
+        113.2675
+      ],
+      "old_end": [
+        124.02,
+        113.1
+      ],
+      "old_width_mm": 0.2
+    },
+    {
+      "id": "9ceb98f1-7008-4734-9e40-892477494f5e",
+      "net": "/GNSS_FEM_IN",
+      "old_start": [
+        124.1875,
+        115.3565
+      ],
+      "old_end": [
+        124.1875,
+        113.2675
+      ],
+      "old_width_mm": 0.2
+    },
+    {
+      "id": "19b569f0-4f7b-49eb-b3bd-f3eaf627b867",
+      "net": "/LTE_ANT",
+      "old_start": [
+        116.675,
+        122.4
+      ],
+      "old_end": [
+        116.775,
+        122.3
+      ],
+      "old_width_mm": 0.2
+    },
+    {
+      "id": "626a5f91-78a6-47d9-9b31-40a54e5bd471",
+      "net": "/LTE_ANT",
+      "old_start": [
+        113.98,
+        122.4
+      ],
+      "old_end": [
+        116.675,
+        122.4
+      ],
+      "old_width_mm": 0.2
+    },
+    {
+      "id": "6ec8d125-5ec8-4414-bb99-5be985a321e6",
+      "net": "/LTE_ANT",
+      "old_start": [
+        116.775,
+        122.275
+      ],
+      "old_end": [
+        116.775,
+        122.3
+      ],
+      "old_width_mm": 0.2
+    },
+    {
+      "id": "9dbd134d-d92c-4ebe-8a54-2bc1251255b6",
+      "net": "/LTE_ANT",
+      "old_start": [
+        114.8,
+        120.3
+      ],
+      "old_end": [
+        116.775,
+        122.275
+      ],
+      "old_width_mm": 0.2
+    },
+    {
+      "id": "adf13514-e385-4d81-ab84-acc428a440eb",
+      "net": "/LTE_ANT",
+      "old_start": [
+        114.01,
+        120.3
+      ],
+      "old_end": [
+        114.8,
+        120.3
+      ],
+      "old_width_mm": 0.2
+    }
+  ],
+  "added_escapes": [
+    {
+      "id": "ca04a75f-f0f5-4e86-a0ba-4ffe22130714",
+      "net": "/GPS_RF",
+      "start": [
+        116.625,
+        117.25
+      ],
+      "end": [
+        116.975,
+        117.25
+      ],
+      "width_mm": 0.2
+    },
+    {
+      "id": "89075973-ad18-4830-9d90-cee184cd57a1",
+      "net": "/GPS_RF",
+      "start": [
+        116.975,
+        117.25
+      ],
+      "end": [
+        117.125,
+        117.25
+      ],
+      "width_mm": 0.28
+    },
+    {
+      "id": "811804a1-1429-4a3c-bed5-a2c1884e229f",
+      "net": "/LTE_RF",
+      "start": [
+        113.25003,
+        118.125
+      ],
+      "end": [
+        113.25003,
+        118.475
+      ],
+      "width_mm": 0.2
+    },
+    {
+      "id": "007860a0-9089-4071-a9f6-93a72c1c8352",
+      "net": "/LTE_RF",
+      "start": [
+        113.25003,
+        118.475
+      ],
+      "end": [
+        113.25003,
+        118.625
+      ],
+      "width_mm": 0.28
+    }
+  ],
+  "native_terminal_groups_preserved": 203,
+  "supplier_stack_candidate": "JLC06081H-7628",
+  "target_port_impedance_ohms": 50,
+  "prototype_track_width_mm": 0.36,
+  "calculator_width_mm": 0.3586,
+  "catalog_copper_and_dielectric_mm": 0.8104,
+  "cad_with_mask_mm": 0.84088,
+  "catalog_finished_mm": 0.81,
+  "catalog_finished_tolerance_mm": 0.1,
+  "scope": "RF geometry trial only. Supplier parameter discrepancies, escapes, pad capacitance, matching stubs and physical RF remain unqualified."
+}
