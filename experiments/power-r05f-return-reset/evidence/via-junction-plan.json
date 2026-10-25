@@ -1,0 +1,277 @@
+{
+  "source_sha256": "6ed452fe4a39713fbddcc027b7a848861c873b520c677d0c7047717495f2b271",
+  "drc_sha256": "328884c95c4ba1b3ead1c64b5ae174eaf41fe03b4049d3cb801b1f629fa3a061",
+  "accepted": [
+    {
+      "via": {
+        "id": "753bdfb5-ebcf-4305-b7fb-455d1458dfed",
+        "net": "/VBAT",
+        "pos": [
+          135.0,
+          109.75
+        ],
+        "diameter": 0.6,
+        "drill": 0.2,
+        "layers": [
+          "F.Cu",
+          "In1.Cu",
+          "In2.Cu",
+          "B.Cu"
+        ]
+      },
+      "paths": [
+        {
+          "start": [
+            135.0,
+            109.75
+          ],
+          "end": [
+            135.0,
+            109.5
+          ],
+          "width": 0.2,
+          "layer": "F.Cu",
+          "net": "/VBAT"
+        },
+        {
+          "start": [
+            135.0,
+            109.75
+          ],
+          "end": [
+            135.0,
+            109.45
+          ],
+          "width": 0.2,
+          "layer": "F.Cu",
+          "net": "/VBAT"
+        }
+      ],
+      "outside_mm2": 0.0,
+      "touching_track_ids": [
+        "37e0b053-9858-4ed6-8934-4fb81b3a3b4f",
+        "412bd059-435f-4e83-bf8b-1e16c7b62fa1",
+        "c9c5c56d-147f-43c9-b7d2-fc8bd75c401d",
+        "cb5debb1-c5f4-4cec-859c-8ecca0e83cf0",
+        "cc13f996-793e-48ec-a0e6-afc7e6ec4d4d"
+      ]
+    },
+    {
+      "via": {
+        "id": "85fd0ae7-d0c6-4ad8-bbfe-3174a8bbd76f",
+        "net": "/VIO_DISCHARGE",
+        "pos": [
+          135.8,
+          124.25
+        ],
+        "diameter": 0.6,
+        "drill": 0.2,
+        "layers": [
+          "F.Cu",
+          "In1.Cu",
+          "In2.Cu",
+          "B.Cu"
+        ]
+      },
+      "paths": [
+        {
+          "start": [
+            135.8,
+            124.25
+          ],
+          "end": [
+            135.7,
+            124.15
+          ],
+          "width": 0.2,
+          "layer": "F.Cu",
+          "net": "/VIO_DISCHARGE"
+        }
+      ],
+      "outside_mm2": 0.0,
+      "touching_track_ids": [
+        "38274587-f56a-4936-9ada-7c8f0e2f764a",
+        "58703d9a-032b-49e4-a5e9-e536719b250d",
+        "5a2b1c27-970b-436f-894a-9c44fe18e8ec"
+      ]
+    },
+    {
+      "via": {
+        "id": "a6524f76-ed93-4323-ace7-c7b314441182",
+        "net": "/VIO_DELAY",
+        "pos": [
+          114.25,
+          121.3
+        ],
+        "diameter": 0.6,
+        "drill": 0.2,
+        "layers": [
+          "F.Cu",
+          "In1.Cu",
+          "In2.Cu",
+          "B.Cu"
+        ]
+      },
+      "paths": [
+        {
+          "start": [
+            114.25,
+            121.3
+          ],
+          "end": [
+            114.25,
+            121.3125
+          ],
+          "width": 0.2,
+          "layer": "B.Cu",
+          "net": "/VIO_DELAY"
+        },
+        {
+          "start": [
+            114.25,
+            121.3
+          ],
+          "end": [
+            114.25,
+            121.53
+          ],
+          "width": 0.2,
+          "layer": "B.Cu",
+          "net": "/VIO_DELAY"
+        }
+      ],
+      "outside_mm2": 0.0,
+      "touching_track_ids": [
+        "281fd26f-d320-4d28-bd8c-3f966869938f",
+        "91067e1e-06d9-4eea-a9fb-6183c44f7de4",
+        "c5c1d965-8190-45d2-afcd-f05b82bdc065",
+        "d06ff758-9029-4e45-9db3-3d0f55990742"
+      ]
+    },
+    {
+      "via": {
+        "id": "ca05ad79-8830-4dd8-984b-db4eaa9c853e",
+        "net": "/VDD_NRF",
+        "pos": [
+          110.15,
+          127.95
+        ],
+        "diameter": 0.6,
+        "drill": 0.2,
+        "layers": [
+          "F.Cu",
+          "In1.Cu",
+          "In2.Cu",
+          "B.Cu"
+        ]
+      },
+      "paths": [],
+      "outside_mm2": 0.0,
+      "touching_track_ids": [
+        "577f79b4-9ca0-44dd-8240-9cf2e774a59d",
+        "bced328a-6aa6-4da6-90be-36461c3b5a68"
+      ]
+    },
+    {
+      "via": {
+        "id": "ec8abd49-a7c5-4069-b32f-24c2d4f7757a",
+        "net": "/I2C_SCL",
+        "pos": [
+          135.0,
+          113.75
+        ],
+        "diameter": 0.6,
+        "drill": 0.2,
+        "layers": [
+          "F.Cu",
+          "In1.Cu",
+          "In2.Cu",
+          "B.Cu"
+        ]
+      },
+      "paths": [],
+      "outside_mm2": 0.0,
+      "touching_track_ids": [
+        "98d3a000-f3b6-4b9b-8451-0f98ccfa05b0",
+        "a044cd6c-88a6-4819-aad8-5a6f25cd8352"
+      ]
+    }
+  ],
+  "rejected": [
+    {
+      "id": "0399610d-fc40-40cd-980d-5463b6ce8113",
+      "net": "/VIO_1V8",
+      "reason": "Replacement would add copper outside the source",
+      "outside_mm2": 0.0007718528967934447
+    },
+    {
+      "id": "2b625c49-9e73-42b5-b287-7c1afe3834a5",
+      "net": "/POWER_FAULT",
+      "reason": "Not a simple single-layer track junction",
+      "layers": [
+        "F.Cu"
+      ],
+      "tracks": 1,
+      "pads": []
+    },
+    {
+      "id": "447d5243-3bb7-4619-9a5f-1c5db9c4802e",
+      "net": "/POWER_FAULT",
+      "reason": "Not a simple single-layer track junction",
+      "layers": [
+        "F.Cu"
+      ],
+      "tracks": 1,
+      "pads": []
+    },
+    {
+      "id": "5d38fa9d-a8a3-4890-a4f7-6d0b234b87c5",
+      "net": "/POWER_GOOD",
+      "reason": "Not a simple single-layer track junction",
+      "layers": [
+        "B.Cu"
+      ],
+      "tracks": 1,
+      "pads": []
+    },
+    {
+      "id": "67c894e5-f7a3-4f0f-b1fb-df67908ba51a",
+      "net": "/VIO_DISCHARGE",
+      "reason": "Not a simple single-layer track junction",
+      "layers": [
+        "F.Cu"
+      ],
+      "tracks": 1,
+      "pads": []
+    },
+    {
+      "id": "73454e8a-3a9c-4972-a463-08c21ec0d46c",
+      "net": "/UV_DELAY",
+      "reason": "Replacement would add copper outside the source",
+      "outside_mm2": 0.0008761599490092207
+    },
+    {
+      "id": "757aa401-9c05-49cf-9185-abf0a6646b86",
+      "net": "/POWER_GOOD",
+      "reason": "Replacement would add copper outside the source",
+      "outside_mm2": 0.0005383161081492161
+    },
+    {
+      "id": "7849e765-16fd-43b5-9201-e512c8571e29",
+      "net": "/VBAT",
+      "reason": "Not a simple single-layer track junction",
+      "layers": [
+        "F.Cu"
+      ],
+      "tracks": 1,
+      "pads": []
+    },
+    {
+      "id": "c12f6286-78cc-4a2c-98f4-cc904887440d",
+      "net": "/VIO_1V8",
+      "reason": "Replacement would add copper outside the source",
+      "outside_mm2": 2.5973597370795317e-05
+    }
+  ],
+  "scope": "Geometric proposal only; native terminal-group and DRC checks remain required."
+}

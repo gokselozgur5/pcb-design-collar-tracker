@@ -1,0 +1,5 @@
+{
+  "source": "experiments/power-r05c-return-corridors",
+  "source_sha256": "74db248dedc96a0dd6f137ae8d443dc26bd2ce7fbad404614d4f19424e5acfd1",
+  "scope": "Independent preserved-signal trial: release only return stitches, then route original eight opens."
+}

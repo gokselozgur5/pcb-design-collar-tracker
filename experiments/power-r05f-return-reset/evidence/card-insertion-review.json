@@ -1,0 +1,354 @@
+{
+  "source_sha256": "1b2b4bd7b90c3931bd8cbb151637408902332a94260d4a2a820ae6df04838a09",
+  "drawing": "references/paul-nanosim-r04/SIM8051-drawing-D6.pdf",
+  "drawing_sha256": "4fa95562ce295d7916c8badd8efcfac60280980af34d3ce6f330e888c6da475a",
+  "socket_side": "B.Cu",
+  "socket_angle_degrees": 0,
+  "card_nominal_mm": [
+    8.8,
+    12.3
+  ],
+  "nominal_entry_projection_mm": [
+    122.6,
+    98.0,
+    131.4,
+    101.9
+  ],
+  "lateral_margin_mm": 0.2,
+  "reviewed_entry_projection_mm": [
+    122.39999999999999,
+    98.0,
+    131.6,
+    101.9
+  ],
+  "parts": [
+    {
+      "ref": "C10",
+      "body_bounds_mm": [
+        135.85,
+        99.93,
+        136.95,
+        100.77
+      ],
+      "body_and_land_bounds_mm": [
+        135.64,
+        99.93,
+        137.16,
+        100.77
+      ],
+      "clearance_to_nominal_lane_mm": 4.239999999999981,
+      "clearance_to_margin_lane_mm": 4.039999999999992
+    },
+    {
+      "ref": "C17",
+      "body_bounds_mm": [
+        105.78,
+        119.7,
+        106.62,
+        120.8
+      ],
+      "body_and_land_bounds_mm": [
+        105.78,
+        119.49,
+        106.62,
+        121.01
+      ],
+      "clearance_to_nominal_lane_mm": 23.764858509993264,
+      "clearance_to_margin_lane_mm": 23.630837903045233
+    },
+    {
+      "ref": "C25",
+      "body_bounds_mm": [
+        110.955,
+        124.7,
+        112.545,
+        126.8
+      ],
+      "body_and_land_bounds_mm": [
+        110.955,
+        124.3,
+        112.545,
+        127.2
+      ],
+      "clearance_to_nominal_lane_mm": 24.553269130606612,
+      "clearance_to_margin_lane_mm": 24.472045786979056
+    },
+    {
+      "ref": "C26",
+      "body_bounds_mm": [
+        112.7,
+        121.63,
+        113.8,
+        122.47
+      ],
+      "body_and_land_bounds_mm": [
+        112.49,
+        121.63,
+        114.01,
+        122.47
+      ],
+      "clearance_to_nominal_lane_mm": 21.51885219987347,
+      "clearance_to_margin_lane_mm": 21.439799439360417
+    },
+    {
+      "ref": "C4",
+      "body_bounds_mm": [
+        104.35,
+        116.43,
+        106.05,
+        117.57
+      ],
+      "body_and_land_bounds_mm": [
+        103.975,
+        116.43,
+        106.425,
+        117.57
+      ],
+      "clearance_to_nominal_lane_mm": 21.742849974186914,
+      "clearance_to_margin_lane_mm": 21.594479039791626
+    },
+    {
+      "ref": "C8",
+      "body_bounds_mm": [
+        104.45,
+        111.8,
+        105.15,
+        112.2
+      ],
+      "body_and_land_bounds_mm": [
+        104.375,
+        111.8,
+        105.225,
+        112.2
+      ],
+      "clearance_to_nominal_lane_mm": 19.997515470677847,
+      "clearance_to_margin_lane_mm": 19.823991147092446
+    },
+    {
+      "ref": "C9",
+      "body_bounds_mm": [
+        101.005,
+        113.25,
+        102.595,
+        115.35
+      ],
+      "body_and_land_bounds_mm": [
+        101.005,
+        112.85,
+        102.595,
+        115.75
+      ],
+      "clearance_to_nominal_lane_mm": 22.805756400523084,
+      "clearance_to_margin_lane_mm": 22.630521978071993
+    },
+    {
+      "ref": "D1",
+      "body_bounds_mm": [
+        132.02,
+        98.53,
+        134.195,
+        101.04
+      ],
+      "body_and_land_bounds_mm": [
+        131.85,
+        98.53,
+        134.95,
+        101.04
+      ],
+      "clearance_to_nominal_lane_mm": 0.44999999999998863,
+      "clearance_to_margin_lane_mm": 0.25
+    },
+    {
+      "ref": "D2",
+      "body_bounds_mm": [
+        125.42,
+        115.03,
+        127.595,
+        117.54
+      ],
+      "body_and_land_bounds_mm": [
+        125.25,
+        115.03,
+        128.35,
+        117.54
+      ],
+      "clearance_to_nominal_lane_mm": 13.129999999999995,
+      "clearance_to_margin_lane_mm": 13.129999999999995
+    },
+    {
+      "ref": "J4",
+      "body_bounds_mm": null,
+      "body_and_land_bounds_mm": [
+        102.75,
+        125.25,
+        109.25,
+        126.85
+      ],
+      "clearance_to_nominal_lane_mm": 26.896932910649863,
+      "clearance_to_margin_lane_mm": 26.79822755332896
+    },
+    {
+      "ref": "J5",
+      "body_bounds_mm": null,
+      "body_and_land_bounds_mm": [
+        121.425,
+        123.965,
+        128.575,
+        126.035
+      ],
+      "clearance_to_nominal_lane_mm": 22.064999999999998,
+      "clearance_to_margin_lane_mm": 22.064999999999998
+    },
+    {
+      "ref": "J7",
+      "body_bounds_mm": null,
+      "body_and_land_bounds_mm": [
+        102.33,
+        104.965,
+        105.67,
+        107.035
+      ],
+      "clearance_to_nominal_lane_mm": 17.205206334130366,
+      "clearance_to_margin_lane_mm": 17.008442756466554
+    },
+    {
+      "ref": "R1",
+      "body_bounds_mm": [
+        101.36,
+        109.425,
+        102.24,
+        110.575
+      ],
+      "body_and_land_bounds_mm": [
+        101.36,
+        109.22,
+        102.24,
+        110.78
+      ],
+      "clearance_to_nominal_lane_mm": 21.635896098844622,
+      "clearance_to_margin_lane_mm": 21.44779708967799
+    },
+    {
+      "ref": "R14",
+      "body_bounds_mm": [
+        120.925,
+        118.56,
+        122.075,
+        119.44
+      ],
+      "body_and_land_bounds_mm": [
+        120.72,
+        118.56,
+        122.28,
+        119.44
+      ],
+      "clearance_to_nominal_lane_mm": 16.66307294588846,
+      "clearance_to_margin_lane_mm": 16.660432167263846
+    },
+    {
+      "ref": "R15",
+      "body_bounds_mm": [
+        125.425,
+        117.56,
+        126.575,
+        118.44
+      ],
+      "body_and_land_bounds_mm": [
+        125.22,
+        117.56,
+        126.78,
+        118.44
+      ],
+      "clearance_to_nominal_lane_mm": 15.659999999999997,
+      "clearance_to_margin_lane_mm": 15.659999999999997
+    },
+    {
+      "ref": "R17",
+      "body_bounds_mm": [
+        113.31,
+        125.425,
+        114.19,
+        126.575
+      ],
+      "body_and_land_bounds_mm": [
+        113.31,
+        125.22,
+        114.19,
+        126.78
+      ],
+      "clearance_to_nominal_lane_mm": 24.790129083972108,
+      "clearance_to_margin_lane_mm": 24.72299536868459
+    },
+    {
+      "ref": "R2",
+      "body_bounds_mm": [
+        104.125,
+        109.56,
+        105.275,
+        110.44
+      ],
+      "body_and_land_bounds_mm": [
+        103.92,
+        109.56,
+        105.48,
+        110.44
+      ],
+      "clearance_to_nominal_lane_mm": 18.75553251710011,
+      "clearance_to_margin_lane_mm": 18.573152667223717
+    },
+    {
+      "ref": "R8",
+      "body_bounds_mm": [
+        109.425,
+        101.56,
+        110.575,
+        102.44
+      ],
+      "body_and_land_bounds_mm": [
+        109.22,
+        101.56,
+        110.78,
+        102.44
+      ],
+      "clearance_to_nominal_lane_mm": 11.819999999999993,
+      "clearance_to_margin_lane_mm": 11.61999999999999
+    },
+    {
+      "ref": "R9",
+      "body_bounds_mm": [
+        112.425,
+        101.56,
+        113.575,
+        102.44
+      ],
+      "body_and_land_bounds_mm": [
+        112.22,
+        101.56,
+        113.78,
+        102.44
+      ],
+      "clearance_to_nominal_lane_mm": 8.819999999999993,
+      "clearance_to_margin_lane_mm": 8.61999999999999
+    },
+    {
+      "ref": "U7",
+      "body_bounds_mm": [
+        114.38,
+        122.28,
+        117.9,
+        125.0
+      ],
+      "body_and_land_bounds_mm": [
+        114.38,
+        121.4,
+        117.9,
+        125.1
+      ],
+      "clearance_to_nominal_lane_mm": 20.058414693090775,
+      "clearance_to_margin_lane_mm": 20.012496096189498
+    }
+  ],
+  "overlap_candidates": [],
+  "pcb_entry_projection_clear": true,
+  "scope": "Conservative native Fab-body plus copper-land XY bounds, with 0.20 mm lateral review margin. Socket contacts are excluded because they form the intended card interface. Tented vias and mask-covered traces are not raised bodies. Enclosure, tolerances beyond this margin, vertical fit and physical insertion/removal remain unqualified."
+}

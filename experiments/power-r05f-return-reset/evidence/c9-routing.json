@@ -1,0 +1,57 @@
+{
+  "before_sha256": "e4ac5df1200084c26bfa9c48abc13e02bd95d62fcfde0ebd30634800f6202c2a",
+  "protected_sim_input_ids": [],
+  "route_anchors": {},
+  "first_nets": [],
+  "low_current_branch_nets": [],
+  "existing_power_backbone_pins": {},
+  "only_nets": [
+    "/NRF_ENABLE"
+  ],
+  "router_script_sha256": "e398ffb771d7663f59f66f22440f2130ae06e2b98b5158a06f3fb06291a9271c",
+  "raster_script_sha256": "bebb78c3f506291965808f50edf34de7424a0f89f77fc253856ee444820999e9",
+  "relocatable_via_input_sha256": null,
+  "removed_return_vias": [],
+  "route_limit_mm": 60.0,
+  "board_bounds_mm": [
+    98.0,
+    98.0,
+    138.0,
+    130.0
+  ],
+  "source_sha256": "6c8562d8cd8e8fd0e0f9799f129df257d01eb9d943b2563c1f97c4ac3b962f71",
+  "routes": [
+    {
+      "net": "/NRF_ENABLE",
+      "points": [
+        [
+          101.8,
+          113.35,
+          2
+        ],
+        [
+          102.9,
+          113.35000000000001,
+          2
+        ],
+        [
+          102.9685,
+          113.3459,
+          2
+        ]
+      ],
+      "visited": 592,
+      "search_backend": "shapely-raster",
+      "raster_input_sha256": "6614e6adc07c8630cc65aa8525258a845d83202980008d99a62751f109bde1d0",
+      "trunk_width_mm": 0.2,
+      "pad_escape_width_mm": 0.2,
+      "escape_radius_mm": 1.0
+    }
+  ],
+  "ground_stitches": [],
+  "failed": [
+    "('/NRF_ENABLE', 'no route', 7124, '0d396290ec332d8adf4443e28ddbd0cba1a5383d488a63abcf737fc93fe11851')"
+  ],
+  "interrupted": false,
+  "acceptance": "Pending native DRC and independent geometry audit"
+}

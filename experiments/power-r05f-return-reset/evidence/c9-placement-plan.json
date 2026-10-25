@@ -1,0 +1,34 @@
+{
+  "source_sha256": "b73776ccfd7586123f7b9a38e1fb499855708fc9bce8fb8263aeb966541b2601",
+  "ref": "C9",
+  "remove_ids": [
+    "d214c3d4-9d92-45b5-a5b6-55ebc418b92a",
+    "58c21bda-a205-42d2-b846-2440958406bf",
+    "0476a136-5b18-4b76-ad46-921e8c31a1c6",
+    "cab21b06-e30e-4e08-b072-776c8785c7b7"
+  ],
+  "position": [
+    101.8,
+    114.3
+  ],
+  "rotation": 0,
+  "native_angle": -90.0,
+  "score": 7.485061259744419,
+  "pads": {
+    "/NRF_ENABLE": [
+      101.80000000000001,
+      113.34999999999998
+    ],
+    "/GND": [
+      101.80000000000001,
+      115.25000000000001
+    ]
+  },
+  "ground_target": [
+    102.0,
+    116.35
+  ],
+  "ground_via_id": "46d7df9f-fa17-4774-b0f8-10178b8d62ab",
+  "ground_length_mm": 1.1180339887498731,
+  "scope": "Move the ENABLE capacitor closer to the modem and into the R1 routing region. Exact geometry proposal; native DRC and all pad-island checks follow."
+}

@@ -1,0 +1,21 @@
+{
+  "before_sha256": "2144fa5eb92fce2a6efb4a178561e2817cd658711a963eaea3c08b85109ddfaf",
+  "source_sha256": "293499efa273b2d748f586da233f57b09737a0c2d0d275b7ad4d9f968258b5a2",
+  "input_state_sha256": "c2616a7ddccda184bfaf77e5bf5aa075b042fed8a1ed28e68edcfb580c1ae1d2",
+  "drc_sha256": "e5089eefdc507d31e90cd15ce6bc41a6429b9f06797c0c9b2150c16eb8d403cc",
+  "removed": [
+    {
+      "id": "e52d7d9d-c1a8-4bc7-975e-cee67460b17e",
+      "net": "/VIO_ENABLE"
+    }
+  ],
+  "retained": [
+    {
+      "id": "00881e28-f3bd-46ed-a7e8-348a586f3ec6",
+      "net": "/VIO_DISCHARGE",
+      "reason": "Whole-segment deletion would change native terminal groups; inspect and trim only the loose end."
+    }
+  ],
+  "native_terminal_groups_preserved": 209,
+  "scope": "Unused tails removed; fresh native DRC required."
+}

@@ -1,0 +1,10 @@
+{
+  "before_sha256": "b73776ccfd7586123f7b9a38e1fb499855708fc9bce8fb8263aeb966541b2601",
+  "source_sha256": "e4ac5df1200084c26bfa9c48abc13e02bd95d62fcfde0ebd30634800f6202c2a",
+  "plan_sha256": "d7cb1fdd8304a0d27d9f9bc7f6fd2a8809fa5615c6f8969173b57fc494d3fc8e",
+  "unchanged_terminal_groups_preserved": 210,
+  "relocated_ground_terminal": "C9.2",
+  "new_local_ground_via": "46d7df9f-fa17-4774-b0f8-10178b8d62ab",
+  "ground_track_id": "6aa3d71f-bdc0-4feb-986a-7adce4c8035a",
+  "scope": "Placement and local ground applied. Full native DRC and ENABLE completion remain required."
+}

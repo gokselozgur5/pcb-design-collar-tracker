@@ -1,0 +1,413 @@
+{
+  "source_sha256": "01c2f1fac13e86d8f1c3d5a3fe3e7c41e092e63a23df8f2fe38ab31b889f34ef",
+  "drc_sha256": "0b13d7e2550f8a9a74b752cdb703e93537095e604ba231343f5c1bf2ebdc5759",
+  "accepted": [
+    {
+      "via": {
+        "id": "0399610d-fc40-40cd-980d-5463b6ce8113",
+        "net": "/VIO_1V8",
+        "pos": [
+          135.75,
+          104.8
+        ],
+        "diameter": 0.6,
+        "drill": 0.2,
+        "layers": [
+          "F.Cu",
+          "In1.Cu",
+          "In2.Cu",
+          "B.Cu"
+        ]
+      },
+      "paths": [
+        {
+          "start": [
+            135.75,
+            104.8
+          ],
+          "end": [
+            135.8,
+            105.15
+          ],
+          "width": 0.3,
+          "layer": "F.Cu",
+          "net": "/VIO_1V8"
+        },
+        {
+          "start": [
+            135.75,
+            104.8
+          ],
+          "end": [
+            135.8,
+            105.2
+          ],
+          "width": 0.3,
+          "layer": "F.Cu",
+          "net": "/VIO_1V8"
+        },
+        {
+          "start": [
+            135.75,
+            104.8
+          ],
+          "end": [
+            135.75,
+            105.0
+          ],
+          "width": 0.2,
+          "layer": "F.Cu",
+          "net": "/VIO_1V8"
+        },
+        {
+          "start": [
+            135.75,
+            104.8
+          ],
+          "end": [
+            135.75,
+            105.05
+          ],
+          "width": 0.3,
+          "layer": "F.Cu",
+          "net": "/VIO_1V8"
+        },
+        {
+          "start": [
+            135.75,
+            104.8
+          ],
+          "end": [
+            135.75,
+            105.1
+          ],
+          "width": 0.3,
+          "layer": "F.Cu",
+          "net": "/VIO_1V8"
+        }
+      ],
+      "outside_mm2": 0.0007718528967934447,
+      "extension_clearance_mm": 0.350000200867612,
+      "touching_track_ids": [
+        "0b2fceeb-fa0a-42aa-a9b0-2aa3c0b1394c",
+        "240d4888-710d-429b-822a-e82a2be41617",
+        "3c0d7967-f98d-47d3-bf09-14941d76fb85",
+        "806cf805-ae8b-426f-91a1-42e0222b6be9",
+        "927a0ff2-2ba9-46f9-9332-50383a62a1d1",
+        "cc5a31a6-67b0-46e9-b5dd-ebf5041e6a56",
+        "d9deb478-9c94-47c0-8da4-e1e350048b12"
+      ]
+    },
+    {
+      "via": {
+        "id": "2b625c49-9e73-42b5-b287-7c1afe3834a5",
+        "net": "/POWER_FAULT",
+        "pos": [
+          134.0,
+          119.2
+        ],
+        "diameter": 0.6,
+        "drill": 0.2,
+        "layers": [
+          "F.Cu",
+          "In1.Cu",
+          "In2.Cu",
+          "B.Cu"
+        ]
+      },
+      "paths": [],
+      "outside_mm2": 0.0,
+      "extension_clearance_mm": null,
+      "touching_track_ids": [
+        "0d8e0074-2627-46ca-825c-0c7a283049cb"
+      ]
+    },
+    {
+      "via": {
+        "id": "447d5243-3bb7-4619-9a5f-1c5db9c4802e",
+        "net": "/POWER_FAULT",
+        "pos": [
+          133.85,
+          128.45
+        ],
+        "diameter": 0.6,
+        "drill": 0.2,
+        "layers": [
+          "F.Cu",
+          "In1.Cu",
+          "In2.Cu",
+          "B.Cu"
+        ]
+      },
+      "paths": [],
+      "outside_mm2": 0.0,
+      "extension_clearance_mm": null,
+      "touching_track_ids": [
+        "aab9e9fb-df58-4036-a375-5533dacd3b74"
+      ]
+    },
+    {
+      "via": {
+        "id": "5d38fa9d-a8a3-4890-a4f7-6d0b234b87c5",
+        "net": "/POWER_GOOD",
+        "pos": [
+          114.05,
+          124.4
+        ],
+        "diameter": 0.6,
+        "drill": 0.2,
+        "layers": [
+          "F.Cu",
+          "In1.Cu",
+          "In2.Cu",
+          "B.Cu"
+        ]
+      },
+      "paths": [],
+      "outside_mm2": 0.0,
+      "extension_clearance_mm": null,
+      "touching_track_ids": [
+        "88a41a0d-42a6-4fff-857a-7e790dae0d29"
+      ]
+    },
+    {
+      "via": {
+        "id": "67c894e5-f7a3-4f0f-b1fb-df67908ba51a",
+        "net": "/VIO_DISCHARGE",
+        "pos": [
+          133.35,
+          118.0
+        ],
+        "diameter": 0.6,
+        "drill": 0.2,
+        "layers": [
+          "F.Cu",
+          "In1.Cu",
+          "In2.Cu",
+          "B.Cu"
+        ]
+      },
+      "paths": [],
+      "outside_mm2": 0.0,
+      "extension_clearance_mm": null,
+      "touching_track_ids": [
+        "00881e28-f3bd-46ed-a7e8-348a586f3ec6"
+      ]
+    },
+    {
+      "via": {
+        "id": "73454e8a-3a9c-4972-a463-08c21ec0d46c",
+        "net": "/UV_DELAY",
+        "pos": [
+          113.25,
+          124.8
+        ],
+        "diameter": 0.6,
+        "drill": 0.2,
+        "layers": [
+          "F.Cu",
+          "In1.Cu",
+          "In2.Cu",
+          "B.Cu"
+        ]
+      },
+      "paths": [
+        {
+          "start": [
+            113.25,
+            124.8
+          ],
+          "end": [
+            113.15,
+            125.1
+          ],
+          "width": 0.2,
+          "layer": "B.Cu",
+          "net": "/UV_DELAY"
+        },
+        {
+          "start": [
+            113.25,
+            124.8
+          ],
+          "end": [
+            113.15,
+            125.05
+          ],
+          "width": 0.2,
+          "layer": "B.Cu",
+          "net": "/UV_DELAY"
+        },
+        {
+          "start": [
+            113.25,
+            124.8
+          ],
+          "end": [
+            113.1,
+            125.15
+          ],
+          "width": 0.2,
+          "layer": "B.Cu",
+          "net": "/UV_DELAY"
+        },
+        {
+          "start": [
+            113.25,
+            124.8
+          ],
+          "end": [
+            113.25,
+            124.95
+          ],
+          "width": 0.2,
+          "layer": "B.Cu",
+          "net": "/UV_DELAY"
+        }
+      ],
+      "outside_mm2": 0.0008761599490092207,
+      "extension_clearance_mm": 0.25432466577134394,
+      "touching_track_ids": [
+        "06368d84-4da9-4ace-8fd4-ff98b978de45",
+        "59007482-0a18-49d6-9eed-642a5f52898e",
+        "6c0b7cd1-ba5b-4628-99e3-07298c7452ed",
+        "8708a127-8f13-415d-ba80-d7ee304b9ba4",
+        "b79deb54-fd9b-40fd-9833-abcd8ac4d396",
+        "f3ae4d4d-e5cf-4ea7-90bf-369809fbf0ff"
+      ]
+    },
+    {
+      "via": {
+        "id": "757aa401-9c05-49cf-9185-abf0a6646b86",
+        "net": "/POWER_GOOD",
+        "pos": [
+          119.25,
+          128.0
+        ],
+        "diameter": 0.6,
+        "drill": 0.2,
+        "layers": [
+          "F.Cu",
+          "In1.Cu",
+          "In2.Cu",
+          "B.Cu"
+        ]
+      },
+      "paths": [
+        {
+          "start": [
+            119.25,
+            128.0
+          ],
+          "end": [
+            119.25,
+            127.6
+          ],
+          "width": 0.2,
+          "layer": "F.Cu",
+          "net": "/POWER_GOOD"
+        },
+        {
+          "start": [
+            119.25,
+            128.0
+          ],
+          "end": [
+            119.3,
+            128.35
+          ],
+          "width": 0.2,
+          "layer": "F.Cu",
+          "net": "/POWER_GOOD"
+        }
+      ],
+      "outside_mm2": 0.0005383161081492161,
+      "extension_clearance_mm": 0.25000227583275836,
+      "touching_track_ids": [
+        "3e53e92b-6eda-403d-91a1-2f008efc6b05",
+        "774fd1c9-12db-40bc-9b9a-ca15a16daf52",
+        "d4c50246-b4bc-4298-9e61-ec1ab0c10819"
+      ]
+    },
+    {
+      "via": {
+        "id": "7849e765-16fd-43b5-9201-e512c8571e29",
+        "net": "/VBAT",
+        "pos": [
+          135.0,
+          107.5
+        ],
+        "diameter": 0.6,
+        "drill": 0.2,
+        "layers": [
+          "F.Cu",
+          "In1.Cu",
+          "In2.Cu",
+          "B.Cu"
+        ]
+      },
+      "paths": [],
+      "outside_mm2": 0.0,
+      "extension_clearance_mm": null,
+      "touching_track_ids": [
+        "6a1c3090-2d8c-4839-be44-9ecb056c71d3"
+      ]
+    },
+    {
+      "via": {
+        "id": "c12f6286-78cc-4a2c-98f4-cc904887440d",
+        "net": "/VIO_1V8",
+        "pos": [
+          133.2,
+          124.25
+        ],
+        "diameter": 0.6,
+        "drill": 0.2,
+        "layers": [
+          "F.Cu",
+          "In1.Cu",
+          "In2.Cu",
+          "B.Cu"
+        ]
+      },
+      "paths": [
+        {
+          "start": [
+            133.2,
+            124.25
+          ],
+          "end": [
+            133.0,
+            124.05
+          ],
+          "width": 0.3,
+          "layer": "F.Cu",
+          "net": "/VIO_1V8"
+        },
+        {
+          "start": [
+            133.2,
+            124.25
+          ],
+          "end": [
+            133.05,
+            124.1
+          ],
+          "width": 0.2,
+          "layer": "F.Cu",
+          "net": "/VIO_1V8"
+        }
+      ],
+      "outside_mm2": 2.5973597370795317e-05,
+      "extension_clearance_mm": 0.7874368670764627,
+      "touching_track_ids": [
+        "1def71f5-97e2-4ced-8de5-04b71b899000",
+        "296f0f18-436c-4f17-a8ce-2e55d87d744e",
+        "3d2c8f91-2ce8-4fda-9a04-f076520aa1e3",
+        "3ec4032f-5ab1-421a-a904-6fb700cd719e"
+      ]
+    }
+  ],
+  "rejected": [],
+  "scope": "Geometric proposal only; native terminal-group and DRC checks remain required."
+}

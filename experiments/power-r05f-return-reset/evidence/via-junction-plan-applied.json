@@ -1,0 +1,21 @@
+{
+  "before_sha256": "6ed452fe4a39713fbddcc027b7a848861c873b520c677d0c7047717495f2b271",
+  "source_sha256": "01c2f1fac13e86d8f1c3d5a3fe3e7c41e092e63a23df8f2fe38ab31b889f34ef",
+  "plan_sha256": "5cb11e107848bcc9d79a51cd22c8efd07c9ef8f01c499e5fd9083e7f1a1a0cb1",
+  "removed_vias": [
+    "753bdfb5-ebcf-4305-b7fb-455d1458dfed",
+    "85fd0ae7-d0c6-4ad8-bbfe-3174a8bbd76f",
+    "a6524f76-ed93-4323-ace7-c7b314441182",
+    "ca05ad79-8830-4dd8-984b-db4eaa9c853e",
+    "ec8abd49-a7c5-4069-b32f-24c2d4f7757a"
+  ],
+  "added_tracks": [
+    "8237c768-d24f-419c-b7ce-933bb2997c6b",
+    "cce07c1c-01e4-4282-a2dd-75ee15cb05a7",
+    "7369cefe-d50a-4eac-beac-ccd0bf7e45c7",
+    "b1a85a2a-b7e3-4ce9-9b47-b9aebf810b05",
+    "fd993ff1-1209-4b5b-be8c-c0208fd29740"
+  ],
+  "native_terminal_groups_preserved": 209,
+  "scope": "Junctions replaced with native terminal groups preserved. Fresh DRC and return checks required."
+}

@@ -1,0 +1,55 @@
+{
+  "before_sha256": "6c8562d8cd8e8fd0e0f9799f129df257d01eb9d943b2563c1f97c4ac3b962f71",
+  "source_sha256": "6ed452fe4a39713fbddcc027b7a848861c873b520c677d0c7047717495f2b271",
+  "drc_sha256": "c49c67a05bf9899073741a67213b01757b8e7238d0f7d09c75c08b3e0983b751",
+  "input_state_sha256": "e879b8907da45ff13f9dc040b885394ac3458c35e419c4ea83aa931621181331",
+  "removed": [
+    {
+      "id": "52246866-97b4-470d-a44f-4e772a5b9387",
+      "net": "/NRF_ENABLE",
+      "position": [
+        116.0,
+        120.6
+      ]
+    },
+    {
+      "id": "53ccbb35-f0ef-4426-bfc6-716969d1223c",
+      "net": "/VIO_ENABLE",
+      "position": [
+        101.35,
+        104.45
+      ]
+    },
+    {
+      "id": "6e5977d6-a386-4c0b-ab92-5e893295b912",
+      "net": "/FG_ALERT",
+      "position": [
+        109.75,
+        107.1
+      ]
+    },
+    {
+      "id": "9554f2b0-8dd8-4824-aa50-a2d4e6afb0c3",
+      "net": "/FG_ALERT",
+      "position": [
+        135.75,
+        102.2
+      ]
+    },
+    {
+      "id": "d07b4912-2376-4778-ad02-fd18c1910072",
+      "net": "/VIO_ENABLE",
+      "position": [
+        116.95,
+        126.2
+      ]
+    }
+  ],
+  "only_nets": [
+    "/NRF_ENABLE",
+    "/VIO_ENABLE",
+    "/FG_ALERT"
+  ],
+  "native_terminal_groups_preserved": 209,
+  "scope": "Unused temporary exits removed. Full native DRC, routing and return review still required."
+}

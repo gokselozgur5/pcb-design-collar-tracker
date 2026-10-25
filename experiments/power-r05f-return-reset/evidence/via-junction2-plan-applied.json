@@ -1,0 +1,33 @@
+{
+  "before_sha256": "01c2f1fac13e86d8f1c3d5a3fe3e7c41e092e63a23df8f2fe38ab31b889f34ef",
+  "source_sha256": "e7a440057341c8600a622d906b02933d65683a4ab68a79ed06d43d259cc7037f",
+  "plan_sha256": "a71cb676e7d91b1770c127ad964534f78fec77749628765732820b73df16f469",
+  "removed_vias": [
+    "0399610d-fc40-40cd-980d-5463b6ce8113",
+    "2b625c49-9e73-42b5-b287-7c1afe3834a5",
+    "447d5243-3bb7-4619-9a5f-1c5db9c4802e",
+    "5d38fa9d-a8a3-4890-a4f7-6d0b234b87c5",
+    "67c894e5-f7a3-4f0f-b1fb-df67908ba51a",
+    "73454e8a-3a9c-4972-a463-08c21ec0d46c",
+    "757aa401-9c05-49cf-9185-abf0a6646b86",
+    "7849e765-16fd-43b5-9201-e512c8571e29",
+    "c12f6286-78cc-4a2c-98f4-cc904887440d"
+  ],
+  "added_tracks": [
+    "3468414a-1ce4-4570-a8bf-1fdc248f1657",
+    "91470a4b-501a-40c1-935b-c1400eefa355",
+    "c58b47cb-620e-41b5-a2cd-aaac69114dca",
+    "26dfd94d-5bf5-4cff-92fc-2453d499da0c",
+    "033a0519-4185-4163-b47b-3d5d09b7c6e6",
+    "9518466c-b8d8-47bc-bb44-a5d1df06417a",
+    "a2693f43-b4be-40eb-b9c3-8b4af193a80d",
+    "926b0f8a-7650-4c72-8b4b-2a640a8efc59",
+    "06bee8d1-776b-4979-9f35-e4534000bc41",
+    "c3272fec-ae12-4987-880e-8d51e1b0d1fe",
+    "11501a3c-c9fc-488a-912d-3ed40cf69483",
+    "6558b601-22a0-4afe-bf13-51392f97646f",
+    "02650a4a-5149-40e0-983c-c721cad89d00"
+  ],
+  "native_terminal_groups_preserved": 209,
+  "scope": "Junctions replaced with native terminal groups preserved. Fresh DRC and return checks required."
+}

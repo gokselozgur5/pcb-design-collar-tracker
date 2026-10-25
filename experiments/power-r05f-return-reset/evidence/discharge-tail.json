@@ -1,0 +1,16 @@
+{
+  "before_sha256": "293499efa273b2d748f586da233f57b09737a0c2d0d275b7ad4d9f968258b5a2",
+  "source_sha256": "96216ca5b8abd981eccb522f341013e8140d559c0fd5645f15e63363dfcd6e5e",
+  "track_id": "00881e28-f3bd-46ed-a7e8-348a586f3ec6",
+  "old_end_mm": [
+    133.35,
+    118
+  ],
+  "new_end_mm": [
+    133.35,
+    118.65
+  ],
+  "removed_length_mm": 0.65,
+  "native_terminal_groups_preserved": 209,
+  "scope": "Only the straight unused tail was shortened; new copper is a subset of the original. Fresh native DRC required."
+}

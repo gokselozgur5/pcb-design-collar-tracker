@@ -1,0 +1,53 @@
+{
+  "before_sha256": "e7a440057341c8600a622d906b02933d65683a4ab68a79ed06d43d259cc7037f",
+  "source_sha256": "2144fa5eb92fce2a6efb4a178561e2817cd658711a963eaea3c08b85109ddfaf",
+  "input_state_sha256": "93d8c3e12ddf7409b682fee378f132653093a02eabdb9af7596f268d0405a5c4",
+  "drc_sha256": "3a989516f01179651b3e72ba7336b6f0193b40516faf576b8818ef8ca9978e0d",
+  "removed": [
+    {
+      "id": "0d8e0074-2627-46ca-825c-0c7a283049cb",
+      "net": "/POWER_FAULT"
+    },
+    {
+      "id": "2753bf17-54e4-4b83-8da9-cc189745e444",
+      "net": "/FG_ALERT"
+    },
+    {
+      "id": "36ec7542-7398-4378-b8d1-bd9e546cbb70",
+      "net": "/FG_ALERT"
+    },
+    {
+      "id": "69d673f0-8ca3-4b58-adce-7bb356d60496",
+      "net": "/VIO_ENABLE"
+    },
+    {
+      "id": "6a1c3090-2d8c-4839-be44-9ecb056c71d3",
+      "net": "/VBAT"
+    },
+    {
+      "id": "88a41a0d-42a6-4fff-857a-7e790dae0d29",
+      "net": "/POWER_GOOD"
+    },
+    {
+      "id": "95d5d1dc-5e45-4209-9fd8-84a1522d2602",
+      "net": "/VIO_ENABLE"
+    },
+    {
+      "id": "aab9e9fb-df58-4036-a375-5533dacd3b74",
+      "net": "/POWER_FAULT"
+    },
+    {
+      "id": "dc0fe36e-2b5e-4fe1-873a-b8d77858546e",
+      "net": "/NRF_ENABLE"
+    }
+  ],
+  "retained": [
+    {
+      "id": "00881e28-f3bd-46ed-a7e8-348a586f3ec6",
+      "net": "/VIO_DISCHARGE",
+      "reason": "Whole-segment deletion would change native terminal groups; inspect and trim only the loose end."
+    }
+  ],
+  "native_terminal_groups_preserved": 209,
+  "scope": "Unused tails removed; fresh native DRC required."
+}
