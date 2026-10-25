@@ -1,0 +1,149 @@
+{
+  "revision": "CT-BAT-RET-001-A",
+  "status": "CONDITIONAL_PACK_RETENTION_PROTOTYPE",
+  "pack_request": "assembly/pack-r03/request.json",
+  "pack_body_maximum_mm": [
+    32,
+    30.5,
+    5.3
+  ],
+  "pack_body_minimum_for_capture_mm": [
+    30.5,
+    29,
+    4.8
+  ],
+  "minimum_dimension_status": "Added engineering acceptance requirement for this cradle; not a supplier-confirmed minimum and not a replacement for CT-BAT-001-A.",
+  "pack_body_bottom_z_mm": 1.8,
+  "cradle": {
+    "inner_mm": [
+      33,
+      31.5
+    ],
+    "outer_mm": [
+      34.4,
+      33.0
+    ],
+    "corner_radius_mm": 0.4,
+    "platform_top_z_mm": 1.8,
+    "wall_top_z_mm": 7.1
+  },
+  "cap": {
+    "outer_mm": [
+      34.4,
+      33.0
+    ],
+    "inner_mm": [
+      25,
+      24
+    ],
+    "corner_radius_mm": 0.4,
+    "ntc_opening_mm": [
+      33,
+      11
+    ],
+    "bottom_z_mm": 7.56,
+    "top_z_mm": 8.31,
+    "bridges_xy_mm": [
+      [
+        -20.8,
+        3.5,
+        -16.3,
+        5.5
+      ],
+      [
+        16.3,
+        -1,
+        20.8,
+        1
+      ],
+      [
+        -1,
+        -16.8,
+        1,
+        -15.8
+      ],
+      [
+        -1,
+        15.8,
+        1,
+        16.8
+      ]
+    ],
+    "bridge_top_z_mm": 9.0,
+    "capture_tongues_xy_mm": [
+      [
+        -2,
+        11.75,
+        2,
+        16.5
+      ]
+    ],
+    "component_reliefs_xy_mm": [
+      {
+        "ref": "C25",
+        "bounds_mm": [
+          -8.055,
+          -14.209999999999999,
+          -4.445,
+          -9.290000000000001
+        ]
+      },
+      {
+        "ref": "C9",
+        "bounds_mm": [
+          -18.005,
+          -2.76,
+          -14.395,
+          2.16
+        ]
+      },
+      {
+        "ref": "J4",
+        "bounds_mm": [
+          -16.259999999999998,
+          -13.86,
+          -7.74,
+          -10.24
+        ]
+      },
+      {
+        "ref": "J6",
+        "bounds_mm": [
+          2.19,
+          -1.46,
+          15.81,
+          13.459999999999999
+        ]
+      },
+      {
+        "ref": "U7",
+        "bounds_mm": [
+          -4.630000000000001,
+          -12.11,
+          0.91,
+          -6.390000000000001
+        ]
+      }
+    ]
+  },
+  "motion": {
+    "carrier_to_body_xy_mm": 0.36,
+    "thermal_xy_allowance_mm": 0.15,
+    "thermal_z_allowance_mm": 0.08,
+    "feature_tolerance_mm": 0.05,
+    "minimum_component_gap_mm": 0.2,
+    "cap_to_pcb_axial_chain_tolerance_mm": 0.1,
+    "axial_chain_note": "Cap bearing and PCB support belong to the same monolithic carrier. Evaluate their relative height with carrier CTE and the sum of two 0.05 mm feature errors. Common floor translation cancels; independent component temperature still applies."
+  },
+  "assembly": "Requested pack seats on the existing shell floor, 0.3 mm below the r09 visualization. Cradle is integral to shell; cap is integral to removable PCB carrier. Supplier approval of contact regions, abrasion and allowable pressure remains required; no rigid assembly preload is intended.",
+  "outstanding": [
+    "Supplier minimum/maximum pack dimensions including swelling and allowed body contact regions",
+    "Lead exit and strain relief drawing",
+    "Pouch edge radii, abrasion, material compatibility and actual load/tilt/impact",
+    "NTC attachment and thermal response",
+    "Physical fit and ingress"
+  ],
+  "physical_pack_retention_qualified": false,
+  "physical_ingress_qualified": false,
+  "ntc_stack_height_max_mm": 0.75
+}

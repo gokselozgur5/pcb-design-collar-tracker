@@ -1,0 +1,1137 @@
+{
+  "result": "CONDITIONAL_PACK_RETENTION_GEOMETRY_PASS",
+  "checks": [
+    {
+      "name": "positive complete-pack dimensions",
+      "value": 4.8,
+      "minimum": 0.01,
+      "pass_": true
+    },
+    {
+      "name": "minimum pack does not exceed maximum",
+      "value": 0.5,
+      "minimum": 0,
+      "pass_": true
+    },
+    {
+      "name": "pack bottom agrees with platform",
+      "value": -0.0,
+      "minimum": 0,
+      "pass_": true
+    },
+    {
+      "name": "nonzero cap thickness",
+      "value": 0.7500000000000009,
+      "minimum": 0.5,
+      "pass_": true
+    },
+    {
+      "name": "bridge overlaps original carrier ledge",
+      "value": 0.09999999999999964,
+      "minimum": 0.05,
+      "pass_": true
+    },
+    {
+      "name": "cradle wall thickness 0",
+      "value": 0.5999999999999993,
+      "minimum": 0.5,
+      "pass_": true
+    },
+    {
+      "name": "maximum pack to cradle 0",
+      "value": 0.30000000000000004,
+      "minimum": 0.2,
+      "pass_": true
+    },
+    {
+      "name": "cradle wall thickness 1",
+      "value": 0.65,
+      "minimum": 0.5,
+      "pass_": true
+    },
+    {
+      "name": "maximum pack to cradle 1",
+      "value": 0.30000000000000004,
+      "minimum": 0.2,
+      "pass_": true
+    },
+    {
+      "name": "maximum pack to cap underside",
+      "value": 0.19999999999999998,
+      "minimum": 0.2,
+      "pass_": true
+    },
+    {
+      "name": "cradle wall to cap underside",
+      "value": 0.19999999999999998,
+      "minimum": 0.2,
+      "pass_": true
+    },
+    {
+      "name": "minimum pack remains below wall at full lift",
+      "value": 4.08,
+      "minimum": 1,
+      "pass_": true
+    },
+    {
+      "name": "guaranteed pack overlap quadrant 1",
+      "value": 4.6519499999999985,
+      "minimum": 1,
+      "pass_": true
+    },
+    {
+      "name": "guaranteed pack overlap quadrant 2",
+      "value": 10.798099999999984,
+      "minimum": 1,
+      "pass_": true
+    },
+    {
+      "name": "guaranteed pack overlap quadrant 3",
+      "value": 10.20499999999998,
+      "minimum": 1,
+      "pass_": true
+    },
+    {
+      "name": "guaranteed pack overlap quadrant 4",
+      "value": 1.4290999999999952,
+      "minimum": 1,
+      "pass_": true
+    },
+    {
+      "name": "NTC cover lateral clearance at all bounded translations",
+      "value": 0.3899999999999997,
+      "minimum": 0.2,
+      "pass_": true
+    },
+    {
+      "name": "lifted pack clears all populated envelopes",
+      "value": 0.9729280000000005,
+      "minimum": 0.2,
+      "pass_": true
+    },
+    {
+      "name": "lifted NTC cover clears all populated envelopes",
+      "value": 0.22292800000000135,
+      "minimum": 0.2,
+      "pass_": true
+    },
+    {
+      "name": "cap bridge 1 stays inside original carrier outline",
+      "value": -0.0,
+      "minimum": 0,
+      "pass_": true
+    },
+    {
+      "name": "cap bridge 2 stays inside original carrier outline",
+      "value": -0.0,
+      "minimum": 0,
+      "pass_": true
+    },
+    {
+      "name": "cap bridge 3 stays inside original carrier outline",
+      "value": -0.0,
+      "minimum": 0,
+      "pass_": true
+    },
+    {
+      "name": "cap bridge 4 stays inside original carrier outline",
+      "value": -0.0,
+      "minimum": 0,
+      "pass_": true
+    },
+    {
+      "name": "all 85 populated envelopes clear new solids",
+      "value": 0.2247220505424392,
+      "minimum": 0.2,
+      "pass_": true
+    },
+    {
+      "name": "cradle platform to M3 thread -6",
+      "value": 2.0354115063052975,
+      "minimum": 0.2,
+      "pass_": true
+    },
+    {
+      "name": "cradle platform to contact backing -6",
+      "value": 1.0024470060806199,
+      "minimum": 0.2,
+      "pass_": true
+    },
+    {
+      "name": "cradle platform to M3 thread 6",
+      "value": 2.0354115063052975,
+      "minimum": 0.2,
+      "pass_": true
+    },
+    {
+      "name": "cradle platform to contact backing 6",
+      "value": 1.0024470060806199,
+      "minimum": 0.2,
+      "pass_": true
+    },
+    {
+      "name": "cradle wall to M3 thread -6",
+      "value": 0.25,
+      "minimum": 0.2,
+      "pass_": true
+    },
+    {
+      "name": "cradle wall to contact backing -6",
+      "value": 0.9499999999999992,
+      "minimum": 0.2,
+      "pass_": true
+    },
+    {
+      "name": "cradle wall to M3 thread 6",
+      "value": 0.25,
+      "minimum": 0.2,
+      "pass_": true
+    },
+    {
+      "name": "cradle wall to contact backing 6",
+      "value": 0.9499999999999992,
+      "minimum": 0.2,
+      "pass_": true
+    },
+    {
+      "name": "pack cap to M3 thread -6",
+      "value": 0.3799999999999999,
+      "minimum": 0.2,
+      "pass_": true
+    },
+    {
+      "name": "pack cap to contact backing -6",
+      "value": 0.5899999999999999,
+      "minimum": 0.2,
+      "pass_": true
+    },
+    {
+      "name": "pack cap to M3 thread 6",
+      "value": 0.3799999999999999,
+      "minimum": 0.2,
+      "pass_": true
+    },
+    {
+      "name": "pack cap to contact backing 6",
+      "value": 0.5899999999999999,
+      "minimum": 0.2,
+      "pass_": true
+    },
+    {
+      "name": "cap bridge 1 to M3 thread -6",
+      "value": 34.20012573076304,
+      "minimum": 0.2,
+      "pass_": true
+    },
+    {
+      "name": "cap bridge 1 to contact backing -6",
+      "value": 34.56160007870005,
+      "minimum": 0.2,
+      "pass_": true
+    },
+    {
+      "name": "cap bridge 1 to M3 thread 6",
+      "value": 33.392162254038,
+      "minimum": 0.2,
+      "pass_": true
+    },
+    {
+      "name": "cap bridge 1 to contact backing 6",
+      "value": 34.089999999999996,
+      "minimum": 0.2,
+      "pass_": true
+    },
+    {
+      "name": "cap bridge 2 to M3 thread -6",
+      "value": 2.9148756405719953,
+      "minimum": 0.2,
+      "pass_": true
+    },
+    {
+      "name": "cap bridge 2 to contact backing -6",
+      "value": 1.19,
+      "minimum": 0.2,
+      "pass_": true
+    },
+    {
+      "name": "cap bridge 2 to M3 thread 6",
+      "value": 2.9148756405719953,
+      "minimum": 0.2,
+      "pass_": true
+    },
+    {
+      "name": "cap bridge 2 to contact backing 6",
+      "value": 1.19,
+      "minimum": 0.2,
+      "pass_": true
+    },
+    {
+      "name": "cap bridge 3 to M3 thread -6",
+      "value": 17.837281182960595,
+      "minimum": 0.2,
+      "pass_": true
+    },
+    {
+      "name": "cap bridge 3 to contact backing -6",
+      "value": 17.826502741704555,
+      "minimum": 0.2,
+      "pass_": true
+    },
+    {
+      "name": "cap bridge 3 to M3 thread 6",
+      "value": 25.43085920687699,
+      "minimum": 0.2,
+      "pass_": true
+    },
+    {
+      "name": "cap bridge 3 to contact backing 6",
+      "value": 24.607807704060107,
+      "minimum": 0.2,
+      "pass_": true
+    },
+    {
+      "name": "cap bridge 4 to M3 thread -6",
+      "value": 25.43085920687699,
+      "minimum": 0.2,
+      "pass_": true
+    },
+    {
+      "name": "cap bridge 4 to contact backing -6",
+      "value": 24.607807704060107,
+      "minimum": 0.2,
+      "pass_": true
+    },
+    {
+      "name": "cap bridge 4 to M3 thread 6",
+      "value": 17.837281182960595,
+      "minimum": 0.2,
+      "pass_": true
+    },
+    {
+      "name": "cap bridge 4 to contact backing 6",
+      "value": 17.826502741704555,
+      "minimum": 0.2,
+      "pass_": true
+    },
+    {
+      "name": "cradle platform to cavity wall",
+      "value": 0.6000000000000014,
+      "minimum": 0.2,
+      "pass_": true
+    },
+    {
+      "name": "cradle wall to cavity wall",
+      "value": 0.6000000000000014,
+      "minimum": 0.2,
+      "pass_": true
+    },
+    {
+      "name": "pack cap to cavity wall",
+      "value": 0.24000000000000196,
+      "minimum": 0.2,
+      "pass_": true
+    }
+  ],
+  "component_clearances": {
+    "C1": {
+      "gap_mm": 1.8899999999999988,
+      "obstacle": "cap bridge 1"
+    },
+    "C10": {
+      "gap_mm": 1.0299999999999976,
+      "obstacle": "pack cap"
+    },
+    "C13": {
+      "gap_mm": 7.582433646264237,
+      "obstacle": "pack cap"
+    },
+    "C14": {
+      "gap_mm": 7.293997532217843,
+      "obstacle": "pack cap"
+    },
+    "C15": {
+      "gap_mm": 3.9408628496815252,
+      "obstacle": "pack cap"
+    },
+    "C16": {
+      "gap_mm": 2.725949375905574,
+      "obstacle": "pack cap"
+    },
+    "C17": {
+      "gap_mm": 1.0299999999999976,
+      "obstacle": "pack cap"
+    },
+    "C18": {
+      "gap_mm": 2.5799999999999983,
+      "obstacle": "pack cap"
+    },
+    "C19": {
+      "gap_mm": 2.5799999999999983,
+      "obstacle": "pack cap"
+    },
+    "C2": {
+      "gap_mm": 1.8899999999999988,
+      "obstacle": "cap bridge 1"
+    },
+    "C20": {
+      "gap_mm": 2.5799999999999983,
+      "obstacle": "pack cap"
+    },
+    "C21": {
+      "gap_mm": 2.5799999999999983,
+      "obstacle": "pack cap"
+    },
+    "C23": {
+      "gap_mm": 2.5920841035738,
+      "obstacle": "pack cap"
+    },
+    "C24": {
+      "gap_mm": 2.5920841035738,
+      "obstacle": "pack cap"
+    },
+    "C25": {
+      "gap_mm": 0.3114482300479471,
+      "obstacle": "pack cap"
+    },
+    "C26": {
+      "gap_mm": 3.0210097649626992,
+      "obstacle": "pack cap"
+    },
+    "C27": {
+      "gap_mm": 2.5799999999999983,
+      "obstacle": "pack cap"
+    },
+    "C28": {
+      "gap_mm": 2.5799999999999983,
+      "obstacle": "pack cap"
+    },
+    "C29": {
+      "gap_mm": 2.5799999999999983,
+      "obstacle": "pack cap"
+    },
+    "C3": {
+      "gap_mm": 2.5799999999999983,
+      "obstacle": "pack cap"
+    },
+    "C30": {
+      "gap_mm": 2.5799999999999983,
+      "obstacle": "pack cap"
+    },
+    "C31": {
+      "gap_mm": 2.5799999999999983,
+      "obstacle": "pack cap"
+    },
+    "C32": {
+      "gap_mm": 2.1657793054695107,
+      "obstacle": "cap bridge 4"
+    },
+    "C33": {
+      "gap_mm": 1.0299999999999976,
+      "obstacle": "pack cap"
+    },
+    "C34": {
+      "gap_mm": 2.5799999999999983,
+      "obstacle": "pack cap"
+    },
+    "C35": {
+      "gap_mm": 2.6953292934259423,
+      "obstacle": "pack cap"
+    },
+    "C36": {
+      "gap_mm": 1.0299999999999976,
+      "obstacle": "pack cap"
+    },
+    "C4": {
+      "gap_mm": 1.293754227046234,
+      "obstacle": "pack cap"
+    },
+    "C5": {
+      "gap_mm": 3.76955236069218,
+      "obstacle": "pack cap"
+    },
+    "C6": {
+      "gap_mm": 3.1631155527422625,
+      "obstacle": "pack cap"
+    },
+    "C7": {
+      "gap_mm": 2.6706740722147266,
+      "obstacle": "pack cap"
+    },
+    "C8": {
+      "gap_mm": 2.019709137474998,
+      "obstacle": "cap bridge 1"
+    },
+    "C9": {
+      "gap_mm": 0.3114482300479477,
+      "obstacle": "pack cap"
+    },
+    "D1": {
+      "gap_mm": 0.47999999999999865,
+      "obstacle": "pack cap"
+    },
+    "D2": {
+      "gap_mm": 1.8435021019787308,
+      "obstacle": "pack cap"
+    },
+    "FB1": {
+      "gap_mm": 2.3974413444336853,
+      "obstacle": "cap bridge 1"
+    },
+    "J1": {
+      "gap_mm": 2.5799999999999983,
+      "obstacle": "pack cap"
+    },
+    "J2": {
+      "gap_mm": 2.9003620463659345,
+      "obstacle": "cap bridge 2"
+    },
+    "J3": {
+      "gap_mm": 2.5799999999999983,
+      "obstacle": "pack cap"
+    },
+    "J4": {
+      "gap_mm": 0.2247220505424392,
+      "obstacle": "pack cap"
+    },
+    "J5": {
+      "gap_mm": 1.4799999999999986,
+      "obstacle": "pack cap"
+    },
+    "J6": {
+      "gap_mm": 0.22472205054244082,
+      "obstacle": "pack cap"
+    },
+    "J7": {
+      "gap_mm": 1.032630137077162,
+      "obstacle": "cap bridge 1"
+    },
+    "L1": {
+      "gap_mm": 8.567689303423647,
+      "obstacle": "pack cap"
+    },
+    "Q1": {
+      "gap_mm": 2.5799999999999983,
+      "obstacle": "pack cap"
+    },
+    "R1": {
+      "gap_mm": 0.48999999999999844,
+      "obstacle": "cap bridge 1"
+    },
+    "R12": {
+      "gap_mm": 1.9451735141112723,
+      "obstacle": "cap bridge 4"
+    },
+    "R13": {
+      "gap_mm": 2.5799999999999983,
+      "obstacle": "pack cap"
+    },
+    "R14": {
+      "gap_mm": 5.879625838435637,
+      "obstacle": "pack cap"
+    },
+    "R15": {
+      "gap_mm": 3.1601265797432854,
+      "obstacle": "pack cap"
+    },
+    "R16": {
+      "gap_mm": 1.9027611515899718,
+      "obstacle": "cap bridge 3"
+    },
+    "R17": {
+      "gap_mm": 1.2299999999999986,
+      "obstacle": "pack cap"
+    },
+    "R18": {
+      "gap_mm": 2.5799999999999983,
+      "obstacle": "pack cap"
+    },
+    "R19": {
+      "gap_mm": 2.0642189806316567,
+      "obstacle": "cap bridge 3"
+    },
+    "R2": {
+      "gap_mm": 1.208304597359455,
+      "obstacle": "pack cap"
+    },
+    "R20": {
+      "gap_mm": 2.5799999999999983,
+      "obstacle": "pack cap"
+    },
+    "R21": {
+      "gap_mm": 2.5799999999999983,
+      "obstacle": "pack cap"
+    },
+    "R22": {
+      "gap_mm": 2.5799999999999983,
+      "obstacle": "pack cap"
+    },
+    "R23": {
+      "gap_mm": 2.5799999999999983,
+      "obstacle": "pack cap"
+    },
+    "R24": {
+      "gap_mm": 2.871236667361294,
+      "obstacle": "pack cap"
+    },
+    "R25": {
+      "gap_mm": 2.5799999999999983,
+      "obstacle": "pack cap"
+    },
+    "R26": {
+      "gap_mm": 2.5799999999999983,
+      "obstacle": "pack cap"
+    },
+    "R27": {
+      "gap_mm": 2.5799999999999983,
+      "obstacle": "pack cap"
+    },
+    "R28": {
+      "gap_mm": 1.2299999999999986,
+      "obstacle": "pack cap"
+    },
+    "R29": {
+      "gap_mm": 1.2299999999999986,
+      "obstacle": "pack cap"
+    },
+    "R3": {
+      "gap_mm": 5.247980563988397,
+      "obstacle": "pack cap"
+    },
+    "R30": {
+      "gap_mm": 2.5799999999999983,
+      "obstacle": "pack cap"
+    },
+    "R4": {
+      "gap_mm": 3.6770640462194817,
+      "obstacle": "pack cap"
+    },
+    "R5": {
+      "gap_mm": 3.677064046219482,
+      "obstacle": "pack cap"
+    },
+    "R6": {
+      "gap_mm": 2.5997692205270817,
+      "obstacle": "pack cap"
+    },
+    "R7": {
+      "gap_mm": 2.707175650008693,
+      "obstacle": "pack cap"
+    },
+    "R8": {
+      "gap_mm": 1.179999999999998,
+      "obstacle": "pack cap"
+    },
+    "R9": {
+      "gap_mm": 1.179999999999998,
+      "obstacle": "pack cap"
+    },
+    "U1": {
+      "gap_mm": 2.5799999999999983,
+      "obstacle": "pack cap"
+    },
+    "U10": {
+      "gap_mm": 2.5799999999999983,
+      "obstacle": "pack cap"
+    },
+    "U11": {
+      "gap_mm": 1.94283298304306,
+      "obstacle": "cap bridge 4"
+    },
+    "U12": {
+      "gap_mm": 0.47999999999999865,
+      "obstacle": "pack cap"
+    },
+    "U2": {
+      "gap_mm": 5.89758467511065,
+      "obstacle": "pack cap"
+    },
+    "U3": {
+      "gap_mm": 2.5799999999999983,
+      "obstacle": "pack cap"
+    },
+    "U4": {
+      "gap_mm": 2.5799999999999983,
+      "obstacle": "pack cap"
+    },
+    "U5": {
+      "gap_mm": 3.0571228303749898,
+      "obstacle": "pack cap"
+    },
+    "U6": {
+      "gap_mm": 2.5799999999999983,
+      "obstacle": "pack cap"
+    },
+    "U7": {
+      "gap_mm": 0.24698178070456805,
+      "obstacle": "pack cap"
+    },
+    "U8": {
+      "gap_mm": 2.5799999999999983,
+      "obstacle": "pack cap"
+    },
+    "U9": {
+      "gap_mm": 1.8899999999999988,
+      "obstacle": "cap bridge 2"
+    }
+  },
+  "minimum_component_gap_mm": 0.2247220505424392,
+  "moving_pack_clearances": [
+    {
+      "ref": "C1",
+      "body_gap_mm": 3.4385193000000003,
+      "ntc_gap_mm": 2.688519300000001
+    },
+    {
+      "ref": "C10",
+      "body_gap_mm": 1.9271079999999996,
+      "ntc_gap_mm": 7.785652396791423
+    },
+    {
+      "ref": "C13",
+      "body_gap_mm": 3.4385193000000003,
+      "ntc_gap_mm": 2.688519300000001
+    },
+    {
+      "ref": "C14",
+      "body_gap_mm": 3.4385193000000003,
+      "ntc_gap_mm": 2.688519300000001
+    },
+    {
+      "ref": "C15",
+      "body_gap_mm": 3.4385193000000003,
+      "ntc_gap_mm": 2.688519300000001
+    },
+    {
+      "ref": "C16",
+      "body_gap_mm": 3.4385193000000003,
+      "ntc_gap_mm": 2.688519300000001
+    },
+    {
+      "ref": "C17",
+      "body_gap_mm": 1.9271079999999996,
+      "ntc_gap_mm": 1.1771080000000005
+    },
+    {
+      "ref": "C18",
+      "body_gap_mm": 3.4385193000000003,
+      "ntc_gap_mm": 2.7707464745935337
+    },
+    {
+      "ref": "C19",
+      "body_gap_mm": 3.4385193000000003,
+      "ntc_gap_mm": 3.6508952363047196
+    },
+    {
+      "ref": "C2",
+      "body_gap_mm": 3.4385193000000003,
+      "ntc_gap_mm": 2.688519300000001
+    },
+    {
+      "ref": "C20",
+      "body_gap_mm": 3.4385193000000003,
+      "ntc_gap_mm": 6.730307275784107
+    },
+    {
+      "ref": "C21",
+      "body_gap_mm": 3.4385193000000003,
+      "ntc_gap_mm": 5.216228141720079
+    },
+    {
+      "ref": "C23",
+      "body_gap_mm": 3.4385193000000003,
+      "ntc_gap_mm": 5.302172764676054
+    },
+    {
+      "ref": "C24",
+      "body_gap_mm": 3.4385193000000003,
+      "ntc_gap_mm": 3.6508952363047196
+    },
+    {
+      "ref": "C25",
+      "body_gap_mm": 1.1235880000000007,
+      "ntc_gap_mm": 4.704855788836042
+    },
+    {
+      "ref": "C26",
+      "body_gap_mm": 1.9271079999999996,
+      "ntc_gap_mm": 2.3379442345068884
+    },
+    {
+      "ref": "C27",
+      "body_gap_mm": 3.4385193000000003,
+      "ntc_gap_mm": 7.8544596266371185
+    },
+    {
+      "ref": "C28",
+      "body_gap_mm": 3.4385193000000003,
+      "ntc_gap_mm": 6.693656401883242
+    },
+    {
+      "ref": "C29",
+      "body_gap_mm": 3.4385193000000003,
+      "ntc_gap_mm": 9.364242416045865
+    },
+    {
+      "ref": "C3",
+      "body_gap_mm": 3.4385193000000003,
+      "ntc_gap_mm": 2.688519300000001
+    },
+    {
+      "ref": "C30",
+      "body_gap_mm": 3.4385193000000003,
+      "ntc_gap_mm": 2.694538184266925
+    },
+    {
+      "ref": "C31",
+      "body_gap_mm": 3.4385193000000003,
+      "ntc_gap_mm": 6.693656401883242
+    },
+    {
+      "ref": "C32",
+      "body_gap_mm": 3.4385193000000003,
+      "ntc_gap_mm": 8.089810629827655
+    },
+    {
+      "ref": "C33",
+      "body_gap_mm": 1.9271079999999996,
+      "ntc_gap_mm": 7.720264454256992
+    },
+    {
+      "ref": "C34",
+      "body_gap_mm": 3.4385193000000003,
+      "ntc_gap_mm": 8.886452387003066
+    },
+    {
+      "ref": "C35",
+      "body_gap_mm": 3.4385193000000003,
+      "ntc_gap_mm": 4.5898296293514536
+    },
+    {
+      "ref": "C36",
+      "body_gap_mm": 1.9271079999999996,
+      "ntc_gap_mm": 1.3350967169699732
+    },
+    {
+      "ref": "C4",
+      "body_gap_mm": 1.5253480000000001,
+      "ntc_gap_mm": 0.775348000000001
+    },
+    {
+      "ref": "C5",
+      "body_gap_mm": 3.4385193000000003,
+      "ntc_gap_mm": 3.5972539563495505
+    },
+    {
+      "ref": "C6",
+      "body_gap_mm": 3.4385193000000003,
+      "ntc_gap_mm": 3.7890679627676906
+    },
+    {
+      "ref": "C7",
+      "body_gap_mm": 3.4385193000000003,
+      "ntc_gap_mm": 2.8581525547934796
+    },
+    {
+      "ref": "C8",
+      "body_gap_mm": 2.1480760000000005,
+      "ntc_gap_mm": 1.3980760000000014
+    },
+    {
+      "ref": "C9",
+      "body_gap_mm": 1.1235880000000007,
+      "ntc_gap_mm": 0.3735880000000016
+    },
+    {
+      "ref": "D1",
+      "body_gap_mm": 1.374688,
+      "ntc_gap_mm": 7.3764988373444496
+    },
+    {
+      "ref": "D2",
+      "body_gap_mm": 1.374688,
+      "ntc_gap_mm": 0.6246880000000008
+    },
+    {
+      "ref": "FB1",
+      "body_gap_mm": 3.4385193000000003,
+      "ntc_gap_mm": 2.688519300000001
+    },
+    {
+      "ref": "J1",
+      "body_gap_mm": 3.4385193000000003,
+      "ntc_gap_mm": 2.688519300000001
+    },
+    {
+      "ref": "J2",
+      "body_gap_mm": 3.4385193000000003,
+      "ntc_gap_mm": 2.688519300000001
+    },
+    {
+      "ref": "J3",
+      "body_gap_mm": 3.4385193000000003,
+      "ntc_gap_mm": 6.383747804109471
+    },
+    {
+      "ref": "J4",
+      "body_gap_mm": 0.9729280000000005,
+      "ntc_gap_mm": 5.644404033481659
+    },
+    {
+      "ref": "J5",
+      "body_gap_mm": 2.3790880000000003,
+      "ntc_gap_mm": 4.649726089969603
+    },
+    {
+      "ref": "J6",
+      "body_gap_mm": 0.9729280000000005,
+      "ntc_gap_mm": 0.22292800000000135
+    },
+    {
+      "ref": "J7",
+      "body_gap_mm": 2.3790880000000003,
+      "ntc_gap_mm": 2.1189508516584343
+    },
+    {
+      "ref": "L1",
+      "body_gap_mm": 3.4385193000000003,
+      "ntc_gap_mm": 2.688519300000001
+    },
+    {
+      "ref": "Q1",
+      "body_gap_mm": 3.4385193000000003,
+      "ntc_gap_mm": 2.716658982366483
+    },
+    {
+      "ref": "R1",
+      "body_gap_mm": 2.077768,
+      "ntc_gap_mm": 1.3277680000000007
+    },
+    {
+      "ref": "R12",
+      "body_gap_mm": 3.4385193000000003,
+      "ntc_gap_mm": 8.487086427418571
+    },
+    {
+      "ref": "R13",
+      "body_gap_mm": 3.4385193000000003,
+      "ntc_gap_mm": 8.392296230857948
+    },
+    {
+      "ref": "R14",
+      "body_gap_mm": 2.077768,
+      "ntc_gap_mm": 1.3277680000000007
+    },
+    {
+      "ref": "R15",
+      "body_gap_mm": 2.077768,
+      "ntc_gap_mm": 1.3277680000000007
+    },
+    {
+      "ref": "R16",
+      "body_gap_mm": 3.4385193000000003,
+      "ntc_gap_mm": 8.07095013158132
+    },
+    {
+      "ref": "R17",
+      "body_gap_mm": 2.127988000000001,
+      "ntc_gap_mm": 5.776759552564398
+    },
+    {
+      "ref": "R18",
+      "body_gap_mm": 3.4385193000000003,
+      "ntc_gap_mm": 6.620470982224189
+    },
+    {
+      "ref": "R19",
+      "body_gap_mm": 3.4385193000000003,
+      "ntc_gap_mm": 8.136985684298116
+    },
+    {
+      "ref": "R2",
+      "body_gap_mm": 2.077768,
+      "ntc_gap_mm": 1.3277680000000007
+    },
+    {
+      "ref": "R20",
+      "body_gap_mm": 3.4385193000000003,
+      "ntc_gap_mm": 8.155865130473439
+    },
+    {
+      "ref": "R21",
+      "body_gap_mm": 3.4385193000000003,
+      "ntc_gap_mm": 4.986796168530703
+    },
+    {
+      "ref": "R22",
+      "body_gap_mm": 3.4385193000000003,
+      "ntc_gap_mm": 6.112792817237675
+    },
+    {
+      "ref": "R23",
+      "body_gap_mm": 3.4385193000000003,
+      "ntc_gap_mm": 4.968172302413888
+    },
+    {
+      "ref": "R24",
+      "body_gap_mm": 3.4385193000000003,
+      "ntc_gap_mm": 4.37385825404442
+    },
+    {
+      "ref": "R25",
+      "body_gap_mm": 3.4385193000000003,
+      "ntc_gap_mm": 5.774100451713021
+    },
+    {
+      "ref": "R26",
+      "body_gap_mm": 3.4385193000000003,
+      "ntc_gap_mm": 5.853899215605998
+    },
+    {
+      "ref": "R27",
+      "body_gap_mm": 3.4385193000000003,
+      "ntc_gap_mm": 8.629492222980014
+    },
+    {
+      "ref": "R28",
+      "body_gap_mm": 2.127988000000001,
+      "ntc_gap_mm": 5.292537286419816
+    },
+    {
+      "ref": "R29",
+      "body_gap_mm": 2.127988000000001,
+      "ntc_gap_mm": 8.808453378893713
+    },
+    {
+      "ref": "R3",
+      "body_gap_mm": 3.4385193000000003,
+      "ntc_gap_mm": 2.7001177801111744
+    },
+    {
+      "ref": "R30",
+      "body_gap_mm": 3.4385193000000003,
+      "ntc_gap_mm": 6.592324023170622
+    },
+    {
+      "ref": "R4",
+      "body_gap_mm": 3.4385193000000003,
+      "ntc_gap_mm": 2.688519300000001
+    },
+    {
+      "ref": "R5",
+      "body_gap_mm": 3.4385193000000003,
+      "ntc_gap_mm": 2.765978312726348
+    },
+    {
+      "ref": "R6",
+      "body_gap_mm": 3.4385193000000003,
+      "ntc_gap_mm": 6.347490529845042
+    },
+    {
+      "ref": "R7",
+      "body_gap_mm": 3.4385193000000003,
+      "ntc_gap_mm": 6.347490529845042
+    },
+    {
+      "ref": "R8",
+      "body_gap_mm": 2.077768,
+      "ntc_gap_mm": 6.096348731972608
+    },
+    {
+      "ref": "R9",
+      "body_gap_mm": 2.077768,
+      "ntc_gap_mm": 6.096348731972608
+    },
+    {
+      "ref": "U1",
+      "body_gap_mm": 3.4385193000000003,
+      "ntc_gap_mm": 2.688519300000001
+    },
+    {
+      "ref": "U10",
+      "body_gap_mm": 3.4385193000000003,
+      "ntc_gap_mm": 5.10526551968382
+    },
+    {
+      "ref": "U11",
+      "body_gap_mm": 3.4385193000000003,
+      "ntc_gap_mm": 6.429131825252342
+    },
+    {
+      "ref": "U12",
+      "body_gap_mm": 1.374688,
+      "ntc_gap_mm": 5.873334665872874
+    },
+    {
+      "ref": "U2",
+      "body_gap_mm": 3.4385193000000003,
+      "ntc_gap_mm": 2.688519300000001
+    },
+    {
+      "ref": "U3",
+      "body_gap_mm": 3.4385193000000003,
+      "ntc_gap_mm": 3.333022056103514
+    },
+    {
+      "ref": "U4",
+      "body_gap_mm": 3.4385193000000003,
+      "ntc_gap_mm": 5.04589298603057
+    },
+    {
+      "ref": "U5",
+      "body_gap_mm": 3.4385193000000003,
+      "ntc_gap_mm": 3.8315840101024143
+    },
+    {
+      "ref": "U6",
+      "body_gap_mm": 3.4385193000000003,
+      "ntc_gap_mm": 6.1129564063939235
+    },
+    {
+      "ref": "U7",
+      "body_gap_mm": 1.023148,
+      "ntc_gap_mm": 1.8107208039628861
+    },
+    {
+      "ref": "U8",
+      "body_gap_mm": 3.4385193000000003,
+      "ntc_gap_mm": 6.620470982224188
+    },
+    {
+      "ref": "U9",
+      "body_gap_mm": 3.4385193000000003,
+      "ntc_gap_mm": 2.688519300000001
+    }
+  ],
+  "maximum_lifted_sensor_top_z_mm": 8.44,
+  "guaranteed_capture_areas_mm2": [
+    4.6519499999999985,
+    10.798099999999984,
+    10.20499999999998,
+    1.4290999999999952
+  ],
+  "pack_xy_play_mm": [
+    1.4499999999999993,
+    1.450000000000001
+  ],
+  "pack_to_cap_relative_xy_mm": [
+    2.009999999999999,
+    2.0100000000000007
+  ],
+  "physical_pack_retention_qualified": false,
+  "physical_ingress_qualified": false,
+  "scope": "Conditional static, parallel pack/PCB translation and assigned dimensional/thermal bounds. Minimum pack size, contact regions, lead exit, tilt/impact/abrasion, strength and physical ingress remain unapproved.",
+  "inputs": {
+    "mechanical/swim-r12-pack-retention/pack-retention.json": "a5e01440ccf16907d072d76325328788a6872251bc792faed2f45f7c4f5ae371",
+    "scripts/check_pack_retention.py": "9a419f78733a1b58b3444a8d81353c03e43956bce85bfd9022e19278d8828efd",
+    "scripts/audit_populated_fit.py": "955c97a18a41b707ff01a2f03e218bd5d46499681a5d81086f90dc64d2d867f4",
+    "assembly/pack-r03/request.json": "c45f7910427b9a5e7562caa943e12bd85e8b1e8e27e9e4803a6741d4334fdfd2",
+    "mechanical/swim-r11-thermal-fit/parameters.json": "6a3e51619b56502d3ccf91c7749f115f585b488fc4a21c867df6318c8f150de9",
+    "mechanical/swim-r11-thermal-fit/retention.json": "9a4b3c0126f3542c8d0bff03cb1c57dfd097c8927ad84b9af780185673585fbd",
+    "mechanical/swim-r11-thermal-fit/antenna-fit.json": "b120bb308406ae69fcfed946b0f926b5af2f7e95394204e02fa772a8842976be",
+    "mechanical/swim-r11-thermal-fit/retention-checks.json": "a21530e03e614c82e8b9046bfc49e520128080923d651d149f2bcc300175ced9",
+    "mechanical/swim-r11-thermal-fit/thermal.json": "55cb55db9aaec80aa4fd10eb98c3ca98b1e73db440f6999883a5eda2562d0896",
+    "mechanical/swim-r11-thermal-fit/checkpoint.json": "6f26b23fb3f0813cb558edd6081d055068c5d2db047eb516849d7f7752da25a8",
+    "mechanical/swim-r11-thermal-fit/pack.scad": "63d9073d110e2a92961b9464c1d6c590716e3a138e5a58ad08c0fbd385f73c1c"
+  },
+  "pcb_sha256": "241c84d6ba98793c37344e1e46ddc4918e7b05322ba87daea7c9a90ffb8379b3"
+}

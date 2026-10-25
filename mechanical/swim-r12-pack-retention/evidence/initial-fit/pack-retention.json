@@ -1,0 +1,91 @@
+{
+  "revision": "CT-BAT-RET-001-A",
+  "status": "CONDITIONAL_PACK_RETENTION_PROTOTYPE",
+  "pack_request": "assembly/pack-r03/request.json",
+  "pack_body_maximum_mm": [
+    32,
+    30.5,
+    5.3
+  ],
+  "pack_body_minimum_for_capture_mm": [
+    30.5,
+    29,
+    4.8
+  ],
+  "minimum_dimension_status": "Added engineering acceptance requirement for this cradle; not a supplier-confirmed minimum and not a replacement for CT-BAT-001-A.",
+  "pack_body_bottom_z_mm": 2.1,
+  "cradle": {
+    "inner_mm": [
+      33,
+      31.5
+    ],
+    "outer_mm": [
+      34.6,
+      33.1
+    ],
+    "corner_radius_mm": 0.4,
+    "platform_top_z_mm": 2.1,
+    "wall_top_z_mm": 7.4
+  },
+  "cap": {
+    "outer_mm": [
+      34.6,
+      33.1
+    ],
+    "inner_mm": [
+      27,
+      25
+    ],
+    "corner_radius_mm": 0.4,
+    "ntc_opening_mm": [
+      32,
+      10
+    ],
+    "bottom_z_mm": 7.8,
+    "top_z_mm": 8.55,
+    "bridges_xy_mm": [
+      [
+        -20.8,
+        -1,
+        -16.3,
+        1
+      ],
+      [
+        16.3,
+        -1,
+        20.8,
+        1
+      ],
+      [
+        -1,
+        -16.8,
+        1,
+        -15.8
+      ],
+      [
+        -1,
+        15.8,
+        1,
+        16.8
+      ]
+    ],
+    "bridge_top_z_mm": 9.0
+  },
+  "motion": {
+    "carrier_to_body_xy_mm": 0.36,
+    "thermal_xy_allowance_mm": 0.15,
+    "thermal_z_allowance_mm": 0.08,
+    "feature_tolerance_mm": 0.05,
+    "minimum_component_gap_mm": 0.2
+  },
+  "assembly": "Cradle is part of the shell; the retaining cap is part of the removable PCB carrier. No adhesive preload or screw load is applied to the pouch.",
+  "outstanding": [
+    "Supplier minimum/maximum pack dimensions including swelling and allowed body contact regions",
+    "Lead exit and strain relief drawing",
+    "Pouch edge radii, abrasion, material compatibility and actual load/tilt/impact",
+    "NTC attachment and thermal response",
+    "Physical fit and ingress"
+  ],
+  "physical_pack_retention_qualified": false,
+  "physical_ingress_qualified": false
+}

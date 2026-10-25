@@ -1,0 +1,143 @@
+{
+  "inputs": {
+    "mechanical/swim-r12-pack-retention/pack-retention.json": "a5e01440ccf16907d072d76325328788a6872251bc792faed2f45f7c4f5ae371",
+    "mechanical/swim-r12-pack-retention/pack-retention-checks.json": "88273e6a7a40059b938cadc060f350fe452aa042b06d7b15c104cdaf5ef2d65b",
+    "mechanical/swim-r12-pack-retention/enclosure.scad": "1cc2138076a92110f5d478af3b2398fffce091c890dcf81d7c1e1b07e6bdd38f",
+    "mechanical/swim-r12-pack-retention/pack.scad": "10ed19e4833423f2fbbf714ccf2771ca8874c2ee441db53a4bed72d89a3a1def",
+    "mechanical/swim-r12-pack-retention/pack-retention.scad": "0bf8d2ddf92642dd20cd1e925faa8d89c6674583abadf3a90acece8d66fb7958",
+    "mechanical/swim-r12-pack-retention/pack-retention-parameters.scad": "1cbf242dda1bae67e493c713a00206671c12dd80a925a14c6f7b06decf0aabdd",
+    "mechanical/swim-r11-thermal-fit/parameters.scad": "4d2805ab134f6ac74a1e9fb4231cc22636282fac638d7c2e89358b2db0275de0",
+    "mechanical/swim-r11-thermal-fit/populated.scad": "be2a196a60c0427063fdf33c67b62fc11898d85598f4d2cc1cd325c7e995f7c0",
+    "mechanical/swim-r11-thermal-fit/cables.scad": "6e33c126b28a3550a17da04d55bc727af381001c582fcd77a0c4dedf44bd12de",
+    "mechanical/swim-r11-thermal-fit/pack.scad": "63d9073d110e2a92961b9464c1d6c590716e3a138e5a58ad08c0fbd385f73c1c",
+    "mechanical/swim-r11-thermal-fit/retention.scad": "f41799359d26f646a07c586c030da11a38d6604c57c66c6bfbc9db64ea236563",
+    "mechanical/swim-r11-thermal-fit/checkpoint.json": "6f26b23fb3f0813cb558edd6081d055068c5d2db047eb516849d7f7752da25a8",
+    "scripts/export_pack_retention.py": "31b1dcfb399d5f7b7a85d7066da64b212ff11db0db2f4832ae5718f22e03dc17",
+    "scripts/inspect_enclosure_mesh.py": "650b7923664e55a56af30c605d20fe2cf77a3bedacf71076a153510a92200956"
+  },
+  "meshes": [
+    {
+      "file": "body.stl",
+      "sha256": "eb88c466113e58eccd60d17e78aa55740dc3aee9d14e7564e01380fdcfc8535f",
+      "triangles": 21700,
+      "vertices": 10840,
+      "bounds_mm": [
+        [
+          -28.699996948242188,
+          -24.699996948242188,
+          0.0
+        ],
+        [
+          30.0,
+          24.699996948242188,
+          18.5
+        ]
+      ],
+      "dimensions_mm": [
+        58.69999694824219,
+        49.399993896484375,
+        18.5
+      ],
+      "signed_volume_mm3": 26613.93340294155,
+      "bad_edge_count": 0,
+      "collapsed_faces_at_1e_5mm": 0,
+      "connected_surfaces": 1,
+      "closed_oriented_manifold": true
+    },
+    {
+      "file": "carrier.stl",
+      "sha256": "264977f7f5ace3d91765df91254d112af623e234d92399988934d4e82d6affcb",
+      "triangles": 1718,
+      "vertices": 855,
+      "bounds_mm": [
+        [
+          -20.800003051757812,
+          -16.800003051757812,
+          5.722046125811175e-07
+        ],
+        [
+          20.800003051757812,
+          16.800003051757812,
+          9.699999809265137
+        ]
+      ],
+      "dimensions_mm": [
+        41.600006103515625,
+        33.600006103515625,
+        9.699999237060524
+      ],
+      "signed_volume_mm3": 650.9594291456877,
+      "bad_edge_count": 0,
+      "collapsed_faces_at_1e_5mm": 0,
+      "connected_surfaces": 1,
+      "closed_oriented_manifold": true
+    }
+  ],
+  "cad_controls": [
+    {
+      "case": "pack_components",
+      "empty": true,
+      "returncode": 1,
+      "interference_volume_mm3": 0,
+      "diagnostic": "Geometries in cache: 290\nGeometry cache size in bytes: 454208\nCGAL Polyhedrons in cache: 7\nCGAL cache size in bytes: 2962512\nTotal rendering time: 0:00:11.096\nCurrent top level object is empty.\n"
+    },
+    {
+      "case": "pack_components_control",
+      "empty": false,
+      "returncode": 0,
+      "interference_volume_mm3": 7.568242592817453,
+      "diagnostic": "Geometries in cache: 279\nGeometry cache size in bytes: 444576\nCGAL Polyhedrons in cache: 8\nCGAL cache size in bytes: 3013936\nTotal rendering time: 0:00:11.084\n   Top level object is a 3D object:\n   Simple:        yes\n   Vertices:       32\n   Halfedges:      96\n   Edges:          48\n   Halffacets:     44\n   Facets:         22\n   Volumes:         4\n"
+    },
+    {
+      "case": "pack_hardware",
+      "empty": true,
+      "returncode": 1,
+      "interference_volume_mm3": 0,
+      "diagnostic": "Geometries in cache: 80\nGeometry cache size in bytes: 4782344\nCGAL Polyhedrons in cache: 5\nCGAL cache size in bytes: 57476856\nTotal rendering time: 0:01:11.861\nCurrent top level object is empty.\n"
+    },
+    {
+      "case": "pack_ntc",
+      "empty": true,
+      "returncode": 1,
+      "interference_volume_mm3": 0,
+      "diagnostic": "Geometries in cache: 29\nGeometry cache size in bytes: 90624\nCGAL Polyhedrons in cache: 3\nCGAL cache size in bytes: 466760\nTotal rendering time: 0:00:00.357\nCurrent top level object is empty.\n"
+    },
+    {
+      "case": "pack_ntc_control",
+      "empty": false,
+      "returncode": 0,
+      "interference_volume_mm3": 3.3451522813793417,
+      "diagnostic": "Geometries in cache: 28\nGeometry cache size in bytes: 87280\nCGAL Polyhedrons in cache: 3\nCGAL cache size in bytes: 466224\nTotal rendering time: 0:00:00.351\n   Top level object is a 3D object:\n   Simple:        yes\n   Vertices:       16\n   Halfedges:      48\n   Edges:          24\n   Halffacets:     24\n   Facets:         12\n   Volumes:         3\n"
+    },
+    {
+      "case": "pack_cradle",
+      "empty": true,
+      "returncode": 1,
+      "interference_volume_mm3": 0,
+      "diagnostic": "Geometries in cache: 13\nGeometry cache size in bytes: 182704\nCGAL Polyhedrons in cache: 3\nCGAL cache size in bytes: 1076768\nTotal rendering time: 0:00:02.941\nCurrent top level object is empty.\n"
+    },
+    {
+      "case": "pack_cradle_control",
+      "empty": false,
+      "returncode": 0,
+      "interference_volume_mm3": 326.6895650293501,
+      "diagnostic": "Geometries in cache: 13\nGeometry cache size in bytes: 182704\nCGAL Polyhedrons in cache: 3\nCGAL cache size in bytes: 1357040\nTotal rendering time: 0:00:04.380\n   Top level object is a 3D object:\n   Simple:        yes\n   Vertices:      208\n   Halfedges:     624\n   Edges:         312\n   Halffacets:    212\n   Facets:        106\n   Volumes:         2\n"
+    }
+  ],
+  "previews": {
+    "pack_exploded.png": "75776da747101210997b4fbfb4c350bd6d9adf77470c7daf9a381f2c37f85dfd",
+    "pack_review.png": "18b4789a480e2b200d9dbc4e3e853b50bc99480b2401423d77d8e9669a91ff98",
+    "pack_section.png": "a986b0db2218c7fcb01449ccad25fa44bf341e20d16ef4c03813c20de578a228",
+    "mounted.png": "44cea9f544a8bdd9587873b4732c9b4e730905859669cd2cf7b8e958e0911300"
+  },
+  "unchanged_parts": {
+    "lid.stl": "5c32194b56928f279ef3336c1be4e6aaae1a433d6504f48cb60835bae941ace8",
+    "retainer.stl": "8825ef3a509be8ff69f04bfcaee53d03e37bd0c4c726ec0d94249faa62bec138",
+    "contact.stl": "0194f6425d546d92b4d824280949619d82148eb14bbc8ff76d3e05674a546111",
+    "contact_seal.stl": "309155bd7fe66d11baa5d0c4c2e9514fffb0d2ed44eb2ef7e21ebc39af609eac",
+    "magnet_plug.stl": "1bfe436b31b425f5976cf7c830fee9278e13a6979fc562ba9260b005d03105d2",
+    "dock.stl": "a052a734dac2113831005a45a0b05772889663027bd6f2b0adba64c54c5db484",
+    "boot.stl": "a68bcfea12b04e540222557f622954fbbfd695a21198ed5da9b51bd7e4087d69"
+  },
+  "scope": "Two changed meshes and new CAD controls. Seven r11 parts reused by hash; no new physical qualification."
+}

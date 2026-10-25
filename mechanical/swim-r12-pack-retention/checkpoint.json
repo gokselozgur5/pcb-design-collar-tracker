@@ -1,0 +1,33 @@
+{
+  "revision": "swim-r12-pack-retention",
+  "pcb_sha256": "241c84d6ba98793c37344e1e46ddc4918e7b05322ba87daea7c9a90ffb8379b3",
+  "production_release": false,
+  "files": {
+    "mechanical/swim-r12-pack-retention/README.md": "133060051401f3ef609de1b54e8e89d5fb577031800e40cd74f8691d318979c9",
+    "mechanical/swim-r12-pack-retention/body.stl": "eb88c466113e58eccd60d17e78aa55740dc3aee9d14e7564e01380fdcfc8535f",
+    "mechanical/swim-r12-pack-retention/carrier.stl": "264977f7f5ace3d91765df91254d112af623e234d92399988934d4e82d6affcb",
+    "mechanical/swim-r12-pack-retention/enclosure.scad": "1cc2138076a92110f5d478af3b2398fffce091c890dcf81d7c1e1b07e6bdd38f",
+    "mechanical/swim-r12-pack-retention/evidence/initial-fit/checker.py": "708287ac3920874a27ab934eb5ceb073d58c519dfdde778d14174cb503a11a37",
+    "mechanical/swim-r12-pack-retention/evidence/initial-fit/pack-retention-checks.json": "e76a625b344b7aa5f5902e6c5b76559f7cc19105a3d9887da253b43eb8c0a8a1",
+    "mechanical/swim-r12-pack-retention/evidence/initial-fit/pack-retention.json": "0738cae0cecfb8f8a3efb1c8a67b2914179483438b98a53c6f893ea3b9885868",
+    "mechanical/swim-r12-pack-retention/mesh-checks.json": "457b210fefb540d1cb79782b0ebea0b249008593d1cc5b575b54cf3a4e1467f9",
+    "mechanical/swim-r12-pack-retention/mounted.png": "44cea9f544a8bdd9587873b4732c9b4e730905859669cd2cf7b8e958e0911300",
+    "mechanical/swim-r12-pack-retention/pack-retention-checks.json": "88273e6a7a40059b938cadc060f350fe452aa042b06d7b15c104cdaf5ef2d65b",
+    "mechanical/swim-r12-pack-retention/pack-retention-parameters.scad": "1cbf242dda1bae67e493c713a00206671c12dd80a925a14c6f7b06decf0aabdd",
+    "mechanical/swim-r12-pack-retention/pack-retention-sheet.pdf": "1e3eaf19c021627db2521af555bec03df3d6d2b3d27e33be2ad3379baa77c1a1",
+    "mechanical/swim-r12-pack-retention/pack-retention-sheet.png": "336186075014c0c3abe76f54fdbe4898e89dcda60bdc4c59057446a1f01b49f3",
+    "mechanical/swim-r12-pack-retention/pack-retention-sheet.svg": "6c3a0f38f4076070e432d5e272980a66ddc787377e72422baa908777f128f528",
+    "mechanical/swim-r12-pack-retention/pack-retention.json": "a5e01440ccf16907d072d76325328788a6872251bc792faed2f45f7c4f5ae371",
+    "mechanical/swim-r12-pack-retention/pack-retention.scad": "0bf8d2ddf92642dd20cd1e925faa8d89c6674583abadf3a90acece8d66fb7958",
+    "mechanical/swim-r12-pack-retention/pack.scad": "10ed19e4833423f2fbbf714ccf2771ca8874c2ee441db53a4bed72d89a3a1def",
+    "mechanical/swim-r12-pack-retention/pack_exploded.png": "75776da747101210997b4fbfb4c350bd6d9adf77470c7daf9a381f2c37f85dfd",
+    "mechanical/swim-r12-pack-retention/pack_review.png": "18b4789a480e2b200d9dbc4e3e853b50bc99480b2401423d77d8e9669a91ff98",
+    "mechanical/swim-r12-pack-retention/pack_section.png": "a986b0db2218c7fcb01449ccad25fa44bf341e20d16ef4c03813c20de578a228",
+    "scripts/check_pack_retention.py": "9a419f78733a1b58b3444a8d81353c03e43956bce85bfd9022e19278d8828efd",
+    "scripts/export_pack_retention.py": "31b1dcfb399d5f7b7a85d7066da64b212ff11db0db2f4832ae5718f22e03dc17",
+    "scripts/inspect_enclosure_mesh.py": "650b7923664e55a56af30c605d20fe2cf77a3bedacf71076a153510a92200956",
+    "scripts/make_pack_retention_sheet.py": "325dde1b86ea43c2e2df9141b414da10795c1b3bc0d515c3a7edd96305bb3a68",
+    "scripts/verify_pack_retention.py": "ef39c940d98ce70bcf603e9ba6f68ed031c34f9b4966249c019a807ab87dfc57",
+    "tests/test_pack_retention.py": "e2cf8694e49f070efc3b78813051513aa54a434f9073a84e7ba087f417cb7fce"
+  }
+}
