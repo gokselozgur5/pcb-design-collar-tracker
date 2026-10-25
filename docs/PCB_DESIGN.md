@@ -126,6 +126,12 @@ loops. Review critical paths before leaving them to an autorouter.
   thermal balance when one side has a plane and the other a narrow neck.
 - Check RF geometry against the reference design and real stackup. Antenna
   keepouts, enclosure, battery and body proximity may need separate measurements.
+- Check the full RF trace projection over reference copper; a backed centerline
+  can miss an edge crossing a via antipad. Validate converted fill holes against
+  native point containment before trusting an independent geometry checker.
+- Compare the supplier calculator's actual inputs with its catalog and guide.
+  Nominal copper weight, etch taper, mask and finished thickness can use different
+  conventions. Record discrepancies; numerical solver tolerance is not process tolerance.
 - Adding an ESD part is insufficient by itself. Review connector → protection → IC
   routing and the protection device's ground path.
 
