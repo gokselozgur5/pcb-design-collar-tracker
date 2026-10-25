@@ -560,3 +560,41 @@ positive retention, dock, firmware and factory/physical qualification remain ope
 Continue independent retention/harness/dock work while the enquiry is pending;
 do not restart catalogue searches or repeat DFM on unchanged bytes. No order,
 payment, supplier message, account switch or physical test occurred.
+
+## 2026-10-26 — Captive PCB prototype with bounded-motion checks
+
+Added r10's keyed retaining frame, four edge tabs, carrier guide rails, shell
+locators and lid stops. The 40 x 32mm PCB, all-green Gerber, requested pack and
+57.4 x 49.4 x 21.0mm rigid envelope are unchanged. The assigned ambient tolerance
+stack allows the lid to seat and keeps four tab contacts across 27 offset/yaw
+cases. It permits bounded free play; it is not a zero-motion or shock rating.
+
+Swept envelopes for 85 populated parts clear the retention geometry by at least
+0.205mm. This required larger D1/U12 reliefs, new C10/R29 reliefs and a 0.3mm leg
+move. The original GNSS route failed when the PCB lifted; one GNSS control point
+and the LTE initial bend were adjusted. Twenty-seven fixed-length cable poses
+pass the component/bend/channel and separate wall/antenna/self-clearance screens.
+The guide centers remain fixed. Sampling does not prove all continuous flex paths.
+The SIM bridge was raised to preserve 0.20mm service clearance at assigned limits.
+Six discriminating regressions cover the original failures and missing features.
+
+The first carrier STL failed: 64 triangles collapsed at 0.00001mm and 75 oriented
+edges were invalid. Preserved that export. Sharing the carrier's clipped outer
+contour and local Z datum, with internal leg/frame overlap, fixes the geometry
+without relaxing mesh acceptance. Solid checks run before preview rendering.
+
+The final export exited zero: nine closed/oriented/connected meshes, five inspected
+previews and all CAD controls pass. Current carrier, guide, swept-retention and
+correct-key intersections are empty. The restored support gives 1.240259mm³,
+undersized cable channels 4.391217mm³ and reversed key 0.576004mm³ of interference.
+All 34 shell screens and four nominal board-thickness cases still pass. The actual
+retention PDF was rendered and inspected. Read-only handoff verification includes
+the new source-bound checkpoint; prior PCB/CAD/package identities stay unchanged.
+
+The prototype drawing states its material and physical limits. Unfilled POM-C
+remains a candidate, not an approved material. Resolve thermal expansion and
+process capability next, followed by battery retention and controlled harness/dock
+construction. The battery request remains unsent pending separate authorization.
+No PCB edit, new JLC upload, native KiCad process, supplier message, order, payment
+or physical test occurred. The whole-device release and IP68 qualification remain
+open; preserve earlier checked revisions and their review packages.

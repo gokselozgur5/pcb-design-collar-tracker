@@ -371,6 +371,20 @@ not a growing diary inside this guide.
 - Specify immersion conditions separately from an IP68 design target. Complete
   battery, antenna, charging and assembly definitions before tooling; qualify
   the final assembly for ingress, power, RF and retention with physical tests.
+- Include the motion allowed by a retaining frame, not only the seated PCB pose.
+  A small lift can consume cable clearance even when the stationary board fits.
+  Keep conservative swept component bounds separate from sampled cable poses;
+  a finite pose grid does not prove every continuous deformation or flex cycle.
+- Reference retainer and lid-stop dimensions to assembly datums and check the
+  complete closing stack. Preserve SIM insertion access in the stated service
+  configuration. An internal stop must not force the gasket joint open.
+- Treat room-temperature fit, assigned manufacturing limits, material expansion
+  and physical retention strength as distinct evidence. Datasheet guideline
+  properties do not qualify a thin machined or printed retaining feature.
+- Check exported meshes before rendering previews. Coincident rectangle and
+  offset-contour faces can create submicron STL slivers; use a shared outer
+  contour and real internal overlap, then repeat the same edge/manifold checks.
+  Preserve the failed export instead of relaxing mesh precision to hide it.
 
 ### Routing a congested board without losing ground references
 

@@ -64,6 +64,10 @@ uploads to JLC DFM are in scope. Orders, payments and supplier messages are not.
 - Separate peak, average and continuous current, and label engineering headroom
   separately from manufacturer requirements. Select a battery from complete-pack
   protection and charge limits; a bare-cell rating does not qualify its PCM.
+- A retained PCB needs movement and tolerance checks against components, cables,
+  SIM access and the closed-lid stack. A seated-board fit is not retention proof.
+  Keep sampled cable poses distinct from continuous-motion and physical evidence;
+  resolve material expansion before describing an assembly as ready to order.
 - No subagents unless Göksel explicitly requests them.
 
 ## Git and handoff

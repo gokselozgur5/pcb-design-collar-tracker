@@ -19,6 +19,11 @@ Latest battery work: [CT-BAT-001-A request sheet](../assembly/pack-r03/request-s
 This study is not an approved battery substitution. Supplier-message authorization
 has been requested separately; no response or sending authorization is recorded yet.
 
+Latest mechanical work: [r10 captive-PCB prototype](../mechanical/swim-r10-retention/README.md)
+and its [dimensioned drawing](../mechanical/swim-r10-retention/retention-sheet.pdf).
+The frame, four capture tabs, carrier rails and lid stops bound board movement.
+These are ambient geometry results, not material, strength or physical retention acceptance.
+
 | Check | Current result |
 |---|---|
 | Board | 40 × 32mm; six Cu layers; 87 footprints |
@@ -32,6 +37,7 @@ has been requested separately; no response or sending authorization is recorded 
 | JLC PCB DFM | Records `637366592129687553` / `637366801595977730`; same ZIP/rules; 29 rows; SMT off |
 | Preserved mechanical r08 | 85 populated envelopes pass four thickness cases; eight closed meshes; current CAD intersections empty, old carrier and undersized cable guides rejected |
 | Requested-pack study r09 | Same PCB; requested pack/NTC envelope fits with a 0.4mm height increase; no supplier pack approval |
+| Captive-PCB prototype r10 | 85 swept component envelopes, 27 cable poses, four tab contacts and nine closed meshes; current CAD intersections empty and reversed key rejected |
 | Antenna candidates | Synzen CAPH SZK-C-3L30 LTE and ZETA SZK-C-0G04 GNSS; separate nominal 100mm cable assemblies and four internal lid guides |
 
 PCB SHA256: `241c84d6ba98793c37344e1e46ddc4918e7b05322ba87daea7c9a90ffb8379b3`.
@@ -69,11 +75,22 @@ and the r05l PCB are unchanged. The original board height fails the wider-pack
 clearance control. No supplier part, wire route, adhesive strength or physical
 thermal result is approved by this fit calculation.
 
-**Independent local work can continue:** positive PCB/pack retention, controlled
-harness and dock construction, cable tolerance/opening-motion definitions, then
-firmware and factory tests. Do not
+**Next independent local step:** resolve material choice and thermal fit for the
+r10 frame/carrier/shell before ordering. POM-C is only a candidate; its expansion
+is not covered by the ambient model. Then define pack retention and the controlled
+harness/dock, cable tolerance/opening motion, firmware and factory tests. Do not
 reroute or repeat DFM without a real source change. For a PCB edit, create a
 successor and rerun native/export/two actual supplier checks.
+
+r10 preserves r09 dimensions and the r05l PCB. The carrier reliefs and one support
+leg accommodate bounded PCB movement; GNSS/LTE initial cable paths were adjusted
+without moving the lid guides. The assigned motion includes PCB-to-carrier XY
+of 0.20mm, PCB-to-shell XY of 0.30mm and PCB top Z=11.06–11.75mm. This is captive
+geometry with free play, not an anti-rattle or shock rating. Minimum swept component
+clearance is 0.205mm; the smallest tab-contact area is 0.321mm². Cable sampling is
+finite and does not prove continuous motion or flex life. The old GNSS route and
+undersized SIM bridge fail regressions. The first STL's degenerate triangles are
+preserved; shared carrier contours fix the mesh without relaxing acceptance.
 
 Charge bounds depend on sensor R/T and full-temperature leakage assumptions and a
 2°C cell-to-sensor allocation including lag. Startup, brownout, low-cell recovery,

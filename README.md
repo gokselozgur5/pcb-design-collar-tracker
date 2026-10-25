@@ -44,6 +44,13 @@ Its [r09 fit study](mechanical/swim-r09-pack-request/README.md) includes the pac
 temperature-sensor stack with a 0.4mm height increase. This remains a supplier
 request: the existing EEMB 350mA PCM is not approved, and no complete pack is selected.
 
+The latest [r10 captive-PCB prototype](mechanical/swim-r10-retention/README.md) adds
+a keyed retaining frame, four tabs and lid stops. Its
+[dimensioned PDF](mechanical/swim-r10-retention/retention-sheet.pdf) and saved checks
+cover 85 swept component envelopes, 27 cable poses and nine closed meshes. Rigid
+size stays 57.4 x 49.4 x 21.0mm. Material/thermal fit, retention strength and battery
+retention remain open; this ambient prototype is not an assembly release.
+
 [STATUS](docs/STATUS.md) records the exact source and next action. The earlier r05k,
 r04i and all prior tested files remain preserved. Upload only the Gerber ZIP to PCB
 DFM; the outer review archive also contains native CAD, assembly candidates and reports.
