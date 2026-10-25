@@ -325,9 +325,10 @@ def verify(include_review_bundle=True):
     from verify_power_pin_candidate import verify as verify_power_pins
     power_pin_candidate = verify_power_pins()
     from verify_routing_candidate import verify as verify_routing
-    routing_candidate = verify_routing(ROOT / 'experiments/power-r05f-return-reset')
+    routing_candidate = verify_routing(ROOT / 'experiments/power-r05h-six-layer')
     routing_alternatives = [verify_routing(ROOT / 'experiments' / name) for name in [
-        'power-r05c-return-corridors', 'power-r05d-joint-routing', 'power-r05e-native-joint']]
+        'power-r05c-return-corridors', 'power-r05d-joint-routing', 'power-r05e-native-joint',
+        'power-r05f-return-reset', 'power-r05g-local-crossings']]
     return {'baseline_revision': '0.3.4', 'evidence_files': len(manifest['files']),
             'supplier_records': sorted(records), 'result': 'PASS',
             'current':current, 'mechanical':mechanical, 'populated_fit':populated_fit,

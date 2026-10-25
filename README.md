@@ -4,37 +4,31 @@ A small GPS and cellular tracker for dog collars, starting with Türkiye.
 The aim is one electronics design with different collar mounts. Fit, weight and
 comfort across dog sizes and coat types still need physical validation.
 
-**The r04i PCB is native-clean and passed two actual JLC PCB DFM analyses at
-0 Danger / 0 Warning, using identical ZIP bytes and unchanged rules.** It is
-40 × 32 mm with four copper layers, two continuous inner GND planes, no remaining
-return-via screen gaps and a clear projected nano-SIM entry lane. eSIM is deferred.
+**The current r05h PCB is fully routed and passed two actual JLC PCB DFM analyses
+at 0 Danger / 0 Warning.** Both used the same final ZIP and unchanged rules, with
+29 analyzed rows and 449 green measurements each. Native DRC/ERC/parity also pass.
 
-**Electrical release is on hold.** The [source-verified power review](evidence/power-review-r04i/README.md)
-identifies undervoltage, GPIO sequencing and battery-ADC off-state findings in r04i.
-The active [r05f routing candidate](experiments/power-r05f-return-reset/README.md)
-retains that proposed circuit and clear ERC. Its PCB has **five open connections,
-zero other native violations/warnings and 44 return-via screen gaps**. Conditional
-timing calculations are not powered qualification. **No r05f Gerber or JLC result
-exists.** The tested r04i files remain preserved.
+The board is 40 × 32 × nominal 0.8 mm with six copper layers. In1.Cu and In4.Cu
+are continuous GND planes; all 128 signal vias pass the local return screen.
+The physical nano-SIM entry is clear. eSIM is deferred.
 
-The [swimming enclosure prototype](mechanical/swim-r02-fit/README.md) adds a sealed lid,
-charging-contact seals and collar mount. Its r02 revision checks component heights
-at actual placements and clears the carrier/contact hardware. IP68 is the design target, not a test
-result. Battery/antenna fit, SMT assembly and powered/RF/ingress qualification
-remain open. [STATUS](docs/STATUS.md) records the exact evidence and next action.
-The [preliminary r05 fit](mechanical/swim-r05-route-fit/README.md) applies that
-geometry to r05f: 69 populated envelopes pass, with nine explicit unresolved
-resistor-height requirements. It does not replace the preserved r02 review bundle.
+[Final Gerber ZIP](experiments/power-r05h-six-layer/evidence/collar-tracker-05h-final2-40x32-dfm.zip) ·
+[Design review PDF](experiments/power-r05h-six-layer/evidence/review.pdf) ·
+[JLC report 1](experiments/power-r05h-six-layer/evidence/jlc-final-check1/report.pdf) ·
+[JLC report 2](experiments/power-r05h-six-layer/evidence/jlc-final-check2/report.pdf)
 
-[Design review PDF](mechanical/swim-r02-fit/review.pdf) ·
-[Complete review bundle](release/collar-tracker-r04i-swim-r02-fit-review.zip) ·
-[Tested r04i Gerber ZIP](experiments/paul-nanosim-r04i-sim-access-40x32/evidence/collar-tracker-04i-final-40x32-dfm.zip) ·
-[JLC report 1](experiments/paul-nanosim-r04i-sim-access-40x32/evidence/jlc-check1/report.pdf) ·
-[JLC report 2](experiments/paul-nanosim-r04i-sim-access-40x32/evidence/jlc-check2/report.pdf)
+**Electrical release remains on hold.** The proposed power repair needs source/bench
+qualification. Actual dielectric stack and RF impedance, exact BOM, battery/NTC,
+antennas, factory assembly/programming/test and physical ingress qualification remain
+open. PCB DFM does not establish a working PCBA.
 
-The review bundle contains editable native PCB/CAD, eight mechanical STL files
-and the two supplier reports. Upload only the Gerber ZIP for PCB DFM. The bundle
-is for design review; its enclosure is a prototype awaiting physical qualification.
+The [r06 enclosure fit](mechanical/swim-r06-six-layer-fit/README.md) checks 69 populated
+envelopes and 30 shell constraints. IP68 remains a design target, with provisional
+2 m fresh-water / 60-minute conditions. No physical water/dust test is claimed.
+[STATUS](docs/STATUS.md) records the exact source, evidence and next action.
+
+The earlier r04i PCB and [r02 review bundle](release/collar-tracker-r04i-swim-r02-fit-review.zip)
+remain preserved. Upload only the Gerber ZIP to PCB DFM.
 
 ## Continue in a new session
 
@@ -100,7 +94,8 @@ a finished, working PCBA.**
 
 - Validated PCB DFM baseline: `experiments/35x28-clearance-r034/hardware/`.
 - Preserved 35 × 28 mm checkpoint: `experiments/paul-nanosim-r04e/hardware/`.
-- Current 40 × 32 mm nano-SIM PCB: `experiments/paul-nanosim-r04i-sim-access-40x32/`.
+- Current six-layer PCB: `experiments/power-r05h-six-layer/`.
+- Preserved four-layer nano-SIM PCB: `experiments/paul-nanosim-r04i-sim-access-40x32/`.
 - Preserved 40 × 32 mm DFM checkpoint: `experiments/paul-nanosim-r04g-returns-40x32/`.
 - Earlier r04 routing and rejected r04c experiment are preserved separately.
 - Legacy 30 × 22 mm / 0.2.1 source: `hardware/`, preserved with its original ZIPs.
@@ -115,7 +110,7 @@ either 35 × 28 mm or 40 × 32 mm. Its 250 mAh example targets a 38 × 30 × 14 
 enclosure, or 14.6 mm including an assumed contact protrusion. Antennas, the heart-rate head and much of
 the electronics are reserved volumes, not fitted production components.
 
-The new `mechanical/swim-r02-fit/` model targets the current 40 × 32 mm board.
+The current `mechanical/swim-r06-six-layer-fit/` model uses the r05h 40 × 32 mm board.
 Battery capacity, charge interval, position-update rate and final antennas remain open. Earlier cost ranges were estimates, not supplier quotes, and did not
 include heart-rate hardware.
 
@@ -124,7 +119,8 @@ include heart-rate hardware.
 | Path | Purpose |
 |---|---|
 | `experiments/35x28-clearance-r034/hardware/` | Native source that passed local and JLC PCB DFM checks |
-| `experiments/paul-nanosim-r04i-sim-access-40x32/` | Current native source, access/topology/ground checks and two verified JLC passes |
+| `experiments/power-r05h-six-layer/` | Current six-layer source, final Gerber and two verified JLC passes |
+| `experiments/paul-nanosim-r04i-sim-access-40x32/` | Preserved four-layer source and supplier evidence |
 | `mechanical/swim-r02-fit/` | Parametric swimming enclosure prototype; physical qualification pending |
 | `scripts/finalize_clearance034.py` | Binds source, local checks, JLC reports and the exact delivered ZIP |
 | `hardware/` | Legacy KiCad project, PCB, five-section A2 schematic and draft BOM |

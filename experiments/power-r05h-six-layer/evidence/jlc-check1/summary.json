@@ -1,0 +1,14 @@
+{
+  "record_id": "637342567651037186",
+  "zip_sha256": "e11227ff1b3d70ed331e350a094b46752ace4b800b9abf19a984cefab151cd86",
+  "rules_sha256": "f1bebb3b2b5ac2ba0579f882fc0605d169c1d6a3a852a07beb8652b719e0a725",
+  "analyzed_rows": 29,
+  "measurement_count": 457,
+  "counts": {
+    "danger": 4,
+    "warning": 2,
+    "good": 451
+  },
+  "smt_analyzed": false,
+  "scope": "PCB DFM only. No PCBA, powered hardware, RF or ingress acceptance."
+}

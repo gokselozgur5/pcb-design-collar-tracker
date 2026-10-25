@@ -1,75 +1,52 @@
 # Current state — 2026-10-25
 
-**r04i PCB: native-clean and two actual JLC runs at 0 Danger / 0 Warning.**
-**Active r05f: five open connections, zero other native violations/warnings and 44 return-screen gaps.**
-**Electrical release: HOLD; the proposed repair still needs source/bench qualification.**
-**Swimming enclosure: engineering prototype under review; IP68 is not qualified.**
+**Active r05h: fully routed; native DRC/ERC/parity clean; two actual JLC PCB runs at 0 Danger / 0 Warning.**
+**Electrical release: HOLD. Swimming enclosure: preliminary fit passes; IP68 unqualified.**
 
 Repository: [gokselozgur5/pcb-design-collar-tracker](https://github.com/gokselozgur5/pcb-design-collar-tracker).
-All authored repository/GitHub content is English. Original supplier reports retain
-their original metadata.
+All authored repository/GitHub content is English. Continue from
+`experiments/power-r05h-six-layer/hardware/`; its saved native source is authoritative.
 
-Review: [updated two-page PDF](../mechanical/swim-r02-fit/review.pdf) and
-[132-file bundle](../release/collar-tracker-r04i-swim-r02-fit-review.zip).
-Bundle SHA256: `ea960e01f39e7b31aef930359a82b7b360e9e6c4a1fb232dad78c8d7f7032206`.
-`python3 scripts/verify_handoff.py` verifies the saved PCB, mechanical checks and
-every bundled file against the checkout; it performs no new supplier/physical test.
+[Final Gerber ZIP](../experiments/power-r05h-six-layer/evidence/collar-tracker-05h-final2-40x32-dfm.zip) ·
+[Current design review](../experiments/power-r05h-six-layer/evidence/review.pdf) ·
+[JLC report 1](../experiments/power-r05h-six-layer/evidence/jlc-final-check1/report.pdf) ·
+[JLC report 2](../experiments/power-r05h-six-layer/evidence/jlc-final-check2/report.pdf)
 
-## Active r05f circuit and layout
+## Active r05h layout
 
-Continue from `experiments/power-r05f-return-reset/hardware/`, following its
-[review and limits](../experiments/power-r05f-return-reset/README.md).
-PCB SHA256: `1b2b4bd7b90c3931bd8cbb151637408902332a94260d4a2a820ae6df04838a09`.
-The saved native source is authoritative; do not rerun a seed over it.
+PCB SHA256: `aecb8e431819fa2aa23dfecc98ff1f6a064b5ae81afe7679a6e317f3571c3171`.
+ZIP SHA256: `2cae8b12bdf20b3c8633f8db0c59cc6911a49a43ed82e1e1bdc381e6a9d69e34`.
 
-The unchanged 71-part r05 circuit adds rail supervision/restart hysteresis, GPIO
-sequencing and a battery gauge. Its schematic identity and clear ERC are retained.
-The seven existing circuit regressions and conditional calculations do not establish
-powered behavior. Source retention, effective capacitor bounds and exact resistor
-MPNs/tolerance/TCR still require qualification; electrical release remains on HOLD.
-Nordic's conditional power-off exception is recorded in the
-[sequencing follow-up](power-sequence-followup.md); review actual GPIO shutdown
-behavior before treating source retention as an unconditional requirement.
-
-| Current r05f check | Result |
+| Check | Result |
 |---|---|
-| Outline / layers | 40 × 32 × 0.8 mm; four copper layers |
-| Native DRC / parity | **Five non-GND opens; zero other violations, warnings or mismatches** |
-| Open nets | NRF_ENABLE, VBAT, FG_ALERT; two VIO_ENABLE connections |
-| Ground | 97 physical pads, 94 unique terminals with local paths; 83 GND vias |
-| Planes / RF | Both continuous inner GND fills contain every GND via; no inner tracks; 24 original RF segments retained |
-| Returns | **44 of 129 non-GND vias exceed the inherited 2 mm screen**; return placement is unfinished |
-| SIM | Four clamp paths without bypass; 20 other bottom-side bodies clear the card entry strip |
-| Power | All 12 original backbone checks pass; the new VDD_NRF control branch is connected |
-| Supplier / mechanical | No r05f Gerber/JLC run; fresh preliminary fit checks 69 populated envelopes and 30 shell checks |
+| Size / circuit | 40 × 32 × nominal 0.8 mm; six copper layers; unchanged 71-part r05 circuit |
+| Native DRC / ERC / parity | Zero violations, warnings, opens or mismatches |
+| Ground | 97 physical pads, 94 unique terminals locally connected; 110 GND vias |
+| Planes | In1.Cu and In4.Cu each one continuous GND fill; no tracks; all GND vias contained |
+| Returns | 128/128 signal vias pass the 2 mm screen; maximum 1.986755 mm |
+| RF / SIM | 24 original RF segments retained; four clamp paths without bypass; card entry clear |
+| Power | All 12 original backbone checks pass; POWER_GOOD replacement route 18.214 mm, zero new vias |
+| JLC PCB DFM | `637343111455133697` and `637343305880473601`; 29 rows / 449 green measurements each; rules unchanged; SMT off |
+| Mechanical | Fresh r06 preliminary fit: 69 populated envelopes and 30 analytical shell checks pass |
 
-The sequence is preserved and verified: r05b had 14 opens, r05c eight, and r05f
-five. r05d's strict joint Freerouting pass stayed at eight and no SES was imported.
-r05e's native joint reroute ended with 17 opens and is not selected. r05f starts
-from r05c, retaining the working original signals.
+Read the [r05h review and limits](../experiments/power-r05h-six-layer/README.md).
+The four-layer local-crossing alternative r05g ended with six opens and was not
+selected. Two extra routing layers closed r05f's remaining five connections while
+retaining two dedicated GND planes. Local returns were restored and unused ends
+trimmed with native terminal-group guards. C30 attachments are balanced. Two full-size
+labels moved after the first JLC run; that rejected package/report stays preserved.
+Only the `final2` ZIP has two accepted runs.
 
-C9 moved closer to modem ENABLE and its local GND path shortened to 1.118 mm.
-POWER_GOOD closed with a 68.085 mm candidate route; that detour still needs review.
-Five unused signal exits, 14 unused single-layer via junctions, ten loose segments
-and a 0.65 mm unused end were removed or replaced while preserving native terminal
-groups. The extra space then allowed a 16.103 mm VDD_NRF control branch to connect.
-No original power trunk was narrowed. Four raster regressions pass; source-bound
-native checks cover the actual applied changes.
+**Next:** qualify an actual six-layer dielectric stack and the RF geometry. Then
+close source/bench, exact resistor MPN/tolerance/TCR, battery/NTC, antenna and factory
+BOM/CPL/programming/test requirements. Review the [sequencing follow-up](power-sequence-followup.md)
+before changing the circuit. Nominal fit is not finished-thickness tolerance approval.
+Complete retention/harness/dock/seal selection and physical water/dust qualification.
+Do not order this as a finished working PCBA yet. Preserve tested bytes; a PCB
+change requires fresh native checks, export and two same-ZIP supplier runs.
 
-Twenty-five return-only GND stitches were released for rerouting. Their replacement
-is still required: zero native geometry warnings does not mean an accepted return
-layout. Local grounds, RF-adjacent grounds, native/supplier rules and manufacturer
-lands were preserved. Exact-polygon and bounding-box planning models both separate
-the remaining nets; those models are not proof that every native route is impossible.
-
-**Next:** inspect the barriers at U7's enable pins, U4's enable exit and the gauge
-connections. Make a small measured placement or crossing change in an isolated
-copy, retaining working power, RF, SIM, local GND and both inner planes. Do not
-repeat the unchanged search or remove all working trunks again. Complete the five
-connections, restore and review returns, inspect passive attachments and update
-the inherited `CT 0.5B` legend. Refresh populated fit, then export and obtain two
-fresh same-ZIP JLC analyses. Source/BOM/pack/antenna/assembly/physical qualification
-remain required before production.
+`python3 scripts/resume.py` verifies the saved evidence without rerunning KiCad,
+JLC or physical tests. Earlier r04i and r05b–r05g sources remain preserved.
 
 ## Preserved tested PCB
 
@@ -160,11 +137,9 @@ still represent reservations. Dock electronics, harness routing/strain relief,
 positive PCB retention, material/seal grades, actual lid fasteners and torque remain
 open. No physical ingress, powered or RF result exists.
 
-The active `mechanical/swim-r05-route-fit/` preliminary screen uses actual r05f
-placements and 71 profiles, including two DNP parts. All 69 populated envelopes
-and 30 analytical shell checks pass. C9's new position clears the carrier; the
-smallest gap remains C10/carrier at 0.24 mm. Nine resistor-height envelopes remain
-component requirements. The original carrier control still detects D1 interference.
-Top/bottom PCB and populated previews were inspected. r02's mesh/boolean acceptance
-and release bundle do not transfer; no new mesh package or physical test is claimed.
-The earlier r03 and r04 fit checkpoints remain preserved with their own PCB hashes.
+The active `mechanical/swim-r06-six-layer-fit/` uses the actual r05h PCB and
+nominal 0.8 mm thickness. All 69 populated envelopes and 30 shell checks pass;
+the smallest checked gap is C10/carrier at 0.24 mm. Nine resistor-height limits
+remain component requirements. Actual supplier stack/thickness tolerances,
+positive retention and physical tests remain open. The inspected preview is a
+conservative volume model; r02 mesh acceptance does not transfer automatically.

@@ -365,3 +365,18 @@ not a growing diary inside this guide.
 - Specify immersion conditions separately from an IP68 design target. Complete
   battery, antenna, charging and assembly definitions before tooling; qualify
   the final assembly for ingress, power, RF and retention with physical tests.
+
+### Routing a congested board without losing ground references
+
+Measure the blocked regions before rerunning the same search. If extra routing
+layers are justified, retain two dedicated GND planes and explicitly declare the
+signal/ground allocation. Every through-via must clear every spanned signal layer;
+check its local return when placing it. A saved RF track shape does not preserve
+impedance when dielectric thickness or stack arrangement changes.
+
+Before calling the new revision complete for PCB DFM, refresh connectivity, filled
+plane containment, local GND paths, SIM clamp topology and populated fit from the
+final source. Inspect both copper attachments on new passives. Check text against
+tented drill holes as well as mask openings; native DRC alone did not catch the
+r05h silkscreen findings. Preserve a failed package separately and obtain two
+fresh analyses of the corrected ZIP with unchanged supplier rules.

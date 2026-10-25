@@ -343,3 +343,27 @@ Their evidence is dated; do not transfer an older pass to a newer source file.
   same-ZIP JLC runs. Electrical source/BOM, pack, antennas, factory assembly and
   ingress qualification remain open. No new supplier upload, order, payment,
   supplier message or physical test occurred.
+
+## 2026-10-25 — Complete six-layer routing and repeat real JLC DFM
+
+- Event: The four-layer local crossing trial left six opens; preserving two GND
+  planes and adding two routing layers closed all five r05f connections.
+- Decision: Select r05h at 40 × 32 × nominal 0.8 mm. F/In2/In3/B carry routes;
+  In1/In4 remain continuous GND. Keep all older tested sources unchanged.
+- Result: Native DRC/ERC/parity are clear; all 94 unique grounds are local and
+  all 128 signal transitions pass the 2 mm screen. POWER_GOOD's replacement is
+  18.214 mm with no new vias; C30 attachments are balanced. Source-guarded cleanup
+  preserved native terminal groups. The new native audit uses one LoadBoard per
+  process, including the isolated RF-reference probe.
+- Result: The first JLC report found four Danger/two Warning silkscreen-to-hole
+  findings. Moving two full-size labels resolved them. Final2 ZIP
+  `2cae8b12bdf20b3c8633f8db0c59cc6911a49a43ed82e1e1bdc381e6a9d69e34` passed records
+  `637343111455133697` and `637343305880473601`: 0/0, 29 rows, 449 green measurements
+  each; unchanged rules, SMT off. Both PDFs and raw results are preserved.
+- Result: Fresh r06 nominal fit passes 69 component envelopes and 30 shell checks.
+  Top/bottom and populated previews were inspected. No physical IP68 result exists.
+- Validation: Seven router, two inner-power-path, five SIM-topology and two
+  checkpoint rejection regressions pass; handoff and resume verification pass.
+- Next: Select/model the real six-layer stack and RF geometry; close circuit/BOM,
+  battery/NTC, antenna, factory-test and enclosure qualification requirements.
+  PCB DFM completion does not lift the electrical or manufacturing HOLD.

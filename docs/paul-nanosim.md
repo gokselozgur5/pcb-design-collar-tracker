@@ -8,7 +8,7 @@ implementation. Company board files are not copied into this personal repository
 | Review point | Collar action | Acceptance still needed |
 |---|---|---|
 | GND vias connected by long tracks | Short pad-to-via connections; planes carry GND | All grounds connected, short stubs, no long serial ground bus |
-| Two GND core layers | Reserve In1.Cu and In2.Cu for GND | No inner signal/power tracks; inspect actual filled planes |
+| Two GND core layers | Four-layer revisions: In1/In2. Six-layer r05h: In1/In4 | No tracks on either dedicated GND plane; inspect actual fills |
 | Return beside signal via | Add local GND vias | Screen all non-GND vias at ≤2 mm; review RF/ESD needs individually |
 | Broken power pours / thin paths | Size continuous power traces | Trunks, pad escapes and worst-case current/drop reviewed |
 | Unbalanced copper on small passives | Avoid excessive copper on one end | Inspect both pads, width/count/length of copper attachment |
@@ -184,3 +184,22 @@ segments. Native DRC/ERC/parity and connectivity pass. Main power-path estimates
 are unchanged; unknown loads, ferrite/cell/contact impedance and transients remain
 explicit limitations. Two fresh, same-byte JLC PCB reports are 0 Danger / 0 Warning.
 SMT was off. See STATUS and the r04i checkpoint for hashes and record identities.
+
+## r05h six-layer completion
+
+The current board uses F/In2/In3/B for routing and In1/In4 as dedicated GND. The
+unchanged 71-part circuit is fully connected with clear native DRC/ERC/parity.
+All 94 unique ground terminals (97 physical pads) have local paths; 110 GND vias
+are contained in both continuous planes. All 128 signal vias pass the inherited
+2 mm screen. The original 24 RF segments and four SIM clamp paths are preserved.
+
+The POWER_GOOD replacement route is 18.214 mm with no new vias. C30's 0.82 mm
+ground attachment now matches its 0.2 mm supply attachment; all three unique-copper
+contour ratios are 1.0. Manufacturer lands are unchanged. Native terminal groups
+were preserved throughout unused-copper cleanup.
+
+Both final JLC PCB runs have 0 Danger / 0 Warning, 29 rows and 449 green
+measurements, with unchanged rules and SMT off. The actual dielectric stack, RF
+impedance, powered circuit, factory assembly and physical ingress remain open.
+Changing the stack changes impedance even when RF track geometry is unchanged.
+See STATUS for final identities; do not transfer older physical or mesh claims.

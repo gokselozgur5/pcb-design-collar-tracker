@@ -41,42 +41,32 @@ browser normally if needed; no profile or credentials are distributed in Git.
 
 ## Working commands
 
-Continue from `experiments/power-r05f-return-reset/hardware/`. Read its README and
-`evidence/routing-checkpoint.json` before editing. The saved source has five
-non-GND opens, zero other native DRC violations/warnings or schematic mismatches,
-and 44 gaps in the inherited return screen. NRF_ENABLE, VBAT and FG_ALERT each
-need one connection; VIO_ENABLE needs two. The unchanged circuit remains on HOLD.
-There is no r05f Gerber or supplier result.
+Continue from `experiments/power-r05h-six-layer/hardware/`. Read its README and
+`evidence/routing-checkpoint.json`. Native DRC/ERC/parity are clear; all returns
+pass the 2 mm screen; the final2 ZIP has two actual JLC PCB analyses at 0/0.
+Electrical and physical qualification remain open. The saved native source is
+authoritative; do not rerun historical seed scripts over it.
 
-Use a new isolated copy for further routing. The exact-geometry and pad-box
-`regions-*.json` reports identify the separated planning regions at U7, U4 and the
-gauge. Resolve a specific obstruction or crossing before another route attempt.
-Do not repeat the unchanged search. r05d's Freerouting input stayed at eight opens;
-r05e's broad native reroute left 17. Both are preserved, unselected alternatives.
+Use a new isolated copy for any change to this tested board. Six-layer routing
+uses F.Cu/In2.Cu/In3.Cu/B.Cu; In1.Cu/In4.Cu stay dedicated GND. The helper's
+`--six-layer-signals` option is explicitly restricted to this trial. Its optional
+`--via-ground-radius-mm 1.99` screen prevents new transitions from losing the
+local return. Every applied route still requires full native DRC and final audits.
+Manufacturer lands, rules and the two GND planes must remain intact.
 
-The current helper can use `.venv-dfm/bin/python` as `--raster-python`; install the
-pinned Shapely and NumPy requirements in a new geometry environment. It proposes
-0.2 mm routes, then the native caller independently checks their sampled geometry.
-Every applied candidate still needs full native DRC. The 100 mm candidate screen
-is not approval of the current 68.085 mm POWER_GOOD detour. Original power
-backbones stay connected; narrow branches are restricted to the reviewed control
-connections. Return-only stitches were deliberately released and must be restored
-once the routes settle.
-
-Never delete a complete reported dangling segment if it joins live branches
-partway along its length. The cleanup helpers check native terminal groups and
-refuse that deletion; the retained VIO_DISCHARGE segment required trimming only
-its 0.65 mm unused end. Each native probe now loads one board in its own process,
-avoiding the wx duplicate-handler initialization warnings from repeated LoadBoard.
-A normal Python assertion before SaveBoard is not a saved design or a native crash.
+Never delete an entire dangling segment if it carries a live branch. Cleanup
+helpers preserve native terminal groups and shorten only an unused end when
+needed. Each native probe loads one board per process; do not suppress crash
+dialogs or infer success from an output file without checking the process exit.
 
 ```sh
-python3 scripts/verify_routing_candidate.py experiments/power-r05f-return-reset
+python3 scripts/verify_routing_candidate.py experiments/power-r05h-six-layer
 .venv-dfm/bin/python -m unittest discover -s tests -p test_raster_route.py -v
+.venv-dfm/bin/python -m unittest discover -s tests -p test_power_path_layers.py -v
 ```
 
-The verified r05b/r05c fallbacks and their native evidence are preserved. Do not
-rerun any historical preparation, placement or seed script over these saved boards.
+The preserved four-layer r05f has five opens. r05g's local crossing repair ended
+with six opens and was not selected. Neither is the continuation point.
 
 The r04i PCB and its two actual same-byte JLC passes remain immutable in
 `experiments/paul-nanosim-r04i-sim-access-40x32/`. Its power audit still reproduces
@@ -105,9 +95,9 @@ on save. The r05 placement helper now checks design-rule and net-class identity.
 
 Protected NTC pack and LTE/GNSS antenna selection proceeds alongside that circuit,
 followed by actual cable/clearance fit, dock/harness and positive PCB retention.
-Read `mechanical/swim-r05-route-fit/README.md`, the preserved r02 selection review and
+Read `mechanical/swim-r06-six-layer-fit/README.md`, the preserved r02 selection review and
 `docs/turkiye-connectivity.md` before assuming a modem/plan is field-qualified.
-The preliminary r05 screen checks 69 populated envelopes. Nine resistor-height
+The preliminary r06 screen checks 69 populated envelopes at nominal board thickness. Nine resistor-height
 limits are requirements with unresolved exact MPN/tolerance/TCR. Its 30 shell
 checks pass; no new r05 mesh package, factory or physical qualification exists.
 
