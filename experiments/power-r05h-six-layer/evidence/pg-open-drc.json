@@ -1,0 +1,77 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-25T21:55:01",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "collar-tracker.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [/POWER_GOOD] on B.Cu, length 0.5000 mm",
+                    "pos": {
+                        "x": 110.55,
+                        "y": 125.25
+                    },
+                    "uuid": "72d6a568-f0d7-4268-92ec-8e4e6c6df6d6"
+                },
+                {
+                    "description": "Track [/POWER_GOOD] on B.Cu, length 0.6930 mm",
+                    "pos": {
+                        "x": 101.8,
+                        "y": 110.51
+                    },
+                    "uuid": "3e7a520e-486f-4dda-9977-8250e2b7621b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [/POWER_GOOD] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 101.05,
+                        "y": 111.0
+                    },
+                    "uuid": "4829f4b2-e708-4dd8-a25e-e7d6e1da56e2"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        }
+    ]
+}

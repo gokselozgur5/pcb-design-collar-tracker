@@ -1,0 +1,131 @@
+{
+  "before_sha256": "82806739325a0568a94a1f726d2cb1ee30668f06703853864bef3fa1ad1f4372",
+  "ground_add": [
+    117.4668,
+    110.5266
+  ],
+  "ground_move": {
+    "id": "0d6ac8db-1864-4cf4-b6bd-fad3b227f44f",
+    "old": [
+      116,
+      126.1
+    ],
+    "new": [
+      115.8,
+      126.24
+    ]
+  },
+  "restore": [
+    {
+      "id": "15db4be5-6530-477c-a74c-0cb8ae9415a3",
+      "net": "/UV_DELAY",
+      "pos": [
+        114.85,
+        127.95
+      ],
+      "diameter": 0.6,
+      "drill": 0.2,
+      "layers": [
+        "F.Cu",
+        "In1.Cu",
+        "In2.Cu",
+        "In3.Cu",
+        "In4.Cu",
+        "B.Cu"
+      ]
+    },
+    {
+      "id": "9505bdb5-6aaf-4d14-9302-75f9cc6ac86c",
+      "net": "/COEX0",
+      "pos": [
+        118.2668,
+        112.1266
+      ],
+      "diameter": 0.6,
+      "drill": 0.2,
+      "layers": [
+        "F.Cu",
+        "In1.Cu",
+        "In2.Cu",
+        "In3.Cu",
+        "In4.Cu",
+        "B.Cu"
+      ]
+    }
+  ],
+  "cuts": [
+    {
+      "id": "32f69890-147b-42fe-80db-285f075a5dc6",
+      "net": "/I2C_SDA",
+      "start": [
+        116.625,
+        110.25
+      ],
+      "end": [
+        118.4154,
+        110.25
+      ],
+      "layer": "F.Cu",
+      "width": 0.2,
+      "pieces": [
+        [
+          [
+            116.625,
+            110.25
+          ],
+          [
+            116.9233152504556,
+            110.25
+          ]
+        ],
+        [
+          [
+            118.01028474954441,
+            110.25
+          ],
+          [
+            118.4154,
+            110.25
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "91f4ac88-1016-4c0d-ad73-26a4ce528b07",
+      "net": "/HEALTH_INT",
+      "start": [
+        117.2654,
+        109.106
+      ],
+      "end": [
+        117.2654,
+        111.976
+      ],
+      "layer": "B.Cu",
+      "width": 0.2,
+      "pieces": [
+        [
+          [
+            117.2654,
+            109.106
+          ],
+          [
+            117.2654,
+            109.95090273470458
+          ]
+        ],
+        [
+          [
+            117.2654,
+            111.10229726529542
+          ],
+          [
+            117.2654,
+            111.976
+          ]
+        ]
+      ]
+    }
+  ],
+  "scope": "Restore two original signal transitions and provide checked local returns; two signal crossings must be rerouted."
+}

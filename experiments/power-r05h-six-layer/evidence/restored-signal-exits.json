@@ -1,0 +1,45 @@
+{
+  "before_sha256": "4afcf926d0775af980571f63c9fbc86ea5aeac30004dba1dbae4585315e75a9c",
+  "source_sha256": "c22a2551d9ebf013e8b9f5ed1be57aef189bcdb2d4d2169e5ea0982e4ceb8962",
+  "removed_reroute_ids": [
+    "8addeec2-8e30-410c-96dd-150c262dd1d4",
+    "9586ba7e-c672-425f-8233-d2507785f774",
+    "f7790553-45a0-4f31-90fd-efbaff69775b",
+    "9ec19e1d-3467-471c-b10e-dfce6208411f",
+    "4d9546b6-b78b-4244-8f86-c71aa3c1a540",
+    "1985dadc-aa01-4233-aba0-7853d34189a1",
+    "7097a1ac-ed46-4627-a0b1-3097a3b98409",
+    "545cd1cb-75f0-419d-9e58-d5cd81180e6f",
+    "4153ecf6-f17a-42da-bf2f-8f0f112dd10b",
+    "75acfb4a-58ee-47e9-885c-92bff5c0378c",
+    "a9a13a1b-5f37-4024-8bdf-33b5edae40b5",
+    "1eeb4175-7a34-404d-b3ec-5f857b9d914a",
+    "c593afae-7902-44cc-b82a-63c991078b3e",
+    "e3139823-a601-4b4d-bdab-b2804205adc3",
+    "d2104680-1df3-44c5-bf30-a3af13f64a85",
+    "79a5ccb6-d6af-48d3-b52d-8649c73f3f43",
+    "b88fa1ae-9c3c-4f3f-accc-03bb796c9b78",
+    "8457c18c-e521-48a9-a95c-4f282d7a637d",
+    "2b66ce45-5112-40b8-aae6-c8e4dbce2c38",
+    "9a76c4be-4777-4013-9465-553f2d4ca60e",
+    "fdc8ee2c-5a54-43da-b4d6-6f6b15af5ccb",
+    "3debabb8-cb26-4f25-8a95-9fb88e4d2f51"
+  ],
+  "removed_cut_piece_ids": [
+    "0732b2b9-68c5-4674-bd3b-713d60f0a1bb",
+    "9c55f45e-3a16-477a-8ce9-4ca6bf08e97b",
+    "c8f482e9-a820-4805-81bf-da790e62588e",
+    "9429842c-ed33-4f95-aad3-6c61e2f0c16c"
+  ],
+  "restored_track_ids": [
+    "32f69890-147b-42fe-80db-285f075a5dc6",
+    "91f4ac88-1016-4c0d-ad73-26a4ce528b07"
+  ],
+  "ground_id": "fb71aedc-797d-4785-99c4-e15f2bdced34",
+  "ground_position_mm": [
+    120.05,
+    112.975
+  ],
+  "protected_terminal_groups": 201,
+  "scope": "Original signal exits restored; fresh native and return audits required."
+}

@@ -1,0 +1,251 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-25T22:02:34",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "collar-tracker.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [/VDD_NRF] on B.Cu, length 0.7071 mm",
+                    "pos": {
+                        "x": 120.2,
+                        "y": 122.35
+                    },
+                    "uuid": "62c97106-014a-42a3-883f-5b528d559324"
+                },
+                {
+                    "description": "Track [/VDD_NRF] on F.Cu, length 0.7071 mm",
+                    "pos": {
+                        "x": 119.7,
+                        "y": 121.85
+                    },
+                    "uuid": "4814a677-4126-402e-8441-c1f76b3adabb"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [/UV_DELAY] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 114.85,
+                        "y": 127.95
+                    },
+                    "uuid": "eead8a52-502c-4b43-aea1-f61837532330"
+                },
+                {
+                    "description": "Track [/UV_DELAY] on F.Cu, length 1.2125 mm",
+                    "pos": {
+                        "x": 113.6375,
+                        "y": 127.95
+                    },
+                    "uuid": "f434cc92-0c4c-4413-8e00-e67f0d49e697"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [/COEX0] on F.Cu, length 0.1745 mm",
+                    "pos": {
+                        "x": 118.1434,
+                        "y": 112.25
+                    },
+                    "uuid": "3d2b02db-583a-449e-8635-abae939984c9"
+                },
+                {
+                    "description": "Track [/COEX0] on B.Cu, length 0.1851 mm",
+                    "pos": {
+                        "x": 118.2668,
+                        "y": 112.1266
+                    },
+                    "uuid": "aae97fd7-3f2e-4617-b3fe-9a04ca190917"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [/HEALTH_CS] on F.Cu, length 4.7938 mm",
+                    "pos": {
+                        "x": 121.4261,
+                        "y": 122.0849
+                    },
+                    "uuid": "d6041657-d05d-489d-81ef-ba738ab45e29"
+                },
+                {
+                    "description": "Track [/HEALTH_CS] on B.Cu, length 0.3107 mm",
+                    "pos": {
+                        "x": 121.2064,
+                        "y": 121.8652
+                    },
+                    "uuid": "cc41177a-2081-480f-95b3-1e3671007d34"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [/VDD_NRF] on F.Cu, length 0.7071 mm",
+                    "pos": {
+                        "x": 119.7,
+                        "y": 121.85
+                    },
+                    "uuid": "4814a677-4126-402e-8441-c1f76b3adabb"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [/VDD_NRF] on B.Cu, length 0.7071 mm",
+                    "pos": {
+                        "x": 120.2,
+                        "y": 122.35
+                    },
+                    "uuid": "62c97106-014a-42a3-883f-5b528d559324"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [/UV_DELAY] on F.Cu, length 1.2125 mm",
+                    "pos": {
+                        "x": 113.6375,
+                        "y": 127.95
+                    },
+                    "uuid": "f434cc92-0c4c-4413-8e00-e67f0d49e697"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [/COEX0] on F.Cu, length 0.1745 mm",
+                    "pos": {
+                        "x": 118.2668,
+                        "y": 112.1266
+                    },
+                    "uuid": "b986a3cc-08af-4baa-ac4d-13b1380d2bdb"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [/COEX0] on B.Cu, length 0.1851 mm",
+                    "pos": {
+                        "x": 118.2668,
+                        "y": 112.1266
+                    },
+                    "uuid": "aae97fd7-3f2e-4617-b3fe-9a04ca190917"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [/COEX0] on B.Cu, length 0.1851 mm",
+                    "pos": {
+                        "x": 118.2668,
+                        "y": 112.1266
+                    },
+                    "uuid": "ae09eadb-0a39-40c8-8f65-8c76424bdd62"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [/HEALTH_CS] on F.Cu, length 4.7938 mm",
+                    "pos": {
+                        "x": 121.4261,
+                        "y": 122.0849
+                    },
+                    "uuid": "d6041657-d05d-489d-81ef-ba738ab45e29"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [/HEALTH_CS] on B.Cu, length 0.3107 mm",
+                    "pos": {
+                        "x": 121.4261,
+                        "y": 122.0849
+                    },
+                    "uuid": "f93818fe-3753-4bba-bb36-709fcc9afaa8"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+  "before_sha256": "1b2b4bd7b90c3931bd8cbb151637408902332a94260d4a2a820ae6df04838a09",
+  "source_sha256": "7b2fdc886290743e2d14d2f069ce5e58b03b34b89b3d899cfabcd83c663481c6",
+  "copper_layers": 6,
+  "ground_layers": [
+    "In1.Cu",
+    "In4.Cu"
+  ],
+  "signal_layers": [
+    "F.Cu",
+    "In2.Cu",
+    "In3.Cu",
+    "B.Cu"
+  ],
+  "terminal_groups_preserved": 208,
+  "scope": "Nominal 0.8 mm feasibility layout. Actual supplier dielectric stack, RF impedance and manufacturing acceptance remain open."
+}

@@ -1,0 +1,76 @@
+{
+  "before_sha256": "0a2423f32eaf513d06ad703e364f0be3d23b546098d0a4555b7be22eb04cda9a",
+  "moves": [
+    {
+      "id": "09062339-bf1c-40e1-98ee-ef5b53812fb4",
+      "net": "/VIO_ENABLE",
+      "old": [
+        123.8,
+        127.75
+      ],
+      "new": [
+        123.8,
+        128.15
+      ],
+      "before_mm": 2.2299103120977697,
+      "after_mm": 1.9830532015051838,
+      "stubs": {
+        "In2.Cu": 0.2,
+        "B.Cu": 0.2,
+        "F.Cu": 0.4
+      },
+      "attached_tracks": [
+        "29639915-09b5-4b60-b34d-377acce65136",
+        "73875e11-2daf-4f0f-8f1a-cdbb4ee34c97",
+        "17deaa34-786b-4d1d-8969-6b8829c8b5c6"
+      ]
+    },
+    {
+      "id": "c46c2346-eff8-47e1-bfcf-ca5a48e79cae",
+      "net": "/HEALTH_INT",
+      "old": [
+        120.6828,
+        120.2753
+      ],
+      "new": [
+        120.2828,
+        119.9253
+      ],
+      "before_mm": 2.429741947203451,
+      "after_mm": 1.9867551258270328,
+      "stubs": {
+        "B.Cu": 0.2,
+        "F.Cu": 0.2
+      },
+      "attached_tracks": [
+        "ff86b332-a9df-4980-9fae-6938cb76e521",
+        "fa2a1bfe-b86e-4c44-957c-efcec7e25ee7"
+      ]
+    }
+  ],
+  "failed": [
+    {
+      "id": "8e9b4df1-9b50-4461-885e-b98225403b04",
+      "net": "/VDD_NRF",
+      "pos": [
+        120.2,
+        122.35
+      ],
+      "before_mm": 2.5932604959779932,
+      "reason": "No checked local move"
+    },
+    {
+      "id": "15db4be5-6530-477c-a74c-0cb8ae9415a3",
+      "reason": "Existing attachment is not at the via center"
+    },
+    {
+      "id": "9505bdb5-6aaf-4d14-9302-75f9cc6ac86c",
+      "reason": "Existing attachment is not at the via center"
+    },
+    {
+      "id": "da077cfd-ac3b-445f-8f8c-e768cc4cf86a",
+      "reason": "Existing attachment is not at the via center"
+    }
+  ],
+  "scope": "Source-bound geometry proposal only. Native connectivity, complete DRC and returns must be checked after application."
+}

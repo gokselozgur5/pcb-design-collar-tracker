@@ -1,0 +1,176 @@
+{
+  "before_sha256": "f99f14349af2f7febec9215bc557ee65aef0bbc98cc079206917133f36e3dd2c",
+  "protected_sim_input_ids": [],
+  "route_anchors": {},
+  "first_nets": [],
+  "low_current_branch_nets": [],
+  "existing_power_backbone_pins": {},
+  "only_nets": [
+    "/POWER_GOOD"
+  ],
+  "router_script_sha256": "dd1be5289ab187e5a46f3b46d3a219f7e83f2ef498ebfd45ff4c3e19131b638b",
+  "raster_script_sha256": "e95b81be1887a9b6ec3100083f6744302014d434fe669154eb2b499c30cdd0b5",
+  "routing_layers": [
+    "F.Cu",
+    "In2.Cu",
+    "In3.Cu",
+    "B.Cu"
+  ],
+  "relocatable_via_input_sha256": null,
+  "removed_return_vias": [],
+  "route_limit_mm": 60.0,
+  "board_bounds_mm": [
+    98.0,
+    98.0,
+    138.0,
+    130.0
+  ],
+  "source_sha256": "d49d95c4565e1d92d61abb764ff214ddf12d6af6c3c15ca9681bf78af2864f9e",
+  "routes": [
+    {
+      "net": "/POWER_GOOD",
+      "points": [
+        [
+          101.05,
+          111.0,
+          8
+        ],
+        [
+          101.25,
+          111.2,
+          8
+        ],
+        [
+          101.25,
+          112.35000000000001,
+          8
+        ],
+        [
+          101.30000000000001,
+          112.4,
+          8
+        ],
+        [
+          101.30000000000001,
+          112.5,
+          8
+        ],
+        [
+          101.35000000000001,
+          112.55000000000001,
+          8
+        ],
+        [
+          101.35000000000001,
+          112.60000000000001,
+          8
+        ],
+        [
+          102.4,
+          113.65,
+          8
+        ],
+        [
+          102.4,
+          114.9,
+          8
+        ],
+        [
+          102.45,
+          114.95,
+          8
+        ],
+        [
+          102.45,
+          115.05000000000001,
+          8
+        ],
+        [
+          104.85000000000001,
+          117.45,
+          8
+        ],
+        [
+          104.9,
+          117.45,
+          8
+        ],
+        [
+          106.60000000000001,
+          119.15,
+          8
+        ],
+        [
+          106.60000000000001,
+          119.25,
+          8
+        ],
+        [
+          106.65,
+          119.30000000000001,
+          8
+        ],
+        [
+          106.65,
+          119.35000000000001,
+          8
+        ],
+        [
+          106.7,
+          119.4,
+          8
+        ],
+        [
+          106.7,
+          119.45,
+          8
+        ],
+        [
+          107.7,
+          120.45,
+          8
+        ],
+        [
+          107.7,
+          122.05000000000001,
+          8
+        ],
+        [
+          107.75,
+          122.10000000000001,
+          8
+        ],
+        [
+          107.75,
+          122.15,
+          8
+        ],
+        [
+          109.55000000000001,
+          123.95,
+          8
+        ],
+        [
+          109.55000000000001,
+          124.25,
+          8
+        ],
+        [
+          110.55,
+          125.25,
+          8
+        ]
+      ],
+      "visited": 66949,
+      "search_backend": "shapely-raster",
+      "raster_input_sha256": "2de434caa9827b07a613572d586191e4df4b8a5f6ffcd5b259a45e29180b496e",
+      "trunk_width_mm": 0.2,
+      "pad_escape_width_mm": 0.2,
+      "escape_radius_mm": 1.0
+    }
+  ],
+  "ground_stitches": [],
+  "failed": [],
+  "interrupted": false,
+  "acceptance": "Pending native DRC and independent geometry audit"
+}

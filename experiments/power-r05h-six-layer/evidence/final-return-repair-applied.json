@@ -1,0 +1,17 @@
+{
+  "before_sha256": "82806739325a0568a94a1f726d2cb1ee30668f06703853864bef3fa1ad1f4372",
+  "source_sha256": "580450ca0efb6ae519bc2a09f8710e9fbe29d39dbfbd794c0921d9ba21a966c8",
+  "plan_sha256": "5bd76de3fd5353e2dab9e92c244769484c67bde726807f65b190d1771c4ae391",
+  "ground_id": "fb71aedc-797d-4785-99c4-e15f2bdced34",
+  "ground_track_changed": [
+    "a053eb78-afff-4906-b2d2-b6d26a9ad942"
+  ],
+  "new_tracks": [
+    "0732b2b9-68c5-4674-bd3b-713d60f0a1bb",
+    "9c55f45e-3a16-477a-8ce9-4ca6bf08e97b",
+    "c8f482e9-a820-4805-81bf-da790e62588e",
+    "9429842c-ed33-4f95-aad3-6c61e2f0c16c"
+  ],
+  "protected_terminal_groups": 199,
+  "scope": "UV_DELAY and COEX0 terminal groups restored; I2C_SDA and HEALTH_INT crossing repair and full native checks pending."
+}

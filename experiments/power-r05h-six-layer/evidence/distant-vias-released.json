@@ -1,0 +1,258 @@
+{
+  "before_sha256": "d49d95c4565e1d92d61abb764ff214ddf12d6af6c3c15ca9681bf78af2864f9e",
+  "source_sha256": "de0d8489575be07cf3cc8621e85614106870377d7c1e5c6b50215eecd3a74fe3",
+  "removed": [
+    {
+      "id": "8e9b4df1-9b50-4461-885e-b98225403b04",
+      "net": "/VDD_NRF",
+      "pos": [
+        120.2,
+        122.35
+      ],
+      "diameter": 0.6,
+      "drill": 0.2,
+      "layers": [
+        "F.Cu",
+        "In1.Cu",
+        "In2.Cu",
+        "In3.Cu",
+        "In4.Cu",
+        "B.Cu"
+      ]
+    },
+    {
+      "id": "15db4be5-6530-477c-a74c-0cb8ae9415a3",
+      "net": "/UV_DELAY",
+      "pos": [
+        114.85,
+        127.95
+      ],
+      "diameter": 0.6,
+      "drill": 0.2,
+      "layers": [
+        "F.Cu",
+        "In1.Cu",
+        "In2.Cu",
+        "In3.Cu",
+        "In4.Cu",
+        "B.Cu"
+      ]
+    },
+    {
+      "id": "9505bdb5-6aaf-4d14-9302-75f9cc6ac86c",
+      "net": "/COEX0",
+      "pos": [
+        118.2668,
+        112.1266
+      ],
+      "diameter": 0.6,
+      "drill": 0.2,
+      "layers": [
+        "F.Cu",
+        "In1.Cu",
+        "In2.Cu",
+        "In3.Cu",
+        "In4.Cu",
+        "B.Cu"
+      ]
+    },
+    {
+      "id": "da077cfd-ac3b-445f-8f8c-e768cc4cf86a",
+      "net": "/HEALTH_CS",
+      "pos": [
+        121.4261,
+        122.0849
+      ],
+      "diameter": 0.6,
+      "drill": 0.2,
+      "layers": [
+        "F.Cu",
+        "In1.Cu",
+        "In2.Cu",
+        "In3.Cu",
+        "In4.Cu",
+        "B.Cu"
+      ]
+    }
+  ],
+  "planar_attachment_bridges": [
+    {
+      "id": "44fe0800-f062-4105-ba42-ba743e4d83c7",
+      "net": "/UV_DELAY",
+      "layer": "B.Cu",
+      "start": [
+        114.85,
+        127.95
+      ],
+      "end": [
+        114.75,
+        127.9
+      ],
+      "width": 0.2
+    },
+    {
+      "id": "eead8a52-502c-4b43-aea1-f61837532330",
+      "net": "/UV_DELAY",
+      "layer": "B.Cu",
+      "start": [
+        114.85,
+        127.95
+      ],
+      "end": [
+        114.8,
+        127.95
+      ],
+      "width": 0.2
+    },
+    {
+      "id": "b986a3cc-08af-4baa-ac4d-13b1380d2bdb",
+      "net": "/COEX0",
+      "layer": "F.Cu",
+      "start": [
+        118.2668,
+        112.1266
+      ],
+      "end": [
+        118.1434,
+        112.25
+      ],
+      "width": 0.2
+    },
+    {
+      "id": "aae97fd7-3f2e-4617-b3fe-9a04ca190917",
+      "net": "/COEX0",
+      "layer": "B.Cu",
+      "start": [
+        118.2668,
+        112.1266
+      ],
+      "end": [
+        118.3977,
+        112.2575
+      ],
+      "width": 0.2
+    },
+    {
+      "id": "f93818fe-3753-4bba-bb36-709fcc9afaa8",
+      "net": "/HEALTH_CS",
+      "layer": "B.Cu",
+      "start": [
+        121.4261,
+        122.0849
+      ],
+      "end": [
+        121.2064,
+        121.8652
+      ],
+      "width": 0.2
+    }
+  ],
+  "affected_before": [
+    [
+      "/COEX0",
+      [
+        "114c41a1-0af5-43b0-8953-9ce3f846e08d",
+        "723e4f35-dd48-45ca-9435-f11a3ffa6cc2"
+      ]
+    ],
+    [
+      "/HEALTH_CS",
+      [
+        "0d8b80fc-5221-484e-bc77-78e41c2a38bf",
+        "b39602c9-09b8-4756-9572-1435094fb978",
+        "b584da98-273e-4f91-811d-b6f0ddb5d6b3"
+      ]
+    ],
+    [
+      "/UV_DELAY",
+      [
+        "2eb4404c-01c3-4356-8269-110707b0231c",
+        "f6423e11-0c22-4cc6-a92a-357054dc8029"
+      ]
+    ],
+    [
+      "/VDD_NRF",
+      [
+        "079716dc-de61-42b9-b776-72d329fc4ec9",
+        "0f6aa674-adae-459c-8a2e-40e01e583713",
+        "4a3bcff1-edf2-4be7-9fda-238de206c7f2",
+        "524d7c6d-8c32-485c-be78-3c85d484b6d8",
+        "660da1d0-ddd5-4f9f-b4b0-da3bae53961d",
+        "8252a500-582e-46e0-a967-e819796b50f1",
+        "8703f016-22e6-490c-8b7d-6d9405928bbb",
+        "8c0b9ffe-9f0c-44d4-a29c-90165835ddb7",
+        "9be85383-2005-46f4-9d4f-8f6c2cff82f6",
+        "a910e83f-4341-4d08-897f-350b4421120d",
+        "a9495b59-6b59-4fe4-a10f-cf5d5f106e8c",
+        "ac26f3d9-2a57-4b16-9b4a-3f04d3bf8bc1",
+        "d56c72d9-1d92-49ae-bfe2-39085fd651a2",
+        "e7bd9401-f61c-43f0-8f5d-aef5d41e2b3d"
+      ]
+    ]
+  ],
+  "affected_after": [
+    [
+      "/COEX0",
+      [
+        "114c41a1-0af5-43b0-8953-9ce3f846e08d"
+      ]
+    ],
+    [
+      "/COEX0",
+      [
+        "723e4f35-dd48-45ca-9435-f11a3ffa6cc2"
+      ]
+    ],
+    [
+      "/HEALTH_CS",
+      [
+        "0d8b80fc-5221-484e-bc77-78e41c2a38bf",
+        "b39602c9-09b8-4756-9572-1435094fb978"
+      ]
+    ],
+    [
+      "/HEALTH_CS",
+      [
+        "b584da98-273e-4f91-811d-b6f0ddb5d6b3"
+      ]
+    ],
+    [
+      "/UV_DELAY",
+      [
+        "2eb4404c-01c3-4356-8269-110707b0231c"
+      ]
+    ],
+    [
+      "/UV_DELAY",
+      [
+        "f6423e11-0c22-4cc6-a92a-357054dc8029"
+      ]
+    ],
+    [
+      "/VDD_NRF",
+      [
+        "079716dc-de61-42b9-b776-72d329fc4ec9",
+        "0f6aa674-adae-459c-8a2e-40e01e583713",
+        "4a3bcff1-edf2-4be7-9fda-238de206c7f2",
+        "524d7c6d-8c32-485c-be78-3c85d484b6d8",
+        "660da1d0-ddd5-4f9f-b4b0-da3bae53961d",
+        "8252a500-582e-46e0-a967-e819796b50f1",
+        "8703f016-22e6-490c-8b7d-6d9405928bbb",
+        "9be85383-2005-46f4-9d4f-8f6c2cff82f6",
+        "a910e83f-4341-4d08-897f-350b4421120d",
+        "a9495b59-6b59-4fe4-a10f-cf5d5f106e8c",
+        "ac26f3d9-2a57-4b16-9b4a-3f04d3bf8bc1",
+        "d56c72d9-1d92-49ae-bfe2-39085fd651a2",
+        "e7bd9401-f61c-43f0-8f5d-aef5d41e2b3d"
+      ]
+    ],
+    [
+      "/VDD_NRF",
+      [
+        "8c0b9ffe-9f0c-44d4-a29c-90165835ddb7"
+      ]
+    ]
+  ],
+  "protected_terminal_groups": 199,
+  "scope": "WIP reroute. Four signal transitions removed; no GND or RF copper removed. Full DRC and constrained replacement required."
+}

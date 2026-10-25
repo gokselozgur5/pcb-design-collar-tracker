@@ -1,0 +1,15 @@
+{
+  "before_sha256": "01a239d30b1ca7c0a93bd628ea63e38f19c73f2ba5993d0ed946520ad3c9c73d",
+  "source_sha256": "c9849359e141c0dbcf3bfc4893932315a797c3a056202c10b673091af2792593",
+  "input_state_sha256": "f62829ff25a34c04baa87ac09a03bd75c2b6018c2b03087395457629d8751545",
+  "drc_sha256": "40de9304de3c116212f0a354a5be0d9c1826ec89afee105872c3573c300f973b",
+  "removed": [
+    {
+      "id": "dbb4b306-6ea6-412a-85ed-8506d09401ed",
+      "net": "/VDD_NRF"
+    }
+  ],
+  "retained": [],
+  "native_terminal_groups_preserved": 203,
+  "scope": "Unused tails removed; fresh native DRC required."
+}

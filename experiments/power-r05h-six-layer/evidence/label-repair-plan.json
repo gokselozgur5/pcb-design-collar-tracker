@@ -1,0 +1,24 @@
+{
+  "source_sha256": "c9849359e141c0dbcf3bfc4893932315a797c3a056202c10b673091af2792593",
+  "changes": [
+    {
+      "id": "a143989f-9bba-458b-b097-e8a7d7e35472",
+      "text": "NTC",
+      "delta_mm": [
+        -0.2,
+        0.0
+      ],
+      "minimum_hole_edge_gap_mm": 0.34136018647925137
+    },
+    {
+      "id": "b62719ab-aacb-44c5-8450-d2c650cf0ee5",
+      "text": "CT 0.5H",
+      "delta_mm": [
+        1.9000000000000001,
+        0.2
+      ],
+      "minimum_hole_edge_gap_mm": 0.32513003612844515
+    }
+  ],
+  "scope": "Exact native glyph placement with 0.30 mm drill-edge and 0.20 mm mask gaps; supplier confirmation required."
+}

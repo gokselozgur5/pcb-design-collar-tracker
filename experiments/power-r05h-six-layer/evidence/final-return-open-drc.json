@@ -1,0 +1,190 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-25T22:06:17",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "collar-tracker.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [/I2C_SDA] on F.Cu, length 0.4051 mm",
+                    "pos": {
+                        "x": 118.010285,
+                        "y": 110.25
+                    },
+                    "uuid": "9c55f45e-3a16-477a-8ce9-4ca6bf08e97b"
+                },
+                {
+                    "description": "Track [/I2C_SDA] on F.Cu, length 0.2983 mm",
+                    "pos": {
+                        "x": 116.625,
+                        "y": 110.25
+                    },
+                    "uuid": "0732b2b9-68c5-4674-bd3b-713d60f0a1bb"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [/HEALTH_INT] on B.Cu, length 0.8449 mm",
+                    "pos": {
+                        "x": 117.2654,
+                        "y": 109.106
+                    },
+                    "uuid": "c8f482e9-a820-4805-81bf-da790e62588e"
+                },
+                {
+                    "description": "Track [/HEALTH_INT] on B.Cu, length 0.8737 mm",
+                    "pos": {
+                        "x": 117.2654,
+                        "y": 111.102297
+                    },
+                    "uuid": "9429842c-ed33-4f95-aad3-6c61e2f0c16c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [/VDD_NRF] on F.Cu, length 0.7071 mm",
+                    "pos": {
+                        "x": 119.7,
+                        "y": 121.85
+                    },
+                    "uuid": "4814a677-4126-402e-8441-c1f76b3adabb"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [/VDD_NRF] on B.Cu, length 0.7071 mm",
+                    "pos": {
+                        "x": 120.2,
+                        "y": 122.35
+                    },
+                    "uuid": "62c97106-014a-42a3-883f-5b528d559324"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [/I2C_SDA] on F.Cu, length 0.4051 mm",
+                    "pos": {
+                        "x": 118.010285,
+                        "y": 110.25
+                    },
+                    "uuid": "9c55f45e-3a16-477a-8ce9-4ca6bf08e97b"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [/HEALTH_INT] on B.Cu, length 0.8737 mm",
+                    "pos": {
+                        "x": 117.2654,
+                        "y": 111.102297
+                    },
+                    "uuid": "9429842c-ed33-4f95-aad3-6c61e2f0c16c"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [/HEALTH_INT] on B.Cu, length 0.8449 mm",
+                    "pos": {
+                        "x": 117.2654,
+                        "y": 109.106
+                    },
+                    "uuid": "c8f482e9-a820-4805-81bf-da790e62588e"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [/HEALTH_CS] on F.Cu, length 4.7938 mm",
+                    "pos": {
+                        "x": 121.4261,
+                        "y": 122.0849
+                    },
+                    "uuid": "d6041657-d05d-489d-81ef-ba738ab45e29"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [/HEALTH_CS] on B.Cu, length 0.3107 mm",
+                    "pos": {
+                        "x": 121.4261,
+                        "y": 122.0849
+                    },
+                    "uuid": "f93818fe-3753-4bba-bb36-709fcc9afaa8"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        }
+    ]
+}

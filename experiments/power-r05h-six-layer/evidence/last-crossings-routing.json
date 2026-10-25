@@ -1,0 +1,165 @@
+{
+  "before_sha256": "580450ca0efb6ae519bc2a09f8710e9fbe29d39dbfbd794c0921d9ba21a966c8",
+  "protected_sim_input_ids": [],
+  "route_anchors": {},
+  "first_nets": [
+    "/I2C_SDA",
+    "/HEALTH_INT"
+  ],
+  "low_current_branch_nets": [],
+  "existing_power_backbone_pins": {},
+  "only_nets": [],
+  "router_script_sha256": "ea8de76e6465dca799c3ecf615193cc04bc3e3f1414897d7ec76fa708cb3af03",
+  "raster_script_sha256": "e6ed0a64fab89f7db18e963f8ba24d86377db2e6889e2ca8ba7a60b8ed5597f4",
+  "routing_layers": [
+    "F.Cu",
+    "In2.Cu",
+    "In3.Cu",
+    "B.Cu"
+  ],
+  "via_ground_radius_mm": 1.99,
+  "relocatable_via_input_sha256": null,
+  "removed_return_vias": [],
+  "route_limit_mm": 60.0,
+  "board_bounds_mm": [
+    98.0,
+    98.0,
+    138.0,
+    130.0
+  ],
+  "source_sha256": "4afcf926d0775af980571f63c9fbc86ea5aeac30004dba1dbae4585315e75a9c",
+  "routes": [
+    {
+      "net": "/HEALTH_INT",
+      "points": [
+        [
+          117.5426,
+          108.8288,
+          6
+        ],
+        [
+          117.60000000000001,
+          108.9,
+          6
+        ],
+        [
+          117.60000000000001,
+          109.80000000000001,
+          6
+        ],
+        [
+          118.05000000000001,
+          110.25,
+          6
+        ],
+        [
+          118.05000000000001,
+          110.35000000000001,
+          6
+        ],
+        [
+          118.10000000000001,
+          110.4,
+          6
+        ],
+        [
+          118.10000000000001,
+          110.55000000000001,
+          6
+        ],
+        [
+          118.4,
+          110.85000000000001,
+          6
+        ],
+        [
+          118.4,
+          110.9,
+          6
+        ],
+        [
+          118.45,
+          110.95,
+          6
+        ],
+        [
+          118.45,
+          111.0,
+          6
+        ],
+        [
+          118.5,
+          111.05000000000001,
+          6
+        ],
+        [
+          118.5,
+          111.45,
+          6
+        ],
+        [
+          119.75,
+          112.7,
+          6
+        ],
+        [
+          119.80000000000001,
+          112.7,
+          6
+        ],
+        [
+          120.35000000000001,
+          113.25,
+          6
+        ],
+        [
+          120.35000000000001,
+          113.25,
+          8
+        ],
+        [
+          120.35000000000001,
+          114.35000000000001,
+          8
+        ],
+        [
+          120.85000000000001,
+          114.85000000000001,
+          8
+        ],
+        [
+          120.85000000000001,
+          114.85000000000001,
+          6
+        ],
+        [
+          120.85000000000001,
+          119.4,
+          6
+        ],
+        [
+          120.35000000000001,
+          119.9,
+          6
+        ],
+        [
+          120.2828,
+          119.9253,
+          6
+        ]
+      ],
+      "visited": 172060,
+      "search_backend": "shapely-raster",
+      "raster_input_sha256": "f435136a9fb4bbf08fceaf9a0e0aaf7caa6416b37a3317b6133c8d3bdfce4c40",
+      "trunk_width_mm": 0.2,
+      "pad_escape_width_mm": 0.2,
+      "escape_radius_mm": 1.0
+    }
+  ],
+  "ground_stitches": [],
+  "failed": [
+    "('/I2C_SDA', 'no route', 124, '212fd4db419bc64074f4fbe58e51dd76bfd89661addedbadac35ef3b82a166b3')"
+  ],
+  "interrupted": false,
+  "acceptance": "Pending native DRC and independent geometry audit"
+}

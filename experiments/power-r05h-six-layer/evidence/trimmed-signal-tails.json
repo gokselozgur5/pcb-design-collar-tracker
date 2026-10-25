@@ -1,0 +1,29 @@
+{
+  "before_sha256": "c22a2551d9ebf013e8b9f5ed1be57aef189bcdb2d4d2169e5ea0982e4ceb8962",
+  "source_sha256": "4e762b33ba4a12f8d1f0a9f2f453c254b439f685d3758c3b83324b65e8515593",
+  "input_state_sha256": "df1861f519b7c3df2472cbd996774f0299651fbbf818b60d8852254283493987",
+  "drc_sha256": "c97bc6bf9b03eb97ad238f5c9d483641c752c69e4b3cb0d9bc35ee78b947ac5f",
+  "removed": [
+    {
+      "id": "4814a677-4126-402e-8441-c1f76b3adabb",
+      "net": "/VDD_NRF"
+    },
+    {
+      "id": "62c97106-014a-42a3-883f-5b528d559324",
+      "net": "/VDD_NRF"
+    },
+    {
+      "id": "f93818fe-3753-4bba-bb36-709fcc9afaa8",
+      "net": "/HEALTH_CS"
+    }
+  ],
+  "retained": [
+    {
+      "id": "d6041657-d05d-489d-81ef-ba738ab45e29",
+      "net": "/HEALTH_CS",
+      "reason": "Whole-segment deletion would change native terminal groups; inspect and trim only the loose end."
+    }
+  ],
+  "native_terminal_groups_preserved": 203,
+  "scope": "Unused tails removed; fresh native DRC required."
+}

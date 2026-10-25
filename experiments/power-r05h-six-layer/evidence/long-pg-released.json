@@ -1,0 +1,446 @@
+{
+  "before_sha256": "333b01e6c77dbef73636c9836018c9063845a93ba2af3a7d88379523771cb755",
+  "source_sha256": "42510247e0b6812ea171c5c53a86fbcd5e084ff2f811692d05a387a988f64c61",
+  "removed": [
+    {
+      "id": "0856ec40-b441-4698-bbb3-55b161ec00f3",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "089f061b-4205-40ce-a4c8-7ba475c64403",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "0ee0020d-daa7-4d20-9ea0-7b98354355fa",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "0f318639-a8be-4676-96b5-a9e554a2cd91",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "157fe0b9-9783-445b-beff-c809741d7e78",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "160cb04d-69a2-41b8-9c69-a3ef36fc735e",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "16e2da7a-e17c-4b2a-8d35-1eb4ce9ce623",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "183e5b98-4b99-41c2-81b4-3cf1187741a2",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "226c8c5d-07a7-454e-8845-795c33dc94b0",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "325203c7-75c0-4328-b5c0-b8b185cffd18",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "392e0e65-819f-4003-bc91-4cb94451ac4f",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "394c88f5-ef1d-475f-a4b8-7c9bd4538acb",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "3eb3f731-f277-4002-90c1-046631e18b2e",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "3efd1690-360c-4082-8fca-009728490fe7",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "44a40c7b-6ac5-427a-b700-734c00595674",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "45c42c1d-d936-4df3-812f-13a338f85ab0",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "4ea3e61e-eb6e-4b33-a72f-12088f2e5159",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "4eb19f1c-aeaf-4df0-a366-439d0ec53b52",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "51e3f3cd-2449-41ea-a01c-31a8adda8023",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "58254f8c-713e-4b5c-b160-e20df724a288",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "586fa0ce-4247-4238-8878-61d0e4ab6ac1",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "5974a897-f0a4-4f7e-88eb-63fa6e66dd5c",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "5a099dd8-a8a1-4178-b054-c2c9fda978c0",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "62ae4c60-9995-498f-95c1-0939745ae9c0",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "62d7fd06-3903-4ad9-ac90-c6e0a87044d3",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "6a6ef825-b836-4b1a-963c-fd05779cd1b2",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "6b9f992a-66cc-411a-96e2-9f5f34384bfc",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "6fae494b-7575-40e4-b565-7a597fc75b16",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "70fc7118-adec-492a-a27f-d09da38d0562",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "7eb57a7b-bba1-4b4d-8fd2-5311a58cc45c",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "7f7dd0d1-9104-4e67-8aad-76ac2503a3ee",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "875429bc-cb97-440e-9c9d-dc87988c0aca",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "88c2080d-d51d-4c38-a4c1-22a0f1e77490",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "9226f7a4-b5be-4c09-b755-126df2725ebe",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "9ca75833-75ac-4b0f-8f5a-fb9909aedb41",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "9da10e1a-1e04-4287-9108-6fff28599d1b",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "a2d710b6-6458-47bd-b698-4f4fc680b08e",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "a581caa2-6ae3-48cf-8e0d-e2a5f7da7881",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "aa9ae08b-2da3-46b8-92fe-2c0d948cfc90",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "baea5979-4f61-4f46-8832-2722405062b4",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "c670733f-7a2c-4234-8787-210d5141faeb",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "cb2b831b-8778-47ec-a41a-2577c9efe856",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "d83decf5-0155-43a0-82c3-c0c4d64a0356",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "d8dae374-66dd-455d-a698-f883615a1158",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "d9108969-fac1-4944-ad07-3f6477260b8b",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "e14ecc0a-3454-4bff-b22f-eb3a2bb98a63",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "e482ef3e-f159-4ec6-a1a5-f8d07e988327",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "e63dfbda-49a6-4b4a-b2e6-8d3807caca1b",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "e795bca3-fbc4-4adf-8b71-5f3881b9e366",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "e9e1c437-210c-46d0-8fb7-8644cd271a7a",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "f5afed06-2a86-442d-adf4-3b721b8fe8cf",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "fa48e73c-cf78-47a2-af42-fc00182fbcf4",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "0075e517-6e1c-4307-9a96-9e74a837cf87",
+      "kind": "PCB_VIA"
+    },
+    {
+      "id": "1e6f30d7-05b7-4f99-ad78-459fb41bad73",
+      "kind": "PCB_VIA"
+    },
+    {
+      "id": "3f7c8b52-788e-49c5-aa67-5b951aec1015",
+      "kind": "PCB_VIA"
+    },
+    {
+      "id": "b484e5fb-a25b-4f05-ac60-2fb18a6562c1",
+      "kind": "PCB_VIA"
+    },
+    {
+      "id": "cc0c0bb1-1429-45b4-9b0e-1e54c2ab92a6",
+      "kind": "PCB_VIA"
+    },
+    {
+      "id": "d1aae6c0-af6f-4db9-99c1-8725e5d83384",
+      "kind": "PCB_VIA"
+    },
+    {
+      "id": "d48b3960-48d7-48cf-8f8b-bd7862ea22a2",
+      "kind": "PCB_VIA"
+    },
+    {
+      "id": "02051d2d-8f94-4f65-8634-acd449f97d4a",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "04de0717-3086-4785-8f44-4907de20af99",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "097fc1be-6f89-4279-8702-e4bd80c8d0bf",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "0c419bcb-eee2-4206-b1b2-64006d5b2c54",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "0ff3d3cf-6b3c-495f-9739-6a138de61b2f",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "10959f02-13a1-4495-8d7b-b0d6de31ac39",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "27231f90-ab42-4022-bbcd-19639b21dd16",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "28f4c093-274b-44fa-8690-5134b26614bf",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "2add8ca2-857d-4152-9ed8-09303ac13883",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "3276944b-ea25-43be-a3d4-8a57cb3dc9b2",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "39f02e69-5607-4386-ad23-b43656214b45",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "3e99a05f-e2e4-4d96-a8f6-d807cd107e54",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "3ffc8457-c0ac-407d-b155-e2870e4390a3",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "471ebeb5-8e6e-42a4-8eb5-5eb5531dc645",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "4b6c8e7e-a273-4603-83ec-87685decd75f",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "4c93323b-9ce7-4a0d-92ea-fa327b5405a7",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "4fb204f3-6fdc-4f45-81b8-1b010e5db622",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "57c607b9-88cf-4bf7-9261-44f7fe8eaf31",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "58ad676b-6b77-4104-aa28-e312906e077e",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "5f0d03c5-c2f7-472c-8c78-57a708b9f42b",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "68e4605d-741b-4ee1-abc4-9aee181c0011",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "6be13a10-9d9e-4ceb-a45c-966514f20bcd",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "72f7ba41-ca34-455b-88de-b94dbfe14056",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "7411598d-1343-4126-b006-b9c926f9fb0d",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "74f1463c-8738-4cad-8b42-0daa132e6010",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "86c4b9ea-5d27-4ed6-ae42-bfa2373322aa",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "878ac9ea-4aef-45bd-8e0d-6cfa089a3ec5",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "93166ed9-11dd-4bda-b26c-d7fe6c2b3aa2",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "9ad9c4f2-f086-409a-8254-95e480caf707",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "9d6ad153-1dca-4abd-a05a-04462a7e0ca5",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "a01fe9c3-356e-40bc-9063-dafbbc79a5ca",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "ab8333a6-b5d4-45dd-819b-3bb001f7a34b",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "aff54067-f545-4d9b-868d-91ebc0978eb9",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "b0108d30-fbfa-48c9-86ea-e8045354a228",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "b0dd1762-1017-4146-838e-60d81c6cdd5c",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "b7c169b1-aad2-4394-9cbb-bbbb3267d11f",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "bc15ded8-aaf2-4d2f-a508-a12a7f73c193",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "c0c97c05-58c2-4e88-9311-48a4f42525a4",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "c1b8a9f5-6acf-40e3-b33f-5568dc79ea20",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "c53c8818-a39d-4bfe-bd51-54e058da788e",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "cee7c724-8111-4a2b-a95a-90c3fcee2130",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "e0bad54f-705b-4ed8-af36-16828103d768",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "e5415818-a0b9-4e15-b404-817e6a1a77c0",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "e7748b87-fd0f-4383-81db-498d73144bea",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "f01a2c2c-cc02-4c54-939f-cc054b8c8af0",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "f412a188-c801-480e-b19b-4f3e55196a3d",
+      "kind": "PCB_TRACK"
+    }
+  ],
+  "remaining_pg_terminal_groups": [
+    [
+      "/POWER_GOOD",
+      [
+        "086af6b3-0cc5-4984-bb60-618c44f1bc95"
+      ]
+    ],
+    [
+      "/POWER_GOOD",
+      [
+        "87e5c547-afc6-4ce8-b327-51ca98954d3d",
+        "9923f6b0-745c-4bc1-bede-515cb39f9bd4",
+        "d0c96839-ab84-4030-a422-90c794e88299",
+        "d1683f39-b295-4687-9f8d-1632ceb73545",
+        "e436972d-cde9-492c-ba2f-5e8d21eb291d"
+      ]
+    ]
+  ],
+  "protected_terminal_groups": 202,
+  "scope": "Only the added PG branch was released; fresh complete native DRC and rerouting required."
+}

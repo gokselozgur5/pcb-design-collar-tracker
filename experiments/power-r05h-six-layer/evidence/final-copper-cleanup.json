@@ -1,0 +1,13 @@
+{
+  "before_sha256": "4e762b33ba4a12f8d1f0a9f2f453c254b439f685d3758c3b83324b65e8515593",
+  "source_sha256": "8182a8bf88cf6a7089bbdd3f98241bfc1f35c72655f927d242f1ef2fbe17f6f9",
+  "shortened_track": "d6041657-d05d-489d-81ef-ba738ab45e29",
+  "removed_length_mm": 1.597933,
+  "removed_track_ids": [
+    "a8374a01-ad14-4f78-a9c1-7445e5159125",
+    "cc41177a-2081-480f-95b3-1e3671007d34"
+  ],
+  "native_terminal_groups_preserved": 203,
+  "legend": "CT 0.5H",
+  "scope": "Unused HEALTH_CS copper trimmed with live branch retained; fresh native and supplier checks required."
+}

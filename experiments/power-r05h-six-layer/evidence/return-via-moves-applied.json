@@ -1,0 +1,15 @@
+{
+  "before_sha256": "0a2423f32eaf513d06ad703e364f0be3d23b546098d0a4555b7be22eb04cda9a",
+  "source_sha256": "f99f14349af2f7febec9215bc557ee65aef0bbc98cc079206917133f36e3dd2c",
+  "plan_sha256": "578efb994be7234bfe8ef0f1d2e79bd9ce4e34a1be0f3814fb67e8d8d2d00dec",
+  "moved": 2,
+  "new_tracks": [
+    "f0ed986b-f934-4743-b53d-a348d249a175",
+    "92f1eba4-2825-4d1d-9c97-91797b9fb07c",
+    "24d2963c-7e6e-4657-886f-d523f627580d",
+    "37c68fba-5f2c-43ed-9f93-f493b5e5885c",
+    "6bae01c6-a67a-430a-9120-bf1ecead8a20"
+  ],
+  "terminal_groups_preserved": 204,
+  "scope": "Native terminal groups retained; full DRC and return measurement pending."
+}

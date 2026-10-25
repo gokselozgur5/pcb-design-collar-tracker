@@ -1,0 +1,5 @@
+{
+  "source_trial": "experiments/power-r05f-return-reset",
+  "source_sha256": "1b2b4bd7b90c3931bd8cbb151637408902332a94260d4a2a820ae6df04838a09",
+  "purpose": "Six-layer feasibility candidate: retain outer geometry and two dedicated ground planes; add two signal layers. Nominal 0.8 mm; supplier dielectric stack and RF impedance remain unqualified."
+}
