@@ -1,7 +1,7 @@
 # Current state — 2026-10-25
 
 **r04i PCB: native-clean and two actual JLC runs at 0 Danger / 0 Warning.**
-**Active r05: circuit implemented; PCB has 23 open connections and four return-screen gaps.**
+**Active r05b: 14 open connections, 27 dangling-via warnings and two return-screen gaps.**
 **Electrical release: HOLD; the proposed repair still needs source/bench qualification.**
 **Swimming enclosure: engineering prototype under review; IP68 is not qualified.**
 
@@ -15,11 +15,11 @@ Bundle SHA256: `ea960e01f39e7b31aef930359a82b7b360e9e6c4a1fb232dad78c8d7f7032206
 `python3 scripts/verify_handoff.py` verifies the saved PCB, mechanical checks and
 every bundled file against the checkout; it performs no new supplier/physical test.
 
-## Active r05 circuit and layout
+## Active r05b circuit and layout
 
-Continue from `experiments/power-r05-supervised/hardware/`, following its
-[review and limits](../experiments/power-r05-supervised/README.md).
-PCB SHA256: `78df6a520fc978e08451c94e6c6f475877f401867b55c0218802ee3434d193a2`.
+Continue from `experiments/power-r05b-pin-exits/hardware/`, following its
+[review and limits](../experiments/power-r05b-pin-exits/README.md).
+PCB SHA256: `4c047c3a5b69110ad758f83091236c7aa2c25a96f374732dcd8bda79bb88027e`.
 The saved native source is authoritative; do not rerun the seed over it.
 
 The 71-part candidate adds rail supervision/restart hysteresis, GPIO startup and
@@ -29,29 +29,38 @@ remain unchanged. Seven regressions pass. The timing model explicitly retains
 unqualified capacitor, leakage, switching and source-retention assumptions.
 Electrical HOLD remains: abrupt source collapse can outrun the sequence.
 
-| Current r05 check | Result |
+| Current r05b check | Result |
 |---|---|
 | Outline / layers | 40 × 32 × 0.8 mm; four copper layers |
-| Native DRC / parity | Zero geometry violations or parity mismatches; **23 non-GND open connections** |
-| Ground | 97 physical GND pads, 100 GND vias; both continuous inner planes contain every GND via |
+| Native DRC / parity | **14 non-GND opens and 27 dangling-via warnings**; zero other violations or parity mismatches |
+| Ground | 97 physical GND pads, 113 GND vias; both continuous inner planes contain every GND via |
 | Local attachments | All 94 unique GND terminals have local track paths; duplicated connector ground pads account for the physical count |
-| Returns / RF | Four of 99 non-GND vias exceed the inherited 2 mm screen; 24 original RF segments preserved |
-| SIM topology | All four paths still pass through their clamp land; new populated access/fit review is pending |
-| Supplier / mechanical | No r05 Gerber or JLC run; r04i/r02 populated-fit results do not transfer |
+| Returns / RF | Two of 143 non-GND vias exceed the inherited 2 mm screen; 24 original RF segments preserved |
+| SIM | Four clamp paths without bypass; all 19 other bottom-side bodies clear the projected entry lane |
+| Original power paths | All 12 checked backbone paths remain connected; new control branches still have opens |
+| Supplier / mechanical | No r05b Gerber or JLC run; fresh preliminary r03 fit checks 69 populated envelopes |
 
-The first unrestricted signal repair left old fine-pitch interfaces disconnected.
-That result was preserved and superseded. The current board restores 128 still-clear
-original rail items and retains working original signal routes. Three unused rail
-tails were removed only after checking that affected pad islands stayed identical.
-The remaining failures cluster around new U6/U7/U9/Q1 and their passives: clearance
-and a short GND exit alone did not ensure access for the other pins.
+The r05 checkpoint is preserved. Its r05b successor repositions 20 affected parts
+with 64 explicit pin exits and 63 new vias. U6/U7, U8 and Q1 lands now follow the
+recorded manufacturer drawings. A local route leaves 14 opens; the separate
+Freerouting attempt left 24 and is not selected. Twenty-one obsolete leaf segments
+were removed with native pad-island invariants, including 19 protected items.
+The remaining 1,350 protected items retain exact UUID/geometry. Labels are clear.
+Local exits still do not guarantee complete routing through existing fixed copper.
+The narrow low-current VDD_NRF/VBAT branch trial made no changes and closed no opens.
 
-**Next:** reserve signal exits and revise the affected new placements in an isolated
-successor while preserving working signal, RF, SIM and local GND geometry. Finish
-the 23 connections, then the four return gaps and power/passive/access/footprint
-reviews. Refresh the 71-part enclosure fit before producing final Gerbers and
+**Next:** inspect the remaining routes' free-space barriers and return-only GND
+stitches in an isolated copy. Move only justified obstructions while preserving
+working signal, RF, SIM, local GND paths and both inner planes. This is the next
+investigation, not a proven fix. Finish the 14 connections and dangling exits,
+then the two return gaps and passive/footprint reviews. Refresh the 71-part
+enclosure fit after the final PCB changes before producing Gerbers and
 obtaining two fresh unchanged-rule JLC analyses. Do not repeat an unchanged failed
 search or label this checkpoint routed/all-green.
+
+Exact R1/R16–R23 MPNs, tolerance and TCR remain unresolved. Their mechanical height
+limits are requirements, not approved parts. Source retention and effective timing
+capacitor bounds also remain unqualified; the existing electrical HOLD still applies.
 
 ## Preserved tested PCB
 
@@ -109,7 +118,7 @@ The user selected swimming / an IP68 design target. The provisional condition is
 2 m fresh water for 60 minutes; depth/time and magnetic charging remain engineering
 assumptions pending the user's preference replies.
 
-`mechanical/swim-r02-fit/` is the active populated-board fit revision. It retains
+`mechanical/swim-r02-fit/` is the preserved r04i populated-board fit revision. It retains
 the shell, lid, lift-out carrier, independently sealed charging targets, magnet
 plugs, dock alignment shell and required TPU boot. Rigid size remains
 57.4 × 49.4 × 17.6 mm, 58.7 mm including the key; boot 60.4 × 52.4 × 22.4 mm.
@@ -142,7 +151,15 @@ still represent reservations. Dock electronics, harness routing/strain relief,
 positive PCB retention, material/seal grades, actual lid fasteners and torque remain
 open. No physical ingress, powered or RF result exists.
 
-Next: finish the active r05 placement/routing and qualify its conditional power
+The active `mechanical/swim-r03-r05b-fit/` preliminary screen uses actual r05b
+placements and 71 profiles, including two DNP parts. All 69 populated envelopes
+and 30 analytical shell checks pass. The smallest gap remains C10/carrier at
+0.24 mm. Nine resistor-height envelopes are explicit component requirements.
+The original carrier negative control still detects D1 interference. The new
+populated preview was inspected; r02's mesh/boolean acceptance and release bundle
+do not transfer. No new r03 mesh package or physical qualification is claimed.
+
+Next: finish the active r05b routing and qualify its conditional power
 behavior. Select the protected NTC pack and LTE/GNSS antennas alongside that
 circuit; fit their feeds/cables, then finish dock/harness and retention.
 Before tooling or full PCBA release, complete actual

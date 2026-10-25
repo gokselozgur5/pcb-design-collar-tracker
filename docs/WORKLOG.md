@@ -273,3 +273,36 @@ Their evidence is dated; do not transfer an older pass to a newer source file.
   before a new Gerber and two actual same-byte JLC runs. Qualify source retention,
   component bounds, selected cell/RF and factory/ingress behavior. No new JLC,
   order, payment, supplier message, physical test or production approval occurred.
+
+## 2026-10-25 — Reserve every new pin exit and checkpoint r05b
+
+- Event: Continued routing while checking the user's Python crash concern.
+- Decision: Preserve r04i/r05 and use a separate placement with exits for every
+  connected new pin. Correct lands against source drawings, keep native rules,
+  and select routes by fresh native results. Retain electrical HOLD and explicit
+  incomplete routing instead of treating a router's exit code as acceptance.
+- Result: Twenty affected parts, 64 reserved exits and 63 added vias. U6/U7, U8
+  and Q1 lands follow the recorded TI/Diodes drawings. The selected local route
+  leaves 14 opens versus 24 in the alternative Freerouting result. Twenty-one
+  obsolete leaf segments were pruned with native pad-island invariants; 1,350
+  remaining protected items retain exact UUID/geometry. Final native DRC has
+  27 dangling-via warnings, no other violations and no schematic mismatch under
+  unchanged inherited settings. All 97 physical GND pads have local attachment;
+  113 GND vias join both continuous inner planes. Two of 143 return screens remain
+  outside 2 mm. All 24 RF segments, four SIM clamp paths, the projected card lane
+  and 12 original power backbone paths remain checked. PCB SHA256:
+  `4c047c3a5b69110ad758f83091236c7aa2c25a96f374732dcd8bda79bb88027e`.
+- Result: Preliminary swim-r03 checks all 69 populated envelopes and 30 shell
+  checks for this exact board. Nine resistor heights are explicit requirements,
+  with exact MPN/tolerance/TCR unresolved. The original carrier control detects
+  D1 interference; actual top/bottom and populated previews were inspected.
+  No r03 mesh/boolean acceptance or physical ingress result is claimed.
+- Result: Native operations in this continuation exited normally; no observed
+  recurrence of the footprint-flip crash. The separate earlier finalization
+  crash remains unattributed. The unchanged-source low-current branch attempt
+  closed no connections; the rejected 73 mm FG_ALERT detour was not applied.
+- Next: Inspect remaining free-space barriers and return-only GND stitches in an
+  isolated copy, then finish routing, dangling exits and return gaps. Qualify
+  electrical source/timing bounds, actual BOM/pack/antennas and assembly before
+  production. New final Gerbers still need two real same-byte JLC analyses.
+  No new supplier upload, order, payment, message or physical test occurred.

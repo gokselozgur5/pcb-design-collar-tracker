@@ -41,18 +41,23 @@ browser normally if needed; no profile or credentials are distributed in Git.
 
 ## Working commands
 
-Continue from `experiments/power-r05-supervised/hardware/`. Read its README and
+Continue from `experiments/power-r05b-pin-exits/hardware/`. Read its README and
 `evidence/routing-checkpoint.json` before editing. The saved native board has
-23 non-GND open connections, zero other DRC violations/parity mismatches and four
-return-via screen gaps. Its 71-part schematic and seven regressions are checked,
-but the circuit remains electrically unqualified. There is no r05 Gerber/JLC result.
+14 non-GND open connections, 27 dangling-via warnings, zero other native violations
+or parity mismatches, and two return-via screen gaps. The unchanged 71-part circuit
+retains clear ERC and seven regressions, but remains electrically unqualified.
+There is no r05/r05b Gerber or JLC result. The prior r05 checkpoint is preserved.
 
-The next implementation is signal-pin escape planning and local placement repair
-around the new power/gauge parts. Preserve working original signal routes,
-local grounds, exact RF and protected SIM copper. Do not rerun `build_power_r05.py`,
-the seed, or the existing placement plan over the current native source; they
-record earlier stages, not the final routing. Preserve current bytes in a new
-working revision before a new placement experiment.
+The next investigation is free-space barriers around the remaining routes,
+including return-only GND stitches. Local exits exist for all connected new pins,
+but fixed copper still blocks complete routes. Narrow low-current VDD_NRF/VBAT
+branches did not resolve them. Inspect an isolated copy; preserve working original
+signal routes, local ground attachments, both planes, exact RF and protected SIM
+copper. `evidence/protected-fanout.json` describes the placement stage; 19 of those
+items were subsequently removed as obsolete leaves with native invariants recorded
+in `local1-trim1.json` through `local1-trim16.json`. Account for those reviewed
+removals when producing a new protection list. Do not rerun the preparation,
+placement, land-refinement or seed scripts over the current source.
 
 The r04i PCB and its two actual same-byte JLC passes remain immutable in
 `experiments/paul-nanosim-r04i-sim-access-40x32/`. Its power audit still reproduces
@@ -78,10 +83,11 @@ on save. The r05 placement helper now checks design-rule and net-class identity.
 
 Protected NTC pack and LTE/GNSS antenna selection proceeds alongside that circuit,
 followed by actual cable/clearance fit, dock/harness and positive PCB retention.
-Read `mechanical/swim-r02-fit/README.md` and its selection review, plus
+Read `mechanical/swim-r03-r05b-fit/README.md`, the preserved r02 selection review and
 `docs/turkiye-connectivity.md` before assuming a modem/plan is field-qualified.
-The 49 component-height entries and four pad/harness areas have passed their
-current dimensional screen, not factory or physical qualification.
+The preliminary r03 screen checks 69 populated envelopes. Nine resistor-height
+limits are requirements with unresolved exact MPN/tolerance/TCR. Its 30 shell
+checks pass; no new r03 mesh package, factory or physical qualification exists.
 
 ```sh
 .venv-dfm/bin/python -m unittest discover -s tests -p test_populated_fit.py -v

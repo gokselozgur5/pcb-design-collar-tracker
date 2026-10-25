@@ -322,11 +322,14 @@ def verify(include_review_bundle=True):
     from audit_power_architecture import verify_saved
     power_review = verify_saved()
     power_candidate = verify_power_candidate()
+    from verify_power_pin_candidate import verify as verify_power_pins
+    power_pin_candidate = verify_power_pins()
     return {'baseline_revision': '0.3.4', 'evidence_files': len(manifest['files']),
             'supplier_records': sorted(records), 'result': 'PASS',
             'current':current, 'mechanical':mechanical, 'populated_fit':populated_fit,
             'power_review': power_review,
             'power_candidate': power_candidate,
+            'power_pin_candidate': power_pin_candidate,
             'review_bundle':verify_review_bundle() if include_review_bundle else 'Rebuild in progress',
             'populated_review_bundle':verify_review_bundle('release/collar-tracker-r04i-swim-r02-fit-review.json') if include_review_bundle else 'Rebuild in progress',
             'scope': 'Saved PCB evidence, declared mechanical checks and artifact integrity. No new KiCad/JLC run or PCBA, powered, RF or ingress acceptance.'}

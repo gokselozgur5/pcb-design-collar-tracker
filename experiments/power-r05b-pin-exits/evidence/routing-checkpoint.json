@@ -874,8 +874,8 @@
     },
     {
       "path": "previews/routing-bottom.svg",
-      "bytes": 96153,
-      "sha256": "176c887fdc7de5369e8ebc39d4d08dab11c2d987e92e627a46b661b793b7ae6e"
+      "bytes": 95453,
+      "sha256": "b997f297c036d2b0f29cb64498e463325542cb301d7499a4ebba8fe605449de3"
     },
     {
       "path": "previews/routing-top.png",
@@ -884,8 +884,8 @@
     },
     {
       "path": "previews/routing-top.svg",
-      "bytes": 195282,
-      "sha256": "ac300732610211c6998114c0b608ed8089dfe9fc4e8ad8fb41440ea1c38ff77c"
+      "bytes": 194030,
+      "sha256": "b73666317643ae9fd1d8e9e01a5afd489ba546b8114d7280fc25ba5d3da4e4f1"
     }
   ]
 }

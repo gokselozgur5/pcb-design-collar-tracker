@@ -11,16 +11,20 @@ return-via screen gaps and a clear projected nano-SIM entry lane. eSIM is deferr
 
 **Electrical release is on hold.** The [source-verified power review](evidence/power-review-r04i/README.md)
 identifies undervoltage, GPIO sequencing and battery-ADC off-state findings in r04i.
-The separate [r05 supervised-power candidate](experiments/power-r05-supervised/README.md)
-implements the proposed circuit changes. Its schematic passes ERC, but its PCB
-still has 23 open connections and four return-via screen gaps. Conditional timing
-calculations are not powered qualification. **No r05 Gerber or JLC result exists.**
+The active [r05b pin-exit candidate](experiments/power-r05b-pin-exits/README.md)
+retains the proposed r05 circuit and clear ERC. Its PCB has 14 open connections,
+27 dangling-via warnings and two return-via screen gaps; other native geometry
+and parity checks are clear. Conditional timing calculations are not powered
+qualification. **No r05/r05b Gerber or JLC result exists.**
 
 The [swimming enclosure prototype](mechanical/swim-r02-fit/README.md) adds a sealed lid,
 charging-contact seals and collar mount. Its r02 revision checks component heights
 at actual placements and clears the carrier/contact hardware. IP68 is the design target, not a test
 result. Battery/antenna fit, SMT assembly and powered/RF/ingress qualification
 remain open. [STATUS](docs/STATUS.md) records the exact evidence and next action.
+The [preliminary r03 fit](mechanical/swim-r03-r05b-fit/README.md) applies that
+geometry to r05b: 69 populated envelopes pass, with nine explicit unresolved
+resistor-height requirements. It does not replace the preserved r02 review bundle.
 
 [Design review PDF](mechanical/swim-r02-fit/review.pdf) ·
 [Complete review bundle](release/collar-tracker-r04i-swim-r02-fit-review.zip) ·
