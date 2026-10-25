@@ -1,0 +1,213 @@
+{
+  "result": "CONDITIONAL_DOCK_GEOMETRY_PASS",
+  "checks": [
+    {
+      "name": "minimum operating compression",
+      "value": 0.23909999999999987,
+      "minimum": 0.1,
+      "pass_": true
+    },
+    {
+      "name": "minimum remaining spring travel",
+      "value": 0.4160999999999997,
+      "minimum": 0.1,
+      "pass_": true
+    },
+    {
+      "name": "reversed key stops before earliest conductive touch",
+      "value": 0.5500000000000007,
+      "minimum": 0.2,
+      "pass_": true
+    },
+    {
+      "name": "reversed key overlaps solid nose in Z",
+      "value": 1.9999999999999998,
+      "minimum": 0.5,
+      "pass_": true
+    },
+    {
+      "name": "key depth clearance",
+      "value": 0.17,
+      "minimum": 0.1,
+      "pass_": true
+    },
+    {
+      "name": "key lateral clearance",
+      "value": 0.20000000000000004,
+      "minimum": 0.1,
+      "pass_": true
+    },
+    {
+      "name": "key lower clearance",
+      "value": 0.19999999999999982,
+      "minimum": 0.1,
+      "pass_": true
+    },
+    {
+      "name": "upper barrel radial running gap",
+      "value": 0.036800000000000034,
+      "minimum": 0.01,
+      "pass_": true
+    },
+    {
+      "name": "flange radial running gap",
+      "value": 0.03400000000000001,
+      "minimum": 0.01,
+      "pass_": true
+    },
+    {
+      "name": "crimp barrel radial running gap",
+      "value": 0.02719999999999998,
+      "minimum": 0.01,
+      "pass_": true
+    },
+    {
+      "name": "front flange bearing width",
+      "value": 0.040200000000000034,
+      "minimum": 0.025,
+      "pass_": true
+    },
+    {
+      "name": "rear flange bearing width",
+      "value": 0.07520000000000007,
+      "minimum": 0.05,
+      "pass_": true
+    },
+    {
+      "name": "front stop clears larger pin step",
+      "value": 0.2102999999999991,
+      "minimum": 0.1,
+      "pass_": true
+    },
+    {
+      "name": "rear pin barrel fits before wire pocket",
+      "value": 0.46470000000000056,
+      "minimum": 0.25,
+      "pass_": true
+    },
+    {
+      "name": "dock covers pin and cable termination",
+      "value": 8,
+      "minimum": 4,
+      "pass_": true
+    },
+    {
+      "name": "head pocket depth",
+      "value": 0.39999999999999997,
+      "minimum": 0.2,
+      "pass_": true
+    },
+    {
+      "name": "head pocket radial allowance",
+      "value": 0.19999999999999965,
+      "minimum": 0.15,
+      "pass_": true
+    },
+    {
+      "name": "contact lands fully on head",
+      "value": 3.4412000000000003,
+      "minimum": 0.5,
+      "pass_": true
+    },
+    {
+      "name": "nose clears boot in Y",
+      "value": 0.10000000000000073,
+      "minimum": 0.05,
+      "pass_": true
+    },
+    {
+      "name": "nose clears boot lower edge",
+      "value": 0.04999999999999996,
+      "minimum": 0.025,
+      "pass_": true
+    },
+    {
+      "name": "nose clears boot upper edge",
+      "value": 0.05000000000000107,
+      "minimum": 0.025,
+      "pass_": true
+    },
+    {
+      "name": "rear housing clears boot face",
+      "value": 0.30000000000000004,
+      "minimum": 0.2,
+      "pass_": true
+    },
+    {
+      "name": "wire fits contact crimp hole",
+      "value": 0.17780000000000004,
+      "minimum": 0.1,
+      "pass_": true
+    },
+    {
+      "name": "continuous tail bend lower bound",
+      "value": 10.384615384615383,
+      "minimum": 10,
+      "pass_": true
+    },
+    {
+      "name": "opposite wire insulation gap",
+      "value": 0.40000000000000013,
+      "minimum": 0.2,
+      "pass_": true
+    },
+    {
+      "name": "USB jacket fits exit",
+      "value": 0.12500000000000036,
+      "minimum": 0.1,
+      "pass_": true
+    },
+    {
+      "name": "insulated fuse fits cavity height",
+      "value": 1.5,
+      "minimum": 0.5,
+      "pass_": true
+    },
+    {
+      "name": "fuse and return wire separation",
+      "value": 9.5809,
+      "minimum": 2,
+      "pass_": true
+    },
+    {
+      "name": "native J3/J4 pinout agrees",
+      "value": 1,
+      "minimum": 1,
+      "pass_": true
+    }
+  ],
+  "operating_compression_mm": [
+    0.23909999999999987,
+    1.1079000000000003
+  ],
+  "minimum_bottoming_margin_mm": 0.4160999999999997,
+  "unloaded_forward_play_bound_mm": 2.1420999999999992,
+  "earliest_contact_gap_bound_mm": 3.2499999999999996,
+  "continuous_tail_radius_bound_mm": 10.384615384615383,
+  "maximum_pair_force_at_midstroke_N": 1.569064,
+  "force_note": "Midstroke only; force over the complete tolerance stroke is not bounded by this number.",
+  "native_pinout": {
+    "J4.3": "/BAT_NTC",
+    "J3.2": "/GND",
+    "J4.2": "/GND",
+    "J4.1": "/VBAT",
+    "J3.1": "/VIN_5V"
+  },
+  "qualification": {
+    "magnetic_holding_force": false,
+    "contact_retention_force": false,
+    "crimp_process": false,
+    "wire_current_and_short_circuit": false,
+    "physical_ingress": false,
+    "internal_lug_and_j3_route": false,
+    "battery_lead_exit": false,
+    "firmware": false
+  },
+  "inputs": {
+    "mechanical/swim-r13-charge-dock/dock.json": "2fecc4078b12943810676b296bd94d5d6f300edbd3ebd26e78d21ad3045fdc09",
+    "scripts/check_charge_dock.py": "2c2eddb60d15e57727b1700ff2a1bb129bdb8b8fdd3e6a61bdf3a6661521b540",
+    "experiments/power-r05l-charge-interlock/evidence/native-netlist.json": "4c88b83f1af96f3924d63761ab09681049cce83cc0b364aaa669a27b19e9be28",
+    "mechanical/swim-r12-pack-retention/body.stl": "eb88c466113e58eccd60d17e78aa55740dc3aee9d14e7564e01380fdcfc8535f",
+    "mechanical/swim-r11-thermal-fit/parameters.scad": "4d2805ab134f6ac74a1e9fb4231cc22636282fac638d7c2e89358b2db0275de0"
+  }
+}

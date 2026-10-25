@@ -1,0 +1,133 @@
+{
+  "retrieved": "2026-10-26",
+  "scope": "Manufacturer dimensions and candidate selection, not procurement or assembly qualification. Local PDFs remain ignored.",
+  "sources": [
+    {
+      "url": "https://www1.futureelectronics.com/doc/Mill-Max/0962-0-15-20-75-14-11-0.pdf",
+      "revision": "Manufacturer sheet updated 2024-02-02 06:22 EST",
+      "local_reference_sha256": "4ee6339a3ddfbae2b362a1c4e7336b5b87a123227cf7fcb7013ac57fdb4421a8",
+      "inspected": "All three pages, actual drawing enlarged",
+      "facts": {
+        "mpn": "0962-0-15-20-75-14-11-0",
+        "full_stroke_to_flange_back_in": 0.253,
+        "free_stroke_in": 0.055,
+        "stroke_tolerance_in": 0.005,
+        "flange_thickness_in": 0.025,
+        "barb_to_flange_front_in": 0.046,
+        "smaller_step_length_in": 0.028,
+        "crimp_length_in": 0.133,
+        "free_total_length_in": 0.441,
+        "length_tolerance_in": 0.006,
+        "diameter_tolerance_in": 0.002,
+        "crimp_wire_awg": [
+          24,
+          28
+        ],
+        "midstroke_force_g": [
+          40,
+          80
+        ],
+        "contact_resistance_max_ohm": 0.02
+      },
+      "redistributed": false
+    },
+    {
+      "url": "https://www.alphawire.com/disteAPI/SpecPDF/DownloadProductSpecPdf?productPartNumber=2843%2F7",
+      "revision": "Customer specification with 2026 compliance attachment",
+      "local_reference_sha256": "2a56c7654aeeded3edfec3a6c8325833530bf4c2eb49fa1e9086a36201e03fe9",
+      "inspected": "Construction and properties text",
+      "facts": {
+        "mpn": "2843/7",
+        "awg": 26,
+        "strands": "7/34 silver-plated copper",
+        "insulation": "PTFE",
+        "diameter_in": [
+          0.029,
+          0.033
+        ],
+        "bend_radius": "10 x diameter",
+        "nominal_DCR_ohm_per_1000ft_at_20C": 38
+      },
+      "redistributed": false
+    },
+    {
+      "url": "https://tensility.s3.us-west-2.amazonaws.com/imports/product_spec_sheets/10-03388.pdf",
+      "revision": "A, 2019-08-12",
+      "local_reference_sha256": "2b35e4bc64ff2e01488e08a93ba06d433c979eed5c1a2119a5bcbc7fbce3eaf6",
+      "inspected": "Actual single-page drawing and wiring",
+      "facts": {
+        "mpn": "10-03388",
+        "length_mm": [
+          1000,
+          1050
+        ],
+        "nominal_diameter_mm": 4.1,
+        "wire_awg": 28,
+        "fanout_mm": [
+          20,
+          30
+        ],
+        "tinned_ends_mm": [
+          3,
+          7
+        ],
+        "pins": {
+          "1": "red",
+          "2": "white",
+          "3": "green",
+          "4": "black",
+          "shell": "drain and shield"
+        }
+      },
+      "redistributed": false
+    },
+    {
+      "url": "https://www.tensility.com/products/10-03388",
+      "inspected": "Current manufacturer product page",
+      "facts": {
+        "full_cable_bend_radius_mm": 24.6
+      },
+      "limit": "Individual lead diameter and bend limits are not established by the full-cable specification."
+    },
+    {
+      "url": "https://www.littelfuse.com/assetdocs/fuse-251-datasheet?assetguid=f47a0bb7-8ede-4679-9646-7114c3787688",
+      "revision": "GK 2026-08-18",
+      "inspected": "Web tool parsed all three PDF pages; local HTTP download denied 403, no local hash or visual screenshot claimed.",
+      "facts": {
+        "selected_ordering_code": "0251.750MXL",
+        "current_A": 0.75,
+        "nominal_cold_resistance_ohm": 0.175,
+        "opening_at_200_percent_max_s": 1,
+        "continuous_operation_derating": 0.75,
+        "temperature_derating": "Additional curve applies",
+        "body_diameter_max_mm": 2.8,
+        "body_length_drawing_mm": 7.11,
+        "lead_diameter_mm": 0.64,
+        "IR_or_convection_reflow": "Not recommended"
+      },
+      "limit": "7.5mm assembly body envelope is an engineering incoming limit, not a published maximum length."
+    },
+    {
+      "url": "https://www.hellermanntyton.co.uk/products/cable-ties-inside-serrated/t18r/111-01980",
+      "inspected": "Current manufacturer product page",
+      "facts": {
+        "mpn": "111-01980",
+        "type": "T18R-PA66-BK",
+        "length_mm": 100,
+        "width_mm": 2.5,
+        "thickness_mm": 1.0,
+        "head_mm": [
+          4.8,
+          4.45,
+          3.7
+        ],
+        "bundle_diameter_mm": [
+          1.5,
+          22
+        ],
+        "tie_tensile_strength_N": 80
+      },
+      "limit": "Tie tensile strength is not installed harness pull-out strength."
+    }
+  ]
+}

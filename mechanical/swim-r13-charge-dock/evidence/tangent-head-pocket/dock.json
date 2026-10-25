@@ -1,0 +1,171 @@
+{
+  "revision": "r13",
+  "production_release": false,
+  "units": "mm",
+  "contact": {
+    "manufacturer": "Mill-Max",
+    "mpn": "0962-0-15-20-75-14-11-0",
+    "full_stroke_to_flange_back": 6.4262,
+    "stroke": 1.397,
+    "stroke_tolerance": 0.127,
+    "length_tolerance": 0.1524,
+    "diameter_tolerance": 0.0508,
+    "flange_d": 1.9812,
+    "flange_t": 0.635,
+    "crimp_d": 1.5748,
+    "crimp_length": 3.3782,
+    "upper_d": 1.8288,
+    "tip_d": 1.0668,
+    "wire_hole_d": 0.889,
+    "midstroke_force_g": [
+      40,
+      80
+    ],
+    "resistance_max_ohm": 0.02,
+    "barrel_d": 1.6256,
+    "upper_step_to_flange_back": 1.8034
+  },
+  "dock": {
+    "width": 36,
+    "depth": 60,
+    "bottom": -1,
+    "top": 15,
+    "split_z": 5.5,
+    "nose_width": 35.4,
+    "nose_bottom": 1.0,
+    "nose_top": 13.2,
+    "nose_depth": 2.1,
+    "rear_start": 2.0,
+    "pin_y": [
+      -6,
+      6
+    ],
+    "pin_z": 5.5,
+    "flange_back_x": 7.9247,
+    "flange_pocket_length": 1.05,
+    "flange_pocket_d": 2.15,
+    "upper_bore_d": 1.8,
+    "tail_bore_d": 1.73,
+    "head_pocket_d": 9.0,
+    "head_pocket_depth": 1.3,
+    "wire_exit_x": 52,
+    "wire_exit_d": 5.2,
+    "wire_pocket_x": [
+      12,
+      52
+    ],
+    "wire_pocket_y": [
+      -10,
+      10
+    ],
+    "wire_pocket_z": [
+      2,
+      9
+    ],
+    "screw_xy": [
+      [
+        5,
+        -14
+      ],
+      [
+        5,
+        14
+      ],
+      [
+        45,
+        -14
+      ],
+      [
+        45,
+        14
+      ]
+    ],
+    "screw_hole_d": 2.3,
+    "nut_af": 4.3,
+    "nut_depth": 2.1,
+    "front_stop_x": 5.4
+  },
+  "key": {
+    "length": 4.0,
+    "y_min": -1.5,
+    "y_max": 1.5,
+    "z_min": 7.7,
+    "z_max": 13.2,
+    "slot_depth": 4.3,
+    "slot_y_min": -1.8,
+    "slot_y_max": 1.8,
+    "slot_z_min": 7.4,
+    "slot_z_max": 13.5
+  },
+  "limits": {
+    "molded_feature_tolerance": 0.05,
+    "case_head_height": 0.8,
+    "case_head_tolerance": 0.05,
+    "mate_gap_max": 0.05,
+    "differential_thermal_axial": 0.03,
+    "min_operating_stroke": 0.1,
+    "min_bottoming_margin": 0.1,
+    "min_key_early_margin": 0.2,
+    "min_radial_clearance": 0.01,
+    "boot_position_allowance": 0.15,
+    "pin_position_error": 0.2,
+    "key_position_error": 0.15
+  },
+  "harness": {
+    "wire_mpn": "Alpha Wire 2843/7",
+    "wire_awg": 26,
+    "wire_od_max": 0.8382,
+    "wire_min_bend": 8.382,
+    "wire_conductor_d": 0.4826,
+    "wire_conductor_nominal_ohm_per_m": 0.12467191601049868,
+    "usb_cable_mpn": "Tensility 10-03388",
+    "usb_cable_d_nom": 4.1,
+    "usb_cable_d_tolerance": 0.3,
+    "usb_cable_bend_radius": 24.6,
+    "usb_tail_d_requirement": 1.2,
+    "usb_tail_bend_requirement": 10,
+    "route_x": [
+      34,
+      52
+    ],
+    "route_y": [
+      6,
+      0.8
+    ],
+    "splice_envelope": [
+      4,
+      2.4,
+      2.4
+    ],
+    "fuse_mpn": "Littelfuse 0251.750MXL",
+    "fuse_center": [
+      23.5,
+      -6,
+      5.5
+    ],
+    "fuse_insulated_d_requirement": 4.0,
+    "input_voltage_range": [
+      4.75,
+      5.25
+    ],
+    "continuous_current_design": 0.5,
+    "source_requirement": "Dedicated regulated 5V SELV supply with documented short-circuit protection; USB host power is not qualified.",
+    "fuse_body_length_requirement": 7.5,
+    "jacket_center_z_allowance": 0.28,
+    "cable_tie_mpn": "HellermannTyton 111-01980",
+    "fuse_body_drawing_mm": [
+      7.11,
+      2.8
+    ]
+  },
+  "qualification": {
+    "magnetic_holding_force": false,
+    "contact_retention_force": false,
+    "crimp_process": false,
+    "wire_current_and_short_circuit": false,
+    "physical_ingress": false,
+    "internal_lug_and_j3_route": false,
+    "battery_lead_exit": false,
+    "firmware": false
+  }
+}

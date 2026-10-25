@@ -1,0 +1,11 @@
+Reference,Quantity,Manufacturer,MPN / drawing,Status
+"P1,P2",2,Mill-Max,0962-0-15-20-75-14-11-0,Prototype candidate; crimp and full pin-motion slack unqualified
+F1,1,Littelfuse,0251.750MXL,Prototype candidate; power/fault/temperature behavior unqualified
+W_USB,1,Tensility,10-03388,Prototype candidate; fanout preparation and receiving limits required
+"W_RED,W_BLACK",2 lengths,Alpha Wire,2843/7 red/black,Cut lengths and termination process unqualified
+TIE1,1,HellermannTyton,111-01980,Prototype candidate; installed retention/tension unqualified
+S1-S4,4,To qualify,M2 x 16 socket screws,Exact drawing and torque open
+N1-N4,4,To qualify,M2 nuts,Exact drawing and retention open
+"H_LOWER,H_UPPER",2,Custom,CT-DOCK-001-A,Geometry prototype; material/process unqualified
+INSULATION,As required,To qualify,Fuse sleeve and three splice sleeves,Exact parts and process open
+INTERNAL_LUGS,2,To select,Contact studs to J3,Unresolved; no order-ready internal harness
