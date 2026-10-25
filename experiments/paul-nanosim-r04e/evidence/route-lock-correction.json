@@ -1,0 +1,17 @@
+{
+  "source_sha256": "1628a83a707b4b8e541ee8ce598531841419c5f31f4a7d4e4456ea6fc5c65ff8",
+  "input_sha256": "7f96286b4ccd0181b47b549eaf6d6aefe65e0b03b60b68b44e6f850c28dd2694",
+  "output_sha256": "8b61a3456c165fa9a1eb21cdc1443bc04680ddd84d692440863c680e36541c15",
+  "movable_items": 930,
+  "change": "KiCad route token to Freerouting normal token; fix tokens preserved",
+  "scope": "Correct intended signal rip-up policy in the routing copy; no native geometry or manufacturing-rule change.",
+  "reader_before": {
+    "SYSTEM_FIXED": 241,
+    "USER_FIXED": 930
+  },
+  "reader_after": {
+    "SYSTEM_FIXED": 241,
+    "UNFIXED": 275
+  },
+  "reader_note": "The reader merges movable segments into longer polylines; do not expect the post-load item count to equal DSN token count."
+}

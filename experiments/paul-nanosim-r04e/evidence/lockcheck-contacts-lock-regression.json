@@ -1,0 +1,146 @@
+{
+  "input": "experiments/paul-nanosim-r04e/build/lockcheck-contacts.dsn",
+  "input_sha256": "c35f21a947ec0fc8d6440b679cdbb6b5fb4e50b694078b8642d8f5e91d167593",
+  "totals": {
+    "SYSTEM_FIXED": 241,
+    "UNFIXED": 275
+  },
+  "nets": {
+    "Net #1 (/GND)": {
+      "SYSTEM_FIXED": 188
+    },
+    "Net #10 (/GNSS_LNA_EN)": {
+      "UNFIXED": 2
+    },
+    "Net #100 (/BAT_NTC)": {
+      "SYSTEM_FIXED": 2,
+      "UNFIXED": 3
+    },
+    "Net #101 (/DEBUG_RESET)": {
+      "UNFIXED": 1
+    },
+    "Net #11 (/VIO_1V8)": {
+      "UNFIXED": 41
+    },
+    "Net #12 (/GNSS_FEM_IN)": {
+      "SYSTEM_FIXED": 3
+    },
+    "Net #13 (/FILT_OUT)": {
+      "SYSTEM_FIXED": 3
+    },
+    "Net #14 (/AMP_IN)": {
+      "SYSTEM_FIXED": 3
+    },
+    "Net #15 (/I2C_SCL)": {
+      "UNFIXED": 7
+    },
+    "Net #17 (/I2C_SDA)": {
+      "UNFIXED": 14
+    },
+    "Net #2 (/ILIM_VSET)": {
+      "SYSTEM_FIXED": 3,
+      "UNFIXED": 3
+    },
+    "Net #20 (/ACC_INT)": {
+      "UNFIXED": 9
+    },
+    "Net #21 (/LTE_ANT)": {
+      "SYSTEM_FIXED": 5
+    },
+    "Net #23 (/SWDCLK)": {
+      "UNFIXED": 7
+    },
+    "Net #24 (/SWDIO)": {
+      "UNFIXED": 3
+    },
+    "Net #28 (/NRF_RESET)": {
+      "UNFIXED": 5
+    },
+    "Net #29 (/NRF_ENABLE)": {
+      "UNFIXED": 5
+    },
+    "Net #3 (/VSYS)": {
+      "SYSTEM_FIXED": 3,
+      "UNFIXED": 28
+    },
+    "Net #32 (/SIM_RST)": {
+      "UNFIXED": 6
+    },
+    "Net #33 (/SIM_IO)": {
+      "UNFIXED": 6
+    },
+    "Net #34 (/SIM_CLK)": {
+      "UNFIXED": 12
+    },
+    "Net #35 (/SIM_1V8)": {
+      "UNFIXED": 18
+    },
+    "Net #4 (/DEC0)": {
+      "UNFIXED": 1
+    },
+    "Net #5 (/GNSS_FEM_OUT)": {
+      "SYSTEM_FIXED": 2
+    },
+    "Net #53 (/COEX0)": {
+      "UNFIXED": 5
+    },
+    "Net #56 (/HEALTH_INT)": {
+      "UNFIXED": 7
+    },
+    "Net #57 (/SPI_SCK)": {
+      "UNFIXED": 11
+    },
+    "Net #58 (/SPI_MOSI)": {
+      "UNFIXED": 7
+    },
+    "Net #59 (/SPI_MISO)": {
+      "UNFIXED": 7
+    },
+    "Net #6 (/GPS_RF)": {
+      "SYSTEM_FIXED": 3
+    },
+    "Net #60 (/HEALTH_CS)": {
+      "UNFIXED": 9
+    },
+    "Net #61 (/HEALTH_RESET)": {
+      "UNFIXED": 11
+    },
+    "Net #62 (/HEALTH_EN)": {
+      "UNFIXED": 8
+    },
+    "Net #63 (/CHG_STAT)": {
+      "SYSTEM_FIXED": 3,
+      "UNFIXED": 4
+    },
+    "Net #64 (/CHG_FAULT)": {
+      "SYSTEM_FIXED": 3,
+      "UNFIXED": 3
+    },
+    "Net #66 (/BAT_ADC)": {
+      "UNFIXED": 6
+    },
+    "Net #7 (/GNSS_ANT)": {
+      "SYSTEM_FIXED": 2
+    },
+    "Net #8 (/VDD_NRF)": {
+      "UNFIXED": 14
+    },
+    "Net #9 (/LTE_RF)": {
+      "SYSTEM_FIXED": 3
+    },
+    "Net #97 (/ISET)": {
+      "SYSTEM_FIXED": 1,
+      "UNFIXED": 1
+    },
+    "Net #98 (/VBAT)": {
+      "SYSTEM_FIXED": 9,
+      "UNFIXED": 6
+    },
+    "Net #99 (/VIN_5V)": {
+      "SYSTEM_FIXED": 5,
+      "UNFIXED": 5
+    }
+  },
+  "movable_without_user_fixed_items": true,
+  "scope": "Loaded router lock states only. Movable segments may be merged into polylines. This does not establish native connectivity or DRC acceptance."
+}

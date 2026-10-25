@@ -1,0 +1,29 @@
+{
+  "source_sha256": "1628a83a707b4b8e541ee8ce598531841419c5f31f4a7d4e4456ea6fc5c65ff8",
+  "dsn_sha256": "c35f21a947ec0fc8d6440b679cdbb6b5fb4e50b694078b8642d8f5e91d167593",
+  "input_dsn_sha256": "f73484dd67f6edcb0a645177c8a1cfd7774da91a94cfc5ffb619ab1042cbf7f4",
+  "coordinate_resolution_mm": 0.0001,
+  "copper_comparison_tolerance_mm": 0.0002,
+  "original_tracks": 1028,
+  "original_vias": 143,
+  "connector_count": 1,
+  "wire_count": 1028,
+  "connectors": [
+    {
+      "net": "/GND",
+      "layer": "B.Cu",
+      "start": [
+        106.2,
+        119.72
+      ],
+      "end": [
+        106.2,
+        119.77
+      ],
+      "width_mm": 0.2,
+      "fixed": true
+    }
+  ],
+  "connectors_with_new_copper": [],
+  "scope": "Routing model only: exact-center connections and split junctions. New copper is explicitly reported and requires native DRC after any import. No native source or clearance rule changed."
+}

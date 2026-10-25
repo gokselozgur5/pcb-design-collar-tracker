@@ -1,0 +1,8 @@
+{
+  "url": "https://github.com/freerouting/freerouting/releases/download/v2.5.0/freerouting-2.5.0.jar",
+  "release": "https://github.com/freerouting/freerouting/releases/tag/v2.5.0",
+  "published_at": "2026-10-05T15:58:39Z",
+  "sha256": "f6f51bb02245e8e717f9359bd260cc9c5c0b1bc0acc8b7cb2cd5b8ffeb5de3c7",
+  "bytes": 64599107,
+  "scope": "Additional pinned router for comparative proposals. Native KiCad/JLC acceptance rules unchanged."
+}

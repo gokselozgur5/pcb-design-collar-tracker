@@ -1,0 +1,10 @@
+{
+  "source_sha256": "38882bf0111a0190a9a55e756b72be96f91e325de29d909a93c6a57759bbed44",
+  "dsn_sha256": "756a19dbe670d96c0cda60747515fcc7f4fff03ab404f4c311750be0334fb39f",
+  "original_tracks": 980,
+  "original_vias": 141,
+  "connector_count": 5,
+  "wire_count": 992,
+  "connectors_with_new_copper": [],
+  "scope": "Routing model only: exact-center connections and split junctions. New copper is explicitly reported and requires native DRC after any import. No native source or clearance rule changed."
+}

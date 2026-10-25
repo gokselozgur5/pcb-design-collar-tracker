@@ -108,6 +108,10 @@ for name, active, direction in [('F.Cu', 'on', 'horizontal'), ('In1.Cu', 'off', 
     settings += f' (layer_rule {name} (active {active}) (preferred_direction {direction}) (preferred_direction_trace_costs 1.0) (against_preferred_direction_trace_costs 1.5))\n'
 settings += ')'
 text = dsn.read_text().replace('    (boundary', '    ' + settings + '\n    (boundary', 1)
+# Freerouting treats an unknown wiring type as USER_FIXED. KiCad's "route"
+# token is not its "normal" token, even when the native track was unlocked.
+# Keep "fix" items protected and make the intended movable routes explicit.
+text = text.replace('(type route)', '(type normal)')
 text = text.replace('(clearance 50 (type smd_smd))', '(clearance 150 (type smd_smd))')
 text = text.replace('        (clearance 200)\n', '        (clearance 200)\n        (clearance 150 (type smd_smd))\n')
 dsn.write_text(text)
@@ -117,6 +121,7 @@ dsn.write_text(text)
     'ground_items_hidden': len(ground_items), 'ground_and_nc_pads_hidden': hidden_pads,
     'keepouts_added': keepout_count, 'routing_layers': ['F.Cu', 'B.Cu'],
     'preserve_native_locks':keep_locked,
+    'movable_route_type':'normal',
     'ground_model':'fixed native copper and inner planes' if args.native_ground else 'copper obstacles',
     'pad_model':'native KiCad DSN export' if native_pads else 'conservative rectangles',
     'explicitly_protected_route_items':len(protected),
