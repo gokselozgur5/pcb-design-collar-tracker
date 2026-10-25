@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Export actual KiCad copper/mask geometry for independent DFM measurements."""
-import json, sys
+import hashlib, json, sys
 from pathlib import Path
 import pcbnew as k
 
@@ -12,7 +12,8 @@ def xy(v):return [v.x/1e6,v.y/1e6]
 def polygons(poly):
     return [[xy(poly.COutline(n).CPoint(i)) for i in range(poly.COutline(n).PointCount())] for n in range(poly.OutlineCount())]
 
-out={'source':str(source),'pads':[],'vias':[],'tracks':[],'mask_graphics':[],'silks':[]}
+out={'source':str(source),'source_sha256':hashlib.sha256(source.read_bytes()).hexdigest(),
+     'pads':[],'vias':[],'tracks':[],'mask_graphics':[],'silks':[]}
 out['zones']=[{'layer':b.GetLayerName(z.GetLayer()),'net':z.GetNetname(),'minimum_width_mm':z.GetMinThickness()/1e6,
                'clearance_mm':z.GetLocalClearance()/1e6}
               for z in b.Zones() if not z.GetIsRuleArea()]

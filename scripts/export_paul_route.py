@@ -11,6 +11,7 @@ import sys
 import pcbnew as k
 
 root = Path(sys.argv[1]).resolve()
+stem = sys.argv[2] if len(sys.argv)>2 else 'collar-tracker'
 pcb = root / 'hardware/collar-tracker.kicad_pcb'
 board = k.LoadBoard(str(pcb))
 vector = lambda xy: k.VECTOR2I(*(round(v * 1e6) for v in xy))
@@ -44,26 +45,16 @@ for track in list(board.GetTracks()):
     if track.GetNetname() != '/GND':
         continue
     ground_items.append(track)
-    if track.GetClass() == 'PCB_VIA':
-        x, y = xy(track.GetPosition())
-        radius = (track.GetWidth(k.F_Cu) / 2e6 + .005) / math.cos(math.pi / 16)
-        points = [(x + radius * math.cos(i * math.pi / 8),
-                   y + radius * math.sin(i * math.pi / 8)) for i in range(16)]
-        for layer in [k.F_Cu, k.B_Cu]:
-            keepout(points, layer)
-    else:
-        ax, ay = xy(track.GetStart())
-        bx, by = xy(track.GetEnd())
-        length = math.hypot(bx - ax, by - ay)
-        if length < 1e-6:
-            continue
-        ux, uy = (bx - ax) / length, (by - ay) / length
-        nx, ny = -uy, ux
-        half = track.GetWidth() / 2e6 + .005
-        keepout([(ax - ux * half + nx * half, ay - uy * half + ny * half),
-                 (bx + ux * half + nx * half, by + uy * half + ny * half),
-                 (bx + ux * half - nx * half, by + uy * half - ny * half),
-                 (ax - ux * half - nx * half, ay - uy * half - ny * half)], track.GetLayer())
+    # Use the native rounded copper outline rather than square-capped boxes.
+    # The 1 um conservative allowance does not change native DRC clearances.
+    layers = [k.F_Cu, k.B_Cu] if track.GetClass() == 'PCB_VIA' else [track.GetLayer()]
+    for layer in layers:
+        poly = k.SHAPE_POLY_SET()
+        track.TransformShapeToPolygon(poly, layer, 1000, 1000, k.ERROR_OUTSIDE)
+        for index in range(poly.OutlineCount()):
+            outline = poly.COutline(index)
+            keepout([xy(outline.CPoint(i)) for i in range(outline.PointCount())], layer)
+
 for item in ground_items:
     board.Delete(item)
 hidden_pads = 0
@@ -80,7 +71,13 @@ for footprint in board.GetFootprints():
             hidden_pads += 1
         elif pad.GetShape() in [k.PAD_SHAPE_ROUNDRECT, k.PAD_SHAPE_OVAL, k.PAD_SHAPE_CIRCLE]:
             pad.SetShape(k.PAD_SHAPE_RECT)
-dsn = root / 'build/collar-tracker.dsn'
+# Permit rip-up/optimization of signal routes in the exported copy only.
+# Native GND is represented by obstacles; exact RF is restored by the importer.
+rf_nets = {'/LTE_RF','/LTE_ANT','/GPS_RF','/GNSS_ANT','/GNSS_FEM_IN','/GNSS_FEM_OUT','/FILT_OUT','/AMP_IN'}
+for track in board.GetTracks():
+    if track.GetNetname() not in rf_nets:
+        track.SetLocked(False)
+dsn = root / f'build/{stem}.dsn'
 assert k.ExportSpecctraDSN(board, str(dsn))
 settings = '(autoroute_settings (autoroute on) (postroute on) (vias on)\n'
 for name, active, direction in [('F.Cu', 'on', 'horizontal'), ('In1.Cu', 'off', 'horizontal'),
@@ -91,7 +88,7 @@ text = dsn.read_text().replace('    (boundary', '    ' + settings + '\n    (boun
 text = text.replace('(clearance 50 (type smd_smd))', '(clearance 150 (type smd_smd))')
 text = text.replace('        (clearance 200)\n', '        (clearance 200)\n        (clearance 150 (type smd_smd))\n')
 dsn.write_text(text)
-(root / 'evidence/router-export.json').write_text(json.dumps({
+(root / f'evidence/{stem}-export.json').write_text(json.dumps({
     'source_sha256': hashlib.sha256(pcb.read_bytes()).hexdigest(),
     'dsn_sha256': hashlib.sha256(dsn.read_bytes()).hexdigest(),
     'ground_items_hidden': len(ground_items), 'ground_and_nc_pads_hidden': hidden_pads,
