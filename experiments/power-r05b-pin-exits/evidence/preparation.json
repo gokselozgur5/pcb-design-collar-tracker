@@ -1,0 +1,21 @@
+{
+  "before_sha256": "78df6a520fc978e08451c94e6c6f475877f401867b55c0218802ee3434d193a2",
+  "source_sha256": "f7926a38f4c2d41e5620e2f7a1d05147bf4b3b72055da1106dd6fc500fd7a173",
+  "plan_sha256": "3cf5ab7951cabee02a41a727aaadeeede0f0d7ae9e529511b9d548639f42908d",
+  "restored_ids": {
+    "6ba9ed17-142c-4ce5-bb93-ffae79f96dff": "bcf36c59-3c5f-44d5-b61e-a5874e667fde",
+    "bee0f485-69d2-4df8-9860-c5900a3ddfaf": "a0c57652-e3ab-4c61-9ade-5ab0738b2cbc",
+    "f29512ef-6031-4bd0-87e9-e71216c872ec": "d922dc8a-9e70-411e-b4b1-a717e01dcc10",
+    "fab52cd7-a668-4e12-a9c5-560efed08d93": "a3f0d0fb-b729-4f0c-9a14-a0cbe99a52b6",
+    "8563504f-e7a6-4c8c-b03e-1935c75e01b5": "8ed38174-2c3b-452a-9f34-03913abfcb41",
+    "1e3dc6b5-d80e-46e6-9cda-c7441735c7ac": "3d8ae1dd-47b3-4b97-a452-8f21b996e6f4",
+    "21b17402-4ea2-4e31-9f05-bcd13fb758c6": "010bde03-8a38-4d28-9031-868f4625558d",
+    "a62d1525-68d9-4bb5-8e10-83dced3e4752": "1d645db1-050c-4b3f-b516-395eb3467512",
+    "38d0e006-bd71-49b1-91d2-a0bdeef11e1f": "bc5e1e56-01cd-4593-a034-4bbe15a5fd1c",
+    "8f241496-34ed-4eb1-a64b-6cbcba1c7ed8": "b1886631-d5ec-454b-9444-1f759b102b5b",
+    "bf8cf763-e72b-4582-b62f-00d17bfbb47a": "a47e63e0-9b67-41cc-afca-3439a18f7861",
+    "afc6dbbb-92ff-492b-8dc4-8ef71b595cdc": "22d5ce70-67c1-4be4-9a8d-4e5f09a556fa",
+    "b3f93dea-fa07-4c28-8ab0-2adfe798db8b": "f888f93a-c2f5-4854-8d01-f0bc7f70300b"
+  },
+  "scope": "Unplaced candidate; native geometry/routing checks pending."
+}

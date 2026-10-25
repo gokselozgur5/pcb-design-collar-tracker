@@ -1,0 +1,30 @@
+{
+  "before_sha256": "68653d43d2f4654b42a3640aec68375e2cb07a011e0d42d1a429ca66d23d5402",
+  "source_sha256": "410db724ac1fa4774428ecccdb5d971c7eea5351cdfb1dab516f6f4df3cc1b51",
+  "drc_sha256": "c31b27116bf7ee42749cba0ebf2e435425969125e8dd6db383c05d509a618cd2",
+  "removed": [
+    {
+      "id": "2b2021b4-5b06-471d-b98b-64f2fee8f3bc",
+      "net": "/VBAT"
+    }
+  ],
+  "pad_islands_preserved": [
+    [
+      "/VBAT",
+      [
+        "056d7287-a203-4c90-b197-7aa691801a05",
+        "d8638188-27ee-476d-b8ec-2dfaf71c2b3b",
+        "ee2f829e-8a0a-4edd-acbf-921683e0ba1c"
+      ]
+    ],
+    [
+      "/VBAT",
+      [
+        "2e5f3174-a829-4c85-beaa-63833cad0281",
+        "7b5e0417-247a-4877-9fa9-277d1dafc08f",
+        "7d7fc5ec-99c8-49f0-ac94-eeb273805170"
+      ]
+    ]
+  ],
+  "acceptance": "Fresh DRC is required; only native pin connectivity was preserved."
+}

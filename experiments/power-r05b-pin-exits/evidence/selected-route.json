@@ -1,0 +1,9 @@
+{
+  "before_sha256": "0cfe95b8d07e9bc1afcfdd5a612e4c4993bee68c27d98e3ecfe9982b54d48de7",
+  "source_sha256": "90b70e403b49ea4d85b386dae7befe6bf03708c6bbcb6f212a3cbf9b544fc574",
+  "selected": "local1",
+  "reason": "Native 14 opens and zero copper/courtyard/parity violations versus Freerouting 24 opens. Same schematic, libraries, rules and placements.",
+  "candidate_process_exit_code": 0,
+  "native_drc_exit_code": 0,
+  "acceptance": "WIP: unfinished routes, dangling items and two label warnings remain."
+}

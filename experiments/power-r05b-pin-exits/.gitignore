@@ -1,0 +1,6 @@
+# Disposable native backups and router intermediates remain local.
+/build/*
+!/build/placement.json
+/previews/placement-*
+/evidence/geometry.json
+/hardware/collar-tracker.local-routing.json

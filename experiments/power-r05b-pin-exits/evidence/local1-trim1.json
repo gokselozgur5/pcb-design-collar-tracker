@@ -1,0 +1,112 @@
+{
+  "before_sha256": "90b70e403b49ea4d85b386dae7befe6bf03708c6bbcb6f212a3cbf9b544fc574",
+  "source_sha256": "60a084d048f3dce9fd5578ab37bceaaac96af8e9814da1d506cff16914e5b640",
+  "drc_sha256": "a9ae6f5a57e505f6afe86950e46cda63e4efc8a7c427fb96e9642373dd809408",
+  "removed": [
+    {
+      "id": "01023f5e-3514-46ae-a04a-a81b14ebcef1",
+      "net": "/POWER_GOOD"
+    },
+    {
+      "id": "2ec185af-60ad-47db-b874-18d3e4483de9",
+      "net": "/VIO_DISCHARGE"
+    },
+    {
+      "id": "8d3ab76b-5a95-4db8-969c-502dc4cb9aee",
+      "net": "/NRF_ENABLE"
+    },
+    {
+      "id": "b1886631-d5ec-454b-9444-1f759b102b5b",
+      "net": "/VBAT"
+    },
+    {
+      "id": "bcf36c59-3c5f-44d5-b61e-a5874e667fde",
+      "net": "/VSYS"
+    }
+  ],
+  "pad_islands_preserved": [
+    [
+      "/NRF_ENABLE",
+      [
+        "60546a48-686b-43c2-98f2-e99e30c1bdce",
+        "67221f0c-92e3-4ed7-a54b-90c582e97e30"
+      ]
+    ],
+    [
+      "/NRF_ENABLE",
+      [
+        "6976c9f4-b2cf-48a2-bb43-d2bc0288326a"
+      ]
+    ],
+    [
+      "/NRF_ENABLE",
+      [
+        "ddf52df5-21ba-4846-8faf-8e8e39ccfe80"
+      ]
+    ],
+    [
+      "/POWER_GOOD",
+      [
+        "086af6b3-0cc5-4984-bb60-618c44f1bc95"
+      ]
+    ],
+    [
+      "/POWER_GOOD",
+      [
+        "87e5c547-afc6-4ce8-b327-51ca98954d3d",
+        "d0c96839-ab84-4030-a422-90c794e88299",
+        "e436972d-cde9-492c-ba2f-5e8d21eb291d"
+      ]
+    ],
+    [
+      "/POWER_GOOD",
+      [
+        "9923f6b0-745c-4bc1-bede-515cb39f9bd4"
+      ]
+    ],
+    [
+      "/POWER_GOOD",
+      [
+        "d1683f39-b295-4687-9f8d-1632ceb73545"
+      ]
+    ],
+    [
+      "/VBAT",
+      [
+        "056d7287-a203-4c90-b197-7aa691801a05",
+        "d8638188-27ee-476d-b8ec-2dfaf71c2b3b",
+        "ee2f829e-8a0a-4edd-acbf-921683e0ba1c"
+      ]
+    ],
+    [
+      "/VBAT",
+      [
+        "2e5f3174-a829-4c85-beaa-63833cad0281",
+        "7b5e0417-247a-4877-9fa9-277d1dafc08f",
+        "7d7fc5ec-99c8-49f0-ac94-eeb273805170"
+      ]
+    ],
+    [
+      "/VIO_DISCHARGE",
+      [
+        "00519943-d9e4-43f5-9cca-a6b4253bdcd7",
+        "dd0f3b20-daa1-40b4-bb92-5cadf3a78214"
+      ]
+    ],
+    [
+      "/VSYS",
+      [
+        "09d82510-c74c-4c13-ac57-1818258e4947",
+        "1bb09306-f641-435a-aae4-f40a054c411d",
+        "485c69c7-2ee7-4dac-9538-4ff9c6c00385",
+        "49faa3bb-f495-4fca-84d2-9893855e5402",
+        "547595e1-d60f-4e7b-9d0c-da77713079c2",
+        "6e29901a-9107-4386-8268-e1964de03287",
+        "96a7c14c-1c60-46c7-a6dc-b4dffba51de5",
+        "d2019dd1-012c-4d68-93cc-84e08c104ea4",
+        "d207c94d-c4f7-42bc-a9c9-4de30b8da4cf"
+      ]
+    ]
+  ],
+  "acceptance": "Fresh DRC is required; only native pin connectivity was preserved."
+}

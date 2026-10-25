@@ -1,0 +1,53 @@
+{
+  "before_sha256": "60a084d048f3dce9fd5578ab37bceaaac96af8e9814da1d506cff16914e5b640",
+  "source_sha256": "5f7425976268d74ebd926a755d093fcd1844fa955be64603bce800a1c2ae3946",
+  "drc_sha256": "573697de3f0c761b1680e460fb963b6feef0a84d491133ae426b1febc466cd60",
+  "removed": [
+    {
+      "id": "1d645db1-050c-4b3f-b516-395eb3467512",
+      "net": "/NRF_ENABLE"
+    },
+    {
+      "id": "a47e63e0-9b67-41cc-afca-3439a18f7861",
+      "net": "/VBAT"
+    }
+  ],
+  "pad_islands_preserved": [
+    [
+      "/NRF_ENABLE",
+      [
+        "60546a48-686b-43c2-98f2-e99e30c1bdce",
+        "67221f0c-92e3-4ed7-a54b-90c582e97e30"
+      ]
+    ],
+    [
+      "/NRF_ENABLE",
+      [
+        "6976c9f4-b2cf-48a2-bb43-d2bc0288326a"
+      ]
+    ],
+    [
+      "/NRF_ENABLE",
+      [
+        "ddf52df5-21ba-4846-8faf-8e8e39ccfe80"
+      ]
+    ],
+    [
+      "/VBAT",
+      [
+        "056d7287-a203-4c90-b197-7aa691801a05",
+        "d8638188-27ee-476d-b8ec-2dfaf71c2b3b",
+        "ee2f829e-8a0a-4edd-acbf-921683e0ba1c"
+      ]
+    ],
+    [
+      "/VBAT",
+      [
+        "2e5f3174-a829-4c85-beaa-63833cad0281",
+        "7b5e0417-247a-4877-9fa9-277d1dafc08f",
+        "7d7fc5ec-99c8-49f0-ac94-eeb273805170"
+      ]
+    ]
+  ],
+  "acceptance": "Fresh DRC is required; only native pin connectivity was preserved."
+}

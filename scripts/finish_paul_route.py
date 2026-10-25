@@ -22,7 +22,12 @@ parser.add_argument('--anchors', type=Path,
                     help='JSON net-to-via mapping; start from its F.Cu anchor when that island is selected')
 parser.add_argument('--first-net', action='append', default=[],
                     help='Route this exact net name first; repeat to define a deliberate order')
+parser.add_argument('--low-current-net', action='append', default=[],
+                    help='Use 0.2 mm for added control branches only; verify the existing power backbone remains connected')
+parser.add_argument('--only-net', action='append', default=[],
+                    help='Attempt only these nets; the following native DRC must still cover the full board')
 args=parser.parse_args()
+script_sha=hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
 assert math.isfinite(args.route_limit_mm) and args.route_limit_mm>0
 PCB=args.board;DRC=args.drc_json;OUTPUT=args.output_board or PCB
 b=k.LoadBoard(str(PCB));d=json.loads(DRC.read_text());layers=[k.F_Cu,k.B_Cu];STEP=.05
@@ -30,7 +35,24 @@ source_sha=hashlib.sha256(PCB.read_bytes()).hexdigest()
 sim_inputs=set(json.loads(args.sim_inputs.read_text())) if args.sim_inputs else set()
 anchors=json.loads(args.anchors.read_text()) if args.anchors else {}
 assert sim_inputs <= {t.m_Uuid.AsString() for t in b.GetTracks()}, 'Stale protected input IDs'
-assert ('paul-nanosim' in str(PCB) or PCB.resolve().parent.parent.name == 'power-r05-supervised'), 'Use an isolated nano-SIM trial'
+assert ('paul-nanosim' in str(PCB) or PCB.resolve().parent.parent.name in
+        {'power-r05-supervised', 'power-r05b-pin-exits'}), 'Use an isolated nano-SIM trial'
+branch_backbones={}
+if args.low_current_net:
+    assert PCB.resolve().parent.parent.name=='power-r05b-pin-exits'
+    assert set(args.low_current_net)<={'/VDD_NRF','/VBAT','/VIO_1V8'}
+    from trim_power_r05_tails import islands
+    old=json.loads((Path(__file__).resolve().parents[1]/
+        'experiments/paul-nanosim-r04i-sim-access-40x32/hardware/design.json').read_text())
+    oldpins={p['ref']+'.'+str(n):'/'+v for p in old['parts'] for n,v in p['nets'].items() if p.get('onboard')}
+    byid={p.m_Uuid.AsString():f.GetReference()+'.'+p.GetNumber() for f in b.GetFootprints() for p in f.Pads()}
+    for net in args.low_current_net:
+        groups=[]
+        for _,uids in islands(b,{net}):
+            original=sorted(byid[u] for u in uids if oldpins.get(byid[u])==net)
+            if original:groups.append(original)
+        assert len(groups)==1, ('Power backbone is not already connected',net,groups)
+        branch_backbones[net]=groups[0]
 edges=[item for item in b.GetDrawings() if item.GetLayer()==k.Edge_Cuts]
 assert len(edges)==4 and all(item.GetShape()==k.SHAPE_T_SEGMENT for item in edges), 'Planner requires a rectangular outline'
 corners={(p.x/1e6,p.y/1e6) for item in edges for p in [item.GetStart(),item.GetEnd()]}
@@ -153,6 +175,8 @@ def route(opening):
     if len(starts_exact)>len(ends_exact):
         starts_exact,ends_exact=ends_exact,starts_exact
     width=.4 if net in ['/VDD_NRF','/VIN_5V','/VBAT','/VSYS'] else .3 if net=='/VIO_1V8' else .2
+    if net in args.low_current_net:
+        width=.2
     netpads=[p for f in b.GetFootprints() for p in f.Pads() if p.GetNetname()==net]
     padcenters=[(*xy(p.GetPosition()),l) for p in netpads for l in layers if p.IsOnLayer(l)]
     # Narrow escapes are allowed only within 1 mm of an actual same-net pad.
@@ -239,6 +263,7 @@ priority={net:i for i,net in enumerate(dict.fromkeys(args.first_net + ['/SPI_SCK
     '/ILIM_VSET','/ISET','/BAT_NTC','/VIN_5V','/VBAT','/CHG_STAT','/CHG_FAULT','/VSYS']))}
 try:
     for opening in sorted(d['unconnected_items'],key=lambda op:priority.get(re.search(r'\[([^]]+)\]',op['items'][0]['description'])[1],len(priority))):
+        if args.only_net and re.search(r'\[([^]]+)\]',opening['items'][0]['description'])[1] not in args.only_net:continue
         if any('Zone ' in item['description'] for item in opening['items']):continue
         try:results.append(route(opening))
         except RuntimeError as e:failures.append(str(e));print('FAILED',e,flush=True)
@@ -248,6 +273,9 @@ except KeyboardInterrupt:
 k.ZONE_FILLER(b).Fill(b.Zones());assert k.SaveBoard(str(OUTPUT),b)
 OUTPUT.with_suffix('.local-routing.json').write_text(json.dumps({'before_sha256':source_sha,
     'protected_sim_input_ids':sorted(sim_inputs),'route_anchors':anchors,'first_nets':args.first_net,
+    'low_current_branch_nets':args.low_current_net,
+    'existing_power_backbone_pins':branch_backbones,
+    'only_nets':args.only_net,'router_script_sha256':script_sha,
     'route_limit_mm':args.route_limit_mm,'board_bounds_mm':[xmin,ymin,xmax,ymax],
     'source_sha256':hashlib.sha256(OUTPUT.read_bytes()).hexdigest(),'routes':results,
     'ground_stitches':stitches,'failed':failures,'interrupted':interrupted,

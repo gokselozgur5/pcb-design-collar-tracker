@@ -1,0 +1,80 @@
+{
+  "before_sha256": "70ef470237e845686e4c45fc96def3b5cabb7e5d46d8611722d58122131aae53",
+  "source_sha256": "d061271ec13d711a66a0bf49de6a5ab79819e203213dbec4cd268d8213fc0e7c",
+  "changes": [
+    {
+      "id": "2b8b6c1e-6dd8-4687-b98d-a6732e1ece32",
+      "endpoint": "end",
+      "before_mm": [
+        109.3257,
+        128.5406
+      ],
+      "after_mm": [
+        109.3257,
+        128.5706
+      ]
+    },
+    {
+      "id": "e4a291e7-78e7-4ee9-b97c-427a91802d67",
+      "endpoint": "start",
+      "before_mm": [
+        114.2594,
+        128.5406
+      ],
+      "after_mm": [
+        114.2594,
+        128.5706
+      ]
+    },
+    {
+      "id": "f1331c19-8ac7-4667-a2a2-ed309f2d8fa9",
+      "endpoint": "start",
+      "before_mm": [
+        109.3257,
+        128.5406
+      ],
+      "after_mm": [
+        109.3257,
+        128.5706
+      ]
+    },
+    {
+      "id": "f1331c19-8ac7-4667-a2a2-ed309f2d8fa9",
+      "endpoint": "end",
+      "before_mm": [
+        110.55,
+        128.5406
+      ],
+      "after_mm": [
+        110.55,
+        128.5706
+      ]
+    },
+    {
+      "id": "f8cae31f-4e75-4e06-b003-9ba38b3e7fab",
+      "endpoint": "start",
+      "before_mm": [
+        110.55,
+        128.5406
+      ],
+      "after_mm": [
+        110.55,
+        128.5706
+      ]
+    },
+    {
+      "id": "f8cae31f-4e75-4e06-b003-9ba38b3e7fab",
+      "endpoint": "end",
+      "before_mm": [
+        114.2594,
+        128.5406
+      ],
+      "after_mm": [
+        114.2594,
+        128.5706
+      ]
+    }
+  ],
+  "reason": "Imported 0.2 mm CT branch had 0.1906 mm clearance to a fixed via. Move the horizontal chain by 0.03 mm.",
+  "acceptance": "Pending native DRC and unchanged open-count verification"
+}

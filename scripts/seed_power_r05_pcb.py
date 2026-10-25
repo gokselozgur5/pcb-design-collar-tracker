@@ -36,7 +36,7 @@ def polys(poly):
             for n in range(poly.OutlineCount())]
 
 
-def export_placement(board, changed):
+def export_placement(board, changed, output=OUTPUT, trial=TRIAL):
     out = {'bounds_mm': [98, 98, 138, 130], 'footprints': {}, 'tracks': [], 'vias': []}
     for f in board.GetFootprints():
         f.BuildCourtyardCaches()
@@ -60,8 +60,8 @@ def export_placement(board, changed):
                                   'width': track.GetWidth() / 1e6,
                                   'side': 'F' if track.GetLayer() == k.F_Cu else 'B',
                                   'net': track.GetNetname()})
-    out['source_sha256'] = hashlib.sha256(OUTPUT.read_bytes()).hexdigest()
-    (TRIAL / 'evidence/placement-input.json').write_text(json.dumps(out, indent=2) + '\n')
+    out['source_sha256'] = hashlib.sha256(output.read_bytes()).hexdigest()
+    (trial / 'evidence/placement-input.json').write_text(json.dumps(out, indent=2) + '\n')
 
 
 def main():

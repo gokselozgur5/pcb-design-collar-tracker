@@ -1,0 +1,35 @@
+{
+  "before_sha256": "1d941fe1c86f00548c38e7af31f8577c396099c079f7281f6e456699fa03051c",
+  "source_sha256": "4c047c3a5b69110ad758f83091236c7aa2c25a96f374732dcd8bda79bb88027e",
+  "changes": [
+    {
+      "before_text": "NTC",
+      "after_text": "NTC",
+      "before_position_mm": [
+        110.0,
+        123.8
+      ],
+      "position_mm": [
+        112.5,
+        122.3
+      ],
+      "angle_degrees": 90,
+      "minimum_copper_box_clearance_mm": 0.33899999999999864
+    },
+    {
+      "before_text": "CT 0.4",
+      "after_text": "CT 0.5B",
+      "before_position_mm": [
+        118.7,
+        117.0
+      ],
+      "position_mm": [
+        118.7,
+        117.0
+      ],
+      "angle_degrees": 0,
+      "minimum_copper_box_clearance_mm": 0.7439999999999998
+    }
+  ],
+  "acceptance": "Conservative label placement only; native DRC and actual JLC analysis remain required."
+}

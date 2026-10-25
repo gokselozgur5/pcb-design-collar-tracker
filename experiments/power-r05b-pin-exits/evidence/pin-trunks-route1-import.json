@@ -1,0 +1,14 @@
+{
+  "before_sha256": "c807ef8d8ccf0f2687dd7dc31f36d7c7f0950c4f22da163eaca306f721eecafe",
+  "source_sha256": "70ef470237e845686e4c45fc96def3b5cabb7e5d46d8611722d58122131aae53",
+  "session": "build/pin-trunks-route1.ses",
+  "session_sha256": "7d718b855da2c7a867051ea65bc91f7b922a85103e40d06009af0064b2d333cd",
+  "ground_items_preserved": 267,
+  "rf_segments_restored_exactly": 24,
+  "rf_native_ids_preserved": true,
+  "protected_escape_items_preserved": 1369,
+  "preserve_native_locks": false,
+  "narrow_segments_widened_to_020": 7,
+  "inner_tracks": 0,
+  "scope": "Import invariants only; native DRC and remaining opens must be checked."
+}
