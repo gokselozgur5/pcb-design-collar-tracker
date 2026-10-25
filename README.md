@@ -4,7 +4,7 @@ A small GPS and cellular tracker for dog collars, starting with Türkiye.
 The aim is one electronics design with different collar mounts. Fit, weight and
 comfort across dog sizes and coat types still need physical validation.
 
-**The current r05j PCB passed two actual JLC PCB DFM analyses at 0 Danger / 0 Warning.**
+**The current r05k PCB passed two actual JLC PCB DFM analyses at 0 Danger / 0 Warning.**
 Both used the same ZIP and unchanged rules: 29 analyzed rows, 450 green measurements
 per run. Native DRC/ERC/parity also pass.
 
@@ -12,18 +12,25 @@ The board is 40 × 32 mm with six copper layers and a physical nano-SIM. The RF
 candidate uses a documented 7628 stack and 0.36 mm main port routes; In1.Cu and
 In4.Cu remain dedicated GND. All 128 signal vias pass the local return screen.
 
-[Gerber ZIP](experiments/power-r05j-rf-junctions/evidence/collar-tracker-05j-rf-40x32-dfm.zip) ·
+[Gerber ZIP](experiments/power-r05k-selected-parts/evidence/collar-tracker-05k-parts-40x32-dfm.zip) ·
 [R3 before / after](experiments/power-r05j-rf-junctions/evidence/rf-junction-review.pdf) ·
-[JLC report 1](experiments/power-r05j-rf-junctions/evidence/jlc-check1/report.pdf) ·
-[JLC report 2](experiments/power-r05j-rf-junctions/evidence/jlc-check2/report.pdf)
+[JLC report 1](experiments/power-r05k-selected-parts/evidence/jlc-check1/report.pdf) ·
+[JLC report 2](experiments/power-r05k-selected-parts/evidence/jlc-check2/report.pdf)
 
 R3 now has one equal-width copper entry on each land and nearly equal contour
 ratios. The LTE tuning stubs are reduced, with a longer main feed as the tradeoff.
 
 **Electrical, RF and manufacturing release remain on hold.** Supplier stack/etch/mask
-confirmation, module-pad qualification, assembly process, power timing, exact BOM,
+confirmation, module-pad qualification, assembly process and powered timing,
 pack/NTC, antennas and factory programming/test remain open. See the
-[r05j review](experiments/power-r05j-rf-junctions/README.md). PCB DFM does not prove a working PCBA.
+[r05k review](experiments/power-r05k-selected-parts/README.md). PCB DFM does not prove a working PCBA.
+
+All 65 fitted references now have exact candidate MPNs.
+[Candidate BOM](experiments/power-r05k-selected-parts/assembly/candidate-bom.csv) and
+[CPL](experiments/power-r05k-selected-parts/assembly/candidate-cpl.csv) are exported.
+The [power component model](assembly/power-parts-r01/README.md) includes tolerance,
+TCR and leakage; its remaining physical assumptions are explicit. Supplier
+procurement, rotations and SMT acceptance are still open.
 
 The enclosure's 69 populated envelopes pass the modeled 0.71–0.91 mm board-thickness
 interval. IP68 remains a design target, with provisional 2 m fresh-water / 60-minute

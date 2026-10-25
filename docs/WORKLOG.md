@@ -415,3 +415,30 @@ Their evidence is dated; do not transfer an older pass to a newer source file.
   power, pack/NTC, antennas, factory delivery and enclosure definitions. Do not
   reroute a completed DFM milestone without new evidence. Electrical, RF,
   manufacturing and physical ingress qualification remain open.
+
+## 2026-10-25 — Selected power parts and two clean r05k reports
+
+- Decision: Preserve r05j. Select exact power resistors with manufacturer tolerance,
+  TCR and height data. Use 200k / 26.1k / 3.4M for the feedback network and replace
+  NRND C25 with the in-production 1uF C9 MPN. R21 uses a pulse-proof 0.2W series.
+- Result: Initial-tolerance/TCR and additional-drift screens pass conditionally.
+  Manufacturer typical small-signal capacitor data supports the conservative
+  effective-capacitance sensitivity inputs; it does not guarantee lot/age limits.
+  The former 600ms firmware wait fails; provisional wait is 1s. Five regressions pass.
+- Result: Exact prototype MPNs now cover all 65 fitted references / 38 unique parts.
+  Schematic, PCB fields, BOM, native netlist and candidate CPL agree. All copper,
+  stack, rules, placements and original net membership are unchanged from r05j.
+  Native DRC/ERC/parity have zero findings. No native process crashed in this work.
+- Result: All 69 populated envelopes pass four thickness cases using sourced
+  resistor heights and the larger C25. Original-carrier negative control still
+  fails. C25 retains 0.60mm to the existing battery reservation.
+- Result: Same ZIP 673c1d30bf2192f8abe60cf211ac183210472b8924f3fd4c3b5b46bd992412fc
+  passed records 637356580811132930 and 637356797304328193, each 0/0/450,
+  29 rows, unchanged rules, SMT off. Both full PDFs were rendered and inspected.
+- Limits: Exact candidate MPNs do not establish procurement/SMT/powered acceptance.
+  Effective capacitance/aging, timer extrapolation, abrupt collapse, actual cell,
+  antennas, RF and ingress remain unqualified. UVLO retains pull-up consumption;
+  protected-cell cutoff and charging recovery remain part of the pack review.
+- Next: Protected NTC pack and actual antennas, then occupied-volume checks,
+  harness/dock/positive retention, firmware and factory programming/test.
+  No supplier message, order, payment or physical test occurred.

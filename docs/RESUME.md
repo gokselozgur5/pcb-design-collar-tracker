@@ -41,37 +41,48 @@ browser normally if needed; no profile or credentials are distributed in Git.
 
 ## Working commands
 
-Continue from `experiments/power-r05j-rf-junctions/hardware/`. Read its README and
-`evidence/rf-junction-checkpoint.json`. The candidate has zero native findings and two actual
-same-ZIP JLC runs at 0 Danger / 0 Warning / 450 Good. RF and electrical acceptance
-remain HOLD. Use a new isolated copy for any subsequent PCB edit.
+Continue from `experiments/power-r05k-selected-parts/hardware/`. Read its README,
+`evidence/parts-checkpoint.json`, and `assembly/power-parts-r01/README.md`.
+Native DRC/ERC/parity are zero. Two actual same-ZIP JLC runs each have 0/0/450.
+All 65 fitted references have exact candidate MPNs; the candidate BOM/CPL exclude
+DNP tuning parts and bare harness/debug/extension contacts. Purchasing, CPL library
+rotation, SMT, powered, RF and IP acceptance remain open.
+
+R17/R18/R19 are now 200k / 26.1k / 3.4M, and C25 is 1uF using C9's in-production
+MPN. Native net membership and all copper/lands/vias/placement match r05j. Do not
+apply the older r05 value-specific checker to r05k: its immutable report belongs
+to the old values. The new model is `check_power_parts.py`; it includes tolerance,
+TCR, leakage, typical capacitor data and explicit unqualified assumptions.
+
+Next: protected NTC pack and actual LTE/GNSS antenna selection, then their populated
+fit, harness/dock/positive retention and firmware/factory programming/test. The
+provisional firmware VIO wait is 1 s; the old 600 ms wait fails the new model.
+UVLO is not a zero-current pack disconnect. Review low-cell recharge recovery and
+the manufacturer sequencing exception before adding circuitry.
 
 The six-layer signal order is F/In2/In3/B, with dedicated GND on In1/In4.
-The 0.36 mm port routes and two 0.20/0.28 mm escapes are intentional; FEM interstage
-matching stays at 0.20 mm. Do not restore the original 24 RF segments or blindly
-apply the older router's RF-preservation baseline. The r05i checker verifies the
-preserved width/stack revision; the r05j checker separately verifies the R3 shift
-and two LTE route changes against r05i. Neither permits unrelated edits.
-
-Next: exact R1/R16–R23 MPN, tolerance and TCR, then effective C9/C25/C26 bounds and
-the power model. R3 now has one equal-width entry per land, with contour ratios
-1.001–1.004. Do not keep rerouting a completed DFM milestone without new evidence.
-Retain module-pad In1.Cu for the prototype: In2.Cu VBAT lies directly beneath it.
-This is a documented reference decision, not completed pad-capacitance qualification.
-Supplier Er/etch/mask/thickness discrepancies and physical RF acceptance remain open.
+The inherited 0.36 mm port routes, two bounded module escapes and FEM matching
+remain candidates. R3 balance is unchanged. Keep In1.Cu under the module RF pads
+for now because lower-layer VBAT lies below them; RF qualification remains open.
+Do not reroute a completed DFM milestone without new evidence.
 
 ```sh
-python3 scripts/verify_rf_candidate.py
-python3 scripts/verify_rf_junction_candidate.py
-.venv-dfm/bin/python -m unittest discover -s tests -p test_rf_reference.py -v
-.venv-dfm/bin/python scripts/check_rf_thickness_fit.py --trial experiments/power-r05j-rf-junctions
+python3 scripts/verify_selected_parts.py
+python3 scripts/check_power_parts.py
+python3 -m unittest discover -s tests -p test_power_parts.py -v
+python3 scripts/verify_handoff.py
 ```
+
+The active fit profile is `experiments/power-r05k-selected-parts/assembly/fit-profile.json`.
+Its evidence checks the actual r05k board at four thicknesses with all nine resistor
+heights sourced and C25 increased to 1.35 mm. All 69 envelopes pass. Do not replace
+preserved r06/r05j inputs; they are hash-bound historical evidence.
 
 The native RF exporter preserves polygon holes and records Contains probes.
 The independent checker must agree with those probes; a centerline-only check
 missed the original GNSS edge intrusion. Do not treat coverage as an EM simulation.
 
-Keep `power-r05i-rf-stack` and `power-r05h-six-layer` byte-exact: both are checked
+Keep `power-r05j-rf-junctions`, `power-r05i-rf-stack` and `power-r05h-six-layer` byte-exact: these are checked
 baselines. Saved sources are authoritative; seed/refinement scripts are one-shot history.
 Load each PCB beside its matching project/rules. One native LoadBoard per process;
 wait for exit 0 and keep crash dialogs visible.
@@ -104,13 +115,13 @@ Always load a checkpoint beside its matching `.kicad_pro`: loading a bare build
 snapshot can substitute default rules and overwrite the real project's settings
 on save. The r05 placement helper now checks design-rule and net-class identity.
 
-Protected NTC pack and LTE/GNSS antenna selection proceeds alongside that circuit,
+Protected NTC pack and LTE/GNSS antenna selection follows the selected r05k circuit,
 followed by actual cable/clearance fit, dock/harness and positive PCB retention.
 Read `mechanical/swim-r06-six-layer-fit/README.md`, the preserved r02 selection review and
 `docs/turkiye-connectivity.md` before assuming a modem/plan is field-qualified.
-The r05j thickness review checks the same 69 populated envelopes over 0.71–0.91 mm. Nine resistor-height
-limits are requirements with unresolved exact MPN/tolerance/TCR. Its 30 shell
-checks pass; no new r05 mesh package, factory or physical qualification exists.
+The r05k thickness review checks 69 populated envelopes over 0.71–0.91 mm with
+exact resistor MPNs/heights. The old r05j nine height reservations are historical.
+No new mesh package, factory or physical qualification exists.
 
 ```sh
 .venv-dfm/bin/python -m unittest discover -s tests -p test_populated_fit.py -v

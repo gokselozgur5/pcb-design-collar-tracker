@@ -14,14 +14,15 @@ except (ValueError, OSError, KeyError) as error:
 print(f'Project: {root}')
 print('Baseline: 0.3.4 saved PCB DFM evidence verified; not production acceptance.')
 print('Preserved PCB: r04i native/geometry evidence and two unchanged-rule JLC PCB passes verified.')
-candidate = result['rf_junction_candidate']
-print(f"Active: r05j RF junction candidate; {candidate['native_drc']['unconnected_items']} open connections; "
+candidate = result['selected_parts_candidate']
+print(f"Active: r05k selected component candidate; {candidate['native_drc']['unconnected_items']} open connections; "
       f"{len(candidate['supplier_records'])} verified same-ZIP JLC PCB passes.")
 print(f"Other native violations/warnings: {candidate['native_drc']['violations']}; "
       f"schematic mismatches: {candidate['native_drc']['schematic_parity']}.")
-print('R3: equal-width land entries and 1.001–1.004 contour ratios; RF/assembly qualification remains open.')
-print('Next: exact power resistors and effective timing capacitance. Electrical/RF release remains HOLD.')
-print('Mechanical: 69 populated envelopes pass the modeled 0.71–0.91 mm thickness interval; nine part requirements remain unqualified.')
+print('Parts: 65 fitted references / 38 exact candidate MPNs; four value changes; all r05j copper/placements preserved.')
+print('Power: tolerance/TCR/leakage and typical-capacitance screens pass conditionally; powered and RF acceptance remain HOLD.')
+print('Mechanical: 69 populated envelopes pass at 0.71–0.91 mm, with sourced heights replacing the nine resistor reservations.')
+print('Next: protected NTC pack and actual antennas, then harness/dock/retention and factory firmware/programming/test.')
 print('Preserved: r04i/swim-r02 review bundle; pack, antennas, assembly and physical qualification remain open.')
 print('Git:')
 sys.stdout.flush()

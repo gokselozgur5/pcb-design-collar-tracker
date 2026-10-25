@@ -1,58 +1,66 @@
 # Current state — 2026-10-25
 
-**Active r05j RF junction candidate: native DRC/ERC/parity clean; two actual JLC PCB runs at 0 Danger / 0 Warning.**
+**Active r05k selected-component PCB: native DRC/ERC/parity clean; two actual JLC PCB runs at 0 Danger / 0 Warning.**
 **Electrical / RF / manufacturing release: HOLD. IP68 remains unqualified.**
 
 Repository: [gokselozgur5/pcb-design-collar-tracker](https://github.com/gokselozgur5/pcb-design-collar-tracker).
 All authored repository/GitHub content is English. Continue from
-`experiments/power-r05j-rf-junctions/hardware/`; preserve this tested source before changing it.
+`experiments/power-r05k-selected-parts/hardware/`; preserve the tested source before changing it.
 
-[Gerber ZIP](../experiments/power-r05j-rf-junctions/evidence/collar-tracker-05j-rf-40x32-dfm.zip) ·
-[Before / after review](../experiments/power-r05j-rf-junctions/evidence/rf-junction-review.pdf) ·
-[JLC report 1](../experiments/power-r05j-rf-junctions/evidence/jlc-check1/report.pdf) ·
-[JLC report 2](../experiments/power-r05j-rf-junctions/evidence/jlc-check2/report.pdf)
+[Gerber ZIP](../experiments/power-r05k-selected-parts/evidence/collar-tracker-05k-parts-40x32-dfm.zip) ·
+[JLC report 1](../experiments/power-r05k-selected-parts/evidence/jlc-check1/report.pdf) ·
+[JLC report 2](../experiments/power-r05k-selected-parts/evidence/jlc-check2/report.pdf) ·
+[Candidate BOM](../experiments/power-r05k-selected-parts/assembly/candidate-bom.csv) ·
+[Candidate CPL](../experiments/power-r05k-selected-parts/assembly/candidate-cpl.csv)
 
-## Active r05j layout
+## Active r05k layout and parts
 
-PCB SHA256: `51fc05ccc66009995daa8c5d5466aa983436e00e7ff338f0ddfb0927c92b4580`.
-ZIP SHA256: `8fd625d3da7b8bd3c59ea9aa0fd625dc93d458fe23b64a6fd7bc69d4c6915e50`.
+PCB SHA256: `bea6c52a7f045b5fb21ac9714f3db0c70207f150aab3e9587b891f08e4e2b4d3`.
+ZIP SHA256: `673c1d30bf2192f8abe60cf211ac183210472b8924f3fd4c3b5b46bd992412fc`.
 
 | Check | Result |
 |---|---|
-| Size / circuit | 40 × 32 mm, six Cu, unchanged 71-part r05 circuit |
+| Size / topology | 40 × 32 mm, six Cu, unchanged 71-footprint r05 topology |
 | Stack candidate | JLC06081H-7628, nominal 0.8 mm class; explicit CAD including mask 0.84088 mm |
 | Native DRC / ERC / parity | Zero violations, warnings, opens or mismatches |
-| Ground / returns | 94 unique GND terminals local; 110 GND vias; two continuous GND planes; 128/128 return screens pass |
-| RF change | R3 moves 0.30 mm, one 0.36 mm entry per land; C11 branch shortened; C12 branch removed |
-| R3 copper ratios | 2.288 / 2.413 / 2.090 → 1.004 / 1.003 / 1.001 at the three review contours |
-| RF reference | 1,742 native probes agree; entire RF track projection backed by In1.Cu |
-| Unchanged geometry | All other placements, lands, vias, non-LTE routes, inner copper, planes and DRC limits |
-| JLC PCB DFM | `637352328236847105` and `637352583225630721`; 29 rows / 450 green measurements each; same ZIP/rules; SMT off |
-| Mechanical | 69 populated envelopes pass at 0.71 / 0.81 / 0.84088 / 0.91 mm; old carrier still fails |
+| Copper / placement | Entire saved structure identical to r05j except value/MPN/status fields and revision label |
+| Ground / returns | Inherited 94 local GND terminals, 110 GND vias, two dedicated GND planes, 128/128 return screens |
+| Values | R17 200 kΩ; R18 26.1 kΩ; R19 3.4 MΩ; C25 1 µF / 16 V X7R |
+| Exact candidate MPNs | 65 fitted references / 38 unique parts; candidate BOM/CPL exported |
+| Component analysis | Tolerance/TCR/leakage and typical-capacitance screens pass with explicit remaining assumptions |
+| JLC PCB DFM | `637356580811132930` / `637356797304328193`; 29 rows / 450 green measurements each; same ZIP/rules; SMT off |
+| Mechanical | 69 populated envelopes pass at 0.71 / 0.81 / 0.84088 / 0.91 mm; all nine resistor heights now sourced |
 
-Read the [r05j decisions and limits](../experiments/power-r05j-rf-junctions/README.md).
-The main LTE feed length grows from 5.89 to 8.91 mm while reducing tuning stubs.
-This is a copper-balance improvement, not a measured RF improvement. The inherited
-0.36 mm width remains a prototype candidate: the supplier's Er/etch/mask and
-finished-thickness conventions still differ. In1.Cu remains under the module RF
-pads to avoid exposing lower VBAT; transition qualification remains open.
+Read the [r05k decisions and limits](../experiments/power-r05k-selected-parts/README.md)
+and [component review](../assembly/power-parts-r01/README.md). The manufacturer-listed
+lower-impedance divider adds a nominal 13.39 µA at 3.6 V. C25 replaces an NRND part
+with the in-production C9 MPN; its modeled reset delay is 2.057–10.121 s. Its increased
+height still leaves 0.60 mm to the battery reservation. No powered behavior is claimed.
 
-**Next local work:** select exact R1/R16–R23 MPN/tolerance/TCR and qualify effective
-C9/C25/C26 bounds in the power model. Do not start another routing revision merely
-to repeat green checks. Then finish battery/NTC, antenna and factory BOM/CPL/
-programming/test definitions. Preserve the reference and resolve stack/process
-parameters before claiming controlled impedance. Review the
-[sequencing follow-up](power-sequence-followup.md) before changing the circuit.
-Complete retention/harness/dock/seal selection and physical water/dust qualification.
+The component model includes −40..85°C TCR, both PG leakage signs, RESET sink current,
+a 0.5% additional resistance-drift sensitivity and typical Murata small-signal curves.
+The provisional firmware wait is 1 s; the former 600 ms fails the model. Effective
+capacitance, timer scaling, drift and fast collapse still need assembled validation.
+UVLO leaves pull-up current flowing; protected-cell cutoff/recharge behavior matters.
 
-PCB DFM is complete for the delivered bytes. Do not order this as a finished working
-PCBA yet. Every subsequent PCB edit needs fresh native checks/export/two supplier runs.
-`python3 scripts/resume.py` verifies saved evidence; it does not repeat physical tests.
+**Next local work:** select the protected pack with NTC against modem pulse current,
+then select the actual LTE/GNSS antennas and check their occupied volumes. Complete
+harness/dock/positive retention/seal definitions, firmware, programming and factory
+functional test. The 65 fitted MPNs are candidates, not supplier procurement or SMT
+acceptance; check their electrical suitability, availability and CPL library rotations.
+Do not reroute or repeat DFM without a real source change. Review the
+[sequencing exception](power-sequence-followup.md) before adding retention hardware.
 
-The preceding [r05i](../experiments/power-r05i-rf-stack/README.md),
-[r05h](../experiments/power-r05h-six-layer/README.md) and earlier releases remain
-immutable. SIM protection and the bottom-side card lane are inherited through
-unchanged copper and placement; all 12 original power backbones remain connected.
+The inherited RF route uses 0.36 mm main feeds; R3 has one equal-width land entry
+and 1.001–1.004 contour ratios. Supplier Er/etch/mask/thickness differences, module
+transitions, actual antennas and physical RF acceptance remain open. In1.Cu remains
+under module RF pads to avoid exposing underlying VBAT. See the preserved
+[r05j RF review](../experiments/power-r05j-rf-junctions/README.md).
+
+PCB DFM is complete for the delivered bytes. This is not a finished working-PCBA
+order package. Subsequent PCB edits need fresh native/export/two supplier checks.
+`python3 scripts/resume.py` verifies saved evidence without repeating physical tests.
+All previous r05j/r05i/r05h and earlier tested sources remain immutable.
 
 ## Preserved tested PCB
 
@@ -143,9 +151,10 @@ still represent reservations. Dock electronics, harness routing/strain relief,
 positive PCB retention, material/seal grades, actual lid fasteners and torque remain
 open. No physical ingress, powered or RF result exists.
 
-The active `mechanical/swim-r06-six-layer-fit/` uses the actual r05h PCB and
+The preserved `mechanical/swim-r06-six-layer-fit/` uses the r05h PCB and
 nominal 0.8 mm thickness. All 69 populated envelopes and 30 shell checks pass;
 the smallest checked gap is C10/carrier at 0.24 mm. Nine resistor-height limits
-remain component requirements. Actual supplier stack/thickness tolerances,
+remain component requirements in that snapshot. The r05k fit profile replaces them
+with sourced heights and also checks the larger C25; its 69 envelopes pass. Actual supplier stack/thickness tolerances,
 positive retention and physical tests remain open. The inspected preview is a
 conservative volume model; r02 mesh acceptance does not transfer automatically.
