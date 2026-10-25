@@ -6,6 +6,8 @@
 2. Run `python3 scripts/resume.py`. It is read-only and checks the saved baseline.
 3. Read `docs/RESUME.md` for the next commands and toolchain.
 4. For the active PCB revision, read `docs/paul-nanosim.md`.
+5. Use the relevant stage of `docs/PCB_DESIGN.md` for the reusable PCB workflow,
+   review criteria, release evidence and lessons that apply to later boards.
 
 “Continue / kaldığım yerden devam et” means continue the next unfinished step.
 Do not restart the design or ask for decisions already recorded here.

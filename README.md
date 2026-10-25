@@ -31,6 +31,8 @@ python3 scripts/resume.py
 [Devam komutları](docs/RESUME.md) · [Paul / nano-SIM notları](docs/paul-nanosim.md)
 · [Çalışma kaydı](docs/WORKLOG.md)
 
+[PCB Design — sonraki kartlarda da kullanacağımız çalışma rehberi](docs/PCB_DESIGN.md).
+
 Private repo: [gokselozgur5/collar-tracker](https://github.com/gokselozgur5/collar-tracker).
 
 ## Kullanıcının belirlediği kapsam
