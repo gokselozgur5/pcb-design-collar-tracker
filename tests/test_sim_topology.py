@@ -65,6 +65,14 @@ class SimTopologyTest(unittest.TestCase):
         ]
         self.assertTrue(self.bypasses())
 
+    def test_inner_layer_via_bypass(self):
+        self.geometry['tracks'].append(track('internal', [0.8, 0], [3.2, 0], 'In3.Cu'))
+        self.assertFalse(self.bypasses())
+        self.geometry['vias'] = [dict(id=str(x), net='/SIM', pos=[x, 0], diameter=.6,
+                                     layers=['F.Cu','In1.Cu','In2.Cu','In3.Cu','In4.Cu','B.Cu'])
+                                 for x in [.8, 3.2]]
+        self.assertTrue(self.bypasses())
+
 
 if __name__ == "__main__":
     unittest.main()

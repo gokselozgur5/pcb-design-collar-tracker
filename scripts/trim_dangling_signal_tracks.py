@@ -9,7 +9,7 @@ p=argparse.ArgumentParser(description=__doc__)
 p.add_argument('trial',type=Path);p.add_argument('--drc',type=Path,required=True)
 p.add_argument('--state',type=Path,required=True);p.add_argument('--output',type=Path,required=True)
 p.add_argument('--probe-ids-json',help=argparse.SUPPRESS)
-a=p.parse_args();assert a.trial.name=='power-r05f-return-reset' and not a.output.exists()
+a=p.parse_args();assert a.trial.name in {'power-r05f-return-reset','power-r05h-six-layer'} and not a.output.exists()
 pcb=a.trial/'hardware/collar-tracker.kicad_pcb';sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
 before_sha=sha(pcb);assert json.loads(a.state.read_text())['source_sha256']==before_sha
 d=json.loads(a.drc.read_text());assert not d['schematic_parity']

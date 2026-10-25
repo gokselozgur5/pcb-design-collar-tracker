@@ -7,12 +7,14 @@ import pcbnew as k
 root=Path(__file__).resolve().parents[1]
 source=Path(sys.argv[1]) if len(sys.argv)>1 else root/'hardware/collar-tracker.kicad_pcb'
 target=Path(sys.argv[2]) if len(sys.argv)>2 else root/'evidence/jlc-dfm-20261024/geometry-before.json'
-b=k.LoadBoard(str(source)); layers=[k.F_Cu,k.In1_Cu,k.In2_Cu,k.B_Cu]
+b=k.LoadBoard(str(source))
+layers=[k.F_Cu]+[getattr(k, 'In%d_Cu' % n) for n in range(1,b.GetCopperLayerCount()-1)]+[k.B_Cu]
 def xy(v):return [v.x/1e6,v.y/1e6]
 def polygons(poly):
     return [[xy(poly.COutline(n).CPoint(i)) for i in range(poly.COutline(n).PointCount())] for n in range(poly.OutlineCount())]
 
 out={'source':str(source),'source_sha256':hashlib.sha256(source.read_bytes()).hexdigest(),
+     'copper_layers':[b.GetLayerName(l) for l in layers],
      'pads':[],'vias':[],'tracks':[],'mask_graphics':[],'silks':[]}
 edges=[item for item in b.GetDrawings() if item.GetLayer()==k.Edge_Cuts]
 if len(edges)==4 and all(item.GetShape()==k.SHAPE_T_SEGMENT for item in edges):

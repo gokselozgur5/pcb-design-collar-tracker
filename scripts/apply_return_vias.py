@@ -13,6 +13,7 @@ parser.add_argument('--allow-partial',action='store_true',help='Apply an incompl
 args=parser.parse_args()
 root=args.trial;pcb=root/'hardware/collar-tracker.kicad_pcb'
 plan=json.loads((root/'evidence/return-via-plan.json').read_text())
+assert not plan.get('deferred_inner_tracks'), 'Use the guarded six-layer removal/return workflow before applying this plan'
 assert not plan['failed'] or args.allow_partial, 'Incomplete return coverage; use an explicitly partial WIP application'
 assert hashlib.sha256(pcb.read_bytes()).hexdigest()==plan['source_sha256'], 'Stale plan'
 b=k.LoadBoard(str(pcb))

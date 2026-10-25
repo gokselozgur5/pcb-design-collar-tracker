@@ -39,6 +39,12 @@ def sha(path):
 
 
 source_hash = sha(pcb)
+copper_layers = re.findall(r'^\s*\(\d+\s+"((?:F|B|In\d+)\.Cu)"\s+\w+\)',
+                           pcb.read_text(), re.MULTILINE)
+assert copper_layers in [
+    ['F.Cu', 'In1.Cu', 'In2.Cu', 'B.Cu'],
+    ['F.Cu', 'In1.Cu', 'In2.Cu', 'In3.Cu', 'In4.Cu', 'B.Cu'],
+], 'Explicitly review a different stack before exporting'
 inputs = {
     path.name: sha(path)
     for path in pcb.parent.iterdir()
@@ -82,7 +88,7 @@ with (out / "export.log").open("w") as log:
         "export",
         "gerbers",
         "-l",
-        "F.Cu,In1.Cu,In2.Cu,B.Cu,F.Mask,B.Mask,F.SilkS,B.SilkS,F.Paste,B.Paste,Edge.Cuts",
+        ','.join(copper_layers + ['F.Mask','B.Mask','F.SilkS','B.SilkS','F.Paste','B.Paste','Edge.Cuts']),
         "--use-drill-file-origin",
         "--subtract-soldermask",
         "-o",
@@ -113,8 +119,6 @@ files = sorted(gerbers.iterdir())
 required = {
     ".gtl",
     ".gbl",
-    ".g1",
-    ".g2",
     ".gts",
     ".gbs",
     ".gto",
@@ -123,8 +127,9 @@ required = {
     ".gbp",
     ".gm1",
 }
+required.update('.g'+str(n) for n in range(1,len(copper_layers)-1))
 assert required <= {path.suffix for path in files}
-assert len(files) == 14 and len(list(gerbers.glob("*.drl"))) == 2
+assert len(files) == len(copper_layers)+10 and len(list(gerbers.glob("*.drl"))) == 2
 assert all(path.suffix in required | {".drl", ".gbrjob"} for path in files)
 edge = (gerbers / "collar-tracker-Edge_Cuts.gm1").read_text()
 assert "%MOMM*%" in edge and "%FSLAX46Y46*%" in edge
@@ -148,6 +153,7 @@ report = dict(
     zip_sha256=sha(archive),
     zip_bytes=archive.stat().st_size,
     dimensions_mm=dimensions,
+    copper_layers=copper_layers,
     native_drc="drc.json",
     native_erc="erc.json",
     files=[

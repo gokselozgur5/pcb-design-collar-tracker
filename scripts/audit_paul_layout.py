@@ -10,17 +10,12 @@ import json
 import math
 from pathlib import Path
 import sys
+import subprocess
 
 import pcbnew as k
 
 root = Path(__file__).resolve().parents[1]
-trial = Path(sys.argv[1]).resolve()
-source = trial / 'hardware/collar-tracker.kicad_pcb'
-baseline = root / 'experiments/35x28-clearance-r034/hardware/collar-tracker.kicad_pcb'
 sha = lambda p: hashlib.sha256(p.read_bytes()).hexdigest()
-assert sha(baseline) == '597ebdee59550b6d07eb104274eabee57b038ea6c87da2dec38c1201f78c89b2'
-before = sha(source)
-board, old = k.LoadBoard(str(source)), k.LoadBoard(str(baseline))
 xy = lambda point: [point.x/1e6, point.y/1e6]
 rf_nets = {'/LTE_RF','/LTE_ANT','/GPS_RF','/GNSS_ANT','/GNSS_FEM_IN','/GNSS_FEM_OUT','/FILT_OUT','/AMP_IN'}
 
@@ -36,12 +31,33 @@ def rf_tracks(b):
     return result
 
 
+if sys.argv[1] == '--rf-reference':
+    old = k.LoadBoard(sys.argv[2])
+    print(json.dumps(sorted([list(key)+[count] for key,count in rf_tracks(old).items()])))
+    sys.exit(0)
+
+trial = Path(sys.argv[1]).resolve()
+source = trial / 'hardware/collar-tracker.kicad_pcb'
+baseline = root / 'experiments/35x28-clearance-r034/hardware/collar-tracker.kicad_pcb'
+assert sha(baseline) == '597ebdee59550b6d07eb104274eabee57b038ea6c87da2dec38c1201f78c89b2'
+before = sha(source)
+# One native LoadBoard per process avoids repeated wx initialization on this Mac.
+reference = subprocess.run([sys.executable, str(Path(__file__).resolve()),
+                            '--rf-reference', str(baseline)], check=True,
+                           capture_output=True, text=True)
+old_rf = json.loads(reference.stdout)
+board = k.LoadBoard(str(source))
+layer_count = board.GetCopperLayerCount()
+assert layer_count in (4, 6)
+ground_layers = [k.In1_Cu, k.In4_Cu] if layer_count == 6 else [k.In1_Cu, k.In2_Cu]
+current_rf = json.loads(json.dumps(sorted([list(key)+[count] for key,count in rf_tracks(board).items()])))
+
 vias = [t for t in board.GetTracks() if t.GetClass() == 'PCB_VIA']
 grounds = [v for v in vias if v.GetNetname() == '/GND']
 signals = [v for v in vias if v.GetNetname() != '/GND']
 assert grounds
 planes = {}
-for layer in [k.In1_Cu, k.In2_Cu]:
+for layer in ground_layers:
     zones = [z for z in board.Zones() if not z.GetIsRuleArea() and z.IsOnLayer(layer)]
     planes[board.GetLayerName(layer)] = dict(
         zone_nets=[z.GetNetname() for z in zones],
@@ -58,12 +74,17 @@ socket = fps['J6']
 esd = fps['D1']
 result = dict(
     source_sha256=before, baseline_sha256=sha(baseline),
+    copper_layers=layer_count,
     footprints=len(fps), pads=sum(len(list(f.Pads())) for f in fps.values()),
     ground_pads=sum(p.GetNetname() == '/GND' for f in fps.values() for p in f.Pads()),
     ground_vias=len(grounds), non_ground_vias=len(signals),
-    inner_tracks=sum(t.GetClass()=='PCB_TRACK' and t.GetLayer() in [k.In1_Cu,k.In2_Cu]
+    inner_tracks=sum(t.GetClass()=='PCB_TRACK' and t.GetLayer() not in [k.F_Cu,k.B_Cu]
                      for t in board.GetTracks()),
-    planes=planes, rf_segments_preserved=(rf_tracks(board)==rf_tracks(old)),
+    ground_layer_tracks=sum(t.GetClass()=='PCB_TRACK' and t.GetLayer() in ground_layers
+                            for t in board.GetTracks()),
+    track_layers=dict(collections.Counter(board.GetLayerName(t.GetLayer())
+                                         for t in board.GetTracks() if t.GetClass()=='PCB_TRACK')),
+    planes=planes, rf_segments_preserved=(current_rf==old_rf),
     rf_segments=sum(rf_tracks(board).values()),
     via_sizes_mm=sorted({(v.GetWidth(k.F_Cu)/1e6,v.GetDrill()/1e6) for v in vias}),
     returns=returns, returns_outside_2mm=sum(r['nearest_ground_mm']>2 for r in returns),

@@ -20,12 +20,15 @@ def search(data):
     started = time.monotonic()
     step = .05
     assert data['width'] == .2
+    layer_count = data.get('layer_count', 2)
+    assert 2 <= layer_count <= 4
     xmin, ymin, xmax, ymax = data['bounds']
     x0, y0 = round(xmin / step), round(ymin / step)
     nx, ny = round((xmax - xmin) / step) + 1, round((ymax - ymin) / step) + 1
     count = nx * ny
     xx, yy = np.meshgrid((np.arange(nx) + x0) * step, (np.arange(ny) + y0) * step)
-    line_shapes, via_shapes = [[], []], [[], []]
+    line_shapes = [[] for _ in range(layer_count)]
+    via_shapes = [[] for _ in range(layer_count)]
     for kind, layer, net, raw, bounds in data['objects']:
         if kind in {'pad', 'keepout', 'via_keepout'}:
             shape = box(*bounds)
@@ -38,11 +41,18 @@ def search(data):
         if net != data['net'] or kind in {'pad', 'via'}:
             via_shapes[layer].append(shape)
     obstacles = [unary_union(shapes).buffer(.301, quad_segs=32) for shapes in line_shapes]
-    via_obstacle = unary_union(via_shapes[0] + via_shapes[1]).buffer(.501, quad_segs=32)
+    via_obstacle = unary_union([s for shapes in via_shapes for s in shapes]).buffer(.501, quad_segs=32)
     inside = (xx >= xmin + .501) & (xx <= xmax - .501) & (yy >= ymin + .501) & (yy <= ymax - .501)
     free = np.stack([inside & ~intersects_xy(shape, xx, yy) for shape in obstacles])
     via_inside = (xx >= xmin + .701) & (xx <= xmax - .701) & (yy >= ymin + .701) & (yy <= ymax - .701)
     via_free = (via_inside & ~intersects_xy(via_obstacle, xx, yy)).ravel()
+    if data.get('via_ground_radius_mm') is not None:
+        radius = data['via_ground_radius_mm']
+        assert radius > 0 and data['ground_points']
+        ground_distance_sq = np.full(xx.shape, np.inf)
+        for gx, gy in data['ground_points']:
+            np.minimum(ground_distance_sq, (xx-gx)**2+(yy-gy)**2, out=ground_distance_sq)
+        via_free &= (ground_distance_sq <= radius**2).ravel()
     directions = [(1, 0), (-1, 0), (0, 1), (0, -1), (1, 1), (-1, 1), (1, -1), (-1, -1)]
     mid_free = []
     for dx, dy in directions:
@@ -94,9 +104,9 @@ def search(data):
     tx, ty = [p[0] for p in data['ends']], [p[1] for p in data['ends']]
     hx = np.maximum(np.maximum(min(tx) - xx, xx - max(tx)), 0)
     hy = np.maximum(np.maximum(min(ty) - yy, yy - max(ty)), 0)
-    heuristic = np.hypot(hx, hy).ravel().tolist() * 2
-    distance = [math.inf] * (count * 2)
-    parent = [-1] * (count * 2)
+    heuristic = np.hypot(hx, hy).ravel().tolist() * layer_count
+    distance = [math.inf] * (count * layer_count)
+    parent = [-1] * (count * layer_count)
     origins = {}
     queue, serial = [], itertools.count()
     for node, point in starts.items():
@@ -124,7 +134,8 @@ def search(data):
             if free[other] and mid_free[direction][node]:
                 neighbors.append((other, step * math.hypot(dx, dy)))
         if via_free[local]:
-            neighbors.append((local + (1 - layer) * count, 2.))
+            neighbors.extend((local + other * count, 2.)
+                             for other in range(layer_count) if other != layer)
         for other, added in neighbors:
             candidate = distance[node] + added
             if candidate + 1e-9 < distance[other]:

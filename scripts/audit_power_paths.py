@@ -19,7 +19,7 @@ from shapely.geometry import LineString, Point, Polygon
 from shapely.ops import nearest_points, unary_union
 
 
-def make_graph(geometry, net, copper_um, plating_um, thickness_mm):
+def make_graph(geometry, net, copper_um, plating_um, thickness_mm, inner_copper_um=17.5):
     tracks = [dict(t, line=LineString([t['start'], t['end']]))
               for t in geometry['tracks'] if t['net'] == net]
     pads = [p for p in geometry['pads'] if p['net'] == net and p['pin']]
@@ -73,20 +73,23 @@ def make_graph(geometry, net, copper_um, plating_um, thickness_mm):
         distances = sorted(cuts[i])
         for a, b in zip(distances, distances[1:]):
             length = b - a
-            resistance = rho * length * 1e-3 / (t['width'] * 1e-3 * copper_um * 1e-6)
+            foil_um = inner_copper_um if t['layer'].startswith('In') else copper_um
+            resistance = rho * length * 1e-3 / (t['width'] * 1e-3 * foil_um * 1e-6)
             add((i, a), (i, b), resistance,
                 dict(kind='track', id=t['id'], length_mm=length,
                      width_mm=t['width'], layer=t['layer']))
     for a, b in joins:
         add(a, b, 0, dict(kind='ideal_copper_junction'))
     for via in vias:
-        # Full board thickness is conservative for an F.Cu to B.Cu transition.
+        # Charge the full barrel length for every transition. This deliberately
+        # overestimates partial-depth transitions until the stack is qualified.
         diameter = via['drill'] * 1e-3
         plating = plating_um * 1e-6
         area = math.pi * ((diameter / 2 + plating) ** 2 - (diameter / 2) ** 2)
         resistance = rho * thickness_mm * 1e-3 / area
-        add(('via', via['id'], 'F.Cu'), ('via', via['id'], 'B.Cu'), resistance,
-            dict(kind='via', id=via['id'], drill_mm=via['drill']))
+        for first, last in itertools.combinations(via['layers'], 2):
+            add(('via', via['id'], first), ('via', via['id'], last), resistance,
+                dict(kind='via', id=via['id'], drill_mm=via['drill']))
     return graph, terminal_nodes
 
 
@@ -118,13 +121,14 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('trial', type=Path)
     parser.add_argument('--copper-um', type=float, default=35)
+    parser.add_argument('--inner-copper-um', type=float, default=17.5)
     parser.add_argument('--plating-um', type=float, default=20)
     parser.add_argument('--thickness-mm', type=float, default=.8)
     args = parser.parse_args()
     pcb = args.trial / 'hardware/collar-tracker.kicad_pcb'
     geometry = json.loads((args.trial / 'evidence/route-geometry.json').read_text())
     assert geometry['source_sha256'] == hashlib.sha256(pcb.read_bytes()).hexdigest(), 'Stale geometry'
-    assert min(args.copper_um, args.plating_um, args.thickness_mm) > 0
+    assert min(args.copper_um, args.inner_copper_um, args.plating_um, args.thickness_mm) > 0
     pairs = [('/VIN_5V', ('J3', '1'), ('U3', '10'), .5),
              ('/VBAT', ('J4', '1'), ('U3', '2'), 1.0),
              ('/VSYS', ('U3', '1'), ('FB1', '1'), 1.0),
@@ -139,7 +143,8 @@ def main():
              ('/VIO_1V8', ('C21', '1'), ('U4', '5'), None)]
     rows = []
     for net, start, end, current in pairs:
-        graph, terminals = make_graph(geometry, net, args.copper_um, args.plating_um, args.thickness_mm)
+        graph, terminals = make_graph(geometry, net, args.copper_um, args.plating_um,
+                                      args.thickness_mm, args.inner_copper_um)
         resistance, steps = path(graph, terminals[start], terminals[end])
         tracks = [s for s in steps if s['kind'] == 'track']
         rows.append(dict(net=net, start='.'.join(start), end='.'.join(end), connected=resistance is not None,
@@ -150,7 +155,8 @@ def main():
                          widths_mm=sorted({s['width_mm'] for s in tracks}),
                          vias=sum(s['kind'] == 'via' for s in steps), steps=steps))
     report = dict(source_sha256=geometry['source_sha256'],
-                  assumptions=dict(copper_um=args.copper_um, plating_um=args.plating_um,
+                  assumptions=dict(copper_um=args.copper_um, inner_copper_um=args.inner_copper_um,
+                                   plating_um=args.plating_um, via_length='Full board thickness for each transition',
                                    thickness_mm=args.thickness_mm, temperature_C=20,
                                    current_note='1 A is a design case, not a measured or specified modem peak. The auxiliary-port load is unspecified.'),
                   scope='Centerline DCR estimate with ideal pad/junction spreading. Excludes cell, ferrite, IC, contacts, temperature rise and dynamic impedance. Not bench or thermal acceptance.',

@@ -52,7 +52,7 @@ def shortest(graph, start, end):
 def bypasses_esd_land(geometry, esd, start, end):
     """Cut actual ESD land copper out of this net, then test physical continuity.
 
-    Each remaining polygon is a separate object. Vias join both outer layers.
+    Each remaining polygon is a separate object. Vias join every spanned layer.
     This tests layout topology, not ESD current or IEC immunity.
     """
     cut = unary_union([Polygon(p) for p in esd["poly"]]).buffer(0.001)
@@ -93,7 +93,7 @@ def bypasses_esd_land(geometry, esd, start, end):
             i = parents[i]
         return i
 
-    for layer in ["F.Cu", "B.Cu"]:
+    for layer in sorted({layer for item in items for layer in item['layers']}):
         ids = [i for i, item in enumerate(items) if layer in item["layers"]]
         shapes = [items[i]["shape"] for i in ids]
         tree = STRtree(shapes)

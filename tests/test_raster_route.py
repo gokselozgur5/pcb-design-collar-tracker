@@ -33,6 +33,30 @@ class RasterRouteTests(unittest.TestCase):
         self.assertEqual(search(self.request([keepout]))['status'], 'found')
         self.assertEqual(search(self.request([keepout], end_layer=1))['status'], 'no route')
 
+    def test_extra_signal_layers_cross_outer_barriers(self):
+        barriers = [('pad', layer, '/OTHER', [1.8, 0, 2.2, 4], [1.8, 0, 2.2, 4])
+                    for layer in [0, 3]]
+        request = self.request(barriers, end_layer=3)
+        request['layer_count'] = 4
+        result = search(request)
+        self.assertEqual(result['status'], 'found')
+        self.assertTrue(any(p[2] in [1, 2] for p in result['points']))
+        self.assertEqual(result['points'][-1], [3, 2, 3])
+
+    def test_through_via_checks_even_an_unused_signal_layer(self):
+        blocker = ('pad', 2, '/OTHER', [0, 0, 4, 4], [0, 0, 4, 4])
+        request = self.request([blocker], end_layer=3)
+        request['layer_count'] = 4
+        self.assertEqual(search(request)['status'], 'no route')
+
+    def test_new_vias_require_a_ground_return_on_each_side_of_a_barrier(self):
+        barrier = ('pad', 0, '/OTHER', [1.8,0,2.2,4], [1.8,0,2.2,4])
+        request = self.request([barrier])
+        request.update(via_ground_radius_mm=.5, ground_points=[[1,2]])
+        self.assertEqual(search(request)['status'], 'no route')
+        request['ground_points'].append([3,2])
+        self.assertEqual(search(request)['status'], 'found')
+
 
 if __name__ == '__main__':
     unittest.main()

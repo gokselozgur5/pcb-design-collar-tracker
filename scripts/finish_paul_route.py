@@ -30,6 +30,10 @@ parser.add_argument('--relocatable-vias', type=Path,
                     help='Source-bound return-only GND via candidates; remove only those crossed by an accepted route')
 parser.add_argument('--raster-python', type=Path,
                     help='Geometry Python executable for the faster 0.2 mm proposal search; native checks still apply')
+parser.add_argument('--six-layer-signals', action='store_true',
+                    help='Use F/In2/In3/B only in the isolated six-layer candidate; In1/In4 remain dedicated GND')
+parser.add_argument('--via-ground-radius-mm',type=float,
+                    help='Require every new signal via to be within this distance of an existing GND via')
 args=parser.parse_args()
 script_sha=hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
 raster_script=Path(__file__).with_name('raster_route.py')
@@ -37,6 +41,12 @@ raster_sha=hashlib.sha256(raster_script.read_bytes()).hexdigest() if args.raster
 assert math.isfinite(args.route_limit_mm) and args.route_limit_mm>0
 PCB=args.board;DRC=args.drc_json;OUTPUT=args.output_board or PCB
 b=k.LoadBoard(str(PCB));d=json.loads(DRC.read_text());layers=[k.F_Cu,k.B_Cu];STEP=.05
+if args.six_layer_signals:
+    assert PCB.resolve().parent.parent.name == 'power-r05h-six-layer'
+    assert b.GetCopperLayerCount() == 6
+    assert {z.GetLayer() for z in b.Zones() if not z.GetIsRuleArea()} == {k.In1_Cu,k.In4_Cu}
+    assert all(z.GetNetname() == '/GND' for z in b.Zones() if not z.GetIsRuleArea())
+    layers=[k.F_Cu,k.In2_Cu,k.In3_Cu,k.B_Cu]
 source_sha=hashlib.sha256(PCB.read_bytes()).hexdigest()
 sim_inputs=set(json.loads(args.sim_inputs.read_text())) if args.sim_inputs else set()
 anchors=json.loads(args.anchors.read_text()) if args.anchors else {}
@@ -44,12 +54,14 @@ assert sim_inputs <= {t.m_Uuid.AsString() for t in b.GetTracks()}, 'Stale protec
 assert ('paul-nanosim' in str(PCB) or PCB.resolve().parent.parent.name in
         {'power-r05-supervised', 'power-r05b-pin-exits', 'power-r05c-return-corridors',
          'power-r05d-joint-routing', 'power-r05e-native-joint',
-         'power-r05f-return-reset'}), 'Use an isolated nano-SIM trial'
+         'power-r05f-return-reset', 'power-r05g-local-crossings',
+         'power-r05h-six-layer'}), 'Use an isolated nano-SIM trial'
 branch_backbones={}
 if args.low_current_net:
     assert PCB.resolve().parent.parent.name in {'power-r05b-pin-exits', 'power-r05c-return-corridors',
                                              'power-r05d-joint-routing', 'power-r05e-native-joint',
-                                             'power-r05f-return-reset'}
+                                             'power-r05f-return-reset', 'power-r05g-local-crossings',
+                                             'power-r05h-six-layer'}
     assert set(args.low_current_net)<={'/VDD_NRF','/VBAT','/VIO_1V8'}
     from trim_power_r05_tails import islands
     old=json.loads((Path(__file__).resolve().parents[1]/
@@ -72,6 +84,10 @@ assert corners=={(xmin,ymin),(xmin,ymax),(xmax,ymin),(xmax,ymax)}, 'Planner requ
 assert all(item.GetStart().x==item.GetEnd().x or item.GetStart().y==item.GetEnd().y for item in edges)
 vec=lambda x,y:k.VECTOR2I(round(x*1e6),round(y*1e6))
 def xy(v):return (v.x/1e6,v.y/1e6)
+ground_points=[xy(t.GetPosition()) for t in b.GetTracks()
+               if t.GetClass()=='PCB_VIA' and t.GetNetname()=='/GND']
+if args.via_ground_radius_mm is not None:
+    assert 0 < args.via_ground_radius_mm <= 2 and ground_points
 def point_segment(px,py,ax,ay,bx,by):
     dx,dy=bx-ax,by-ay
     t=max(0,min(1,((px-ax)*dx+(py-ay)*dy)/(dx*dx+dy*dy))) if dx or dy else 0
@@ -149,6 +165,9 @@ def geometry():
     return cells
 def clearance_checker(net,width,cells):
     def clear(x,y,layer,r=None,via=False):
+        if via and args.via_ground_radius_mm is not None and min(
+                math.hypot(x-gx,y-gy) for gx,gy in ground_points)>args.via_ground_radius_mm:
+            return False
         r=width/2 if r is None else r
         if not (xmin+.401+r<=x<=xmax-.401-r and ymin+.401+r<=y<=ymax-.401-r):return False
         for kind,l,oname,data,box in cells[(layer,math.floor(x),math.floor(y))]:
@@ -249,6 +268,8 @@ def route(opening):
         unique={id(obj):obj for rows in cells.values() for obj in rows}
         objects=[(kind,layers.index(layer),other,data,box) for kind,layer,other,data,box in unique.values()]
         request=dict(bounds=[xmin,ymin,xmax,ymax],width=width,net=net,objects=objects,
+                     layer_count=len(layers),
+                     via_ground_radius_mm=args.via_ground_radius_mm,ground_points=ground_points,
                      starts=[(x,y,layers.index(l)) for x,y,l in starts_exact],
                      ends=[(x,y,layers.index(l)) for x,y,l in ends_exact],state_limit=600000)
         payload=json.dumps(request)
@@ -365,6 +386,8 @@ OUTPUT.with_suffix('.local-routing.json').write_text(json.dumps({'before_sha256'
     'low_current_branch_nets':args.low_current_net,
     'existing_power_backbone_pins':branch_backbones,
     'only_nets':args.only_net,'router_script_sha256':script_sha,'raster_script_sha256':raster_sha,
+    'routing_layers':[b.GetLayerName(l) for l in layers],
+    'via_ground_radius_mm':args.via_ground_radius_mm,
     'relocatable_via_input_sha256':hashlib.sha256(args.relocatable_vias.read_bytes()).hexdigest() if args.relocatable_vias else None,
     'removed_return_vias':removed_returns,
     'route_limit_mm':args.route_limit_mm,'board_bounds_mm':[xmin,ymin,xmax,ymax],
