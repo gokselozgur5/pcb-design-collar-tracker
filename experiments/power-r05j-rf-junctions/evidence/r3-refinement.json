@@ -1,0 +1,38 @@
+{
+  "before_sha256": "16246d219a4d72ea41f457073a369bd8e779141681e267db3d0049123ee6f7a4",
+  "source_sha256": "51fc05ccc66009995daa8c5d5466aa983436e00e7ff338f0ddfb0927c92b4580",
+  "ref": "R3",
+  "old_position_mm": [
+    113.5,
+    120.3
+  ],
+  "new_position_mm": [
+    113.8,
+    120.3
+  ],
+  "extension_track": "260a5bab-f3fe-4bf3-b9ba-6ca7e7ba543f",
+  "new_input_end_mm": [
+    113.29,
+    120.3
+  ],
+  "output_tracks": [
+    "cd5565b7-e06b-4092-becd-f9350fb7e76f",
+    "13d268b2-765a-4bcd-9693-d9e9ff84ded0"
+  ],
+  "output_points_mm": [
+    [
+      114.31,
+      120.3
+    ],
+    [
+      114.31,
+      122.07
+    ],
+    [
+      113.98,
+      122.4
+    ]
+  ],
+  "terminal_groups_preserved": 203,
+  "reason": "The initial junction fixed the immediate entry but crossed larger pad contours. A 0.30 mm R3 shift clears those contours without altering lands, vias, inner copper or the stack."
+}

@@ -1,0 +1,658 @@
+{
+  "source_sha256": "51fc05ccc66009995daa8c5d5466aa983436e00e7ff338f0ddfb0927c92b4580",
+  "native_contains_probes": 1742,
+  "native_contains_disagreements": 0,
+  "tracks": [
+    {
+      "id": "662c563f-519d-453e-afc4-45cf30562d63",
+      "net": "/GNSS_FEM_OUT",
+      "width_mm": 0.36,
+      "kind": "50-ohm port route",
+      "length_mm": 0.0007071067811899238,
+      "unbacked_centerline_mm": 0.0,
+      "unbacked_copper_mm2": 0.0
+    },
+    {
+      "id": "9c993c9b-0101-4d5a-9639-4ebb303ea8e8",
+      "net": "/GNSS_FEM_OUT",
+      "width_mm": 0.36,
+      "kind": "50-ohm port route",
+      "length_mm": 2.032500393628494,
+      "unbacked_centerline_mm": 0.0,
+      "unbacked_copper_mm2": 0.0
+    },
+    {
+      "id": "16cf6c80-2479-4275-a6a3-6b6e21512ee6",
+      "net": "/GPS_RF",
+      "width_mm": 0.36,
+      "kind": "50-ohm port route",
+      "length_mm": 0.519999999999996,
+      "unbacked_centerline_mm": 0.0,
+      "unbacked_copper_mm2": 0.0
+    },
+    {
+      "id": "40cfe113-2fc7-45db-914f-8fb4a0092882",
+      "net": "/GPS_RF",
+      "width_mm": 0.36,
+      "kind": "50-ohm port route",
+      "length_mm": 0.5654238559700101,
+      "unbacked_centerline_mm": 0.0,
+      "unbacked_copper_mm2": 0.0
+    },
+    {
+      "id": "89075973-ad18-4830-9d90-cee184cd57a1",
+      "net": "/GPS_RF",
+      "width_mm": 0.28,
+      "kind": "50-ohm port route",
+      "length_mm": 0.15000000000000568,
+      "unbacked_centerline_mm": 0.0,
+      "unbacked_copper_mm2": 0.0
+    },
+    {
+      "id": "9406690b-d2da-4ce9-b30b-2d877d4e1765",
+      "net": "/GPS_RF",
+      "width_mm": 0.36,
+      "kind": "50-ohm port route",
+      "length_mm": 0.7750000883225813,
+      "unbacked_centerline_mm": 0.0,
+      "unbacked_copper_mm2": 0.0
+    },
+    {
+      "id": "ca04a75f-f0f5-4e86-a0ba-4ffe22130714",
+      "net": "/GPS_RF",
+      "width_mm": 0.2,
+      "kind": "50-ohm port route",
+      "length_mm": 0.3499999999999943,
+      "unbacked_centerline_mm": 0.0,
+      "unbacked_copper_mm2": 0.0
+    },
+    {
+      "id": "05141ad2-65f9-4262-b546-5bd6532f5f34",
+      "net": "/GNSS_ANT",
+      "width_mm": 0.36,
+      "kind": "50-ohm port route",
+      "length_mm": 1.5670433944214794,
+      "unbacked_centerline_mm": 0.0,
+      "unbacked_copper_mm2": 0.0
+    },
+    {
+      "id": "c2c89658-325d-4429-a026-1494006ae5bd",
+      "net": "/GNSS_ANT",
+      "width_mm": 0.36,
+      "kind": "50-ohm port route",
+      "length_mm": 0.9200000000000017,
+      "unbacked_centerline_mm": 0.0,
+      "unbacked_copper_mm2": 0.0
+    },
+    {
+      "id": "007860a0-9089-4071-a9f6-93a72c1c8352",
+      "net": "/LTE_RF",
+      "width_mm": 0.28,
+      "kind": "50-ohm port route",
+      "length_mm": 0.15000000000000568,
+      "unbacked_centerline_mm": 0.0,
+      "unbacked_copper_mm2": 0.0
+    },
+    {
+      "id": "1780ef23-450f-405b-9429-c591187f3c41",
+      "net": "/LTE_RF",
+      "width_mm": 0.36,
+      "kind": "50-ohm port route",
+      "length_mm": 0.5250000000000057,
+      "unbacked_centerline_mm": 0.0,
+      "unbacked_copper_mm2": 0.0
+    },
+    {
+      "id": "260a5bab-f3fe-4bf3-b9ba-6ca7e7ba543f",
+      "net": "/LTE_RF",
+      "width_mm": 0.36,
+      "kind": "50-ohm port route",
+      "length_mm": 1.6099999999999994,
+      "unbacked_centerline_mm": 0.0,
+      "unbacked_copper_mm2": 0.0
+    },
+    {
+      "id": "6c7c353a-392a-41ef-b535-a18078a41c72",
+      "net": "/LTE_RF",
+      "width_mm": 0.36,
+      "kind": "50-ohm port route",
+      "length_mm": 1.6263668100708348,
+      "unbacked_centerline_mm": 0.0,
+      "unbacked_copper_mm2": 0.0
+    },
+    {
+      "id": "811804a1-1429-4a3c-bed5-a2c1884e229f",
+      "net": "/LTE_RF",
+      "width_mm": 0.2,
+      "kind": "50-ohm port route",
+      "length_mm": 0.3499999999999943,
+      "unbacked_centerline_mm": 0.0,
+      "unbacked_copper_mm2": 0.0
+    },
+    {
+      "id": "1a9038ae-88c5-4078-baa0-d72f92b8129e",
+      "net": "/GNSS_FEM_IN",
+      "width_mm": 0.36,
+      "kind": "50-ohm port route",
+      "length_mm": 0.0007071067811899238,
+      "unbacked_centerline_mm": 0.0,
+      "unbacked_copper_mm2": 0.0
+    },
+    {
+      "id": "492968a3-88b2-4bc0-9854-e628f624f48c",
+      "net": "/GNSS_FEM_IN",
+      "width_mm": 0.36,
+      "kind": "50-ohm port route",
+      "length_mm": 0.23688077169749905,
+      "unbacked_centerline_mm": 0.0,
+      "unbacked_copper_mm2": 0.0
+    },
+    {
+      "id": "9ceb98f1-7008-4734-9e40-892477494f5e",
+      "net": "/GNSS_FEM_IN",
+      "width_mm": 0.36,
+      "kind": "50-ohm port route",
+      "length_mm": 2.0889999999999986,
+      "unbacked_centerline_mm": 0.0,
+      "unbacked_copper_mm2": 0.0
+    },
+    {
+      "id": "155d63b6-c8b5-488f-a491-64d589034e51",
+      "net": "/FILT_OUT",
+      "width_mm": 0.2,
+      "kind": "FEM interstage matching",
+      "length_mm": 0.5524717187331852,
+      "unbacked_centerline_mm": 0.0,
+      "unbacked_copper_mm2": 0.0
+    },
+    {
+      "id": "89cef2ab-cf34-435e-9d4f-22ef14a8efd8",
+      "net": "/FILT_OUT",
+      "width_mm": 0.2,
+      "kind": "FEM interstage matching",
+      "length_mm": 0.8124899999999968,
+      "unbacked_centerline_mm": 0.0,
+      "unbacked_copper_mm2": 0.0
+    },
+    {
+      "id": "c9a6d88b-3a40-4968-ae3f-e5cac1a3053c",
+      "net": "/FILT_OUT",
+      "width_mm": 0.2,
+      "kind": "FEM interstage matching",
+      "length_mm": 0.0005000000000023874,
+      "unbacked_centerline_mm": 0.0,
+      "unbacked_copper_mm2": 0.0
+    },
+    {
+      "id": "93ea9256-fd04-4de4-b9b7-fe4e37b84fa3",
+      "net": "/AMP_IN",
+      "width_mm": 0.2,
+      "kind": "FEM interstage matching",
+      "length_mm": 0.8124899999999968,
+      "unbacked_centerline_mm": 0.0,
+      "unbacked_copper_mm2": 0.0
+    },
+    {
+      "id": "c8632018-dd01-4b9a-b960-d354b47a6679",
+      "net": "/AMP_IN",
+      "width_mm": 0.2,
+      "kind": "FEM interstage matching",
+      "length_mm": 0.5524717187331852,
+      "unbacked_centerline_mm": 0.0,
+      "unbacked_copper_mm2": 0.0
+    },
+    {
+      "id": "e781b104-8bfe-413b-986c-4bcce2e84de2",
+      "net": "/AMP_IN",
+      "width_mm": 0.2,
+      "kind": "FEM interstage matching",
+      "length_mm": 0.0005000000000023874,
+      "unbacked_centerline_mm": 0.0,
+      "unbacked_copper_mm2": 0.0
+    },
+    {
+      "id": "13d268b2-765a-4bcd-9693-d9e9ff84ded0",
+      "net": "/LTE_ANT",
+      "width_mm": 0.36,
+      "kind": "50-ohm port route",
+      "length_mm": 0.466690475583129,
+      "unbacked_centerline_mm": 0.0,
+      "unbacked_copper_mm2": 0.0
+    },
+    {
+      "id": "19b569f0-4f7b-49eb-b3bd-f3eaf627b867",
+      "net": "/LTE_ANT",
+      "width_mm": 0.36,
+      "kind": "50-ohm port route",
+      "length_mm": 0.14142135623732158,
+      "unbacked_centerline_mm": 0.0,
+      "unbacked_copper_mm2": 0.0
+    },
+    {
+      "id": "626a5f91-78a6-47d9-9b31-40a54e5bd471",
+      "net": "/LTE_ANT",
+      "width_mm": 0.36,
+      "kind": "50-ohm port route",
+      "length_mm": 2.694999999999993,
+      "unbacked_centerline_mm": 0.0,
+      "unbacked_copper_mm2": 0.0
+    },
+    {
+      "id": "cd5565b7-e06b-4092-becd-f9350fb7e76f",
+      "net": "/LTE_ANT",
+      "width_mm": 0.36,
+      "kind": "50-ohm port route",
+      "length_mm": 1.769999999999996,
+      "unbacked_centerline_mm": 0.0,
+      "unbacked_copper_mm2": 0.0
+    }
+  ],
+  "pads": [
+    {
+      "ref": "C13",
+      "pin": "1",
+      "net": "/GNSS_FEM_OUT",
+      "reference_overlap_fraction": 1.0,
+      "lower_copper_within_02mm": []
+    },
+    {
+      "ref": "C13",
+      "pin": "2",
+      "net": "/GPS_RF",
+      "reference_overlap_fraction": 1.0,
+      "lower_copper_within_02mm": []
+    },
+    {
+      "ref": "J2",
+      "pin": "1",
+      "net": "/GNSS_ANT",
+      "reference_overlap_fraction": 1.0,
+      "lower_copper_within_02mm": [
+        {
+          "id": "0b0ec63e-04fd-4b0e-8cfb-fb3ccb391119",
+          "net": "/VBAT",
+          "layer": "In2.Cu",
+          "clearance_mm": 0.0
+        },
+        {
+          "id": "2f3a7b44-d0df-462a-afac-39120392ddac",
+          "net": "/VBAT",
+          "layer": "In2.Cu",
+          "clearance_mm": 0.0
+        },
+        {
+          "id": "65a37a28-f486-423d-9aa8-339801adaf77",
+          "net": "/VBAT",
+          "layer": "In2.Cu",
+          "clearance_mm": 0.0
+        },
+        {
+          "id": "ac5350b1-fd91-4823-af90-a4a2c06a112d",
+          "net": "/VBAT",
+          "layer": "In2.Cu",
+          "clearance_mm": 0.0
+        },
+        {
+          "id": "ad4f2a78-6f33-4edf-aec3-7f2be5e158db",
+          "net": "/VBAT",
+          "layer": "In2.Cu",
+          "clearance_mm": 0.0
+        },
+        {
+          "id": "bd6fd21b-93f5-41ef-927b-63b07f9be726",
+          "net": "/VBAT",
+          "layer": "In2.Cu",
+          "clearance_mm": 0.0
+        },
+        {
+          "id": "f0ca222a-5c2c-4801-8625-ced9307dab05",
+          "net": "/VBAT",
+          "layer": "In2.Cu",
+          "clearance_mm": 0.0
+        }
+      ]
+    },
+    {
+      "ref": "C11",
+      "pin": "1",
+      "net": "/LTE_RF",
+      "reference_overlap_fraction": 1.0000000000000002,
+      "lower_copper_within_02mm": []
+    },
+    {
+      "ref": "U2",
+      "pin": "5",
+      "net": "/GNSS_FEM_IN",
+      "reference_overlap_fraction": 1.0,
+      "lower_copper_within_02mm": []
+    },
+    {
+      "ref": "U2",
+      "pin": "7",
+      "net": "/FILT_OUT",
+      "reference_overlap_fraction": 1.0,
+      "lower_copper_within_02mm": []
+    },
+    {
+      "ref": "U2",
+      "pin": "8",
+      "net": "/AMP_IN",
+      "reference_overlap_fraction": 1.0,
+      "lower_copper_within_02mm": []
+    },
+    {
+      "ref": "U2",
+      "pin": "10",
+      "net": "/GNSS_FEM_OUT",
+      "reference_overlap_fraction": 1.0,
+      "lower_copper_within_02mm": [
+        {
+          "id": "0384a683-2325-4120-956c-d60ecd29f861",
+          "net": "/HEALTH_CS",
+          "layer": "In3.Cu",
+          "clearance_mm": 0.09999000000000535
+        },
+        {
+          "id": "22c31df1-bc8b-4034-8069-8067cdcb9740",
+          "net": "/HEALTH_CS",
+          "layer": "In3.Cu",
+          "clearance_mm": 0.09999000000000535
+        }
+      ]
+    },
+    {
+      "ref": "R3",
+      "pin": "1",
+      "net": "/LTE_RF",
+      "reference_overlap_fraction": 0.9999999999999998,
+      "lower_copper_within_02mm": []
+    },
+    {
+      "ref": "R3",
+      "pin": "2",
+      "net": "/LTE_ANT",
+      "reference_overlap_fraction": 1.0,
+      "lower_copper_within_02mm": [
+        {
+          "id": "465fc592-1612-4205-9859-167e3bf00dd5",
+          "net": "/VIO_ENABLE",
+          "layer": "In3.Cu",
+          "clearance_mm": 0.0
+        }
+      ]
+    },
+    {
+      "ref": "C14",
+      "pin": "1",
+      "net": "/GNSS_ANT",
+      "reference_overlap_fraction": 1.0,
+      "lower_copper_within_02mm": []
+    },
+    {
+      "ref": "C14",
+      "pin": "2",
+      "net": "/GNSS_FEM_IN",
+      "reference_overlap_fraction": 1.0,
+      "lower_copper_within_02mm": [
+        {
+          "id": "0720ef69-f83b-42ca-8d0d-d5d006dd338c",
+          "net": "/VBAT",
+          "layer": "In2.Cu",
+          "clearance_mm": 0.09550412670878727
+        },
+        {
+          "id": "1446b4e7-8a45-4e23-ad2f-5dc8a09b9fca",
+          "net": "/VBAT",
+          "layer": "In2.Cu",
+          "clearance_mm": 0.16485611780832768
+        },
+        {
+          "id": "27fa1ff3-e39b-4a6b-bf34-1376753744e3",
+          "net": "/VBAT",
+          "layer": "In2.Cu",
+          "clearance_mm": 0.12062438679801546
+        },
+        {
+          "id": "4ddb6fc2-6573-4457-8c61-e6fb9a4ecc58",
+          "net": "/VBAT",
+          "layer": "In2.Cu",
+          "clearance_mm": 0.12354462100016937
+        },
+        {
+          "id": "a3fa5126-bef9-4c0b-863e-62c1ff8c12ce",
+          "net": "/VBAT",
+          "layer": "In2.Cu",
+          "clearance_mm": 0.19000000000001194
+        },
+        {
+          "id": "b107e263-2d3f-417e-bf01-cd2c070626d8",
+          "net": "/VBAT",
+          "layer": "In2.Cu",
+          "clearance_mm": 0.14000000000001478
+        },
+        {
+          "id": "b7ae8e2a-e7c2-4283-9465-08d3100005bc",
+          "net": "/VBAT",
+          "layer": "In2.Cu",
+          "clearance_mm": 0.10195648181218257
+        },
+        {
+          "id": "b9fbefef-4948-4f70-8559-9277f5395118",
+          "net": "/VBAT",
+          "layer": "In2.Cu",
+          "clearance_mm": 0.19000000000001194
+        },
+        {
+          "id": "ba5e56a6-66ab-4055-936e-bf5c4b35aa77",
+          "net": "/VBAT",
+          "layer": "In2.Cu",
+          "clearance_mm": 0.10195648181218257
+        },
+        {
+          "id": "bafc55bc-0009-4b8c-8ef1-09f53a2e3c7f",
+          "net": "/VBAT",
+          "layer": "In2.Cu",
+          "clearance_mm": 0.14000000000001478
+        },
+        {
+          "id": "e65143a2-f4a1-44d0-bb66-e79bcb5d1395",
+          "net": "/VBAT",
+          "layer": "In2.Cu",
+          "clearance_mm": 0.09550412670879119
+        },
+        {
+          "id": "f9ade3c5-f50b-45cf-a4d1-99bf3b9fb29c",
+          "net": "/VBAT",
+          "layer": "In2.Cu",
+          "clearance_mm": 0.18077842665028304
+        }
+      ]
+    },
+    {
+      "ref": "J1",
+      "pin": "1",
+      "net": "/LTE_ANT",
+      "reference_overlap_fraction": 1.0,
+      "lower_copper_within_02mm": [
+        {
+          "id": "36026b5f-da4c-4514-ae14-99d26fe169cb",
+          "net": "/VDD_NRF",
+          "layer": "In2.Cu",
+          "clearance_mm": 0.0
+        },
+        {
+          "id": "04293d69-bd50-4d31-8e95-c4fa784d14c8",
+          "net": "/VIO_ENABLE",
+          "layer": "In3.Cu",
+          "clearance_mm": 0.16785737090299416
+        },
+        {
+          "id": "062b0a1d-f51d-4fab-b25f-b99c52de5bf3",
+          "net": "/VIO_ENABLE",
+          "layer": "In3.Cu",
+          "clearance_mm": 0.06662672386594252
+        },
+        {
+          "id": "086a89a9-a21a-4c90-8a44-6be9758b5ab4",
+          "net": "/VIO_ENABLE",
+          "layer": "In3.Cu",
+          "clearance_mm": 0.07426363779628922
+        },
+        {
+          "id": "23f85b30-f231-448f-8591-9e5ed79c1e77",
+          "net": "/VIO_ENABLE",
+          "layer": "In3.Cu",
+          "clearance_mm": 0.15000000000000568
+        },
+        {
+          "id": "27bcb141-7a38-4795-8c86-817c51712a88",
+          "net": "/VIO_ENABLE",
+          "layer": "In3.Cu",
+          "clearance_mm": 0.10000000000000853
+        },
+        {
+          "id": "3a80c548-9e0a-4d1d-9c7a-bc4780741e54",
+          "net": "/VIO_ENABLE",
+          "layer": "In3.Cu",
+          "clearance_mm": 0.15406222659890048
+        },
+        {
+          "id": "854feb88-9f74-4f0d-b439-0558042ebf22",
+          "net": "/VIO_ENABLE",
+          "layer": "In3.Cu",
+          "clearance_mm": 0.10000000000000853
+        },
+        {
+          "id": "9b01ce39-0653-47b8-b33d-d9acc4a7f849",
+          "net": "/VIO_ENABLE",
+          "layer": "In3.Cu",
+          "clearance_mm": 0.056931862668052
+        },
+        {
+          "id": "b7bd091f-f4f7-4631-9c57-017fd81e08bf",
+          "net": "/VIO_ENABLE",
+          "layer": "In3.Cu",
+          "clearance_mm": 0.07426363779628922
+        },
+        {
+          "id": "d3791e21-f1f1-46b9-8fe6-7a8129e2ce42",
+          "net": "/VIO_ENABLE",
+          "layer": "In3.Cu",
+          "clearance_mm": 0.05693186266805593
+        },
+        {
+          "id": "d9a3d36e-a38b-4272-94f0-a7cf1f38a5ed",
+          "net": "/VIO_ENABLE",
+          "layer": "In3.Cu",
+          "clearance_mm": 0.06662672386593135
+        },
+        {
+          "id": "ec9a3509-5abc-4853-b06c-0bd4b5de7626",
+          "net": "/VIO_ENABLE",
+          "layer": "In3.Cu",
+          "clearance_mm": 0.15000000000000568
+        }
+      ]
+    },
+    {
+      "ref": "U1",
+      "pin": "35",
+      "net": "/LTE_RF",
+      "reference_overlap_fraction": 1.0,
+      "lower_copper_within_02mm": [
+        {
+          "id": "465fc592-1612-4205-9859-167e3bf00dd5",
+          "net": "/VIO_ENABLE",
+          "layer": "In3.Cu",
+          "clearance_mm": 0.08301054867956978
+        },
+        {
+          "id": "680a8856-c464-48e3-b7c9-7ae3cb898d9e",
+          "net": "/VBAT",
+          "layer": "In2.Cu",
+          "clearance_mm": 0.0
+        }
+      ]
+    },
+    {
+      "ref": "U1",
+      "pin": "42",
+      "net": "/GPS_RF",
+      "reference_overlap_fraction": 1.0,
+      "lower_copper_within_02mm": [
+        {
+          "id": "9469f790-50cd-4eff-b15c-86a5cd51e31a",
+          "net": "/VBAT",
+          "layer": "In2.Cu",
+          "clearance_mm": 0.0
+        },
+        {
+          "id": "9be3f0d1-7829-44fe-8997-34e875b55a07",
+          "net": "/VBAT",
+          "layer": "In2.Cu",
+          "clearance_mm": 0.0
+        },
+        {
+          "id": "d8eb2d3e-f5b3-4536-82b0-67876ee69340",
+          "net": "/VBAT",
+          "layer": "In2.Cu",
+          "clearance_mm": 0.15000000000000566
+        },
+        {
+          "id": "e0ca3a17-a522-4a91-ba72-f8eb8ec0ef18",
+          "net": "/VBAT",
+          "layer": "In2.Cu",
+          "clearance_mm": 0.10000000000000853
+        }
+      ]
+    },
+    {
+      "ref": "C12",
+      "pin": "1",
+      "net": "/LTE_ANT",
+      "reference_overlap_fraction": 1.0,
+      "lower_copper_within_02mm": []
+    },
+    {
+      "ref": "L1",
+      "pin": "1",
+      "net": "/FILT_OUT",
+      "reference_overlap_fraction": 1.0,
+      "lower_copper_within_02mm": [
+        {
+          "id": "0384a683-2325-4120-956c-d60ecd29f861",
+          "net": "/HEALTH_CS",
+          "layer": "In3.Cu",
+          "clearance_mm": 0.04594966806402772
+        }
+      ]
+    },
+    {
+      "ref": "L1",
+      "pin": "2",
+      "net": "/AMP_IN",
+      "reference_overlap_fraction": 1.0,
+      "lower_copper_within_02mm": [
+        {
+          "id": "0384a683-2325-4120-956c-d60ecd29f861",
+          "net": "/HEALTH_CS",
+          "layer": "In3.Cu",
+          "clearance_mm": 0.0
+        }
+      ]
+    }
+  ],
+  "port_route_count": 21,
+  "port_route_unbacked_copper_mm2": 0.0,
+  "port_route_widths_mm": [
+    0.2,
+    0.28,
+    0.36
+  ],
+  "matching_route_widths_mm": [
+    0.2
+  ],
+  "scope": "Geometric projection onto the saved In1.Cu fill. No impedance, insertion-loss, fringe-field, antenna or physical RF acceptance.",
+  "rf_acceptance": "HOLD",
+  "input_sha256": "72ac31103143052551ca5ce8e309111758a8a8be11b3f4f41427b9cbf8bacc3d"
+}

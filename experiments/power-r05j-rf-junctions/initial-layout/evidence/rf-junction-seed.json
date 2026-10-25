@@ -1,0 +1,167 @@
+{
+  "baseline_sha256": "0db809c4ecefbf577db1001164886709708f02ab6ba54f7a572e948583d726a1",
+  "source_sha256": "16246d219a4d72ea41f457073a369bd8e779141681e267db3d0049123ee6f7a4",
+  "changes": [
+    {
+      "net": "/LTE_RF",
+      "removed": [
+        "22d6dd2d-1fd0-41f6-a2ac-10b576bbee88",
+        "f3a68b86-a912-40e8-a52a-ce822e3d7de0"
+      ],
+      "points": [
+        [
+          113.25003,
+          118.625
+        ],
+        [
+          113.25003,
+          119.15
+        ],
+        [
+          112.1,
+          120.3
+        ]
+      ],
+      "old_tracks": [
+        {
+          "id": "22d6dd2d-1fd0-41f6-a2ac-10b576bbee88",
+          "start": [
+            113.25003,
+            118.625
+          ],
+          "end": [
+            113.25,
+            120.04
+          ],
+          "width_mm": 0.36
+        },
+        {
+          "id": "f3a68b86-a912-40e8-a52a-ce822e3d7de0",
+          "start": [
+            113.25,
+            120.04
+          ],
+          "end": [
+            112.99,
+            120.3
+          ],
+          "width_mm": 0.36
+        }
+      ],
+      "added_tracks": [
+        {
+          "id": "1780ef23-450f-405b-9429-c591187f3c41",
+          "start": [
+            113.25003,
+            118.625
+          ],
+          "end": [
+            113.25003,
+            119.15
+          ],
+          "width_mm": 0.36
+        },
+        {
+          "id": "6c7c353a-392a-41ef-b535-a18078a41c72",
+          "start": [
+            113.25003,
+            119.15
+          ],
+          "end": [
+            112.1,
+            120.3
+          ],
+          "width_mm": 0.36
+        }
+      ]
+    },
+    {
+      "net": "/LTE_ANT",
+      "removed": [
+        "adf13514-e385-4d81-ab84-acc428a440eb",
+        "9dbd134d-d92c-4ebe-8a54-2bc1251255b6",
+        "6ec8d125-5ec8-4414-bb99-5be985a321e6"
+      ],
+      "points": [
+        [
+          114.01,
+          120.3
+        ],
+        [
+          114.01,
+          122.37
+        ],
+        [
+          113.98,
+          122.4
+        ]
+      ],
+      "old_tracks": [
+        {
+          "id": "adf13514-e385-4d81-ab84-acc428a440eb",
+          "start": [
+            114.01,
+            120.3
+          ],
+          "end": [
+            114.8,
+            120.3
+          ],
+          "width_mm": 0.36
+        },
+        {
+          "id": "9dbd134d-d92c-4ebe-8a54-2bc1251255b6",
+          "start": [
+            114.8,
+            120.3
+          ],
+          "end": [
+            116.775,
+            122.275
+          ],
+          "width_mm": 0.36
+        },
+        {
+          "id": "6ec8d125-5ec8-4414-bb99-5be985a321e6",
+          "start": [
+            116.775,
+            122.275
+          ],
+          "end": [
+            116.775,
+            122.3
+          ],
+          "width_mm": 0.36
+        }
+      ],
+      "added_tracks": [
+        {
+          "id": "cd5565b7-e06b-4092-becd-f9350fb7e76f",
+          "start": [
+            114.01,
+            120.3
+          ],
+          "end": [
+            114.01,
+            122.37
+          ],
+          "width_mm": 0.36
+        },
+        {
+          "id": "13d268b2-765a-4bcd-9693-d9e9ff84ded0",
+          "start": [
+            114.01,
+            122.37
+          ],
+          "end": [
+            113.98,
+            122.4
+          ],
+          "width_mm": 0.36
+        }
+      ]
+    }
+  ],
+  "terminal_groups_preserved": 203,
+  "scope": "Two LTE route changes only. No pad, via, plane, stack or circuit change. The main path becomes longer to reduce the tuning stubs and balance R3 entries. RF loss, impedance and assembly process remain unqualified."
+}

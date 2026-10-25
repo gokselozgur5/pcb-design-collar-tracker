@@ -1,0 +1,104 @@
+(footprint "J3_Solder_1x02_P2.5mm"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "e6d370a7-fcbd-4074-a456-d1554c2886c1")
+		(effects
+			(font
+				(size 0.65 0.65)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "5V charging input"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ea8c2ed3-3c7b-44d7-9747-431ae9f6b443")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d31da413-e1e4-4d03-9fbc-c6c186724eb0")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "dc29af03-4769-4300-bfba-a22bf5b730ea")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "MPN" ""
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "276d9e42-ee8b-4ff8-a6c5-db959b16701f")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Design status" "onboard contact pads; external device/fixture not selected"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "18f2b969-9e18-416c-98f3-e74f847b6ef3")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd exclude_from_pos_files)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -2.25 -1.05)
+		(end 2.25 1.05)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "3a0c8e5d-0df7-40eb-98ac-cf0e576ba14e")
+	)
+	(pad "1" smd rect
+		(at -1.25 0)
+		(size 1.5 1.6)
+		(layers "F.Cu" "F.Mask")
+		(solder_mask_margin 0.05)
+		(thermal_bridge_angle 45)
+		(uuid "4986853e-5951-4549-a3ea-72eb3721c873")
+	)
+	(pad "2" smd oval
+		(at 1.25 0)
+		(size 1.5 1.6)
+		(layers "F.Cu" "F.Mask")
+		(solder_mask_margin 0.05)
+		(thermal_bridge_angle 45)
+		(uuid "4ac06a60-76cc-40cc-b153-e7135e11670a")
+	)
+	(embedded_fonts no)
+)
