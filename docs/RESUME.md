@@ -41,29 +41,38 @@ browser normally if needed; no profile or credentials are distributed in Git.
 
 ## Working commands
 
-Continue from `experiments/power-r05h-six-layer/hardware/`. Read its README and
-`evidence/routing-checkpoint.json`. Native DRC/ERC/parity are clear; all returns
-pass the 2 mm screen; the final2 ZIP has two actual JLC PCB analyses at 0/0.
-Electrical and physical qualification remain open. The saved native source is
-authoritative; do not rerun historical seed scripts over it.
+Continue from `experiments/power-r05i-rf-stack/hardware/`. Read its README and
+`evidence/rf-checkpoint.json`. The candidate has zero native findings and two actual
+same-ZIP JLC runs at 0 Danger / 0 Warning / 450 Good. RF and electrical acceptance
+remain HOLD. Use a new isolated copy for any subsequent PCB edit.
 
-Use a new isolated copy for any change to this tested board. Six-layer routing
-uses F.Cu/In2.Cu/In3.Cu/B.Cu; In1.Cu/In4.Cu stay dedicated GND. The helper's
-`--six-layer-signals` option is explicitly restricted to this trial. Its optional
-`--via-ground-radius-mm 1.99` screen prevents new transitions from losing the
-local return. Every applied route still requires full native DRC and final audits.
-Manufacturer lands, rules and the two GND planes must remain intact.
+The six-layer signal order is F/In2/In3/B, with dedicated GND on In1/In4.
+The 0.36 mm port routes and two 0.20/0.28 mm escapes are intentional; FEM interstage
+matching stays at 0.20 mm. Do not restore the original 24 RF segments or blindly
+apply the older router's RF-preservation baseline. The r05i checker explicitly
+allows only this recorded RF change and the corresponding project settings.
 
-Never delete an entire dangling segment if it carries a live branch. Cleanup
-helpers preserve native terminal groups and shorten only an unused end when
-needed. Each native probe loads one board per process; do not suppress crash
-dialogs or infer success from an output file without checking the process exit.
+Next: resolve R3's two-entry attachment and review DNP stubs / module-pad treatment.
+In2.Cu VBAT runs directly below both module RF pads. Never remove In1.Cu there
+without reviewing and moving the lower copper first. The supplier calculator,
+catalog and guide differ on Er/etch/mask and finished-thickness conventions; keep
+those limits explicit until resolved. Actual impedance/antenna performance still
+requires supplier/physical qualification.
 
 ```sh
-python3 scripts/verify_routing_candidate.py experiments/power-r05h-six-layer
-.venv-dfm/bin/python -m unittest discover -s tests -p test_raster_route.py -v
-.venv-dfm/bin/python -m unittest discover -s tests -p test_power_path_layers.py -v
+python3 scripts/verify_rf_candidate.py
+.venv-dfm/bin/python -m unittest discover -s tests -p test_rf_reference.py -v
+.venv-dfm/bin/python scripts/check_rf_thickness_fit.py
 ```
+
+The native RF exporter preserves polygon holes and records Contains probes.
+The independent checker must agree with those probes; a centerline-only check
+missed the original GNSS edge intrusion. Do not treat coverage as an EM simulation.
+
+Keep `power-r05h-six-layer` byte-exact: it is the verified baseline used by the new
+checker. Saved sources are authoritative; the seed script is one-shot history.
+Load each PCB beside its matching project/rules. One native LoadBoard per process;
+wait for exit 0 and keep crash dialogs visible.
 
 The preserved four-layer r05f has five opens. r05g's local crossing repair ended
 with six opens and was not selected. Neither is the continuation point.
@@ -97,7 +106,7 @@ Protected NTC pack and LTE/GNSS antenna selection proceeds alongside that circui
 followed by actual cable/clearance fit, dock/harness and positive PCB retention.
 Read `mechanical/swim-r06-six-layer-fit/README.md`, the preserved r02 selection review and
 `docs/turkiye-connectivity.md` before assuming a modem/plan is field-qualified.
-The preliminary r06 screen checks 69 populated envelopes at nominal board thickness. Nine resistor-height
+The r05i thickness review checks the same 69 populated envelopes over 0.71–0.91 mm. Nine resistor-height
 limits are requirements with unresolved exact MPN/tolerance/TCR. Its 30 shell
 checks pass; no new r05 mesh package, factory or physical qualification exists.
 

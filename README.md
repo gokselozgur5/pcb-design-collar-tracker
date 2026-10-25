@@ -4,28 +4,28 @@ A small GPS and cellular tracker for dog collars, starting with Türkiye.
 The aim is one electronics design with different collar mounts. Fit, weight and
 comfort across dog sizes and coat types still need physical validation.
 
-**The current r05h PCB is fully routed and passed two actual JLC PCB DFM analyses
-at 0 Danger / 0 Warning.** Both used the same final ZIP and unchanged rules, with
-29 analyzed rows and 449 green measurements each. Native DRC/ERC/parity also pass.
+**The current r05i PCB passed two actual JLC PCB DFM analyses at 0 Danger / 0 Warning.**
+Both used the same ZIP and unchanged rules: 29 analyzed rows, 450 green measurements
+per run. Native DRC/ERC/parity also pass.
 
-The board is 40 × 32 × nominal 0.8 mm with six copper layers. In1.Cu and In4.Cu
-are continuous GND planes; all 128 signal vias pass the local return screen.
-The physical nano-SIM entry is clear. eSIM is deferred.
+The board is 40 × 32 mm with six copper layers and a physical nano-SIM. The RF
+candidate uses a documented 7628 stack and 0.36 mm main port routes; In1.Cu and
+In4.Cu remain dedicated GND. All 128 signal vias pass the local return screen.
 
-[Final Gerber ZIP](experiments/power-r05h-six-layer/evidence/collar-tracker-05h-final2-40x32-dfm.zip) ·
-[Design review PDF](experiments/power-r05h-six-layer/evidence/review.pdf) ·
-[JLC report 1](experiments/power-r05h-six-layer/evidence/jlc-final-check1/report.pdf) ·
-[JLC report 2](experiments/power-r05h-six-layer/evidence/jlc-final-check2/report.pdf)
+[Gerber ZIP](experiments/power-r05i-rf-stack/evidence/collar-tracker-05i-rf-40x32-dfm.zip) ·
+[RF before / after](experiments/power-r05i-rf-stack/evidence/rf-review.pdf) ·
+[JLC report 1](experiments/power-r05i-rf-stack/evidence/jlc-check1/report.pdf) ·
+[JLC report 2](experiments/power-r05i-rf-stack/evidence/jlc-check2/report.pdf)
 
-**Electrical release remains on hold.** The proposed power repair needs source/bench
-qualification. Actual dielectric stack and RF impedance, exact BOM, battery/NTC,
-antennas, factory assembly/programming/test and physical ingress qualification remain
-open. PCB DFM does not establish a working PCBA.
+**Electrical, RF and manufacturing release remain on hold.** Supplier stack/etch/mask
+confirmation, module-pad treatment, R3 assembly balance, power timing, exact BOM,
+pack/NTC, antennas and factory programming/test remain open. See the
+[r05i review](experiments/power-r05i-rf-stack/README.md). PCB DFM does not prove a working PCBA.
 
-The [r06 enclosure fit](mechanical/swim-r06-six-layer-fit/README.md) checks 69 populated
-envelopes and 30 shell constraints. IP68 remains a design target, with provisional
-2 m fresh-water / 60-minute conditions. No physical water/dust test is claimed.
-[STATUS](docs/STATUS.md) records the exact source, evidence and next action.
+The enclosure's 69 populated envelopes pass the modeled 0.71–0.91 mm board-thickness
+interval. IP68 remains a design target, with provisional 2 m fresh-water / 60-minute
+conditions. No physical water/dust test is claimed.
+[STATUS](docs/STATUS.md) records the exact source and next action.
 
 The earlier r04i PCB and [r02 review bundle](release/collar-tracker-r04i-swim-r02-fit-review.zip)
 remain preserved. Upload only the Gerber ZIP to PCB DFM.

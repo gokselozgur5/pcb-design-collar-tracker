@@ -367,3 +367,26 @@ Their evidence is dated; do not transfer an older pass to a newer source file.
 - Next: Select/model the real six-layer stack and RF geometry; close circuit/BOM,
   battery/NTC, antenna, factory-test and enclosure qualification requirements.
   PCB DFM completion does not lift the electrical or manufacturing HOLD.
+
+
+## 2026-10-25 — RF stack candidate, reference coverage and repeat JLC DFM
+
+- Event: Reviewed the actual six-layer stack and RF geometry after r05h completed PCB DFM.
+- Decision: Preserve r05h. Use a separate r05i candidate with 0.36 mm main port
+  tracks, two bounded module escapes and a GNSS elbow clear of a reference opening.
+  Retain the FEM matching geometry and all unrelated copper/pads/vias/rules.
+- Result: Native DRC/ERC/parity remain zero. The old GNSS centerline passed while
+  0.006699 mm² of track projected into a plane opening; the revised trace is fully
+  backed. 1,761 native Contains probes agree with independent polygon handling.
+- Result: JLC records 637347019288170498 / 637347305582972929 each report 0/0/450,
+  all 29 rows analyzed, same ZIP f662f1db64ef1958e7e15c63b44869413883fd36e80b82642b9e8262f0e72f2d,
+  unchanged rules, SMT off. Both full PDFs and the copper comparison were inspected.
+- Result: 69 component envelopes pass at 0.71/0.81/0.84088/0.91 mm; the old carrier
+  still fails. Four RF regressions pass. Power estimates use actual catalog inner
+  copper and the upper finished-thickness bound, with unqualified load/plating assumptions.
+- Limits: Supplier Er/etch/mask/thickness conventions disagree. Both module RF pads
+  have In2.Cu VBAT below them; their GND was retained. R3 has a two-entry attachment
+  ratio of 2.09–2.41. Module escapes, tuning stubs and physical RF remain open.
+- Next: Fix/review that local geometry in a new successor, resolve stack/process
+  parameters, then close power/component/pack/antenna/factory/enclosure requirements.
+  No supplier message, order, payment or physical test occurred. Release stays HOLD.

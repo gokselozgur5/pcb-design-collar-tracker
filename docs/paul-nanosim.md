@@ -203,3 +203,18 @@ measurements, with unchanged rules and SMT off. The actual dielectric stack, RF
 impedance, powered circuit, factory assembly and physical ingress remain open.
 Changing the stack changes impedance even when RF track geometry is unchanged.
 See STATUS for final identities; do not transfer older physical or mesh claims.
+
+
+## r05i RF follow-up
+
+The six port nets now use 0.36 mm main tracks against a documented 7628 candidate
+stack, with bounded module escapes. The GNSS elbow avoids the SIM via's reference
+opening. All non-port tracks, pads, vias and ground returns are unchanged. Native
+checks pass; two actual JLC runs report 0/0/450. See the
+[RF review](../experiments/power-r05i-rf-stack/README.md).
+
+RF acceptance is still open. The supplier's calculator/catalog/guide parameters
+differ, both module pads have lower-layer VBAT beneath them, and R3's two-entry
+attachment still needs correction or assembly acceptance. Its measured unique-copper
+ratio is 2.09–2.41; DFM cannot establish solder balance. C11/C12 are DNP. Do not
+call this a completed physical RF or factory-assembly qualification.

@@ -1,52 +1,58 @@
 # Current state — 2026-10-25
 
-**Active r05h: fully routed; native DRC/ERC/parity clean; two actual JLC PCB runs at 0 Danger / 0 Warning.**
-**Electrical release: HOLD. Swimming enclosure: preliminary fit passes; IP68 unqualified.**
+**Active r05i RF candidate: native DRC/ERC/parity clean; two actual JLC PCB runs at 0 Danger / 0 Warning.**
+**Electrical / RF / manufacturing release: HOLD. IP68 remains unqualified.**
 
 Repository: [gokselozgur5/pcb-design-collar-tracker](https://github.com/gokselozgur5/pcb-design-collar-tracker).
 All authored repository/GitHub content is English. Continue from
-`experiments/power-r05h-six-layer/hardware/`; its saved native source is authoritative.
+`experiments/power-r05i-rf-stack/hardware/`; preserve this tested source before changing it.
 
-[Final Gerber ZIP](../experiments/power-r05h-six-layer/evidence/collar-tracker-05h-final2-40x32-dfm.zip) ·
-[Current design review](../experiments/power-r05h-six-layer/evidence/review.pdf) ·
-[JLC report 1](../experiments/power-r05h-six-layer/evidence/jlc-final-check1/report.pdf) ·
-[JLC report 2](../experiments/power-r05h-six-layer/evidence/jlc-final-check2/report.pdf)
+[Gerber ZIP](../experiments/power-r05i-rf-stack/evidence/collar-tracker-05i-rf-40x32-dfm.zip) ·
+[Before / after review](../experiments/power-r05i-rf-stack/evidence/rf-review.pdf) ·
+[JLC report 1](../experiments/power-r05i-rf-stack/evidence/jlc-check1/report.pdf) ·
+[JLC report 2](../experiments/power-r05i-rf-stack/evidence/jlc-check2/report.pdf)
 
-## Active r05h layout
+## Active r05i layout
 
-PCB SHA256: `aecb8e431819fa2aa23dfecc98ff1f6a064b5ae81afe7679a6e317f3571c3171`.
-ZIP SHA256: `2cae8b12bdf20b3c8633f8db0c59cc6911a49a43ed82e1e1bdc381e6a9d69e34`.
+PCB SHA256: `0db809c4ecefbf577db1001164886709708f02ab6ba54f7a572e948583d726a1`.
+ZIP SHA256: `f662f1db64ef1958e7e15c63b44869413883fd36e80b82642b9e8262f0e72f2d`.
 
 | Check | Result |
 |---|---|
-| Size / circuit | 40 × 32 × nominal 0.8 mm; six copper layers; unchanged 71-part r05 circuit |
+| Size / circuit | 40 × 32 mm, six Cu, unchanged 71-part r05 circuit |
+| Stack candidate | JLC06081H-7628, nominal 0.8 mm class; explicit CAD including mask 0.84088 mm |
 | Native DRC / ERC / parity | Zero violations, warnings, opens or mismatches |
-| Ground | 97 physical pads, 94 unique terminals locally connected; 110 GND vias |
-| Planes | In1.Cu and In4.Cu each one continuous GND fill; no tracks; all GND vias contained |
-| Returns | 128/128 signal vias pass the 2 mm screen; maximum 1.986755 mm |
-| RF / SIM | 24 original RF segments retained; four clamp paths without bypass; card entry clear |
-| Power | All 12 original backbone checks pass; POWER_GOOD replacement route 18.214 mm, zero new vias |
-| JLC PCB DFM | `637343111455133697` and `637343305880473601`; 29 rows / 449 green measurements each; rules unchanged; SMT off |
-| Mechanical | Fresh r06 preliminary fit: 69 populated envelopes and 30 analytical shell checks pass |
+| Ground / returns | 94 unique GND terminals local; 110 GND vias; two continuous GND planes; 128/128 return screens pass |
+| RF change | Six port nets at 0.36 mm with bounded 0.20/0.28 mm module escapes; GNSS elbow moved |
+| RF reference | 1,761 native probes agree; entire revised RF track projection backed by In1.Cu |
+| Unchanged geometry | All pads, vias, non-port tracks, component placements and DRC limits |
+| JLC PCB DFM | `637347019288170498` and `637347305582972929`; 29 rows / 450 green measurements each; same ZIP/rules; SMT off |
+| Mechanical | 69 populated envelopes pass at 0.71 / 0.81 / 0.84088 / 0.91 mm; old carrier still fails |
 
-Read the [r05h review and limits](../experiments/power-r05h-six-layer/README.md).
-The four-layer local-crossing alternative r05g ended with six opens and was not
-selected. Two extra routing layers closed r05f's remaining five connections while
-retaining two dedicated GND planes. Local returns were restored and unused ends
-trimmed with native terminal-group guards. C30 attachments are balanced. Two full-size
-labels moved after the first JLC run; that rejected package/report stays preserved.
-Only the `final2` ZIP has two accepted runs.
+Read the [r05i decisions and limits](../experiments/power-r05i-rf-stack/README.md).
+The new width is a prototype candidate from the actual supplier calculator, not a
+measured 50-ohm result. Its live Er/etch/mask inputs differ from the catalog/guide.
+Supplier confirmation and physical RF qualification remain open. Native stack
+values retain the catalog dimensions and expose the finished-thickness discrepancy.
 
-**Next:** qualify an actual six-layer dielectric stack and the RF geometry. Then
-close source/bench, exact resistor MPN/tolerance/TCR, battery/NTC, antenna and factory
-BOM/CPL/programming/test requirements. Review the [sequencing follow-up](power-sequence-followup.md)
-before changing the circuit. Nominal fit is not finished-thickness tolerance approval.
+**Next local work:** in a new copy, resolve R3's two-entry passive attachment and
+review the DNP matching stubs / module-pad capacitance. VBAT runs under both module
+RF pads on In2.Cu; moving that route must precede any In1.Cu cutout. Preserve the
+continuous reference and verify the intended stack/etch/mask model. Then finish
+exact R1/R16–R23 MPN/tolerance/TCR, power timing/source, battery/NTC, antenna and
+factory BOM/CPL/programming/test definitions. Review the
+[sequencing follow-up](power-sequence-followup.md) before changing the circuit.
 Complete retention/harness/dock/seal selection and physical water/dust qualification.
-Do not order this as a finished working PCBA yet. Preserve tested bytes; a PCB
-change requires fresh native checks, export and two same-ZIP supplier runs.
 
-`python3 scripts/resume.py` verifies the saved evidence without rerunning KiCad,
-JLC or physical tests. Earlier r04i and r05b–r05g sources remain preserved.
+PCB DFM is complete for the delivered bytes. Do not order this as a finished working
+PCBA yet. Every subsequent PCB edit needs fresh native checks/export/two supplier runs.
+`python3 scripts/resume.py` verifies saved evidence; it does not repeat physical tests.
+
+The preceding [r05h](../experiments/power-r05h-six-layer/README.md), its two actual
+0/0/449 supplier records, and all earlier releases remain immutable. r05h closed the
+five remaining routes and restored local returns; r05i changes only the bounded RF
+geometry and physical stack metadata. Its SIM protection, insertion lane and power
+backbones are inherited through exact unchanged copper/pad/via checks.
 
 ## Preserved tested PCB
 
