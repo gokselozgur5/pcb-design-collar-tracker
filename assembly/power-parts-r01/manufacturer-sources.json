@@ -1,0 +1,137 @@
+{
+  "sources": [
+    {
+      "id": "RC0402FR-07100KL",
+      "manufacturer": "YAGEO",
+      "url": "https://www.yageogroup.com/component-documentation/download/specsheet/RC0402FR-07100KL",
+      "retrieved_date": "2026-10-25",
+      "sha256": "f7fa5893c2cbc812a599369203d82ea769c7b5c91287100e2bda640839c246b9",
+      "revision": "Manufacturer generated specsheet 2026-10-25",
+      "local_reference": ".runtime/parts-r05j/RC0402FR-07100KL.pdf"
+    },
+    {
+      "id": "RC0402FR-0710KL",
+      "manufacturer": "YAGEO",
+      "url": "https://www.yageogroup.com/component-documentation/download/specsheet/RC0402FR-0710KL",
+      "retrieved_date": "2026-10-25",
+      "sha256": "22cd7eed431b5997ee6fc259858717450aa86068b31be90f8d48a6a96448470c",
+      "revision": "Manufacturer generated specsheet 2026-10-25",
+      "local_reference": ".runtime/parts-r05j/RC0402FR-0710KL.pdf"
+    },
+    {
+      "id": "RC0402FR-071ML",
+      "manufacturer": "YAGEO",
+      "url": "https://www.yageogroup.com/component-documentation/download/specsheet/RC0402FR-071ML",
+      "retrieved_date": "2026-10-25",
+      "sha256": "0b76252e0fffcbf87f072ece194f92adea8f7838e9191d6a50221c3f8727fa34",
+      "revision": "Manufacturer generated specsheet 2026-10-25",
+      "local_reference": ".runtime/parts-r05j/RC0402FR-071ML.pdf"
+    },
+    {
+      "id": "RC0402FR-0722KL",
+      "manufacturer": "YAGEO",
+      "url": "https://www.yageogroup.com/component-documentation/download/specsheet/RC0402FR-0722KL",
+      "retrieved_date": "2026-10-25",
+      "sha256": "9fb1233f3a8446663c940d7e146e234435a9538c24c11f9a3228d45284dbf7b1",
+      "revision": "Manufacturer generated specsheet 2026-10-25",
+      "local_reference": ".runtime/parts-r05j/RC0402FR-0722KL.pdf"
+    },
+    {
+      "id": "RC0402FR-073M4L",
+      "manufacturer": "YAGEO",
+      "url": "https://www.yageogroup.com/component-documentation/download/specsheet/RC0402FR-073M4L",
+      "retrieved_date": "2026-10-25",
+      "sha256": "e8c6a133eb9f488a6a62ce6d2b54b15bc5982e358f170663f8881b135b159ca5",
+      "revision": "Manufacturer generated specsheet 2026-10-25",
+      "local_reference": ".runtime/parts-r05j/RC0402FR-073M4L.pdf"
+    },
+    {
+      "id": "RT0402BRD07200KL",
+      "manufacturer": "YAGEO",
+      "url": "https://www.yageogroup.com/component-documentation/download/specsheet/RT0402BRD07200KL",
+      "retrieved_date": "2026-10-25",
+      "sha256": "8ecd430833998c41bee47dca548a1b45e52904a12caccabab9857828f013b4c5",
+      "revision": "Manufacturer generated specsheet 2026-10-25",
+      "local_reference": ".runtime/parts-r05j/RT0402BRD07200KL.pdf"
+    },
+    {
+      "id": "RT0402BRD0726K1L",
+      "manufacturer": "YAGEO",
+      "url": "https://www.yageogroup.com/component-documentation/download/specsheet/RT0402BRD0726K1L",
+      "retrieved_date": "2026-10-25",
+      "sha256": "72b40a80312fafe4cc3a3963fd6f2a32e10aad96dd970c11bdb399cc5c213f8d",
+      "revision": "Manufacturer generated specsheet 2026-10-25",
+      "local_reference": ".runtime/parts-r05j/RT0402BRD0726K1L.pdf"
+    },
+    {
+      "id": "vishay-crcw-hp-e3",
+      "url": "https://www.vishay.com/docs/20043/crcwhpe3.pdf",
+      "retrieved_date": "2026-10-25",
+      "sha256": "1160615af24c97eb772e0b0e4a0f11d83492bf168fec7b0d268e7d408f1c55bb",
+      "revision": "17-Mar-2026, document 20043",
+      "local_reference": ".runtime/parts-r05j/crcwhpe3.pdf"
+    },
+    {
+      "id": "ti-tps3808",
+      "url": "https://www.ti.com/lit/ds/symlink/tps3808.pdf",
+      "retrieved_date": "2026-10-25",
+      "sha256": "74d889c0f68af88032f1633c26381817cc03e10d9fd3b4c177a044ad3ed86eed",
+      "revision": "SBVS050N, August 2026",
+      "local_reference": ".runtime/parts-r05j/tps3808.pdf"
+    },
+    {
+      "id": "ti-sn74lvc1g14",
+      "url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g14.pdf",
+      "retrieved_date": "2026-10-25",
+      "sha256": "3d59568b16a2b7abb63d33ebe6f8ddd37e12dd3ca2616dd803872c509a583283",
+      "revision": "SCES218AA, October 2025",
+      "local_reference": ".runtime/parts-r05j/sn74lvc1g14.pdf"
+    },
+    {
+      "id": "ti-tps7a02",
+      "url": "https://www.ti.com/lit/ds/symlink/tps7a02.pdf",
+      "retrieved_date": "2026-10-25",
+      "sha256": "ed213c153f1db84762558fcac2ff9752e322151a1d44672cf554988b860cebc8",
+      "revision": "See retrieved document",
+      "local_reference": ".runtime/parts-r05j/tps7a02.pdf"
+    },
+    {
+      "id": "yageo-rt-range",
+      "url": "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RT_1-TO-0-01_ROHS_L",
+      "retrieved_date": "2026-10-25",
+      "sha256": "00a9148c2958122200e8a93292e389392a795adcfe40562d6ca4f690d1e5d7d1",
+      "revision": "13-Mar-2023 v15",
+      "local_reference": ".runtime/parts-r05j/yageo-rt.pdf"
+    },
+    {
+      "id": "murata-timing-1u",
+      "url": "https://ds.murata.com/simserve/characteristics?ReqType=TechPDF&partnumber=GRM21BR71C105KA01&techpdfname=technical_pdf_Capacitor01&lang=en",
+      "retrieved_date": "2026-10-25",
+      "sha256": "2215eb3bcf93c3519b71f2e5351a7f7443d36e10b136b6fd1725f562ee85962c",
+      "revision": "Typical EC data October 2026",
+      "local_reference": ".runtime/parts-r05j/murata-c9.pdf"
+    },
+    {
+      "id": "murata-timing-47n",
+      "url": "https://ds.murata.com/simserve/characteristics?ReqType=TechPDF&partnumber=GRM155R71C473KA01&techpdfname=technical_pdf_Capacitor01&lang=en",
+      "retrieved_date": "2026-10-25",
+      "sha256": "e831dd3cd7056958fddf8b63e7d9c25bb14161a3110835afec37fdab3a11420b",
+      "revision": "Typical EC data October 2026",
+      "local_reference": ".runtime/parts-r05j/murata-c26.pdf"
+    },
+    {
+      "id": "murata-timing-cap-bias",
+      "url": "https://ds.murata.com/simserve/characteristics?callback=nothing&ReqType=Characteristics&ReqChara=%5B%7B%22partnumber%22%3A%22GRM21BR71C105KA01%22%2C%22chara_type%22%3A%22c_dcbias_capacitance%22%2C%22parameter%22%3A%7B%22tc%22%3A%22-40%22%2C%22ac%22%3A%220.01%22%7D%2C%22WorkInfo%22%3A%7B%22color%22%3A%22%23ea002a%22%7D%7D%2C%7B%22partnumber%22%3A%22GRM21BR71C105KA01%22%2C%22chara_type%22%3A%22c_dcbias_capacitance%22%2C%22parameter%22%3A%7B%22tc%22%3A%2225%22%2C%22ac%22%3A%220.01%22%7D%2C%22WorkInfo%22%3A%7B%22color%22%3A%22%23ea002a%22%7D%7D%2C%7B%22partnumber%22%3A%22GRM21BR71C105KA01%22%2C%22chara_type%22%3A%22c_dcbias_capacitance%22%2C%22parameter%22%3A%7B%22tc%22%3A%2285%22%2C%22ac%22%3A%220.01%22%7D%2C%22WorkInfo%22%3A%7B%22color%22%3A%22%23ea002a%22%7D%7D%2C%7B%22partnumber%22%3A%22GRM219R71E684KA88%22%2C%22chara_type%22%3A%22c_dcbias_capacitance%22%2C%22parameter%22%3A%7B%22tc%22%3A%22-40%22%2C%22ac%22%3A%220.01%22%7D%2C%22WorkInfo%22%3A%7B%22color%22%3A%22%23ea002a%22%7D%7D%2C%7B%22partnumber%22%3A%22GRM219R71E684KA88%22%2C%22chara_type%22%3A%22c_dcbias_capacitance%22%2C%22parameter%22%3A%7B%22tc%22%3A%2225%22%2C%22ac%22%3A%220.01%22%7D%2C%22WorkInfo%22%3A%7B%22color%22%3A%22%23ea002a%22%7D%7D%2C%7B%22partnumber%22%3A%22GRM219R71E684KA88%22%2C%22chara_type%22%3A%22c_dcbias_capacitance%22%2C%22parameter%22%3A%7B%22tc%22%3A%2285%22%2C%22ac%22%3A%220.01%22%7D%2C%22WorkInfo%22%3A%7B%22color%22%3A%22%23ea002a%22%7D%7D%2C%7B%22partnumber%22%3A%22GRM155R71C473KA01%22%2C%22chara_type%22%3A%22c_dcbias_capacitance%22%2C%22parameter%22%3A%7B%22tc%22%3A%22-40%22%2C%22ac%22%3A%220.01%22%7D%2C%22WorkInfo%22%3A%7B%22color%22%3A%22%23ea002a%22%7D%7D%2C%7B%22partnumber%22%3A%22GRM155R71C473KA01%22%2C%22chara_type%22%3A%22c_dcbias_capacitance%22%2C%22parameter%22%3A%7B%22tc%22%3A%2225%22%2C%22ac%22%3A%220.01%22%7D%2C%22WorkInfo%22%3A%7B%22color%22%3A%22%23ea002a%22%7D%7D%2C%7B%22partnumber%22%3A%22GRM155R71C473KA01%22%2C%22chara_type%22%3A%22c_dcbias_capacitance%22%2C%22parameter%22%3A%7B%22tc%22%3A%2285%22%2C%22ac%22%3A%220.01%22%7D%2C%22WorkInfo%22%3A%7B%22color%22%3A%22%23ea002a%22%7D%7D%5D&CallBack=mycallback&WorkInfo=svgGraph1",
+      "retrieved_date": "2026-10-25",
+      "sha256": "ea3b436134e38abab284709749faadd34d12ed07de85dfdea7e8963048272400",
+      "scope": "Typical simulated characteristic data. Not guaranteed component limits."
+    },
+    {
+      "id": "murata-timing-cap-temperature",
+      "url": "https://ds.murata.com/simserve/characteristics?callback=nothing&ReqType=Characteristics&ReqChara=%5B%7B%22partnumber%22%3A%22GRM21BR71C105KA01%22%2C%22chara_type%22%3A%22c_temp_capacitance%22%2C%22parameter%22%3A%7B%22dc%22%3A%220%22%2C%22ac%22%3A%220.01%22%7D%2C%22WorkInfo%22%3A%7B%22color%22%3A%22%23ea002a%22%7D%7D%2C%7B%22partnumber%22%3A%22GRM21BR71C105KA01%22%2C%22chara_type%22%3A%22c_temp_capacitance%22%2C%22parameter%22%3A%7B%22dc%22%3A%221.23%22%2C%22ac%22%3A%220.01%22%7D%2C%22WorkInfo%22%3A%7B%22color%22%3A%22%23ea002a%22%7D%7D%2C%7B%22partnumber%22%3A%22GRM21BR71C105KA01%22%2C%22chara_type%22%3A%22c_temp_capacitance%22%2C%22parameter%22%3A%7B%22dc%22%3A%225.5%22%2C%22ac%22%3A%220.01%22%7D%2C%22WorkInfo%22%3A%7B%22color%22%3A%22%23ea002a%22%7D%7D%2C%7B%22partnumber%22%3A%22GRM155R71C473KA01%22%2C%22chara_type%22%3A%22c_temp_capacitance%22%2C%22parameter%22%3A%7B%22dc%22%3A%220%22%2C%22ac%22%3A%220.01%22%7D%2C%22WorkInfo%22%3A%7B%22color%22%3A%22%23ea002a%22%7D%7D%2C%7B%22partnumber%22%3A%22GRM155R71C473KA01%22%2C%22chara_type%22%3A%22c_temp_capacitance%22%2C%22parameter%22%3A%7B%22dc%22%3A%221.23%22%2C%22ac%22%3A%220.01%22%7D%2C%22WorkInfo%22%3A%7B%22color%22%3A%22%23ea002a%22%7D%7D%2C%7B%22partnumber%22%3A%22GRM155R71C473KA01%22%2C%22chara_type%22%3A%22c_temp_capacitance%22%2C%22parameter%22%3A%7B%22dc%22%3A%225.5%22%2C%22ac%22%3A%220.01%22%7D%2C%22WorkInfo%22%3A%7B%22color%22%3A%22%23ea002a%22%7D%7D%5D&CallBack=mycallback&WorkInfo=svgGraph1",
+      "retrieved_date": "2026-10-25",
+      "sha256": "d9aafcf52579991ec51df2831be530ac01659328aad02f4844aade9c143cff59",
+      "scope": "Typical simulated characteristic data. Not guaranteed component limits."
+    }
+  ]
+}

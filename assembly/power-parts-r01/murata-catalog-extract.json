@@ -1,0 +1,39 @@
+{
+  "catalog_url": "https://ds.murata.com/simsurfing_data/data/mlcc.zip",
+  "catalog_sha256": "9715b6516a7073ee71a15ac0cb19fe082debaead528b2cc261854801e04d0d95",
+  "retrieved_date": "2026-10-25",
+  "status_mapping": {
+    "B": "In Production",
+    "N": "NRND"
+  },
+  "status_mapping_basis": "Observed public SimSurfing pages for the respective C9 and previous C25 models",
+  "parts": [
+    {
+      "part_number": "GRM21BR71C105KA01",
+      "capacitance_pu": "1\u03bcF",
+      "rvol": "16",
+      "size_thickness_max": "1.35",
+      "tempchar": "X7R",
+      "tolerance": "\u00b110%",
+      "production_status_en-us": "B"
+    },
+    {
+      "part_number": "GRM219R71E684KA88",
+      "capacitance_pu": "0.68\u03bcF",
+      "rvol": "25",
+      "size_thickness_max": "0.95",
+      "tempchar": "X7R",
+      "tolerance": "\u00b110%",
+      "production_status_en-us": "N"
+    },
+    {
+      "part_number": "GRM155R71C473KA01",
+      "capacitance_pu": "47000pF",
+      "rvol": "16",
+      "size_thickness_max": "0.55",
+      "tempchar": "X7R",
+      "tolerance": "\u00b110%",
+      "production_status_en-us": "B"
+    }
+  ]
+}

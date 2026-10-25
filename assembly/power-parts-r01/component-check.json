@@ -1,0 +1,248 @@
+{
+  "result": "CONDITIONAL_COMPONENT_SCREEN_PASS",
+  "electrical_acceptance": "HOLD",
+  "physical_test": false,
+  "purchase_release": false,
+  "operating_corner": {
+    "resistance_intervals_ohm": {
+      "R1": [
+        21637.0,
+        22363.0
+      ],
+      "R16": [
+        9835.0,
+        10165.0
+      ],
+      "R17": [
+        199475.0,
+        200525.00000000003
+      ],
+      "R18": [
+        26031.4875,
+        26168.512500000004
+      ],
+      "R19": [
+        3343900.0,
+        3456100.0
+      ],
+      "R20": [
+        9835.0,
+        10165.0
+      ],
+      "R21": [
+        21.637,
+        22.363
+      ],
+      "R22": [
+        983500.0,
+        1016500.0
+      ],
+      "R23": [
+        98350.0,
+        101650.0
+      ]
+    },
+    "extra_drift_fraction": 0,
+    "bounds": {
+      "falling_threshold_V": [
+        3.2437240917614663,
+        3.432169625472046
+      ],
+      "restart_threshold_V": [
+        3.4171820727018707,
+        3.7336671802381165
+      ],
+      "power_good_high_drop_V": [
+        -0.0640395,
+        0.12141874997757109
+      ],
+      "enable_high_margin_min_V": 0.07275090011619012,
+      "recognized_fault_reset_delay_s": [
+        2.057442857142857,
+        10.1207
+      ],
+      "enable_low_hold_min_s": 1.9599002783539978,
+      "gpio_after_enable_high_min_s": 0.02607990615383042,
+      "gpio_enable_latest_after_power_good_s": 0.6432114602934225,
+      "fully_on_enable_high_departure_min_s": 0.001512865309398014,
+      "vio_to_0p1V_estimate_max_s": 0.0010021574731931728,
+      "turnoff_latency_budget_s": 0.000510707836204841,
+      "rail_retention_for_strict_sequence_s": 0.09754257878885939,
+      "reset_sink_max_mA": 0.8971164209456025,
+      "r21_peak_power_W": 0.16684383232425937,
+      "r21_full_discharge_energy_uJ": 21.66,
+      "r21_average_power_bound_W": 1.0527631387089382e-05,
+      "r21_pulse_graph_screen_W": 0.5,
+      "r21_screen_duration_s": 0.01,
+      "r21_tail_power_after_screen_W": 5.038449178436155e-27,
+      "r21_ambient_derated_continuous_W": 0.16470588235294117
+    },
+    "conditional_checks": {
+      "static_cutoff_above_3V": true,
+      "restart_below_4p2V": true,
+      "recognized_fault_enable_low_at_least_1s": true,
+      "gpio_at_least_6ms_after_enable_high": true,
+      "fully_on_discharge_positive_latency_budget": true,
+      "reset_sink_below_datasheet_test": true,
+      "firmware_wait_exceeds_modeled_gpio_enable": true,
+      "r21_peak_below_conservative_pulse_graph_screen": true,
+      "r21_mean_and_tail_below_derated_rating": true
+    },
+    "all_pass": true
+  },
+  "additional_drift_sensitivity": {
+    "resistance_intervals_ohm": {
+      "R1": [
+        21527.0,
+        22473.0
+      ],
+      "R16": [
+        9785.0,
+        10215.0
+      ],
+      "R17": [
+        198475.0,
+        201525.0
+      ],
+      "R18": [
+        25900.9875,
+        26299.0125
+      ],
+      "R19": [
+        3326900.0,
+        3473100.0000000005
+      ],
+      "R20": [
+        9785.0,
+        10215.0
+      ],
+      "R21": [
+        21.527,
+        22.473000000000003
+      ],
+      "R22": [
+        978500.0,
+        1021500.0000000001
+      ],
+      "R23": [
+        97850.0,
+        102150.00000000001
+      ]
+    },
+    "extra_drift_fraction": 0.005,
+    "bounds": {
+      "falling_threshold_V": [
+        3.215308542423714,
+        3.462448317850191
+      ],
+      "restart_threshold_V": [
+        3.38710244135216,
+        3.766892278644143
+      ],
+      "power_good_high_drop_V": [
+        -0.0643545,
+        0.12210184257116234
+      ],
+      "enable_high_margin_min_V": 0.06814209709544627,
+      "recognized_fault_reset_delay_s": [
+        2.057442857142857,
+        10.1207
+      ],
+      "enable_low_hold_min_s": 1.958486230101482,
+      "gpio_after_enable_high_min_s": 0.02550037894648903,
+      "gpio_enable_latest_after_power_good_s": 0.6743183258489003,
+      "fully_on_enable_high_departure_min_s": 0.001505174077525121,
+      "vio_to_0p1V_estimate_max_s": 0.0010060441326456726,
+      "turnoff_latency_budget_s": 0.0004991299448794484,
+      "rail_retention_for_strict_sequence_s": 0.09895662704137519,
+      "reset_sink_max_mA": 0.9012735236148623,
+      "r21_peak_power_W": 0.16769638128861428,
+      "r21_full_discharge_energy_uJ": 21.66,
+      "r21_average_power_bound_W": 1.0527631387089382e-05,
+      "r21_pulse_graph_screen_W": 0.5,
+      "r21_screen_duration_s": 0.01,
+      "r21_tail_power_after_screen_W": 6.354803353808908e-27,
+      "r21_ambient_derated_continuous_W": 0.16470588235294117
+    },
+    "conditional_checks": {
+      "static_cutoff_above_3V": true,
+      "restart_below_4p2V": true,
+      "recognized_fault_enable_low_at_least_1s": true,
+      "gpio_at_least_6ms_after_enable_high": true,
+      "fully_on_discharge_positive_latency_budget": true,
+      "reset_sink_below_datasheet_test": true,
+      "firmware_wait_exceeds_modeled_gpio_enable": true,
+      "r21_peak_below_conservative_pulse_graph_screen": true,
+      "r21_mean_and_tail_below_derated_rating": true
+    },
+    "all_pass": true
+  },
+  "capacitor_screen": {
+    "C9": {
+      "mpn": "GRM21BR71C105KA01L",
+      "typical_sample_min_nF": 854.3900401928184,
+      "with_tolerance_and_extra_loss_nF": 653.6083807475061,
+      "model_min_nF": 600,
+      "pass_": true,
+      "guaranteed": false,
+      "scope": "Typical 10 mVrms temperature samples at selected DC, then initial tolerance and additional 15% engineering loss. Not lot/age qualification."
+    },
+    "C25": {
+      "mpn": "GRM21BR71C105KA01L",
+      "typical_sample_min_nF": 898.077452948916,
+      "with_tolerance_and_extra_loss_nF": 687.0292515059207,
+      "model_min_nF": 600,
+      "pass_": true,
+      "guaranteed": false,
+      "scope": "Typical 10 mVrms temperature samples at selected DC, then initial tolerance and additional 15% engineering loss. Not lot/age qualification."
+    },
+    "C26": {
+      "mpn": "GRM155R71C473KA01D",
+      "typical_sample_min_nF": 43.509875418454264,
+      "with_tolerance_and_extra_loss_nF": 33.28505469511751,
+      "model_min_nF": 32,
+      "pass_": true,
+      "guaranteed": false,
+      "scope": "Typical 10 mVrms temperature samples at selected DC, then initial tolerance and additional 15% engineering loss. Not lot/age qualification."
+    }
+  },
+  "nominal_divider_current": [
+    {
+      "rail_V": 3.6,
+      "previous_nominal_uA": 3.351439576261927,
+      "selected_nominal_uA": 16.742654475980455,
+      "added_uA": 13.391214899718527,
+      "added_mAh_per_day": 0.32138915759324466
+    },
+    {
+      "rail_V": 4.2,
+      "previous_nominal_uA": 3.910012838972248,
+      "selected_nominal_uA": 19.533096888643804,
+      "added_uA": 15.623084049671556,
+      "added_mAh_per_day": 0.37495401719211735
+    }
+  ],
+  "fault_pullup_current_note": {
+    "rail_V": 3.3,
+    "R16_plus_R20_nominal_max_uA": 660.0,
+    "scope": "Ohmic 3.3 V / 10 kohm for each pull-up while PG and VIO_ENABLE are clamped near zero; excludes MR/divider/IC draw. UVLO stops the modem but is not a zero-current pack disconnect. Protected-cell cutoff and recharge behavior remain required."
+  },
+  "unresolved": [
+    "Murata curves are typical and the 15% extra loss allowance is an engineering sensitivity, not a guaranteed aging or lot bound. Effective capacitance must be confirmed under assembled voltage, ripple, temperature and age.",
+    "TPS3808 delay scaling at the selected capacitances extrapolates the specified 180 nF timing range; lot/temperature delay and short-pulse recognition need measurement.",
+    "5 uA ENABLE/SENSE load and 1 uA source leak are aggregate circuit requirements pending direct assembled validation.",
+    "The 6 ohm hot Q1 estimate and 12 uF switched-domain capacitance bound need validation; J5 remains unused in this load definition.",
+    "The model does not establish ride-through under rapid rail collapse, charging recovery, actual cell impedance, RF, firmware behavior or ingress protection.",
+    "The optional 0.5% resistor-drift sensitivity is not a service-life guarantee.",
+    "R21 uses the 0.2 W pulse-proof series; actual board thermal conditions and reflow land acceptance remain manufacturing checks."
+  ],
+  "sequencing_exception": "Nordic permits VDD_GPIO to fall later when undefined GPIO states are acceptable; the strict-retention estimate is not an unconditional damage limit. See docs/power-sequence-followup.md.",
+  "scope": "Fresh-component tolerance plus independent TCR extremes over an engineering temperature range. Stable-rail step/recognized-fault assumptions. No proof for arbitrary ramps, transients or physical hardware.",
+  "inputs": {
+    "assembly/power-parts-r01/selection.json": "7bc13b1329df2c57ee2fb87f88be5da5de3c71c11b2ce131bdcfe6d86952594b",
+    "assembly/power-parts-r01/capacitor-curves.json": "3b330914438c762dba254db899874a09d318aaed266ae156fb48a53e5ed6b07b",
+    "assembly/power-parts-r01/manufacturer-sources.json": "cbf010d8bd37eea1b7093b7ece93398da1e1b9431992117f4e00bcdf30658a19",
+    "assembly/power-parts-r01/murata-catalog-extract.json": "104e5c2daa351f927b82c973e38e099e902470acdb312a946528899fafa657a6",
+    "scripts/check_power_parts.py": "80c98978d58625aa3b301bca57740894dd0b6505bf114ec2acdee830b56db422"
+  }
+}

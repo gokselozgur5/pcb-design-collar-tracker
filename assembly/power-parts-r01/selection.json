@@ -1,0 +1,183 @@
+{
+  "revision": "power-parts-r01",
+  "reviewed_date": "2026-10-25",
+  "status": "PROTOTYPE_CANDIDATES_NOT_PURCHASE_RELEASE",
+  "reference_temperature_C": 25,
+  "analysis_temperature_C": [
+    -40,
+    85
+  ],
+  "temperature_scope": "Electronics calculation range, not an approved battery/charging/product operating range.",
+  "resistors": {
+    "R1": {
+      "mpn": "RC0402FR-0722KL",
+      "ohm": 22000,
+      "initial_tolerance_fraction": 0.01,
+      "tcr_ppm_per_C": 100,
+      "height_max_mm": 0.4,
+      "manufacturer": "YAGEO",
+      "source_id": "RC0402FR-0722KL"
+    },
+    "R16": {
+      "mpn": "RC0402FR-0710KL",
+      "ohm": 10000,
+      "initial_tolerance_fraction": 0.01,
+      "tcr_ppm_per_C": 100,
+      "height_max_mm": 0.4,
+      "manufacturer": "YAGEO",
+      "source_id": "RC0402FR-0710KL"
+    },
+    "R17": {
+      "mpn": "RT0402BRD07200KL",
+      "ohm": 200000,
+      "initial_tolerance_fraction": 0.001,
+      "tcr_ppm_per_C": 25,
+      "height_max_mm": 0.35,
+      "manufacturer": "YAGEO",
+      "source_id": "RT0402BRD07200KL"
+    },
+    "R18": {
+      "mpn": "RT0402BRD0726K1L",
+      "ohm": 26100,
+      "initial_tolerance_fraction": 0.001,
+      "tcr_ppm_per_C": 25,
+      "height_max_mm": 0.35,
+      "manufacturer": "YAGEO",
+      "source_id": "RT0402BRD0726K1L"
+    },
+    "R19": {
+      "mpn": "RC0402FR-073M4L",
+      "ohm": 3400000,
+      "initial_tolerance_fraction": 0.01,
+      "tcr_ppm_per_C": 100,
+      "height_max_mm": 0.4,
+      "manufacturer": "YAGEO",
+      "source_id": "RC0402FR-073M4L"
+    },
+    "R20": {
+      "mpn": "RC0402FR-0710KL",
+      "ohm": 10000,
+      "initial_tolerance_fraction": 0.01,
+      "tcr_ppm_per_C": 100,
+      "height_max_mm": 0.4,
+      "manufacturer": "YAGEO",
+      "source_id": "RC0402FR-0710KL"
+    },
+    "R21": {
+      "mpn": "CRCW040222R0FKEDHP",
+      "ohm": 22,
+      "initial_tolerance_fraction": 0.01,
+      "tcr_ppm_per_C": 100,
+      "height_max_mm": 0.4,
+      "manufacturer": "Vishay",
+      "source_id": "vishay-crcw-hp-e3"
+    },
+    "R22": {
+      "mpn": "RC0402FR-071ML",
+      "ohm": 1000000,
+      "initial_tolerance_fraction": 0.01,
+      "tcr_ppm_per_C": 100,
+      "height_max_mm": 0.4,
+      "manufacturer": "YAGEO",
+      "source_id": "RC0402FR-071ML"
+    },
+    "R23": {
+      "mpn": "RC0402FR-07100KL",
+      "ohm": 100000,
+      "initial_tolerance_fraction": 0.01,
+      "tcr_ppm_per_C": 100,
+      "height_max_mm": 0.4,
+      "manufacturer": "YAGEO",
+      "source_id": "RC0402FR-07100KL"
+    }
+  },
+  "capacitors": {
+    "C9": {
+      "mpn": "GRM21BR71C105KA01L",
+      "nominal_nF": 1000,
+      "effective_nF": [
+        600,
+        1265
+      ],
+      "voltage_rating_V": 16,
+      "height_max_mm": 1.35,
+      "initial_tolerance_fraction": 0.1,
+      "dielectric": "X7R",
+      "curve_bias_V": 5.5
+    },
+    "C25": {
+      "mpn": "GRM21BR71C105KA01L",
+      "nominal_nF": 1000,
+      "effective_nF": [
+        600,
+        1265
+      ],
+      "voltage_rating_V": 16,
+      "height_max_mm": 1.35,
+      "initial_tolerance_fraction": 0.1,
+      "dielectric": "X7R",
+      "curve_bias_V": 1.23
+    },
+    "C26": {
+      "mpn": "GRM155R71C473KA01D",
+      "nominal_nF": 47,
+      "effective_nF": [
+        32,
+        60
+      ],
+      "voltage_rating_V": 16,
+      "height_max_mm": 0.55,
+      "initial_tolerance_fraction": 0.1,
+      "dielectric": "X7R",
+      "curve_bias_V": 1.23
+    }
+  },
+  "changes": {
+    "R17": {
+      "from": "1M /0.1%",
+      "to": "200k /0.1%"
+    },
+    "R18": {
+      "from": "130k /0.1%",
+      "to": "26.1k /0.1%"
+    },
+    "R19": {
+      "from": "16.9M /1%",
+      "to": "3.4M /1%"
+    },
+    "C25": {
+      "from": "680nF /25V X7R",
+      "to": "1uF /16V X7R"
+    }
+  },
+  "assumptions": {
+    "maximum_valid_rail_V": 5.5,
+    "enable_and_sense_load_max_uA": 5,
+    "enable_source_leak_max_uA": 1,
+    "u8_input_leak_abs_max_uA": 5,
+    "u6_reset_high_leak_max_uA": 0.3,
+    "u6_sense_leak_abs_max_nA": 25,
+    "u6_reset_vol_max_V": 0.4,
+    "reset_sink_test_mA": 1,
+    "fet_hot_rds_bound_ohm": 6,
+    "vio_cap_max_uF": 12,
+    "vio_initial_max_V": 1.9,
+    "ct_delay_scale": [
+      0.6,
+      1.4
+    ],
+    "extra_resistor_drift_sensitivity_fraction": 0.005,
+    "cap_extra_loss_sensitivity_fraction": 0.15,
+    "firmware_initial_vio_wait_s": 1,
+    "supervisor_mr_pullup_min_ohm": 70000
+  },
+  "unqualified": [
+    "Murata curves are typical and the 15% extra loss allowance is an engineering sensitivity, not a guaranteed aging or lot bound. Effective capacitance must be confirmed under assembled voltage, ripple, temperature and age.",
+    "TPS3808 delay scaling at the selected capacitances extrapolates the specified 180 nF timing range; lot/temperature delay and short-pulse recognition need measurement.",
+    "5 uA ENABLE/SENSE load and 1 uA source leak are aggregate circuit requirements pending direct assembled validation.",
+    "The 6 ohm hot Q1 estimate and 12 uF switched-domain capacitance bound need validation; J5 remains unused in this load definition.",
+    "The model does not establish ride-through under rapid rail collapse, charging recovery, actual cell impedance, RF, firmware behavior or ingress protection.",
+    "The optional 0.5% resistor-drift sensitivity is not a service-life guarantee.",
+    "R21 uses the 0.2 W pulse-proof series; actual board thermal conditions and reflow land acceptance remain manufacturing checks."
+  ]
+}
