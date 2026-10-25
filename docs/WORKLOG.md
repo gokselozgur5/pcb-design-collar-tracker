@@ -529,3 +529,34 @@ motion, actual pack/NTC attachment, retention/harness/dock, materials, firmware 
 factory/physical qualification remain open. No powered, RF or ingress test,
 supplier message, order, payment or account switch occurred. This is a conditional
 assembly prototype, not a working-device or IP68 release.
+
+## 2026-10-26 — Controlled battery request and r09 fit study
+
+Prepared CT-BAT-001-A, an English supplier enquiry and a dimensioned PDF for a
+complete protected pack with a cell-mounted SEMITEC sensor. No message has been
+sent: separate user authorization is pending. This is a request, not a selected
+EEMB part. Its 600mA continuous rating is engineering headroom. Nordic's typical
+TX tables average one 1ms subframe and describe additional microsecond peaks;
+neither those tables nor an invented reporting duty establishes the complete load.
+Recorded the specific PCM, size and charging limits of the reviewed alternatives.
+
+The requested 32 x 30.5 x 5.3mm body includes a requirement for service swelling
+confirmation. Its sensor/bond/cover stack fits a 33 x 31.5 x 6.2mm reservation.
+Raising the board, antennas, cables and shell by 0.4mm gives a rigid envelope of
+57.4 x 49.4 x 21.0mm and boot of 60.4 x 52.4 x 25.8mm. PCB, seal/contact geometry,
+all-green Gerber and prior review packages are unchanged.
+
+All eight pack screens, 85 component envelopes over four board thicknesses and
+34 shell checks pass their stated geometry conditions. Eight actual meshes are
+closed/oriented/connected. Current carrier and cable-guide intersections are
+empty; the old carrier produces 1.234334mm³ and undersized guides 4.399098mm³.
+Four regressions include the original board height failing the wider pack.
+Five CAD previews and the rendered supplier PDF were inspected. The 39-file
+checkpoint verifies with standard Python, and the full handoff includes it.
+
+No pack, adhesive construction, harness, retention or physical thermal behavior
+is approved by the fit study. Supplier response, controlled leads/strain relief,
+positive retention, dock, firmware and factory/physical qualification remain open.
+Continue independent retention/harness/dock work while the enquiry is pending;
+do not restart catalogue searches or repeat DFM on unchanged bytes. No order,
+payment, supplier message, account switch or physical test occurred.

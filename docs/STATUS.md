@@ -13,6 +13,12 @@ content is English. Run `python3 scripts/resume.py` before making another revisi
 [Two-page review](../release/r08-assembly-review/review.pdf) ·
 [Review bundle](../release/collar-tracker-r05l-r08-review.zip)
 
+Latest battery work: [CT-BAT-001-A request sheet](../assembly/pack-r03/request-sheet.pdf),
+[unsent supplier enquiry](../assembly/pack-r03/supplier-request.txt), and
+[r09 requested-pack fit study](../mechanical/swim-r09-pack-request/README.md).
+This study is not an approved battery substitution. Supplier-message authorization
+has been requested separately; no response or sending authorization is recorded yet.
+
 | Check | Current result |
 |---|---|
 | Board | 40 × 32mm; six Cu layers; 87 footprints |
@@ -24,7 +30,8 @@ content is English. Run `python3 scripts/resume.py` before making another revisi
 | Local routing | New charge nets and supply/sensor branches; local VIN escape rerouted |
 | Ground / returns | 109 physical GND pads have local via paths; 122 GND vias; two dedicated planes; 154/154 signal-via return screens |
 | JLC PCB DFM | Records `637366592129687553` / `637366801595977730`; same ZIP/rules; 29 rows; SMT off |
-| Mechanical r08 | 85 populated envelopes pass four thickness cases; eight closed meshes; current CAD intersections empty, old carrier and undersized cable guides rejected |
+| Preserved mechanical r08 | 85 populated envelopes pass four thickness cases; eight closed meshes; current CAD intersections empty, old carrier and undersized cable guides rejected |
+| Requested-pack study r09 | Same PCB; requested pack/NTC envelope fits with a 0.4mm height increase; no supplier pack approval |
 | Antenna candidates | Synzen CAPH SZK-C-3L30 LTE and ZETA SZK-C-0G04 GNSS; separate nominal 100mm cable assemblies and four internal lid guides |
 
 PCB SHA256: `241c84d6ba98793c37344e1e46ddc4918e7b05322ba87daea7c9a90ffb8379b3`.
@@ -45,15 +52,26 @@ evidence: that source grounded /CE and permitted 50°C charging with a direct
 candidate sensor; no protected pack or factory cell attachment is selected.
 The reviewed EEMB PCM supports 350mA continuous despite its 700mA bare-cell rating.
 
-**Next local work:** bound the modem's actual pulse and duty-cycle load, then select
-a protected pack and NTC attachment against complete-pack protection, voltage and
-charging limits. The 600mA continuous screen was engineering headroom, not a Nordic
-continuous-load requirement; Nordic describes approximately 500mA peak at 3.7V.
-Do not reject a small pack solely for missing that continuous-current screen, or
-accept it from average current alone. The [selection review](../assembly/pack-antenna-r02/README.md)
-records the primary sources and conditional candidates. Close cable end-datum,
-length-tolerance and feed-bond definitions, then harness/dock/positive PCB retention,
-material/seal/fastener definitions and firmware/factory test. Do not
+**Next:** obtain a controlled supplier response to [CT-BAT-001-A](../assembly/pack-r03/README.md)
+before selecting a complete protected pack. The requested body is 32 x 30.5 x 5.3mm,
+including PCM, insulation and service swelling; the supplier must confirm this bound.
+The request asks for 600mA continuous as engineering headroom, not a Nordic requirement.
+Nordic's typical TX tables average a 1ms TX subframe and explicitly exclude higher
+microsecond peaks; neither those averages nor a reporting interval prove the load.
+The old EEMB 350mA PCM is still unapproved. The Jauch and VARTA alternatives and their
+specific charge/size constraints are recorded; do not restart an open-ended catalogue
+search or silently promote the request into a supplier specification.
+
+The r09 study includes a flat NTC and bond/cover budgets in a 33 x 31.5 x 6.2mm
+assembly envelope. Board/antennas/cables and shell height increase by 0.4mm;
+rigid size is 57.4 x 49.4 x 21.0mm, boot 60.4 x 52.4 x 25.8mm. Contact/seal geometry
+and the r05l PCB are unchanged. The original board height fails the wider-pack
+clearance control. No supplier part, wire route, adhesive strength or physical
+thermal result is approved by this fit calculation.
+
+**Independent local work can continue:** positive PCB/pack retention, controlled
+harness and dock construction, cable tolerance/opening-motion definitions, then
+firmware and factory tests. Do not
 reroute or repeat DFM without a real source change. For a PCB edit, create a
 successor and rerun native/export/two actual supplier checks.
 
@@ -67,13 +85,13 @@ Supplier procurement, CPL rotations, SMT/reflow, actual stack/impedance and RF
 qualification remain open. A conditional calculation is not an electrical release.
 
 IP68 swimming/dust resistance is the design target; 2m fresh water / 60 minutes
-and magnetic charging remain engineering assumptions. r08 retains the r07 U12
+and magnetic charging remain engineering assumptions. The preserved r08 retains the r07 U12
 carrier relief and shifts neither the PCB nor the contact/seal geometry. The taller
 shell accommodates the two cable layers: rigid envelope 57.4 × 49.4 × 20.6mm,
 excluding the 1.3mm docking key; boot 60.4 × 52.4 × 25.4mm. A 20mm M2 screw
 candidate and blind boot pockets replace the former length assumption. Exact
 fastener tolerance, torque, clip strength and lid-opening motion are unqualified.
-The battery remains a 34 × 23.5 × 5.8mm reservation; the antennas have sourced
+Its battery remains a 34 × 23.5 × 5.8mm reservation; the antennas have sourced
 candidate dimensions with explicitly provisional cable/placement allowances.
 No physical water/dust, powered or RF result exists. This is not yet a complete
 working-PCBA order package.

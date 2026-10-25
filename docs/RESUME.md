@@ -54,10 +54,18 @@ longer the active circuit. The new temperature model has explicit full-curve,
 leakage and cell/sensor coupling assumptions. Startup, brownout, low-cell recovery,
 sensor insertion and physical thermal performance still need bench qualification.
 
-Next: bound actual peak/duty-cycle load and select the protected pack/NTC attachment
-against complete pack/PCM voltage, protection and charge limits. The former 600mA
-continuous screen is engineering headroom, not the Nordic requirement. See
-`assembly/pack-antenna-r02/README.md` for the manufacturer sources and open choices.
+Next: use `assembly/pack-r03/README.md` and its CT-BAT-001-A supplier request.
+The proposed email to EEMB and dimensioned PDF are ready, but have not been sent.
+Separate user authorization to send was requested; do not infer it from elapsed
+time or from this handoff. No supplier response or battery approval exists.
+The request's 600mA continuous rating is engineering headroom, not Nordic's
+continuous demand. The PC3 source tables describe typical 1ms TX-subframe averages
+and additional microsecond peaks, not a guaranteed reporting-cycle load profile.
+The reviewed EEMB 350mA PCM is not accepted by the new geometry study. Larger
+Jauch/VARTA alternatives have explicit size/charge limitations in the review.
+Proceed independently with positive retention and controlled harness/dock details
+while awaiting a supplier response. Reconcile a returned specification against
+voltage, current, protection/recovery, NTC and in-service dimensions before selection.
 CAPH/ZETA are now prototype antenna candidates; cable end datums/tolerance fit,
 feed bond and clip strength remain open. Follow with harness/dock, positive
 retention, seal/material/fastener definitions and firmware/factory test.
@@ -71,9 +79,10 @@ python3 -m unittest discover -s tests -p test_charge_r05l.py -v
 python3 scripts/verify_handoff.py
 python3 scripts/verify_antenna_candidate.py
 python3 scripts/package_antenna_review.py --verify
+python3 scripts/verify_pack_request.py
 ```
 
-The current mechanical source is `mechanical/swim-r08-antennas/`. It retains the
+The preserved antenna mechanical source is `mechanical/swim-r08-antennas/`. It retains the
 r07 U12 relief and support shift, adds two cable routes and four internal lid
 guides, and raises the rigid shell plus lid to 20.6mm. Its 85 populated envelopes
 pass four thickness cases. Eight meshes pass integrity checks; both the original
@@ -81,6 +90,24 @@ carrier and deliberately undersized cable channels fail the CAD controls. The
 initial and widened-straight GNSS guide failures are preserved under `evidence/`;
 the final guide has a curved channel. Pack, cable tolerances, retention and
 physical tests remain unqualified. All older models and packages are preserved.
+
+The latest **requested-pack study** is `mechanical/swim-r09-pack-request/`.
+It includes the 32 x 30.5 x 5.3mm requested pack body, a flat SEMITEC sensor and
+explicit tape budgets. The complete reservation is 33 x 31.5 x 6.2mm. Raising
+the board, antenna routes and shell by 0.4mm gives a 57.4 x 49.4 x 21.0mm rigid
+enclosure. This is an unapproved supplier request, not a purchasable complete pack.
+J4 pinout is verified against the native r05l netlist; lead/strain-relief drawings,
+service swelling, attachment and thermal response remain open. Do not substitute
+the existing EEMB PCM or call the entire device ready to order.
+
+```sh
+.venv-dfm/bin/python -m unittest discover -s tests -p test_pack_request.py -v
+python3 scripts/verify_pack_request.py
+```
+
+Only regenerate its CAD deliberately using `scripts/export_pack_enclosure.py`.
+The command also checks mesh integrity and actual CAD intersections; it takes
+several minutes. Read-only verification does not need OpenSCAD or the geometry venv.
 
 Saved native files are authoritative. Do not rerun one-shot seed/routing scripts
 against an existing target. Use a successor for further circuit/PCB edits and

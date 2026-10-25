@@ -38,6 +38,12 @@ CAD interference controls are checked. Cable tolerances and assembly forces rema
 unqualified. IP68 is a design target with provisional 2m fresh-water / 60-minute
 conditions; no physical ingress test is claimed.
 
+The latest [battery request](assembly/pack-r03/README.md) has a
+[dimensioned PDF](assembly/pack-r03/request-sheet.pdf) and an unsent supplier enquiry.
+Its [r09 fit study](mechanical/swim-r09-pack-request/README.md) includes the pack and
+temperature-sensor stack with a 0.4mm height increase. This remains a supplier
+request: the existing EEMB 350mA PCM is not approved, and no complete pack is selected.
+
 [STATUS](docs/STATUS.md) records the exact source and next action. The earlier r05k,
 r04i and all prior tested files remain preserved. Upload only the Gerber ZIP to PCB
 DFM; the outer review archive also contains native CAD, assembly candidates and reports.
