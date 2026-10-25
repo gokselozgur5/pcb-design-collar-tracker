@@ -10,8 +10,11 @@ comfort across dog sizes and coat types still need physical validation.
 return-via screen gaps and a clear projected nano-SIM entry lane. eSIM is deferred.
 
 **Electrical release is on hold.** The [source-verified power review](evidence/power-review-r04i/README.md)
-identifies open undervoltage, GPIO sequencing and battery-ADC off-state paths.
-PCB DFM does not test those behaviors. The next circuit revision is still required.
+identifies undervoltage, GPIO sequencing and battery-ADC off-state findings in r04i.
+The separate [r05 supervised-power candidate](experiments/power-r05-supervised/README.md)
+implements the proposed circuit changes. Its schematic passes ERC, but its PCB
+still has 23 open connections and four return-via screen gaps. Conditional timing
+calculations are not powered qualification. **No r05 Gerber or JLC result exists.**
 
 The [swimming enclosure prototype](mechanical/swim-r02-fit/README.md) adds a sealed lid,
 charging-contact seals and collar mount. Its r02 revision checks component heights
@@ -21,7 +24,7 @@ remain open. [STATUS](docs/STATUS.md) records the exact evidence and next action
 
 [Design review PDF](mechanical/swim-r02-fit/review.pdf) ·
 [Complete review bundle](release/collar-tracker-r04i-swim-r02-fit-review.zip) ·
-[Current Gerber ZIP](experiments/paul-nanosim-r04i-sim-access-40x32/evidence/collar-tracker-04i-final-40x32-dfm.zip) ·
+[Tested r04i Gerber ZIP](experiments/paul-nanosim-r04i-sim-access-40x32/evidence/collar-tracker-04i-final-40x32-dfm.zip) ·
 [JLC report 1](experiments/paul-nanosim-r04i-sim-access-40x32/evidence/jlc-check1/report.pdf) ·
 [JLC report 2](experiments/paul-nanosim-r04i-sim-access-40x32/evidence/jlc-check2/report.pdf)
 

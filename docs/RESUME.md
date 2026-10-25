@@ -41,17 +41,40 @@ browser normally if needed; no profile or credentials are distributed in Git.
 
 ## Working commands
 
-Continue from `experiments/paul-nanosim-r04i-sim-access-40x32/hardware/`.
-The final r04i PCB and its ZIP passed native checks and two actual JLC analyses;
-read STATUS and `evidence/routing-checkpoint.json` for the exact identities.
-Do not overwrite the tested source/package. Start a new revision for PCB changes.
+Continue from `experiments/power-r05-supervised/hardware/`. Read its README and
+`evidence/routing-checkpoint.json` before editing. The saved native board has
+23 non-GND open connections, zero other DRC violations/parity mismatches and four
+return-via screen gaps. Its 71-part schematic and seven regressions are checked,
+but the circuit remains electrically unqualified. There is no r05 Gerber/JLC result.
 
-The immediate unfinished work is the source-verified power review in
-`evidence/power-review-r04i/README.md`: undervoltage/restart control, GPIO supply
-sequencing and the battery-ADC off-state path. Implement the successor schematic
-in a separate revision; preserve the tested r04i source and release bytes.
-`python3 scripts/audit_power_architecture.py` deliberately returns exit code 2
-while these findings remain open. It does not perform a powered test.
+The next implementation is signal-pin escape planning and local placement repair
+around the new power/gauge parts. Preserve working original signal routes,
+local grounds, exact RF and protected SIM copper. Do not rerun `build_power_r05.py`,
+the seed, or the existing placement plan over the current native source; they
+record earlier stages, not the final routing. Preserve current bytes in a new
+working revision before a new placement experiment.
+
+The r04i PCB and its two actual same-byte JLC passes remain immutable in
+`experiments/paul-nanosim-r04i-sim-access-40x32/`. Its power audit still reproduces
+the three original findings. Both `audit_power_architecture.py` and
+`check_power_r05.py` deliberately return exit code 2 for electrical HOLD.
+The latter verifies conditional model bounds; neither performs a powered test.
+
+```sh
+python3 scripts/check_power_r05.py
+python3 -m unittest discover -s tests -p test_power_r05.py -v
+LC_ALL=C scripts/kicad-python scripts/check_kicad_flip.py
+```
+
+The flip smoke check must print PASS **and exit 0**. Add a library-loaded footprint
+to its owning BOARD before flipping it. A prior unowned test crashed in native
+`BOARD::FlipLayer`; a separate earlier process crashed during Python finalization,
+whose exact cause remains unverified. Do not suppress crash dialogs globally or
+treat a failed process as successful because an output file exists.
+
+Always load a checkpoint beside its matching `.kicad_pro`: loading a bare build
+snapshot can substitute default rules and overwrite the real project's settings
+on save. The r05 placement helper now checks design-rule and net-class identity.
 
 Protected NTC pack and LTE/GNSS antenna selection proceeds alongside that circuit,
 followed by actual cable/clearance fit, dock/harness and positive PCB retention.

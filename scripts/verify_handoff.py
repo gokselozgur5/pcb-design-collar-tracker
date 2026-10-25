@@ -203,6 +203,58 @@ def verify_review_bundle(sidecar_path='release/collar-tracker-r04i-swim-r01-revi
     return {'files': len(names), 'zip_sha256': sidecar['zip_sha256'], 'result': 'PASS'}
 
 
+def verify_power_candidate():
+    """Verify the unfinished successor without treating its saved state as acceptance."""
+    trial = ROOT / 'experiments/power-r05-supervised'
+    checkpoint = json.loads((trial / 'evidence/routing-checkpoint.json').read_text())
+    names = [item['path'] for item in checkpoint['files']]
+    require(len(names) == len(set(names)), 'Duplicate r05 evidence paths')
+    for item in checkpoint['files']:
+        path = (trial / item['path']).resolve()
+        require(path.is_relative_to(trial), 'r05 evidence escapes trial')
+        require(path.stat().st_size == item['bytes'] and sha(path) == item['sha256'],
+                f'r05 checkpoint changed: {item["path"]}')
+    source = sha(trial / 'hardware/collar-tracker.kicad_pcb')
+    require(source == checkpoint['source_sha256'], 'r05 PCB identity mismatch')
+    drc = json.loads((trial / 'evidence/native-drc.json').read_text())
+    counts = {key: len(drc[key]) for key in ['violations', 'unconnected_items', 'schematic_parity']}
+    require(counts == checkpoint['native_drc'], 'r05 native counts differ from handoff')
+    require(not drc['violations'] and not drc['schematic_parity'], 'r05 saved geometry/parity failed')
+    require(drc['unconnected_items'], 'Routed successor needs an explicitly reviewed checkpoint')
+    baseline = ROOT / 'experiments/paul-nanosim-r04i-sim-access-40x32/hardware'
+    old = json.loads((baseline / 'collar-tracker.kicad_pro').read_text())
+    new = json.loads((trial / 'hardware/collar-tracker.kicad_pro').read_text())
+    require(old['board']['design_settings'] == new['board']['design_settings']
+            and old['net_settings'] == new['net_settings'], 'r05 inherited rules changed')
+    require(sha(baseline / 'collar-tracker.kicad_dru') == sha(trial / 'hardware/collar-tracker.kicad_dru'),
+            'r05 custom rules changed')
+    reports = {name: json.loads((trial / f'evidence/{name}.json').read_text())
+               for name in ['route-geometry', 'layout-inventory', 'attachment-review', 'esd-paths']}
+    require(all(report['source_sha256'] == source for report in reports.values()), 'Stale r05 geometry report')
+    inventory = reports['layout-inventory']
+    require(inventory['footprints'] == 71 and inventory['ground_pads'] == 97
+            and inventory['ground_vias'] == 100 and inventory['inner_tracks'] == 0
+            and inventory['rf_segments_preserved'], 'r05 layout invariants changed')
+    require(all(p['filled_outline_count'] == 1 and p['zone_nets'] == ['/GND']
+                and not p['ground_vias_outside'] for p in inventory['planes'].values()),
+            'r05 inner ground fill changed')
+    require(all(g['via'] is not None and g['local_path_mm'] is not None
+                for g in reports['attachment-review']['grounds']), 'r05 local ground attachment is missing')
+    require(len(reports['esd-paths']['paths']) == 4 and all(
+        p['connector_to_esd'] and p['esd_to_modem'] and not p['bypasses_esd_land']
+        for p in reports['esd-paths']['paths']), 'r05 SIM clamp topology changed')
+    require(not checkpoint['manufacturing_release'] and checkpoint['supplier_records'] == [],
+            'Unfinished r05 unexpectedly claims supplier/manufacturing acceptance')
+    from check_power_r05 import verify as verify_power
+    power = verify_power()
+    require(power['electrical_acceptance'] == 'HOLD' and not power['physical_test'],
+            'Unqualified circuit unexpectedly claims electrical acceptance')
+    return {'revision': 'r05-supervised', 'result': 'EVIDENCE_PASS', 'complete': False,
+            'source_sha256': source, 'files': len(names), 'native_drc': counts,
+            'return_screen_gaps': inventory['returns_outside_2mm'],
+            'electrical_acceptance': 'HOLD', 'supplier_runs': 0}
+
+
 def verify(include_review_bundle=True):
     for rel, expected in ANCHORS.items():
         require(sha(ROOT / rel) == expected, f'Baseline changed: {rel}')
@@ -269,10 +321,12 @@ def verify(include_review_bundle=True):
     populated_fit=verify_populated_fit(current['source_sha256'])
     from audit_power_architecture import verify_saved
     power_review = verify_saved()
+    power_candidate = verify_power_candidate()
     return {'baseline_revision': '0.3.4', 'evidence_files': len(manifest['files']),
             'supplier_records': sorted(records), 'result': 'PASS',
             'current':current, 'mechanical':mechanical, 'populated_fit':populated_fit,
             'power_review': power_review,
+            'power_candidate': power_candidate,
             'review_bundle':verify_review_bundle() if include_review_bundle else 'Rebuild in progress',
             'populated_review_bundle':verify_review_bundle('release/collar-tracker-r04i-swim-r02-fit-review.json') if include_review_bundle else 'Rebuild in progress',
             'scope': 'Saved PCB evidence, declared mechanical checks and artifact integrity. No new KiCad/JLC run or PCBA, powered, RF or ingress acceptance.'}

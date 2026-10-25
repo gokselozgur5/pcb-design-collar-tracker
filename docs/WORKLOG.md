@@ -242,3 +242,34 @@ Their evidence is dated; do not transfer an older pass to a newer source file.
 - Next: Implement the power successor and validate the intended local SIM/service,
   then continue pack/antenna/dock/harness/retention and physical qualification.
   No operator message, account change, purchase or powered test occurred.
+
+## 2026-10-25 — Implement the supervised-power candidate and diagnose native Python crashes
+
+- Event: Continued the power successor while answering the user's Gerber/progress
+  questions and reports of macOS Python crash dialogs.
+- Decision: Preserve r04i and mechanical releases. Build a separate source-bound
+  71-part candidate, retain electrical HOLD for unqualified timing/source behavior,
+  and check native failures instead of suppressing them. Keep working original
+  signal paths when the unrestricted router disrupts their pin exits.
+- Result: r05 adds adjustable rail supervision/hysteresis, restart and GPIO timing,
+  Schmitt/FET discharge and an I2C fuel gauge; the old ADC divider is removed.
+  Native ERC and seven regressions pass; 205 unrelated pin memberships remain.
+  The 40 × 32 mm PCB has zero geometry/parity violations and 23 non-GND opens.
+  All 97 physical GND pads / 94 unique terminals have local paths, 100 GND vias
+  join both continuous inner planes, and 24 RF segments are retained. Four of 99
+  non-GND return screens and passive/footprint/populated-fit reviews remain open.
+  All four SIM clamp paths remain present without bypass. Recovered 128 valid
+  original rail items, rejected 14 conflicts, and pruned three unused tails only
+  after native pad-island invariants passed. The current PCB SHA256 is
+  `78df6a520fc978e08451c94e6c6f475877f401867b55c0218802ee3434d193a2`.
+- Result: The latest crash stack identifies `BOARD::FlipLayer` from an unowned
+  footprint flip. Attaching the footprint first passes in an isolated process
+  with normal exit; no CAD file is written by that smoke check. An earlier
+  finalization crash has a distinct stack and remains unattributed. Preserved
+  release hashes remain valid. A bare-snapshot project-rule substitution was
+  also detected, discarded and guarded against in the placement helper.
+- Next: Reserve new signal-pin exits and revise their local placement in an
+  isolated successor; finish routing/returns and physical footprint/fit review
+  before a new Gerber and two actual same-byte JLC runs. Qualify source retention,
+  component bounds, selected cell/RF and factory/ingress behavior. No new JLC,
+  order, payment, supplier message, physical test or production approval occurred.

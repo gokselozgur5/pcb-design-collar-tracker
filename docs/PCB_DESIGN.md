@@ -252,6 +252,15 @@ First concrete next step:
 
 ## Lessons from this board
 
+- KiCad Python's `FOOTPRINT.SetLayerAndFlip` needs an owning `BOARD`. Attach a
+  library-loaded footprint with `board.Add(footprint)` before flipping it. An
+  unowned test object crashed in `BOARD::FlipLayer` on KiCad 10.0.7; attaching
+  it first completed normally. Treat a native crash as a failed operation,
+  inspect its cause and validate saved-file integrity before continuing.
+  `scripts/check_kicad_flip.py` exercises that ownership order without saving CAD;
+  its process must also exit normally. A separate finalization crash has not been
+  attributed to this cause.
+
 - Remembering Paul's GIMP review is not the same as applying it to this board.
   Review each new design against its actual source.
 - Two copper pours do not prove two uninterrupted ground references. Inspect
@@ -270,6 +279,10 @@ First concrete next step:
 - Preserve working remote pin escapes during local placement changes. Removing
   whole nets can let later routes block fine-pitch pins that were already usable.
   Reserve nearby exits together before routing long connections.
+- Placement must reserve signal escapes as well as local GND connections. A
+  courtyard/copper-clear part can still have pins trapped between fixed routes.
+  Retain unaffected rail geometry where changed pad nets and new lands permit it;
+  blanket power-net removal can unnecessarily destroy usable routing.
 - Test a suspected connectivity API limitation before changing the router around
   it. KiCad's recursive track connectivity already reached vias in this board;
   an initial one-step query was insufficient evidence of a missing connection.
@@ -294,7 +307,11 @@ not a growing diary inside this guide.
   split real junctions and check modeled connectors against existing copper.
   Validate the transfer with an isolated no-route SES round-trip and native DRC.
 - Run native DRC beside the matching project and schematic. Checking a copied
-  board without its project can silently use different rules.
+  board without its project can silently use different rules. This also affects
+  `LoadBoard`/`SaveBoard`: loading a bare snapshot and saving it at the real project
+  path can write default rules into that project. Restore a checkpoint at its
+  matching project path before loading; compare design rules and net classes
+  before and after mutations. A report produced with substituted rules is invalid.
 - A dangling track may feed a live branch at its midpoint. Trim only the unused
   tail, then recheck pin connectivity; deleting the whole track can break a net.
 - Grow the board in a separate experiment when measured routing warrants it.

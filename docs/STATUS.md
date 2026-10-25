@@ -1,7 +1,8 @@
 # Current state — 2026-10-25
 
 **r04i PCB: native-clean and two actual JLC runs at 0 Danger / 0 Warning.**
-**Electrical release: HOLD; three source-verified power-domain findings remain open.**
+**Active r05: circuit implemented; PCB has 23 open connections and four return-screen gaps.**
+**Electrical release: HOLD; the proposed repair still needs source/bench qualification.**
 **Swimming enclosure: engineering prototype under review; IP68 is not qualified.**
 
 Repository: [gokselozgur5/pcb-design-collar-tracker](https://github.com/gokselozgur5/pcb-design-collar-tracker).
@@ -14,7 +15,45 @@ Bundle SHA256: `ea960e01f39e7b31aef930359a82b7b360e9e6c4a1fb232dad78c8d7f7032206
 `python3 scripts/verify_handoff.py` verifies the saved PCB, mechanical checks and
 every bundled file against the checkout; it performs no new supplier/physical test.
 
-## Current PCB
+## Active r05 circuit and layout
+
+Continue from `experiments/power-r05-supervised/hardware/`, following its
+[review and limits](../experiments/power-r05-supervised/README.md).
+PCB SHA256: `78df6a520fc978e08451c94e6c6f475877f401867b55c0218802ee3434d193a2`.
+The saved native source is authoritative; do not rerun the seed over it.
+
+The 71-part candidate adds rail supervision/restart hysteresis, GPIO startup and
+shutdown sequencing, and an I2C battery gauge in place of the continuously
+connected ADC divider. Native ERC is clear; 205 unrelated original pin memberships
+remain unchanged. Seven regressions pass. The timing model explicitly retains
+unqualified capacitor, leakage, switching and source-retention assumptions.
+Electrical HOLD remains: abrupt source collapse can outrun the sequence.
+
+| Current r05 check | Result |
+|---|---|
+| Outline / layers | 40 × 32 × 0.8 mm; four copper layers |
+| Native DRC / parity | Zero geometry violations or parity mismatches; **23 non-GND open connections** |
+| Ground | 97 physical GND pads, 100 GND vias; both continuous inner planes contain every GND via |
+| Local attachments | All 94 unique GND terminals have local track paths; duplicated connector ground pads account for the physical count |
+| Returns / RF | Four of 99 non-GND vias exceed the inherited 2 mm screen; 24 original RF segments preserved |
+| SIM topology | All four paths still pass through their clamp land; new populated access/fit review is pending |
+| Supplier / mechanical | No r05 Gerber or JLC run; r04i/r02 populated-fit results do not transfer |
+
+The first unrestricted signal repair left old fine-pitch interfaces disconnected.
+That result was preserved and superseded. The current board restores 128 still-clear
+original rail items and retains working original signal routes. Three unused rail
+tails were removed only after checking that affected pad islands stayed identical.
+The remaining failures cluster around new U6/U7/U9/Q1 and their passives: clearance
+and a short GND exit alone did not ensure access for the other pins.
+
+**Next:** reserve signal exits and revise the affected new placements in an isolated
+successor while preserving working signal, RF, SIM and local GND geometry. Finish
+the 23 connections, then the four return gaps and power/passive/access/footprint
+reviews. Refresh the 71-part enclosure fit before producing final Gerbers and
+obtaining two fresh unchanged-rule JLC analyses. Do not repeat an unchanged failed
+search or label this checkpoint routed/all-green.
+
+## Preserved tested PCB
 
 Source: `experiments/paul-nanosim-r04i-sim-access-40x32/hardware/`.
 PCB SHA256: `f4be0288708733aaa6092a703ffa1bfebb3dc059fd21112a8cfed94028acc3b0`.
@@ -103,10 +142,9 @@ still represent reservations. Dock electronics, harness routing/strain relief,
 positive PCB retention, material/seal grades, actual lid fasteners and torque remain
 open. No physical ingress, powered or RF result exists.
 
-Next: resolve the power review in a separate schematic revision, including
-undervoltage/restart behavior, GPIO sequencing and off-state feed paths, before
-routing a successor. Select the protected NTC pack and LTE/GNSS antennas alongside
-that circuit; fit their feeds/cables, then finish dock/harness and retention.
+Next: finish the active r05 placement/routing and qualify its conditional power
+behavior. Select the protected NTC pack and LTE/GNSS antennas alongside that
+circuit; fit their feeds/cables, then finish dock/harness and retention.
 Before tooling or full PCBA release, complete actual
 assembly/RF/power review and whole-assembly dust/immersion testing. Türkiye operator
 service and moving-animal coverage remain open. Factory assembly/programming/test
