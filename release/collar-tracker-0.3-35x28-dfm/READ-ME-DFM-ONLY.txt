@@ -1,0 +1,35 @@
+COLLAR TRACKER 0.3 — 35 x 28 mm GEOMETRY TRIAL — DFM REVIEW ONLY
+
+Four copper layers; proposed thickness 0.8 mm. 53 footprints.
+F.Cu / In1.Cu / In2.Cu / B.Cu. In1.Cu is reserved for GND, with no signal
+tracks. In2.Cu contains signal/power tracks and GND fill, not a solid plane.
+Minimum track width 0.20 mm; power tracks range 0.20–0.25 mm.
+Ground fill minimum width is also set to 0.20 mm.
+Through vias: 0.60 mm copper / 0.20 mm drill, tented; 0.20 mm nominal annulus.
+Different-net copper clearance: 0.20 mm, except fixed same-package pad
+spacing at 0.15 mm. Component pad shapes/nets/mask apertures match 0.2.1.
+The explicit package-pad exception applies to pads only, never tracks/vias.
+No global DRC exclusions or severity downgrades. 43 library-difference
+warnings remain for the inherited local mask/silk footprint modifications.
+Independent local pad-box-to-via, pad-box-to-foreign-track, via-to-via,
+mask-bridge and legend/drill geometry checks accompany the native DRC.
+
+This package HAS NOT been run through JLCDFM. The 0.2.1 report's 2 Danger /
+306 Warning counts belong to the previous 30 x 22 board. Local checks do not
+establish that all proprietary supplier warnings are resolved.
+
+OPEN BEFORE FABRICATION:
+- Battery/NTC, peak currents, charging-input/ESD protection, hardware UVLO,
+  nRF9151 VDD_GPIO sequencing and power integrity.
+- J6 is an external SIM interface. No eSIM IC/profile or Turkish operator
+  provisioning has been selected/verified.
+- J5 is a digital expansion interface, not an installed heart-rate sensor.
+- LTE/GNSS antenna geometry, RF reference/return, 50-ohm stackup, matching
+  and operation near the animal's body; no RF performance test.
+- nRF land-pattern pin-1 difference vs the examined Nordic DK, stencil,
+  intentional shared U.FL mask apertures and assembly review.
+- Enclosure/battery/antenna integration. The old 38 x 30 mm mockup used a
+  30 x 22 mm PCB and has not been updated for this board.
+
+No supplier upload, order, assembly, or physical/powered test was performed.
+Native source is in experiments/35x28-in2/hardware. Old packages preserved.

@@ -1,0 +1,134 @@
+{
+  "scope": "Local native copper/legend geometry only. Not supplier DFM acceptance.",
+  "pcb_sha256": "f037206f7d293ddac074ac9a347117395e3c3533a46475d3519d6119c83108d6",
+  "size_mm": [
+    35,
+    28,
+    0.8
+  ],
+  "footprints": 53,
+  "tracks": 691,
+  "vias": 65,
+  "minimum_track_width_mm": 0.2,
+  "inner_signal_segments": 0,
+  "reserved_ground_plane_signal_segments": 0,
+  "via_sizes_mm": [
+    [
+      0.6,
+      0.2
+    ]
+  ],
+  "minimum_via_annulus_mm": 0.19999999999999998,
+  "minimum_clearance_mm": {
+    "pad_via_actual": 0.2038999999999902,
+    "pad_via_bbox": 0.20199999999999818,
+    "different_net_pad_track_bbox": 0.20000000000000284,
+    "via_via_all_nets": 0.20753406747366865
+  },
+  "pad_via_under_020": [],
+  "pad_track_bbox_under_020": [],
+  "via_via_under_020": [],
+  "fixed_pad_spacing_under_020": [
+    {
+      "a": "C5.1",
+      "b": "C5.2",
+      "same_package": true,
+      "mm": 0.18000000000000682
+    },
+    {
+      "a": "C2.1",
+      "b": "C2.2",
+      "same_package": true,
+      "mm": 0.1799999999999926
+    },
+    {
+      "a": "C1.1",
+      "b": "C1.2",
+      "same_package": true,
+      "mm": 0.18000000000000682
+    },
+    {
+      "a": "U5.1",
+      "b": "U5.2",
+      "same_package": true,
+      "mm": 0.15000000000000568
+    },
+    {
+      "a": "U5.1",
+      "b": "U5.12",
+      "same_package": true,
+      "mm": 0.14999999999997726
+    },
+    {
+      "a": "U5.3",
+      "b": "U5.4",
+      "same_package": true,
+      "mm": 0.15000000000000568
+    },
+    {
+      "a": "U5.4",
+      "b": "U5.5",
+      "same_package": true,
+      "mm": 0.14999999999997726
+    },
+    {
+      "a": "U5.5",
+      "b": "U5.6",
+      "same_package": true,
+      "mm": 0.14999999999997726
+    },
+    {
+      "a": "U5.8",
+      "b": "U5.9",
+      "same_package": true,
+      "mm": 0.15000000000000568
+    },
+    {
+      "a": "U5.10",
+      "b": "U5.11",
+      "same_package": true,
+      "mm": 0.14999999999997726
+    },
+    {
+      "a": "U5.11",
+      "b": "U5.12",
+      "same_package": true,
+      "mm": 0.14999999999997726
+    },
+    {
+      "a": "C8.1",
+      "b": "C8.2",
+      "same_package": true,
+      "mm": 0.18000000000000682
+    }
+  ],
+  "mask_bridge_under_010": [],
+  "silks": [
+    {
+      "text": "1V8 SWD",
+      "pad_mask_clearance_mm": 0.31588899999999853,
+      "hole_clearance_mm": 0.0,
+      "inside_edge_margin_03": true
+    },
+    {
+      "text": "SIM EXT",
+      "pad_mask_clearance_mm": 0.8504350912238976,
+      "hole_clearance_mm": 0.0,
+      "inside_edge_margin_03": true
+    },
+    {
+      "text": "COLLAR 0.3 TEST",
+      "pad_mask_clearance_mm": 3.25573907879316,
+      "hole_clearance_mm": 0.7866190000000017,
+      "inside_edge_margin_03": true
+    },
+    {
+      "text": "HEALTH EXT",
+      "pad_mask_clearance_mm": 0.3155810000000087,
+      "hole_clearance_mm": 0.0,
+      "inside_edge_margin_03": true
+    }
+  ],
+  "pad_invariant_failures": [],
+  "local_gate_passed": false
+}

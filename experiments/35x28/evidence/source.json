@@ -1,0 +1,12 @@
+{
+  "baseline": "/Users/gok/codex/projects/collar-tracker/hardware/collar-tracker.kicad_pcb",
+  "baseline_sha256": "61d6f37123e53f4f5284e3da7178212036f7e0b26254874c8b8d93de76ec7929",
+  "size_mm": [
+    35,
+    28,
+    0.8
+  ],
+  "footprints": 53,
+  "nets": 101,
+  "note": "No electrical, RF or assembly qualification"
+}

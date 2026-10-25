@@ -1,0 +1,213 @@
+{
+  "scope": "Local native copper/legend geometry only. Not supplier DFM acceptance.",
+  "pcb_sha256": "3feba190c586448299aecde9e4d5eec250dd848a8556077af9962a628f145c64",
+  "size_mm": [
+    35,
+    28,
+    0.8
+  ],
+  "footprints": 53,
+  "tracks": 796,
+  "vias": 56,
+  "minimum_track_width_mm": 0.2,
+  "inner_signal_segments": 0,
+  "via_sizes_mm": [
+    [
+      0.6,
+      0.2
+    ]
+  ],
+  "minimum_via_annulus_mm": 0.19999999999999998,
+  "minimum_clearance_mm": {
+    "pad_via_actual": 0.20250000000000057,
+    "pad_via_bbox": 0.0583246771307041,
+    "different_net_pad_track_bbox": 0.06598907424285451,
+    "via_via_all_nets": 0.22620272213870374
+  },
+  "pad_via_under_020": [
+    {
+      "pad": "J6.2",
+      "pad_net": "/SIM_RST",
+      "via_net": "/CHG_STAT",
+      "via_id": "32fff1ca-511e-4ff2-bb55-95ce2438501f",
+      "via_pos": [
+        110.3605,
+        122.668
+      ],
+      "actual_mm": 0.22160014556939153,
+      "bbox_mm": 0.0583246771307041
+    },
+    {
+      "pad": "J6.3",
+      "pad_net": "/SIM_CLK",
+      "via_net": "/CHG_STAT",
+      "via_id": "32fff1ca-511e-4ff2-bb55-95ce2438501f",
+      "via_pos": [
+        110.3605,
+        122.668
+      ],
+      "actual_mm": 0.22796410660007074,
+      "bbox_mm": 0.06426340450632964
+    },
+    {
+      "pad": "J6.4",
+      "pad_net": "/SIM_IO",
+      "via_net": "/CHG_STAT",
+      "via_id": "31cf10f5-0325-4cc4-aee6-ece52a7587bc",
+      "via_pos": [
+        112.7952,
+        121.2198
+      ],
+      "actual_mm": 0.2418494355416452,
+      "bbox_mm": 0.10461631233381409
+    }
+  ],
+  "pad_track_bbox_under_020": [
+    {
+      "pad": "U2.1",
+      "track_id": "8f029fcc-9ef9-4e41-b07b-bc53fa4102e2",
+      "net": "/GNSS_LNA_EN",
+      "bbox_mm": 0.18298413383084008
+    },
+    {
+      "pad": "U2.5",
+      "track_id": "da2a97db-dc24-49fa-8147-8caa1dce9dd8",
+      "net": "/GND",
+      "bbox_mm": 0.19580000000000553
+    },
+    {
+      "pad": "U2.5",
+      "track_id": "e369922f-4db4-4712-a363-aa3df15da140",
+      "net": "/GND",
+      "bbox_mm": 0.19580000000000553
+    },
+    {
+      "pad": "U4.2",
+      "track_id": "c98bd7da-98a2-441c-b0c3-cc5832268c2f",
+      "net": "/VSYS",
+      "bbox_mm": 0.19540000000000646
+    },
+    {
+      "pad": "J4.2",
+      "track_id": "5b21a299-3b3c-4706-90ef-ecf6d031c2e4",
+      "net": "/BAT_NTC",
+      "bbox_mm": 0.11383686880540053
+    },
+    {
+      "pad": "J7.2",
+      "track_id": "1e950286-0666-45f3-b397-7ed48a372b0d",
+      "net": "/VIO_1V8",
+      "bbox_mm": 0.09052567955001922
+    },
+    {
+      "pad": "J5.2",
+      "track_id": "35113fa5-a453-404f-a8d1-721369c6ecff",
+      "net": "/I2C_SDA",
+      "bbox_mm": 0.06598907424285451
+    }
+  ],
+  "via_via_under_020": [],
+  "fixed_pad_spacing_under_020": [
+    {
+      "a": "C1.1",
+      "b": "C1.2",
+      "same_package": true,
+      "mm": 0.18000000000000682
+    },
+    {
+      "a": "U5.1",
+      "b": "U5.2",
+      "same_package": true,
+      "mm": 0.15000000000000568
+    },
+    {
+      "a": "U5.1",
+      "b": "U5.12",
+      "same_package": true,
+      "mm": 0.14999999999997726
+    },
+    {
+      "a": "U5.3",
+      "b": "U5.4",
+      "same_package": true,
+      "mm": 0.15000000000000568
+    },
+    {
+      "a": "U5.4",
+      "b": "U5.5",
+      "same_package": true,
+      "mm": 0.14999999999997726
+    },
+    {
+      "a": "U5.5",
+      "b": "U5.6",
+      "same_package": true,
+      "mm": 0.14999999999997726
+    },
+    {
+      "a": "U5.8",
+      "b": "U5.9",
+      "same_package": true,
+      "mm": 0.15000000000000568
+    },
+    {
+      "a": "U5.10",
+      "b": "U5.11",
+      "same_package": true,
+      "mm": 0.14999999999997726
+    },
+    {
+      "a": "U5.11",
+      "b": "U5.12",
+      "same_package": true,
+      "mm": 0.14999999999997726
+    },
+    {
+      "a": "C5.1",
+      "b": "C5.2",
+      "same_package": true,
+      "mm": 0.18000000000000682
+    },
+    {
+      "a": "C2.1",
+      "b": "C2.2",
+      "same_package": true,
+      "mm": 0.1799999999999926
+    },
+    {
+      "a": "C8.1",
+      "b": "C8.2",
+      "same_package": true,
+      "mm": 0.18000000000000682
+    }
+  ],
+  "mask_bridge_under_010": [],
+  "silks": [
+    {
+      "text": "1V8 SWD",
+      "pad_mask_clearance_mm": 0.31588899999999853,
+      "hole_clearance_mm": 0.458125098699015,
+      "inside_edge_margin_03": true
+    },
+    {
+      "text": "SIM EXT",
+      "pad_mask_clearance_mm": 0.8504350912238976,
+      "hole_clearance_mm": 0.0,
+      "inside_edge_margin_03": true
+    },
+    {
+      "text": "COLLAR 0.3 TEST",
+      "pad_mask_clearance_mm": 3.25573907879316,
+      "hole_clearance_mm": 1.462418999999997,
+      "inside_edge_margin_03": true
+    },
+    {
+      "text": "HEALTH EXT",
+      "pad_mask_clearance_mm": 0.3155810000000087,
+      "hole_clearance_mm": 0.0,
+      "inside_edge_margin_03": true
+    }
+  ],
+  "pad_invariant_failures": [],
+  "local_gate_passed": false
+}
