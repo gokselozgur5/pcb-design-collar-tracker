@@ -46,8 +46,9 @@ Central keepout: x = ±3.575, y = −2.15 to +2.70 mm. Six 1.20 × 1.00 mm
 wiper keepouts: x = −2.54, 0, +2.54; y = −4.15 and +3.45 mm.
 The builder expresses these as side-specific copper/pad/track/via keepouts.
 
-TI TPD4E1U06DCKR is the four-channel SIM ESD candidate (SC70-6). r04h uses two:
-D1 pin 1 clock, pin 3 reset, pin 6 SIM supply; D2 pin 3 data. Pin 2 is GND and
+TI TPD4E1U06DCKR is the four-channel SIM ESD candidate (SC70-6). r04i uses two:
+D1 pin 1 reset, pin 3 clock, pin 6 SIM supply; D2 pin 3 data.
+The preserved r04h mapping exchanged D1 pins 1 and 3. Pin 2 is GND and
 unused I/O channels are NC. The four protection channels are interchangeable
 under the [TI datasheet](https://www.ti.com/lit/ds/symlink/tpd4e1u06.pdf).
 The older single-D1 mapping belongs only to the preserved earlier sources.
@@ -64,22 +65,23 @@ is an activated M2M service. A physical nano-SIM does not turn nRF9151 into a
 general LTE Cat-1 modem or establish moving-dog coverage. Operator, plan and
 mobility behavior still need qualification. These are open product checks.
 
-## Existing candidate placement
+## Preserved r04h placement
 
-The active 40 × 32 mm source is `experiments/paul-nanosim-r04h-review-40x32/hardware/`.
+The pre-access-repair source is `experiments/paul-nanosim-r04h-review-40x32/hardware/`.
+The active r04i source and its changed positions are described below.
 The 35 × 28 mm r04e source is preserved separately.
 J6 (127,108), D1 (127,99.5), D2 (126.8,116.2), J5 (125,125), R14 (121.5,119),
 R15 (126,118) and C10 (130.6,100.35) are on B.Cu. Charger U3 is at (105,123)
 on F.Cu; C17 is at (106.2,120.25) on B.Cu, C18 at (103,120.85) and C19
 at (101.8,122.5) on F.Cu. J4 is at (106,126.05) on B.Cu.
-The current stage has zero open connections, violations, warnings or parity
+That saved stage has zero open connections, violations, warnings or parity
 findings. All 91 non-GND vias pass the 2 mm return screen. D1/C10 occupy the
 projected card-insertion corridor, so placement remains WIP. There is no new JLC
 result; the two actual 0/0 runs belong to r04g. See STATUS for exact identities.
 Power trunks are provisionally 0.4 mm, VIO 0.3 mm, signal minimum 0.2 mm;
 via target 0.60/0.20 mm. A width setting is not an ampacity or voltage-drop test.
 
-The initial r04 ground stage connected 81 GND pads through 68 vias. The current
+The initial r04 ground stage connected 81 GND pads through 68 vias. The saved
 r04h rework uses 90: its native inventory finds all 90 centers inside both saved
 inner fills, each with one filled outline and no inner tracks. U3.4 joins its own
 exposed GND pad. Perimeter nRF ground necks are 0.25 mm to leave clearance beside
@@ -104,8 +106,7 @@ Do not repeat that rotation. This establishes the drawing direction; final
 enclosure access, card removal and physical fit still need qualification.
 
 r04h shortened the electrical entry paths by moving D1/C10 in front of the socket,
-but their bodies now overlap the nominal card-entry projection. This is the next
-layout correction, not an accepted mechanical arrangement. GCT D6 page 2 gives
+but their bodies now overlap the nominal card-entry projection. That placement was rejected and corrected in r04i below. GCT D6 page 2 gives
 an 8.80 × 12.30 mm nano-SIM. On this board, the nominal entry strip is
 x=122.60…131.40, y=98…101.90 mm before tolerances. A courtyard pass does not
 prove that a moving card clears components. See `card-insertion-review.json`.
@@ -127,7 +128,7 @@ copper thickness and dynamic supply impedance must be distinguished from trace
 resistance alone. `scripts/audit_power_paths.py` estimates centerline copper and
 via-barrel resistance from a hash-matched geometry export; it excludes ferrite,
 IC, contact and cell impedance, pad spreading, transients and thermal behavior.
-The current r04h report includes the connected J5 supply branches and their remaining
+The preserved r04h report includes the connected J5 supply branches and their remaining
 power-review limits.
 The earlier snapshot's estimate is preserved as `power-path-routed1-review.json`.
 Rerun the audit after routing changes; complete power qualification remains open.
@@ -160,3 +161,26 @@ increases from 44.53 to 45.13 mΩ; C20-to-input and C21-to-output estimates rise
 about 0.56 and 0.54 mΩ. The auxiliary VIO path is 57.33 mm / 95.38 mΩ, with no
 accepted port load yet. These copper-only numbers do not close transient, thermal
 or full supply qualification.
+
+## r04i access repair and final DFM
+
+D1 is now at (133.4,99.7) and C10 at (136.4,100.35), both B.Cu, beside the
+card-entry lane. R12 moved to (120.5,99.9), F.Cu. Its two attachments are each
+0.2 mm at all three reviewed contours. The protected reset route crosses the
+entry corridor through a short outer-layer bridge; the SPI span moved to make
+room. The rejected 59.319 mm reset detour was never accepted. The unused old
+clock branch and its transition vias were removed after the new route connected.
+
+All four entry paths have no clamp bypass: supply 5.900 mm, reset 6.395 mm,
+clock 10.234 mm and data 1.471 mm, each with zero entry vias. These are geometry
+measurements; the longer side-routed clock entry still needs powered ESD review.
+The body/land projection checks 19 bottom-side parts with a 0.20 mm lateral margin
+and finds no card-lane overlap. Vertical clearance and physical insertion in the
+assembled enclosure remain separate checks; the proposed carrier lifts out for service.
+
+The final source has 82 locally connected GND pads, 91 GND vias in both continuous
+inner fills, 93 non-GND vias within 2 mm, no inner tracks and 24 unchanged RF
+segments. Native DRC/ERC/parity and connectivity pass. Main power-path estimates
+are unchanged; unknown loads, ferrite/cell/contact impedance and transients remain
+explicit limitations. Two fresh, same-byte JLC PCB reports are 0 Danger / 0 Warning.
+SMT was off. See STATUS and the r04i checkpoint for hashes and record identities.

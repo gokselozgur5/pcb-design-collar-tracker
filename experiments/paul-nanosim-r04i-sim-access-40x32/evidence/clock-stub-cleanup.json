@@ -1,0 +1,38 @@
+{
+  "parent_sha256": "cec92f95e3a130e781332182eb7cbc8f4d51bdc548198a1c5e850d9f40655161",
+  "source_sha256": "419d0a0beb54d410cd17db0b26907311e33e8a7c2561040a05d385d2baf4bcc8",
+  "removed": [
+    "037d9524-b208-481b-8852-545d619686fa",
+    "0977ea77-dc0a-431c-a863-3b09013e5b90",
+    "0a2c6162-71cd-4a98-b471-d62b2da787ce",
+    "10961a90-4e2d-4d23-b819-5b2a2350f159",
+    "1608535e-e5e1-492c-b8bd-c40fc6a8f868",
+    "1eb4c9b1-825a-4443-b86e-e24002ae059a",
+    "328b02fe-40b0-4050-a9c3-7eb65bdf7b7c",
+    "4fd21d92-8464-48a2-a5f9-4ad218c1a234",
+    "50dc7c32-c2a2-49e5-861a-49d3d48e7e3b",
+    "5c5e4168-8c16-4935-9aa6-ad35fc92a96c",
+    "5fc9bbc1-144c-41a2-9926-958923160d0d",
+    "713565a6-50b4-4a53-bdee-a2387963d295",
+    "79f2a37f-a1a9-43b6-aab9-872b6066225c",
+    "816f6bca-9d4d-4abc-8d5a-86e93e9f8093",
+    "b63703eb-8e0f-4140-a58f-005a0678629c",
+    "bba58362-41e3-4fd4-a1b6-f131d4ab4465",
+    "bcb92707-ed09-483a-87fb-e6b12e84d4d8",
+    "c5002ca8-ab41-444a-8112-5d3839acb82c",
+    "d2bd3387-1cdf-42b5-a2a3-14b7d9d78705",
+    "d2bdc963-b17e-481a-8084-8a78758e0ae7",
+    "dcbb9ff6-1bb2-4470-84c9-362b9d24177b",
+    "e44d81b4-4099-4757-9dc1-2143915f8e20",
+    "f2fddd47-f3cf-46e3-b7da-3be4a54b183f",
+    "f5389b30-0ff1-44d9-ad22-4e2fe136e7d7",
+    "f5e05f76-0357-436b-ba12-00fa4a648795",
+    "f6a4791f-0387-4387-99ea-f36f081bcd5c"
+  ],
+  "removed_track_mm": 26.106587393279515,
+  "join": [
+    129.2781,
+    117.1979
+  ],
+  "scope": "Remove the unused old clock branch, preserving the new protected route and the original modem path. Native acceptance follows."
+}

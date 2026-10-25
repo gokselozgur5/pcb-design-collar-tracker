@@ -1,0 +1,93 @@
+{
+  "source": "experiments/paul-nanosim-r04i-sim-access-40x32/hardware/collar-tracker.kicad_pcb",
+  "source_sha256": "419d0a0beb54d410cd17db0b26907311e33e8a7c2561040a05d385d2baf4bcc8",
+  "native_input_sha256": {
+    "collar-tracker.kicad_pro": "284b012adf394e1ce66fbc8664f97469f2c5cd49401707de5b49f2badf1686a8",
+    "collar-tracker.kicad_sch": "cb7bba3d7911e83a3507a38ab0f5061fddb0292492df89d7e3aedc90709eb698",
+    "collar-tracker.kicad_pcb": "419d0a0beb54d410cd17db0b26907311e33e8a7c2561040a05d385d2baf4bcc8",
+    "collar-tracker.kicad_dru": "e6523f50e6e0f12cea613a984946bb5d9be0111d7ed8610b04b246e8650651d0"
+  },
+  "schematic_sha256": "cb7bba3d7911e83a3507a38ab0f5061fddb0292492df89d7e3aedc90709eb698",
+  "zip": "experiments/paul-nanosim-r04i-sim-access-40x32/evidence/collar-tracker-04i-sim-access-40x32-dfm.zip",
+  "zip_sha256": "a8eceb371dc95c50428a288eef536a758a555eb3b36e49223b936a7b217abaee",
+  "zip_bytes": 109825,
+  "dimensions_mm": [
+    40.0,
+    32.0
+  ],
+  "native_drc": "drc.json",
+  "native_erc": "erc.json",
+  "files": [
+    {
+      "name": "collar-tracker-B_Cu.gbl",
+      "sha256": "0fd53e9a1309c3c1fa5b25d322e0ce4da93cd767049478b78bd674097e01d79f",
+      "bytes": 32301
+    },
+    {
+      "name": "collar-tracker-B_Mask.gbs",
+      "sha256": "d05a002666077fdd5887886cb09ec12c336265323f0b1d40a1e776622ff3586d",
+      "bytes": 4057
+    },
+    {
+      "name": "collar-tracker-B_Paste.gbp",
+      "sha256": "0f6ea0032dc3bb9725b2051a5574f7db18a2b37d7e3c77590dd273e77bb7bf48",
+      "bytes": 3246
+    },
+    {
+      "name": "collar-tracker-B_Silkscreen.gbo",
+      "sha256": "e3d13acf69860a0995ac49e561aea1344b0f9b74ad755b66c25b38df38cea8e1",
+      "bytes": 12356
+    },
+    {
+      "name": "collar-tracker-Edge_Cuts.gm1",
+      "sha256": "e1f592deee1b2b90aa7e6113f0c2b6aef5e5d1ff98f38324b216b1b43a1dfd56",
+      "bytes": 672
+    },
+    {
+      "name": "collar-tracker-F_Cu.gtl",
+      "sha256": "30eff4db38f67797af222ac31169d46750da021b9dd6d286cccc0bf0fed1e338",
+      "bytes": 50124
+    },
+    {
+      "name": "collar-tracker-F_Mask.gts",
+      "sha256": "baaeb04f81a3f511bde39127553e6ad2c09a19f05795a9628ee1fda64825d341",
+      "bytes": 53854
+    },
+    {
+      "name": "collar-tracker-F_Paste.gtp",
+      "sha256": "f003506fb1dd9bc052b727f8ce813148e65408e29f9e52b3b927ce8bafe8ae7b",
+      "bytes": 9525
+    },
+    {
+      "name": "collar-tracker-F_Silkscreen.gto",
+      "sha256": "edef12a74c793b6c37f7c7d7d6eb9c20418082d06d53ae83ba0effb91b8b485a",
+      "bytes": 55852
+    },
+    {
+      "name": "collar-tracker-In1_Cu.g1",
+      "sha256": "569930ac0e853fa0e1dc7f4b4085b855641a523d21d36091bd0b643f43bfeaac",
+      "bytes": 106795
+    },
+    {
+      "name": "collar-tracker-In2_Cu.g2",
+      "sha256": "d416fe4dc59ea30b7d88af2714b38ed20e630b8bc50a557849c54fe5e871a6b0",
+      "bytes": 106795
+    },
+    {
+      "name": "collar-tracker-NPTH.drl",
+      "sha256": "99839b3cf310098ad4ee8eb5df995007b5ff5518a4299723bdf19cf1151389a1",
+      "bytes": 264
+    },
+    {
+      "name": "collar-tracker-PTH.drl",
+      "sha256": "6424dfcdee45922703d098880366f7d07d5011b29a5bd7494236027e17f86810",
+      "bytes": 2540
+    },
+    {
+      "name": "collar-tracker-job.gbrjob",
+      "sha256": "3f9ee53201d50236c0b4f7c26015ec3f3136e9b291b73022887ac765eb374abb",
+      "bytes": 3669
+    }
+  ],
+  "scope": "Native-clean DFM input snapshot only. Supplier DFM and remaining layout reviews are not accepted by this export."
+}

@@ -1,0 +1,1034 @@
+{
+  "parts": [
+    {
+      "ref": "U1",
+      "symbol": "nRF9151-LACA",
+      "value": "nRF9151-LACA",
+      "x": 134.62,
+      "y": 100.33,
+      "nets": {
+        "14": "VDD_NRF",
+        "65": "VIO_1V8",
+        "24": "DEC0",
+        "10": "NRF_ENABLE",
+        "9": "NRF_RESET",
+        "3": "SWDCLK",
+        "4": "SWDIO",
+        "19": "SIM_1V8",
+        "16": "SIM_RST",
+        "18": "SIM_CLK",
+        "17": "SIM_IO",
+        "35": "LTE_RF",
+        "42": "GPS_RF",
+        "52": "COEX0",
+        "56": "I2C_SDA",
+        "57": "I2C_SCL",
+        "58": "ACC_INT",
+        "59": "HEALTH_INT",
+        "61": "SPI_SCK",
+        "62": "SPI_MOSI",
+        "63": "SPI_MISO",
+        "64": "HEALTH_CS",
+        "67": "HEALTH_RESET",
+        "68": "HEALTH_EN",
+        "69": "CHG_STAT",
+        "70": "CHG_FAULT",
+        "73": "BAT_ADC",
+        "1": "GND",
+        "7": "GND",
+        "13": "GND",
+        "15": "GND",
+        "20": "GND",
+        "25": "GND",
+        "30": "GND",
+        "34": "GND",
+        "36": "GND",
+        "38": "GND",
+        "39": "GND",
+        "40": "GND",
+        "41": "GND",
+        "43": "GND",
+        "46": "GND",
+        "51": "GND",
+        "55": "GND",
+        "60": "GND",
+        "66": "GND",
+        "71": "GND",
+        "76": "GND",
+        "105": "GND",
+        "106": "GND",
+        "107": "GND",
+        "108": "GND",
+        "109": "GND",
+        "110": "GND",
+        "111": "GND",
+        "112": "GND",
+        "113": "GND"
+      },
+      "footprint": "Collar033:U1_LGA_9151_12.1x11.1mm",
+      "mpn": "NRF9151-LACA-R",
+      "status": "candidate; LTE-M carrier unresolved",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "FB1",
+      "symbol": "L",
+      "value": "22R @100MHz",
+      "x": 250.19,
+      "y": 39.37,
+      "nets": {
+        "1": "VSYS",
+        "2": "VDD_NRF"
+      },
+      "footprint": "Collar033:FB1_L_0603_1608Metric",
+      "mpn": "BLM18SD220SN1",
+      "status": "Nordic recommended filter; verify rail impedance",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "C1",
+      "symbol": "C",
+      "value": "1uF /10V",
+      "x": 245.11,
+      "y": 54.61,
+      "nets": {
+        "1": "VSYS",
+        "2": "GND"
+      },
+      "footprint": "Collar033:C1_C_0201_0603Metric",
+      "mpn": "GRM033R61A105ME15",
+      "status": "candidate",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "C2",
+      "symbol": "C",
+      "value": "1uF /10V",
+      "x": 309.88,
+      "y": 54.61,
+      "nets": {
+        "1": "VSYS",
+        "2": "GND"
+      },
+      "footprint": "Collar033:C2_C_0201_0603Metric",
+      "mpn": "GRM033R61A105ME15",
+      "status": "candidate",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "C3",
+      "symbol": "C",
+      "value": "47uF /10V",
+      "x": 245.11,
+      "y": 68.58,
+      "nets": {
+        "1": "VDD_NRF",
+        "2": "GND"
+      },
+      "footprint": "Collar033:C3_C_0805_2012Metric",
+      "mpn": "GRM21BR61A476ME15",
+      "status": "candidate",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "C4",
+      "symbol": "C",
+      "value": "10uF /10V",
+      "x": 309.88,
+      "y": 68.58,
+      "nets": {
+        "1": "VDD_NRF",
+        "2": "GND"
+      },
+      "footprint": "Collar033:C4_C_0603_1608Metric",
+      "mpn": "GRM188R61A106MAAL",
+      "status": "candidate",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "C5",
+      "symbol": "C",
+      "value": "100nF",
+      "x": 245.11,
+      "y": 83.82,
+      "nets": {
+        "1": "VIO_1V8",
+        "2": "GND"
+      },
+      "footprint": "Collar033:C5_C_0201_0603Metric",
+      "mpn": "GRM033R60J104ME19",
+      "status": "candidate",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "C6",
+      "symbol": "C",
+      "value": "4.7uF",
+      "x": 309.88,
+      "y": 83.82,
+      "nets": {
+        "1": "VIO_1V8",
+        "2": "GND"
+      },
+      "footprint": "Collar033:C6_C_0402_1005Metric",
+      "mpn": "GRM155R60J475ME47",
+      "status": "candidate",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "C7",
+      "symbol": "C",
+      "value": "4.7uF",
+      "x": 245.11,
+      "y": 99.06,
+      "nets": {
+        "1": "DEC0",
+        "2": "GND"
+      },
+      "footprint": "Collar033:C7_C_0402_1005Metric",
+      "mpn": "GRM155R60J475ME47",
+      "status": "candidate",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "C8",
+      "symbol": "C",
+      "value": "100nF",
+      "x": 309.88,
+      "y": 99.06,
+      "nets": {
+        "1": "NRF_RESET",
+        "2": "GND"
+      },
+      "footprint": "Collar033:C8_C_0201_0603Metric",
+      "mpn": "",
+      "status": "candidate",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "R1",
+      "symbol": "R",
+      "value": "10k",
+      "x": 245.11,
+      "y": 114.3,
+      "nets": {
+        "1": "VDD_NRF",
+        "2": "NRF_ENABLE"
+      },
+      "footprint": "Collar033:R1_R_0402_1005Metric",
+      "mpn": "",
+      "status": "candidate",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "C9",
+      "symbol": "C",
+      "value": "100nF",
+      "x": 309.88,
+      "y": 114.3,
+      "nets": {
+        "1": "NRF_ENABLE",
+        "2": "GND"
+      },
+      "footprint": "Collar033:C9_C_0402_1005Metric",
+      "mpn": "",
+      "status": "candidate",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "R2",
+      "symbol": "R",
+      "value": "1k",
+      "x": 245.11,
+      "y": 129.54,
+      "nets": {
+        "1": "NRF_RESET",
+        "2": "DEBUG_RESET"
+      },
+      "footprint": "Collar033:R2_R_0402_1005Metric",
+      "mpn": "",
+      "status": "candidate",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "C10",
+      "symbol": "C",
+      "value": "100nF",
+      "x": 309.88,
+      "y": 129.54,
+      "nets": {
+        "1": "SIM_1V8",
+        "2": "GND"
+      },
+      "footprint": "Collar033:C10_C_0402_1005Metric",
+      "mpn": "",
+      "status": "SIM supply decoupling beside the upper contact row",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "R3",
+      "symbol": "R",
+      "value": "0R / tune",
+      "x": 425.45,
+      "y": 41.91,
+      "nets": {
+        "1": "LTE_RF",
+        "2": "LTE_ANT"
+      },
+      "footprint": "Collar033:R3_R_0402_1005Metric",
+      "mpn": "",
+      "status": "candidate",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "C11",
+      "symbol": "C",
+      "value": "DNP / tune",
+      "x": 490.22,
+      "y": 41.91,
+      "nets": {
+        "1": "LTE_RF",
+        "2": "GND"
+      },
+      "footprint": "Collar033:C11_C_0402_1005Metric",
+      "mpn": "",
+      "status": "candidate",
+      "dnp": true,
+      "onboard": true
+    },
+    {
+      "ref": "C12",
+      "symbol": "C",
+      "value": "DNP / tune",
+      "x": 490.22,
+      "y": 57.15,
+      "nets": {
+        "1": "LTE_ANT",
+        "2": "GND"
+      },
+      "footprint": "Collar033:C12_C_0402_1005Metric",
+      "mpn": "",
+      "status": "candidate",
+      "dnp": true,
+      "onboard": true
+    },
+    {
+      "ref": "J1",
+      "symbol": "Port2",
+      "value": "LTE antenna / 50R",
+      "x": 549.91,
+      "y": 44.45,
+      "nets": {
+        "1": "LTE_ANT",
+        "2": "GND"
+      },
+      "footprint": "Collar033:J1_U.FL_Hirose_U.FL-R-SMT-1_Vertical",
+      "mpn": "U.FL-R-SMT-1(10)",
+      "status": "bench connector; final FPC antenna TBD",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "U2",
+      "symbol": "SKY65943-11",
+      "value": "SKY65943-11",
+      "x": 435.61,
+      "y": 105.41,
+      "nets": {
+        "5": "GNSS_FEM_IN",
+        "3": "VIO_1V8",
+        "2": "GNSS_LNA_EN",
+        "10": "GNSS_FEM_OUT",
+        "7": "FILT_OUT",
+        "8": "AMP_IN",
+        "1": "GND",
+        "4": "GND",
+        "6": "GND",
+        "9": "GND",
+        "11": "GND"
+      },
+      "footprint": "Collar033:U2_SKY65943_DK10171",
+      "mpn": "SKY65943-11",
+      "status": "DFM layout candidate; electrical validation pending",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "L1",
+      "symbol": "L",
+      "value": "9.1nH",
+      "x": 505.46,
+      "y": 92.71,
+      "nets": {
+        "1": "FILT_OUT",
+        "2": "AMP_IN"
+      },
+      "footprint": "Collar033:L1_L_0402_1005Metric",
+      "mpn": "LQW15AN9N1J00D",
+      "status": "candidate",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "C13",
+      "symbol": "C",
+      "value": "39pF RF",
+      "x": 505.46,
+      "y": 111.76,
+      "nets": {
+        "1": "GNSS_FEM_OUT",
+        "2": "GPS_RF"
+      },
+      "footprint": "Collar033:C13_C_0402_1005Metric",
+      "mpn": "",
+      "status": "candidate",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "C14",
+      "symbol": "C",
+      "value": "39pF RF",
+      "x": 505.46,
+      "y": 130.81,
+      "nets": {
+        "1": "GNSS_ANT",
+        "2": "GNSS_FEM_IN"
+      },
+      "footprint": "Collar033:C14_C_0402_1005Metric",
+      "mpn": "",
+      "status": "candidate",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "J2",
+      "symbol": "Port2",
+      "value": "GNSS antenna / passive",
+      "x": 549.91,
+      "y": 144.78,
+      "nets": {
+        "1": "GNSS_ANT",
+        "2": "GND"
+      },
+      "footprint": "Collar033:J2_U.FL_Hirose_U.FL-R-SMT-1_Vertical",
+      "mpn": "U.FL-R-SMT-1(10)",
+      "status": "bench connector; final antenna/ESD TBD",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "R4",
+      "symbol": "R",
+      "value": "1k",
+      "x": 425.45,
+      "y": 144.78,
+      "nets": {
+        "1": "COEX0",
+        "2": "GNSS_LNA_EN"
+      },
+      "footprint": "Collar033:R4_R_0402_1005Metric",
+      "mpn": "",
+      "status": "candidate",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "R5",
+      "symbol": "R",
+      "value": "100k",
+      "x": 425.45,
+      "y": 160.02,
+      "nets": {
+        "1": "GNSS_LNA_EN",
+        "2": "GND"
+      },
+      "footprint": "Collar033:R5_R_0402_1005Metric",
+      "mpn": "",
+      "status": "candidate",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "C15",
+      "symbol": "C",
+      "value": "100nF",
+      "x": 490.22,
+      "y": 160.02,
+      "nets": {
+        "1": "VIO_1V8",
+        "2": "GND"
+      },
+      "footprint": "Collar033:C15_C_0402_1005Metric",
+      "mpn": "",
+      "status": "candidate",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "C16",
+      "symbol": "C",
+      "value": "1uF",
+      "x": 549.91,
+      "y": 176.53,
+      "nets": {
+        "1": "VIO_1V8",
+        "2": "GND"
+      },
+      "footprint": "Collar033:C16_C_0402_1005Metric",
+      "mpn": "",
+      "status": "candidate",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "J3",
+      "symbol": "Port2",
+      "value": "5V charging input",
+      "x": 43.18,
+      "y": 234.95,
+      "nets": {
+        "1": "VIN_5V",
+        "2": "GND"
+      },
+      "footprint": "Collar033:J3_Solder_1x02_P2.5mm",
+      "mpn": "",
+      "status": "onboard contact pads; external device/fixture not selected",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "U3",
+      "symbol": "BQ25185",
+      "value": "BQ25185DLHR",
+      "x": 107.95,
+      "y": 245.11,
+      "nets": {
+        "10": "VIN_5V",
+        "4": "GND",
+        "7": "ILIM_VSET",
+        "8": "ISET",
+        "6": "BAT_NTC",
+        "1": "VSYS",
+        "2": "VBAT",
+        "9": "CHG_STAT",
+        "3": "CHG_FAULT",
+        "5": "GND",
+        "11": "GND"
+      },
+      "footprint": "Collar033:U3_Texas_DLH0010A_WSON-10-1EP_2.2x2mm_P0.4mm_EP0.9x1.5mm",
+      "mpn": "BQ25185DLHR",
+      "status": "DFM layout candidate; electrical validation pending",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "J4",
+      "symbol": "Port3",
+      "value": "Protected cell + NTC",
+      "x": 190.5,
+      "y": 238.76,
+      "nets": {
+        "1": "VBAT",
+        "2": "GND",
+        "3": "BAT_NTC"
+      },
+      "footprint": "Collar033:J4_Solder_1x03_P2.5mm",
+      "mpn": "",
+      "status": "onboard contact pads; external device/fixture not selected",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "C17",
+      "symbol": "C",
+      "value": "1uF /10V",
+      "x": 39.37,
+      "y": 275.59,
+      "nets": {
+        "1": "VIN_5V",
+        "2": "GND"
+      },
+      "footprint": "Collar033:C17_C_0402_1005Metric",
+      "mpn": "",
+      "status": "candidate",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "C18",
+      "symbol": "C",
+      "value": "10uF /10V",
+      "x": 110.49,
+      "y": 284.48,
+      "nets": {
+        "1": "VSYS",
+        "2": "GND"
+      },
+      "footprint": "Collar033:C18_C_0603_1608Metric",
+      "mpn": "",
+      "status": "candidate",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "C19",
+      "symbol": "C",
+      "value": "1uF /10V",
+      "x": 190.5,
+      "y": 269.24,
+      "nets": {
+        "1": "VBAT",
+        "2": "GND"
+      },
+      "footprint": "Collar033:C19_C_0402_1005Metric",
+      "mpn": "",
+      "status": "candidate",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "R6",
+      "symbol": "R",
+      "value": "18k /1%",
+      "x": 39.37,
+      "y": 293.37,
+      "nets": {
+        "1": "ILIM_VSET",
+        "2": "GND"
+      },
+      "footprint": "Collar033:R6_R_0402_1005Metric",
+      "mpn": "",
+      "status": "4.2V / 500mA input limit per BQ25185 table",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "R7",
+      "symbol": "R",
+      "value": "3k /1%",
+      "x": 39.37,
+      "y": 309.88,
+      "nets": {
+        "1": "ISET",
+        "2": "GND"
+      },
+      "footprint": "Collar033:R7_R_0402_1005Metric",
+      "mpn": "",
+      "status": "100mA provisional; battery approval required",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "R8",
+      "symbol": "R",
+      "value": "10k",
+      "x": 190.5,
+      "y": 287.02,
+      "nets": {
+        "1": "CHG_STAT",
+        "2": "VIO_1V8"
+      },
+      "footprint": "Collar033:R8_R_0402_1005Metric",
+      "mpn": "",
+      "status": "candidate",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "R9",
+      "symbol": "R",
+      "value": "10k",
+      "x": 190.5,
+      "y": 303.53,
+      "nets": {
+        "1": "CHG_FAULT",
+        "2": "VIO_1V8"
+      },
+      "footprint": "Collar033:R9_R_0402_1005Metric",
+      "mpn": "",
+      "status": "candidate",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "U4",
+      "symbol": "TPS7A0218-DBV",
+      "value": "TPS7A0218PDBVR",
+      "x": 110.49,
+      "y": 328.93,
+      "nets": {
+        "1": "VSYS",
+        "3": "VSYS",
+        "5": "VIO_1V8",
+        "2": "GND"
+      },
+      "footprint": "Collar033:U4_SOT-23-5",
+      "mpn": "TPS7A0218PDBVR",
+      "status": "candidate; VIO sequencing unresolved",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "C20",
+      "symbol": "C",
+      "value": "1uF",
+      "x": 39.37,
+      "y": 339.09,
+      "nets": {
+        "1": "VSYS",
+        "2": "GND"
+      },
+      "footprint": "Collar033:C20_C_0402_1005Metric",
+      "mpn": "",
+      "status": "candidate",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "C21",
+      "symbol": "C",
+      "value": "1uF",
+      "x": 190.5,
+      "y": 331.47,
+      "nets": {
+        "1": "VIO_1V8",
+        "2": "GND"
+      },
+      "footprint": "Collar033:C21_C_0402_1005Metric",
+      "mpn": "",
+      "status": "candidate",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "R10",
+      "symbol": "R",
+      "value": "2M",
+      "x": 39.37,
+      "y": 364.49,
+      "nets": {
+        "1": "VBAT",
+        "2": "BAT_ADC"
+      },
+      "footprint": "Collar033:R10_R_0402_1005Metric",
+      "mpn": "",
+      "status": "candidate",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "R11",
+      "symbol": "R",
+      "value": "1M",
+      "x": 110.49,
+      "y": 364.49,
+      "nets": {
+        "1": "BAT_ADC",
+        "2": "GND"
+      },
+      "footprint": "Collar033:R11_R_0402_1005Metric",
+      "mpn": "",
+      "status": "candidate",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "C22",
+      "symbol": "C",
+      "value": "10nF",
+      "x": 190.5,
+      "y": 364.49,
+      "nets": {
+        "1": "BAT_ADC",
+        "2": "GND"
+      },
+      "footprint": "Collar033:C22_C_0402_1005Metric",
+      "mpn": "",
+      "status": "candidate",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "U5",
+      "symbol": "LIS2DW12",
+      "value": "LIS2DW12TR",
+      "x": 289.56,
+      "y": 246.38,
+      "nets": {
+        "9": "VIO_1V8",
+        "10": "VIO_1V8",
+        "1": "I2C_SCL",
+        "4": "I2C_SDA",
+        "2": "VIO_1V8",
+        "3": "VIO_1V8",
+        "12": "ACC_INT",
+        "6": "GND",
+        "7": "GND",
+        "8": "GND"
+      },
+      "footprint": "Collar033:U5_LGA-12_2x2mm_P0.5mm",
+      "mpn": "LIS2DW12TR",
+      "status": "DFM layout candidate; electrical validation pending",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "C23",
+      "symbol": "C",
+      "value": "100nF",
+      "x": 265.43,
+      "y": 281.94,
+      "nets": {
+        "1": "VIO_1V8",
+        "2": "GND"
+      },
+      "footprint": "Collar033:C23_C_0402_1005Metric",
+      "mpn": "",
+      "status": "candidate",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "C24",
+      "symbol": "C",
+      "value": "100nF",
+      "x": 330.2,
+      "y": 281.94,
+      "nets": {
+        "1": "VIO_1V8",
+        "2": "GND"
+      },
+      "footprint": "Collar033:C24_C_0402_1005Metric",
+      "mpn": "",
+      "status": "candidate",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "R12",
+      "symbol": "R",
+      "value": "4.7k",
+      "x": 265.43,
+      "y": 298.45,
+      "nets": {
+        "1": "I2C_SDA",
+        "2": "VIO_1V8"
+      },
+      "footprint": "Collar033:R12_R_0402_1005Metric",
+      "mpn": "",
+      "status": "candidate",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "R13",
+      "symbol": "R",
+      "value": "4.7k",
+      "x": 330.2,
+      "y": 298.45,
+      "nets": {
+        "1": "I2C_SCL",
+        "2": "VIO_1V8"
+      },
+      "footprint": "Collar033:R13_R_0402_1005Metric",
+      "mpn": "",
+      "status": "candidate",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "J5",
+      "symbol": "Port12",
+      "value": "DIGITAL health sensor interface",
+      "x": 405.13,
+      "y": 264.16,
+      "nets": {
+        "1": "GND",
+        "2": "VIO_1V8",
+        "3": "VSYS",
+        "4": "I2C_SDA",
+        "5": "I2C_SCL",
+        "6": "HEALTH_INT",
+        "7": "SPI_SCK",
+        "8": "SPI_MOSI",
+        "9": "SPI_MISO",
+        "10": "HEALTH_CS",
+        "11": "HEALTH_RESET",
+        "12": "HEALTH_EN"
+      },
+      "footprint": "Collar033:J5_Contact_2x06_P1.27mm",
+      "mpn": "",
+      "status": "onboard contact pads; external device/fixture not selected",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "R14",
+      "symbol": "R",
+      "value": "100k",
+      "x": 265.43,
+      "y": 318.77,
+      "nets": {
+        "1": "HEALTH_CS",
+        "2": "VIO_1V8"
+      },
+      "footprint": "Collar033:R14_R_0402_1005Metric",
+      "mpn": "",
+      "status": "candidate",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "R15",
+      "symbol": "R",
+      "value": "100k",
+      "x": 330.2,
+      "y": 318.77,
+      "nets": {
+        "1": "HEALTH_EN",
+        "2": "GND"
+      },
+      "footprint": "Collar033:R15_R_0402_1005Metric",
+      "mpn": "",
+      "status": "candidate",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "J6",
+      "symbol": "SIM8051",
+      "value": "SIM8051-6-0-14-00-A",
+      "x": 515.62,
+      "y": 245.11,
+      "nets": {
+        "1": "SIM_1V8",
+        "2": "SIM_RST",
+        "3": "SIM_CLK",
+        "7": "SIM_IO",
+        "5": "GND",
+        "8": "GND"
+      },
+      "footprint": "Collar04:SIM8051_6_0_14_00_A",
+      "mpn": "SIM8051-6-0-14-00-A",
+      "status": "SMT removable nano-SIM; 1.8V UICC and LTE-M/NB-IoT service required",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "J7",
+      "symbol": "Port6",
+      "value": "SWD / debug",
+      "x": 515.62,
+      "y": 326.39,
+      "nets": {
+        "1": "VIO_1V8",
+        "2": "SWDIO",
+        "3": "GND",
+        "4": "SWDCLK",
+        "5": "DEBUG_RESET",
+        "6": "VSYS"
+      },
+      "footprint": "Collar033:J7_Contact_2x03_P1.27mm",
+      "mpn": "",
+      "status": "onboard contact pads; external device/fixture not selected",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "#FLG01",
+      "symbol": "PWR_FLAG",
+      "value": "PWR_FLAG",
+      "x": 250.19,
+      "y": 151.13,
+      "nets": {
+        "1": "VDD_NRF"
+      },
+      "footprint": "",
+      "mpn": "",
+      "status": "candidate",
+      "dnp": false,
+      "onboard": false
+    },
+    {
+      "ref": "#FLG02",
+      "symbol": "PWR_FLAG",
+      "value": "PWR_FLAG",
+      "x": 39.37,
+      "y": 251.46,
+      "nets": {
+        "1": "VIN_5V"
+      },
+      "footprint": "",
+      "mpn": "",
+      "status": "candidate",
+      "dnp": false,
+      "onboard": false
+    },
+    {
+      "ref": "#FLG03",
+      "symbol": "PWR_FLAG",
+      "value": "PWR_FLAG",
+      "x": 190.5,
+      "y": 350.52,
+      "nets": {
+        "1": "GND"
+      },
+      "footprint": "",
+      "mpn": "",
+      "status": "candidate",
+      "dnp": false,
+      "onboard": false
+    },
+    {
+      "ref": "D1",
+      "symbol": "TPD4E1U06",
+      "value": "TPD4E1U06DCKR",
+      "x": 515.62,
+      "y": 289.56,
+      "nets": {
+        "1": "SIM_RST",
+        "3": "SIM_CLK",
+        "6": "SIM_1V8",
+        "2": "GND"
+      },
+      "footprint": "Collar04:TPD4E1U06DCKR",
+      "mpn": "TPD4E1U06DCKR",
+      "status": "Three upper SIM contacts; short connector-side ESD routes",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "D2",
+      "symbol": "TPD4E1U06",
+      "value": "TPD4E1U06DCKR",
+      "x": 548.64,
+      "y": 354.33,
+      "nets": {
+        "3": "SIM_IO",
+        "2": "GND"
+      },
+      "footprint": "Collar04:TPD4E1U06DCKR",
+      "mpn": "TPD4E1U06DCKR",
+      "status": "Lower SIM data contact; direct connector-to-ESD-to-modem route",
+      "dnp": false,
+      "onboard": true
+    }
+  ],
+  "root_uuid": "451a5990-6c32-5202-82bb-1920decebc4e"
+}
