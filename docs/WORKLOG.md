@@ -85,3 +85,21 @@ Their evidence is dated; do not transfer an older pass to a newer source file.
 - Next: Reconcile the router model's larger incomplete count with actual native
   connectivity before another search. No routing process remains. Finish the
   six connections and remaining layout reviews, then run both real JLC checks.
+
+## 2026-10-25 — Router contact fixes and complete native routing
+
+- Event: Continued the authorized Paul/nano-SIM layout and English repository work.
+- Decision: Fix actual DSN contacts and loaded lock states before further routing.
+  Preserve r04e at 35 × 28 mm; test 40 × 32 mm after measured routing failures.
+  Reject the 83.52 mm auxiliary supply detour in the earlier unlocked trial.
+- Result: r04f closes every net after one nearby GND-via move. Removing two unused
+  charger vias gives zero native opens, violations, warnings and parity findings.
+  Fifteen added GND return vias keep those checks clean and reduce 30 screening
+  gaps to nine. All 81 GND pads reach a local via, all 81 GND via centers lie in
+  both inner fills, no inner tracks exist, and 24 RF segments remain exact.
+- Validation: The loaded-lock regression rejects the old 930 USER_FIXED model
+  and accepts the corrected model. Native source/evidence hashes are recorded in
+  r04f `routing-checkpoint.json`; accepted 0.3.4 bytes are preserved.
+- Next: Resolve nine return-screen gaps, review power/ESD/passive balance, add
+  useful English labels and run two new unchanged-rule same-byte JLC analyses.
+  No new supplier acceptance, order, powered test or production approval yet.

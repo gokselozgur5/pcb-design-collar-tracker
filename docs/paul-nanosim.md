@@ -63,23 +63,24 @@ mobility behavior still need qualification. These are open product checks.
 
 ## Existing candidate placement
 
-The active source is `experiments/paul-nanosim-r04d/hardware/`.
+The active 40 × 32 mm source is `experiments/paul-nanosim-r04f-40x32/hardware/`.
+The 35 × 28 mm r04e source is preserved separately.
 J6 (127,108), D1 (126.8,116.2), J5 (125,125), R14 (121.5,119),
 R15 (126,118) and C10 (123,115.7) are on B.Cu. Charger U3 is at (105,123)
 on F.Cu; C17 is at (106.2,120.25) on B.Cu, C18 at (103,120.85) and C19
 at (101.8,122.5) on F.Cu. J4 is at (106,126.05) on B.Cu.
-The current stage has no GND opens or copper-clearance violations; six other
-connections and unused track/via branches remain. See STATUS for exact evidence.
+The current stage has zero open connections, violations, warnings or parity
+findings. Nine return-via screen gaps remain. See STATUS for exact evidence.
 Power trunks are provisionally 0.4 mm, VIO 0.3 mm, signal minimum 0.2 mm;
 via target 0.60/0.20 mm. A width setting is not an ampacity or voltage-drop test.
 
 The initial r04 ground stage connected 81 GND pads through 68 vias. The current
-r04d rework uses 66: its native inventory finds all 66 centers inside both saved
+r04f rework uses 81: its native inventory finds all 81 centers inside both saved
 inner fills, each with one filled outline and no inner tracks. U3.4 joins its own
 exposed GND pad. Perimeter nRF ground necks are 0.25 mm to leave clearance beside
 the 0.5-mm-pitch contacts. Adjacent IC ground pins may share a local connection;
 do not route a ground bus through separate passive components. The original
-2.1071 mm maximum planned stub is historical, not a final r04d measurement.
+2.1071 mm maximum planned stub is historical, not a final r04f measurement.
 
 Preserve the 0.3.4 source. Its RF segments are locked/copied by the WIP builder;
 their original 50 Ω stackup/body/antenna qualification is still open.
@@ -112,6 +113,7 @@ copper thickness and dynamic supply impedance must be distinguished from trace
 resistance alone. `scripts/audit_power_paths.py` estimates centerline copper and
 via-barrel resistance from a hash-matched geometry export; it excludes ferrite,
 IC, contact and cell impedance, pad spreading, transients and thermal behavior.
-The current r04d report explicitly includes the disconnected J5 supply branch.
+The current r04f report includes the connected J5 supply branch and its remaining
+power-review limits.
 The earlier snapshot's estimate is preserved as `power-path-routed1-review.json`.
 Rerun the audit after routing changes; complete power qualification remains open.

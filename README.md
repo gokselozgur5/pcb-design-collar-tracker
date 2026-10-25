@@ -74,7 +74,8 @@ a finished, working PCBA.**
 ## Source revisions
 
 - Validated PCB DFM baseline: `experiments/35x28-clearance-r034/hardware/`.
-- Active nano-SIM work: `experiments/paul-nanosim-r04d/hardware/`.
+- Current 35 × 28 mm checkpoint: `experiments/paul-nanosim-r04e/hardware/`.
+- Active 40 × 32 mm nano-SIM work: `experiments/paul-nanosim-r04f-40x32/`.
 - Earlier r04 routing and rejected r04c experiment are preserved separately.
 - Legacy 30 × 22 mm / 0.2.1 source: `hardware/`, preserved with its original ZIPs.
 
@@ -97,7 +98,7 @@ include heart-rate hardware.
 | Path | Purpose |
 |---|---|
 | `experiments/35x28-clearance-r034/hardware/` | Native source that passed local and JLC PCB DFM checks |
-| `experiments/paul-nanosim-r04d/` | Active, unfinished nano-SIM revision, routing and evidence |
+| `experiments/paul-nanosim-r04f-40x32/` | Active nano-SIM work; native DRC clean, layout review and new JLC checks pending |
 | `scripts/finalize_clearance034.py` | Binds source, local checks, JLC reports and the exact delivered ZIP |
 | `hardware/` | Legacy KiCad project, PCB, five-section A2 schematic and draft BOM |
 | `scripts/build_pcb.py` | Builds the legacy PCB from the real XML netlist |

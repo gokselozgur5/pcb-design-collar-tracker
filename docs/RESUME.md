@@ -25,7 +25,7 @@ project also works without rerunning the historical generators.
 | KiCad | 10.0.7. `scripts/kicad-cli` and `scripts/kicad-python` use the existing SSD install; `COLLAR_KICAD_CONTENTS` can select another macOS install. |
 | Native Python | KiCad's bundled Python 3.9 with `pcbnew`; ordinary Python cannot replace it. |
 | Geometry Python | `.venv-dfm/bin/python`, Python 3.11 + Shapely 2.1.2. Install from `requirements-dfm.txt` in a new venv if missing. |
-| Router | Java + Freerouting 2.4.1. Existing JAR `/Volumes/GOKSSD/codex/tools/freerouting/freerouting-2.4.1.jar`. |
+| Router | Java + Freerouting 2.5.0. Pinned JAR `/Volumes/GOKSSD/codex/tools/freerouting/freerouting-2.5.0.jar`; SHA256 `f6f51bb02245e8e717f9359bd260cc9c5c0b1bc0acc8b7cb2cd5b8ffeb5de3c7`. |
 | JLC browser | Node + Playwright 1.64.1; `COLLAR_PLAYWRIGHT_MODULE` can select a local installation. |
 | PDF/image review | `pdftotext`, `pdftoppm`, `rsvg-convert`; render locally and actually inspect. |
 
@@ -40,74 +40,77 @@ browser normally if needed; no profile or credentials are distributed in Git.
 
 ## Working commands
 
-Continue from `experiments/paul-nanosim-r04d/hardware/collar-tracker.kicad_pcb`.
-Read STATUS and the trial's current hash-bound evidence before editing. r04 is a
-fallback; r04c is a rejected experiment. Neither supersedes r04d.
+Continue from `experiments/paul-nanosim-r04f-40x32/hardware/collar-tracker.kicad_pcb`.
+Read STATUS and current hash-bound evidence first. r04e is the preserved 35 × 28 mm
+checkpoint; r04f expands the outline to 40 × 32 mm after measured routing failures.
 
-The latest clean-clearance stage has six opens: VSYS (J5 branch), CHG_STAT,
-CHG_FAULT, SPI_SCK, SIM_IO and SIM_CLK. A local SIM-corridor experiment added
-three clearance errors and was restored from `build/corridor-2.kicad_pcb`.
-Preserve that backup and the rejected-stage evidence.
+The current native result is zero opens, violations, warnings or parity findings.
+The ground-exit change closed the last SIM supply route. Fifteen return vias are
+applied; nine transitions still exceed the inherited 2 mm screen. STATUS and the
+source-bound inventory identify them. No router remains running at this checkpoint.
 
-The next step is to validate the DSN model against native connectivity, not to
-repeat an unchanged router run. The stopped obstacle-model trial repeated 28
-unrouted items / 89 router violations. The native-ground model reported 58
-incompletes with fanout disabled, including 15 GND, while native DRC still has
-six non-GND opens. Distinguish actual pin connectivity from unused branches and
-routing-model contact detection. None of those search results was imported.
-
-The isolated no-routing round-trip is in `build/roundtrip-native.ses` and
-`evidence/import-lock-regression.json`. It exposed duplicate locked native/SES
-signals in the old importer. The fixed importer gives the original six opens,
-14 dangling-item warnings and no added drill/clearance/parity findings. The
-active source remains unchanged; `build/roundtrip-fixed.kicad_pcb` is test output.
-
-For future paired export/import, use matching lock options. In particular:
+Export/import must preserve native grounds, RF and explicit pin escapes. Generate
+fresh geometry and plane inventory, then normalize exact copper contacts:
 
 ```sh
+LC_ALL=C scripts/kicad-python scripts/dfm_geometry.py \
+  experiments/paul-nanosim-r04f-40x32/hardware/collar-tracker.kicad_pcb \
+  experiments/paul-nanosim-r04f-40x32/evidence/route-geometry.json
+LC_ALL=C scripts/kicad-python scripts/audit_paul_layout.py experiments/paul-nanosim-r04f-40x32
 LC_ALL=C scripts/kicad-python scripts/export_paul_route.py \
-  experiments/paul-nanosim-r04d NEW_STEM --native-ground \
-  --protect experiments/paul-nanosim-r04d/evidence/protected-fanout.json
-# Run the router only after reviewing the model; preserve the source first.
-LC_ALL=C scripts/kicad-python scripts/import_paul_route.py \
-  experiments/paul-nanosim-r04d \
-  experiments/paul-nanosim-r04d/build/NEW_STEM.ses \
-  --protect experiments/paul-nanosim-r04d/evidence/protected-fanout.json
+  experiments/paul-nanosim-r04f-40x32 NEW_STEM --native-ground \
+  --protect experiments/paul-nanosim-r04f-40x32/evidence/protected-fanout.json
+.venv-dfm/bin/python scripts/normalize_router_contacts.py \
+  experiments/paul-nanosim-r04f-40x32 --input-stem NEW_STEM --output-stem NEW_CONTACTS
 ```
 
-`NEW_STEM` is a placeholder for a new experiment, not an existing completed
-session. Use `--keep-locked` on both sides only when deliberately retaining all
-original locks. The importer verifies unchanged placement/GND/explicit escapes
-and restores exact RF geometry. Always follow with native checks:
+Use new stems; preserve earlier evidence. The normalizer refuses connectors that
+would add copper outside the source geometry. It does not replace native DRC.
+KiCad's `route` token loads as USER_FIXED in Freerouting; the exporter deliberately
+emits `normal`. Inspect the *loaded* locks using the pinned 2.5.0 JAR:
 
 ```sh
-LC_ALL=C scripts/kicad-cli pcb drc --format json --severity-all \
-  --schematic-parity --all-track-errors \
-  -o experiments/paul-nanosim-r04d/evidence/NEW_STEM-drc.json \
-  experiments/paul-nanosim-r04d/hardware/collar-tracker.kicad_pcb
+FREEROUTING__USAGE_AND_DIAGNOSTIC_DATA__DISABLE_ANALYTICS=true \
+  /opt/homebrew/opt/openjdk/bin/java -Djava.awt.headless=true \
+  -Djava.io.tmpdir=/Users/gok/codex/projects/collar-tracker/.runtime/java-tmp \
+  -cp /Volumes/GOKSSD/codex/tools/freerouting/freerouting-2.5.0.jar \
+  scripts/InspectRouterLocks.java INPUT.dsn OUTPUT.json .runtime/lock-inspect --require-movable
 ```
 
-No router or completion process remains at this checkpoint. Recheck live state
-before starting one. Logs stay local; the portable JSON evidence records the
-observed outcomes and why the trials were stopped.
+The regression in r04e rejects the old model and accepts the corrected one.
+Movable segments can merge into fewer polylines on load. Ground/RF/explicit fixed
+items must remain protected; the post-load count need not equal the DSN count.
 
-For a materially revised routing experiment, `export_paul_route.py TRIAL STEM
---protect UUID_JSON` protects only the explicit manual escapes. `--keep-locked`
-retains all native locks and prevented useful remote rip-up in r04c. Neither
-option changes the native source during export. `--native-ground` retains fixed
-GND copper, real pads and the two inner planes in the routing copy. A replayed
-export reproduced the diagnostic DSN after normalizing its filename. For repair
-trials, use the explicit CLI `--router.fanout.enabled=false`; the installed
-2.4.1 parser reads but discards the older DSN fanout flag. This controls a routing
-pre-pass, not a DRC rule. Avoid repeating a failed trial
-without changing the blocked topology.
+For search, explicitly set `--router.fanout.enabled=false`,
+`--router.strict_drc=true`, `--router.copper_to_edge_clearance_um=400` and
+`--router.hole_clearance_um=200`. Disable whole-net neck retries with
+`--router.neck_width_um=0`; the 200 µm retry produced an unacceptable auxiliary
+power detour in r04e. Native checks remain the authority even when router counts
+include shape/model artifacts. Do not weaken native or supplier rules.
+
+Import SES into an isolated copy containing the matching project, schematic,
+placement JSON and protection list. Keep the SES inside that copy's `build/`:
+
+```sh
+LC_ALL=C scripts/kicad-python scripts/import_paul_route.py TRIAL TRIAL/build/NEW_STEM.ses \
+  --protect TRIAL/evidence/protected-fanout.json
+LC_ALL=C scripts/kicad-cli pcb drc --format json --severity-all \
+  --schematic-parity --all-track-errors -o TRIAL/evidence/NEW_STEM-drc.json \
+  TRIAL/hardware/collar-tracker.kicad_pcb
+```
+
+The importer checks unchanged placement/GND/explicit escapes and restores exact
+RF segments. `--keep-locked` must match the export policy when deliberately used.
+Copying a PCB into `build/` without its project can change the effective DRC rules;
+run acceptance checks beside the matching native project and schematic.
 
 `finish_paul_route.py BOARD DRC_JSON [OUTPUT_BOARD]` is the local outer-layer
 completion helper. It includes native copper connectivity, footprint keepouts,
 0.4 mm power / 0.3 mm VIO trunks and short 0.2 mm pad escapes. Its grid is a
 planner, not native acceptance. It saves partial progress on interruption and
-records source hashes. A proposed connection over 40 mm is rejected for topology
-review; this is a planning screen, not a universal signal-length limit. Save its
+records source hashes. The default 40 mm detour screen is a planner policy, not a universal signal limit.
+`--route-limit-mm` changes candidate generation only; it never changes native DRC.
+Review any longer route against its actual signal and topology before accepting it. Save its
 JSON under a new evidence name before rerunning, since the output stem is reused.
 
 Do not replay builders over existing trials. `build_charger_local_trial.py
@@ -124,8 +127,9 @@ After routing is resolved:
    documented estimate limits; neither establishes physical performance.
 3. Use `plan_return_vias.py TRIAL` with geometry Python and
    `apply_return_vias.py TRIAL` with KiCad Python. Refill, run native DRC and
-   verify actual GND via containment on both inner fills. These stages have not
-   yet been accepted on r04d.
+   verify actual GND via containment on both inner fills. The first plan added 15 vias as explicit WIP
+   using `--allow-partial`; nine gaps remain recorded. Never clear failed IDs to
+   make a plan appear complete. Native DRC stayed clean after that application.
 4. `label_paul_trial.py TRIAL` seeds English labels once. Export `geometry.json`,
    then use `size_trial_labels.py plan/apply TRIAL`. Inspect actual glyphs and
    interface association; automatic clearance does not prove a label is useful.

@@ -277,3 +277,20 @@ First concrete next step:
 
 Add reusable lessons here. Current tasks and results belong in STATUS and WORKLOG,
 not a growing diary inside this guide.
+
+- Check the router's loaded lock state, not only native KiCad locks. Freerouting
+  2.5.0 treats KiCad's `(type route)` token as `USER_FIXED`; use `(type normal)`
+  for deliberately movable routes and retain `(type fix)` for protected copper.
+  `InspectRouterLocks.java` must reject the old model and accept the corrected
+  model. Count differences after loading can reflect merged polylines.
+- Native copper can join a pad interior or a trace midpoint. A router expecting
+  exact centers/endpoints can report false opens. Preserve coordinate precision,
+  split real junctions and check modeled connectors against existing copper.
+  Validate the transfer with an isolated no-route SES round-trip and native DRC.
+- Run native DRC beside the matching project and schematic. Checking a copied
+  board without its project can silently use different rules.
+- A dangling track may feed a live branch at its midpoint. Trim only the unused
+  tail, then recheck pin connectivity; deleting the whole track can break a net.
+- Grow the board in a separate experiment when measured routing warrants it.
+  Compare resulting power paths and native checks; more area alone does not
+  establish better signal routing, enclosure fit or manufacturing acceptance.
