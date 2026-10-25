@@ -16,6 +16,8 @@ from shapely.strtree import STRtree
 
 parser = argparse.ArgumentParser()
 parser.add_argument('trial', type=Path)
+parser.add_argument('--pads', type=Path, help='JSON list of pad UUIDs for a local rework')
+parser.add_argument('--incremental', action='store_true', help='Preserve existing ground copper')
 args = parser.parse_args()
 root = args.trial
 geometry = json.loads((root / 'evidence/placement-geometry.json').read_text())
@@ -27,7 +29,10 @@ pad_tree = STRtree(pad_shapes)
 keepouts = [(Polygon(p), z) for z in extra['keepouts'] for p in z['poly']]
 tracks = [(LineString([t['start'], t['end']]).buffer(t['width'] / 2), t) for t in geometry['tracks']]
 board = box(*extra['bounds'])
-vias, stubs, failures = [], [], []
+existing_vias = geometry['vias']
+vias = [v['pos'] for v in existing_vias if v['net']=='/GND'] if args.incremental else []
+initial_via_count = len(vias)
+stubs, failures = [], []
 
 
 def via_clear(pos):
@@ -43,6 +48,9 @@ def via_clear(pos):
     for shape, t in tracks:
         if t['net'] != '/GND' and point.distance(shape) < via_radius + clearance - 1e-6:
             return False
+    if any(math.dist(pos,v['pos']) < via_radius+v['diameter']/2+clearance-1e-6
+           for v in existing_vias):
+        return False
     return all(math.dist(pos, v) >= 2 * via_radius + clearance - 1e-6 for v in vias)
 
 
@@ -61,7 +69,7 @@ def simple_paths(start, end):
             yield out
 
 
-def paths(start, end):
+def paths(start, end, total_limit=max_length):
     yield from simple_paths(start, end)
     # Escape a fine-pitch row before turning toward a clear via position.
     for neck in [.2, .4, .6, .8, 1.0]:
@@ -69,7 +77,7 @@ def paths(start, end):
             mid = (round(start[0] + dx * neck, 6), round(start[1] + dy * neck, 6))
             for tail in simple_paths(mid, end):
                 points = [tuple(start), *tail]
-                if LineString(points).length <= max_length:
+                if LineString(points).length <= total_limit:
                     yield points
 
 
@@ -91,7 +99,9 @@ def width_for(pad):
 
 def path_clear(points, pad, index, width):
     line = LineString(points)
-    if line.length > max_length or not board.buffer(-(.4 + width / 2)).covers(line):
+    # A wide connector land already carries copper from its center to its edge.
+    # Bound the exposed stub, while still checking clearance along the full path.
+    if line.difference(pad_shapes[index]).length > max_length or not board.buffer(-(.4 + width / 2)).covers(line):
         return False
     for i in pad_tree.query(line.buffer(width / 2 + clearance)):
         if i != index and set(pad['layers']).intersection(pads[i]['layers']):
@@ -107,17 +117,26 @@ def path_clear(points, pad, index, width):
     for shape, t in tracks:
         if t['net'] != '/GND' and t['layer'] in pad['layers'] and line.distance(shape) < width / 2 + clearance - 1e-6:
             return False
+    if any(v['net']!='/GND' and line.distance(Point(v['pos'])) < width/2+v['diameter']/2+clearance-1e-6
+           for v in existing_vias):
+        return False
     return True
 
 
 ground = [(i, pad) for i, pad in enumerate(pads) if pad['net'] == '/GND']
+if args.pads:
+    target_ids=set(json.loads(args.pads.read_text()))
+    ground=[(i,p) for i,p in ground if p['id'] in target_ids]
+    assert len(ground)==len(target_ids), 'Some requested ground pads are missing'
 priority = {'U3': 0, 'U2': 1, 'U5': 2, 'D1': 3, 'U1': 4}
 ground.sort(key=lambda x: (priority.get(x[1]['ref'], 5), x[1]['ref'], int(x[1]['pin']), x[0]))
 for index, pad in ground:
     width = width_for(pad)
     px, py = pad['pos']
-    candidates = [(tuple(v), True) for v in vias if math.dist((px, py), v) <= max_length]
-    for radius in [i / 10 for i in range(6, 23)]:
+    bounds=pad_shapes[index].bounds
+    total_limit=max_length+math.hypot(bounds[2]-bounds[0],bounds[3]-bounds[1])/2
+    candidates = [(tuple(v), True) for v in vias if math.dist((px, py), v) <= total_limit]
+    for radius in [i / 10 for i in range(6, math.ceil(total_limit*10)+1)]:
         for dx, dy in [(1, 0), (-1, 0), (0, 1), (0, -1), (1, 1), (-1, 1), (1, -1), (-1, -1)]:
             candidates.append(((round((px + dx * radius) * 20) / 20,
                                 round((py + dy * radius) * 20) / 20), False))
@@ -126,7 +145,7 @@ for index, pad in ground:
     for pos, shared in candidates:
         if not shared and not via_clear(pos):
             continue
-        for points in paths((px, py), pos):
+        for points in paths((px, py), pos,total_limit):
             if path_clear(points, pad, index, width):
                 selected = (pos, shared, points)
                 break
@@ -135,13 +154,14 @@ for index, pad in ground:
     if selected is None:
         # Fine-pitch packages may need an off-axis via; keep the route itself
         # orthogonal/45 degrees. Search a local grid, still with the same limits.
+        radius=math.ceil(total_limit*20)
         grid = [(round(px * 20 + ix) / 20, round(py * 20 + iy) / 20)
-                for ix in range(-44, 45) for iy in range(-44, 45)]
+                for ix in range(-radius, radius+1) for iy in range(-radius, radius+1)]
         grid = sorted(set(grid), key=lambda v: math.dist((px, py), v))
         for pos in grid:
-            if math.dist((px, py), pos) > max_length or not via_clear(pos):
+            if math.dist((px, py), pos) > total_limit or not via_clear(pos):
                 continue
-            for points in paths((px, py), pos):
+            for points in paths((px, py), pos,total_limit):
                 if path_clear(points, pad, index, width):
                     selected = (pos, False, points)
                     break
@@ -156,11 +176,18 @@ for index, pad in ground:
     stubs.append({'ref': pad['ref'], 'pin': pad['pin'], 'pad_id': pad['id'],
                   'layer': pad['layers'][0], 'points': points, 'width': width,
                   'length': LineString(points).length, 'shared_via': shared, 'via': pos})
+    stubs[-1]['exposed_length']=LineString(points).difference(pad_shapes[index]).length
 
 source = root / 'hardware/collar-tracker.kicad_pcb'
-plan = {'source_sha256': hashlib.sha256(source.read_bytes()).hexdigest(),
-        'target': {'via_diameter': .6, 'via_drill': .2, 'clearance': clearance, 'max_stub_length': max_length},
-        'ground_pads': len(ground), 'vias': vias, 'stubs': stubs, 'failures': failures,
+source_sha = hashlib.sha256(source.read_bytes()).hexdigest()
+if 'source_sha256' in geometry:
+    assert geometry['source_sha256']==source_sha, 'Stale geometry'
+plan = {'source_sha256': source_sha, 'incremental':args.incremental,
+        'existing_ground_vias':initial_via_count,
+        'target': {'via_diameter': .6, 'via_drill': .2, 'clearance': clearance,
+                   'max_exposed_stub_length': max_length,
+                   'length_measurement':'Centerline outside the starting copper pad'},
+        'ground_pads': len(ground), 'vias': vias[initial_via_count:], 'stubs': stubs, 'failures': failures,
         'scope': 'Planned geometry only; native DRC and filled-plane connectivity not yet checked.'}
 (root / 'evidence/ground-plan.json').write_text(json.dumps(plan, indent=2) + '\n')
 print(json.dumps({'ground_pads': len(ground), 'connected_in_plan': len(stubs), 'vias': len(vias),

@@ -6,11 +6,12 @@ Include footprint keepouts. Grid sampling is a planner, not DRC acceptance.
 Usage: kicad-python finish_paul_route.py BOARD DRC_JSON [OUTPUT_BOARD]
 """
 from pathlib import Path
-import collections,heapq,itertools,json,math,re,sys
+import collections,hashlib,heapq,itertools,json,math,re,sys
 import pcbnew as k
 
 PCB=Path(sys.argv[1]);DRC=Path(sys.argv[2]);OUTPUT=Path(sys.argv[3]) if len(sys.argv)>3 else PCB
 b=k.LoadBoard(str(PCB));d=json.loads(DRC.read_text());layers=[k.F_Cu,k.B_Cu];STEP=.05
+source_sha=hashlib.sha256(PCB.read_bytes()).hexdigest()
 assert 'paul-nanosim' in str(PCB), 'Use an isolated nano-SIM trial'
 vec=lambda x,y:k.VECTOR2I(round(x*1e6),round(y*1e6))
 def xy(v):return (v.x/1e6,v.y/1e6)
@@ -18,6 +19,19 @@ def point_segment(px,py,ax,ay,bx,by):
     dx,dy=bx-ax,by-ay
     t=max(0,min(1,((px-ax)*dx+(py-ay)*dy)/(dx*dx+dy*dy))) if dx or dy else 0
     return math.hypot(px-ax-t*dx,py-ay-t*dy)
+def point_tree(points,depth=0):
+    if not points:return None
+    axis=depth%2;points=sorted(points,key=lambda p:p[axis]);mid=len(points)//2
+    return points[mid],axis,point_tree(points[:mid],depth+1),point_tree(points[mid+1:],depth+1)
+def nearest_squared(tree,x,y,best=math.inf):
+    if tree is None:return best
+    point,axis,left,right=tree
+    best=min(best,(x-point[0])**2+(y-point[1])**2)
+    delta=(x,y)[axis]-point[axis]
+    near,far=(left,right) if delta<0 else (right,left)
+    best=nearest_squared(near,x,y,best)
+    if delta*delta<best:best=nearest_squared(far,x,y,best)
+    return best
 def geometry():
     cells=collections.defaultdict(list);objects=[]
     for f in b.GetFootprints():
@@ -101,6 +115,10 @@ def item_points(item):
 def route(opening):
     a,z=opening['items'][:2];net=re.search(r'\[([^]]+)\]',a['description'])[1]
     starts_exact=item_points(a);ends_exact=item_points(z)
+    # Search out of the smaller copper island. A trapped pad can exhaust in a
+    # few states; searching the entire board toward that pad wastes work.
+    if len(starts_exact)>len(ends_exact):
+        starts_exact,ends_exact=ends_exact,starts_exact
     width=.4 if net in ['/VDD_NRF','/VIN_5V','/VBAT','/VSYS'] else .3 if net=='/VIO_1V8' else .2
     netpads=[p for f in b.GetFootprints() for p in f.Pads() if p.GetNetname()==net]
     padcenters=[(*xy(p.GetPosition()),l) for p in netpads for l in layers if p.IsOnLayer(l)]
@@ -128,9 +146,11 @@ def route(opening):
         return result
     starts=nearby(starts_exact);targets=nearby(ends_exact)
     if not starts or not targets:raise RuntimeError((net,'no access',starts_exact,ends_exact))
+    target_tree=point_tree(list({(p[0],p[1]) for p in ends_exact}))
     def h(s):
-        if s not in hmemo:hmemo[s]=min(math.hypot(s[0]*STEP-e[0],s[1]*STEP-e[1]) for e in ends_exact)
-        return hmemo[s]
+        key=s[:2]
+        if key not in hmemo:hmemo[key]=math.sqrt(nearest_squared(target_tree,s[0]*STEP,s[1]*STEP))
+        return hmemo[key]
     queue=[];dist={};parent={};origin={};serial=itertools.count()
     for s,p in starts.items():
         dist[s]=math.hypot(s[0]*STEP-p[0],s[1]*STEP-p[1]);parent[s]=None;origin[s]=p
@@ -166,6 +186,9 @@ def route(opening):
             aa,zz=simplified[-2],simplified[-1]
             if (abs((zz[0]-aa[0])*(p[1]-zz[1])-(zz[1]-aa[1])*(p[0]-zz[0]))<1e-9 and route_width(*aa)==route_width(*zz)==route_width(*p)):simplified.pop()
         simplified.append(p)
+    length=sum(math.dist(aa[:2],zz[:2]) for aa,zz in zip(simplified,simplified[1:]))
+    if length>40:
+        raise RuntimeError((net,'detour needs topology review',round(length,3),visited))
     for aa,zz in zip(simplified,simplified[1:]):
         if aa[2]!=zz[2]:addvia(aa[0],aa[1],net)
         else:
@@ -173,13 +196,22 @@ def route(opening):
             t.SetLayer(aa[2]);t.SetWidth(round(min(route_width(*aa),route_width(*zz))*1e6));t.SetNet(b.FindNet(net));t.SetLocked(True);b.Add(t)
     print(net,'visited',visited,'segments',len(simplified),flush=True)
     return {'net':net,'points':simplified,'visited':visited,'trunk_width_mm':width,'pad_escape_width_mm':.2,'escape_radius_mm':1.0}
-results=[];failures=[]
+results=[];failures=[];interrupted=False
 print('Routing',len(d['unconnected_items']),'opens; footprint keepouts enabled',flush=True)
-priority={'/VBAT':0,'/CHG_FAULT':1,'/CHG_STAT':2,'/VSYS':3,'/VIN_5V':4}
-for opening in sorted(d['unconnected_items'],key=lambda op:priority.get(re.search(r'\[([^]]+)\]',op['items'][0]['description'])[1],5)):
-    if any('Zone ' in item['description'] for item in opening['items']):continue
-    try:results.append(route(opening))
-    except RuntimeError as e:failures.append(str(e));print('FAILED',e,flush=True)
+priority={net:i for i,net in enumerate(['/SPI_SCK','/SIM_IO','/SIM_CLK',
+    '/ILIM_VSET','/ISET','/BAT_NTC','/VIN_5V','/VBAT','/CHG_STAT','/CHG_FAULT','/VSYS'])}
+try:
+    for opening in sorted(d['unconnected_items'],key=lambda op:priority.get(re.search(r'\[([^]]+)\]',op['items'][0]['description'])[1],len(priority))):
+        if any('Zone ' in item['description'] for item in opening['items']):continue
+        try:results.append(route(opening))
+        except RuntimeError as e:failures.append(str(e));print('FAILED',e,flush=True)
+except KeyboardInterrupt:
+    interrupted=True
+    print('Interrupted; preserving completed routes for native review',flush=True)
 k.ZONE_FILLER(b).Fill(b.Zones());assert k.SaveBoard(str(OUTPUT),b)
-OUTPUT.with_suffix('.local-routing.json').write_text(json.dumps({'routes':results,'ground_stitches':stitches,'failed':failures,'acceptance':'Pending native DRC and independent geometry audit'},indent=2)+'\n')
+OUTPUT.with_suffix('.local-routing.json').write_text(json.dumps({'before_sha256':source_sha,
+    'source_sha256':hashlib.sha256(OUTPUT.read_bytes()).hexdigest(),'routes':results,
+    'ground_stitches':stitches,'failed':failures,'interrupted':interrupted,
+    'acceptance':'Pending native DRC and independent geometry audit'},indent=2)+'\n')
 print('saved',str(OUTPUT),flush=True)
+if interrupted:sys.exit(130)

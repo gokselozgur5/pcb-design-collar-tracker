@@ -12,8 +12,11 @@ pcb = root / 'hardware/collar-tracker.kicad_pcb'
 plan = json.loads((root / 'evidence/ground-plan.json').read_text())
 assert not plan['failures'], 'Unplanned grounds must be resolved before applying'
 assert hashlib.sha256(pcb.read_bytes()).hexdigest() == plan['source_sha256'], 'Stale plan'
+backup = root / 'build/ground-base.kicad_pcb'
+assert not backup.exists(), 'Preserve the prior ground snapshot before changing the source'
 board = k.LoadBoard(str(pcb))
-assert not any(t.GetNetname() == '/GND' for t in board.GetTracks()), 'Already applied'
+if not plan.get('incremental'):
+    assert not any(t.GetNetname() == '/GND' for t in board.GetTracks()), 'Already applied'
 net = board.FindNet('/GND')
 vector = lambda xy: k.VECTOR2I(*(round(v * 1e6) for v in xy))
 for pos in plan['vias']:
@@ -43,12 +46,12 @@ for stub in plan['stubs']:
 board.BuildConnectivity()
 k.ZONE_FILLER(board).Fill(board.Zones())
 assert k.SaveBoard(str(pcb), board)
-backup = root / 'build/ground-base.kicad_pcb'
-assert not backup.exists(), 'Preserve the prior ground snapshot'
 backup.write_bytes(pcb.read_bytes())
 (root / 'evidence/ground-applied.json').write_text(json.dumps({
     'source_sha256': plan['source_sha256'], 'ground_board_sha256': hashlib.sha256(pcb.read_bytes()).hexdigest(),
-    'ground_pads_planned': plan['ground_pads'], 'ground_vias': len(plan['vias']),
+    'ground_pads_planned': plan['ground_pads'],
+    'ground_vias_added':len(plan['vias']),
+    'ground_vias':plan.get('existing_ground_vias',0)+len(plan['vias']),
     'ground_stub_max_mm': max(s['length'] for s in plan['stubs']),
     'scope': 'Applied and filled; native DRC and connectivity must be checked separately.'
 }, indent=2) + '\n')
