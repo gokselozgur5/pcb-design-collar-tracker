@@ -1,0 +1,130 @@
+{
+  "errors": 0,
+  "unconnected": 0,
+  "schematic_parity": [],
+  "warnings": [
+    {
+      "description": "Silkscreen clipped by board edge (board setup constraints silk clearance 0.1500 mm; actual 0.0000 mm)",
+      "items": [
+        {
+          "description": "Segment on Edge.Cuts",
+          "pos": {
+            "x": 100.0,
+            "y": 100.0
+          },
+          "uuid": "3102ac4a-cb4a-48fb-94c3-47a4bb0d535a"
+        },
+        {
+          "description": "Segment of U4 on F.Silkscreen",
+          "pos": {
+            "x": 101.69,
+            "y": 100.02
+          },
+          "uuid": "75e86c8d-5df2-4f73-9b7f-24176e5ac4be"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_edge_clearance"
+    },
+    {
+      "description": "Silkscreen clipped by board edge (board setup constraints silk clearance 0.1500 mm; actual 0.0000 mm)",
+      "items": [
+        {
+          "description": "Segment on Edge.Cuts",
+          "pos": {
+            "x": 100.0,
+            "y": 100.0
+          },
+          "uuid": "3102ac4a-cb4a-48fb-94c3-47a4bb0d535a"
+        },
+        {
+          "description": "Segment of U4 on F.Silkscreen",
+          "pos": {
+            "x": 101.69,
+            "y": 100.07
+          },
+          "uuid": "924a41ae-ea0c-47c3-912e-c433e5788b44"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_edge_clearance"
+    },
+    {
+      "description": "Silkscreen clipped by board edge (board setup constraints silk clearance 0.1500 mm; actual 0.0000 mm)",
+      "items": [
+        {
+          "description": "Segment on Edge.Cuts",
+          "pos": {
+            "x": 100.0,
+            "y": 100.0
+          },
+          "uuid": "3102ac4a-cb4a-48fb-94c3-47a4bb0d535a"
+        },
+        {
+          "description": "Segment of U4 on F.Silkscreen",
+          "pos": {
+            "x": 103.51,
+            "y": 100.02
+          },
+          "uuid": "14ec213f-f80f-4638-aa3e-71983782fea0"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_edge_clearance"
+    },
+    {
+      "description": "Silkscreen clipped by board edge (board setup constraints silk clearance 0.1500 mm; actual 0.0000 mm)",
+      "items": [
+        {
+          "description": "Segment on Edge.Cuts",
+          "pos": {
+            "x": 100.0,
+            "y": 100.0
+          },
+          "uuid": "3102ac4a-cb4a-48fb-94c3-47a4bb0d535a"
+        },
+        {
+          "description": "Polygon of U4 on F.Silkscreen",
+          "pos": {
+            "x": 101.15,
+            "y": 100.07
+          },
+          "uuid": "b324b9d9-a293-4b5c-9dd0-4815904bd8e2"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_edge_clearance"
+    },
+    {
+      "description": "Padstack is questionable (negative solder mask clearance is larger than pad; no solder mask will be generated)",
+      "items": [
+        {
+          "description": "Pad 11 [/GND] of U2 on F.Cu",
+          "pos": {
+            "x": 122.0,
+            "y": 113.5
+          },
+          "uuid": "4b4a5be8-93fc-456c-91b5-f9d85378dccc"
+        }
+      ],
+      "severity": "warning",
+      "type": "padstack"
+    },
+    {
+      "description": "Padstack is questionable (negative solder paste margin is larger than pad; no solder paste mask will be generated)",
+      "items": [
+        {
+          "description": "Pad 11 [/GND] of U2 on F.Cu",
+          "pos": {
+            "x": 122.0,
+            "y": 113.5
+          },
+          "uuid": "4b4a5be8-93fc-456c-91b5-f9d85378dccc"
+        }
+      ],
+      "severity": "warning",
+      "type": "padstack"
+    }
+  ],
+  "pcb_sha256": "ce93d07ac0b4434e14995fce687c3191cc45790334df0b3562b256c5ea91f6c0"
+}

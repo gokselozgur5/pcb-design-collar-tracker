@@ -1,0 +1,42 @@
+COLLAR TRACKER 0.2.1 — DFM REVIEW ONLY — NOT RELEASED FOR ORDER
+
+Board outline: 30 x 22 mm. Copper layers: 4. Proposed total thickness: 0.8 mm.
+Layer order: F.Cu, In1.Cu, In2.Cu, B.Cu. All contain signal routes and GND fill.
+Inner layers are NOT uninterrupted ground reference planes in this draft.
+Nominal signal width: 0.15 mm; permitted local neckdown minimum: 0.10 mm.
+Clearance: 0.10 mm. These are provisional geometric rules, not power-integrity validation.
+Through vias: 0.45 mm copper diameter / 0.20 mm drill, tented.
+Finish candidate: ENIG. No controlled-impedance stackup has been approved.
+Gerber and drill coordinates use the same lower-left auxiliary origin.
+
+This package is for the fabricator's geometry/manufacturability analyzer.
+Its checks cannot validate the circuit, radio or battery system.
+
+OPEN DESIGN ITEMS BEFORE FABRICATION:
+- Hardware undervoltage cutoff and nRF9151 VDD_GPIO sequencing.
+- Operator/eUICC profile and actual eSIM package. J6 is an external SIM
+  contact interface, NOT an onboard eSIM IC.
+- Health sensor/contact method. J5 is a digital expansion interface only.
+- Battery/NTC/charging-input protection and pulse-current suitability.
+- LTE/GNSS antennas, RF stackup, matching, ground-return review and body effects.
+- The community nRF land pattern has a pin-1 copper difference versus
+  the examined Nordic DK revision; reconcile against the current package drawing.
+- Assembly/stencil review, enclosure fit and physical bring-up.
+
+No purchase, supplier upload, assembly qualification or physical test was performed.
+See DRC-summary.json for the exact local findings accompanying this export.
+
+JLC REPORT FOLLOW-UP (original report 2026-10-24 20:24:49, revision 0.2):
+- J4 battery contact row moved 0.20 mm; closest battery via/pad gap is 0.225 mm.
+- J1/J2 U.FL apertures expanded 0.05 mm to join the existing central opening.
+  The original copper-free connector keepout remains. Each connector explicitly
+  permits this intended shared solder-mask aperture in KiCad; no global DRC
+  exclusions or severity reductions were added.
+- Dense component outlines/orientation graphics moved from silk to Fab.
+  Board/interface labels remain, with 1.0 mm text and 0.15 mm strokes.
+- U2 center pad now uses only copper; its existing separate mask/paste graphics
+  remain, replacing the invalid negative-margin representation.
+- Library-footprint mismatch warnings record these intentional local changes.
+  The new package has NOT been run through JLCDFM. Local checks do not prove
+  that every warning or the two pad-spacing danger examples in the PDF is gone;
+  the PDF contains no per-occurrence coordinates. Re-upload and inspect results.

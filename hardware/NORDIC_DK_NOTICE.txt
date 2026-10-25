@@ -1,0 +1,15 @@
+The SKY65943_DK10171 and reference nRF9151_DK10171 footprints were extracted
+locally from Nordic Semiconductor's nRF9151 DK hardware release 1.0.0,
+PCA10171 board revision 1.0.1 / 400797.PcbDoc, using KiCad 10.0.7's Altium
+importer. The reference nRF9151_DK10171 footprint is NOT the current U1
+footprint. U1 still uses the separately attributed community footprint.
+
+Source:
+https://nsscprodmedia.blob.core.windows.net/prod/software-and-other-downloads/dev-kits/nrf9151-dk/hardware-files/nrf9151-development-kit---hardware-files-1_0_0.zip
+ZIP SHA256:
+535974f95549ea418a6004861a7b2c3daa47606082e5b5d106d35012283f1af3
+
+The geometry is manufacturer reference material, not original artwork of
+this project. Non-local 3D models and net assignments were removed during
+extraction. Geometry and stencil interpretation still require review.
+Import warnings and raw pin/size data are in evidence/nordic-*.

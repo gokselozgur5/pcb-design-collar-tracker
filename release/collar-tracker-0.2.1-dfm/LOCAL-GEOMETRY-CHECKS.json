@@ -1,0 +1,75 @@
+{
+  "before": {
+    "pad_via_gaps_under_010_mm": [
+      {
+        "a": "J4.1",
+        "b": "via@[102.0, 119.45]",
+        "gap_mm": 0.025000000000005684
+      }
+    ],
+    "mask_bridges_under_010_mm": [
+      {
+        "layer": "F.Mask",
+        "gap_mm": 0.010000000000005116
+      },
+      {
+        "layer": "F.Mask",
+        "gap_mm": 0.010000000000005118
+      },
+      {
+        "layer": "F.Mask",
+        "gap_mm": 0.010000000000005116
+      },
+      {
+        "layer": "F.Mask",
+        "gap_mm": 0.010000000000005116
+      },
+      {
+        "layer": "F.Mask",
+        "gap_mm": 0.010000000000005118
+      },
+      {
+        "layer": "F.Mask",
+        "gap_mm": 0.010000000000005116
+      }
+    ],
+    "silks": []
+  },
+  "after": {
+    "pad_via_gaps_under_010_mm": [],
+    "mask_bridges_under_010_mm": [],
+    "silks": [
+      {
+        "text": "1V8 SWD",
+        "pad_or_mask_clearance_mm": 0.24918100000000717,
+        "hole_clearance_mm": 0.3150757629958903,
+        "inside_edge_margin_03": true
+      },
+      {
+        "text": "SIM EXT",
+        "pad_or_mask_clearance_mm": 0.271432336927629,
+        "hole_clearance_mm": 0.3112610000000018,
+        "inside_edge_margin_03": true
+      },
+      {
+        "text": "COLLAR 0.2.1",
+        "pad_or_mask_clearance_mm": 3.972075992029987,
+        "hole_clearance_mm": 2.5105892557194913,
+        "inside_edge_margin_03": true
+      },
+      {
+        "text": "HEALTH EXT",
+        "pad_or_mask_clearance_mm": 0.6487260000000106,
+        "hole_clearance_mm": 0.3454375832393048,
+        "inside_edge_margin_03": true
+      }
+    ]
+  },
+  "scope": "Local pad/via, mask bridge, legend geometry and topology checks; not JLCDFM acceptance.",
+  "invariants": {
+    "track_geometry_unchanged": true,
+    "via_geometry_unchanged": true,
+    "pad_nets_and_shapes_unchanged": true,
+    "only_J4_moved_02_mm": true
+  }
+}

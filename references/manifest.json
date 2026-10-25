@@ -1,0 +1,50 @@
+{
+  "retrieved_utc": "2026-10-24T13:34:27.083302+00:00",
+  "sources": [
+    {
+      "file": "nrf9151-pinout.html",
+      "url": "https://docs.nordicsemi.com/r/bundle/nwp_056/page/wp/nwp_056/pinout.html",
+      "ok": false,
+      "error": "curl: (56) The requested URL returned error: 403"
+    },
+    {
+      "file": "nrf9151-schematic.html",
+      "url": "https://docs.nordicsemi.com/r/bundle/nwp_056/page/wp/nwp_054/schematic_design.html",
+      "ok": false,
+      "error": "curl: (56) The requested URL returned error: 403"
+    },
+    {
+      "file": "nrf9151-footprint.html",
+      "url": "https://docs.nordicsemi.com/r/bundle/nwp_056/page/wp/nwp_056/footprint.html",
+      "ok": false,
+      "error": "curl: (56) The requested URL returned error: 403"
+    },
+    {
+      "file": "nrf9151-reference-bom.zip",
+      "url": "https://nsscprodmedia.blob.core.windows.net/prod/software-and-other-downloads/sip/nrf91x1-sip/nrf9151_bill_of_materials_bom_v1.1.zip",
+      "ok": true,
+      "bytes": 27409,
+      "sha256": "3c53b6346e0d4ab9d7b53f807a14f8397a0185562e3dbcccdbad4690ae9c49e1"
+    },
+    {
+      "file": "bq25185.pdf",
+      "url": "https://www.ti.com/lit/ds/symlink/bq25185.pdf",
+      "ok": true,
+      "bytes": 1544774,
+      "sha256": "c73ed7d63e6532bb05e26df30edd37c6ac2de310c1222a84a77625e15e133684"
+    },
+    {
+      "file": "sky65943-11.pdf",
+      "url": "https://www.skyworksinc.com/-/media/SkyWorks/Documents/Products/2801-2900/SKY65943-11_204404H.pdf",
+      "ok": true,
+      "bytes": 329635,
+      "sha256": "5dad0eac28e64f1e1928d432588763496badf4b10d575df8f122fee070d91e74"
+    },
+    {
+      "file": "lis2dw12.pdf",
+      "url": "https://www.st.com/resource/en/datasheet/lis2dw12.pdf",
+      "ok": false,
+      "error": "curl: (92) HTTP/2 stream 1 was not closed cleanly: INTERNAL_ERROR (err 2)"
+    }
+  ]
+}

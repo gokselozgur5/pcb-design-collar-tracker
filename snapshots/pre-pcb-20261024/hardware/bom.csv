@@ -1,0 +1,54 @@
+ref,value,mpn,footprint,dnp,onboard,status
+U1,nRF9151-LACA,NRF9151-LACA-R,Collar:LGA_9151_12.1x11.1mm,False,True,candidate; LTE-M carrier unresolved
+FB1,22R @100MHz,BLM18SD220SN1,Inductor_SMD:L_0603_1608Metric,False,True,Nordic recommended filter; verify rail impedance
+C1,1uF /10V,GRM033R61A105ME15,Capacitor_SMD:C_0201_0603Metric,False,True,candidate
+C2,1uF /10V,GRM033R61A105ME15,Capacitor_SMD:C_0201_0603Metric,False,True,candidate
+C3,47uF /10V,GRM21BR61A476ME15,Capacitor_SMD:C_0805_2012Metric,False,True,candidate
+C4,10uF /10V,GRM188R61A106MAAL,Capacitor_SMD:C_0603_1608Metric,False,True,candidate
+C5,100nF,GRM033R60J104ME19,Capacitor_SMD:C_0201_0603Metric,False,True,candidate
+C6,4.7uF,GRM155R60J475ME47,Capacitor_SMD:C_0402_1005Metric,False,True,candidate
+C7,4.7uF,GRM155R60J475ME47,Capacitor_SMD:C_0402_1005Metric,False,True,candidate
+C8,100nF,,Capacitor_SMD:C_0201_0603Metric,False,True,candidate
+R1,10k,,Resistor_SMD:R_0402_1005Metric,False,True,candidate
+C9,100nF,,Capacitor_SMD:C_0402_1005Metric,False,True,candidate
+R2,1k,,Resistor_SMD:R_0402_1005Metric,False,True,candidate
+C10,100nF,,Capacitor_SMD:C_0402_1005Metric,False,True,candidate
+R3,0R / tune,,Resistor_SMD:R_0402_1005Metric,False,True,candidate
+C11,DNP / tune,,Capacitor_SMD:C_0402_1005Metric,True,True,candidate
+C12,DNP / tune,,Capacitor_SMD:C_0402_1005Metric,True,True,candidate
+J1,LTE antenna / 50R,U.FL-R-SMT-1(10),Connector_Coaxial:U.FL_Hirose_U.FL-R-SMT-1_Vertical,False,True,bench connector; final FPC antenna TBD
+U2,SKY65943-11,SKY65943-11,,False,True,candidate; footprint pending manufacturer land pattern review
+L1,9.1nH,LQW15AN9N1J00D,Inductor_SMD:L_0402_1005Metric,False,True,candidate
+C13,39pF RF,,Capacitor_SMD:C_0402_1005Metric,False,True,candidate
+C14,39pF RF,,Capacitor_SMD:C_0402_1005Metric,False,True,candidate
+J2,GNSS antenna / passive,U.FL-R-SMT-1(10),Connector_Coaxial:U.FL_Hirose_U.FL-R-SMT-1_Vertical,False,True,bench connector; final antenna/ESD TBD
+R4,1k,,Resistor_SMD:R_0402_1005Metric,False,True,candidate
+R5,100k,,Resistor_SMD:R_0402_1005Metric,False,True,candidate
+C15,100nF,,Capacitor_SMD:C_0402_1005Metric,False,True,candidate
+C16,1uF,,Capacitor_SMD:C_0402_1005Metric,False,True,candidate
+J3,5V charging input,,,False,False,connector and input protection unresolved
+U3,BQ25185DLHR,BQ25185DLHR,,False,True,"candidate; footprint, input protection and cell limits unresolved"
+J4,Protected cell + NTC,,,False,False,cell/NTC/connector not selected
+C17,1uF /10V,,Capacitor_SMD:C_0402_1005Metric,False,True,candidate
+C18,10uF /10V,,Capacitor_SMD:C_0603_1608Metric,False,True,candidate
+C19,1uF /10V,,Capacitor_SMD:C_0402_1005Metric,False,True,candidate
+R6,18k /1%,,Resistor_SMD:R_0402_1005Metric,False,True,4.2V / 500mA input limit per BQ25185 table
+R7,3k /1%,,Resistor_SMD:R_0402_1005Metric,False,True,100mA provisional; battery approval required
+R8,10k,,Resistor_SMD:R_0402_1005Metric,False,True,candidate
+R9,10k,,Resistor_SMD:R_0402_1005Metric,False,True,candidate
+U4,TPS7A0218PDBVR,TPS7A0218PDBVR,Package_TO_SOT_SMD:SOT-23-5,False,True,candidate; VIO sequencing unresolved
+C20,1uF,,Capacitor_SMD:C_0402_1005Metric,False,True,candidate
+C21,1uF,,Capacitor_SMD:C_0402_1005Metric,False,True,candidate
+R10,2M,,Resistor_SMD:R_0402_1005Metric,False,True,candidate
+R11,1M,,Resistor_SMD:R_0402_1005Metric,False,True,candidate
+C22,10nF,,Capacitor_SMD:C_0402_1005Metric,False,True,candidate
+U5,LIS2DW12TR,LIS2DW12TR,,False,True,candidate; footprint pending; SA0 high prevents pull-up leakage
+C23,100nF,,Capacitor_SMD:C_0402_1005Metric,False,True,candidate
+C24,100nF,,Capacitor_SMD:C_0402_1005Metric,False,True,candidate
+R12,4.7k,,Resistor_SMD:R_0402_1005Metric,False,True,candidate
+R13,4.7k,,Resistor_SMD:R_0402_1005Metric,False,True,candidate
+J5,DIGITAL health sensor interface,,,False,False,"interface only; sensor, connector and mechanics unresolved"
+R14,100k,,Resistor_SMD:R_0402_1005Metric,False,True,candidate
+R15,100k,,Resistor_SMD:R_0402_1005Metric,False,True,candidate
+J6,eSIM interface / SKU TBD,,,False,False,logical interface; NOT a physical eSIM pinout
+J7,SWD / debug,,,False,False,pogo pad geometry TBD; debug must sense 1.8V VTref

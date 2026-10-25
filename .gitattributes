@@ -1,0 +1,10 @@
+# Preserve exact CAD, manufacturing and evidence bytes across checkouts.
+* -text
+*.md text eol=lf
+*.py text eol=lf
+*.cjs text eol=lf
+*.pdf binary
+*.png binary
+*.jpg binary
+*.zip binary
+*.stl binary

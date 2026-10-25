@@ -1,0 +1,12 @@
+#!/bin/sh
+set -eu
+KICAD_TASK_APP='/Volumes/GOKSSD/codex/tools/kicad/extracted/KiCad/KiCad/KiCad.app/Contents'
+if [ ! -x "$KICAD_TASK_APP/MacOS/kicad-cli" ]; then
+  echo 'KiCad is unavailable; mount GOKSSD or update scripts/kicad-cli.' >&2
+  exit 1
+fi
+export KICAD_CONFIG_HOME='/Volumes/GOKSSD/codex/tools/kicad/config'
+export XDG_CACHE_HOME='/Volumes/GOKSSD/codex/tools/kicad/cache'
+export KICAD10_SYMBOL_DIR="$KICAD_TASK_APP/SharedSupport/symbols"
+export KICAD10_FOOTPRINT_DIR="$KICAD_TASK_APP/SharedSupport/footprints"
+exec "$KICAD_TASK_APP/MacOS/kicad-cli" "$@"

@@ -1,0 +1,5 @@
+Source: https://github.com/hlord2000/nordic-lib-kicad
+Commit: 05a4dae2427fde6be0e190d6c9169eae1b3dae51
+License: CERN-OHL-P-2.0
+Change: removed non-local 3D model reference. Footprint geometry remains unmodified and needs dimensional verification.
+Symbols in this project are separately generated from manufacturer pin descriptions.

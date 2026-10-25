@@ -1,0 +1,243 @@
+{
+  "status": "PASS for the specified envelopes only",
+  "variants": [
+    {
+      "name": "compact_250",
+      "body_mm": [
+        38,
+        30,
+        14
+      ],
+      "total_height_with_contact_reservation_mm": 14.6,
+      "parts": {
+        "battery_example": {
+          "size": [
+            32,
+            20.5,
+            5.3
+          ],
+          "center": [
+            0,
+            -0.5
+          ],
+          "z": 3
+        },
+        "pcb_envelope": {
+          "size": [
+            30,
+            22,
+            0.8
+          ],
+          "center": [
+            1,
+            0
+          ],
+          "z": 8.9
+        },
+        "nrf9151_body": {
+          "size": [
+            12.1,
+            11.1,
+            1.2
+          ],
+          "center": [
+            -6,
+            0
+          ],
+          "z": 9.7
+        },
+        "power_esim_passives_reservation": {
+          "size": [
+            12,
+            8,
+            2.5
+          ],
+          "center": [
+            8,
+            -5
+          ],
+          "z": 9.7
+        },
+        "sensor_circuit_reservation": {
+          "size": [
+            6,
+            4,
+            1.2
+          ],
+          "center": [
+            9,
+            5
+          ],
+          "z": 9.7
+        },
+        "lte_antenna_reservation": {
+          "size": [
+            30,
+            1,
+            7
+          ],
+          "center": [
+            0,
+            12.600000000000001
+          ],
+          "z": 3.3
+        },
+        "gnss_antenna_reservation": {
+          "size": [
+            14,
+            5,
+            1
+          ],
+          "center": [
+            6,
+            10.500000000000002
+          ],
+          "z": 11
+        },
+        "health_head_reservation": {
+          "size": [
+            10,
+            10,
+            1.3
+          ],
+          "center": [
+            0,
+            0
+          ],
+          "z": 1.4
+        }
+      },
+      "outside": [],
+      "overlaps": []
+    },
+    {
+      "name": "reference_500",
+      "body_mm": [
+        44,
+        36,
+        14
+      ],
+      "total_height_with_contact_reservation_mm": 14.6,
+      "parts": {
+        "battery_example": {
+          "size": [
+            36,
+            29,
+            4.75
+          ],
+          "center": [
+            0,
+            -0.5
+          ],
+          "z": 3
+        },
+        "pcb_envelope": {
+          "size": [
+            30,
+            22,
+            0.8
+          ],
+          "center": [
+            1,
+            0
+          ],
+          "z": 8.9
+        },
+        "nrf9151_body": {
+          "size": [
+            12.1,
+            11.1,
+            1.2
+          ],
+          "center": [
+            -6,
+            0
+          ],
+          "z": 9.7
+        },
+        "power_esim_passives_reservation": {
+          "size": [
+            12,
+            8,
+            2.5
+          ],
+          "center": [
+            8,
+            -5
+          ],
+          "z": 9.7
+        },
+        "sensor_circuit_reservation": {
+          "size": [
+            6,
+            4,
+            1.2
+          ],
+          "center": [
+            9,
+            5
+          ],
+          "z": 9.7
+        },
+        "lte_antenna_reservation": {
+          "size": [
+            30,
+            1,
+            7
+          ],
+          "center": [
+            0,
+            15.600000000000001
+          ],
+          "z": 3.3
+        },
+        "gnss_antenna_reservation": {
+          "size": [
+            14,
+            5,
+            1
+          ],
+          "center": [
+            6,
+            13.500000000000002
+          ],
+          "z": 11
+        },
+        "health_head_reservation": {
+          "size": [
+            10,
+            10,
+            1.3
+          ],
+          "center": [
+            0,
+            0
+          ],
+          "z": 1.4
+        }
+      },
+      "outside": [],
+      "overlaps": []
+    }
+  ],
+  "checks": [
+    "rounded inner wall clearance",
+    "floor/lid clearance",
+    "pairwise volume overlap",
+    "oversized 500mAh example rejected from compact case"
+  ],
+  "unverified": [
+    "real placement of all BOM footprints and routing",
+    "battery pack protection/NTC/lead exit and swelling specification",
+    "LTE/GNSS antenna selection, ground plane, isolation, matching and body effects",
+    "heart-rate method, contact head and real sensor dimensions",
+    "sealing, fasteners, retention, charging contacts and collar attachment",
+    "device weight, battery life and physical prototype fit"
+  ],
+  "sources": {
+    "battery_250_example": "https://eemb.store/products/lp502030",
+    "battery_250_bare_cell": "https://www.eemb.com/product-130",
+    "battery_500_example": "https://www.adafruit.com/product/1578",
+    "nrf9151": "https://docs.nordicsemi.com/r/bundle/nwp_056/page/wp/nwp_054/physical_characteristics.html"
+  }
+}
