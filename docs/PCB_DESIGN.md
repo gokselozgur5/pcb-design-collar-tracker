@@ -229,6 +229,13 @@ necessarily the latest revision.
 - Check the release in a clean checkout. A useful regression must reject an
   incorrect source or changed output.
 
+For a retained battery, test the smallest allowed pack as well as the largest
+in-service envelope. A seated-pack fit does not check upward travel, sensor contact
+or escape through the cap. Keep intended bearing contact separate from component
+clearance. When two stops share a monolithic carrier, calculate their relative
+height; do not combine opposite translations of the same part. Record the full
+tolerance chain, thermal bounds and unqualified tilt/load behavior.
+
 ## Completion criteria
 
 Name the completed stage: schematic, placement, local checks, PCB DFM, PCBA or

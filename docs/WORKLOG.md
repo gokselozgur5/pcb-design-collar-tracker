@@ -629,3 +629,33 @@ native KiCad process, order/payment or supplier message occurred.
 Next: battery retention and controlled harness/dock, supplier-pack confirmation
 once sending is authorized, firmware and factory/physical qualification. Saved
 handoff verification includes r11 while preserving all previous checkpoints.
+
+
+## 2026-10-26 — Conditional pack-retention prototype r12
+
+Added a shell-integral cradle and a retaining cap on the removable PCB carrier.
+The requested pack seats on the existing floor, 0.3mm below the r09 drawing.
+PCB, outside dimensions, contacts/seals and antenna paths remain unchanged.
+The added 30.5 x 29 x 4.8mm minimum pack is an engineering capture requirement,
+not a supplier-confirmed product; CT-BAT-001-A is unchanged and unsent.
+
+The initial cap hit bottom-side parts and lacked guaranteed capture regions.
+Added five component reliefs, a north capture tongue and a larger NTC opening,
+and moved a bridge. The final 55 checks cover 85 component envelopes, raised
+pack/sensor travel, contact hardware and cavity/attachment geometry. New-solid
+gap is 0.224722mm, raised NTC gap 0.222928mm and minimum guaranteed capture area
+1.4291mm². The raised-sensor check keeps the cap and PCB on their common carrier
+datum while allowing independent component temperature and feature errors.
+
+Both changed meshes are closed, oriented and connected. Four current CAD
+intersections are empty; missing component reliefs, a blocked NTC opening and an
+undersized cradle give 7.568243, 3.345152 and 326.689565mm³ interference.
+The component CAD check includes the same cap tolerance envelope as the
+analytic screen; its first nominal-only negative control did not exercise that
+condition. Four previews and the actual dimensioned PDF were inspected.
+Seven regressions and the 26-file checkpoint pass; the saved handoff includes r12.
+
+Next: controlled harness/dock and pack lead-exit/strain-relief geometry, then
+firmware and factory/physical tests. Pouch contact/abrasion, cap strength/creep,
+tilt/load, material/thermal behavior and IP68 remain unqualified. No native KiCad
+process, PCB edit, repeated JLC upload, order/payment or supplier message occurred.

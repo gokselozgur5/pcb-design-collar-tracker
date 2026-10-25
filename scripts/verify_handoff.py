@@ -348,6 +348,8 @@ def verify(include_review_bundle=True):
     retention_candidate = verify_retention()
     from verify_thermal_assembly import verify as verify_thermal
     thermal_candidate = verify_thermal()
+    from verify_pack_retention import verify as verify_pack_retention
+    pack_retention_candidate = verify_pack_retention(check_baseline=False)
     routing_alternatives = [verify_routing(ROOT / 'experiments' / name) for name in [
         'power-r05c-return-corridors', 'power-r05d-joint-routing', 'power-r05e-native-joint',
         'power-r05f-return-reset', 'power-r05g-local-crossings']]
@@ -369,6 +371,7 @@ def verify(include_review_bundle=True):
             'pack_request': pack_request,
             'retention_candidate': retention_candidate,
             'thermal_candidate': thermal_candidate,
+            'pack_retention_candidate': pack_retention_candidate,
             'routing_alternatives': routing_alternatives,
             'review_bundle':verify_review_bundle() if include_review_bundle else 'Rebuild in progress',
             'populated_review_bundle':verify_review_bundle('release/collar-tracker-r04i-swim-r02-fit-review.json') if include_review_bundle else 'Rebuild in progress',

@@ -63,11 +63,11 @@ continuous demand. The PC3 source tables describe typical 1ms TX-subframe averag
 and additional microsecond peaks, not a guaranteed reporting-cycle load profile.
 The reviewed EEMB 350mA PCM is not accepted by the new geometry study. Larger
 Jauch/VARTA alternatives have explicit size/charge limitations in the review.
-Proceed independently with pack retention and controlled harness/dock details
+Proceed independently with controlled harness/dock details
 while awaiting a supplier response. Reconcile a returned specification against
 voltage, current, protection/recovery, NTC and in-service dimensions before selection.
 CAPH/ZETA are now prototype antenna candidates; cable end datums/tolerance fit,
-feed bond and clip strength remain open. Follow with pack retention, harness/dock,
+feed bond and clip strength remain open. Follow with harness/dock,
 seal/material/fastener definitions and firmware/factory test.
 The provisional firmware VIO wait remains 1s. UVLO is not a zero-current battery
 disconnect. Read the manufacturer sequencing exception before adding circuitry.
@@ -109,7 +109,7 @@ Only regenerate its CAD deliberately using `scripts/export_pack_enclosure.py`.
 The command also checks mesh integrity and actual CAD intersections; it takes
 several minutes. Read-only verification does not need OpenSCAD or the geometry venv.
 
-The latest mechanical source is `mechanical/swim-r11-thermal-fit/`. Read its README
+The preserved thermal-fit source is `mechanical/swim-r11-thermal-fit/`. Read its README
 and dimensioned sheet. Four radial keys and larger guide/cavity clearances address
 the r10 thermal interference calculation; component reliefs and cable paths cover
 the larger assigned movement. The contact stem is now 7.50mm, matching the wall.
@@ -131,8 +131,28 @@ The -10 to +45°C model uses assigned CTE/tolerance limits, not supplier guarant
 Cable pose search can change plug azimuth; permissible force/orientation, complete
 continuous movement and flex life remain unqualified. Tilt/load, moisture/creep,
 actual machining limits and physical thermal fit must also be checked. Next local
-work is pack retention and controlled harness/dock; supplier selection, firmware
+work is controlled harness/dock; supplier selection, firmware
 and factory/physical acceptance remain open. Do not describe this as order-ready.
+
+The latest mechanical source is `mechanical/swim-r12-pack-retention/`. Read its
+README and drawing. It adds the pack cradle/cap without changing the PCB, shell
+outside size, contact/seal geometry or antenna routing. The pack seats 0.3mm lower
+on the existing floor. The new minimum-size requirement and allowed contact regions
+still require the supplier's approval. It is not a complete approved battery pack.
+
+```sh
+python3 scripts/verify_pack_retention.py
+.venv-dfm/bin/python -m unittest discover -s tests -p test_pack_retention.py -v
+```
+
+The study checks all 85 populated envelopes, full upward pack/sensor travel and
+four guaranteed capture regions. Two changed meshes, seven reused r11 parts and
+seven CAD controls are source-bound. The cap and PCB support share a carrier
+datum; preserve that relationship when checking the raised NTC clearance.
+Do not treat tilt/load, pouch pressure/abrasion, cap strength or ingress as tested.
+Next: actual harness/dock parts, pack lead exit/strain relief and routing, then
+firmware and factory/physical qualification. The existing supplier email remains
+unsent and requires the outstanding explicit sending authorization.
 
 Saved native files are authoritative. Do not rerun one-shot seed/routing scripts
 against an existing target. Use a successor for further circuit/PCB edits and
@@ -183,7 +203,7 @@ on save. The r05 placement helper now checks design-rule and net-class identity.
 
 Protected NTC pack selection and antenna assembly qualification follow the
 implemented r05l circuit. r11 adds conditional thermal capture geometry; actual
-material/physical acceptance, dock/harness and battery retention remain open.
+material/physical acceptance and dock/harness remain open.
 Read `mechanical/swim-r08-antennas/README.md`, the current pack/antenna review and
 `docs/turkiye-connectivity.md` before assuming a modem/plan is field-qualified.
 The r05l/r08 thickness review checks 85 populated envelopes over 0.71–0.91mm;

@@ -44,12 +44,20 @@ Its [r09 fit study](mechanical/swim-r09-pack-request/README.md) includes the pac
 temperature-sensor stack with a 0.4mm height increase. This remains a supplier
 request: the existing EEMB 350mA PCM is not approved, and no complete pack is selected.
 
-The latest [r11 thermal-fit prototype](mechanical/swim-r11-thermal-fit/README.md)
+The preserved [r11 thermal-fit prototype](mechanical/swim-r11-thermal-fit/README.md)
 adds four radial keys, larger guide clearances and revised cable paths to the
 preserved r10 frame. The [drawing](mechanical/swim-r11-thermal-fit/retention-sheet.pdf)
 and saved checks cover 85 component envelopes, 27 cable poses and nine meshes.
 Rigid size remains 57.4 x 49.4 x 21.0mm. Material bounds are assigned requirements;
-physical thermal fit, connector strain, battery retention and ingress remain open.
+physical thermal fit, connector strain and ingress remain open.
+
+The latest [r12 pack-retention prototype](mechanical/swim-r12-pack-retention/README.md)
+adds a shell-integral cradle and a carrier-integral cap. The requested pack sits
+0.3mm lower on the existing floor; outside dimensions are unchanged. The
+[review drawing](mechanical/swim-r12-pack-retention/pack-retention-sheet.pdf) and saved
+checks cover all 85 components, full upward pack/sensor travel, two changed meshes
+and seven CAD controls. Minimum pack size/contact regions, actual strength and
+lead routing still require supplier and physical qualification.
 
 [STATUS](docs/STATUS.md) records the exact source and next action. The earlier r05k,
 r04i and all prior tested files remain preserved. Upload only the Gerber ZIP to PCB

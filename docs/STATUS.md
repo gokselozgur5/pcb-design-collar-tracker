@@ -19,11 +19,12 @@ Latest battery work: [CT-BAT-001-A request sheet](../assembly/pack-r03/request-s
 This study is not an approved battery substitution. Supplier-message authorization
 has been requested separately; no response or sending authorization is recorded yet.
 
-Latest mechanical work: [r11 thermal-fit prototype](../mechanical/swim-r11-thermal-fit/README.md)
-and its [dimensioned drawing](../mechanical/swim-r11-thermal-fit/retention-sheet.pdf).
-Four radial keys locate the frame while allowing expansion. Component reliefs,
-guide clearances and cable paths cover the enlarged assigned motion. These are
-conditional geometric results; material properties and physical qualification remain open.
+Latest mechanical work: [r12 battery-retention prototype](../mechanical/swim-r12-pack-retention/README.md)
+and its [dimensioned drawing](../mechanical/swim-r12-pack-retention/pack-retention-sheet.pdf).
+The shell now has a cradle and the removable PCB carrier has a retaining cap.
+The requested pack sits on the existing floor, 0.3mm below the r09 visualization;
+external dimensions, PCB, seals and antenna geometry are unchanged.
+These are conditional dimensional results, not pack or physical qualification.
 
 | Check | Current result |
 |---|---|
@@ -40,6 +41,7 @@ conditional geometric results; material properties and physical qualification re
 | Requested-pack study r09 | Same PCB; requested pack/NTC envelope fits with a 0.4mm height increase; no supplier pack approval |
 | Captive-PCB prototype r10 | 85 swept component envelopes, 27 cable poses, four tab contacts and nine closed meshes; current CAD intersections empty and reversed key rejected |
 | Thermal-fit prototype r11 | 85 swept envelopes; 27 cable poses; nine closed meshes; four radial keys; conditional -10 to +45°C screen with independently varying part temperatures |
+| Pack-retention prototype r12 | 85 component envelopes plus raised pack/NTC checks; two changed closed meshes; seven CAD controls; seven regressions |
 | Antenna candidates | Synzen CAPH SZK-C-3L30 LTE and ZETA SZK-C-0G04 GNSS; separate nominal 100mm cable assemblies and four internal lid guides |
 
 PCB SHA256: `241c84d6ba98793c37344e1e46ddc4918e7b05322ba87daea7c9a90ffb8379b3`.
@@ -77,11 +79,21 @@ and the r05l PCB are unchanged. The original board height fails the wider-pack
 clearance control. No supplier part, wire route, adhesive strength or physical
 thermal result is approved by this fit calculation.
 
-**Next independent local step:** define battery retention and the controlled
-harness/dock around CT-BAT-001-A. Do not select or order a pack from unconfirmed
-request dimensions. Supplier-message approval is still unanswered. Then close
-cable/material/process requirements, firmware and factory tests. Do not reroute
-or repeat DFM without a real source change.
+**Next independent local step:** finish the controlled harness and dock: actual
+wire/termination/spring-contact drawings, J3/J4 routing, strain relief and pack
+lead-exit definition. Do not select or order a pack from unconfirmed request
+dimensions. Supplier-message approval is still unanswered. Then close cable/material
+process requirements, firmware and factory tests. Do not repeat unchanged-byte DFM.
+
+r12 adds a 33 x 31.5mm cradle opening and a 0.75mm cap with component reliefs and
+a central NTC opening. Its minimum complete-pack requirement is 30.5 x 29 x 4.8mm;
+this is not a supplier-confirmed part. New-solid/component gap is at least 0.225mm,
+raised-NTC/component gap 0.223mm and the four guaranteed capture regions each have
+at least 1.429mm² overlap. The lifted-sensor calculation uses the common carrier
+datum, independent component temperature and a 0.10mm total feature-error chain.
+Two changed meshes and seven CAD controls pass; seven unchanged r11 meshes are
+reused by hash. Pack/PCB tilt, pouch contact pressure/abrasion, cap strength/creep,
+lead routing, thermal attachment and physical ingress remain unqualified.
 
 r11 preserves the PCB and outside size. Under the declared CTE bounds, the r10
 comparison shows calculated guide and closing-stack interference. r11 widens the
