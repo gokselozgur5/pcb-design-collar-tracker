@@ -1,0 +1,152 @@
+{
+  "before_sha256": "1b2b4bd7b90c3931bd8cbb151637408902332a94260d4a2a820ae6df04838a09",
+  "source_sha256": "309c878b6a07e9ba3814c094278206f5ff78613500fc730a57720b0607b82e82",
+  "removed": [
+    {
+      "id": "129529ab-34bc-41c1-ace8-bde030e55a54",
+      "start": [
+        115.1,
+        124.3
+      ],
+      "end": [
+        115.05,
+        124.35
+      ],
+      "width_mm": 0.2
+    },
+    {
+      "id": "2750c920-7198-4f56-872f-e8caf9676492",
+      "start": [
+        115.1,
+        124.25
+      ],
+      "end": [
+        115.1,
+        124.3
+      ],
+      "width_mm": 0.2
+    },
+    {
+      "id": "2a2ef1e5-b88b-4761-b1a5-22814da377fe",
+      "start": [
+        115.15,
+        124.15
+      ],
+      "end": [
+        115.15,
+        124.2
+      ],
+      "width_mm": 0.2
+    },
+    {
+      "id": "2ae90b47-edda-4b65-80ad-4065a35eda4f",
+      "start": [
+        115.05,
+        124.35
+      ],
+      "end": [
+        115.0375,
+        124.4
+      ],
+      "width_mm": 0.2
+    },
+    {
+      "id": "2d52436a-1d5b-4cf3-a727-75c832bd4820",
+      "start": [
+        115.15,
+        124.2
+      ],
+      "end": [
+        115.1,
+        124.25
+      ],
+      "width_mm": 0.2
+    },
+    {
+      "id": "6a6cd7f4-5a91-4657-b21a-7f6a036354e6",
+      "start": [
+        115.55,
+        123.7
+      ],
+      "end": [
+        115.2,
+        124.05
+      ],
+      "width_mm": 0.2
+    },
+    {
+      "id": "8437564e-6eb4-4c1d-9546-1a8d9e265774",
+      "start": [
+        115.2,
+        124.05
+      ],
+      "end": [
+        115.2,
+        124.1
+      ],
+      "width_mm": 0.2
+    },
+    {
+      "id": "8f8abdb1-0be5-441b-8086-f24e92b1eb0f",
+      "start": [
+        115.05,
+        124.3875
+      ],
+      "end": [
+        115.0375,
+        124.4
+      ],
+      "width_mm": 0.2
+    },
+    {
+      "id": "987575a4-2e09-4731-b29b-7087b0ad2e11",
+      "start": [
+        115.2,
+        124.1
+      ],
+      "end": [
+        115.15,
+        124.15
+      ],
+      "width_mm": 0.2
+    },
+    {
+      "id": "a9f58fcd-2793-4bbf-92ce-1352f8e97d7a",
+      "start": [
+        117.4,
+        123.7
+      ],
+      "end": [
+        115.55,
+        123.7
+      ],
+      "width_mm": 0.2
+    },
+    {
+      "id": "cfae2d94-031c-4d00-ace5-7585d06d07cc",
+      "start": [
+        117.55,
+        123.85
+      ],
+      "end": [
+        117.4,
+        123.7
+      ],
+      "width_mm": 0.2
+    }
+  ],
+  "shortened_track": {
+    "id": "c690a142-a55a-4a29-974a-70ac2c76f886",
+    "old_end_mm": [
+      117.55,
+      123.85
+    ],
+    "new_end_mm": [
+      117.55,
+      125.7
+    ]
+  },
+  "intentionally_isolated_pad": "U7.3",
+  "unaffected_terminal_groups_preserved": 208,
+  "scope": "One PG connection deliberately opened for a local crossing repair. Full native DRC and both PG/VIO routing required."
+}

@@ -17,6 +17,12 @@ CLAUDE.local.md
 !.env.example
 *.pem
 *.key
+
+# Routing scratch inputs/backups are local; saved native projects are authoritative.
+/experiments/power-r05g-local-crossings/build/*
+!/experiments/power-r05g-local-crossings/build/placement.json
+/experiments/power-r05h-six-layer/build/*
+!/experiments/power-r05h-six-layer/build/placement.json
 **/browser-profile/
 **/browser-tmp/
 **/st-browser/

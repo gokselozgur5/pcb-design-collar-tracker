@@ -1,0 +1,153 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-25T21:43:22",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "collar-tracker.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [/VIO_ENABLE] of U4 on F.Cu",
+                    "pos": {
+                        "x": 101.8625,
+                        "y": 103.45
+                    },
+                    "uuid": "5c008fe3-a23d-4697-9e9f-61afc06ff345"
+                },
+                {
+                    "description": "Pad 1 [/VIO_ENABLE] of U7 on B.Cu",
+                    "pos": {
+                        "x": 116.95,
+                        "y": 124.55
+                    },
+                    "uuid": "6247e39b-1824-49c1-b7a2-cb68eacb0a3d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [/VIO_ENABLE] of U7 on B.Cu",
+                    "pos": {
+                        "x": 116.95,
+                        "y": 124.55
+                    },
+                    "uuid": "6247e39b-1824-49c1-b7a2-cb68eacb0a3d"
+                },
+                {
+                    "description": "Track [/VIO_ENABLE] on F.Cu, length 0.7900 mm",
+                    "pos": {
+                        "x": 123.01,
+                        "y": 127.75
+                    },
+                    "uuid": "29639915-09b5-4b60-b34d-377acce65136"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [/VBAT] on F.Cu, length 0.7071 mm",
+                    "pos": {
+                        "x": 134.5,
+                        "y": 110.76
+                    },
+                    "uuid": "abd6927b-8c6c-4582-9109-49719359a4e5"
+                },
+                {
+                    "description": "Track [/VBAT] on F.Cu, length 0.7500 mm",
+                    "pos": {
+                        "x": 103.9,
+                        "y": 122.6
+                    },
+                    "uuid": "5e53245d-8793-4f72-a060-c1789edc079d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 73 [/FG_ALERT] of U1 on F.Cu",
+                    "pos": {
+                        "x": 109.75,
+                        "y": 107.87499
+                    },
+                    "uuid": "f0dbab23-391f-499d-adf1-3cd5eda034e9"
+                },
+                {
+                    "description": "Via [/FG_ALERT] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 133.2,
+                        "y": 112.75
+                    },
+                    "uuid": "ce9da100-bd9f-4e08-9db6-dbae3f0d2849"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 5 [/NRF_ENABLE] of U7 on B.Cu",
+                    "pos": {
+                        "x": 116.0,
+                        "y": 121.95
+                    },
+                    "uuid": "ddf52df5-21ba-4846-8faf-8e8e39ccfe80"
+                },
+                {
+                    "description": "Track [/NRF_ENABLE] on B.Cu, length 1.0441 mm",
+                    "pos": {
+                        "x": 105.3679,
+                        "y": 113.3459
+                    },
+                    "uuid": "4fec2723-26f5-412a-a7f3-e6806ada8c7c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": []
+}

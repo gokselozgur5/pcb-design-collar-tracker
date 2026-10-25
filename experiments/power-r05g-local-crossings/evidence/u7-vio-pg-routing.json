@@ -1,0 +1,97 @@
+{
+  "before_sha256": "309c878b6a07e9ba3814c094278206f5ff78613500fc730a57720b0607b82e82",
+  "protected_sim_input_ids": [],
+  "route_anchors": {},
+  "first_nets": [
+    "/VIO_ENABLE",
+    "/POWER_GOOD"
+  ],
+  "low_current_branch_nets": [],
+  "existing_power_backbone_pins": {},
+  "only_nets": [
+    "/VIO_ENABLE",
+    "/POWER_GOOD"
+  ],
+  "router_script_sha256": "15fdbabf896a0de7b4932823c3d9b5ced880bbe8c9b48419359b6a54faf51d3c",
+  "raster_script_sha256": "bebb78c3f506291965808f50edf34de7424a0f89f77fc253856ee444820999e9",
+  "relocatable_via_input_sha256": null,
+  "removed_return_vias": [],
+  "route_limit_mm": 100.0,
+  "board_bounds_mm": [
+    98.0,
+    98.0,
+    138.0,
+    130.0
+  ],
+  "source_sha256": "0a1b762c84ddd3491d2c4c057659d1eb03d1b9a6b2495d9647114c420247a312",
+  "routes": [
+    {
+      "net": "/POWER_GOOD",
+      "points": [
+        [
+          115.05,
+          124.55,
+          2
+        ],
+        [
+          114.35000000000001,
+          124.55000000000001,
+          2
+        ],
+        [
+          114.2,
+          124.4,
+          2
+        ],
+        [
+          114.2,
+          124.4,
+          0
+        ],
+        [
+          111.80000000000001,
+          124.4,
+          0
+        ],
+        [
+          111.15,
+          123.75,
+          0
+        ],
+        [
+          111.15,
+          123.75,
+          2
+        ],
+        [
+          110.7,
+          124.2,
+          2
+        ],
+        [
+          110.7,
+          125.10000000000001,
+          2
+        ],
+        [
+          110.55,
+          125.25,
+          2
+        ]
+      ],
+      "visited": 9471,
+      "search_backend": "shapely-raster",
+      "raster_input_sha256": "bd7f20c1b907218ad7f5a7d61a68d80df86ae20768bb3797d0c8417c0730dab8",
+      "trunk_width_mm": 0.2,
+      "pad_escape_width_mm": 0.2,
+      "escape_radius_mm": 1.0
+    }
+  ],
+  "ground_stitches": [],
+  "failed": [
+    "('/VIO_ENABLE', 'no route', 19737, '966ff5540d94fe6b6f94f681471635b3a82594701ccc50f2c1b2fdd4987be02c')",
+    "('/VIO_ENABLE', 'no route', 2063, '8afa8ce267ebc3d52bc936471d4749b7effdebd9d05918717d22df3ca459de54')"
+  ],
+  "interrupted": false,
+  "acceptance": "Pending native DRC and independent geometry audit"
+}
