@@ -1,0 +1,39 @@
+{
+  "retrieved": "2026-10-25",
+  "files": [
+    {
+      "file": "SIM8051-drawing-D5.pdf",
+      "source_url": "https://static.chipdip.ru/lib/130/DOC015130316.pdf",
+      "sha256": "4929c3ce33954f77cfa32613382e4f67d0b07130c87a76d7fae55637e497aba9",
+      "note": "GCT manufacturer drawing revision D5, 22 Jan 2021; full drawing and land pattern visually inspected. Official https://gct.co/files/drawings/sim8051.pdf was inaccessible in this session. D6 text was accessible, its image was not inspected."
+    },
+    {
+      "file": "SIM8051-land-detail.png",
+      "source_url": null,
+      "sha256": "25f6366ed253a4222736171935c3cb6fac2bb3cb50269c77ad34360cd99fb61e",
+      "note": "Local render of the D5 recommended component-side land pattern; derived from the preceding PDF."
+    },
+    {
+      "file": "TPD4E1U06.pdf",
+      "source_url": "https://www.ti.com/lit/ds/symlink/tpd4e1u06.pdf",
+      "sha256": "aaf78b3eda253f43ce9f7cc6150d88dac876f9aaafe8a4cc0d03a9773660f418",
+      "note": "TI manufacturer datasheet; SIM ESD choice TPD4E1U06DCKR. Pin table inspected; final footprint and layout acceptance still pending."
+    }
+  ],
+  "parts": [
+    {
+      "mpn": "SIM8051-6-0-14-00-A",
+      "lcsc": "C7363812",
+      "url": "https://gct.co/connector/sim8051"
+    },
+    {
+      "mpn": "TPD4E1U06DCKR",
+      "lcsc": "C194628",
+      "url": "https://www.ti.com/product/TPD4E1U06"
+    }
+  ],
+  "limits": [
+    "No live factory stock reservation or PCBA acceptance.",
+    "D5 drawing is the inspected footprint reference; recheck newer drawing before manufacture."
+  ]
+}
