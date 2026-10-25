@@ -9,6 +9,9 @@ import pcbnew as k
 trial=Path(sys.argv[1]);pcb=trial/'hardware/collar-tracker.kicad_pcb'
 assert 'paul-nanosim' in str(pcb)
 b=k.LoadBoard(str(pcb));before=hashlib.sha256(pcb.read_bytes()).hexdigest()
+settings=b.GetDesignSettings()
+height=max(1000000,settings.m_MinSilkTextHeight)
+thickness=max(200000,settings.m_MinSilkTextThickness)
 assert not any(d.GetClass()=='PCB_TEXT' and d.GetLayer() in [k.F_SilkS,k.B_SilkS] for d in b.GetDrawings()), 'Labels already exist'
 labels=[('5V',101.25,124.4,k.F_SilkS,0),('GND',103.75,124.4,k.F_SilkS,0),
         ('BAT+',103.5,124.4,k.B_SilkS,0),('GND',106,124.4,k.B_SilkS,0),
@@ -19,7 +22,7 @@ rows=[]
 for text,x,y,layer,angle in labels:
     t=k.PCB_TEXT(b);t.SetText(text);t.SetLayer(layer)
     t.SetPosition(k.VECTOR2I(round(x*1e6),round(y*1e6)))
-    t.SetTextSize(k.VECTOR2I(950000,950000));t.SetTextThickness(160000)
+    t.SetTextSize(k.VECTOR2I(height,height));t.SetTextThickness(thickness)
     t.SetTextAngle(k.EDA_ANGLE(angle,k.DEGREES_T));t.SetMirrored(layer==k.B_SilkS);b.Add(t)
     rows.append(dict(id=t.m_Uuid.AsString(),text=text,position_mm=[x,y],layer=b.GetLayerName(layer)))
 assert k.SaveBoard(str(pcb),b)

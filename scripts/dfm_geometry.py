@@ -14,6 +14,15 @@ def polygons(poly):
 
 out={'source':str(source),'source_sha256':hashlib.sha256(source.read_bytes()).hexdigest(),
      'pads':[],'vias':[],'tracks':[],'mask_graphics':[],'silks':[]}
+edges=[item for item in b.GetDrawings() if item.GetLayer()==k.Edge_Cuts]
+if len(edges)==4 and all(item.GetShape()==k.SHAPE_T_SEGMENT for item in edges):
+    corners={tuple(xy(p)) for edge in edges for p in [edge.GetStart(),edge.GetEnd()]}
+    xmin,ymin=min(p[0] for p in corners),min(p[1] for p in corners)
+    xmax,ymax=max(p[0] for p in corners),max(p[1] for p in corners)
+    if corners=={(xmin,ymin),(xmin,ymax),(xmax,ymin),(xmax,ymax)} and all(
+        edge.GetStart().x==edge.GetEnd().x or edge.GetStart().y==edge.GetEnd().y for edge in edges
+    ):
+        out['board_bounds_mm']=[xmin,ymin,xmax,ymax]
 out['zones']=[{'layer':b.GetLayerName(z.GetLayer()),'net':z.GetNetname(),'minimum_width_mm':z.GetMinThickness()/1e6,
                'clearance_mm':z.GetLocalClearance()/1e6}
               for z in b.Zones() if not z.GetIsRuleArea()]
