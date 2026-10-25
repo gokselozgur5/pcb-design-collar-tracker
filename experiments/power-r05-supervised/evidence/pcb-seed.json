@@ -1,0 +1,731 @@
+{
+  "baseline_pcb_sha256": "f4be0288708733aaa6092a703ffa1bfebb3dc059fd21112a8cfed94028acc3b0",
+  "source_sha256": "e3ed7f8276e6d594d332e2daa92df7fe3a0e4e68849fcb6cfe3be386b796e948",
+  "footprint_changes": {
+    "C25": {
+      "before": "Capacitor_SMD:C_0805_2012Metric",
+      "after": "Collar05:C25_C_0805_2012Metric"
+    },
+    "C26": {
+      "before": "Capacitor_SMD:C_0402_1005Metric",
+      "after": "Collar05:C26_C_0402_1005Metric"
+    },
+    "C27": {
+      "before": "Capacitor_SMD:C_0402_1005Metric",
+      "after": "Collar05:C27_C_0402_1005Metric"
+    },
+    "C28": {
+      "before": "Capacitor_SMD:C_0402_1005Metric",
+      "after": "Collar05:C28_C_0402_1005Metric"
+    },
+    "C29": {
+      "before": "Capacitor_SMD:C_0402_1005Metric",
+      "after": "Collar05:C29_C_0402_1005Metric"
+    },
+    "C30": {
+      "before": "Capacitor_SMD:C_0402_1005Metric",
+      "after": "Collar05:C30_C_0402_1005Metric"
+    },
+    "C9": {
+      "before": "Capacitor_SMD:C_0805_2012Metric",
+      "after": "Collar05:C9_C_0805_2012Metric"
+    },
+    "Q1": {
+      "before": "Package_TO_SOT_SMD:SOT-363_SC-70-6",
+      "after": "Collar05:Q1_SOT-363_SC-70-6"
+    },
+    "R16": {
+      "before": "Resistor_SMD:R_0402_1005Metric",
+      "after": "Collar05:R16_R_0402_1005Metric"
+    },
+    "R17": {
+      "before": "Resistor_SMD:R_0402_1005Metric",
+      "after": "Collar05:R17_R_0402_1005Metric"
+    },
+    "R18": {
+      "before": "Resistor_SMD:R_0402_1005Metric",
+      "after": "Collar05:R18_R_0402_1005Metric"
+    },
+    "R19": {
+      "before": "Resistor_SMD:R_0402_1005Metric",
+      "after": "Collar05:R19_R_0402_1005Metric"
+    },
+    "R20": {
+      "before": "Resistor_SMD:R_0402_1005Metric",
+      "after": "Collar05:R20_R_0402_1005Metric"
+    },
+    "R21": {
+      "before": "Resistor_SMD:R_0402_1005Metric",
+      "after": "Collar05:R21_R_0402_1005Metric"
+    },
+    "R22": {
+      "before": "Resistor_SMD:R_0402_1005Metric",
+      "after": "Collar05:R22_R_0402_1005Metric"
+    },
+    "R23": {
+      "before": "Resistor_SMD:R_0402_1005Metric",
+      "after": "Collar05:R23_R_0402_1005Metric"
+    },
+    "U6": {
+      "before": "Package_TO_SOT_SMD:SOT-23-6",
+      "after": "Collar05:U6_SOT-23-6"
+    },
+    "U7": {
+      "before": "Package_TO_SOT_SMD:SOT-23-6",
+      "after": "Collar05:U7_SOT-23-6"
+    },
+    "U8": {
+      "before": "Package_TO_SOT_SMD:SOT-353_SC-70-5",
+      "after": "Collar05:U8_SOT-353_SC-70-5"
+    },
+    "U9": {
+      "before": "Collar05:MAX17048_T822_3_90_0065E",
+      "after": "Collar05:U9_MAX17048_T822_3_90_0065E"
+    }
+  },
+  "removed_tracks": [
+    {
+      "uuid": "53e38c3b-597f-4b35-906b-21e8dc952a99",
+      "net": "/GND"
+    },
+    {
+      "uuid": "81675259-7093-4a90-9c47-60b1635889c3",
+      "net": "/GND"
+    },
+    {
+      "uuid": "86139c57-7d09-4501-b884-654723e8a68c",
+      "net": "/GND"
+    },
+    {
+      "uuid": "b108ec5a-91a8-4795-8ab2-1545ea86dbc5",
+      "net": "/GND"
+    },
+    {
+      "uuid": "035e1ace-33a2-47a5-adc1-03300de7af05",
+      "net": "/VSYS"
+    },
+    {
+      "uuid": "0a94e834-a0e4-4c28-b374-043ada8296b1",
+      "net": "/VSYS"
+    },
+    {
+      "uuid": "0aa6e90b-b0ee-4daf-9f42-e2186f483232",
+      "net": "/VSYS"
+    },
+    {
+      "uuid": "1fc5bdec-26b7-4f4f-9e3d-bc2ae01cbd8d",
+      "net": "/VSYS"
+    },
+    {
+      "uuid": "229aec44-099f-450b-83f5-82d8927a58a6",
+      "net": "/VSYS"
+    },
+    {
+      "uuid": "2358e335-6f96-447d-8db9-1289efa7e9ca",
+      "net": "/VSYS"
+    },
+    {
+      "uuid": "30d190b3-2440-442b-9314-b84b86425c31",
+      "net": "/VSYS"
+    },
+    {
+      "uuid": "33a29915-81f2-488d-bc63-cb2c86537031",
+      "net": "/VSYS"
+    },
+    {
+      "uuid": "494e0adc-0f52-4082-9f54-64a96c48d2d8",
+      "net": "/VSYS"
+    },
+    {
+      "uuid": "54acc885-94d1-46f3-b3d3-c9c270214844",
+      "net": "/VSYS"
+    },
+    {
+      "uuid": "55adf7a5-7699-4073-af2e-7ddeeb620a16",
+      "net": "/VSYS"
+    },
+    {
+      "uuid": "5d4c548b-8830-4671-80b8-83b767ca414f",
+      "net": "/VSYS"
+    },
+    {
+      "uuid": "636306fd-c895-4a4a-83a7-ba5ff1ef3388",
+      "net": "/VSYS"
+    },
+    {
+      "uuid": "66fd4bb3-e310-4211-96a1-498a478f587d",
+      "net": "/VSYS"
+    },
+    {
+      "uuid": "6ba9ed17-142c-4ce5-bb93-ffae79f96dff",
+      "net": "/VSYS"
+    },
+    {
+      "uuid": "732c491e-70ad-4fd9-b75b-4b3c183aff1f",
+      "net": "/VSYS"
+    },
+    {
+      "uuid": "76302b7e-0bcc-44e1-b79a-465004479f0c",
+      "net": "/VSYS"
+    },
+    {
+      "uuid": "785d89fa-3ec5-4cdb-ac84-a5be20ad1809",
+      "net": "/VSYS"
+    },
+    {
+      "uuid": "79a85d1c-fc7e-43c7-a963-f02999f5fb52",
+      "net": "/VSYS"
+    },
+    {
+      "uuid": "86ef8e2f-c85a-4020-8ed5-99bec8c7bcf3",
+      "net": "/VSYS"
+    },
+    {
+      "uuid": "8796e1f3-7981-4b19-b9fb-49ad66fde64b",
+      "net": "/VSYS"
+    },
+    {
+      "uuid": "96379636-244c-4e34-8b26-9a36a7ced11b",
+      "net": "/VSYS"
+    },
+    {
+      "uuid": "9a1eb371-7eac-42e7-9f67-829d0bc21541",
+      "net": "/VSYS"
+    },
+    {
+      "uuid": "b06ba187-2aec-4229-8ea0-3c8c0c2134ef",
+      "net": "/VSYS"
+    },
+    {
+      "uuid": "b292e22a-24ba-40a4-9648-aa831d15d6ab",
+      "net": "/VSYS"
+    },
+    {
+      "uuid": "c3842796-2a1a-438a-b87f-66a547d4b30b",
+      "net": "/VSYS"
+    },
+    {
+      "uuid": "c4842282-bea2-4877-bbff-2801b3bf372e",
+      "net": "/VSYS"
+    },
+    {
+      "uuid": "d3c59a1c-e3c0-4c36-aa65-7516e33edb2b",
+      "net": "/VSYS"
+    },
+    {
+      "uuid": "d62d43cf-60b9-497d-8a8e-f2c8fdbedeaa",
+      "net": "/VSYS"
+    },
+    {
+      "uuid": "dac2a8f0-23fb-4275-9074-3afd2339ff06",
+      "net": "/VSYS"
+    },
+    {
+      "uuid": "dfef412b-67dc-4fd4-82a2-b7b796aeaa8d",
+      "net": "/VSYS"
+    },
+    {
+      "uuid": "e2219155-4821-4554-921c-ecd0c53a6979",
+      "net": "/VSYS"
+    },
+    {
+      "uuid": "ec19225d-d048-4785-8a2f-579138d08243",
+      "net": "/VSYS"
+    },
+    {
+      "uuid": "f0db6f09-1a05-4505-bdaa-82f1fa4e8101",
+      "net": "/VSYS"
+    },
+    {
+      "uuid": "f744cf99-f912-40d6-aca0-1dd70e465a37",
+      "net": "/VSYS"
+    },
+    {
+      "uuid": "ff3dfcd5-3525-4737-aec3-6bacfa8867c3",
+      "net": "/VSYS"
+    },
+    {
+      "uuid": "62cefbf7-0c5f-46ab-a66d-e2a1f7a83529",
+      "net": "/VSYS"
+    },
+    {
+      "uuid": "96da1110-931f-425b-961b-3c3dc9cba543",
+      "net": "/VSYS"
+    },
+    {
+      "uuid": "afc6dbbb-92ff-492b-8dc4-8ef71b595cdc",
+      "net": "/VSYS"
+    },
+    {
+      "uuid": "bc311a66-1ef5-4de4-ae1a-013ab48bc5a9",
+      "net": "/VSYS"
+    },
+    {
+      "uuid": "04164677-0ecd-4741-abb9-babb4b00d377",
+      "net": "/VSYS"
+    },
+    {
+      "uuid": "05baa29a-7a29-4a06-b032-500bd7df3090",
+      "net": "/VSYS"
+    },
+    {
+      "uuid": "101727e1-481b-469a-a0f9-4ec82d8744ee",
+      "net": "/VSYS"
+    },
+    {
+      "uuid": "19d7dfbd-a76f-438d-97cf-07d00629b9bc",
+      "net": "/VSYS"
+    },
+    {
+      "uuid": "19dc8fea-c4ab-427b-883b-dac0613a755f",
+      "net": "/VSYS"
+    },
+    {
+      "uuid": "2a4fa5e0-cc27-4bd1-8ff5-250a33a0422c",
+      "net": "/VSYS"
+    },
+    {
+      "uuid": "302e2fe7-da3a-4f30-aed6-e87a38bbaa2f",
+      "net": "/VSYS"
+    },
+    {
+      "uuid": "49c9a7ce-9251-42b3-9dff-68d2de01b1ad",
+      "net": "/VSYS"
+    },
+    {
+      "uuid": "4b152849-7246-4548-ba92-64ef040fcf25",
+      "net": "/VSYS"
+    },
+    {
+      "uuid": "5ca95cc9-fc85-4d44-909a-9da13a6f328b",
+      "net": "/VSYS"
+    },
+    {
+      "uuid": "6ab8b25d-43ce-48a4-8448-633cecb216e1",
+      "net": "/VSYS"
+    },
+    {
+      "uuid": "6b0ffc51-9bf2-4add-924c-8295af02281e",
+      "net": "/VSYS"
+    },
+    {
+      "uuid": "74fd2091-50e5-424c-94b7-a689bb6b93f6",
+      "net": "/VSYS"
+    },
+    {
+      "uuid": "7bf89922-ab93-41d1-bcb8-18f0f472323f",
+      "net": "/VSYS"
+    },
+    {
+      "uuid": "878a08c1-96a8-4b2f-a66d-a4e8a2a1c313",
+      "net": "/VSYS"
+    },
+    {
+      "uuid": "94a31ccc-f75b-4026-8017-abe895491bba",
+      "net": "/VSYS"
+    },
+    {
+      "uuid": "9aa3d3aa-745d-4cbc-9190-3d023d9d2933",
+      "net": "/VSYS"
+    },
+    {
+      "uuid": "aea59c4a-684d-4214-898d-7a5546168ef4",
+      "net": "/VSYS"
+    },
+    {
+      "uuid": "b5ee90f2-e0cf-4dd9-b944-e7296afb4772",
+      "net": "/VSYS"
+    },
+    {
+      "uuid": "b9ab5539-d23b-4299-a396-c6a8c87bb52f",
+      "net": "/VSYS"
+    },
+    {
+      "uuid": "bee0f485-69d2-4df8-9860-c5900a3ddfaf",
+      "net": "/VSYS"
+    },
+    {
+      "uuid": "e0c23a54-4078-4481-a37a-339cbaa7569f",
+      "net": "/VSYS"
+    },
+    {
+      "uuid": "fa746b68-f785-431b-ab26-a7c9cbda3ddd",
+      "net": "/VSYS"
+    },
+    {
+      "uuid": "fc309755-d0a4-4e67-aeaa-459f7c40fd0a",
+      "net": "/VSYS"
+    },
+    {
+      "uuid": "0adbc816-9fa4-44cf-9654-bd26c8b75540",
+      "net": "/VDD_NRF"
+    },
+    {
+      "uuid": "1a0f511a-d99b-4419-b210-47a37f270dae",
+      "net": "/VDD_NRF"
+    },
+    {
+      "uuid": "3664076e-c0ff-4bd6-87ac-bf4dce537ec8",
+      "net": "/VDD_NRF"
+    },
+    {
+      "uuid": "625fff6a-8a71-4708-9115-fcc7af348f67",
+      "net": "/VDD_NRF"
+    },
+    {
+      "uuid": "66845a60-5eb9-4348-86ec-ffb6092643f1",
+      "net": "/VDD_NRF"
+    },
+    {
+      "uuid": "6e168376-45bb-40fd-a5b8-c5733f3069f2",
+      "net": "/VDD_NRF"
+    },
+    {
+      "uuid": "77b61382-feae-4a0d-8749-84bef872c09f",
+      "net": "/VDD_NRF"
+    },
+    {
+      "uuid": "85c056c3-65b2-4a80-99d7-b7b8cb7f76f4",
+      "net": "/VDD_NRF"
+    },
+    {
+      "uuid": "88063921-1243-449b-bcbb-05b10e791cc8",
+      "net": "/VDD_NRF"
+    },
+    {
+      "uuid": "8e4bdba1-676a-446f-bfbc-9f6f216e9a00",
+      "net": "/VDD_NRF"
+    },
+    {
+      "uuid": "8eb2d5f0-2753-4530-bd45-f9b04b29f1ea",
+      "net": "/VDD_NRF"
+    },
+    {
+      "uuid": "94893997-2a1f-431e-bac2-2cb89174a4c2",
+      "net": "/VDD_NRF"
+    },
+    {
+      "uuid": "983ce439-f76f-4b47-b10c-4d875205e9a1",
+      "net": "/VDD_NRF"
+    },
+    {
+      "uuid": "9864bf9b-a2eb-4fe0-93b0-a325b4275e97",
+      "net": "/VDD_NRF"
+    },
+    {
+      "uuid": "a3c0db5f-2eb6-466d-bf67-95f4855b7e30",
+      "net": "/VDD_NRF"
+    },
+    {
+      "uuid": "aec0bdfa-27e3-49e3-b1af-7a688d72c805",
+      "net": "/VDD_NRF"
+    },
+    {
+      "uuid": "b4148840-a8f7-4c8e-9334-7aca676b3461",
+      "net": "/VDD_NRF"
+    },
+    {
+      "uuid": "b49fb459-76f7-417f-bcef-0359ff0ceba0",
+      "net": "/VDD_NRF"
+    },
+    {
+      "uuid": "bc8cc7c6-36f8-489d-8c70-144c5d7d09e2",
+      "net": "/VDD_NRF"
+    },
+    {
+      "uuid": "c4b386e4-c85c-4adf-953d-0e0adcb68eb3",
+      "net": "/VDD_NRF"
+    },
+    {
+      "uuid": "e55f5991-5ab9-4dce-ac9d-216c59e58579",
+      "net": "/VDD_NRF"
+    },
+    {
+      "uuid": "f13ccbe0-14c5-46d7-9758-275b56dd16d3",
+      "net": "/VDD_NRF"
+    },
+    {
+      "uuid": "f29512ef-6031-4bd0-87e9-e71216c872ec",
+      "net": "/VDD_NRF"
+    },
+    {
+      "uuid": "fab52cd7-a668-4e12-a9c5-560efed08d93",
+      "net": "/VDD_NRF"
+    },
+    {
+      "uuid": "ac684157-c763-4647-9439-17f081fde757",
+      "net": "/VDD_NRF"
+    },
+    {
+      "uuid": "b3f93dea-fa07-4c28-8ab0-2adfe798db8b",
+      "net": "/VDD_NRF"
+    },
+    {
+      "uuid": "02c556ad-32f9-4992-9211-f48a18a9a521",
+      "net": "/VDD_NRF"
+    },
+    {
+      "uuid": "12f94ac6-b508-4f90-8d16-0ec8c30c17c6",
+      "net": "/VDD_NRF"
+    },
+    {
+      "uuid": "2786a57a-4d58-4dae-9385-c9bf8b604990",
+      "net": "/VDD_NRF"
+    },
+    {
+      "uuid": "8563504f-e7a6-4c8c-b03e-1935c75e01b5",
+      "net": "/VDD_NRF"
+    },
+    {
+      "uuid": "9aa71593-b57a-4233-b46c-737a3cde31e4",
+      "net": "/VDD_NRF"
+    },
+    {
+      "uuid": "9ea0bbc7-6d89-40e1-9ca5-145d3e8b50b0",
+      "net": "/VDD_NRF"
+    },
+    {
+      "uuid": "81bce753-8d4e-42d4-a9c4-f0931b1f47f9",
+      "net": "/NRF_ENABLE"
+    },
+    {
+      "uuid": "c6d77aed-ef1a-4653-87f0-b66cf0bc0d9f",
+      "net": "/NRF_ENABLE"
+    },
+    {
+      "uuid": "47f0c0a3-2820-40b6-b313-04e11f453550",
+      "net": "/NRF_ENABLE"
+    },
+    {
+      "uuid": "1e3dc6b5-d80e-46e6-9cda-c7441735c7ac",
+      "net": "/NRF_ENABLE"
+    },
+    {
+      "uuid": "21b17402-4ea2-4e31-9f05-bcd13fb758c6",
+      "net": "/NRF_ENABLE"
+    },
+    {
+      "uuid": "3ca3d32a-29db-4847-a504-594f4d971590",
+      "net": "/NRF_ENABLE"
+    },
+    {
+      "uuid": "4a6678b0-6ddf-4c6c-bbbf-12d1de23083f",
+      "net": "/NRF_ENABLE"
+    },
+    {
+      "uuid": "82fadf87-becf-42f8-aed1-f40d715d2b86",
+      "net": "/NRF_ENABLE"
+    },
+    {
+      "uuid": "a62d1525-68d9-4bb5-8e10-83dced3e4752",
+      "net": "/NRF_ENABLE"
+    },
+    {
+      "uuid": "199e3933-953e-460e-9451-7c1dd843b166",
+      "net": "/BAT_ADC"
+    },
+    {
+      "uuid": "822a5c84-5e25-49b5-afef-50ea2106c795",
+      "net": "/BAT_ADC"
+    },
+    {
+      "uuid": "7c793349-6dd8-43dd-919e-24864ec6abf6",
+      "net": "/BAT_ADC"
+    },
+    {
+      "uuid": "0182f19a-6002-4ff9-8f3e-c052fb233ed5",
+      "net": "/BAT_ADC"
+    },
+    {
+      "uuid": "1798fe7b-8d0f-4510-b3a8-2940bb114d7c",
+      "net": "/BAT_ADC"
+    },
+    {
+      "uuid": "25413bc5-7ce2-4ca3-bf80-9c4d21c0a140",
+      "net": "/BAT_ADC"
+    },
+    {
+      "uuid": "c1c11097-6830-4ecc-9f75-062d0d9783f4",
+      "net": "/BAT_ADC"
+    },
+    {
+      "uuid": "d4ef3eb3-d1f0-4c19-919d-5561ac519f56",
+      "net": "/BAT_ADC"
+    },
+    {
+      "uuid": "d522d090-1071-48a1-b8e5-345f9dec7f10",
+      "net": "/BAT_ADC"
+    },
+    {
+      "uuid": "10be16d8-70d7-47cb-99f4-090f4e658542",
+      "net": "/VBAT"
+    },
+    {
+      "uuid": "284dd189-231a-47e5-a753-63de8900c971",
+      "net": "/VBAT"
+    },
+    {
+      "uuid": "4f584770-1444-4657-b0f5-3167fa4491a7",
+      "net": "/VBAT"
+    },
+    {
+      "uuid": "5299e53e-81e8-45b2-8fa7-3b5007bf70e4",
+      "net": "/VBAT"
+    },
+    {
+      "uuid": "7070778f-09f7-47ce-bccd-724a2ba67ab5",
+      "net": "/VBAT"
+    },
+    {
+      "uuid": "cff99615-b52a-4996-8b26-a2f317acd5e9",
+      "net": "/VBAT"
+    },
+    {
+      "uuid": "e7d426ee-6194-4332-9841-408d9d6ea60c",
+      "net": "/VBAT"
+    },
+    {
+      "uuid": "ee808676-0e9a-4a7e-a20d-b4662c5d8096",
+      "net": "/VBAT"
+    },
+    {
+      "uuid": "cc0dc2e5-2f8a-4b9f-ab5e-35e29fbdb17f",
+      "net": "/VBAT"
+    },
+    {
+      "uuid": "02ed9cdd-78fb-4bce-948f-dbe17f667356",
+      "net": "/VBAT"
+    },
+    {
+      "uuid": "0ea91626-9311-43d7-8b2c-24f956da662f",
+      "net": "/VBAT"
+    },
+    {
+      "uuid": "24b7b6c1-ab49-4947-85e7-88984fc9993a",
+      "net": "/VBAT"
+    },
+    {
+      "uuid": "27360ec0-b7f3-486d-9e2c-0b19db42c7b9",
+      "net": "/VBAT"
+    },
+    {
+      "uuid": "38d0e006-bd71-49b1-91d2-a0bdeef11e1f",
+      "net": "/VBAT"
+    },
+    {
+      "uuid": "43cb8a73-ab40-44f6-8a3d-d61f75fd2dbc",
+      "net": "/VBAT"
+    },
+    {
+      "uuid": "4fe505ab-49bb-4d2f-a552-3d6e719b2187",
+      "net": "/VBAT"
+    },
+    {
+      "uuid": "5088b749-4f02-42f8-8687-53acbab268bd",
+      "net": "/VBAT"
+    },
+    {
+      "uuid": "5d2e14c7-4aa8-4063-85d9-5e210e35caeb",
+      "net": "/VBAT"
+    },
+    {
+      "uuid": "5d2e2ecd-4f05-466f-a194-cb373f01c2c7",
+      "net": "/VBAT"
+    },
+    {
+      "uuid": "620692d1-ab41-486a-b4bf-93cfd082e451",
+      "net": "/VBAT"
+    },
+    {
+      "uuid": "633f062b-b04b-4761-b8f4-dbe7d5094510",
+      "net": "/VBAT"
+    },
+    {
+      "uuid": "7673f322-44b1-4999-ab38-b70ab2ab3434",
+      "net": "/VBAT"
+    },
+    {
+      "uuid": "7712bf81-9451-4d65-802d-82109e263351",
+      "net": "/VBAT"
+    },
+    {
+      "uuid": "778db587-bf87-4c77-a11b-0c33b70c7db6",
+      "net": "/VBAT"
+    },
+    {
+      "uuid": "8f241496-34ed-4eb1-a64b-6cbcba1c7ed8",
+      "net": "/VBAT"
+    },
+    {
+      "uuid": "9b5558d6-6be5-415c-a1de-314fc35214e1",
+      "net": "/VBAT"
+    },
+    {
+      "uuid": "a04f784d-5322-42ee-bc96-c500402745fe",
+      "net": "/VBAT"
+    },
+    {
+      "uuid": "be43166a-1cc1-4096-97e3-ed5d9bffd793",
+      "net": "/VBAT"
+    },
+    {
+      "uuid": "bf8cf763-e72b-4582-b62f-00d17bfbb47a",
+      "net": "/VBAT"
+    },
+    {
+      "uuid": "c2e21268-deff-41ca-a7ab-e284cbe91ecf",
+      "net": "/VBAT"
+    },
+    {
+      "uuid": "c642ba07-66b0-40f3-98e4-e61cb2563a8a",
+      "net": "/VBAT"
+    },
+    {
+      "uuid": "c916b859-5854-410a-9bbf-4fea11d54a0c",
+      "net": "/VBAT"
+    },
+    {
+      "uuid": "dd944902-ac2e-4061-9213-b467f19bab61",
+      "net": "/VBAT"
+    },
+    {
+      "uuid": "e9b23d4e-0bbe-43ac-bbcb-400c2805d9c8",
+      "net": "/VBAT"
+    },
+    {
+      "uuid": "f8b71f5f-c9c0-408f-9fd7-395fbabb7f7d",
+      "net": "/VBAT"
+    },
+    {
+      "uuid": "feff979a-3951-465f-ada4-64d99c82ebda",
+      "net": "/VBAT"
+    },
+    {
+      "uuid": "ff1b8d82-4266-4ae6-9559-70a501662be8",
+      "net": "/VBAT"
+    }
+  ],
+  "changed_parts": [
+    "C25",
+    "C26",
+    "C27",
+    "C28",
+    "C29",
+    "C30",
+    "C9",
+    "Q1",
+    "R16",
+    "R17",
+    "R18",
+    "R19",
+    "R20",
+    "R21",
+    "R22",
+    "R23",
+    "U6",
+    "U7",
+    "U8",
+    "U9"
+  ],
+  "scope": "Unplaced, unrouted candidate. No PCB DRC/DFM acceptance."
+}

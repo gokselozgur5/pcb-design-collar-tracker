@@ -1,0 +1,4034 @@
+[
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 498.992919921875,
+    "layer": 3,
+    "category": "FIXED_ROUTE",
+    "first": {
+      "id": 651,
+      "type": "Pin",
+      "net": "Net #1 (/GND)",
+      "component": "D1",
+      "fixed": "UNFIXED",
+      "clearance_class": 3,
+      "bounds": "IntBox(ll\u003d(1318498,-999002), ur\u003d(1327502,-994998))"
+    },
+    "second": {
+      "id": 1642,
+      "type": "Via",
+      "net": "Net #1 (/GND)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1312000,-1000000), ur\u003d(1318000,-994000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 800.994873046875,
+    "layer": 0,
+    "category": "FIXED_ROUTE",
+    "first": {
+      "id": 251,
+      "type": "Pin",
+      "net": "Net #1 (/GND)",
+      "component": "U2",
+      "fixed": "UNFIXED",
+      "clearance_class": 3,
+      "bounds": "IntBox(ll\u003d(1239750,-1161375), ur\u003d(1244000,-1158625))"
+    },
+    "second": {
+      "id": 1660,
+      "type": "Via",
+      "net": "Net #1 (/GND)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1244800,-1163000), ur\u003d(1250800,-1157000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 998.992919921875,
+    "layer": 3,
+    "category": "FIXED_ROUTE",
+    "first": {
+      "id": 652,
+      "type": "Pin",
+      "net": "Net #39 (/SIM_CLK)",
+      "component": "D1",
+      "fixed": "UNFIXED",
+      "clearance_class": 3,
+      "bounds": "IntBox(ll\u003d(1318498,-992502), ur\u003d(1327502,-988498))"
+    },
+    "second": {
+      "id": 1759,
+      "type": "Via",
+      "net": "Net #39 (/SIM_CLK)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1328500,-995000), ur\u003d(1334500,-989000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 998.992919921875,
+    "layer": 3,
+    "category": "FIXED_ROUTE",
+    "first": {
+      "id": 650,
+      "type": "Pin",
+      "net": "Net #37 (/SIM_RST)",
+      "component": "D1",
+      "fixed": "UNFIXED",
+      "clearance_class": 3,
+      "bounds": "IntBox(ll\u003d(1318498,-1005502), ur\u003d(1327502,-1001498))"
+    },
+    "second": {
+      "id": 1748,
+      "type": "Via",
+      "net": "Net #37 (/SIM_RST)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1328500,-1005000), ur\u003d(1334500,-999000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1500.9765625,
+    "layer": 0,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1733,
+      "type": "Via",
+      "net": "Net #21 (/I2C_SDA)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1220000,-1004500), ur\u003d(1226000,-998500))"
+    },
+    "second": {
+      "id": 1633,
+      "type": "Via",
+      "net": "Net #1 (/GND)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1217000,-997000), ur\u003d(1223000,-991000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1500.9765625,
+    "layer": 1,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1733,
+      "type": "Via",
+      "net": "Net #21 (/I2C_SDA)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1220000,-1004500), ur\u003d(1226000,-998500))"
+    },
+    "second": {
+      "id": 1633,
+      "type": "Via",
+      "net": "Net #1 (/GND)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1217000,-997000), ur\u003d(1223000,-991000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1500.9765625,
+    "layer": 2,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1733,
+      "type": "Via",
+      "net": "Net #21 (/I2C_SDA)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1220000,-1004500), ur\u003d(1226000,-998500))"
+    },
+    "second": {
+      "id": 1633,
+      "type": "Via",
+      "net": "Net #1 (/GND)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1217000,-997000), ur\u003d(1223000,-991000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1500.9765625,
+    "layer": 3,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1733,
+      "type": "Via",
+      "net": "Net #21 (/I2C_SDA)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1220000,-1004500), ur\u003d(1226000,-998500))"
+    },
+    "second": {
+      "id": 1633,
+      "type": "Via",
+      "net": "Net #1 (/GND)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1217000,-997000), ur\u003d(1223000,-991000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1500.9765625,
+    "layer": 0,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1633,
+      "type": "Via",
+      "net": "Net #1 (/GND)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1217000,-997000), ur\u003d(1223000,-991000))"
+    },
+    "second": {
+      "id": 1733,
+      "type": "Via",
+      "net": "Net #21 (/I2C_SDA)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1220000,-1004500), ur\u003d(1226000,-998500))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1500.9765625,
+    "layer": 1,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1633,
+      "type": "Via",
+      "net": "Net #1 (/GND)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1217000,-997000), ur\u003d(1223000,-991000))"
+    },
+    "second": {
+      "id": 1733,
+      "type": "Via",
+      "net": "Net #21 (/I2C_SDA)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1220000,-1004500), ur\u003d(1226000,-998500))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1500.9765625,
+    "layer": 2,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1633,
+      "type": "Via",
+      "net": "Net #1 (/GND)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1217000,-997000), ur\u003d(1223000,-991000))"
+    },
+    "second": {
+      "id": 1733,
+      "type": "Via",
+      "net": "Net #21 (/I2C_SDA)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1220000,-1004500), ur\u003d(1226000,-998500))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1500.9765625,
+    "layer": 3,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1633,
+      "type": "Via",
+      "net": "Net #1 (/GND)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1217000,-997000), ur\u003d(1223000,-991000))"
+    },
+    "second": {
+      "id": 1733,
+      "type": "Via",
+      "net": "Net #21 (/I2C_SDA)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1220000,-1004500), ur\u003d(1226000,-998500))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1550.994873046875,
+    "layer": 0,
+    "category": "PIN_TO_PIN",
+    "first": {
+      "id": 321,
+      "type": "Pin",
+      "net": "Net #23 (unconnected-(U5-INT2-Pad11))",
+      "component": "U5",
+      "fixed": "UNFIXED",
+      "clearance_class": 3,
+      "bounds": "IntBox(ll\u003d(1290800,-1039250), ur\u003d(1294200,-1035500))"
+    },
+    "second": {
+      "id": 320,
+      "type": "Pin",
+      "net": "Net #13 (/VIO_1V8)",
+      "component": "U5",
+      "fixed": "UNFIXED",
+      "clearance_class": 5,
+      "bounds": "IntBox(ll\u003d(1295750,-1039200), ur\u003d(1299500,-1035800))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1550.994873046875,
+    "layer": 0,
+    "category": "PIN_TO_PIN",
+    "first": {
+      "id": 320,
+      "type": "Pin",
+      "net": "Net #13 (/VIO_1V8)",
+      "component": "U5",
+      "fixed": "UNFIXED",
+      "clearance_class": 5,
+      "bounds": "IntBox(ll\u003d(1295750,-1039200), ur\u003d(1299500,-1035800))"
+    },
+    "second": {
+      "id": 321,
+      "type": "Pin",
+      "net": "Net #23 (unconnected-(U5-INT2-Pad11))",
+      "component": "U5",
+      "fixed": "UNFIXED",
+      "clearance_class": 3,
+      "bounds": "IntBox(ll\u003d(1290800,-1039250), ur\u003d(1294200,-1035500))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1598.9990234375,
+    "layer": 0,
+    "category": "FIXED_ROUTE",
+    "first": {
+      "id": 411,
+      "type": "Pin",
+      "net": "Net #1 (/GND)",
+      "component": "U1",
+      "fixed": "UNFIXED",
+      "clearance_class": 3,
+      "bounds": "IntBox(ll\u003d(1163999,-1109001), ur\u003d(1168501,-1105999))"
+    },
+    "second": {
+      "id": 1651,
+      "type": "Via",
+      "net": "Net #1 (/GND)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1156400,-1111000), ur\u003d(1162400,-1105000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1600.982666015625,
+    "layer": 0,
+    "category": "PIN_TO_PIN",
+    "first": {
+      "id": 319,
+      "type": "Pin",
+      "net": "Net #13 (/VIO_1V8)",
+      "component": "U5",
+      "fixed": "UNFIXED",
+      "clearance_class": 5,
+      "bounds": "IntBox(ll\u003d(1295750,-1044200), ur\u003d(1299500,-1040800))"
+    },
+    "second": {
+      "id": 318,
+      "type": "Pin",
+      "net": "Net #1 (/GND)",
+      "component": "U5",
+      "fixed": "UNFIXED",
+      "clearance_class": 3,
+      "bounds": "IntBox(ll\u003d(1295750,-1049200), ur\u003d(1299500,-1045800))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1600.982666015625,
+    "layer": 0,
+    "category": "PIN_TO_PIN",
+    "first": {
+      "id": 318,
+      "type": "Pin",
+      "net": "Net #1 (/GND)",
+      "component": "U5",
+      "fixed": "UNFIXED",
+      "clearance_class": 3,
+      "bounds": "IntBox(ll\u003d(1295750,-1049200), ur\u003d(1299500,-1045800))"
+    },
+    "second": {
+      "id": 319,
+      "type": "Pin",
+      "net": "Net #13 (/VIO_1V8)",
+      "component": "U5",
+      "fixed": "UNFIXED",
+      "clearance_class": 5,
+      "bounds": "IntBox(ll\u003d(1295750,-1044200), ur\u003d(1299500,-1040800))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1600.982666015625,
+    "layer": 0,
+    "category": "PIN_TO_PIN",
+    "first": {
+      "id": 314,
+      "type": "Pin",
+      "net": "Net #21 (/I2C_SDA)",
+      "component": "U5",
+      "fixed": "UNFIXED",
+      "clearance_class": 3,
+      "bounds": "IntBox(ll\u003d(1280500,-1054200), ur\u003d(1284250,-1050800))"
+    },
+    "second": {
+      "id": 313,
+      "type": "Pin",
+      "net": "Net #13 (/VIO_1V8)",
+      "component": "U5",
+      "fixed": "UNFIXED",
+      "clearance_class": 5,
+      "bounds": "IntBox(ll\u003d(1280500,-1049200), ur\u003d(1284250,-1045800))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1600.982666015625,
+    "layer": 0,
+    "category": "PIN_TO_PIN",
+    "first": {
+      "id": 313,
+      "type": "Pin",
+      "net": "Net #13 (/VIO_1V8)",
+      "component": "U5",
+      "fixed": "UNFIXED",
+      "clearance_class": 5,
+      "bounds": "IntBox(ll\u003d(1280500,-1049200), ur\u003d(1284250,-1045800))"
+    },
+    "second": {
+      "id": 314,
+      "type": "Pin",
+      "net": "Net #21 (/I2C_SDA)",
+      "component": "U5",
+      "fixed": "UNFIXED",
+      "clearance_class": 3,
+      "bounds": "IntBox(ll\u003d(1280500,-1054200), ur\u003d(1284250,-1050800))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1600.982666015625,
+    "layer": 0,
+    "category": "PIN_TO_PIN",
+    "first": {
+      "id": 312,
+      "type": "Pin",
+      "net": "Net #13 (/VIO_1V8)",
+      "component": "U5",
+      "fixed": "UNFIXED",
+      "clearance_class": 5,
+      "bounds": "IntBox(ll\u003d(1280500,-1044200), ur\u003d(1284250,-1040800))"
+    },
+    "second": {
+      "id": 311,
+      "type": "Pin",
+      "net": "Net #18 (/I2C_SCL)",
+      "component": "U5",
+      "fixed": "UNFIXED",
+      "clearance_class": 3,
+      "bounds": "IntBox(ll\u003d(1280500,-1039200), ur\u003d(1284250,-1035800))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1600.982666015625,
+    "layer": 0,
+    "category": "PIN_TO_PIN",
+    "first": {
+      "id": 311,
+      "type": "Pin",
+      "net": "Net #18 (/I2C_SCL)",
+      "component": "U5",
+      "fixed": "UNFIXED",
+      "clearance_class": 3,
+      "bounds": "IntBox(ll\u003d(1280500,-1039200), ur\u003d(1284250,-1035800))"
+    },
+    "second": {
+      "id": 312,
+      "type": "Pin",
+      "net": "Net #13 (/VIO_1V8)",
+      "component": "U5",
+      "fixed": "UNFIXED",
+      "clearance_class": 5,
+      "bounds": "IntBox(ll\u003d(1280500,-1044200), ur\u003d(1284250,-1040800))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1616.973876953125,
+    "layer": 0,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1727,
+      "type": "Via",
+      "net": "Net #13 (/VIO_1V8)",
+      "fixed": "UNFIXED",
+      "clearance_class": 4,
+      "bounds": "IntBox(ll\u003d(1129670,-1014616), ur\u003d(1135670,-1008616))"
+    },
+    "second": {
+      "id": 1666,
+      "type": "Via",
+      "net": "Net #1 (/GND)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1127000,-1007000), ur\u003d(1133000,-1001000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1616.973876953125,
+    "layer": 1,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1727,
+      "type": "Via",
+      "net": "Net #13 (/VIO_1V8)",
+      "fixed": "UNFIXED",
+      "clearance_class": 4,
+      "bounds": "IntBox(ll\u003d(1129670,-1014616), ur\u003d(1135670,-1008616))"
+    },
+    "second": {
+      "id": 1666,
+      "type": "Via",
+      "net": "Net #1 (/GND)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1127000,-1007000), ur\u003d(1133000,-1001000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1616.973876953125,
+    "layer": 2,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1727,
+      "type": "Via",
+      "net": "Net #13 (/VIO_1V8)",
+      "fixed": "UNFIXED",
+      "clearance_class": 4,
+      "bounds": "IntBox(ll\u003d(1129670,-1014616), ur\u003d(1135670,-1008616))"
+    },
+    "second": {
+      "id": 1666,
+      "type": "Via",
+      "net": "Net #1 (/GND)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1127000,-1007000), ur\u003d(1133000,-1001000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1616.973876953125,
+    "layer": 3,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1727,
+      "type": "Via",
+      "net": "Net #13 (/VIO_1V8)",
+      "fixed": "UNFIXED",
+      "clearance_class": 4,
+      "bounds": "IntBox(ll\u003d(1129670,-1014616), ur\u003d(1135670,-1008616))"
+    },
+    "second": {
+      "id": 1666,
+      "type": "Via",
+      "net": "Net #1 (/GND)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1127000,-1007000), ur\u003d(1133000,-1001000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1616.973876953125,
+    "layer": 0,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1666,
+      "type": "Via",
+      "net": "Net #1 (/GND)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1127000,-1007000), ur\u003d(1133000,-1001000))"
+    },
+    "second": {
+      "id": 1727,
+      "type": "Via",
+      "net": "Net #13 (/VIO_1V8)",
+      "fixed": "UNFIXED",
+      "clearance_class": 4,
+      "bounds": "IntBox(ll\u003d(1129670,-1014616), ur\u003d(1135670,-1008616))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1616.973876953125,
+    "layer": 1,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1666,
+      "type": "Via",
+      "net": "Net #1 (/GND)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1127000,-1007000), ur\u003d(1133000,-1001000))"
+    },
+    "second": {
+      "id": 1727,
+      "type": "Via",
+      "net": "Net #13 (/VIO_1V8)",
+      "fixed": "UNFIXED",
+      "clearance_class": 4,
+      "bounds": "IntBox(ll\u003d(1129670,-1014616), ur\u003d(1135670,-1008616))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1616.973876953125,
+    "layer": 2,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1666,
+      "type": "Via",
+      "net": "Net #1 (/GND)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1127000,-1007000), ur\u003d(1133000,-1001000))"
+    },
+    "second": {
+      "id": 1727,
+      "type": "Via",
+      "net": "Net #13 (/VIO_1V8)",
+      "fixed": "UNFIXED",
+      "clearance_class": 4,
+      "bounds": "IntBox(ll\u003d(1129670,-1014616), ur\u003d(1135670,-1008616))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1616.973876953125,
+    "layer": 3,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1666,
+      "type": "Via",
+      "net": "Net #1 (/GND)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1127000,-1007000), ur\u003d(1133000,-1001000))"
+    },
+    "second": {
+      "id": 1727,
+      "type": "Via",
+      "net": "Net #13 (/VIO_1V8)",
+      "fixed": "UNFIXED",
+      "clearance_class": 4,
+      "bounds": "IntBox(ll\u003d(1129670,-1014616), ur\u003d(1135670,-1008616))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1656.73828125,
+    "layer": 0,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1779,
+      "type": "Via",
+      "net": "Net #62 (/SPI_SCK)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1342000,-1038500), ur\u003d(1348000,-1032500))"
+    },
+    "second": {
+      "id": 1343,
+      "type": "PolylineTrace",
+      "net": "Net #40 (/SIM_1V8)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1346000,-1042500), ur\u003d(1348500,-1040000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1656.73828125,
+    "layer": 0,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1779,
+      "type": "Via",
+      "net": "Net #62 (/SPI_SCK)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1342000,-1038500), ur\u003d(1348000,-1032500))"
+    },
+    "second": {
+      "id": 1337,
+      "type": "PolylineTrace",
+      "net": "Net #40 (/SIM_1V8)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1349500,-1039000), ur\u003d(1352000,-1036500))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1656.73828125,
+    "layer": 0,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1779,
+      "type": "Via",
+      "net": "Net #62 (/SPI_SCK)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1342000,-1038500), ur\u003d(1348000,-1032500))"
+    },
+    "second": {
+      "id": 1326,
+      "type": "PolylineTrace",
+      "net": "Net #40 (/SIM_1V8)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1346500,-1042000), ur\u003d(1349000,-1040000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1656.73828125,
+    "layer": 0,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1779,
+      "type": "Via",
+      "net": "Net #62 (/SPI_SCK)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1342000,-1038500), ur\u003d(1348000,-1032500))"
+    },
+    "second": {
+      "id": 1320,
+      "type": "PolylineTrace",
+      "net": "Net #40 (/SIM_1V8)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1349500,-1039500), ur\u003d(1351500,-1037000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1656.73828125,
+    "layer": 3,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1779,
+      "type": "Via",
+      "net": "Net #62 (/SPI_SCK)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1342000,-1038500), ur\u003d(1348000,-1032500))"
+    },
+    "second": {
+      "id": 1296,
+      "type": "PolylineTrace",
+      "net": "Net #39 (/SIM_CLK)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1349500,-1039000), ur\u003d(1352000,-1036500))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1656.73828125,
+    "layer": 3,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1779,
+      "type": "Via",
+      "net": "Net #62 (/SPI_SCK)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1342000,-1038500), ur\u003d(1348000,-1032500))"
+    },
+    "second": {
+      "id": 1293,
+      "type": "PolylineTrace",
+      "net": "Net #39 (/SIM_CLK)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1349500,-1034500), ur\u003d(1352000,-1032000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1656.73828125,
+    "layer": 3,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1779,
+      "type": "Via",
+      "net": "Net #62 (/SPI_SCK)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1342000,-1038500), ur\u003d(1348000,-1032500))"
+    },
+    "second": {
+      "id": 1291,
+      "type": "PolylineTrace",
+      "net": "Net #39 (/SIM_CLK)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1349500,-1039500), ur\u003d(1351500,-1037000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1656.73828125,
+    "layer": 3,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1779,
+      "type": "Via",
+      "net": "Net #62 (/SPI_SCK)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1342000,-1038500), ur\u003d(1348000,-1032500))"
+    },
+    "second": {
+      "id": 1288,
+      "type": "PolylineTrace",
+      "net": "Net #39 (/SIM_CLK)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1349500,-1034000), ur\u003d(1351500,-1031500))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1656.73828125,
+    "layer": 0,
+    "category": "FIXED_ROUTE",
+    "first": {
+      "id": 1766,
+      "type": "Via",
+      "net": "Net #40 (/SIM_1V8)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1321000,-1103000), ur\u003d(1327000,-1097000))"
+    },
+    "second": {
+      "id": 1275,
+      "type": "PolylineTrace",
+      "net": "Net #39 (/SIM_CLK)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1328500,-1103500), ur\u003d(1331000,-1101000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1656.73828125,
+    "layer": 0,
+    "category": "FIXED_ROUTE",
+    "first": {
+      "id": 1766,
+      "type": "Via",
+      "net": "Net #40 (/SIM_1V8)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1321000,-1103000), ur\u003d(1327000,-1097000))"
+    },
+    "second": {
+      "id": 1264,
+      "type": "PolylineTrace",
+      "net": "Net #39 (/SIM_CLK)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1328500,-1104000), ur\u003d(1330500,-1101500))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1656.73828125,
+    "layer": 0,
+    "category": "FIXED_ROUTE",
+    "first": {
+      "id": 1748,
+      "type": "Via",
+      "net": "Net #37 (/SIM_RST)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1328500,-1005000), ur\u003d(1334500,-999000))"
+    },
+    "second": {
+      "id": 1273,
+      "type": "PolylineTrace",
+      "net": "Net #39 (/SIM_CLK)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1336000,-1000500), ur\u003d(1338000,-998000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1656.73828125,
+    "layer": 0,
+    "category": "FIXED_ROUTE",
+    "first": {
+      "id": 1748,
+      "type": "Via",
+      "net": "Net #37 (/SIM_RST)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1328500,-1005000), ur\u003d(1334500,-999000))"
+    },
+    "second": {
+      "id": 1272,
+      "type": "PolylineTrace",
+      "net": "Net #39 (/SIM_CLK)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1336000,-1001000), ur\u003d(1338500,-998500))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1656.73828125,
+    "layer": 3,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1691,
+      "type": "Via",
+      "net": "Net #1 (/GND)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1047000,-1246000), ur\u003d(1053000,-1240000))"
+    },
+    "second": {
+      "id": 720,
+      "type": "PolylineTrace",
+      "net": "Net #2 (/ILIM_VSET)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1041000,-1245000), ur\u003d(1072000,-1236000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1656.73828125,
+    "layer": 3,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1691,
+      "type": "Via",
+      "net": "Net #1 (/GND)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1047000,-1246000), ur\u003d(1053000,-1240000))"
+    },
+    "second": {
+      "id": 720,
+      "type": "PolylineTrace",
+      "net": "Net #2 (/ILIM_VSET)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1041000,-1245000), ur\u003d(1072000,-1236000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1656.73828125,
+    "layer": 0,
+    "category": "FIXED_ROUTE",
+    "first": {
+      "id": 1676,
+      "type": "Via",
+      "net": "Net #1 (/GND)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1330000,-1083000), ur\u003d(1336000,-1077000))"
+    },
+    "second": {
+      "id": 1249,
+      "type": "PolylineTrace",
+      "net": "Net #39 (/SIM_CLK)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1337500,-1083500), ur\u003d(1340000,-1081000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1656.73828125,
+    "layer": 0,
+    "category": "FIXED_ROUTE",
+    "first": {
+      "id": 1676,
+      "type": "Via",
+      "net": "Net #1 (/GND)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1330000,-1083000), ur\u003d(1336000,-1077000))"
+    },
+    "second": {
+      "id": 1248,
+      "type": "PolylineTrace",
+      "net": "Net #39 (/SIM_CLK)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1337500,-1084000), ur\u003d(1339500,-1081500))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1656.73828125,
+    "layer": 3,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1676,
+      "type": "Via",
+      "net": "Net #1 (/GND)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1330000,-1083000), ur\u003d(1336000,-1077000))"
+    },
+    "second": {
+      "id": 1055,
+      "type": "PolylineTrace",
+      "net": "Net #18 (/I2C_SCL)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1242650,-1272710), ur\u003d(1340000,-1025000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1656.73828125,
+    "layer": 3,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1676,
+      "type": "Via",
+      "net": "Net #1 (/GND)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1330000,-1083000), ur\u003d(1336000,-1077000))"
+    },
+    "second": {
+      "id": 1055,
+      "type": "PolylineTrace",
+      "net": "Net #18 (/I2C_SCL)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1242650,-1272710), ur\u003d(1340000,-1025000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1656.73828125,
+    "layer": 3,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1676,
+      "type": "Via",
+      "net": "Net #1 (/GND)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1330000,-1083000), ur\u003d(1336000,-1077000))"
+    },
+    "second": {
+      "id": 1055,
+      "type": "PolylineTrace",
+      "net": "Net #18 (/I2C_SCL)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1242650,-1272710), ur\u003d(1340000,-1025000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1656.73828125,
+    "layer": 3,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1676,
+      "type": "Via",
+      "net": "Net #1 (/GND)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1330000,-1083000), ur\u003d(1336000,-1077000))"
+    },
+    "second": {
+      "id": 1055,
+      "type": "PolylineTrace",
+      "net": "Net #18 (/I2C_SCL)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1242650,-1272710), ur\u003d(1340000,-1025000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1656.73828125,
+    "layer": 0,
+    "category": "FIXED_ROUTE",
+    "first": {
+      "id": 1635,
+      "type": "Via",
+      "net": "Net #1 (/GND)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1330000,-1058000), ur\u003d(1336000,-1052000))"
+    },
+    "second": {
+      "id": 1336,
+      "type": "PolylineTrace",
+      "net": "Net #40 (/SIM_1V8)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1337500,-1059000), ur\u003d(1339500,-1056500))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1656.73828125,
+    "layer": 0,
+    "category": "FIXED_ROUTE",
+    "first": {
+      "id": 1635,
+      "type": "Via",
+      "net": "Net #1 (/GND)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1330000,-1058000), ur\u003d(1336000,-1052000))"
+    },
+    "second": {
+      "id": 1327,
+      "type": "PolylineTrace",
+      "net": "Net #40 (/SIM_1V8)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1337500,-1058500), ur\u003d(1340000,-1056000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1656.73828125,
+    "layer": 0,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1624,
+      "type": "Via",
+      "net": "Net #2 (/ILIM_VSET)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1068000,-1241000), ur\u003d(1074000,-1235000))"
+    },
+    "second": {
+      "id": 1599,
+      "type": "PolylineTrace",
+      "net": "Net #102 (/ISET)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1060000,-1259000), ur\u003d(1078000,-1229000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1656.73828125,
+    "layer": 0,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1624,
+      "type": "Via",
+      "net": "Net #2 (/ILIM_VSET)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1068000,-1241000), ur\u003d(1074000,-1235000))"
+    },
+    "second": {
+      "id": 1599,
+      "type": "PolylineTrace",
+      "net": "Net #102 (/ISET)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1060000,-1259000), ur\u003d(1078000,-1229000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1656.73828125,
+    "layer": 0,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1599,
+      "type": "PolylineTrace",
+      "net": "Net #102 (/ISET)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1060000,-1259000), ur\u003d(1078000,-1229000))"
+    },
+    "second": {
+      "id": 1624,
+      "type": "Via",
+      "net": "Net #2 (/ILIM_VSET)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1068000,-1241000), ur\u003d(1074000,-1235000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1656.73828125,
+    "layer": 0,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1599,
+      "type": "PolylineTrace",
+      "net": "Net #102 (/ISET)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1060000,-1259000), ur\u003d(1078000,-1229000))"
+    },
+    "second": {
+      "id": 1624,
+      "type": "Via",
+      "net": "Net #2 (/ILIM_VSET)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1068000,-1241000), ur\u003d(1074000,-1235000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1656.73828125,
+    "layer": 0,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1343,
+      "type": "PolylineTrace",
+      "net": "Net #40 (/SIM_1V8)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1346000,-1042500), ur\u003d(1348500,-1040000))"
+    },
+    "second": {
+      "id": 1779,
+      "type": "Via",
+      "net": "Net #62 (/SPI_SCK)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1342000,-1038500), ur\u003d(1348000,-1032500))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1656.73828125,
+    "layer": 0,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1337,
+      "type": "PolylineTrace",
+      "net": "Net #40 (/SIM_1V8)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1349500,-1039000), ur\u003d(1352000,-1036500))"
+    },
+    "second": {
+      "id": 1779,
+      "type": "Via",
+      "net": "Net #62 (/SPI_SCK)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1342000,-1038500), ur\u003d(1348000,-1032500))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1656.73828125,
+    "layer": 0,
+    "category": "FIXED_ROUTE",
+    "first": {
+      "id": 1336,
+      "type": "PolylineTrace",
+      "net": "Net #40 (/SIM_1V8)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1337500,-1059000), ur\u003d(1339500,-1056500))"
+    },
+    "second": {
+      "id": 1635,
+      "type": "Via",
+      "net": "Net #1 (/GND)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1330000,-1058000), ur\u003d(1336000,-1052000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1656.73828125,
+    "layer": 0,
+    "category": "FIXED_ROUTE",
+    "first": {
+      "id": 1327,
+      "type": "PolylineTrace",
+      "net": "Net #40 (/SIM_1V8)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1337500,-1058500), ur\u003d(1340000,-1056000))"
+    },
+    "second": {
+      "id": 1635,
+      "type": "Via",
+      "net": "Net #1 (/GND)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1330000,-1058000), ur\u003d(1336000,-1052000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1656.73828125,
+    "layer": 0,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1326,
+      "type": "PolylineTrace",
+      "net": "Net #40 (/SIM_1V8)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1346500,-1042000), ur\u003d(1349000,-1040000))"
+    },
+    "second": {
+      "id": 1779,
+      "type": "Via",
+      "net": "Net #62 (/SPI_SCK)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1342000,-1038500), ur\u003d(1348000,-1032500))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1656.73828125,
+    "layer": 0,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1320,
+      "type": "PolylineTrace",
+      "net": "Net #40 (/SIM_1V8)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1349500,-1039500), ur\u003d(1351500,-1037000))"
+    },
+    "second": {
+      "id": 1779,
+      "type": "Via",
+      "net": "Net #62 (/SPI_SCK)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1342000,-1038500), ur\u003d(1348000,-1032500))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1656.73828125,
+    "layer": 3,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1296,
+      "type": "PolylineTrace",
+      "net": "Net #39 (/SIM_CLK)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1349500,-1039000), ur\u003d(1352000,-1036500))"
+    },
+    "second": {
+      "id": 1779,
+      "type": "Via",
+      "net": "Net #62 (/SPI_SCK)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1342000,-1038500), ur\u003d(1348000,-1032500))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1656.73828125,
+    "layer": 3,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1293,
+      "type": "PolylineTrace",
+      "net": "Net #39 (/SIM_CLK)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1349500,-1034500), ur\u003d(1352000,-1032000))"
+    },
+    "second": {
+      "id": 1779,
+      "type": "Via",
+      "net": "Net #62 (/SPI_SCK)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1342000,-1038500), ur\u003d(1348000,-1032500))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1656.73828125,
+    "layer": 3,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1291,
+      "type": "PolylineTrace",
+      "net": "Net #39 (/SIM_CLK)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1349500,-1039500), ur\u003d(1351500,-1037000))"
+    },
+    "second": {
+      "id": 1779,
+      "type": "Via",
+      "net": "Net #62 (/SPI_SCK)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1342000,-1038500), ur\u003d(1348000,-1032500))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1656.73828125,
+    "layer": 3,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1288,
+      "type": "PolylineTrace",
+      "net": "Net #39 (/SIM_CLK)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1349500,-1034000), ur\u003d(1351500,-1031500))"
+    },
+    "second": {
+      "id": 1779,
+      "type": "Via",
+      "net": "Net #62 (/SPI_SCK)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1342000,-1038500), ur\u003d(1348000,-1032500))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1656.73828125,
+    "layer": 0,
+    "category": "FIXED_ROUTE",
+    "first": {
+      "id": 1275,
+      "type": "PolylineTrace",
+      "net": "Net #39 (/SIM_CLK)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1328500,-1103500), ur\u003d(1331000,-1101000))"
+    },
+    "second": {
+      "id": 1766,
+      "type": "Via",
+      "net": "Net #40 (/SIM_1V8)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1321000,-1103000), ur\u003d(1327000,-1097000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1656.73828125,
+    "layer": 0,
+    "category": "FIXED_ROUTE",
+    "first": {
+      "id": 1273,
+      "type": "PolylineTrace",
+      "net": "Net #39 (/SIM_CLK)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1336000,-1000500), ur\u003d(1338000,-998000))"
+    },
+    "second": {
+      "id": 1748,
+      "type": "Via",
+      "net": "Net #37 (/SIM_RST)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1328500,-1005000), ur\u003d(1334500,-999000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1656.73828125,
+    "layer": 0,
+    "category": "FIXED_ROUTE",
+    "first": {
+      "id": 1272,
+      "type": "PolylineTrace",
+      "net": "Net #39 (/SIM_CLK)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1336000,-1001000), ur\u003d(1338500,-998500))"
+    },
+    "second": {
+      "id": 1748,
+      "type": "Via",
+      "net": "Net #37 (/SIM_RST)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1328500,-1005000), ur\u003d(1334500,-999000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1656.73828125,
+    "layer": 0,
+    "category": "FIXED_ROUTE",
+    "first": {
+      "id": 1264,
+      "type": "PolylineTrace",
+      "net": "Net #39 (/SIM_CLK)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1328500,-1104000), ur\u003d(1330500,-1101500))"
+    },
+    "second": {
+      "id": 1766,
+      "type": "Via",
+      "net": "Net #40 (/SIM_1V8)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1321000,-1103000), ur\u003d(1327000,-1097000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1656.73828125,
+    "layer": 0,
+    "category": "FIXED_ROUTE",
+    "first": {
+      "id": 1249,
+      "type": "PolylineTrace",
+      "net": "Net #39 (/SIM_CLK)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1337500,-1083500), ur\u003d(1340000,-1081000))"
+    },
+    "second": {
+      "id": 1676,
+      "type": "Via",
+      "net": "Net #1 (/GND)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1330000,-1083000), ur\u003d(1336000,-1077000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1656.73828125,
+    "layer": 0,
+    "category": "FIXED_ROUTE",
+    "first": {
+      "id": 1248,
+      "type": "PolylineTrace",
+      "net": "Net #39 (/SIM_CLK)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1337500,-1084000), ur\u003d(1339500,-1081500))"
+    },
+    "second": {
+      "id": 1676,
+      "type": "Via",
+      "net": "Net #1 (/GND)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1330000,-1083000), ur\u003d(1336000,-1077000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1656.73828125,
+    "layer": 3,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1055,
+      "type": "PolylineTrace",
+      "net": "Net #18 (/I2C_SCL)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1242650,-1272710), ur\u003d(1340000,-1025000))"
+    },
+    "second": {
+      "id": 1676,
+      "type": "Via",
+      "net": "Net #1 (/GND)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1330000,-1083000), ur\u003d(1336000,-1077000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1656.73828125,
+    "layer": 3,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1055,
+      "type": "PolylineTrace",
+      "net": "Net #18 (/I2C_SCL)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1242650,-1272710), ur\u003d(1340000,-1025000))"
+    },
+    "second": {
+      "id": 1676,
+      "type": "Via",
+      "net": "Net #1 (/GND)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1330000,-1083000), ur\u003d(1336000,-1077000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1656.73828125,
+    "layer": 3,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1055,
+      "type": "PolylineTrace",
+      "net": "Net #18 (/I2C_SCL)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1242650,-1272710), ur\u003d(1340000,-1025000))"
+    },
+    "second": {
+      "id": 1676,
+      "type": "Via",
+      "net": "Net #1 (/GND)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1330000,-1083000), ur\u003d(1336000,-1077000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1656.73828125,
+    "layer": 3,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1055,
+      "type": "PolylineTrace",
+      "net": "Net #18 (/I2C_SCL)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1242650,-1272710), ur\u003d(1340000,-1025000))"
+    },
+    "second": {
+      "id": 1676,
+      "type": "Via",
+      "net": "Net #1 (/GND)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1330000,-1083000), ur\u003d(1336000,-1077000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1656.73828125,
+    "layer": 3,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 720,
+      "type": "PolylineTrace",
+      "net": "Net #2 (/ILIM_VSET)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1041000,-1245000), ur\u003d(1072000,-1236000))"
+    },
+    "second": {
+      "id": 1691,
+      "type": "Via",
+      "net": "Net #1 (/GND)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1047000,-1246000), ur\u003d(1053000,-1240000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1656.73828125,
+    "layer": 3,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 720,
+      "type": "PolylineTrace",
+      "net": "Net #2 (/ILIM_VSET)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1041000,-1245000), ur\u003d(1072000,-1236000))"
+    },
+    "second": {
+      "id": 1691,
+      "type": "Via",
+      "net": "Net #1 (/GND)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1047000,-1246000), ur\u003d(1053000,-1240000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1658.14208984375,
+    "layer": 0,
+    "category": "FIXED_ROUTE",
+    "first": {
+      "id": 1762,
+      "type": "Via",
+      "net": "Net #39 (/SIM_CLK)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1346500,-1050000), ur\u003d(1352500,-1044000))"
+    },
+    "second": {
+      "id": 1344,
+      "type": "PolylineTrace",
+      "net": "Net #40 (/SIM_1V8)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1340500,-1042500), ur\u003d(1348000,-1040500))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1658.14208984375,
+    "layer": 0,
+    "category": "FIXED_ROUTE",
+    "first": {
+      "id": 1762,
+      "type": "Via",
+      "net": "Net #39 (/SIM_CLK)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1346500,-1050000), ur\u003d(1352500,-1044000))"
+    },
+    "second": {
+      "id": 1343,
+      "type": "PolylineTrace",
+      "net": "Net #40 (/SIM_1V8)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1346000,-1042500), ur\u003d(1348500,-1040000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1658.14208984375,
+    "layer": 3,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1691,
+      "type": "Via",
+      "net": "Net #1 (/GND)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1047000,-1246000), ur\u003d(1053000,-1240000))"
+    },
+    "second": {
+      "id": 720,
+      "type": "PolylineTrace",
+      "net": "Net #2 (/ILIM_VSET)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1041000,-1245000), ur\u003d(1072000,-1236000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1658.14208984375,
+    "layer": 3,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1691,
+      "type": "Via",
+      "net": "Net #1 (/GND)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1047000,-1246000), ur\u003d(1053000,-1240000))"
+    },
+    "second": {
+      "id": 720,
+      "type": "PolylineTrace",
+      "net": "Net #2 (/ILIM_VSET)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1041000,-1245000), ur\u003d(1072000,-1236000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1658.14208984375,
+    "layer": 3,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1691,
+      "type": "Via",
+      "net": "Net #1 (/GND)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1047000,-1246000), ur\u003d(1053000,-1240000))"
+    },
+    "second": {
+      "id": 720,
+      "type": "PolylineTrace",
+      "net": "Net #2 (/ILIM_VSET)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1041000,-1245000), ur\u003d(1072000,-1236000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1658.14208984375,
+    "layer": 3,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1691,
+      "type": "Via",
+      "net": "Net #1 (/GND)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1047000,-1246000), ur\u003d(1053000,-1240000))"
+    },
+    "second": {
+      "id": 720,
+      "type": "PolylineTrace",
+      "net": "Net #2 (/ILIM_VSET)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1041000,-1245000), ur\u003d(1072000,-1236000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1658.14208984375,
+    "layer": 3,
+    "category": "FIXED_ROUTE",
+    "first": {
+      "id": 1681,
+      "type": "Via",
+      "net": "Net #1 (/GND)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1114000,-1147000), ur\u003d(1120000,-1141000))"
+    },
+    "second": {
+      "id": 1362,
+      "type": "PolylineTrace",
+      "net": "Net #40 (/SIM_1V8)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1113000,-1150500), ur\u003d(1115500,-1148500))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1658.14208984375,
+    "layer": 3,
+    "category": "FIXED_ROUTE",
+    "first": {
+      "id": 1681,
+      "type": "Via",
+      "net": "Net #1 (/GND)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1114000,-1147000), ur\u003d(1120000,-1141000))"
+    },
+    "second": {
+      "id": 1357,
+      "type": "PolylineTrace",
+      "net": "Net #40 (/SIM_1V8)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1113500,-1151000), ur\u003d(1116000,-1148500))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1658.14208984375,
+    "layer": 3,
+    "category": "FIXED_ROUTE",
+    "first": {
+      "id": 1362,
+      "type": "PolylineTrace",
+      "net": "Net #40 (/SIM_1V8)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1113000,-1150500), ur\u003d(1115500,-1148500))"
+    },
+    "second": {
+      "id": 1681,
+      "type": "Via",
+      "net": "Net #1 (/GND)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1114000,-1147000), ur\u003d(1120000,-1141000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1658.14208984375,
+    "layer": 3,
+    "category": "FIXED_ROUTE",
+    "first": {
+      "id": 1357,
+      "type": "PolylineTrace",
+      "net": "Net #40 (/SIM_1V8)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1113500,-1151000), ur\u003d(1116000,-1148500))"
+    },
+    "second": {
+      "id": 1681,
+      "type": "Via",
+      "net": "Net #1 (/GND)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1114000,-1147000), ur\u003d(1120000,-1141000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1658.14208984375,
+    "layer": 0,
+    "category": "FIXED_ROUTE",
+    "first": {
+      "id": 1344,
+      "type": "PolylineTrace",
+      "net": "Net #40 (/SIM_1V8)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1340500,-1042500), ur\u003d(1348000,-1040500))"
+    },
+    "second": {
+      "id": 1762,
+      "type": "Via",
+      "net": "Net #39 (/SIM_CLK)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1346500,-1050000), ur\u003d(1352500,-1044000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1658.14208984375,
+    "layer": 0,
+    "category": "FIXED_ROUTE",
+    "first": {
+      "id": 1343,
+      "type": "PolylineTrace",
+      "net": "Net #40 (/SIM_1V8)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1346000,-1042500), ur\u003d(1348500,-1040000))"
+    },
+    "second": {
+      "id": 1762,
+      "type": "Via",
+      "net": "Net #39 (/SIM_CLK)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1346500,-1050000), ur\u003d(1352500,-1044000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1658.14208984375,
+    "layer": 3,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 720,
+      "type": "PolylineTrace",
+      "net": "Net #2 (/ILIM_VSET)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1041000,-1245000), ur\u003d(1072000,-1236000))"
+    },
+    "second": {
+      "id": 1691,
+      "type": "Via",
+      "net": "Net #1 (/GND)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1047000,-1246000), ur\u003d(1053000,-1240000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1658.14208984375,
+    "layer": 3,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 720,
+      "type": "PolylineTrace",
+      "net": "Net #2 (/ILIM_VSET)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1041000,-1245000), ur\u003d(1072000,-1236000))"
+    },
+    "second": {
+      "id": 1691,
+      "type": "Via",
+      "net": "Net #1 (/GND)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1047000,-1246000), ur\u003d(1053000,-1240000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1658.14208984375,
+    "layer": 3,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 720,
+      "type": "PolylineTrace",
+      "net": "Net #2 (/ILIM_VSET)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1041000,-1245000), ur\u003d(1072000,-1236000))"
+    },
+    "second": {
+      "id": 1691,
+      "type": "Via",
+      "net": "Net #1 (/GND)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1047000,-1246000), ur\u003d(1053000,-1240000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1658.14208984375,
+    "layer": 3,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 720,
+      "type": "PolylineTrace",
+      "net": "Net #2 (/ILIM_VSET)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1041000,-1245000), ur\u003d(1072000,-1236000))"
+    },
+    "second": {
+      "id": 1691,
+      "type": "Via",
+      "net": "Net #1 (/GND)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1047000,-1246000), ur\u003d(1053000,-1240000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1698.974609375,
+    "layer": 3,
+    "category": "FIXED_ROUTE",
+    "first": {
+      "id": 664,
+      "type": "Pin",
+      "net": "Net #1 (/GND)",
+      "component": "D2",
+      "fixed": "UNFIXED",
+      "clearance_class": 3,
+      "bounds": "IntBox(ll\u003d(1252498,-1164002), ur\u003d(1261502,-1159998))"
+    },
+    "second": {
+      "id": 1660,
+      "type": "Via",
+      "net": "Net #1 (/GND)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1244800,-1163000), ur\u003d(1250800,-1157000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1746.978759765625,
+    "layer": 3,
+    "category": "FIXED_ROUTE",
+    "first": {
+      "id": 639,
+      "type": "Pin",
+      "net": "Net #1 (/GND)",
+      "component": "U8",
+      "fixed": "UNFIXED",
+      "clearance_class": 3,
+      "bounds": "IntBox(ll\u003d(1173247,-1030753), ur\u003d(1183503,-1027247))"
+    },
+    "second": {
+      "id": 1662,
+      "type": "Via",
+      "net": "Net #1 (/GND)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1169000,-1038500), ur\u003d(1175000,-1032500))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1746.978759765625,
+    "layer": 3,
+    "category": "FIXED_ROUTE",
+    "first": {
+      "id": 594,
+      "type": "Pin",
+      "net": "Net #1 (/GND)",
+      "component": "Q1",
+      "fixed": "UNFIXED",
+      "clearance_class": 3,
+      "bounds": "IntBox(ll\u003d(1106497,-1048253), ur\u003d(1116753,-1044747))"
+    },
+    "second": {
+      "id": 1663,
+      "type": "Via",
+      "net": "Net #1 (/GND)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1115000,-1056000), ur\u003d(1121000,-1050000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1764.22119140625,
+    "layer": 0,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1735,
+      "type": "Via",
+      "net": "Net #21 (/I2C_SDA)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1177304,-1154153), ur\u003d(1183304,-1148153))"
+    },
+    "second": {
+      "id": 1304,
+      "type": "PolylineTrace",
+      "net": "Net #40 (/SIM_1V8)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1176000,-1157500), ur\u003d(1178500,-1155500))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1764.22119140625,
+    "layer": 0,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1735,
+      "type": "Via",
+      "net": "Net #21 (/I2C_SDA)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1177304,-1154153), ur\u003d(1183304,-1148153))"
+    },
+    "second": {
+      "id": 1301,
+      "type": "PolylineTrace",
+      "net": "Net #40 (/SIM_1V8)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1176500,-1158000), ur\u003d(1179000,-1155500))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1764.22119140625,
+    "layer": 0,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1304,
+      "type": "PolylineTrace",
+      "net": "Net #40 (/SIM_1V8)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1176000,-1157500), ur\u003d(1178500,-1155500))"
+    },
+    "second": {
+      "id": 1735,
+      "type": "Via",
+      "net": "Net #21 (/I2C_SDA)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1177304,-1154153), ur\u003d(1183304,-1148153))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1764.22119140625,
+    "layer": 0,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1301,
+      "type": "PolylineTrace",
+      "net": "Net #40 (/SIM_1V8)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1176500,-1158000), ur\u003d(1179000,-1155500))"
+    },
+    "second": {
+      "id": 1735,
+      "type": "Via",
+      "net": "Net #21 (/I2C_SDA)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1177304,-1154153), ur\u003d(1183304,-1148153))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1784.97314453125,
+    "layer": 0,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1271,
+      "type": "PolylineTrace",
+      "net": "Net #39 (/SIM_CLK)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1320500,-1143500), ur\u003d(1322500,-1141000))"
+    },
+    "second": {
+      "id": 947,
+      "type": "PolylineTrace",
+      "net": "Net #13 (/VIO_1V8)",
+      "fixed": "UNFIXED",
+      "clearance_class": 4,
+      "bounds": "IntBox(ll\u003d(1284764,-1172264), ur\u003d(1318715,-1053500))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1784.97314453125,
+    "layer": 0,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1271,
+      "type": "PolylineTrace",
+      "net": "Net #39 (/SIM_CLK)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1320500,-1143500), ur\u003d(1322500,-1141000))"
+    },
+    "second": {
+      "id": 947,
+      "type": "PolylineTrace",
+      "net": "Net #13 (/VIO_1V8)",
+      "fixed": "UNFIXED",
+      "clearance_class": 4,
+      "bounds": "IntBox(ll\u003d(1284764,-1172264), ur\u003d(1318715,-1053500))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1784.97314453125,
+    "layer": 0,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1265,
+      "type": "PolylineTrace",
+      "net": "Net #39 (/SIM_CLK)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1320500,-1143000), ur\u003d(1323000,-1140500))"
+    },
+    "second": {
+      "id": 947,
+      "type": "PolylineTrace",
+      "net": "Net #13 (/VIO_1V8)",
+      "fixed": "UNFIXED",
+      "clearance_class": 4,
+      "bounds": "IntBox(ll\u003d(1284764,-1172264), ur\u003d(1318715,-1053500))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1784.97314453125,
+    "layer": 0,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1265,
+      "type": "PolylineTrace",
+      "net": "Net #39 (/SIM_CLK)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1320500,-1143000), ur\u003d(1323000,-1140500))"
+    },
+    "second": {
+      "id": 947,
+      "type": "PolylineTrace",
+      "net": "Net #13 (/VIO_1V8)",
+      "fixed": "UNFIXED",
+      "clearance_class": 4,
+      "bounds": "IntBox(ll\u003d(1284764,-1172264), ur\u003d(1318715,-1053500))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1784.97314453125,
+    "layer": 0,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 947,
+      "type": "PolylineTrace",
+      "net": "Net #13 (/VIO_1V8)",
+      "fixed": "UNFIXED",
+      "clearance_class": 4,
+      "bounds": "IntBox(ll\u003d(1284764,-1172264), ur\u003d(1318715,-1053500))"
+    },
+    "second": {
+      "id": 1271,
+      "type": "PolylineTrace",
+      "net": "Net #39 (/SIM_CLK)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1320500,-1143500), ur\u003d(1322500,-1141000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1784.97314453125,
+    "layer": 0,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 947,
+      "type": "PolylineTrace",
+      "net": "Net #13 (/VIO_1V8)",
+      "fixed": "UNFIXED",
+      "clearance_class": 4,
+      "bounds": "IntBox(ll\u003d(1284764,-1172264), ur\u003d(1318715,-1053500))"
+    },
+    "second": {
+      "id": 1265,
+      "type": "PolylineTrace",
+      "net": "Net #39 (/SIM_CLK)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1320500,-1143000), ur\u003d(1323000,-1140500))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1784.97314453125,
+    "layer": 0,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 947,
+      "type": "PolylineTrace",
+      "net": "Net #13 (/VIO_1V8)",
+      "fixed": "UNFIXED",
+      "clearance_class": 4,
+      "bounds": "IntBox(ll\u003d(1284764,-1172264), ur\u003d(1318715,-1053500))"
+    },
+    "second": {
+      "id": 1271,
+      "type": "PolylineTrace",
+      "net": "Net #39 (/SIM_CLK)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1320500,-1143500), ur\u003d(1322500,-1141000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1784.97314453125,
+    "layer": 0,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 947,
+      "type": "PolylineTrace",
+      "net": "Net #13 (/VIO_1V8)",
+      "fixed": "UNFIXED",
+      "clearance_class": 4,
+      "bounds": "IntBox(ll\u003d(1284764,-1172264), ur\u003d(1318715,-1053500))"
+    },
+    "second": {
+      "id": 1265,
+      "type": "PolylineTrace",
+      "net": "Net #39 (/SIM_CLK)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1320500,-1143000), ur\u003d(1323000,-1140500))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1846.98486328125,
+    "layer": 0,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1735,
+      "type": "Via",
+      "net": "Net #21 (/I2C_SDA)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1177304,-1154153), ur\u003d(1183304,-1148153))"
+    },
+    "second": {
+      "id": 1307,
+      "type": "PolylineTrace",
+      "net": "Net #40 (/SIM_1V8)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1177500,-1158500), ur\u003d(1180000,-1156000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1846.98486328125,
+    "layer": 0,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1735,
+      "type": "Via",
+      "net": "Net #21 (/I2C_SDA)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1177304,-1154153), ur\u003d(1183304,-1148153))"
+    },
+    "second": {
+      "id": 1306,
+      "type": "PolylineTrace",
+      "net": "Net #40 (/SIM_1V8)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1177000,-1158000), ur\u003d(1179500,-1156000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1846.98486328125,
+    "layer": 0,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1307,
+      "type": "PolylineTrace",
+      "net": "Net #40 (/SIM_1V8)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1177500,-1158500), ur\u003d(1180000,-1156000))"
+    },
+    "second": {
+      "id": 1735,
+      "type": "Via",
+      "net": "Net #21 (/I2C_SDA)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1177304,-1154153), ur\u003d(1183304,-1148153))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1846.98486328125,
+    "layer": 0,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1306,
+      "type": "PolylineTrace",
+      "net": "Net #40 (/SIM_1V8)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1177000,-1158000), ur\u003d(1179500,-1156000))"
+    },
+    "second": {
+      "id": 1735,
+      "type": "Via",
+      "net": "Net #21 (/I2C_SDA)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1177304,-1154153), ur\u003d(1183304,-1148153))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1860.992431640625,
+    "layer": 0,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1731,
+      "type": "Via",
+      "net": "Net #18 (/I2C_SCL)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1220147,-1048360), ur\u003d(1226147,-1042360))"
+    },
+    "second": {
+      "id": 1137,
+      "type": "PolylineTrace",
+      "net": "Net #24 (/ACC_INT)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1192318,-1049917), ur\u003d(1256000,-1035000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1860.992431640625,
+    "layer": 0,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1731,
+      "type": "Via",
+      "net": "Net #18 (/I2C_SCL)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1220147,-1048360), ur\u003d(1226147,-1042360))"
+    },
+    "second": {
+      "id": 1137,
+      "type": "PolylineTrace",
+      "net": "Net #24 (/ACC_INT)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1192318,-1049917), ur\u003d(1256000,-1035000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1860.992431640625,
+    "layer": 0,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1137,
+      "type": "PolylineTrace",
+      "net": "Net #24 (/ACC_INT)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1192318,-1049917), ur\u003d(1256000,-1035000))"
+    },
+    "second": {
+      "id": 1731,
+      "type": "Via",
+      "net": "Net #18 (/I2C_SCL)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1220147,-1048360), ur\u003d(1226147,-1042360))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1860.992431640625,
+    "layer": 0,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1137,
+      "type": "PolylineTrace",
+      "net": "Net #24 (/ACC_INT)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1192318,-1049917), ur\u003d(1256000,-1035000))"
+    },
+    "second": {
+      "id": 1731,
+      "type": "Via",
+      "net": "Net #18 (/I2C_SCL)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1220147,-1048360), ur\u003d(1226147,-1042360))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1870.269775390625,
+    "layer": 0,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1660,
+      "type": "Via",
+      "net": "Net #1 (/GND)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1244800,-1163000), ur\u003d(1250800,-1157000))"
+    },
+    "second": {
+      "id": 966,
+      "type": "PolylineTrace",
+      "net": "Net #13 (/VIO_1V8)",
+      "fixed": "UNFIXED",
+      "clearance_class": 4,
+      "bounds": "IntBox(ll\u003d(1240875,-1168000), ur\u003d(1253000,-1164000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1870.269775390625,
+    "layer": 0,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1660,
+      "type": "Via",
+      "net": "Net #1 (/GND)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1244800,-1163000), ur\u003d(1250800,-1157000))"
+    },
+    "second": {
+      "id": 966,
+      "type": "PolylineTrace",
+      "net": "Net #13 (/VIO_1V8)",
+      "fixed": "UNFIXED",
+      "clearance_class": 4,
+      "bounds": "IntBox(ll\u003d(1240875,-1168000), ur\u003d(1253000,-1164000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1870.269775390625,
+    "layer": 0,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 966,
+      "type": "PolylineTrace",
+      "net": "Net #13 (/VIO_1V8)",
+      "fixed": "UNFIXED",
+      "clearance_class": 4,
+      "bounds": "IntBox(ll\u003d(1240875,-1168000), ur\u003d(1253000,-1164000))"
+    },
+    "second": {
+      "id": 1660,
+      "type": "Via",
+      "net": "Net #1 (/GND)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1244800,-1163000), ur\u003d(1250800,-1157000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1870.269775390625,
+    "layer": 0,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 966,
+      "type": "PolylineTrace",
+      "net": "Net #13 (/VIO_1V8)",
+      "fixed": "UNFIXED",
+      "clearance_class": 4,
+      "bounds": "IntBox(ll\u003d(1240875,-1168000), ur\u003d(1253000,-1164000))"
+    },
+    "second": {
+      "id": 1660,
+      "type": "Via",
+      "net": "Net #1 (/GND)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1244800,-1163000), ur\u003d(1250800,-1157000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1884.429931640625,
+    "layer": 0,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1732,
+      "type": "Via",
+      "net": "Net #21 (/I2C_SDA)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1225459,-1234609), ur\u003d(1231459,-1228609))"
+    },
+    "second": {
+      "id": 1628,
+      "type": "Via",
+      "net": "Net #1 (/GND)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1233000,-1231000), ur\u003d(1239000,-1225000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1884.429931640625,
+    "layer": 1,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1732,
+      "type": "Via",
+      "net": "Net #21 (/I2C_SDA)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1225459,-1234609), ur\u003d(1231459,-1228609))"
+    },
+    "second": {
+      "id": 1628,
+      "type": "Via",
+      "net": "Net #1 (/GND)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1233000,-1231000), ur\u003d(1239000,-1225000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1884.429931640625,
+    "layer": 2,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1732,
+      "type": "Via",
+      "net": "Net #21 (/I2C_SDA)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1225459,-1234609), ur\u003d(1231459,-1228609))"
+    },
+    "second": {
+      "id": 1628,
+      "type": "Via",
+      "net": "Net #1 (/GND)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1233000,-1231000), ur\u003d(1239000,-1225000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1884.429931640625,
+    "layer": 3,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1732,
+      "type": "Via",
+      "net": "Net #21 (/I2C_SDA)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1225459,-1234609), ur\u003d(1231459,-1228609))"
+    },
+    "second": {
+      "id": 1628,
+      "type": "Via",
+      "net": "Net #1 (/GND)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1233000,-1231000), ur\u003d(1239000,-1225000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1884.429931640625,
+    "layer": 0,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1628,
+      "type": "Via",
+      "net": "Net #1 (/GND)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1233000,-1231000), ur\u003d(1239000,-1225000))"
+    },
+    "second": {
+      "id": 1732,
+      "type": "Via",
+      "net": "Net #21 (/I2C_SDA)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1225459,-1234609), ur\u003d(1231459,-1228609))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1884.429931640625,
+    "layer": 1,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1628,
+      "type": "Via",
+      "net": "Net #1 (/GND)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1233000,-1231000), ur\u003d(1239000,-1225000))"
+    },
+    "second": {
+      "id": 1732,
+      "type": "Via",
+      "net": "Net #21 (/I2C_SDA)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1225459,-1234609), ur\u003d(1231459,-1228609))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1884.429931640625,
+    "layer": 2,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1628,
+      "type": "Via",
+      "net": "Net #1 (/GND)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1233000,-1231000), ur\u003d(1239000,-1225000))"
+    },
+    "second": {
+      "id": 1732,
+      "type": "Via",
+      "net": "Net #21 (/I2C_SDA)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1225459,-1234609), ur\u003d(1231459,-1228609))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1884.429931640625,
+    "layer": 3,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1628,
+      "type": "Via",
+      "net": "Net #1 (/GND)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1233000,-1231000), ur\u003d(1239000,-1225000))"
+    },
+    "second": {
+      "id": 1732,
+      "type": "Via",
+      "net": "Net #21 (/I2C_SDA)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1225459,-1234609), ur\u003d(1231459,-1228609))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1885.833740234375,
+    "layer": 0,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1768,
+      "type": "Via",
+      "net": "Net #40 (/SIM_1V8)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1170500,-1158500), ur\u003d(1176500,-1152500))"
+    },
+    "second": {
+      "id": 1735,
+      "type": "Via",
+      "net": "Net #21 (/I2C_SDA)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1177304,-1154153), ur\u003d(1183304,-1148153))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1885.833740234375,
+    "layer": 1,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1768,
+      "type": "Via",
+      "net": "Net #40 (/SIM_1V8)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1170500,-1158500), ur\u003d(1176500,-1152500))"
+    },
+    "second": {
+      "id": 1735,
+      "type": "Via",
+      "net": "Net #21 (/I2C_SDA)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1177304,-1154153), ur\u003d(1183304,-1148153))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1885.833740234375,
+    "layer": 2,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1768,
+      "type": "Via",
+      "net": "Net #40 (/SIM_1V8)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1170500,-1158500), ur\u003d(1176500,-1152500))"
+    },
+    "second": {
+      "id": 1735,
+      "type": "Via",
+      "net": "Net #21 (/I2C_SDA)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1177304,-1154153), ur\u003d(1183304,-1148153))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1885.833740234375,
+    "layer": 3,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1768,
+      "type": "Via",
+      "net": "Net #40 (/SIM_1V8)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1170500,-1158500), ur\u003d(1176500,-1152500))"
+    },
+    "second": {
+      "id": 1735,
+      "type": "Via",
+      "net": "Net #21 (/I2C_SDA)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1177304,-1154153), ur\u003d(1183304,-1148153))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1885.833740234375,
+    "layer": 0,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1735,
+      "type": "Via",
+      "net": "Net #21 (/I2C_SDA)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1177304,-1154153), ur\u003d(1183304,-1148153))"
+    },
+    "second": {
+      "id": 1768,
+      "type": "Via",
+      "net": "Net #40 (/SIM_1V8)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1170500,-1158500), ur\u003d(1176500,-1152500))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1885.833740234375,
+    "layer": 1,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1735,
+      "type": "Via",
+      "net": "Net #21 (/I2C_SDA)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1177304,-1154153), ur\u003d(1183304,-1148153))"
+    },
+    "second": {
+      "id": 1768,
+      "type": "Via",
+      "net": "Net #40 (/SIM_1V8)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1170500,-1158500), ur\u003d(1176500,-1152500))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1885.833740234375,
+    "layer": 2,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1735,
+      "type": "Via",
+      "net": "Net #21 (/I2C_SDA)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1177304,-1154153), ur\u003d(1183304,-1148153))"
+    },
+    "second": {
+      "id": 1768,
+      "type": "Via",
+      "net": "Net #40 (/SIM_1V8)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1170500,-1158500), ur\u003d(1176500,-1152500))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1885.833740234375,
+    "layer": 3,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1735,
+      "type": "Via",
+      "net": "Net #21 (/I2C_SDA)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1177304,-1154153), ur\u003d(1183304,-1148153))"
+    },
+    "second": {
+      "id": 1768,
+      "type": "Via",
+      "net": "Net #40 (/SIM_1V8)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1170500,-1158500), ur\u003d(1176500,-1152500))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1890.07568359375,
+    "layer": 0,
+    "category": "FIXED_ROUTE",
+    "first": {
+      "id": 1336,
+      "type": "PolylineTrace",
+      "net": "Net #40 (/SIM_1V8)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1337500,-1059000), ur\u003d(1339500,-1056500))"
+    },
+    "second": {
+      "id": 1280,
+      "type": "PolylineTrace",
+      "net": "Net #39 (/SIM_CLK)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1341000,-1061000), ur\u003d(1343500,-1058500))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1890.07568359375,
+    "layer": 0,
+    "category": "FIXED_ROUTE",
+    "first": {
+      "id": 1336,
+      "type": "PolylineTrace",
+      "net": "Net #40 (/SIM_1V8)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1337500,-1059000), ur\u003d(1339500,-1056500))"
+    },
+    "second": {
+      "id": 1267,
+      "type": "PolylineTrace",
+      "net": "Net #39 (/SIM_CLK)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1341000,-1061500), ur\u003d(1343000,-1059000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1890.07568359375,
+    "layer": 0,
+    "category": "FIXED_ROUTE",
+    "first": {
+      "id": 1333,
+      "type": "PolylineTrace",
+      "net": "Net #40 (/SIM_1V8)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1338000,-1058000), ur\u003d(1340000,-1041714))"
+    },
+    "second": {
+      "id": 1262,
+      "type": "PolylineTrace",
+      "net": "Net #39 (/SIM_CLK)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1341500,-1060000), ur\u003d(1344000,-1057500))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1890.07568359375,
+    "layer": 0,
+    "category": "FIXED_ROUTE",
+    "first": {
+      "id": 1333,
+      "type": "PolylineTrace",
+      "net": "Net #40 (/SIM_1V8)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1338000,-1058000), ur\u003d(1340000,-1041714))"
+    },
+    "second": {
+      "id": 1247,
+      "type": "PolylineTrace",
+      "net": "Net #39 (/SIM_CLK)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1341500,-1060500), ur\u003d(1343500,-1058000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1890.07568359375,
+    "layer": 0,
+    "category": "FIXED_ROUTE",
+    "first": {
+      "id": 1327,
+      "type": "PolylineTrace",
+      "net": "Net #40 (/SIM_1V8)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1337500,-1058500), ur\u003d(1340000,-1056000))"
+    },
+    "second": {
+      "id": 1262,
+      "type": "PolylineTrace",
+      "net": "Net #39 (/SIM_CLK)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1341500,-1060000), ur\u003d(1344000,-1057500))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1890.07568359375,
+    "layer": 0,
+    "category": "FIXED_ROUTE",
+    "first": {
+      "id": 1327,
+      "type": "PolylineTrace",
+      "net": "Net #40 (/SIM_1V8)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1337500,-1058500), ur\u003d(1340000,-1056000))"
+    },
+    "second": {
+      "id": 1247,
+      "type": "PolylineTrace",
+      "net": "Net #39 (/SIM_CLK)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1341500,-1060500), ur\u003d(1343500,-1058000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1890.07568359375,
+    "layer": 0,
+    "category": "FIXED_ROUTE",
+    "first": {
+      "id": 1321,
+      "type": "PolylineTrace",
+      "net": "Net #40 (/SIM_1V8)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1323000,-1073500), ur\u003d(1339500,-1057000))"
+    },
+    "second": {
+      "id": 1280,
+      "type": "PolylineTrace",
+      "net": "Net #39 (/SIM_CLK)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1341000,-1061000), ur\u003d(1343500,-1058500))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1890.07568359375,
+    "layer": 0,
+    "category": "FIXED_ROUTE",
+    "first": {
+      "id": 1321,
+      "type": "PolylineTrace",
+      "net": "Net #40 (/SIM_1V8)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1323000,-1073500), ur\u003d(1339500,-1057000))"
+    },
+    "second": {
+      "id": 1267,
+      "type": "PolylineTrace",
+      "net": "Net #39 (/SIM_CLK)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1341000,-1061500), ur\u003d(1343000,-1059000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1890.07568359375,
+    "layer": 0,
+    "category": "FIXED_ROUTE",
+    "first": {
+      "id": 1280,
+      "type": "PolylineTrace",
+      "net": "Net #39 (/SIM_CLK)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1341000,-1061000), ur\u003d(1343500,-1058500))"
+    },
+    "second": {
+      "id": 1336,
+      "type": "PolylineTrace",
+      "net": "Net #40 (/SIM_1V8)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1337500,-1059000), ur\u003d(1339500,-1056500))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1890.07568359375,
+    "layer": 0,
+    "category": "FIXED_ROUTE",
+    "first": {
+      "id": 1280,
+      "type": "PolylineTrace",
+      "net": "Net #39 (/SIM_CLK)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1341000,-1061000), ur\u003d(1343500,-1058500))"
+    },
+    "second": {
+      "id": 1321,
+      "type": "PolylineTrace",
+      "net": "Net #40 (/SIM_1V8)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1323000,-1073500), ur\u003d(1339500,-1057000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1890.07568359375,
+    "layer": 0,
+    "category": "FIXED_ROUTE",
+    "first": {
+      "id": 1267,
+      "type": "PolylineTrace",
+      "net": "Net #39 (/SIM_CLK)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1341000,-1061500), ur\u003d(1343000,-1059000))"
+    },
+    "second": {
+      "id": 1336,
+      "type": "PolylineTrace",
+      "net": "Net #40 (/SIM_1V8)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1337500,-1059000), ur\u003d(1339500,-1056500))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1890.07568359375,
+    "layer": 0,
+    "category": "FIXED_ROUTE",
+    "first": {
+      "id": 1267,
+      "type": "PolylineTrace",
+      "net": "Net #39 (/SIM_CLK)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1341000,-1061500), ur\u003d(1343000,-1059000))"
+    },
+    "second": {
+      "id": 1321,
+      "type": "PolylineTrace",
+      "net": "Net #40 (/SIM_1V8)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1323000,-1073500), ur\u003d(1339500,-1057000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1890.07568359375,
+    "layer": 0,
+    "category": "FIXED_ROUTE",
+    "first": {
+      "id": 1262,
+      "type": "PolylineTrace",
+      "net": "Net #39 (/SIM_CLK)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1341500,-1060000), ur\u003d(1344000,-1057500))"
+    },
+    "second": {
+      "id": 1333,
+      "type": "PolylineTrace",
+      "net": "Net #40 (/SIM_1V8)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1338000,-1058000), ur\u003d(1340000,-1041714))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1890.07568359375,
+    "layer": 0,
+    "category": "FIXED_ROUTE",
+    "first": {
+      "id": 1262,
+      "type": "PolylineTrace",
+      "net": "Net #39 (/SIM_CLK)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1341500,-1060000), ur\u003d(1344000,-1057500))"
+    },
+    "second": {
+      "id": 1327,
+      "type": "PolylineTrace",
+      "net": "Net #40 (/SIM_1V8)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1337500,-1058500), ur\u003d(1340000,-1056000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1890.07568359375,
+    "layer": 0,
+    "category": "FIXED_ROUTE",
+    "first": {
+      "id": 1247,
+      "type": "PolylineTrace",
+      "net": "Net #39 (/SIM_CLK)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1341500,-1060500), ur\u003d(1343500,-1058000))"
+    },
+    "second": {
+      "id": 1333,
+      "type": "PolylineTrace",
+      "net": "Net #40 (/SIM_1V8)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1338000,-1058000), ur\u003d(1340000,-1041714))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1890.07568359375,
+    "layer": 0,
+    "category": "FIXED_ROUTE",
+    "first": {
+      "id": 1247,
+      "type": "PolylineTrace",
+      "net": "Net #39 (/SIM_CLK)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1341500,-1060500), ur\u003d(1343500,-1058000))"
+    },
+    "second": {
+      "id": 1327,
+      "type": "PolylineTrace",
+      "net": "Net #40 (/SIM_1V8)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1337500,-1058500), ur\u003d(1340000,-1056000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1898.5595703125,
+    "layer": 3,
+    "category": "FIXED_ROUTE",
+    "first": {
+      "id": 1375,
+      "type": "PolylineTrace",
+      "net": "Net #40 (/SIM_1V8)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1164000,-1149000), ur\u003d(1166500,-1146500))"
+    },
+    "second": {
+      "id": 1225,
+      "type": "PolylineTrace",
+      "net": "Net #38 (/SIM_IO)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1156002,-1145063), ur\u003d(1168076,-1132989))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1898.5595703125,
+    "layer": 3,
+    "category": "FIXED_ROUTE",
+    "first": {
+      "id": 1375,
+      "type": "PolylineTrace",
+      "net": "Net #40 (/SIM_1V8)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1164000,-1149000), ur\u003d(1166500,-1146500))"
+    },
+    "second": {
+      "id": 1223,
+      "type": "PolylineTrace",
+      "net": "Net #38 (/SIM_IO)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1166076,-1145063), ur\u003d(1174576,-1143063))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1898.5595703125,
+    "layer": 3,
+    "category": "FIXED_ROUTE",
+    "first": {
+      "id": 1352,
+      "type": "PolylineTrace",
+      "net": "Net #40 (/SIM_1V8)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1163500,-1148500), ur\u003d(1166000,-1146500))"
+    },
+    "second": {
+      "id": 1225,
+      "type": "PolylineTrace",
+      "net": "Net #38 (/SIM_IO)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1156002,-1145063), ur\u003d(1168076,-1132989))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1898.5595703125,
+    "layer": 3,
+    "category": "FIXED_ROUTE",
+    "first": {
+      "id": 1352,
+      "type": "PolylineTrace",
+      "net": "Net #40 (/SIM_1V8)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1163500,-1148500), ur\u003d(1166000,-1146500))"
+    },
+    "second": {
+      "id": 1223,
+      "type": "PolylineTrace",
+      "net": "Net #38 (/SIM_IO)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1166076,-1145063), ur\u003d(1174576,-1143063))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1898.5595703125,
+    "layer": 3,
+    "category": "FIXED_ROUTE",
+    "first": {
+      "id": 1225,
+      "type": "PolylineTrace",
+      "net": "Net #38 (/SIM_IO)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1156002,-1145063), ur\u003d(1168076,-1132989))"
+    },
+    "second": {
+      "id": 1375,
+      "type": "PolylineTrace",
+      "net": "Net #40 (/SIM_1V8)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1164000,-1149000), ur\u003d(1166500,-1146500))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1898.5595703125,
+    "layer": 3,
+    "category": "FIXED_ROUTE",
+    "first": {
+      "id": 1225,
+      "type": "PolylineTrace",
+      "net": "Net #38 (/SIM_IO)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1156002,-1145063), ur\u003d(1168076,-1132989))"
+    },
+    "second": {
+      "id": 1352,
+      "type": "PolylineTrace",
+      "net": "Net #40 (/SIM_1V8)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1163500,-1148500), ur\u003d(1166000,-1146500))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1898.5595703125,
+    "layer": 3,
+    "category": "FIXED_ROUTE",
+    "first": {
+      "id": 1223,
+      "type": "PolylineTrace",
+      "net": "Net #38 (/SIM_IO)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1166076,-1145063), ur\u003d(1174576,-1143063))"
+    },
+    "second": {
+      "id": 1375,
+      "type": "PolylineTrace",
+      "net": "Net #40 (/SIM_1V8)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1164000,-1149000), ur\u003d(1166500,-1146500))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1898.5595703125,
+    "layer": 3,
+    "category": "FIXED_ROUTE",
+    "first": {
+      "id": 1223,
+      "type": "PolylineTrace",
+      "net": "Net #38 (/SIM_IO)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1166076,-1145063), ur\u003d(1174576,-1143063))"
+    },
+    "second": {
+      "id": 1352,
+      "type": "PolylineTrace",
+      "net": "Net #40 (/SIM_1V8)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1163500,-1148500), ur\u003d(1166000,-1146500))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1916.961669921875,
+    "layer": 0,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 966,
+      "type": "PolylineTrace",
+      "net": "Net #13 (/VIO_1V8)",
+      "fixed": "UNFIXED",
+      "clearance_class": 4,
+      "bounds": "IntBox(ll\u003d(1240875,-1168000), ur\u003d(1253000,-1164000))"
+    },
+    "second": {
+      "id": 249,
+      "type": "Pin",
+      "net": "Net #12 (/GNSS_LNA_EN)",
+      "component": "U2",
+      "fixed": "UNFIXED",
+      "clearance_class": 3,
+      "bounds": "IntBox(ll\u003d(1239750,-1171375), ur\u003d(1244000,-1168625))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1916.961669921875,
+    "layer": 0,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 966,
+      "type": "PolylineTrace",
+      "net": "Net #13 (/VIO_1V8)",
+      "fixed": "UNFIXED",
+      "clearance_class": 4,
+      "bounds": "IntBox(ll\u003d(1240875,-1168000), ur\u003d(1253000,-1164000))"
+    },
+    "second": {
+      "id": 249,
+      "type": "Pin",
+      "net": "Net #12 (/GNSS_LNA_EN)",
+      "component": "U2",
+      "fixed": "UNFIXED",
+      "clearance_class": 3,
+      "bounds": "IntBox(ll\u003d(1239750,-1171375), ur\u003d(1244000,-1168625))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1916.961669921875,
+    "layer": 0,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 249,
+      "type": "Pin",
+      "net": "Net #12 (/GNSS_LNA_EN)",
+      "component": "U2",
+      "fixed": "UNFIXED",
+      "clearance_class": 3,
+      "bounds": "IntBox(ll\u003d(1239750,-1171375), ur\u003d(1244000,-1168625))"
+    },
+    "second": {
+      "id": 966,
+      "type": "PolylineTrace",
+      "net": "Net #13 (/VIO_1V8)",
+      "fixed": "UNFIXED",
+      "clearance_class": 4,
+      "bounds": "IntBox(ll\u003d(1240875,-1168000), ur\u003d(1253000,-1164000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1916.961669921875,
+    "layer": 0,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 249,
+      "type": "Pin",
+      "net": "Net #12 (/GNSS_LNA_EN)",
+      "component": "U2",
+      "fixed": "UNFIXED",
+      "clearance_class": 3,
+      "bounds": "IntBox(ll\u003d(1239750,-1171375), ur\u003d(1244000,-1168625))"
+    },
+    "second": {
+      "id": 966,
+      "type": "PolylineTrace",
+      "net": "Net #13 (/VIO_1V8)",
+      "fixed": "UNFIXED",
+      "clearance_class": 4,
+      "bounds": "IntBox(ll\u003d(1240875,-1168000), ur\u003d(1253000,-1164000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1936.6455078125,
+    "layer": 3,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1789,
+      "type": "Via",
+      "net": "Net #64 (/SPI_MISO)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1195460,-1114486), ur\u003d(1201460,-1108486))"
+    },
+    "second": {
+      "id": 1520,
+      "type": "PolylineTrace",
+      "net": "Net #66 (/HEALTH_RESET)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1181205,-1122632), ur\u003d(1201861,-1077938))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1936.6455078125,
+    "layer": 3,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1520,
+      "type": "PolylineTrace",
+      "net": "Net #66 (/HEALTH_RESET)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1181205,-1122632), ur\u003d(1201861,-1077938))"
+    },
+    "second": {
+      "id": 1789,
+      "type": "Via",
+      "net": "Net #64 (/SPI_MISO)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1195460,-1114486), ur\u003d(1201460,-1108486))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1936.981201171875,
+    "layer": 3,
+    "category": "FIXED_ROUTE",
+    "first": {
+      "id": 1359,
+      "type": "PolylineTrace",
+      "net": "Net #40 (/SIM_1V8)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1164500,-1149000), ur\u003d(1167000,-1147000))"
+    },
+    "second": {
+      "id": 1225,
+      "type": "PolylineTrace",
+      "net": "Net #38 (/SIM_IO)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1156002,-1145063), ur\u003d(1168076,-1132989))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1936.981201171875,
+    "layer": 3,
+    "category": "FIXED_ROUTE",
+    "first": {
+      "id": 1359,
+      "type": "PolylineTrace",
+      "net": "Net #40 (/SIM_1V8)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1164500,-1149000), ur\u003d(1167000,-1147000))"
+    },
+    "second": {
+      "id": 1223,
+      "type": "PolylineTrace",
+      "net": "Net #38 (/SIM_IO)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1166076,-1145063), ur\u003d(1174576,-1143063))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1936.981201171875,
+    "layer": 3,
+    "category": "FIXED_ROUTE",
+    "first": {
+      "id": 1355,
+      "type": "PolylineTrace",
+      "net": "Net #40 (/SIM_1V8)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1165000,-1156500), ur\u003d(1174500,-1147000))"
+    },
+    "second": {
+      "id": 1225,
+      "type": "PolylineTrace",
+      "net": "Net #38 (/SIM_IO)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1156002,-1145063), ur\u003d(1168076,-1132989))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1936.981201171875,
+    "layer": 3,
+    "category": "FIXED_ROUTE",
+    "first": {
+      "id": 1355,
+      "type": "PolylineTrace",
+      "net": "Net #40 (/SIM_1V8)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1165000,-1156500), ur\u003d(1174500,-1147000))"
+    },
+    "second": {
+      "id": 1223,
+      "type": "PolylineTrace",
+      "net": "Net #38 (/SIM_IO)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1166076,-1145063), ur\u003d(1174576,-1143063))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1936.981201171875,
+    "layer": 3,
+    "category": "FIXED_ROUTE",
+    "first": {
+      "id": 1225,
+      "type": "PolylineTrace",
+      "net": "Net #38 (/SIM_IO)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1156002,-1145063), ur\u003d(1168076,-1132989))"
+    },
+    "second": {
+      "id": 1359,
+      "type": "PolylineTrace",
+      "net": "Net #40 (/SIM_1V8)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1164500,-1149000), ur\u003d(1167000,-1147000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1936.981201171875,
+    "layer": 3,
+    "category": "FIXED_ROUTE",
+    "first": {
+      "id": 1225,
+      "type": "PolylineTrace",
+      "net": "Net #38 (/SIM_IO)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1156002,-1145063), ur\u003d(1168076,-1132989))"
+    },
+    "second": {
+      "id": 1355,
+      "type": "PolylineTrace",
+      "net": "Net #40 (/SIM_1V8)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1165000,-1156500), ur\u003d(1174500,-1147000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1936.981201171875,
+    "layer": 3,
+    "category": "FIXED_ROUTE",
+    "first": {
+      "id": 1223,
+      "type": "PolylineTrace",
+      "net": "Net #38 (/SIM_IO)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1166076,-1145063), ur\u003d(1174576,-1143063))"
+    },
+    "second": {
+      "id": 1359,
+      "type": "PolylineTrace",
+      "net": "Net #40 (/SIM_1V8)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1164500,-1149000), ur\u003d(1167000,-1147000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1936.981201171875,
+    "layer": 3,
+    "category": "FIXED_ROUTE",
+    "first": {
+      "id": 1223,
+      "type": "PolylineTrace",
+      "net": "Net #38 (/SIM_IO)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1166076,-1145063), ur\u003d(1174576,-1143063))"
+    },
+    "second": {
+      "id": 1355,
+      "type": "PolylineTrace",
+      "net": "Net #40 (/SIM_1V8)",
+      "fixed": "SYSTEM_FIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1165000,-1156500), ur\u003d(1174500,-1147000))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1940.97900390625,
+    "layer": 3,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1446,
+      "type": "PolylineTrace",
+      "net": "Net #62 (/SPI_SCK)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1183965,-1037392), ur\u003d(1234500,-990500))"
+    },
+    "second": {
+      "id": 1114,
+      "type": "PolylineTrace",
+      "net": "Net #21 (/I2C_SDA)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1193000,-1019500), ur\u003d(1224000,-1000500))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1940.97900390625,
+    "layer": 3,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1446,
+      "type": "PolylineTrace",
+      "net": "Net #62 (/SPI_SCK)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1183965,-1037392), ur\u003d(1234500,-990500))"
+    },
+    "second": {
+      "id": 1114,
+      "type": "PolylineTrace",
+      "net": "Net #21 (/I2C_SDA)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1193000,-1019500), ur\u003d(1224000,-1000500))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1940.97900390625,
+    "layer": 3,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1446,
+      "type": "PolylineTrace",
+      "net": "Net #62 (/SPI_SCK)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1183965,-1037392), ur\u003d(1234500,-990500))"
+    },
+    "second": {
+      "id": 1114,
+      "type": "PolylineTrace",
+      "net": "Net #21 (/I2C_SDA)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1193000,-1019500), ur\u003d(1224000,-1000500))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1940.97900390625,
+    "layer": 3,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1446,
+      "type": "PolylineTrace",
+      "net": "Net #62 (/SPI_SCK)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1183965,-1037392), ur\u003d(1234500,-990500))"
+    },
+    "second": {
+      "id": 1114,
+      "type": "PolylineTrace",
+      "net": "Net #21 (/I2C_SDA)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1193000,-1019500), ur\u003d(1224000,-1000500))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1940.97900390625,
+    "layer": 3,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1114,
+      "type": "PolylineTrace",
+      "net": "Net #21 (/I2C_SDA)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1193000,-1019500), ur\u003d(1224000,-1000500))"
+    },
+    "second": {
+      "id": 1446,
+      "type": "PolylineTrace",
+      "net": "Net #62 (/SPI_SCK)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1183965,-1037392), ur\u003d(1234500,-990500))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1940.97900390625,
+    "layer": 3,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1114,
+      "type": "PolylineTrace",
+      "net": "Net #21 (/I2C_SDA)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1193000,-1019500), ur\u003d(1224000,-1000500))"
+    },
+    "second": {
+      "id": 1446,
+      "type": "PolylineTrace",
+      "net": "Net #62 (/SPI_SCK)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1183965,-1037392), ur\u003d(1234500,-990500))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1940.97900390625,
+    "layer": 3,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1114,
+      "type": "PolylineTrace",
+      "net": "Net #21 (/I2C_SDA)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1193000,-1019500), ur\u003d(1224000,-1000500))"
+    },
+    "second": {
+      "id": 1446,
+      "type": "PolylineTrace",
+      "net": "Net #62 (/SPI_SCK)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1183965,-1037392), ur\u003d(1234500,-990500))"
+    }
+  },
+  {
+    "expected_board_units": 2000.0,
+    "actual_board_units": 1940.97900390625,
+    "layer": 3,
+    "category": "POTENTIALLY_FIXABLE",
+    "first": {
+      "id": 1114,
+      "type": "PolylineTrace",
+      "net": "Net #21 (/I2C_SDA)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1193000,-1019500), ur\u003d(1224000,-1000500))"
+    },
+    "second": {
+      "id": 1446,
+      "type": "PolylineTrace",
+      "net": "Net #62 (/SPI_SCK)",
+      "fixed": "UNFIXED",
+      "clearance_class": 1,
+      "bounds": "IntBox(ll\u003d(1183965,-1037392), ur\u003d(1234500,-990500))"
+    }
+  }
+]

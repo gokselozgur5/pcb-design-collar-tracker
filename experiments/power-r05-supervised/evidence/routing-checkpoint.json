@@ -1,0 +1,837 @@
+{
+  "revision": "r05-supervised",
+  "source_sha256": "78df6a520fc978e08451c94e6c6f475877f401867b55c0218802ee3434d193a2",
+  "schematic_sha256": "32313876fa5865fffa32f9b993970a1ffb4405f1824c1104e18ddba8bcc8ba96",
+  "native_drc": {
+    "violations": 0,
+    "unconnected_items": 23,
+    "schematic_parity": 0
+  },
+  "electrical_acceptance": "HOLD",
+  "manufacturing_release": false,
+  "supplier_records": [],
+  "files": [
+    {
+      "path": "hardware/Collar.kicad_sym",
+      "bytes": 46236,
+      "sha256": "dbf447f74d6bbcfda9d3915cccf9bbaaf3b9d663bb523746593bc6edd59a5825"
+    },
+    {
+      "path": "hardware/Collar.pretty/Contact_1x05_P1.27mm.kicad_mod",
+      "bytes": 1861,
+      "sha256": "3981af8d7bd8fe3a38038ed006ce564639b6e7d3f7ae8b94c6c00a047ac3e2cb"
+    },
+    {
+      "path": "hardware/Collar.pretty/Contact_2x03_P1.27mm.kicad_mod",
+      "bytes": 2043,
+      "sha256": "7ab465696aed4386ecb0f4dadc669ec2360785256c6dcc53b0e3c33c0aadd230"
+    },
+    {
+      "path": "hardware/Collar.pretty/Contact_2x06_P1.27mm.kicad_mod",
+      "bytes": 3039,
+      "sha256": "d0dfe837bdb6a9dada5e2e5e993b89f17463169351cfff57469739d7086ff309"
+    },
+    {
+      "path": "hardware/Collar.pretty/LGA_9151_12.1x11.1mm.kicad_mod",
+      "bytes": 19847,
+      "sha256": "6f9c2671f9240494f57498bf9ae4f9246e20ae1e968c71be27b7ec9aecc0ed7a"
+    },
+    {
+      "path": "hardware/Collar.pretty/SKY65943_DK10171.kicad_mod",
+      "bytes": 5922,
+      "sha256": "1574637b0ccd24ab853a098e6dfb7afd983df622603f8102d69540bc5795a483"
+    },
+    {
+      "path": "hardware/Collar.pretty/Solder_1x02_P2.5mm.kicad_mod",
+      "bytes": 1391,
+      "sha256": "71bf37b1cf9b18b30c3803baf4bd32b3e9df5c55fa3c118a3c46cac8f001b92a"
+    },
+    {
+      "path": "hardware/Collar.pretty/Solder_1x03_P2.5mm.kicad_mod",
+      "bytes": 1540,
+      "sha256": "ebe32c51b1c2e764de90efee342f6f37b77fd42be004aa99b742eea2416de9e1"
+    },
+    {
+      "path": "hardware/Collar.pretty/nRF9151_DK10171.kicad_mod",
+      "bytes": 24320,
+      "sha256": "97522259b3f159dd2fc2b9ba0d44aec470e340679b3ea67f3335e08f39d3491f"
+    },
+    {
+      "path": "hardware/Collar033.pretty/C10_C_0402_1005Metric.kicad_mod",
+      "bytes": 3224,
+      "sha256": "c6979daf2bb9cc6d11a949704faa5e831247dd17cf694da33e51e3ffbd6103da"
+    },
+    {
+      "path": "hardware/Collar033.pretty/C11_C_0402_1005Metric.kicad_mod",
+      "bytes": 3181,
+      "sha256": "2abf2cc6b1570567d5bd615b1cee383d01e99f51a5a16dafc7fb5261be33bf6e"
+    },
+    {
+      "path": "hardware/Collar033.pretty/C12_C_0402_1005Metric.kicad_mod",
+      "bytes": 3181,
+      "sha256": "62ac1c006f1057cf7031fdd98e13873c73151e9cec7927809278d9f6b866b354"
+    },
+    {
+      "path": "hardware/Collar033.pretty/C13_C_0402_1005Metric.kicad_mod",
+      "bytes": 3174,
+      "sha256": "2b9312fd2e4330ae40e9272e7c6ba9daf2846575a1b7ad01a83141fad0d93600"
+    },
+    {
+      "path": "hardware/Collar033.pretty/C14_C_0402_1005Metric.kicad_mod",
+      "bytes": 3174,
+      "sha256": "b3c9e22fe35cb49e6aa93c8736a9e47fa3478ba9ea11bef51dd894aa96cf8ae3"
+    },
+    {
+      "path": "hardware/Collar033.pretty/C15_C_0402_1005Metric.kicad_mod",
+      "bytes": 3168,
+      "sha256": "3a913e4711191967dcff66077f568c66478bdf760843a90f613f754e5b289e80"
+    },
+    {
+      "path": "hardware/Collar033.pretty/C16_C_0402_1005Metric.kicad_mod",
+      "bytes": 3170,
+      "sha256": "0e185c617b5ef69fa5d994b0fe1fa69f364f500eb778f78befbb5d4ced381498"
+    },
+    {
+      "path": "hardware/Collar033.pretty/C17_C_0402_1005Metric.kicad_mod",
+      "bytes": 3215,
+      "sha256": "05b6a16cdeb69b5c6389c31593a02cad537f6eae01def5538dd8023e804bafa8"
+    },
+    {
+      "path": "hardware/Collar033.pretty/C18_C_0603_1608Metric.kicad_mod",
+      "bytes": 3164,
+      "sha256": "6657e6b516e85dee22d528ea983b52682cd6d9b4367b00d831508d1ebb1a1eee"
+    },
+    {
+      "path": "hardware/Collar033.pretty/C19_C_0402_1005Metric.kicad_mod",
+      "bytes": 3171,
+      "sha256": "0b5f63f1b8dc4984e3ebcd86d635547c669ff5745df36cb6398065a3113aeec7"
+    },
+    {
+      "path": "hardware/Collar033.pretty/C1_C_0201_0603Metric.kicad_mod",
+      "bytes": 3249,
+      "sha256": "7763dff61e6199dbf3eaef9894893f7034ee100e6bb7b06ca1a30822384d2b5e"
+    },
+    {
+      "path": "hardware/Collar033.pretty/C20_C_0402_1005Metric.kicad_mod",
+      "bytes": 3166,
+      "sha256": "cc773c272221884fe7fd2de08db18f7c7ef0d8c8b4f46c3e0682dba68012ee38"
+    },
+    {
+      "path": "hardware/Collar033.pretty/C21_C_0402_1005Metric.kicad_mod",
+      "bytes": 3166,
+      "sha256": "a34dbb59f4dcc06ee4ec1fc1d8489edf82a055ccc6ab9feba3e0c10501e9e9d7"
+    },
+    {
+      "path": "hardware/Collar033.pretty/C22_C_0402_1005Metric.kicad_mod",
+      "bytes": 3223,
+      "sha256": "110409f187231e12a41f27c13c386184f8ddc347d4566295235a604e76f66cab"
+    },
+    {
+      "path": "hardware/Collar033.pretty/C23_C_0402_1005Metric.kicad_mod",
+      "bytes": 3168,
+      "sha256": "250d977ef3220995de51b326bc63ed1f505a055c511af24f301d6d20fb1eb6c6"
+    },
+    {
+      "path": "hardware/Collar033.pretty/C24_C_0402_1005Metric.kicad_mod",
+      "bytes": 3168,
+      "sha256": "0a9de50b2e2d1e8c55101763838ae866b2915fe6fbdc3c70450d4257c4f696fb"
+    },
+    {
+      "path": "hardware/Collar033.pretty/C2_C_0201_0603Metric.kicad_mod",
+      "bytes": 3253,
+      "sha256": "d85e88bcd34d7f29e3cb3ad5c1be072bd87bc8a8e19ccbdcc591014a04e53314"
+    },
+    {
+      "path": "hardware/Collar033.pretty/C3_C_0805_2012Metric.kicad_mod",
+      "bytes": 3286,
+      "sha256": "405776fef0e2e1600e1b1a26a2590a0f7b3bc3934df879f017e955c607b5fb1b"
+    },
+    {
+      "path": "hardware/Collar033.pretty/C4_C_0603_1608Metric.kicad_mod",
+      "bytes": 3236,
+      "sha256": "a15bb79f398400efb19cb1585167216ee4c674a6d2c466c3a8874bc39c12f5f9"
+    },
+    {
+      "path": "hardware/Collar033.pretty/C5_C_0201_0603Metric.kicad_mod",
+      "bytes": 3246,
+      "sha256": "1473b6bf4c844075dec24fe9668ef5e95ec06ef1a30ca4aa7d0b31cb4931ae89"
+    },
+    {
+      "path": "hardware/Collar033.pretty/C6_C_0402_1005Metric.kicad_mod",
+      "bytes": 3184,
+      "sha256": "ae9619ad00b2dbfcc2f013fd4f2dcead095eb0b8b0f85eab762b25e2bb79c4d4"
+    },
+    {
+      "path": "hardware/Collar033.pretty/C7_C_0402_1005Metric.kicad_mod",
+      "bytes": 3184,
+      "sha256": "cd8a0758a3706568db3c39191831ffda7f8c7c3876d7eeba245df9d312a2a397"
+    },
+    {
+      "path": "hardware/Collar033.pretty/C8_C_0201_0603Metric.kicad_mod",
+      "bytes": 3285,
+      "sha256": "d5708e53aff9dd88db27242ef8635db325fd7e3392ef6887ad0d1a5b96549828"
+    },
+    {
+      "path": "hardware/Collar033.pretty/C9_C_0402_1005Metric.kicad_mod",
+      "bytes": 3211,
+      "sha256": "f75f9550952af02e2fae9f00b30a55191dc96431f3c4c2a39766fea1a1b566c8"
+    },
+    {
+      "path": "hardware/Collar033.pretty/FB1_L_0603_1608Metric.kicad_mod",
+      "bytes": 3248,
+      "sha256": "3535a30a95541b65ace816f04f60d067ff1d8f7cd9030a7edfa38d85c2131c07"
+    },
+    {
+      "path": "hardware/Collar033.pretty/J1_U.FL_Hirose_U.FL-R-SMT-1_Vertical.kicad_mod",
+      "bytes": 31017,
+      "sha256": "e7fd1891b15d3b7b9f69aeb333b63bef2d4bde30f0181c6ec41177f38ed4598b"
+    },
+    {
+      "path": "hardware/Collar033.pretty/J2_U.FL_Hirose_U.FL-R-SMT-1_Vertical.kicad_mod",
+      "bytes": 31038,
+      "sha256": "1f37c60c94f442bc48cfcabff152b07f00f8329c2709261f58125f9a7ea271c1"
+    },
+    {
+      "path": "hardware/Collar033.pretty/J3_Solder_1x02_P2.5mm.kicad_mod",
+      "bytes": 1924,
+      "sha256": "6a9d7f3e2cf4bf56909daccc19221b7f12e91998db966a0d4781c806c47df9d5"
+    },
+    {
+      "path": "hardware/Collar033.pretty/J4_Solder_1x03_P2.5mm.kicad_mod",
+      "bytes": 2156,
+      "sha256": "5ed2b9fa2c5114b68d2bd717ee6698c58bab29eedb34e81c249fd9a33d428e26"
+    },
+    {
+      "path": "hardware/Collar033.pretty/J5_Contact_2x06_P1.27mm.kicad_mod",
+      "bytes": 3916,
+      "sha256": "a9a69d41dcd5b654020a97ab24c98a6a9dc1cf04c401b1e222728ace2b32cc70"
+    },
+    {
+      "path": "hardware/Collar033.pretty/J6_Contact_1x05_P1.27mm.kicad_mod",
+      "bytes": 2535,
+      "sha256": "0b733e47472e02efaa666a21d11ee8feb46b9894dd34ad4b3e26110eff134757"
+    },
+    {
+      "path": "hardware/Collar033.pretty/J7_Contact_2x03_P1.27mm.kicad_mod",
+      "bytes": 2732,
+      "sha256": "a62ac7c8a4dc07aa263cbd6727fab20858231c7cf5f4f675d5bfd88ee52bcd0c"
+    },
+    {
+      "path": "hardware/Collar033.pretty/L1_L_0402_1005Metric.kicad_mod",
+      "bytes": 2797,
+      "sha256": "f981b11953bab8a25bc5c156c6f9d0324e9d5fa7ac655b42bef55193b6f6fb8a"
+    },
+    {
+      "path": "hardware/Collar033.pretty/R10_R_0402_1005Metric.kicad_mod",
+      "bytes": 3222,
+      "sha256": "fdda4c1ebd4d2109a069dee8d05eedc8c20614fea296b8e186030b60f99cf8fa"
+    },
+    {
+      "path": "hardware/Collar033.pretty/R11_R_0402_1005Metric.kicad_mod",
+      "bytes": 3222,
+      "sha256": "12e51c40219b4de8438f7a37b3d6969abd3380ac5fadb26dfcb02eee7d3e1339"
+    },
+    {
+      "path": "hardware/Collar033.pretty/R12_R_0402_1005Metric.kicad_mod",
+      "bytes": 3168,
+      "sha256": "11a841a9038df488bbba7bef06b251423f47560dd8cd702ffb2b2f4005afdfaf"
+    },
+    {
+      "path": "hardware/Collar033.pretty/R13_R_0402_1005Metric.kicad_mod",
+      "bytes": 3168,
+      "sha256": "8ef24daa15698c0d6a94b361f044c203b7bb3a7203800245dc16e71551456ed4"
+    },
+    {
+      "path": "hardware/Collar033.pretty/R14_R_0402_1005Metric.kicad_mod",
+      "bytes": 3224,
+      "sha256": "45f19e41bedde28933868be87888d2c1d7c2b96d79b4a20b628873cd524a1337"
+    },
+    {
+      "path": "hardware/Collar033.pretty/R15_R_0402_1005Metric.kicad_mod",
+      "bytes": 3224,
+      "sha256": "ac9e19ba62c986234cfe79096d4d43438bca5d5c6f4d130b9fb3676450fe5702"
+    },
+    {
+      "path": "hardware/Collar033.pretty/R1_R_0402_1005Metric.kicad_mod",
+      "bytes": 3210,
+      "sha256": "7ddc0b254b8e38208f589f134068b95213714a020050120c4bdbc7f65ad1a309"
+    },
+    {
+      "path": "hardware/Collar033.pretty/R2_R_0402_1005Metric.kicad_mod",
+      "bytes": 3221,
+      "sha256": "241b741c690eda6f40d7f57a1397ecdff1b6905cb598acca77765740954e2776"
+    },
+    {
+      "path": "hardware/Collar033.pretty/R3_R_0402_1005Metric.kicad_mod",
+      "bytes": 3172,
+      "sha256": "a4f6a3bb7a3aa2e353a322bf4ba80e3521841f500786302edc77a5fd81838d80"
+    },
+    {
+      "path": "hardware/Collar033.pretty/R4_R_0402_1005Metric.kicad_mod",
+      "bytes": 3165,
+      "sha256": "ab0e3d95b0a76b3fccc4c63aaaf3062b80c93d5f42063717cc2ef302cffe12c3"
+    },
+    {
+      "path": "hardware/Collar033.pretty/R5_R_0402_1005Metric.kicad_mod",
+      "bytes": 3167,
+      "sha256": "16cd27a2f21f244ff96b74a0abb1761652b8633a62eb780e935e0c65c7ef86d5"
+    },
+    {
+      "path": "hardware/Collar033.pretty/R6_R_0402_1005Metric.kicad_mod",
+      "bytes": 3203,
+      "sha256": "372d21b7cf3a97a0441379572637a159046de9ffd484d7d9508196ad82cbfe76"
+    },
+    {
+      "path": "hardware/Collar033.pretty/R7_R_0402_1005Metric.kicad_mod",
+      "bytes": 3204,
+      "sha256": "18516556324a6b554e96fb63fd5241882921fcaabbe2a2bb82e5ee82da5fb372"
+    },
+    {
+      "path": "hardware/Collar033.pretty/R8_R_0402_1005Metric.kicad_mod",
+      "bytes": 3222,
+      "sha256": "2210d68f15e57fb6855d1807796d43414d69998d9f5b4804bcf15ce71d66fef9"
+    },
+    {
+      "path": "hardware/Collar033.pretty/R9_R_0402_1005Metric.kicad_mod",
+      "bytes": 3222,
+      "sha256": "751cb577bd5a956af2f03dd54ae8acd7a6f844c0d358b541cffd27691547bd43"
+    },
+    {
+      "path": "hardware/Collar033.pretty/U1_LGA_9151_12.1x11.1mm.kicad_mod",
+      "bytes": 26726,
+      "sha256": "85f27d9f23a7de99ed89a79ac72e134676806cbda51075ba72601f37597a14e9"
+    },
+    {
+      "path": "hardware/Collar033.pretty/U2_SKY65943_DK10171.kicad_mod",
+      "bytes": 7215,
+      "sha256": "d6baf9ece136a2771f548473fc3354c29c51a503faf7a2d8cd1d04533b974e43"
+    },
+    {
+      "path": "hardware/Collar033.pretty/U3_Texas_DLH0010A_WSON-10-1EP_2.2x2mm_P0.4mm_EP0.9x1.5mm.kicad_mod",
+      "bytes": 6904,
+      "sha256": "2cf557f6eb65938bef781888a0366065d26b4dd01e2d07b120878d7febd92006"
+    },
+    {
+      "path": "hardware/Collar033.pretty/U4_SOT-23-5.kicad_mod",
+      "bytes": 7157,
+      "sha256": "b177e0f440415042888117f9b0bc1b7c04844dbcfdf4eaa6c615b08443e79c16"
+    },
+    {
+      "path": "hardware/Collar033.pretty/U5_LGA-12_2x2mm_P0.5mm.kicad_mod",
+      "bytes": 7206,
+      "sha256": "dee83f6942dba70edbd45f20d3044d6c938434626b7261030e9a2f9e87d14824"
+    },
+    {
+      "path": "hardware/Collar04.pretty/SIM8051_6_0_14_00_A.kicad_mod",
+      "bytes": 6311,
+      "sha256": "60162a9ca77948d0e80159e9bf13bc0d72917df7c2cf07662d20c4e6dc84955e"
+    },
+    {
+      "path": "hardware/Collar04.pretty/TPD4E1U06DCKR.kicad_mod",
+      "bytes": 4891,
+      "sha256": "621c291775e4fcf642ba210e6d6e869c74a77e75b85d8bb8edec45ad6e2c9241"
+    },
+    {
+      "path": "hardware/Collar05.pretty/C25_C_0805_2012Metric.kicad_mod",
+      "bytes": 2889,
+      "sha256": "3cbcaba30c28dac348f77112c50a81c8ed08fd890ed2cd6cbd10a22fd7bfe92d"
+    },
+    {
+      "path": "hardware/Collar05.pretty/C26_C_0402_1005Metric.kicad_mod",
+      "bytes": 2795,
+      "sha256": "18f6d4fb59ee4bc128dd13628d5f495e591bc61f1ca732c84af6a3461cd22a05"
+    },
+    {
+      "path": "hardware/Collar05.pretty/C27_C_0402_1005Metric.kicad_mod",
+      "bytes": 2795,
+      "sha256": "a68a5b1ec52363a8ab6d480780b75e7f9b5c36450a621b41e1c9b94e4b5e8923"
+    },
+    {
+      "path": "hardware/Collar05.pretty/C28_C_0402_1005Metric.kicad_mod",
+      "bytes": 2795,
+      "sha256": "69c4fad6fe233fa83142164d3334a89447eefa77b236c80d93b8bc3b6ab2dd8e"
+    },
+    {
+      "path": "hardware/Collar05.pretty/C29_C_0402_1005Metric.kicad_mod",
+      "bytes": 2795,
+      "sha256": "e82a93c6db27ab65b7100d5e36a1166e753f4f46776fe65c3fd7efcd5d341e64"
+    },
+    {
+      "path": "hardware/Collar05.pretty/C30_C_0402_1005Metric.kicad_mod",
+      "bytes": 2795,
+      "sha256": "dafcb73692b8913a8f93f30c022cae9f58ecb64482e172c10ea0980e635264f3"
+    },
+    {
+      "path": "hardware/Collar05.pretty/C9_C_0805_2012Metric.kicad_mod",
+      "bytes": 2888,
+      "sha256": "4b9ff8e926bb4cd758cc737033659dba6a8e198f55696431e6a9fd1fd6d46973"
+    },
+    {
+      "path": "hardware/Collar05.pretty/MAX17048_T822_3_90_0065E.kicad_mod",
+      "bytes": 1951,
+      "sha256": "eecda9d5269c546ff417ce3f702e7867276bbf5b430b546031354e2fd90825ad"
+    },
+    {
+      "path": "hardware/Collar05.pretty/Q1_SOT-363_SC-70-6.kicad_mod",
+      "bytes": 6240,
+      "sha256": "1d8b40590e0ccbcca537cb5858163c00b10ddabea76cf382134e87982ea383ff"
+    },
+    {
+      "path": "hardware/Collar05.pretty/R16_R_0402_1005Metric.kicad_mod",
+      "bytes": 2796,
+      "sha256": "3fe768c861837cea1fca72faf9d6f75537353f80ff617aaafad5e52161a85545"
+    },
+    {
+      "path": "hardware/Collar05.pretty/R17_R_0402_1005Metric.kicad_mod",
+      "bytes": 2796,
+      "sha256": "26a16df58719fb76b41a268fac2a01c00d048b64ede799de2273ee549056a24d"
+    },
+    {
+      "path": "hardware/Collar05.pretty/R18_R_0402_1005Metric.kicad_mod",
+      "bytes": 2796,
+      "sha256": "9d4ffa4ac61b8cac804a9c5e0f5eff7cfb777e785c62c1584a3b3a7db0e3c6ad"
+    },
+    {
+      "path": "hardware/Collar05.pretty/R19_R_0402_1005Metric.kicad_mod",
+      "bytes": 2796,
+      "sha256": "53e2bc814cb26fc26edf81fd5483f60a42efa8524ae989763e85f1105698f236"
+    },
+    {
+      "path": "hardware/Collar05.pretty/R20_R_0402_1005Metric.kicad_mod",
+      "bytes": 2796,
+      "sha256": "247d0df682a89c7c529185fc852a0de50b286b282de4d5663bf767ba53308948"
+    },
+    {
+      "path": "hardware/Collar05.pretty/R21_R_0402_1005Metric.kicad_mod",
+      "bytes": 2796,
+      "sha256": "bff1e3617bb1d0a242e04c408595ecbdd73ffcc24fac69e0c351067b923c2d1b"
+    },
+    {
+      "path": "hardware/Collar05.pretty/R22_R_0402_1005Metric.kicad_mod",
+      "bytes": 2796,
+      "sha256": "233c3dedfe0ff78c96ae368130e76a2fe6c1ad2eee723936ff3f7f9a0603f83d"
+    },
+    {
+      "path": "hardware/Collar05.pretty/R23_R_0402_1005Metric.kicad_mod",
+      "bytes": 2796,
+      "sha256": "be071c0787eeb594987aac241d74aa5f2bad7893a0ef0f6fa17d25ed2a905aad"
+    },
+    {
+      "path": "hardware/Collar05.pretty/U6_SOT-23-6.kicad_mod",
+      "bytes": 6070,
+      "sha256": "780c607efc0f7ee3812e7be473989c8813b06fa44dbe853093e4ea5930e34ec1"
+    },
+    {
+      "path": "hardware/Collar05.pretty/U7_SOT-23-6.kicad_mod",
+      "bytes": 6070,
+      "sha256": "849ae39d81d891ee928c18267b8555bf9eb42191ffd356ccde1f4eed193f4a3b"
+    },
+    {
+      "path": "hardware/Collar05.pretty/U8_SOT-353_SC-70-5.kicad_mod",
+      "bytes": 6875,
+      "sha256": "1f2a1e2f7e740a19a1306d4eb824d5ea68694292cc97365ad7f885b762f09450"
+    },
+    {
+      "path": "hardware/Collar05.pretty/U9_MAX17048_T822_3_90_0065E.kicad_mod",
+      "bytes": 3458,
+      "sha256": "9d4de6cbde58d054bf4646d1bfefc9a89f9887aff2da02568599d09ccf71bb74"
+    },
+    {
+      "path": "hardware/bom.csv",
+      "bytes": 7072,
+      "sha256": "ac6b740c60699167285d317ce02df03eb210afbeca95e0e72fa490d2e1852210"
+    },
+    {
+      "path": "hardware/collar-tracker.detour-proposal.json",
+      "bytes": 4848,
+      "sha256": "fca592d9392cf1ea93be452e4878dbb0407789d0a8859ed91accd39f1b441da8"
+    },
+    {
+      "path": "hardware/collar-tracker.kicad_dru",
+      "bytes": 245,
+      "sha256": "e6523f50e6e0f12cea613a984946bb5d9be0111d7ed8610b04b246e8650651d0"
+    },
+    {
+      "path": "hardware/collar-tracker.kicad_pcb",
+      "bytes": 910406,
+      "sha256": "78df6a520fc978e08451c94e6c6f475877f401867b55c0218802ee3434d193a2"
+    },
+    {
+      "path": "hardware/collar-tracker.kicad_pro",
+      "bytes": 11981,
+      "sha256": "284b012adf394e1ce66fbc8664f97469f2c5cd49401707de5b49f2badf1686a8"
+    },
+    {
+      "path": "hardware/collar-tracker.kicad_sch",
+      "bytes": 172759,
+      "sha256": "32313876fa5865fffa32f9b993970a1ffb4405f1824c1104e18ddba8bcc8ba96"
+    },
+    {
+      "path": "hardware/collar-tracker.local-routing.json",
+      "bytes": 33298,
+      "sha256": "a18206cdf89b5b0f391793742ceb768aa356785f83cad95d9a7cc9c02b0b2b10"
+    },
+    {
+      "path": "hardware/design.json",
+      "bytes": 30030,
+      "sha256": "3d5d5302ae2b2015584eb83765299fc0b2f77929a8561f31e8b41218f34b1b55"
+    },
+    {
+      "path": "hardware/fp-lib-table",
+      "bytes": 1627,
+      "sha256": "e1f8c688742b7143742ee8ec8c208abab946ef061641a5391a55fb0575bc1c89"
+    },
+    {
+      "path": "hardware/sym-lib-table",
+      "bytes": 141,
+      "sha256": "7f69c609efcdf192f698900b9fd8121e47bd93aafb093c01d9ddbf7cc0e76fdc"
+    },
+    {
+      "path": "evidence/attachment-review.json",
+      "bytes": 76224,
+      "sha256": "33838422edbb062ffd0cb2f1bc268c37e18c4c4b11e5ef7acb31c22098463492"
+    },
+    {
+      "path": "evidence/build.json",
+      "bytes": 540,
+      "sha256": "a9451838ddc9dbcff462b02792839b807cf02e777970a3ef5eb750122bbe62f4"
+    },
+    {
+      "path": "evidence/erc.json",
+      "bytes": 1008,
+      "sha256": "7625773d9e9ff379cb7f47dc2fa71e4d5eeba4cd5eb32cd67d3133ddc38234ab"
+    },
+    {
+      "path": "evidence/esd-paths.json",
+      "bytes": 14278,
+      "sha256": "540a08d2232f7b0aef127e5f16c4da8244c69aebca1a605c2ec8c26714bf1894"
+    },
+    {
+      "path": "evidence/ground-applied.json",
+      "bytes": 394,
+      "sha256": "2eb490aa7a0c1b90f76bd83b6f092a69bd4cd8e19c4b0820f4790d6044add4ff"
+    },
+    {
+      "path": "evidence/ground-drc.json",
+      "bytes": 42341,
+      "sha256": "26e7e7f8df82fd3c70ca85a51641d0ba3e0055a161fc060d1ff74fa6815f9c16"
+    },
+    {
+      "path": "evidence/ground-first-plan.json",
+      "bytes": 8388,
+      "sha256": "5f609da775c38ca03af33e853ba9fa566bdfd0849068e0a894bfb2c6f356bbc5"
+    },
+    {
+      "path": "evidence/ground-invalid-project-drc.json",
+      "bytes": 144870,
+      "sha256": "62ed60daeaaf3377f191f16314b89b1f61271d591ba222c731f9f47b5806a417"
+    },
+    {
+      "path": "evidence/ground-plan.json",
+      "bytes": 9317,
+      "sha256": "1742745a35d325bc88b1d5ed731e8ec9b8918101340916f681f4f4d357d824ea"
+    },
+    {
+      "path": "evidence/inspected-sources.json",
+      "bytes": 1052,
+      "sha256": "a0f134fd7da5942f2853d180440f0aa1d450cfee4dd1af70e5da2a6d47aa0ca4"
+    },
+    {
+      "path": "evidence/layout-inventory.json",
+      "bytes": 22526,
+      "sha256": "d288f12afe9ffe5844806a508ec4531fee06a2d6bfedec3637c62582f9113eb6"
+    },
+    {
+      "path": "evidence/local-route1-drc.json",
+      "bytes": 21870,
+      "sha256": "6b71e8499b7360e829cc7466fa781910686fffd21fc2575a3a75549fdb9c2c60"
+    },
+    {
+      "path": "evidence/local-route2-drc.json",
+      "bytes": 20514,
+      "sha256": "9eeed909759d506132153041bd80bbb5534da1c8567064bc973fd2967eea325d"
+    },
+    {
+      "path": "evidence/native-drc.json",
+      "bytes": 19519,
+      "sha256": "7a7c026d1bd63a09b2341202038c5e3a7bff3488588b0505e435b9fa7ab5edc5"
+    },
+    {
+      "path": "evidence/native-netlist.json",
+      "bytes": 11028,
+      "sha256": "3a2904724aca09493384710bd85da2fefcd308682f5e28245548fe54d40c0756"
+    },
+    {
+      "path": "evidence/new-ground-pads.json",
+      "bytes": 759,
+      "sha256": "27881c82bdaca88d3b33c31a24bc75c45767c4bc7a9c0484ee4612957e381483"
+    },
+    {
+      "path": "evidence/pcb-seed.json",
+      "bytes": 16706,
+      "sha256": "5a81a8e20b85f00744c28c3e9fbb5701def76a8e7672a806aa951b2ac553d9a8"
+    },
+    {
+      "path": "evidence/placement-applied.json",
+      "bytes": 530,
+      "sha256": "74caa23d01f780f14738bd1893384ec2fb801ff2a9f16d611d61a9d1197ff628"
+    },
+    {
+      "path": "evidence/placement-drc.json",
+      "bytes": 57181,
+      "sha256": "6ec9b5066fd5488bc8daea67db363c703b8abb5521b6aadb37374576b10fdae9"
+    },
+    {
+      "path": "evidence/placement-extra.json",
+      "bytes": 10303,
+      "sha256": "418a7b40b59d028637b50696bdd636611ea53a6722e8d5de94e58da4c3977600"
+    },
+    {
+      "path": "evidence/placement-first-drc.json",
+      "bytes": 57181,
+      "sha256": "6ec9b5066fd5488bc8daea67db363c703b8abb5521b6aadb37374576b10fdae9"
+    },
+    {
+      "path": "evidence/placement-geometry.json",
+      "bytes": 1282641,
+      "sha256": "8251429769a1f904beaa338ce1b80158f378b67624f40abcabc946839ed74d2c"
+    },
+    {
+      "path": "evidence/placement-input.json",
+      "bytes": 797271,
+      "sha256": "638ca434a3452686b6f84adac6e76bf75b22c1a325d8e8a2a171e6a4122d7163"
+    },
+    {
+      "path": "evidence/placement-plan.json",
+      "bytes": 11101,
+      "sha256": "01673c86fa2c8b1b3fb83f6d3c3bb084a7ef4c0883b4c2991f48f4e299b2cc8b"
+    },
+    {
+      "path": "evidence/power-check.json",
+      "bytes": 3838,
+      "sha256": "147222de4ffe6837d26aef5490b5f25c3b883d87f741d30c64874ccec6ce20d8"
+    },
+    {
+      "path": "evidence/power-route1-contacts-model.json",
+      "bytes": 1128,
+      "sha256": "52d21425cb9e12747e66975f670ae786a0da88cb7ef21e34834c3cee07911d36"
+    },
+    {
+      "path": "evidence/power-route1-drc.json",
+      "bytes": 32265,
+      "sha256": "5589c9f4d1eb93e81a692e850b5bf94a117b8cde6b36a165e8692e84cb9526da"
+    },
+    {
+      "path": "evidence/power-route1-export.json",
+      "bytes": 22938,
+      "sha256": "64ae1aa93918cb46fbef9fd66877a17c10beb7f023f8d56a09bb2ac78994dd3c"
+    },
+    {
+      "path": "evidence/power-route1-import.json",
+      "bytes": 599,
+      "sha256": "7d52b13970477ec3c76824e0156363649663814932383a3db389b05804bd5d4e"
+    },
+    {
+      "path": "evidence/protected-fanout.json",
+      "bytes": 9663,
+      "sha256": "b5be3475afc7964888021623f98ac35f375d23a8813241fbdc79f97ef47ec856"
+    },
+    {
+      "path": "evidence/protected-sim.json",
+      "bytes": 9663,
+      "sha256": "b5be3475afc7964888021623f98ac35f375d23a8813241fbdc79f97ef47ec856"
+    },
+    {
+      "path": "evidence/python-flip-check.json",
+      "bytes": 389,
+      "sha256": "28e82a55d62d8597aba919677373eeda8158d747eca828cd85669f8b7a01533e"
+    },
+    {
+      "path": "evidence/recovered-rail-apply.json",
+      "bytes": 11152,
+      "sha256": "0f448cccb789ae7b3a3faecb2a54e8731d9c3531202130fa573cab76530fbcd8"
+    },
+    {
+      "path": "evidence/recovered-rail-before-apply-drc.json",
+      "bytes": 42356,
+      "sha256": "9441ee6f56c03f93a5a24592a8ac8f9ee77a3fbca12905f477c41113b58c0d13"
+    },
+    {
+      "path": "evidence/recovered-rail-drc.json",
+      "bytes": 34716,
+      "sha256": "af70f6c14ff0dd35a33afcc1588f3015d81759a4c52558383b2e9f0c9ba7b142"
+    },
+    {
+      "path": "evidence/recovered-rail-plan.json",
+      "bytes": 41631,
+      "sha256": "d58234519d423235a1564945d4a799127505bd11b3c5fea1e2b9af60b846d124"
+    },
+    {
+      "path": "evidence/route-geometry.json",
+      "bytes": 1402694,
+      "sha256": "a50064a5c98e399566520971163fdd145e2c4fc5e4c535444c166b2695a2b625"
+    },
+    {
+      "path": "evidence/router-input-clearances.json",
+      "bytes": 112720,
+      "sha256": "159c7a1e1cebbd8435b6a9ba4827620247c53186723433bb2f1dd975d840ec4f"
+    },
+    {
+      "path": "evidence/tail-chain-drc.json",
+      "bytes": 19995,
+      "sha256": "56a99f00060c069d9d29bd554c6c3628e2637f3761719c33c90df524a82dfdee"
+    },
+    {
+      "path": "evidence/timing-inputs.json",
+      "bytes": 1686,
+      "sha256": "9a694461ba8da9dac53c55c39eaed6278bdc0127adec8bb10d2c94386dcdad7c"
+    },
+    {
+      "path": "evidence/trimmed-rail-tails.json",
+      "bytes": 484,
+      "sha256": "66b682df6878bc1a457af56d4eb9a5cbb40e21c44a7a3ae87a3f3e62973cbd67"
+    },
+    {
+      "path": "evidence/trimmed-rail-tails2.json",
+      "bytes": 574,
+      "sha256": "601a7db26e6f2a1dd6d66355b7754daa88418ad8bbd657980cd41deda8eafa8a"
+    },
+    {
+      "path": "build/ground-base.kicad_pcb",
+      "bytes": 791246,
+      "sha256": "7224695e92bfe04787af2399fe07f2002033e981e4095889e17889c273c0d675"
+    },
+    {
+      "path": "build/placement-first.kicad_pcb",
+      "bytes": 783974,
+      "sha256": "5356b7b0f9c21631f761fad3b731d97896355de16dfc8b86459e53dbecd41686"
+    },
+    {
+      "path": "build/placement.json",
+      "bytes": 3918,
+      "sha256": "e6f6dde27a9c325e56a03335343bf1ac270534ed480d4493da4d047824706a44"
+    },
+    {
+      "path": "build/power-route1-contacts.dsn",
+      "bytes": 185145,
+      "sha256": "6518eeb1a3b7b2966226620c45f22c19da836c5c4234f6dfec8aff30ad45cf91"
+    },
+    {
+      "path": "build/power-route1.dsn",
+      "bytes": 156948,
+      "sha256": "1183384a4f06fdc8d579616dd3e402611abc6c6d6aed350b713015b0906353cd"
+    },
+    {
+      "path": "build/power-route1.ses",
+      "bytes": 42166,
+      "sha256": "4ccb364548cd8da09edce17b9d1a3f6e2562c282fd06e15e8ec9e01c8b1ca4a5"
+    },
+    {
+      "path": "build/pre-route1/collar-tracker.kicad_dru",
+      "bytes": 245,
+      "sha256": "e6523f50e6e0f12cea613a984946bb5d9be0111d7ed8610b04b246e8650651d0"
+    },
+    {
+      "path": "build/pre-route1/collar-tracker.kicad_pcb",
+      "bytes": 791116,
+      "sha256": "350c81e9d6a66e44cf395255874fd0be04e6365c9a10f233b186e4e6ff2a9b20"
+    },
+    {
+      "path": "build/pre-route1/collar-tracker.kicad_pro",
+      "bytes": 11981,
+      "sha256": "284b012adf394e1ce66fbc8664f97469f2c5cd49401707de5b49f2badf1686a8"
+    },
+    {
+      "path": "build/pre-route1/collar-tracker.kicad_sch",
+      "bytes": 172759,
+      "sha256": "32313876fa5865fffa32f9b993970a1ffb4405f1824c1104e18ddba8bcc8ba96"
+    },
+    {
+      "path": "build/recovered-rails/collar-tracker.kicad_dru",
+      "bytes": 245,
+      "sha256": "e6523f50e6e0f12cea613a984946bb5d9be0111d7ed8610b04b246e8650651d0"
+    },
+    {
+      "path": "build/recovered-rails/collar-tracker.kicad_pcb",
+      "bytes": 830156,
+      "sha256": "2f0aed0d5010196c800828b597a25460a6a8b968b945be9cd51b063a96d84723"
+    },
+    {
+      "path": "build/recovered-rails/collar-tracker.kicad_pro",
+      "bytes": 11981,
+      "sha256": "284b012adf394e1ce66fbc8664f97469f2c5cd49401707de5b49f2badf1686a8"
+    },
+    {
+      "path": "build/recovered-rails/collar-tracker.kicad_sch",
+      "bytes": 172759,
+      "sha256": "32313876fa5865fffa32f9b993970a1ffb4405f1824c1104e18ddba8bcc8ba96"
+    },
+    {
+      "path": "build/route1-local/collar-tracker.detour-proposal.json",
+      "bytes": 4848,
+      "sha256": "fca592d9392cf1ea93be452e4878dbb0407789d0a8859ed91accd39f1b441da8"
+    },
+    {
+      "path": "build/route1-local/collar-tracker.kicad_dru",
+      "bytes": 245,
+      "sha256": "e6523f50e6e0f12cea613a984946bb5d9be0111d7ed8610b04b246e8650651d0"
+    },
+    {
+      "path": "build/route1-local/collar-tracker.kicad_pcb",
+      "bytes": 802028,
+      "sha256": "fb40ad8f983f512d9f30b365611d0a697b0ad6289bcdde9df53c3d8143fcaf95"
+    },
+    {
+      "path": "build/route1-local/collar-tracker.kicad_pro",
+      "bytes": 11981,
+      "sha256": "284b012adf394e1ce66fbc8664f97469f2c5cd49401707de5b49f2badf1686a8"
+    },
+    {
+      "path": "build/route1-local/collar-tracker.kicad_sch",
+      "bytes": 172759,
+      "sha256": "32313876fa5865fffa32f9b993970a1ffb4405f1824c1104e18ddba8bcc8ba96"
+    },
+    {
+      "path": "build/route1-local/collar-tracker.local-routing.json",
+      "bytes": 29386,
+      "sha256": "89a05c472e1c42311a41742525a293d897c0b5c496b9f87a30c383287fdd19ef"
+    },
+    {
+      "path": "build/seed-before-placement.kicad_pcb",
+      "bytes": 805970,
+      "sha256": "e3ed7f8276e6d594d332e2daa92df7fe3a0e4e68849fcb6cfe3be386b796e948"
+    },
+    {
+      "path": "previews/pcb-bottom.png",
+      "bytes": 238451,
+      "sha256": "fd328bdeed5c9cf9b3e86707ed9abdf342efb2cf7622b7c65c77db1c18e20686"
+    },
+    {
+      "path": "previews/pcb-bottom.svg",
+      "bytes": 146997,
+      "sha256": "398fe0afa04efa89aec86a0e787023a354702679562d3ff822dec123a116f0cd"
+    },
+    {
+      "path": "previews/pcb-top.png",
+      "bytes": 234738,
+      "sha256": "a14407385228d2e2a736a99b58901ae16d0f2b2fdb60c4e5cf86b2656d3127fc"
+    },
+    {
+      "path": "previews/pcb-top.svg",
+      "bytes": 266937,
+      "sha256": "2339fd10ca2d6bd6127ffe766ae058f13e0b42458e7f4bdc075334aab97a7edb"
+    },
+    {
+      "path": "previews/schematic.pdf",
+      "bytes": 285569,
+      "sha256": "e8f2d9604f0f4170a5dba16d245ee386ca02ce92013f25b1b90e064268e620ae"
+    },
+    {
+      "path": "previews/schematic.png",
+      "bytes": 124429,
+      "sha256": "b7ae34481b6aff86eee851d4967373bca61bb63bd5dda861a1edd46531a3a067"
+    }
+  ],
+  "next": "Revise new-part placement with signal-pin escapes while preserving working legacy routes; close 23 connections, four return gaps and physical/assembly reviews before final Gerber/JLC.",
+  "scope": "Incomplete native design checkpoint. Evidence integrity is not routed, electrical, supplier or ingress acceptance."
+}

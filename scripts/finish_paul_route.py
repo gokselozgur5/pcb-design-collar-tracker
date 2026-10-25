@@ -30,7 +30,7 @@ source_sha=hashlib.sha256(PCB.read_bytes()).hexdigest()
 sim_inputs=set(json.loads(args.sim_inputs.read_text())) if args.sim_inputs else set()
 anchors=json.loads(args.anchors.read_text()) if args.anchors else {}
 assert sim_inputs <= {t.m_Uuid.AsString() for t in b.GetTracks()}, 'Stale protected input IDs'
-assert 'paul-nanosim' in str(PCB), 'Use an isolated nano-SIM trial'
+assert ('paul-nanosim' in str(PCB) or PCB.resolve().parent.parent.name == 'power-r05-supervised'), 'Use an isolated nano-SIM trial'
 edges=[item for item in b.GetDrawings() if item.GetLayer()==k.Edge_Cuts]
 assert len(edges)==4 and all(item.GetShape()==k.SHAPE_T_SEGMENT for item in edges), 'Planner requires a rectangular outline'
 corners={(p.x/1e6,p.y/1e6) for item in edges for p in [item.GetStart(),item.GetEnd()]}

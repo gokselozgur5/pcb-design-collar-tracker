@@ -1,0 +1,14 @@
+{
+  "before_sha256": "51ca2508668c9de4c08228c725064359468ad1cc79f9a02f26421414c59cc5e9",
+  "source_sha256": "78df6a520fc978e08451c94e6c6f475877f401867b55c0218802ee3434d193a2",
+  "drc_sha256": "56a99f00060c069d9d29bd554c6c3628e2637f3761719c33c90df524a82dfdee",
+  "input_state_sha256": "66b682df6878bc1a457af56d4eb9a5cbb40e21c44a7a3ae87a3f3e62973cbd67",
+  "removed": [
+    {
+      "id": "bc1794f9-0171-434b-b490-fa00bcb76fe9",
+      "net": "/VDD_NRF"
+    }
+  ],
+  "affected_pad_islands_preserved": 6,
+  "scope": "Native pin-island invariant only; fresh DRC still required."
+}

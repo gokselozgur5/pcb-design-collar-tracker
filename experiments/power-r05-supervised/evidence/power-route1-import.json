@@ -1,0 +1,13 @@
+{
+  "before_sha256": "350c81e9d6a66e44cf395255874fd0be04e6365c9a10f233b186e4e6ff2a9b20",
+  "source_sha256": "11936a9b81074ab62049a4a5b0b510e09058b35b221d1d78fc5d933d322f3ff9",
+  "session": "build/power-route1.ses",
+  "session_sha256": "4ccb364548cd8da09edce17b9d1a3f6e2562c282fd06e15e8ec9e01c8b1ca4a5",
+  "ground_items_preserved": 253,
+  "rf_segments_restored_exactly": 24,
+  "protected_escape_items_preserved": 230,
+  "preserve_native_locks": false,
+  "narrow_segments_widened_to_020": 42,
+  "inner_tracks": 0,
+  "scope": "Import invariants only; native DRC and remaining opens must be checked."
+}

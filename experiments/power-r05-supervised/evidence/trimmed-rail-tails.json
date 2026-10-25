@@ -1,0 +1,16 @@
+{
+  "before_sha256": "280e5429d923b26bded9d452223c5ac60d8b17d5282a07b84994d3773e8e941f",
+  "source_sha256": "51ca2508668c9de4c08228c725064359468ad1cc79f9a02f26421414c59cc5e9",
+  "removed": [
+    {
+      "id": "e10c65f5-eccd-4a3d-96ff-8d73bbe5c86a",
+      "net": "/VSYS"
+    },
+    {
+      "id": "a960ec28-b19a-461c-b945-e68dad312661",
+      "net": "/VDD_NRF"
+    }
+  ],
+  "affected_pad_islands_preserved": 7,
+  "scope": "Native pin-island invariant only; fresh DRC still required."
+}

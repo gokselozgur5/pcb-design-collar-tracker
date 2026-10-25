@@ -1,0 +1,12 @@
+{
+  "kicad_version": "10.0.7",
+  "command": [
+    "scripts/kicad-python",
+    "scripts/check_kicad_flip.py"
+  ],
+  "checker_sha256": "e91630f56c5bdf4614524eeab7d4274b4879b37587168a06c9cb0486e9892df4",
+  "exit_code": 0,
+  "owned_footprint_flip": "PASS",
+  "cad_files_written": 0,
+  "scope": "Observed owned-footprint flip and normal process shutdown. Does not explain every older crash."
+}
