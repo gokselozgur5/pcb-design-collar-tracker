@@ -1,0 +1,46 @@
+{
+  "review_date": "2026-10-25",
+  "nrf_enable_high_fraction": 0.89,
+  "gpio_delay_recommendation_ms": 6,
+  "bq_battery_uvlo_typ_V": 3.0,
+  "bq_iset_factor_A_ohm": 300,
+  "ldo_startup_typical_ms": 0.75,
+  "ldo_startup_maximum_ms": 1.2,
+  "nominal_full_cell_V": 4.2,
+  "illustrative_battery_case": {
+    "loaded_connector_V": 3.01,
+    "load_A": 0.5,
+    "basis": "Illustrative loaded voltage at J4.1 just above nominal charger cutoff, with copper loss to U3 included separately; not a measured device or guaranteed battery condition."
+  },
+  "sources": [
+    {
+      "url": "https://docs.nordicsemi.com/r/bundle/nwp_056/page/wp/nwp_054/enable.html",
+      "section": "ENABLE",
+      "basis": "Guaranteed high at 0.89 VDD; low at 0.18 VDD; keep ENABLE low for at least one second."
+    },
+    {
+      "url": "https://docs.nordicsemi.com/r/bundle/nwp_056/page/wp/nwp_054/vdd_gpio.html",
+      "section": "VDD_GPIO",
+      "basis": "Delay GPIO power at least 6 ms after VDD/ENABLE; remove it first. Undefined GPIO states may be accepted only when the application tolerates them. GPIO protection diodes connect to this rail."
+    },
+    {
+      "url": "https://docs.nordicsemi.com/r/bundle/nwp_056/page/wp/nwp_056/vdd.html",
+      "section": "VDD",
+      "basis": "Keep the operating supply at or above 3.0 V, including transmission droop."
+    },
+    {
+      "url": "https://www.ti.com/lit/ds/symlink/bq25185.pdf",
+      "document": "SLUSF65B, August 2026",
+      "local_pdf_sha256": "c73ed7d63e6532bb05e26df30edd37c6ac2de310c1222a84a77625e15e133684",
+      "section": "Electrical characteristics, battery UVLO, ISET and ILIM/VSET configuration",
+      "basis": "BUVLO 3.0 V is typical, not a specified min/max. 18 kohm selects 4.2 V and 500 mA input limit; 3 kohm gives nominal 100 mA charging."
+    },
+    {
+      "url": "https://www.ti.com/lit/ds/symlink/tps7a02.pdf",
+      "document": "SBVS277C, September 2022",
+      "local_pdf_sha256": "ed213c153f1db84762558fcac2ff9752e322151a1d44672cf554988b860cebc8",
+      "section": "6.6 and 7.3.2",
+      "basis": "750 us typical / 1200 us maximum to 90% at the stated 1 uF, 1 mA test condition; P variant has active output discharge. These are not the collar's load conditions."
+    }
+  ]
+}

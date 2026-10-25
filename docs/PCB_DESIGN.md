@@ -112,6 +112,12 @@ loops. Review critical paths before leaving them to an autorouter.
 
 ### Power, thermal behavior and RF
 
+- Review operating-voltage margin and power sequencing from the actual netlist,
+  not just connectivity or DFM. A charger battery cutoff is not automatically a
+  modem-rail guarantee. Distinguish typical parameters from guaranteed limits.
+- Trace off-state feeds through ADC dividers, pull-ups and debug interfaces.
+  A nominal reset delay does not establish a minimum disable interval after a
+  brief fault; inspect the supervisor's timing-capacitor reset behavior.
 - Size power paths from peak current, allowed drop, copper thickness and temperature.
 - Measure short pad escapes separately from long power runs. A netclass setting
   does not prove that every actual trace uses that width.

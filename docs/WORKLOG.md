@@ -210,3 +210,20 @@ Their evidence is dated; do not transfer an older pass to a newer source file.
 - Next: Final protected pack/NTC and antenna/feed/cable selections, harness/dock,
   positive PCB retention, material/seal/fastener/torque definition and physical
   fit, ingress, power, RF and assembly qualification. The active goal is unfinished.
+
+## 2026-10-25 — Reproduce the open power-domain findings
+
+- Event: Reviewed the existing electrical holds before selecting the final pack
+  and antennas. Kept the tested r04i and populated swim-r02 geometry unchanged.
+- Decision: Export the real schematic and compare its power pins to native board
+  geometry. Separate source conclusions, illustrative calculations and absent
+  powered measurements. Do not add an unreviewed supervisor merely to close a list.
+- Result: 148 unique power-related pins agree. The evidence reproduces three
+  open findings: modem undervoltage margin, GPIO supply sequencing and battery-ADC
+  off-state feed. Nominal charger settings are 4.2 V, 500 mA input and 100 mA charge.
+  The audit returns electrical HOLD; standard handoff verification retains that
+  state. Three regressions reject mismatched board pins and unreviewed topology
+  while reproducing the unchanged baseline. No circuit repair or powered test.
+- Next: Implement supervised undervoltage/restart and the GPIO/ADC off-state
+  strategy in a separate schematic revision before routing a successor. Review
+  brief-brownout timing as well as nominal startup.

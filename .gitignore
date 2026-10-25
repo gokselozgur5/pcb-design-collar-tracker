@@ -29,6 +29,8 @@ CLAUDE.local.md
 /evidence/*
 !/evidence/order-readiness-20261025-r034/
 !/evidence/release-034/
+!/evidence/power-review-r04i/
+/evidence/power-review-r04i/*.xml
 /evidence/order-readiness-20261025-r034/*.log
 
 # Downloaded third-party repositories, archives and unrelated research stay local.

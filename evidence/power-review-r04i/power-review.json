@@ -1,0 +1,65 @@
+{
+  "charger_nominal_setting": {
+    "battery_regulation_V": 4.2,
+    "charge_current_mA": 100.0,
+    "input_limit_setting_mA": 500,
+    "limit": "Nominal resistor settings only; not pack, NTC, thermal or input-protection acceptance."
+  },
+  "findings": [
+    {
+      "battery_cutoff_typical_V": 3.0,
+      "estimated_supply_copper_ohms_20C": 0.03229035505553084,
+      "finding": "No independent modem undervoltage control or guaranteed 3.0 V margin.",
+      "id": "PWR-01",
+      "illustrative_J4_V": 3.01,
+      "illustrative_U3_BAT_V": 3.0049231292898906,
+      "illustrative_load_A": 0.5,
+      "illustrative_nrf_V_without_component_losses": 2.9938548224722346,
+      "limit": "Not a measured failure. Nominal BUVLO and assumed copper are not guaranteed limits; IC, ferrite, contacts, cell and transients are excluded.",
+      "status": "OPEN"
+    },
+    {
+      "finding": "VIO LDO enable is tied to VSYS; there is no controlled GPIO supply sequence.",
+      "gpio_delay_recommendation_ms": 6,
+      "id": "PWR-02",
+      "ideal_step_to_guaranteed_enable_high_ms": 2.207274913189721,
+      "ldo_90_percent_maximum_ms_at_datasheet_test_load": 1.2,
+      "ldo_90_percent_typical_ms_at_datasheet_test_load": 0.75,
+      "limit": "Ideal RC and separate datasheet load conditions do not simulate this board. Nordic permits undefined GPIO states only when the application tolerates them; that review is not complete.",
+      "nrf_enable_rc_nominal_ms": 1.0,
+      "status": "OPEN",
+      "vio_nominal_capacitance_uF": 7.1,
+      "vio_nominal_capacitors": [
+        "C15",
+        "C16",
+        "C21",
+        "C23",
+        "C24",
+        "C5",
+        "C6"
+      ]
+    },
+    {
+      "finding": "The battery ADC divider remains connected when the GPIO supply is absent.",
+      "id": "PWR-03",
+      "limit": "A backfeed path requiring review, not a demonstrated damage or measured leakage claim. Actual clamp voltage and rail state are unknown.",
+      "nominal_cell_V": 4.2,
+      "status": "OPEN",
+      "unclamped_adc_V": 1.4,
+      "upper_bound_from_top_resistor_uA": 2.1
+    }
+  ],
+  "inputs": {
+    "evidence/power-review-r04i/native-power.json": "010ad798dbedeea83ae1ab8527e0d42568c6b721790b53877c000ddbb2f93b24",
+    "evidence/power-review-r04i/review-inputs.json": "d10984a13fd8d47043b7d542ee33efdc7f2d046bf8f3d2b38b3c96c30b59577e",
+    "experiments/paul-nanosim-r04i-sim-access-40x32/evidence/power-path-review.json": "28d07d7ac01e24ef946067031c20ba580e563471d46eb08a891573b1bf61fa5f",
+    "experiments/paul-nanosim-r04i-sim-access-40x32/evidence/route-geometry.json": "4616cc658173a0d41e61ffc5fceb91eb04b21a45ba1a15c9d9c7b0e411f671d7",
+    "experiments/paul-nanosim-r04i-sim-access-40x32/hardware/collar-tracker.kicad_pcb": "f4be0288708733aaa6092a703ffa1bfebb3dc059fd21112a8cfed94028acc3b0",
+    "experiments/paul-nanosim-r04i-sim-access-40x32/hardware/collar-tracker.kicad_sch": "cb7bba3d7911e83a3507a38ab0f5061fddb0292492df89d7e3aedc90709eb698",
+    "scripts/audit_power_architecture.py": "091c384ba2d8b01f336ee829b8e0d7dcdf5cb9097da15645c879c7309f31587b"
+  },
+  "power_pins_compared_to_board": 148,
+  "powered_or_transient_test": false,
+  "scope": "Frozen r04i topology, source checks and illustrative calculations; no circuit repair.",
+  "status": "HOLD"
+}
