@@ -1,0 +1,17 @@
+{
+  "before_sha256": "9b608ffbb24efe063833676853cfd97ee6ed95464673cb2238a0157492020018",
+  "source_sha256": "f1aa5ef16548cf6d8490d9d75e175ebefc787b2650248a913e27ae7fd79e69af",
+  "old_mm": [
+    111,
+    114.3
+  ],
+  "new_mm": [
+    111.7,
+    114.4
+  ],
+  "changed": [
+    "541212c5-317d-46bd-bfbe-fb2c53d1c5f1",
+    "8782f750-0216-4178-a0a9-3bdd2b0028f1"
+  ],
+  "scope": "U1 central GND exit moved 0.707 mm to free a signal via site; native DRC and local-ground verification pending."
+}

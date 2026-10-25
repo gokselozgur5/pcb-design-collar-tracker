@@ -1,0 +1,18 @@
+{
+  "before_sha256": "9b608ffbb24efe063833676853cfd97ee6ed95464673cb2238a0157492020018",
+  "route_limit_mm": 40,
+  "board_bounds_mm": [
+    98.0,
+    98.0,
+    138.0,
+    130.0
+  ],
+  "source_sha256": "9b608ffbb24efe063833676853cfd97ee6ed95464673cb2238a0157492020018",
+  "routes": [],
+  "ground_stitches": [],
+  "failed": [
+    "('/SIM_1V8', 'no route', 6598, {'F.Cu': {'states': 2599, 'x': [104.85000000000001, 110.55000000000001], 'y': [113.4, 117.60000000000001]}, 'B.Cu': {'states': 3999, 'x': [106.35000000000001, 110.65], 'y': [111.65, 117.75]}})"
+  ],
+  "interrupted": false,
+  "acceptance": "Pending native DRC and independent geometry audit"
+}

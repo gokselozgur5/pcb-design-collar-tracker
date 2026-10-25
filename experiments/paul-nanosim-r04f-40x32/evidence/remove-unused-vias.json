@@ -1,0 +1,11 @@
+{
+  "before_sha256": "e296e1a1fdb8875f1e4ecbb43ba23b59b8d5f6229764cb47823f5d558081e7bc",
+  "source_sha256": "f7cb6dfa7286e5ba3815a99eadd6e1a111c67ec667d7e7690c32530c7dfe9b8d",
+  "removed": [
+    "ec3cdc4f-183b-40c5-8f3f-e107a325f0d6",
+    "7719306a-26e5-4a8f-a6d8-8f8360067add"
+  ],
+  "protected_before": 27,
+  "protected_after": 25,
+  "scope": "Remove unused charger vias after both nets connected on F.Cu; final DRC pending."
+}

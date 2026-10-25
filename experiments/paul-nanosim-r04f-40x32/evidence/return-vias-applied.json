@@ -1,0 +1,18 @@
+{
+  "before_sha256": "f7cb6dfa7286e5ba3815a99eadd6e1a111c67ec667d7e7690c32530c7dfe9b8d",
+  "source_sha256": "240be3bbab528ffb123737fe75c54bb642ec2f204b32a6533e704f794691a6d2",
+  "added": 15,
+  "unresolved": [
+    "8ac3af88-cbd2-4bee-8472-8a0152e3ff50",
+    "6881bd6a-108d-4929-b3d0-ca9ee2a60fe6",
+    "939cfc4c-20a7-403a-8563-4cacebe1cbc5",
+    "e5229bf9-8f84-4658-b108-fa70027c499e",
+    "28b437a7-9ed1-4593-a07a-4bbe8809ced1",
+    "b63703eb-8e0f-4140-a58f-005a0678629c",
+    "9505bdb5-6aaf-4d14-9302-75f9cc6ac86c",
+    "0f463d15-7246-4bce-bcdb-392ebd96b0c9",
+    "889a9a9a-c699-4ea5-b11c-f3dd39fdbf40"
+  ],
+  "partial": true,
+  "scope": "Applied and refilled; native DRC and actual return coverage still required."
+}

@@ -1,0 +1,10 @@
+{
+  "router_jar_sha256": "f6f51bb02245e8e717f9359bd260cc9c5c0b1bc0acc8b7cb2cd5b8ffeb5de3c7",
+  "input_sha256": "9852b6b23f3277f740760b1ed8f484de468bc7a366291298302d5d0568f5cd5d",
+  "output_sha256": "3b50094aebccf5148a69112b70e35133c6092681f14031c905c9371a4f74393a",
+  "completion_lines": [
+    "2026-10-25 13:44:13.421 INFO   [C9B148\\928653] Auto-routing stage completed: started with 5 unrouted nets, completed in 53.31 seconds, final score: 991.87 (1 unrouted and 17 violations), using 51.30 total CPU seconds, 48.35 GB total allocated, and 320.4 MB peak heap usage."
+  ],
+  "native_drc": "routed-drc.json",
+  "scope": "Intermediate one-open result; subsequent native ground-exit change closed the last connection."
+}

@@ -1,0 +1,73 @@
+{
+  "source_sha256": "240be3bbab528ffb123737fe75c54bb642ec2f204b32a6533e704f794691a6d2",
+  "dimensions_mm": [
+    40,
+    32
+  ],
+  "native_drc": "partial-returns-drc.json",
+  "native_opens": 0,
+  "native_violations": 0,
+  "parity": 0,
+  "ground_pads": 81,
+  "ground_vias": 81,
+  "non_ground_vias": 83,
+  "returns_outside_2mm": 9,
+  "inner_tracks": 0,
+  "rf_segments": 24,
+  "evidence": [
+    {
+      "path": "evidence/partial-returns-drc.json",
+      "sha256": "e9b22c6e6a2dd31e7092774176423cf00fd4d29f82850f128a6115ef777e3864"
+    },
+    {
+      "path": "evidence/connected-drc.json",
+      "sha256": "0855f73d0258c3040d2121d2b8aab19e04b5fe7bb70a591209f427f945585bf9"
+    },
+    {
+      "path": "evidence/ground-exit-change.json",
+      "sha256": "fe4cc5dbb3579646b280fa6d9ebf3b98c90f62d7a09f3423f38c9152b860f892"
+    },
+    {
+      "path": "evidence/last-connection-route.json",
+      "sha256": "23f131999cf4e661ed989e361a5fa982bc0d44791d45789642a936712e38d1b1"
+    },
+    {
+      "path": "evidence/remove-unused-vias.json",
+      "sha256": "d3af02bc88b3cc95ec09bdcccca0248b19912a4ee7b2220999cf011b92f6e862"
+    },
+    {
+      "path": "evidence/return-via-plan.json",
+      "sha256": "50c6f12a0d20b983225024ec12561b341a899ccf98f09bf5d668540ebd40dc62"
+    },
+    {
+      "path": "evidence/return-vias-applied.json",
+      "sha256": "f58ab7c832d27fb0b049dd9d8646a1af0fc2eab3ec6f739d821e33eb47199ab3"
+    },
+    {
+      "path": "evidence/layout-inventory.json",
+      "sha256": "f8104eac557620b42366d6bf08c1b269cf423315c25294d394d8f1e58e7656a4"
+    },
+    {
+      "path": "evidence/route-geometry.json",
+      "sha256": "017f2dc64c261f27b6fde5a6c20e4f94c1ca437853576b5dc8f5f97e0c07e532"
+    },
+    {
+      "path": "evidence/power-path-review.json",
+      "sha256": "eb11fb47690a48204d9eb44705adcecfd8ee827e445d06415ac6348e783abe98"
+    },
+    {
+      "path": "evidence/contact-components.json",
+      "sha256": "f744b21e0044633791889a883083df67f3044cbb6d869db713129f0d434be461"
+    },
+    {
+      "path": "evidence/protected-fanout.json",
+      "sha256": "fd5cb6bd1dee0774722dc2af57beae9c54adf51f33f0c1f59f1df2b99a956dda"
+    },
+    {
+      "path": "evidence/placement-extra.json",
+      "sha256": "a5bf5fc751a6d3f5d224086a6a3c7533eece280e0a92c0684db1f984df4732c5"
+    }
+  ],
+  "next": "Resolve nine return-screen gaps, review power/ESD/passive balance, add labels, export and run two real unchanged-rule same-byte JLC analyses.",
+  "scope": "Native connectivity and DRC clean. No new JLC, SMT, RF or physical acceptance."
+}

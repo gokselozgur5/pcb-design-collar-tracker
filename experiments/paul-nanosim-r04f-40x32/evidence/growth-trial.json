@@ -1,0 +1,16 @@
+{
+  "parent_sha256": "1628a83a707b4b8e541ee8ce598531841419c5f31f4a7d4e4456ea6fc5c65ff8",
+  "source_sha256": "8cd1eed9d7eb5cd7004e19bfcb9e42fa99d590df63c01ab948a80cb7b06e65f4",
+  "bounds_mm": [
+    98,
+    98,
+    138,
+    130
+  ],
+  "dimensions_mm": [
+    40,
+    32
+  ],
+  "changes": "Outline and two inner GND boundaries only; placement, tracks, vias, pads and rules retained.",
+  "scope": "Routing-space experiment. Native checks, routing completion, mechanics and supplier DFM pending."
+}
