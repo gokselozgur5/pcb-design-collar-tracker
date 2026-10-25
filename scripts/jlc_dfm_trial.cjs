@@ -13,7 +13,8 @@ const out=path.join(root,'evidence/zero-warning-r033',tag);
 fs.mkdirSync(out,{recursive:true});
 (async()=>{
  const ctx=await chromium.launchPersistentContext(path.join(root,'evidence/zero-warning-r033/browser-profile'),{headless:true,viewport:{width:1440,height:1000},serviceWorkers:'block'});
- const pending=[];let serial=0,uploadId=null;
+ const pending=[];let serial=0,uploadId=null,uploadRequested=false;
+ ctx.on('request',r=>{if(new URL(r.url()).pathname.endsWith('/pcbDfm/uploadGerber'))uploadRequested=true;});
  await ctx.route('**/*',r=>/datacollect|onlineVisitor\/save/.test(r.request().url())?r.abort():r.continue());
  ctx.on('response',r=>{
   const u=new URL(r.url());
@@ -43,11 +44,18 @@ fs.mkdirSync(out,{recursive:true});
   // can be discarded without an upload request. Wait for the logged-in header.
   await p.getByText('My Account',{exact:true}).first().waitFor({state:'attached',timeout:45000});
   if(await p.getByText('Reject All',{exact:true}).isVisible())await p.getByText('Reject All',{exact:true}).click();
+  await p.waitForLoadState('networkidle',{timeout:10000}).catch(()=>{});
   await p.locator('input[type=file]').first().setInputFiles(zip);
   console.log('Selected',path.basename(zip));
   let analysisTriggered=false,stableRows='',stablePasses=0;
   for (let i=0;i<30;i++) {
    await p.waitForTimeout(4000);
+   if(i===2 && !uploadRequested){
+    // Retry only if no upload request was sent; never duplicate an in-flight upload.
+    console.log('Retrying file selection after hydration; no upload request was issued');
+    await p.locator('input[type=file]').first().setInputFiles([]);
+    await p.locator('input[type=file]').first().setInputFiles(zip);
+   }
    p=ctx.pages().find(q=>uploadId && new URL(q.url()).searchParams.get('pcbUploadFileId')===uploadId) || p;
    const body=await p.locator('body').innerText();
    fs.writeFileSync(path.join(out,'latest.txt'),body);
@@ -76,6 +84,6 @@ fs.mkdirSync(out,{recursive:true});
    await p.locator('[title="Export analysis report"]').evaluate(el=>el.click());
    const download=await downloadPromise;await download.saveAs(path.join(out,download.suggestedFilename()));
    console.log('PDF saved',download.suggestedFilename());
-  }
+  } else throw Error('No complete analyzed record; this run is not a DFM result');
  } finally {await Promise.allSettled(pending);await ctx.close();}
 })().catch(e=>{console.error(e);process.exitCode=1});
