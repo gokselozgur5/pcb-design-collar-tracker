@@ -1,0 +1,38 @@
+{
+  "stopped_pids": [
+    4446
+  ],
+  "reason": "With fanout disabled the router sees 58 incompletes, including 15 GND, while both original and no-routing round-trip native DRC have six non-GND opens. Validate the routing model before another optimization run.",
+  "ses_imported": false,
+  "last_routing_status": [
+    "2026-10-25 12:52:06.803 INFO   [945AFA\\F7536D] Auto-routing stage started on board 'ff0c29c0933ef713e8360c4a870b88d9' for 58 unrouted items.",
+    "2026-10-25 12:52:14.972 DEBUG  [945AFA\\F7536D] Pass #1: 58 incompletes across 87 items to route",
+    "2026-10-25 12:52:14.984 DEBUG  [945AFA\\F7536D]   Net '/GND' has 15 incomplete(s)",
+    "2026-10-25 12:52:14.987 DEBUG  [945AFA\\F7536D]   Net '/VSYS' has 4 incomplete(s)",
+    "2026-10-25 12:52:14.987 DEBUG  [945AFA\\F7536D]   Net '/GNSS_FEM_OUT' has 1 incomplete(s)",
+    "2026-10-25 12:52:14.988 DEBUG  [945AFA\\F7536D]   Net '/VDD_NRF' has 2 incomplete(s)",
+    "2026-10-25 12:52:14.997 DEBUG  [945AFA\\F7536D]   Net '/GNSS_LNA_EN' has 1 incomplete(s)",
+    "2026-10-25 12:52:14.997 DEBUG  [945AFA\\F7536D]   Net '/VIO_1V8' has 7 incomplete(s)",
+    "2026-10-25 12:52:14.998 DEBUG  [945AFA\\F7536D]   Net '/GNSS_FEM_IN' has 1 incomplete(s)",
+    "2026-10-25 12:52:14.998 DEBUG  [945AFA\\F7536D]   Net '/FILT_OUT' has 1 incomplete(s)",
+    "2026-10-25 12:52:14.998 DEBUG  [945AFA\\F7536D]   Net '/AMP_IN' has 1 incomplete(s)",
+    "2026-10-25 12:52:14.998 DEBUG  [945AFA\\F7536D]   Net '/I2C_SCL' has 1 incomplete(s)",
+    "2026-10-25 12:52:14.998 DEBUG  [945AFA\\F7536D]   Net '/I2C_SDA' has 1 incomplete(s)",
+    "2026-10-25 12:52:14.998 DEBUG  [945AFA\\F7536D]   Net '/ACC_INT' has 1 incomplete(s)",
+    "2026-10-25 12:52:14.998 DEBUG  [945AFA\\F7536D]   Net '/SWDCLK' has 1 incomplete(s)",
+    "2026-10-25 12:52:14.998 DEBUG  [945AFA\\F7536D]   Net '/SWDIO' has 1 incomplete(s)",
+    "2026-10-25 12:52:14.998 DEBUG  [945AFA\\F7536D]   Net '/NRF_RESET' has 2 incomplete(s)",
+    "2026-10-25 12:52:14.998 DEBUG  [945AFA\\F7536D]   Net '/NRF_ENABLE' has 2 incomplete(s)",
+    "2026-10-25 12:52:14.998 DEBUG  [945AFA\\F7536D]   Net '/SIM_RST' has 2 incomplete(s)",
+    "2026-10-25 12:52:14.998 DEBUG  [945AFA\\F7536D]   Net '/SIM_IO' has 2 incomplete(s)",
+    "2026-10-25 12:52:14.998 DEBUG  [945AFA\\F7536D]   Net '/SIM_CLK' has 2 incomplete(s)",
+    "2026-10-25 12:52:14.999 DEBUG  [945AFA\\F7536D]   Net '/SIM_1V8' has 1 incomplete(s)",
+    "2026-10-25 12:52:14.999 DEBUG  [945AFA\\F7536D]   Net '/SPI_SCK' has 1 incomplete(s)",
+    "2026-10-25 12:52:14.999 DEBUG  [945AFA\\F7536D]   Net '/CHG_STAT' has 1 incomplete(s)",
+    "2026-10-25 12:52:15.000 DEBUG  [945AFA\\F7536D]   Net '/CHG_FAULT' has 1 incomplete(s)",
+    "2026-10-25 12:52:15.000 DEBUG  [945AFA\\F7536D]   Net '/ISET' has 1 incomplete(s)",
+    "2026-10-25 12:52:15.001 DEBUG  [945AFA\\F7536D]   Net '/VBAT' has 3 incomplete(s)",
+    "2026-10-25 12:52:15.001 DEBUG  [945AFA\\F7536D]   Net '/VIN_5V' has 1 incomplete(s)",
+    "2026-10-25 12:52:15.001 DEBUG  [945AFA\\F7536D]   Net '/BAT_NTC' has 1 incomplete(s)"
+  ]
+}

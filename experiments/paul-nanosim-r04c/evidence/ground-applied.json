@@ -1,0 +1,8 @@
+{
+  "source_sha256": "2bbd2d11cac37abafc0d9b45508428f6e9acd72ebf787c5989be77bb8c61a4b7",
+  "ground_board_sha256": "81418602cc2278ef2f44b41f1b2f35e537cd1571886dc472140009e343b9145e",
+  "ground_pads_planned": 10,
+  "ground_vias": 8,
+  "ground_stub_max_mm": 2.8624368670764726,
+  "scope": "Applied and filled; native DRC and connectivity must be checked separately."
+}

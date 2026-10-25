@@ -1,0 +1,1125 @@
+{
+  "source_sha256": "566a82b06209dc240ee8fc700828fc764d48851de7053de13f951260eac72d12",
+  "scope": "Copper attachment inventory before routing completion. Width/count imbalance is a review candidate, not a reflow test. No outer plane pours. Ground vias couple to both inner planes.",
+  "parts": [
+    {
+      "ref": "C1",
+      "pads": [
+        {
+          "pad": "1",
+          "net": "/VSYS",
+          "pad_area_mm2": 0.1030995571199986,
+          "attached_widths_mm": [],
+          "track_ids": []
+        },
+        {
+          "pad": "2",
+          "net": "/GND",
+          "pad_area_mm2": 0.10309955711999862,
+          "attached_widths_mm": [
+            0.3,
+            0.3
+          ],
+          "track_ids": [
+            "396ff71b-a414-43f0-9103-aeddc3b6b8e0",
+            "47751027-d527-4364-bd8a-9aec747f6cfb"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C10",
+      "pads": [
+        {
+          "pad": "1",
+          "net": "/SIM_1V8",
+          "pad_area_mm2": 0.32880477666000346,
+          "attached_widths_mm": [],
+          "track_ids": []
+        },
+        {
+          "pad": "2",
+          "net": "/GND",
+          "pad_area_mm2": 0.32880477666000346,
+          "attached_widths_mm": [
+            0.2,
+            0.2
+          ],
+          "track_ids": [
+            "3931c703-e19f-41ad-ad98-b5eee8a28204",
+            "ae1f7799-50a2-4489-8400-04400d906e08"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C11",
+      "pads": [
+        {
+          "pad": "1",
+          "net": "/LTE_RF",
+          "pad_area_mm2": 0.3288047766599966,
+          "attached_widths_mm": [
+            0.2
+          ],
+          "track_ids": [
+            "80a8aeba-6825-422b-9fda-7256120aa18e"
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "/GND",
+          "pad_area_mm2": 0.32880477666000346,
+          "attached_widths_mm": [
+            0.2
+          ],
+          "track_ids": [
+            "216d5669-d078-4bd7-94ff-1f2034557172"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C12",
+      "pads": [
+        {
+          "pad": "1",
+          "net": "/LTE_ANT",
+          "pad_area_mm2": 0.32880477665999747,
+          "attached_widths_mm": [
+            0.2
+          ],
+          "track_ids": [
+            "5a8861e2-8011-4fac-aa84-1b7516c4ce4d"
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "/GND",
+          "pad_area_mm2": 0.32880477665999747,
+          "attached_widths_mm": [
+            0.2
+          ],
+          "track_ids": [
+            "ed36af24-f5e1-459c-8936-6383054d4d17"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C13",
+      "pads": [
+        {
+          "pad": "1",
+          "net": "/GNSS_FEM_OUT",
+          "pad_area_mm2": 0.32880477665999747,
+          "attached_widths_mm": [
+            0.2
+          ],
+          "track_ids": [
+            "a2e83806-a033-42a9-b43e-9efe14f0c292"
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "/GPS_RF",
+          "pad_area_mm2": 0.3288047766599907,
+          "attached_widths_mm": [
+            0.2
+          ],
+          "track_ids": [
+            "7aaf8d0e-959f-43bf-86bf-cd21b3fe5d61"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C14",
+      "pads": [
+        {
+          "pad": "1",
+          "net": "/GNSS_ANT",
+          "pad_area_mm2": 0.32880477665999747,
+          "attached_widths_mm": [
+            0.2
+          ],
+          "track_ids": [
+            "43f42c0f-6e3d-4f34-9269-fda173044d84"
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "/GNSS_FEM_IN",
+          "pad_area_mm2": 0.32880477665999747,
+          "attached_widths_mm": [
+            0.2,
+            0.2
+          ],
+          "track_ids": [
+            "2ab127f1-f7d6-4d2e-b98f-6d0833ce3a51",
+            "7ef07f71-802a-4bca-8b28-77cef7ec32bc"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C15",
+      "pads": [
+        {
+          "pad": "1",
+          "net": "/VIO_1V8",
+          "pad_area_mm2": 0.32880477666000346,
+          "attached_widths_mm": [
+            0.3
+          ],
+          "track_ids": [
+            "57980eb3-ebba-478b-8cc8-71dc8472ab0d"
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "/GND",
+          "pad_area_mm2": 0.32880477666000346,
+          "attached_widths_mm": [
+            0.3
+          ],
+          "track_ids": [
+            "a08c53a4-005a-4e60-aded-0e2bd4799020"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C16",
+      "pads": [
+        {
+          "pad": "1",
+          "net": "/VIO_1V8",
+          "pad_area_mm2": 0.32880477666000263,
+          "attached_widths_mm": [
+            0.3,
+            0.3
+          ],
+          "track_ids": [
+            "da5e44fd-2de4-4e27-bf97-7de610ff6bdf",
+            "fb18ce0d-58f6-41e9-bdf4-aa3c926e5bc9"
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "/GND",
+          "pad_area_mm2": 0.3288047766600026,
+          "attached_widths_mm": [
+            0.3
+          ],
+          "track_ids": [
+            "689ec766-bba9-46a7-8918-5ac20c8db4a1"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C17",
+      "pads": [
+        {
+          "pad": "1",
+          "net": "/VIN_5V",
+          "pad_area_mm2": 0.3288047766599967,
+          "attached_widths_mm": [
+            0.4,
+            0.4
+          ],
+          "track_ids": [
+            "0d1f73d9-cac9-4564-aacb-156bed625c14",
+            "1395917f-5563-476b-bfd5-3f0e08021b62"
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "/GND",
+          "pad_area_mm2": 0.3288047766600035,
+          "attached_widths_mm": [
+            0.4
+          ],
+          "track_ids": [
+            "4100169e-2c66-4304-88d8-afc4ca841487"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C18",
+      "pads": [
+        {
+          "pad": "1",
+          "net": "/VSYS",
+          "pad_area_mm2": 0.8074869045239973,
+          "attached_widths_mm": [
+            0.4
+          ],
+          "track_ids": [
+            "02260608-b487-452a-9738-aa391e9ba82c"
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "/GND",
+          "pad_area_mm2": 0.8074869045239974,
+          "attached_widths_mm": [
+            0.4
+          ],
+          "track_ids": [
+            "b2fd7b34-3256-42c2-ba58-9da1940f74bb"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C19",
+      "pads": [
+        {
+          "pad": "1",
+          "net": "/VBAT",
+          "pad_area_mm2": 0.32880477666000146,
+          "attached_widths_mm": [
+            0.4,
+            0.4,
+            0.4
+          ],
+          "track_ids": [
+            "7291a712-5521-4482-929f-0886d63e104d",
+            "8a4f665a-5b9e-4ab3-a4b9-0f7de2e99168",
+            "8f3976bb-0b28-447c-ad80-5515c57a0e09"
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "/GND",
+          "pad_area_mm2": 0.3288047766599946,
+          "attached_widths_mm": [
+            0.4
+          ],
+          "track_ids": [
+            "2be9f276-46b7-41fc-a4fd-d315cdd26c6b"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C2",
+      "pads": [
+        {
+          "pad": "1",
+          "net": "/VSYS",
+          "pad_area_mm2": 0.10309955712000227,
+          "attached_widths_mm": [],
+          "track_ids": []
+        },
+        {
+          "pad": "2",
+          "net": "/GND",
+          "pad_area_mm2": 0.10309955711999834,
+          "attached_widths_mm": [
+            0.3,
+            0.3
+          ],
+          "track_ids": [
+            "3bfb6b6e-7a49-4bcc-8b43-a63fcc5ce3d2",
+            "e5c34daa-0861-4ddd-83ee-0bc0fdeb067e"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C20",
+      "pads": [
+        {
+          "pad": "1",
+          "net": "/VSYS",
+          "pad_area_mm2": 0.32880477666000346,
+          "attached_widths_mm": [],
+          "track_ids": []
+        },
+        {
+          "pad": "2",
+          "net": "/GND",
+          "pad_area_mm2": 0.32880477666000346,
+          "attached_widths_mm": [
+            0.4
+          ],
+          "track_ids": [
+            "b857d1af-bdaa-4451-861f-e87f96770536"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C21",
+      "pads": [
+        {
+          "pad": "1",
+          "net": "/VIO_1V8",
+          "pad_area_mm2": 0.32880477666000146,
+          "attached_widths_mm": [
+            0.3,
+            0.3
+          ],
+          "track_ids": [
+            "bc128229-3c42-4de4-b6aa-b38ceb3e9120",
+            "f0ed04dd-8014-47e8-bba7-0673e2e0bafb"
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "/GND",
+          "pad_area_mm2": 0.32880477666000146,
+          "attached_widths_mm": [
+            0.3
+          ],
+          "track_ids": [
+            "ca6c3102-d050-40e7-bb92-cc8a71161dff"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C22",
+      "pads": [
+        {
+          "pad": "1",
+          "net": "/BAT_ADC",
+          "pad_area_mm2": 0.32880477666000146,
+          "attached_widths_mm": [
+            0.2
+          ],
+          "track_ids": [
+            "3badd776-e93c-4b72-885e-008d37b27d95"
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "/GND",
+          "pad_area_mm2": 0.32880477666000146,
+          "attached_widths_mm": [
+            0.2
+          ],
+          "track_ids": [
+            "81675259-7093-4a90-9c47-60b1635889c3"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C23",
+      "pads": [
+        {
+          "pad": "1",
+          "net": "/VIO_1V8",
+          "pad_area_mm2": 0.32880477665999835,
+          "attached_widths_mm": [
+            0.3,
+            0.3
+          ],
+          "track_ids": [
+            "01a8799c-add6-4363-b8b3-3d1f77267b39",
+            "c03ecf4d-ab6b-4060-8b3d-38c04abe0e67"
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "/GND",
+          "pad_area_mm2": 0.3288047766599984,
+          "attached_widths_mm": [
+            0.3
+          ],
+          "track_ids": [
+            "0a7c769a-1bab-4205-a900-80ce78f2e7ed"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C24",
+      "pads": [
+        {
+          "pad": "1",
+          "net": "/VIO_1V8",
+          "pad_area_mm2": 0.3288047766600023,
+          "attached_widths_mm": [
+            0.3,
+            0.3
+          ],
+          "track_ids": [
+            "01a8799c-add6-4363-b8b3-3d1f77267b39",
+            "e62be1fd-a42b-4d42-a38c-998f6ba97e70"
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "/GND",
+          "pad_area_mm2": 0.32880477666000235,
+          "attached_widths_mm": [
+            0.3
+          ],
+          "track_ids": [
+            "ce4b4ea1-e3ea-4d61-8231-f361f5e3e391"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C3",
+      "pads": [
+        {
+          "pad": "1",
+          "net": "/VDD_NRF",
+          "pad_area_mm2": 1.3913420052919894,
+          "attached_widths_mm": [
+            0.4
+          ],
+          "track_ids": [
+            "5231fa93-452c-4970-816b-cf8f0dd6b83f"
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "/GND",
+          "pad_area_mm2": 1.3913420052919905,
+          "attached_widths_mm": [
+            0.4
+          ],
+          "track_ids": [
+            "b73cb0c9-3ddc-467d-8cdf-39ec6a00d38f"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C4",
+      "pads": [
+        {
+          "pad": "1",
+          "net": "/VDD_NRF",
+          "pad_area_mm2": 0.8074869045240041,
+          "attached_widths_mm": [
+            0.4
+          ],
+          "track_ids": [
+            "6d479c05-bc4a-4d6f-baed-c80425436370"
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "/GND",
+          "pad_area_mm2": 0.8074869045239956,
+          "attached_widths_mm": [
+            0.4,
+            0.4
+          ],
+          "track_ids": [
+            "8a0a692e-730d-4914-aa41-1b947c70af91",
+            "dfdb4a1c-f225-40a0-bc08-f4a3b5b122f3"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C5",
+      "pads": [
+        {
+          "pad": "1",
+          "net": "/VIO_1V8",
+          "pad_area_mm2": 0.1030995571199986,
+          "attached_widths_mm": [
+            0.3,
+            0.3
+          ],
+          "track_ids": [
+            "5e40c01e-4956-4269-845d-409d712d28c8",
+            "f1e509cd-7493-4739-9261-152ac1c2fbee"
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "/GND",
+          "pad_area_mm2": 0.10309955711999862,
+          "attached_widths_mm": [
+            0.3
+          ],
+          "track_ids": [
+            "3e48e13e-8ab2-4107-af54-dc89babeb2cf"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C6",
+      "pads": [
+        {
+          "pad": "1",
+          "net": "/VIO_1V8",
+          "pad_area_mm2": 0.32880477666000346,
+          "attached_widths_mm": [
+            0.3,
+            0.3
+          ],
+          "track_ids": [
+            "655009ce-b61d-4e77-8608-cd042af22f16",
+            "6d57d61b-1160-4722-9edf-ac0be68f377a"
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "/GND",
+          "pad_area_mm2": 0.32880477666000346,
+          "attached_widths_mm": [
+            0.3
+          ],
+          "track_ids": [
+            "ffdd438f-d2a5-4a8e-ad3a-8d8a44ac715b"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C7",
+      "pads": [
+        {
+          "pad": "1",
+          "net": "/DEC0",
+          "pad_area_mm2": 0.32880477666000146,
+          "attached_widths_mm": [
+            0.2
+          ],
+          "track_ids": [
+            "0cc97629-7816-43e5-bf9e-14220458eb1d"
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "/GND",
+          "pad_area_mm2": 0.32880477666000146,
+          "attached_widths_mm": [
+            0.2
+          ],
+          "track_ids": [
+            "fb173e9b-cf18-4672-8dda-968ed877be63"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C8",
+      "pads": [
+        {
+          "pad": "1",
+          "net": "/NRF_RESET",
+          "pad_area_mm2": 0.10309955711999894,
+          "attached_widths_mm": [
+            0.2,
+            0.2,
+            0.2
+          ],
+          "track_ids": [
+            "676ba9be-636f-4339-bca9-eadf2a601e07",
+            "73717cd8-abb6-42db-be8f-fd1fe4f33e3c",
+            "a2d79765-7363-4ade-85f7-b4315f9e5d9d"
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "/GND",
+          "pad_area_mm2": 0.10309955711999834,
+          "attached_widths_mm": [
+            0.2,
+            0.2
+          ],
+          "track_ids": [
+            "0079d42e-5170-405e-81ce-febc18766e48",
+            "bd1cd4c6-9781-43c2-a4d8-758104be2d23"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C9",
+      "pads": [
+        {
+          "pad": "1",
+          "net": "/NRF_ENABLE",
+          "pad_area_mm2": 0.32880477665999663,
+          "attached_widths_mm": [
+            0.2
+          ],
+          "track_ids": [
+            "cd34fc67-0489-49b1-9ed7-eb1821c087aa"
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "/GND",
+          "pad_area_mm2": 0.3288047766600035,
+          "attached_widths_mm": [
+            0.2,
+            0.2
+          ],
+          "track_ids": [
+            "53e38c3b-597f-4b35-906b-21e8dc952a99",
+            "86139c57-7d09-4501-b884-654723e8a68c"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "FB1",
+      "pads": [
+        {
+          "pad": "1",
+          "net": "/VSYS",
+          "pad_area_mm2": 0.7863401546399905,
+          "attached_widths_mm": [],
+          "track_ids": []
+        },
+        {
+          "pad": "2",
+          "net": "/VDD_NRF",
+          "pad_area_mm2": 0.7863401546399905,
+          "attached_widths_mm": [
+            0.4,
+            0.4,
+            0.4
+          ],
+          "track_ids": [
+            "17abc5f7-12ff-4fa0-93b1-d816457c3283",
+            "6ce3b604-8619-4f62-a200-2daa20ed8b3d",
+            "a7a32e20-eff3-42e9-b3c6-15314bb1565e"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "L1",
+      "pads": [
+        {
+          "pad": "1",
+          "net": "/FILT_OUT",
+          "pad_area_mm2": 0.35718090859199564,
+          "attached_widths_mm": [
+            0.2
+          ],
+          "track_ids": [
+            "403c5128-1455-4617-99d2-269d1de38d4e"
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "/AMP_IN",
+          "pad_area_mm2": 0.35718090859199564,
+          "attached_widths_mm": [
+            0.2
+          ],
+          "track_ids": [
+            "1d56c1cf-d06e-4a33-af5d-4470e4b23767"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R1",
+      "pads": [
+        {
+          "pad": "1",
+          "net": "/VDD_NRF",
+          "pad_area_mm2": 0.3284951818320037,
+          "attached_widths_mm": [
+            0.4,
+            0.4
+          ],
+          "track_ids": [
+            "c322ab06-512f-42e3-b172-5554cd093390",
+            "c3ba8094-7c13-4298-9023-265059dded8b"
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "/NRF_ENABLE",
+          "pad_area_mm2": 0.3284951818320037,
+          "attached_widths_mm": [
+            0.2
+          ],
+          "track_ids": [
+            "facc325c-b422-47aa-a25a-d8f2f3975297"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R10",
+      "pads": [
+        {
+          "pad": "1",
+          "net": "/VBAT",
+          "pad_area_mm2": 0.3284951818319975,
+          "attached_widths_mm": [],
+          "track_ids": []
+        },
+        {
+          "pad": "2",
+          "net": "/BAT_ADC",
+          "pad_area_mm2": 0.3284951818319975,
+          "attached_widths_mm": [
+            0.2,
+            0.2
+          ],
+          "track_ids": [
+            "daba2bbd-e460-4124-8458-0890a0128f3b",
+            "ed05cbae-6dd0-4dfc-8160-16c4cffac6af"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R11",
+      "pads": [
+        {
+          "pad": "1",
+          "net": "/BAT_ADC",
+          "pad_area_mm2": 0.3284951818319975,
+          "attached_widths_mm": [
+            0.2
+          ],
+          "track_ids": [
+            "17e0ec68-a6fd-4102-a479-94ccf8598272"
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "/GND",
+          "pad_area_mm2": 0.3284951818319975,
+          "attached_widths_mm": [
+            0.2
+          ],
+          "track_ids": [
+            "b108ec5a-91a8-4795-8ab2-1545ea86dbc5"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R12",
+      "pads": [
+        {
+          "pad": "1",
+          "net": "/I2C_SDA",
+          "pad_area_mm2": 0.32849518183200427,
+          "attached_widths_mm": [],
+          "track_ids": []
+        },
+        {
+          "pad": "2",
+          "net": "/VIO_1V8",
+          "pad_area_mm2": 0.32849518183199666,
+          "attached_widths_mm": [
+            0.3,
+            0.3
+          ],
+          "track_ids": [
+            "02a35e36-59cd-4758-bd30-9972c4619231",
+            "99f9486f-111c-4fd2-bb8a-6b246456f70d"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R13",
+      "pads": [
+        {
+          "pad": "1",
+          "net": "/I2C_SCL",
+          "pad_area_mm2": 0.32849518183199805,
+          "attached_widths_mm": [],
+          "track_ids": []
+        },
+        {
+          "pad": "2",
+          "net": "/VIO_1V8",
+          "pad_area_mm2": 0.3284951818319905,
+          "attached_widths_mm": [
+            0.3
+          ],
+          "track_ids": [
+            "c33f45a9-54cb-4493-8c60-a9fca61d0c0b"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R14",
+      "pads": [
+        {
+          "pad": "1",
+          "net": "/HEALTH_CS",
+          "pad_area_mm2": 0.3284951818319975,
+          "attached_widths_mm": [
+            0.2,
+            0.2
+          ],
+          "track_ids": [
+            "3406b20c-3fd5-4998-827d-7651689dab4d",
+            "9e959aa2-a668-485e-b58c-5a70d90741bb"
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "/VIO_1V8",
+          "pad_area_mm2": 0.3284951818319975,
+          "attached_widths_mm": [
+            0.3
+          ],
+          "track_ids": [
+            "ccaefed1-3855-47f9-8669-ebc621525d70"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R15",
+      "pads": [
+        {
+          "pad": "1",
+          "net": "/HEALTH_EN",
+          "pad_area_mm2": 0.3284951818319975,
+          "attached_widths_mm": [
+            0.2
+          ],
+          "track_ids": [
+            "00e8453e-b003-4369-977c-247140750978"
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "/GND",
+          "pad_area_mm2": 0.3284951818319975,
+          "attached_widths_mm": [
+            0.2,
+            0.2
+          ],
+          "track_ids": [
+            "3bdfd773-f1c4-4cce-8088-8785b577e593",
+            "7b9e9bb9-923a-44da-b6c6-ed084a18d523"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R2",
+      "pads": [
+        {
+          "pad": "1",
+          "net": "/NRF_RESET",
+          "pad_area_mm2": 0.32849518183199045,
+          "attached_widths_mm": [
+            0.2
+          ],
+          "track_ids": [
+            "ff68a694-e58e-4f9f-ad99-d5a69fe1b8e1"
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "/DEBUG_RESET",
+          "pad_area_mm2": 0.32849518183199805,
+          "attached_widths_mm": [
+            0.2
+          ],
+          "track_ids": [
+            "6b0a1198-1aba-4f47-96d9-748cc6fd7d40"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R3",
+      "pads": [
+        {
+          "pad": "1",
+          "net": "/LTE_RF",
+          "pad_area_mm2": 0.3284951818320037,
+          "attached_widths_mm": [
+            0.2,
+            0.2,
+            0.2
+          ],
+          "track_ids": [
+            "299e08aa-8a58-4dea-a0fa-31335555c5e0",
+            "80a8aeba-6825-422b-9fda-7256120aa18e",
+            "9754287c-cccc-46cc-813e-25887bd5f9b4"
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "/LTE_ANT",
+          "pad_area_mm2": 0.3284951818320037,
+          "attached_widths_mm": [
+            0.2
+          ],
+          "track_ids": [
+            "f35c87e5-eb32-4fc3-88a8-cf24301b6364"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R4",
+      "pads": [
+        {
+          "pad": "1",
+          "net": "/COEX0",
+          "pad_area_mm2": 0.32849518183200427,
+          "attached_widths_mm": [
+            0.2
+          ],
+          "track_ids": [
+            "fd591344-56b8-4f18-b5f1-6bc34c4f3ce6"
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "/GNSS_LNA_EN",
+          "pad_area_mm2": 0.32849518183199666,
+          "attached_widths_mm": [
+            0.2,
+            0.2
+          ],
+          "track_ids": [
+            "403fef3e-555d-4691-8132-75ec886f1df6",
+            "f2ea3cd0-1fb0-411d-82c6-7f72e692a0cb"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R5",
+      "pads": [
+        {
+          "pad": "1",
+          "net": "/GNSS_LNA_EN",
+          "pad_area_mm2": 0.3284951818320042,
+          "attached_widths_mm": [
+            0.2
+          ],
+          "track_ids": [
+            "14c4b776-fe5f-43cf-8518-e48e9330abd9"
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "/GND",
+          "pad_area_mm2": 0.32849518183199666,
+          "attached_widths_mm": [
+            0.2
+          ],
+          "track_ids": [
+            "71cab247-08d6-4c4c-9202-54c127cfa187"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R6",
+      "pads": [
+        {
+          "pad": "1",
+          "net": "/ILIM_VSET",
+          "pad_area_mm2": 0.3284951818320037,
+          "attached_widths_mm": [],
+          "track_ids": []
+        },
+        {
+          "pad": "2",
+          "net": "/GND",
+          "pad_area_mm2": 0.3284951818320037,
+          "attached_widths_mm": [
+            0.2
+          ],
+          "track_ids": [
+            "8dc2885b-7611-4e97-97e0-665ab1251db7"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R7",
+      "pads": [
+        {
+          "pad": "1",
+          "net": "/ISET",
+          "pad_area_mm2": 0.32849518183199666,
+          "attached_widths_mm": [],
+          "track_ids": []
+        },
+        {
+          "pad": "2",
+          "net": "/GND",
+          "pad_area_mm2": 0.32849518183200427,
+          "attached_widths_mm": [
+            0.2,
+            0.2
+          ],
+          "track_ids": [
+            "5005760c-7d94-4851-a82f-5bb164fcc37a",
+            "f2798883-212d-4c57-9f81-45826a969b51"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R8",
+      "pads": [
+        {
+          "pad": "1",
+          "net": "/CHG_STAT",
+          "pad_area_mm2": 0.3284951818319975,
+          "attached_widths_mm": [],
+          "track_ids": []
+        },
+        {
+          "pad": "2",
+          "net": "/VIO_1V8",
+          "pad_area_mm2": 0.3284951818319975,
+          "attached_widths_mm": [
+            0.3
+          ],
+          "track_ids": [
+            "f6b908d8-b26f-47d5-9cf3-63cab4041e65"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R9",
+      "pads": [
+        {
+          "pad": "1",
+          "net": "/CHG_FAULT",
+          "pad_area_mm2": 0.3284951818319975,
+          "attached_widths_mm": [],
+          "track_ids": []
+        },
+        {
+          "pad": "2",
+          "net": "/VIO_1V8",
+          "pad_area_mm2": 0.3284951818319975,
+          "attached_widths_mm": [
+            0.3,
+            0.3
+          ],
+          "track_ids": [
+            "af132a83-dab5-4ea3-b74e-7d1f0f84c503",
+            "d4ff4bc7-c812-4e41-ae9f-816fcb942f2d"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "result": "PASS: matching export/import locks removes the two co-located drill warnings introduced by the old importer.",
+  "routing_disabled": true,
+  "fanout_disabled": true,
+  "optimizer_disabled": true,
+  "active_source_sha256": "38882bf0111a0190a9a55e756b72be96f91e325de29d909a93c6a57759bbed44",
+  "reports": {
+    "checkpoint": {
+      "sha256": "2320b591a1d69e418da4117f41116f09d62859e0a0a62fe21244621c5e13bb06",
+      "opens": 6,
+      "parity": 0,
+      "violation_types": {
+        "track_dangling": 7,
+        "via_dangling": 7
+      }
+    },
+    "roundtrip-native": {
+      "sha256": "d19d40ec1e4396dea002ea4896b62b8bcbcceaaec003e482740606c8c2f4fd44",
+      "opens": 6,
+      "parity": 0,
+      "violation_types": {
+        "track_dangling": 8,
+        "via_dangling": 6,
+        "holes_co_located": 2
+      }
+    },
+    "roundtrip-fixed": {
+      "sha256": "a45c62d924cecb0a42d8078f439ae49617b8c8ecef3fc389fedfa610e2e3aa7f",
+      "opens": 6,
+      "parity": 0,
+      "violation_types": {
+        "track_dangling": 7,
+        "via_dangling": 7
+      }
+    }
+  },
+  "scope": "Round-trip regression only; six pre-existing opens and dangling branches remain."
+}

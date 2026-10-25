@@ -1,0 +1,15 @@
+{
+  "source_sha256": "38882bf0111a0190a9a55e756b72be96f91e325de29d909a93c6a57759bbed44",
+  "dsn_sha256": "2a94d7343cd6fba724b93c8448a73c5ab48c3dabe3364b8d94a2e0cc3a239227",
+  "ground_items_hidden": 189,
+  "ground_and_nc_pads_hidden": 151,
+  "keepouts_added": 397,
+  "routing_layers": [
+    "F.Cu",
+    "B.Cu"
+  ],
+  "preserve_native_locks": false,
+  "pad_model": "native KiCad DSN export",
+  "explicitly_protected_route_items": 28,
+  "scope": "Router copy only; native manufacturing geometry unchanged."
+}

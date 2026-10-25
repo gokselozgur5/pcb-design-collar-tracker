@@ -1,0 +1,17 @@
+{
+  "before_sha256": "ad43d62baf61bf1e19470ac0b2deccadf1143f5ec42be90bedb25d55369c3b43",
+  "source_sha256": "38882bf0111a0190a9a55e756b72be96f91e325de29d909a93c6a57759bbed44",
+  "changed": [
+    "eaaa44b2-4dcc-4464-bb1e-347b92863084",
+    "e69eeca2-492d-4831-8c9a-945109410e70"
+  ],
+  "old_position_mm": [
+    108.7,
+    124.9
+  ],
+  "new_position_mm": [
+    108.7,
+    124.7
+  ],
+  "reason": "Restore clearance to J4.3 after moving the battery contacts 0.15 mm upward"
+}

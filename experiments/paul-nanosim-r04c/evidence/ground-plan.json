@@ -1,0 +1,311 @@
+{
+  "source_sha256": "2bbd2d11cac37abafc0d9b45508428f6e9acd72ebf787c5989be77bb8c61a4b7",
+  "incremental": true,
+  "existing_ground_vias": 59,
+  "target": {
+    "via_diameter": 0.6,
+    "via_drill": 0.2,
+    "clearance": 0.2,
+    "max_exposed_stub_length": 2.2,
+    "length_measurement": "Centerline outside the starting copper pad"
+  },
+  "ground_pads": 10,
+  "vias": [
+    [
+      124.9,
+      116.0
+    ],
+    [
+      122.7,
+      118.45
+    ],
+    [
+      122.9,
+      107.0
+    ],
+    [
+      125.8,
+      111.2
+    ],
+    [
+      128.3,
+      114.3
+    ],
+    [
+      123.45,
+      102.1
+    ],
+    [
+      133.3,
+      108.0
+    ],
+    [
+      120.7,
+      108.0
+    ]
+  ],
+  "stubs": [
+    {
+      "ref": "U2",
+      "pin": "4",
+      "pad_id": "af1a7ea4-cccf-458a-8ee4-5d5b24e8fc4b",
+      "layer": "F.Cu",
+      "points": [
+        [
+          124.1875,
+          116.0
+        ],
+        [
+          124.9,
+          116.0
+        ]
+      ],
+      "width": 0.2,
+      "length": 0.7125000000000057,
+      "shared_via": false,
+      "via": [
+        124.9,
+        116.0
+      ],
+      "exposed_length": 0.5
+    },
+    {
+      "ref": "U2",
+      "pin": "9",
+      "pad_id": "feb0e51f-03db-45c5-8157-d2adec684097",
+      "layer": "F.Cu",
+      "points": [
+        [
+          121.81249,
+          117.0
+        ],
+        [
+          122.21249,
+          117.0
+        ],
+        [
+          122.7,
+          117.48751
+        ],
+        [
+          122.7,
+          118.45
+        ]
+      ],
+      "width": 0.2,
+      "length": 2.0519332537925163,
+      "shared_via": false,
+      "via": [
+        122.7,
+        118.45
+      ],
+      "exposed_length": 1.8394332537925107
+    },
+    {
+      "ref": "U2",
+      "pin": "11",
+      "pad_id": "a2b78fea-e744-4b8b-9050-4f9b027257be",
+      "layer": "F.Cu",
+      "points": [
+        [
+          123.0,
+          116.5
+        ],
+        [
+          123.5,
+          116.0
+        ],
+        [
+          124.9,
+          116.0
+        ]
+      ],
+      "width": 0.3,
+      "length": 2.107106781186553,
+      "shared_via": true,
+      "via": [
+        124.9,
+        116.0
+      ],
+      "exposed_length": 1.1750000000000114
+    },
+    {
+      "ref": "D1",
+      "pin": "2",
+      "pad_id": "e4607dd3-e011-4d4b-8458-3aeaf4d5d4e6",
+      "layer": "F.Cu",
+      "points": [
+        [
+          121.9,
+          107.0
+        ],
+        [
+          122.9,
+          107.0
+        ]
+      ],
+      "width": 0.2,
+      "length": 1.0,
+      "shared_via": false,
+      "via": [
+        122.9,
+        107.0
+      ],
+      "exposed_length": 0.5500000000000114
+    },
+    {
+      "ref": "C10",
+      "pin": "2",
+      "pad_id": "0a79f1a2-805f-4eee-969b-3fb1d803d877",
+      "layer": "B.Cu",
+      "points": [
+        [
+          123.48,
+          115.7
+        ],
+        [
+          123.78,
+          116.0
+        ],
+        [
+          124.9,
+          116.0
+        ]
+      ],
+      "width": 0.2,
+      "length": 1.5442640687119291,
+      "shared_via": true,
+      "via": [
+        124.9,
+        116.0
+      ],
+      "exposed_length": 1.189280465316935
+    },
+    {
+      "ref": "J2",
+      "pin": "2",
+      "pad_id": "2cd3bdfb-ccea-4e0f-91e5-d28a7d0935cc",
+      "layer": "F.Cu",
+      "points": [
+        [
+          128.3,
+          110.325
+        ],
+        [
+          126.675,
+          110.325
+        ],
+        [
+          125.8,
+          111.2
+        ]
+      ],
+      "width": 0.3,
+      "length": 2.8624368670764726,
+      "shared_via": false,
+      "via": [
+        125.8,
+        111.2
+      ],
+      "exposed_length": 1.7624368670764639
+    },
+    {
+      "ref": "J2",
+      "pin": "2",
+      "pad_id": "57b289a8-9e65-49d6-9b47-fba588a39df9",
+      "layer": "F.Cu",
+      "points": [
+        [
+          128.3,
+          113.275
+        ],
+        [
+          128.3,
+          114.3
+        ]
+      ],
+      "width": 0.3,
+      "length": 1.0249999999999915,
+      "shared_via": false,
+      "via": [
+        128.3,
+        114.3
+      ],
+      "exposed_length": 0.5
+    },
+    {
+      "ref": "J6",
+      "pin": "5",
+      "pad_id": "f522aa87-6c6d-437b-9fb6-2285777bbaa4",
+      "layer": "B.Cu",
+      "points": [
+        [
+          124.46,
+          102.1
+        ],
+        [
+          123.45,
+          102.1
+        ]
+      ],
+      "width": 0.3,
+      "length": 1.009999999999991,
+      "shared_via": false,
+      "via": [
+        123.45,
+        102.1
+      ],
+      "exposed_length": 0.5099999999999909
+    },
+    {
+      "ref": "J6",
+      "pin": "8",
+      "pad_id": "763b8502-4a71-4a8a-a1bd-dd8fe2b51c0b",
+      "layer": "B.Cu",
+      "points": [
+        [
+          132.3,
+          108.0
+        ],
+        [
+          133.3,
+          108.0
+        ]
+      ],
+      "width": 0.3,
+      "length": 1.0,
+      "shared_via": false,
+      "via": [
+        133.3,
+        108.0
+      ],
+      "exposed_length": 0.5
+    },
+    {
+      "ref": "J6",
+      "pin": "8",
+      "pad_id": "49c410d7-b0fd-42b3-b631-b163433660e2",
+      "layer": "B.Cu",
+      "points": [
+        [
+          121.7,
+          108.0
+        ],
+        [
+          120.7,
+          108.0
+        ]
+      ],
+      "width": 0.3,
+      "length": 1.0,
+      "shared_via": false,
+      "via": [
+        120.7,
+        108.0
+      ],
+      "exposed_length": 0.5
+    }
+  ],
+  "failures": [],
+  "scope": "Planned geometry only; native DRC and filled-plane connectivity not yet checked."
+}

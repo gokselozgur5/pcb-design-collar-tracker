@@ -1,0 +1,19 @@
+{
+  "before_sha256": "a241efb94d3a044b6a8d0badb3a0aff78c3b7ce1910b0b78ac980d7ab2bc9411",
+  "source_sha256": "10811cb854de88e266160a03df349a95cf747477651f80100e8cbec845f1ce6b",
+  "removed_sim_segments": [
+    "478deeb5-d6af-4dc7-a92a-28d973952122",
+    "806ed669-9590-4feb-9351-2be40715b13e",
+    "0112fc50-4f5d-4dca-9459-f402c7b188b8",
+    "b56828f9-8f68-4c51-b2f4-96ec9135341d"
+  ],
+  "moved_ground_items": [
+    "888cf4eb-13d2-4fab-9bf0-677c1d6f2df6",
+    "98289585-7eab-4019-abc4-da1b85ddeadc",
+    "611fa055-5982-4cf2-b066-490aba1248e1",
+    "57456092-d5e6-4acc-bf1e-bbfec94131e1",
+    "9afad3d0-269d-4d08-bd73-b63f968d6d46"
+  ],
+  "capacitor": "C17 moved 0.05 mm toward y=128 to clear the retained SIM supply via",
+  "scope": "Local clash removal; rerouting and fresh native DRC required."
+}

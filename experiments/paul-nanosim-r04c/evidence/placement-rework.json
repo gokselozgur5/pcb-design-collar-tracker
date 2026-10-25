@@ -1,0 +1,63 @@
+{
+  "parent_source_sha256": "2e9c0666d6561330a5ad5608c65ae7d49485f0731130f3652b0a99ce19004398",
+  "source_sha256": "2ab75cedfabc0bbb50d8bc7411230602adb405a3d3b9822f5cc5111e76bcd7be",
+  "changed_placement": {
+    "U3": [
+      105.0,
+      123.0,
+      0.0,
+      "F"
+    ],
+    "C18": [
+      103.0,
+      120.85,
+      0.0,
+      "F"
+    ],
+    "C17": [
+      106.2,
+      120.2,
+      90.0,
+      "B"
+    ],
+    "C19": [
+      101.8,
+      122.5,
+      180.0,
+      "F"
+    ],
+    "J6": [
+      127.0,
+      108.0,
+      180.0,
+      "B"
+    ],
+    "D1": [
+      123.0,
+      107.0,
+      0.0,
+      "F"
+    ]
+  },
+  "reroute_nets": [
+    "/ACC_INT",
+    "/BAT_NTC",
+    "/CHG_FAULT",
+    "/CHG_STAT",
+    "/I2C_SCL",
+    "/I2C_SDA",
+    "/ILIM_VSET",
+    "/ISET",
+    "/SIM_1V8",
+    "/SIM_CLK",
+    "/SIM_IO",
+    "/SIM_RST",
+    "/SPI_SCK",
+    "/VBAT",
+    "/VIN_5V",
+    "/VSYS"
+  ],
+  "removed_copper_items": 495,
+  "ground_pads_to_reconnect": 10,
+  "scope": "Placement trial only. Ground reconnection, native DRC and routing are pending."
+}

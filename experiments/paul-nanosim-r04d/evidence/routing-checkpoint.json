@@ -1,0 +1,72 @@
+{
+  "source": "hardware/collar-tracker.kicad_pcb",
+  "source_sha256": "38882bf0111a0190a9a55e756b72be96f91e325de29d909a93c6a57759bbed44",
+  "footprints": 54,
+  "pads": 286,
+  "native_opens": 6,
+  "native_violation_types": {
+    "track_dangling": 7,
+    "via_dangling": 7
+  },
+  "native_parity": 0,
+  "ground_pads": 81,
+  "ground_vias": 66,
+  "inner_tracks": 0,
+  "all_ground_via_centers_in_both_inner_fills": true,
+  "rf_segments_preserved_exactly": 24,
+  "return_screen_outside_2mm": 29,
+  "routing_jobs_running_at_checkpoint": false,
+  "manufacturer_dfm": "NOT RUN for this revision",
+  "files": [
+    {
+      "path": "evidence/checkpoint-drc.json",
+      "sha256": "2320b591a1d69e418da4117f41116f09d62859e0a0a62fe21244621c5e13bb06"
+    },
+    {
+      "path": "evidence/layout-inventory.json",
+      "sha256": "8c7e54e7c2715860e623be0d4a53be8f5e002c794dade1acf3ddf1737b03548f"
+    },
+    {
+      "path": "evidence/power-path-review.json",
+      "sha256": "bd8b9606d986d4ecd508a127084f4019fa410ca6d02bac375e14a048bd1bdfa2"
+    },
+    {
+      "path": "evidence/import-lock-regression.json",
+      "sha256": "d50720e2300ebc057c9ccbd4eee7d35258e23aa829bf88f55df26a1fca16b041"
+    },
+    {
+      "path": "evidence/roundtrip-native-drc.json",
+      "sha256": "d19d40ec1e4396dea002ea4896b62b8bcbcceaaec003e482740606c8c2f4fd44"
+    },
+    {
+      "path": "evidence/roundtrip-fixed-drc.json",
+      "sha256": "a45c62d924cecb0a42d8078f439ae49617b8c8ecef3fc389fedfa610e2e3aa7f"
+    },
+    {
+      "path": "evidence/roundtrip-fixed-import.json",
+      "sha256": "f51b5751cfa114ea0a3c187ac6e50db1414192d5922efaceccce7ef587bb57f8"
+    },
+    {
+      "path": "evidence/native-export-replay.json",
+      "sha256": "a1e4bd3bc24bafd0a37862e7326f334e8a5699c0264565c58b7fd7d0ce112e03"
+    },
+    {
+      "path": "evidence/sim-corridor-rejected.json",
+      "sha256": "d2de8dc41dd2c51558e2f62a4562ff507359695f758999c18804c972069faf4b"
+    },
+    {
+      "path": "evidence/repair-protected-stopped.json",
+      "sha256": "f6586c407828c35b7274c72189efe327d218239698241fd34822896ebbbdcdc4"
+    },
+    {
+      "path": "evidence/native-ground-stopped.json",
+      "sha256": "991e87bf49ae8b8a3d56d78ff49b3f7c4b7b718e23c61d162d76736085b139c7"
+    },
+    {
+      "path": "evidence/direct-routing-stopped.json",
+      "sha256": "cdcc76c71aafbebc0aca6048b5b20baa1767c173331d53002514be38047b004e"
+    }
+  ],
+  "next": "Reconcile routing-model incompletes with native connectivity/dangling branches, then close six opens; complete return/power/ESD/passive/label review and run two unchanged-rule same-byte JLC checks.",
+  "scope": "Unfinished local routing checkpoint; not manufacturing or functional acceptance."
+}

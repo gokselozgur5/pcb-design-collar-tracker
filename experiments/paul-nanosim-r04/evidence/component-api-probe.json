@@ -1,0 +1,30 @@
+{
+  "source_sha256": "2e9c0666d6561330a5ad5608c65ae7d49485f0731130f3652b0a99ce19004398",
+  "items": [
+    {
+      "ref": "U3",
+      "net": "/VBAT",
+      "layers": [
+        "B.Cu",
+        "F.Cu"
+      ]
+    },
+    {
+      "ref": "U3",
+      "net": "/CHG_FAULT",
+      "layers": [
+        "B.Cu",
+        "F.Cu"
+      ]
+    },
+    {
+      "ref": "U1",
+      "net": "/SPI_SCK",
+      "layers": [
+        "B.Cu",
+        "F.Cu"
+      ]
+    }
+  ],
+  "result": "Existing traversal already reaches both layers. The suspected via-omission bug was not reproduced; do not use it to explain failed routes."
+}

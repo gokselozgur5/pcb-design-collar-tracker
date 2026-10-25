@@ -1,0 +1,7 @@
+{
+  "reason": "The proposed SIM corridor introduced three native clearance violations and did not close a connection. Restore the preceding native-clear stage.",
+  "rejected_sha256": "8c0b5441cbefb4c2314a238d20537c46ea38de1929d8f7df585a23dd282737f8",
+  "restored_source_sha256": "38882bf0111a0190a9a55e756b72be96f91e325de29d909a93c6a57759bbed44",
+  "drc": "sim-corridor-drc.json",
+  "restored_from": "build/corridor-2.kicad_pcb"
+}

@@ -1,0 +1,350 @@
+{
+  "source_sha256": "2e9c0666d6561330a5ad5608c65ae7d49485f0731130f3652b0a99ce19004398",
+  "components": [
+    {
+      "pin": "69",
+      "net": "/CHG_STAT",
+      "copper": [
+        {
+          "kind": "track",
+          "start": [
+            111.7737,
+            107.8513
+          ],
+          "end": [
+            111.75,
+            107.875
+          ],
+          "width": 0.2,
+          "layer": "F.Cu"
+        },
+        {
+          "kind": "track",
+          "start": [
+            111.7737,
+            106.5579
+          ],
+          "end": [
+            111.7737,
+            107.8513
+          ],
+          "width": 0.2,
+          "layer": "F.Cu"
+        },
+        {
+          "kind": "track",
+          "start": [
+            110.7624,
+            105.5466
+          ],
+          "end": [
+            111.7737,
+            106.5579
+          ],
+          "width": 0.2,
+          "layer": "F.Cu"
+        },
+        {
+          "kind": "track",
+          "start": [
+            110.4797,
+            105.5466
+          ],
+          "end": [
+            110.7624,
+            105.5466
+          ],
+          "width": 0.2,
+          "layer": "F.Cu"
+        },
+        {
+          "kind": "via",
+          "pos": [
+            110.4797,
+            105.5466
+          ],
+          "diameter": 0.6,
+          "drill": 0.2
+        },
+        {
+          "kind": "track",
+          "start": [
+            109.49,
+            104.5569
+          ],
+          "end": [
+            110.4797,
+            105.5466
+          ],
+          "width": 0.2,
+          "layer": "B.Cu"
+        },
+        {
+          "kind": "track",
+          "start": [
+            109.49,
+            102.0
+          ],
+          "end": [
+            109.49,
+            104.5569
+          ],
+          "width": 0.2,
+          "layer": "B.Cu"
+        }
+      ],
+      "pads": [
+        {
+          "ref": "U1",
+          "pin": "69"
+        },
+        {
+          "ref": "R8",
+          "pin": "1"
+        }
+      ]
+    },
+    {
+      "pin": "70",
+      "net": "/CHG_FAULT",
+      "copper": [
+        {
+          "kind": "track",
+          "start": [
+            111.25,
+            107.4167
+          ],
+          "end": [
+            111.25,
+            107.875
+          ],
+          "width": 0.2,
+          "layer": "F.Cu"
+        },
+        {
+          "kind": "track",
+          "start": [
+            111.372,
+            106.7967
+          ],
+          "end": [
+            111.372,
+            107.2947
+          ],
+          "width": 0.2,
+          "layer": "F.Cu"
+        },
+        {
+          "kind": "track",
+          "start": [
+            111.372,
+            107.2947
+          ],
+          "end": [
+            111.25,
+            107.4167
+          ],
+          "width": 0.2,
+          "layer": "F.Cu"
+        },
+        {
+          "kind": "track",
+          "start": [
+            110.7236,
+            106.1483
+          ],
+          "end": [
+            111.372,
+            106.7967
+          ],
+          "width": 0.2,
+          "layer": "F.Cu"
+        },
+        {
+          "kind": "track",
+          "start": [
+            110.1506,
+            106.1483
+          ],
+          "end": [
+            110.7236,
+            106.1483
+          ],
+          "width": 0.2,
+          "layer": "F.Cu"
+        },
+        {
+          "kind": "track",
+          "start": [
+            109.6552,
+            105.6529
+          ],
+          "end": [
+            110.1506,
+            106.1483
+          ],
+          "width": 0.2,
+          "layer": "F.Cu"
+        },
+        {
+          "kind": "via",
+          "pos": [
+            109.6552,
+            105.6529
+          ],
+          "diameter": 0.6,
+          "drill": 0.2
+        },
+        {
+          "kind": "track",
+          "start": [
+            108.9183,
+            104.916
+          ],
+          "end": [
+            109.6552,
+            105.6529
+          ],
+          "width": 0.2,
+          "layer": "B.Cu"
+        },
+        {
+          "kind": "track",
+          "start": [
+            108.9183,
+            101.555
+          ],
+          "end": [
+            108.9183,
+            104.916
+          ],
+          "width": 0.2,
+          "layer": "B.Cu"
+        },
+        {
+          "kind": "track",
+          "start": [
+            109.1355,
+            101.3378
+          ],
+          "end": [
+            108.9183,
+            101.555
+          ],
+          "width": 0.2,
+          "layer": "B.Cu"
+        },
+        {
+          "kind": "track",
+          "start": [
+            111.2561,
+            101.3378
+          ],
+          "end": [
+            109.1355,
+            101.3378
+          ],
+          "width": 0.2,
+          "layer": "B.Cu"
+        },
+        {
+          "kind": "track",
+          "start": [
+            111.9183,
+            102.0
+          ],
+          "end": [
+            111.2561,
+            101.3378
+          ],
+          "width": 0.2,
+          "layer": "B.Cu"
+        },
+        {
+          "kind": "track",
+          "start": [
+            112.49,
+            102.0
+          ],
+          "end": [
+            111.9183,
+            102.0
+          ],
+          "width": 0.2,
+          "layer": "B.Cu"
+        }
+      ],
+      "pads": [
+        {
+          "ref": "U1",
+          "pin": "70"
+        },
+        {
+          "ref": "R9",
+          "pin": "1"
+        }
+      ]
+    },
+    {
+      "pin": "61",
+      "net": "/SPI_SCK",
+      "copper": [
+        {
+          "kind": "track",
+          "start": [
+            115.75,
+            107.875
+          ],
+          "end": [
+            115.75,
+            107.3483
+          ],
+          "width": 0.2,
+          "layer": "F.Cu"
+        },
+        {
+          "kind": "track",
+          "start": [
+            115.75,
+            107.3483
+          ],
+          "end": [
+            115.7775,
+            107.3208
+          ],
+          "width": 0.2,
+          "layer": "F.Cu"
+        },
+        {
+          "kind": "track",
+          "start": [
+            115.7775,
+            107.3208
+          ],
+          "end": [
+            115.7775,
+            106.7289
+          ],
+          "width": 0.2,
+          "layer": "F.Cu"
+        },
+        {
+          "kind": "via",
+          "pos": [
+            115.7775,
+            106.7289
+          ],
+          "diameter": 0.6,
+          "drill": 0.2
+        }
+      ],
+      "pads": [
+        {
+          "ref": "U1",
+          "pin": "61"
+        }
+      ]
+    }
+  ],
+  "scope": "Previously connected local escapes. Not yet restored to the new trial or cleared against new routes."
+}

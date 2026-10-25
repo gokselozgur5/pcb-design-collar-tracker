@@ -1,0 +1,17 @@
+{
+  "reason": "Reject the whole-net reroute trial: mirrored SIM access was misread, and remote pin exits were unnecessarily lost. Preserve its initial native source and logs; switch to charger-local edits of the routed r04 baseline. No SES or partial local output accepted.",
+  "processes": [
+    {
+      "pid": 99462,
+      "stopped": true
+    }
+  ],
+  "freerouting_completed_before_stop": {
+    "passes": 12,
+    "final_optimizer_unrouted": 26,
+    "router_violations": 22,
+    "session_bytes": 65074,
+    "session_imported": false
+  },
+  "local_completion_terminated_without_saving": true
+}

@@ -1,0 +1,51 @@
+{
+  "before_sha256": "38882bf0111a0190a9a55e756b72be96f91e325de29d909a93c6a57759bbed44",
+  "source_sha256": "8c0b5441cbefb4c2314a238d20537c46ea38de1929d8f7df585a23dd282737f8",
+  "removed_tracks": [
+    "cf5a2404-26e0-42aa-bc59-61ba5025f0a5",
+    "1e45a971-04ae-402c-8e8a-12e97f102436",
+    "bee906ee-1ff3-4e95-afad-87e31f41e7ff",
+    "40100124-2cde-4a2d-853e-48b8411f7622",
+    "d14ea91c-93ec-4d44-bc32-95f76fab8c2f",
+    "29f2f0a1-a932-494f-98d9-74ad398ed9dd"
+  ],
+  "moved_vias": [
+    {
+      "id": "3c5c1fd9-515d-427e-8d84-3a9880ff9861",
+      "net": "/GND",
+      "from": [
+        105.3,
+        119.7
+      ],
+      "to": [
+        107,
+        119.8
+      ]
+    },
+    {
+      "id": "7ea254bb-765c-411c-8e1b-95efc44c229a",
+      "net": "/GND",
+      "from": [
+        104.8,
+        120.85
+      ],
+      "to": [
+        104.4,
+        121.4
+      ]
+    },
+    {
+      "id": "0c1517cd-fbbd-419b-a5dd-bd635333dd88",
+      "net": "/VSYS",
+      "from": [
+        103.25,
+        119.2
+      ],
+      "to": [
+        103.35,
+        119.85
+      ]
+    }
+  ],
+  "scope": "Free the existing SIM exits; local ground returns remain short. Native validation required."
+}

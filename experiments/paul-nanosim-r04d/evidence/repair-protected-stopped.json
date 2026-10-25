@@ -1,0 +1,11 @@
+{
+  "stopped_pid": 3088,
+  "reason": "Four passes repeated 28 unrouted items / 89 router violations; evaluate native ground and pad geometry instead of the obstacle model.",
+  "ses_imported": false,
+  "log_tail": [
+    "2026-10-25 12:45:15.071 INFO   [EBE9B9\\98AF76] Auto-routing pass #1 on board '569a288f1d8b67d37f3f2b9773f66557' was completed in 68.07 seconds with score 512.76 (28 unrouted and 89 violations), using 33.88 CPU seconds and the job allocated 54.73 GB of memory so far.",
+    "2026-10-25 12:46:04.014 INFO   [EBE9B9\\98AF76] Auto-routing pass #2 on board '8032dcfd0e0201540234fd22f76aad36' was completed in 45.95 seconds with score 512.76 (28 unrouted and 89 violations), using 57.49 CPU seconds and the job allocated 95.03 GB of memory so far.",
+    "2026-10-25 12:46:51.226 INFO   [EBE9B9\\98AF76] Auto-routing pass #3 on board '8032dcfd0e0201540234fd22f76aad36' was completed in 46.28 seconds with score 512.76 (28 unrouted and 89 violations), using 78.79 CPU seconds and the job allocated 134.14 GB of memory so far.",
+    "2026-10-25 12:47:38.913 INFO   [EBE9B9\\98AF76] Auto-routing pass #4 on board '8032dcfd0e0201540234fd22f76aad36' was completed in 45.84 seconds with score 512.76 (28 unrouted and 89 violations), using 99.92 CPU seconds and the job allocated 172.80 GB of memory so far."
+  ]
+}

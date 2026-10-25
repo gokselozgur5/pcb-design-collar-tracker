@@ -1,0 +1,7 @@
+{
+  "original_sha256": "fb7eacb122496e517f91183c98f103f0dbfdc490b5cd501d4327218a9ce84b1c",
+  "replayed_sha256": "ccb1adb5728326f9667cb44165105b2b665f4b05d4a0c75ed742cc5777975ada",
+  "normalization": "Ignore only the first line containing the output filename.",
+  "identical_after_normalization": true,
+  "source_sha256": "38882bf0111a0190a9a55e756b72be96f91e325de29d909a93c6a57759bbed44"
+}

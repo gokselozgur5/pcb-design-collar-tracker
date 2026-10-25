@@ -1,0 +1,12 @@
+{
+  "stopped_pid": 3887,
+  "reason": "The fanout pre-pass reported 49 unrouted items from a source with six native opens. Isolate DSN/SES round-trip connectivity with fanout and routing disabled before further search.",
+  "ses_imported": false,
+  "log_tail": [
+    "2026-10-25 12:48:23.880 INFO   [76A5F1\\9792F2] Fanout stage started on board 'ff0c29c0933ef713e8360c4a870b88d9' with 180 of 277 SMD pins needing fanout (97 already connected, 0 netless).",
+    "2026-10-25 12:48:37.031 INFO   [76A5F1\\9792F2] Fanout pass #1 on board 'b821480435c2f304d223513c9e04594e' completed in 12.10 seconds with 57 SMD pins fanouted, 1 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=100).",
+    "2026-10-25 12:48:48.822 INFO   [76A5F1\\9792F2] Fanout pass #2 on board 'b821480435c2f304d223513c9e04594e' completed in 11.64 seconds with 45 SMD pins fanouted, 2 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=200).",
+    "2026-10-25 12:48:51.983 INFO   [76A5F1\\9792F2] Fanout stage completed: started with 277 total SMD pins, completed in 27.20 seconds, escaped pins: 170/277 (61.4%), using 12.41 total CPU seconds, 21.23 GB total allocated, and 597.4 MB peak heap usage.",
+    "2026-10-25 12:48:52.422 INFO   [76A5F1\\9792F2] Auto-routing stage started on board 'b821480435c2f304d223513c9e04594e' for 49 unrouted items."
+  ]
+}

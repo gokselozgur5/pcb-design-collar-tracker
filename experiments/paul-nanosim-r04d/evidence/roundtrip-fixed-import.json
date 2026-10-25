@@ -1,0 +1,12 @@
+{
+  "before_sha256": "38882bf0111a0190a9a55e756b72be96f91e325de29d909a93c6a57759bbed44",
+  "source_sha256": "ad25ed8d521da24d937b6d18cebcefc64c14128902cd13908fb0265cfe901c62",
+  "session": "build/roundtrip-native.ses",
+  "session_sha256": "1a2f6742c4ef7dd508031f69c1280fab5a3160e45c90ae58e67564b131e59f59",
+  "ground_items_preserved": 189,
+  "rf_segments_restored_exactly": 24,
+  "protected_escape_items_preserved": 28,
+  "narrow_segments_widened_to_020": 0,
+  "inner_tracks": 0,
+  "scope": "Import invariants only; native DRC and remaining opens must be checked."
+}

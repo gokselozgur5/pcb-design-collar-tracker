@@ -1,0 +1,13 @@
+{
+  "source_sha256": "566a82b06209dc240ee8fc700828fc764d48851de7053de13f951260eac72d12",
+  "dsn_sha256": "eabc9e8b1975c384fc0dd79a7067a9f215b26b2c663f78eddfffc18c74c46031",
+  "ground_items_hidden": 189,
+  "ground_and_nc_pads_hidden": 151,
+  "keepouts_added": 398,
+  "routing_layers": [
+    "F.Cu",
+    "B.Cu"
+  ],
+  "preserve_native_locks": true,
+  "scope": "Router copy only; native manufacturing geometry unchanged."
+}
