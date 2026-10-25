@@ -1,0 +1,47 @@
+{
+  "result": "HOLD",
+  "electrical_release": false,
+  "charge_window_implemented": false,
+  "pack_selected": false,
+  "ntc_selected": false,
+  "thresholds": {
+    "hot": {
+      "nominal_beta_C": 59.51163996970757,
+      "beta_sensitivity_range_C": [
+        54.92949588250946,
+        64.51889332760743
+      ]
+    },
+    "cold": {
+      "nominal_beta_C": 1.7357094911499757,
+      "beta_sensitivity_range_C": [
+        -0.6544182151629343,
+        4.13742650659492
+      ]
+    }
+  },
+  "tabulated_50C": {
+    "resistance_ohm": 4147,
+    "nominal_ts_V": 0.157586,
+    "sensitivity_ts_V": [
+      0.1485221382985725,
+      0.16692577682010593
+    ],
+    "charging_permitted_at_all_reviewed_corners": true,
+    "exceeds_candidate_charge_max_C": true
+  },
+  "pack_current": {
+    "required_A": 0.6,
+    "continuous_A": 0.35,
+    "continuous_pass": false,
+    "peak_A": 1,
+    "peak_duration_s": 3,
+    "pulse_duty_cycle_qualified": false
+  },
+  "source_conclusion": "Direct 103JT-025 cannot enforce the reviewed pack 0\u201345 C charging window. U3 CE is grounded. No firmware-only fix exists in this saved topology.",
+  "scope": "Datasheet/topology analysis and constant-beta sensitivity, not a powered result, guaranteed NTC curve or safety certification.",
+  "pcb_sha256": "bea6c52a7f045b5fb21ac9714f3db0c70207f150aab3e9587b891f08e4e2b4d3",
+  "inputs_sha256": "b112194fc39823d78c302ee0234421162590a0ee116490a5f03fb6658cc1b413",
+  "checker_sha256": "c2dac9941c20893a27f62221c011870481240cf25bd8086e38037286c17b8f5b",
+  "native_netlist_sha256": "d21a3a3788244c486fc5a066a547eec4bd4b0136f6a285d0d88f0dca113fb75f"
+}

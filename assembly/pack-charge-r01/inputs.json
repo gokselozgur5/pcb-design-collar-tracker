@@ -1,0 +1,168 @@
+{
+  "revision": "pack-charge-r01",
+  "date": "2026-10-25",
+  "pcb": "experiments/power-r05k-selected-parts/hardware/collar-tracker.kicad_pcb",
+  "pcb_sha256": "bea6c52a7f045b5fb21ac9714f3db0c70207f150aab3e9587b891f08e4e2b4d3",
+  "schematic_sha256": "fcb47f41d004b507394d275c48a8d412292cb65f8ed52438a0113ba8d1647f60",
+  "native_netlist": "experiments/power-r05k-selected-parts/evidence/native-netlist.json",
+  "charger": {
+    "mpn": "BQ25185DLHR",
+    "reference": "U3",
+    "ts_pin": "6",
+    "enable_pin": "4",
+    "bias_uA": [
+      36.5,
+      38,
+      39.5
+    ],
+    "hot_entry_V": [
+      0.105,
+      0.115,
+      0.125
+    ],
+    "cold_entry_V": [
+      0.9575,
+      1.0075,
+      1.0575
+    ]
+  },
+  "ntc_candidate": {
+    "mpn": "103JT-025",
+    "manufacturer": "SEMITEC",
+    "R25_ohm": 10000,
+    "R25_tolerance": 0.01,
+    "B25_85_K": 3435,
+    "B_tolerance": 0.01,
+    "rt_table_ohm": [
+      [
+        0,
+        27700
+      ],
+      [
+        10,
+        18070
+      ],
+      [
+        20,
+        12110
+      ],
+      [
+        25,
+        10000
+      ],
+      [
+        30,
+        8301
+      ],
+      [
+        40,
+        5811
+      ],
+      [
+        50,
+        4147
+      ],
+      [
+        60,
+        3011
+      ],
+      [
+        70,
+        2224
+      ],
+      [
+        80,
+        1668
+      ],
+      [
+        85,
+        1451
+      ]
+    ],
+    "thickness_max_mm": 0.5,
+    "body_width_max_mm": 4.1,
+    "body_length_max_mm": 26,
+    "lead_length_mm": [
+      4,
+      6
+    ],
+    "minimum_bend_distance_from_sensor_mm": 7,
+    "selected": false
+  },
+  "pack_candidate": {
+    "manufacturer": "EEMB",
+    "mpn": "LP503030-PCM-LD",
+    "document": "ZJQM-RD-SPC-A04005 revision 0.0, 2018-07-30",
+    "typical_capacity_mAh": 350,
+    "minimum_capacity_mAh": 300,
+    "bare_cell_discharge_max_A": 0.7,
+    "pcm_continuous_max_A": 0.35,
+    "pcm_peak_max_A": 1,
+    "pcm_peak_duration_s": 3,
+    "charge_temperature_C": [
+      0,
+      45
+    ],
+    "pack_max_mm": [
+      32,
+      30.5,
+      5.3
+    ],
+    "ntc_included": false,
+    "selected": false,
+    "note": "Manufacturer-authored PDF hosted by a distributor. New procurement must match the full controlled specification; bare-cell current is not pack current. No pulse duty-cycle or current-stock acceptance inferred."
+  },
+  "engineering_supply_screen_A": 0.6,
+  "sources": [
+    {
+      "id": "charger",
+      "url": "https://www.ti.com/lit/ds/symlink/bq25185.pdf",
+      "revision": "SLUSF65B, August 2026",
+      "pages": [
+        4,
+        8,
+        18
+      ],
+      "retrieved": "2026-10-25",
+      "local_reference": "references/bq25185.pdf",
+      "sha256": "c73ed7d63e6532bb05e26df30edd37c6ac2de310c1222a84a77625e15e133684"
+    },
+    {
+      "id": "ntc",
+      "url": "https://www.semitec-global.com/uploads/2022/01/P9-JT-Thermistor.pdf",
+      "revision": "JT thermistor catalogue page 9",
+      "pages": [
+        1
+      ],
+      "retrieved": "2026-10-25",
+      "local_reference": ".runtime/pack-antenna-r07/semitec-jt.pdf",
+      "sha256": "b430302b8002752e077803c594dac29ce98e86361444394faba51096d723b266"
+    },
+    {
+      "id": "pack",
+      "url": "https://macrogroup.ru/upload/iblock/806/l9ka6axlc8lwl5b0dbf2xov43s2g5l33/LP503030.pdf",
+      "revision": "ZJQM-RD-SPC-A04005 revision 0.0, 2018-07-30",
+      "pages": [
+        3,
+        7,
+        8
+      ],
+      "retrieved": "2026-10-25",
+      "local_reference": ".runtime/pack-antenna-r07/eemb-lp503030.pdf",
+      "sha256": "fb61a5d2e2c1c15d95d20a75bc3b4cdc1870c16e971840f380b8a7f897b8d7f5"
+    },
+    {
+      "id": "gnss",
+      "url": "https://synzen.com.tw/uploads/DATASHEETS/zeta_szk-c-0g04---datasheet---gnss_rev-0-4.pdf",
+      "revision": "ZETA SZK-C-0G04 revision 0-4",
+      "pages": [
+        1,
+        3,
+        7
+      ],
+      "retrieved": "2026-10-25",
+      "local_reference": ".runtime/pack-antenna-r07/synzen-zeta.pdf",
+      "sha256": "9cccfb8ea1c2b8d576006c2ef94f307841c3def64071c26418de82ac55049f06"
+    }
+  ]
+}
