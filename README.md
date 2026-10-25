@@ -8,8 +8,10 @@ comfort across dog sizes and coat types still need physical validation.
 and get the new revision through real JLC DFM with zero Danger / zero Warning.
 eSIM is deferred.
 
-The new board has two inner GND planes and local ground connections. Routing is
-unfinished. **The 0.3.4 all-green result does not apply to this revision.**
+The current 40 × 32 mm board has two inner GND planes, complete native routing
+and two actual JLC PCB DFM runs at **0 Danger / 0 Warning**. Two return-via screen
+gaps and the remaining layout review are still open; SMT and functional testing
+are not qualified.
 See [STATUS](docs/STATUS.md) for the current source and exact next step.
 
 ## Continue in a new session
@@ -74,8 +76,8 @@ a finished, working PCBA.**
 ## Source revisions
 
 - Validated PCB DFM baseline: `experiments/35x28-clearance-r034/hardware/`.
-- Current 35 × 28 mm checkpoint: `experiments/paul-nanosim-r04e/hardware/`.
-- Active 40 × 32 mm nano-SIM work: `experiments/paul-nanosim-r04f-40x32/`.
+- Preserved 35 × 28 mm checkpoint: `experiments/paul-nanosim-r04e/hardware/`.
+- Active 40 × 32 mm nano-SIM work: `experiments/paul-nanosim-r04g-returns-40x32/`.
 - Earlier r04 routing and rejected r04c experiment are preserved separately.
 - Legacy 30 × 22 mm / 0.2.1 source: `hardware/`, preserved with its original ZIPs.
 
@@ -85,8 +87,8 @@ not describe either newer board. Earlier findings are in
 [PCB DFM notes](docs/pcb-dfm.md).
 
 The first mechanical study uses a 30 × 22 mm PCB and has not been revalidated for
-35 × 28 mm. Its 250 mAh example targets a 38 × 30 × 14 mm enclosure, or 14.6 mm
-including an assumed contact protrusion. Antennas, the heart-rate head and much of
+either 35 × 28 mm or 40 × 32 mm. Its 250 mAh example targets a 38 × 30 × 14 mm
+enclosure, or 14.6 mm including an assumed contact protrusion. Antennas, the heart-rate head and much of
 the electronics are reserved volumes, not fitted production components.
 
 Battery capacity, charge interval, position-update rate, enclosure and antennas
@@ -98,7 +100,7 @@ include heart-rate hardware.
 | Path | Purpose |
 |---|---|
 | `experiments/35x28-clearance-r034/hardware/` | Native source that passed local and JLC PCB DFM checks |
-| `experiments/paul-nanosim-r04f-40x32/` | Active nano-SIM work; native DRC clean, layout review and new JLC checks pending |
+| `experiments/paul-nanosim-r04g-returns-40x32/` | Active nano-SIM source; native checks and two JLC PCB DFM runs pass, two return gaps remain |
 | `scripts/finalize_clearance034.py` | Binds source, local checks, JLC reports and the exact delivered ZIP |
 | `hardware/` | Legacy KiCad project, PCB, five-section A2 schematic and draft BOM |
 | `scripts/build_pcb.py` | Builds the legacy PCB from the real XML netlist |

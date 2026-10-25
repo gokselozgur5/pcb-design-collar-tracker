@@ -103,3 +103,30 @@ Their evidence is dated; do not transfer an older pass to a newer source file.
 - Next: Resolve nine return-screen gaps, review power/ESD/passive balance, add
   useful English labels and run two new unchanged-rule same-byte JLC analyses.
   No new supplier acceptance, order, powered test or production approval yet.
+
+## 2026-10-25 — Native-clean r04g, English labels and two actual JLC passes
+
+- Event: Continued the Paul/nano-SIM revision and verified the English-only
+  repository requirement against the live personal repository.
+- Decision: Preserve 0.3.4 and r04f; keep successful local repairs in r04g and
+  retain the incomplete coupled-return alternative separately. Supplier success
+  applies to its exact PCB/ZIP, not to the remaining review or production.
+- Result: r04g has 81 locally connected GND pads, 86 ground vias in both continuous
+  inner planes, no inner tracks and 24 unchanged RF segments. Native DRC/ERC,
+  connectivity and parity are clean. Return-screen gaps fall from nine to two.
+  Nine English labels meet native silk minima; source-bound placement rejects
+  stale plans. Actual top/bottom views were inspected.
+- DFM: The first r04f analysis was 0 Danger / 2 Warning. Moving the D1 GND via
+  0.02 mm and the nearby CHG_STAT run 0.15 mm closes the two measured gaps without
+  changing lands, apertures or rules. The identical r04g ZIP passed twice at 0/0,
+  all 29 rows complete: records 637221644721938434 and 637222172922957825. Both
+  raw measurements, UI views, complete PDFs and hashes were checked. SMT was off.
+- Boundary: A coupled SIM_IO/COEX0 move clears the distance screen but leaves one
+  HEALTH_INT open and two dangling warnings; it is preserved as an incomplete
+  experiment. Wider routing also exposed moved/duplicated signal vias and a
+  blocked HEALTH_RESET exit; those alternatives were not accepted. A help-only
+  Freerouting invocation migrated its default local settings version before the
+  workspace profile was specified; subsequent invocations use explicit paths.
+- Next: Resolve SIM_IO and COEX0 return gaps, finish ESD/passive/power review,
+  and repeat native plus two same-byte JLC checks after further layout changes.
+  No order, payment, supplier message or physical acceptance occurred.

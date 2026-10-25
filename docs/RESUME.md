@@ -40,28 +40,30 @@ browser normally if needed; no profile or credentials are distributed in Git.
 
 ## Working commands
 
-Continue from `experiments/paul-nanosim-r04f-40x32/hardware/collar-tracker.kicad_pcb`.
+Continue from `experiments/paul-nanosim-r04g-returns-40x32/hardware/collar-tracker.kicad_pcb`.
 Read STATUS and current hash-bound evidence first. r04e is the preserved 35 × 28 mm
-checkpoint; r04f expands the outline to 40 × 32 mm after measured routing failures.
+checkpoint; r04f expanded the outline after measured routing failures. r04g adds
+the current return repairs, DFM corrections and English labels.
 
 The current native result is zero opens, violations, warnings or parity findings.
-The ground-exit change closed the last SIM supply route. Fifteen return vias are
-applied; nine transitions still exceed the inherited 2 mm screen. STATUS and the
-source-bound inventory identify them. No router remains running at this checkpoint.
+Two fresh JLC PCB runs also pass at 0/0 on identical ZIP bytes and unchanged rules.
+SIM_IO and COEX0 still exceed the inherited 2 mm return screen. STATUS identifies
+their exact coordinates and the separate one-open rework experiment. No router
+remains running at this checkpoint.
 
 Export/import must preserve native grounds, RF and explicit pin escapes. Generate
 fresh geometry and plane inventory, then normalize exact copper contacts:
 
 ```sh
 LC_ALL=C scripts/kicad-python scripts/dfm_geometry.py \
-  experiments/paul-nanosim-r04f-40x32/hardware/collar-tracker.kicad_pcb \
-  experiments/paul-nanosim-r04f-40x32/evidence/route-geometry.json
-LC_ALL=C scripts/kicad-python scripts/audit_paul_layout.py experiments/paul-nanosim-r04f-40x32
+  experiments/paul-nanosim-r04g-returns-40x32/hardware/collar-tracker.kicad_pcb \
+  experiments/paul-nanosim-r04g-returns-40x32/evidence/route-geometry.json
+LC_ALL=C scripts/kicad-python scripts/audit_paul_layout.py experiments/paul-nanosim-r04g-returns-40x32
 LC_ALL=C scripts/kicad-python scripts/export_paul_route.py \
-  experiments/paul-nanosim-r04f-40x32 NEW_STEM --native-ground \
-  --protect experiments/paul-nanosim-r04f-40x32/evidence/protected-fanout.json
+  experiments/paul-nanosim-r04g-returns-40x32 NEW_STEM --native-ground \
+  --protect experiments/paul-nanosim-r04g-returns-40x32/evidence/protected-fanout.json
 .venv-dfm/bin/python scripts/normalize_router_contacts.py \
-  experiments/paul-nanosim-r04f-40x32 --input-stem NEW_STEM --output-stem NEW_CONTACTS
+  experiments/paul-nanosim-r04g-returns-40x32 --input-stem NEW_STEM --output-stem NEW_CONTACTS
 ```
 
 Use new stems; preserve earlier evidence. The normalizer refuses connectors that
@@ -127,17 +129,27 @@ After routing is resolved:
    documented estimate limits; neither establishes physical performance.
 3. Use `plan_return_vias.py TRIAL` with geometry Python and
    `apply_return_vias.py TRIAL` with KiCad Python. Refill, run native DRC and
-   verify actual GND via containment on both inner fills. The first plan added 15 vias as explicit WIP
-   using `--allow-partial`; nine gaps remain recorded. Never clear failed IDs to
-   make a plan appear complete. Native DRC stayed clean after that application.
-4. `label_paul_trial.py TRIAL` seeds English labels once. Export `geometry.json`,
+   verify actual GND via containment on both inner fills. The first r04f plan added 15 vias as explicit WIP
+   using `--allow-partial`; r04g adds five more. Two gaps remain recorded. Never
+   clear failed IDs to make a plan appear complete.
+4. The current source already has nine English labels. For a new unlabeled trial,
+   `label_paul_trial.py TRIAL` seeds labels using native silk minima. Export `geometry.json`,
    then use `size_trial_labels.py plan/apply TRIAL`. Inspect actual glyphs and
    interface association; automatic clearance does not prove a label is useful.
+   The planner uses actual rectangular outline bounds and rejects stale source hashes.
 5. Run all-severity DRC/parity/all-track checks and schematic ERC. Preserve the
    recorded rule profile/default ignored checks. Old exporters are specific to
    53-footprint, earlier-layer boards; do not relabel their output as this revision.
 
-Once a new ZIP passes local checks:
+Export a new, uniquely named package after all-severity native checks:
+
+```sh
+python3 scripts/export_paul_dfm.py TRIAL NEW_PACKAGE_NAME
+```
+
+The exporter records native-input and output hashes, runs DRC/ERC, and packages
+only manufacturing files. It does not establish remaining layout acceptance.
+Never overwrite a tested ZIP. Once a new ZIP passes local checks:
 
 ```sh
 node scripts/jlc_dfm_trial.cjs /absolute/path/to/new-dfm.zip r04-check1

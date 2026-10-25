@@ -294,3 +294,14 @@ not a growing diary inside this guide.
 - Grow the board in a separate experiment when measured routing warrants it.
   Compare resulting power paths and native checks; more area alone does not
   establish better signal routing, enclosure fit or manufacturing acceptance.
+- Read the units of individual supplier fields. The JLC measurements used here
+  are in mils while board-size metadata uses inches; a shared JSON response does
+  not imply one common unit. Keep raw coordinates and the explicit transform.
+- Derive label bounds from the actual outline and text size/stroke from native
+  rules. Check real glyphs against mask/drill geometry, bind the plan to a source
+  hash, and inspect connector association after applying it.
+- Give Freerouting an explicit workspace `--user_data_path` even for `-h` or
+  version/help probes. Startup can migrate and save the default user settings.
+- Reserve fine-pitch pin exits during wider repair routing. Inspect imported
+  via coordinates and drilled holes; a nominally protected via can be retained
+  beside a shifted router replacement, leaving two near-coincident holes.
