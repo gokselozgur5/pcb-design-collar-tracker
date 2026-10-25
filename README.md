@@ -9,6 +9,10 @@ comfort across dog sizes and coat types still need physical validation.
 40 × 32 mm with four copper layers, two continuous inner GND planes, no remaining
 return-via screen gaps and a clear projected nano-SIM entry lane. eSIM is deferred.
 
+**Electrical release is on hold.** The [source-verified power review](evidence/power-review-r04i/README.md)
+identifies open undervoltage, GPIO sequencing and battery-ADC off-state paths.
+PCB DFM does not test those behaviors. The next circuit revision is still required.
+
 The [swimming enclosure prototype](mechanical/swim-r02-fit/README.md) adds a sealed lid,
 charging-contact seals and collar mount. Its r02 revision checks component heights
 at actual placements and clears the carrier/contact hardware. IP68 is the design target, not a test
@@ -53,6 +57,7 @@ The local directory remains `collar-tracker`.
 ## Product requirements
 
 - First market: Türkiye. Operator not selected.
+  See the [connectivity evidence and prototype check](docs/turkiye-connectivity.md).
 - Small PCB, with features added in software where practical. No on-device AI.
 - Shared hardware for small and large dogs.
 - Heart-rate sensing is requested; the measurement method is not validated.

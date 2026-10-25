@@ -46,14 +46,23 @@ The final r04i PCB and its ZIP passed native checks and two actual JLC analyses;
 read STATUS and `evidence/routing-checkpoint.json` for the exact identities.
 Do not overwrite the tested source/package. Start a new revision for PCB changes.
 
-The active unfinished work is the protected NTC pack and LTE/GNSS antenna
-selection, followed by their actual cable/clearance fit, dock/harness and positive
-PCB retention. Read `mechanical/swim-r02-fit/README.md` and its selection review.
+The immediate unfinished work is the source-verified power review in
+`evidence/power-review-r04i/README.md`: undervoltage/restart control, GPIO supply
+sequencing and the battery-ADC off-state path. Implement the successor schematic
+in a separate revision; preserve the tested r04i source and release bytes.
+`python3 scripts/audit_power_architecture.py` deliberately returns exit code 2
+while these findings remain open. It does not perform a powered test.
+
+Protected NTC pack and LTE/GNSS antenna selection proceeds alongside that circuit,
+followed by actual cable/clearance fit, dock/harness and positive PCB retention.
+Read `mechanical/swim-r02-fit/README.md` and its selection review, plus
+`docs/turkiye-connectivity.md` before assuming a modem/plan is field-qualified.
 The 49 component-height entries and four pad/harness areas have passed their
 current dimensional screen, not factory or physical qualification.
 
 ```sh
 .venv-dfm/bin/python -m unittest discover -s tests -p test_populated_fit.py -v
+python3 -m unittest discover -s tests -p test_power_architecture.py -v
 python3 scripts/verify_handoff.py
 ```
 

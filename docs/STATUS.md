@@ -1,6 +1,7 @@
 # Current state — 2026-10-25
 
 **r04i PCB: native-clean and two actual JLC runs at 0 Danger / 0 Warning.**
+**Electrical release: HOLD; three source-verified power-domain findings remain open.**
 **Swimming enclosure: engineering prototype under review; IP68 is not qualified.**
 
 Repository: [gokselozgur5/pcb-design-collar-tracker](https://github.com/gokselozgur5/pcb-design-collar-tracker).
@@ -43,6 +44,26 @@ The helper now detects that condition instead of returning apparent success.
 All final evidence is indexed in the trial's `evidence/routing-checkpoint.json`.
 Preserve the tested bytes. Any later PCB change needs a new package and fresh checks.
 
+## Electrical and connectivity review
+
+The [power review](../evidence/power-review-r04i/README.md) compares 148 unique
+power-related pins between a fresh native schematic export and the saved PCB.
+It reproduces three open findings: no guaranteed modem undervoltage margin,
+uncontrolled GPIO supply sequencing, and a battery-divider feed path when GPIO
+power is absent. The calculations are illustrative; no powered failure or repair
+is claimed. Nominal charger settings are 4.2 V / 500 mA input / 100 mA charging.
+
+`python3 scripts/audit_power_architecture.py` reproduces the evidence and returns
+exit code 2 for electrical HOLD. Standard handoff verification checks this report
+as well as the unchanged PCB/mechanical artifacts; its evidence PASS is not
+electrical acceptance. The tested Gerber and mechanical bundle remain unchanged.
+
+The [Türkiye connectivity review](turkiye-connectivity.md) identifies manufacturer
+Vodafone certification coverage and a firsthand local-SIM connection report.
+Neither establishes this collar's activated service or moving-device performance.
+Keep nRF9151 as the prototype candidate; verify a local subscription and both
+radio modes on a development kit before production antenna/pack release.
+
 ## Active mechanical work
 
 The user selected swimming / an IP68 design target. The provisional condition is
@@ -82,8 +103,10 @@ still represent reservations. Dock electronics, harness routing/strain relief,
 positive PCB retention, material/seal grades, actual lid fasteners and torque remain
 open. No physical ingress, powered or RF result exists.
 
-Next: select the actual protected NTC pack and LTE/GNSS antennas, fit their
-feeds/cables and clearances, then finish the dock/harness and retention details.
+Next: resolve the power review in a separate schematic revision, including
+undervoltage/restart behavior, GPIO sequencing and off-state feed paths, before
+routing a successor. Select the protected NTC pack and LTE/GNSS antennas alongside
+that circuit; fit their feeds/cables, then finish dock/harness and retention.
 Before tooling or full PCBA release, complete actual
 assembly/RF/power review and whole-assembly dust/immersion testing. Türkiye operator
 service and moving-animal coverage remain open. Factory assembly/programming/test

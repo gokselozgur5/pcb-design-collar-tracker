@@ -227,3 +227,18 @@ Their evidence is dated; do not transfer an older pass to a newer source file.
 - Next: Implement supervised undervoltage/restart and the GPIO/ADC off-state
   strategy in a separate schematic revision before routing a successor. Review
   brief-brownout timing as well as nominal startup.
+
+## 2026-10-25 — Bound Türkiye connectivity claims and update continuation
+
+- Event: Checked current operator/manufacturer pages and an nRF9151-DK support
+  case while preserving the user's Türkiye-first and physical nano-SIM decisions.
+- Decision: Keep the modem as a prototype candidate. Manufacturer Vodafone
+  certification listings, an activated Turkcell NB-IoT offer and a firsthand
+  local-SIM success report do not establish our subscription or mobility result.
+- Result: Added a source-linked evidence table and a discriminating development-kit
+  check. Updated the English entry chain to prioritize electrical completion
+  before successor routing and final pack/antenna assembly. Review PDF, both
+  mechanical bundles, native r04i and the two actual JLC records stay unchanged.
+- Next: Implement the power successor and validate the intended local SIM/service,
+  then continue pack/antenna/dock/harness/retention and physical qualification.
+  No operator message, account change, purchase or powered test occurred.
