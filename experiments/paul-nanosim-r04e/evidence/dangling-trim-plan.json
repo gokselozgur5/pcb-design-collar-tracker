@@ -1,0 +1,65 @@
+{
+  "source_sha256": "533bb4e7eb821d3bf8d39eef12b8a95870b252ef288b6f94f025bd6d95cb7d19",
+  "changes": [
+    {
+      "id": "41e4c848-14c2-4c85-b0e1-a1e5c4feb3bd",
+      "net": "/ISET",
+      "action": "trim",
+      "start": [
+        107.6,
+        123
+      ],
+      "end": [
+        107.65,
+        123.05
+      ],
+      "contacts": [
+        "381acde6-3864-471c-875b-6576dd630d4e",
+        "77b82dc8-c2a9-4313-b854-026f9ed522f1"
+      ],
+      "length_before_mm": 0.058309518948451156,
+      "length_after_mm": 0.058309518948451156
+    },
+    {
+      "id": "77b82dc8-c2a9-4313-b854-026f9ed522f1",
+      "net": "/ISET",
+      "action": "trim",
+      "start": [
+        106.1,
+        123.0
+      ],
+      "end": [
+        107.6,
+        123
+      ],
+      "contacts": [
+        "381acde6-3864-471c-875b-6576dd630d4e",
+        "41e4c848-14c2-4c85-b0e1-a1e5c4feb3bd",
+        "34ca8d55-722a-4ea9-b7b7-0c8f77dfbc32"
+      ],
+      "length_before_mm": 1.9000000000000057,
+      "length_after_mm": 1.5500000000000114
+    },
+    {
+      "id": "22aae4b7-2336-4e4f-b738-68595bee4af7",
+      "net": "/VBAT",
+      "action": "remove",
+      "contacts": [
+        "7d39f88c-5104-432d-94d5-6f2b8924a721"
+      ]
+    },
+    {
+      "id": "90a12ccc-5a46-49b7-8f86-508f4799b2d2",
+      "net": "/VBAT",
+      "action": "remove",
+      "reason": "Dangling branch with same-point contacts; verify native connectivity after removal."
+    },
+    {
+      "id": "9e898d54-9f2e-4bb5-be3a-446cdc2e727f",
+      "net": "/BAT_NTC",
+      "action": "remove",
+      "reason": "Dangling branch with same-point contacts; verify native connectivity after removal."
+    }
+  ],
+  "scope": "Candidate removal/trim of dangling copper on fully connected nets. Native DRC is the acceptance gate."
+}

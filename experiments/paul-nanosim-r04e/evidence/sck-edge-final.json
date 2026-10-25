@@ -1,0 +1,25 @@
+{
+  "source_sha256": "9b68c129e3d88ba64af27d06e360d4b670a80521d855383782a54c3e0cf76105",
+  "maximum_x_mm": 134.499,
+  "trace_width_mm": 0.2,
+  "minimum_edge_clearance_mm": 0.401,
+  "changed_corner": [
+    [
+      134.499,
+      107.8706
+    ],
+    [
+      134.499,
+      106.8
+    ],
+    [
+      134.0672,
+      106.3682
+    ],
+    [
+      134.0672,
+      105.1
+    ]
+  ],
+  "scope": "Keep 0.4 mm native copper-edge clearance while routing outside the existing I2C bend. Pending native DRC."
+}

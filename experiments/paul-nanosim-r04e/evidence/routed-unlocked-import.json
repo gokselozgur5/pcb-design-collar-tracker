@@ -1,0 +1,13 @@
+{
+  "before_sha256": "1628a83a707b4b8e541ee8ce598531841419c5f31f4a7d4e4456ea6fc5c65ff8",
+  "source_sha256": "7b681d46b83153106367e2aaff55a7ca7c73637e4616840c38c0a9856e9f90f4",
+  "session": "build/routed-unlocked.ses",
+  "session_sha256": "ce5db7609738b097d51b69589775de6369262fe3e72dcbedf0630ab2571ab40f",
+  "ground_items_preserved": 190,
+  "rf_segments_restored_exactly": 24,
+  "protected_escape_items_preserved": 27,
+  "preserve_native_locks": false,
+  "narrow_segments_widened_to_020": 4,
+  "inner_tracks": 0,
+  "scope": "Import invariants only; native DRC and remaining opens must be checked."
+}

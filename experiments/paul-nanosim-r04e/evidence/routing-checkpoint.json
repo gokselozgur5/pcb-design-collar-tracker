@@ -1,0 +1,52 @@
+{
+  "source_sha256": "1628a83a707b4b8e541ee8ce598531841419c5f31f4a7d4e4456ea6fc5c65ff8",
+  "native_drc": "unused-prune-4-drc.json",
+  "native_opens": 5,
+  "native_violations": {
+    "track_dangling": 4,
+    "via_dangling": 4
+  },
+  "parity": 0,
+  "current_source": "hardware/collar-tracker.kicad_pcb",
+  "backup": "build/five-open-checkpoint.kicad_pcb",
+  "ground_pads": 81,
+  "ground_vias": 66,
+  "rf_segments": 24,
+  "return_screen_outside_2mm": 29,
+  "return_screen_total": 77,
+  "scope": "35 x 28 mm WIP: five opens, eight dangling warnings, no other native violations. No new JLC acceptance.",
+  "evidence": [
+    {
+      "path": "evidence/unused-prune-4-drc.json",
+      "sha256": "56d8a8622e78029ff2d1ad716bc9b592b141273967049c595389b4e486db7f0f"
+    },
+    {
+      "path": "evidence/unused-prune-history.json",
+      "sha256": "9418a3d6e94f8b82d0d7cddf4c288fab7008068033998b4832ebb44938eeacb4"
+    },
+    {
+      "path": "evidence/layout-inventory.json",
+      "sha256": "f2ac24f351a9a601ced3ddec14c6ad65a0ce413d69eb4985f4936bc971c8363c"
+    },
+    {
+      "path": "evidence/route-geometry.json",
+      "sha256": "c24404bc4749a3400d687671a420d71bc96bdb1ff08ca9925dbb3bc25463fa86"
+    },
+    {
+      "path": "evidence/power-path-review.json",
+      "sha256": "1a53a83d3c92b38daeb815b09a06273e33b80edc162a809aec278b505107c587"
+    },
+    {
+      "path": "evidence/contact-components.json",
+      "sha256": "1db6714582e08865816e30060335d63d330d376bfa5c222c8d2fb713d4110398"
+    },
+    {
+      "path": "evidence/route-lock-regression.json",
+      "sha256": "b63986bed33372b652363f56e795ec59e1605185697868698c2471159b1979f7"
+    },
+    {
+      "path": "evidence/route-unlocked-result.json",
+      "sha256": "26968f23fb337653055703b7d8c69fc0f46e7b81f02719c447e2a9836ed6e330"
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "input": "experiments/paul-nanosim-r04e/build/clean-contacts.dsn",
+  "totals": {
+    "SYSTEM_FIXED": 241,
+    "USER_FIXED": 930
+  },
+  "nets": {
+    "Net #1 (/GND)": {
+      "SYSTEM_FIXED": 188
+    },
+    "Net #10 (/GNSS_LNA_EN)": {
+      "USER_FIXED": 10
+    },
+    "Net #100 (/BAT_NTC)": {
+      "SYSTEM_FIXED": 2,
+      "USER_FIXED": 38
+    },
+    "Net #101 (/DEBUG_RESET)": {
+      "USER_FIXED": 3
+    },
+    "Net #11 (/VIO_1V8)": {
+      "USER_FIXED": 98
+    },
+    "Net #12 (/GNSS_FEM_IN)": {
+      "SYSTEM_FIXED": 3
+    },
+    "Net #13 (/FILT_OUT)": {
+      "SYSTEM_FIXED": 3
+    },
+    "Net #14 (/AMP_IN)": {
+      "SYSTEM_FIXED": 3
+    },
+    "Net #15 (/I2C_SCL)": {
+      "USER_FIXED": 94
+    },
+    "Net #17 (/I2C_SDA)": {
+      "USER_FIXED": 31
+    },
+    "Net #2 (/ILIM_VSET)": {
+      "SYSTEM_FIXED": 3,
+      "USER_FIXED": 23
+    },
+    "Net #20 (/ACC_INT)": {
+      "USER_FIXED": 17
+    },
+    "Net #21 (/LTE_ANT)": {
+      "SYSTEM_FIXED": 5
+    },
+    "Net #23 (/SWDCLK)": {
+      "USER_FIXED": 18
+    },
+    "Net #24 (/SWDIO)": {
+      "USER_FIXED": 12
+    },
+    "Net #28 (/NRF_RESET)": {
+      "USER_FIXED": 10
+    },
+    "Net #29 (/NRF_ENABLE)": {
+      "USER_FIXED": 10
+    },
+    "Net #3 (/VSYS)": {
+      "SYSTEM_FIXED": 3,
+      "USER_FIXED": 66
+    },
+    "Net #32 (/SIM_RST)": {
+      "USER_FIXED": 25
+    },
+    "Net #33 (/SIM_IO)": {
+      "USER_FIXED": 18
+    },
+    "Net #34 (/SIM_CLK)": {
+      "USER_FIXED": 30
+    },
+    "Net #35 (/SIM_1V8)": {
+      "USER_FIXED": 45
+    },
+    "Net #4 (/DEC0)": {
+      "USER_FIXED": 5
+    },
+    "Net #5 (/GNSS_FEM_OUT)": {
+      "SYSTEM_FIXED": 2
+    },
+    "Net #53 (/COEX0)": {
+      "USER_FIXED": 10
+    },
+    "Net #56 (/HEALTH_INT)": {
+      "USER_FIXED": 13
+    },
+    "Net #57 (/SPI_SCK)": {
+      "USER_FIXED": 54
+    },
+    "Net #58 (/SPI_MOSI)": {
+      "USER_FIXED": 19
+    },
+    "Net #59 (/SPI_MISO)": {
+      "USER_FIXED": 19
+    },
+    "Net #6 (/GPS_RF)": {
+      "SYSTEM_FIXED": 3
+    },
+    "Net #60 (/HEALTH_CS)": {
+      "USER_FIXED": 22
+    },
+    "Net #61 (/HEALTH_RESET)": {
+      "USER_FIXED": 24
+    },
+    "Net #62 (/HEALTH_EN)": {
+      "USER_FIXED": 23
+    },
+    "Net #63 (/CHG_STAT)": {
+      "SYSTEM_FIXED": 3,
+      "USER_FIXED": 8
+    },
+    "Net #64 (/CHG_FAULT)": {
+      "SYSTEM_FIXED": 3,
+      "USER_FIXED": 13
+    },
+    "Net #66 (/BAT_ADC)": {
+      "USER_FIXED": 10
+    },
+    "Net #7 (/GNSS_ANT)": {
+      "SYSTEM_FIXED": 2
+    },
+    "Net #8 (/VDD_NRF)": {
+      "USER_FIXED": 52
+    },
+    "Net #9 (/LTE_RF)": {
+      "SYSTEM_FIXED": 3
+    },
+    "Net #97 (/ISET)": {
+      "SYSTEM_FIXED": 1,
+      "USER_FIXED": 32
+    },
+    "Net #98 (/VBAT)": {
+      "SYSTEM_FIXED": 9,
+      "USER_FIXED": 42
+    },
+    "Net #99 (/VIN_5V)": {
+      "SYSTEM_FIXED": 5,
+      "USER_FIXED": 36
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "source_sha256": "38882bf0111a0190a9a55e756b72be96f91e325de29d909a93c6a57759bbed44",
+  "input_dsn_sha256": "fb7eacb122496e517f91183c98f103f0dbfdc490b5cd501d4327218a9ce84b1c",
+  "dsn_sha256": "3a2f6a131b2ae29ccf85cd7b093da57e89508e81e9e78825ae63d5bc628387a2",
+  "pad_conduction_areas": 216,
+  "scope": "Routing-model experiment only. Each added area reproduces an existing native pad polygon; no CAD source or manufacturing rule changed."
+}

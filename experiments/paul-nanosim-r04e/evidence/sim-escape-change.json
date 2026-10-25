@@ -1,0 +1,46 @@
+{
+  "parent_sha256": "38882bf0111a0190a9a55e756b72be96f91e325de29d909a93c6a57759bbed44",
+  "source_sha256": "f95988ad4f1b166c86f04a1c0442d4e0997442a12742acf18a2a194f7836544c",
+  "C4_before": [
+    105.7,
+    116.8
+  ],
+  "C4_after": [
+    105.2,
+    117.0
+  ],
+  "removed_ids": [
+    "3d0fb05a-70e6-4e3a-bd6f-63069183850a",
+    "633b0740-2ec2-46c4-8caa-c1cacd5e13e7",
+    "6a1b3bd5-d18d-44a7-a9d4-7db8466f4909",
+    "6d479c05-bc4a-4d6f-baed-c80425436370",
+    "73d1ebc0-44c2-41ba-afca-fe9518098536",
+    "776e35c4-0106-4571-b98e-c2cc0f422984",
+    "8a0a692e-730d-4914-aa41-1b947c70af91",
+    "a1145674-f9c7-4b5d-97b2-a7bb37d517da",
+    "b6c556ed-e7ad-4717-9acb-2420d840d141",
+    "c3644e0f-a210-427d-9b63-ce718f3cbf1d",
+    "dfdb4a1c-f225-40a0-bc08-f4a3b5b122f3",
+    "e3df133d-4d08-4dfc-be64-40b9ee9cffa4"
+  ],
+  "added_ids": [
+    "3be7f1f0-714d-4243-9d0d-48a96e07f77b",
+    "4a3921e1-2fc7-4c5f-89f0-2bee94d4e1dc",
+    "7c5d1970-6d91-420c-b6a6-a666153cf22e",
+    "f78adc9b-8b39-4e2d-8e7f-db2bdbb1599f",
+    "d6a5dbb8-abf3-4713-a739-0a36b561e98d",
+    "1d03a822-ef54-4685-bbd0-b32acd610d47",
+    "cb2c52a7-3126-4c9b-b090-39fc613e0002",
+    "9486e3f3-0ca0-4a92-a539-62b5602d3a98",
+    "31f69e46-06e7-4397-a060-437f2d5ddac3",
+    "2416c622-1aed-48b8-affe-6c9f8f6e1402",
+    "4ef51636-5316-434d-9a02-01288ad7a646",
+    "2612ccfe-8f36-484f-b4ff-d58093a9a5e4",
+    "71b76ff5-5778-4941-857c-a1ad594ba9c6"
+  ],
+  "ground_via_moved": [
+    106.1,
+    115.1
+  ],
+  "scope": "Candidate inward SIM pin escapes; native clearance and complete routing pending."
+}

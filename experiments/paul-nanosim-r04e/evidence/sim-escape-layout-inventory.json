@@ -1,0 +1,886 @@
+{
+  "source_sha256": "8c7b1793296d85cc5b38f289d7c2c38af30da726a5a780e2a1d6915edefca130",
+  "baseline_sha256": "597ebdee59550b6d07eb104274eabee57b038ea6c87da2dec38c1201f78c89b2",
+  "footprints": 54,
+  "pads": 286,
+  "ground_pads": 81,
+  "ground_vias": 66,
+  "non_ground_vias": 77,
+  "inner_tracks": 0,
+  "planes": {
+    "In1.Cu": {
+      "zone_nets": [
+        "/GND"
+      ],
+      "filled_outline_count": 1,
+      "ground_vias_outside": []
+    },
+    "In2.Cu": {
+      "zone_nets": [
+        "/GND"
+      ],
+      "filled_outline_count": 1,
+      "ground_vias_outside": []
+    }
+  },
+  "rf_segments_preserved": true,
+  "rf_segments": 24,
+  "via_sizes_mm": [
+    [
+      0.6,
+      0.2
+    ]
+  ],
+  "returns": [
+    {
+      "id": "4c11a6aa-1ee9-4000-914a-5a33339ee3cf",
+      "net": "/ILIM_VSET",
+      "pos": [
+        107.1,
+        123.8
+      ],
+      "nearest_ground_mm": 1.8357559750685921
+    },
+    {
+      "id": "b18d72e3-e19a-4410-8f98-69572df4de86",
+      "net": "/ILIM_VSET",
+      "pos": [
+        104.2,
+        124.4
+      ],
+      "nearest_ground_mm": 0.8062257748298531
+    },
+    {
+      "id": "0c1517cd-fbbd-419b-a5dd-bd635333dd88",
+      "net": "/VSYS",
+      "pos": [
+        103.25,
+        119.2
+      ],
+      "nearest_ground_mm": 1.806239186818842
+    },
+    {
+      "id": "6809189a-0fd7-44cd-8570-52c5867d0e04",
+      "net": "/VSYS",
+      "pos": [
+        105.52,
+        100.9876
+      ],
+      "nearest_ground_mm": 1.9566281608931213
+    },
+    {
+      "id": "b2c38037-1ce7-4024-8b93-5eda64ef007a",
+      "net": "/VSYS",
+      "pos": [
+        106.1968,
+        105.5401
+      ],
+      "nearest_ground_mm": 2.3192796834362137
+    },
+    {
+      "id": "c6adff82-7647-4ec9-9c13-e4079e15a4d3",
+      "net": "/VSYS",
+      "pos": [
+        103.0398,
+        114.7875
+      ],
+      "nearest_ground_mm": 1.8768564915837331
+    },
+    {
+      "id": "92d21571-25ae-4e58-a277-08493e6b0cf1",
+      "net": "/VDD_NRF",
+      "pos": [
+        101.892,
+        112.2653
+      ],
+      "nearest_ground_mm": 0.956665087687423
+    },
+    {
+      "id": "ff754699-43e4-44f9-9b5e-ba092af5b70c",
+      "net": "/VDD_NRF",
+      "pos": [
+        103.8078,
+        115.2948
+      ],
+      "nearest_ground_mm": 2.0932242784756725
+    },
+    {
+      "id": "24b5772a-0160-4f16-b16d-420b040fdac1",
+      "net": "/VIO_1V8",
+      "pos": [
+        113.267,
+        101.1616
+      ],
+      "nearest_ground_mm": 4.854713540467649
+    },
+    {
+      "id": "6681e75f-a3b7-495d-bc2b-f02408ac2498",
+      "net": "/VIO_1V8",
+      "pos": [
+        101.8135,
+        106.566
+      ],
+      "nearest_ground_mm": 1.619672266231648
+    },
+    {
+      "id": "ed280871-8ead-491f-9c70-04e3d8631156",
+      "net": "/VIO_1V8",
+      "pos": [
+        122.3247,
+        121.4063
+      ],
+      "nearest_ground_mm": 2.980026808604243
+    },
+    {
+      "id": "2411d8fa-ff33-4190-a38b-942e12b0a47c",
+      "net": "/I2C_SCL",
+      "pos": [
+        127.5254,
+        103.5271
+      ],
+      "nearest_ground_mm": 3.373929396119603
+    },
+    {
+      "id": "c60d79b9-0a82-4ba3-96c3-06ff9aff6457",
+      "net": "/I2C_SCL",
+      "pos": [
+        122.3147,
+        104.536
+      ],
+      "nearest_ground_mm": 3.4853625478563908
+    },
+    {
+      "id": "1b5cf461-c78a-4c40-9482-10e4595dbe83",
+      "net": "/I2C_SDA",
+      "pos": [
+        120.1474,
+        123.1609
+      ],
+      "nearest_ground_mm": 2.469723784150775
+    },
+    {
+      "id": "6ac6b473-7ccb-465d-aa40-559a75e70047",
+      "net": "/I2C_SDA",
+      "pos": [
+        118.1952,
+        115.0548
+      ],
+      "nearest_ground_mm": 2.3034856370292336
+    },
+    {
+      "id": "b23e6803-e21d-4008-af9c-5fcc63cc3340",
+      "net": "/I2C_SDA",
+      "pos": [
+        122.9209,
+        106.6729
+      ],
+      "nearest_ground_mm": 1.3453591416421133
+    },
+    {
+      "id": "c5e42250-1eee-4bb1-8c47-8f957a35dff0",
+      "net": "/I2C_SDA",
+      "pos": [
+        123.5854,
+        103.0031
+      ],
+      "nearest_ground_mm": 5.074735734006253
+    },
+    {
+      "id": "d18eeb2f-509a-4636-a907-185f8371062e",
+      "net": "/I2C_SDA",
+      "pos": [
+        122.8459,
+        123.1609
+      ],
+      "nearest_ground_mm": 3.5468162653286677
+    },
+    {
+      "id": "285e7594-4ca8-4ca4-8dfb-50d0e9cfc647",
+      "net": "/ACC_INT",
+      "pos": [
+        115.8982,
+        109.2215
+      ],
+      "nearest_ground_mm": 1.5285010598622368
+    },
+    {
+      "id": "9f757fcb-0dfa-4550-b25c-9d757e3c0cd8",
+      "net": "/ACC_INT",
+      "pos": [
+        119.3318,
+        104.8917
+      ],
+      "nearest_ground_mm": 2.0724189079430864
+    },
+    {
+      "id": "ee184150-5162-4e0e-985c-af3cb3deb97a",
+      "net": "/ACC_INT",
+      "pos": [
+        125.2475,
+        103.5414
+      ],
+      "nearest_ground_mm": 5.135062824347919
+    },
+    {
+      "id": "feef8cd6-13c9-4d31-a6cb-cc62330cf95f",
+      "net": "/ACC_INT",
+      "pos": [
+        126.5915,
+        103.1707
+      ],
+      "nearest_ground_mm": 4.373332909806899
+    },
+    {
+      "id": "123ea98c-f273-41da-b158-bbccbcb2c761",
+      "net": "/SWDCLK",
+      "pos": [
+        101.7692,
+        107.9848
+      ],
+      "nearest_ground_mm": 1.2373114725080314
+    },
+    {
+      "id": "49829123-e25c-4e0c-89d1-1e807a33b72c",
+      "net": "/SWDCLK",
+      "pos": [
+        106.3523,
+        107.1027
+      ],
+      "nearest_ground_mm": 1.968680415913162
+    },
+    {
+      "id": "ae471822-824c-406b-8783-c7419f8c5657",
+      "net": "/SWDCLK",
+      "pos": [
+        106.1114,
+        109.2496
+      ],
+      "nearest_ground_mm": 1.9610788153462955
+    },
+    {
+      "id": "4532f081-9df9-460d-9455-6cd891839568",
+      "net": "/SWDIO",
+      "pos": [
+        104.5533,
+        109.1631
+      ],
+      "nearest_ground_mm": 1.1640371557643683
+    },
+    {
+      "id": "37a94570-d555-4aeb-9682-3e29f9173f03",
+      "net": "/NRF_RESET",
+      "pos": [
+        103.8459,
+        111.7616
+      ],
+      "nearest_ground_mm": 1.089780422837559
+    },
+    {
+      "id": "9b3d97af-d518-4029-9731-6cde614e6b75",
+      "net": "/NRF_ENABLE",
+      "pos": [
+        106.1062,
+        112.6076
+      ],
+      "nearest_ground_mm": 1.357614157262664
+    },
+    {
+      "id": "02c35430-1cbe-4b1c-a2b1-a67c489fc060",
+      "net": "/SIM_RST",
+      "pos": [
+        104.6472,
+        115.6916
+      ],
+      "nearest_ground_mm": 1.5686358404677578
+    },
+    {
+      "id": "2612ccfe-8f36-484f-b4ff-d58093a9a5e4",
+      "net": "/SIM_IO",
+      "pos": [
+        106.1,
+        116.0
+      ],
+      "nearest_ground_mm": 0.9000000000000057
+    },
+    {
+      "id": "f66eed57-0808-4f1b-90cb-c9387694bad2",
+      "net": "/SIM_IO",
+      "pos": [
+        129.3529,
+        117.0996
+      ],
+      "nearest_ground_mm": 1.4556436961014931
+    },
+    {
+      "id": "1e9cb2d3-0119-4105-8058-5b777641e846",
+      "net": "/SIM_CLK",
+      "pos": [
+        129.0619,
+        121.0673
+      ],
+      "nearest_ground_mm": 1.5073356958554527
+    },
+    {
+      "id": "71b76ff5-5778-4941-857c-a1ad594ba9c6",
+      "net": "/SIM_CLK",
+      "pos": [
+        107.0,
+        117.1
+      ],
+      "nearest_ground_mm": 1.2854960132182467
+    },
+    {
+      "id": "9883aff9-49f8-4d04-b905-fabd935fa1f1",
+      "net": "/SIM_CLK",
+      "pos": [
+        129.019,
+        114.9689
+      ],
+      "nearest_ground_mm": 0.9820326929384795
+    },
+    {
+      "id": "baa8e59c-7d9b-40ee-92e4-e23f0b7ac97d",
+      "net": "/SIM_CLK",
+      "pos": [
+        125.977,
+        113.5762
+      ],
+      "nearest_ground_mm": 2.4331492843637914
+    },
+    {
+      "id": "43f39e8d-552c-40c1-897f-af7235bc217c",
+      "net": "/SIM_1V8",
+      "pos": [
+        110.3939,
+        121.2031
+      ],
+      "nearest_ground_mm": 1.0293331919257307
+    },
+    {
+      "id": "4924ea46-7b8c-49d2-9acc-78c8d100378a",
+      "net": "/SIM_1V8",
+      "pos": [
+        117.7478,
+        116.121
+      ],
+      "nearest_ground_mm": 1.9109175387755521
+    },
+    {
+      "id": "58f61f41-1832-4d3b-95c2-166e97735eeb",
+      "net": "/SIM_1V8",
+      "pos": [
+        114.3162,
+        121.2031
+      ],
+      "nearest_ground_mm": 2.43122850633172
+    },
+    {
+      "id": "62e4d1f6-8b7a-4874-b891-fc4710170561",
+      "net": "/SIM_1V8",
+      "pos": [
+        125.5675,
+        112.126
+      ],
+      "nearest_ground_mm": 3.491823628134739
+    },
+    {
+      "id": "731ac6f2-6f7e-4341-8e1e-56eb7e7fb1a0",
+      "net": "/SIM_1V8",
+      "pos": [
+        106.5514,
+        118.9681
+      ],
+      "nearest_ground_mm": 1.4497170654993352
+    },
+    {
+      "id": "bc318284-ce1d-41f5-8653-dc4e2c2e4d63",
+      "net": "/SIM_1V8",
+      "pos": [
+        122.2061,
+        112.4071
+      ],
+      "nearest_ground_mm": 2.181040490224791
+    },
+    {
+      "id": "3ab6c4f1-181e-4396-b644-d93318b683d4",
+      "net": "/COEX0",
+      "pos": [
+        118.268,
+        112.1254
+      ],
+      "nearest_ground_mm": 2.448989416065324
+    },
+    {
+      "id": "627169c3-de53-41a1-8b79-ec18d1fa92ca",
+      "net": "/COEX0",
+      "pos": [
+        124.1799,
+        119.3
+      ],
+      "nearest_ground_mm": 0.850237619727562
+    },
+    {
+      "id": "46126d45-abf9-4fe8-9158-eada37355371",
+      "net": "/HEALTH_INT",
+      "pos": [
+        120.6828,
+        120.2753
+      ],
+      "nearest_ground_mm": 2.429741947203451
+    },
+    {
+      "id": "647fafe6-e8e6-40cb-839b-e8bd1dfb1c16",
+      "net": "/HEALTH_INT",
+      "pos": [
+        124.365,
+        120.7373
+      ],
+      "nearest_ground_mm": 2.2932436176734488
+    },
+    {
+      "id": "b6e996cd-405e-4a9d-ba6d-19c5396af5d0",
+      "net": "/HEALTH_INT",
+      "pos": [
+        117.5426,
+        108.8288
+      ],
+      "nearest_ground_mm": 0.8409781209995882
+    },
+    {
+      "id": "005d793f-126d-4e20-b21c-e01a61ec8e00",
+      "net": "/SPI_SCK",
+      "pos": [
+        125.635,
+        126.65
+      ],
+      "nearest_ground_mm": 3.8363035594175887
+    },
+    {
+      "id": "4c212b07-c724-47d3-adbf-706cd9a48ae4",
+      "net": "/SPI_SCK",
+      "pos": [
+        115.7775,
+        106.7289
+      ],
+      "nearest_ground_mm": 1.4226248486512525
+    },
+    {
+      "id": "1425dc71-00b5-46c5-b691-b25e0b17e411",
+      "net": "/SPI_MOSI",
+      "pos": [
+        119.2348,
+        118.8867
+      ],
+      "nearest_ground_mm": 1.30689247071058
+    },
+    {
+      "id": "46fe49ec-7bd1-4841-81ed-54a180ba7b5e",
+      "net": "/SPI_MOSI",
+      "pos": [
+        124.9354,
+        120.0636
+      ],
+      "nearest_ground_mm": 1.7732789177114718
+    },
+    {
+      "id": "aca4a688-aaa4-486b-86b9-8ebf45f16d22",
+      "net": "/SPI_MOSI",
+      "pos": [
+        115.25,
+        108.6285
+      ],
+      "nearest_ground_mm": 2.00011555916152
+    },
+    {
+      "id": "032c453e-d453-47a8-9c01-c5fdb7980a5a",
+      "net": "/SPI_MISO",
+      "pos": [
+        118.9029,
+        106.2164
+      ],
+      "nearest_ground_mm": 1.8463686982832028
+    },
+    {
+      "id": "7fb71716-cd5b-4362-9d26-35e4fabf435a",
+      "net": "/SPI_MISO",
+      "pos": [
+        119.846,
+        111.1486
+      ],
+      "nearest_ground_mm": 3.922707988112286
+    },
+    {
+      "id": "a265b047-7e35-4fb7-b636-506db8881f92",
+      "net": "/SPI_MISO",
+      "pos": [
+        131.0696,
+        112.5793
+      ],
+      "nearest_ground_mm": 1.419236643410817
+    },
+    {
+      "id": "109df0d7-31e9-489c-bca1-239dff876956",
+      "net": "/HEALTH_CS",
+      "pos": [
+        126.2199,
+        122.0849
+      ],
+      "nearest_ground_mm": 1.9551531960437272
+    },
+    {
+      "id": "a7476308-bbd4-49d2-a1bb-3c5e9fa6c614",
+      "net": "/HEALTH_CS",
+      "pos": [
+        121.4261,
+        122.0849
+      ],
+      "nearest_ground_mm": 3.8516644739644716
+    },
+    {
+      "id": "c6ed90d8-8c4b-4656-8569-75f812f3a8bf",
+      "net": "/HEALTH_CS",
+      "pos": [
+        114.25,
+        108.6198
+      ],
+      "nearest_ground_mm": 1.0004559160702686
+    },
+    {
+      "id": "48db5585-69e9-4d24-8221-c8728db54a47",
+      "net": "/HEALTH_RESET",
+      "pos": [
+        129.8301,
+        114.9521
+      ],
+      "nearest_ground_mm": 1.274821720869246
+    },
+    {
+      "id": "4ff1e902-239b-4b49-aa58-eda2d60660bb",
+      "net": "/HEALTH_RESET",
+      "pos": [
+        112.8183,
+        107.1168
+      ],
+      "nearest_ground_mm": 1.592817356133474
+    },
+    {
+      "id": "74e23501-7bc4-4059-8dd7-d44663b9f97a",
+      "net": "/HEALTH_RESET",
+      "pos": [
+        116.6971,
+        106.5346
+      ],
+      "nearest_ground_mm": 1.373945257279194
+    },
+    {
+      "id": "8a10a0a5-6497-4f33-8a74-d5d81bb897ce",
+      "net": "/HEALTH_RESET",
+      "pos": [
+        118.2205,
+        107.8938
+      ],
+      "nearest_ground_mm": 0.8273443599856066
+    },
+    {
+      "id": "f5de509b-567b-4377-a119-60f4072cf6a4",
+      "net": "/HEALTH_RESET",
+      "pos": [
+        120.0861,
+        112.3882
+      ],
+      "nearest_ground_mm": 2.758773722145399
+    },
+    {
+      "id": "1b86e266-bcd1-4b0f-8d23-9701a27e79ab",
+      "net": "/HEALTH_EN",
+      "pos": [
+        119.9814,
+        124.2943
+      ],
+      "nearest_ground_mm": 1.7558013697454442
+    },
+    {
+      "id": "81c4c627-b286-4708-9efe-e42f0ea9fd93",
+      "net": "/HEALTH_EN",
+      "pos": [
+        127.1363,
+        122.0682
+      ],
+      "nearest_ground_mm": 1.4446414537870613
+    },
+    {
+      "id": "955d7d3d-3086-4eb7-9fa9-6c04a8a6ddc7",
+      "net": "/HEALTH_EN",
+      "pos": [
+        112.3229,
+        109.0206
+      ],
+      "nearest_ground_mm": 0.9984281496432227
+    },
+    {
+      "id": "21f72ad4-9c42-46d3-b448-b332c89c208f",
+      "net": "/CHG_STAT",
+      "pos": [
+        110.4797,
+        105.5466
+      ],
+      "nearest_ground_mm": 1.5275056955703965
+    },
+    {
+      "id": "ec3cdc4f-183b-40c5-8f3f-e107a325f0d6",
+      "net": "/CHG_STAT",
+      "pos": [
+        107.1,
+        122.2
+      ],
+      "nearest_ground_mm": 2.2896506283710663
+    },
+    {
+      "id": "14285073-5d8e-43b7-a1f8-20635d015e59",
+      "net": "/CHG_FAULT",
+      "pos": [
+        109.6552,
+        105.6529
+      ],
+      "nearest_ground_mm": 1.7749578727395192
+    },
+    {
+      "id": "7719306a-26e5-4a8f-a6d8-8f8360067add",
+      "net": "/CHG_FAULT",
+      "pos": [
+        102.6,
+        123.3
+      ],
+      "nearest_ground_mm": 1.8506755523321692
+    },
+    {
+      "id": "00d32601-8298-44b2-b783-24319a485f40",
+      "net": "/BAT_ADC",
+      "pos": [
+        109.6979,
+        109.2572
+      ],
+      "nearest_ground_mm": 0.9265777085598462
+    },
+    {
+      "id": "39aa8d89-7e06-428a-8733-2d4e57ce823a",
+      "net": "/ISET",
+      "pos": [
+        108.0,
+        123.0
+      ],
+      "nearest_ground_mm": 1.838477631085027
+    },
+    {
+      "id": "870f6c8d-d715-4adf-89e0-fa7ac9c921c5",
+      "net": "/VBAT",
+      "pos": [
+        110.7483,
+        124.1039
+      ],
+      "nearest_ground_mm": 2.1332763768438436
+    },
+    {
+      "id": "cc0dc2e5-2f8a-4b9f-ab5e-35e29fbdb17f",
+      "net": "/VBAT",
+      "pos": [
+        101.1,
+        121.65
+      ],
+      "nearest_ground_mm": 1.6378339354159133
+    },
+    {
+      "id": "729a3dd2-fc4f-4fd8-b788-4fc3e37fe187",
+      "net": "/VIN_5V",
+      "pos": [
+        106.1,
+        121.55
+      ],
+      "nearest_ground_mm": 1.476482306023339
+    },
+    {
+      "id": "a7ab5b7f-e17f-43ae-bc05-ddfc229ae8ed",
+      "net": "/VIN_5V",
+      "pos": [
+        102.7,
+        124.1
+      ],
+      "nearest_ground_mm": 2.127204738618265
+    },
+    {
+      "id": "73b3d134-1045-443f-9158-684712355088",
+      "net": "/BAT_NTC",
+      "pos": [
+        106.1,
+        124.7
+      ],
+      "nearest_ground_mm": 1.1704699910719591
+    },
+    {
+      "id": "bc1409c7-7a7e-44dd-b255-9859d5775174",
+      "net": "/BAT_NTC",
+      "pos": [
+        109.7649,
+        126.4892
+      ],
+      "nearest_ground_mm": 2.082125992825594
+    }
+  ],
+  "returns_outside_2mm": 29,
+  "socket": {
+    "position": [
+      127.0,
+      108.0
+    ],
+    "angle": 0.0,
+    "side": "B.Cu",
+    "pads": [
+      {
+        "pin": "1",
+        "net": "/SIM_1V8",
+        "position": [
+          129.54,
+          102.1
+        ]
+      },
+      {
+        "pin": "2",
+        "net": "/SIM_RST",
+        "position": [
+          127.0,
+          102.1
+        ]
+      },
+      {
+        "pin": "3",
+        "net": "/SIM_CLK",
+        "position": [
+          124.46,
+          102.1
+        ]
+      },
+      {
+        "pin": "5",
+        "net": "/GND",
+        "position": [
+          129.54,
+          113.9
+        ]
+      },
+      {
+        "pin": "6",
+        "net": "unconnected-(J6-C6_VPP_UNUSED-Pad6)",
+        "position": [
+          127.0,
+          113.9
+        ]
+      },
+      {
+        "pin": "7",
+        "net": "/SIM_IO",
+        "position": [
+          124.46,
+          113.9
+        ]
+      },
+      {
+        "pin": "8",
+        "net": "/GND",
+        "position": [
+          121.7,
+          108.0
+        ]
+      },
+      {
+        "pin": "8",
+        "net": "/GND",
+        "position": [
+          132.3,
+          108.0
+        ]
+      }
+    ]
+  },
+  "esd": {
+    "position": [
+      126.8,
+      116.2
+    ],
+    "side": "B.Cu",
+    "pads": [
+      {
+        "pin": "1",
+        "net": "/SIM_RST",
+        "size": [
+          0.9,
+          0.4
+        ],
+        "position": [
+          125.7,
+          116.85
+        ]
+      },
+      {
+        "pin": "2",
+        "net": "/GND",
+        "size": [
+          0.9,
+          0.4
+        ],
+        "position": [
+          125.7,
+          116.2
+        ]
+      },
+      {
+        "pin": "3",
+        "net": "/SIM_1V8",
+        "size": [
+          0.9,
+          0.4
+        ],
+        "position": [
+          125.7,
+          115.55
+        ]
+      },
+      {
+        "pin": "4",
+        "net": "/SIM_IO",
+        "size": [
+          0.9,
+          0.4
+        ],
+        "position": [
+          127.9,
+          115.55
+        ]
+      },
+      {
+        "pin": "5",
+        "net": "unconnected-(D1-NC-Pad5)",
+        "size": [
+          0.9,
+          0.4
+        ],
+        "position": [
+          127.9,
+          116.2
+        ]
+      },
+      {
+        "pin": "6",
+        "net": "/SIM_CLK",
+        "size": [
+          0.9,
+          0.4
+        ],
+        "position": [
+          127.9,
+          116.85
+        ]
+      }
+    ]
+  },
+  "scope": "Native inventory only. Ground via centers checked against saved fills; RF identity does not qualify impedance. Return spacing is a screening target. DRC, physical access, ESD topology, power, assembly and manufacturer acceptance are separate."
+}

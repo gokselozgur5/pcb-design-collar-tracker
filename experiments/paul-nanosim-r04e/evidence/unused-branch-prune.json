@@ -1,0 +1,30 @@
+{
+  "source_before_sha256": "9b68c129e3d88ba64af27d06e360d4b670a80521d855383782a54c3e0cf76105",
+  "source_sha256": "533bb4e7eb821d3bf8d39eef12b8a95870b252ef288b6f94f025bd6d95cb7d19",
+  "removed": [
+    {
+      "id": "39aa8d89-7e06-428a-8733-2d4e57ce823a",
+      "net": "/ISET",
+      "kind": "PCB_VIA"
+    },
+    {
+      "id": "3e499e05-8cd6-47c1-b91c-7e677742bb24",
+      "net": "/VBAT",
+      "kind": "PCB_VIA"
+    },
+    {
+      "id": "a3e6b11b-a9ed-4a30-9dcf-c537d39a3348",
+      "net": "/VBAT",
+      "kind": "PCB_TRACK"
+    },
+    {
+      "id": "f5fe2291-34eb-4c66-8cbe-4b21b6df4396",
+      "net": "/BAT_NTC",
+      "kind": "PCB_VIA"
+    }
+  ],
+  "protected_removed": [
+    "39aa8d89-7e06-428a-8733-2d4e57ce823a"
+  ],
+  "scope": "Remove native-DRC dangling objects only on fully connected nets; open-net escapes retained. Native DRC must confirm no new opens."
+}

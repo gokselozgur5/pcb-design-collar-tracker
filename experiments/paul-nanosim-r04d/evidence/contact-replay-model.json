@@ -1,0 +1,85 @@
+{
+  "source_sha256": "38882bf0111a0190a9a55e756b72be96f91e325de29d909a93c6a57759bbed44",
+  "dsn_sha256": "fc8f3c7a6d3fd78f22a183f60c2462dc958266394f0c38ce5c07ee6966e6c018",
+  "input_dsn_sha256": "ccb1adb5728326f9667cb44165105b2b665f4b05d4a0c75ed742cc5777975ada",
+  "coordinate_resolution_mm": 0.0001,
+  "copper_comparison_tolerance_mm": 0.0002,
+  "original_tracks": 980,
+  "original_vias": 141,
+  "connector_count": 5,
+  "wire_count": 992,
+  "connectors": [
+    {
+      "net": "/VBAT",
+      "layer": "F.Cu",
+      "start": [
+        102.255,
+        122.475
+      ],
+      "end": [
+        102.28,
+        122.5
+      ],
+      "width_mm": 0.2,
+      "fixed": false
+    },
+    {
+      "net": "/VIN_5V",
+      "layer": "B.Cu",
+      "start": [
+        106.175,
+        120.705
+      ],
+      "end": [
+        106.2,
+        120.73
+      ],
+      "width_mm": 0.2,
+      "fixed": false
+    },
+    {
+      "net": "/GND",
+      "layer": "B.Cu",
+      "start": [
+        106.2,
+        119.72
+      ],
+      "end": [
+        106.2,
+        119.77
+      ],
+      "width_mm": 0.2,
+      "fixed": true
+    },
+    {
+      "net": "/BAT_NTC",
+      "layer": "B.Cu",
+      "start": [
+        108.45,
+        126.05
+      ],
+      "end": [
+        108.5,
+        126.05
+      ],
+      "width_mm": 0.2,
+      "fixed": false
+    },
+    {
+      "net": "/SIM_1V8",
+      "layer": "B.Cu",
+      "start": [
+        125.8312,
+        115.4187
+      ],
+      "end": [
+        125.7,
+        115.55
+      ],
+      "width_mm": 0.2,
+      "fixed": false
+    }
+  ],
+  "connectors_with_new_copper": [],
+  "scope": "Routing model only: exact-center connections and split junctions. New copper is explicitly reported and requires native DRC after any import. No native source or clearance rule changed."
+}

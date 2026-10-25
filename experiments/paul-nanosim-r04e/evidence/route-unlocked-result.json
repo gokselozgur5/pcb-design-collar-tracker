@@ -1,0 +1,20 @@
+{
+  "input_sha256": "8b61a3456c165fa9a1eb21cdc1443bc04680ddd84d692440863c680e36541c15",
+  "output_sha256": "ce5db7609738b097d51b69589775de6369262fe3e72dcbedf0630ab2571ab40f",
+  "native_source_sha256": "7b681d46b83153106367e2aaff55a7ca7c73637e4616840c38c0a9856e9f90f4",
+  "router_result_lines": [
+    "2026-10-25 13:40:43.772 INFO   [9A0113\\5BD70D] Auto-routing stage completed: started with 5 unrouted nets, completed in 484.19 seconds, final score: 961.57 (5 unrouted and 17 violations), using 250.47 total CPU seconds, 60.30 GB total allocated, and 740.5 MB peak heap usage."
+  ],
+  "native_drc": "routed-unlocked-drc.json",
+  "native_opens": 5,
+  "native_violations": {
+    "via_dangling": 2
+  },
+  "imported_into_active_source": false,
+  "scope": "Isolated route candidate: SIM_IO, SIM_CLK and VSYS now connected; SIM_1V8, SPI_SCK, HEALTH_EN, CHG_STAT and CHG_FAULT remain open. Power quality requires fresh review.",
+  "power_review": {
+    "J5_supply_track_length_mm": 83.52194355466482,
+    "J5_supply_narrow_length_mm": 14.907445596729076,
+    "decision": "Reject long auxiliary supply detour as a final layout; retain for topology diagnosis only."
+  }
+}

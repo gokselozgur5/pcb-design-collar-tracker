@@ -1,0 +1,5 @@
+{
+  "pid": 6669,
+  "reason": "One pass retained 11 unrouted items and introduced 121 router-model violations; pad/track area aliases are rejected as a routing model. Native source unchanged.",
+  "native_sha256": "38882bf0111a0190a9a55e756b72be96f91e325de29d909a93c6a57759bbed44"
+}

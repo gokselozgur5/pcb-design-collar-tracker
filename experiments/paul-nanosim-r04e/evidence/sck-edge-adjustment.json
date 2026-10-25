@@ -1,0 +1,79 @@
+{
+  "source_before_sha256": "06c316baa146c8a478a96ff2b7bbdfbf06cc1930ea880ac51f2cd641c7a3f28a",
+  "source_sha256": "f0df16097b0b60692bd0cad01b48b351803a884468653b048c91b6ce42c2b553",
+  "changes": [
+    {
+      "id": "2cf75381-7462-4209-9d51-799398909056",
+      "endpoint": "End",
+      "before": [
+        134.5569,
+        104.0912
+      ],
+      "after": [
+        134.48,
+        104.0912
+      ]
+    },
+    {
+      "id": "b2edc5dd-9578-4b02-b1eb-0c01f6e01376",
+      "endpoint": "Start",
+      "before": [
+        134.5569,
+        104.0912
+      ],
+      "after": [
+        134.48,
+        104.0912
+      ]
+    },
+    {
+      "id": "b2edc5dd-9578-4b02-b1eb-0c01f6e01376",
+      "endpoint": "End",
+      "before": [
+        134.5569,
+        103.8081
+      ],
+      "after": [
+        134.48,
+        103.8081
+      ]
+    },
+    {
+      "id": "b9aab1b9-1c1f-486c-bb05-dc0b4bc76538",
+      "endpoint": "Start",
+      "before": [
+        134.5569,
+        103.8081
+      ],
+      "after": [
+        134.48,
+        103.8081
+      ]
+    },
+    {
+      "id": "d88277b1-5051-445a-92af-191bf312d337",
+      "endpoint": "End",
+      "before": [
+        134.5866,
+        107.8706
+      ],
+      "after": [
+        134.48,
+        107.8706
+      ]
+    },
+    {
+      "id": "ed7cddb6-a847-4758-8bf5-d5368872a81f",
+      "endpoint": "Start",
+      "before": [
+        134.5866,
+        107.8706
+      ],
+      "after": [
+        134.48,
+        107.8706
+      ]
+    }
+  ],
+  "scope": "Shift SPI_SCK outer-edge track vertices inward to preserve the native 0.4 mm copper-edge requirement; pending DRC."
+}

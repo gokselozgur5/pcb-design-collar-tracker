@@ -1,0 +1,16 @@
+{
+  "before_sha256": "38882bf0111a0190a9a55e756b72be96f91e325de29d909a93c6a57759bbed44",
+  "source_sha256": "38882bf0111a0190a9a55e756b72be96f91e325de29d909a93c6a57759bbed44",
+  "routes": [],
+  "ground_stitches": [],
+  "failed": [
+    "('/SPI_SCK', 'detour needs topology review', 47.917, 155216)",
+    "('/SIM_IO', 'no route', 16712, {'F.Cu': {'states': 6919, 'x': [102.5, 116.10000000000001], 'y': [110.55000000000001, 118.60000000000001]}, 'B.Cu': {'states': 9793, 'x': [104.95, 115.9], 'y': [107.10000000000001, 118.5]}})",
+    "('/SIM_CLK', 'no route', 18788, {'F.Cu': {'states': 7547, 'x': [103.5, 116.10000000000001], 'y': [110.55000000000001, 121.95]}, 'B.Cu': {'states': 11241, 'x': [102.4, 115.9], 'y': [107.10000000000001, 123.0]}})",
+    "('/CHG_STAT', 'detour needs topology review', 74.016, 153833)",
+    "('/CHG_FAULT', 'no route', 7874, {'F.Cu': {'states': 3249, 'x': [100.55000000000001, 106.25], 'y': [118.75, 127.45]}, 'B.Cu': {'states': 4625, 'x': [100.55000000000001, 105.65], 'y': [120.0, 127.45]}})",
+    "('/VSYS', 'detour needs topology review', 61.622, 118054)"
+  ],
+  "interrupted": false,
+  "acceptance": "Pending native DRC and independent geometry audit"
+}

@@ -1,0 +1,7 @@
+{
+  "source_sha256": "38882bf0111a0190a9a55e756b72be96f91e325de29d909a93c6a57759bbed44",
+  "input_dsn_sha256": "3a2f6a131b2ae29ccf85cd7b093da57e89508e81e9e78825ae63d5bc628387a2",
+  "dsn_sha256": "45cc8ee384123992e6372737334bf5014299a6407612e07cc311637cbe07c345",
+  "via_conduction_areas": 282,
+  "scope": "Router copy only. Existing via circles represented as same-net conduction areas, without changing native copper or manufacturing rules."
+}

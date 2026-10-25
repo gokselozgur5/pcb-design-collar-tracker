@@ -1,0 +1,12 @@
+{
+  "before_sha256": "8c7b1793296d85cc5b38f289d7c2c38af30da726a5a780e2a1d6915edefca130",
+  "source_sha256": "8c7b1793296d85cc5b38f289d7c2c38af30da726a5a780e2a1d6915edefca130",
+  "routes": [],
+  "ground_stitches": [],
+  "failed": [
+    "('/SIM_IO', 'no route', 19461, {'F.Cu': {'states': 8009, 'x': [102.5, 116.10000000000001], 'y': [110.55000000000001, 121.95]}, 'B.Cu': {'states': 11452, 'x': [102.4, 115.9], 'y': [107.10000000000001, 123.0]}})",
+    "('/SIM_CLK', 'no route', 19682, {'F.Cu': {'states': 8466, 'x': [102.5, 116.10000000000001], 'y': [110.55000000000001, 121.95]}, 'B.Cu': {'states': 11216, 'x': [102.4, 115.9], 'y': [107.10000000000001, 123.0]}})"
+  ],
+  "interrupted": false,
+  "acceptance": "Pending native DRC and independent geometry audit"
+}

@@ -1,0 +1,3911 @@
+{
+  "dsn": "experiments/paul-nanosim-r04d/build/contact-minimal.dsn",
+  "warnings": [],
+  "incompletes": 6,
+  "nets": {
+    "/CHG_FAULT": [
+      [
+        {
+          "id": 1678,
+          "kind": "Via",
+          "position_raw": [
+            1026000.0,
+            -1233000.0
+          ],
+          "shapes": [
+            {
+              "layer": 0,
+              "kind": "Circle",
+              "bounds": [
+                1023000,
+                -1236000,
+                1029000,
+                -1230000
+              ],
+              "center_inside": true
+            },
+            {
+              "layer": 1,
+              "kind": "Circle",
+              "bounds": [
+                1023000,
+                -1236000,
+                1029000,
+                -1230000
+              ],
+              "center_inside": true
+            },
+            {
+              "layer": 2,
+              "kind": "Circle",
+              "bounds": [
+                1023000,
+                -1236000,
+                1029000,
+                -1230000
+              ],
+              "center_inside": true
+            },
+            {
+              "layer": 3,
+              "kind": "Circle",
+              "bounds": [
+                1023000,
+                -1236000,
+                1029000,
+                -1230000
+              ],
+              "center_inside": true
+            }
+          ],
+          "contacts": [
+            1352
+          ]
+        },
+        {
+          "id": 1353,
+          "kind": "PolylineTrace",
+          "layer": 0,
+          "start": [
+            103.9,
+            123.0
+          ],
+          "end": [
+            102.9,
+            123.0
+          ],
+          "half_width": 0.1,
+          "contacts": [
+            1352,
+            410
+          ]
+        },
+        {
+          "id": 1352,
+          "kind": "PolylineTrace",
+          "layer": 0,
+          "start": [
+            102.9,
+            123.0
+          ],
+          "end": [
+            102.6,
+            123.3
+          ],
+          "half_width": 0.1,
+          "contacts": [
+            1678,
+            1353
+          ]
+        },
+        {
+          "id": 410,
+          "kind": "Pin",
+          "position_raw": [
+            1039000.0,
+            -1230000.0
+          ],
+          "shapes": [
+            {
+              "layer": 0,
+              "kind": "Simplex",
+              "bounds": [
+                1035248,
+                -1231002,
+                1042752,
+                -1228998
+              ],
+              "center_inside": true
+            }
+          ],
+          "ref": "U3",
+          "pin": "3",
+          "contacts": [
+            1353
+          ]
+        }
+      ],
+      [
+        {
+          "id": 1677,
+          "kind": "Via",
+          "position_raw": [
+            1096552.0,
+            -1056529.0
+          ],
+          "shapes": [
+            {
+              "layer": 0,
+              "kind": "Circle",
+              "bounds": [
+                1093552,
+                -1059529,
+                1099552,
+                -1053529
+              ],
+              "center_inside": true
+            },
+            {
+              "layer": 1,
+              "kind": "Circle",
+              "bounds": [
+                1093552,
+                -1059529,
+                1099552,
+                -1053529
+              ],
+              "center_inside": true
+            },
+            {
+              "layer": 2,
+              "kind": "Circle",
+              "bounds": [
+                1093552,
+                -1059529,
+                1099552,
+                -1053529
+              ],
+              "center_inside": true
+            },
+            {
+              "layer": 3,
+              "kind": "Circle",
+              "bounds": [
+                1093552,
+                -1059529,
+                1099552,
+                -1053529
+              ],
+              "center_inside": true
+            }
+          ],
+          "contacts": [
+            1354,
+            1351
+          ]
+        },
+        {
+          "id": 1359,
+          "kind": "PolylineTrace",
+          "layer": 3,
+          "start": [
+            112.49,
+            102.0
+          ],
+          "end": [
+            111.9183,
+            102.0
+          ],
+          "half_width": 0.1,
+          "contacts": [
+            1358,
+            529
+          ]
+        },
+        {
+          "id": 1358,
+          "kind": "PolylineTrace",
+          "layer": 3,
+          "start": [
+            111.9183,
+            102.0
+          ],
+          "end": [
+            111.2561,
+            101.3378
+          ],
+          "half_width": 0.1,
+          "contacts": [
+            1359,
+            1357
+          ]
+        },
+        {
+          "id": 1357,
+          "kind": "PolylineTrace",
+          "layer": 3,
+          "start": [
+            111.2561,
+            101.3378
+          ],
+          "end": [
+            109.1355,
+            101.3378
+          ],
+          "half_width": 0.1,
+          "contacts": [
+            1358,
+            1355
+          ]
+        },
+        {
+          "id": 1356,
+          "kind": "PolylineTrace",
+          "layer": 3,
+          "start": [
+            108.9183,
+            101.555
+          ],
+          "end": [
+            108.9183,
+            104.916
+          ],
+          "half_width": 0.1,
+          "contacts": [
+            1355,
+            1354
+          ]
+        },
+        {
+          "id": 1355,
+          "kind": "PolylineTrace",
+          "layer": 3,
+          "start": [
+            109.1355,
+            101.3378
+          ],
+          "end": [
+            108.9183,
+            101.555
+          ],
+          "half_width": 0.1,
+          "contacts": [
+            1357,
+            1356
+          ]
+        },
+        {
+          "id": 1354,
+          "kind": "PolylineTrace",
+          "layer": 3,
+          "start": [
+            108.9183,
+            104.916
+          ],
+          "end": [
+            109.6552,
+            105.6529
+          ],
+          "half_width": 0.1,
+          "contacts": [
+            1677,
+            1356
+          ]
+        },
+        {
+          "id": 1351,
+          "kind": "PolylineTrace",
+          "layer": 0,
+          "start": [
+            109.6552,
+            105.6529
+          ],
+          "end": [
+            110.1506,
+            106.1483
+          ],
+          "half_width": 0.1,
+          "contacts": [
+            1677,
+            1348
+          ]
+        },
+        {
+          "id": 1350,
+          "kind": "PolylineTrace",
+          "layer": 0,
+          "start": [
+            111.25,
+            107.4167
+          ],
+          "end": [
+            111.25,
+            107.875
+          ],
+          "half_width": 0.1,
+          "contacts": [
+            1349,
+            347
+          ]
+        },
+        {
+          "id": 1349,
+          "kind": "PolylineTrace",
+          "layer": 0,
+          "start": [
+            111.372,
+            107.2947
+          ],
+          "end": [
+            111.25,
+            107.4167
+          ],
+          "half_width": 0.1,
+          "contacts": [
+            1350,
+            1346
+          ]
+        },
+        {
+          "id": 1348,
+          "kind": "PolylineTrace",
+          "layer": 0,
+          "start": [
+            110.1506,
+            106.1483
+          ],
+          "end": [
+            110.7236,
+            106.1483
+          ],
+          "half_width": 0.1,
+          "contacts": [
+            1351,
+            1347
+          ]
+        },
+        {
+          "id": 1347,
+          "kind": "PolylineTrace",
+          "layer": 0,
+          "start": [
+            110.7236,
+            106.1483
+          ],
+          "end": [
+            111.372,
+            106.7967
+          ],
+          "half_width": 0.1,
+          "contacts": [
+            1348,
+            1346
+          ]
+        },
+        {
+          "id": 1346,
+          "kind": "PolylineTrace",
+          "layer": 0,
+          "start": [
+            111.372,
+            106.7967
+          ],
+          "end": [
+            111.372,
+            107.2947
+          ],
+          "half_width": 0.1,
+          "contacts": [
+            1349,
+            1347
+          ]
+        },
+        {
+          "id": 529,
+          "kind": "Pin",
+          "position_raw": [
+            1124900.0,
+            -1020000.0
+          ],
+          "shapes": [
+            {
+              "layer": 3,
+              "kind": "Simplex",
+              "bounds": [
+                1122195,
+                -1023205,
+                1127605,
+                -1016795
+              ],
+              "center_inside": true
+            }
+          ],
+          "ref": "R9",
+          "pin": "1",
+          "contacts": [
+            1359
+          ]
+        },
+        {
+          "id": 347,
+          "kind": "Pin",
+          "position_raw": [
+            1112500.0,
+            -1078750.0
+          ],
+          "shapes": [
+            {
+              "layer": 0,
+              "kind": "Simplex",
+              "bounds": [
+                1110999,
+                -1081001,
+                1114001,
+                -1076499
+              ],
+              "center_inside": true
+            }
+          ],
+          "ref": "U1",
+          "pin": "70",
+          "contacts": [
+            1350
+          ]
+        }
+      ]
+    ],
+    "/CHG_STAT": [
+      [
+        {
+          "id": 1676,
+          "kind": "Via",
+          "position_raw": [
+            1071000.0,
+            -1222000.0
+          ],
+          "shapes": [
+            {
+              "layer": 0,
+              "kind": "Circle",
+              "bounds": [
+                1068000,
+                -1225000,
+                1074000,
+                -1219000
+              ],
+              "center_inside": true
+            },
+            {
+              "layer": 1,
+              "kind": "Circle",
+              "bounds": [
+                1068000,
+                -1225000,
+                1074000,
+                -1219000
+              ],
+              "center_inside": true
+            },
+            {
+              "layer": 2,
+              "kind": "Circle",
+              "bounds": [
+                1068000,
+                -1225000,
+                1074000,
+                -1219000
+              ],
+              "center_inside": true
+            },
+            {
+              "layer": 3,
+              "kind": "Circle",
+              "bounds": [
+                1068000,
+                -1225000,
+                1074000,
+                -1219000
+              ],
+              "center_inside": true
+            }
+          ],
+          "contacts": [
+            1340
+          ]
+        },
+        {
+          "id": 1340,
+          "kind": "PolylineTrace",
+          "layer": 0,
+          "start": [
+            106.7,
+            122.6
+          ],
+          "end": [
+            107.1,
+            122.2
+          ],
+          "half_width": 0.1,
+          "contacts": [
+            1676,
+            1338
+          ]
+        },
+        {
+          "id": 1338,
+          "kind": "PolylineTrace",
+          "layer": 0,
+          "start": [
+            106.1,
+            122.6
+          ],
+          "end": [
+            106.7,
+            122.6
+          ],
+          "half_width": 0.1,
+          "contacts": [
+            1340,
+            416
+          ]
+        },
+        {
+          "id": 416,
+          "kind": "Pin",
+          "position_raw": [
+            1061000.0,
+            -1226000.0
+          ],
+          "shapes": [
+            {
+              "layer": 0,
+              "kind": "Simplex",
+              "bounds": [
+                1057248,
+                -1227002,
+                1064752,
+                -1224998
+              ],
+              "center_inside": true
+            }
+          ],
+          "ref": "U3",
+          "pin": "9",
+          "contacts": [
+            1338
+          ]
+        }
+      ],
+      [
+        {
+          "id": 1675,
+          "kind": "Via",
+          "position_raw": [
+            1104797.0,
+            -1055466.0
+          ],
+          "shapes": [
+            {
+              "layer": 0,
+              "kind": "Circle",
+              "bounds": [
+                1101797,
+                -1058466,
+                1107797,
+                -1052466
+              ],
+              "center_inside": true
+            },
+            {
+              "layer": 1,
+              "kind": "Circle",
+              "bounds": [
+                1101797,
+                -1058466,
+                1107797,
+                -1052466
+              ],
+              "center_inside": true
+            },
+            {
+              "layer": 2,
+              "kind": "Circle",
+              "bounds": [
+                1101797,
+                -1058466,
+                1107797,
+                -1052466
+              ],
+              "center_inside": true
+            },
+            {
+              "layer": 3,
+              "kind": "Circle",
+              "bounds": [
+                1101797,
+                -1058466,
+                1107797,
+                -1052466
+              ],
+              "center_inside": true
+            }
+          ],
+          "contacts": [
+            1344,
+            1339
+          ]
+        },
+        {
+          "id": 1345,
+          "kind": "PolylineTrace",
+          "layer": 3,
+          "start": [
+            109.49,
+            102.0
+          ],
+          "end": [
+            109.49,
+            104.5569
+          ],
+          "half_width": 0.1,
+          "contacts": [
+            1344,
+            511
+          ]
+        },
+        {
+          "id": 1344,
+          "kind": "PolylineTrace",
+          "layer": 3,
+          "start": [
+            109.49,
+            104.5569
+          ],
+          "end": [
+            110.4797,
+            105.5466
+          ],
+          "half_width": 0.1,
+          "contacts": [
+            1675,
+            1345
+          ]
+        },
+        {
+          "id": 1343,
+          "kind": "PolylineTrace",
+          "layer": 0,
+          "start": [
+            110.7624,
+            105.5466
+          ],
+          "end": [
+            111.7737,
+            106.5579
+          ],
+          "half_width": 0.1,
+          "contacts": [
+            1342,
+            1339
+          ]
+        },
+        {
+          "id": 1342,
+          "kind": "PolylineTrace",
+          "layer": 0,
+          "start": [
+            111.7737,
+            106.5579
+          ],
+          "end": [
+            111.7737,
+            107.8513
+          ],
+          "half_width": 0.1,
+          "contacts": [
+            1343,
+            1341
+          ]
+        },
+        {
+          "id": 1341,
+          "kind": "PolylineTrace",
+          "layer": 0,
+          "start": [
+            111.7737,
+            107.8513
+          ],
+          "end": [
+            111.75,
+            107.875
+          ],
+          "half_width": 0.1,
+          "contacts": [
+            1342,
+            346
+          ]
+        },
+        {
+          "id": 1339,
+          "kind": "PolylineTrace",
+          "layer": 0,
+          "start": [
+            110.4797,
+            105.5466
+          ],
+          "end": [
+            110.7624,
+            105.5466
+          ],
+          "half_width": 0.1,
+          "contacts": [
+            1675,
+            1343
+          ]
+        },
+        {
+          "id": 511,
+          "kind": "Pin",
+          "position_raw": [
+            1094900.0,
+            -1020000.0
+          ],
+          "shapes": [
+            {
+              "layer": 3,
+              "kind": "Simplex",
+              "bounds": [
+                1092195,
+                -1023205,
+                1097605,
+                -1016795
+              ],
+              "center_inside": true
+            }
+          ],
+          "ref": "R8",
+          "pin": "1",
+          "contacts": [
+            1345
+          ]
+        },
+        {
+          "id": 346,
+          "kind": "Pin",
+          "position_raw": [
+            1117500.0,
+            -1078750.0
+          ],
+          "shapes": [
+            {
+              "layer": 0,
+              "kind": "Simplex",
+              "bounds": [
+                1115999,
+                -1081001,
+                1119001,
+                -1076499
+              ],
+              "center_inside": true
+            }
+          ],
+          "ref": "U1",
+          "pin": "69",
+          "contacts": [
+            1341
+          ]
+        }
+      ]
+    ],
+    "/SIM_CLK": [
+      [
+        {
+          "id": 1644,
+          "kind": "Via",
+          "position_raw": [
+            1259770.0,
+            -1135762.0
+          ],
+          "shapes": [
+            {
+              "layer": 0,
+              "kind": "Circle",
+              "bounds": [
+                1256770,
+                -1138762,
+                1262770,
+                -1132762
+              ],
+              "center_inside": true
+            },
+            {
+              "layer": 1,
+              "kind": "Circle",
+              "bounds": [
+                1256770,
+                -1138762,
+                1262770,
+                -1132762
+              ],
+              "center_inside": true
+            },
+            {
+              "layer": 2,
+              "kind": "Circle",
+              "bounds": [
+                1256770,
+                -1138762,
+                1262770,
+                -1132762
+              ],
+              "center_inside": true
+            },
+            {
+              "layer": 3,
+              "kind": "Circle",
+              "bounds": [
+                1256770,
+                -1138762,
+                1262770,
+                -1132762
+              ],
+              "center_inside": true
+            }
+          ],
+          "contacts": [
+            1183,
+            1169
+          ]
+        },
+        {
+          "id": 1643,
+          "kind": "Via",
+          "position_raw": [
+            1290190.0,
+            -1149689.0
+          ],
+          "shapes": [
+            {
+              "layer": 0,
+              "kind": "Circle",
+              "bounds": [
+                1287190,
+                -1152689,
+                1293190,
+                -1146689
+              ],
+              "center_inside": true
+            },
+            {
+              "layer": 1,
+              "kind": "Circle",
+              "bounds": [
+                1287190,
+                -1152689,
+                1293190,
+                -1146689
+              ],
+              "center_inside": true
+            },
+            {
+              "layer": 2,
+              "kind": "Circle",
+              "bounds": [
+                1287190,
+                -1152689,
+                1293190,
+                -1146689
+              ],
+              "center_inside": true
+            },
+            {
+              "layer": 3,
+              "kind": "Circle",
+              "bounds": [
+                1287190,
+                -1152689,
+                1293190,
+                -1146689
+              ],
+              "center_inside": true
+            }
+          ],
+          "contacts": [
+            1187,
+            1164
+          ]
+        },
+        {
+          "id": 1642,
+          "kind": "Via",
+          "position_raw": [
+            1290619.0,
+            -1210673.0
+          ],
+          "shapes": [
+            {
+              "layer": 0,
+              "kind": "Circle",
+              "bounds": [
+                1287619,
+                -1213673,
+                1293619,
+                -1207673
+              ],
+              "center_inside": true
+            },
+            {
+              "layer": 1,
+              "kind": "Circle",
+              "bounds": [
+                1287619,
+                -1213673,
+                1293619,
+                -1207673
+              ],
+              "center_inside": true
+            },
+            {
+              "layer": 2,
+              "kind": "Circle",
+              "bounds": [
+                1287619,
+                -1213673,
+                1293619,
+                -1207673
+              ],
+              "center_inside": true
+            },
+            {
+              "layer": 3,
+              "kind": "Circle",
+              "bounds": [
+                1287619,
+                -1213673,
+                1293619,
+                -1207673
+              ],
+              "center_inside": true
+            }
+          ],
+          "contacts": [
+            1171,
+            1163
+          ]
+        },
+        {
+          "id": 1187,
+          "kind": "PolylineTrace",
+          "layer": 3,
+          "start": [
+            129.019,
+            114.9689
+          ],
+          "end": [
+            129.019,
+            115.5369
+          ],
+          "half_width": 0.1,
+          "contacts": [
+            1643,
+            1178
+          ]
+        },
+        {
+          "id": 1186,
+          "kind": "PolylineTrace",
+          "layer": 3,
+          "start": [
+            129.0721,
+            117.7013
+          ],
+          "end": [
+            129.0721,
+            121.0571
+          ],
+          "half_width": 0.1,
+          "contacts": [
+            1180,
+            1175,
+            1171
+          ]
+        },
+        {
+          "id": 1185,
+          "kind": "PolylineTrace",
+          "layer": 3,
+          "start": [
+            120.4818,
+            105.1533
+          ],
+          "end": [
+            123.5351,
+            102.1
+          ],
+          "half_width": 0.1,
+          "contacts": [
+            1182,
+            1176
+          ]
+        },
+        {
+          "id": 1184,
+          "kind": "PolylineTrace",
+          "layer": 3,
+          "start": [
+            125.4008,
+            113.0
+          ],
+          "end": [
+            123.6937,
+            113.0
+          ],
+          "half_width": 0.1,
+          "contacts": [
+            1183,
+            1177
+          ]
+        },
+        {
+          "id": 1183,
+          "kind": "PolylineTrace",
+          "layer": 3,
+          "start": [
+            125.977,
+            113.5762
+          ],
+          "end": [
+            125.4008,
+            113.0
+          ],
+          "half_width": 0.1,
+          "contacts": [
+            1644,
+            1184
+          ]
+        },
+        {
+          "id": 1182,
+          "kind": "PolylineTrace",
+          "layer": 3,
+          "start": [
+            123.5351,
+            102.1
+          ],
+          "end": [
+            124.46,
+            102.1
+          ],
+          "half_width": 0.1,
+          "contacts": [
+            1185,
+            480
+          ]
+        },
+        {
+          "id": 1181,
+          "kind": "PolylineTrace",
+          "layer": 3,
+          "start": [
+            129.9547,
+            116.4726
+          ],
+          "end": [
+            129.9547,
+            117.3503
+          ],
+          "half_width": 0.1,
+          "contacts": [
+            1178,
+            1172
+          ]
+        },
+        {
+          "id": 1180,
+          "kind": "PolylineTrace",
+          "layer": 3,
+          "start": [
+            129.0721,
+            117.7013
+          ],
+          "end": [
+            128.4517,
+            117.0809
+          ],
+          "half_width": 0.1,
+          "contacts": [
+            1186,
+            1179,
+            1175
+          ]
+        },
+        {
+          "id": 1179,
+          "kind": "PolylineTrace",
+          "layer": 3,
+          "start": [
+            128.4517,
+            117.0809
+          ],
+          "end": [
+            128.4517,
+            116.85
+          ],
+          "half_width": 0.1,
+          "contacts": [
+            1180,
+            1174
+          ]
+        },
+        {
+          "id": 1178,
+          "kind": "PolylineTrace",
+          "layer": 3,
+          "start": [
+            129.019,
+            115.5369
+          ],
+          "end": [
+            129.9547,
+            116.4726
+          ],
+          "half_width": 0.1,
+          "contacts": [
+            1187,
+            1181
+          ]
+        },
+        {
+          "id": 1177,
+          "kind": "PolylineTrace",
+          "layer": 3,
+          "start": [
+            123.6937,
+            113.0
+          ],
+          "end": [
+            120.4818,
+            109.7881
+          ],
+          "half_width": 0.1,
+          "contacts": [
+            1184,
+            1176
+          ]
+        },
+        {
+          "id": 1176,
+          "kind": "PolylineTrace",
+          "layer": 3,
+          "start": [
+            120.4818,
+            109.7881
+          ],
+          "end": [
+            120.4818,
+            105.1533
+          ],
+          "half_width": 0.1,
+          "contacts": [
+            1185,
+            1177
+          ]
+        },
+        {
+          "id": 1175,
+          "kind": "PolylineTrace",
+          "layer": 3,
+          "start": [
+            129.6037,
+            117.7013
+          ],
+          "end": [
+            129.0721,
+            117.7013
+          ],
+          "half_width": 0.1,
+          "contacts": [
+            1186,
+            1180,
+            1172
+          ]
+        },
+        {
+          "id": 1174,
+          "kind": "PolylineTrace",
+          "layer": 3,
+          "start": [
+            127.9,
+            116.85
+          ],
+          "end": [
+            128.4517,
+            116.85
+          ],
+          "half_width": 0.1,
+          "contacts": [
+            1179,
+            1173,
+            546
+          ]
+        },
+        {
+          "id": 1173,
+          "kind": "PolylineTrace",
+          "layer": 3,
+          "start": [
+            127.6375,
+            116.85
+          ],
+          "end": [
+            127.9,
+            116.85
+          ],
+          "half_width": 0.1,
+          "contacts": [
+            1174,
+            546
+          ]
+        },
+        {
+          "id": 1172,
+          "kind": "PolylineTrace",
+          "layer": 3,
+          "start": [
+            129.9547,
+            117.3503
+          ],
+          "end": [
+            129.6037,
+            117.7013
+          ],
+          "half_width": 0.1,
+          "contacts": [
+            1181,
+            1175
+          ]
+        },
+        {
+          "id": 1171,
+          "kind": "PolylineTrace",
+          "layer": 3,
+          "start": [
+            129.0721,
+            121.0571
+          ],
+          "end": [
+            129.0619,
+            121.0673
+          ],
+          "half_width": 0.1,
+          "contacts": [
+            1642,
+            1186
+          ]
+        },
+        {
+          "id": 1169,
+          "kind": "PolylineTrace",
+          "layer": 0,
+          "start": [
+            125.977,
+            113.5762
+          ],
+          "end": [
+            127.3697,
+            114.9689
+          ],
+          "half_width": 0.1,
+          "contacts": [
+            1644,
+            1164
+          ]
+        },
+        {
+          "id": 1167,
+          "kind": "PolylineTrace",
+          "layer": 0,
+          "start": [
+            113.7647,
+            125.4253
+          ],
+          "end": [
+            110.0144,
+            121.675
+          ],
+          "half_width": 0.1,
+          "contacts": [
+            1165
+          ]
+        },
+        {
+          "id": 1165,
+          "kind": "PolylineTrace",
+          "layer": 0,
+          "start": [
+            124.7039,
+            125.4253
+          ],
+          "end": [
+            113.7647,
+            125.4253
+          ],
+          "half_width": 0.1,
+          "contacts": [
+            1167,
+            1163
+          ]
+        },
+        {
+          "id": 1164,
+          "kind": "PolylineTrace",
+          "layer": 0,
+          "start": [
+            127.3697,
+            114.9689
+          ],
+          "end": [
+            129.019,
+            114.9689
+          ],
+          "half_width": 0.1,
+          "contacts": [
+            1643,
+            1169
+          ]
+        },
+        {
+          "id": 1163,
+          "kind": "PolylineTrace",
+          "layer": 0,
+          "start": [
+            129.0619,
+            121.0673
+          ],
+          "end": [
+            124.7039,
+            125.4253
+          ],
+          "half_width": 0.1,
+          "contacts": [
+            1642,
+            1165
+          ]
+        },
+        {
+          "id": 546,
+          "kind": "Pin",
+          "position_raw": [
+            1279000.0,
+            -1168500.0
+          ],
+          "shapes": [
+            {
+              "layer": 3,
+              "kind": "Simplex",
+              "bounds": [
+                1274498,
+                -1170502,
+                1283502,
+                -1166498
+              ],
+              "center_inside": true
+            }
+          ],
+          "ref": "D1",
+          "pin": "6",
+          "contacts": [
+            1174,
+            1173
+          ]
+        },
+        {
+          "id": 480,
+          "kind": "Pin",
+          "position_raw": [
+            1244600.0,
+            -1021000.0
+          ],
+          "shapes": [
+            {
+              "layer": 3,
+              "kind": "IntBox",
+              "bounds": [
+                1239600,
+                -1026500,
+                1249600,
+                -1015500
+              ],
+              "center_inside": true
+            }
+          ],
+          "ref": "J6",
+          "pin": "3",
+          "contacts": [
+            1182
+          ]
+        }
+      ],
+      [
+        {
+          "id": 1170,
+          "kind": "PolylineTrace",
+          "layer": 0,
+          "start": [
+            104.3129,
+            116.7496
+          ],
+          "end": [
+            105.375,
+            116.7496
+          ],
+          "half_width": 0.1,
+          "contacts": [
+            1168,
+            295
+          ]
+        },
+        {
+          "id": 1168,
+          "kind": "PolylineTrace",
+          "layer": 0,
+          "start": [
+            103.5019,
+            117.5606
+          ],
+          "end": [
+            104.3129,
+            116.7496
+          ],
+          "half_width": 0.1,
+          "contacts": [
+            1170,
+            1166
+          ]
+        },
+        {
+          "id": 1166,
+          "kind": "PolylineTrace",
+          "layer": 0,
+          "start": [
+            103.5019,
+            118.4416
+          ],
+          "end": [
+            103.5019,
+            117.5606
+          ],
+          "half_width": 0.1,
+          "contacts": [
+            1168
+          ]
+        },
+        {
+          "id": 295,
+          "kind": "Pin",
+          "position_raw": [
+            1053750.0,
+            -1167496.0
+          ],
+          "shapes": [
+            {
+              "layer": 0,
+              "kind": "Simplex",
+              "bounds": [
+                1051499,
+                -1168997,
+                1056001,
+                -1165995
+              ],
+              "center_inside": true
+            }
+          ],
+          "ref": "U1",
+          "pin": "18",
+          "contacts": [
+            1170
+          ]
+        }
+      ]
+    ],
+    "/SIM_IO": [
+      [
+        {
+          "id": 1641,
+          "kind": "Via",
+          "position_raw": [
+            1293529.0,
+            -1170996.0
+          ],
+          "shapes": [
+            {
+              "layer": 0,
+              "kind": "Circle",
+              "bounds": [
+                1290529,
+                -1173996,
+                1296529,
+                -1167996
+              ],
+              "center_inside": true
+            },
+            {
+              "layer": 1,
+              "kind": "Circle",
+              "bounds": [
+                1290529,
+                -1173996,
+                1296529,
+                -1167996
+              ],
+              "center_inside": true
+            },
+            {
+              "layer": 2,
+              "kind": "Circle",
+              "bounds": [
+                1290529,
+                -1173996,
+                1296529,
+                -1167996
+              ],
+              "center_inside": true
+            },
+            {
+              "layer": 3,
+              "kind": "Circle",
+              "bounds": [
+                1290529,
+                -1173996,
+                1296529,
+                -1167996
+              ],
+              "center_inside": true
+            }
+          ],
+          "contacts": [
+            1158,
+            1150
+          ]
+        },
+        {
+          "id": 1162,
+          "kind": "PolylineTrace",
+          "layer": 3,
+          "start": [
+            128.4517,
+            115.55
+          ],
+          "end": [
+            129.3529,
+            116.4512
+          ],
+          "half_width": 0.1,
+          "contacts": [
+            1160,
+            1158
+          ]
+        },
+        {
+          "id": 1161,
+          "kind": "PolylineTrace",
+          "layer": 3,
+          "start": [
+            125.4358,
+            113.9
+          ],
+          "end": [
+            124.46,
+            113.9
+          ],
+          "half_width": 0.1,
+          "contacts": [
+            1156,
+            483
+          ]
+        },
+        {
+          "id": 1160,
+          "kind": "PolylineTrace",
+          "layer": 3,
+          "start": [
+            127.9,
+            115.55
+          ],
+          "end": [
+            128.4517,
+            115.55
+          ],
+          "half_width": 0.1,
+          "contacts": [
+            1162,
+            1159,
+            544
+          ]
+        },
+        {
+          "id": 1159,
+          "kind": "PolylineTrace",
+          "layer": 3,
+          "start": [
+            127.6375,
+            115.55
+          ],
+          "end": [
+            127.9,
+            115.55
+          ],
+          "half_width": 0.1,
+          "contacts": [
+            1160,
+            1154,
+            544
+          ]
+        },
+        {
+          "id": 1158,
+          "kind": "PolylineTrace",
+          "layer": 3,
+          "start": [
+            129.3529,
+            116.4512
+          ],
+          "end": [
+            129.3529,
+            117.0996
+          ],
+          "half_width": 0.1,
+          "contacts": [
+            1641,
+            1162
+          ]
+        },
+        {
+          "id": 1157,
+          "kind": "PolylineTrace",
+          "layer": 3,
+          "start": [
+            127.2438,
+            115.55
+          ],
+          "end": [
+            126.8233,
+            115.55
+          ],
+          "half_width": 0.1,
+          "contacts": [
+            1155,
+            1154
+          ]
+        },
+        {
+          "id": 1156,
+          "kind": "PolylineTrace",
+          "layer": 3,
+          "start": [
+            126.8233,
+            115.2875
+          ],
+          "end": [
+            125.4358,
+            113.9
+          ],
+          "half_width": 0.1,
+          "contacts": [
+            1161,
+            1155
+          ]
+        },
+        {
+          "id": 1155,
+          "kind": "PolylineTrace",
+          "layer": 3,
+          "start": [
+            126.8233,
+            115.55
+          ],
+          "end": [
+            126.8233,
+            115.2875
+          ],
+          "half_width": 0.1,
+          "contacts": [
+            1157,
+            1156
+          ]
+        },
+        {
+          "id": 1154,
+          "kind": "PolylineTrace",
+          "layer": 3,
+          "start": [
+            127.2438,
+            115.55
+          ],
+          "end": [
+            127.6375,
+            115.55
+          ],
+          "half_width": 0.1,
+          "contacts": [
+            1159,
+            1157
+          ]
+        },
+        {
+          "id": 1153,
+          "kind": "PolylineTrace",
+          "layer": 0,
+          "start": [
+            113.6306,
+            125.8811
+          ],
+          "end": [
+            125.1087,
+            125.8811
+          ],
+          "half_width": 0.1,
+          "contacts": [
+            1146,
+            1145
+          ]
+        },
+        {
+          "id": 1150,
+          "kind": "PolylineTrace",
+          "layer": 0,
+          "start": [
+            129.729,
+            117.4757
+          ],
+          "end": [
+            129.3529,
+            117.0996
+          ],
+          "half_width": 0.1,
+          "contacts": [
+            1641,
+            1147
+          ]
+        },
+        {
+          "id": 1147,
+          "kind": "PolylineTrace",
+          "layer": 0,
+          "start": [
+            129.729,
+            121.2608
+          ],
+          "end": [
+            129.729,
+            117.4757
+          ],
+          "half_width": 0.1,
+          "contacts": [
+            1150,
+            1146
+          ]
+        },
+        {
+          "id": 1146,
+          "kind": "PolylineTrace",
+          "layer": 0,
+          "start": [
+            125.1087,
+            125.8811
+          ],
+          "end": [
+            129.729,
+            121.2608
+          ],
+          "half_width": 0.1,
+          "contacts": [
+            1153,
+            1147
+          ]
+        },
+        {
+          "id": 1145,
+          "kind": "PolylineTrace",
+          "layer": 0,
+          "start": [
+            110.4368,
+            122.6873
+          ],
+          "end": [
+            113.6306,
+            125.8811
+          ],
+          "half_width": 0.1,
+          "contacts": [
+            1153
+          ]
+        },
+        {
+          "id": 544,
+          "kind": "Pin",
+          "position_raw": [
+            1279000.0,
+            -1155500.0
+          ],
+          "shapes": [
+            {
+              "layer": 3,
+              "kind": "Simplex",
+              "bounds": [
+                1274498,
+                -1157502,
+                1283502,
+                -1153498
+              ],
+              "center_inside": true
+            }
+          ],
+          "ref": "D1",
+          "pin": "4",
+          "contacts": [
+            1160,
+            1159
+          ]
+        },
+        {
+          "id": 483,
+          "kind": "Pin",
+          "position_raw": [
+            1244600.0,
+            -1139000.0
+          ],
+          "shapes": [
+            {
+              "layer": 3,
+              "kind": "IntBox",
+              "bounds": [
+                1239600,
+                -1144500,
+                1249600,
+                -1133500
+              ],
+              "center_inside": true
+            }
+          ],
+          "ref": "J6",
+          "pin": "7",
+          "contacts": [
+            1161
+          ]
+        }
+      ],
+      [
+        {
+          "id": 1152,
+          "kind": "PolylineTrace",
+          "layer": 0,
+          "start": [
+            105.375,
+            116.2496
+          ],
+          "end": [
+            105.3268,
+            116.2978
+          ],
+          "half_width": 0.1,
+          "contacts": [
+            1149,
+            294
+          ]
+        },
+        {
+          "id": 1151,
+          "kind": "PolylineTrace",
+          "layer": 0,
+          "start": [
+            103.0635,
+            117.4299
+          ],
+          "end": [
+            103.0635,
+            118.6038
+          ],
+          "half_width": 0.1,
+          "contacts": [
+            1148
+          ]
+        },
+        {
+          "id": 1149,
+          "kind": "PolylineTrace",
+          "layer": 0,
+          "start": [
+            105.3268,
+            116.2978
+          ],
+          "end": [
+            104.1956,
+            116.2978
+          ],
+          "half_width": 0.1,
+          "contacts": [
+            1152,
+            1148
+          ]
+        },
+        {
+          "id": 1148,
+          "kind": "PolylineTrace",
+          "layer": 0,
+          "start": [
+            104.1956,
+            116.2978
+          ],
+          "end": [
+            103.0635,
+            117.4299
+          ],
+          "half_width": 0.1,
+          "contacts": [
+            1151,
+            1149
+          ]
+        },
+        {
+          "id": 294,
+          "kind": "Pin",
+          "position_raw": [
+            1053750.0,
+            -1162496.0
+          ],
+          "shapes": [
+            {
+              "layer": 0,
+              "kind": "Simplex",
+              "bounds": [
+                1051499,
+                -1163997,
+                1056001,
+                -1160995
+              ],
+              "center_inside": true
+            }
+          ],
+          "ref": "U1",
+          "pin": "17",
+          "contacts": [
+            1152
+          ]
+        }
+      ]
+    ],
+    "/SPI_SCK": [
+      [
+        {
+          "id": 1657,
+          "kind": "Via",
+          "position_raw": [
+            1157775.0,
+            -1067289.0
+          ],
+          "shapes": [
+            {
+              "layer": 0,
+              "kind": "Circle",
+              "bounds": [
+                1154775,
+                -1070289,
+                1160775,
+                -1064289
+              ],
+              "center_inside": true
+            },
+            {
+              "layer": 1,
+              "kind": "Circle",
+              "bounds": [
+                1154775,
+                -1070289,
+                1160775,
+                -1064289
+              ],
+              "center_inside": true
+            },
+            {
+              "layer": 2,
+              "kind": "Circle",
+              "bounds": [
+                1154775,
+                -1070289,
+                1160775,
+                -1064289
+              ],
+              "center_inside": true
+            },
+            {
+              "layer": 3,
+              "kind": "Circle",
+              "bounds": [
+                1154775,
+                -1070289,
+                1160775,
+                -1064289
+              ],
+              "center_inside": true
+            }
+          ],
+          "contacts": [
+            1245
+          ]
+        },
+        {
+          "id": 1246,
+          "kind": "PolylineTrace",
+          "layer": 0,
+          "start": [
+            115.75,
+            107.875
+          ],
+          "end": [
+            115.75,
+            107.3483
+          ],
+          "half_width": 0.1,
+          "contacts": [
+            1244,
+            338
+          ]
+        },
+        {
+          "id": 1245,
+          "kind": "PolylineTrace",
+          "layer": 0,
+          "start": [
+            115.7775,
+            107.3208
+          ],
+          "end": [
+            115.7775,
+            106.7289
+          ],
+          "half_width": 0.1,
+          "contacts": [
+            1657,
+            1244
+          ]
+        },
+        {
+          "id": 1244,
+          "kind": "PolylineTrace",
+          "layer": 0,
+          "start": [
+            115.75,
+            107.3483
+          ],
+          "end": [
+            115.7775,
+            107.3208
+          ],
+          "half_width": 0.1,
+          "contacts": [
+            1246,
+            1245
+          ]
+        },
+        {
+          "id": 338,
+          "kind": "Pin",
+          "position_raw": [
+            1157500.0,
+            -1078750.0
+          ],
+          "shapes": [
+            {
+              "layer": 0,
+              "kind": "Simplex",
+              "bounds": [
+                1155999,
+                -1081001,
+                1159001,
+                -1076499
+              ],
+              "center_inside": true
+            }
+          ],
+          "ref": "U1",
+          "pin": "61",
+          "contacts": [
+            1246
+          ]
+        }
+      ],
+      [
+        {
+          "id": 1656,
+          "kind": "Via",
+          "position_raw": [
+            1256350.0,
+            -1266500.0
+          ],
+          "shapes": [
+            {
+              "layer": 0,
+              "kind": "Circle",
+              "bounds": [
+                1253350,
+                -1269500,
+                1259350,
+                -1263500
+              ],
+              "center_inside": true
+            },
+            {
+              "layer": 1,
+              "kind": "Circle",
+              "bounds": [
+                1253350,
+                -1269500,
+                1259350,
+                -1263500
+              ],
+              "center_inside": true
+            },
+            {
+              "layer": 2,
+              "kind": "Circle",
+              "bounds": [
+                1253350,
+                -1269500,
+                1259350,
+                -1263500
+              ],
+              "center_inside": true
+            },
+            {
+              "layer": 3,
+              "kind": "Circle",
+              "bounds": [
+                1253350,
+                -1269500,
+                1259350,
+                -1263500
+              ],
+              "center_inside": true
+            }
+          ],
+          "contacts": [
+            1247
+          ]
+        },
+        {
+          "id": 1247,
+          "kind": "PolylineTrace",
+          "layer": 3,
+          "start": [
+            125.635,
+            125.635
+          ],
+          "end": [
+            125.635,
+            126.65
+          ],
+          "half_width": 0.1,
+          "contacts": [
+            1656,
+            459
+          ]
+        },
+        {
+          "id": 459,
+          "kind": "Pin",
+          "position_raw": [
+            1256350.0,
+            -1256350.0
+          ],
+          "shapes": [
+            {
+              "layer": 3,
+              "kind": "IntOctagon",
+              "bounds": [
+                1252350,
+                -1260350,
+                1260350,
+                -1252350
+              ],
+              "center_inside": true
+            }
+          ],
+          "ref": "J5",
+          "pin": "7",
+          "contacts": [
+            1247
+          ]
+        }
+      ]
+    ],
+    "/VSYS": [
+      [
+        {
+          "id": 1617,
+          "kind": "Via",
+          "position_raw": [
+            1030398.0,
+            -1147875.0
+          ],
+          "shapes": [
+            {
+              "layer": 0,
+              "kind": "Circle",
+              "bounds": [
+                1027398,
+                -1150875,
+                1033398,
+                -1144875
+              ],
+              "center_inside": true
+            },
+            {
+              "layer": 1,
+              "kind": "Circle",
+              "bounds": [
+                1027398,
+                -1150875,
+                1033398,
+                -1144875
+              ],
+              "center_inside": true
+            },
+            {
+              "layer": 2,
+              "kind": "Circle",
+              "bounds": [
+                1027398,
+                -1150875,
+                1033398,
+                -1144875
+              ],
+              "center_inside": true
+            },
+            {
+              "layer": 3,
+              "kind": "Circle",
+              "bounds": [
+                1027398,
+                -1150875,
+                1033398,
+                -1144875
+              ],
+              "center_inside": true
+            }
+          ],
+          "contacts": [
+            748,
+            738,
+            723
+          ]
+        },
+        {
+          "id": 1616,
+          "kind": "Via",
+          "position_raw": [
+            1061968.0,
+            -1055401.0
+          ],
+          "shapes": [
+            {
+              "layer": 0,
+              "kind": "Circle",
+              "bounds": [
+                1058968,
+                -1058401,
+                1064968,
+                -1052401
+              ],
+              "center_inside": true
+            },
+            {
+              "layer": 1,
+              "kind": "Circle",
+              "bounds": [
+                1058968,
+                -1058401,
+                1064968,
+                -1052401
+              ],
+              "center_inside": true
+            },
+            {
+              "layer": 2,
+              "kind": "Circle",
+              "bounds": [
+                1058968,
+                -1058401,
+                1064968,
+                -1052401
+              ],
+              "center_inside": true
+            },
+            {
+              "layer": 3,
+              "kind": "Circle",
+              "bounds": [
+                1058968,
+                -1058401,
+                1064968,
+                -1052401
+              ],
+              "center_inside": true
+            }
+          ],
+          "contacts": [
+            746,
+            711
+          ]
+        },
+        {
+          "id": 1615,
+          "kind": "Via",
+          "position_raw": [
+            1055200.0,
+            -1009876.0
+          ],
+          "shapes": [
+            {
+              "layer": 0,
+              "kind": "Circle",
+              "bounds": [
+                1052200,
+                -1012876,
+                1058200,
+                -1006876
+              ],
+              "center_inside": true
+            },
+            {
+              "layer": 1,
+              "kind": "Circle",
+              "bounds": [
+                1052200,
+                -1012876,
+                1058200,
+                -1006876
+              ],
+              "center_inside": true
+            },
+            {
+              "layer": 2,
+              "kind": "Circle",
+              "bounds": [
+                1052200,
+                -1012876,
+                1058200,
+                -1006876
+              ],
+              "center_inside": true
+            },
+            {
+              "layer": 3,
+              "kind": "Circle",
+              "bounds": [
+                1052200,
+                -1012876,
+                1058200,
+                -1006876
+              ],
+              "center_inside": true
+            }
+          ],
+          "contacts": [
+            753,
+            702
+          ]
+        },
+        {
+          "id": 1614,
+          "kind": "Via",
+          "position_raw": [
+            1032500.0,
+            -1192000.0
+          ],
+          "shapes": [
+            {
+              "layer": 0,
+              "kind": "Circle",
+              "bounds": [
+                1029500,
+                -1195000,
+                1035500,
+                -1189000
+              ],
+              "center_inside": true
+            },
+            {
+              "layer": 1,
+              "kind": "Circle",
+              "bounds": [
+                1029500,
+                -1195000,
+                1035500,
+                -1189000
+              ],
+              "center_inside": true
+            },
+            {
+              "layer": 2,
+              "kind": "Circle",
+              "bounds": [
+                1029500,
+                -1195000,
+                1035500,
+                -1189000
+              ],
+              "center_inside": true
+            },
+            {
+              "layer": 3,
+              "kind": "Circle",
+              "bounds": [
+                1029500,
+                -1195000,
+                1035500,
+                -1189000
+              ],
+              "center_inside": true
+            }
+          ],
+          "contacts": [
+            747,
+            732
+          ]
+        },
+        {
+          "id": 761,
+          "kind": "PolylineTrace",
+          "layer": 3,
+          "start": [
+            103.05,
+            117.7
+          ],
+          "end": [
+            103.05,
+            117.65
+          ],
+          "half_width": 0.2,
+          "contacts": [
+            744,
+            743
+          ]
+        },
+        {
+          "id": 760,
+          "kind": "PolylineTrace",
+          "layer": 3,
+          "start": [
+            103.2,
+            117.95
+          ],
+          "end": [
+            103.15,
+            117.9
+          ],
+          "half_width": 0.2,
+          "contacts": [
+            751,
+            741
+          ]
+        },
+        {
+          "id": 759,
+          "kind": "PolylineTrace",
+          "layer": 3,
+          "start": [
+            103.0,
+            117.5
+          ],
+          "end": [
+            103.0398,
+            117.45
+          ],
+          "half_width": 0.2,
+          "contacts": [
+            757,
+            748
+          ]
+        },
+        {
+          "id": 757,
+          "kind": "PolylineTrace",
+          "layer": 3,
+          "start": [
+            103.0,
+            117.55
+          ],
+          "end": [
+            103.0,
+            117.5
+          ],
+          "half_width": 0.2,
+          "contacts": [
+            759,
+            749
+          ]
+        },
+        {
+          "id": 756,
+          "kind": "PolylineTrace",
+          "layer": 3,
+          "start": [
+            105.6459,
+            105.365
+          ],
+          "end": [
+            106.0217,
+            105.365
+          ],
+          "half_width": 0.15,
+          "contacts": [
+            754,
+            746,
+            742
+          ]
+        },
+        {
+          "id": 754,
+          "kind": "PolylineTrace",
+          "layer": 3,
+          "start": [
+            105.6459,
+            105.365
+          ],
+          "end": [
+            105.6459,
+            101.1135
+          ],
+          "half_width": 0.2,
+          "contacts": [
+            756,
+            753,
+            742
+          ]
+        },
+        {
+          "id": 753,
+          "kind": "PolylineTrace",
+          "layer": 3,
+          "start": [
+            105.6459,
+            101.1135
+          ],
+          "end": [
+            105.52,
+            100.9876
+          ],
+          "half_width": 0.2,
+          "contacts": [
+            1615,
+            754
+          ]
+        },
+        {
+          "id": 752,
+          "kind": "PolylineTrace",
+          "layer": 3,
+          "start": [
+            103.15,
+            117.85
+          ],
+          "end": [
+            103.1,
+            117.8
+          ],
+          "half_width": 0.2,
+          "contacts": [
+            751,
+            745
+          ]
+        },
+        {
+          "id": 751,
+          "kind": "PolylineTrace",
+          "layer": 3,
+          "start": [
+            103.15,
+            117.9
+          ],
+          "end": [
+            103.15,
+            117.85
+          ],
+          "half_width": 0.2,
+          "contacts": [
+            760,
+            752
+          ]
+        },
+        {
+          "id": 750,
+          "kind": "PolylineTrace",
+          "layer": 3,
+          "start": [
+            103.25,
+            118.05
+          ],
+          "end": [
+            103.2,
+            118.0
+          ],
+          "half_width": 0.2,
+          "contacts": [
+            747,
+            741
+          ]
+        },
+        {
+          "id": 749,
+          "kind": "PolylineTrace",
+          "layer": 3,
+          "start": [
+            103.0,
+            117.6
+          ],
+          "end": [
+            103.0,
+            117.55
+          ],
+          "half_width": 0.2,
+          "contacts": [
+            757,
+            743
+          ]
+        },
+        {
+          "id": 748,
+          "kind": "PolylineTrace",
+          "layer": 3,
+          "start": [
+            103.0398,
+            114.7875
+          ],
+          "end": [
+            103.0398,
+            117.45
+          ],
+          "half_width": 0.2,
+          "contacts": [
+            1617,
+            759
+          ]
+        },
+        {
+          "id": 747,
+          "kind": "PolylineTrace",
+          "layer": 3,
+          "start": [
+            103.25,
+            119.2
+          ],
+          "end": [
+            103.25,
+            118.05
+          ],
+          "half_width": 0.2,
+          "contacts": [
+            1614,
+            750
+          ]
+        },
+        {
+          "id": 746,
+          "kind": "PolylineTrace",
+          "layer": 3,
+          "start": [
+            106.0217,
+            105.365
+          ],
+          "end": [
+            106.1968,
+            105.5401
+          ],
+          "half_width": 0.15,
+          "contacts": [
+            1616,
+            756
+          ]
+        },
+        {
+          "id": 745,
+          "kind": "PolylineTrace",
+          "layer": 3,
+          "start": [
+            103.1,
+            117.8
+          ],
+          "end": [
+            103.1,
+            117.75
+          ],
+          "half_width": 0.2,
+          "contacts": [
+            752,
+            744
+          ]
+        },
+        {
+          "id": 744,
+          "kind": "PolylineTrace",
+          "layer": 3,
+          "start": [
+            103.1,
+            117.75
+          ],
+          "end": [
+            103.05,
+            117.7
+          ],
+          "half_width": 0.2,
+          "contacts": [
+            761,
+            745
+          ]
+        },
+        {
+          "id": 743,
+          "kind": "PolylineTrace",
+          "layer": 3,
+          "start": [
+            103.05,
+            117.65
+          ],
+          "end": [
+            103.0,
+            117.6
+          ],
+          "half_width": 0.2,
+          "contacts": [
+            761,
+            749
+          ]
+        },
+        {
+          "id": 742,
+          "kind": "PolylineTrace",
+          "layer": 3,
+          "start": [
+            105.27,
+            105.365
+          ],
+          "end": [
+            105.6459,
+            105.365
+          ],
+          "half_width": 0.15,
+          "contacts": [
+            756,
+            754,
+            451
+          ]
+        },
+        {
+          "id": 741,
+          "kind": "PolylineTrace",
+          "layer": 3,
+          "start": [
+            103.2,
+            118.0
+          ],
+          "end": [
+            103.2,
+            117.95
+          ],
+          "half_width": 0.2,
+          "contacts": [
+            760,
+            750
+          ]
+        },
+        {
+          "id": 740,
+          "kind": "PolylineTrace",
+          "layer": 0,
+          "start": [
+            102.1723,
+            109.625
+          ],
+          "end": [
+            103.0398,
+            110.4925
+          ],
+          "half_width": 0.2,
+          "contacts": [
+            723,
+            716
+          ]
+        },
+        {
+          "id": 739,
+          "kind": "PolylineTrace",
+          "layer": 0,
+          "start": [
+            101.0331,
+            108.7523
+          ],
+          "end": [
+            101.7248,
+            109.444
+          ],
+          "half_width": 0.2,
+          "contacts": [
+            722,
+            713,
+            709
+          ]
+        },
+        {
+          "id": 738,
+          "kind": "PolylineTrace",
+          "layer": 0,
+          "start": [
+            103.0398,
+            114.7875
+          ],
+          "end": [
+            102.0,
+            114.7875
+          ],
+          "half_width": 0.2,
+          "contacts": [
+            1617,
+            723,
+            182
+          ]
+        },
+        {
+          "id": 737,
+          "kind": "PolylineTrace",
+          "layer": 0,
+          "start": [
+            101.9876,
+            109.3874
+          ],
+          "end": [
+            101.7814,
+            109.3874
+          ],
+          "half_width": 0.12,
+          "contacts": [
+            724,
+            713
+          ]
+        },
+        {
+          "id": 736,
+          "kind": "PolylineTrace",
+          "layer": 0,
+          "start": [
+            105.2629,
+            101.6498
+          ],
+          "end": [
+            105.1632,
+            101.5501
+          ],
+          "half_width": 0.15,
+          "contacts": [
+            734,
+            720
+          ]
+        },
+        {
+          "id": 735,
+          "kind": "PolylineTrace",
+          "layer": 0,
+          "start": [
+            101.6558,
+            109.694
+          ],
+          "end": [
+            101.7248,
+            109.625
+          ],
+          "half_width": 0.2,
+          "contacts": [
+            722,
+            716,
+            701
+          ]
+        },
+        {
+          "id": 734,
+          "kind": "PolylineTrace",
+          "layer": 0,
+          "start": [
+            105.4131,
+            101.8
+          ],
+          "end": [
+            105.2629,
+            101.6498
+          ],
+          "half_width": 0.2,
+          "contacts": [
+            736,
+            708
+          ]
+        },
+        {
+          "id": 733,
+          "kind": "PolylineTrace",
+          "layer": 0,
+          "start": [
+            103.9,
+            122.2
+          ],
+          "end": [
+            103.45,
+            121.75
+          ],
+          "half_width": 0.1,
+          "contacts": [
+            717,
+            408
+          ]
+        },
+        {
+          "id": 732,
+          "kind": "PolylineTrace",
+          "layer": 0,
+          "start": [
+            103.15,
+            119.3
+          ],
+          "end": [
+            103.25,
+            119.2
+          ],
+          "half_width": 0.2,
+          "contacts": [
+            1614,
+            704
+          ]
+        },
+        {
+          "id": 731,
+          "kind": "PolylineTrace",
+          "layer": 0,
+          "start": [
+            101.8625,
+            103.45
+          ],
+          "end": [
+            102.9267,
+            103.45
+          ],
+          "half_width": 0.2,
+          "contacts": [
+            712,
+            221
+          ]
+        },
+        {
+          "id": 730,
+          "kind": "PolylineTrace",
+          "layer": 0,
+          "start": [
+            103.6866,
+            105.5401
+          ],
+          "end": [
+            102.9267,
+            104.7802
+          ],
+          "half_width": 0.2,
+          "contacts": [
+            714,
+            712,
+            711
+          ]
+        },
+        {
+          "id": 729,
+          "kind": "PolylineTrace",
+          "layer": 0,
+          "start": [
+            105.1632,
+            100.9999
+          ],
+          "end": [
+            105.0687,
+            100.9054
+          ],
+          "half_width": 0.2,
+          "contacts": [
+            721,
+            720
+          ]
+        },
+        {
+          "id": 728,
+          "kind": "PolylineTrace",
+          "layer": 0,
+          "start": [
+            102.5391,
+            104.7802
+          ],
+          "end": [
+            101.0331,
+            106.2862
+          ],
+          "half_width": 0.2,
+          "contacts": [
+            714,
+            709
+          ]
+        },
+        {
+          "id": 727,
+          "kind": "PolylineTrace",
+          "layer": 0,
+          "start": [
+            101.8625,
+            101.55
+          ],
+          "end": [
+            102.8767,
+            101.55
+          ],
+          "half_width": 0.15,
+          "contacts": [
+            699,
+            219
+          ]
+        },
+        {
+          "id": 726,
+          "kind": "PolylineTrace",
+          "layer": 0,
+          "start": [
+            102.25,
+            120.8
+          ],
+          "end": [
+            102.9,
+            120.15
+          ],
+          "half_width": 0.1,
+          "contacts": [
+            719,
+            700
+          ]
+        },
+        {
+          "id": 725,
+          "kind": "PolylineTrace",
+          "layer": 0,
+          "start": [
+            103.125,
+            121.75
+          ],
+          "end": [
+            102.225,
+            120.85
+          ],
+          "half_width": 0.2,
+          "contacts": [
+            719,
+            717,
+            213
+          ]
+        },
+        {
+          "id": 724,
+          "kind": "PolylineTrace",
+          "layer": 0,
+          "start": [
+            102.0,
+            109.375
+          ],
+          "end": [
+            101.9876,
+            109.3874
+          ],
+          "half_width": 0.12,
+          "contacts": [
+            737,
+            262
+          ]
+        },
+        {
+          "id": 723,
+          "kind": "PolylineTrace",
+          "layer": 0,
+          "start": [
+            103.0398,
+            110.4925
+          ],
+          "end": [
+            103.0398,
+            114.7875
+          ],
+          "half_width": 0.2,
+          "contacts": [
+            1617,
+            740,
+            738
+          ]
+        },
+        {
+          "id": 722,
+          "kind": "PolylineTrace",
+          "layer": 0,
+          "start": [
+            101.7248,
+            109.625
+          ],
+          "end": [
+            101.7248,
+            109.444
+          ],
+          "half_width": 0.2,
+          "contacts": [
+            739,
+            735,
+            716,
+            713
+          ]
+        },
+        {
+          "id": 721,
+          "kind": "PolylineTrace",
+          "layer": 0,
+          "start": [
+            105.0687,
+            100.9054
+          ],
+          "end": [
+            104.5149,
+            100.9054
+          ],
+          "half_width": 0.12,
+          "contacts": [
+            729,
+            715
+          ]
+        },
+        {
+          "id": 720,
+          "kind": "PolylineTrace",
+          "layer": 0,
+          "start": [
+            105.1632,
+            101.5501
+          ],
+          "end": [
+            105.1632,
+            100.9999
+          ],
+          "half_width": 0.15,
+          "contacts": [
+            736,
+            729
+          ]
+        },
+        {
+          "id": 719,
+          "kind": "PolylineTrace",
+          "layer": 0,
+          "start": [
+            102.225,
+            120.85
+          ],
+          "end": [
+            102.25,
+            120.8
+          ],
+          "half_width": 0.1,
+          "contacts": [
+            726,
+            725,
+            213
+          ]
+        },
+        {
+          "id": 718,
+          "kind": "PolylineTrace",
+          "layer": 0,
+          "start": [
+            102.95,
+            120.1
+          ],
+          "end": [
+            103.1,
+            119.95
+          ],
+          "half_width": 0.2,
+          "contacts": [
+            706,
+            700
+          ]
+        },
+        {
+          "id": 717,
+          "kind": "PolylineTrace",
+          "layer": 0,
+          "start": [
+            103.45,
+            121.75
+          ],
+          "end": [
+            103.125,
+            121.75
+          ],
+          "half_width": 0.2,
+          "contacts": [
+            733,
+            725
+          ]
+        },
+        {
+          "id": 716,
+          "kind": "PolylineTrace",
+          "layer": 0,
+          "start": [
+            101.7248,
+            109.625
+          ],
+          "end": [
+            102.1723,
+            109.625
+          ],
+          "half_width": 0.2,
+          "contacts": [
+            740,
+            735,
+            722
+          ]
+        },
+        {
+          "id": 715,
+          "kind": "PolylineTrace",
+          "layer": 0,
+          "start": [
+            104.5149,
+            100.9054
+          ],
+          "end": [
+            104.4717,
+            100.8622
+          ],
+          "half_width": 0.12,
+          "contacts": [
+            721,
+            705
+          ]
+        },
+        {
+          "id": 714,
+          "kind": "PolylineTrace",
+          "layer": 0,
+          "start": [
+            102.9267,
+            104.7802
+          ],
+          "end": [
+            102.5391,
+            104.7802
+          ],
+          "half_width": 0.2,
+          "contacts": [
+            730,
+            728,
+            712
+          ]
+        },
+        {
+          "id": 713,
+          "kind": "PolylineTrace",
+          "layer": 0,
+          "start": [
+            101.7814,
+            109.3874
+          ],
+          "end": [
+            101.7248,
+            109.444
+          ],
+          "half_width": 0.1499,
+          "contacts": [
+            739,
+            737,
+            722
+          ]
+        },
+        {
+          "id": 712,
+          "kind": "PolylineTrace",
+          "layer": 0,
+          "start": [
+            102.9267,
+            104.7802
+          ],
+          "end": [
+            102.9267,
+            103.45
+          ],
+          "half_width": 0.2,
+          "contacts": [
+            731,
+            730,
+            714
+          ]
+        },
+        {
+          "id": 711,
+          "kind": "PolylineTrace",
+          "layer": 0,
+          "start": [
+            106.1968,
+            105.5401
+          ],
+          "end": [
+            103.6866,
+            105.5401
+          ],
+          "half_width": 0.2,
+          "contacts": [
+            1616,
+            730
+          ]
+        },
+        {
+          "id": 710,
+          "kind": "PolylineTrace",
+          "layer": 0,
+          "start": [
+            103.3201,
+            100.8622
+          ],
+          "end": [
+            102.8767,
+            101.3056
+          ],
+          "half_width": 0.15,
+          "contacts": [
+            705,
+            699
+          ]
+        },
+        {
+          "id": 709,
+          "kind": "PolylineTrace",
+          "layer": 0,
+          "start": [
+            101.0331,
+            106.2862
+          ],
+          "end": [
+            101.0331,
+            108.7523
+          ],
+          "half_width": 0.2,
+          "contacts": [
+            739,
+            728
+          ]
+        },
+        {
+          "id": 708,
+          "kind": "PolylineTrace",
+          "layer": 0,
+          "start": [
+            105.52,
+            101.8
+          ],
+          "end": [
+            105.4131,
+            101.8
+          ],
+          "half_width": 0.2,
+          "contacts": [
+            734,
+            702,
+            64
+          ]
+        },
+        {
+          "id": 707,
+          "kind": "PolylineTrace",
+          "layer": 0,
+          "start": [
+            103.1,
+            119.9
+          ],
+          "end": [
+            103.15,
+            119.85
+          ],
+          "half_width": 0.2,
+          "contacts": [
+            706,
+            704
+          ]
+        },
+        {
+          "id": 706,
+          "kind": "PolylineTrace",
+          "layer": 0,
+          "start": [
+            103.1,
+            119.95
+          ],
+          "end": [
+            103.1,
+            119.9
+          ],
+          "half_width": 0.2,
+          "contacts": [
+            718,
+            707
+          ]
+        },
+        {
+          "id": 705,
+          "kind": "PolylineTrace",
+          "layer": 0,
+          "start": [
+            104.4717,
+            100.8622
+          ],
+          "end": [
+            103.3201,
+            100.8622
+          ],
+          "half_width": 0.15,
+          "contacts": [
+            715,
+            710
+          ]
+        },
+        {
+          "id": 704,
+          "kind": "PolylineTrace",
+          "layer": 0,
+          "start": [
+            103.15,
+            119.85
+          ],
+          "end": [
+            103.15,
+            119.3
+          ],
+          "half_width": 0.2,
+          "contacts": [
+            732,
+            707
+          ]
+        },
+        {
+          "id": 703,
+          "kind": "PolylineTrace",
+          "layer": 0,
+          "start": [
+            101.6558,
+            110.6308
+          ],
+          "end": [
+            101.725,
+            110.7
+          ],
+          "half_width": 0.12,
+          "contacts": [
+            698,
+            46
+          ]
+        },
+        {
+          "id": 702,
+          "kind": "PolylineTrace",
+          "layer": 0,
+          "start": [
+            105.52,
+            101.8
+          ],
+          "end": [
+            105.52,
+            100.9876
+          ],
+          "half_width": 0.2,
+          "contacts": [
+            1615,
+            708,
+            64
+          ]
+        },
+        {
+          "id": 701,
+          "kind": "PolylineTrace",
+          "layer": 0,
+          "start": [
+            101.6558,
+            110.2967
+          ],
+          "end": [
+            101.6558,
+            109.694
+          ],
+          "half_width": 0.2,
+          "contacts": [
+            735,
+            698
+          ]
+        },
+        {
+          "id": 700,
+          "kind": "PolylineTrace",
+          "layer": 0,
+          "start": [
+            102.9,
+            120.15
+          ],
+          "end": [
+            102.95,
+            120.1
+          ],
+          "half_width": 0.1,
+          "contacts": [
+            726,
+            718
+          ]
+        },
+        {
+          "id": 699,
+          "kind": "PolylineTrace",
+          "layer": 0,
+          "start": [
+            102.8767,
+            101.3056
+          ],
+          "end": [
+            102.8767,
+            101.55
+          ],
+          "half_width": 0.15,
+          "contacts": [
+            727,
+            710
+          ]
+        },
+        {
+          "id": 698,
+          "kind": "PolylineTrace",
+          "layer": 0,
+          "start": [
+            101.6558,
+            110.2967
+          ],
+          "end": [
+            101.6558,
+            110.6308
+          ],
+          "half_width": 0.1499,
+          "contacts": [
+            703,
+            701
+          ]
+        },
+        {
+          "id": 451,
+          "kind": "Pin",
+          "position_raw": [
+            1052700.0,
+            -1053650.0
+          ],
+          "shapes": [
+            {
+              "layer": 3,
+              "kind": "IntOctagon",
+              "bounds": [
+                1048700,
+                -1057650,
+                1056700,
+                -1049650
+              ],
+              "center_inside": true
+            }
+          ],
+          "ref": "J7",
+          "pin": "6",
+          "contacts": [
+            742
+          ]
+        },
+        {
+          "id": 408,
+          "kind": "Pin",
+          "position_raw": [
+            1039000.0,
+            -1222000.0
+          ],
+          "shapes": [
+            {
+              "layer": 0,
+              "kind": "Simplex",
+              "bounds": [
+                1035248,
+                -1223002,
+                1042752,
+                -1220998
+              ],
+              "center_inside": true
+            }
+          ],
+          "ref": "U3",
+          "pin": "1",
+          "contacts": [
+            733
+          ]
+        },
+        {
+          "id": 262,
+          "kind": "Pin",
+          "position_raw": [
+            1020000.0,
+            -1093750.0
+          ],
+          "shapes": [
+            {
+              "layer": 0,
+              "kind": "Simplex",
+              "bounds": [
+                1018248,
+                -1095252,
+                1021752,
+                -1092248
+              ],
+              "center_inside": true
+            }
+          ],
+          "ref": "C2",
+          "pin": "1",
+          "contacts": [
+            724
+          ]
+        },
+        {
+          "id": 221,
+          "kind": "Pin",
+          "position_raw": [
+            1018625.0,
+            -1034500.0
+          ],
+          "shapes": [
+            {
+              "layer": 0,
+              "kind": "Simplex",
+              "bounds": [
+                1011994,
+                -1037506,
+                1025256,
+                -1031494
+              ],
+              "center_inside": true
+            }
+          ],
+          "ref": "U4",
+          "pin": "3",
+          "contacts": [
+            731
+          ]
+        },
+        {
+          "id": 219,
+          "kind": "Pin",
+          "position_raw": [
+            1018625.0,
+            -1015500.0
+          ],
+          "shapes": [
+            {
+              "layer": 0,
+              "kind": "Simplex",
+              "bounds": [
+                1011994,
+                -1018506,
+                1025256,
+                -1012494
+              ],
+              "center_inside": true
+            }
+          ],
+          "ref": "U4",
+          "pin": "1",
+          "contacts": [
+            727
+          ]
+        },
+        {
+          "id": 213,
+          "kind": "Pin",
+          "position_raw": [
+            1022250.0,
+            -1208500.0
+          ],
+          "shapes": [
+            {
+              "layer": 0,
+              "kind": "Simplex",
+              "bounds": [
+                1017741,
+                -1213259,
+                1026759,
+                -1203741
+              ],
+              "center_inside": true
+            }
+          ],
+          "ref": "C18",
+          "pin": "1",
+          "contacts": [
+            725,
+            719
+          ]
+        },
+        {
+          "id": 182,
+          "kind": "Pin",
+          "position_raw": [
+            1020000.0,
+            -1147875.0
+          ],
+          "shapes": [
+            {
+              "layer": 0,
+              "kind": "Simplex",
+              "bounds": [
+                1015242,
+                -1152258,
+                1024758,
+                -1143492
+              ],
+              "center_inside": true
+            }
+          ],
+          "ref": "FB1",
+          "pin": "1",
+          "contacts": [
+            738
+          ]
+        },
+        {
+          "id": 64,
+          "kind": "Pin",
+          "position_raw": [
+            1055200.0,
+            -1018000.0
+          ],
+          "shapes": [
+            {
+              "layer": 0,
+              "kind": "Simplex",
+              "bounds": [
+                1052395,
+                -1021105,
+                1058005,
+                -1014895
+              ],
+              "center_inside": true
+            }
+          ],
+          "ref": "C20",
+          "pin": "1",
+          "contacts": [
+            708,
+            702
+          ]
+        },
+        {
+          "id": 46,
+          "kind": "Pin",
+          "position_raw": [
+            1017250.0,
+            -1107000.0
+          ],
+          "shapes": [
+            {
+              "layer": 0,
+              "kind": "Simplex",
+              "bounds": [
+                1015748,
+                -1108752,
+                1018752,
+                -1105248
+              ],
+              "center_inside": true
+            }
+          ],
+          "ref": "C1",
+          "pin": "1",
+          "contacts": [
+            703
+          ]
+        }
+      ],
+      [
+        {
+          "id": 762,
+          "kind": "PolylineTrace",
+          "layer": 3,
+          "start": [
+            122.2562,
+            127.2755
+          ],
+          "end": [
+            112.4674,
+            127.2755
+          ],
+          "half_width": 0.2,
+          "contacts": [
+            758
+          ]
+        },
+        {
+          "id": 758,
+          "kind": "PolylineTrace",
+          "layer": 3,
+          "start": [
+            123.095,
+            126.4367
+          ],
+          "end": [
+            122.2562,
+            127.2755
+          ],
+          "half_width": 0.2,
+          "contacts": [
+            762,
+            755
+          ]
+        },
+        {
+          "id": 755,
+          "kind": "PolylineTrace",
+          "layer": 3,
+          "start": [
+            123.095,
+            125.635
+          ],
+          "end": [
+            123.095,
+            126.4367
+          ],
+          "half_width": 0.2,
+          "contacts": [
+            758,
+            455
+          ]
+        },
+        {
+          "id": 455,
+          "kind": "Pin",
+          "position_raw": [
+            1230950.0,
+            -1256350.0
+          ],
+          "shapes": [
+            {
+              "layer": 3,
+              "kind": "IntOctagon",
+              "bounds": [
+                1226950,
+                -1260350,
+                1234950,
+                -1252350
+              ],
+              "center_inside": true
+            }
+          ],
+          "ref": "J5",
+          "pin": "3",
+          "contacts": [
+            755
+          ]
+        }
+      ]
+    ]
+  }
+}
