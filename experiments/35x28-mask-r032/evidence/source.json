@@ -1,0 +1,6 @@
+{
+  "inner2_signal": true,
+  "base": "/Users/gok/codex/projects/collar-tracker/experiments/35x28-mask-r031/hardware/collar-tracker.kicad_pcb",
+  "base_sha256": "a7e596b58e7e32e75886a4b711d0680cc23c1b5abfe2d4a14a947072b90c495c",
+  "source": "0.3.1 unchanged copper/routing/paste; U2 mask only"
+}

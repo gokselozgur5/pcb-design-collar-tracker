@@ -1,0 +1,2980 @@
+{
+  "release": "/Users/gok/codex/projects/collar-tracker/release/collar-tracker-0.3.2-35x28-dfm",
+  "scope": "Actual Gerber pad-flash coverage by mask apertures; JLC example locations are not supplied.",
+  "coordinate_system": "Gerber mm, board bottom-left origin; Y upwards",
+  "comparison_tolerance_mm": 0.0001,
+  "hashes": {
+    "collar-tracker-F_Cu.gtl": "e5dd6a3907344dd995e73b4ff24ac1eacad7208706219a213e59cbc6c028edec",
+    "collar-tracker-F_Mask.gts": "542f4f99d7af4be70b8884e3251c13b1dac82dcbdee159b9da6a807d73f88a2b",
+    "collar-tracker-F_Paste.gtp": "ed2258398b7c9cf5576d2b262217c06da3be896aeeaf0f1454362f516e63ad49",
+    "collar-tracker-B_Cu.gbl": "c55140f979ac4bd650807bb6e62426a0c737d426829df3bd0fe82fd1b8dcaf7d",
+    "collar-tracker-B_Mask.gbs": "4e7ab17bb51a71e88bc34a1003ea9b6e158db4782a422a701991d1bb281e30e6",
+    "collar-tracker-B_Paste.gbp": "dd96e280fe1433134aab301f877026465ddeca18e3df7542abd398a0e76984c7"
+  },
+  "sides": {
+    "top": {
+      "pad_flashes": 214,
+      "fully_mask_exposed": 214,
+      "partially_mask_covered": [],
+      "pads": [
+        {
+          "ref": "R6",
+          "pin": "1",
+          "xy": [
+            5.49,
+            2.2
+          ],
+          "copper_area_mm2": 0.32995297130740264,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "R6",
+          "pin": "2",
+          "xy": [
+            6.51,
+            2.2
+          ],
+          "copper_area_mm2": 0.32995297130740264,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "C1",
+          "pin": "1",
+          "xy": [
+            1.725,
+            17.3
+          ],
+          "copper_area_mm2": 0.10326144125637828,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "C1",
+          "pin": "2",
+          "xy": [
+            2.275,
+            17.3
+          ],
+          "copper_area_mm2": 0.10326144125637829,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "C7",
+          "pin": "1",
+          "xy": [
+            7.27,
+            7.0
+          ],
+          "copper_area_mm2": 0.33037246845679547,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "C7",
+          "pin": "2",
+          "xy": [
+            8.23,
+            7.0
+          ],
+          "copper_area_mm2": 0.33037246845679535,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "C13",
+          "pin": "1",
+          "xy": [
+            19.78,
+            10.35
+          ],
+          "copper_area_mm2": 0.3303724684567961,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "C13",
+          "pin": "2",
+          "xy": [
+            18.82,
+            10.35
+          ],
+          "copper_area_mm2": 0.3303724684567961,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "J2",
+          "pin": "1",
+          "xy": [
+            26.775,
+            16.2
+          ],
+          "copper_area_mm2": 0.9963407795178391,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "J2",
+          "pin": "2",
+          "xy": [
+            28.3,
+            17.675
+          ],
+          "copper_area_mm2": 2.256340779517838,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "J2",
+          "pin": "2",
+          "xy": [
+            28.3,
+            14.725
+          ],
+          "copper_area_mm2": 2.2563407795178425,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "C20",
+          "pin": "1",
+          "xy": [
+            5.52,
+            26.2
+          ],
+          "copper_area_mm2": 0.3303724684567945,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "C20",
+          "pin": "2",
+          "xy": [
+            6.48,
+            26.2
+          ],
+          "copper_area_mm2": 0.3303724684567945,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "FB1",
+          "pin": "1",
+          "xy": [
+            2.0,
+            13.2125
+          ],
+          "copper_area_mm2": 0.7901671593183475,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 0.9999999999999997
+        },
+        {
+          "ref": "FB1",
+          "pin": "2",
+          "xy": [
+            2.0,
+            14.7875
+          ],
+          "copper_area_mm2": 0.7901671593183475,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 0.9999999999999997
+        },
+        {
+          "ref": "C11",
+          "pin": "1",
+          "xy": [
+            11.68,
+            7.7
+          ],
+          "copper_area_mm2": 0.3303724684567946,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "C11",
+          "pin": "2",
+          "xy": [
+            10.72,
+            7.7
+          ],
+          "copper_area_mm2": 0.3303724684567946,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U2",
+          "pin": "1",
+          "xy": [
+            24.1875,
+            10.3565
+          ],
+          "copper_area_mm2": 0.21887499999999876,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U2",
+          "pin": "2",
+          "xy": [
+            24.1875,
+            11.0
+          ],
+          "copper_area_mm2": 0.11687499999999862,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U2",
+          "pin": "3",
+          "xy": [
+            24.1875,
+            11.5
+          ],
+          "copper_area_mm2": 0.11687499999999862,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U2",
+          "pin": "4",
+          "xy": [
+            24.1875,
+            12.0
+          ],
+          "copper_area_mm2": 0.11687499999999862,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U2",
+          "pin": "5",
+          "xy": [
+            24.1875,
+            12.6435
+          ],
+          "copper_area_mm2": 0.21887499999999876,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U2",
+          "pin": "6",
+          "xy": [
+            21.81249,
+            12.6435
+          ],
+          "copper_area_mm2": 0.21887499999999876,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U2",
+          "pin": "7",
+          "xy": [
+            21.81249,
+            12.0
+          ],
+          "copper_area_mm2": 0.11687499999999862,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U2",
+          "pin": "8",
+          "xy": [
+            21.81249,
+            11.5
+          ],
+          "copper_area_mm2": 0.11687499999999862,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U2",
+          "pin": "9",
+          "xy": [
+            21.81249,
+            11.0
+          ],
+          "copper_area_mm2": 0.11687499999999862,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U2",
+          "pin": "10",
+          "xy": [
+            21.81249,
+            10.3565
+          ],
+          "copper_area_mm2": 0.21887499999999876,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U2",
+          "pin": "11",
+          "xy": [
+            23.0,
+            11.5
+          ],
+          "copper_area_mm2": 4.062900000000007,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 0.7708743754461103
+        },
+        {
+          "ref": "R13",
+          "pin": "1",
+          "xy": [
+            24.29,
+            23.5
+          ],
+          "copper_area_mm2": 0.32995297130740275,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "R13",
+          "pin": "2",
+          "xy": [
+            25.31,
+            23.5
+          ],
+          "copper_area_mm2": 0.32995297130740275,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "R5",
+          "pin": "1",
+          "xy": [
+            25.79,
+            7.3
+          ],
+          "copper_area_mm2": 0.32995297130740264,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "R5",
+          "pin": "2",
+          "xy": [
+            26.81,
+            7.3
+          ],
+          "copper_area_mm2": 0.32995297130740264,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "C18",
+          "pin": "1",
+          "xy": [
+            0.925,
+            7.2
+          ],
+          "copper_area_mm2": 0.8115360314094505,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "C18",
+          "pin": "2",
+          "xy": [
+            2.475,
+            7.2
+          ],
+          "copper_area_mm2": 0.8115360314094509,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U4",
+          "pin": "1",
+          "xy": [
+            1.8625,
+            26.45
+          ],
+          "copper_area_mm2": 0.7756826806264243,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U4",
+          "pin": "2",
+          "xy": [
+            1.8625,
+            25.5
+          ],
+          "copper_area_mm2": 0.7756826806264243,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U4",
+          "pin": "3",
+          "xy": [
+            1.8625,
+            24.55
+          ],
+          "copper_area_mm2": 0.7756826806264243,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U4",
+          "pin": "4",
+          "xy": [
+            4.1375,
+            24.55
+          ],
+          "copper_area_mm2": 0.7756826806264243,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U4",
+          "pin": "5",
+          "xy": [
+            4.1375,
+            26.45
+          ],
+          "copper_area_mm2": 0.7756826806264243,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U5",
+          "pin": "1",
+          "xy": [
+            28.2375,
+            24.25
+          ],
+          "copper_area_mm2": 0.13125000000000053,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U5",
+          "pin": "2",
+          "xy": [
+            28.2375,
+            23.75
+          ],
+          "copper_area_mm2": 0.13125000000000053,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U5",
+          "pin": "3",
+          "xy": [
+            28.2375,
+            23.25
+          ],
+          "copper_area_mm2": 0.13125000000000053,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U5",
+          "pin": "4",
+          "xy": [
+            28.2375,
+            22.75
+          ],
+          "copper_area_mm2": 0.13125000000000053,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U5",
+          "pin": "5",
+          "xy": [
+            28.75,
+            22.7375
+          ],
+          "copper_area_mm2": 0.13125000000000053,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U5",
+          "pin": "6",
+          "xy": [
+            29.25,
+            22.7375
+          ],
+          "copper_area_mm2": 0.13125000000000053,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U5",
+          "pin": "7",
+          "xy": [
+            29.7625,
+            22.75
+          ],
+          "copper_area_mm2": 0.13125000000000053,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U5",
+          "pin": "8",
+          "xy": [
+            29.7625,
+            23.25
+          ],
+          "copper_area_mm2": 0.13125000000000053,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U5",
+          "pin": "9",
+          "xy": [
+            29.7625,
+            23.75
+          ],
+          "copper_area_mm2": 0.13125000000000053,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U5",
+          "pin": "10",
+          "xy": [
+            29.7625,
+            24.25
+          ],
+          "copper_area_mm2": 0.13125000000000053,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U5",
+          "pin": "11",
+          "xy": [
+            29.25,
+            24.2625
+          ],
+          "copper_area_mm2": 0.13125000000000053,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U5",
+          "pin": "12",
+          "xy": [
+            28.75,
+            24.2625
+          ],
+          "copper_area_mm2": 0.13125000000000053,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "C5",
+          "pin": "1",
+          "xy": [
+            13.475,
+            22.2
+          ],
+          "copper_area_mm2": 0.10326144125637852,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "C5",
+          "pin": "2",
+          "xy": [
+            14.025,
+            22.2
+          ],
+          "copper_area_mm2": 0.10326144125637852,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "R3",
+          "pin": "1",
+          "xy": [
+            12.99,
+            7.7
+          ],
+          "copper_area_mm2": 0.32995297130740237,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "R3",
+          "pin": "2",
+          "xy": [
+            14.01,
+            7.7
+          ],
+          "copper_area_mm2": 0.32995297130740237,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "C14",
+          "pin": "1",
+          "xy": [
+            24.98,
+            14.9
+          ],
+          "copper_area_mm2": 0.33037246845679596,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "C14",
+          "pin": "2",
+          "xy": [
+            24.02,
+            14.9
+          ],
+          "copper_area_mm2": 0.33037246845679596,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "C2",
+          "pin": "1",
+          "xy": [
+            2.0,
+            18.625
+          ],
+          "copper_area_mm2": 0.10326144125637732,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 0.9999999999999993
+        },
+        {
+          "ref": "C2",
+          "pin": "2",
+          "xy": [
+            2.0,
+            19.175
+          ],
+          "copper_area_mm2": 0.10326144125637732,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 0.9999999999999993
+        },
+        {
+          "ref": "C3",
+          "pin": "1",
+          "xy": [
+            2.0,
+            8.75
+          ],
+          "copper_area_mm2": 1.3963407795178406,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0000000000000009
+        },
+        {
+          "ref": "C3",
+          "pin": "2",
+          "xy": [
+            2.0,
+            10.65
+          ],
+          "copper_area_mm2": 1.3963407795178393,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0000000000000013
+        },
+        {
+          "ref": "C23",
+          "pin": "1",
+          "xy": [
+            31.52,
+            24.6
+          ],
+          "copper_area_mm2": 0.33037246845679497,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "C23",
+          "pin": "2",
+          "xy": [
+            32.48,
+            24.6
+          ],
+          "copper_area_mm2": 0.33037246845679513,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "J1",
+          "pin": "1",
+          "xy": [
+            16.775,
+            5.7
+          ],
+          "copper_area_mm2": 0.9963407795178385,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "J1",
+          "pin": "2",
+          "xy": [
+            18.3,
+            7.175
+          ],
+          "copper_area_mm2": 2.256340779517844,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "J1",
+          "pin": "2",
+          "xy": [
+            18.3,
+            4.225
+          ],
+          "copper_area_mm2": 2.2563407795178434,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "C16",
+          "pin": "1",
+          "xy": [
+            28.4,
+            8.02
+          ],
+          "copper_area_mm2": 0.3303724684567943,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0000000000000002
+        },
+        {
+          "ref": "C16",
+          "pin": "2",
+          "xy": [
+            28.4,
+            8.98
+          ],
+          "copper_area_mm2": 0.33037246845679397,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0000000000000002
+        },
+        {
+          "ref": "C21",
+          "pin": "1",
+          "xy": [
+            5.52,
+            24.5
+          ],
+          "copper_area_mm2": 0.3303724684567945,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "C21",
+          "pin": "2",
+          "xy": [
+            6.48,
+            24.5
+          ],
+          "copper_area_mm2": 0.3303724684567945,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "R12",
+          "pin": "1",
+          "xy": [
+            24.29,
+            25.7
+          ],
+          "copper_area_mm2": 0.32995297130740275,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "R12",
+          "pin": "2",
+          "xy": [
+            25.31,
+            25.7
+          ],
+          "copper_area_mm2": 0.32995297130740275,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U1",
+          "pin": "1",
+          "xy": [
+            5.5,
+            20.0
+          ],
+          "copper_area_mm2": 0.4889482792785513,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U1",
+          "pin": "2",
+          "xy": [
+            5.375,
+            19.25037
+          ],
+          "copper_area_mm2": 0.13480682680626285,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U1",
+          "pin": "3",
+          "xy": [
+            5.375,
+            18.75037
+          ],
+          "copper_area_mm2": 0.13480682680626285,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U1",
+          "pin": "4",
+          "xy": [
+            5.375,
+            18.25037
+          ],
+          "copper_area_mm2": 0.13480682680626285,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U1",
+          "pin": "5",
+          "xy": [
+            5.375,
+            17.75037
+          ],
+          "copper_area_mm2": 0.13480682680626285,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U1",
+          "pin": "6",
+          "xy": [
+            5.375,
+            17.25037
+          ],
+          "copper_area_mm2": 0.13480682680626285,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U1",
+          "pin": "7",
+          "xy": [
+            5.375,
+            16.75037
+          ],
+          "copper_area_mm2": 0.13480682680626285,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U1",
+          "pin": "8",
+          "xy": [
+            5.375,
+            16.25037
+          ],
+          "copper_area_mm2": 0.13480682680626285,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U1",
+          "pin": "9",
+          "xy": [
+            5.375,
+            15.75037
+          ],
+          "copper_area_mm2": 0.13480682680626432,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U1",
+          "pin": "10",
+          "xy": [
+            5.375,
+            15.25037
+          ],
+          "copper_area_mm2": 0.13480682680626432,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U1",
+          "pin": "11",
+          "xy": [
+            5.375,
+            14.75037
+          ],
+          "copper_area_mm2": 0.13480682680626432,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U1",
+          "pin": "12",
+          "xy": [
+            5.375,
+            14.25037
+          ],
+          "copper_area_mm2": 0.13480682680626432,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U1",
+          "pin": "13",
+          "xy": [
+            5.375,
+            13.75037
+          ],
+          "copper_area_mm2": 0.13480682680626432,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U1",
+          "pin": "14",
+          "xy": [
+            5.375,
+            13.25037
+          ],
+          "copper_area_mm2": 0.13480682680626432,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U1",
+          "pin": "15",
+          "xy": [
+            5.375,
+            12.75037
+          ],
+          "copper_area_mm2": 0.13480682680626432,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U1",
+          "pin": "16",
+          "xy": [
+            5.375,
+            12.25037
+          ],
+          "copper_area_mm2": 0.13480682680626432,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U1",
+          "pin": "17",
+          "xy": [
+            5.375,
+            11.75037
+          ],
+          "copper_area_mm2": 0.13480682680626432,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U1",
+          "pin": "18",
+          "xy": [
+            5.375,
+            11.25037
+          ],
+          "copper_area_mm2": 0.13480682680626432,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U1",
+          "pin": "19",
+          "xy": [
+            5.375,
+            10.75001
+          ],
+          "copper_area_mm2": 0.13480682680626432,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U1",
+          "pin": "20",
+          "xy": [
+            5.5,
+            10.0
+          ],
+          "copper_area_mm2": 0.48894827927854917,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U1",
+          "pin": "21",
+          "xy": [
+            6.25,
+            9.875
+          ],
+          "copper_area_mm2": 0.13480682680626443,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 0.9999999999999992
+        },
+        {
+          "ref": "U1",
+          "pin": "22",
+          "xy": [
+            6.75,
+            9.875
+          ],
+          "copper_area_mm2": 0.13480682680626443,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 0.9999999999999992
+        },
+        {
+          "ref": "U1",
+          "pin": "23",
+          "xy": [
+            7.25003,
+            9.875
+          ],
+          "copper_area_mm2": 0.13480682680626443,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 0.9999999999999992
+        },
+        {
+          "ref": "U1",
+          "pin": "24",
+          "xy": [
+            7.75003,
+            9.875
+          ],
+          "copper_area_mm2": 0.13480682680626443,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 0.9999999999999992
+        },
+        {
+          "ref": "U1",
+          "pin": "25",
+          "xy": [
+            8.25003,
+            9.875
+          ],
+          "copper_area_mm2": 0.13480682680626443,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 0.9999999999999992
+        },
+        {
+          "ref": "U1",
+          "pin": "26",
+          "xy": [
+            8.75003,
+            9.875
+          ],
+          "copper_area_mm2": 0.13480682680626443,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 0.9999999999999992
+        },
+        {
+          "ref": "U1",
+          "pin": "27",
+          "xy": [
+            9.25003,
+            9.875
+          ],
+          "copper_area_mm2": 0.13480682680626443,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 0.9999999999999992
+        },
+        {
+          "ref": "U1",
+          "pin": "28",
+          "xy": [
+            9.75,
+            9.875
+          ],
+          "copper_area_mm2": 0.13480682680626443,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 0.9999999999999992
+        },
+        {
+          "ref": "U1",
+          "pin": "29",
+          "xy": [
+            10.25,
+            9.875
+          ],
+          "copper_area_mm2": 0.13480682680626443,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 0.9999999999999992
+        },
+        {
+          "ref": "U1",
+          "pin": "30",
+          "xy": [
+            10.75,
+            9.875
+          ],
+          "copper_area_mm2": 0.13480682680626443,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 0.9999999999999992
+        },
+        {
+          "ref": "U1",
+          "pin": "31",
+          "xy": [
+            11.25,
+            9.875
+          ],
+          "copper_area_mm2": 0.13480682680626443,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 0.9999999999999992
+        },
+        {
+          "ref": "U1",
+          "pin": "32",
+          "xy": [
+            11.75,
+            9.875
+          ],
+          "copper_area_mm2": 0.13480682680626443,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 0.9999999999999992
+        },
+        {
+          "ref": "U1",
+          "pin": "33",
+          "xy": [
+            12.25002,
+            9.875
+          ],
+          "copper_area_mm2": 0.13480682680626443,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 0.9999999999999992
+        },
+        {
+          "ref": "U1",
+          "pin": "34",
+          "xy": [
+            12.75003,
+            9.875
+          ],
+          "copper_area_mm2": 0.13480682680626443,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 0.9999999999999992
+        },
+        {
+          "ref": "U1",
+          "pin": "35",
+          "xy": [
+            13.25003,
+            9.875
+          ],
+          "copper_area_mm2": 0.13480682680626443,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 0.9999999999999992
+        },
+        {
+          "ref": "U1",
+          "pin": "36",
+          "xy": [
+            13.75003,
+            9.875
+          ],
+          "copper_area_mm2": 0.13480682680626443,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 0.9999999999999992
+        },
+        {
+          "ref": "U1",
+          "pin": "37",
+          "xy": [
+            14.25003,
+            9.875
+          ],
+          "copper_area_mm2": 0.13480682680626443,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 0.9999999999999992
+        },
+        {
+          "ref": "U1",
+          "pin": "38",
+          "xy": [
+            14.75002,
+            9.875
+          ],
+          "copper_area_mm2": 0.13480682680626443,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 0.9999999999999992
+        },
+        {
+          "ref": "U1",
+          "pin": "39",
+          "xy": [
+            15.25003,
+            9.875
+          ],
+          "copper_area_mm2": 0.13480682680626443,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 0.9999999999999992
+        },
+        {
+          "ref": "U1",
+          "pin": "40",
+          "xy": [
+            15.75003,
+            9.875
+          ],
+          "copper_area_mm2": 0.13480682680626443,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 0.9999999999999992
+        },
+        {
+          "ref": "U1",
+          "pin": "41",
+          "xy": [
+            16.5,
+            10.0
+          ],
+          "copper_area_mm2": 0.4889482792785514,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U1",
+          "pin": "42",
+          "xy": [
+            16.625,
+            10.75
+          ],
+          "copper_area_mm2": 0.13480682680626532,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U1",
+          "pin": "43",
+          "xy": [
+            16.625,
+            11.25
+          ],
+          "copper_area_mm2": 0.13480682680626532,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U1",
+          "pin": "44",
+          "xy": [
+            16.625,
+            11.75
+          ],
+          "copper_area_mm2": 0.13480682680626532,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U1",
+          "pin": "45",
+          "xy": [
+            16.625,
+            12.25
+          ],
+          "copper_area_mm2": 0.13480682680626532,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U1",
+          "pin": "46",
+          "xy": [
+            16.625,
+            12.75
+          ],
+          "copper_area_mm2": 0.13480682680626532,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U1",
+          "pin": "47",
+          "xy": [
+            16.625,
+            13.25
+          ],
+          "copper_area_mm2": 0.13480682680626532,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U1",
+          "pin": "48",
+          "xy": [
+            16.625,
+            13.75
+          ],
+          "copper_area_mm2": 0.13480682680626532,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U1",
+          "pin": "49",
+          "xy": [
+            16.625,
+            14.25
+          ],
+          "copper_area_mm2": 0.13480682680626532,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U1",
+          "pin": "50",
+          "xy": [
+            16.625,
+            14.75
+          ],
+          "copper_area_mm2": 0.13480682680626532,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U1",
+          "pin": "51",
+          "xy": [
+            16.625,
+            15.25
+          ],
+          "copper_area_mm2": 0.13480682680626532,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U1",
+          "pin": "52",
+          "xy": [
+            16.625,
+            15.75001
+          ],
+          "copper_area_mm2": 0.13480682680626532,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U1",
+          "pin": "53",
+          "xy": [
+            16.625,
+            16.25
+          ],
+          "copper_area_mm2": 0.13480682680626369,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U1",
+          "pin": "54",
+          "xy": [
+            16.625,
+            16.75
+          ],
+          "copper_area_mm2": 0.13480682680626369,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U1",
+          "pin": "55",
+          "xy": [
+            16.625,
+            17.25
+          ],
+          "copper_area_mm2": 0.13480682680626369,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U1",
+          "pin": "56",
+          "xy": [
+            16.625,
+            17.75
+          ],
+          "copper_area_mm2": 0.13480682680626369,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U1",
+          "pin": "57",
+          "xy": [
+            16.625,
+            18.25
+          ],
+          "copper_area_mm2": 0.13480682680626369,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U1",
+          "pin": "58",
+          "xy": [
+            16.625,
+            18.75
+          ],
+          "copper_area_mm2": 0.13480682680626369,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U1",
+          "pin": "59",
+          "xy": [
+            16.625,
+            19.25
+          ],
+          "copper_area_mm2": 0.13480682680626369,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U1",
+          "pin": "60",
+          "xy": [
+            16.5,
+            20.0
+          ],
+          "copper_area_mm2": 0.4889482792785535,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U1",
+          "pin": "61",
+          "xy": [
+            15.75,
+            20.12501
+          ],
+          "copper_area_mm2": 0.13480682680626513,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0000000000000013
+        },
+        {
+          "ref": "U1",
+          "pin": "62",
+          "xy": [
+            15.25,
+            20.12501
+          ],
+          "copper_area_mm2": 0.13480682680626513,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0000000000000013
+        },
+        {
+          "ref": "U1",
+          "pin": "63",
+          "xy": [
+            14.74997,
+            20.12501
+          ],
+          "copper_area_mm2": 0.13480682680626513,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0000000000000016
+        },
+        {
+          "ref": "U1",
+          "pin": "64",
+          "xy": [
+            14.24997,
+            20.12501
+          ],
+          "copper_area_mm2": 0.13480682680626513,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0000000000000016
+        },
+        {
+          "ref": "U1",
+          "pin": "65",
+          "xy": [
+            13.74997,
+            20.12501
+          ],
+          "copper_area_mm2": 0.13480682680626513,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0000000000000016
+        },
+        {
+          "ref": "U1",
+          "pin": "66",
+          "xy": [
+            13.24997,
+            20.12501
+          ],
+          "copper_area_mm2": 0.13480682680626513,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0000000000000016
+        },
+        {
+          "ref": "U1",
+          "pin": "67",
+          "xy": [
+            12.74998,
+            20.12501
+          ],
+          "copper_area_mm2": 0.13480682680626513,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0000000000000013
+        },
+        {
+          "ref": "U1",
+          "pin": "68",
+          "xy": [
+            12.24997,
+            20.12501
+          ],
+          "copper_area_mm2": 0.13480682680626513,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0000000000000016
+        },
+        {
+          "ref": "U1",
+          "pin": "69",
+          "xy": [
+            11.75,
+            20.12501
+          ],
+          "copper_area_mm2": 0.13480682680626513,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0000000000000013
+        },
+        {
+          "ref": "U1",
+          "pin": "70",
+          "xy": [
+            11.25,
+            20.12501
+          ],
+          "copper_area_mm2": 0.13480682680626513,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0000000000000013
+        },
+        {
+          "ref": "U1",
+          "pin": "71",
+          "xy": [
+            10.75,
+            20.12501
+          ],
+          "copper_area_mm2": 0.13480682680626513,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0000000000000013
+        },
+        {
+          "ref": "U1",
+          "pin": "72",
+          "xy": [
+            10.25,
+            20.12501
+          ],
+          "copper_area_mm2": 0.13480682680626513,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0000000000000013
+        },
+        {
+          "ref": "U1",
+          "pin": "73",
+          "xy": [
+            9.75,
+            20.12501
+          ],
+          "copper_area_mm2": 0.13480682680626513,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0000000000000013
+        },
+        {
+          "ref": "U1",
+          "pin": "74",
+          "xy": [
+            9.25,
+            20.12501
+          ],
+          "copper_area_mm2": 0.13480682680626513,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0000000000000013
+        },
+        {
+          "ref": "U1",
+          "pin": "75",
+          "xy": [
+            8.75,
+            20.12501
+          ],
+          "copper_area_mm2": 0.13480682680626513,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0000000000000013
+        },
+        {
+          "ref": "U1",
+          "pin": "76",
+          "xy": [
+            8.25,
+            20.12501
+          ],
+          "copper_area_mm2": 0.13480682680626513,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0000000000000013
+        },
+        {
+          "ref": "U1",
+          "pin": "77",
+          "xy": [
+            7.75,
+            20.12501
+          ],
+          "copper_area_mm2": 0.13480682680626513,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0000000000000013
+        },
+        {
+          "ref": "U1",
+          "pin": "78",
+          "xy": [
+            7.25,
+            20.12501
+          ],
+          "copper_area_mm2": 0.13480682680626513,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0000000000000013
+        },
+        {
+          "ref": "U1",
+          "pin": "79",
+          "xy": [
+            6.75,
+            20.12501
+          ],
+          "copper_area_mm2": 0.13480682680626513,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0000000000000013
+        },
+        {
+          "ref": "U1",
+          "pin": "80",
+          "xy": [
+            6.25,
+            20.12501
+          ],
+          "copper_area_mm2": 0.13480682680626513,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0000000000000013
+        },
+        {
+          "ref": "U1",
+          "pin": "81",
+          "xy": [
+            6.9,
+            18.40001
+          ],
+          "copper_area_mm2": 0.08980682680626352,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0000000000000013
+        },
+        {
+          "ref": "U1",
+          "pin": "82",
+          "xy": [
+            6.9,
+            17.85
+          ],
+          "copper_area_mm2": 0.08980682680626352,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0000000000000013
+        },
+        {
+          "ref": "U1",
+          "pin": "83",
+          "xy": [
+            6.9,
+            17.30001
+          ],
+          "copper_area_mm2": 0.08980682680626352,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0000000000000013
+        },
+        {
+          "ref": "U1",
+          "pin": "84",
+          "xy": [
+            6.9,
+            15.55
+          ],
+          "copper_area_mm2": 0.08980682680626459,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0000000000000004
+        },
+        {
+          "ref": "U1",
+          "pin": "85",
+          "xy": [
+            6.9,
+            15.0
+          ],
+          "copper_area_mm2": 0.08980682680626459,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0000000000000004
+        },
+        {
+          "ref": "U1",
+          "pin": "86",
+          "xy": [
+            6.9,
+            14.45001
+          ],
+          "copper_area_mm2": 0.0898068268062646,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0000000000000004
+        },
+        {
+          "ref": "U1",
+          "pin": "87",
+          "xy": [
+            6.9,
+            12.7
+          ],
+          "copper_area_mm2": 0.08980682680626459,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0000000000000004
+        },
+        {
+          "ref": "U1",
+          "pin": "88",
+          "xy": [
+            6.9,
+            12.15001
+          ],
+          "copper_area_mm2": 0.0898068268062646,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0000000000000004
+        },
+        {
+          "ref": "U1",
+          "pin": "89",
+          "xy": [
+            6.9,
+            11.6
+          ],
+          "copper_area_mm2": 0.0898068268062646,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0000000000000004
+        },
+        {
+          "ref": "U1",
+          "pin": "90",
+          "xy": [
+            10.45,
+            12.85
+          ],
+          "copper_area_mm2": 0.0898068268062646,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0000000000000002
+        },
+        {
+          "ref": "U1",
+          "pin": "91",
+          "xy": [
+            11.0,
+            12.85
+          ],
+          "copper_area_mm2": 0.0898068268062646,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0000000000000002
+        },
+        {
+          "ref": "U1",
+          "pin": "92",
+          "xy": [
+            11.55,
+            12.85
+          ],
+          "copper_area_mm2": 0.0898068268062646,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0000000000000002
+        },
+        {
+          "ref": "U1",
+          "pin": "93",
+          "xy": [
+            15.1,
+            11.6
+          ],
+          "copper_area_mm2": 0.0898068268062646,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0000000000000004
+        },
+        {
+          "ref": "U1",
+          "pin": "94",
+          "xy": [
+            15.1,
+            12.15001
+          ],
+          "copper_area_mm2": 0.0898068268062646,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0000000000000004
+        },
+        {
+          "ref": "U1",
+          "pin": "95",
+          "xy": [
+            15.1,
+            12.7
+          ],
+          "copper_area_mm2": 0.08980682680626459,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0000000000000004
+        },
+        {
+          "ref": "U1",
+          "pin": "96",
+          "xy": [
+            15.1,
+            14.45001
+          ],
+          "copper_area_mm2": 0.0898068268062646,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0000000000000004
+        },
+        {
+          "ref": "U1",
+          "pin": "97",
+          "xy": [
+            15.1,
+            15.0
+          ],
+          "copper_area_mm2": 0.08980682680626459,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0000000000000004
+        },
+        {
+          "ref": "U1",
+          "pin": "98",
+          "xy": [
+            15.1,
+            15.55
+          ],
+          "copper_area_mm2": 0.08980682680626459,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0000000000000004
+        },
+        {
+          "ref": "U1",
+          "pin": "99",
+          "xy": [
+            15.1,
+            17.30001
+          ],
+          "copper_area_mm2": 0.08980682680626352,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0000000000000016
+        },
+        {
+          "ref": "U1",
+          "pin": "100",
+          "xy": [
+            15.1,
+            17.85
+          ],
+          "copper_area_mm2": 0.08980682680626352,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0000000000000016
+        },
+        {
+          "ref": "U1",
+          "pin": "101",
+          "xy": [
+            15.1,
+            18.40001
+          ],
+          "copper_area_mm2": 0.08980682680626352,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0000000000000016
+        },
+        {
+          "ref": "U1",
+          "pin": "102",
+          "xy": [
+            11.55,
+            17.15001
+          ],
+          "copper_area_mm2": 0.0898068268062635,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0000000000000016
+        },
+        {
+          "ref": "U1",
+          "pin": "103",
+          "xy": [
+            11.0,
+            17.15001
+          ],
+          "copper_area_mm2": 0.0898068268062635,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0000000000000016
+        },
+        {
+          "ref": "U1",
+          "pin": "104",
+          "xy": [
+            10.45,
+            17.15001
+          ],
+          "copper_area_mm2": 0.0898068268062635,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0000000000000016
+        },
+        {
+          "ref": "U1",
+          "pin": "105",
+          "xy": [
+            8.15,
+            17.85
+          ],
+          "copper_area_mm2": 2.5545052958226306,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U1",
+          "pin": "106",
+          "xy": [
+            8.15,
+            15.0
+          ],
+          "copper_area_mm2": 2.554505295822633,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U1",
+          "pin": "107",
+          "xy": [
+            8.15,
+            12.15001
+          ],
+          "copper_area_mm2": 2.5545052958226324,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U1",
+          "pin": "108",
+          "xy": [
+            11.0,
+            11.42501
+          ],
+          "copper_area_mm2": 3.1145052958226302,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U1",
+          "pin": "109",
+          "xy": [
+            13.85,
+            12.15001
+          ],
+          "copper_area_mm2": 2.554505295822634,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U1",
+          "pin": "110",
+          "xy": [
+            13.85,
+            15.0
+          ],
+          "copper_area_mm2": 2.5545052958226346,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U1",
+          "pin": "111",
+          "xy": [
+            13.85,
+            17.85
+          ],
+          "copper_area_mm2": 2.5545052958226315,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U1",
+          "pin": "112",
+          "xy": [
+            11.0,
+            18.57501
+          ],
+          "copper_area_mm2": 3.1145052958226356,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U1",
+          "pin": "113",
+          "xy": [
+            11.0,
+            15.0
+          ],
+          "copper_area_mm2": 2.5545052958226346,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "C24",
+          "pin": "1",
+          "xy": [
+            31.52,
+            22.5
+          ],
+          "copper_area_mm2": 0.33037246845679497,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "C24",
+          "pin": "2",
+          "xy": [
+            32.48,
+            22.5
+          ],
+          "copper_area_mm2": 0.33037246845679513,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "C12",
+          "pin": "1",
+          "xy": [
+            13.98,
+            5.6
+          ],
+          "copper_area_mm2": 0.3303724684567951,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "C12",
+          "pin": "2",
+          "xy": [
+            13.02,
+            5.6
+          ],
+          "copper_area_mm2": 0.3303724684567951,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "R7",
+          "pin": "1",
+          "xy": [
+            7.69,
+            2.2
+          ],
+          "copper_area_mm2": 0.3299529713074033,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "R7",
+          "pin": "2",
+          "xy": [
+            8.71,
+            2.2
+          ],
+          "copper_area_mm2": 0.3299529713074028,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "R4",
+          "pin": "1",
+          "xy": [
+            25.79,
+            8.7
+          ],
+          "copper_area_mm2": 0.32995297130740314,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "R4",
+          "pin": "2",
+          "xy": [
+            26.81,
+            8.7
+          ],
+          "copper_area_mm2": 0.32995297130740314,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "L1",
+          "pin": "1",
+          "xy": [
+            20.5,
+            12.235
+          ],
+          "copper_area_mm2": 0.3589212253501604,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0000000000000007
+        },
+        {
+          "ref": "L1",
+          "pin": "2",
+          "xy": [
+            20.5,
+            11.265
+          ],
+          "copper_area_mm2": 0.3589212253501604,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0000000000000007
+        },
+        {
+          "ref": "C19",
+          "pin": "1",
+          "xy": [
+            7.72,
+            4.7
+          ],
+          "copper_area_mm2": 0.3303724684567951,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "C19",
+          "pin": "2",
+          "xy": [
+            8.68,
+            4.7
+          ],
+          "copper_area_mm2": 0.33037246845679463,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "J3",
+          "pin": "1",
+          "xy": [
+            1.25,
+            1.8
+          ],
+          "copper_area_mm2": 2.4000000000000004,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 0.0
+        },
+        {
+          "ref": "J3",
+          "pin": "2",
+          "xy": [
+            3.75,
+            1.8
+          ],
+          "copper_area_mm2": 1.917067015660572,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 0.0
+        },
+        {
+          "ref": "C6",
+          "pin": "1",
+          "xy": [
+            15.52,
+            22.7
+          ],
+          "copper_area_mm2": 0.3303724684567941,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "C6",
+          "pin": "2",
+          "xy": [
+            16.48,
+            22.7
+          ],
+          "copper_area_mm2": 0.3303724684567949,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "C15",
+          "pin": "1",
+          "xy": [
+            25.52,
+            10.2
+          ],
+          "copper_area_mm2": 0.3303724684567959,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "C15",
+          "pin": "2",
+          "xy": [
+            26.48,
+            10.2
+          ],
+          "copper_area_mm2": 0.3303724684567959,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U3",
+          "pin": "1",
+          "xy": [
+            2.4,
+            5.8
+          ],
+          "copper_area_mm2": 0.14785363118071307,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U3",
+          "pin": "2",
+          "xy": [
+            2.4,
+            5.4
+          ],
+          "copper_area_mm2": 0.14785363118071312,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U3",
+          "pin": "3",
+          "xy": [
+            2.4,
+            5.0
+          ],
+          "copper_area_mm2": 0.14785363118071312,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U3",
+          "pin": "4",
+          "xy": [
+            2.4,
+            4.6
+          ],
+          "copper_area_mm2": 0.14785363118071312,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U3",
+          "pin": "5",
+          "xy": [
+            2.4,
+            4.2
+          ],
+          "copper_area_mm2": 0.14785363118071307,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U3",
+          "pin": "6",
+          "xy": [
+            4.6,
+            4.2
+          ],
+          "copper_area_mm2": 0.14785363118071312,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U3",
+          "pin": "7",
+          "xy": [
+            4.6,
+            4.6
+          ],
+          "copper_area_mm2": 0.14785363118071318,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U3",
+          "pin": "8",
+          "xy": [
+            4.6,
+            5.0
+          ],
+          "copper_area_mm2": 0.14785363118071318,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U3",
+          "pin": "9",
+          "xy": [
+            4.6,
+            5.4
+          ],
+          "copper_area_mm2": 0.14785363118071318,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U3",
+          "pin": "10",
+          "xy": [
+            4.6,
+            5.8
+          ],
+          "copper_area_mm2": 0.14785363118071312,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "U3",
+          "pin": "11",
+          "xy": [
+            3.5,
+            5.0
+          ],
+          "copper_area_mm2": 1.3500000000000005,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 0.8492874474279911
+        }
+      ]
+    },
+    "bottom": {
+      "pad_flashes": 54,
+      "fully_mask_exposed": 54,
+      "partially_mask_covered": [],
+      "pads": [
+        {
+          "ref": "C22",
+          "pin": "1",
+          "xy": [
+            12.52,
+            14.0
+          ],
+          "copper_area_mm2": 0.33037246845679513,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "C22",
+          "pin": "2",
+          "xy": [
+            13.48,
+            14.0
+          ],
+          "copper_area_mm2": 0.33037246845679513,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "C17",
+          "pin": "1",
+          "xy": [
+            2.0,
+            5.72
+          ],
+          "copper_area_mm2": 0.33037246845679513,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0000000000000007
+        },
+        {
+          "ref": "C17",
+          "pin": "2",
+          "xy": [
+            2.0,
+            6.68
+          ],
+          "copper_area_mm2": 0.3303724684567949,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.000000000000001
+        },
+        {
+          "ref": "J7",
+          "pin": "1",
+          "xy": [
+            2.73,
+            21.365
+          ],
+          "copper_area_mm2": 0.6399999999999976,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 0.0
+        },
+        {
+          "ref": "J7",
+          "pin": "2",
+          "xy": [
+            2.73,
+            22.635
+          ],
+          "copper_area_mm2": 0.5026323955656741,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 0.0
+        },
+        {
+          "ref": "J7",
+          "pin": "3",
+          "xy": [
+            4.0,
+            21.365
+          ],
+          "copper_area_mm2": 0.5026323955656743,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 0.0
+        },
+        {
+          "ref": "J7",
+          "pin": "4",
+          "xy": [
+            4.0,
+            22.635
+          ],
+          "copper_area_mm2": 0.5026323955656743,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 0.0
+        },
+        {
+          "ref": "J7",
+          "pin": "5",
+          "xy": [
+            5.27,
+            21.365
+          ],
+          "copper_area_mm2": 0.5026323955656742,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 0.0
+        },
+        {
+          "ref": "J7",
+          "pin": "6",
+          "xy": [
+            5.27,
+            22.635
+          ],
+          "copper_area_mm2": 0.5026323955656742,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 0.0
+        },
+        {
+          "ref": "J5",
+          "pin": "1",
+          "xy": [
+            24.325,
+            17.365
+          ],
+          "copper_area_mm2": 0.6399999999999955,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 0.0
+        },
+        {
+          "ref": "J5",
+          "pin": "2",
+          "xy": [
+            24.325,
+            18.635
+          ],
+          "copper_area_mm2": 0.5026323955656737,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 0.0
+        },
+        {
+          "ref": "J5",
+          "pin": "3",
+          "xy": [
+            25.595,
+            17.365
+          ],
+          "copper_area_mm2": 0.5026323955656736,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 0.0
+        },
+        {
+          "ref": "J5",
+          "pin": "4",
+          "xy": [
+            25.595,
+            18.635
+          ],
+          "copper_area_mm2": 0.5026323955656736,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 0.0
+        },
+        {
+          "ref": "J5",
+          "pin": "5",
+          "xy": [
+            26.865,
+            17.365
+          ],
+          "copper_area_mm2": 0.5026323955656737,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 0.0
+        },
+        {
+          "ref": "J5",
+          "pin": "6",
+          "xy": [
+            26.865,
+            18.635
+          ],
+          "copper_area_mm2": 0.5026323955656737,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 0.0
+        },
+        {
+          "ref": "J5",
+          "pin": "7",
+          "xy": [
+            28.135,
+            17.365
+          ],
+          "copper_area_mm2": 0.5026323955656737,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 0.0
+        },
+        {
+          "ref": "J5",
+          "pin": "8",
+          "xy": [
+            28.135,
+            18.635
+          ],
+          "copper_area_mm2": 0.5026323955656737,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 0.0
+        },
+        {
+          "ref": "J5",
+          "pin": "9",
+          "xy": [
+            29.405,
+            17.365
+          ],
+          "copper_area_mm2": 0.5026323955656736,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 0.0
+        },
+        {
+          "ref": "J5",
+          "pin": "10",
+          "xy": [
+            29.405,
+            18.635
+          ],
+          "copper_area_mm2": 0.5026323955656736,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 0.0
+        },
+        {
+          "ref": "J5",
+          "pin": "11",
+          "xy": [
+            30.675,
+            17.365
+          ],
+          "copper_area_mm2": 0.5026323955656737,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 0.0
+        },
+        {
+          "ref": "J5",
+          "pin": "12",
+          "xy": [
+            30.675,
+            18.635
+          ],
+          "copper_area_mm2": 0.5026323955656737,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 0.0
+        },
+        {
+          "ref": "C4",
+          "pin": "1",
+          "xy": [
+            4.925,
+            11.2
+          ],
+          "copper_area_mm2": 0.8115360314094516,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "C4",
+          "pin": "2",
+          "xy": [
+            6.475,
+            11.2
+          ],
+          "copper_area_mm2": 0.8115360314094516,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "J6",
+          "pin": "1",
+          "xy": [
+            8.46,
+            6.0
+          ],
+          "copper_area_mm2": 0.6400000000000011,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 0.0
+        },
+        {
+          "ref": "J6",
+          "pin": "2",
+          "xy": [
+            9.73,
+            6.0
+          ],
+          "copper_area_mm2": 0.5026323955656742,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 0.0
+        },
+        {
+          "ref": "J6",
+          "pin": "3",
+          "xy": [
+            11.0,
+            6.0
+          ],
+          "copper_area_mm2": 0.5026323955656742,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 0.0
+        },
+        {
+          "ref": "J6",
+          "pin": "4",
+          "xy": [
+            12.27,
+            6.0
+          ],
+          "copper_area_mm2": 0.5026323955656742,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 0.0
+        },
+        {
+          "ref": "J6",
+          "pin": "5",
+          "xy": [
+            13.54,
+            6.0
+          ],
+          "copper_area_mm2": 0.5026323955656742,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 0.0
+        },
+        {
+          "ref": "R1",
+          "pin": "1",
+          "xy": [
+            1.8,
+            17.49
+          ],
+          "copper_area_mm2": 0.3299529713074013,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0000000000000024
+        },
+        {
+          "ref": "R1",
+          "pin": "2",
+          "xy": [
+            1.8,
+            18.51
+          ],
+          "copper_area_mm2": 0.3299529713074013,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0000000000000024
+        },
+        {
+          "ref": "C8",
+          "pin": "1",
+          "xy": [
+            4.525,
+            16.0
+          ],
+          "copper_area_mm2": 0.10326144125637852,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "C8",
+          "pin": "2",
+          "xy": [
+            5.075,
+            16.0
+          ],
+          "copper_area_mm2": 0.10326144125637852,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "C9",
+          "pin": "1",
+          "xy": [
+            1.8,
+            13.82
+          ],
+          "copper_area_mm2": 0.3303724684567945,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.000000000000001
+        },
+        {
+          "ref": "C9",
+          "pin": "2",
+          "xy": [
+            1.8,
+            14.78
+          ],
+          "copper_area_mm2": 0.3303724684567947,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.000000000000001
+        },
+        {
+          "ref": "J4",
+          "pin": "1",
+          "xy": [
+            3.5,
+            1.8
+          ],
+          "copper_area_mm2": 2.4000000000000004,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 0.0
+        },
+        {
+          "ref": "J4",
+          "pin": "2",
+          "xy": [
+            6.0,
+            1.8
+          ],
+          "copper_area_mm2": 1.917067015660572,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 0.0
+        },
+        {
+          "ref": "J4",
+          "pin": "3",
+          "xy": [
+            8.5,
+            1.8
+          ],
+          "copper_area_mm2": 1.917067015660572,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 0.0
+        },
+        {
+          "ref": "R15",
+          "pin": "1",
+          "xy": [
+            26.49,
+            13.0
+          ],
+          "copper_area_mm2": 0.32995297130740314,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "R15",
+          "pin": "2",
+          "xy": [
+            27.51,
+            13.0
+          ],
+          "copper_area_mm2": 0.32995297130740314,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "C10",
+          "pin": "1",
+          "xy": [
+            3.52,
+            9.0
+          ],
+          "copper_area_mm2": 0.3303724684567953,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "C10",
+          "pin": "2",
+          "xy": [
+            4.48,
+            9.0
+          ],
+          "copper_area_mm2": 0.3303724684567955,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "R2",
+          "pin": "1",
+          "xy": [
+            4.19,
+            18.0
+          ],
+          "copper_area_mm2": 0.32995297130740303,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "R2",
+          "pin": "2",
+          "xy": [
+            5.21,
+            18.0
+          ],
+          "copper_area_mm2": 0.3299529713074031,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "R8",
+          "pin": "1",
+          "xy": [
+            9.49,
+            26.0
+          ],
+          "copper_area_mm2": 0.32995297130740264,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "R8",
+          "pin": "2",
+          "xy": [
+            10.51,
+            26.0
+          ],
+          "copper_area_mm2": 0.32995297130740264,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "R10",
+          "pin": "1",
+          "xy": [
+            9.49,
+            16.0
+          ],
+          "copper_area_mm2": 0.32995297130740303,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "R10",
+          "pin": "2",
+          "xy": [
+            10.51,
+            16.0
+          ],
+          "copper_area_mm2": 0.32995297130740303,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "R14",
+          "pin": "1",
+          "xy": [
+            23.49,
+            13.0
+          ],
+          "copper_area_mm2": 0.32995297130740314,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "R14",
+          "pin": "2",
+          "xy": [
+            24.51,
+            13.0
+          ],
+          "copper_area_mm2": 0.32995297130740314,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "R9",
+          "pin": "1",
+          "xy": [
+            12.49,
+            26.0
+          ],
+          "copper_area_mm2": 0.32995297130740264,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "R9",
+          "pin": "2",
+          "xy": [
+            13.51,
+            26.0
+          ],
+          "copper_area_mm2": 0.32995297130740264,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "R11",
+          "pin": "1",
+          "xy": [
+            12.49,
+            16.0
+          ],
+          "copper_area_mm2": 0.32995297130740303,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        },
+        {
+          "ref": "R11",
+          "pin": "2",
+          "xy": [
+            13.51,
+            16.0
+          ],
+          "copper_area_mm2": 0.32995297130740303,
+          "uncovered_copper_area_mm2": 0.0,
+          "paste_copper_area_ratio": 1.0
+        }
+      ]
+    }
+  },
+  "zip_sha256": "c09893e5c211a3e98fdaba4b1ae3fafa7e17e737543e1a02530f64e386254d04",
+  "zip_and_extracted_files_identical": true
+}

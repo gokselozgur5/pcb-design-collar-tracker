@@ -1,0 +1,40 @@
+COLLAR TRACKER 0.3.2 - 35 x 28 mm - DFM REVIEW CANDIDATE ONLY
+
+4 copper layers, proposed 0.8 mm thickness, 1 oz outer copper / green mask
+candidate. 53 footprints, 792 track segments, 77 tented 0.60/0.20 mm vias.
+In1 remains reserved GND. This revision changes only U2 mask apertures,
+the revision label and title metadata. Copper/routing/paste unchanged.
+
+SKY65943-11 primary source: Skyworks 204404H, 2025-09-04, Figure 7/page 9:
+https://www.skyworksinc.com/-/media/C1965FC4C165469FAEED1BA276874AF1.pdf
+- Center mask: 1.55 x 2.487 -> 1.55 x 2.90 mm. Select the full opening
+  within the manufacturer's 60-100% center-opening range. No paste increase.
+- Four large terminal masks: 0.525 x 0.615 -> 0.525 x 0.515 mm to match
+  Figure 7. Their 0.425 x 0.515 mm copper pads are not reduced.
+- All six small terminal masks remain 0.525 x 0.375 mm.
+- All other components, copper pads, traces, vias, paste and rules preserved.
+
+Native checks: 0 errors, 0 opens, 0 schematic-parity violations. 47 explicit
+library-footprint-difference warnings remain, without exclusions/downgrades.
+
+SUPPLIER STATUS: 0.3.2 HAS NOT been run through JLCDFM.
+The user-supplied 0.3.1 report dated 2026-10-25 01:28:03 has 0 Danger and
+45 Warning: 10 pad spacing, 30 mask bridge, 3 mask-to-trace, 2 negative mask.
+Those are NOT results for this new file. PCB analysis only; SMT unchecked.
+0.3.1's 22->2 negative and 2->0 compound mask reductions are verified by
+that report. Its remaining two negatives have not been individually mapped.
+The 0.08 mm trace example is localized at the U1.71 ground-pad/pour neck;
+it is not a demonstrated foreign-net clearance error, nor closed as harmless.
+Fixed-pitch U2/U5 mask/land dimensions require assembly/fab disposition.
+No promise that orange warnings will all disappear. Do not shrink
+manufacturer lands merely to satisfy the generic checker.
+
+This is NOT an order-ready PCBA package. Factory-assembled, programmed and
+function-tested delivery with no user hand soldering remains the goal.
+BOM/part sourcing, battery/NTC/ESD/UVLO/VDD_GPIO sequencing, actual eSIM and
+operator, antennas/50-ohm stackup/body effects, firmware, fixture, sensor
+and enclosure are unresolved. J6 is SIM contacts; J5 a digital interface.
+U1 1:1 paste is partner input, not an approved production stencil.
+
+Source: experiments/35x28-mask-r032/hardware.
+Old releases preserved. No supplier upload/order or powered/physical test.

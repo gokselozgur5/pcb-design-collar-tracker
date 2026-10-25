@@ -1,0 +1,50 @@
+{
+  "source": "Actual Gerber comparison of 0.3.1 and 0.3.2; metadata dates/revision only ignored.",
+  "unchanged_copper_paste_bottom_mask_outline_files": [
+    "collar-tracker-F_Cu.gtl",
+    "collar-tracker-In1_Cu.g1",
+    "collar-tracker-In2_Cu.g2",
+    "collar-tracker-B_Cu.gbl",
+    "collar-tracker-F_Paste.gtp",
+    "collar-tracker-B_Paste.gbp",
+    "collar-tracker-B_Mask.gbs",
+    "collar-tracker-Edge_Cuts.gm1"
+  ],
+  "front_silkscreen_remains_empty": true,
+  "bottom_silkscreen_only_revision_label_changed": true,
+  "other_component_top_masks_unchanged": true,
+  "U2_mask_matches_204404H_figure7_dimensions": true,
+  "copper_pads_fully_mask_exposed_before_after": [
+    267,
+    268
+  ],
+  "total_copper_pads": 268,
+  "mask_added_mm2": 0.6401499999999992,
+  "mask_removed_mm2": 0.20141452472285068,
+  "changed_aperture_clearance_to_foreign_copper": [
+    {
+      "pad": "U2.1",
+      "minimum_to_foreign_pad_track_via_mm": 0.21000000000000796
+    },
+    {
+      "pad": "U2.5",
+      "minimum_to_foreign_pad_track_via_mm": 0.1999999999999993
+    },
+    {
+      "pad": "U2.6",
+      "minimum_to_foreign_pad_track_via_mm": 0.24849999999999994
+    },
+    {
+      "pad": "U2.10",
+      "minimum_to_foreign_pad_track_via_mm": 0.2000099999999989
+    },
+    {
+      "pad": "U2.11",
+      "minimum_to_foreign_pad_track_via_mm": 0.1735000000000042
+    }
+  ],
+  "mask_bridge_min_mm": 0.125,
+  "mask_bridges_below_010": [],
+  "limitations": "Supplier has not analyzed this revision. Report negatives not individually mapped; same-net neck and pour topology are not certified by the foreign-net check. No SMT/physical/RF qualification.",
+  "verified": true
+}

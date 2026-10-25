@@ -1,0 +1,46 @@
+{
+  "base_sha256": "a7e596b58e7e32e75886a4b711d0680cc23c1b5abfe2d4a14a947072b90c495c",
+  "source_url": "https://www.skyworksinc.com/-/media/C1965FC4C165469FAEED1BA276874AF1.pdf",
+  "source_document": "204404H, 2025-09-04, Figure 7, page 9; drawing visually inspected",
+  "changes": [
+    {
+      "ref": "U2",
+      "pin": "11",
+      "layer": "F.Mask",
+      "before_mm": [
+        1.55,
+        2.487
+      ],
+      "after_mm": [
+        1.55,
+        2.9
+      ],
+      "reason": "Select full center opening from manufacturer 60-100% range; expose entire unchanged copper land."
+    },
+    {
+      "ref": "U2",
+      "pins": [
+        "1",
+        "5",
+        "6",
+        "10"
+      ],
+      "layer": "F.Mask",
+      "before_mm": [
+        0.525,
+        0.615
+      ],
+      "after_mm": [
+        0.525,
+        0.515
+      ],
+      "reason": "Match the four large terminal mask apertures in Figure 7; copper and paste unchanged."
+    },
+    {
+      "layer": "B.Silkscreen",
+      "legend": "COLLAR 0.3.2 TEST"
+    }
+  ],
+  "supplier_dfm": "NOT RUN; no assertion that two supplier negative-mask occurrences are this center pad.",
+  "open_findings": "0.3.1 report has 45 warnings. Fixed-pitch U2/U5 and three mask/trace occurrences still require disposition."
+}

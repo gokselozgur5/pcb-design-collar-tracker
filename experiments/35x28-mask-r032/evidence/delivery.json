@@ -1,0 +1,20 @@
+{
+  "zip": "/Users/gok/codex/projects/collar-tracker/release/collar-tracker-0.3.2-35x28-dfm.zip",
+  "bytes": 139838,
+  "files": 20,
+  "sha256": "c09893e5c211a3e98fdaba4b1ae3fafa7e17e737543e1a02530f64e386254d04",
+  "pcb_sha256": "4dbc5ce1fe08628c8239f155c70aed1a46200ec83cbfd1dc0b765716c79e0b18",
+  "native_errors": 0,
+  "opens": 0,
+  "parity": 0,
+  "native_warnings": 47,
+  "local_geometry_passed": true,
+  "supplier_dfm": "NOT RUN",
+  "board_mm": [
+    35,
+    28,
+    0.8
+  ],
+  "drilled_holes": 77,
+  "old_releases_unchanged": true
+}
