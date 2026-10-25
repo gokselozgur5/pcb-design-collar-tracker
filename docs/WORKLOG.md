@@ -659,3 +659,30 @@ Next: controlled harness/dock and pack lead-exit/strain-relief geometry, then
 firmware and factory/physical tests. Pouch contact/abrasion, cap strength/creep,
 tilt/load, material/thermal behavior and IP68 remain unqualified. No native KiCad
 process, PCB edit, repeated JLC upload, order/payment or supplier message occurred.
+
+
+## 2026-10-26 — r13 charging-dock geometry and external harness
+
+Implemented the two-piece external dock around real Mill-Max 0962 contacts,
+a Tensility USB cable, Alpha pigtails, a Littelfuse fuse and a T18R retention bay.
+Added positive flange stops and extended the collar's external key to 4.0mm /
+Z=7.7–13.2mm. The old 6mm alignment block and short/high key fail the new checks.
+PCB/Gerber, seals, boot, pack and original CAD remain unchanged and preserved.
+
+29 conditional checks pass, including 64 spring/seat/head/gap corners, continuous
+wire-radius bounds and native J3/J4 pinout. Three actual meshes are closed and
+connected with clean CGAL diagnostics. Six CAD controls pass; reversed key and
+undersized bore interfere by 3.795 / 2.155mm³. Seven regressions pass. Both actual
+previews and the generated PDF were inspected.
+
+Preserved three rejected checks: the boot imported in its print frame, an
+intentional jacket/saddle bearing line rejected by an empty-only check, and a
+head-pocket/floor tangency that raised a CGAL warning despite valid STL edge counts.
+Restored the assembly transform, separated intended bearing from clearance, and
+opened the tangent edge with a lower relief. Final export rejects CAD warnings.
+
+This is nominal/conditional geometry, not a production power path. Magnet/positive
+holding, pin-motion wire slack, crimp/splice/sleeve process, internal lugs/J3 route,
+source/fault behavior, pack supplier/lead exit, firmware and physical acceptance
+remain open. No native KiCad process, repeated DFM upload, supplier message,
+order/payment or physical test was performed.

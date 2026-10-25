@@ -419,3 +419,18 @@ final source. Inspect both copper attachments on new passives. Check text agains
 tented drill holes as well as mask openings; native DRC alone did not catch the
 r05h silkscreen findings. Preserve a failed package separately and obtain two
 fresh analyses of the corrected ZIP with unchanged supplier rules.
+
+
+### Charging contacts and imported assembly frames
+
+A pogo-pin current rating or nominal free height does not establish a dock fit.
+Use the actual manufacturer's datum drawing, full travel and general tolerances.
+Separate the rear-seated operating position from unloaded axial float. Check the
+key before the earliest possible electrical touch, not just at the final position;
+include the physically reversed geometry and leave skew/load qualification explicit.
+A spring force at midstroke is not a whole-stroke bound, and magnet diameter alone
+is not holding-force evidence. A fuse marking is not a current-regulation function.
+
+Imported STLs can be in a print/export frame. Read the generating transformation
+before performing assembly intersections. Preserve a failed frame check as a setup
+error rather than modifying a correct part until the wrong frame turns green.

@@ -51,13 +51,22 @@ and saved checks cover 85 component envelopes, 27 cable poses and nine meshes.
 Rigid size remains 57.4 x 49.4 x 21.0mm. Material bounds are assigned requirements;
 physical thermal fit, connector strain and ingress remain open.
 
-The latest [r12 pack-retention prototype](mechanical/swim-r12-pack-retention/README.md)
+The preserved [r12 pack-retention prototype](mechanical/swim-r12-pack-retention/README.md)
 adds a shell-integral cradle and a carrier-integral cap. The requested pack sits
 0.3mm lower on the existing floor; outside dimensions are unchanged. The
 [review drawing](mechanical/swim-r12-pack-retention/pack-retention-sheet.pdf) and saved
 checks cover all 85 components, full upward pack/sensor travel, two changed meshes
 and seven CAD controls. Minimum pack size/contact regions, actual strength and
 lead routing still require supplier and physical qualification.
+
+The latest [r13 charging dock](mechanical/swim-r13-charge-dock/README.md) replaces
+an empty alignment block with actual spring contacts, flange stops, fuse/wire
+space and a jacket-retention bay. Its [drawing](mechanical/swim-r13-charge-dock/dock-sheet.pdf)
+and [harness definition](assembly/charge-harness-r01/README.md) identify the pinout,
+source dimensions and remaining process gates. The taller external key blocks the
+aligned reversed approach before the earliest calculated contact. Holding force,
+skewed approaches, power/fault behavior and internal J3 wiring remain unqualified.
+The already all-green PCB is unchanged.
 
 [STATUS](docs/STATUS.md) records the exact source and next action. The earlier r05k,
 r04i and all prior tested files remain preserved. Upload only the Gerber ZIP to PCB

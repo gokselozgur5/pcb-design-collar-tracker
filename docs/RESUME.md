@@ -134,7 +134,7 @@ actual machining limits and physical thermal fit must also be checked. Next loca
 work is controlled harness/dock; supplier selection, firmware
 and factory/physical acceptance remain open. Do not describe this as order-ready.
 
-The latest mechanical source is `mechanical/swim-r12-pack-retention/`. Read its
+The preserved pack-retention source is `mechanical/swim-r12-pack-retention/`. Read its
 README and drawing. It adds the pack cradle/cap without changing the PCB, shell
 outside size, contact/seal geometry or antenna routing. The pack seats 0.3mm lower
 on the existing floor. The new minimum-size requirement and allowed contact regions
@@ -389,3 +389,32 @@ Never commit `.runtime`, browser captures/profile, venvs or personal memory file
 
 Repository verification checks saved evidence and hashes. It does not rerun KiCad,
 JLC, RF tests, SMT assembly or powered hardware tests. State that distinction.
+
+
+## Current charging dock: r13
+
+Read `mechanical/swim-r13-charge-dock/README.md` and
+`assembly/charge-harness-r01/README.md`. Actual Mill-Max 0962, Alpha 2843/7,
+Tensility 10-03388, Littelfuse 0251.750MXL and T18R tie candidates are recorded.
+The two dock halves capture the spring flanges; the external collar key now
+projects 4.0mm and extends down to Z=7.7mm. PCB/seals/pack/boot are unchanged.
+The external dock is 60 x 36 x 16mm. 29 checks, three closed meshes, six CAD
+controls and seven regression tests cover the declared geometric domain.
+
+```sh
+python3 scripts/verify_charge_dock.py
+python3 -m unittest discover -s tests -p test_charge_dock.py -v
+```
+
+The first collision used the boot's print frame instead of its assembly frame;
+that rejected source/result is preserved under `evidence/initial-frame/`.
+The actual source export translates the boot +4mm for printing; r13 imports it
+with -4mm for assembly. Do not change the old boot to fix a coordinate error.
+
+Next: resolve positive holding/magnet force, exact internal lugs/J3 route and
+factory terminations, source/fault behavior and pack lead exit. The current magnets
+have no demonstrated holding force; 1.569N is only the pair's maximum *midstroke*
+force, not the maximum across the whole tolerance stroke. The fuse is not a 500mA
+current limiter, and the USB cable does not implement enumeration. No production
+power-path approval exists. Supplier-message approval is still unanswered; no
+message or order has been sent. Firmware and physical acceptance remain unfinished.
