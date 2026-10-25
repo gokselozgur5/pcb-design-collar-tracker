@@ -1,258 +1,263 @@
 # PCB Design
 
-PCB işlerini de yazılım gibi gereksinim, kaynak, küçük değişiklikler, test ve
-doğrulanmış teslim üzerinden yürüteceğiz. Bu rehber sonraki kartlarda da kullanılacak.
+Treat PCB work like software engineering: requirements, versioned source, small
+changes, checks and a verified release. Use this workflow for future boards too.
 
-Bu dosya çalışma yöntemidir. Güncel kartın durumu [STATUS](STATUS.md), kararları
-[decisions](decisions.md), Paul'ün bu karta uygulanması [paul-nanosim](paul-nanosim.md)
-içindedir. Bir projedeki ölçü veya test sonucu başka karta otomatik taşınmaz.
+This file defines the method. The current board state is in [STATUS](STATUS.md),
+its decisions in [decisions](decisions.md), and the application of Paul's review
+in [paul-nanosim](paul-nanosim.md). Dimensions and results from one board do not
+automatically apply to another.
 
-## Yazılımdaki karşılığı
+## Software engineering equivalents
 
-| Yazılım | PCB tarafındaki karşılığı |
+| Software | PCB equivalent |
 |---|---|
-| Gereksinimler ve kabul kriterleri | Kullanım, ölçü, güç, arayüz, çevre, üretim ve test hedefleri |
-| Mimari ve API sözleşmeleri | Blok şema, güç ağacı, pinler, voltajlar, zamanlama ve konektörler |
-| Kaynak kod | Şema, native PCB, proje kuralları, footprint/symbol kütüphaneleri |
-| Bağımlılık kilidi | CAD sürümü, kesin MPN, datasheet revizyonu, kütüphane commit'i, stackup |
-| Build | Netlist, Gerber, delik, BOM, CPL, stencil ve mekanik çıktılar |
-| Statik analiz | ERC, DRC, şema–PCB parity ve geometri kontrolleri |
-| Birim/regresyon testi | Pin eşleşmesi, footprint ölçüsü, ağ bağlantısı ve önce/sonra hata örnekleri |
-| Entegrasyon testi | Gerçek üretici DFM, montaj incelemesi ve fiziksel kart ölçümleri |
-| Release | Kaynağa hash ile bağlı, kontrol edilmiş üretim paketi |
-| Production smoke test | İlk açılış, programlama, güç/radyo/sensör ve uçtan uca fonksiyon testi |
+| Requirements and acceptance criteria | Use, dimensions, power, interfaces, environment, manufacturing and test targets |
+| Architecture and API contracts | Block diagram, power tree, pins, voltages, timing and connectors |
+| Source code | Schematic, native PCB, project rules, footprint and symbol libraries |
+| Dependency lock | CAD version, exact MPN, datasheet revision, library commit and stackup |
+| Build | Netlist, Gerber, drill, BOM, CPL, stencil and mechanical outputs |
+| Static analysis | ERC, DRC, schematic–PCB parity and geometry checks |
+| Unit/regression tests | Pin mapping, footprint dimensions, connectivity and before/after failure examples |
+| Integration tests | Actual supplier DFM, assembly review and physical board measurements |
+| Release | Checked manufacturing package linked to source by hashes |
+| Production smoke test | Bring-up, programming, power/radio/sensor and end-to-end function tests |
 
-**ERC/DRC temizliği, kartın çalıştığını kanıtlamaz. PCB DFM temizliği de montajın
-ve fonksiyonların doğrulandığı anlamına gelmez.** Her sonucu kendi kapsamıyla yaz.
+**Clean ERC/DRC does not prove the board works. Clean PCB DFM does not qualify
+assembly or functionality.** State the scope of each result.
 
-## 1. Önce ne yapacağımızı sabitle
+## 1. Define the requirements
 
-Başlangıçta aşağıdakileri gereksinim tablosuna yaz. Bilinmeyeni varsayım olarak
-işaretle; sessizce kesin karara çevirme.
+Record the following before designing. Mark unknowns as assumptions; do not
+silently turn them into decisions.
 
-- Kullanım: hangi işi, hangi koşullarda, hangi sıklıkla yapacak?
-- Ülke/operatör/servis: bağlantı teknolojisi ve kullanılacak hizmet gerçekten uyumlu mu?
-- Mekanik: kart, pil, anten, kutu, bağlantı aparatı, kablo ve erişim alanları.
-- Güç: besleme aralığı, tepe/ortalama akım, çalışma modları, şarj ve hedef süre.
-- Arayüzler: voltaj seviyesi, pin eşleşmesi, zamanlama, boot/reset/debug.
-- Üretim: adet, bütçe, katman/kalınlık, dizgi yöntemi, elde lehim gereksinimi.
-- Teslim: boş PCB mi, dizilmiş kart mı, programlanmış ve test edilmiş cihaz mı?
-- Ölçülebilir kabul: neyi hangi ölçüm veya testle tamam sayacağız?
+- Use: what does the device do, under which conditions and how often?
+- Country/operator/service: are the connectivity technology and actual service compatible?
+- Mechanics: board, battery, antennas, enclosure, mounts, cables and access clearances.
+- Power: supply range, peak/average current, operating modes, charging and runtime.
+- Interfaces: voltage levels, pin mapping, timing, boot/reset and debug.
+- Manufacturing: quantity, budget, layer count, thickness, assembly and hand-soldering needs.
+- Delivery: bare PCB, assembled board, or programmed and function-tested device?
+- Acceptance: which measurement or test demonstrates completion?
 
-Pil kapasitesi ve kart ölçüsünü tahminle kilitleme. Gerçek bileşen, anten ve
-mekanik hacmi birlikte yerleştir; sığma ve çalışma süresini ayrı doğrula.
+Do not fix battery capacity or board dimensions from an estimate alone. Place real
+components, antennas and mechanical volumes together; verify fit and runtime separately.
 
-## 2. Mimari ve parça seçimi
+## 2. Architecture and component selection
 
-Blok şema ve güç ağacı çiz. Her blok için giriş/çıkış, güç alanı ve hata durumunu yaz.
-Besleme düşmesi, reset, takıp çıkarma ve kapalı cihazın bir arayüzden beslenmesi
-gibi durumları devre incelemesine dahil et.
+Draw a block diagram and power tree. Define each block's inputs, outputs, power
+domain and failure behavior. Review supply dips, reset, insertion/removal and
+back-powering through interfaces while the device is off.
 
-Her fiziksel parçada kesin MPN, üretici, paket, pinout ve üretici belgesi bulunmalı.
-Dağıtıcı stok kodu MPN'nin yerine geçmez; uygunluk ve bulunabilirlik tarihli kanıttır.
-Benzer isimli parçaların marka, paket veya pinlerinin aynı olduğunu varsayma.
+Every physical component needs an exact MPN, manufacturer, package, pinout and
+manufacturer document. A distributor SKU does not replace the MPN. Availability
+and suitability are dated evidence. Similar part names do not establish matching
+manufacturers, packages or pins.
 
-Üreticinin datasheet/reference design belgelerini önce oku. Kaynak URL, revizyon,
-indirme tarihi ve SHA-256 kaydet. Kütüphane sembolü veya bir AI açıklaması tek başına
-üretici pinout'una kanıt değildir.
+Read the manufacturer's datasheet and reference design first. Record source URL,
+revision, download date and SHA-256. A library symbol or AI explanation alone is
+not evidence of the manufacturer's pinout.
 
-## 3. Şema ve footprint
+## 3. Schematic and footprints
 
-- Şemada güç alanlarını, net adlarını, NC pinlerini, pull-up/down ve debug yollarını açık tut.
-- Pin numarası → üretici işlevi → şemadaki net → PCB pad'i zincirini kontrol et.
-- ERC çalıştır; kapalı kontrolleri ve gerekçeli istisnaları ayrıca kaydet.
-- Netlist üzerinden kritik bağlantıları bağımsız kontrol et. Üretim scriptinin aynı
-  yanlış tabloyu tekrar okuması bağımsız doğrulama değildir.
-- Footprint'i gerçek paket çizimiyle karşılaştır: pin 1, üst/alt görünüm, pad aralığı,
-  boyutlar, exposed pad, peg/delik, mask, paste, courtyard ve mekanik keepout.
-- Kartın altına çevrilen parçanın pinleri ve CPL yönü için ayrıca kontrol yap.
-- Tek pad numarası birden fazla fiziksel pad'de bulunabilir; UUID veya pad indeksi kullan.
-- Projeye özel footprint'i yerel kütüphanede sürümle. Native kart ile kütüphane
-  arasındaki farkları çöz; uyarıyı gizleyerek geçme.
+- Make power domains, net names, NC pins, pull-ups/downs and debug paths explicit.
+- Check the chain: pin number → manufacturer function → schematic net → PCB pad.
+- Run ERC and record ignored checks and justified exceptions separately.
+- Independently check critical connections in the netlist. Reading the same wrong
+  table used by the generator is not independent verification.
+- Compare each footprint with the package drawing: pin 1, top/bottom view, pitch,
+  pad dimensions, exposed pad, pegs/holes, mask, paste, courtyard and keepouts.
+- Check flipped bottom-side parts and CPL rotations separately.
+- One pad number can identify multiple physical pads. Use UUIDs or pad indices.
+- Version project-specific footprints in a local library. Resolve differences
+  between the native board and library instead of hiding mismatch warnings.
 
-Konektörün lehim padleri sığıyor diye kullanılabilir sayma. Kart takma/çıkarma,
-kablo bükülme, kilit açma ve alet erişimi için de yer bırak.
+Connector lands fitting on the PCB does not establish usability. Leave space for
+card insertion/removal, cable bends, latch release and tools.
 
-## 4. Üretim kısıtları ve katman yapısı
+## 4. Manufacturing constraints and layer stack
 
-Gerçek üreticinin seçilen süreç/katman/kalınlık için geçerli sınırlarını al.
-Minimum yol, bakır açıklığı, delik, annular ring, mask köprüsü, kart kenarı ve
-silkscreen değerlerini proje kurallarına işle. Kapasite tablosunu tarihli sakla.
+Use the actual supplier's limits for the selected process, layers and thickness.
+Set track width, copper clearance, drill, annular ring, mask bridge, board-edge
+and silkscreen rules in the project. Keep a dated capability reference.
 
-Üretici minimumu hedef tasarım marjı olmak zorunda değil. Mümkün olduğunda pay bırak.
-Sabit paket pad aralığı için istisna gerekiyorsa yalnız ilgili geometriye uygula;
-aynı istisna bütün yol/via açıklıklarını düşürmemeli.
+Supplier minima need not be the design targets. Leave margin where possible.
+If fixed package pitch requires an exception, scope it to that geometry; do not
+lower every track/via clearance.
 
-Katman sayısı ve stackup sinyallerin, akımların ve RF ihtiyacının sonucudur.
-Bu projedeki dört katman/iki iç GND seçimi bütün kartlar için kural değildir.
-Kontrollü empedans gerekiyorsa gerçek dielektrik kalınlığı/malzeme/bakır ve üretici
-stackup'ı üzerinden hesapla; yalnız yol genişliğine bakıp “50 ohm” deme.
+Choose layer count and stackup from signal, current and RF requirements. This
+project's four-layer/two-inner-GND choice is not a rule for every board.
+For controlled impedance, calculate against actual dielectric thickness, material,
+copper and supplier stackup. A trace width alone does not establish 50 ohms.
 
-## 5. Yerleşim ve yönlendirme
+## 5. Placement and routing
 
-Önce mekanik sınırlar, konektör/anten erişimi ve kritik güç/RF blokları; sonra diğer
-parçalar. Decoupling ve hassas geri besleme döngülerini üretici yerleşimine göre çöz.
-Kritik bağlantıları gözle incelemeden otomatik yönlendiriciye bırakma.
+Place mechanical constraints, connector/antenna access and critical power/RF
+blocks first. Follow manufacturer layouts for decoupling and sensitive feedback
+loops. Review critical paths before leaving them to an autorouter.
 
-### GND ve dönüş yolları
+### Ground and return paths
 
-- GND olması gereken pinleri GND'ye bağla. Bütün pinleri GND'ye bağlamak diye bir hedef yok.
-- “GND net adı var”, “açık bağlantı yok” ve “iyi dönüş yolu var” farklı sonuçlardır.
-- Referans düzlemini gereksiz yarıklarla bölme. Sinyalin dönüş yolunu katman geçişinde
-  ve düzlem kesintilerinde takip et.
-- GND pad'lerini mümkün olduğunca kısa yerel bağlantılarla düzleme indir.
-  Ayrı küçük pasifleri uzun bir GND hattı üzerinde zincirleme.
-- Komşu IC GND pinleri uygun kısa bağlantıyı paylaşabilir; bunun gerçek geometrisini kaydet.
-- Dönüş via'sını ilgili sinyal/güç geçişinin yakınına yerleştir. Mesafe hedefini
-  sinyal ve stackup'a göre değerlendir; eski bir sayıyı evrensel standart yapma.
-- Sadece via sayısını değil, gerçekten doğru dolguya bağlanıp bağlanmadığını ölç.
-  Yetim bakır adalarını ve doldurulmuş katmanları kontrol et.
+- Connect the pins that require GND. Connecting every pin to ground is not a goal.
+- A GND net name, zero open connections and a good return path are different findings.
+- Avoid unnecessary splits in reference planes. Follow return paths across layer
+  changes and plane interruptions.
+- Give GND pads short local connections to the plane. Do not daisy-chain unrelated
+  small passives along a long ground trace.
+- Adjacent IC ground pins may share a suitable short connection; record its geometry.
+- Place return vias near the relevant signal/power transition. Evaluate spacing
+  against the signal and stackup; an inherited number is not a universal standard.
+- Measure actual connection to the correct filled plane, not just via count.
+  Check isolated islands and saved fills.
 
-### Güç, termal ve RF
+### Power, thermal behavior and RF
 
-- Tepe akım, izin verilen düşüm, bakır kalınlığı ve sıcaklık üzerinden güç yolu seç.
-- Kısa pad çıkışı ile uzun güç hattını ayrı ölç. Netclass genişliği verilmiş olması,
-  bütün gerçek yolların o genişlikte olduğunu göstermez.
-- Güç sıralaması, UVLO, şarj sınırları, NTC/koruma ve transient durumlarını incele.
-- Küçük pasifin iki pad'ine bağlanan bakırı karşılaştır. Bir tarafta büyük düzlem,
-  diğer tarafta ince boyun varsa lehim/termal dengesini değerlendir.
-- RF geometrisini üretici referansı ve gerçek stackup ile kontrol et. Anten keepout'u,
-  kutu, pil ve kullanıcı/beden yakınlığı ayrıca ölçüm gerektirebilir.
-- ESD parçası eklemek tek başına yeterli değildir; konektör–koruma–IC sırası ve
-  korumanın GND yolu yerleşim incelemesinin parçasıdır.
+- Size power paths from peak current, allowed drop, copper thickness and temperature.
+- Measure short pad escapes separately from long power runs. A netclass setting
+  does not prove that every actual trace uses that width.
+- Review sequencing, UVLO, charge limits, NTC/protection and transients.
+- Compare copper attached to both pads of small passives. Assess soldering and
+  thermal balance when one side has a plane and the other a narrow neck.
+- Check RF geometry against the reference design and real stackup. Antenna
+  keepouts, enclosure, battery and body proximity may need separate measurements.
+- Adding an ESD part is insufficient by itself. Review connector → protection → IC
+  routing and the protection device's ground path.
 
-### Otomatik yönlendirici
+### Autorouting
 
-Kullanılan CAD/router sürümünü ve ayarlarını sabitle. Native kaynak yerine kopyayı
-dışa aktar; router için kullanılan genişletilmiş pad veya keepout üretim geometrisi değildir.
-GND düzlemle bağlanacaksa router'ın uzun GND yolları üretmesini önle.
+Pin CAD/router versions and settings. Export a copy rather than altering the native
+source. Expanded pads or keepouts used by the router are not production geometry.
+Prevent long autorouted GND buses where ground should connect through planes.
 
-İçe aktardıktan sonra parça konumları, pad/net eşleşmesi, katmanlar, kilitli kritik
-yollar, GND bağlantıları, via çap/delikleri ve minimum genişlikleri tekrar kontrol et.
-Router'ın “tamamlandı” mesajı native DRC'nin yerine geçmez.
+After import, recheck placements, pad/net mapping, layers, locked critical traces,
+ground connections, via diameters/drills and minimum widths. A router completion
+message does not replace native DRC.
 
-## 6. Doğrulama: tam olarak ne geçti?
+## 6. Verification: what actually passed?
 
-| Kontrol | Gerekli kanıt | Kanıtlamadığı şey |
+| Check | Required evidence | Does not prove |
 |---|---|---|
-| ERC | Doğru şema/revizyon için rapor, varsayılan kapalı kontroller | Fiziksel çalışma |
-| DRC + parity | Doğru PCB/proje için ihlaller, açıklar, şema eşleşmesi | RF/EMC, güç kararlılığı |
-| GND incelemesi | Pin/net, gerçek dolgu, kısa bağlantı ve dönüş yolu ölçümü | Laboratuvar EMC sonucu |
-| Geometri regresyonu | Eski sorunlu örnekte başarısız, düzeltilmiş örnekte başarılı kontrol | Üreticinin tüm algoritmaları |
-| Gerber incelemesi | Dışa aktarılan gerçek katman/pad/delik/ölçü karşılaştırması | Montaj doğruluğu |
-| Üretici PCB DFM | Yüklenen ZIP hash'i, kayıt kimliği, kurallar, tamamlanmış sonuç, PDF | SMT ve fonksiyon testi |
-| PCBA incelemesi | BOM/CPL/parça/yön/stencil/factory preview eşleşmesi | Firmware ve ürün davranışı |
-| Fiziksel kabul | Ölçüm koşulları, kart revizyonu, firmware ve gerçek test sonucu | Henüz denenmemiş ortamlar |
+| ERC | Report for the right schematic/revision, with ignored defaults | Physical operation |
+| DRC + parity | Violations, opens and schematic match for the right PCB/project | RF/EMC or power stability |
+| Ground review | Pin/net mapping, actual fill, local connection and return measurements | Laboratory EMC performance |
+| Geometry regression | Check fails on the old defect and passes on the fix | Every supplier algorithm |
+| Gerber review | Actual exported layers, pads, holes and dimensions compared | Assembly correctness |
+| Supplier PCB DFM | Uploaded ZIP hash, record ID, rules, completed result and PDF | SMT or functional acceptance |
+| PCBA review | BOM/CPL/part/orientation/stencil/factory-preview match | Firmware and product behavior |
+| Physical acceptance | Conditions, board revision, firmware and actual test results | Untested environments |
 
-KiCad komutlarını kurulu sürümün `--help` çıktısıyla kontrol et. DRC'de ilgili tüm
-şiddetleri, bütün yol hatalarını ve şema parity'sini dahil et. Bölge dolgusunu güncel
-tut; yayımlanmış dosyaya yanlışlıkla `--save-board` uygulama.
-[KiCad 10 CLI belgesi](https://docs.kicad.org/10.0/en/cli/cli.html).
+Check commands against the installed KiCad version's `--help`. Include relevant
+severities, all track errors and schematic parity. Refresh zone fills; do not
+accidentally use `--save-board` on a released file.
+[KiCad 10 CLI documentation](https://docs.kicad.org/10.0/en/cli/cli.html).
 
-Bir uyarıyı önce gerçek koordinat/geometri ve net ile eşleştir. Benzer iki konumun
-aynı hata olduğunu varsayma. Birini düzeltince simetrik diğerini de kontrol et.
-Kuralı gevşeterek veya üretici land'ini keyfî küçülterek yeşil sonuç üretme.
+First map each warning to real coordinates, geometry and net. Similar locations
+need not be the same defect. After fixing one, inspect its symmetric counterpart.
+Do not weaken rules or arbitrarily shrink manufacturer lands to get green results.
 
-Bu çalışma biçiminde son ZIP için **iki yeni, aynı baytlara ait DFM koşusu** alıyoruz.
-Bu bizim tekrar doğrulama kuralımızdır; üreticinin evrensel zorunluluğu değildir.
-Analizin bittiğini, bütün satırların değerlendirildiğini ve kuralların değişmediğini
-görmeden sonucu kabul etme. Web sayfasının açılması analiz sonucu değildir.
+Our release practice requires **two fresh DFM runs of the same final ZIP bytes**.
+This is our repeatability check, not a universal supplier requirement. Confirm the
+analysis finished, every row was evaluated and rules stayed unchanged. A loaded
+web page is not an analysis result.
 
-## 7. Dizgi, programlama ve çalışan teslim
+## 7. Assembly, programming and working delivery
 
-BOM'da kesin parça, değer/tolerans, paket, refdes ve DNP ayrımı bulunmalı.
-CPL'de refdes, yüz, koordinat, birim, orijin ve dönüş açısını üretici önizlemesiyle
-eşleştir. DNP'ler ve yalnız temas/test padleri takılacak parça gibi gönderilmemeli.
-[JLCPCB BOM gereksinimleri](https://jlcpcb.com/help/article/bill-of-materials-for-pcb-assembly).
+The BOM needs exact parts, values/tolerances, packages, references and DNP status.
+Match CPL references, side, coordinates, units, origin and rotation to the supplier
+preview. Do not submit DNP parts or bare contact/test pads as fitted components.
+[JLCPCB BOM requirements](https://jlcpcb.com/help/article/bill-of-materials-for-pcb-assembly).
 
-Gerçek stok, ikame, alt yüz dizgisi, stencil ve özel montaj işlemleri seçilen sipariş
-için teyit edilmeli. Datasheet'te bir parçanın varlığı, fabrikada o parçanın hazır
-olduğu anlamına gelmez.
+Confirm actual stock, substitutions, bottom-side assembly, stencil and special
+processes for the intended order. A datasheet does not establish factory availability.
 
-Programlanmış teslim isteniyorsa firmware imajı/hash'i, debug/pogo erişimi,
-programlama adımları, seri numarası/kimlik ve test fixture'ı tanımlanmalı.
-Kabul testi girişleri, ölçüm sınırları ve başarısız kartın davranışı açık olmalı.
+For programmed delivery, define the firmware image/hash, debug/pogo access,
+programming procedure, serial identity and test fixture. Specify acceptance inputs,
+measurement limits and failed-board handling.
 
-İlk açılışta kısa devre/direnç, polarite, akım sınırlı güç, raylar, reset/debug,
-firmware, ardından radyo/sensör ve uçtan uca işlevler sırayla kontrol edilir.
-Pil/şarj ve koruma testleri gerçek seçilen hücrenin sınırlarına göre yapılır.
-Ölçülmemiş sağlık/sensör başarısını ürün özelliği olarak doğrulanmış gösterme.
+Bring-up proceeds through short/resistance checks, polarity, current-limited power,
+rails, reset/debug, firmware, then radio/sensor and end-to-end functions. Test the
+battery, charger and protection against the selected cell's limits. Do not claim
+unmeasured health or sensor performance as a validated product feature.
 
-## 8. Git, script ve release düzeni
-
-```text
-AGENTS.md / CLAUDE.md    Yeni oturumun giriş kuralları
-docs/STATUS.md          Güncel revizyon, doğrulananlar, açıklar, kesin sonraki adım
-docs/decisions.md       Kararlar, varsayımlar ve dayanakları
-docs/WORKLOG.md         Tamamlanan anlamlı adımların kısa kaydı
-hardware/              Native kaynak ve yerel kütüphaneler
-scripts/               Tekrarlanabilir üretim, kontrol ve dışa aktarma
-experiments/<rev>/     Ayrı deneme kaynakları ve kanıtları
-references/            Üretici kaynakları, revizyonlar ve hash manifesti
-evidence/              Seçilmiş raporlar, ölçümler ve önce/sonra kanıtı
-release/               Kaynağa bağlı, değiştirilmeyen teslim paketleri
-mechanical/            Kutu, bağlantı ve gerçek parça hacimleri
-```
-
-Her repoda gerçek güncel kaynak yolunu STATUS'ta açıkça yaz. `hardware/` isimli
-klasörün her zaman en yeni sürüm olduğunu varsayma.
-
-- Ayrı Git deposu kullan; yanlışlıkla üst klasörün deposuna dosya ekleme.
-- Bir anlamlı değişiklik = bir commit. Şema/footprint/gerekli PCB değişikliğini
-  tutarlı tut; bağımsız düzeltmeleri ayır. Tamamlanmamış işi WIP olarak işaretle.
-- Kaynak ve eski release'i koru. Yeni denemeyi ayrı dizinde üret; mevcut bitmiş
-  kartı sessizce yeniden oluşturan script çalıştırma.
-- Bileşen konumları, pad şekilleri/netleri, kurallar ve kritik yolları semantik
-  olarak karşılaştır. Büyük KiCad metin diff'i tek başına inceleme değildir.
-- Yeni release; kaynak SHA, araç sürümü, çıktı listesi, ZIP SHA, yerel test ve
-  üretici kayıtlarını birbirine bağlayan manifest taşımalı.
-- Gerber/delik/mask/paste çıktısını gerçekten aç. Katman sayısı, outline, delikler,
-  pad açıklıkları, kart kenarı ve iki yüzün yönünü kontrol et.
-- Üreticiye uygun dosyaları gönder. Tarayıcı profili, token, cookie, ham oturum
-  kaydı, venv, özel notlar veya ilgisiz dosyalar Git'e/üretim ZIP'ine girmez.
-- Son çıktıyı temiz checkout'ta kontrol et. Güçlü bir regresyon kontrolü, yanlış
-  kaynak veya değişmiş çıktı verildiğinde başarısız olmalıdır.
-
-## “Bitti” deme ölçütü
-
-Hangi aşamanın bittiğini söyle: şema, yerleşim, yerel kontrol, PCB DFM, PCBA veya
-çalışan ürün. Tamamlanması istenen aşamanın her kabul kriterinin kanıtını açıp kontrol et.
-Başka revizyonun yeşil sonucu veya rapor başlığı yeterli değildir.
-
-Göksel'e kısa sonuç, kalan gerçek eksik ve teslim dosyasının tam yolunu ver.
-Yerel dosya için `open -R "/tam/yol/dosya.zip"` gibi çalıştırılabilir komut kullan.
-Yeni oturumun aynı işi tekrar araştırmaması için STATUS'u güncelle; ne yapacağını
-ve nerede kaldığını bir sonraki asistana bırak.
-
-## Yeni PCB başlangıç şablonu
+## 8. Git, scripts and releases
 
 ```text
-Amaç / kullanım:
-Kesin gereksinimler:
-Açık kararlar / varsayımlar:
-Kart + pil + anten + kutu sınırı:
-Güç ağacı / tepe ve ortalama akım:
-Kritik arayüzler / üretici referansları:
-Üretici + süreç + stackup + tasarım marjları:
-Güncel native kaynak / revizyon:
-Kabul kriteri → kontrol → kanıt dosyası:
-Üretim tesliminin kapsamı:
-İlk yapılacak somut adım:
+AGENTS.md / CLAUDE.md   Entry instructions for a new session
+docs/STATUS.md         Current revision, verified results, gaps and exact next step
+docs/decisions.md      Decisions, assumptions and supporting evidence
+docs/WORKLOG.md        Short record of meaningful completed steps
+hardware/             Native source and local libraries
+scripts/              Reproducible generation, checks and exports
+experiments/<rev>/    Isolated trial sources and evidence
+references/           Manufacturer sources, revisions and hash manifest
+evidence/             Selected reports, measurements and before/after evidence
+release/              Immutable delivery packages linked to source
+mechanical/           Enclosure, mounts and real component volumes
 ```
 
-## Bu karttan kalıcı dersler
+Identify the actual current source in STATUS. A directory named `hardware/` is not
+necessarily the latest revision.
 
-- Paul'ün GIMP review'ünü hatırlamak, collar kartına uygulamış olmak değildir.
-  Her yeni kartı gerçek kaynak üzerinden yeniden incele.
-- İki bakır dolgu görünmesi iki kesintisiz GND referansı olduğunu göstermez.
-  Katmanlardaki gerçek yolları ve kaydedilmiş dolguları kontrol et.
-- 0.3.3'te aynı ZIP için farklı zamanlarda 0/0 ve 0/1 gözlendi. Son baytları yeniden
-  doğrula; ilk sonucu evrensel garantiye çevirme.
-- Mask uyarısında benzer iki GND boynu vardı. Koordinatları tek tek eşleştirmek gerekir.
-- KiCad 10 SWIG'de koleksiyonu gezerken `Remove` kullanımı sorun çıkardı. Öğeleri
-  önce listele; silinecek in-memory öğelerde `Delete` kullan. Native DRC ile sonucu ölç.
-- SIM'in fiziksel biçimi modem teknolojisini değiştirmez. Nano-SIM, LTE-M/NB-IoT
-  operatör uyumunu veya 1.8 V UICC gereksinimini ortadan kaldırmaz.
+- Use a dedicated repository; do not accidentally stage files in its parent repo.
+- Write all GitHub-facing content in English: docs, comments, generated labels,
+  commits, issues and PRs. Conversation language does not change this rule.
+- One coherent change per commit. Keep related schematic/footprint/PCB changes
+  together; separate independent fixes. Mark unfinished work as WIP.
+- Preserve source and old releases. Create new trials separately; do not silently
+  regenerate a finished board over its existing source.
+- Compare placements, pad shapes/nets, rules and critical routes semantically.
+  A large KiCad text diff alone is not a review.
+- Bind source SHA, tool versions, output list, ZIP SHA, local checks and supplier
+  records in a release manifest.
+- Actually open Gerber/drill/mask/paste outputs. Check layers, outline, holes,
+  pad openings, board edges and both sides' orientation.
+- Submit only suitable manufacturing files. Exclude browser profiles, tokens,
+  cookies, raw sessions, virtual environments, private notes and unrelated files
+  from Git and manufacturing ZIPs.
+- Check the release in a clean checkout. A useful regression must reject an
+  incorrect source or changed output.
 
-Yeni kartlarda çıkan genellenebilir dersleri buraya ekle. Güncel işler ve sonuçlar
-bu rehbere günlük gibi birikmez; STATUS ve WORKLOG'da kalır.
+## Completion criteria
+
+Name the completed stage: schematic, placement, local checks, PCB DFM, PCBA or
+working product. Inspect evidence for every acceptance criterion in that stage.
+Another revision's green result or a report title is insufficient.
+
+Deliver a short result, real remaining gaps and the full artifact path.
+For local files, provide a copyable command such as
+`open -R "/absolute/path/package.zip"`. Update STATUS so the next session knows
+where work stopped and what to do next.
+
+## New PCB brief
+
+```text
+Purpose / use:
+Confirmed requirements:
+Open decisions / assumptions:
+Board + battery + antenna + enclosure limits:
+Power tree / peak and average current:
+Critical interfaces / manufacturer references:
+Supplier + process + stackup + design margins:
+Current native source / revision:
+Acceptance criterion → check → evidence file:
+Manufacturing delivery scope:
+First concrete next step:
+```
+
+## Lessons from this board
+
+- Remembering Paul's GIMP review is not the same as applying it to this board.
+  Review each new design against its actual source.
+- Two copper pours do not prove two uninterrupted ground references. Inspect
+  actual tracks and saved fills on each layer.
+- The same 0.3.3 ZIP returned 0/0 and later 0/1. Recheck final bytes; do not turn
+  one observation into a universal guarantee.
+- The mask warning involved two similar ground necks. Match coordinates individually.
+- Removing items while traversing KiCad 10 SWIG collections caused failures.
+  Snapshot items first and use `Delete` for removed in-memory objects. Check the
+  resulting native board with DRC.
+- SIM form factor does not change modem technology. Nano-SIM does not remove
+  LTE-M/NB-IoT operator compatibility or the 1.8 V UICC requirement.
+
+Add reusable lessons here. Current tasks and results belong in STATUS and WORKLOG,
+not a growing diary inside this guide.

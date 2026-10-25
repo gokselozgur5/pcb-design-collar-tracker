@@ -1,241 +1,227 @@
-# JLCDFM raporları ve montaj incelemesi
+# JLCDFM reports and assembly review
 
-## Son durum — 2026-10-25
+## Latest released result — 2026-10-25
 
-**0.3.4: iki bağımsız JLC yüklemesinde 0 Danger / 0 Warning.**
-Raporlar 06:39:36 ve 06:41:25; PCB seçili, SMT seçili değil.
-KiCad de 0 hata / 0 uyarı / 0 açık / 0 parity. Kurallar aynı.
-Son teslim ZIP'i iki rapordaki girdilerle aynı SHA256'ya sahip.
-Kaynak ve rapor yolları: `docs/clearance-revision-0.3.4.md`.
+**0.3.4: two independent JLC uploads returned 0 Danger / 0 Warning.**
+Reports: 06:39:36 and 06:41:25, PCB enabled, SMT disabled. Native KiCad also
+reported 0 errors / 0 warnings / 0 opens / 0 parity issues. Rules stayed unchanged.
+The final delivery ZIP has the same SHA256 as both report inputs.
+Sources and reports: [0.3.4](clearance-revision-0.3.4.md).
 
-0.3.3'ün ilk 06:29:27 raporu 0/0 idi; kullanıcının ekran görüntüsü ve
-aynı ZIP'in yeniden yüklenmesi 0/1 verdi. Kalan uyarı U1.71'deydi.
-Önceki U1.30 bulgusu ayrı bir simetrik konumdu; U1.71 eşleştirmesini
-kesin yanlış ilan etmek ve tek sıfır sonuçla işi kapatmak hataydı.
-0.3.4 yalnız U1.71 GND yolunu 0.20 → 0.30 mm genişletiyor; pad/maske/
-pasta, diğer yollar, via, bileşen ve kurallar aynı. Yerel regresyon gerçek
-JLC ölçüm çizgisinin eski yol dışında kaldığını, yeni GND bakırıyla tamamen
-kapandığını doğruluyor. Önceki ZIP/PDF korunuyor; 0.3.3 recheck kaydı mevcut.
+The first 0.3.3 report at 06:29:27 showed 0/0; the owner's screenshot and a fresh
+upload of the same ZIP showed 0/1. The remaining warning was at U1.71. U1.30 was a
+separate symmetric location. Declaring the U1.71 match definitely wrong and closing
+the task after one zero result were mistakes. 0.3.4 widens only that U1.71 ground
+segment 0.20 → 0.30 mm; pads/masks/paste, other traces, vias, components and rules
+are unchanged. A local regression shows the actual JLC measurement span extends
+outside the old trace and is fully covered by the new copper. Earlier ZIP/PDF
+files and the 0.3.3 repeat-check record are preserved.
 
-## Önceki 0.3.1 / 0.3.2 incelemesi — tarihsel kayıt
+## Historical 0.3.1 / 0.3.2 review
 
-Kankamın sonraki “sıfırla” isteğinde, aynı fiziksel 0.3.2 tasarımının ayrı
-çalışma kopyasında KiCad uyarıları **47 → 0** yapıldı: özelleşmiş footprint
-tanımları proje kütüphanesine kaydedildi; kurallar ve 11 Gerber geometrisi
-korundu. Bu aşamada JLC sonucu henüz yoktu; sonraki sonuç yukarıdadır.
-Doğrulama ve varsayılan 6 mil / 0.1524 mm eşik bulgusu: `docs/zero-warning-work.md`.
+Following the request to clear every warning, a separate copy of the same physical
+0.3.2 design reduced native footprint warnings **47 → 0**. Customized footprints
+were saved in a project library; rules and all 11 Gerber geometries were preserved.
+No new JLC result existed at that stage. See [zero-warning work](zero-warning-work.md)
+for verification and the actual default 6 mil / 0.1524 mm threshold.
 
-Beşinci rapor (01:28:03) **0.3.1** ZIP'ine ait: **0 Danger / 45 Warning**.
-Önceki 67 uyarıdan 22'si kapanmış: negatif maske 22 → 2, çok parçalı maske
-2 → 0. Pad aralığı 10, maske köprüsü 30, maske–yol 3 olarak kalmış.
-Maske–yol örneği bu kez 0.08 mm; negatif maske örneği 0.04 mm.
-PCB analizi seçili, SMT seçili değil. Beş raster bölüm incelendi;
-kanıtlar `evidence/jlc-dfm-20261025-r5` altında.
+The fifth report, 01:28:03, covered **0.3.1: 0 Danger / 45 Warning**. Of the previous
+67 warnings, 22 closed: negative mask 22 → 2, compound mask 2 → 0. Pad spacing
+remained 10, mask bridge 30, mask-to-trace 3. The illustrated mask/trace gap was
+0.08 mm and negative-mask example 0.04 mm. PCB enabled, SMT disabled. All five
+raster sections were inspected; local evidence: `evidence/jlc-dfm-20261025-r5/`.
 
-0.08 mm örneği bakır görüntüsü korelasyonu (0.920) ve görsel karşılaştırmayla
-U1.71 GND padinin toprak dolgusuna bağlandığı boğaza yerleştirildi. Bu,
-iki farklı net arasındaki açıklık hatasının kanıtı değil; JLC kriteri ve diğer
-iki örnek açıklığa kavuşmadığı için kategori kapatılmadı. İki negatif maske
-örneği kesin koordinatlara yerleştirilemedi. Düşük skorlu eşleşmeler kanıt
-sayılmadı; PDF tüm bulgu koordinatlarını vermiyor.
+Copper-image correlation (0.920) plus visual inspection located the 0.08 mm example
+at U1.71's ground neck. It was not evidence of insufficient clearance between two
+different nets. The category remained open because JLC's criterion and the other
+two examples were unresolved. The two negative-mask examples were not reliably
+located; low-score matches were not treated as evidence. The PDF lacks complete
+occurrence coordinates.
 
-Gerberde U2'nin 18 ve U5'in 12 adet 0.20 mm altı maske komşuluğu var.
-Toplam 30, rapor sayısıyla uyuşuyor ama her uyarının kimliği doğrulanmış değil.
-U5 padlerini küçültme kararı alınmadı: LIS2DW12 paket ölçüleri ve ST TN0018
-LGA yönergesine göre mevcut land ölçüleri gerekçeli; montajcı teyidi gerekiyor.
+Actual Gerbers had 18 U2 and 12 U5 mask-neighbor gaps below 0.20 mm. Their total
+matches 30 warnings, but individual occurrence identities were not established.
+At this stage U5 pads were not reduced: the LIS2DW12 package drawing and ST TN0018
+supported their dimensions; assembly confirmation remained necessary.
 
-Yeni **0.3.2**, U2'nin maskelerini güncel Skyworks Figure 7 ölçülerine
-getiriyor. Bütün bakır padler, yollar, via'lar ve pasta korunuyor.
-Yerel/native/Gerber kontrolleri geçti; 268 padin tamamı maske içinde açık.
-Değişiklikler ve sınırlar `docs/mask-revision-0.3.2.md` içinde.
-**0.3.2'nin JLCDFM sonucu henüz yok; 45, 0.3.1'in sonucudur.**
+**0.3.2** changed U2 masks to the current Skyworks Figure 7 dimensions, preserving
+all copper pads, traces, vias and paste. Local/native/Gerber checks passed; all
+268 pads were exposed. See [0.3.2](mask-revision-0.3.2.md). **At that point 0.3.2
+had no JLC result; 45 was the 0.3.1 result.** Later actual results are recorded above
+and in [0.3.3](clearance-revision-0.3.3.md).
 
-## Dördüncü rapor ve 0.3.1
+## Fourth report and 0.3.1
 
-00:42:22 raporu 0.3 ZIP'inde yine 0/67 gösteriyordu; kaynak
-`evidence/jlc-dfm-20261025-r4`. Ardından üretilen 0.3.1'in değişiklikleri
-`docs/mask-revision-0.3.1.md` içinde. Yukarıdaki beşinci rapor bu değişikliğin
-gerçek üretici sonucudur; eski ZIP tekrar teslim edilmedi.
+The 00:42:22 report again showed 0/67 for the 0.3 ZIP; local evidence:
+`evidence/jlc-dfm-20261025-r4/`. The subsequent changes are in
+[0.3.1](mask-revision-0.3.1.md). The fifth report measured those changes; the old
+ZIP was not delivered again as a new revision.
 
-## Üçüncü rapor, 0.3 / 35 × 28 mm
+## Third report: 0.3 / 35 × 28 mm
 
-2026-10-24 21:45:56 raporunun tamamı görüntülendi. Kaynak PDF ve görüntüler
-`evidence/jlc-dfm-20261024-r3` altında. **0 Danger / 67 Warning** var;
-önceki rapordaki iki pad-spacing Danger kapandı. Dört katman ve 35 × 28 mm
-ölçü doğru. **PCB analizi seçili, SMT analizi seçili değil.** Bu sonuç çalışan
-veya dizgiye onaylanmış kart anlamına gelmiyor.
+The complete report dated 2026-10-24 21:45:56 was viewed. Source PDF/images:
+`evidence/jlc-dfm-20261024-r3/`. **0 Danger / 67 Warning**; the previous two
+pad-spacing Danger findings closed. Four layers and 35 × 28 mm were correct.
+**PCB analysis enabled, SMT disabled.** This does not qualify operation or assembly.
 
-| Kalan kategori | Warning | Rapordaki tek örnek |
+| Remaining category | Warnings | Single illustrated example |
 |---|---:|---:|
-| Pad aralığı | 10 | 0.15 mm |
-| Maske köprüsü | 30 | 0.13 mm |
-| Maske açıklığı–yakın yol | 3 | 0.15 mm |
-| Birden fazla şekilden oluşan maske açıklığı | 2 | Ölçü verilmemiş |
-| Negatif maske genişlemesi | 22 | 0.04 mm |
+| Pad spacing | 10 | 0.15 mm |
+| Mask bridge | 30 | 0.13 mm |
+| Mask opening to nearby trace | 3 | 0.15 mm |
+| Mask opening made from multiple shapes | 2 | No dimension supplied |
+| Negative mask expansion | 22 | 0.04 mm |
 
-Raporda her bulgunun koordinatı yok. Sayılar 67 ayrı parça veya 67 kesin
-elektriksel arıza anlamına gelmez. Önceki 306 Warning'den kalan 57'si maske,
-10'u pad aralığı ile ilgili; hepsinin kapandığı söylenemez.
+The PDF lacks coordinates for every finding. These are not 67 different parts or
+67 proven electrical faults. Of the remaining warnings, 57 concern masks and 10
+pad spacing; they were not all closed.
 
-### Gerçek Gerber ve native kaynak incelemesi
+### Actual Gerber and native review
 
-- `audit_release_mask.py`, teslim edilmiş ZIP ile aynı açılmış paketin bakır,
-  maske ve pasta Gerberlerini okudu. Katman hashleri kaydedildi. Native KiCad
-  ile 214 üst + 54 alt bakır pad sayısı eşleşiyor. 0.1 µm karşılaştırma
-  toleransıyla **267 padin bakır şekli maske açıklığının içinde**. Yalnız U2.11
-  merkez padinin bir kısmı örtülü: bakır 1.45 × 2.802 mm, ayrı açıklık
-  1.55 × 2.487 mm. Bu şekil Nordic DK'dan gelen footprint'te mevcut;
-  assembly incelemesi bitmediği için otomatik olarak hatalı/doğru ilan edilmedi.
-- Dolayısıyla JLC'nin 22 negatif maske uyarısı, basit pad-bakırı/açıklık
-  karşılaştırmasıyla 22 küçültülmüş açıklık olarak tekrar üretilemiyor.
-  JLC algoritması, yol–pad birleşimleri ve tüm örnek koordinatları bilinmeden
-  bunları yanlış alarm saymıyoruz. Mevcut pad getter'ında negatif margin yok;
-  F.Cu ve F.Mask parametreleriyle alınan expansion değerleri aynı çıktı.
-- Native geometriden U5'te 0.15 mm ve 0201 kondansatörlerde 0.18 mm sabit
-  paket aralıkları ölçüldü. Bunlar kartı büyütmekle değişmiyor. U2 maskelerinde
-  0.125 / 0.1485 mm, U5 maskelerinde 0.15 mm komşuluklar var. Her birinin
-  rapordaki örnekle bire bir eşleştirildiği iddia edilmiyor.
-- U2.1 maske açıklığından GNSS_LNA_EN yoluna 0.1517 mm ölçüldü.
-  Bu, rapordaki kategori için bir aday; üç bulgunun tamamı eşleştirilmedi.
-  Ayrı native ölçüm yalnız pad maskeleri ile farklı net yollarını kapsıyor;
-  dolgu bakırı ve üreticinin bütün kontrollerini kapsamaz.
-- J1/J2'de iki kasıtlı ortak U.FL maske açıklığı mevcut. İki compound-mask
-  uyarısının aday kaynağı bunlar; stencil/montajcı incelemesi gerekiyor.
+- `audit_release_mask.py` read copper, mask and paste from the extracted package
+  matching the delivered ZIP, recording layer hashes. Native and Gerber counts
+  agree: 214 top + 54 bottom pads. With 0.1 µm comparison tolerance, **267 pads
+  are fully exposed**. Only U2.11 is partly covered: copper 1.45 × 2.802 mm,
+  separate opening 1.55 × 2.487 mm. This came from the Nordic DK footprint and
+  was not automatically classified as correct or defective without assembly review.
+- The 22 negative-mask warnings could not be reproduced as 22 undersized openings
+  by simple pad-copper/opening comparison. Without the supplier algorithm,
+  trace/pad junction rules and all coordinates, they were not dismissed as false
+  alarms. Native pad getters had no negative margin; F.Cu/F.Mask expansion values
+  were identical.
+- Native fixed package gaps: U5 0.15 mm, 0201 capacitors 0.18 mm. A larger board
+  does not change them. U2 mask gaps were 0.125 / 0.1485 mm; U5 0.15 mm. No claim
+  was made that each matched a specific report occurrence.
+- U2.1 mask to GNSS_LNA_EN trace measured 0.1517 mm, a candidate for the category,
+  not a mapping of all three findings. This check covered pad masks against
+  foreign-net traces, excluding fills and other supplier algorithms.
+- J1/J2 had two intentional shared U.FL openings, candidates for the two compound
+  mask warnings. Stencil/assembly review remained open.
 
-Kanıtlar: `report-summary.json`, `native-warning-candidates.json`,
-`gerber-mask-audit.json`, `pcba-readiness.json`. Gerber okuyucu bu KiCad
-çıktısının R/O/C/RoundRect aperture ve doğrusal mask/paste region biçimleriyle
-sınırlıdır; desteklemediği biçimde hata verir. Bakır dolgularını pad saymaz;
-bu bir tam Gerber DFM motoru değildir.
+Evidence: `report-summary.json`, `native-warning-candidates.json`,
+`gerber-mask-audit.json`, `pcba-readiness.json`. The reader supports this KiCad
+output's R/O/C/RoundRect apertures and linear mask/paste regions, failing on
+unsupported formats. Copper pours are not counted as pads. It is not a complete
+Gerber DFM engine.
 
-[JLCPCB kapasite tablosu](https://jlcpcb.com/capabilities/pcb-capabilities),
-farklı net SMD padlerinde en az 0.15 mm, maske–yakın yolda 0.09 mm ve 1 oz
-yeşil/kırmızı/sarı/mavi/mor maskede 0.10 mm köprü bildiriyor; siyah/beyazda
-0.13 mm, 2 oz'da 0.20 mm. Raporun bazı turuncu örnekleri bu sınırlar içinde.
-Bu karşılaştırma, seçilmiş stackup/renk/proses veya montajcı onayı değildir.
-Paket padlerini sadece gösterge yeşillensin diye küçültmek doğru bir çözüm
-olarak kabul edilmedi.
+The [JLC capability table](https://jlcpcb.com/capabilities/pcb-capabilities)
+listed 0.15 mm different-net SMD spacing, 0.09 mm mask-to-nearby-trace clearance,
+and 0.10 mm mask bridges for green/red/yellow/blue/purple with 1 oz copper;
+black/white 0.13 mm, 2 oz 0.20 mm. Some orange examples fell within those published
+limits. This comparison does not establish selected-stackup/color/process or
+assembly acceptance. Shrinking lands just to turn an indicator green was rejected.
 
-### Montaj hedefi ve açık iş
+### Assembly target and remaining work
 
-Kullanıcı elle lehim istemiyor; hedef üreticide dizilmiş, programlanmış ve
-test edilmiş çalışan teslim. Mevcut BOM'da 46 takılacak fiziksel parça var;
-30'unun kesin MPN'i yok. İki DNP ve beş PCB temas arayüzü ayrıca mevcut.
-J6 gerçek eSIM, J5 gerçek nabız sensörü değil; pil/NTC, anten ve harici
-bağlantılar da tamamlanmış ürün parçaları olarak seçilmedi.
+The owner requested factory-assembled, programmed, function-tested hardware without
+hand soldering. The BOM then had 46 fitted physical parts, 30 lacking exact MPNs,
+plus two DNP parts and five PCB contact interfaces. J6 was not an actual eSIM;
+J5 was not a heart-rate sensor. Battery/NTC, antennas and external connections
+were not fully selected product components.
 
-U1'in maskesi ve pastası tüm padlerde 1:1. [Nordic tasarım kılavuzu](https://docs.nordicsemi.com/r/bundle/nwp_056/page/wp/nwp_056/footprint.html)
-NSMD ve +0.05 mm maske açıklığı öneriyor; stencil'in montajcıyla belirlenmesini
-istiyor. Montajcı girdisi olmadan yapılan stencil için büyük padlerde yaklaşık
-%70–80, küçüklerde %75–85 pasta alanı veriyor. Büyük padde %100 pasta
-assembly için otomatik kabul edilmedi. Tüm karta körlemesine maske genişleme
-uygulamak dar köprüler oluşturabileceğinden yapılmadı.
+U1 mask/paste were 1:1 on every pad.
+[Nordic's guide](https://docs.nordicsemi.com/r/bundle/nwp_056/page/wp/nwp_056/footprint.html)
+recommends NSMD, +0.05 mm mask expansion and assembler input for the stencil.
+Without assembler input, it gives roughly 70–80% paste area for large pads and
+75–85% for small pads. Full paste area on large pads was not automatically accepted
+for assembly. Blanket mask expansion was avoided because it could narrow bridges.
 
-Bu tur PCB veya teslim edilmiş ZIP değiştirilmedi; yeni Gerber teslimi ya da
-üretim onayı yok. Sonraki çalışma sırası: üreticiyle uyumlu footprint/mask/stencil
-tanımları; tamamlanmış BOM ve lehimsiz kullanıcı bağlantıları; elektrik/RF
-açıklarının kapatılması; firmware/fikstür/test prosedürü; ardından PCB + SMT
-incelemesi. Ayrıntı `docs/pcba-delivery.md`.
+This review did not change the PCB or delivered ZIP, produce new Gerbers or grant
+production approval. Next: manufacturer-compatible footprint/mask/stencil review;
+complete BOM and connections requiring no user soldering; electrical/RF fixes;
+firmware/fixture/test procedure; then PCB and SMT review. See
+[factory delivery](pcba-delivery.md).
 
-## Önceki sonuç — ikinci rapor
+## Second report: 0.2.1
 
-0.2.1 raporu (2026-10-24 20:41:35) tamamen görüntülendi; kaynak ve dört
-görüntü `evidence/jlc-dfm-20261024-r2` altında. Danger toplamı 139 → 2,
-Warning toplamı 325 → 306. Maske köprüsü 6 → 0, baskı–pad 98 → 0,
-baskı–delik 33 → 0 Danger. **İki pad-aralığı Danger aynı kaldı.**
-Maske açıklığının birden fazla şekilden oluşmasına ilişkin 2 yeni Warning var.
-Bu nedenle 0.2.1'in tamamen düzeldiği söylenemez.
+The complete report dated 2026-10-24 20:41:35 was viewed; source/four images:
+`evidence/jlc-dfm-20261024-r2/`. Danger 139 → 2, Warning 325 → 306. Danger categories:
+mask bridge 6 → 0, silk-to-pad 98 → 0, silk-to-hole 33 → 0. **Both pad-spacing
+Danger findings remained.** Two compound-mask warnings appeared. 0.2.1 was not
+fully corrected.
 
-Kullanıcı kartın fazla küçük olabileceğini belirtti. İlk prototip için
-35 × 28 mm (980 mm², mevcut 660 mm²'ye göre +%48.5) önerildi;
-40 × 30 mm ve mevcut ölçü seçenekleriyle tercih soruldu, yanıt henüz yok.
-Bu ölçü PCB'ye ait; pil, anten ve kutu dahil değil. Büyütme tek başına
-paket içi pad/maske kısıtlarını veya elektrik/RF açıklarını çözmez.
-Bu aşamada 30 × 22 mm PCB değiştirilmedi ve yeni ZIP yayımlanmadı.
+The owner suggested the board might be too small. A 35 × 28 mm first prototype
+was proposed: 980 mm² versus 660 mm², +48.5%. At that point the choice between
+this, 40 × 30 mm and the current size was unanswered. These are PCB dimensions,
+excluding battery, antennas and enclosure. Growth alone cannot solve fixed
+package spacing or electrical/RF gaps. No PCB change or new ZIP occurred in that
+review. The later 35 × 28 mm trial is documented separately.
 
-Koordinatsız pad-aralığı örneği, bakır görüntüsünün otomatik eşleştirmesi ve
-görsel karşılaştırmayla C6 / SPI_MOSI via çevresine yerleştirildi. Burada
-yuvarlatılmış padin gerçek sınırıyla via arasındaki yerel mesafe yaklaşık
-0.1046 mm; padin dikdörtgen sınır kutusuyla via arasındaki mesafe 0.0468 mm.
-İkincisi rapordaki 0.05 mm örnekle uyuşuyor, fakat JLC'nin algoritması veya
-iki bulgunun da kök nedeni henüz kesin olarak doğrulanmadı. Diğer bölgelerde
-de sınır kutusu yaklaşımı farklı sonuç veriyor; bu bir hipotez/aday eşleşme,
-üreticinin yanlış ölçtüğü veya iki hatanın kapandığı iddiası değil.
-Kanıt: `thumbnail-match.json`, `candidate-0.png`, `pad-bbox-via-circle.json`.
+Automatic copper-image matching plus visual inspection placed the coordinate-free
+pad-spacing example near C6 / SPI_MOSI's via. Actual rounded-pad-to-via clearance
+was about 0.1046 mm; pad bounding box to via circle was 0.0468 mm. The latter
+matches the illustrated 0.05 mm, but neither JLC's algorithm nor both root causes
+was established. Other regions also differed under bounding-box measurement.
+This was a candidate/hypothesis, not evidence that JLC was wrong or both errors
+were fixed. Evidence: `thumbnail-match.json`, `candidate-0.png`,
+`pad-bbox-via-circle.json`.
 
-## İlk rapor
+## First report: 0.2
 
-Kullanıcının sağladığı `DFM analysis report_JLCDFM_collar-tracker-0.2-dfm.zip.pdf`
-gerçekten görüntülendi. Tek uzun raster sayfa; rapor zamanı 2026-10-24 20:24:49.
-Kart 4 katman, 3 × 2.2 cm; yalnız PCB DFM seçili, SMT DFM seçili değil.
-Asıl PDF ve dört okunabilir görüntü `evidence/jlc-dfm-20261024` altında.
+The supplied `DFM analysis report_JLCDFM_collar-tracker-0.2-dfm.zip.pdf` was viewed
+as one long raster page, dated 2026-10-24 20:24:49. Four layers, 3 × 2.2 cm;
+PCB DFM enabled, SMT disabled. Source/four readable images:
+`evidence/jlc-dfm-20261024/`.
 
-Raporda 139 Danger ve 325 Warning işareti listeleniyor; bunlar farklı
-kategoriler/katmanlarda sayılan bulgular, 464 bağımsız devre hatası değil.
+139 Danger and 325 Warning indicators span categories/layers; they do not establish
+464 independent circuit faults.
 
-| Kategori | Danger | Warning | Rapordaki örnek ölçü |
+| Category | Danger | Warning | Illustrated value |
 |---|---:|---:|---:|
-| Yol genişliği | 0 | 11 | 0.11 mm |
-| Pad aralığı | 2 | 45 | 0.05 mm |
-| Kaplı delik–yol | 0 | 9 | 0.23 mm |
-| Bakır halka | 0 | 100 | 0.12 mm |
-| Via–pad | 0 | 1 | 0.12 mm |
-| Maske köprüsü | 6 | 30 | 0.01 mm |
-| Maske açıklığı–yakın yol | 0 | 74 | 0.10 mm |
-| Negatif maske genişlemesi | 0 | 22 | 0.04 mm |
-| Baskı–pad | 98 | 0 | 0.09 mm |
-| Baskı–delik | 33 | 13 | 0 mm |
-| Baskı çizgi kalınlığı | 0 | 20 | 0.12 mm |
+| Track width | 0 | 11 | 0.11 mm |
+| Pad spacing | 2 | 45 | 0.05 mm |
+| Plated hole to track | 0 | 9 | 0.23 mm |
+| Annular ring | 0 | 100 | 0.12 mm |
+| Via to pad | 0 | 1 | 0.12 mm |
+| Mask bridge | 6 | 30 | 0.01 mm |
+| Mask opening to nearby track | 0 | 74 | 0.10 mm |
+| Negative mask expansion | 0 | 22 | 0.04 mm |
+| Silk to pad | 98 | 0 | 0.09 mm |
+| Silk to hole | 33 | 13 | 0 mm |
+| Silk line width | 0 | 20 | 0.12 mm |
 
-KiCad'in ilk 0 hata sonucu bu üretici analiziyle eşdeğer değildi. Örneğin
-aynı netin via–pad aralığı normal elektriksel clearance kontrolünde kaçabiliyor;
-baskı–tented delik ve dar maske şeritleri için ayrı geometri kontrolü gerekiyor.
+The initial zero-error KiCad result was not equivalent to this supplier analysis.
+Same-net via/pad spacing can escape electrical clearance checks; silk-to-tented-hole
+and narrow mask strips need separate geometry checks.
 
-## Yapılan düzeltme ve kanıt
+### Corrections and evidence
 
-- J1/J2 anten konnektörlerinde üçer 0.01 mm maske şeridi gerçek KiCad
-  geometrisinden yeniden üretildi. Pad açıklıklarına 0.05 mm genişleme
-  verilerek mevcut ortadaki açıklıkla birleştirildi. Bakır olmayan orta alanın
-  footprint keepout'u korunuyor. Bu iki konnektörde ortak maske açıklığı
-  **bilinçli ve yerel olarak** `AllowSolderMaskBridges` ile tanımlandı;
-  global DRC kuralı, severity veya exclusion değiştirilmedi. Bu açıklık
-  kararı assembly/stencil incelemesinde de değerlendirilmeli.
-- J4 pil temas sırası 0.20 mm aşağı taşındı. BAT pad–via bakır aralığı
-  0.025 → 0.225 mm, kart kenarına mesafe 0.50 mm. Via/yol geometrisi,
-  pad boyutları ve netler aynı kaldı. İlk via taşıma denemesi DRC'de
-  reddedildi; teslim edilen sürüm bu denemeyi **içermiyor**.
-- 109 sıkışan parça çerçevesi/yön işareti silk'ten Fab'a taşındı.
-  Bağlantı ve kart etiketleri kaldı: 1 mm yazı, 0.15 mm çizgi; dört etiketin
-  gerçek glyph poligonlarıyla pad/maske mesafesi en az 0.249 mm,
-  delik mesafesi en az 0.311 mm ve kenar payı en az 0.30 mm doğrulandı.
-  Assembly bilgisi Fab katmanında; küçük entegrelerin yönü fiziksel silk'te
-  artık gösterilmiyor ve montaj çizimi/CPL ile ele alınmalı.
-- U2 merkezi pad'in maskesi/pastası zaten ayrı çizimlerle tanımlanıyordu.
-  Negatif margin'ler yerine pad yalnız bakıra alındı; ayrı açıklıklar korundu.
+- Reproduced three 0.01 mm mask strips at each J1/J2 antenna connector from native
+  geometry. Added 0.05 mm pad-mask expansion to merge them with the existing center
+  opening. Preserved the center copper keepout. Shared mask openings were explicitly
+  scoped to these two connectors with `AllowSolderMaskBridges`; no global rule,
+  severity or exclusion changes. Assembly/stencil review still applies.
+- Moved J4's battery contacts down 0.20 mm: BAT pad/via gap 0.025 → 0.225 mm,
+  board-edge clearance 0.50 mm. Via/trace geometry, pad sizes and nets unchanged.
+  An earlier via-move attempt failed DRC and is **not** in the delivered version.
+- Moved 109 crowded outlines/orientation marks from silk to Fab. Retained board
+  and connection labels at 1 mm text / 0.15 mm stroke. Actual glyph polygons gave
+  ≥0.249 mm pad/mask clearance, ≥0.311 mm hole clearance and ≥0.30 mm board-edge
+  margin for four labels. Small-IC orientation now relies on assembly drawings/CPL,
+  not physical silk.
+- U2's center mask/paste were already separate graphics. Made the pad copper-only
+  instead of using negative margins; preserved separate openings.
 
-`check_dfm_geometry.py` eski kaynakta altı maske şeridini ve yakın BAT viasını
-reddediyor, yeni kaynakta geçiriyor. Tüm net/pad boyutları, tüm 797 yol parçası
-ve 75 via geometrisi değişmemiş; sadece J4 konumu farklı. Yerel ölçümde
-0.10 mm'den dar ayrı pad/via aralığı ve maske şeridi kalmadı. Bu kontrol
-JLC'nin bütün algoritmasını uygulamaz; PDF her bulgunun koordinatını vermiyor.
-Özellikle PDF'deki iki 0.05 mm pad-aralığı Danger örneğinin bire bir kapanışı
-ve diğer uyarıların durumu ancak yeniden JLCDFM çalıştırılarak doğrulanabilir.
+`check_dfm_geometry.py` rejects the old six mask strips and close BAT via and passes
+the new geometry. Nets, pad sizes, 797 track segments and 75 vias are unchanged;
+only J4 placement differs. No separate pad/via gap or mask strip below 0.10 mm
+remained in that local check. It does not implement all JLC algorithms. The PDF
+lacks all coordinates, so closing both 0.05 mm pad-spacing findings and other
+warnings required actual supplier reanalysis.
 
-Son KiCad DRC: 0 hata, 0 açık bağlantı, 0 şema eşleşme sorunu. 43 warning
-yerel düzenlemelerin standart footprint kütüphanesinden farklı olduğunu
-belirtiyor; bastırılmadı. Paket DRC özeti ve yerel geometri kanıtını içeriyor.
+Final native DRC at this stage: 0 errors, 0 opens, 0 parity issues; 43 local-library
+mismatch warnings remained unsuppressed. The package included its DRC summary and
+local geometry evidence.
 
-## Kalan uyarıları nasıl okuyacağız
+## Interpreting the remaining warnings
 
-[JLCPCB'nin güncel kapasitesi](https://jlcpcb.com/capabilities/pcb-capabilities)
-1 oz çok katmanlı kartta 0.09 mm yol/aralık, via deliği–yol için 0.20 mm ve
-renkli 1 oz maskede 0.10 mm köprü bildiriyor. 0.45/0.20 mm via, yayımlanan
-via çapı/delik koşullarını sağlıyor; PTH pad halkasıyla aynı kategori değil.
-Bu nedenle rapordaki 0.11 mm yol ve 0.12 mm halka uyarıları tek başına
-üretilemezlik kanıtı değil. Tolerans, seçilen bakır/maske/stackup ve assembly
-koşulları üreticiyle teyit edilmeli; sırf göstergeyi yeşile çevirmek için
-RF padleri veya bütün vialar büyütülmedi.
+The dated [JLC capacity reference](https://jlcpcb.com/capabilities/pcb-capabilities)
+listed 0.09 mm track/spacing for 1 oz multilayer boards, 0.20 mm via-hole-to-track
+clearance and 0.10 mm colored-mask bridges. The 0.45/0.20 mm vias met the published
+via diameter/drill limits; PTH-pad annular rings are a different category. A
+0.11 mm track or 0.12 mm ring warning alone did not prove nonmanufacturability.
+Tolerances and selected copper/mask/stackup/assembly conditions still needed
+confirmation. RF pads and every via were not enlarged just to change indicators.
 
-Üretim onayı hâlâ yok: güç/UVLO/VDD_GPIO, gerçek eSIM ve operatör,
-nabız donanımı, anten/RF/stackup, nRF pin-1 footprint farkı, stencil,
-alt parçalarla kutu uyumu ve fiziksel test açık.
+Production approval remained open: power/UVLO/VDD_GPIO, physical SIM/operator,
+heart-rate hardware, antenna/RF/stackup, nRF pin-1 footprint difference, stencil,
+bottom-side enclosure fit and physical testing.

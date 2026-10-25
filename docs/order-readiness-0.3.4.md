@@ -1,97 +1,92 @@
-# 0.3.4 sipariş öncesi inceleme — 2026-10-25
+# 0.3.4 order-readiness review — 2026-10-25
 
-**Mevcut kart, fabrikadan dizilmiş ve çalışır cihaz olarak siparişe hazır değil.**
-İki JLC PCB DFM raporu 0 Danger / 0 Warning; SMT, elektriksel çalışma ve RF
-kabulü yapılmış değil. Paul'ün GIMP incelemesinden çıkan GND düzeni bu karta
-tam olarak taşınmamış.
+**This board is not ready to order as a factory-assembled, working device.**
+Two JLC PCB DFM reports show 0 Danger / 0 Warning; SMT, electrical operation and
+RF are not qualified. The ground layout from Paul's GIMP review has not been fully
+applied to this revision. See [STATUS](STATUS.md) for subsequent r04 work.
 
-İncelenen kaynak:
+Reviewed source:
 `/Users/gok/codex/projects/collar-tracker/experiments/35x28-clearance-r034/hardware/collar-tracker.kicad_pcb`
 
 - PCB SHA256: `597ebdee59550b6d07eb104274eabee57b038ea6c87da2dec38c1201f78c89b2`
 - Gerber ZIP SHA256: `735ff8506629eb931cdd4a1847796e0eae2ec24deebb4f579f7441bb2182c990`
-- Kart ve teslim ZIP'i bu incelemede değiştirilmedi.
-- Tekrarlanabilir ölçümler: [audit.py](../evidence/order-readiness-20261025-r034/audit.py)
-  ve [audit.json](../evidence/order-readiness-20261025-r034/audit.json).
+- Neither source nor ZIP changed during this review.
+- Reproducible measurements: [audit.py](../evidence/order-readiness-20261025-r034/audit.py)
+  and [audit.json](../evidence/order-readiness-20261025-r034/audit.json).
 
-## Katmanlar ve bağlantılar
+## Layers and connections
 
-35 × 28 × 0.8 mm kartın dört bakır katmanı var.
+The 35 × 28 × 0.8 mm board has four copper layers.
 
-| Katman | Mevcut bakır |
+| Layer | Actual copper |
 |---|---|
-| F.Cu | 446 yol segmenti + GND dolgusu |
-| In1.Cu | GND düzlemi; çizilmiş sinyal/güç yolu yok |
-| In2.Cu | 116 sinyal/güç segmenti + GND dolgusu |
-| B.Cu | 230 yol segmenti + GND dolgusu |
+| F.Cu | 446 track segments + GND fill |
+| In1.Cu | GND plane; no drawn signal/power traces |
+| In2.Cu | 116 signal/power segments + GND fill |
+| B.Cu | 230 track segments + GND fill |
 
-Dolayısıyla üst/alt iletkenler var; iki iç katmanı tamamen GND olan
-`sinyal / GND / GND / sinyal` düzeni henüz yok.
+Both outer layers carry traces, but this is not yet a
+`signal / GND / GND / signal` stack with two dedicated inner references.
 
-Şemada GND tanımlı 78 pad var. Yeni DRC'de açık bağlantı ve şema uyuşmazlığı
-yok. U1 nRF9151'in 30 GND pin numarası, [Nordic'in GND listesiyle](https://docs.nordicsemi.com/r/bundle/nwp_056/page/wp/nwp_054/gnd.html)
-eşleşiyor. Diğer bütün bileşenlerin pin işlevleri bu tur üretici belgeleriyle
-baştan karşılaştırılmadı. Bütün netler GND olmamalı; sinyal ve besleme netleri
-şemadaki ayrı bağlantılarını koruyor.
+There are 78 schematic GND pads. Fresh DRC found no opens or parity issues.
+U1's 30 nRF9151 GND pin numbers match [Nordic's list](https://docs.nordicsemi.com/r/bundle/nwp_056/page/wp/nwp_054/gnd.html).
+This review did not recheck every other component's functions against manufacturer
+documents. Signal and supply nets must retain their separate schematic connections;
+not every net should be GND.
 
-77 via'nın 16'sı GND. Bu 16 via'nın merkezi, dört katmanın da kaydedilmiş
-GND dolgusunun içinde. Bu ölçüm ve açık bağlantı kontrolü bağlantının varlığını
-destekler; dönüş akımının kısa/düşük empedanslı olduğu veya termal/RF yeterliliği
-sonucunu vermez.
+16 of 77 vias are GND. Their centers lie inside saved GND fills on all four layers.
+This and zero opens support connectivity, not short/low-impedance returns or
+thermal/RF adequacy.
 
-## Paul'ün önceki notlarına göre durum
+## Comparison with Paul's earlier review
 
-Kaynaklar: GIMP arşivindeki `CHANGES_v0.1.4.md` (ikinci Paul incelemesi),
-`CHANGES_v0.1.2.md` (iki iç GND katmanı), mevcut GIMP `tools/return_vias.py`
-ve `docs/REVIEW_v0.1.6.md`. Bunlar önceki projede saklanmış inceleme ve uygulama
-kayıtlarıdır; Paul'ün bu tasma kartını incelediği iddia edilmiyor.
+Sources were archived GIMP `CHANGES_v0.1.4.md` (second Paul review),
+`CHANGES_v0.1.2.md` (two inner GND layers), `tools/return_vias.py` and
+`docs/REVIEW_v0.1.6.md`. These are records from another project, not evidence that
+Paul reviewed this collar board.
 
-| Önceki inceleme noktası | Bu kartta doğrulanan durum |
+| Earlier review point | Verified on 0.3.4 |
 |---|---|
-| GND padlerinden kısa bağlantıyla düzleme geç; gereksiz GND yollarını kaldır | 206 GND yol segmenti, toplam 151.485 mm ve 16 GND via var. Tümü gereksiz diye sınıflandırılmadı; yerel pad dönüşleri ve uzun bağlantılar ayrıca ele alınmalı. GIMP'teki düzenin tamamlandığı söylenemez. |
-| Sinyal katman geçişlerinin yakınına GND dönüş via'sı | Eski GIMP uygulamasının 2 mm taramasında 61 GND dışı via'nın 9'u içeride, **52'si dışarıda**; en uzak 7.0902 mm (`I2C_SDA`, x127.0031/y105.2826). |
-| İki iç GND referansı | In1 ayrılmış; In2'de 116 sinyal/güç segmenti var. İkinci kesintisiz GND düzlemi sağlanmamış. |
-| İki padli parçaların lehim/ısıl dengesi | Dört GND dolgusunun bağlantı modu solid. 77 GND pad bunu devralıyor, bir pad ayrıca solid seçilmiş. Bu otomatik bir kusur değildir; pad başına bakır dengesi ve dizgi prosesi incelenmedi. |
-| Güç yolları yeterince geniş/kısa olsun | VDD_NRF 0.25 mm; VIN_5V/VBAT/VSYS 0.20–0.25 mm; VIO_1V8 0.20 mm. Akım/gerilim düşümü/ısınma yeterliliği ölçülmedi. GIMP'in 0.4 mm değerini bu karta gerekçesiz aktarmak da doğrulama olmaz. |
+| Short GND-pad connections to planes; remove unnecessary buses | 206 GND segments, total 151.485 mm, 16 GND vias. Not every segment was classified as unnecessary; local escapes and long links need individual review. |
+| Ground-return vias near signal layer changes | Under the inherited 2 mm screen, 9 of 61 non-GND vias pass and **52 fall outside**. Maximum 7.0902 mm: `I2C_SDA`, x127.0031/y105.2826. |
+| Two inner ground references | In1 is dedicated; In2 has 116 signal/power segments. A second uninterrupted reference is absent. |
+| Solder/thermal balance of two-pad parts | All four zones use solid connections; 77 GND pads inherit this and one explicitly selects solid. Not automatically defective; pad-level copper balance and assembly process were not reviewed. |
+| Adequate short/wide power routes | VDD_NRF 0.25 mm; VIN_5V/VBAT/VSYS 0.20–0.25 mm; VIO_1V8 0.20 mm. Current, voltage drop and heating unmeasured. Copying GIMP's 0.4 mm without justification would not validate them. |
 
-2 mm, GIMP'te kullandığımız geometrik tarama eşiğidir; Paul'ün evrensel bir
-sayısal şartı veya RF/EMC standardı olarak sunulmaz. 52 uzak via, 52 kanıtlanmış
-işlevsel arıza demek değildir. Ancak önceki dönüş-via kontrolünün bu kartta
-tamamlanmadığını somut olarak gösterir. Mesafeler merkezler arası düz çizgidir;
-gerçek dönüş akımının güzergâhı çözülmedi.
+2 mm is a historical geometry screen, not Paul's universal numeric requirement or
+an RF/EMC standard. The 52 distant vias are not 52 proven functional failures,
+but show that the previous return-via check was not completed here. Distances are
+straight center-to-center measurements, not solved current-return paths.
 
-[Nordic stack-up yönergesi](https://docs.nordicsemi.com/r/bundle/nwp_056/page/wp/nwp_054/pcb_stack_up.html?contentId=hAMpO_HZkUUtvaGq7NCRUw)
-sinyal katmanının yanında dönüş akımı için ayrılmış GND referansı, RF yollarında
-empedans kontrolü ve sürekli referans ister. Mevcut alt katmanın In2 üzerindeki
-yollardan nasıl etkilendiği ayrıca incelenmeli. Bu bir kaynak temelli inceleme
-gereksinimidir; ölçülmüş RF kaybı iddiası değil.
+[Nordic's stackup guide](https://docs.nordicsemi.com/r/bundle/nwp_056/page/wp/nwp_054/pcb_stack_up.html?contentId=hAMpO_HZkUUtvaGq7NCRUw)
+calls for adjacent dedicated ground references, controlled RF impedance and a
+continuous return reference. The effect of In2 traces on bottom-side routing needs
+review. This is a source-based review requirement, not a measured RF-loss claim.
 
-## Siparişten önce açık işler
+## Remaining work before ordering
 
-- **Güç ve RF:** GND dönüşleri/katman düzeni, gerçek üretici stack-up'ıyla 50 Ω
-  yollar, antenler ve beden/kutu etkisi; güç yolu düşümleri, hücre/NTC/koruma,
-  düşük gerilimde kapatma ve VDD_GPIO sıralaması. Nordic'in önerdiği 6 ms
-  gecikme veya erken GPIO durumlarına tolerans gösterildiği doğrulanmadı;
-  [üretici açıklaması](https://docs.nordicsemi.com/r/bundle/nwp_056/page/wp/nwp_054/vdd_gpio.html).
-- **İşlev:** J6 yalnız SIM temasları; gerçek eSIM, profil ve Türkiye operatörü
-  seçilmedi. J5 dijital genişleme portu; nabız sensörü yok.
-- **Dizgi:** BOM'da 53 kayıt; 46 takılacak fiziksel parça, iki DNP ve beş temas
-  arayüzü var. 30 fiziksel parçanın kesin MPN'si eksik. 32 parça üstte, 14 altta;
-  çift taraflı dizgi gerekiyor. CPL/orientasyon, U1 stencil ve özelleştirilmiş
-  U2/U5 land/maske prosesi onaylanmadı.
-- **Çalışır teslim:** Pil/anten bağlantıları, lehimsiz SWD fikstürü, firmware,
-  fabrika test yöntemi ve 35 × 28 mm karta uygun kutu henüz tamamlanmadı.
+- **Power and RF:** returns/layers, actual supplier stackup and 50 Ω routes,
+  antennas/body/enclosure effects, power-path drop, cell/NTC/protection, UVLO and
+  VDD_GPIO sequencing. Nordic's recommended 6 ms delay or tolerance of early GPIO
+  behavior has not been verified; see [manufacturer guidance](https://docs.nordicsemi.com/r/bundle/nwp_056/page/wp/nwp_054/vdd_gpio.html).
+- **Functions:** in this baseline J6 is only SIM contacts; actual SIM/profile and
+  Turkish operator are unselected. J5 is a digital expansion port, not a heart-rate sensor.
+- **Assembly:** 53 BOM entries: 46 fitted parts, two DNP and five contact interfaces.
+  30 fitted parts lack exact MPNs. 32 parts top / 14 bottom require double-sided
+  assembly. CPL/orientation, U1 stencil and customized U2/U5 lands/masks are unqualified.
+- **Working delivery:** battery/antenna connections, solder-free SWD fixture,
+  firmware, factory test procedure and enclosure for 35 × 28 mm remain unfinished.
 
-Önce bu seçimler ve şema/güç açıkları tamamlanmalı; ardından ground/RF odaklı
-yerleşim ve rota revizyonu, yeni DRC/ERC/DFM/SMT ve dizgili prototip doğrulaması
-gelmeli. Yeni katman/yerleşim gereksinimleri görülmeden 35 × 28 mm'nin son ölçü
-olduğu veya büyütülmesi gerektiği söylenemez.
+Resolve selections and schematic/power gaps, then ground/RF placement/routing,
+new DRC/ERC/DFM/SMT and assembled-prototype acceptance. The review does not prove
+35 × 28 mm is final or must grow before the new layout requirements are evaluated.
 
-## Kontrol kapsamı
+## Check scope
 
-Yeni KiCad 10.0.7 DRC: 0 ihlal / 0 açık / 0 parity; ERC: 0 ihlal.
-Varsayılan devre dışı kontroller raporlarda açıkça duruyor (DRC beş, ERC dört);
-kural, severity ve exclusion değiştirilmedi. [DRC](../evidence/order-readiness-20261025-r034/drc.json),
+Fresh KiCad 10.0.7 DRC: 0 violations / 0 opens / 0 parity issues; ERC: 0 violations.
+Reports retain default ignored checks: five DRC, four ERC. No rules, severities or
+exclusions changed. [DRC](../evidence/order-readiness-20261025-r034/drc.json),
 [ERC](../evidence/order-readiness-20261025-r034/erc.json).
-Bu tur yeniden JLC yüklemesi, sipariş, ödeme, üretici mesajı veya enerjili test
-yapılmadı. İki JLC sonucu önceki aynı ZIP'e bağlı raporlardır.
+
+No new JLC upload, order, payment, supplier message or powered test occurred during
+this review. The two JLC reports refer to the previously delivered identical ZIP.

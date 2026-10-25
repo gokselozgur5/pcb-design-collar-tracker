@@ -1,4 +1,4 @@
-# Working on collar-tracker
+# Working on pcb-design-collar-tracker
 
 ## Start here
 
@@ -9,7 +9,8 @@
 5. Use the relevant stage of `docs/PCB_DESIGN.md` for the reusable PCB workflow,
    review criteria, release evidence and lessons that apply to later boards.
 
-“Continue / kaldığım yerden devam et” means continue the next unfinished step.
+A request to continue means continue the next unfinished step, regardless of the
+language used in chat.
 Do not restart the design or ask for decisions already recorded here.
 Inspect the actual working tree before changing anything. Preserve later user edits.
 If another session has advanced STATUS, use that newer state.
@@ -49,10 +50,12 @@ uploads to JLC DFM are in scope. Orders, payments and supplier messages are not.
 
 ## Git and handoff
 
-- Repository: `gokselozgur5/collar-tracker`, private. Use the personal account;
+- Repository: `gokselozgur5/pcb-design-collar-tracker`, public. Use the personal account;
   do not switch global `gh` authentication or mix in work repositories.
 - Make one coherent change per commit with an honest subject. WIP must say WIP.
   Normal pushes only; do not rewrite published history by default.
+- All repository and GitHub content must be in English: documentation, code
+  comments, generated labels, commits, issues and PRs. Chat can remain Turkish.
 - Stage explicit paths. Never stage browser profiles, session state, credentials,
   raw browser captures, virtual environments or unrelated private continuity.
 - Update STATUS with the exact next action whenever work advances. Append the

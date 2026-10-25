@@ -1,48 +1,47 @@
-# İlk şema kontrolü — 2026-10-24
+# Initial schematic verification — 2026-10-24
 
-Bu belge şema taslağının kontrol kapsamını kaydeder. Üretim onayı değildir.
+This records the draft schematic's check scope. It is not production approval.
 
-## Geçen kontroller
+## Passed checks
 
-- KiCad 10.0.7 şemayı açtı, PDF ve XML netlist dışa aktarımı tamamlandı.
-- Varsayılan ERC profilinde 0 hata / 0 uyarı / 0 hariç tutulan ihlal.
-  Projede kural bastırması yapılmadı. KiCad varsayılanında kapalı dört kontrol:
-  tek global etiket, dört yollu birleşim, SPICE modeli, footprint filtresi.
-  Bunlar `evidence/erc.json` içinde `ignored_checks` alanında korunuyor.
-- Gerçek KiCad XML çıktısında 18 bağlantı/bütünlük kontrolü geçti.
-  113 nRF pini, 30 GND, 27 ayrı bırakılan reserved pin, SIM besleme ayrımı,
-  reset/DEC0, RF port ayrımı, LNA köprüsü, şarj ayarları, hareket sensörü ve
-  nabız deneme kartı arayüzü bu kapsamda.
-- nRF aday footprint'inde 1–113 numaralarının her biri bir kez bulunuyor.
-  Bu sadece pin kapsamı kontrolüdür; pad koordinatlarını doğrulamaz.
-- PDF görsel olarak incelendi; beş bölüm ve açık tasarım notları sayfaya sığıyor.
-  A2 çizim, ekranda yakınlaştırılarak okunmalı.
+- KiCad 10.0.7 opened the schematic and exported PDF and XML netlist.
+- Default ERC: 0 errors / 0 warnings / 0 excluded violations. No project suppression.
+  Four default-ignored checks remain explicit in `evidence/erc.json` under
+  `ignored_checks`: single global label, four-way junction, SPICE model, footprint filter.
+- 18 checks passed against actual KiCad XML: 113 nRF pins, 30 GND pins, 27 separately
+  unconnected reserved pins, separate SIM supply, reset/DEC0, RF-port separation,
+  LNA link, charger settings, motion sensor and experimental sensor interface.
+- Candidate nRF footprint contains pin numbers 1–113 exactly once. This verifies
+  pin coverage, not pad coordinates.
+- The PDF was visually inspected: five sections and open-design notes fit the A2
+  sheet, which requires zooming for screen reading.
 
-İlk ERC turundaki çizim ızgarası ve kütüphane tanımları düzeltildi. Güç kaynağı
-etiketleri dış 5 V / GND kaynağını ve ferrit sonrası besleme sürekliliğini tarif
-eder; eksik düşük voltaj kesmesini veya açılış sıralamasını doğrulamış saymaz.
+Initial drawing-grid and library-definition ERC issues were corrected. Power flags
+describe the external 5 V/GND source and supply continuity after the ferrite; they
+do not validate missing UVLO or startup sequencing.
 
-## Açık olanlar
+## Open items at this stage
 
-| Konu | Durum |
+| Item | State |
 |---|---|
-| PCB yerleşimi, yollar, katmanlar, DRC | Yeni çalışma `docs/pcb-dfm.md` ve ayrı PCB DRC raporlarında |
-| eSIM, şarj, pil, nabız ve debug bağlantılarının fiziksel parçaları | Temas/lehim padleri var; gerçek eSIM ve nabız modülü seçilmedi |
-| U2 / U3 / U5 footprint'leri | DFM taslağında atandı |
-| nRF footprint geometrisi ve lehim pastası | Üçüncü taraf aday; üretici çizimiyle doğrulanacak |
-| Düşük pilde donanımsal kapatma | Henüz tasarlanmadı |
-| VDD_GPIO açılış/kapanış sıralaması | Henüz çözülmedi |
-| Giriş/ESD koruması, pil ve NTC değerleri | Parça ve hücreye göre tamamlanacak |
-| RF, anten, kutu ve beden etkisi | Ölçülmedi |
-| Türkiye LTE-M/eSIM operatör uyumu | Hesap/profil/kullanım bölgesi için doğrulanmadı |
-| Nabız sensörü ve temas mekanizması | Seçilmedi; yalnız dijital deneme arayüzü var |
+| PCB placement/routing/layers/DRC | Subsequent work recorded in `docs/pcb-dfm.md` and separate PCB reports |
+| Physical SIM, charger, battery, sensor and debug connections | Contact/solder pads exist; actual SIM and heart-rate module unselected |
+| U2 / U3 / U5 footprints | Assigned in the DFM draft |
+| nRF footprint geometry/paste | Third-party candidate; manufacturer-drawing verification required |
+| Hardware low-battery shutdown | Not designed |
+| VDD_GPIO startup/shutdown sequencing | Unresolved |
+| Input/ESD protection, cell/NTC values | Complete against selected parts/cell |
+| RF, antennas, enclosure/body effects | Unmeasured |
+| Turkish LTE-M/SIM service compatibility | Account/profile/coverage unverified |
+| Heart-rate sensor/contact | Unselected; digital experiment interface only |
 
-Şarj 100 mA / 4.2 V ve giriş limiti 500 mA taslak değerlerdir; seçilecek hücre
-için onaylanmış sayılmaz. Pil ömrü, toplam ağırlık, kart ölçüsü ve maliyet ölçülmedi.
+100 mA / 4.2 V charging and 500 mA input limit are draft settings, not approved for
+a selected cell. Runtime, total mass, board size and cost were not measured in this
+schematic check.
 
-## Tekrar çalıştırma
+## Reproduction
 
-Proje kökünde, GOKSSD bağlı ve yerel KiCad mevcutken:
+From the project root, with GOKSSD mounted and local KiCad installed:
 
 ```sh
 scripts/kicad-cli sch erc --format json --severity-all --exit-code-violations \
@@ -54,6 +53,6 @@ scripts/kicad-cli sch export pdf \
   --output previews/collar-tracker-schematic.pdf hardware/collar-tracker.kicad_sch
 ```
 
-Kontrol ayrıntıları ve dosya SHA-256'ları `evidence/connectivity-checks.json` içinde.
-Donanım veya devre simülasyonu çalıştırılmadı. Bu rapor şema kontrolüyle sınırlıdır;
-PCB/Gerber çalışması `docs/pcb-dfm.md` ve paket manifestinde ayrıca tutulur.
+Details and SHA-256 hashes are in `evidence/connectivity-checks.json`. No physical
+hardware or circuit simulation was run. This report covers schematic checks only;
+PCB/Gerber work is recorded separately in `docs/pcb-dfm.md` and package manifests.

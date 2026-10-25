@@ -1,92 +1,90 @@
-# 0.3.1 — ölçülmüş maske/pad düzeltmesi — 2026-10-25
+# 0.3.1 — measured mask/pad revision — 2026-10-25
 
-Sonradan gelen doğrulama: 2026-10-25 01:28:03 JLCDFM raporu bu revizyonda
-**0 Danger / 45 Warning** verdi. Negatif maske 22 → 2, çok parçalı maske
-2 → 0; diğer üç kategori 10/30/3 olarak kaldı. SMT seçili değil.
-Kanıt `evidence/jlc-dfm-20261025-r5`; sonraki aday `docs/mask-revision-0.3.2.md`.
-Aşağıdaki bölüm ilk teslim anındaki durumu kaydeder; eski ZIP değişmedi.
+Later validation: the JLCDFM report dated 2026-10-25 01:28:03 returned
+**0 Danger / 45 Warning** for this revision. Negative-mask warnings fell 22 → 2,
+compound-mask warnings 2 → 0; the other categories stayed at 10/30/3. SMT disabled.
+Local evidence: `evidence/jlc-dfm-20261025-r5`; next candidate:
+[0.3.2](mask-revision-0.3.2.md). The original ZIP remains unchanged.
 
-Son kullanıcı raporu `collar-tracker-0.3-35x28-dfm.zip` dosyasına ait;
-2026-10-25 00:42:22 tarihinde yine **0 Danger / 67 Warning** veriyor.
-Önceki turda 0.3 değiştirilmemişti. Bu tur ayrı 0.3.1 kaynak ve ZIP üretildi.
-**0.3.1 için üretici DFM sonucu henüz yok; sıfır turuncu iddiası yok.**
+The rest of this report records the initial delivery state. The latest user report
+then covered `collar-tracker-0.3-35x28-dfm.zip`, dated 2026-10-25 00:42:22, again
+**0 Danger / 67 Warning**. The previous turn had not changed 0.3. A separate 0.3.1
+source and ZIP were created. **At delivery, 0.3.1 had no supplier DFM result and
+no zero-warning claim.**
 
-| Değişiklik | Önce | 0.3.1'de ölçülen |
+| Change | Before | Measured in 0.3.1 |
 |---|---:|---:|
-| C1/C2/C5/C8 bakır pad aralığı | 0.18 mm | 0.25 mm |
-| Aynı parçaların maske köprüsü | 0.18 mm | 0.20 mm |
-| J3–J7 temas padlerinin maske payı | 0 | 0.05 mm |
-| J1/J2 ortak maske açıklığını oluşturan şekil sayısı | 4'er | 1'er |
-| U2.1 maskesi → GNSS_LNA_EN kontrol yolu | 0.1517 mm | 0.2100 mm |
-| GND bölgesi clearance ayarı | 0.20 mm | 0.25 mm |
+| C1/C2/C5/C8 copper pad spacing | 0.18 mm | 0.25 mm |
+| Same components' mask bridge | 0.18 mm | 0.20 mm |
+| J3–J7 contact-pad mask expansion | 0 | 0.05 mm |
+| Shapes making each J1/J2 shared mask opening | 4 | 1 |
+| U2.1 mask → GNSS_LNA_EN control trace | 0.1517 mm | 0.2100 mm |
+| Ground-zone clearance setting | 0.20 mm | 0.25 mm |
 
-Dört 0201 kondansatör için 0.30 × 0.35 mm pad ve 0.55 mm pitch kullanıldı;
-padler merkez yönüne 0.045 mm taşındı. Ayrı paste-only padler de aynı şekil
-ve merkeze getirildi. Maske payı +0.025 mm. Seçim, [Murata'nın GRM ailesi
-referansındaki](https://pim.murata.com/asset/pim4/ceramicCapacitorSMD/GRM0115C1C100GE01-01A-EN_PDF_CERAMICCAPACITORSMD?lastModifiedDatetime=20250813132738)
-GRM03 / 0.6 × 0.3 mm tablolarının ortak aralığında: a=0.25, b=0.30, c=0.35 mm.
-Bu genel aile kılavuzuyla uyumlu bir reflow adayıdır; kesin sipariş kodu,
-parça toleransı ve gerçek montaj değerlendirmesi henüz tamamlanmadı.
+Four 0201 capacitors use 0.30 × 0.35 mm pads at 0.55 mm pitch; pads moved inward
+0.045 mm. Separate paste-only pads were matched in shape and center. Mask expansion
+is +0.025 mm. These dimensions fall within the common GRM03 / 0.6 × 0.3 mm ranges
+in [Murata's GRM family reference](https://pim.murata.com/asset/pim4/ceramicCapacitorSMD/GRM0115C1C100GE01-01A-EN_PDF_CERAMICCAPACITORSMD?lastModifiedDatetime=20250813132738):
+a=0.25, b=0.30, c=0.35 mm. This is a family-guide-compatible reflow candidate;
+exact ordering codes, tolerances and assembly review remain open.
 
-U.FL açıklıkları eski teslimin gerçek Gerberinden birleştirildi; pad bakırı,
-pasta ve fiziksel bakır keepout'u korundu. Tek poligon üretmek, JLC'nin
-compound-mask uyarısını kapattığının kanıtı değildir. Arkların poligona
-yaklaştırılma hatası da hesaba katıldığında sınır farkı 0.00002 mm altındadır.
-Yerel eski KiCad pad poligonları bu köşelerde yaklaşık 0.0074 mm kaba fark
-verdiğinden karşılaştırma gerçek Gerber açıklıkları üzerinden yapıldı.
+U.FL openings were merged from the previous delivery's actual Gerber. Copper,
+paste and physical copper keepouts were preserved. One polygon alone did not prove
+closure of JLC's compound-mask warning. Including arc approximation, boundary error
+is below 0.00002 mm. Old native KiCad polygons differed by about 0.0074 mm at these
+corners, so the comparison used actual Gerber openings.
 
-Yalnız üç GNSS_LNA_EN kontrol yolunun uçları değişti. Bütün RF yolları,
-diğer yollar, net eşleşmeleri ve 77 via korundu. GND dolguları 0.25 mm
-clearance ile yeniden dolduruldu; bağlantılar tekrar doğrulandı. İki alt
-yüz etiketi 0.10 mm taşındı; kart üzerinde `COLLAR 0.3.1 TEST` yazıyor.
+Only three GNSS_LNA_EN control-trace endpoints changed. RF, other traces, net
+mapping and all 77 vias were preserved. Ground zones were refilled at 0.25 mm
+clearance and connectivity rechecked. Two bottom labels moved 0.10 mm; the board
+reads `COLLAR 0.3.1 TEST`.
 
-## Doğrulama
+## Verification
 
-- Native KiCad: 0 hata, 0 açık bağlantı, 0 şema uyuşmazlığı; 47 kütüphane
-  footprint farkı uyarısı açıkça tutuldu. DRC severity/exclusion değiştirilmedi.
-- 53 footprint / 792 yol / 77 via, 35 × 28 × 0.8 mm aday, dört bakır katmanı.
-- Pad dış kutusu–via ve farklı net yolu ≥0.20 mm; via–via ≥0.2026 mm.
-- Native ve gerçek Gerber karşılaştırmasında 0.10 mm altı ayrı maske köprüsü yok.
-- Gerberde dört kondansatörün bakır/maske aralıkları ve yeni pasta eşleşmeleri
-  bağımsız ölçüldü; belirtilmeyen bütün pad bakırları öncekiyle aynı.
-- 214 üst + 54 alt bakır padin 267'si maske içinde tamamen açık; yalnız U2.11'in
-  DK kaynaklı merkez padindeki kısmi örtü aynı kaldı. Bu, JLC'nin 22 negatif
-  maske uyarısının kapanış kanıtı değildir.
-- Gerber dış hattı, 77 adet 0.20 mm delik, ZIP CRC'si ve bütün iç dosya hashleri
-  doğrulandı. Eski 0.3 PCB/ZIP ve 0.2.1/30 × 22 mm kaynak değişmedi.
-- Üst/alt native bakır ve baskı görselleri incelendi. Fiziksel/enerjili test yok.
+- Native KiCad: 0 errors, 0 opens, 0 schematic mismatches; 47 footprint-library
+  warnings explicitly retained. No severity/exclusion changes.
+- 53 footprints / 792 segments / 77 vias; 35 × 28 × 0.8 mm, four copper layers.
+- Pad bounding box to via/foreign-net trace ≥0.20 mm; via-to-via ≥0.2026 mm.
+- Native/actual-Gerber comparison found no separate mask bridge below 0.10 mm.
+- Independently measured the four capacitors' Gerber copper/mask gaps and paste
+  matches. All unspecified pad copper remained unchanged.
+- Of 214 top + 54 bottom pads, 267 were fully exposed. U2.11's DK-derived center
+  pad retained partial mask coverage. This did not prove closure of all 22 JLC
+  negative-mask warnings.
+- Checked outline, 77 holes of 0.20 mm, ZIP CRC and all internal file hashes.
+  Previous 0.3 PCB/ZIP and 0.2.1 / 30 × 22 mm source stayed unchanged.
+- Inspected top/bottom native copper and silk previews. No physical/powered test.
 
-## Açık kalanlar
+## Open items at delivery
 
-U5'in sabit 0.15 mm pad aralıkları, U2'nin 0.125–0.1485 mm maske komşulukları,
-U2 merkez maskesi ve nRF land/mask incelemesi sürüyor. [JLC kapasite tablosu](https://jlcpcb.com/capabilities/pcb-capabilities)
-farklı-net SMD padlerinde 0.15 mm, 1 oz renkli maskede 0.10 mm köprü bildiriyor;
-bazı genel turuncu uyarılar bu sınırların içinde olabilir. Proses/renk/bakır
-ve montajcı kabulü yerine geçmez.
+U5's fixed 0.15 mm pad gaps, U2's 0.125–0.1485 mm mask gaps, U2 center mask and
+nRF lands/masks still needed review. The [JLC capability table](https://jlcpcb.com/capabilities/pcb-capabilities)
+listed 0.15 mm for different-net SMD pads and 0.10 mm mask bridges with colored
+mask/1 oz copper; some generic warnings may fall within those limits. This does
+not replace process/color/copper-specific fabrication and assembly acceptance.
 
-U1'in 1:1 pasta çıktısı değiştirilmedi. Önceki incelemedeki yorumun sınırı:
+U1's 1:1 paste output stayed unchanged.
 [Nordic](https://docs.nordicsemi.com/r/bundle/nwp_056/page/wp/nwp_056/footprint.html)
-1:1 pasta verisinin montajcıya gönderilip montajcı tarafından ayarlanmasını
-olağan iş akışı olarak tarif ediyor. Dolayısıyla 1:1 dosya tek başına kesin
-tasarım hatası değildir; final stencil'in montajcıyla belirlenmesi açık iştir.
-Montajcı girdisi olmadan hazırlanacak stencil için ayrıca alan azaltma
-önerileri var; bu revizyon stencil üretim onayı vermiyor.
+describes supplying 1:1 paste data for the assembler to adapt. The file alone is
+therefore not a proven defect; the final stencil still needs assembler agreement.
+Separate area-reduction guidance applies when preparing a stencil without that
+input. This revision does not approve stencil manufacture.
 
-Tam çalışan, kullanıcı lehimi gerektirmeyen teslim hedefi korunuyor. BOM,
-gerçek eSIM/pil/anten, güç sıralaması/UVLO/ESD, RF/stackup, firmware,
-fikstür ve fonksiyon testleri açık. Bu dosya bir DFM inceleme paketi.
+The target remains factory-delivered working hardware without user soldering.
+BOM, physical SIM/battery/antenna, sequencing/UVLO/ESD, RF/stackup, firmware, fixture
+and functional tests remain open. This is a DFM review package.
 
-## Dosyalar
+## Files and reproduction
 
-Yeni ZIP: `/Users/gok/codex/projects/collar-tracker/release/collar-tracker-0.3.1-35x28-dfm.zip`
+ZIP: `/Users/gok/codex/projects/collar-tracker/release/collar-tracker-0.3.1-35x28-dfm.zip`
 
-Kaynak: `/Users/gok/codex/projects/collar-tracker/experiments/35x28-mask-r031/hardware/collar-tracker.kicad_pcb`
+Source: `/Users/gok/codex/projects/collar-tracker/experiments/35x28-mask-r031/hardware/collar-tracker.kicad_pcb`
 
-Kanıtlar aynı deneyin `evidence` dizininde: `final-drc.json`,
-`geometry-checks.json`, `gerber-mask-audit.json`, `gerber-revision-checks.json`,
-`changes.json`, `delivery.json`. Tekrar üretim sırası: `revise_mask_031.py plan`
-(.venv-dfm), `apply` (KiCad Python), `dfm_geometry.py`, `size_trial_labels.py`
-plan/apply, tekrar geometri ve `check_size_trial.py --mask-revision-031`,
-`export_mask_revision.py`, Gerber denetimleri. Apply önceki 0.3'ten başlar;
-sonraki elle düzenlemeler varsa üzerine çalıştırma. Export mevcut 0.3.1 ZIP'in
-üzerine yazmayı reddeder; yeni değişiklikler yeni revizyon gerektirir.
+Evidence in that trial's `evidence/`: `final-drc.json`, `geometry-checks.json`,
+`gerber-mask-audit.json`, `gerber-revision-checks.json`, `changes.json`, `delivery.json`.
+
+Sequence: `revise_mask_031.py plan` (geometry venv), `apply` (KiCad Python),
+`dfm_geometry.py`, `size_trial_labels.py` plan/apply, geometry again,
+`check_size_trial.py --mask-revision-031`, `export_mask_revision.py`, Gerber audits.
+Apply starts from 0.3; do not run it over later manual edits. Export refuses to
+overwrite the existing 0.3.1 ZIP. Further changes require a new revision.

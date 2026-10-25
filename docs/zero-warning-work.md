@@ -1,94 +1,92 @@
-# Sıfır uyarı çalışması — 2026-10-25
+# Zero-warning work — 2026-10-25
 
-Kankam bütün uyarıları sıfırlamamızı istedi. **PCB DFM işi tamamlandı:**
-0.3.4 iki bağımsız JLC yüklemesinde **0 Danger / 0 Warning**, KiCad **0/0/0**.
-Raporlar 2026-10-25 06:39:36 ve 06:41:25; SMT seçili değil.
-Güncel değişiklik/kanıt/teslim kaydı: `docs/clearance-revision-0.3.4.md`.
-Aşağıdaki kütüphane temizliği ve eşik araştırması, fiziksel düzeltmeden önceki
-aşamanın kaydıdır; teslim edilen kaynak `35x28-clearance-r034` kopyasıdır.
+The owner requested zero warnings. **The 0.3.4 PCB DFM task was completed:** two
+independent JLC uploads returned **0 Danger / 0 Warning**, with native KiCad
+**0 violations / 0 opens / 0 parity issues**. Reports: 2026-10-25 06:39:36 and
+06:41:25; SMT disabled. See [0.3.4](clearance-revision-0.3.4.md) for changes,
+evidence and delivery. This acceptance does not transfer to later revisions.
 
-## Tamamlanan yerel düzeltme
+The library cleanup and threshold research below precede the physical fixes.
+The delivered source is `35x28-clearance-r034`.
 
-0.3.2'nin fiziksel tasarımını koruyan çalışma kopyası:
+## Native library cleanup
+
+Working copy preserving 0.3.2's physical design:
 `/Users/gok/codex/projects/collar-tracker/experiments/35x28-zero-r033/hardware/collar-tracker.kicad_pcb`
 
-Karttaki özelleştirilmiş footprint'ler eski standart kütüphane kimliklerini
-taşıyordu. 53 parçanın mevcut tanımı `Collar033.pretty` proje kütüphanesine
-kaydedildi; PCB ve şemadaki footprint bağlantıları bu açık tanımlara çevrildi.
-`library-provenance.json`, her parçanın önceki kimliğini ve dosya hashini tutuyor.
-Bu işlem geometrinin montaj için onaylandığı anlamına gelmez.
+Customized footprints still used old standard-library identities. Saved the actual
+53 definitions in `Collar033.pretty` and updated PCB/schematic library links.
+`library-provenance.json` records prior identities and file hashes. This resolves
+source/library consistency; it does not qualify the physical lands for assembly.
 
-- Önce: 0 hata / 47 kütüphane farkı uyarısı / 0 açık / 0 şema uyuşmazlığı.
-- Sonra: **0 hata / 0 uyarı / 0 açık / 0 şema uyuşmazlığı**.
-- `--severity-all --schematic-parity --all-track-errors` kullanıldı.
-- Proje ve özel DRC kural dosyaları bire bir aynı; kontrol kapatılmadı,
-  severity değiştirilmedi, exclusion eklenmedi.
-- Şemada yalnız footprint kimlikleri değişti. Native pad/maske/yol/via/dolgu/
-  baskı geometrileri aynı. **11 Gerber katmanının tamamı**, yalnız üretim
-  zaman damgası çıkarıldığında yayımlanmış 0.3.2 ile bire bir aynı.
-- Kaynak SHA256: `345544f51eec67767cb7154620392a062bba0ac8ea19051c3e0de5a2beee255b`.
+- Before: 0 errors / 47 library warnings / 0 opens / 0 parity issues.
+- After: **0 errors / 0 warnings / 0 opens / 0 parity issues**.
+- Used `--severity-all --schematic-parity --all-track-errors`.
+- Project/custom DRC files byte-identical; no disabled check, severity change or exclusion.
+- Only footprint IDs changed in the schematic. Native pad/mask/track/via/fill/silk
+  geometry stayed identical. **All 11 Gerber layers** match released 0.3.2 after
+  stripping generation timestamps.
+- PCB SHA256: `345544f51eec67767cb7154620392a062bba0ac8ea19051c3e0de5a2beee255b`.
 
-Kanıtlar `experiments/35x28-zero-r033/evidence/library-cleanup-checks.json`,
-`library-drc.json`, `geometry.json`, `gerbers/`. Tekrar üretim araçları
-`scripts/persist_trial_footprints.py`, `dfm_geometry.py` ve
-`verify_library_cleanup033.py`.
+Evidence: `experiments/35x28-zero-r033/evidence/library-cleanup-checks.json`,
+`library-drc.json`, `geometry.json`, `gerbers/`. Tools:
+`scripts/persist_trial_footprints.py`, `dfm_geometry.py`, `verify_library_cleanup033.py`.
 
-Bu kopya henüz 0.3.3 Gerber sürümü olarak yayımlanmadı. Fiziksel çıktı
-değişmediğinden mevcut 0.3.2 ZIP, JLC karşılaştırması için doğru girdidir.
-Kütüphane temizliğinin JLC uyarılarını değiştirdiği iddia edilmiyor.
+This stage was not released as the physical 0.3.3 Gerber revision. Since physical
+output was unchanged, the existing 0.3.2 ZIP remained the right supplier comparison
+input. Library cleanup was not claimed to change JLC findings.
 
-## JLC'nin gerçek varsayılan eşikleri
+## Actual default JLC thresholds
 
-[JLCDFM'nin herkese açık örneği](https://jlcdfm.com/viewer?pcbUploadFileId=637065032774410242&demo=1)
-yeni, anonim bir tarayıcı bağlamında incelendi. Kankamın Gerber'i yüklenmedi.
-Kural paneli açıldı; Apply/Save/Set as default kullanılmadı.
-Örneğin indirdiği sistem yapılandırması ve ekran görüntüleri
-`evidence/zero-warning-r033` altında korunuyor.
+Inspected the [public JLCDFM demo](https://jlcdfm.com/viewer?pcbUploadFileId=637065032774410242&demo=1)
+in a fresh anonymous browser context. No user Gerber was uploaded at this stage.
+Opened the rules panel without Apply/Save/Set as default. Downloaded system config
+and screenshots were retained locally under `evidence/zero-warning-r033/`.
 
-| Kontrol | Yapılandırmadaki değerler, mil | Uyarı/yeşil sınırı |
+| Check | Config values, mil | Warning/green boundary |
 |---|---|---|
-| Pad aralığı | 4, 6, 8 | 6 mil = 0.1524 mm |
-| Maske köprüsü | 4, 6, 8 | 6 mil = 0.1524 mm |
-| Maskenin yakındaki yola mesafesi | 3, 6, 8 | 6 mil = 0.1524 mm |
-| Negatif maske açıklığı | Sayısal eşik yok, warning-value | Geometri bulgusu |
+| Pad spacing | 4, 6, 8 | 6 mil = 0.1524 mm |
+| Mask bridge | 4, 6, 8 | 6 mil = 0.1524 mm |
+| Mask to nearby track | 3, 6, 8 | 6 mil = 0.1524 mm |
+| Negative mask opening | No numeric threshold; warning-value | Geometry finding |
 
-Arayüzde yuvarlanmış 0.15 mm değerinin hem turuncu hem yeşil görünmesinin
-nedeni bu hassasiyettir. Önceki 0.20 mm taraması uyarı eşiğinin doğrudan
-kopyası değildi. Bu sistem profili kankamın analizine ait profil ayrıca
-okunmadan onun kesin yapılandırması olarak kabul edilmiyor.
+Rounding explains why displayed 0.15 mm values can be either orange or green.
+The earlier 0.20 mm scan did not reproduce the exact warning threshold. The demo
+profile was not assumed to be the user's actual configuration without reading it.
 
-Gerçek maskeler bu 0.1524 mm eşiğiyle sayıldığında 0.3.1'de 30, 0.3.2'de
-26 ayrı maske komşuluğu eşik altında. Bu, yerel geometrik sayımdır;
-**0.3.2 için alınmış JLC sonucu değildir**. Dolayısıyla sıfır JLC uyarısı
-beklentisiyle yeni ZIP teslim edilmedi ve rapor kuralları gevşetilmedi.
+Counting actual openings against 0.1524 mm yielded 30 mask-neighbor gaps in 0.3.1
+and 26 in 0.3.2. These were **local geometry counts, not a 0.3.2 JLC result**.
+No zero-warning ZIP was claimed and no supplier rules were relaxed.
 
-İki negatif maske ve üç maske/yol bulgusunun tüm gerçek koordinatları PDF'de
-yok. Aynı net yollarının pad sınır kutusunda maske dışına taşması aday taraması
-sonuç vermedi; iki uyarının sebebi olarak sunulmuyor. ST'nin MKI179V1 resmî
-Gerber bağlantısı bulundu, fakat indirme HTTP/2 hatası ve zaman aşımıyla
-başarısız; bu referans kartın land ölçülerini inceledik iddiası yok.
+The PDF lacked all coordinates for two negative-mask and three mask/trace findings.
+A same-net trace-overhang candidate scan found nothing; it was not offered as the
+cause of those warnings. ST's official MKI179V1 Gerber link was found, but HTTP/2
+failure/timeouts prevented downloading it. No claim was made to have inspected
+that reference board's lands.
 
-## Sonuç ve erişim düzeltmesi
+## Actual analysis and authorization correction
 
-JLC analizi, kullanıcının “sıfırla” isteğinin gerekli adımı olarak yeniden
-değerlendirildi; önceki ek onay engeli kaldırıldı. Yalnız Gerber/delik dosyaları
-hazırlandı. Anonim yükleme giriş istedi; kullanıcı açılan ayrı tarayıcıda
-giriş yapıp “login oldum tekrar dene” dedi. Şifre/cookie/token okunmadı veya
-dışarı aktarılmadı; normal tarayıcı oturumu kullanıldı.
+JLC analysis was recognized as a necessary part of the already requested work;
+the unnecessary extra permission gate was removed. Only manufacturing layers and
+drills were prepared. Anonymous upload required login; the owner logged into the
+dedicated browser and asked to retry. The normal session was used without reading
+or exporting passwords, cookies or tokens.
 
-0.3.2 ve düzeltilen 0.3.3 yüklenip analiz edildi: **40 → 0 Warning**.
-Ham sonuçlar, değişmeyen kural dosyası, tam PDF ve ekran görüntüleri saklandı.
-Gerçek koordinatlar önceki U1.71 görsel eşleşmesini düzeltti: U1.30.
-Negatif maskeler FB1'in iki padindeydi. Yerel 26 maske köprüsü sayımı
-gerçek 0.3.2 sonucuyla aynı çıktı. Sipariş veya üretici mesajı gönderilmedi.
-Tam çalışan, kullanıcı lehimi gerektirmeyen PCBA için elektrik/RF/BOM/
-firmware/test ve yeni footprint/maske süreç kalifikasyonu işleri açık.
+Actual 0.3.2 and corrected 0.3.3 uploads initially showed **40 → 0 Warning**.
+Raw results, unchanged rules, complete PDF and screenshots were saved. That run's
+raw coordinates identified U1.30, and negative-mask findings were at FB1's two pads.
+The local count of 26 mask bridges matched the actual 0.3.2 result. No order or
+supplier message was sent. Electrical/RF/BOM/firmware/test and new footprint/mask
+process qualification remained open for working factory delivery.
 
-## 0.3.3 tekrar kontrolü ve 0.3.4
+## 0.3.3 repeat check and 0.3.4
 
-Kankam bir turuncu gösterdi; teslim edilen aynı 0.3.3 ZIP'i tekrar yükleyince
-0/1 yeniden üretildi. İlk 0/0 raporu tek anlık sonuçtu; yeterli kabul kanıtı
-değildi. Raw koordinatlar U1.71'i gösterdi; U1.30 ayrı bir simetrik bağlantı.
-0.3.4 bu ikinci GND yolunu da 0.30 mm yapıyor. Yeni ZIP iki farklı JLC
-kaydında aynı kurallarla 0/0 verdi; ikinci yükleme son teslim yolundan yapıldı.
-Sonuçların önce neden farklılaştığı henüz belirlenmedi.
+The owner showed one orange warning. Reuploading the same delivered 0.3.3 ZIP
+reproduced 0/1. The first 0/0 was insufficient acceptance evidence. Raw coordinates
+identified U1.71; U1.30 was a separate symmetric connection. Treating the earlier
+U1.71 image match as disproved was incorrect.
+
+0.3.4 also widens this second ground neck to 0.30 mm. Two different JLC records
+for identical final ZIP bytes returned 0/0 under the same rules; the second upload
+used the final delivery path. The cause of the earlier result discrepancy remains
+unestablished.

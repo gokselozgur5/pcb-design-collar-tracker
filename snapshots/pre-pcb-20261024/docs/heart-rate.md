@@ -1,52 +1,52 @@
-# Nabız ölçümü — araştırma durumu
+# Heart-rate sensing — research status
 
-İstenen özellik nabız ölçümüdür. Bunun bütün boylarda, tüy yapılarında ve hareket
-durumlarında çalıştığı henüz gösterilmedi. İşlemci üzerinde AI çalıştırmadan
-filtreleme ve tepe aralığı hesabı yapılabilir; önce fiziksel sinyal elde edilmelidir.
+Heart-rate measurement is requested. Operation across dog sizes, coat types and
+movement states has not been demonstrated. Filtering and peak-interval calculation
+do not require on-device AI, but a usable physical signal must come first.
 
-## İncelenen kanıt
+## Evidence inspected
 
-Kasım 2024'te çevrimiçi yayımlanıp Şubat 2025 sayısında çıkan 12 sağlıklı köpek
-çalışmasının özetinde, akıllı tasmanın
-24 saatlik ortalama kalp hızı ile Holter arasında yakınlık bulunurken iki dakikalık
-ölçümlerde uyum zayıftır. Olası kayıt süresinin %43'ünde tasma kalp hızı verisi
-üretmemiştir. Bu sonuç her tasmanın aynı olduğunu veya önerdiğimiz sensörün
-çalışacağını göstermez. Çalışmanın burada incelenen kısmı özettir.
+The abstract of a study in 12 healthy dogs, published online in November 2024 and
+in the February 2025 issue, reported close agreement between collar and Holter
+24-hour mean heart rates but poor agreement over two-minute intervals. The collar
+produced no heart-rate output for 43% of possible recording time. This does not
+establish that every collar behaves alike or that our proposed sensor will work.
+Only the abstract was inspected here.
 
 [Assessment of heart rate measurements obtained from a smart collar compared to
 24-h Holter monitoring in healthy dogs](https://pubmed.ncbi.nlm.nih.gov/39675258/)
 
-2019 mekanokardiyografi çalışması da göğüs üzerine yerleştirilen telefonla,
-hareketsiz ölçümün uygulanabilirliğini inceliyor. Tüy, kayma ve sinyal kalitesi
-sınırlamaları bildiriliyor. Bu sonuç boyun tasmasının çalıştığının kanıtı değil;
-ilk deneyde dinlenme hâlini ve ölçüm kalitesini öne almak için gerekçe.
+A 2019 mechanocardiography study evaluated resting measurements with a phone on
+the chest, reporting limitations involving fur, sliding and signal quality. This
+does not prove a neck collar works; it supports starting with rest and explicit
+signal-quality checks.
 
 [Cardiac monitoring of dogs via smartphone mechanocardiography](https://pmc.ncbi.nlm.nih.gov/articles/PMC6480821/)
 
-## Aday yöntemler
+## Candidate methods
 
-| Yöntem | Mekanik gereksinim | Açık konu |
+| Method | Mechanical requirement | Open issue |
 |---|---|---|
-| Optik PPG | LED ve fotodiyot, kontrollü cilt teması ve ışık izolasyonu | Tüy, hareket ve temas basıncı |
-| ECG | Ayrı cilt temas noktaları, elektrot geometrisi ve analog giriş koruması | Tasma konumunda sinyal, kürk ve hareket |
-| Mekanik/akustik | Kalpten gelen çok küçük hareket/sesleri ileten temas | Yürüme ve solunumdan kalp sinyalinin ayrılması |
+| Optical PPG | LED/photodiode, controlled skin contact and light isolation | Fur, movement and contact pressure |
+| ECG | Separate skin contacts, electrode geometry and protected analog input | Signal at collar position, fur and movement |
+| Mechanical/acoustic | Contact transmitting small cardiac motion/sounds | Separating cardiac activity from walking and breathing |
 
-MAX86176 yaklaşık 2.73 × 2.71 mm bir PPG+ECG analog ön uç adayıdır. Kendi başına
-tam nabız sensörü değildir: optik yöntemde LED/fotodiyot ve optik mekanik tasarım,
-ECG'de elektrotlar ve uygun giriş devresi gerekir. Üreticinin insan giyilebilir
-cihazlarına ilişkin özellikleri köpeklerde doğruluk kanıtı sayılmaz. Tam doküman
-erişimi için üretici NDA süreci gösteriyor; bu nedenle şu an parça seçilmedi.
+MAX86176 is a roughly 2.73 × 2.71 mm PPG+ECG analog-front-end candidate, not a
+complete sensor. PPG needs LEDs, photodiodes and optical mechanics; ECG needs
+electrodes and an appropriate input circuit. Human-wearable specifications do not
+prove canine accuracy. The manufacturer indicates an NDA process for full document
+access, so this part has not been selected.
 
 [Analog Devices MAX86176](https://www.analog.com/en/products/MAX86176.html)
 
-## İlk prototipte yapılacaklar
+## First prototype work
 
-Ana kartta I2C/SPI, interrupt, reset ve besleme bağlantısını bir sensör deneme
-kartına çıkar. Elektrotları genel dijital konektöre doğrudan bağlama; analog
-koruma ve sensör devresi deneme kartında ayrı tasarlanır.
+Expose I2C/SPI, interrupt, reset and supply to an experimental sensor board. Do not
+connect electrodes directly to the general digital connector; design the analog
+protection/front end separately.
 
-Önce masaüstünde sinyal yolu ve güç doğrulaması; ardından uygun referans ECG ile,
-dinlenme ve hareket ayrı raporlanarak değerlendirme gerekir. Sadece ortalama
-hata değil, ölçüm alınabilen süre ve hatalı sonuçların dağılımı da raporlanır.
-Farklı boy ve tüy yapıları test kapsamına alınır. Yetersiz sinyalde değer
-gösterilmez; aktiviteden tahmin edilen sayı gerçek nabız diye sunulmaz.
+Verify signal path and power on the bench, then compare against suitable reference
+ECG, reporting rest and motion separately. Report valid-output coverage and error
+distribution, not only mean error. Include different sizes/coats. Suppress readings
+when signal quality is inadequate; do not present an activity-derived estimate as
+measured heart rate.

@@ -1,122 +1,131 @@
-# Collar tracker
+# PCB Design: Collar Tracker
 
-Türkiye için küçük, hafif, hücresel bağlantılı GPS takip cihazı.
-Tek elektronik gövdeyi farklı tasmalara takabilmek hedefleniyor. Farklı boy ve
-tüy yapısındaki köpeklerde mekanik uyumluluk henüz test edilmedi.
+A small GPS and cellular tracker for dog collars, starting with Türkiye.
+The aim is one electronics design with different collar mounts. Fit, weight and
+comfort across dog sizes and coat types still need physical validation.
 
-**Aktif iş:** Paul'ün yerleşim notlarını uygulamak, gerçek nano-SIM yuvası eklemek
-ve yeni revizyonu JLC DFM'de sıfır hata/uyarıya getirmek. eSIM şimdilik ertelendi.
+**Active work:** apply Paul's layout feedback, add a physical nano-SIM socket,
+and get the new revision through real JLC DFM with zero Danger / zero Warning.
+eSIM is deferred.
 
-Yeni revizyon henüz yönlendirilmedi. **0.3.4'ün yeşil sonucu yeni karta ait değil.**
-Kesin durum ve ilk yapılacak iş: [STATUS](docs/STATUS.md).
+The new board has two inner GND planes and local ground connections. Routing is
+unfinished: the first imported route has 14 open connections and three dangling
+vias in native DRC. **The 0.3.4 all-green result does not apply to this revision.**
+See [STATUS](docs/STATUS.md) for the current source and exact next step.
 
-## Yeni oturumda devam
+## Continue in a new session
 
-Bu klasörü Claude Code'da açıp **“kaldığım yerden devam et”** yaz.
-`CLAUDE.md`, proje talimatlarını ve güncel durumu yükler.
+Open this repository in Claude Code and ask it to continue.
+`CLAUDE.md` loads the project instructions and current state.
+All repository and GitHub content is written in English; chat can use another language.
 
-Mevcut Mac'te doğrudan başlatmak için:
+On the existing Mac:
 
 ```sh
 cd /Users/gok/codex/projects/collar-tracker
 claude
 ```
 
-Bağlamı ve kayıtlı kanıtları elle kontrol etmek için:
+To check the saved context and baseline evidence:
 
 ```sh
 python3 scripts/resume.py
 ```
 
-[Devam komutları](docs/RESUME.md) · [Paul / nano-SIM notları](docs/paul-nanosim.md)
-· [Çalışma kaydı](docs/WORKLOG.md)
+[Resume commands](docs/RESUME.md) · [Paul / nano-SIM notes](docs/paul-nanosim.md)
+· [Work log](docs/WORKLOG.md) · [Reusable PCB Design workflow](docs/PCB_DESIGN.md)
 
-[PCB Design — sonraki kartlarda da kullanacağımız çalışma rehberi](docs/PCB_DESIGN.md).
+Repository: [gokselozgur5/pcb-design-collar-tracker](https://github.com/gokselozgur5/pcb-design-collar-tracker).
+The local directory remains `collar-tracker`.
 
-Private repo: [gokselozgur5/collar-tracker](https://github.com/gokselozgur5/collar-tracker).
+## Product requirements
 
-## Kullanıcının belirlediği kapsam
+- First market: Türkiye. Operator not selected.
+- Small PCB, with features added in software where practical. No on-device AI.
+- Shared hardware for small and large dogs.
+- Heart-rate sensing is requested; the measurement method is not validated.
+- Factory assembly, programming and functional testing; avoid user hand soldering.
 
-- İlk ülke Türkiye; operatör henüz seçilmedi.
-- Küçük PCB, mümkün olduğunca yazılımla eklenen özellikler; cihazda AI hesabı yok.
-- Küçük ve büyük köpekler için ortak donanım hedefi.
-- Nabız ölçümü isteniyor; ölçüm yöntemi henüz doğrulanmadı.
+## What is verified
 
-## Bu taslağın sınırı
+The initial KiCad schematic in `hardware/` uses the nRF9151 as a candidate.
+The modem choice remains conditional on operator LTE-M/NB-IoT service and coverage.
+The schematic supports electrical review; it is not proof of a working RF design
+or heart-rate sensor.
 
-`hardware/` altında nRF9151 adayına dayanan, incelenebilir ilk KiCad şeması hazır.
-Operatörün LTE-M/NB-IoT hizmeti doğrulanmadan modem seçimi kesinleşmiş sayılmaz.
-Şema taslağı, bileşenlerin elektriksel ilişkilerini gözden geçirmek içindir.
-Üretime hazır PCB, doğrulanmış RF tasarımı veya nabız ölçebilen prototip değildir.
-Güncel **0.3.4 / 35 × 28 mm / dört katman** denemesi, JLC'nin iki bağımsız
-2026-10-25 06:39:36 ve 06:41:25 raporunda **0 Danger / 0 Warning** aldı. KiCad'de de
-0 hata, 0 uyarı, 0 açık bağlantı ve 0 şema uyuşmazlığı var. Kurallar değişmedi.
-[Gerber/Excellon ZIP](release/collar-tracker-0.3.4-35x28-dfm.zip),
-[JLC raporu](release/collar-tracker-0.3.4-jlc-dfm-report.pdf) ve
-[değişiklikler / montaj sınırları](docs/clearance-revision-0.3.4.md).
-53 footprint, 792 yol kesimi, 77 adet 0.60/0.20 mm via. In1.Cu GND
-referansı; In2.Cu üzerinde sinyal/güç yolları var. **SMT doğrulanmadı.**
+The **0.3.4 / 35 × 28 mm / four-layer** baseline received **0 Danger / 0 Warning**
+in two JLC PCB reports dated 2026-10-25, 06:39:36 and 06:41:25. Native KiCad checks
+also reported zero errors, warnings, open connections and schematic mismatches.
+The rules were unchanged.
 
-[Sipariş öncesi inceleme](docs/order-readiness-0.3.4.md): 78 GND padinde açık
-bağlantı yok; ancak eski GIMP'in 2 mm dönüş-via taramasında 61 GND dışı via'nın
-52'si eşiğin dışında. İkinci iç katman sinyal de taşıyor. Güç/RF, eSIM, BOM ve
-çalışır teslim eksikleri nedeniyle **henüz siparişe hazır değil**.
+[Gerber/Excellon ZIP](release/collar-tracker-0.3.4-35x28-dfm.zip) ·
+[JLC report](release/collar-tracker-0.3.4-jlc-dfm-report.pdf) ·
+[Changes and assembly limits](docs/clearance-revision-0.3.4.md)
 
-Son doğrulanmış denemenin native kaynağı `experiments/35x28-clearance-r034/hardware/` içinde.
-Yeni çalışma `experiments/paul-nanosim-r04/hardware/` altında; şema/footprint taslağı var,
-PCB üretimindeki hata henüz çözülmedi.
-`hardware/` altındaki 30 × 22 mm 0.2.1 kaynak ve önceki ZIP'ler referans olarak
-korundu. O sürümün gerçek ikinci JLCDFM raporunda 2 Danger / 306 Warning var;
-bu sayılar yeni karta ait değil. Önceki rapor/düzeltme ayrıntıları
-`docs/jlc-dfm-review.md`, devre/RF sınırları `docs/pcb-dfm.md` içinde.
+That board has 53 footprints, 792 track segments and 77 vias of 0.60/0.20 mm.
+In1.Cu is a GND reference; In2.Cu also carries signal/power traces.
+**SMT assembly is not qualified.**
 
-İlk parametrik 3D hacim çalışması 30 × 22 mm PCB'yi kullanıyor; yeni 35 × 28 mm
-kartla tekrar doğrulanmadı. 250 mAh örnek pille 38 × 30 × 14 mm
-gövde hedefi; varsayımsal temas çıkıntısıyla toplam yükseklik 14.6 mm. Antenler,
-nabız başlığı ve diğer devrelerin büyük bölümü ayrılmış hacimlerdir; gerçek
-parçaların ve RF tasarımının bu gövdeye sığdığı henüz doğrulanmadı.
+The [order-readiness review](docs/order-readiness-0.3.4.md) found no open ground
+connections across 78 GND pads. However, 52 of 61 non-GND vias fall outside the
+historical 2 mm return-via screen, and the second inner layer carries signals.
+Power, RF, SIM, BOM and functional-delivery work remain open. **Do not order it as
+a finished, working PCBA.**
 
-Pil kapasitesi, şarj aralığı, konum güncelleme sıklığı, kutu ve antenler henüz
-seçilmedi. Kart ölçüsü bu bilgilerden sonra sabitlenecek. Önceki maliyet
-aralıkları üretim teklifi değildi; nabız donanımını içermiyordu.
+## Source revisions
 
-## Dosyalar
+- Validated PCB DFM baseline: `experiments/35x28-clearance-r034/hardware/`.
+- Active nano-SIM work: `experiments/paul-nanosim-r04/hardware/`.
+- Legacy 30 × 22 mm / 0.2.1 source: `hardware/`, preserved with its original ZIPs.
 
-- `experiments/35x28-clearance-r034/hardware/collar-tracker.kicad_pro`: güncel 35 × 28 mm deneme projesi.
-- `experiments/35x28-clearance-r034/hardware/collar-tracker.kicad_pcb`: yerel ve JLC PCB DFM kontrolleri geçen kaynak.
-- `scripts/finalize_clearance034.py`: kaynak/yerel test/JLC raporu/ZIP bağlarını doğrular; test edilen baytları teslim eder.
-- `hardware/collar-tracker.kicad_pro`: KiCad projesi.
-- `hardware/collar-tracker.kicad_pcb`: native KiCad PCB.
-- `scripts/build_pcb.py`: gerçek XML netlistten PCB üretimi.
-- `scripts/import_route.py`: yerel Freerouting SES içe aktarımı ve dolgu.
-- `scripts/export_dfm.py`: DRC kontrolüyle Gerber/Excellon ZIP üretimi.
-- `previews/collar-tracker-schematic.pdf`: açıp yakınlaştırılabilen şema önizlemesi.
-- `hardware/collar-tracker.kicad_sch`: beş bölümlü tek A2 şema.
-- `hardware/bom.csv`: taslak parça listesi; açık seçimler ayrıca belirtilir.
-- `docs/decisions.md`: mevcut varsayımlar ve açık tasarım kararları.
-- `docs/heart-rate.md`: köpeklerde nabız ölçümü için araştırma ve doğrulama kapsamı.
-- `previews/compact-250-review.png`: ölçülü 3D yerleşim özeti.
-- `mechanical/packing-study.scad`: düzenlenebilir OpenSCAD hacim çalışması.
-- `mechanical/compact-250-sizing-dummy.stl`: yalnız boyut denemesi için katı maket.
-- `mechanical/README.md`: mekanik varsayımlar, kontroller ve dosyaların kullanımı.
-- `references/manifest.json`: indirilen üretici belgelerinin kaynakları ve SHA-256 değerleri.
-- `evidence/`: CAD kontrolleri ve pin bağlantısı incelemesi.
+The second actual JLC report for 0.2.1 had 2 Danger / 306 Warning; those counts do
+not describe either newer board. Earlier findings are in
+[the DFM review](docs/jlc-dfm-review.md); electrical/RF limits are in
+[PCB DFM notes](docs/pcb-dfm.md).
 
-## Kontrol sonucu
+The first mechanical study uses a 30 × 22 mm PCB and has not been revalidated for
+35 × 28 mm. Its 250 mAh example targets a 38 × 30 × 14 mm enclosure, or 14.6 mm
+including an assumed contact protrusion. Antennas, the heart-rate head and much of
+the electronics are reserved volumes, not fitted production components.
 
-KiCad 10.0.7 varsayılan ERC profilinde sıfır ihlal; dışarı aktarılan gerçek netlist
-üzerinde 18 bağlantı/bütünlük kontrolü geçti. ERC'nin varsayılan olarak kapalı
-dört kontrolü raporda açıkça listeleniyor. Bu sonuç RF, güç sıralaması, pil veya
-nabız ölçümünün doğrulandığı anlamına gelmez. Ayrıntı: `docs/verification.md`.
+Battery capacity, charge interval, position-update rate, enclosure and antennas
+remain open. Earlier cost ranges were estimates, not supplier quotes, and did not
+include heart-rate hardware.
 
-## Araçlar
+## Files
 
-KiCad 10.0.7 çalışma alanında, GOKSSD üzerinde tutuluyor. Sistem uygulama klasörü
-değiştirilmedi. `scripts/kicad-cli` proje için yerel komut satırı girişidir.
+| Path | Purpose |
+|---|---|
+| `experiments/35x28-clearance-r034/hardware/` | Native source that passed local and JLC PCB DFM checks |
+| `experiments/paul-nanosim-r04/` | Unfinished nano-SIM revision, routing and evidence |
+| `scripts/finalize_clearance034.py` | Binds source, local checks, JLC reports and the exact delivered ZIP |
+| `hardware/` | Legacy KiCad project, PCB, five-section A2 schematic and draft BOM |
+| `scripts/build_pcb.py` | Builds the legacy PCB from the real XML netlist |
+| `scripts/import_route.py` | Imports the legacy Freerouting SES and fills zones |
+| `scripts/export_dfm.py` | Exports the legacy Gerber/Excellon ZIP after DRC |
+| `previews/collar-tracker-schematic.pdf` | Zoomable schematic preview |
+| `docs/decisions.md` | Decisions, assumptions and open selections |
+| `docs/heart-rate.md` | Research and validation scope for canine heart-rate sensing |
+| `previews/compact-250-review.png` | Dimensioned mechanical study |
+| `mechanical/packing-study.scad` | Editable OpenSCAD volume study |
+| `mechanical/compact-250-sizing-dummy.stl` | Solid dummy for size trials only |
+| `mechanical/README.md` | Mechanical assumptions, checks and reproduction |
+| `references/manifest.json` | Manufacturer document sources and SHA-256 hashes |
+| `evidence/` | Selected CAD checks and pin-connectivity evidence |
 
-Şemayı yeniden üretmek için `scripts/build_draft.py`, doğrulamak için
-`scripts/verify_draft.py` kullanılır. Yeniden üretim mevcut şema dosyasının üzerine
-yazar; elle KiCad düzenlemesi yaptıktan sonra bu komutu çalıştırma. Üretici
-footprint kopyasının kaynağı, commit'i ve lisansı `hardware/NORDIC_LIBRARY_NOTICE.txt`
-içindedir. Scriptin tekrar üretimi için bu kaynağın `references/nordic-lib-kicad`
-altında bulunması gerekir; hazır KiCad şeması bağımsız açılabilir.
+## Schematic checks and tools
+
+The initial schematic passed 18 checks against its exported netlist and had zero
+violations under KiCad 10.0.7's default ERC profile. Four checks ignored by default
+are listed in [the verification report](docs/verification.md). This does not
+validate RF, power sequencing, battery behavior or heart-rate measurement.
+
+KiCad 10.0.7 is installed in the workspace on GOKSSD; the system Applications
+folder was not changed. `scripts/kicad-cli` and `scripts/kicad-python` are local
+entry points. See [RESUME](docs/RESUME.md) for environment overrides.
+
+`scripts/build_draft.py` regenerates the legacy schematic;
+`scripts/verify_draft.py` checks it. Regeneration overwrites the schematic, so do
+not run it over manual edits. The Nordic footprint source, commit and license are
+recorded in `hardware/NORDIC_LIBRARY_NOTICE.txt`. Regeneration needs that source
+under `references/nordic-lib-kicad`; the saved native schematic opens independently.

@@ -1,77 +1,72 @@
-# 35 × 28 mm deneme — 0.3 — 2026-10-24
+# 35 × 28 mm trial — 0.3 — 2026-10-24
 
-35 × 28 mm kart, yerel bağlantı ve geometri kontrollerini geçti. Bu sonuçla
-40 × 30 mm'ye çıkmak için henüz gerekçe yok. Yeni JLCDFM raporu
-(2026-10-24 21:45:56) 0 Danger / 67 Warning gösteriyor. SMT montaj analizi
-seçili değil; devre/RF/assembly incelemeleri hâlâ açık.
+The 35 × 28 mm board passed local connectivity and geometry checks. These results
+did not justify growing to 40 × 30 mm yet. The actual JLCDFM report dated
+2026-10-24 21:45:56 returned 0 Danger / 67 Warning. SMT analysis was disabled;
+electrical/RF/assembly review remained open.
 
-| Kontrol | Sonuç |
+| Check | Result |
 |---|---:|
-| Gerber dış hat ölçüsü | 35 × 28 mm |
-| Katman / footprint | 4 / 53 |
-| KiCad hata / açık bağlantı / şema uyuşmazlığı | 0 / 0 / 0 |
-| Kütüphane footprint farkı uyarısı | 43 |
-| Minimum çizilmiş yol genişliği | 0.20 mm |
-| GND dolgusu minimum genişlik ayarı | 0.20 mm |
-| Via bakır / delik / nominal halka | 0.60 / 0.20 / 0.20 mm |
-| Gerçek Excellon kaplı delik sayısı | 77 |
-| Pad dış dikdörtgeni → via bakırı, bütün netler | ≥ 0.20 mm |
-| Pad dış dikdörtgeni → farklı net yolu | ≥ 0.20 mm |
-| Via → via, bütün netler | ≥ 0.2026 mm |
-| Maskede 0.10 mm altı ayrı açıklık arası köprü | 0 |
-| Baskı → pad/maske / delik minimumu | 0.229 / 0.316 mm |
-| Gerber katmanı / ZIP dosyası | 11 / 19 |
-| Yeni JLCDFM PCB analizi | 0 Danger / 67 Warning |
-| SMT montaj analizi / fiziksel test | Yapılmadı / yapılmadı |
+| Actual Gerber outline | 35 × 28 mm |
+| Layers / footprints | 4 / 53 |
+| KiCad errors / opens / parity issues | 0 / 0 / 0 |
+| Footprint-library warnings | 43 |
+| Minimum drawn track width | 0.20 mm |
+| Ground-fill minimum width setting | 0.20 mm |
+| Via copper / drill / nominal ring | 0.60 / 0.20 / 0.20 mm |
+| Actual Excellon plated-hole count | 77 |
+| Pad bounding box → via copper, all nets | ≥0.20 mm |
+| Pad bounding box → foreign-net trace | ≥0.20 mm |
+| Via → via, all nets | ≥0.2026 mm |
+| Separate mask bridges below 0.10 mm | 0 |
+| Minimum silk → pad/mask / hole | 0.229 / 0.316 mm |
+| Gerber layers / ZIP files | 11 / 19 |
+| Actual JLC PCB DFM | 0 Danger / 67 Warning |
+| SMT analysis / physical test | Not performed / not performed |
 
-30 × 22 mm referansın alanı 660 mm², denemenin alanı 980 mm² (+%48.5).
-Önceki minimum çizilmiş yol 0.10 mm, via halkası 0.125 mm idi. Üretici
-raporundaki iki pad-spacing Danger, yeni üretici raporunda sıfıra indi.
-Pad köşelerini de kapsayan yerel kontrol üreticinin özel algoritmasının
-kopyası değildir; bu kapanışın kanıtı kullanıcının yeni JLCDFM raporudur.
-Kalan beş uyarı kategorisi ve bağımsız Gerber incelemesi
-`docs/jlc-dfm-review.md` içinde. 0.3 ZIP'in içindeki NOT RUN notu paketleme
-anına aittir; teslim edilmiş ZIP değiştirilmedi.
+Area increased from 660 mm² (30 × 22 mm) to 980 mm², +48.5%. Previous minimum
+track width was 0.10 mm and via ring 0.125 mm. Both supplier pad-spacing Danger
+findings fell to zero in the new report. The local pad-corner check is not a copy
+of JLC's algorithm; the actual new report proves their closure. Remaining categories
+and independent Gerber review are in [DFM reports](jlc-dfm-review.md).
+The ZIP's NOT RUN note describes packaging time; the delivered ZIP was not altered.
 
-İki iç katmanı da GND'ye ayıran ilk deneme tüm bağlantıları kapatamadı.
-Geçen adayda In1.Cu üzerinde sinyal yolu yok; In2.Cu üzerinde 116 sinyal/güç
-segmenti ve GND dolgusu var. Toplam 792 yol segmenti. RF yollarının 50 Ω,
-anten/geri dönüş yolu veya elektromanyetik performans doğrulaması yapılmadı.
+The first attempt with both inner layers dedicated to GND did not close every net.
+The passing candidate has no signal traces on In1; In2 carries 116 signal/power
+segments plus GND fill. Total: 792 segments. RF impedance, antennas, return paths
+and electromagnetic performance were not qualified.
 
-Yerleşim ve bütün yollar yeniden çalışıldı. Şarj bölgesindeki bazı GND
-yolları açılarak dolgu ve ek GND vialarıyla bağlantı yeniden kuruldu. Son
-kontrol bütün netlerin bağlı olduğunu doğruluyor. Yeni pad bakır şekilleri,
-pad/net eşleşmeleri ve maskeler, konum değişiklikleri dışında 0.2.1 ile aynı.
-Router'a yalnız geçici, daha muhafazakâr dikdörtgen pad engelleri verildi;
-native kartta fiziksel padler bu amaçla değiştirilmedi.
+Placement and routing were rebuilt. Some charger-area GND tracks were removed and
+reconnected through fill and additional ground vias. Final checks show all nets
+connected. Copper-pad shapes, net mapping and masks match 0.2.1 apart from placement.
+The router used temporary conservative rectangular obstacles; native production
+pads were not changed for that purpose.
 
-Sabit paketlerin kendi pad aralıklarında 12 çift 0.15–0.18 mm aralığında.
-`collar-tracker.kicad_dru` yalnız **aynı footprint'in iki padine** 0.15 mm
-kuralını uygular; yollar/vialar 0.20 mm kontrolüne tabi. Genel DRC exclusion
-veya severity düşürme yok. 43 uyarı, 0.2.1'den gelen yerel footprint baskı/maske
-düzenlemeleridir. U.FL ortak maske açıklıkları ve nRF footprint/pin-1/stencil
-konuları hâlâ assembly incelemesi ister; bütün JLC uyarılarının biteceği iddia edilmez.
+Twelve fixed-package pad pairs have 0.15–0.18 mm gaps. `collar-tracker.kicad_dru`
+applies 0.15 mm only to **two pads in the same footprint**; tracks/vias retain
+0.20 mm checks. No general exclusions or severity reductions. The 43 warnings
+come from inherited 0.2.1 footprint silk/mask edits. Shared U.FL openings and
+nRF footprint/pin-1/stencil still require assembly review. No claim that every
+JLC warning would disappear was made.
 
-Kaynak: [`experiments/35x28-in2/hardware/`](../experiments/35x28-in2/hardware/).
-Son [DRC](../experiments/35x28-in2/evidence/final-drc.json),
-[bağımsız geometri ölçümleri](../experiments/35x28-in2/evidence/geometry-checks.json),
-[ZIP/hash manifesti](../experiments/35x28-in2/evidence/delivery.json),
-[üst](../experiments/35x28-in2/previews/final-top.png) ve
-[alt](../experiments/35x28-in2/previews/final-bottom.png) bakır/baskı görüntüleri.
-İki görünüm de incelendi. ZIP CRC'si, tüm iç dosya hashleri, PCB kaynak hash'i,
-Gerber dış hat koordinatları ve Excellon delik sayısı doğrulandı.
+Source: [`experiments/35x28-in2/hardware/`](../experiments/35x28-in2/hardware/).
+[Final DRC](../experiments/35x28-in2/evidence/final-drc.json),
+[independent geometry](../experiments/35x28-in2/evidence/geometry-checks.json),
+[ZIP/hash manifest](../experiments/35x28-in2/evidence/delivery.json),
+[top](../experiments/35x28-in2/previews/final-top.png) and
+[bottom](../experiments/35x28-in2/previews/final-bottom.png) previews.
+Both sides were inspected. ZIP CRC, internal hashes, PCB hash, outline coordinates
+and Excellon hole count were checked.
 
-Yeni paket: [`collar-tracker-0.3-35x28-dfm.zip`](../release/collar-tracker-0.3-35x28-dfm.zip).
-Tekrar paketleme: `python3 scripts/export_size_trial.py`. Script güncel native
-DRC'yi çalıştırır, geometri raporunun kaynak hash'ini denetler; hata/açık/parity
-veya geometri başarısızlığında durur. PCB değiştiyse önce `dfm_geometry.py` ve
-`check_size_trial.py experiments/35x28-in2` yeniden çalıştırılmalıdır.
-`build_size_trial.py --inner2-signal` yalnız başlangıç yerleşimini üretir;
-tamamlanmış aday üzerinde tekrar çalıştırmak yerel rota tamamlamalarını siler.
+Package: [`collar-tracker-0.3-35x28-dfm.zip`](../release/collar-tracker-0.3-35x28-dfm.zip).
+Re-export: `python3 scripts/export_size_trial.py`. It runs fresh native DRC and
+checks the geometry report's source hash, rejecting errors/opens/parity or failed
+geometry. After PCB changes, first rerun `dfm_geometry.py` and
+`check_size_trial.py experiments/35x28-in2`. `build_size_trial.py --inner2-signal`
+only creates initial placement; rerunning it destroys later routing completions.
 
-Bu paket fiziksel veya enerjili prototip testi değildir. Güç/UVLO/VDD_GPIO,
-pil/NTC/ESD, gerçek eSIM/operatör, nabız donanımı, anten/stackup ve assembly
-açıkları sürüyor. J6 harici SIM arayüzü, J5 dijital genişleme arayüzüdür.
-Önceki 38 × 30 mm kutu maketi bu PCB için tekrar doğrulanmadı. Sipariş veya
-asistan tarafından üretici yüklemesi yapılmadı; önceki 0.2/0.2.1 ZIP'ler ve
-`hardware/` altındaki 30 × 22 mm kaynak korundu.
+This is not a physical/powered prototype test. Power/UVLO/VDD_GPIO, battery/NTC/ESD,
+physical SIM/operator, heart-rate hardware, antennas/stackup and assembly remain
+open. J6 is an external SIM interface; J5 is digital expansion. The old 38 × 30 mm
+enclosure was not revalidated. At this stage no order or assistant supplier upload
+occurred. Earlier 0.2/0.2.1 ZIPs and legacy `hardware/` source were preserved.
