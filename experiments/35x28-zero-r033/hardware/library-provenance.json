@@ -1,0 +1,378 @@
+{
+  "baseline_pcb": "/Users/gok/codex/projects/collar-tracker/experiments/35x28-mask-r032/hardware/collar-tracker.kicad_pcb",
+  "baseline_sha256": "4dbc5ce1fe08628c8239f155c70aed1a46200ec83cbfd1dc0b765716c79e0b18",
+  "purpose": "Explicit local definitions for project-specific pad/mask/paste/graphics. No DRC rule suppression; no assertion of manufacturing or circuit qualification.",
+  "footprints": [
+    {
+      "ref": "R6",
+      "original_id": "Resistor_SMD:R_0402_1005Metric",
+      "project_id": "Collar033:R6_R_0402_1005Metric",
+      "library_file": "R6_R_0402_1005Metric.kicad_mod",
+      "sha256": "8d8f912aab4252a9260ff47b0302ca413dd9db20da87a89116464c2baaabd6e3"
+    },
+    {
+      "ref": "C1",
+      "original_id": "Capacitor_SMD:C_0201_0603Metric",
+      "project_id": "Collar033:C1_C_0201_0603Metric",
+      "library_file": "C1_C_0201_0603Metric.kicad_mod",
+      "sha256": "5a93da6ddd1315858942e84cbbbaf2c0e0094c287030b9bd90377af49773349d"
+    },
+    {
+      "ref": "C7",
+      "original_id": "Capacitor_SMD:C_0402_1005Metric",
+      "project_id": "Collar033:C7_C_0402_1005Metric",
+      "library_file": "C7_C_0402_1005Metric.kicad_mod",
+      "sha256": "fd599f8774b7f15be719dedea4612294255c2686175bd1006b330e8bc0011649"
+    },
+    {
+      "ref": "C13",
+      "original_id": "Capacitor_SMD:C_0402_1005Metric",
+      "project_id": "Collar033:C13_C_0402_1005Metric",
+      "library_file": "C13_C_0402_1005Metric.kicad_mod",
+      "sha256": "6fbd3c76222a49f1ad44a52b0bc61b758a2fb1c017b2485984349ec8fe96fc26"
+    },
+    {
+      "ref": "J2",
+      "original_id": "Connector_Coaxial:U.FL_Hirose_U.FL-R-SMT-1_Vertical",
+      "project_id": "Collar033:J2_U.FL_Hirose_U.FL-R-SMT-1_Vertical",
+      "library_file": "J2_U.FL_Hirose_U.FL-R-SMT-1_Vertical.kicad_mod",
+      "sha256": "ae711fbb9474ed0070dd60464dcd7768e598307428a5047a452fe9e63fc351d0"
+    },
+    {
+      "ref": "C20",
+      "original_id": "Capacitor_SMD:C_0402_1005Metric",
+      "project_id": "Collar033:C20_C_0402_1005Metric",
+      "library_file": "C20_C_0402_1005Metric.kicad_mod",
+      "sha256": "12cd63a9052b1ffeb0c470cd65f7f0a86c81aed19c596afd0d8fe6c378284ecd"
+    },
+    {
+      "ref": "FB1",
+      "original_id": "Inductor_SMD:L_0603_1608Metric",
+      "project_id": "Collar033:FB1_L_0603_1608Metric",
+      "library_file": "FB1_L_0603_1608Metric.kicad_mod",
+      "sha256": "a377da59e5f37721561f0ab4bf964530b83c53988c851c4c7fcda1efafab5aa1"
+    },
+    {
+      "ref": "C11",
+      "original_id": "Capacitor_SMD:C_0402_1005Metric",
+      "project_id": "Collar033:C11_C_0402_1005Metric",
+      "library_file": "C11_C_0402_1005Metric.kicad_mod",
+      "sha256": "fadbeb07aae01db89c45b10843d75bdef84b876bc1587eb712c32f4c734bcedd"
+    },
+    {
+      "ref": "U2",
+      "original_id": "Collar:SKY65943_DK10171",
+      "project_id": "Collar033:U2_SKY65943_DK10171",
+      "library_file": "U2_SKY65943_DK10171.kicad_mod",
+      "sha256": "5f42a2609f64c41bfee3c4467f8e130622b85aab4bdaebb0a7f4273a2f6909cc"
+    },
+    {
+      "ref": "R13",
+      "original_id": "Resistor_SMD:R_0402_1005Metric",
+      "project_id": "Collar033:R13_R_0402_1005Metric",
+      "library_file": "R13_R_0402_1005Metric.kicad_mod",
+      "sha256": "677c14a17c3c2855c1e4eb0360bc9c944e4906c34ba346ec06e063309214c3d4"
+    },
+    {
+      "ref": "R5",
+      "original_id": "Resistor_SMD:R_0402_1005Metric",
+      "project_id": "Collar033:R5_R_0402_1005Metric",
+      "library_file": "R5_R_0402_1005Metric.kicad_mod",
+      "sha256": "e51bc07c09859ff19583c9e9b5f718597a81b57066733403ba480ac9a67c5485"
+    },
+    {
+      "ref": "C18",
+      "original_id": "Capacitor_SMD:C_0603_1608Metric",
+      "project_id": "Collar033:C18_C_0603_1608Metric",
+      "library_file": "C18_C_0603_1608Metric.kicad_mod",
+      "sha256": "49d12e77c4f8dbf0d319f4f80b61c75e2293111ae13ed681d0db027f7529fac1"
+    },
+    {
+      "ref": "U4",
+      "original_id": "Package_TO_SOT_SMD:SOT-23-5",
+      "project_id": "Collar033:U4_SOT-23-5",
+      "library_file": "U4_SOT-23-5.kicad_mod",
+      "sha256": "1bc5cf338603bbe23925db8cd7af78a76e97a27c0bf20c36172b1a05c1a619ce"
+    },
+    {
+      "ref": "U5",
+      "original_id": "Package_LGA:LGA-12_2x2mm_P0.5mm",
+      "project_id": "Collar033:U5_LGA-12_2x2mm_P0.5mm",
+      "library_file": "U5_LGA-12_2x2mm_P0.5mm.kicad_mod",
+      "sha256": "596d106cfcf31e103b2bb6a8d8735b3b59a95834bf96307bbfbed25d49800764"
+    },
+    {
+      "ref": "C5",
+      "original_id": "Capacitor_SMD:C_0201_0603Metric",
+      "project_id": "Collar033:C5_C_0201_0603Metric",
+      "library_file": "C5_C_0201_0603Metric.kicad_mod",
+      "sha256": "ff873857c74558c577a6fde378acc1c16c206f646042d475b47088186bb8699c"
+    },
+    {
+      "ref": "R3",
+      "original_id": "Resistor_SMD:R_0402_1005Metric",
+      "project_id": "Collar033:R3_R_0402_1005Metric",
+      "library_file": "R3_R_0402_1005Metric.kicad_mod",
+      "sha256": "34f964618ca61199b5994e5c6a83d224e8ea9c2b992c369a6ac4e5477fc7de64"
+    },
+    {
+      "ref": "C14",
+      "original_id": "Capacitor_SMD:C_0402_1005Metric",
+      "project_id": "Collar033:C14_C_0402_1005Metric",
+      "library_file": "C14_C_0402_1005Metric.kicad_mod",
+      "sha256": "b929ed0f8e8c7288290ea7d6d4acabfbfa38fd37d1d3c771f3adbe0db0f2cee8"
+    },
+    {
+      "ref": "C2",
+      "original_id": "Capacitor_SMD:C_0201_0603Metric",
+      "project_id": "Collar033:C2_C_0201_0603Metric",
+      "library_file": "C2_C_0201_0603Metric.kicad_mod",
+      "sha256": "633bee93edf276a8565b95acbcbe3b5ad93ca517f127b330638d426cbcabb978"
+    },
+    {
+      "ref": "C3",
+      "original_id": "Capacitor_SMD:C_0805_2012Metric",
+      "project_id": "Collar033:C3_C_0805_2012Metric",
+      "library_file": "C3_C_0805_2012Metric.kicad_mod",
+      "sha256": "c1132c1d36cd983559d1a065af0fc9578352e5e18a360dee2c2bb3b451da827b"
+    },
+    {
+      "ref": "C23",
+      "original_id": "Capacitor_SMD:C_0402_1005Metric",
+      "project_id": "Collar033:C23_C_0402_1005Metric",
+      "library_file": "C23_C_0402_1005Metric.kicad_mod",
+      "sha256": "8fc501bed698d888b503ff7b4b97433241e965d72981586c129caf0c38dc4f7c"
+    },
+    {
+      "ref": "J1",
+      "original_id": "Connector_Coaxial:U.FL_Hirose_U.FL-R-SMT-1_Vertical",
+      "project_id": "Collar033:J1_U.FL_Hirose_U.FL-R-SMT-1_Vertical",
+      "library_file": "J1_U.FL_Hirose_U.FL-R-SMT-1_Vertical.kicad_mod",
+      "sha256": "84f6e767df0b51970ece7fa87da763025fe827e9905bd42a3f84ca6ccac4fc9c"
+    },
+    {
+      "ref": "C16",
+      "original_id": "Capacitor_SMD:C_0402_1005Metric",
+      "project_id": "Collar033:C16_C_0402_1005Metric",
+      "library_file": "C16_C_0402_1005Metric.kicad_mod",
+      "sha256": "805ef855f651abaacd7a306ca95043d077a946d456cce27d41c6920b63231f27"
+    },
+    {
+      "ref": "C21",
+      "original_id": "Capacitor_SMD:C_0402_1005Metric",
+      "project_id": "Collar033:C21_C_0402_1005Metric",
+      "library_file": "C21_C_0402_1005Metric.kicad_mod",
+      "sha256": "f2fcaada8a23d3162edbecb6f85f5712a0f4c1ccdcaea802fec78d28594925a9"
+    },
+    {
+      "ref": "R12",
+      "original_id": "Resistor_SMD:R_0402_1005Metric",
+      "project_id": "Collar033:R12_R_0402_1005Metric",
+      "library_file": "R12_R_0402_1005Metric.kicad_mod",
+      "sha256": "4f6bf59cc9056c520d5fa3bb185763673a82cbd7cb7a4723762ac82f1377f721"
+    },
+    {
+      "ref": "U1",
+      "original_id": "Collar:LGA_9151_12.1x11.1mm",
+      "project_id": "Collar033:U1_LGA_9151_12.1x11.1mm",
+      "library_file": "U1_LGA_9151_12.1x11.1mm.kicad_mod",
+      "sha256": "540108b36afd1a1cec9b1c1b604b75ce91ea3928f6d7897e584fff63756105c9"
+    },
+    {
+      "ref": "C24",
+      "original_id": "Capacitor_SMD:C_0402_1005Metric",
+      "project_id": "Collar033:C24_C_0402_1005Metric",
+      "library_file": "C24_C_0402_1005Metric.kicad_mod",
+      "sha256": "0db85979f9af02963749aeb82873f41a103933d09272faee146e733b4b3a7a59"
+    },
+    {
+      "ref": "C12",
+      "original_id": "Capacitor_SMD:C_0402_1005Metric",
+      "project_id": "Collar033:C12_C_0402_1005Metric",
+      "library_file": "C12_C_0402_1005Metric.kicad_mod",
+      "sha256": "406c0d4c4519e8af7eb4190ffdb41ea025dd19040d9dd4204d089456a9be21cc"
+    },
+    {
+      "ref": "R7",
+      "original_id": "Resistor_SMD:R_0402_1005Metric",
+      "project_id": "Collar033:R7_R_0402_1005Metric",
+      "library_file": "R7_R_0402_1005Metric.kicad_mod",
+      "sha256": "1c86b8c87cccc2370a01b9c74f70cebe63f3341742d76f5808b8329fcf4e4e69"
+    },
+    {
+      "ref": "R4",
+      "original_id": "Resistor_SMD:R_0402_1005Metric",
+      "project_id": "Collar033:R4_R_0402_1005Metric",
+      "library_file": "R4_R_0402_1005Metric.kicad_mod",
+      "sha256": "61f127c2a6bc8d45d29c6b414fea347c307ea1e299675ee0d403a6a13225f8e9"
+    },
+    {
+      "ref": "L1",
+      "original_id": "Inductor_SMD:L_0402_1005Metric",
+      "project_id": "Collar033:L1_L_0402_1005Metric",
+      "library_file": "L1_L_0402_1005Metric.kicad_mod",
+      "sha256": "9a38f258364ee9981af9ef379fdf583b7046ff8e743441b105c28522cf1c3491"
+    },
+    {
+      "ref": "C19",
+      "original_id": "Capacitor_SMD:C_0402_1005Metric",
+      "project_id": "Collar033:C19_C_0402_1005Metric",
+      "library_file": "C19_C_0402_1005Metric.kicad_mod",
+      "sha256": "50cff5c97d0cfacb77225322a4f444f98639da9acf57d40dd3542fbe60c757cc"
+    },
+    {
+      "ref": "J3",
+      "original_id": "Collar:Solder_1x02_P2.5mm",
+      "project_id": "Collar033:J3_Solder_1x02_P2.5mm",
+      "library_file": "J3_Solder_1x02_P2.5mm.kicad_mod",
+      "sha256": "47f9ce1994531f4d1a8721bcaea9c5e52bfe5f56db4f04758fc0a682d1bc55d6"
+    },
+    {
+      "ref": "C6",
+      "original_id": "Capacitor_SMD:C_0402_1005Metric",
+      "project_id": "Collar033:C6_C_0402_1005Metric",
+      "library_file": "C6_C_0402_1005Metric.kicad_mod",
+      "sha256": "45e6bca155436d22d9a6073fda2f1a47e7dec7d841984a35db524f516cb1ae5e"
+    },
+    {
+      "ref": "C15",
+      "original_id": "Capacitor_SMD:C_0402_1005Metric",
+      "project_id": "Collar033:C15_C_0402_1005Metric",
+      "library_file": "C15_C_0402_1005Metric.kicad_mod",
+      "sha256": "4c3871297c16cf718aa79809482005f8751f4f81d67133169913006b379efb2b"
+    },
+    {
+      "ref": "U3",
+      "original_id": "Package_DFN_QFN:Texas_DLH0010A_WSON-10-1EP_2.2x2mm_P0.4mm_EP0.9x1.5mm",
+      "project_id": "Collar033:U3_Texas_DLH0010A_WSON-10-1EP_2.2x2mm_P0.4mm_EP0.9x1.5mm",
+      "library_file": "U3_Texas_DLH0010A_WSON-10-1EP_2.2x2mm_P0.4mm_EP0.9x1.5mm.kicad_mod",
+      "sha256": "30a1457c764c5c4ff52f11fd9fd1cddb769ffd4d993a53c27e4312c2aac9f1a8"
+    },
+    {
+      "ref": "C22",
+      "original_id": "Capacitor_SMD:C_0402_1005Metric",
+      "project_id": "Collar033:C22_C_0402_1005Metric",
+      "library_file": "C22_C_0402_1005Metric.kicad_mod",
+      "sha256": "0cb9a775ff30c1047407acc43bfb42d391dcecc707e0cd06331094e590f61972"
+    },
+    {
+      "ref": "C17",
+      "original_id": "Capacitor_SMD:C_0402_1005Metric",
+      "project_id": "Collar033:C17_C_0402_1005Metric",
+      "library_file": "C17_C_0402_1005Metric.kicad_mod",
+      "sha256": "4d9aeaa2c0751b2322f56aea90f1a6ffd1e454600782de6dfd01b86dcccd2cbd"
+    },
+    {
+      "ref": "J7",
+      "original_id": "Collar:Contact_2x03_P1.27mm",
+      "project_id": "Collar033:J7_Contact_2x03_P1.27mm",
+      "library_file": "J7_Contact_2x03_P1.27mm.kicad_mod",
+      "sha256": "21124d9f5d75c56b9a190063248a19d8563aab3c1e8d81d77960a822d5e7e851"
+    },
+    {
+      "ref": "J5",
+      "original_id": "Collar:Contact_2x06_P1.27mm",
+      "project_id": "Collar033:J5_Contact_2x06_P1.27mm",
+      "library_file": "J5_Contact_2x06_P1.27mm.kicad_mod",
+      "sha256": "eecb569ce834ce34934b0ed30f303c70aa9b2a383965ab09ee83cbf7f5ade272"
+    },
+    {
+      "ref": "C4",
+      "original_id": "Capacitor_SMD:C_0603_1608Metric",
+      "project_id": "Collar033:C4_C_0603_1608Metric",
+      "library_file": "C4_C_0603_1608Metric.kicad_mod",
+      "sha256": "2eeebc5d3ee4dbe96bf95f306892810f95312e8fa8ea47dfa818955cc2dee6ff"
+    },
+    {
+      "ref": "J6",
+      "original_id": "Collar:Contact_1x05_P1.27mm",
+      "project_id": "Collar033:J6_Contact_1x05_P1.27mm",
+      "library_file": "J6_Contact_1x05_P1.27mm.kicad_mod",
+      "sha256": "d6997552b6a26052ed32436900101c23879b42d3035580b4d74e815ddbaeec45"
+    },
+    {
+      "ref": "R1",
+      "original_id": "Resistor_SMD:R_0402_1005Metric",
+      "project_id": "Collar033:R1_R_0402_1005Metric",
+      "library_file": "R1_R_0402_1005Metric.kicad_mod",
+      "sha256": "d9cf0aad6ae9fcf33d1ce4ec22001514a827d5637e76fcafc512c3c4a65c74ce"
+    },
+    {
+      "ref": "C8",
+      "original_id": "Capacitor_SMD:C_0201_0603Metric",
+      "project_id": "Collar033:C8_C_0201_0603Metric",
+      "library_file": "C8_C_0201_0603Metric.kicad_mod",
+      "sha256": "c19f0e4c5a778dafb079f92614ad4672c790fdcea16caa3be563bad9416fa91e"
+    },
+    {
+      "ref": "C9",
+      "original_id": "Capacitor_SMD:C_0402_1005Metric",
+      "project_id": "Collar033:C9_C_0402_1005Metric",
+      "library_file": "C9_C_0402_1005Metric.kicad_mod",
+      "sha256": "0a9d2b0c12a2be16c8fdcd79a5dd830940632168f564d273d381d3357161d7b7"
+    },
+    {
+      "ref": "J4",
+      "original_id": "Collar:Solder_1x03_P2.5mm",
+      "project_id": "Collar033:J4_Solder_1x03_P2.5mm",
+      "library_file": "J4_Solder_1x03_P2.5mm.kicad_mod",
+      "sha256": "1a3a1902d10431dfaa8a35d7922d5fd5504db279925698e0aadf836d91dd6f2f"
+    },
+    {
+      "ref": "R15",
+      "original_id": "Resistor_SMD:R_0402_1005Metric",
+      "project_id": "Collar033:R15_R_0402_1005Metric",
+      "library_file": "R15_R_0402_1005Metric.kicad_mod",
+      "sha256": "9a739088f6840e2d4d34aa57bd0f08b485bd2337008ff9a53bff597b6469d258"
+    },
+    {
+      "ref": "C10",
+      "original_id": "Capacitor_SMD:C_0402_1005Metric",
+      "project_id": "Collar033:C10_C_0402_1005Metric",
+      "library_file": "C10_C_0402_1005Metric.kicad_mod",
+      "sha256": "271d9a5eb9af42bca4f9a11fc273fe8bf489d5311ece17c9d1cada23b982208c"
+    },
+    {
+      "ref": "R2",
+      "original_id": "Resistor_SMD:R_0402_1005Metric",
+      "project_id": "Collar033:R2_R_0402_1005Metric",
+      "library_file": "R2_R_0402_1005Metric.kicad_mod",
+      "sha256": "c8bade3efe0a8c3911702739da2159b2c57f216b7b21a58103812701ab1d4892"
+    },
+    {
+      "ref": "R8",
+      "original_id": "Resistor_SMD:R_0402_1005Metric",
+      "project_id": "Collar033:R8_R_0402_1005Metric",
+      "library_file": "R8_R_0402_1005Metric.kicad_mod",
+      "sha256": "6e6954bc04cc7bb82b4c1def1905314bc262b824424dd631d7b25928dc63e12b"
+    },
+    {
+      "ref": "R10",
+      "original_id": "Resistor_SMD:R_0402_1005Metric",
+      "project_id": "Collar033:R10_R_0402_1005Metric",
+      "library_file": "R10_R_0402_1005Metric.kicad_mod",
+      "sha256": "2405239d6f4d79042c9559cade7816563e9bcd72c1d6bc0a9dd53eaf5c667759"
+    },
+    {
+      "ref": "R14",
+      "original_id": "Resistor_SMD:R_0402_1005Metric",
+      "project_id": "Collar033:R14_R_0402_1005Metric",
+      "library_file": "R14_R_0402_1005Metric.kicad_mod",
+      "sha256": "1b8e3fd15509cd7f7ffedbe705bdba1b55139603c4add8e6b23f0c561aca178e"
+    },
+    {
+      "ref": "R9",
+      "original_id": "Resistor_SMD:R_0402_1005Metric",
+      "project_id": "Collar033:R9_R_0402_1005Metric",
+      "library_file": "R9_R_0402_1005Metric.kicad_mod",
+      "sha256": "8a75b474cd5c003dfd03dd8fc5a7fe54d9af64984e4948a1b9c593c37960ad54"
+    },
+    {
+      "ref": "R11",
+      "original_id": "Resistor_SMD:R_0402_1005Metric",
+      "project_id": "Collar033:R11_R_0402_1005Metric",
+      "library_file": "R11_R_0402_1005Metric.kicad_mod",
+      "sha256": "9e0e841115d2efea4ff924c12f333751ce900ed5f225d8e5efd3f5fee4ccaf71"
+    }
+  ]
+}

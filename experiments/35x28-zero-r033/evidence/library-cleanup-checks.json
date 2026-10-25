@@ -1,0 +1,37 @@
+{
+  "status": "Native KiCad cleanup verified. Supplier DFM goal is still incomplete.",
+  "native_before": {
+    "errors": 0,
+    "warnings": 47,
+    "opens": 0,
+    "schematic_parity": 0
+  },
+  "native_after": {
+    "errors": 0,
+    "warnings": 0,
+    "opens": 0,
+    "schematic_parity": 0
+  },
+  "copper_mask_paste_routing_vias_zones_legends_unchanged": true,
+  "rule_files_severity_settings_exclusions_unchanged": true,
+  "schematic_only_footprint_links_changed": true,
+  "local_definitions": 53,
+  "all_11_gerber_layers_identical_except_creation_timestamp": [
+    "collar-tracker-F_Cu.gtl",
+    "collar-tracker-In1_Cu.g1",
+    "collar-tracker-In2_Cu.g2",
+    "collar-tracker-B_Cu.gbl",
+    "collar-tracker-F_Mask.gts",
+    "collar-tracker-B_Mask.gbs",
+    "collar-tracker-F_Paste.gtp",
+    "collar-tracker-B_Paste.gbp",
+    "collar-tracker-F_Silkscreen.gto",
+    "collar-tracker-B_Silkscreen.gbo",
+    "collar-tracker-Edge_Cuts.gm1"
+  ],
+  "source_pcb": "/Users/gok/codex/projects/collar-tracker/experiments/35x28-zero-r033/hardware/collar-tracker.kicad_pcb",
+  "pcb_sha256": "345544f51eec67767cb7154620392a062bba0ac8ea19051c3e0de5a2beee255b",
+  "supplier_upload_authorization": "Requested asynchronously; no answer yet. No user files uploaded.",
+  "supplier_status": "No new supplier result. Last actual user report is 0.3.1: 0 Danger/45 Warning.",
+  "release_status": "Working 0.3.3 source candidate only; current Gerber deliverable remains unchanged 0.3.2."
+}

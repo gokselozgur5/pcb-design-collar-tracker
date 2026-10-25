@@ -1,0 +1,24 @@
+{
+  "changed_pad_refs": [
+    "FB1",
+    "U2",
+    "U5"
+  ],
+  "changed_tracks": 4,
+  "sides": {
+    "F": {
+      "pads": 214,
+      "uncovered": [],
+      "minimum_mask_bridge_mm": 0.15499999999999758,
+      "mask_bridges_below_6mil": 0,
+      "pad_gaps_below_6mil": []
+    },
+    "B": {
+      "pads": 54,
+      "uncovered": [],
+      "minimum_mask_bridge_mm": 0.20000000000000018,
+      "mask_bridges_below_6mil": 0,
+      "pad_gaps_below_6mil": []
+    }
+  }
+}

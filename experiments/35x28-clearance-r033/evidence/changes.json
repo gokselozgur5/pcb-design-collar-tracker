@@ -1,0 +1,25 @@
+{
+  "base": "/Users/gok/codex/projects/collar-tracker/experiments/35x28-zero-r033/hardware/collar-tracker.kicad_pcb",
+  "base_sha256": "345544f51eec67767cb7154620392a062bba0ac8ea19051c3e0de5a2beee255b",
+  "actual_baseline_jlc_record": "637103970472071169",
+  "baseline_jlc_counts": {
+    "danger": 0,
+    "warning": 40
+  },
+  "changes": [
+    "U2: six small mask expansions 0.050 -> 0.025 mm; center mask 1.55 -> 1.50 mm wide. Copper and stencil preserved. Positive expansion and exposed copper checked; JLC LDI supports 1:1 openings.",
+    "U5: each land local size .375 x .350 -> .375 x .340 mm, with centers, orientation and 0.5 mm pitch preserved. Paste/mask follow copper. Area reduction 2.857%; nominal terminal .275 x .250 and maximum-size .315 x .290 still contained. Deviates by .010 mm from generic ST TN0018 width guidance; assembly validation remains required.",
+    "FB1: both mask openings expanded .025 mm; unchanged copper/paste.",
+    "U1.30: one GND connection widened .200 -> .300 mm, matching the pad width, to join the mask-adjacent GND sliver without adding a ground void.",
+    "J7.1: adjacent SWDIO three-segment route shifted left .0483 mm; 45 degree entry/exit maintained; unchanged width/nets.",
+    "Ground zones refilled; bottom revision label and title updated. No DRC rule/severity/exclusion changes."
+  ],
+  "track_ids": [
+    "19e21e05-364f-49a2-9bd5-88dab5ac95fb",
+    "2a41e191-ce91-4776-a096-68bf453ca307",
+    "c06176c3-2b57-4700-adf0-57914ad0949c",
+    "e7ded902-417a-4610-a607-50aa53cda7f9"
+  ],
+  "supplier_status": "PENDING",
+  "production_status": "DFM prototype; not qualified PCBA"
+}

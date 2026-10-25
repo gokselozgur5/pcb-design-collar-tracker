@@ -1,0 +1,19 @@
+{
+  "zip": "collar-tracker-0.3.3-35x28-dfm.zip",
+  "zip_sha256": "6fc0fa2a60f7820cf1ea0a2b06f517fcde13f5683420a5f289cc2b1dabe0f312",
+  "previous_snapshot": {
+    "record_id": "637105049294819330",
+    "danger": 0,
+    "warning": 0
+  },
+  "fresh_reproduction": {
+    "record_id": "637106713464623106",
+    "danger": 0,
+    "warning": 1,
+    "category": "Solder mask opening exposing trace",
+    "gap_mm": 0.0804189403610127,
+    "pin": "U1.71"
+  },
+  "status": "Superseded by the 0.3.4 physical ground-neck repair. Previous zero result was a single snapshot, not repeatable acceptance. Cause of the result discrepancy is not established.",
+  "evidence": "evidence/remaining-warning-r034 and evidence/zero-warning-r033/repro033-finalname"
+}

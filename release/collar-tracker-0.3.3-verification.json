@@ -1,0 +1,41 @@
+{
+  "pcb": "/Users/gok/codex/projects/collar-tracker/experiments/35x28-clearance-r033/hardware/collar-tracker.kicad_pcb",
+  "pcb_sha256": "ab78d20c04a6b872dec1dfaad2b50d3995f3112f852905cbfc1ee378c5b992ea",
+  "zip": "/Users/gok/codex/projects/collar-tracker/release/collar-tracker-0.3.3-35x28-dfm.zip",
+  "zip_sha256": "6fc0fa2a60f7820cf1ea0a2b06f517fcde13f5683420a5f289cc2b1dabe0f312",
+  "zip_bytes": 132683,
+  "files": 14,
+  "report": "/Users/gok/codex/projects/collar-tracker/release/collar-tracker-0.3.3-jlc-dfm-report.pdf",
+  "report_sha256": "a3f96c81398d970e23d1ec6450181dc85242d23f9e5ce1360047c0011ee8f3d7",
+  "jlc_url": "https://jlcdfm.com/viewer?pcbUploadFileId=637105049294819330",
+  "jlc_report_time": "2026-10-25 06:29:27 Europe/Istanbul",
+  "jlc_danger": 0,
+  "jlc_warning": 0,
+  "jlc_pcb_analyzed": true,
+  "jlc_smt_analyzed": false,
+  "native_errors": 0,
+  "native_warnings": 0,
+  "native_opens": 0,
+  "native_parity": 0,
+  "same_rules_sha256": "f1bebb3b2b5ac2ba0579f882fc0605d169c1d6a3a852a07beb8652b719e0a725",
+  "all_pads_exposed": 268,
+  "mask_bridge_minimum_mm": 0.155,
+  "board_mm": [
+    35,
+    28,
+    0.8
+  ],
+  "unchanged_drilled_holes": 77,
+  "exact_tested_zip_bytes_delivered": true,
+  "old_sources_releases_unchanged": true,
+  "jlc_green_counts": {
+    "lines": 100,
+    "pad2pad": 64,
+    "pth_ar": 100,
+    "line2line": 3,
+    "coverage": 60,
+    "bridge": 51,
+    "ssl_w": 12
+  },
+  "limitation": "PCB DFM only; U5 customized land and U2 mask process choices still need assembly qualification. BOM/power/RF/eSIM/firmware/fixture/enclosure remain open; not order-ready PCBA."
+}

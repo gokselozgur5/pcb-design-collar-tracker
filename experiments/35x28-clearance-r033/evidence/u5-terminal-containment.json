@@ -1,0 +1,53 @@
+{
+  "scope": "Maximum terminal size at nominal centers only; does not model package positional tolerance, placement/reflow or reliability. Customized land needs assembly validation.",
+  "items": [
+    {
+      "pin": "1",
+      "nominal_center_maximum_terminal_contained": true
+    },
+    {
+      "pin": "2",
+      "nominal_center_maximum_terminal_contained": true
+    },
+    {
+      "pin": "3",
+      "nominal_center_maximum_terminal_contained": true
+    },
+    {
+      "pin": "4",
+      "nominal_center_maximum_terminal_contained": true
+    },
+    {
+      "pin": "5",
+      "nominal_center_maximum_terminal_contained": true
+    },
+    {
+      "pin": "6",
+      "nominal_center_maximum_terminal_contained": true
+    },
+    {
+      "pin": "7",
+      "nominal_center_maximum_terminal_contained": true
+    },
+    {
+      "pin": "8",
+      "nominal_center_maximum_terminal_contained": true
+    },
+    {
+      "pin": "9",
+      "nominal_center_maximum_terminal_contained": true
+    },
+    {
+      "pin": "10",
+      "nominal_center_maximum_terminal_contained": true
+    },
+    {
+      "pin": "11",
+      "nominal_center_maximum_terminal_contained": true
+    },
+    {
+      "pin": "12",
+      "nominal_center_maximum_terminal_contained": true
+    }
+  ]
+}
