@@ -1,0 +1,30 @@
+{
+  "source_sha256": "2e9c0666d6561330a5ad5608c65ae7d49485f0731130f3652b0a99ce19004398",
+  "drc_file": "evidence/routed-5-drc.json",
+  "drc_sha256": "c3ccedc291aa67c9624b743c5c8dc6149b4aeb01781fa58c48220b8b55fdcfa1",
+  "footprints": 54,
+  "ground_pads": 81,
+  "ground_vias": 67,
+  "planes": [
+    {
+      "layer": "In1.Cu",
+      "net": "/GND",
+      "ground_via_centers_in_fill": 67
+    },
+    {
+      "layer": "In2.Cu",
+      "net": "/GND",
+      "ground_via_centers_in_fill": 67
+    }
+  ],
+  "inner_tracks": 0,
+  "native": {
+    "violations": 4,
+    "unconnected_items": 4,
+    "schematic_parity": 0
+  },
+  "violation_types": {
+    "via_dangling": 4
+  },
+  "scope": "Unfinished routing checkpoint; no JLC, assembly, power or RF acceptance."
+}

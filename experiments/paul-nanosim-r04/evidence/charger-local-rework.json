@@ -1,0 +1,18 @@
+{
+  "before_sha256": "e3be5847acc153015e30ff12c4b2ebabff3d641cde4890942037d2526835f79d",
+  "source_sha256": "2e9c0666d6561330a5ad5608c65ae7d49485f0731130f3652b0a99ce19004398",
+  "c17_ground_via_before": [
+    101.1,
+    122.2
+  ],
+  "c17_ground_via_after": [
+    103.2,
+    120.0
+  ],
+  "input_width_mm": 0.4,
+  "local_signal_transition_mm": [
+    101.1,
+    123.7
+  ],
+  "scope": "Local charger escape adjustment; fresh native DRC and routing required."
+}

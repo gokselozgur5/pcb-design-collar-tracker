@@ -1,0 +1,30 @@
+{
+  "before_sha256": "de9b0c5302e55ab152c727f900aa179d9c24c33a348b6e7e6c48ad9ed8b1afed",
+  "after_sha256": "4a3db5243a23be9818fdd2d8afb7676f86fbbfb5cb9da99976402e8711c128f2",
+  "reset_to_first_route_nets": [
+    "/BAT_NTC",
+    "/CHG_FAULT",
+    "/CHG_STAT",
+    "/ILIM_VSET",
+    "/ISET",
+    "/VBAT",
+    "/VIN_5V",
+    "/VSYS"
+  ],
+  "u3_4_ground_join": "1.1 mm local connection to adjacent exposed GND pad; original EP via retained",
+  "removed_ground_items": [
+    "0bd21115-3df0-4086-b8f8-1b8ec996a986",
+    "c5466f12-c180-4e97-af6e-23e7a4517341"
+  ],
+  "vin_via_from_mm": [
+    105.5137,
+    122.28
+  ],
+  "vin_via_to_mm": [
+    104.6,
+    121.5
+  ],
+  "reason": "Original ground/VIN via placement blocks the narrow U3 STAT pin escapes; repair local topology before routing trunks.",
+  "vin_pin_escape_mm": 0.7,
+  "vin_pin_escape_width_mm": 0.2
+}

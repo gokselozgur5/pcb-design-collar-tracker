@@ -1,0 +1,169 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-25T11:35:38",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "collar-tracker.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [/VSYS] of C18 on F.Cu",
+                    "pos": {
+                        "x": 100.925,
+                        "y": 120.8
+                    },
+                    "uuid": "09d82510-c74c-4c13-ac57-1818258e4947"
+                },
+                {
+                    "description": "Pad 1 [/VSYS] of U3 on F.Cu",
+                    "pos": {
+                        "x": 102.4,
+                        "y": 122.2
+                    },
+                    "uuid": "49faa3bb-f495-4fca-84d2-9893855e5402"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [/VSYS] of U3 on F.Cu",
+                    "pos": {
+                        "x": 102.4,
+                        "y": 122.2
+                    },
+                    "uuid": "49faa3bb-f495-4fca-84d2-9893855e5402"
+                },
+                {
+                    "description": "Track [/VSYS] on B.Cu, length 3.4768 mm",
+                    "pos": {
+                        "x": 103.0398,
+                        "y": 117.45
+                    },
+                    "uuid": "f58dcac7-520c-40a2-ad01-78713e711e2f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [/SPI_SCK] on F.Cu, length 0.5267 mm",
+                    "pos": {
+                        "x": 115.75,
+                        "y": 107.875
+                    },
+                    "uuid": "3c7e5981-71ca-4edb-80c2-c5c40373737b"
+                },
+                {
+                    "description": "Pad 7 [/SPI_SCK] of J5 on B.Cu",
+                    "pos": {
+                        "x": 125.635,
+                        "y": 125.635
+                    },
+                    "uuid": "b3ca7a24-16e6-4d93-b686-900c6b7280fa"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 9 [/CHG_STAT] of U3 on F.Cu",
+                    "pos": {
+                        "x": 104.6,
+                        "y": 122.6
+                    },
+                    "uuid": "33af378f-a5e7-490c-bad3-ab6f9f35ac01"
+                },
+                {
+                    "description": "Track [/CHG_STAT] on F.Cu, length 0.0335 mm",
+                    "pos": {
+                        "x": 111.7737,
+                        "y": 107.8513
+                    },
+                    "uuid": "bf3c29de-aab4-4a1b-b23d-c25296e8a284"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [/CHG_FAULT] of U3 on F.Cu",
+                    "pos": {
+                        "x": 102.4,
+                        "y": 123.0
+                    },
+                    "uuid": "aeb8c630-fd3c-48ca-a50d-fbf3ab4b8a0a"
+                },
+                {
+                    "description": "Track [/CHG_FAULT] on F.Cu, length 0.4583 mm",
+                    "pos": {
+                        "x": 111.25,
+                        "y": 107.4167
+                    },
+                    "uuid": "32f2b965-d6ba-4ffc-91ce-e56d43740bf5"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [/SPI_SCK] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 115.7775,
+                        "y": 106.7289
+                    },
+                    "uuid": "4c212b07-c724-47d3-adbf-706cd9a48ae4"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        }
+    ]
+}

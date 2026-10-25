@@ -1,0 +1,237 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-25T11:49:28",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "collar-tracker.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [/SPI_SCK] on F.Cu, length 0.5267 mm",
+                    "pos": {
+                        "x": 115.75,
+                        "y": 107.875
+                    },
+                    "uuid": "3c7e5981-71ca-4edb-80c2-c5c40373737b"
+                },
+                {
+                    "description": "Pad 7 [/SPI_SCK] of J5 on B.Cu",
+                    "pos": {
+                        "x": 125.635,
+                        "y": 125.635
+                    },
+                    "uuid": "b3ca7a24-16e6-4d93-b686-900c6b7280fa"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 9 [/CHG_STAT] of U3 on F.Cu",
+                    "pos": {
+                        "x": 104.6,
+                        "y": 122.6
+                    },
+                    "uuid": "33af378f-a5e7-490c-bad3-ab6f9f35ac01"
+                },
+                {
+                    "description": "Track [/CHG_STAT] on F.Cu, length 0.0335 mm",
+                    "pos": {
+                        "x": 111.7737,
+                        "y": 107.8513
+                    },
+                    "uuid": "e9a1f423-a293-45e6-9c55-853454338f59"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [/CHG_FAULT] of U3 on F.Cu",
+                    "pos": {
+                        "x": 102.4,
+                        "y": 123.0
+                    },
+                    "uuid": "aeb8c630-fd3c-48ca-a50d-fbf3ab4b8a0a"
+                },
+                {
+                    "description": "Track [/CHG_FAULT] on F.Cu, length 0.4583 mm",
+                    "pos": {
+                        "x": 111.25,
+                        "y": 107.4167
+                    },
+                    "uuid": "ab56c733-9056-4bc1-adaa-4a9e4f0b2f4e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [/VBAT] on B.Cu, length 1.4344 mm",
+                    "pos": {
+                        "x": 104.6517,
+                        "y": 125.1668
+                    },
+                    "uuid": "62818154-e921-45b1-8e7d-e46fa6518dd2"
+                },
+                {
+                    "description": "Pad 2 [/VBAT] of U3 on F.Cu",
+                    "pos": {
+                        "x": 102.4,
+                        "y": 122.6
+                    },
+                    "uuid": "7d7fc5ec-99c8-49f0-ac94-eeb273805170"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Items shorting two nets (nets /VIN_5V and /GND)",
+            "items": [
+                {
+                    "description": "Track [/VIN_5V] on B.Cu, length 0.4950 mm",
+                    "pos": {
+                        "x": 101.95,
+                        "y": 124.55
+                    },
+                    "uuid": "19d6218b-42e1-4e65-96fa-0aa03505ade6"
+                },
+                {
+                    "description": "Via [/GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 102.4,
+                        "y": 124.4
+                    },
+                    "uuid": "26d97272-f679-43be-b930-7faad25d7e1b"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets /GND and /VIN_5V)",
+            "items": [
+                {
+                    "description": "Via [/GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 102.4,
+                        "y": 124.4
+                    },
+                    "uuid": "26d97272-f679-43be-b930-7faad25d7e1b"
+                },
+                {
+                    "description": "Track [/VIN_5V] on B.Cu, length 2.2200 mm",
+                    "pos": {
+                        "x": 101.95,
+                        "y": 122.33
+                    },
+                    "uuid": "fab3d3c4-4ad8-4407-ae6a-2a326d234500"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [/SPI_SCK] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 115.7775,
+                        "y": 106.7289
+                    },
+                    "uuid": "4c212b07-c724-47d3-adbf-706cd9a48ae4"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [/CHG_FAULT] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 101.1,
+                        "y": 123.7
+                    },
+                    "uuid": "f7e4459b-e115-427e-936c-7b7b848a0c3a"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [/VBAT] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 100.75,
+                        "y": 122.8
+                    },
+                    "uuid": "6efccbeb-e898-4339-bcbd-bd8f67377c90"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [/BAT_NTC] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 109.7649,
+                        "y": 126.4892
+                    },
+                    "uuid": "bc1409c7-7a7e-44dd-b255-9859d5775174"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        }
+    ]
+}
