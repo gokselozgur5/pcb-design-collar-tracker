@@ -1,0 +1,362 @@
+{
+  "before_sha256": "0b22ca6af587c6ed5c014600103aeaa0dca3808544a285476941daaf8de304c8",
+  "source_sha256": "a204224b0ce00c2efbc0fc72f73e4afc025fcb66ee9c236aab8df125b89b884e",
+  "removed_groups": [
+    {
+      "net": "/I2C_SCL",
+      "ids": [
+        "73b3c37e-16fd-4b3e-8c6e-109b3138f036"
+      ]
+    },
+    {
+      "net": "/I2C_SCL",
+      "ids": [
+        "d8ed1986-7a94-4ecc-8090-893c59dbeb96",
+        "d3e3992d-127c-47c2-a3e5-5f06334198e6",
+        "77830888-dc46-463b-8f3d-fd5e1a77c886"
+      ]
+    },
+    {
+      "net": "/I2C_SCL",
+      "ids": [
+        "00939a72-e61a-4d75-a98c-ae129b987a55",
+        "f7014fbf-723e-4ee2-8828-bf453524fb96",
+        "2ee6db07-1d1e-493c-a5e8-fe5d910b2ce4",
+        "1bf93877-11cd-48e5-b7e7-abf5fed32f31",
+        "171bfe21-1046-4cb4-861e-2f1c3787c5e4",
+        "027ffc20-7c3d-4684-bcd3-fb0ca020c727",
+        "f53e1365-a0eb-4c8a-aefe-56ab52380a75",
+        "b309535c-535a-4435-a561-978b7ce84330",
+        "2141c5da-baf6-452d-a667-5f0a8d0613ad",
+        "aff83a06-0068-4fb4-849a-680bc32f0cf8",
+        "bcc6fc83-1e42-47f5-b381-061d27138d7e",
+        "5e19d5bd-fa53-41fe-bc04-0152a22efc12",
+        "05561eaa-4d2a-474c-b4ba-29618ee1382c",
+        "0f8b7769-9498-4090-8216-38406c6fed87"
+      ]
+    },
+    {
+      "net": "/I2C_SCL",
+      "ids": [
+        "0daee996-3363-4583-a823-899bb9175f50",
+        "8cb60e52-eab7-455f-94f5-9eb02226c0f6",
+        "da45529e-0d35-42c5-b735-7b4f0adf98b0",
+        "491771b1-22f1-480a-a0d9-97df1574fe3b"
+      ]
+    },
+    {
+      "net": "/I2C_SCL",
+      "ids": [
+        "3447b13e-2d3c-4943-a3b7-c3954ad87004",
+        "e36e0dc2-596f-4905-ae06-5edb6d8bd80d",
+        "843ade88-e97b-4816-83bb-dff0a08ea7a8",
+        "70fe466b-0ffe-4d08-a17c-13593e869e51",
+        "7635dc6d-c392-4705-ab03-79a71f22377e",
+        "7c5c0796-1fa6-4f77-9800-3d93be0fd057",
+        "52043e7b-1535-49a4-b860-06646207c389",
+        "db284778-1ca3-4a6f-8d4c-d506aa5dce00"
+      ]
+    },
+    {
+      "net": "/I2C_SCL",
+      "ids": [
+        "d7ccf42f-f2b5-4532-b5d3-4802a7559027",
+        "e1f90c3e-e255-49b4-af3b-f9e09aacb1be"
+      ]
+    },
+    {
+      "net": "/I2C_SDA",
+      "ids": [
+        "116cabe4-d323-4fad-9cb0-72a443b48bc8",
+        "8a5ded0f-3fae-4838-958a-95d426c446c5",
+        "a1d7051b-efa0-4177-a072-320bd2f09b7b",
+        "ae4a10bc-862f-43cd-8045-736dbb0b7561",
+        "4b007115-7ca0-4257-98b6-f82edc8517e5",
+        "db66af08-06c6-418b-a874-33d0793023c2",
+        "15d65e09-28ab-4f57-8d29-1cb44a525a9d"
+      ]
+    },
+    {
+      "net": "/SWDCLK",
+      "ids": [
+        "166a4b1e-da70-401c-8440-1ce42f91e3fd",
+        "51619058-3770-478f-86df-335951eac63b",
+        "5cab5ee9-c5cb-499a-947b-d3768434fcf7",
+        "44446999-7c06-4876-b3d3-1481cd45a896"
+      ]
+    },
+    {
+      "net": "/COEX0",
+      "ids": [
+        "62eeede3-b9e7-4197-81a5-351a907d9520",
+        "b9e91ba2-16dc-4c7e-ae92-5549f7e3d807",
+        "692f4bd6-268a-4f8e-b10b-1ef30016a761",
+        "fee416d0-142f-4cae-84f0-aa7245788baf"
+      ]
+    },
+    {
+      "net": "/HEALTH_INT",
+      "ids": [
+        "0395b653-aac9-4388-9683-efddac1c25ad",
+        "f1df81dd-5cb0-4470-b71f-e3a8dec55b53",
+        "4428a5f2-57db-4c87-b53b-359fc87a74ce",
+        "e95aaf86-79b2-499f-bdb1-18ced7161935"
+      ]
+    },
+    {
+      "net": "/HEALTH_INT",
+      "ids": [
+        "1d8796d7-69ad-4a4a-81c2-d592dc21a50c",
+        "e3517153-a72c-4a30-acf1-dfd1fb7ed528",
+        "cee02118-8e19-4a97-862c-cf4e7d6b7a6b",
+        "95af5d65-b67c-428c-b64e-851c0bb1f7c1",
+        "3953148a-b341-450f-94ff-e30395dc8d9d",
+        "322f8dc2-a9e9-4e75-9b94-82284fd0a0d4"
+      ]
+    },
+    {
+      "net": "/SPI_MOSI",
+      "ids": [
+        "36a4fa49-2635-4e07-b5e5-daa97b4d0ec0"
+      ]
+    },
+    {
+      "net": "/SPI_MOSI",
+      "ids": [
+        "592e482c-a6cd-47d7-bf2c-34f9f0205883",
+        "7bbb2cf3-f12a-434c-950b-31750f44b87a"
+      ]
+    },
+    {
+      "net": "/SPI_MOSI",
+      "ids": [
+        "2766a585-15d5-48a7-8f3c-63fb2c7b5d74",
+        "77a5398b-89bb-4046-b600-061d1ef23663",
+        "f80c4d16-f760-4b2e-bfcd-a6b3b0427a79",
+        "c1479721-dd5b-4684-bdf3-35b8e68fba2e",
+        "fd58185d-101f-4c24-8067-3b582a28f14b",
+        "b1957052-386e-4b82-8e6e-93c12f0c211c"
+      ]
+    },
+    {
+      "net": "/SPI_MISO",
+      "ids": [
+        "02bba0d0-6c03-4e14-999a-dd7c34a2c8e9",
+        "9394ac85-9b56-40b5-896d-56a32da6f1a6",
+        "82069d35-7da7-479d-9c4c-7378d2cc954e",
+        "2b2636d0-a9a4-467d-bdab-0026dc16b726",
+        "a51571e3-4420-434c-ba41-bb5f55c7f15e",
+        "1824ee71-4c7e-417c-85e5-8a4a9efd407b",
+        "ca873636-9285-4fa0-804a-441a184eb899",
+        "f21b96cc-fabc-46fd-a9f3-3dd9c4a29645",
+        "4abcafdb-7610-4d87-be20-354576cfe6cf"
+      ]
+    },
+    {
+      "net": "/SPI_MISO",
+      "ids": [
+        "288cc40c-c6c2-446d-8166-26a44d848633",
+        "a1598199-f660-4e83-95f3-6b3435c5ad0d"
+      ]
+    },
+    {
+      "net": "/SPI_MISO",
+      "ids": [
+        "33c24d06-a816-490b-b380-78f7a2a42a8f"
+      ]
+    },
+    {
+      "net": "/SPI_MISO",
+      "ids": [
+        "c87c7b04-7b29-4760-8681-85bb83caec80",
+        "934fb6a6-d2fa-476a-aa55-a820f0ba4ad3",
+        "cd093f8c-503e-4cda-a0ee-b78ed3d57c4d"
+      ]
+    },
+    {
+      "net": "/SPI_MISO",
+      "ids": [
+        "388a9fc8-64f8-458b-8008-ab1c7fea2893",
+        "b02fe3ef-52ed-4202-b738-366852c84318",
+        "7c07fffe-1acb-450e-907c-54d84aaa6417"
+      ]
+    },
+    {
+      "net": "/SPI_MISO",
+      "ids": [
+        "7135f487-b8d3-4ac0-bf1c-6aba3ab6a435",
+        "8766c8c5-3920-4e5a-a3f3-5e3da13e9346"
+      ]
+    },
+    {
+      "net": "/HEALTH_CS",
+      "ids": [
+        "02c959e3-f731-4793-be01-4d65cba62d9d",
+        "e9f24916-8caa-4f3f-84da-6e04a3459f6c",
+        "d12bd049-fc86-4966-990a-efa16364f035",
+        "f61ca314-d623-408d-95c9-88f898cfb051",
+        "d5e244b7-d82f-4fc8-8f9f-5f6e619ac225",
+        "4c00f91d-34a1-4248-8a20-fda97ec8adab",
+        "76cb019f-f638-4398-a592-c68399f81192",
+        "7ecf6c6c-4ba2-4eea-90b5-5147b9e7cfe5",
+        "26e01220-1d0b-4655-87f1-7daa8b46921f",
+        "c38e628a-9ebf-4d9d-b016-a5019073a617",
+        "6db6e1e8-179e-4536-a117-ae4b17679022",
+        "4ede41d5-78b2-4d40-b347-4cf4c55074ef",
+        "682f38dd-d603-4b40-b21a-82909928cf71"
+      ]
+    },
+    {
+      "net": "/HEALTH_RESET",
+      "ids": [
+        "06603828-26ea-4a84-bcd0-c9be5acec5b0",
+        "6d661995-b28e-48a7-93c8-46514634a337",
+        "4b735985-d90e-4537-913c-8222286b3646",
+        "ec991791-cca3-4a63-b535-dda7327bafb4",
+        "f8aaa34a-ea2f-4909-9894-18291d570044",
+        "17af1e13-0a2b-45a2-97be-d469724719eb",
+        "7c03fa5f-f261-4b00-8113-2ce436a46013",
+        "26352517-3960-48c3-8023-fa11e38cd08c",
+        "54071f2c-3082-495f-87ff-492980c4d975",
+        "36b6563f-0df4-4d5a-88b0-d82e8979102a"
+      ]
+    },
+    {
+      "net": "/HEALTH_RESET",
+      "ids": [
+        "48bd3752-d4c4-46a2-9934-899c539ede74",
+        "7f99b87e-a314-4e25-b6b3-a81c3c322071",
+        "60c86f3f-93c8-4139-9167-f218f72b8d15",
+        "8f318215-5a84-4f96-80e0-244e37b653b6",
+        "9f3eaee7-64bc-4465-a029-3f765aeda448"
+      ]
+    },
+    {
+      "net": "/HEALTH_RESET",
+      "ids": [
+        "86843b68-7cd4-4e48-9ada-d8dc6271685d",
+        "e31eb574-7f1f-474c-9e01-d9879a8b9b84"
+      ]
+    },
+    {
+      "net": "/HEALTH_RESET",
+      "ids": [
+        "4402c38b-e9b6-471f-ab54-1932b857f6ef",
+        "e4301b04-1214-41bd-b6fe-0f3006700cf4"
+      ]
+    },
+    {
+      "net": "/HEALTH_RESET",
+      "ids": [
+        "6f246633-b5e3-4d03-9238-aa2ded340daa",
+        "abb79b52-a091-446f-8ed2-9b3c13dfef41"
+      ]
+    },
+    {
+      "net": "/HEALTH_EN",
+      "ids": [
+        "1304411e-d3fd-4832-a2d8-ba124ab055d4",
+        "d9051921-c573-4924-91c2-e09af9c05557",
+        "de75a095-cd87-4719-9197-396cbd3bdc06",
+        "8e98fa6c-328b-4cc7-a1c5-e5b95006030b",
+        "5834598b-ccd0-4560-b6b4-5e383cd0917b",
+        "8cb7efd7-2e6f-4fe9-8bd5-787082fae8f6",
+        "9587397b-db8f-42f1-b070-3c5ebcd27857",
+        "e8273e7e-4eef-4ce4-bb29-08b0ce511a9b"
+      ]
+    },
+    {
+      "net": "/HEALTH_EN",
+      "ids": [
+        "07ffe4ec-8b1f-4fb2-8a0a-33f2076cf2d6",
+        "f38ce8fc-2985-4bfd-9b45-0c315a9597e4",
+        "93900b4c-96f1-40d0-8de5-2b48ae70c00c",
+        "ef9ba9a5-2f03-4be4-b7bc-ab16b76bf6f4",
+        "96655bcc-5621-4bf5-95f3-e57c88507815",
+        "4ceee653-61fb-4f14-abc5-95c1e0321c63",
+        "e9c396b8-d582-4be6-a1a4-aec76f2c3500",
+        "f666ca88-6653-4832-bd67-90aa3342ff22",
+        "5b0d2414-da85-4c71-a837-51634690622d"
+      ]
+    },
+    {
+      "net": "/HEALTH_EN",
+      "ids": [
+        "1e8a3c37-7583-4fc6-a995-d90e6fdd6164"
+      ]
+    },
+    {
+      "net": "/HEALTH_EN",
+      "ids": [
+        "3e926f1b-2417-4c3d-b14e-289251897c42",
+        "6764177c-c0cd-4f53-bc46-f703d1d755a5"
+      ]
+    },
+    {
+      "net": "/HEALTH_EN",
+      "ids": [
+        "48b07cbc-7e5e-497f-a79e-51aa6abda055",
+        "e718cf52-55e2-4b6a-b809-16e59f3fd770",
+        "f2355e4c-25f6-4224-ab59-b41c57f074e6",
+        "b176af6a-4e35-4ddb-b340-291d5917f1aa"
+      ]
+    },
+    {
+      "net": "/CHG_STAT",
+      "ids": [
+        "243d7527-5322-49ee-bf81-28bda5737f02",
+        "af0f0516-9c5e-438b-b4a4-5e885c9c59da",
+        "2f7aea3b-bc60-4698-83f0-13b7faee9a0e"
+      ]
+    },
+    {
+      "net": "/CHG_STAT",
+      "ids": [
+        "50f7ad54-1d0d-4a1a-9169-5648e33e9293"
+      ]
+    },
+    {
+      "net": "/CHG_STAT",
+      "ids": [
+        "5f403e89-4d14-4b51-8c19-cd98ca2642cc",
+        "89d664fa-b9f5-4f1f-a0f9-dde6b823726b",
+        "dadef531-5fe4-4a28-a571-541d11518707"
+      ]
+    },
+    {
+      "net": "/CHG_STAT",
+      "ids": [
+        "71fdcce9-aa15-46f9-8fb8-97b886e52250",
+        "d8882072-19b7-4b1f-ac41-6d786e3f3a53"
+      ]
+    },
+    {
+      "net": "/CHG_STAT",
+      "ids": [
+        "515b8586-bd80-4e61-b2c3-9af16003200d",
+        "f63ae6f8-4a8f-434e-be52-ebeab8d5b004",
+        "d34b236d-cb00-4cf8-98bb-8f5d4a7d94cb",
+        "f36288c2-bee7-45dd-816b-52ed0c4e1e10",
+        "69fd91db-ba33-46bf-bdc5-854f984199b3",
+        "b67590f0-5ccf-48fa-9786-0b546492de5b",
+        "7e729693-336e-45d4-a9da-19ff0fb163ee",
+        "acce75d2-0cbd-4fd1-b54c-5ace802539fe",
+        "99008c9e-f1a1-43d6-9a85-1a02d9916a20",
+        "58e32c8b-92b9-4805-aceb-f450731a45e8",
+        "ad32951c-b79f-45ca-b540-3d6bb0cd47c3",
+        "6ef7de9e-734c-421f-ac49-2e3067ad3b75",
+        "81938dc9-fcfb-408e-8514-94161fccce54",
+        "aa41283f-5d0c-4646-9759-09753e4da616",
+        "705ca9d8-ac0d-43bf-91e1-5ba2f6a265ea",
+        "cd1b7743-aaf1-4836-a2e7-ea7b5e132649",
+        "c2ce6307-3f5f-42e0-8bc6-780ae0bc2c16",
+        "ff0a3cdb-49b3-4f04-952c-6a4186231863",
+        "5c55a3d9-1951-4fbf-bd38-822a19f2e641",
+        "f87d0a14-57a3-418d-93d8-d6a236bafee5",
+        "c1efc6ee-127c-4256-a8c3-1af0f53530d6"
+      ]
+    }
+  ],
+  "native_pad_islands_preserved": 222,
+  "scope": "No-pad copper removed; native DRC still required."
+}

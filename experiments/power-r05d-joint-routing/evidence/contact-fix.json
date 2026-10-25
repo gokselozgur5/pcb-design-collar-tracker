@@ -1,0 +1,18 @@
+{
+  "before_sha256": "f60c872c87e4b8dcd8aa3863751021f640e9fc0cd44c2adf731b02f5e21d345b",
+  "source_sha256": "62604fc91e81402d13cebfd3090c96e61b31ebb59c70dcb1e0f46b0938d5dd27",
+  "added_id": "e62fa374-5356-415c-aa99-3235d073e367",
+  "net": "/POWER_GOOD",
+  "start": [
+    119.3,
+    128.35
+  ],
+  "end": [
+    119.25,
+    128.0
+  ],
+  "width_mm": 0.2,
+  "layer": "F.Cu",
+  "pad_islands_preserved": 2,
+  "purpose": "Explicit center contact for tangential existing copper; fresh native DRC required."
+}

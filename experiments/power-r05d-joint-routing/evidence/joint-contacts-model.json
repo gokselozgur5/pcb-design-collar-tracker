@@ -1,0 +1,197 @@
+{
+  "source_sha256": "62604fc91e81402d13cebfd3090c96e61b31ebb59c70dcb1e0f46b0938d5dd27",
+  "dsn_sha256": "09a754d641b29cab8ba13b85fec6812e806e552f6f38e5a2ce8f0a85b3deac53",
+  "input_dsn_sha256": "82d5321013b2c9995f72651a278d238f30d81294ea3fd8c8fb6bec754ca8540a",
+  "coordinate_resolution_mm": 0.0001,
+  "copper_comparison_tolerance_mm": 0.0002,
+  "original_tracks": 2249,
+  "original_vias": 250,
+  "connector_count": 13,
+  "wire_count": 2282,
+  "connectors": [
+    {
+      "net": "/GND",
+      "layer": "B.Cu",
+      "start": [
+        106.2,
+        119.72
+      ],
+      "end": [
+        106.2,
+        119.77
+      ],
+      "width_mm": 0.2,
+      "fixed": true
+    },
+    {
+      "net": "/POWER_GOOD",
+      "layer": "B.Cu",
+      "start": [
+        117.55,
+        125.7
+      ],
+      "end": [
+        117.6,
+        125.7
+      ],
+      "width_mm": 0.2,
+      "fixed": false
+    },
+    {
+      "net": "/VIO_DISCHARGE",
+      "layer": "F.Cu",
+      "start": [
+        133.35,
+        118.65
+      ],
+      "end": [
+        133.4,
+        118.65
+      ],
+      "width_mm": 0.2,
+      "fixed": false
+    },
+    {
+      "net": "/VIO_1V8",
+      "layer": "F.Cu",
+      "start": [
+        126.85,
+        101.55
+      ],
+      "end": [
+        126.85,
+        101.6283
+      ],
+      "width_mm": 0.2,
+      "fixed": false
+    },
+    {
+      "net": "/GND",
+      "layer": "F.Cu",
+      "start": [
+        133.3375,
+        122.1
+      ],
+      "end": [
+        133.35,
+        122.2
+      ],
+      "width_mm": 0.2,
+      "fixed": true
+    },
+    {
+      "net": "/GND",
+      "layer": "F.Cu",
+      "start": [
+        134.6625,
+        120.4
+      ],
+      "end": [
+        134.65,
+        120.3
+      ],
+      "width_mm": 0.2,
+      "fixed": true
+    },
+    {
+      "net": "/VIO_ENABLE",
+      "layer": "F.Cu",
+      "start": [
+        134.6625,
+        122.1
+      ],
+      "end": [
+        134.65,
+        122.2
+      ],
+      "width_mm": 0.2,
+      "fixed": false
+    },
+    {
+      "net": "/POWER_GOOD",
+      "layer": "F.Cu",
+      "start": [
+        111.2812,
+        125.9688
+      ],
+      "end": [
+        111.2,
+        126.05
+      ],
+      "width_mm": 0.2,
+      "fixed": false
+    },
+    {
+      "net": "/VIO_DELAY",
+      "layer": "B.Cu",
+      "start": [
+        114.9688,
+        122.0312
+      ],
+      "end": [
+        115.05,
+        121.95
+      ],
+      "width_mm": 0.2,
+      "fixed": false
+    },
+    {
+      "net": "/POWER_GOOD",
+      "layer": "B.Cu",
+      "start": [
+        115.0375,
+        124.4
+      ],
+      "end": [
+        115.05,
+        124.55
+      ],
+      "width_mm": 0.2,
+      "fixed": false
+    },
+    {
+      "net": "/GND",
+      "layer": "F.Cu",
+      "start": [
+        132.15,
+        127.6625
+      ],
+      "end": [
+        131.9,
+        127.65
+      ],
+      "width_mm": 0.2,
+      "fixed": true
+    },
+    {
+      "net": "/VDD_NRF",
+      "layer": "F.Cu",
+      "start": [
+        133.85,
+        126.3375
+      ],
+      "end": [
+        134.1,
+        126.35
+      ],
+      "width_mm": 0.2,
+      "fixed": false
+    },
+    {
+      "net": "/POWER_FAULT",
+      "layer": "F.Cu",
+      "start": [
+        133.85,
+        127.6625
+      ],
+      "end": [
+        134.1,
+        127.65
+      ],
+      "width_mm": 0.2,
+      "fixed": false
+    }
+  ],
+  "connectors_with_new_copper": [],
+  "scope": "Routing model only: exact-center connections and split junctions. New copper is explicitly reported and requires native DRC after any import. No native source or clearance rule changed."
+}

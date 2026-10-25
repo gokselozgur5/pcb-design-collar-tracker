@@ -1,0 +1,1058 @@
+{
+  "before_sha256": "51cd72bb46d05106a02394c892467f4f0b5687c9eae547b89097cea4cdd6ad91",
+  "source_sha256": "e321e0472bb58d6511bd940622227628382b4224e2c5cc474d5aff7746d7bbda",
+  "applied": true,
+  "return_only_vias": [
+    {
+      "id": "13b7d4d7-b736-4049-97ed-7562d75b41ac",
+      "position": [
+        123.6,
+        122.8
+      ],
+      "reasons": []
+    },
+    {
+      "id": "1e194a0f-ee7c-4779-ad33-da06a2b82eb4",
+      "position": [
+        107.4,
+        106.2
+      ],
+      "reasons": []
+    },
+    {
+      "id": "1f5294d3-ba04-4847-b2e7-fd2cb4ff51d0",
+      "position": [
+        122.0,
+        99.4
+      ],
+      "reasons": []
+    },
+    {
+      "id": "2fee4144-5bdf-4fb2-b9d3-96d3967e9280",
+      "position": [
+        99.2,
+        103.6
+      ],
+      "reasons": []
+    },
+    {
+      "id": "47f28894-0b00-485e-a2df-8699d666fdbe",
+      "position": [
+        100.6,
+        104.95
+      ],
+      "reasons": []
+    },
+    {
+      "id": "49d9aefa-ea17-4239-90ca-15aaa0461393",
+      "position": [
+        131.4,
+        101.5
+      ],
+      "reasons": []
+    },
+    {
+      "id": "4d7a7169-a37b-416c-8c9c-3e36587d89f6",
+      "position": [
+        124.98,
+        99.65
+      ],
+      "reasons": []
+    },
+    {
+      "id": "5139d461-0220-48f9-94c4-096906aeaf31",
+      "position": [
+        125.8,
+        104.4
+      ],
+      "reasons": []
+    },
+    {
+      "id": "6bf8e5a7-f5a0-4dc7-8c50-d4a6585f3abe",
+      "position": [
+        103.8,
+        114.4
+      ],
+      "reasons": []
+    },
+    {
+      "id": "6cf75027-1c05-443b-a2df-8967fbea2f9a",
+      "position": [
+        122.3,
+        105.8
+      ],
+      "reasons": []
+    },
+    {
+      "id": "6f09285b-3f53-41f9-bb7e-6a06d64358a0",
+      "position": [
+        113.0,
+        100.4
+      ],
+      "reasons": []
+    },
+    {
+      "id": "74fbe503-f077-45d3-8867-694c503ceacf",
+      "position": [
+        125.7,
+        127.8
+      ],
+      "reasons": []
+    },
+    {
+      "id": "768c18b7-cee7-4249-ab87-6b1a95f89577",
+      "position": [
+        135.25,
+        105.55
+      ],
+      "reasons": []
+    },
+    {
+      "id": "7edd38c9-2674-4fd4-8ada-65a925e82b17",
+      "position": [
+        136.3,
+        123.5
+      ],
+      "reasons": []
+    },
+    {
+      "id": "7f109cc6-97fb-40f7-ba22-7d7429fe1236",
+      "position": [
+        103.3,
+        124.7
+      ],
+      "reasons": []
+    },
+    {
+      "id": "840370c1-6753-4deb-bce7-cb9c1e6e4a34",
+      "position": [
+        132.5,
+        120.7
+      ],
+      "reasons": []
+    },
+    {
+      "id": "85522ca3-5fae-4bbc-bb34-a6d9b04f71a0",
+      "position": [
+        121.3,
+        112.1
+      ],
+      "reasons": []
+    },
+    {
+      "id": "93678f8b-5db4-40ac-ba15-f70ff9f774b1",
+      "position": [
+        136.25,
+        101.45
+      ],
+      "reasons": []
+    },
+    {
+      "id": "a487eef0-d55c-4817-b122-238a88ef82d0",
+      "position": [
+        132.6,
+        117.5
+      ],
+      "reasons": []
+    },
+    {
+      "id": "a4dfefca-403c-4d95-adc0-015a6c505b30",
+      "position": [
+        135.5,
+        114.5
+      ],
+      "reasons": []
+    },
+    {
+      "id": "b652eb5c-0353-4441-8c70-5c27149e3f86",
+      "position": [
+        120.05,
+        112.975
+      ],
+      "reasons": []
+    },
+    {
+      "id": "b70909eb-fe7c-45a0-b15d-dc1e5bda013f",
+      "position": [
+        124.2854,
+        103.55
+      ],
+      "reasons": []
+    },
+    {
+      "id": "d56c16ba-8ab7-488f-8f77-08b29395a1ef",
+      "position": [
+        133.1,
+        125.05
+      ],
+      "reasons": []
+    },
+    {
+      "id": "e0edac71-d54b-4c8b-8d8d-038a78e1425f",
+      "position": [
+        100.9,
+        113.2
+      ],
+      "reasons": []
+    },
+    {
+      "id": "e118b311-95ac-4a25-ba64-cfe9914efb2a",
+      "position": [
+        119.4,
+        103.6
+      ],
+      "reasons": []
+    }
+  ],
+  "protected": [
+    {
+      "id": "0d6ac8db-1864-4cf4-b6bd-fad3b227f44f",
+      "position": [
+        116.0,
+        126.1
+      ],
+      "reasons": [
+        "touches local ground track"
+      ]
+    },
+    {
+      "id": "0e87c094-117e-454c-91b4-148776e9a24c",
+      "position": [
+        102.3,
+        111.4
+      ],
+      "reasons": [
+        "touches local ground track"
+      ]
+    },
+    {
+      "id": "14a35593-3a9d-41cb-8f21-b31fadf3ad64",
+      "position": [
+        121.8,
+        126.55
+      ],
+      "reasons": [
+        "touches local ground track"
+      ]
+    },
+    {
+      "id": "1897b34e-5934-46b2-80c3-e51e4fea0857",
+      "position": [
+        110.75,
+        107.05
+      ],
+      "reasons": [
+        "touches local ground track"
+      ]
+    },
+    {
+      "id": "1d0942ff-7561-460b-948a-2b7a1aa180da",
+      "position": [
+        104.75,
+        127.2
+      ],
+      "reasons": [
+        "touches local ground track"
+      ]
+    },
+    {
+      "id": "22991a17-6c08-4831-9e24-9322eda2b0c3",
+      "position": [
+        128.3,
+        114.3
+      ],
+      "reasons": [
+        "touches local ground track"
+      ]
+    },
+    {
+      "id": "27d3fba8-5a6f-47e8-aee8-d107b696367f",
+      "position": [
+        133.3,
+        105.5
+      ],
+      "reasons": [
+        "touches local ground track"
+      ]
+    },
+    {
+      "id": "28ea82cd-e612-45a0-ae71-325fe00f2289",
+      "position": [
+        108.25,
+        108.65
+      ],
+      "reasons": [
+        "touches local ground track"
+      ]
+    },
+    {
+      "id": "2a75944a-32a4-4cd7-830a-fe2416134b06",
+      "position": [
+        136.8,
+        108.5
+      ],
+      "reasons": [
+        "touches local ground track"
+      ]
+    },
+    {
+      "id": "2d0005b4-116e-4d91-b98e-560836b97871",
+      "position": [
+        130.65,
+        104.8
+      ],
+      "reasons": [
+        "touches local ground track"
+      ]
+    },
+    {
+      "id": "312194a5-4a85-4e70-b5ba-8d60b6487e3a",
+      "position": [
+        118.3,
+        124.8
+      ],
+      "reasons": [
+        "touches local ground track"
+      ]
+    },
+    {
+      "id": "38f23992-f9e9-4241-85fd-3a9e10853501",
+      "position": [
+        107.3,
+        101.8
+      ],
+      "reasons": [
+        "touches local ground track"
+      ]
+    },
+    {
+      "id": "3a9e5d7c-1ccd-445c-b918-56f05e2e8a01",
+      "position": [
+        121.8,
+        114.55
+      ],
+      "reasons": [
+        "touches local ground track",
+        "within 2 mm of RF copper"
+      ]
+    },
+    {
+      "id": "3b0346b0-788e-4c27-a574-803cd4845b88",
+      "position": [
+        131.5,
+        99.7
+      ],
+      "reasons": [
+        "touches local ground track"
+      ]
+    },
+    {
+      "id": "3c3af4bd-6c5b-48d8-80a3-b8c57b666a2c",
+      "position": [
+        109.9,
+        120.3
+      ],
+      "reasons": [
+        "touches local ground track",
+        "within 2 mm of RF copper"
+      ]
+    },
+    {
+      "id": "3c5c1fd9-515d-427e-8d84-3a9880ff9861",
+      "position": [
+        105.3,
+        119.7
+      ],
+      "reasons": [
+        "touches local ground track"
+      ]
+    },
+    {
+      "id": "46d7df9f-fa17-4774-b0f8-10178b8d62ab",
+      "position": [
+        102.0,
+        116.35
+      ],
+      "reasons": [
+        "touches local ground track"
+      ]
+    },
+    {
+      "id": "483175fa-3a0a-4a36-bdc2-f68df794aa54",
+      "position": [
+        110.75,
+        118.9
+      ],
+      "reasons": [
+        "touches local ground track",
+        "within 2 mm of RF copper"
+      ]
+    },
+    {
+      "id": "4c7e7ef6-1dc3-4e6d-a8e7-177c8b2be3fd",
+      "position": [
+        128.4,
+        118.2
+      ],
+      "reasons": [
+        "touches local ground track"
+      ]
+    },
+    {
+      "id": "4c87792e-7c15-414a-a835-db82390411a0",
+      "position": [
+        115.94,
+        110.8
+      ],
+      "reasons": [
+        "touches local ground track"
+      ]
+    },
+    {
+      "id": "4ed1428c-4cc1-4c34-ae97-c9585ef0cecd",
+      "position": [
+        113.3,
+        108.65
+      ],
+      "reasons": [
+        "touches local ground track"
+      ]
+    },
+    {
+      "id": "572f797e-4c51-4a32-8d51-91c6f15f35f1",
+      "position": [
+        115.9,
+        112.75
+      ],
+      "reasons": [
+        "touches local ground track"
+      ]
+    },
+    {
+      "id": "5798f717-52f0-4e9f-8de4-3e27690014cc",
+      "position": [
+        109.45,
+        113.0
+      ],
+      "reasons": [
+        "touches local ground track"
+      ]
+    },
+    {
+      "id": "5ad4b68f-b9cf-4b78-a380-b8a57980cf2b",
+      "position": [
+        123.3,
+        119.4
+      ],
+      "reasons": [
+        "within 2 mm of RF copper"
+      ]
+    },
+    {
+      "id": "5cc7a002-8ab2-4810-baa7-53b799b41f28",
+      "position": [
+        104.6,
+        118.0
+      ],
+      "reasons": [
+        "touches local ground track"
+      ]
+    },
+    {
+      "id": "611fa055-5982-4cf2-b066-490aba1248e1",
+      "position": [
+        124.78,
+        116.0
+      ],
+      "reasons": [
+        "touches local ground track",
+        "within 2 mm of RF copper"
+      ]
+    },
+    {
+      "id": "6540d604-6645-4962-ada2-20f8182f88c5",
+      "position": [
+        109.05,
+        121.0
+      ],
+      "reasons": [
+        "touches local ground track"
+      ]
+    },
+    {
+      "id": "6f5c316f-7b56-4663-b270-04d789baa6b5",
+      "position": [
+        132.55,
+        122.1
+      ],
+      "reasons": [
+        "touches local ground track"
+      ]
+    },
+    {
+      "id": "719faa80-db91-4d5d-b1f5-a6206c105308",
+      "position": [
+        117.4,
+        118.0
+      ],
+      "reasons": [
+        "touches local ground track",
+        "within 2 mm of RF copper"
+      ]
+    },
+    {
+      "id": "728e155e-257c-416a-bdcf-2b7f9bd1c726",
+      "position": [
+        137.15,
+        99.2
+      ],
+      "reasons": [
+        "touches local ground track"
+      ]
+    },
+    {
+      "id": "73a6500f-9479-41bf-a1d8-f1c826672e28",
+      "position": [
+        135.45,
+        120.4
+      ],
+      "reasons": [
+        "touches local ground track"
+      ]
+    },
+    {
+      "id": "782601ba-1f91-4664-8761-2005992036b1",
+      "position": [
+        136.3,
+        110.75
+      ],
+      "reasons": [
+        "touches local ground track"
+      ]
+    },
+    {
+      "id": "78fa4897-199a-46a4-aff5-fa107151fa46",
+      "position": [
+        107.3,
+        103.5
+      ],
+      "reasons": [
+        "touches local ground track"
+      ]
+    },
+    {
+      "id": "7c8f25eb-8a2e-4651-9e19-b4919e3626e6",
+      "position": [
+        125.6,
+        110.7
+      ],
+      "reasons": [
+        "within 2 mm of RF copper"
+      ]
+    },
+    {
+      "id": "7e623dd6-6754-4488-8c65-75c8fe7ff7db",
+      "position": [
+        114.7,
+        105.8
+      ],
+      "reasons": [
+        "touches local ground track"
+      ]
+    },
+    {
+      "id": "7ea254bb-765c-411c-8e1b-95efc44c229a",
+      "position": [
+        104.8,
+        120.85
+      ],
+      "reasons": [
+        "touches local ground track"
+      ]
+    },
+    {
+      "id": "7fa9caf8-f9d4-4dec-b54b-be27e6d66d58",
+      "position": [
+        112.3,
+        116.55
+      ],
+      "reasons": [
+        "touches local ground track",
+        "within 2 mm of RF copper"
+      ]
+    },
+    {
+      "id": "82756110-f52b-48c2-9043-23f7bc380182",
+      "position": [
+        135.95,
+        111.75
+      ],
+      "reasons": [
+        "touches local ground track"
+      ]
+    },
+    {
+      "id": "838ab561-b0bf-49a2-b48e-d39a31f31ef1",
+      "position": [
+        133.3,
+        108.0
+      ],
+      "reasons": [
+        "touches local ground track"
+      ]
+    },
+    {
+      "id": "84eebba6-94e5-40a2-ae58-faf847615e78",
+      "position": [
+        124.2,
+        118.45
+      ],
+      "reasons": [
+        "touches local ground track"
+      ]
+    },
+    {
+      "id": "8613285b-0b10-4da3-b690-9b7ea1acfef4",
+      "position": [
+        112.55,
+        113.0
+      ],
+      "reasons": [
+        "touches local ground track"
+      ]
+    },
+    {
+      "id": "8782f750-0216-4178-a0a9-3bdd2b0028f1",
+      "position": [
+        111.7,
+        114.4
+      ],
+      "reasons": [
+        "touches local ground track"
+      ]
+    },
+    {
+      "id": "8c3c672d-b25d-49e6-9ee1-992f14824747",
+      "position": [
+        113.25,
+        121.3
+      ],
+      "reasons": [
+        "touches local ground track",
+        "within 2 mm of RF copper"
+      ]
+    },
+    {
+      "id": "8db1c61f-63db-440f-9b31-bc90489e71ef",
+      "position": [
+        103.05,
+        102.5
+      ],
+      "reasons": [
+        "touches local ground track"
+      ]
+    },
+    {
+      "id": "90a4b7bf-163c-4bd6-8259-715f7d358418",
+      "position": [
+        133.3,
+        111.0
+      ],
+      "reasons": [
+        "touches local ground track"
+      ]
+    },
+    {
+      "id": "90c09a51-08a7-4912-8751-3e86fb391313",
+      "position": [
+        115.9,
+        116.75
+      ],
+      "reasons": [
+        "touches local ground track",
+        "within 2 mm of RF copper"
+      ]
+    },
+    {
+      "id": "92062887-360b-4fe2-a53a-7261cbc90533",
+      "position": [
+        129.9,
+        110.7
+      ],
+      "reasons": [
+        "touches local ground track"
+      ]
+    },
+    {
+      "id": "96ee6186-a3fa-4b18-ab03-c4cd62c463d9",
+      "position": [
+        106.1,
+        114.25
+      ],
+      "reasons": [
+        "touches local ground track"
+      ]
+    },
+    {
+      "id": "96f10e66-861f-4ce2-ab79-2927840eba06",
+      "position": [
+        115.75,
+        118.9
+      ],
+      "reasons": [
+        "touches local ground track",
+        "within 2 mm of RF copper"
+      ]
+    },
+    {
+      "id": "99e78032-4e8c-4ce0-b92f-3ddbf7c46d2f",
+      "position": [
+        103.1,
+        107.55
+      ],
+      "reasons": [
+        "touches local ground track"
+      ]
+    },
+    {
+      "id": "9be0ce40-df3b-4853-b6ee-cf07c2327d4a",
+      "position": [
+        127.3,
+        117.8
+      ],
+      "reasons": [
+        "touches local ground track"
+      ]
+    },
+    {
+      "id": "a53c7fe2-b947-404f-a43e-62c9cd3c2984",
+      "position": [
+        122.7,
+        108.0
+      ],
+      "reasons": [
+        "touches local ground track"
+      ]
+    },
+    {
+      "id": "a7aaa81c-c973-4ac1-86a9-cae279606641",
+      "position": [
+        105.0,
+        124.3
+      ],
+      "reasons": [
+        "touches local ground track"
+      ]
+    },
+    {
+      "id": "af884481-aed1-4a33-81b1-b18702969da9",
+      "position": [
+        112.2,
+        122.4
+      ],
+      "reasons": [
+        "touches ground pad",
+        "touches local ground track",
+        "within 2 mm of RF copper"
+      ]
+    },
+    {
+      "id": "b044e31c-2727-4aee-9654-a146a0fc5da0",
+      "position": [
+        112.55,
+        110.15
+      ],
+      "reasons": [
+        "touches local ground track"
+      ]
+    },
+    {
+      "id": "b0e6ec50-40b1-4c34-971a-26c155866f44",
+      "position": [
+        132.15,
+        128.45
+      ],
+      "reasons": [
+        "touches local ground track"
+      ]
+    },
+    {
+      "id": "b3e2ec67-e662-462b-9252-d88d12706a96",
+      "position": [
+        119.0,
+        127.0
+      ],
+      "reasons": [
+        "touches local ground track"
+      ]
+    },
+    {
+      "id": "b49862d9-585e-4585-9075-8ed86cf13639",
+      "position": [
+        104.6,
+        108.0
+      ],
+      "reasons": [
+        "touches local ground track"
+      ]
+    },
+    {
+      "id": "b7a91e96-143c-4181-bc03-cdc3d3ae1ef0",
+      "position": [
+        109.45,
+        115.85
+      ],
+      "reasons": [
+        "touches local ground track"
+      ]
+    },
+    {
+      "id": "bcfdbae6-3646-4939-912b-86f5c70ca345",
+      "position": [
+        112.75,
+        117.4
+      ],
+      "reasons": [
+        "touches local ground track",
+        "within 2 mm of RF copper"
+      ]
+    },
+    {
+      "id": "be423635-3374-416f-bdce-7e2ccea2bd11",
+      "position": [
+        106.1,
+        115.1
+      ],
+      "reasons": [
+        "touches local ground track"
+      ]
+    },
+    {
+      "id": "c9551e7c-38f8-4622-804c-78ac5a3ce877",
+      "position": [
+        104.4,
+        112.7
+      ],
+      "reasons": [
+        "touches local ground track"
+      ]
+    },
+    {
+      "id": "c9ec5e62-5b6d-4a01-9958-6a5c16de8fbc",
+      "position": [
+        108.25,
+        117.4
+      ],
+      "reasons": [
+        "touches local ground track"
+      ]
+    },
+    {
+      "id": "c9f74ae1-a758-4003-bf46-aae39e014875",
+      "position": [
+        118.3,
+        119.8
+      ],
+      "reasons": [
+        "touches local ground track",
+        "within 2 mm of RF copper"
+      ]
+    },
+    {
+      "id": "cac391ee-304b-43da-8654-d831dc3dbc0d",
+      "position": [
+        102.7,
+        108.8
+      ],
+      "reasons": [
+        "touches local ground track"
+      ]
+    },
+    {
+      "id": "cd40b718-51e5-43a0-91ec-b0e2dc5f8452",
+      "position": [
+        122.7,
+        118.45
+      ],
+      "reasons": [
+        "touches local ground track",
+        "within 2 mm of RF copper"
+      ]
+    },
+    {
+      "id": "cd842e75-53c9-4f10-80c7-ecfdfa5e905b",
+      "position": [
+        127.6,
+        120.7
+      ],
+      "reasons": [
+        "touches local ground track"
+      ]
+    },
+    {
+      "id": "cd9972a2-cf3d-42ac-9f26-58e76c791201",
+      "position": [
+        113.75,
+        117.4
+      ],
+      "reasons": [
+        "touches local ground track",
+        "within 2 mm of RF copper"
+      ]
+    },
+    {
+      "id": "cedeacb0-8378-48fa-abfc-a49c7dff5fd1",
+      "position": [
+        126.477,
+        114.9762
+      ],
+      "reasons": [
+        "within 2 mm of RF copper"
+      ]
+    },
+    {
+      "id": "cfaea348-0067-4735-bb71-23b2307f38f3",
+      "position": [
+        117.3,
+        105.3
+      ],
+      "reasons": [
+        "touches local ground track"
+      ]
+    },
+    {
+      "id": "cfb7da77-1bd0-4ebd-837d-96c51d8289d6",
+      "position": [
+        109.45,
+        110.15
+      ],
+      "reasons": [
+        "touches local ground track"
+      ]
+    },
+    {
+      "id": "d22238e6-5381-4cec-b0c5-0501e0d9c7c7",
+      "position": [
+        117.4,
+        116.4
+      ],
+      "reasons": [
+        "within 2 mm of RF copper"
+      ]
+    },
+    {
+      "id": "d31cee54-44fa-4870-aec0-32759ca7fd95",
+      "position": [
+        130.55,
+        113.9
+      ],
+      "reasons": [
+        "touches local ground track"
+      ]
+    },
+    {
+      "id": "d61d002e-3f44-431a-93a4-938065a40884",
+      "position": [
+        133.3,
+        103.4
+      ],
+      "reasons": [
+        "touches local ground track"
+      ]
+    },
+    {
+      "id": "dd8fb8be-2b6a-48a7-8d28-d825cc7c80ef",
+      "position": [
+        110.15,
+        127.0
+      ],
+      "reasons": [
+        "touches local ground track"
+      ]
+    },
+    {
+      "id": "deccc17e-a958-4048-a2ab-6fd3d800711a",
+      "position": [
+        117.4,
+        108.0
+      ],
+      "reasons": [
+        "touches local ground track"
+      ]
+    },
+    {
+      "id": "e5b4f3d7-d82a-4e9a-9b1e-c1a6be323515",
+      "position": [
+        115.9,
+        115.25
+      ],
+      "reasons": [
+        "touches local ground track",
+        "within 2 mm of RF copper"
+      ]
+    },
+    {
+      "id": "e66ab9a7-61a5-47da-a16e-42ff0398d4ee",
+      "position": [
+        114.75,
+        117.4
+      ],
+      "reasons": [
+        "touches local ground track",
+        "within 2 mm of RF copper"
+      ]
+    },
+    {
+      "id": "e69eeca2-492d-4831-8c9a-945109410e70",
+      "position": [
+        108.7,
+        124.7
+      ],
+      "reasons": [
+        "touches local ground track"
+      ]
+    },
+    {
+      "id": "f79956f7-8adf-4b48-9467-73de62b56b4b",
+      "position": [
+        137.15,
+        126.15
+      ],
+      "reasons": [
+        "touches local ground track"
+      ]
+    },
+    {
+      "id": "fd075151-66d7-4c72-a34b-7350369cb26e",
+      "position": [
+        100.7,
+        123.2
+      ],
+      "reasons": [
+        "touches local ground track"
+      ]
+    },
+    {
+      "id": "fd4ed116-ef94-4406-8887-e46388e699ba",
+      "position": [
+        106.1,
+        111.25
+      ],
+      "reasons": [
+        "touches local ground track"
+      ]
+    },
+    {
+      "id": "fe4196f0-f7ca-4b99-8e66-3ec82e3d0a95",
+      "position": [
+        107.25,
+        126.6
+      ],
+      "reasons": [
+        "touches local ground track"
+      ]
+    }
+  ],
+  "local_ground_pad_islands_preserved": 77,
+  "scope": "Local ground and nearby RF vias retained. Return coverage is deliberately unfinished and must be rebuilt before DFM."
+}

@@ -1,0 +1,7 @@
+{
+  "source_sha256": "f60c872c87e4b8dcd8aa3863751021f640e9fc0cd44c2adf731b02f5e21d345b",
+  "dsn_sha256": "2095a41d5e7e395ae3842b5197273a8c3ac0a1302daa94470ca24f804ad83394",
+  "reason": "Unnormalized DSN reports 74 baseline opens versus eight native opens; stop before importing and normalize actual contacts.",
+  "interrupted": true,
+  "session_imported": false
+}

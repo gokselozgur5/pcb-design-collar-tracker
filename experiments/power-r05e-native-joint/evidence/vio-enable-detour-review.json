@@ -1,0 +1,11 @@
+{
+  "proposal_sha256": "62a93b2de744c2ea1596c7aa9e30a689543bbd05daffb93e1296ab0ae5d36344",
+  "net": "/VIO_ENABLE",
+  "proposed_length_mm": 41.8156637611548,
+  "new_vias": 3,
+  "minimum_same_layer_rf_copper_gap_mm": 8.12675807262345,
+  "ideal_trace_ohms_20C_35um": 0.1029860061774727,
+  "review": "Slow LDO-enable and FET-drain control net. The 40 mm planner cap is not an electrical rule. A 41.82 mm, 0.2 mm trace is acceptable for candidate routing; estimated trace drop is below 0.06 mV at a conservative 0.55 mA pull-up current. Opposite-side RF projection is separated by both inner GND planes. Actual final geometry, return coverage, waveform and supplier checks remain required.",
+  "next_search_length_screen_mm": 60,
+  "manufacturing_rules_changed": false
+}

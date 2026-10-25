@@ -1,0 +1,4 @@
+/build/*
+!/build/placement.json
+/hardware/*.local-routing.json
+/hardware/*.detour-proposal.json

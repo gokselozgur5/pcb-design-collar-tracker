@@ -1,0 +1,11 @@
+{
+  "source_sha256": "62604fc91e81402d13cebfd3090c96e61b31ebb59c70dcb1e0f46b0938d5dd27",
+  "dsn_sha256": "09a754d641b29cab8ba13b85fec6812e806e552f6f38e5a2ce8f0a85b3deac53",
+  "ses_sha256": "2d3cd4b49a28a9058525ab4f4e8b132cb326fa6443626e979fa67d397fbf49fa",
+  "router_initial_opens": 8,
+  "router_final_opens": 8,
+  "passes": 8,
+  "native_source_modified_by_router": false,
+  "session_imported": false,
+  "result": "No connectivity improvement. Router clearance model differs from native DRC; do not treat its 129 reported clearances as native findings."
+}
