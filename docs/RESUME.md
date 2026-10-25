@@ -40,16 +40,32 @@ browser normally if needed; no profile or credentials are distributed in Git.
 
 ## Working commands
 
-Continue from `experiments/paul-nanosim-r04g-returns-40x32/hardware/collar-tracker.kicad_pcb`.
+Continue from `experiments/paul-nanosim-r04h-review-40x32/hardware/collar-tracker.kicad_pcb`.
 Read STATUS and current hash-bound evidence first. r04e is the preserved 35 × 28 mm
-checkpoint; r04f expanded the outline after measured routing failures. r04g adds
-the current return repairs, DFM corrections and English labels.
+checkpoint; r04f expanded the outline after measured routing failures. r04g preserves
+the earlier DFM result. r04h adds the complete return repair, split SIM protection
+and passive-copper review.
 
-The current native result is zero opens, violations, warnings or parity findings.
-Two fresh JLC PCB runs also pass at 0/0 on identical ZIP bytes and unchanged rules.
-SIM_IO and COEX0 still exceed the inherited 2 mm return screen. STATUS identifies
-their exact coordinates and the separate one-open rework experiment. No router
-remains running at this checkpoint.
+The current native result is zero opens, violations, warnings or parity findings;
+ERC and all 91 return-via screens also pass. There is no r04h supplier result.
+First move D1/C10 out of the projected SIM insertion corridor identified in STATUS.
+The exact source and current evidence are in r04h `routing-checkpoint.json`.
+No router remains running at this checkpoint. Work in a new experiment.
+
+These review commands leave the native design unchanged and refresh its reports:
+
+```sh
+.venv-dfm/bin/python scripts/audit_sim_topology.py TRIAL
+.venv-dfm/bin/python scripts/audit_pad_attachments.py TRIAL
+.venv-dfm/bin/python scripts/audit_passive_copper.py TRIAL
+.venv-dfm/bin/python -m unittest discover -s tests -p test_sim_topology.py -v
+```
+
+Export current `route-geometry.json` first; all three audits reject a stale source.
+The topology audit reports bypasses; explicitly inspect its four results. It does
+not establish ESD immunity. Passive contour widths are review cues, not reflow tests.
+The following r04g routing commands are retained as examples for an isolated copy;
+do not rerun them over the preserved source.
 
 Export/import must preserve native grounds, RF and explicit pin escapes. Generate
 fresh geometry and plane inventory, then normalize exact copper contacts:
@@ -130,7 +146,7 @@ After routing is resolved:
 3. Use `plan_return_vias.py TRIAL` with geometry Python and
    `apply_return_vias.py TRIAL` with KiCad Python. Refill, run native DRC and
    verify actual GND via containment on both inner fills. The first r04f plan added 15 vias as explicit WIP
-   using `--allow-partial`; r04g adds five more. Two gaps remain recorded. Never
+   using `--allow-partial`; r04g adds five more. r04h closes the remaining screen gaps. Never
    clear failed IDs to make a plan appear complete.
 4. The current source already has nine English labels. For a new unlabeled trial,
    `label_paul_trial.py TRIAL` seeds labels using native silk minima. Export `geometry.json`,
@@ -175,6 +191,8 @@ manufacturing files for DFM only; no orders, payments or supplier messages.
 - Use `round(mm * 1e6)` for internal units; `FromMM` can truncate by 1 nm.
 - Snapshot tracks/zones/drawings before mutation and use `Delete` for removed
   in-memory objects; iterating with `Remove` broke SWIG ownership here.
+- Copy vector coordinates before changing a track: a saved `GetEnd()` SWIG value
+  can alias native storage and change when `SetEnd()` runs. Use a new `VECTOR2I`.
 - Use `LC_ALL=C` on this Mac to avoid unsupported-locale errors.
 - Duplicate pad numbers exist (U.FL grounds and nano-SIM shield). Index by UUID
   or ref/pad/index instead of assuming one pad per number.

@@ -5,84 +5,65 @@
 Repository: [gokselozgur5/pcb-design-collar-tracker](https://github.com/gokselozgur5/pcb-design-collar-tracker).
 All repository and GitHub content is English.
 
-**The current PCB passes native checks and two real JLC PCB DFM runs. Two
-return-via screen gaps and the remaining layout review are still open.**
+**r04h passes native checks and has no remaining return-via screen gaps.
+SIM insertion clearance is unresolved, so this is still WIP.**
 
 | Item | Verified state | Evidence under the active trial |
 |---|---|---|
-| Active source | `experiments/paul-nanosim-r04g-returns-40x32/hardware/`, 40 × 32 mm | Native board; `evidence/routing-checkpoint.json` |
-| Native checks | Zero DRC violations, warnings, opens, parity findings or ERC findings | `evidence/collar-tracker-04g-preflight-40x32/` |
-| Ground | 81 pads have local copper paths to ground vias; 86 GND vias join both continuous inner GND fills | `evidence/contact-components.json`, `layout-inventory.json` |
-| Inner routing / RF | No inner tracks; 24 baseline RF segments retained exactly | `evidence/layout-inventory.json`; RF performance remains unqualified |
-| Return-via screen | 2 of 88 non-GND vias exceed the inherited 2 mm screen | Same inventory; exact points below |
-| Actual JLC PCB DFM | Two fresh runs: **0 Danger / 0 Warning**, all 29 rows analyzed, identical ZIP and unchanged rules | `evidence/jlc-check1/`, `jlc-check2/` |
-| Labels | Nine English labels; native minimum 1 mm height / 0.2 mm stroke | `evidence/label-validation.json`, top/bottom review images |
-| Production readiness | SMT, complete power/RF/BOM/firmware/fixture/mechanics qualification remains open | `docs/pcba-delivery.md` |
+| Active source | `experiments/paul-nanosim-r04h-review-40x32/hardware/`, 40 × 32 mm, 55 footprints | `evidence/routing-checkpoint.json` |
+| Native checks | Zero DRC violations, warnings, opens, parity findings or ERC findings | `native-drc.json`, `native-erc.json` |
+| Ground | All 82 GND pads reach local vias; 90 GND vias join both continuous inner GND fills | `contact-components.json`, `layout-inventory.json` |
+| Inner routing / RF | No inner tracks; 24 baseline RF segments retained exactly | `layout-inventory.json`; RF performance remains unqualified |
+| Return-via screen | All 91 non-GND vias are within the inherited 2 mm screen | `layout-inventory.json` |
+| SIM protection | D1 protects the upper three contacts; D2 protects data. All four paths reach the clamp land without a copper bypass | `esd-paths.json`, `r04g-esd-before.json` |
+| Passive copper | C2/C20/C21/R1/R9 attachments reworked; native lands and masks unchanged | `passive-copper-review.json`, `passive-copper-before.json` |
+| Mechanical issue | D1 and C10 occupy the projected card-insertion corridor on B.Cu | `card-insertion-review.json`; resolve before release |
+| Supplier DFM | No r04h JLC result. The preserved r04g source passed twice at 0/0 | r04g `evidence/jlc-check1/`, `jlc-check2/` |
 
 Current PCB SHA256:
-`e68faf7db8b588cb69afdca76b0ab6b106ad0eed400cc95a2cf140a8f7142f79`.
+`9c65b1b2f845d76e16e4a2598b5ec0d2894ee1e812cba25a538d53ae0a028aea`.
 
-Tested ZIP: `evidence/collar-tracker-04g-preflight-40x32.zip`, SHA256
-`b739e0baf4286482b9b195b88327967fc1d0db63208c7ec1c8a6d93fe854dc53`.
-JLC records: `637221644721938434` and `637222172922957825`.
-Both complete PDFs and native top/bottom views were inspected. SMT was unchecked.
-This is an intermediate layout package, not a production release or order approval.
+## Next: clear the SIM insertion corridor
 
-## Next: finish the two return gaps
+J6 remains at (127,108), B.Cu, angle 0. Its opening faces the y=98 board edge.
+The GCT D6 drawing gives an 8.80 mm card width. The nominal projected entry lane
+across this PCB is x=122.60…131.40, y=98…101.90 mm, before tolerance/mounting margin.
 
-| Signal | Via position (mm) | Nearest GND via |
-|---|---|---:|
-| SIM_IO | (117.9105, 111.2211) | 2.06496 mm |
-| COEX0 | (118.2668, 112.1266) | 2.44752 mm |
+D1 at (127,99.5) and C10 at (130.6,100.35) are on that side, inside this lane.
+The courtyard check does not model the moving card. The placement is not accepted.
+Move these bodies outside the swept card volume or to a verified opposite-side
+arrangement, then reroute and rerun every affected check. Do not rotate the socket
+back inward. Its previously rejected 180-degree orientation was wrong.
 
-The inherited 2 mm value is a screening target, not a universal RF law. Neither
-point has been waived or reported as resolved. Rework the coupled nRF escape
-region while keeping all native connections and actual clearances valid.
+The native r04h source is the continuation point. Ignored `.runtime` trials are
+not needed to resume. Preserve this checkpoint in a new experiment before editing.
+No router or browser process remains running.
 
-`build/incomplete-return-gap-rework.kicad_pcb` preserves a separate experiment:
-moving these two signal vias brings every transition inside the screen, but
-leaves one HEALTH_INT open and two dangling-track warnings. Its own DRC,
-inventory and change records are under `evidence/incomplete-return-rework*`.
-**It is not the active source.** Test a copied board beside the matching project
-and schematic, never directly under `build/` with missing project rules.
+After the mechanical fix:
 
-Local return-site trials are recorded in `rework-provenance.json`. The accepted
-changes move R12/R13 into the spare top margin, add five GND vias, move two existing
-returns, and reroute ACC_INT/SIM_IO locally. Native routing remains complete.
-Do not repeat the already failed isolated via placements without changing the
-routing hypothesis. Preserve usable fine-pitch pin exits during wider rerouting.
+1. Recheck the actual connector → clamp → modem copper topology. Same-net routing
+   can reconnect through the connector pad and silently bypass the intended clamp.
+2. Refill, rerun all-severity native DRC/ERC/parity, local ground paths, both inner
+   fills, return spacing, passive copper and power estimates. Inspect actual views.
+3. Review the auxiliary supply paths against their eventual loads. The current
+   copper-only estimates include VSYS to J5.3: 39.50 mm / 52.16 mΩ, and VIO to
+   J5.2: 57.33 mm / 95.38 mΩ. These exclude cell/IC/contact/ferrite impedance,
+   temperature rise and transients; they do not establish powered performance.
+4. Export a uniquely named Gerber ZIP. Run two fresh JLC analyses of identical
+   final bytes with unchanged rules; inspect all rows, measurements, UI and PDFs.
+   Old r04g acceptance does not transfer to r04h or its successor.
+5. Update the English handoff, commit coherent changes, normally push and verify.
 
-A later isolated router experiment shifted the open to HEALTH_RESET and produced
-two near-duplicate SIM_IO/COEX0 vias on import. It was not accepted. Lock names or
-router completion alone do not prove physical preservation; compare native
-coordinates, drilled holes and source-bound DRC.
+## Preserved evidence
 
-## DFM fixes and remaining review
-
-The first r04f supplier run reported 0 Danger / 2 Warning. Its exact results are
-preserved under `experiments/paul-nanosim-r04f-40x32/evidence/jlc-preflight/`.
-r04g moves the D1 ground via from (124.8,116) to (124.78,116), and moves the
-adjacent CHG_STAT horizontal run down 0.15 mm away from J3.1's mask. Manufacturer
-lands, mask apertures and DFM rules are unchanged. Both supplier warnings close.
-
-The current copper-only power estimates keep the main supply paths connected.
-The auxiliary J5 branch remains 39.50 mm / approximately 52.16 mΩ at 20 °C under
-its recorded assumptions. Review ESD topology, passive copper balance, short
-returns and real supply behavior; these estimates exclude the cell, ferrite,
-contacts, dynamic impedance and thermal behavior.
-
-After any further layout change, regenerate native/geometry checks and run two
-fresh unchanged-rule JLC analyses of the same final ZIP. The current 0/0 result
-belongs only to the source and bytes above. Keep STATUS and WORKLOG current,
-commit coherent changes, and deliver literal absolute artifact paths.
-
-## Preserved sources
-
-- Released 0.3.4: unchanged 35 × 28 mm baseline and its original two 0/0 reports.
-- r04f: unchanged native-clean 40 × 32 mm checkpoint with nine return gaps.
-- r04e: unchanged 35 × 28 mm checkpoint with five opens / eight dangling warnings.
-- r04d, earlier r04 and rejected r04c remain available. The original SIM opening
-  direction is correct; do not repeat the rejected socket reversal.
+- 0.3.4 remains unchanged, with its original two 0/0 PCB DFM reports.
+- r04g remains unchanged: PCB `e68faf7db8b588cb69afdca76b0ab6b106ad0eed400cc95a2cf140a8f7142f79`,
+  ZIP `b739e0baf4286482b9b195b88327967fc1d0db63208c7ec1c8a6d93fe854dc53`,
+  JLC records `637221644721938434` and `637222172922957825`. SMT was off.
+- r04h `build/return-only-native-clean.kicad_pcb` preserves the earlier clean
+  return-only repair, SHA `e2b765df135612d7e47913a534b652deaa59228709d33b572024a0d924b18e07`.
+  Its `return-only-*` reports are separate. Use the matching r04g project/schematic
+  in an isolated directory if rerunning native checks on that earlier board.
 
 Nano-SIM now, eSIM later. J5 is a digital expansion port, not a heart-rate sensor.
 Factory assembly/programming/test is required. No order, payment, supplier

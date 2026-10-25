@@ -8,10 +8,11 @@ comfort across dog sizes and coat types still need physical validation.
 and get the new revision through real JLC DFM with zero Danger / zero Warning.
 eSIM is deferred.
 
-The current 40 × 32 mm board has two inner GND planes, complete native routing
-and two actual JLC PCB DFM runs at **0 Danger / 0 Warning**. Two return-via screen
-gaps and the remaining layout review are still open; SMT and functional testing
-are not qualified.
+The current 40 × 32 mm board passes native checks, has two continuous inner GND
+planes and no remaining return-via screen gaps. SIM insertion clearance still
+needs a placement correction. The earlier r04g source passed two actual JLC PCB
+DFM runs at **0 Danger / 0 Warning**; the new r04h source has not been submitted.
+SMT and functional testing are not qualified.
 See [STATUS](docs/STATUS.md) for the current source and exact next step.
 
 ## Continue in a new session
@@ -77,7 +78,8 @@ a finished, working PCBA.**
 
 - Validated PCB DFM baseline: `experiments/35x28-clearance-r034/hardware/`.
 - Preserved 35 × 28 mm checkpoint: `experiments/paul-nanosim-r04e/hardware/`.
-- Active 40 × 32 mm nano-SIM work: `experiments/paul-nanosim-r04g-returns-40x32/`.
+- Active 40 × 32 mm nano-SIM work: `experiments/paul-nanosim-r04h-review-40x32/`.
+- Preserved 40 × 32 mm DFM checkpoint: `experiments/paul-nanosim-r04g-returns-40x32/`.
 - Earlier r04 routing and rejected r04c experiment are preserved separately.
 - Legacy 30 × 22 mm / 0.2.1 source: `hardware/`, preserved with its original ZIPs.
 
@@ -100,7 +102,7 @@ include heart-rate hardware.
 | Path | Purpose |
 |---|---|
 | `experiments/35x28-clearance-r034/hardware/` | Native source that passed local and JLC PCB DFM checks |
-| `experiments/paul-nanosim-r04g-returns-40x32/` | Active nano-SIM source; native checks and two JLC PCB DFM runs pass, two return gaps remain |
+| `experiments/paul-nanosim-r04h-review-40x32/` | Active native-clean source; returns and SIM copper topology checked, card-entry placement unresolved |
 | `scripts/finalize_clearance034.py` | Binds source, local checks, JLC reports and the exact delivered ZIP |
 | `hardware/` | Legacy KiCad project, PCB, five-section A2 schematic and draft BOM |
 | `scripts/build_pcb.py` | Builds the legacy PCB from the real XML netlist |

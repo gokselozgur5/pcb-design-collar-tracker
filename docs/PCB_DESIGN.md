@@ -305,3 +305,20 @@ not a growing diary inside this guide.
 - Reserve fine-pitch pin exits during wider repair routing. Inspect imported
   via coordinates and drilled holes; a nominally protected via can be retained
   beside a shifted router replacement, leaving two near-coincident holes.
+- Preserve a moving connector's insertion/removal volume before placing nearby
+  protection or decoupling parts. A static footprint courtyard does not model a
+  card sliding over the PCB. Check the manufacturer drawing, populated bodies,
+  heights and tolerances on the actual component side.
+- Audit ESD routing as physical copper topology. An autorouter can connect a
+  protected branch back through its same-net connector pad, bypassing the clamp.
+  Compare before/after paths; a clamp-land cut can detect bypasses but cannot
+  qualify surge performance. Test same-layer branches and via-mediated bypasses.
+- Count unique copper around a passive pad. Summing overlapping segment widths
+  can double-count one physical connection. Compare both pad exits, nearby rail
+  branches and short necks; retain solder/reflow qualification as a separate step.
+- Copy SWIG vector coordinates before a native mutation. A stored `GetEnd()`
+  wrapper can alias the track and change after `SetEnd()`, creating a zero-length
+  split segment. Construct a new `VECTOR2I` and verify native connectivity.
+- A joint signal-via/ground-via move can open a site that isolated placement
+  searches miss. Record the coupled geometry and recheck every affected net,
+  filled plane and return-screen point instead of weakening the target.

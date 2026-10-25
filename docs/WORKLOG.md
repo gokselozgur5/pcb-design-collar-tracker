@@ -130,3 +130,26 @@ Their evidence is dated; do not transfer an older pass to a newer source file.
 - Next: Resolve SIM_IO and COEX0 return gaps, finish ESD/passive/power review,
   and repeat native plus two same-byte JLC checks after further layout changes.
   No order, payment, supplier message or physical acceptance occurred.
+
+## 2026-10-25 — Complete return screen, SIM topology and passive review
+
+- Event: Continued the authorized Paul/nano-SIM work and kept the repository,
+  generated labels and portable handoff in English.
+- Decision: Preserve r04g and its two JLC reports. Resolve the coupled return
+  geometry, then inspect actual SIM protection and passive copper before another
+  supplier submission. A native or supplier pass cannot accept card access.
+- Result: The return-only repair is native-clean with zero screen gaps. r04h
+  adds a second ESD array and short contact routes, removes a same-net clock
+  bypass, reworks five passive attachments and retains all 24 baseline RF
+  segments. It has 55 footprints, 82 locally connected GND pads, 90 GND vias in
+  both continuous inner fills, no inner tracks and all 91 non-GND vias within
+  the 2 mm screen. Fresh all-severity DRC/ERC/connectivity/parity checks pass.
+- Review: All four old clamp bypasses are reproduced by the copper audit;
+  none remains in r04h. Four discriminating topology tests pass. Main power-path
+  estimates are unchanged; the added LDO/VIO checks retain current/thermal
+  uncertainty. Native top/bottom views and the schematic were inspected. The
+  D2 schematic symbol was moved above the title block without changing PCB bytes.
+- Open issue: D1 and C10 now occupy the projected SIM insertion corridor.
+  This placement is WIP. Relocate their bodies before the next manufacturing
+  package, then rerun topology/native/geometry checks and two actual same-byte
+  JLC analyses. No r04h supplier upload, order or powered test occurred.

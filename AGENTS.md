@@ -47,6 +47,9 @@ uploads to JLC DFM are in scope. Orders, payments and supplier messages are not.
   matching hashes/rules, fully analyzed rows, raw results and PDF evidence.
 - No claim that the active revision is routed, DRC-clean or all-green until its
   own evidence exists. Read STATUS for the current experiment directory.
+- Check card insertion/removal against populated bodies and their swept volume;
+  a footprint courtyard pass is insufficient. Check SIM copper for a route that
+  bypasses the clamp land, even when all native nets are connected.
 - No subagents unless Göksel explicitly requests them.
 
 ## Git and handoff
