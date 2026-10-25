@@ -7,7 +7,7 @@ Usage: kicad-python finish_paul_route.py BOARD DRC_JSON [OUTPUT_BOARD]
 """
 from pathlib import Path
 import argparse
-import collections,hashlib,heapq,itertools,json,math,re,sys
+import collections,hashlib,heapq,itertools,json,math,re,subprocess,sys
 import pcbnew as k
 
 parser=argparse.ArgumentParser(description=__doc__)
@@ -26,8 +26,14 @@ parser.add_argument('--low-current-net', action='append', default=[],
                     help='Use 0.2 mm for added control branches only; verify the existing power backbone remains connected')
 parser.add_argument('--only-net', action='append', default=[],
                     help='Attempt only these nets; the following native DRC must still cover the full board')
+parser.add_argument('--relocatable-vias', type=Path,
+                    help='Source-bound return-only GND via candidates; remove only those crossed by an accepted route')
+parser.add_argument('--raster-python', type=Path,
+                    help='Geometry Python executable for the faster 0.2 mm proposal search; native checks still apply')
 args=parser.parse_args()
 script_sha=hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
+raster_script=Path(__file__).with_name('raster_route.py')
+raster_sha=hashlib.sha256(raster_script.read_bytes()).hexdigest() if args.raster_python else None
 assert math.isfinite(args.route_limit_mm) and args.route_limit_mm>0
 PCB=args.board;DRC=args.drc_json;OUTPUT=args.output_board or PCB
 b=k.LoadBoard(str(PCB));d=json.loads(DRC.read_text());layers=[k.F_Cu,k.B_Cu];STEP=.05
@@ -36,10 +42,14 @@ sim_inputs=set(json.loads(args.sim_inputs.read_text())) if args.sim_inputs else 
 anchors=json.loads(args.anchors.read_text()) if args.anchors else {}
 assert sim_inputs <= {t.m_Uuid.AsString() for t in b.GetTracks()}, 'Stale protected input IDs'
 assert ('paul-nanosim' in str(PCB) or PCB.resolve().parent.parent.name in
-        {'power-r05-supervised', 'power-r05b-pin-exits'}), 'Use an isolated nano-SIM trial'
+        {'power-r05-supervised', 'power-r05b-pin-exits', 'power-r05c-return-corridors',
+         'power-r05d-joint-routing', 'power-r05e-native-joint',
+         'power-r05f-return-reset'}), 'Use an isolated nano-SIM trial'
 branch_backbones={}
 if args.low_current_net:
-    assert PCB.resolve().parent.parent.name=='power-r05b-pin-exits'
+    assert PCB.resolve().parent.parent.name in {'power-r05b-pin-exits', 'power-r05c-return-corridors',
+                                             'power-r05d-joint-routing', 'power-r05e-native-joint',
+                                             'power-r05f-return-reset'}
     assert set(args.low_current_net)<={'/VDD_NRF','/VBAT','/VIO_1V8'}
     from trim_power_r05_tails import islands
     old=json.loads((Path(__file__).resolve().parents[1]/
@@ -79,6 +89,34 @@ def nearest_squared(tree,x,y,best=math.inf):
     best=nearest_squared(near,x,y,best)
     if delta*delta<best:best=nearest_squared(far,x,y,best)
     return best
+relocatable=set();removed_returns=[];ground_islands_before=None
+if args.relocatable_vias:
+    assert PCB.resolve().parent.parent.name=='power-r05c-return-corridors'
+    candidates=json.loads(args.relocatable_vias.read_text())
+    assert candidates['source_sha256']==source_sha, 'Stale return-only via candidates'
+    relocatable={v['id'] for v in candidates['candidates']}
+    tracks={t.m_Uuid.AsString():t for t in b.GetTracks()}
+    assert relocatable and relocatable<=tracks.keys()
+    for uid in relocatable:
+        v=tracks[uid];assert v.GetClass()=='PCB_VIA' and v.GetNetname()=='/GND'
+        x,y=xy(v.GetPosition());radius=v.GetWidth(k.F_Cu)/2e6
+        # A conservative native check independently prevents removal of a local
+        # ground-pad escape. This excludes pad bounding boxes on either side.
+        for f in b.GetFootprints():
+            for p in f.Pads():
+                if p.GetNetname()!='/GND':continue
+                bb=p.GetBoundingBox()
+                distance=math.hypot(max(bb.GetLeft()/1e6-x,0,x-bb.GetRight()/1e6),
+                                    max(bb.GetTop()/1e6-y,0,y-bb.GetBottom()/1e6))
+                assert distance>radius+.001, ('Via supplies local ground pad',uid)
+        for t in tracks.values():
+            if t.GetClass()!='PCB_TRACK':continue
+            distance=point_segment(x,y,*xy(t.GetStart()),*xy(t.GetEnd()))-radius-t.GetWidth()/2e6
+            if t.GetNetname()=='/GND':assert distance>.001, ('Via supplies local ground track',uid)
+            if t.GetNetname() in {'/LTE_RF','/LTE_ANT','/GPS_RF','/GNSS_ANT','/GNSS_FEM_IN','/GNSS_FEM_OUT','/FILT_OUT','/AMP_IN'}:
+                assert distance>2, ('Via is near RF copper',uid)
+    from trim_power_r05_tails import islands
+    ground_islands_before=islands(b,{'/GND'})
 def geometry():
     cells=collections.defaultdict(list);objects=[]
     for f in b.GetFootprints():
@@ -89,6 +127,7 @@ def geometry():
                     net='protected_sim_input' if args.sim_inputs and f.GetReference()=='J6' and p.GetNumber() in ['1','2','3'] else p.GetNetname()
                     objects.append(('pad',l,net,box,box))
     for t in b.GetTracks():
+        if t.m_Uuid.AsString() in relocatable:continue
         if t.GetClass()=='PCB_VIA':
             v=k.Cast_to_PCB_VIA(t);x,y=xy(v.GetPosition());r=v.GetWidth(k.F_Cu)/2e6
             for l in layers:objects.append(('via',l,t.GetNetname(),(x,y,r),(x-r,y-r,x+r,y+r)))
@@ -183,7 +222,8 @@ def route(opening):
     def route_width(x,y,layer):
         if width>.2 and any(l==layer and math.hypot(x-px,y-py)<=1.0 for px,py,l in padcenters):return .2
         return width
-    base_clear=clearance_checker(net,width,geometry());memo={};via_memo={};hmemo={}
+    cells=geometry()
+    base_clear=clearance_checker(net,width,cells);memo={};via_memo={};hmemo={}
     def clear(x,y,layer,r=None,via=False):
         return base_clear(x,y,layer,route_width(x,y,layer)/2 if r is None else r,via)
     def free(s):
@@ -201,41 +241,74 @@ def route(opening):
                 s=(ix+dx,iy+dy,point[2])
                 if free(s) and all(clear(point[0]+(s[0]*STEP-point[0])*t,point[1]+(s[1]*STEP-point[1])*t,point[2]) for t in [0,.25,.5,.75,1]):result[s]=point
         return result
-    starts=nearby(starts_exact);targets=nearby(ends_exact)
-    if not starts or not targets:raise RuntimeError((net,'no access',starts_exact,ends_exact))
-    target_tree=point_tree(list({(p[0],p[1]) for p in ends_exact}))
-    def h(s):
-        key=s[:2]
-        if key not in hmemo:hmemo[key]=math.sqrt(nearest_squared(target_tree,s[0]*STEP,s[1]*STEP))
-        return hmemo[key]
-    queue=[];dist={};parent={};origin={};serial=itertools.count()
-    for s,p in starts.items():
-        dist[s]=math.hypot(s[0]*STEP-p[0],s[1]*STEP-p[1]);parent[s]=None;origin[s]=p
-        heapq.heappush(queue,(dist[s]+h(s),next(serial),s))
-    visited=0;found=None
-    while queue and visited<600000:
-        cost,_,s=heapq.heappop(queue)
-        if cost>dist[s]+h(s)+1e-8:continue
-        visited+=1
-        if s in targets:found=s;break
-        neigh=[]
-        for dx,dy in [(1,0),(-1,0),(0,1),(0,-1),(1,1),(1,-1),(-1,1),(-1,-1)]:
-            q=(s[0]+dx,s[1]+dy,s[2])
-            if free(q) and clear((s[0]+dx/2)*STEP,(s[1]+dy/2)*STEP,s[2]):neigh.append((q,STEP*math.hypot(dx,dy)))
-        if via_free(s[0],s[1]):neigh.extend(((s[0],s[1],l),2.) for l in layers if l!=s[2])
-        for q,extra in neigh:
-            nd=dist[s]+extra
-            if nd+1e-9<dist.get(q,1e20):
-                dist[q]=nd;parent[q]=s;origin[q]=origin[s];heapq.heappush(queue,(nd+h(q),next(serial),q))
-    if found is None:
-        bounds={b.GetLayerName(l):dict(states=len(rows),
-                    x=[min(p[0] for p in rows)*STEP,max(p[0] for p in rows)*STEP],
-                    y=[min(p[1] for p in rows)*STEP,max(p[1] for p in rows)*STEP])
-                for l in layers if (rows:=[p for p in dist if p[2]==l])}
-        raise RuntimeError((net,'no route',visited,bounds))
-    path=[];cur=found
-    while cur is not None:path.append(cur);cur=parent[cur]
-    path.reverse();points=[origin[found]]+[(x*STEP,y*STEP,l) for x,y,l in path]+[targets[found]]
+    backend='native-python'
+    request_sha=None
+    if args.raster_python and width==.2:
+        backend='shapely-raster'
+        assert hashlib.sha256(raster_script.read_bytes()).hexdigest()==raster_sha, 'Raster helper changed during routing'
+        unique={id(obj):obj for rows in cells.values() for obj in rows}
+        objects=[(kind,layers.index(layer),other,data,box) for kind,layer,other,data,box in unique.values()]
+        request=dict(bounds=[xmin,ymin,xmax,ymax],width=width,net=net,objects=objects,
+                     starts=[(x,y,layers.index(l)) for x,y,l in starts_exact],
+                     ends=[(x,y,layers.index(l)) for x,y,l in ends_exact],state_limit=600000)
+        payload=json.dumps(request)
+        request_sha=hashlib.sha256(payload.encode()).hexdigest()
+        request_path=PCB.parent.parent/'build'/('raster-'+request_sha[:16]+'.json')
+        request_path.write_text(payload+'\n')
+        # Preserve the venv executable path: resolving its symlink would select
+        # the base interpreter and discard the geometry environment.
+        completed=subprocess.run([str(args.raster_python.absolute()),str(raster_script.resolve())],
+                                 input=payload,text=True,capture_output=True)
+        if completed.returncode:
+            raise RuntimeError((net,'raster helper failed',completed.returncode,completed.stderr[-1000:]))
+        proposal=json.loads(completed.stdout)
+        print('raster',net,proposal['status'],'visited',proposal['visited'],
+              'seconds',round(proposal.get('elapsed_seconds',0),3),flush=True)
+        if proposal['status']!='found':
+            raise RuntimeError((net,proposal['status'],proposal['visited'],request_sha))
+        points=[(x,y,layers[l]) for x,y,l in proposal['points']]
+        visited=proposal['visited']
+        for aa,zz in zip(points,points[1:]):
+            if aa[2]!=zz[2]:
+                assert aa[:2]==zz[:2] and all(clear(aa[0],aa[1],l,.3,True) for l in layers), 'Raster via failed native-geometry planner check'
+            else:
+                assert all(clear(aa[0]+(zz[0]-aa[0])*t,aa[1]+(zz[1]-aa[1])*t,aa[2]) for t in [0,.25,.5,.75,1]), 'Raster segment failed native-geometry planner check'
+    else:
+        starts=nearby(starts_exact);targets=nearby(ends_exact)
+        if not starts or not targets:raise RuntimeError((net,'no access',starts_exact,ends_exact))
+        target_tree=point_tree(list({(p[0],p[1]) for p in ends_exact}))
+        def h(s):
+            key=s[:2]
+            if key not in hmemo:hmemo[key]=math.sqrt(nearest_squared(target_tree,s[0]*STEP,s[1]*STEP))
+            return hmemo[key]
+        queue=[];dist={};parent={};origin={};serial=itertools.count()
+        for s,p in starts.items():
+            dist[s]=math.hypot(s[0]*STEP-p[0],s[1]*STEP-p[1]);parent[s]=None;origin[s]=p
+            heapq.heappush(queue,(dist[s]+h(s),next(serial),s))
+        visited=0;found=None
+        while queue and visited<600000:
+            cost,_,s=heapq.heappop(queue)
+            if cost>dist[s]+h(s)+1e-8:continue
+            visited+=1
+            if s in targets:found=s;break
+            neigh=[]
+            for dx,dy in [(1,0),(-1,0),(0,1),(0,-1),(1,1),(1,-1),(-1,1),(-1,-1)]:
+                q=(s[0]+dx,s[1]+dy,s[2])
+                if free(q) and clear((s[0]+dx/2)*STEP,(s[1]+dy/2)*STEP,s[2]):neigh.append((q,STEP*math.hypot(dx,dy)))
+            if via_free(s[0],s[1]):neigh.extend(((s[0],s[1],l),2.) for l in layers if l!=s[2])
+            for q,extra in neigh:
+                nd=dist[s]+extra
+                if nd+1e-9<dist.get(q,1e20):
+                    dist[q]=nd;parent[q]=s;origin[q]=origin[s];heapq.heappush(queue,(nd+h(q),next(serial),q))
+        if found is None:
+            bounds={b.GetLayerName(l):dict(states=len(rows),
+                        x=[min(p[0] for p in rows)*STEP,max(p[0] for p in rows)*STEP],
+                        y=[min(p[1] for p in rows)*STEP,max(p[1] for p in rows)*STEP])
+                    for l in layers if (rows:=[p for p in dist if p[2]==l])}
+            raise RuntimeError((net,'no route',visited,bounds))
+        path=[];cur=found
+        while cur is not None:path.append(cur);cur=parent[cur]
+        path.reverse();points=[origin[found]]+[(x*STEP,y*STEP,l) for x,y,l in path]+[targets[found]]
     simplified=[]
     for p in points:
         if simplified and p==simplified[-1]:continue
@@ -250,13 +323,29 @@ def route(opening):
             'length_mm':length,'starts':starts_exact,'ends':ends_exact,'points':simplified,
             'scope':'Rejected routing proposal; these points were not added to the board.'},indent=2)+'\n')
         raise RuntimeError((net,'detour needs topology review',round(length,3),visited))
+    for via in list(b.GetTracks()):
+        uid=via.m_Uuid.AsString()
+        if uid not in relocatable:continue
+        x,y=xy(via.GetPosition());radius=via.GetWidth(k.F_Cu)/2e6
+        crosses=False
+        for aa,zz in zip(simplified,simplified[1:]):
+            if aa[2]!=zz[2]:
+                crosses |= math.hypot(x-aa[0],y-aa[1])<radius+.3+.20001
+            else:
+                width_here=min(route_width(*aa),route_width(*zz))
+                crosses |= point_segment(x,y,*aa[:2],*zz[:2])<radius+width_here/2+.20001
+        if crosses:
+            removed_returns.append(dict(id=uid,pos=[x,y],route_net=net,reason='Accepted route crosses return-only via clearance'))
+            b.Delete(via)
+    if ground_islands_before is not None:
+        assert islands(b,{'/GND'})==ground_islands_before, 'Return relocation changed native local ground pad islands'
     for aa,zz in zip(simplified,simplified[1:]):
         if aa[2]!=zz[2]:addvia(aa[0],aa[1],net)
         else:
             t=k.PCB_TRACK(b);t.SetStart(vec(aa[0],aa[1]));t.SetEnd(vec(zz[0],zz[1]))
             t.SetLayer(aa[2]);t.SetWidth(round(min(route_width(*aa),route_width(*zz))*1e6));t.SetNet(b.FindNet(net));t.SetLocked(True);b.Add(t)
     print(net,'visited',visited,'segments',len(simplified),flush=True)
-    return {'net':net,'points':simplified,'visited':visited,'trunk_width_mm':width,'pad_escape_width_mm':.2,'escape_radius_mm':1.0}
+    return {'net':net,'points':simplified,'visited':visited,'search_backend':backend,'raster_input_sha256':request_sha,'trunk_width_mm':width,'pad_escape_width_mm':.2,'escape_radius_mm':1.0}
 results=[];failures=[];interrupted=False
 print('Routing',len(d['unconnected_items']),'opens; footprint keepouts enabled',flush=True)
 priority={net:i for i,net in enumerate(dict.fromkeys(args.first_net + ['/SPI_SCK','/SIM_IO','/SIM_CLK',
@@ -275,7 +364,9 @@ OUTPUT.with_suffix('.local-routing.json').write_text(json.dumps({'before_sha256'
     'protected_sim_input_ids':sorted(sim_inputs),'route_anchors':anchors,'first_nets':args.first_net,
     'low_current_branch_nets':args.low_current_net,
     'existing_power_backbone_pins':branch_backbones,
-    'only_nets':args.only_net,'router_script_sha256':script_sha,
+    'only_nets':args.only_net,'router_script_sha256':script_sha,'raster_script_sha256':raster_sha,
+    'relocatable_via_input_sha256':hashlib.sha256(args.relocatable_vias.read_bytes()).hexdigest() if args.relocatable_vias else None,
+    'removed_return_vias':removed_returns,
     'route_limit_mm':args.route_limit_mm,'board_bounds_mm':[xmin,ymin,xmax,ymax],
     'source_sha256':hashlib.sha256(OUTPUT.read_bytes()).hexdigest(),'routes':results,
     'ground_stitches':stitches,'failed':failures,'interrupted':interrupted,
