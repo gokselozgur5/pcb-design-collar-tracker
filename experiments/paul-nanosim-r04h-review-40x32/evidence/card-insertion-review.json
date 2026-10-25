@@ -1,0 +1,43 @@
+{
+  "source_sha256": "9c65b1b2f845d76e16e4a2598b5ec0d2894ee1e812cba25a538d53ae0a028aea",
+  "drawing": "references/paul-nanosim-r04/SIM8051-drawing-D6.pdf",
+  "drawing_sha256": "4fa95562ce295d7916c8badd8efcfac60280980af34d3ce6f330e888c6da475a",
+  "card_nominal_mm": [
+    8.8,
+    12.3
+  ],
+  "pcb_edge_y_mm": 98,
+  "socket_center_mm": [
+    127,
+    108
+  ],
+  "socket_angle_degrees": 0,
+  "side": "B.Cu",
+  "nominal_entry_projection_mm": [
+    122.6,
+    98,
+    131.4,
+    101.9
+  ],
+  "body_projections_mm": {
+    "D1": [
+      126.325,
+      98.45,
+      127.675,
+      100.55
+    ],
+    "C10": [
+      130.1,
+      100.1,
+      131.1,
+      100.6
+    ]
+  },
+  "overlap_candidates": [
+    "D1",
+    "C10"
+  ],
+  "placement_accepted": false,
+  "next_action": "Relocate D1 and C10 outside the swept card volume or to a verified opposite-side arrangement; reroute and repeat electrical, geometric and supplier checks. Do not reverse the socket.",
+  "scope": "XY projection screen from the manufacturer drawing and native Fab bodies. Tolerances, heights, enclosure and physical insertion/removal remain unverified. Native courtyard clearance does not establish card access."
+}

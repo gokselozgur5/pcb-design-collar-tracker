@@ -1,0 +1,2288 @@
+{
+  "source_sha256": "9c65b1b2f845d76e16e4a2598b5ec0d2894ee1e812cba25a538d53ae0a028aea",
+  "passives": [
+    {
+      "ref": "C1",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "/VSYS",
+          "pad_area_mm2": 0.1030995571199986,
+          "attachments": [
+            {
+              "id": "79a85d1c-fc7e-43c7-a963-f02999f5fb52",
+              "width_mm": 0.2998,
+              "outside_length_mm": 0.22330000000000894
+            }
+          ],
+          "total_exit_width_mm": 0.2998,
+          "max_exit_width_mm": 0.2998
+        },
+        {
+          "pin": "2",
+          "net": "/GND",
+          "pad_area_mm2": 0.10309955711999862,
+          "attachments": [
+            {
+              "id": "396ff71b-a414-43f0-9103-aeddc3b6b8e0",
+              "width_mm": 0.3,
+              "outside_length_mm": 0.5200000000000102
+            }
+          ],
+          "total_exit_width_mm": 0.3,
+          "max_exit_width_mm": 0.3
+        }
+      ],
+      "exit_width_sum_ratio": 1.000667111407605,
+      "max_exit_width_ratio": 1.000667111407605,
+      "review_candidate": false
+    },
+    {
+      "ref": "C10",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "/SIM_1V8",
+          "pad_area_mm2": 0.3288047766599967,
+          "attachments": [
+            {
+              "id": "c2634b5a-7dfd-40f5-9cd5-62b8961abdee",
+              "width_mm": 0.2,
+              "outside_length_mm": 1.7408694536971439
+            }
+          ],
+          "total_exit_width_mm": 0.2,
+          "max_exit_width_mm": 0.2
+        },
+        {
+          "pin": "2",
+          "net": "/GND",
+          "pad_area_mm2": 0.32880477665999835,
+          "attachments": [
+            {
+              "id": "e891d76f-3cec-448d-b72a-bde0d1257acb",
+              "width_mm": 0.2,
+              "outside_length_mm": 0.8370179774162397
+            }
+          ],
+          "total_exit_width_mm": 0.2,
+          "max_exit_width_mm": 0.2
+        }
+      ],
+      "exit_width_sum_ratio": 1.0,
+      "max_exit_width_ratio": 1.0,
+      "review_candidate": false
+    },
+    {
+      "ref": "C11",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "/LTE_RF",
+          "pad_area_mm2": 0.3288047766599966,
+          "attachments": [
+            {
+              "id": "260a5bab-f3fe-4bf3-b9ba-6ca7e7ba543f",
+              "width_mm": 0.2,
+              "outside_length_mm": 1.0250000000000057
+            }
+          ],
+          "total_exit_width_mm": 0.2,
+          "max_exit_width_mm": 0.2
+        },
+        {
+          "pin": "2",
+          "net": "/GND",
+          "pad_area_mm2": 0.32880477666000346,
+          "attachments": [
+            {
+              "id": "6ff09ae2-7eba-41df-bcca-63667a792495",
+              "width_mm": 0.2,
+              "outside_length_mm": 0.5349999999999966
+            }
+          ],
+          "total_exit_width_mm": 0.2,
+          "max_exit_width_mm": 0.2
+        }
+      ],
+      "exit_width_sum_ratio": 1.0,
+      "max_exit_width_ratio": 1.0,
+      "review_candidate": false
+    },
+    {
+      "ref": "C12",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "/LTE_ANT",
+          "pad_area_mm2": 0.32880477665999747,
+          "attachments": [
+            {
+              "id": "626a5f91-78a6-47d9-9b31-40a54e5bd471",
+              "width_mm": 0.2,
+              "outside_length_mm": 2.4099999999999966
+            }
+          ],
+          "total_exit_width_mm": 0.2,
+          "max_exit_width_mm": 0.2
+        },
+        {
+          "pin": "2",
+          "net": "/GND",
+          "pad_area_mm2": 0.32880477665999747,
+          "attachments": [
+            {
+              "id": "ed36af24-f5e1-459c-8936-6383054d4d17",
+              "width_mm": 0.2,
+              "outside_length_mm": 0.5349999999999966
+            }
+          ],
+          "total_exit_width_mm": 0.2,
+          "max_exit_width_mm": 0.2
+        }
+      ],
+      "exit_width_sum_ratio": 1.0,
+      "max_exit_width_ratio": 1.0,
+      "review_candidate": false
+    },
+    {
+      "ref": "C13",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "/GNSS_FEM_OUT",
+          "pad_area_mm2": 0.32880477665999747,
+          "attachments": [
+            {
+              "id": "9c993c9b-0101-4d5a-9639-4ebb303ea8e8",
+              "width_mm": 0.2,
+              "outside_length_mm": 1.7474989362121647
+            }
+          ],
+          "total_exit_width_mm": 0.2,
+          "max_exit_width_mm": 0.2
+        },
+        {
+          "pin": "2",
+          "net": "/GPS_RF",
+          "pad_area_mm2": 0.3288047766599907,
+          "attachments": [
+            {
+              "id": "16cf6c80-2479-4275-a6a3-6b6e21512ee6",
+              "width_mm": 0.2,
+              "outside_length_mm": 0.23500000000001364
+            }
+          ],
+          "total_exit_width_mm": 0.2,
+          "max_exit_width_mm": 0.2
+        }
+      ],
+      "exit_width_sum_ratio": 1.0,
+      "max_exit_width_ratio": 1.0,
+      "review_candidate": false
+    },
+    {
+      "ref": "C14",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "/GNSS_ANT",
+          "pad_area_mm2": 0.32880477665999747,
+          "attachments": [
+            {
+              "id": "c2c89658-325d-4429-a026-1494006ae5bd",
+              "width_mm": 0.2,
+              "outside_length_mm": 0.20999999999999375
+            }
+          ],
+          "total_exit_width_mm": 0.2,
+          "max_exit_width_mm": 0.2
+        },
+        {
+          "pin": "2",
+          "net": "/GNSS_FEM_IN",
+          "pad_area_mm2": 0.32880477665999747,
+          "attachments": [
+            {
+              "id": "9ceb98f1-7008-4734-9e40-892477494f5e",
+              "width_mm": 0.2,
+              "outside_length_mm": 1.9468721694653652
+            }
+          ],
+          "total_exit_width_mm": 0.2,
+          "max_exit_width_mm": 0.2
+        }
+      ],
+      "exit_width_sum_ratio": 1.0,
+      "max_exit_width_ratio": 1.0,
+      "review_candidate": false
+    },
+    {
+      "ref": "C15",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "/VIO_1V8",
+          "pad_area_mm2": 0.32880477666000346,
+          "attachments": [
+            {
+              "id": "b8852a25-67a7-42a6-9e1b-745493d29dbd",
+              "width_mm": 0.3,
+              "outside_length_mm": 0.34669999999999845
+            }
+          ],
+          "total_exit_width_mm": 0.3,
+          "max_exit_width_mm": 0.3
+        },
+        {
+          "pin": "2",
+          "net": "/GND",
+          "pad_area_mm2": 0.32880477666000346,
+          "attachments": [
+            {
+              "id": "a08c53a4-005a-4e60-aded-0e2bd4799020",
+              "width_mm": 0.3,
+              "outside_length_mm": 0.5349999999999966
+            }
+          ],
+          "total_exit_width_mm": 0.3,
+          "max_exit_width_mm": 0.3
+        }
+      ],
+      "exit_width_sum_ratio": 1.0,
+      "max_exit_width_ratio": 1.0,
+      "review_candidate": false
+    },
+    {
+      "ref": "C16",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "/VIO_1V8",
+          "pad_area_mm2": 0.32880477666000263,
+          "attachments": [
+            {
+              "id": "54001d7f-4c62-4881-9831-99fca73c8159",
+              "width_mm": 0.3,
+              "outside_length_mm": 0.5900999999999925
+            },
+            {
+              "id": "66d414b4-0198-46d5-a57c-aba1551f53ae",
+              "width_mm": 0.3,
+              "outside_length_mm": 0.5465815833044199
+            }
+          ],
+          "total_exit_width_mm": 0.6,
+          "max_exit_width_mm": 0.3
+        },
+        {
+          "pin": "2",
+          "net": "/GND",
+          "pad_area_mm2": 0.3288047766600026,
+          "attachments": [
+            {
+              "id": "689ec766-bba9-46a7-8918-5ac20c8db4a1",
+              "width_mm": 0.3,
+              "outside_length_mm": 0.5349999999999966
+            }
+          ],
+          "total_exit_width_mm": 0.3,
+          "max_exit_width_mm": 0.3
+        }
+      ],
+      "exit_width_sum_ratio": 2.0,
+      "max_exit_width_ratio": 1.0,
+      "review_candidate": false
+    },
+    {
+      "ref": "C17",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "/VIN_5V",
+          "pad_area_mm2": 0.3288047766600035,
+          "attachments": [
+            {
+              "id": "3fa9a987-c395-43e0-8876-e16715c2de31",
+              "width_mm": 0.4,
+              "outside_length_mm": 0.5349999999999966
+            }
+          ],
+          "total_exit_width_mm": 0.4,
+          "max_exit_width_mm": 0.4
+        },
+        {
+          "pin": "2",
+          "net": "/GND",
+          "pad_area_mm2": 0.3288047766600035,
+          "attachments": [
+            {
+              "id": "1e45a971-04ae-402c-8e8a-12e97f102436",
+              "width_mm": 0.4,
+              "outside_length_mm": 0.5650000000000119
+            }
+          ],
+          "total_exit_width_mm": 0.4,
+          "max_exit_width_mm": 0.4
+        }
+      ],
+      "exit_width_sum_ratio": 1.0,
+      "max_exit_width_ratio": 1.0,
+      "review_candidate": false
+    },
+    {
+      "ref": "C18",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "/VSYS",
+          "pad_area_mm2": 0.8074869045239973,
+          "attachments": [
+            {
+              "id": "b292e22a-24ba-40a4-9648-aa831d15d6ab",
+              "width_mm": 0.4,
+              "outside_length_mm": 0.710334823429591
+            },
+            {
+              "id": "ff3dfcd5-3525-4737-aec3-6bacfa8867c3",
+              "width_mm": 0.2,
+              "outside_length_mm": 0.47710681762655455
+            }
+          ],
+          "total_exit_width_mm": 0.6000000000000001,
+          "max_exit_width_mm": 0.4
+        },
+        {
+          "pin": "2",
+          "net": "/GND",
+          "pad_area_mm2": 0.8074869045239974,
+          "attachments": [
+            {
+              "id": "cf5a2404-26e0-42aa-bc59-61ba5025f0a5",
+              "width_mm": 0.4,
+              "outside_length_mm": 0.5700000000000074
+            }
+          ],
+          "total_exit_width_mm": 0.4,
+          "max_exit_width_mm": 0.4
+        }
+      ],
+      "exit_width_sum_ratio": 1.5000000000000002,
+      "max_exit_width_ratio": 1.0,
+      "review_candidate": false
+    },
+    {
+      "ref": "C19",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "/VBAT",
+          "pad_area_mm2": 0.32880477666000146,
+          "attachments": [
+            {
+              "id": "284dd189-231a-47e5-a753-63de8900c971",
+              "width_mm": 0.4,
+              "outside_length_mm": 0.4350000000000023
+            },
+            {
+              "id": "cff99615-b52a-4996-8b26-a2f317acd5e9",
+              "width_mm": 0.4,
+              "outside_length_mm": 0.4350000000000023
+            }
+          ],
+          "total_exit_width_mm": 0.8,
+          "max_exit_width_mm": 0.4
+        },
+        {
+          "pin": "2",
+          "net": "/GND",
+          "pad_area_mm2": 0.3288047766599946,
+          "attachments": [
+            {
+              "id": "a9789145-ae5b-42c5-9006-391c7d51895d",
+              "width_mm": 0.4,
+              "outside_length_mm": 0.44602017128086235
+            }
+          ],
+          "total_exit_width_mm": 0.4,
+          "max_exit_width_mm": 0.4
+        }
+      ],
+      "exit_width_sum_ratio": 2.0,
+      "max_exit_width_ratio": 1.0,
+      "review_candidate": false
+    },
+    {
+      "ref": "C2",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "/VSYS",
+          "pad_area_mm2": 0.10309955712000227,
+          "attachments": [
+            {
+              "id": "5d4c548b-8830-4671-80b8-83b767ca414f",
+              "width_mm": 0.3,
+              "outside_length_mm": 0.37000000000000455
+            }
+          ],
+          "total_exit_width_mm": 0.3,
+          "max_exit_width_mm": 0.3
+        },
+        {
+          "pin": "2",
+          "net": "/GND",
+          "pad_area_mm2": 0.10309955711999834,
+          "attachments": [
+            {
+              "id": "3bfb6b6e-7a49-4bcc-8b43-a63fcc5ce3d2",
+              "width_mm": 0.3,
+              "outside_length_mm": 0.5200000000000102
+            }
+          ],
+          "total_exit_width_mm": 0.3,
+          "max_exit_width_mm": 0.3
+        }
+      ],
+      "exit_width_sum_ratio": 1.0,
+      "max_exit_width_ratio": 1.0,
+      "review_candidate": false
+    },
+    {
+      "ref": "C20",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "/VSYS",
+          "pad_area_mm2": 0.32880477666000346,
+          "attachments": [
+            {
+              "id": "2358e335-6f96-447d-8db9-1289efa7e9ca",
+              "width_mm": 0.2,
+              "outside_length_mm": 0.49739999999999895
+            },
+            {
+              "id": "636306fd-c895-4a4a-83a7-ba5ff1ef3388",
+              "width_mm": 0.2,
+              "outside_length_mm": 0.1033255246049827
+            },
+            {
+              "id": "785d89fa-3ec5-4cdb-ac84-a5be20ad1809",
+              "width_mm": 0.2,
+              "outside_length_mm": 0.5502000000000038
+            }
+          ],
+          "total_exit_width_mm": 0.6000000000000001,
+          "max_exit_width_mm": 0.2
+        },
+        {
+          "pin": "2",
+          "net": "/GND",
+          "pad_area_mm2": 0.32880477666000346,
+          "attachments": [
+            {
+              "id": "b857d1af-bdaa-4451-861f-e87f96770536",
+              "width_mm": 0.4,
+              "outside_length_mm": 0.5349999999999966
+            }
+          ],
+          "total_exit_width_mm": 0.4,
+          "max_exit_width_mm": 0.4
+        }
+      ],
+      "exit_width_sum_ratio": 1.5000000000000002,
+      "max_exit_width_ratio": 2.0,
+      "review_candidate": true
+    },
+    {
+      "ref": "C21",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "/VIO_1V8",
+          "pad_area_mm2": 0.32880477666000146,
+          "attachments": [
+            {
+              "id": "b936f7d7-80b0-4b75-8879-b21a231428da",
+              "width_mm": 0.2,
+              "outside_length_mm": 0.113900000000001
+            },
+            {
+              "id": "e6314a3a-9dba-4fca-acb1-37342aa2b1c4",
+              "width_mm": 0.2,
+              "outside_length_mm": 0.34669999999999845
+            }
+          ],
+          "total_exit_width_mm": 0.4,
+          "max_exit_width_mm": 0.2
+        },
+        {
+          "pin": "2",
+          "net": "/GND",
+          "pad_area_mm2": 0.32880477666000146,
+          "attachments": [
+            {
+              "id": "ca6c3102-d050-40e7-bb92-cc8a71161dff",
+              "width_mm": 0.3,
+              "outside_length_mm": 0.5349999999999966
+            }
+          ],
+          "total_exit_width_mm": 0.3,
+          "max_exit_width_mm": 0.3
+        }
+      ],
+      "exit_width_sum_ratio": 1.3333333333333335,
+      "max_exit_width_ratio": 1.4999999999999998,
+      "review_candidate": false
+    },
+    {
+      "ref": "C22",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "/BAT_ADC",
+          "pad_area_mm2": 0.32880477666000146,
+          "attachments": [
+            {
+              "id": "d4ef3eb3-d1f0-4c19-919d-5561ac519f56",
+              "width_mm": 0.2,
+              "outside_length_mm": 0.4908507412080905
+            }
+          ],
+          "total_exit_width_mm": 0.2,
+          "max_exit_width_mm": 0.2
+        },
+        {
+          "pin": "2",
+          "net": "/GND",
+          "pad_area_mm2": 0.32880477666000146,
+          "attachments": [
+            {
+              "id": "81675259-7093-4a90-9c47-60b1635889c3",
+              "width_mm": 0.2,
+              "outside_length_mm": 0.9551370537351959
+            }
+          ],
+          "total_exit_width_mm": 0.2,
+          "max_exit_width_mm": 0.2
+        }
+      ],
+      "exit_width_sum_ratio": 1.0,
+      "max_exit_width_ratio": 1.0,
+      "review_candidate": false
+    },
+    {
+      "ref": "C23",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "/VIO_1V8",
+          "pad_area_mm2": 0.32880477665999835,
+          "attachments": [
+            {
+              "id": "37212c23-336b-42dc-8476-15c590cb6ec6",
+              "width_mm": 0.3,
+              "outside_length_mm": 0.3467000000000269
+            },
+            {
+              "id": "c1429144-058e-4702-afe0-b8a866b45b55",
+              "width_mm": 0.3,
+              "outside_length_mm": 1.7850000000000108
+            }
+          ],
+          "total_exit_width_mm": 0.6,
+          "max_exit_width_mm": 0.3
+        },
+        {
+          "pin": "2",
+          "net": "/GND",
+          "pad_area_mm2": 0.3288047766599984,
+          "attachments": [
+            {
+              "id": "0a7c769a-1bab-4205-a900-80ce78f2e7ed",
+              "width_mm": 0.3,
+              "outside_length_mm": 0.535000000000025
+            }
+          ],
+          "total_exit_width_mm": 0.3,
+          "max_exit_width_mm": 0.3
+        }
+      ],
+      "exit_width_sum_ratio": 2.0,
+      "max_exit_width_ratio": 1.0,
+      "review_candidate": false
+    },
+    {
+      "ref": "C24",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "/VIO_1V8",
+          "pad_area_mm2": 0.3288047766600023,
+          "attachments": [
+            {
+              "id": "b66253dc-cf85-48e5-9391-ba1dd1dea408",
+              "width_mm": 0.3,
+              "outside_length_mm": 8.237338198028056
+            },
+            {
+              "id": "c1429144-058e-4702-afe0-b8a866b45b55",
+              "width_mm": 0.3,
+              "outside_length_mm": 1.7849999999999966
+            }
+          ],
+          "total_exit_width_mm": 0.6,
+          "max_exit_width_mm": 0.3
+        },
+        {
+          "pin": "2",
+          "net": "/GND",
+          "pad_area_mm2": 0.32880477666000235,
+          "attachments": [
+            {
+              "id": "ce4b4ea1-e3ea-4d61-8231-f361f5e3e391",
+              "width_mm": 0.3,
+              "outside_length_mm": 0.535000000000025
+            }
+          ],
+          "total_exit_width_mm": 0.3,
+          "max_exit_width_mm": 0.3
+        }
+      ],
+      "exit_width_sum_ratio": 2.0,
+      "max_exit_width_ratio": 1.0,
+      "review_candidate": false
+    },
+    {
+      "ref": "C3",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "/VDD_NRF",
+          "pad_area_mm2": 1.3913420052919894,
+          "attachments": [
+            {
+              "id": "625fff6a-8a71-4708-9115-fcc7af348f67",
+              "width_mm": 0.4,
+              "outside_length_mm": 1.0011155385055135
+            }
+          ],
+          "total_exit_width_mm": 0.4,
+          "max_exit_width_mm": 0.4
+        },
+        {
+          "pin": "2",
+          "net": "/GND",
+          "pad_area_mm2": 1.3913420052919905,
+          "attachments": [
+            {
+              "id": "b73cb0c9-3ddc-467d-8cdf-39ec6a00d38f",
+              "width_mm": 0.4,
+              "outside_length_mm": 0.49500000000000455
+            }
+          ],
+          "total_exit_width_mm": 0.4,
+          "max_exit_width_mm": 0.4
+        }
+      ],
+      "exit_width_sum_ratio": 1.0,
+      "max_exit_width_ratio": 1.0,
+      "review_candidate": false
+    },
+    {
+      "ref": "C4",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "/VDD_NRF",
+          "pad_area_mm2": 0.8074869045239995,
+          "attachments": [
+            {
+              "id": "9aa71593-b57a-4233-b46c-737a3cde31e4",
+              "width_mm": 0.4,
+              "outside_length_mm": 0.31039522799046726
+            }
+          ],
+          "total_exit_width_mm": 0.4,
+          "max_exit_width_mm": 0.4
+        },
+        {
+          "pin": "2",
+          "net": "/GND",
+          "pad_area_mm2": 0.8074869045239912,
+          "attachments": [
+            {
+              "id": "7c5d1970-6d91-420c-b6a6-a666153cf22e",
+              "width_mm": 0.4,
+              "outside_length_mm": 0.35678143283631725
+            }
+          ],
+          "total_exit_width_mm": 0.4,
+          "max_exit_width_mm": 0.4
+        }
+      ],
+      "exit_width_sum_ratio": 1.0,
+      "max_exit_width_ratio": 1.0,
+      "review_candidate": false
+    },
+    {
+      "ref": "C5",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "/VIO_1V8",
+          "pad_area_mm2": 0.1030995571199986,
+          "attachments": [
+            {
+              "id": "c0fb6247-36ab-46df-b876-4d2d0e859269",
+              "width_mm": 0.3,
+              "outside_length_mm": 1.0431000000000097
+            },
+            {
+              "id": "f54828f3-c909-4781-ae4d-9bcd6a2fae0b",
+              "width_mm": 0.3,
+              "outside_length_mm": 0.48400000000000887
+            }
+          ],
+          "total_exit_width_mm": 0.6,
+          "max_exit_width_mm": 0.3
+        },
+        {
+          "pin": "2",
+          "net": "/GND",
+          "pad_area_mm2": 0.10309955711999862,
+          "attachments": [
+            {
+              "id": "3e48e13e-8ab2-4107-af54-dc89babeb2cf",
+              "width_mm": 0.3,
+              "outside_length_mm": 0.5200000000000102
+            }
+          ],
+          "total_exit_width_mm": 0.3,
+          "max_exit_width_mm": 0.3
+        }
+      ],
+      "exit_width_sum_ratio": 2.0,
+      "max_exit_width_ratio": 1.0,
+      "review_candidate": false
+    },
+    {
+      "ref": "C6",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "/VIO_1V8",
+          "pad_area_mm2": 0.32880477666000346,
+          "attachments": [
+            {
+              "id": "9fccfc69-6689-4095-abc7-b72b6257db36",
+              "width_mm": 0.3,
+              "outside_length_mm": 1.7600000000000051
+            }
+          ],
+          "total_exit_width_mm": 0.3,
+          "max_exit_width_mm": 0.3
+        },
+        {
+          "pin": "2",
+          "net": "/GND",
+          "pad_area_mm2": 0.32880477666000346,
+          "attachments": [
+            {
+              "id": "ffdd438f-d2a5-4a8e-ad3a-8d8a44ac715b",
+              "width_mm": 0.3,
+              "outside_length_mm": 0.5349999999999966
+            }
+          ],
+          "total_exit_width_mm": 0.3,
+          "max_exit_width_mm": 0.3
+        }
+      ],
+      "exit_width_sum_ratio": 1.0,
+      "max_exit_width_ratio": 1.0,
+      "review_candidate": false
+    },
+    {
+      "ref": "C7",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "/DEC0",
+          "pad_area_mm2": 0.32880477666000146,
+          "attachments": [
+            {
+              "id": "1ffae645-172a-4559-8906-a57d872ad664",
+              "width_mm": 0.2,
+              "outside_length_mm": 0.3983611742288946
+            }
+          ],
+          "total_exit_width_mm": 0.2,
+          "max_exit_width_mm": 0.2
+        },
+        {
+          "pin": "2",
+          "net": "/GND",
+          "pad_area_mm2": 0.32880477666000146,
+          "attachments": [
+            {
+              "id": "8d9b385a-b0f4-4fe4-95ee-f050d65b0f9d",
+              "width_mm": 0.2,
+              "outside_length_mm": 0.5349999999999966
+            }
+          ],
+          "total_exit_width_mm": 0.2,
+          "max_exit_width_mm": 0.2
+        }
+      ],
+      "exit_width_sum_ratio": 1.0,
+      "max_exit_width_ratio": 1.0,
+      "review_candidate": false
+    },
+    {
+      "ref": "C8",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "/NRF_RESET",
+          "pad_area_mm2": 0.10309955711999894,
+          "attachments": [
+            {
+              "id": "30207718-0f2c-40fe-a036-6f5dbedbeed9",
+              "width_mm": 0.2,
+              "outside_length_mm": 0.12439628160840266
+            }
+          ],
+          "total_exit_width_mm": 0.2,
+          "max_exit_width_mm": 0.2
+        },
+        {
+          "pin": "2",
+          "net": "/GND",
+          "pad_area_mm2": 0.10309955711999834,
+          "attachments": [
+            {
+              "id": "0079d42e-5170-405e-81ce-febc18766e48",
+              "width_mm": 0.2,
+              "outside_length_mm": 0.7990306627408357
+            }
+          ],
+          "total_exit_width_mm": 0.2,
+          "max_exit_width_mm": 0.2
+        }
+      ],
+      "exit_width_sum_ratio": 1.0,
+      "max_exit_width_ratio": 1.0,
+      "review_candidate": false
+    },
+    {
+      "ref": "C9",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "/NRF_ENABLE",
+          "pad_area_mm2": 0.32880477665999663,
+          "attachments": [
+            {
+              "id": "a62d1525-68d9-4bb5-8e10-83dced3e4752",
+              "width_mm": 0.2,
+              "outside_length_mm": 1.1795955323754077
+            }
+          ],
+          "total_exit_width_mm": 0.2,
+          "max_exit_width_mm": 0.2
+        },
+        {
+          "pin": "2",
+          "net": "/GND",
+          "pad_area_mm2": 0.3288047766600035,
+          "attachments": [
+            {
+              "id": "86139c57-7d09-4501-b884-654723e8a68c",
+              "width_mm": 0.2,
+              "outside_length_mm": 0.5849999999999937
+            }
+          ],
+          "total_exit_width_mm": 0.2,
+          "max_exit_width_mm": 0.2
+        }
+      ],
+      "exit_width_sum_ratio": 1.0,
+      "max_exit_width_ratio": 1.0,
+      "review_candidate": false
+    },
+    {
+      "ref": "FB1",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "/VSYS",
+          "pad_area_mm2": 0.7863401546399905,
+          "attachments": [
+            {
+              "id": "0a94e834-a0e4-4c28-b374-043ada8296b1",
+              "width_mm": 0.4,
+              "outside_length_mm": 0.5598000000000098
+            }
+          ],
+          "total_exit_width_mm": 0.4,
+          "max_exit_width_mm": 0.4
+        },
+        {
+          "pin": "2",
+          "net": "/VDD_NRF",
+          "pad_area_mm2": 0.7863401546399905,
+          "attachments": [
+            {
+              "id": "94893997-2a1f-431e-bac2-2cb89174a4c2",
+              "width_mm": 0.4,
+              "outside_length_mm": 0.2503158005400272
+            },
+            {
+              "id": "f29512ef-6031-4bd0-87e9-e71216c872ec",
+              "width_mm": 0.4,
+              "outside_length_mm": 0.3967000000000098
+            }
+          ],
+          "total_exit_width_mm": 0.8,
+          "max_exit_width_mm": 0.4
+        }
+      ],
+      "exit_width_sum_ratio": 2.0,
+      "max_exit_width_ratio": 1.0,
+      "review_candidate": false
+    },
+    {
+      "ref": "L1",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "/FILT_OUT",
+          "pad_area_mm2": 0.35718090859199564,
+          "attachments": [
+            {
+              "id": "155d63b6-c8b5-488f-a491-64d589034e51",
+              "width_mm": 0.2,
+              "outside_length_mm": 0.19432136215894105
+            }
+          ],
+          "total_exit_width_mm": 0.2,
+          "max_exit_width_mm": 0.2
+        },
+        {
+          "pin": "2",
+          "net": "/AMP_IN",
+          "pad_area_mm2": 0.35718090859199564,
+          "attachments": [
+            {
+              "id": "c8632018-dd01-4b9a-b960-d354b47a6679",
+              "width_mm": 0.2,
+              "outside_length_mm": 0.19432136215894105
+            }
+          ],
+          "total_exit_width_mm": 0.2,
+          "max_exit_width_mm": 0.2
+        }
+      ],
+      "exit_width_sum_ratio": 1.0,
+      "max_exit_width_ratio": 1.0,
+      "review_candidate": false
+    },
+    {
+      "ref": "R1",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "/VDD_NRF",
+          "pad_area_mm2": 0.3284951818320037,
+          "attachments": [
+            {
+              "id": "12f94ac6-b508-4f90-8d16-0ec8c30c17c6",
+              "width_mm": 0.2,
+              "outside_length_mm": 0.39184034875867724
+            }
+          ],
+          "total_exit_width_mm": 0.2,
+          "max_exit_width_mm": 0.2
+        },
+        {
+          "pin": "2",
+          "net": "/NRF_ENABLE",
+          "pad_area_mm2": 0.3284951818320037,
+          "attachments": [
+            {
+              "id": "3ca3d32a-29db-4847-a504-594f4d971590",
+              "width_mm": 0.2,
+              "outside_length_mm": 1.2931691834502257
+            }
+          ],
+          "total_exit_width_mm": 0.2,
+          "max_exit_width_mm": 0.2
+        }
+      ],
+      "exit_width_sum_ratio": 1.0,
+      "max_exit_width_ratio": 1.0,
+      "review_candidate": false
+    },
+    {
+      "ref": "R10",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "/VBAT",
+          "pad_area_mm2": 0.3284951818319975,
+          "attachments": [
+            {
+              "id": "bf8cf763-e72b-4582-b62f-00d17bfbb47a",
+              "width_mm": 0.4,
+              "outside_length_mm": 0.6941154565056895
+            }
+          ],
+          "total_exit_width_mm": 0.4,
+          "max_exit_width_mm": 0.4
+        },
+        {
+          "pin": "2",
+          "net": "/BAT_ADC",
+          "pad_area_mm2": 0.3284951818319975,
+          "attachments": [
+            {
+              "id": "1798fe7b-8d0f-4510-b3a8-2940bb114d7c",
+              "width_mm": 0.2,
+              "outside_length_mm": 1.1333000000000055
+            },
+            {
+              "id": "25413bc5-7ce2-4ca3-bf80-9c4d21c0a140",
+              "width_mm": 0.2,
+              "outside_length_mm": 1.605700000000013
+            }
+          ],
+          "total_exit_width_mm": 0.4,
+          "max_exit_width_mm": 0.2
+        }
+      ],
+      "exit_width_sum_ratio": 1.0,
+      "max_exit_width_ratio": 2.0,
+      "review_candidate": true
+    },
+    {
+      "ref": "R11",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "/BAT_ADC",
+          "pad_area_mm2": 0.3284951818319975,
+          "attachments": [
+            {
+              "id": "d522d090-1071-48a1-b8e5-345f9dec7f10",
+              "width_mm": 0.2,
+              "outside_length_mm": 0.2967000000000013
+            }
+          ],
+          "total_exit_width_mm": 0.2,
+          "max_exit_width_mm": 0.2
+        },
+        {
+          "pin": "2",
+          "net": "/GND",
+          "pad_area_mm2": 0.3284951818319975,
+          "attachments": [
+            {
+              "id": "b108ec5a-91a8-4795-8ab2-1545ea86dbc5",
+              "width_mm": 0.2,
+              "outside_length_mm": 0.9983056556954243
+            }
+          ],
+          "total_exit_width_mm": 0.2,
+          "max_exit_width_mm": 0.2
+        }
+      ],
+      "exit_width_sum_ratio": 1.0,
+      "max_exit_width_ratio": 1.0,
+      "review_candidate": false
+    },
+    {
+      "ref": "R12",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "/I2C_SDA",
+          "pad_area_mm2": 0.3284951818319975,
+          "attachments": [
+            {
+              "id": "044cb070-5165-482c-80b2-c78a62b242e7",
+              "width_mm": 0.2,
+              "outside_length_mm": 0.5150000000000006
+            }
+          ],
+          "total_exit_width_mm": 0.2,
+          "max_exit_width_mm": 0.2
+        },
+        {
+          "pin": "2",
+          "net": "/VIO_1V8",
+          "pad_area_mm2": 0.328495181831992,
+          "attachments": [
+            {
+              "id": "ea8ce3d2-b5ca-40b3-8a97-3c99f3895dfe",
+              "width_mm": 0.2,
+              "outside_length_mm": 0.6250000000000142
+            }
+          ],
+          "total_exit_width_mm": 0.2,
+          "max_exit_width_mm": 0.2
+        }
+      ],
+      "exit_width_sum_ratio": 1.0,
+      "max_exit_width_ratio": 1.0,
+      "review_candidate": false
+    },
+    {
+      "ref": "R13",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "/I2C_SCL",
+          "pad_area_mm2": 0.328495181831992,
+          "attachments": [
+            {
+              "id": "3b09cb3b-3e01-4272-8898-21c1fd7d7a71",
+              "width_mm": 0.2,
+              "outside_length_mm": 0.4552787727531696
+            }
+          ],
+          "total_exit_width_mm": 0.2,
+          "max_exit_width_mm": 0.2
+        },
+        {
+          "pin": "2",
+          "net": "/VIO_1V8",
+          "pad_area_mm2": 0.3284951818319975,
+          "attachments": [
+            {
+              "id": "7e33806a-8470-481d-92a4-768d9328fb6e",
+              "width_mm": 0.2,
+              "outside_length_mm": 0.6250000000000142
+            }
+          ],
+          "total_exit_width_mm": 0.2,
+          "max_exit_width_mm": 0.2
+        }
+      ],
+      "exit_width_sum_ratio": 1.0,
+      "max_exit_width_ratio": 1.0,
+      "review_candidate": false
+    },
+    {
+      "ref": "R14",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "/HEALTH_CS",
+          "pad_area_mm2": 0.3284951818319975,
+          "attachments": [
+            {
+              "id": "8f4b2e7a-2bab-4739-9f28-73ab83862b63",
+              "width_mm": 0.2,
+              "outside_length_mm": 2.004800000000003
+            },
+            {
+              "id": "de6d8761-26e3-42dd-9a0d-dfc22205ddaa",
+              "width_mm": 0.2,
+              "outside_length_mm": 0.057146529936127344
+            }
+          ],
+          "total_exit_width_mm": 0.4,
+          "max_exit_width_mm": 0.2
+        },
+        {
+          "pin": "2",
+          "net": "/VIO_1V8",
+          "pad_area_mm2": 0.3284951818319975,
+          "attachments": [
+            {
+              "id": "962e2e3b-f276-425e-80b4-6841d34e15c8",
+              "width_mm": 0.3,
+              "outside_length_mm": 2.081300000000013
+            }
+          ],
+          "total_exit_width_mm": 0.3,
+          "max_exit_width_mm": 0.3
+        }
+      ],
+      "exit_width_sum_ratio": 1.3333333333333335,
+      "max_exit_width_ratio": 1.4999999999999998,
+      "review_candidate": false
+    },
+    {
+      "ref": "R15",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "/HEALTH_EN",
+          "pad_area_mm2": 0.3284951818319975,
+          "attachments": [
+            {
+              "id": "3bbe5c2a-210d-4f3c-a3b3-f436b07a9575",
+              "width_mm": 0.2,
+              "outside_length_mm": 2.1440000000000055
+            }
+          ],
+          "total_exit_width_mm": 0.2,
+          "max_exit_width_mm": 0.2
+        },
+        {
+          "pin": "2",
+          "net": "/GND",
+          "pad_area_mm2": 0.3284951818319975,
+          "attachments": [
+            {
+              "id": "7b9e9bb9-923a-44da-b6c6-ed084a18d523",
+              "width_mm": 0.2,
+              "outside_length_mm": 0.5178856725150354
+            }
+          ],
+          "total_exit_width_mm": 0.2,
+          "max_exit_width_mm": 0.2
+        }
+      ],
+      "exit_width_sum_ratio": 1.0,
+      "max_exit_width_ratio": 1.0,
+      "review_candidate": false
+    },
+    {
+      "ref": "R2",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "/NRF_RESET",
+          "pad_area_mm2": 0.32849518183199045,
+          "attachments": [
+            {
+              "id": "6126932d-323f-4843-8453-c5550f9f9424",
+              "width_mm": 0.2,
+              "outside_length_mm": 1.4366000000000128
+            }
+          ],
+          "total_exit_width_mm": 0.2,
+          "max_exit_width_mm": 0.2
+        },
+        {
+          "pin": "2",
+          "net": "/DEBUG_RESET",
+          "pad_area_mm2": 0.32849518183199805,
+          "attachments": [
+            {
+              "id": "bb7c3c16-207d-46de-be8c-6797ebe262e4",
+              "width_mm": 0.2,
+              "outside_length_mm": 2.2783000000000158
+            }
+          ],
+          "total_exit_width_mm": 0.2,
+          "max_exit_width_mm": 0.2
+        }
+      ],
+      "exit_width_sum_ratio": 1.0,
+      "max_exit_width_ratio": 1.0,
+      "review_candidate": false
+    },
+    {
+      "ref": "R3",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "/LTE_RF",
+          "pad_area_mm2": 0.3284951818320037,
+          "attachments": [
+            {
+              "id": "22d6dd2d-1fd0-41f6-a2ac-10b576bbee88",
+              "width_mm": 0.2,
+              "outside_length_mm": 1.9150000002349932
+            },
+            {
+              "id": "260a5bab-f3fe-4bf3-b9ba-6ca7e7ba543f",
+              "width_mm": 0.2,
+              "outside_length_mm": 1.0349999999999966
+            }
+          ],
+          "total_exit_width_mm": 0.4,
+          "max_exit_width_mm": 0.2
+        },
+        {
+          "pin": "2",
+          "net": "/LTE_ANT",
+          "pad_area_mm2": 0.3284951818320037,
+          "attachments": [
+            {
+              "id": "adf13514-e385-4d81-ab84-acc428a440eb",
+              "width_mm": 0.2,
+              "outside_length_mm": 0.5150000000000006
+            }
+          ],
+          "total_exit_width_mm": 0.2,
+          "max_exit_width_mm": 0.2
+        }
+      ],
+      "exit_width_sum_ratio": 2.0,
+      "max_exit_width_ratio": 1.0,
+      "review_candidate": false
+    },
+    {
+      "ref": "R4",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "/COEX0",
+          "pad_area_mm2": 0.32849518183200427,
+          "attachments": [
+            {
+              "id": "4c12211b-f27e-456e-860b-b7347e53465b",
+              "width_mm": 0.2,
+              "outside_length_mm": 1.335099999999997
+            }
+          ],
+          "total_exit_width_mm": 0.2,
+          "max_exit_width_mm": 0.2
+        },
+        {
+          "pin": "2",
+          "net": "/GNSS_LNA_EN",
+          "pad_area_mm2": 0.32849518183199666,
+          "attachments": [
+            {
+              "id": "8122729d-73f0-4fe6-8b43-1a7ee199136a",
+              "width_mm": 0.2,
+              "outside_length_mm": 1.0831584694378031
+            },
+            {
+              "id": "f26978d0-5421-4d17-9b47-38fdd44aa4c1",
+              "width_mm": 0.2,
+              "outside_length_mm": 0.855045821827027
+            }
+          ],
+          "total_exit_width_mm": 0.4,
+          "max_exit_width_mm": 0.2
+        }
+      ],
+      "exit_width_sum_ratio": 2.0,
+      "max_exit_width_ratio": 1.0,
+      "review_candidate": false
+    },
+    {
+      "ref": "R5",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "/GNSS_LNA_EN",
+          "pad_area_mm2": 0.3284951818320042,
+          "attachments": [
+            {
+              "id": "8122729d-73f0-4fe6-8b43-1a7ee199136a",
+              "width_mm": 0.2,
+              "outside_length_mm": 1.4424978336205512
+            },
+            {
+              "id": "f7cfeb3b-2b96-4bb2-8b7d-c30ad4dab0d1",
+              "width_mm": 0.2,
+              "outside_length_mm": 0.05500000000000682
+            }
+          ],
+          "total_exit_width_mm": 0.4,
+          "max_exit_width_mm": 0.2
+        },
+        {
+          "pin": "2",
+          "net": "/GND",
+          "pad_area_mm2": 0.32849518183199666,
+          "attachments": [
+            {
+              "id": "71cab247-08d6-4c4c-9202-54c127cfa187",
+              "width_mm": 0.2,
+              "outside_length_mm": 0.5150000000000006
+            }
+          ],
+          "total_exit_width_mm": 0.2,
+          "max_exit_width_mm": 0.2
+        }
+      ],
+      "exit_width_sum_ratio": 2.0,
+      "max_exit_width_ratio": 1.0,
+      "review_candidate": false
+    },
+    {
+      "ref": "R6",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "/ILIM_VSET",
+          "pad_area_mm2": 0.3284951818320037,
+          "attachments": [
+            {
+              "id": "785866e7-a71c-4500-93ed-554278fa02ca",
+              "width_mm": 0.2,
+              "outside_length_mm": 0.14142135623731153
+            }
+          ],
+          "total_exit_width_mm": 0.2,
+          "max_exit_width_mm": 0.2
+        },
+        {
+          "pin": "2",
+          "net": "/GND",
+          "pad_area_mm2": 0.3284951818320037,
+          "attachments": [
+            {
+              "id": "5d1f1635-8e37-4413-8715-2f94536d0f1d",
+              "width_mm": 0.2,
+              "outside_length_mm": 0.687178671973345
+            }
+          ],
+          "total_exit_width_mm": 0.2,
+          "max_exit_width_mm": 0.2
+        }
+      ],
+      "exit_width_sum_ratio": 1.0,
+      "max_exit_width_ratio": 1.0,
+      "review_candidate": false
+    },
+    {
+      "ref": "R7",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "/ISET",
+          "pad_area_mm2": 0.32849518183199666,
+          "attachments": [
+            {
+              "id": "66a701d0-b662-4a1f-be63-da58ac1cf378",
+              "width_mm": 0.2,
+              "outside_length_mm": 1.8750000000000142
+            }
+          ],
+          "total_exit_width_mm": 0.2,
+          "max_exit_width_mm": 0.2
+        },
+        {
+          "pin": "2",
+          "net": "/GND",
+          "pad_area_mm2": 0.32849518183200427,
+          "attachments": [
+            {
+              "id": "eaaa44b2-4dcc-4464-bb1e-347b92863084",
+              "width_mm": 0.2,
+              "outside_length_mm": 0.7750000000000057
+            }
+          ],
+          "total_exit_width_mm": 0.2,
+          "max_exit_width_mm": 0.2
+        }
+      ],
+      "exit_width_sum_ratio": 1.0,
+      "max_exit_width_ratio": 1.0,
+      "review_candidate": false
+    },
+    {
+      "ref": "R8",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "/CHG_STAT",
+          "pad_area_mm2": 0.3284951818319975,
+          "attachments": [
+            {
+              "id": "d8945836-1a7d-4813-bf84-e2325cde2197",
+              "width_mm": 0.2,
+              "outside_length_mm": 2.23190000000001
+            }
+          ],
+          "total_exit_width_mm": 0.2,
+          "max_exit_width_mm": 0.2
+        },
+        {
+          "pin": "2",
+          "net": "/VIO_1V8",
+          "pad_area_mm2": 0.3284951818319975,
+          "attachments": [
+            {
+              "id": "eb1f65a5-0003-458e-84f2-2f36f41824c9",
+              "width_mm": 0.3,
+              "outside_length_mm": 0.34669999999999845
+            }
+          ],
+          "total_exit_width_mm": 0.3,
+          "max_exit_width_mm": 0.3
+        }
+      ],
+      "exit_width_sum_ratio": 1.4999999999999998,
+      "max_exit_width_ratio": 1.4999999999999998,
+      "review_candidate": false
+    },
+    {
+      "ref": "R9",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "/CHG_FAULT",
+          "pad_area_mm2": 0.3284951818319975,
+          "attachments": [
+            {
+              "id": "989499e1-fcb9-48ee-9923-075337e47e8d",
+              "width_mm": 0.2,
+              "outside_length_mm": 0.5771528568207335
+            }
+          ],
+          "total_exit_width_mm": 0.2,
+          "max_exit_width_mm": 0.2
+        },
+        {
+          "pin": "2",
+          "net": "/VIO_1V8",
+          "pad_area_mm2": 0.3284951818319975,
+          "attachments": [
+            {
+              "id": "7c34b903-7d87-4941-b369-fe6ef0076b4a",
+              "width_mm": 0.2,
+              "outside_length_mm": 0.6150000000000091
+            }
+          ],
+          "total_exit_width_mm": 0.2,
+          "max_exit_width_mm": 0.2
+        }
+      ],
+      "exit_width_sum_ratio": 1.0,
+      "max_exit_width_ratio": 1.0,
+      "review_candidate": false
+    }
+  ],
+  "grounds": [
+    {
+      "pad": "C1.2",
+      "local_path_mm": 0.6750000000000114,
+      "via": "0e87c094-117e-454c-91b4-148776e9a24c",
+      "track_ids": [
+        "396ff71b-a414-43f0-9103-aeddc3b6b8e0"
+      ],
+      "intermediate_pads": []
+    },
+    {
+      "pad": "C10.2",
+      "local_path_mm": 1.152779250333724,
+      "via": "3b0346b0-788e-4c27-a574-803cd4845b88",
+      "track_ids": [
+        "e891d76f-3cec-448d-b72a-bde0d1257acb"
+      ],
+      "intermediate_pads": []
+    },
+    {
+      "pad": "C11.2",
+      "local_path_mm": 0.8199999999999932,
+      "via": "3c3af4bd-6c5b-48d8-80a3-b8c57b666a2c",
+      "track_ids": [
+        "6ff09ae2-7eba-41df-bcca-63667a792495"
+      ],
+      "intermediate_pads": []
+    },
+    {
+      "pad": "C12.2",
+      "local_path_mm": 0.8199999999999932,
+      "via": "af884481-aed1-4a33-81b1-b18702969da9",
+      "track_ids": [
+        "ed36af24-f5e1-459c-8936-6383054d4d17"
+      ],
+      "intermediate_pads": []
+    },
+    {
+      "pad": "C15.2",
+      "local_path_mm": 0.8199999999999932,
+      "via": "9be0ce40-df3b-4853-b6ee-cf07c2327d4a",
+      "track_ids": [
+        "a08c53a4-005a-4e60-aded-0e2bd4799020"
+      ],
+      "intermediate_pads": []
+    },
+    {
+      "pad": "C16.2",
+      "local_path_mm": 0.8199999999999932,
+      "via": "4c7e7ef6-1dc3-4e6d-a8e7-177c8b2be3fd",
+      "track_ids": [
+        "689ec766-bba9-46a7-8918-5ac20c8db4a1"
+      ],
+      "intermediate_pads": []
+    },
+    {
+      "pad": "C17.2",
+      "local_path_mm": 0.8800000000000097,
+      "via": "3c5c1fd9-515d-427e-8d84-3a9880ff9861",
+      "track_ids": [
+        "1e45a971-04ae-402c-8e8a-12e97f102436"
+      ],
+      "intermediate_pads": []
+    },
+    {
+      "pad": "C18.2",
+      "local_path_mm": 1.0249999999999915,
+      "via": "7ea254bb-765c-411c-8e1b-95efc44c229a",
+      "track_ids": [
+        "cf5a2404-26e0-42aa-bc59-61ba5025f0a5"
+      ],
+      "intermediate_pads": []
+    },
+    {
+      "pad": "C19.2",
+      "local_path_mm": 0.8061017305526545,
+      "via": "fd075151-66d7-4c72-a34b-7350369cb26e",
+      "track_ids": [
+        "a9789145-ae5b-42c5-9006-391c7d51895d"
+      ],
+      "intermediate_pads": []
+    },
+    {
+      "pad": "C2.2",
+      "local_path_mm": 0.6749999999999972,
+      "via": "cac391ee-304b-43da-8654-d831dc3dbc0d",
+      "track_ids": [
+        "3bfb6b6e-7a49-4bcc-8b43-a63fcc5ce3d2"
+      ],
+      "intermediate_pads": []
+    },
+    {
+      "pad": "C20.2",
+      "local_path_mm": 0.8199999999999932,
+      "via": "38f23992-f9e9-4241-85fd-3a9e10853501",
+      "track_ids": [
+        "b857d1af-bdaa-4451-861f-e87f96770536"
+      ],
+      "intermediate_pads": []
+    },
+    {
+      "pad": "C21.2",
+      "local_path_mm": 0.8199999999999932,
+      "via": "78fa4897-199a-46a4-aff5-fa107151fa46",
+      "track_ids": [
+        "ca6c3102-d050-40e7-bb92-cc8a71161dff"
+      ],
+      "intermediate_pads": []
+    },
+    {
+      "pad": "C22.2",
+      "local_path_mm": 1.315218613006988,
+      "via": "8613285b-0b10-4da3-b690-9b7ea1acfef4",
+      "track_ids": [
+        "81675259-7093-4a90-9c47-60b1635889c3"
+      ],
+      "intermediate_pads": []
+    },
+    {
+      "pad": "C23.2",
+      "local_path_mm": 0.8200000000000216,
+      "via": "d61d002e-3f44-431a-93a4-938065a40884",
+      "track_ids": [
+        "0a7c769a-1bab-4205-a900-80ce78f2e7ed"
+      ],
+      "intermediate_pads": []
+    },
+    {
+      "pad": "C24.2",
+      "local_path_mm": 0.8200000000000216,
+      "via": "27d3fba8-5a6f-47e8-aee8-d107b696367f",
+      "track_ids": [
+        "ce4b4ea1-e3ea-4d61-8231-f361f5e3e391"
+      ],
+      "intermediate_pads": []
+    },
+    {
+      "pad": "C3.2",
+      "local_path_mm": 1.0,
+      "via": "46d7df9f-fa17-4774-b0f8-10178b8d62ab",
+      "track_ids": [
+        "b73cb0c9-3ddc-467d-8cdf-39ec6a00d38f"
+      ],
+      "intermediate_pads": []
+    },
+    {
+      "pad": "C4.2",
+      "local_path_mm": 1.6442388155425183,
+      "via": "5cc7a002-8ab2-4810-baa7-53b799b41f28",
+      "track_ids": [
+        "7c5d1970-6d91-420c-b6a6-a666153cf22e",
+        "d6a5dbb8-abf3-4713-a739-0a36b561e98d"
+      ],
+      "intermediate_pads": []
+    },
+    {
+      "pad": "C5.2",
+      "local_path_mm": 0.6749999999999972,
+      "via": "7e623dd6-6754-4488-8c65-75c8fe7ff7db",
+      "track_ids": [
+        "3e48e13e-8ab2-4107-af54-dc89babeb2cf"
+      ],
+      "intermediate_pads": []
+    },
+    {
+      "pad": "C6.2",
+      "local_path_mm": 0.8199999999999932,
+      "via": "cfaea348-0067-4735-bb71-23b2307f38f3",
+      "track_ids": [
+        "ffdd438f-d2a5-4a8e-ad3a-8d8a44ac715b"
+      ],
+      "intermediate_pads": []
+    },
+    {
+      "pad": "C7.2",
+      "local_path_mm": 0.8199999999999932,
+      "via": "6540d604-6645-4962-ada2-20f8182f88c5",
+      "track_ids": [
+        "8d9b385a-b0f4-4fe4-95ee-f050d65b0f9d"
+      ],
+      "intermediate_pads": []
+    },
+    {
+      "pad": "C8.2",
+      "local_path_mm": 0.9192388155424998,
+      "via": "c9551e7c-38f8-4622-804c-78ac5a3ce877",
+      "track_ids": [
+        "0079d42e-5170-405e-81ce-febc18766e48"
+      ],
+      "intermediate_pads": []
+    },
+    {
+      "pad": "C9.2",
+      "local_path_mm": 0.8799999999999955,
+      "via": "e0edac71-d54b-4c8b-8d8d-038a78e1425f",
+      "track_ids": [
+        "86139c57-7d09-4501-b884-654723e8a68c"
+      ],
+      "intermediate_pads": []
+    },
+    {
+      "pad": "D1.2",
+      "local_path_mm": 0.9321480569094187,
+      "via": "4d7a7169-a37b-416c-8c9c-3e36587d89f6",
+      "track_ids": [
+        "6b70ea3c-d79a-4a1e-afc6-3fe9449fd8cc"
+      ],
+      "intermediate_pads": []
+    },
+    {
+      "pad": "D2.2",
+      "local_path_mm": 0.8625000000000114,
+      "via": "611fa055-5982-4cf2-b066-490aba1248e1",
+      "track_ids": [
+        "ee99c600-f6f9-47bb-b5f2-853d59d541ca"
+      ],
+      "intermediate_pads": []
+    },
+    {
+      "pad": "J1.2",
+      "local_path_mm": 1.0249999999999915,
+      "via": "312194a5-4a85-4e70-b5ba-8d60b6487e3a",
+      "track_ids": [
+        "76f845ce-e0c8-49bf-b571-b413b39b34d4"
+      ],
+      "intermediate_pads": []
+    },
+    {
+      "pad": "J2.2",
+      "local_path_mm": 1.0249999999999915,
+      "via": "22991a17-6c08-4831-9e24-9322eda2b0c3",
+      "track_ids": [
+        "c51f74ce-2cb7-463c-807a-dbfe2db9debf"
+      ],
+      "intermediate_pads": []
+    },
+    {
+      "pad": "J3.2",
+      "local_path_mm": 1.4142135623730951,
+      "via": "1d0942ff-7561-460b-948a-2b7a1aa180da",
+      "track_ids": [
+        "f643c706-625c-422b-aece-f720225b58b4"
+      ],
+      "intermediate_pads": []
+    },
+    {
+      "pad": "J4.2",
+      "local_path_mm": 0.7778174593051983,
+      "via": "fe4196f0-f7ca-4b99-8e66-3ec82e3d0a95",
+      "track_ids": [
+        "eea4398d-b67b-428f-a4c5-83a9b61c817a"
+      ],
+      "intermediate_pads": []
+    },
+    {
+      "pad": "J5.1",
+      "local_path_mm": 0.8900000000000006,
+      "via": "14a35593-3a9d-41cb-8f21-b31fadf3ad64",
+      "track_ids": [
+        "9b6e967a-5e33-470f-87b3-98b8807e1734"
+      ],
+      "intermediate_pads": []
+    },
+    {
+      "pad": "J6.5",
+      "local_path_mm": 1.0100000000000193,
+      "via": "d31cee54-44fa-4870-aec0-32759ca7fd95",
+      "track_ids": [
+        "3b2cac83-5b44-44e5-b09d-c031e060ce59"
+      ],
+      "intermediate_pads": []
+    },
+    {
+      "pad": "J6.8",
+      "local_path_mm": 1.0,
+      "via": "838ab561-b0bf-49a2-b48e-d39a31f31ef1",
+      "track_ids": [
+        "cf0f2178-d43e-4783-ac4e-2e3fd0843f1d"
+      ],
+      "intermediate_pads": []
+    },
+    {
+      "pad": "J7.3",
+      "local_path_mm": 1.2940054095713807,
+      "via": "99e78032-4e8c-4ce0-b92f-3ddbf7c46d2f",
+      "track_ids": [
+        "57c61666-134e-4a41-8be7-c848a297462b"
+      ],
+      "intermediate_pads": []
+    },
+    {
+      "pad": "R11.2",
+      "local_path_mm": 1.3576450198781724,
+      "via": "8613285b-0b10-4da3-b690-9b7ea1acfef4",
+      "track_ids": [
+        "b108ec5a-91a8-4795-8ab2-1545ea86dbc5"
+      ],
+      "intermediate_pads": []
+    },
+    {
+      "pad": "R15.2",
+      "local_path_mm": 0.5900000000000034,
+      "via": "9be0ce40-df3b-4853-b6ee-cf07c2327d4a",
+      "track_ids": [
+        "7b9e9bb9-923a-44da-b6c6-ed084a18d523"
+      ],
+      "intermediate_pads": []
+    },
+    {
+      "pad": "R5.2",
+      "local_path_mm": 0.789999999999992,
+      "via": "cd842e75-53c9-4f10-80c7-ecfdfa5e905b",
+      "track_ids": [
+        "71cab247-08d6-4c4c-9202-54c127cfa187"
+      ],
+      "intermediate_pads": []
+    },
+    {
+      "pad": "R6.2",
+      "local_path_mm": 1.046518036156093,
+      "via": "fe4196f0-f7ca-4b99-8e66-3ec82e3d0a95",
+      "track_ids": [
+        "5d1f1635-8e37-4413-8715-2f94536d0f1d"
+      ],
+      "intermediate_pads": []
+    },
+    {
+      "pad": "R7.2",
+      "local_path_mm": 1.0900000000000034,
+      "via": "e69eeca2-492d-4831-8c9a-945109410e70",
+      "track_ids": [
+        "eaaa44b2-4dcc-4464-bb1e-347b92863084"
+      ],
+      "intermediate_pads": []
+    },
+    {
+      "pad": "U1.1",
+      "local_path_mm": 0.9000000000000057,
+      "via": "b49862d9-585e-4585-9075-8ed86cf13639",
+      "track_ids": [
+        "71aa007a-6811-4ac1-95fe-f9c40394211d"
+      ],
+      "intermediate_pads": []
+    },
+    {
+      "pad": "U1.105",
+      "local_path_mm": 1.2999999999999972,
+      "via": "cfb7da77-1bd0-4ebd-837d-96c51d8289d6",
+      "track_ids": [
+        "0f367245-ec16-4f9f-8e0b-c8e9e1ba4e53"
+      ],
+      "intermediate_pads": []
+    },
+    {
+      "pad": "U1.106",
+      "local_path_mm": 1.2999999999999972,
+      "via": "5798f717-52f0-4e9f-8de4-3e27690014cc",
+      "track_ids": [
+        "44e4a5ea-0b84-4812-9b11-5d4b16e5e066"
+      ],
+      "intermediate_pads": []
+    },
+    {
+      "pad": "U1.107",
+      "local_path_mm": 1.2999900000000082,
+      "via": "b7a91e96-143c-4181-bc03-cdc3d3ae1ef0",
+      "track_ids": [
+        "327c5989-85d7-49c7-81d4-21ffcaefbb2e"
+      ],
+      "intermediate_pads": []
+    },
+    {
+      "pad": "U1.108",
+      "local_path_mm": 1.2750099999999946,
+      "via": "7fa9caf8-f9d4-4dec-b54b-be27e6d66d58",
+      "track_ids": [
+        "eb920601-38f6-4a36-9ad7-256f8d6c8fb8"
+      ],
+      "intermediate_pads": []
+    },
+    {
+      "pad": "U1.109",
+      "local_path_mm": 1.450010000000006,
+      "via": "cd9972a2-cf3d-42ac-9f26-58e76c791201",
+      "track_ids": [
+        "ae9211b8-10fb-473c-b13e-43060fa15d17"
+      ],
+      "intermediate_pads": []
+    },
+    {
+      "pad": "U1.110",
+      "local_path_mm": 1.2999999999999972,
+      "via": "8613285b-0b10-4da3-b690-9b7ea1acfef4",
+      "track_ids": [
+        "16b91793-9cc2-44de-a4a9-8480f237693e"
+      ],
+      "intermediate_pads": []
+    },
+    {
+      "pad": "U1.111",
+      "local_path_mm": 1.2999999999999972,
+      "via": "b044e31c-2727-4aee-9654-a146a0fc5da0",
+      "track_ids": [
+        "e21b6255-da52-4040-b553-bac2365cddf2"
+      ],
+      "intermediate_pads": []
+    },
+    {
+      "pad": "U1.112",
+      "local_path_mm": 0.8249899999999997,
+      "via": "cfb7da77-1bd0-4ebd-837d-96c51d8289d6",
+      "track_ids": [
+        "69e40ed7-7472-4124-a306-c3d78d14f1e9"
+      ],
+      "intermediate_pads": []
+    },
+    {
+      "pad": "U1.113",
+      "local_path_mm": 1.565247584249859,
+      "via": "8782f750-0216-4178-a0a9-3bdd2b0028f1",
+      "track_ids": [
+        "541212c5-317d-46bd-bfbe-fb2c53d1c5f1"
+      ],
+      "intermediate_pads": []
+    },
+    {
+      "pad": "U1.13",
+      "local_path_mm": 0.7246299999999906,
+      "via": "96ee6186-a3fa-4b18-ab03-c4cd62c463d9",
+      "track_ids": [
+        "505a8473-1cdf-4046-807b-0b2a626eb5ca"
+      ],
+      "intermediate_pads": []
+    },
+    {
+      "pad": "U1.15",
+      "local_path_mm": 0.5753700000000066,
+      "via": "be423635-3374-416f-bdce-7e2ccea2bd11",
+      "track_ids": [
+        "3be7f1f0-714d-4243-9d0d-48a96e07f77b"
+      ],
+      "intermediate_pads": []
+    },
+    {
+      "pad": "U1.20",
+      "local_path_mm": 0.9000000000000057,
+      "via": "5cc7a002-8ab2-4810-baa7-53b799b41f28",
+      "track_ids": [
+        "221466ac-aef7-4469-b633-288503ed3e9d"
+      ],
+      "intermediate_pads": []
+    },
+    {
+      "pad": "U1.25",
+      "local_path_mm": 0.724969999999999,
+      "via": "c9ec5e62-5b6d-4a01-9958-6a5c16de8fbc",
+      "track_ids": [
+        "c87247d3-43d4-41e5-97cc-2319972c86e1"
+      ],
+      "intermediate_pads": []
+    },
+    {
+      "pad": "U1.30",
+      "local_path_mm": 0.7750000000000057,
+      "via": "483175fa-3a0a-4a36-bdc2-f68df794aa54",
+      "track_ids": [
+        "450fd2ea-c7e0-4db8-bbc3-28b345e2e17a"
+      ],
+      "intermediate_pads": []
+    },
+    {
+      "pad": "U1.34",
+      "local_path_mm": 0.724969999999999,
+      "via": "bcfdbae6-3646-4939-912b-86f5c70ca345",
+      "track_ids": [
+        "7ed09c4e-5a9d-4850-9cd9-19cad2fa25a0"
+      ],
+      "intermediate_pads": []
+    },
+    {
+      "pad": "U1.36",
+      "local_path_mm": 0.724969999999999,
+      "via": "cd9972a2-cf3d-42ac-9f26-58e76c791201",
+      "track_ids": [
+        "2c587c49-0674-4ceb-97d0-e0799b027c0b"
+      ],
+      "intermediate_pads": []
+    },
+    {
+      "pad": "U1.38",
+      "local_path_mm": 0.3005557373433412,
+      "via": "e66ab9a7-61a5-47da-a16e-42ff0398d4ee",
+      "track_ids": [
+        "1b74a6b4-0f77-41b8-afd9-6c046fa92a9f"
+      ],
+      "intermediate_pads": []
+    },
+    {
+      "pad": "U1.39",
+      "local_path_mm": 0.7071492075934122,
+      "via": "e66ab9a7-61a5-47da-a16e-42ff0398d4ee",
+      "track_ids": [
+        "1b74a6b4-0f77-41b8-afd9-6c046fa92a9f",
+        "1b74a6b4-0f77-41b8-afd9-6c046fa92a9f"
+      ],
+      "intermediate_pads": []
+    },
+    {
+      "pad": "U1.40",
+      "local_path_mm": 0.7749700000000104,
+      "via": "96f10e66-861f-4ce2-ab79-2927840eba06",
+      "track_ids": [
+        "0c0f709b-edfd-4d75-aa31-007fd557660a"
+      ],
+      "intermediate_pads": []
+    },
+    {
+      "pad": "U1.41",
+      "local_path_mm": 0.9000000000000057,
+      "via": "719faa80-db91-4d5d-b1f5-a6206c105308",
+      "track_ids": [
+        "fd17ce5c-fafe-443c-90e8-c6f29733d747"
+      ],
+      "intermediate_pads": []
+    },
+    {
+      "pad": "U1.43",
+      "local_path_mm": 0.7249999999999943,
+      "via": "90c09a51-08a7-4912-8751-3e86fb391313",
+      "track_ids": [
+        "16971ae2-e1a2-4412-9978-6ecbf12f4625"
+      ],
+      "intermediate_pads": []
+    },
+    {
+      "pad": "U1.46",
+      "local_path_mm": 0.7249999999999943,
+      "via": "e5b4f3d7-d82a-4e9a-9b1e-c1a6be323515",
+      "track_ids": [
+        "86adad6a-a6a0-4c1d-9cd7-71218c1da663"
+      ],
+      "intermediate_pads": []
+    },
+    {
+      "pad": "U1.51",
+      "local_path_mm": 0.7249999999999943,
+      "via": "572f797e-4c51-4a32-8d51-91c6f15f35f1",
+      "track_ids": [
+        "405ec368-ee66-40f6-8ab9-544341b6dea9"
+      ],
+      "intermediate_pads": []
+    },
+    {
+      "pad": "U1.55",
+      "local_path_mm": 0.68682239334489,
+      "via": "4c87792e-7c15-414a-a835-db82390411a0",
+      "track_ids": [
+        "1a4278bc-f58f-4c5b-9055-4aea55b4ce05"
+      ],
+      "intermediate_pads": []
+    },
+    {
+      "pad": "U1.60",
+      "local_path_mm": 0.9000000000000057,
+      "via": "deccc17e-a958-4048-a2ab-6fd3d800711a",
+      "track_ids": [
+        "83e75331-cb39-4c03-8665-bf63efedaf58"
+      ],
+      "intermediate_pads": []
+    },
+    {
+      "pad": "U1.66",
+      "local_path_mm": 0.7765912698453407,
+      "via": "4ed1428c-4cc1-4c34-ae97-c9585ef0cecd",
+      "track_ids": [
+        "2214b7db-12ba-4d61-a01f-8fde2e11c868"
+      ],
+      "intermediate_pads": []
+    },
+    {
+      "pad": "U1.7",
+      "local_path_mm": 0.7246299999999906,
+      "via": "fd4ed116-ef94-4406-8887-e46388e699ba",
+      "track_ids": [
+        "2f27a50a-3ebb-40e0-a2ef-f583b1888efa"
+      ],
+      "intermediate_pads": []
+    },
+    {
+      "pad": "U1.71",
+      "local_path_mm": 0.8249899999999997,
+      "via": "1897b34e-5934-46b2-80c3-e51e4fea0857",
+      "track_ids": [
+        "25426d7f-8df3-40f8-bfe8-e8d6c16413ab"
+      ],
+      "intermediate_pads": []
+    },
+    {
+      "pad": "U1.76",
+      "local_path_mm": 0.7750100000000089,
+      "via": "28ea82cd-e612-45a0-ae71-325fe00f2289",
+      "track_ids": [
+        "c61cba98-7370-4236-b100-1098e6a47858"
+      ],
+      "intermediate_pads": []
+    },
+    {
+      "pad": "U2.1",
+      "local_path_mm": 0.7939999999999969,
+      "via": "84eebba6-94e5-40a2-ae58-faf847615e78",
+      "track_ids": [
+        "1944bca8-bca6-4f2b-8e35-a53419db7204"
+      ],
+      "intermediate_pads": []
+    },
+    {
+      "pad": "U2.11",
+      "local_path_mm": 0.9624900000000025,
+      "via": "cd40b718-51e5-43a0-91ec-b0e2dc5f8452",
+      "track_ids": [
+        "061b5b10-eb09-4b04-b5ab-40fcde275ef3"
+      ],
+      "intermediate_pads": []
+    },
+    {
+      "pad": "U2.4",
+      "local_path_mm": 0.5925000000000011,
+      "via": "611fa055-5982-4cf2-b066-490aba1248e1",
+      "track_ids": [
+        "98289585-7eab-4019-abc4-da1b85ddeadc"
+      ],
+      "intermediate_pads": []
+    },
+    {
+      "pad": "U2.6",
+      "local_path_mm": 0.7940100000000001,
+      "via": "3a9e5d7c-1ccd-445c-b918-56f05e2e8a01",
+      "track_ids": [
+        "fc03cedc-8556-49da-b4e5-fdb8b9513295"
+      ],
+      "intermediate_pads": []
+    },
+    {
+      "pad": "U2.9",
+      "local_path_mm": 1.3624900000000082,
+      "via": "cd40b718-51e5-43a0-91ec-b0e2dc5f8452",
+      "track_ids": [
+        "a9621175-b887-45e6-8b8f-8b09aacb40a0",
+        "061b5b10-eb09-4b04-b5ab-40fcde275ef3"
+      ],
+      "intermediate_pads": [
+        "U2.11"
+      ]
+    },
+    {
+      "pad": "U3.11",
+      "local_path_mm": 0.9500000000000027,
+      "via": "a7aaa81c-c973-4ac1-86a9-cae279606641",
+      "track_ids": [
+        "f6c39867-3f42-4f44-858a-c4350bf933ab",
+        "41e61b1a-efb6-47d4-9fe0-ee7b5bb8afcf"
+      ],
+      "intermediate_pads": []
+    },
+    {
+      "pad": "U3.4",
+      "local_path_mm": 1.5999999999999943,
+      "via": "a7aaa81c-c973-4ac1-86a9-cae279606641",
+      "track_ids": [
+        "a4490e07-effb-4f77-a98c-bd7a2b0b09cf",
+        "f6c39867-3f42-4f44-858a-c4350bf933ab",
+        "41e61b1a-efb6-47d4-9fe0-ee7b5bb8afcf"
+      ],
+      "intermediate_pads": [
+        "U3.11"
+      ]
+    },
+    {
+      "pad": "U3.5",
+      "local_path_mm": 1.5999999999999943,
+      "via": "a7aaa81c-c973-4ac1-86a9-cae279606641",
+      "track_ids": [
+        "f6c39867-3f42-4f44-858a-c4350bf933ab",
+        "f6c39867-3f42-4f44-858a-c4350bf933ab",
+        "41e61b1a-efb6-47d4-9fe0-ee7b5bb8afcf"
+      ],
+      "intermediate_pads": []
+    },
+    {
+      "pad": "U4.2",
+      "local_path_mm": 1.1875,
+      "via": "8db1c61f-63db-440f-9b31-bc90489e71ef",
+      "track_ids": [
+        "e4a856a7-41aa-4914-b8cc-214e3199bf09"
+      ],
+      "intermediate_pads": []
+    },
+    {
+      "pad": "U5.6",
+      "local_path_mm": 1.3218681451127923,
+      "via": "2d0005b4-116e-4d91-b98e-560836b97871",
+      "track_ids": [
+        "d7f2e265-b1e9-4709-95c9-796228d7406a",
+        "b2c9aa3b-2cc8-402b-bd1b-ad1d973bd1ec",
+        "e418e20f-330e-45da-8822-accbba0d35ae"
+      ],
+      "intermediate_pads": [
+        "U5.8"
+      ]
+    },
+    {
+      "pad": "U5.7",
+      "local_path_mm": 1.0738961030679068,
+      "via": "2d0005b4-116e-4d91-b98e-560836b97871",
+      "track_ids": [
+        "bde7bed7-4069-4132-ae03-f37689b05275",
+        "66e3d2b2-727a-45e9-93d7-46dbb1a50fc3"
+      ],
+      "intermediate_pads": []
+    },
+    {
+      "pad": "U5.8",
+      "local_path_mm": 0.8375000000000057,
+      "via": "2d0005b4-116e-4d91-b98e-560836b97871",
+      "track_ids": [
+        "b2c9aa3b-2cc8-402b-bd1b-ad1d973bd1ec",
+        "e418e20f-330e-45da-8822-accbba0d35ae"
+      ],
+      "intermediate_pads": []
+    }
+  ],
+  "scope": "Copper geometry screens only. Width ratios are review cues, not solder-process acceptance; local ground lengths exclude pad spreading and plane shortcuts."
+}

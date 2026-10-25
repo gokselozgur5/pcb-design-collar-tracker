@@ -1,0 +1,308 @@
+{
+  "source_sha256": "e68faf7db8b588cb69afdca76b0ab6b106ad0eed400cc95a2cf140a8f7142f79",
+  "paths": [
+    {
+      "net": "/SIM_1V8",
+      "connector": "J6.1",
+      "esd": "D1.3",
+      "modem": "U1.19",
+      "connector_to_esd": {
+        "length_mm": 28.57255775264985,
+        "vias": 2,
+        "track_ids": [
+          "92286a6e-ed26-4f27-b300-5f75e8841e8c",
+          "3b29b133-824f-453d-99c2-d3e8f90ecf61",
+          "18b4af07-3243-4cd1-9627-f4a776b73b95",
+          "a89db979-9f73-4a67-9ddc-005ee83fad2f",
+          "31f14e2c-f3bb-446b-ac3e-acf1d8c5cbb8",
+          "fc535747-472e-4a31-baca-afea222dd2cb",
+          "eec2ceb0-ff8e-4a11-b0fe-8aacd4948022",
+          "0833f433-241c-4b41-9b4c-4931d8efa36b",
+          "8b33d555-4242-4ccc-a62d-9d008f88a9e9",
+          "12fedd8b-79f6-46c0-a8d6-6ef51e8dfc7f",
+          "d4647bd8-af7f-4285-abe3-c587c3e532bc",
+          "427a41f6-4699-4879-ba23-6faf18932656",
+          "07ebfc4e-c027-44fd-a086-18596cb2ab9a",
+          "f0300ad3-ec1a-45a3-804d-23e5bf59c3da",
+          "322aee94-4cb7-42e7-994b-13e5d1f42e19",
+          "76984fb8-fb45-4fe7-9e45-eedb83498a70",
+          "62c55c5e-a7b9-4797-8c10-6cf17b7a16fc",
+          "7cdd5e2f-fe8a-47bf-9e05-7772bb14f968"
+        ]
+      },
+      "esd_to_modem": {
+        "length_mm": 26.381718959189982,
+        "vias": 7,
+        "track_ids": [
+          "7cdd5e2f-fe8a-47bf-9e05-7772bb14f968",
+          "62c55c5e-a7b9-4797-8c10-6cf17b7a16fc",
+          "76984fb8-fb45-4fe7-9e45-eedb83498a70",
+          "322aee94-4cb7-42e7-994b-13e5d1f42e19",
+          "f0300ad3-ec1a-45a3-804d-23e5bf59c3da",
+          "07ebfc4e-c027-44fd-a086-18596cb2ab9a",
+          "427a41f6-4699-4879-ba23-6faf18932656",
+          "28931827-1382-43f7-ba4f-d533c4c68597",
+          "e7a7dcbc-2b32-4ff3-b9d3-23b4e12e22c4",
+          "7307d3d3-487a-425b-9dfb-bbfb27cab41d",
+          "49446325-097c-4493-8521-b29cdf08bed2",
+          "7ded8eb6-5300-4bad-8ef7-da5c1aeb29c3",
+          "26afe853-e911-4ddc-82dd-c829fdd95472",
+          "5b11b2a4-dc26-4a88-9ba2-8201286c1a58",
+          "70d5ee17-59f8-4623-96f6-835bb4aa5b3c",
+          "a6734125-2c6a-43ab-9781-f0d047e1a5f8",
+          "6d82047c-d04f-4374-8724-1e3188af529e",
+          "d0b05f0b-432a-43ef-ab9e-7cc215ae5705",
+          "ad14f41d-0bd8-4b4b-99f9-65c6d5535a5b",
+          "44da1ffc-ca74-4107-a1bb-5c71d788067a"
+        ]
+      },
+      "connector_to_modem": {
+        "length_mm": 39.57561510431004,
+        "vias": 7,
+        "track_ids": [
+          "92286a6e-ed26-4f27-b300-5f75e8841e8c",
+          "3b29b133-824f-453d-99c2-d3e8f90ecf61",
+          "18b4af07-3243-4cd1-9627-f4a776b73b95",
+          "a89db979-9f73-4a67-9ddc-005ee83fad2f",
+          "31f14e2c-f3bb-446b-ac3e-acf1d8c5cbb8",
+          "fc535747-472e-4a31-baca-afea222dd2cb",
+          "eec2ceb0-ff8e-4a11-b0fe-8aacd4948022",
+          "0833f433-241c-4b41-9b4c-4931d8efa36b",
+          "8b33d555-4242-4ccc-a62d-9d008f88a9e9",
+          "12fedd8b-79f6-46c0-a8d6-6ef51e8dfc7f",
+          "d4647bd8-af7f-4285-abe3-c587c3e532bc",
+          "28931827-1382-43f7-ba4f-d533c4c68597",
+          "e7a7dcbc-2b32-4ff3-b9d3-23b4e12e22c4",
+          "7307d3d3-487a-425b-9dfb-bbfb27cab41d",
+          "49446325-097c-4493-8521-b29cdf08bed2",
+          "7ded8eb6-5300-4bad-8ef7-da5c1aeb29c3",
+          "26afe853-e911-4ddc-82dd-c829fdd95472",
+          "5b11b2a4-dc26-4a88-9ba2-8201286c1a58",
+          "70d5ee17-59f8-4623-96f6-835bb4aa5b3c",
+          "a6734125-2c6a-43ab-9781-f0d047e1a5f8",
+          "6d82047c-d04f-4374-8724-1e3188af529e",
+          "d0b05f0b-432a-43ef-ab9e-7cc215ae5705",
+          "ad14f41d-0bd8-4b4b-99f9-65c6d5535a5b",
+          "44da1ffc-ca74-4107-a1bb-5c71d788067a"
+        ]
+      },
+      "bypasses_esd_land": true
+    },
+    {
+      "net": "/SIM_RST",
+      "connector": "J6.2",
+      "esd": "D1.1",
+      "modem": "U1.16",
+      "connector_to_esd": {
+        "length_mm": 24.52297863100824,
+        "vias": 0,
+        "track_ids": [
+          "fbd7c1c6-5661-4b18-885d-ab3efaaae462",
+          "5dc600ea-72ac-4c5e-890e-b25a5b72b986",
+          "3fcafd33-4825-42b0-ad57-cd86a670dccb",
+          "c1bc9657-b057-4d6e-87ba-7c4c338cf3aa",
+          "cff971c3-06fb-4574-8af0-80a0ebd2edc7",
+          "79f04155-caf4-4452-afb0-1b224e4ad0b0",
+          "de3ed850-6087-4afc-98bb-ae12c95c1716",
+          "7b3995a8-3c43-48ca-8723-4e8224f5b5ee",
+          "b94a3476-e727-40a8-b834-6a6091f1d8de"
+        ]
+      },
+      "esd_to_modem": {
+        "length_mm": 38.58600955222028,
+        "vias": 1,
+        "track_ids": [
+          "b94a3476-e727-40a8-b834-6a6091f1d8de",
+          "7b3995a8-3c43-48ca-8723-4e8224f5b5ee",
+          "de3ed850-6087-4afc-98bb-ae12c95c1716",
+          "79f04155-caf4-4452-afb0-1b224e4ad0b0",
+          "cff971c3-06fb-4574-8af0-80a0ebd2edc7",
+          "7d03503a-467f-4d16-91b1-8052d954fe62",
+          "c0003521-11b7-408c-917f-b4ceee255759",
+          "7b054e09-3d13-473e-8574-7947ed15676c",
+          "9c63eea9-26be-4ee8-b989-de26cf7e44d3",
+          "5008eae8-d2f4-4214-8a32-2140e51abefc",
+          "149e5454-d0b6-46f6-96a6-ead209e0fdf2",
+          "7dfe65e5-e063-4595-a8ab-fcd44914ec4b",
+          "8b38bbb8-d2b5-4250-95f7-81d855956a0a",
+          "4598911e-eef2-4d32-a77f-a0d39cc4070d",
+          "9cf7b201-88ce-4c9d-91f4-37b2172481aa"
+        ]
+      },
+      "connector_to_modem": {
+        "length_mm": 30.466475883732723,
+        "vias": 1,
+        "track_ids": [
+          "fbd7c1c6-5661-4b18-885d-ab3efaaae462",
+          "5dc600ea-72ac-4c5e-890e-b25a5b72b986",
+          "3fcafd33-4825-42b0-ad57-cd86a670dccb",
+          "c1bc9657-b057-4d6e-87ba-7c4c338cf3aa",
+          "7d03503a-467f-4d16-91b1-8052d954fe62",
+          "c0003521-11b7-408c-917f-b4ceee255759",
+          "7b054e09-3d13-473e-8574-7947ed15676c",
+          "9c63eea9-26be-4ee8-b989-de26cf7e44d3",
+          "5008eae8-d2f4-4214-8a32-2140e51abefc",
+          "149e5454-d0b6-46f6-96a6-ead209e0fdf2",
+          "7dfe65e5-e063-4595-a8ab-fcd44914ec4b",
+          "8b38bbb8-d2b5-4250-95f7-81d855956a0a",
+          "4598911e-eef2-4d32-a77f-a0d39cc4070d",
+          "9cf7b201-88ce-4c9d-91f4-37b2172481aa"
+        ]
+      },
+      "bypasses_esd_land": true
+    },
+    {
+      "net": "/SIM_CLK",
+      "connector": "J6.3",
+      "esd": "D1.6",
+      "modem": "U1.18",
+      "connector_to_esd": {
+        "length_mm": 22.6109758939363,
+        "vias": 2,
+        "track_ids": [
+          "c4758d74-f92a-4806-873b-ad2eb56c3dbe",
+          "8e2854d3-c26e-4ae0-acb8-1fe46761c99f",
+          "f6a4791f-0387-4387-99ea-f36f081bcd5c",
+          "bcb92707-ed09-483a-87fb-e6b12e84d4d8",
+          "4fd21d92-8464-48a2-a5f9-4ad218c1a234",
+          "0a2c6162-71cd-4a98-b471-d62b2da787ce",
+          "50dc7c32-c2a2-49e5-861a-49d3d48e7e3b",
+          "328b02fe-40b0-4050-a9c3-7eb65bdf7b7c",
+          "037d9524-b208-481b-8852-545d619686fa",
+          "7521acb8-338e-4071-81b8-c87349a34fd5"
+        ]
+      },
+      "esd_to_modem": {
+        "length_mm": 38.07445330455706,
+        "vias": 3,
+        "track_ids": [
+          "7521acb8-338e-4071-81b8-c87349a34fd5",
+          "6d7bfd15-61a4-4f7c-9c33-f1f1c48d87d1",
+          "5fd2e937-deb2-4f9b-8ca7-0307a2e80ca3",
+          "7187b37c-86e5-408e-96a6-287de46092f5",
+          "26a9724e-374f-4301-ae9c-d5682bd7fb6c",
+          "501a450a-5d43-4b00-b260-8f7ee358437e",
+          "86b5efb1-2bd3-4e66-90ac-ecd65cfebbdf",
+          "1cfc1dd2-cfbd-4093-b577-6ddf484b1b8b",
+          "3ba8581f-9fa2-4dac-8364-658e7ca0bf0d",
+          "daa02c5f-0b07-49e3-9eb8-08e8f3f7dd04",
+          "2616e37e-6889-47c7-a447-0a7c1ec51bd2",
+          "d5bf9432-f546-4d7d-9195-8e5d0f2ce19e",
+          "dc259c3a-1a3b-4966-a4c8-75ada42e37cc"
+        ]
+      },
+      "connector_to_modem": {
+        "length_mm": 59.347429198493344,
+        "vias": 5,
+        "track_ids": [
+          "c4758d74-f92a-4806-873b-ad2eb56c3dbe",
+          "8e2854d3-c26e-4ae0-acb8-1fe46761c99f",
+          "f6a4791f-0387-4387-99ea-f36f081bcd5c",
+          "bcb92707-ed09-483a-87fb-e6b12e84d4d8",
+          "4fd21d92-8464-48a2-a5f9-4ad218c1a234",
+          "0a2c6162-71cd-4a98-b471-d62b2da787ce",
+          "50dc7c32-c2a2-49e5-861a-49d3d48e7e3b",
+          "328b02fe-40b0-4050-a9c3-7eb65bdf7b7c",
+          "037d9524-b208-481b-8852-545d619686fa",
+          "6d7bfd15-61a4-4f7c-9c33-f1f1c48d87d1",
+          "5fd2e937-deb2-4f9b-8ca7-0307a2e80ca3",
+          "7187b37c-86e5-408e-96a6-287de46092f5",
+          "26a9724e-374f-4301-ae9c-d5682bd7fb6c",
+          "501a450a-5d43-4b00-b260-8f7ee358437e",
+          "86b5efb1-2bd3-4e66-90ac-ecd65cfebbdf",
+          "1cfc1dd2-cfbd-4093-b577-6ddf484b1b8b",
+          "3ba8581f-9fa2-4dac-8364-658e7ca0bf0d",
+          "daa02c5f-0b07-49e3-9eb8-08e8f3f7dd04",
+          "2616e37e-6889-47c7-a447-0a7c1ec51bd2",
+          "d5bf9432-f546-4d7d-9195-8e5d0f2ce19e",
+          "dc259c3a-1a3b-4966-a4c8-75ada42e37cc"
+        ]
+      },
+      "bypasses_esd_land": true
+    },
+    {
+      "net": "/SIM_IO",
+      "connector": "J6.7",
+      "esd": "D1.4",
+      "modem": "U1.17",
+      "connector_to_esd": {
+        "length_mm": 3.439060171779835,
+        "vias": 2,
+        "track_ids": [
+          "4180a714-6262-4dad-9015-41f64090178a",
+          "36240a02-17df-40d2-8f90-0c85bcfc2484",
+          "4d9a0900-d265-4ea0-81b6-02acfee419b5",
+          "7585f2d8-018d-4b4c-be13-bbbc18d4997c",
+          "265c2566-e9f0-4ba4-8c91-7ff6d7e13ee8"
+        ]
+      },
+      "esd_to_modem": {
+        "length_mm": 35.04460125839445,
+        "vias": 5,
+        "track_ids": [
+          "265c2566-e9f0-4ba4-8c91-7ff6d7e13ee8",
+          "b7b78fc4-3103-424b-8cb5-8ccd4929d0dc",
+          "190cd100-2a20-4d90-8b8a-3419a4e95eab",
+          "9c6f6e6e-a317-4725-84b0-2c5118ae7336",
+          "8b5c8866-af59-418b-8a60-66a8c6d382be",
+          "d3aaf18f-4b43-49e3-bec2-417ab2b3f3b6",
+          "a18b3a6e-608a-4915-9a97-4cab2172f470",
+          "c7861501-c057-4e39-8121-f7244b8c86a8",
+          "afc00196-e094-4e29-b442-9572b6cbc5d2",
+          "68eed03f-3941-4205-a52f-fbe9164f18ea",
+          "f45e798c-b1a7-4688-b0a2-25f03e9ce3cf",
+          "29a2ebb8-31ba-4396-8e55-c4002242d22e",
+          "27394758-d881-4acd-94a5-ade8721dc57e",
+          "35e1995c-ba99-4559-877d-7778ea97f7f9",
+          "550141eb-281e-4a34-a098-fd06592840be",
+          "e440de38-abb8-4646-811a-2ddb0ba2b723",
+          "b3c9edc3-b7ff-4645-b4d2-9f29263811fe",
+          "3ae34ca8-5945-4926-ba66-a3ce577bee66",
+          "b60056db-9737-4b7b-a4c6-b0bf779857fc",
+          "92c80ae4-1c75-421c-8247-36fe83922ef6",
+          "7614522c-4da5-4ada-84b2-bf823e2b93e4",
+          "e591e53b-d876-46e8-b3ca-31fd4e50cfd1",
+          "a26f6839-d410-4e59-98b3-5799b313827b",
+          "e7f4212c-865a-42b7-a426-c69bd5700f1c",
+          "d1588250-92a8-4910-8bac-00817a2cbc4a"
+        ]
+      },
+      "connector_to_modem": {
+        "length_mm": 36.33026143017429,
+        "vias": 7,
+        "track_ids": [
+          "4180a714-6262-4dad-9015-41f64090178a",
+          "36240a02-17df-40d2-8f90-0c85bcfc2484",
+          "4d9a0900-d265-4ea0-81b6-02acfee419b5",
+          "7585f2d8-018d-4b4c-be13-bbbc18d4997c",
+          "b7b78fc4-3103-424b-8cb5-8ccd4929d0dc",
+          "190cd100-2a20-4d90-8b8a-3419a4e95eab",
+          "9c6f6e6e-a317-4725-84b0-2c5118ae7336",
+          "8b5c8866-af59-418b-8a60-66a8c6d382be",
+          "d3aaf18f-4b43-49e3-bec2-417ab2b3f3b6",
+          "a18b3a6e-608a-4915-9a97-4cab2172f470",
+          "c7861501-c057-4e39-8121-f7244b8c86a8",
+          "afc00196-e094-4e29-b442-9572b6cbc5d2",
+          "68eed03f-3941-4205-a52f-fbe9164f18ea",
+          "f45e798c-b1a7-4688-b0a2-25f03e9ce3cf",
+          "29a2ebb8-31ba-4396-8e55-c4002242d22e",
+          "27394758-d881-4acd-94a5-ade8721dc57e",
+          "35e1995c-ba99-4559-877d-7778ea97f7f9",
+          "550141eb-281e-4a34-a098-fd06592840be",
+          "e440de38-abb8-4646-811a-2ddb0ba2b723",
+          "b3c9edc3-b7ff-4645-b4d2-9f29263811fe",
+          "3ae34ca8-5945-4926-ba66-a3ce577bee66",
+          "b60056db-9737-4b7b-a4c6-b0bf779857fc",
+          "92c80ae4-1c75-421c-8247-36fe83922ef6",
+          "7614522c-4da5-4ada-84b2-bf823e2b93e4",
+          "e591e53b-d876-46e8-b3ca-31fd4e50cfd1",
+          "a26f6839-d410-4e59-98b3-5799b313827b",
+          "e7f4212c-865a-42b7-a426-c69bd5700f1c",
+          "d1588250-92a8-4910-8bac-00817a2cbc4a"
+        ]
+      },
+      "bypasses_esd_land": true
+    }
+  ],
+  "scope": "Track centerline lengths exclude ideal pad/junction spreading. ESD-land cut is a copper-topology check, not a powered ESD test. No plane shortcut is used."
+}
