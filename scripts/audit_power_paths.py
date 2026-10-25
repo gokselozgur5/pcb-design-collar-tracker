@@ -131,7 +131,12 @@ def main():
              ('/VSYS', ('U3', '1'), ('J5', '3'), None),
              ('/VDD_NRF', ('FB1', '2'), ('U1', '14'), 1.0),
              ('/VDD_NRF', ('C3', '1'), ('U1', '14'), 1.0),
-             ('/VDD_NRF', ('C4', '1'), ('U1', '14'), 1.0)]
+             ('/VDD_NRF', ('C4', '1'), ('U1', '14'), 1.0),
+             ('/VSYS', ('U3', '1'), ('U4', '1'), None),
+             ('/VSYS', ('C20', '1'), ('U4', '1'), None),
+             ('/VIO_1V8', ('U4', '5'), ('U5', '9'), None),
+             ('/VIO_1V8', ('U4', '5'), ('J5', '2'), None),
+             ('/VIO_1V8', ('C21', '1'), ('U4', '5'), None)]
     rows = []
     for net, start, end, current in pairs:
         graph, terminals = make_graph(geometry, net, args.copper_um, args.plating_um, args.thickness_mm)
