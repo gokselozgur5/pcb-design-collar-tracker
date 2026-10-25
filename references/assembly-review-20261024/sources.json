@@ -1,0 +1,22 @@
+{
+  "nordic-pad.png": {
+    "url": "https://docs.nordicsemi.com/api/khub/maps/1TuQQNK40JNdvRFzNCNBuw/resources/FBxatxdLDGQsdDi1ebAr2A-1TuQQNK40JNdvRFzNCNBuw/resized-content?v=491b4b50f135c967",
+    "local_download": "FAILED: HTTP 403",
+    "local_content_inspected": false
+  },
+  "nordic-footprint.png": {
+    "url": "https://docs.nordicsemi.com/api/khub/maps/1TuQQNK40JNdvRFzNCNBuw/resources/BKCMr9LAG4NN4x0Is57qMQ-1TuQQNK40JNdvRFzNCNBuw/resized-content?v=99b36758151cc169",
+    "local_download": "FAILED: HTTP 403",
+    "local_content_inspected": false
+  },
+  "nordic-dimensions.png": {
+    "url": "https://docs.nordicsemi.com/api/khub/maps/1TuQQNK40JNdvRFzNCNBuw/resources/mBZttpmjxuyPrcGQO15KeQ-1TuQQNK40JNdvRFzNCNBuw/resized-content?v=3845101db707616f",
+    "local_download": "FAILED: HTTP 403",
+    "local_content_inspected": false
+  },
+  "lis2dw12.pdf": {
+    "url": "https://www.st.com/resource/en/datasheet/lis2dw12.pdf",
+    "local_download": "FAILED: HTTP/2 error then HTTP/1.1 timeout",
+    "local_content_inspected": false
+  }
+}

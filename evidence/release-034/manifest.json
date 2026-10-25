@@ -1,0 +1,71 @@
+{
+  "revision": "0.3.4",
+  "scope": "Historical PCB DFM only; not SMT, powered testing, or r04 acceptance",
+  "files": [
+    {
+      "path": "evidence/release-034/check1/dfm.json",
+      "sha256": "f13683c6727e4f21743cd23653982ea4c55d5dbe4a73075187891935feed22ce",
+      "bytes": 240800
+    },
+    {
+      "path": "evidence/release-034/check1/receipt.json",
+      "sha256": "02ef4f4628678fe31794d277df870982d489d8d806e71f3613f4f535ba5ad66f",
+      "bytes": 179
+    },
+    {
+      "path": "evidence/release-034/check1/report.pdf",
+      "sha256": "4527612cd0e4e783806ef69aff28e9b09bf8a0d223db217857869bcb147e004e",
+      "bytes": 3039269
+    },
+    {
+      "path": "evidence/release-034/check1/rows.txt",
+      "sha256": "f12b0a44832c580c223eab2781d6ece47612d0303ba2142dafeccc64beba6f9e",
+      "bytes": 1223
+    },
+    {
+      "path": "evidence/release-034/check1/rules.json",
+      "sha256": "f1bebb3b2b5ac2ba0579f882fc0605d169c1d6a3a852a07beb8652b719e0a725",
+      "bytes": 52347
+    },
+    {
+      "path": "evidence/release-034/check2/dfm.json",
+      "sha256": "c38e4f4a925e537457491a238cddf2e5451b95ac86ccf5a73ca862a094081cc7",
+      "bytes": 240800
+    },
+    {
+      "path": "evidence/release-034/check2/receipt.json",
+      "sha256": "98a5d01b2afce4f07be5786b8b3addbd65f9c0d4201f1b2b8179475561503e03",
+      "bytes": 179
+    },
+    {
+      "path": "evidence/release-034/check2/report.pdf",
+      "sha256": "d85511db1fd7d8b826c86be4ad319612ad53d5e809f8e5eda46b0aadb886d7c8",
+      "bytes": 3039180
+    },
+    {
+      "path": "evidence/release-034/check2/rows.txt",
+      "sha256": "f12b0a44832c580c223eab2781d6ece47612d0303ba2142dafeccc64beba6f9e",
+      "bytes": 1223
+    },
+    {
+      "path": "evidence/release-034/check2/rules.json",
+      "sha256": "f1bebb3b2b5ac2ba0579f882fc0605d169c1d6a3a852a07beb8652b719e0a725",
+      "bytes": 52347
+    },
+    {
+      "path": "experiments/35x28-clearance-r034/hardware/collar-tracker.kicad_pcb",
+      "sha256": "597ebdee59550b6d07eb104274eabee57b038ea6c87da2dec38c1201f78c89b2",
+      "bytes": 769249
+    },
+    {
+      "path": "release/collar-tracker-0.3.4-35x28-dfm.zip",
+      "sha256": "735ff8506629eb931cdd4a1847796e0eae2ec24deebb4f579f7441bb2182c990",
+      "bytes": 132624
+    },
+    {
+      "path": "release/collar-tracker-0.3.4-jlc-dfm-report.pdf",
+      "sha256": "d85511db1fd7d8b826c86be4ad319612ad53d5e809f8e5eda46b0aadb886d7c8",
+      "bytes": 3039180
+    }
+  ]
+}

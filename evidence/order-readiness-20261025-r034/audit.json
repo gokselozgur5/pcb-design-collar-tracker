@@ -1,0 +1,1057 @@
+{
+  "source": "/Users/gok/codex/projects/collar-tracker/experiments/35x28-clearance-r034/hardware/collar-tracker.kicad_pcb",
+  "source_sha256": "597ebdee59550b6d07eb104274eabee57b038ea6c87da2dec38c1201f78c89b2",
+  "zip": "/Users/gok/codex/projects/collar-tracker/release/collar-tracker-0.3.4-35x28-dfm.zip",
+  "zip_sha256": "735ff8506629eb931cdd4a1847796e0eae2ec24deebb4f579f7441bb2182c990",
+  "copper_layers": 4,
+  "thickness_mm": 0.8,
+  "footprints": 53,
+  "footprint_sides": {
+    "F.Cu": 35,
+    "B.Cu": 18
+  },
+  "fitted_sides": {
+    "F.Cu": 32,
+    "B.Cu": 14
+  },
+  "pads": 277,
+  "ground_pads": 78,
+  "vias": 77,
+  "ground_vias": 16,
+  "tracks": 792,
+  "tracks_by_layer": {
+    "F.Cu": 446,
+    "B.Cu": 230,
+    "In2.Cu": 116
+  },
+  "min_track_width_mm": 0.2,
+  "power_tracks": {
+    "/VIN_5V": {
+      "widths_mm": [
+        0.2,
+        0.25
+      ],
+      "segment_count": 10
+    },
+    "/VBAT": {
+      "widths_mm": [
+        0.2,
+        0.25
+      ],
+      "segment_count": 40
+    },
+    "/VSYS": {
+      "widths_mm": [
+        0.2,
+        0.25
+      ],
+      "segment_count": 52
+    },
+    "/VDD_NRF": {
+      "widths_mm": [
+        0.25
+      ],
+      "segment_count": 20
+    },
+    "/VIO_1V8": {
+      "widths_mm": [
+        0.2
+      ],
+      "segment_count": 81
+    }
+  },
+  "ground_track_segments": 206,
+  "ground_track_total_length_mm": 151.48512168157558,
+  "zones": [
+    {
+      "layer": "F.Cu",
+      "net": "/GND",
+      "connection_mode": 2,
+      "filled_outlines": 2,
+      "ground_via_centers_in_fill": 16
+    },
+    {
+      "layer": "B.Cu",
+      "net": "/GND",
+      "connection_mode": 2,
+      "filled_outlines": 5,
+      "ground_via_centers_in_fill": 16
+    },
+    {
+      "layer": "In1.Cu",
+      "net": "/GND",
+      "connection_mode": 2,
+      "filled_outlines": 1,
+      "ground_via_centers_in_fill": 16
+    },
+    {
+      "layer": "In2.Cu",
+      "net": "/GND",
+      "connection_mode": 2,
+      "filled_outlines": 2,
+      "ground_via_centers_in_fill": 16
+    }
+  ],
+  "ground_pad_local_connection_modes": {
+    "-1": 77,
+    "2": 1
+  },
+  "nrf_ground_pin_numbers_match_official_list": true,
+  "nrf_ground_pin_count": 30,
+  "ground_pin_reference": "https://docs.nordicsemi.com/r/bundle/nwp_056/page/wp/nwp_054/gnd.html",
+  "return_screen": {
+    "target_mm": 2,
+    "target_origin": "GIMP tools/return_vias.py; not a universal EMI/RF acceptance threshold",
+    "non_ground_vias": 61,
+    "within_target": 9,
+    "outside_target": 52,
+    "maximum_mm": 7.090195509998295,
+    "items": [
+      {
+        "uuid": "75bd1958-745c-4c30-b8dd-18b1d8d29470",
+        "net": "/I2C_SDA",
+        "pos_mm": [
+          127.0031,
+          105.2826
+        ],
+        "nearest_ground_via": "f34e20d3-39ce-4a0f-a640-0b810c16a2fc",
+        "nearest_ground_pos_mm": [
+          133.0,
+          101.5
+        ],
+        "nearest_mm": 7.090195509998295
+      },
+      {
+        "uuid": "f79731b3-5744-497f-8d20-3d9d9eb615b5",
+        "net": "/VSYS",
+        "pos_mm": [
+          105.6046,
+          100.9802
+        ],
+        "nearest_ground_via": "db873a97-282f-40d7-a549-78f22620bd8c",
+        "nearest_ground_pos_mm": [
+          104.2,
+          107.7
+        ],
+        "nearest_mm": 6.8650282737946595
+      },
+      {
+        "uuid": "f03488f1-5116-4ea4-a77a-5a08e86f8572",
+        "net": "/I2C_SCL",
+        "pos_mm": [
+          125.214,
+          105.6828
+        ],
+        "nearest_ground_via": "977b974a-4866-4c21-8b3d-3107559d18ad",
+        "nearest_ground_pos_mm": [
+          123.926,
+          111.935
+        ],
+        "nearest_mm": 6.383490333665432
+      },
+      {
+        "uuid": "88628e14-35d5-4b40-bc34-d7c638306f6c",
+        "net": "/I2C_SCL",
+        "pos_mm": [
+          127.1253,
+          103.51
+        ],
+        "nearest_ground_via": "f34e20d3-39ce-4a0f-a640-0b810c16a2fc",
+        "nearest_ground_pos_mm": [
+          133.0,
+          101.5
+        ],
+        "nearest_mm": 6.209041801276592
+      },
+      {
+        "uuid": "8e0f60fe-66e4-4666-9372-21a6c0c7c81f",
+        "net": "/CHG_FAULT",
+        "pos_mm": [
+          111.2149,
+          107.092
+        ],
+        "nearest_ground_via": "21bc2edf-53e4-4541-abb4-c89544298664",
+        "nearest_ground_pos_mm": [
+          114.6585,
+          111.6416
+        ],
+        "nearest_mm": 5.705895295218797
+      },
+      {
+        "uuid": "b1b3f209-b61d-48d6-a3be-3ccc80ccad10",
+        "net": "/BAT_ADC",
+        "pos_mm": [
+          109.6831,
+          108.6844
+        ],
+        "nearest_ground_via": "db873a97-282f-40d7-a549-78f22620bd8c",
+        "nearest_ground_pos_mm": [
+          104.2,
+          107.7
+        ],
+        "nearest_mm": 5.570765564085416
+      },
+      {
+        "uuid": "bc6b9e1d-83b4-4c31-a211-83bc566843f8",
+        "net": "/SIM_RST",
+        "pos_mm": [
+          109.73,
+          119.2763
+        ],
+        "nearest_ground_via": "22d08393-ad56-4a95-b085-e9c650eeee4a",
+        "nearest_ground_pos_mm": [
+          104.3866,
+          118.02
+        ],
+        "nearest_mm": 5.489099493541728
+      },
+      {
+        "uuid": "91e89423-59ed-47b1-9aca-dfa76f7c017c",
+        "net": "/CHG_STAT",
+        "pos_mm": [
+          109.49,
+          106.242
+        ],
+        "nearest_ground_via": "db873a97-282f-40d7-a549-78f22620bd8c",
+        "nearest_ground_pos_mm": [
+          104.2,
+          107.7
+        ],
+        "nearest_mm": 5.487245574967455
+      },
+      {
+        "uuid": "32b292dd-c3c6-4722-9e19-a73f5c2ec88c",
+        "net": "/VBAT",
+        "pos_mm": [
+          111.4028,
+          119.0513
+        ],
+        "nearest_ground_via": "2b1da45a-f7de-48ad-8b80-bdee4d7db527",
+        "nearest_ground_pos_mm": [
+          113.1003,
+          124.045
+        ],
+        "nearest_mm": 5.274328956369716
+      },
+      {
+        "uuid": "e49bae02-ea3c-46f7-b21b-82d2e9a4141d",
+        "net": "/SPI_MOSI",
+        "pos_mm": [
+          116.47,
+          106.7051
+        ],
+        "nearest_ground_via": "21bc2edf-53e4-4541-abb4-c89544298664",
+        "nearest_ground_pos_mm": [
+          114.6585,
+          111.6416
+        ],
+        "nearest_mm": 5.258380406551045
+      },
+      {
+        "uuid": "3d405de6-caf2-4bfc-a46e-f8ed0b198752",
+        "net": "/HEALTH_RESET",
+        "pos_mm": [
+          112.6407,
+          106.9069
+        ],
+        "nearest_ground_via": "21bc2edf-53e4-4541-abb4-c89544298664",
+        "nearest_ground_pos_mm": [
+          114.6585,
+          111.6416
+        ],
+        "nearest_mm": 5.146736920612911
+      },
+      {
+        "uuid": "0dc660f9-baa6-4bc8-9f1e-ca72aa305953",
+        "net": "/SIM_IO",
+        "pos_mm": [
+          112.27,
+          119.0676
+        ],
+        "nearest_ground_via": "2b1da45a-f7de-48ad-8b80-bdee4d7db527",
+        "nearest_ground_pos_mm": [
+          113.1003,
+          124.045
+        ],
+        "nearest_mm": 5.046177647487259
+      },
+      {
+        "uuid": "0ceb9d60-5d77-4f75-ac24-9cc86a6304c9",
+        "net": "/SPI_SCK",
+        "pos_mm": [
+          118.9318,
+          109.0072
+        ],
+        "nearest_ground_via": "21bc2edf-53e4-4541-abb4-c89544298664",
+        "nearest_ground_pos_mm": [
+          114.6585,
+          111.6416
+        ],
+        "nearest_mm": 5.020075323140075
+      },
+      {
+        "uuid": "4501c543-b585-444d-a584-0ca9cfc813bc",
+        "net": "/SPI_SCK",
+        "pos_mm": [
+          117.3732,
+          107.468
+        ],
+        "nearest_ground_via": "21bc2edf-53e4-4541-abb4-c89544298664",
+        "nearest_ground_pos_mm": [
+          114.6585,
+          111.6416
+        ],
+        "nearest_mm": 4.978808396594502
+      },
+      {
+        "uuid": "9decefd6-d080-4948-9641-595107a15124",
+        "net": "/SPI_MISO",
+        "pos_mm": [
+          119.6785,
+          109.4189
+        ],
+        "nearest_ground_via": "977b974a-4866-4c21-8b3d-3107559d18ad",
+        "nearest_ground_pos_mm": [
+          123.926,
+          111.935
+        ],
+        "nearest_mm": 4.93680214916499
+      },
+      {
+        "uuid": "d6c25dcd-b41b-49b2-9fe8-9f97aac8ac21",
+        "net": "/ACC_INT",
+        "pos_mm": [
+          128.3393,
+          103.0589
+        ],
+        "nearest_ground_via": "f34e20d3-39ce-4a0f-a640-0b810c16a2fc",
+        "nearest_ground_pos_mm": [
+          133.0,
+          101.5
+        ],
+        "nearest_mm": 4.914498316206843
+      },
+      {
+        "uuid": "3b35a57f-3586-464c-b3e1-79a479288eb7",
+        "net": "/I2C_SDA",
+        "pos_mm": [
+          123.7663,
+          103.0995
+        ],
+        "nearest_ground_via": "3e319b52-df8f-4913-94b8-5c765153fada",
+        "nearest_ground_pos_mm": [
+          119.0,
+          102.0
+        ],
+        "nearest_mm": 4.891473800400042
+      },
+      {
+        "uuid": "ec5c7011-7f5a-43ec-928b-adc44241eb60",
+        "net": "/SPI_MOSI",
+        "pos_mm": [
+          126.0441,
+          107.6108
+        ],
+        "nearest_ground_via": "977b974a-4866-4c21-8b3d-3107559d18ad",
+        "nearest_ground_pos_mm": [
+          123.926,
+          111.935
+        ],
+        "nearest_mm": 4.815086006500822
+      },
+      {
+        "uuid": "9988e245-2333-4527-a8cd-7a5a55ae417f",
+        "net": "/SIM_CLK",
+        "pos_mm": [
+          109.3114,
+          117.3487
+        ],
+        "nearest_ground_via": "d989137c-90ab-4870-8396-778081a125f7",
+        "nearest_ground_pos_mm": [
+          106.2084,
+          113.6837
+        ],
+        "nearest_mm": 4.8021697179504175
+      },
+      {
+        "uuid": "8f14c601-d72d-464f-ac2e-0aa988b1f420",
+        "net": "/SIM_1V8",
+        "pos_mm": [
+          108.46,
+          120.1656
+        ],
+        "nearest_ground_via": "22d08393-ad56-4a95-b085-e9c650eeee4a",
+        "nearest_ground_pos_mm": [
+          104.3866,
+          118.02
+        ],
+        "nearest_mm": 4.603931680639922
+      },
+      {
+        "uuid": "f63e60c6-128e-4f23-bc51-3ec291e39692",
+        "net": "/HEALTH_INT",
+        "pos_mm": [
+          122.8516,
+          107.4936
+        ],
+        "nearest_ground_via": "977b974a-4866-4c21-8b3d-3107559d18ad",
+        "nearest_ground_pos_mm": [
+          123.926,
+          111.935
+        ],
+        "nearest_mm": 4.569504275082802
+      },
+      {
+        "uuid": "47590c85-7665-4dfa-8866-55fff033d3fb",
+        "net": "/SPI_MISO",
+        "pos_mm": [
+          115.031,
+          107.14
+        ],
+        "nearest_ground_via": "21bc2edf-53e4-4541-abb4-c89544298664",
+        "nearest_ground_pos_mm": [
+          114.6585,
+          111.6416
+        ],
+        "nearest_mm": 4.516985588863437
+      },
+      {
+        "uuid": "425859ee-6f64-4c16-97ae-0637177be5ef",
+        "net": "/HEALTH_INT",
+        "pos_mm": [
+          126.7577,
+          108.4361
+        ],
+        "nearest_ground_via": "977b974a-4866-4c21-8b3d-3107559d18ad",
+        "nearest_ground_pos_mm": [
+          123.926,
+          111.935
+        ],
+        "nearest_mm": 4.501202739268698
+      },
+      {
+        "uuid": "c8c65779-3359-4638-ad50-bc3d8582fa24",
+        "net": "/HEALTH_INT",
+        "pos_mm": [
+          117.5973,
+          108.4569
+        ],
+        "nearest_ground_via": "21bc2edf-53e4-4541-abb4-c89544298664",
+        "nearest_ground_pos_mm": [
+          114.6585,
+          111.6416
+        ],
+        "nearest_mm": 4.333458149099857
+      },
+      {
+        "uuid": "eecf8cb2-d25c-4b6d-8186-50ae56a62999",
+        "net": "/ISET",
+        "pos_mm": [
+          109.7699,
+          126.3692
+        ],
+        "nearest_ground_via": "2b1da45a-f7de-48ad-8b80-bdee4d7db527",
+        "nearest_ground_pos_mm": [
+          113.1003,
+          124.045
+        ],
+        "nearest_mm": 4.061215310716732
+      },
+      {
+        "uuid": "4c73a616-0981-4b5f-a0dc-25dfa5a013a7",
+        "net": "/HEALTH_EN",
+        "pos_mm": [
+          112.3285,
+          108.6065
+        ],
+        "nearest_ground_via": "21bc2edf-53e4-4541-abb4-c89544298664",
+        "nearest_ground_pos_mm": [
+          114.6585,
+          111.6416
+        ],
+        "nearest_mm": 3.8263209496852184
+      },
+      {
+        "uuid": "9e053cde-51c8-49b7-9257-0c3a9b88aea5",
+        "net": "/CHG_FAULT",
+        "pos_mm": [
+          100.8,
+          123.2
+        ],
+        "nearest_ground_via": "5a18693e-72f8-42d1-b13d-6ccf66263bb0",
+        "nearest_ground_pos_mm": [
+          103.4722,
+          120.931
+        ],
+        "nearest_mm": 3.5055689752164407
+      },
+      {
+        "uuid": "19e4af22-5b66-4ccf-9e59-6afec0f66c7e",
+        "net": "/VIO_1V8",
+        "pos_mm": [
+          124.206,
+          108.4589
+        ],
+        "nearest_ground_via": "977b974a-4866-4c21-8b3d-3107559d18ad",
+        "nearest_ground_pos_mm": [
+          123.926,
+          111.935
+        ],
+        "nearest_mm": 3.487358772767726
+      },
+      {
+        "uuid": "e54dbae7-db88-4ab1-ba46-654c39962b7b",
+        "net": "/HEALTH_RESET",
+        "pos_mm": [
+          129.9203,
+          111.5712
+        ],
+        "nearest_ground_via": "601e0cf3-87de-4ee4-a6b8-1e95e1cee0d4",
+        "nearest_ground_pos_mm": [
+          133.0,
+          110.0
+        ],
+        "nearest_mm": 3.457343131654715
+      },
+      {
+        "uuid": "da24f0a3-ac6b-4613-8fb2-35f48d251035",
+        "net": "/VDD_NRF",
+        "pos_mm": [
+          103.1507,
+          114.7496
+        ],
+        "nearest_ground_via": "d989137c-90ab-4870-8396-778081a125f7",
+        "nearest_ground_pos_mm": [
+          106.2084,
+          113.6837
+        ],
+        "nearest_mm": 3.238158751512961
+      },
+      {
+        "uuid": "139c3d4e-b062-4f4e-88f3-d5cd0a2c527f",
+        "net": "/ACC_INT",
+        "pos_mm": [
+          119.8131,
+          105.0161
+        ],
+        "nearest_ground_via": "3e319b52-df8f-4913-94b8-5c765153fada",
+        "nearest_ground_pos_mm": [
+          119.0,
+          102.0
+        ],
+        "nearest_mm": 3.123778292388878
+      },
+      {
+        "uuid": "befb0baf-aa2f-43f9-a3ad-5a4d53b9a458",
+        "net": "/SPI_MOSI",
+        "pos_mm": [
+          115.2327,
+          108.6172
+        ],
+        "nearest_ground_via": "21bc2edf-53e4-4541-abb4-c89544298664",
+        "nearest_ground_pos_mm": [
+          114.6585,
+          111.6416
+        ],
+        "nearest_mm": 3.078425084357258
+      },
+      {
+        "uuid": "eb375942-77df-40e4-91d4-7c7ad03bb63c",
+        "net": "/HEALTH_CS",
+        "pos_mm": [
+          114.1293,
+          108.6271
+        ],
+        "nearest_ground_via": "21bc2edf-53e4-4541-abb4-c89544298664",
+        "nearest_ground_pos_mm": [
+          114.6585,
+          111.6416
+        ],
+        "nearest_mm": 3.0605984529173362
+      },
+      {
+        "uuid": "085ffedf-5d80-4557-9386-2ca1b0d4f4a8",
+        "net": "/SWDCLK",
+        "pos_mm": [
+          107.0964,
+          106.7198
+        ],
+        "nearest_ground_via": "db873a97-282f-40d7-a549-78f22620bd8c",
+        "nearest_ground_pos_mm": [
+          104.2,
+          107.7
+        ],
+        "nearest_mm": 3.0577647064481583
+      },
+      {
+        "uuid": "8b245f13-55b3-4d22-b7d5-6a826b7f1fec",
+        "net": "/CHG_STAT",
+        "pos_mm": [
+          106.946,
+          122.3
+        ],
+        "nearest_ground_via": "989552dd-e1d6-45da-817a-21fb029793a3",
+        "nearest_ground_pos_mm": [
+          104.9414,
+          124.5934
+        ],
+        "nearest_mm": 3.045998148390772
+      },
+      {
+        "uuid": "0cb1f6b3-482c-4b8f-b22b-60aa4b8a9098",
+        "net": "/VIO_1V8",
+        "pos_mm": [
+          125.2992,
+          114.6158
+        ],
+        "nearest_ground_via": "977b974a-4866-4c21-8b3d-3107559d18ad",
+        "nearest_ground_pos_mm": [
+          123.926,
+          111.935
+        ],
+        "nearest_mm": 3.0120369984447306
+      },
+      {
+        "uuid": "dabdf9f4-fae5-4298-a53b-e41f97e61002",
+        "net": "/VBAT",
+        "pos_mm": [
+          107.9042,
+          124.1262
+        ],
+        "nearest_ground_via": "989552dd-e1d6-45da-817a-21fb029793a3",
+        "nearest_ground_pos_mm": [
+          104.9414,
+          124.5934
+        ],
+        "nearest_mm": 2.999409888628097
+      },
+      {
+        "uuid": "83fbe7b0-134d-4792-9c2a-2f3115ff03de",
+        "net": "/HEALTH_CS",
+        "pos_mm": [
+          122.5853,
+          114.5765
+        ],
+        "nearest_ground_via": "977b974a-4866-4c21-8b3d-3107559d18ad",
+        "nearest_ground_pos_mm": [
+          123.926,
+          111.935
+        ],
+        "nearest_mm": 2.9622624360444436
+      },
+      {
+        "uuid": "0e56814d-f788-4e23-9a72-a83304275e03",
+        "net": "/VBAT",
+        "pos_mm": [
+          100.9,
+          122.4
+        ],
+        "nearest_ground_via": "5a18693e-72f8-42d1-b13d-6ccf66263bb0",
+        "nearest_ground_pos_mm": [
+          103.4722,
+          120.931
+        ],
+        "nearest_mm": 2.962123197978099
+      },
+      {
+        "uuid": "5456a671-6e7a-4963-9005-117b2bb5df50",
+        "net": "/SPI_SCK",
+        "pos_mm": [
+          126.6842,
+          113.0026
+        ],
+        "nearest_ground_via": "977b974a-4866-4c21-8b3d-3107559d18ad",
+        "nearest_ground_pos_mm": [
+          123.926,
+          111.935
+        ],
+        "nearest_mm": 2.9576066337496623
+      },
+      {
+        "uuid": "ca484806-b63f-4b15-946b-be7565dc1ec4",
+        "net": "/VIN_5V",
+        "pos_mm": [
+          102.0285,
+          124.8786
+        ],
+        "nearest_ground_via": "989552dd-e1d6-45da-817a-21fb029793a3",
+        "nearest_ground_pos_mm": [
+          104.9414,
+          124.5934
+        ],
+        "nearest_mm": 2.926828565187931
+      },
+      {
+        "uuid": "a82ad4da-f9e4-4762-94e1-b730cd3d2282",
+        "net": "/SPI_MISO",
+        "pos_mm": [
+          122.1263,
+          109.6291
+        ],
+        "nearest_ground_via": "977b974a-4866-4c21-8b3d-3107559d18ad",
+        "nearest_ground_pos_mm": [
+          123.926,
+          111.935
+        ],
+        "nearest_mm": 2.925080323683444
+      },
+      {
+        "uuid": "28e44c48-f61b-4efe-b20d-d6b1668b1069",
+        "net": "/VIN_5V",
+        "pos_mm": [
+          106.2,
+          121.5966
+        ],
+        "nearest_ground_via": "5a18693e-72f8-42d1-b13d-6ccf66263bb0",
+        "nearest_ground_pos_mm": [
+          103.4722,
+          120.931
+        ],
+        "nearest_mm": 2.807831227121746
+      },
+      {
+        "uuid": "ea55283b-2474-47fd-9405-f313b33e7944",
+        "net": "/HEALTH_EN",
+        "pos_mm": [
+          130.675,
+          108.4392
+        ],
+        "nearest_ground_via": "601e0cf3-87de-4ee4-a6b8-1e95e1cee0d4",
+        "nearest_ground_pos_mm": [
+          133.0,
+          110.0
+        ],
+        "nearest_mm": 2.8003074188381443
+      },
+      {
+        "uuid": "50ef345d-6a0e-4cbf-8cf3-65d24fba8de3",
+        "net": "/COEX0",
+        "pos_mm": [
+          124.9956,
+          119.8347
+        ],
+        "nearest_ground_via": "9bda4b6c-f8e4-438b-8133-9f227608c518",
+        "nearest_ground_pos_mm": [
+          127.585,
+          119.1258
+        ],
+        "nearest_mm": 2.6846846313859634
+      },
+      {
+        "uuid": "7df8750a-6262-4e89-b0fe-8e63efd3360e",
+        "net": "/HEALTH_INT",
+        "pos_mm": [
+          123.3423,
+          109.3357
+        ],
+        "nearest_ground_via": "977b974a-4866-4c21-8b3d-3107559d18ad",
+        "nearest_ground_pos_mm": [
+          123.926,
+          111.935
+        ],
+        "nearest_mm": 2.6640319404992137
+      },
+      {
+        "uuid": "8e63eab6-e18d-47d2-a2e3-59717d282950",
+        "net": "/CHG_FAULT",
+        "pos_mm": [
+          108.75,
+          114.4
+        ],
+        "nearest_ground_via": "d989137c-90ab-4870-8396-778081a125f7",
+        "nearest_ground_pos_mm": [
+          106.2084,
+          113.6837
+        ],
+        "nearest_mm": 2.640609067999278
+      },
+      {
+        "uuid": "aac9d37c-7f1b-42cf-aa29-9bd9e6c7108c",
+        "net": "/HEALTH_CS",
+        "pos_mm": [
+          112.3408,
+          110.5984
+        ],
+        "nearest_ground_via": "21bc2edf-53e4-4541-abb4-c89544298664",
+        "nearest_ground_pos_mm": [
+          114.6585,
+          111.6416
+        ],
+        "nearest_mm": 2.541652912968253
+      },
+      {
+        "uuid": "2f75bb00-0785-4657-b027-4980608c1d8f",
+        "net": "/SIM_IO",
+        "pos_mm": [
+          104.633,
+          115.235
+        ],
+        "nearest_ground_via": "d989137c-90ab-4870-8396-778081a125f7",
+        "nearest_ground_pos_mm": [
+          106.2084,
+          113.6837
+        ],
+        "nearest_mm": 2.210976447183461
+      },
+      {
+        "uuid": "92b1206a-0da3-420a-9b2a-d0691ea8b3c3",
+        "net": "/SIM_RST",
+        "pos_mm": [
+          106.1474,
+          115.8016
+        ],
+        "nearest_ground_via": "d989137c-90ab-4870-8396-778081a125f7",
+        "nearest_ground_pos_mm": [
+          106.2084,
+          113.6837
+        ],
+        "nearest_mm": 2.118778282407096
+      },
+      {
+        "uuid": "f4d79715-0551-4167-ba0e-849eae26ad80",
+        "net": "/NRF_RESET",
+        "pos_mm": [
+          106.1,
+          111.65
+        ],
+        "nearest_ground_via": "d989137c-90ab-4870-8396-778081a125f7",
+        "nearest_ground_pos_mm": [
+          106.2084,
+          113.6837
+        ],
+        "nearest_mm": 2.0365869119681546
+      },
+      {
+        "uuid": "8120b8e0-20e5-4df2-bc58-5080f89011a1",
+        "net": "/ISET",
+        "pos_mm": [
+          106.2058,
+          123.0058
+        ],
+        "nearest_ground_via": "989552dd-e1d6-45da-817a-21fb029793a3",
+        "nearest_ground_pos_mm": [
+          104.9414,
+          124.5934
+        ],
+        "nearest_mm": 2.0295765863844646
+      },
+      {
+        "uuid": "9463b019-efee-4984-af73-c3d5db85e1ee",
+        "net": "/SWDIO",
+        "pos_mm": [
+          103.6177,
+          109.2394
+        ],
+        "nearest_ground_via": "db873a97-282f-40d7-a549-78f22620bd8c",
+        "nearest_ground_pos_mm": [
+          104.2,
+          107.7
+        ],
+        "nearest_mm": 1.645851041254951
+      },
+      {
+        "uuid": "80cecf2b-3d44-427b-9db4-97272255ee50",
+        "net": "/SIM_1V8",
+        "pos_mm": [
+          103.9493,
+          116.4709
+        ],
+        "nearest_ground_via": "22d08393-ad56-4a95-b085-e9c650eeee4a",
+        "nearest_ground_pos_mm": [
+          104.3866,
+          118.02
+        ],
+        "nearest_mm": 1.6096403635595105
+      },
+      {
+        "uuid": "31c58390-73cb-4045-ae48-fd8ff367fb38",
+        "net": "/NRF_ENABLE",
+        "pos_mm": [
+          103.8279,
+          111.483
+        ],
+        "nearest_ground_via": "443e0014-97d7-41bb-a53d-e6c8fbcb88c6",
+        "nearest_ground_pos_mm": [
+          102.3198,
+          111.4039
+        ],
+        "nearest_mm": 1.510172976847354
+      },
+      {
+        "uuid": "a63cc486-26f4-41da-9967-6c9e9d95b04c",
+        "net": "/COEX0",
+        "pos_mm": [
+          115.8784,
+          112.4906
+        ],
+        "nearest_ground_via": "21bc2edf-53e4-4541-abb4-c89544298664",
+        "nearest_ground_pos_mm": [
+          114.6585,
+          111.6416
+        ],
+        "nearest_mm": 1.4862560378346645
+      },
+      {
+        "uuid": "5a91c5f2-1ed1-4397-b94c-7d0bab81a8c0",
+        "net": "/BAT_NTC",
+        "pos_mm": [
+          106.4062,
+          124.5423
+        ],
+        "nearest_ground_via": "989552dd-e1d6-45da-817a-21fb029793a3",
+        "nearest_ground_pos_mm": [
+          104.9414,
+          124.5934
+        ],
+        "nearest_mm": 1.4656910486183612
+      },
+      {
+        "uuid": "06037d52-6c52-4450-bb17-d5fe6fbbd4d4",
+        "net": "/VIO_1V8",
+        "pos_mm": [
+          102.9471,
+          107.5428
+        ],
+        "nearest_ground_via": "db873a97-282f-40d7-a549-78f22620bd8c",
+        "nearest_ground_pos_mm": [
+          104.2,
+          107.7
+        ],
+        "nearest_mm": 1.2627233465807122
+      },
+      {
+        "uuid": "fdc68088-b003-4386-a9b4-a9cff78a3070",
+        "net": "/VDD_NRF",
+        "pos_mm": [
+          103.2849,
+          119.817
+        ],
+        "nearest_ground_via": "5a18693e-72f8-42d1-b13d-6ccf66263bb0",
+        "nearest_ground_pos_mm": [
+          103.4722,
+          120.931
+        ],
+        "nearest_mm": 1.1296359103711302
+      },
+      {
+        "uuid": "4867af97-0049-4f5d-b737-f1c0cca2d173",
+        "net": "/VSYS",
+        "pos_mm": [
+          101.6634,
+          112.0354
+        ],
+        "nearest_ground_via": "443e0014-97d7-41bb-a53d-e6c8fbcb88c6",
+        "nearest_ground_pos_mm": [
+          102.3198,
+          111.4039
+        ],
+        "nearest_mm": 0.9108530122912312
+      },
+      {
+        "uuid": "e5455190-57d6-4acd-8b19-d1653c3568ae",
+        "net": "/VSYS",
+        "pos_mm": [
+          124.7278,
+          111.8993
+        ],
+        "nearest_ground_via": "977b974a-4866-4c21-8b3d-3107559d18ad",
+        "nearest_ground_pos_mm": [
+          123.926,
+          111.935
+        ],
+        "nearest_mm": 0.8025943745130542
+      }
+    ]
+  },
+  "bom": {
+    "entries": 53,
+    "fitted": 46,
+    "contacts": 5,
+    "dnp": 2,
+    "missing_exact_mpn": [
+      "C8",
+      "R1",
+      "C9",
+      "R2",
+      "C10",
+      "R3",
+      "C13",
+      "C14",
+      "R4",
+      "R5",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "R6",
+      "R7",
+      "R8",
+      "R9",
+      "C20",
+      "C21",
+      "R10",
+      "R11",
+      "C22",
+      "C23",
+      "C24",
+      "R12",
+      "R13",
+      "R14",
+      "R15"
+    ]
+  },
+  "native_checks": {
+    "drc_violations": 0,
+    "opens": 0,
+    "parity": 0,
+    "erc_violations": 0,
+    "drc_ignored": [
+      {
+        "description": "Footprint has no courtyard defined",
+        "key": "missing_courtyard"
+      },
+      {
+        "description": "Track endpoint not centered on via",
+        "key": "track_not_centered_on_via"
+      },
+      {
+        "description": "Tuning profile track geometries",
+        "key": "tuning_profile_track_geometries"
+      },
+      {
+        "description": "Footprint doesn't match symbol's footprint filters",
+        "key": "footprint_filters_mismatch"
+      },
+      {
+        "description": "Footprint component type doesn't match footprint pads",
+        "key": "footprint_type_mismatch"
+      }
+    ],
+    "erc_ignored": [
+      {
+        "description": "Global label only appears once in the schematic",
+        "key": "single_global_label"
+      },
+      {
+        "description": "Four connection points are joined together",
+        "key": "four_way_junction"
+      },
+      {
+        "description": "SPICE model issue",
+        "key": "simulation_model_issue"
+      },
+      {
+        "description": "Assigned footprint doesn't match footprint filters",
+        "key": "footprint_filter"
+      }
+    ]
+  },
+  "limitations": [
+    "No analog, thermal, RF impedance, EMC or powered validation.",
+    "Distance screening is Euclidean via-to-via, not a solved return-current path.",
+    "Ground via centers lie in saved filled zones; DRC checks netlist opens independently.",
+    "Only nRF ground pin membership was cross-checked with a manufacturer pin list in this audit.",
+    "Solid zone connections and remaining routed ground require assembly/return review; counts are not defect counts."
+  ]
+}

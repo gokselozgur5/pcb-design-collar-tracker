@@ -1,0 +1,58 @@
+{
+  "source": "/Users/gok/codex/projects/collar-tracker/experiments/35x28-clearance-r034/hardware/collar-tracker.kicad_pcb",
+  "source_sha256": "597ebdee59550b6d07eb104274eabee57b038ea6c87da2dec38c1201f78c89b2",
+  "zip": "/Users/gok/codex/projects/collar-tracker/release/collar-tracker-0.3.4-35x28-dfm.zip",
+  "zip_sha256": "735ff8506629eb931cdd4a1847796e0eae2ec24deebb4f579f7441bb2182c990",
+  "bytes": 132624,
+  "files": 14,
+  "pdf": "/Users/gok/codex/projects/collar-tracker/release/collar-tracker-0.3.4-jlc-dfm-report.pdf",
+  "pdf_sha256": "d85511db1fd7d8b826c86be4ad319612ad53d5e809f8e5eda46b0aadb886d7c8",
+  "supplier_runs": [
+    {
+      "record_id": "637107561329414146",
+      "url": "https://jlcdfm.com/viewer?pcbUploadFileId=637107561329414146",
+      "zip_sha256": "735ff8506629eb931cdd4a1847796e0eae2ec24deebb4f579f7441bb2182c990",
+      "pdf": "/Users/gok/codex/projects/collar-tracker/evidence/zero-warning-r033/candidate034-check1/DFM analysis report_JLCDFM_collar-tracker-0.3.4-35x28-dfm.zip.pdf",
+      "pdf_sha256": "4527612cd0e4e783806ef69aff28e9b09bf8a0d223db217857869bcb147e004e",
+      "danger": 0,
+      "warning": 0,
+      "smt_checked": false,
+      "green_counts": {
+        "line2line": 3,
+        "pad2pad": 64,
+        "lines": 100,
+        "pth_ar": 100,
+        "coverage": 60,
+        "bridge": 51,
+        "ssl_w": 13
+      }
+    },
+    {
+      "record_id": "637107883633496065",
+      "url": "https://jlcdfm.com/viewer?pcbUploadFileId=637107883633496065",
+      "zip_sha256": "735ff8506629eb931cdd4a1847796e0eae2ec24deebb4f579f7441bb2182c990",
+      "pdf": "/Users/gok/codex/projects/collar-tracker/evidence/zero-warning-r033/candidate034-check2/DFM analysis report_JLCDFM_collar-tracker-0.3.4-35x28-dfm.zip.pdf",
+      "pdf_sha256": "d85511db1fd7d8b826c86be4ad319612ad53d5e809f8e5eda46b0aadb886d7c8",
+      "danger": 0,
+      "warning": 0,
+      "smt_checked": false,
+      "green_counts": {
+        "lines": 100,
+        "pad2pad": 64,
+        "pth_ar": 100,
+        "line2line": 3,
+        "bridge": 51,
+        "coverage": 60,
+        "ssl_w": 13
+      }
+    }
+  ],
+  "native_errors": 0,
+  "native_warnings": 0,
+  "native_opens": 0,
+  "native_parity": 0,
+  "only_route_change": "U1.71 GND track .2 -> .3 mm",
+  "unchanged_pads_masks_paste_vias_nets_rules": true,
+  "old_033_preserved": true,
+  "scope": "PCB DFM only; two fresh zero-result observations, not an assertion about all future runs or functional/SMT qualification."
+}

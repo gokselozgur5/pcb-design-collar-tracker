@@ -1,0 +1,40 @@
+{
+  "verified": true,
+  "source_sha256": "597ebdee59550b6d07eb104274eabee57b038ea6c87da2dec38c1201f78c89b2",
+  "zip_sha256": "735ff8506629eb931cdd4a1847796e0eae2ec24deebb4f579f7441bb2182c990",
+  "changed_track": "518a7bbe-4d4f-476f-95b5-f3a983aa1dff",
+  "supplier_warning_segment_mm": [
+    [
+      110.63667418,
+      108.09998646
+    ],
+    [
+      110.6366818,
+      108.1804054
+    ]
+  ],
+  "segment_outside_ground_trace_before_mm": 0.08041894036101324,
+  "segment_outside_ground_trace_after_mm": 0.0,
+  "pads_masks_stencil_components_vias_nets_rules_unchanged": true,
+  "native_errors": 0,
+  "native_warnings": 0,
+  "opens": 0,
+  "parity": 0,
+  "unchanged_output_files_except_timestamps_revision": [
+    "collar-tracker-In1_Cu.g1",
+    "collar-tracker-In2_Cu.g2",
+    "collar-tracker-B_Cu.gbl",
+    "collar-tracker-F_Mask.gts",
+    "collar-tracker-B_Mask.gbs",
+    "collar-tracker-F_Paste.gtp",
+    "collar-tracker-B_Paste.gbp",
+    "collar-tracker-Edge_Cuts.gm1",
+    "collar-tracker-F_Silkscreen.gto",
+    "collar-tracker-PTH.drl",
+    "collar-tracker-NPTH.drl"
+  ],
+  "copper_layers_changed": [
+    "F.Cu"
+  ],
+  "limitation": "Local geometry plus native DRC; supplier repeat checks are separate."
+}

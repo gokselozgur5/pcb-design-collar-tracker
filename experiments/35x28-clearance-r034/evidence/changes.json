@@ -1,0 +1,13 @@
+{
+  "base": "/Users/gok/codex/projects/collar-tracker/experiments/35x28-clearance-r033/hardware/collar-tracker.kicad_pcb",
+  "base_sha256": "ab78d20c04a6b872dec1dfaad2b50d3995f3112f852905cbfc1ee378c5b992ea",
+  "changed_track": "518a7bbe-4d4f-476f-95b5-f3a983aa1dff",
+  "net": "/GND",
+  "pad": "U1.71",
+  "width_before_after_mm": [
+    0.2,
+    0.3
+  ],
+  "other_changes": "GND refill, bottom revision label and title only. All pads, masks, stencil, components, nets, vias and rules unchanged.",
+  "reason": "User reproduced a 0.08 mm mask-to-copper warning on 0.3.3. U1.71 has the symmetric thin ground neck of the previously corrected U1.30. Do not claim a single prior zero run proves repeatability."
+}
