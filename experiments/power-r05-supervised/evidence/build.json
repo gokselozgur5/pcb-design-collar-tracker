@@ -1,0 +1,18 @@
+{
+  "baseline_schematic_sha256": "cb7bba3d7911e83a3507a38ab0f5061fddb0292492df89d7e3aedc90709eb698",
+  "schematic_sha256": "304e7d9e6893012a9dc2e7e3daf11c86d2ddc32527b1307838b374419f25044c",
+  "builder_sha256": "2969a658b5f51991339e3efdce827b29957964df4db5a973616c333529b95ef7",
+  "component_count": 71,
+  "pcb_created": false,
+  "electrical_release": false,
+  "removed_components": [
+    "R10",
+    "R11",
+    "C22"
+  ],
+  "changed_existing_connections": {
+    "R1.1": "POWER_GOOD",
+    "U4.3": "VIO_ENABLE",
+    "U1.73": "FG_ALERT"
+  }
+}

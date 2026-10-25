@@ -1,0 +1,72 @@
+{
+  "analysis": {
+    "bounds": {
+      "enable_low_hold_min_s": 1.274986839954527,
+      "falling_threshold_V": [
+        3.248626637055837,
+        3.447733667606456
+      ],
+      "fully_on_enable_high_departure_min_s": 0.0015228639108327744,
+      "gpio_after_enable_high_min_s": 0.03286489050889431,
+      "gpio_enable_latest_after_power_good_s": 0.6112039382188144,
+      "rail_must_remain_valid_until_enable_low_s": 0.09674173147404443,
+      "recognized_fault_restart_delay_min_s": 1.3717285714285714,
+      "restart_threshold_V": [
+        3.4187167697686927,
+        3.7555505218295218
+      ],
+      "turnoff_latency_budget_s": 0.0005440684187388173,
+      "vio_to_0p1V_estimate_max_s": 0.0009787954920939571
+    },
+    "conditional_checks": {
+      "fully_on_shutdown_has_positive_latency_budget": true,
+      "gpio_start_more_than_6ms_after_enable_high": true,
+      "recognized_fault_holds_enable_low_1s": true,
+      "restart_threshold_below_nominal_full_cell": true,
+      "static_cutoff_above_modem_minimum": true
+    },
+    "scope": "Analytical bounds with explicit unqualified inputs; not SPICE, silicon characterization or a bench result."
+  },
+  "electrical_acceptance": "HOLD",
+  "inputs": {
+    "evidence/power-review-r04i/native-power.json": "010ad798dbedeea83ae1ab8527e0d42568c6b721790b53877c000ddbb2f93b24",
+    "experiments/power-r05-supervised/evidence/erc.json": "7625773d9e9ff379cb7f47dc2fa71e4d5eeba4cd5eb32cd67d3133ddc38234ab",
+    "experiments/power-r05-supervised/evidence/native-netlist.json": "3a2904724aca09493384710bd85da2fefcd308682f5e28245548fe54d40c0756",
+    "experiments/power-r05-supervised/evidence/timing-inputs.json": "9a694461ba8da9dac53c55c39eaed6278bdc0127adec8bb10d2c94386dcdad7c",
+    "experiments/power-r05-supervised/hardware/collar-tracker.kicad_sch": "32313876fa5865fffa32f9b993970a1ffb4405f1824c1104e18ddba8bcc8ba96",
+    "scripts/check_power_r05.py": "30b7b0ee16ca2f9e005e7ba4997e645c2a479698fa22076ef2d4e3cc5ea33190"
+  },
+  "pcb_or_dfm_result": false,
+  "physical_test": false,
+  "topology": {
+    "battery_adc_feed_removed": true,
+    "component_count": 71,
+    "existing_changes": {
+      "R1.1": {
+        "after": "/POWER_GOOD",
+        "before": "/VDD_NRF"
+      },
+      "U1.73": {
+        "after": "/FG_ALERT",
+        "before": "/BAT_ADC"
+      },
+      "U4.3": {
+        "after": "/VIO_ENABLE",
+        "before": "/VSYS"
+      }
+    },
+    "pin_membership": "PASS",
+    "unchanged_connected_existing_pins": 205
+  },
+  "unqualified": [
+    "Effective capacitor bounds include provisional tolerance, temperature, bias and aging allowances; validate actual selected MPN curves.",
+    "The 0.6/1.4 timer scaling extrapolates TPS3808 specified timing endpoints to these capacitors; it is a design assumption, not a new manufacturer guarantee.",
+    "Confirm that every fault capable of disabling the modem fully resets CT; SENSE propagation and minimum fault width are typical-only in the datasheet.",
+    "Bound the declared ENABLE/SENSE input loads and POWER_GOOD high drop over voltage and temperature.",
+    "The 6-ohm hot FET allowance and switch/LDO turnoff latency require characterization; room-temperature RDS and typical propagation do not establish them.",
+    "Static cutoff is not an energy reserve. Verify source impedance and hold-up for the calculated shutdown interval; abrupt collapse can outrun sequencing.",
+    "Check partial startup, very short faults, rapid rebound, depleted-cell charge recovery and charger removal with the actual cell and loads.",
+    "Select and qualify protected pack/NTC, capacitor and resistor AVL, charging protection, RF and factory programming/test.",
+    "Firmware must keep GPIOs inactive until VIO is valid and recover I2C after a restart; configure the actual cell model and do not quick-start on every MCU reset."
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "enable_cap_effective_uF": [0.60, 1.265],
+  "restart_cap_effective_nF": [400, 860],
+  "gpio_delay_cap_effective_nF": [32, 60],
+  "maximum_valid_rail_V": 5.5,
+  "power_good_high_drop_V": 0.06,
+  "enable_and_sense_load_max_uA": 5,
+  "enable_source_leak_max_uA": 1,
+  "fet_hot_rds_bound_ohm": 6,
+  "vio_cap_max_uF": 12,
+  "qualification_required": [
+    "Effective capacitor bounds include provisional tolerance, temperature, bias and aging allowances; validate actual selected MPN curves.",
+    "The 0.6/1.4 timer scaling extrapolates TPS3808 specified timing endpoints to these capacitors; it is a design assumption, not a new manufacturer guarantee.",
+    "Confirm that every fault capable of disabling the modem fully resets CT; SENSE propagation and minimum fault width are typical-only in the datasheet.",
+    "Bound the declared ENABLE/SENSE input loads and POWER_GOOD high drop over voltage and temperature.",
+    "The 6-ohm hot FET allowance and switch/LDO turnoff latency require characterization; room-temperature RDS and typical propagation do not establish them.",
+    "Static cutoff is not an energy reserve. Verify source impedance and hold-up for the calculated shutdown interval; abrupt collapse can outrun sequencing.",
+    "Check partial startup, very short faults, rapid rebound, depleted-cell charge recovery and charger removal with the actual cell and loads.",
+    "Select and qualify protected pack/NTC, capacitor and resistor AVL, charging protection, RF and factory programming/test.",
+    "Firmware must keep GPIOs inactive until VIO is valid and recover I2C after a restart; configure the actual cell model and do not quick-start on every MCU reset."
+  ]
+}

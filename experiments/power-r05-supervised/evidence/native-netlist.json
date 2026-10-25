@@ -1,0 +1,645 @@
+{
+  "exporter": "Eeschema 10.0.7",
+  "nets": {
+    "/ACC_INT": [
+      "U1.58",
+      "U5.12"
+    ],
+    "/AMP_IN": [
+      "L1.2",
+      "U2.8"
+    ],
+    "/BAT_NTC": [
+      "J4.3",
+      "U3.6"
+    ],
+    "/CHG_FAULT": [
+      "R9.1",
+      "U1.70",
+      "U3.3"
+    ],
+    "/CHG_STAT": [
+      "R8.1",
+      "U1.69",
+      "U3.9"
+    ],
+    "/COEX0": [
+      "R4.1",
+      "U1.52"
+    ],
+    "/DEBUG_RESET": [
+      "J7.5",
+      "R2.2"
+    ],
+    "/DEC0": [
+      "C7.1",
+      "U1.24"
+    ],
+    "/FG_ALERT": [
+      "R23.2",
+      "U1.73",
+      "U9.5"
+    ],
+    "/FILT_OUT": [
+      "L1.1",
+      "U2.7"
+    ],
+    "/GND": [
+      "C1.2",
+      "C10.2",
+      "C11.2",
+      "C12.2",
+      "C15.2",
+      "C16.2",
+      "C17.2",
+      "C18.2",
+      "C19.2",
+      "C2.2",
+      "C20.2",
+      "C21.2",
+      "C23.2",
+      "C24.2",
+      "C25.2",
+      "C26.2",
+      "C27.2",
+      "C28.2",
+      "C29.2",
+      "C3.2",
+      "C30.2",
+      "C4.2",
+      "C5.2",
+      "C6.2",
+      "C7.2",
+      "C8.2",
+      "C9.2",
+      "D1.2",
+      "D2.2",
+      "J1.2",
+      "J2.2",
+      "J3.2",
+      "J4.2",
+      "J5.1",
+      "J6.5",
+      "J6.8",
+      "J7.3",
+      "Q1.1",
+      "Q1.4",
+      "R15.2",
+      "R18.2",
+      "R22.2",
+      "R5.2",
+      "R6.2",
+      "R7.2",
+      "U1.1",
+      "U1.105",
+      "U1.106",
+      "U1.107",
+      "U1.108",
+      "U1.109",
+      "U1.110",
+      "U1.111",
+      "U1.112",
+      "U1.113",
+      "U1.13",
+      "U1.15",
+      "U1.20",
+      "U1.25",
+      "U1.30",
+      "U1.34",
+      "U1.36",
+      "U1.38",
+      "U1.39",
+      "U1.40",
+      "U1.41",
+      "U1.43",
+      "U1.46",
+      "U1.51",
+      "U1.55",
+      "U1.60",
+      "U1.66",
+      "U1.7",
+      "U1.71",
+      "U1.76",
+      "U2.1",
+      "U2.11",
+      "U2.4",
+      "U2.6",
+      "U2.9",
+      "U3.11",
+      "U3.4",
+      "U3.5",
+      "U4.2",
+      "U5.6",
+      "U5.7",
+      "U5.8",
+      "U6.2",
+      "U7.2",
+      "U8.3",
+      "U9.1",
+      "U9.4",
+      "U9.6",
+      "U9.9"
+    ],
+    "/GNSS_ANT": [
+      "C14.1",
+      "J2.1"
+    ],
+    "/GNSS_FEM_IN": [
+      "C14.2",
+      "U2.5"
+    ],
+    "/GNSS_FEM_OUT": [
+      "C13.1",
+      "U2.10"
+    ],
+    "/GNSS_LNA_EN": [
+      "R4.2",
+      "R5.1",
+      "U2.2"
+    ],
+    "/GPS_RF": [
+      "C13.2",
+      "U1.42"
+    ],
+    "/HEALTH_CS": [
+      "J5.10",
+      "R14.1",
+      "U1.64"
+    ],
+    "/HEALTH_EN": [
+      "J5.12",
+      "R15.1",
+      "U1.68"
+    ],
+    "/HEALTH_INT": [
+      "J5.6",
+      "U1.59"
+    ],
+    "/HEALTH_RESET": [
+      "J5.11",
+      "U1.67"
+    ],
+    "/I2C_SCL": [
+      "J5.5",
+      "R13.1",
+      "U1.57",
+      "U5.1",
+      "U9.7"
+    ],
+    "/I2C_SDA": [
+      "J5.4",
+      "R12.1",
+      "U1.56",
+      "U5.4",
+      "U9.8"
+    ],
+    "/ILIM_VSET": [
+      "R6.1",
+      "U3.7"
+    ],
+    "/ISET": [
+      "R7.1",
+      "U3.8"
+    ],
+    "/LTE_ANT": [
+      "C12.1",
+      "J1.1",
+      "R3.2"
+    ],
+    "/LTE_RF": [
+      "C11.1",
+      "R3.1",
+      "U1.35"
+    ],
+    "/NRF_ENABLE": [
+      "C9.1",
+      "R1.2",
+      "U1.10",
+      "U7.5"
+    ],
+    "/NRF_RESET": [
+      "C8.1",
+      "R2.1",
+      "U1.9"
+    ],
+    "/POWER_FAULT": [
+      "Q1.2",
+      "Q1.5",
+      "R22.1",
+      "U8.4"
+    ],
+    "/POWER_GOOD": [
+      "R1.1",
+      "R16.2",
+      "R19.1",
+      "U6.1",
+      "U7.3",
+      "U8.2"
+    ],
+    "/SIM_1V8": [
+      "C10.1",
+      "D1.6",
+      "J6.1",
+      "U1.19"
+    ],
+    "/SIM_CLK": [
+      "D1.3",
+      "J6.3",
+      "U1.18"
+    ],
+    "/SIM_IO": [
+      "D2.3",
+      "J6.7",
+      "U1.17"
+    ],
+    "/SIM_RST": [
+      "D1.1",
+      "J6.2",
+      "U1.16"
+    ],
+    "/SPI_MISO": [
+      "J5.9",
+      "U1.63"
+    ],
+    "/SPI_MOSI": [
+      "J5.8",
+      "U1.62"
+    ],
+    "/SPI_SCK": [
+      "J5.7",
+      "U1.61"
+    ],
+    "/SWDCLK": [
+      "J7.4",
+      "U1.3"
+    ],
+    "/SWDIO": [
+      "J7.2",
+      "U1.4"
+    ],
+    "/UV_DELAY": [
+      "C25.1",
+      "U6.4"
+    ],
+    "/UV_SENSE": [
+      "R17.2",
+      "R18.1",
+      "R19.2",
+      "U6.5"
+    ],
+    "/VBAT": [
+      "C19.1",
+      "C30.1",
+      "J4.1",
+      "U3.2",
+      "U9.2",
+      "U9.3"
+    ],
+    "/VDD_NRF": [
+      "C27.1",
+      "C28.1",
+      "C29.1",
+      "C3.1",
+      "C4.1",
+      "FB1.2",
+      "R16.1",
+      "R17.1",
+      "R20.1",
+      "U1.14",
+      "U6.3",
+      "U6.6",
+      "U7.6",
+      "U8.5"
+    ],
+    "/VIN_5V": [
+      "C17.1",
+      "J3.1",
+      "U3.10"
+    ],
+    "/VIO_1V8": [
+      "C15.1",
+      "C16.1",
+      "C21.1",
+      "C23.1",
+      "C24.1",
+      "C5.1",
+      "C6.1",
+      "J5.2",
+      "J7.1",
+      "R12.2",
+      "R13.2",
+      "R14.2",
+      "R21.1",
+      "R23.1",
+      "R8.2",
+      "R9.2",
+      "U1.65",
+      "U2.3",
+      "U4.5",
+      "U5.10",
+      "U5.2",
+      "U5.3",
+      "U5.9"
+    ],
+    "/VIO_DELAY": [
+      "C26.1",
+      "U7.4"
+    ],
+    "/VIO_DISCHARGE": [
+      "Q1.6",
+      "R21.2"
+    ],
+    "/VIO_ENABLE": [
+      "Q1.3",
+      "R20.2",
+      "U4.3",
+      "U7.1"
+    ],
+    "/VSYS": [
+      "C1.1",
+      "C18.1",
+      "C2.1",
+      "C20.1",
+      "FB1.1",
+      "J5.3",
+      "J7.6",
+      "U3.1",
+      "U4.1"
+    ],
+    "unconnected-(D1-D2--Pad4)": [
+      "D1.4"
+    ],
+    "unconnected-(D1-NC-Pad5)": [
+      "D1.5"
+    ],
+    "unconnected-(D2-D1+-Pad1)": [
+      "D2.1"
+    ],
+    "unconnected-(D2-D1--Pad6)": [
+      "D2.6"
+    ],
+    "unconnected-(D2-D2--Pad4)": [
+      "D2.4"
+    ],
+    "unconnected-(D2-NC-Pad5)": [
+      "D2.5"
+    ],
+    "unconnected-(J6-C6_VPP_UNUSED-Pad6)": [
+      "J6.6"
+    ],
+    "unconnected-(U1-AUX-Pad37)": [
+      "U1.37"
+    ],
+    "unconnected-(U1-COEX1-Pad53)": [
+      "U1.53"
+    ],
+    "unconnected-(U1-COEX2-Pad54)": [
+      "U1.54"
+    ],
+    "unconnected-(U1-MAGPIO0-Pad21)": [
+      "U1.21"
+    ],
+    "unconnected-(U1-MAGPIO1-Pad22)": [
+      "U1.22"
+    ],
+    "unconnected-(U1-MAGPIO2-Pad23)": [
+      "U1.23"
+    ],
+    "unconnected-(U1-P0.12-Pad72)": [
+      "U1.72"
+    ],
+    "unconnected-(U1-P0.14-Pad74)": [
+      "U1.74"
+    ],
+    "unconnected-(U1-P0.15-Pad75)": [
+      "U1.75"
+    ],
+    "unconnected-(U1-P0.16-Pad77)": [
+      "U1.77"
+    ],
+    "unconnected-(U1-P0.17-Pad78)": [
+      "U1.78"
+    ],
+    "unconnected-(U1-P0.18-Pad79)": [
+      "U1.79"
+    ],
+    "unconnected-(U1-P0.19-Pad80)": [
+      "U1.80"
+    ],
+    "unconnected-(U1-P0.20-Pad2)": [
+      "U1.2"
+    ],
+    "unconnected-(U1-P0.21-Pad5)": [
+      "U1.5"
+    ],
+    "unconnected-(U1-P0.22-Pad6)": [
+      "U1.6"
+    ],
+    "unconnected-(U1-P0.23-Pad8)": [
+      "U1.8"
+    ],
+    "unconnected-(U1-P0.24-Pad11)": [
+      "U1.11"
+    ],
+    "unconnected-(U1-P0.25-Pad12)": [
+      "U1.12"
+    ],
+    "unconnected-(U1-P0.26-Pad44)": [
+      "U1.44"
+    ],
+    "unconnected-(U1-P0.27-Pad45)": [
+      "U1.45"
+    ],
+    "unconnected-(U1-P0.28-Pad47)": [
+      "U1.47"
+    ],
+    "unconnected-(U1-P0.29-Pad48)": [
+      "U1.48"
+    ],
+    "unconnected-(U1-P0.30-Pad49)": [
+      "U1.49"
+    ],
+    "unconnected-(U1-P0.31-Pad50)": [
+      "U1.50"
+    ],
+    "unconnected-(U1-RESERVED_NC-Pad100)": [
+      "U1.100"
+    ],
+    "unconnected-(U1-RESERVED_NC-Pad101)": [
+      "U1.101"
+    ],
+    "unconnected-(U1-RESERVED_NC-Pad102)": [
+      "U1.102"
+    ],
+    "unconnected-(U1-RESERVED_NC-Pad103)": [
+      "U1.103"
+    ],
+    "unconnected-(U1-RESERVED_NC-Pad104)": [
+      "U1.104"
+    ],
+    "unconnected-(U1-RESERVED_NC-Pad31)": [
+      "U1.31"
+    ],
+    "unconnected-(U1-RESERVED_NC-Pad32)": [
+      "U1.32"
+    ],
+    "unconnected-(U1-RESERVED_NC-Pad33)": [
+      "U1.33"
+    ],
+    "unconnected-(U1-RESERVED_NC-Pad81)": [
+      "U1.81"
+    ],
+    "unconnected-(U1-RESERVED_NC-Pad82)": [
+      "U1.82"
+    ],
+    "unconnected-(U1-RESERVED_NC-Pad83)": [
+      "U1.83"
+    ],
+    "unconnected-(U1-RESERVED_NC-Pad84)": [
+      "U1.84"
+    ],
+    "unconnected-(U1-RESERVED_NC-Pad85)": [
+      "U1.85"
+    ],
+    "unconnected-(U1-RESERVED_NC-Pad86)": [
+      "U1.86"
+    ],
+    "unconnected-(U1-RESERVED_NC-Pad87)": [
+      "U1.87"
+    ],
+    "unconnected-(U1-RESERVED_NC-Pad88)": [
+      "U1.88"
+    ],
+    "unconnected-(U1-RESERVED_NC-Pad89)": [
+      "U1.89"
+    ],
+    "unconnected-(U1-RESERVED_NC-Pad90)": [
+      "U1.90"
+    ],
+    "unconnected-(U1-RESERVED_NC-Pad91)": [
+      "U1.91"
+    ],
+    "unconnected-(U1-RESERVED_NC-Pad92)": [
+      "U1.92"
+    ],
+    "unconnected-(U1-RESERVED_NC-Pad93)": [
+      "U1.93"
+    ],
+    "unconnected-(U1-RESERVED_NC-Pad94)": [
+      "U1.94"
+    ],
+    "unconnected-(U1-RESERVED_NC-Pad95)": [
+      "U1.95"
+    ],
+    "unconnected-(U1-RESERVED_NC-Pad96)": [
+      "U1.96"
+    ],
+    "unconnected-(U1-RESERVED_NC-Pad97)": [
+      "U1.97"
+    ],
+    "unconnected-(U1-RESERVED_NC-Pad98)": [
+      "U1.98"
+    ],
+    "unconnected-(U1-RESERVED_NC-Pad99)": [
+      "U1.99"
+    ],
+    "unconnected-(U1-SCLK-Pad28)": [
+      "U1.28"
+    ],
+    "unconnected-(U1-SDATA-Pad27)": [
+      "U1.27"
+    ],
+    "unconnected-(U1-SIM_DET_UNUSED-Pad26)": [
+      "U1.26"
+    ],
+    "unconnected-(U1-VIO-Pad29)": [
+      "U1.29"
+    ],
+    "unconnected-(U4-NC-Pad4)": [
+      "U4.4"
+    ],
+    "unconnected-(U5-INT2-Pad11)": [
+      "U5.11"
+    ],
+    "unconnected-(U5-NC-Pad5)": [
+      "U5.5"
+    ],
+    "unconnected-(U8-NC-Pad1)": [
+      "U8.1"
+    ]
+  },
+  "parts": {
+    "C1": "1uF /10V",
+    "C10": "100nF",
+    "C11": "DNP / tune",
+    "C12": "DNP / tune",
+    "C13": "39pF RF",
+    "C14": "39pF RF",
+    "C15": "100nF",
+    "C16": "1uF",
+    "C17": "1uF /10V",
+    "C18": "10uF /10V",
+    "C19": "1uF /10V",
+    "C2": "1uF /10V",
+    "C20": "1uF",
+    "C21": "1uF",
+    "C23": "100nF",
+    "C24": "100nF",
+    "C25": "680nF /25V X7R",
+    "C26": "47nF /16V X7R",
+    "C27": "100nF /16V X7R",
+    "C28": "100nF /16V X7R",
+    "C29": "100nF /16V X7R",
+    "C3": "47uF /10V",
+    "C30": "100nF /16V X7R",
+    "C4": "10uF /10V",
+    "C5": "100nF",
+    "C6": "4.7uF",
+    "C7": "4.7uF",
+    "C8": "100nF",
+    "C9": "1uF /16V X7R",
+    "D1": "TPD4E1U06DCKR",
+    "D2": "TPD4E1U06DCKR",
+    "FB1": "22R @100MHz",
+    "J1": "LTE antenna / 50R",
+    "J2": "GNSS antenna / passive",
+    "J3": "5V charging input",
+    "J4": "Protected cell + NTC",
+    "J5": "DIGITAL health sensor interface",
+    "J6": "SIM8051-6-0-14-00-A",
+    "J7": "SWD / debug",
+    "L1": "9.1nH",
+    "Q1": "DMN62D2UDW-7",
+    "R1": "22k /1%",
+    "R12": "4.7k",
+    "R13": "4.7k",
+    "R14": "100k",
+    "R15": "100k",
+    "R16": "10k /1%",
+    "R17": "1M /0.1%",
+    "R18": "130k /0.1%",
+    "R19": "16.9M /1%",
+    "R2": "1k",
+    "R20": "10k /1%",
+    "R21": "22R /1%",
+    "R22": "1M /1%",
+    "R23": "100k /1%",
+    "R3": "0R / tune",
+    "R4": "1k",
+    "R5": "100k",
+    "R6": "18k /1%",
+    "R7": "3k /1%",
+    "R8": "10k",
+    "R9": "10k",
+    "U1": "nRF9151-LACA",
+    "U2": "SKY65943-11",
+    "U3": "BQ25185DLHR",
+    "U4": "TPS7A0218PDBVR",
+    "U5": "LIS2DW12TR",
+    "U6": "TPS3808G01DBVR",
+    "U7": "TPS3808G30DBVR",
+    "U8": "SN74LVC1G14DCKR",
+    "U9": "MAX17048G+T10"
+  },
+  "schematic_sha256": "32313876fa5865fffa32f9b993970a1ffb4405f1824c1104e18ddba8bcc8ba96"
+}
