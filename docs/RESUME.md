@@ -24,7 +24,7 @@ project also works without rerunning the historical generators.
 |---|---|
 | KiCad | 10.0.7. `scripts/kicad-cli` and `scripts/kicad-python` use the existing SSD install; `COLLAR_KICAD_CONTENTS` can select another macOS install. |
 | Native Python | KiCad's bundled Python 3.9 with `pcbnew`; ordinary Python cannot replace it. |
-| Geometry Python | `.venv-dfm/bin/python`, Python 3.11 + Shapely 2.1.2. Install from `requirements-dfm.txt` in a new venv if missing. |
+| Geometry Python | `.venv-dfm/bin/python`, Python 3.11 + Shapely 2.1.2 + NumPy 2.4.6. Install from `requirements-dfm.txt` in a new venv if missing. |
 | Router | Java + Freerouting 2.5.0. Pinned JAR `/Volumes/GOKSSD/codex/tools/freerouting/freerouting-2.5.0.jar`; SHA256 `f6f51bb02245e8e717f9359bd260cc9c5c0b1bc0acc8b7cb2cd5b8ffeb5de3c7`. |
 | JLC browser | Node + Playwright 1.64.1; `COLLAR_PLAYWRIGHT_MODULE` can select a local installation. |
 | PDF/image review | `pdftotext`, `pdftoppm`, `rsvg-convert`; render locally and actually inspect. |
@@ -54,9 +54,13 @@ longer the active circuit. The new temperature model has explicit full-curve,
 leakage and cell/sensor coupling assumptions. Startup, brownout, low-cell recovery,
 sensor insertion and physical thermal performance still need bench qualification.
 
-Next: select the protected pack and NTC attachment against the complete pack/PCM
-limits, then actual LTE/GNSS antennas. Follow with populated fit, harness/dock,
-positive retention, seal/material/fastener definitions and firmware/factory test.
+Next: bound actual peak/duty-cycle load and select the protected pack/NTC attachment
+against complete pack/PCM voltage, protection and charge limits. The former 600mA
+continuous screen is engineering headroom, not the Nordic requirement. See
+`assembly/pack-antenna-r02/README.md` for the manufacturer sources and open choices.
+CAPH/ZETA are now prototype antenna candidates; cable end datums/tolerance fit,
+feed bond and clip strength remain open. Follow with harness/dock, positive
+retention, seal/material/fastener definitions and firmware/factory test.
 The provisional firmware VIO wait remains 1s. UVLO is not a zero-current battery
 disconnect. Read the manufacturer sequencing exception before adding circuitry.
 
@@ -65,14 +69,18 @@ python3 scripts/verify_charge_candidate.py
 python3 scripts/check_charge_r05l.py
 python3 -m unittest discover -s tests -p test_charge_r05l.py -v
 python3 scripts/verify_handoff.py
-python3 scripts/package_charge_review.py --verify
+python3 scripts/verify_antenna_candidate.py
+python3 scripts/package_antenna_review.py --verify
 ```
 
-The current mechanical source is `mechanical/swim-r07-charge-interlock/`. It adds
-one U12 ledge relief and shifts one support leg. All 85 populated envelopes pass
-four thickness cases; eight actual meshes pass integrity checks and the old carrier
-fails the CAD negative control. Actual pack/antennas, retention and physical tests
-are not qualified. The rigid shell/seals/contact geometry is unchanged.
+The current mechanical source is `mechanical/swim-r08-antennas/`. It retains the
+r07 U12 relief and support shift, adds two cable routes and four internal lid
+guides, and raises the rigid shell plus lid to 20.6mm. Its 85 populated envelopes
+pass four thickness cases. Eight meshes pass integrity checks; both the original
+carrier and deliberately undersized cable channels fail the CAD controls. The
+initial and widened-straight GNSS guide failures are preserved under `evidence/`;
+the final guide has a curved channel. Pack, cable tolerances, retention and
+physical tests remain unqualified. All older models and packages are preserved.
 
 Saved native files are authoritative. Do not rerun one-shot seed/routing scripts
 against an existing target. Use a successor for further circuit/PCB edits and
@@ -121,12 +129,12 @@ Always load a checkpoint beside its matching `.kicad_pro`: loading a bare build
 snapshot can substitute default rules and overwrite the real project's settings
 on save. The r05 placement helper now checks design-rule and net-class identity.
 
-Protected NTC pack and LTE/GNSS antenna selection follows the implemented r05l circuit,
-followed by actual cable/clearance fit, dock/harness and positive PCB retention.
-Read `mechanical/swim-r07-charge-interlock/README.md`, the preserved r02 selection review and
+Protected NTC pack selection and antenna assembly qualification follow the
+implemented r05l circuit, then dock/harness and positive PCB retention.
+Read `mechanical/swim-r08-antennas/README.md`, the current pack/antenna review and
 `docs/turkiye-connectivity.md` before assuming a modem/plan is field-qualified.
-The r05l/r07 thickness review checks 85 populated envelopes over 0.71–0.91mm;
-eight meshes and the CAD interference control are verified. The old r05j nine
+The r05l/r08 thickness review checks 85 populated envelopes over 0.71–0.91mm;
+eight meshes and both CAD interference controls are verified. The old r05j nine
 height reservations are historical. Factory and physical qualification remain open.
 
 ```sh

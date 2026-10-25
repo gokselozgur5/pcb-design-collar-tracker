@@ -1,4 +1,4 @@
-# Current state — 2026-10-25
+# Current state — 2026-10-26
 
 **Active r05l: hardware charge-temperature interlock implemented; native DRC/ERC/parity clean; two actual JLC PCB runs at 0 Danger / 0 Warning / 455 Good each.**
 **Working-device / RF / manufacturing release: HOLD. IP68 remains unqualified.**
@@ -10,8 +10,8 @@ content is English. Run `python3 scripts/resume.py` before making another revisi
 [Gerber ZIP](../experiments/power-r05l-charge-interlock/evidence/collar-tracker-05l-charge-final4-40x32-dfm.zip) ·
 [JLC report 1](../experiments/power-r05l-charge-interlock/evidence/jlc-check1/report.pdf) ·
 [JLC report 2](../experiments/power-r05l-charge-interlock/evidence/jlc-check2/report.pdf) ·
-[Two-page review](../release/r05l-review/review.pdf) ·
-[Review bundle](../release/collar-tracker-r05l-review.zip)
+[Two-page review](../release/r08-assembly-review/review.pdf) ·
+[Review bundle](../release/collar-tracker-r05l-r08-review.zip)
 
 | Check | Current result |
 |---|---|
@@ -24,7 +24,8 @@ content is English. Run `python3 scripts/resume.py` before making another revisi
 | Local routing | New charge nets and supply/sensor branches; local VIN escape rerouted |
 | Ground / returns | 109 physical GND pads have local via paths; 122 GND vias; two dedicated planes; 154/154 signal-via return screens |
 | JLC PCB DFM | Records `637366592129687553` / `637366801595977730`; same ZIP/rules; 29 rows; SMT off |
-| Mechanical r07 | 85 populated envelopes pass four thickness cases; eight closed meshes; actual CAD intersection empty, old carrier rejected |
+| Mechanical r08 | 85 populated envelopes pass four thickness cases; eight closed meshes; current CAD intersections empty, old carrier and undersized cable guides rejected |
+| Antenna candidates | Synzen CAPH SZK-C-3L30 LTE and ZETA SZK-C-0G04 GNSS; separate nominal 100mm cable assemblies and four internal lid guides |
 
 PCB SHA256: `241c84d6ba98793c37344e1e46ddc4918e7b05322ba87daea7c9a90ffb8379b3`.
 Gerber SHA256: `c736c5d35ddfe4c4662e57606120f00f7358492e11d5fbb32eaf1d0ff6caf5d2`.
@@ -33,7 +34,7 @@ In1/In4 are dedicated GND planes; F/In2/In3/B carry signals.
 
 Read the [r05l evidence](../experiments/power-r05l-charge-interlock/README.md),
 [charge review](../assembly/charge-interlock-r01/README.md) and
-[r07 carrier](../mechanical/swim-r07-charge-interlock/README.md).
+[r08 antenna enclosure](../mechanical/swim-r08-antennas/README.md).
 The first supplier run failed 3 Danger / 4 Warning; full-size label moves and a
 VIN-via relocation fixed them without weakening rules or shrinking lands.
 The final ZIP passed two fresh analyses. Preserve those exact bytes.
@@ -44,10 +45,15 @@ evidence: that source grounded /CE and permitted 50°C charging with a direct
 candidate sensor; no protected pack or factory cell attachment is selected.
 The reviewed EEMB PCM supports 350mA continuous despite its 700mA bare-cell rating.
 
-**Next local work:** select a protected pack and NTC attachment against complete-pack
-current, protection and charging limits, then actual LTE/GNSS antennas and their
-occupied volumes. Complete harness/dock/positive PCB retention, material/seal and
-fastener definitions, firmware and factory programming/functional test. Do not
+**Next local work:** bound the modem's actual pulse and duty-cycle load, then select
+a protected pack and NTC attachment against complete-pack protection, voltage and
+charging limits. The 600mA continuous screen was engineering headroom, not a Nordic
+continuous-load requirement; Nordic describes approximately 500mA peak at 3.7V.
+Do not reject a small pack solely for missing that continuous-current screen, or
+accept it from average current alone. The [selection review](../assembly/pack-antenna-r02/README.md)
+records the primary sources and conditional candidates. Close cable end-datum,
+length-tolerance and feed-bond definitions, then harness/dock/positive PCB retention,
+material/seal/fastener definitions and firmware/factory test. Do not
 reroute or repeat DFM without a real source change. For a PCB edit, create a
 successor and rerun native/export/two actual supplier checks.
 
@@ -61,10 +67,14 @@ Supplier procurement, CPL rotations, SMT/reflow, actual stack/impedance and RF
 qualification remain open. A conditional calculation is not an electrical release.
 
 IP68 swimming/dust resistance is the design target; 2m fresh water / 60 minutes
-and magnetic charging remain engineering assumptions. The r07 carrier clears U12
-with a local ledge relief and one shifted support leg. Shell/seal/contact geometry
-is unchanged. Rigid envelope is 57.4 × 49.4 × 17.6mm excluding the docking key;
-boot is 60.4 × 52.4 × 22.4mm. Pack and antenna boxes remain reservations.
+and magnetic charging remain engineering assumptions. r08 retains the r07 U12
+carrier relief and shifts neither the PCB nor the contact/seal geometry. The taller
+shell accommodates the two cable layers: rigid envelope 57.4 × 49.4 × 20.6mm,
+excluding the 1.3mm docking key; boot 60.4 × 52.4 × 25.4mm. A 20mm M2 screw
+candidate and blind boot pockets replace the former length assumption. Exact
+fastener tolerance, torque, clip strength and lid-opening motion are unqualified.
+The battery remains a 34 × 23.5 × 5.8mm reservation; the antennas have sourced
+candidate dimensions with explicitly provisional cable/placement allowances.
 No physical water/dust, powered or RF result exists. This is not yet a complete
 working-PCBA order package.
 

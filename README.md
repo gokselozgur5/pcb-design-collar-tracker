@@ -14,14 +14,14 @@ segments are preserved. The board has 87 footprints, including 81 fitted referen
 with 44 exact candidate MPNs. The revised carrier clears the additional components.
 
 [Gerber ZIP](experiments/power-r05l-charge-interlock/evidence/collar-tracker-05l-charge-final4-40x32-dfm.zip) ·
-[Two-page PCB/enclosure review](release/r05l-review/review.pdf) ·
-[Review bundle](release/collar-tracker-r05l-review.zip) ·
+[Two-page PCB/enclosure review](release/r08-assembly-review/review.pdf) ·
+[Review bundle](release/collar-tracker-r05l-r08-review.zip) ·
 [JLC report 1](experiments/power-r05l-charge-interlock/evidence/jlc-check1/report.pdf) ·
 [JLC report 2](experiments/power-r05l-charge-interlock/evidence/jlc-check2/report.pdf)
 
 **Electrical, RF and manufacturing release remain on hold.** The charge model
 passes with explicit thermal/leakage assumptions; powered startup and sensor tests
-remain open. Protected pack/NTC attachment, actual antennas, harness/dock/retention,
+remain open. Protected pack/NTC attachment, antenna qualification, harness/dock/retention,
 firmware and factory programming/test are not finished. Supplier procurement, CPL
 rotations and SMT acceptance remain open. PCB DFM does not prove a working device.
 
@@ -30,10 +30,13 @@ rotations and SMT acceptance remain open. PCB DFM does not prove a working devic
 [Charge review](assembly/charge-interlock-r01/README.md) ·
 [r05l source and limits](experiments/power-r05l-charge-interlock/README.md)
 
-The enclosure has 85 populated envelopes passing four PCB thickness cases, eight
-checked meshes and actual CAD interference controls. IP68 swimming/dust resistance
-is a design target with provisional 2m fresh-water / 60-minute conditions; no
-physical ingress test is claimed. See the [r07 model](mechanical/swim-r07-charge-interlock/README.md).
+The [r08 enclosure](mechanical/swim-r08-antennas/README.md) adds CAPH LTE and ZETA
+GNSS prototype antennas, two nominal 100mm cable assemblies and four lid guides.
+The rigid shell is 57.4 × 49.4 × 20.6mm; the boot is 60.4 × 52.4 × 25.4mm.
+All 85 populated envelopes pass four PCB thickness cases. Eight meshes and actual
+CAD interference controls are checked. Cable tolerances and assembly forces remain
+unqualified. IP68 is a design target with provisional 2m fresh-water / 60-minute
+conditions; no physical ingress test is claimed.
 
 [STATUS](docs/STATUS.md) records the exact source and next action. The earlier r05k,
 r04i and all prior tested files remain preserved. Upload only the Gerber ZIP to PCB
@@ -103,7 +106,7 @@ a finished, working PCBA.**
 
 - Validated PCB DFM baseline: `experiments/35x28-clearance-r034/hardware/`.
 - Preserved 35 × 28 mm checkpoint: `experiments/paul-nanosim-r04e/hardware/`.
-- Current six-layer PCB: `experiments/power-r05j-rf-junctions/`.
+- Current six-layer PCB: `experiments/power-r05l-charge-interlock/`.
 - Preserved six-layer baselines: `experiments/power-r05i-rf-stack/` and `experiments/power-r05h-six-layer/`.
 - Preserved four-layer nano-SIM PCB: `experiments/paul-nanosim-r04i-sim-access-40x32/`.
 - Preserved 40 × 32 mm DFM checkpoint: `experiments/paul-nanosim-r04g-returns-40x32/`.
@@ -121,7 +124,7 @@ enclosure, or 14.6 mm including an assumed contact protrusion. Antennas, the hea
 the electronics are reserved volumes, not fitted production components.
 
 The preserved `mechanical/swim-r06-six-layer-fit/` profile is checked against the
-current r05j placements and thickness interval in its `evidence/thickness-fit.json`.
+preserved r05j placements and thickness interval in its `evidence/thickness-fit.json`.
 Battery capacity, charge interval, position-update rate and final antennas remain open. Earlier cost ranges were estimates, not supplier quotes, and did not
 include heart-rate hardware.
 
@@ -130,9 +133,9 @@ include heart-rate hardware.
 | Path | Purpose |
 |---|---|
 | `experiments/35x28-clearance-r034/hardware/` | Native source that passed local and JLC PCB DFM checks |
-| `experiments/power-r05j-rf-junctions/` | Current six-layer source, final Gerber and two verified JLC passes |
+| `experiments/power-r05l-charge-interlock/` | Current six-layer source, final Gerber and two verified JLC passes |
 | `experiments/paul-nanosim-r04i-sim-access-40x32/` | Preserved four-layer source and supplier evidence |
-| `mechanical/swim-r02-fit/` | Parametric swimming enclosure prototype; physical qualification pending |
+| `mechanical/swim-r08-antennas/` | Current antenna/cable enclosure prototype; physical qualification pending |
 | `scripts/finalize_clearance034.py` | Binds source, local checks, JLC reports and the exact delivered ZIP |
 | `hardware/` | Legacy KiCad project, PCB, five-section A2 schematic and draft BOM |
 | `scripts/build_pcb.py` | Builds the legacy PCB from the real XML netlist |

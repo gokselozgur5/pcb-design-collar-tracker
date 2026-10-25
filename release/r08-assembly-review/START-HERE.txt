@@ -1,0 +1,15 @@
+COLLAR TRACKER r05l PCB / r08 ANTENNA ASSEMBLY
+
+Open review.pdf for the current two-page review.
+Upload only gerber.zip to PCB DFM, not this outer review archive.
+The Gerber is unchanged: two actual 0 Danger / 0 Warning / 455 Good JLC runs.
+There was no new JLC upload for this mechanical-only revision.
+
+r08 replaces antenna placeholders and adds conditional cable routes/lid guides.
+The battery is still a reservation. Cable tolerances, feed construction,
+clip strength, materials, RF, firmware and physical ingress need qualification.
+This is not an order release or a completed working device.
+
+Native sources, reproducible checks and continuation:
+https://github.com/gokselozgur5/pcb-design-collar-tracker
+Read docs/STATUS.md and docs/RESUME.md in the repository.

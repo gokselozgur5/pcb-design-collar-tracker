@@ -61,6 +61,9 @@ uploads to JLC DFM are in scope. Orders, payments and supplier messages are not.
 - Check card insertion/removal against populated bodies and their swept volume;
   a footprint courtyard pass is insufficient. Check SIM copper for a route that
   bypasses the clamp land, even when all native nets are connected.
+- Separate peak, average and continuous current, and label engineering headroom
+  separately from manufacturer requirements. Select a battery from complete-pack
+  protection and charge limits; a bare-cell rating does not qualify its PCM.
 - No subagents unless Göksel explicitly requests them.
 
 ## Git and handoff

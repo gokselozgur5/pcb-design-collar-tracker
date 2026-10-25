@@ -492,3 +492,40 @@ previews and both supplier PDFs were inspected. No physical ingress or powered
 acceptance is claimed. New source-bound verification and a PCB/enclosure review
 bundle provide the continuation point. Next: protected pack/NTC attachment and
 actual antennas, then harness/dock/retention and firmware/factory test.
+
+## 2026-10-26 — r08 antenna assembly and current review delivery
+
+Selected Synzen CAPH SZK-C-3L30 and ZETA SZK-C-0G04 as prototype antenna
+candidates. Their sourced size classes replace the old placeholders. Two smooth
+nominal cable paths terminate at native J1/J2 positions, with four internal lid
+guides. Body height increases 3mm: rigid shell plus lid 57.4 × 49.4 × 20.6mm;
+boot 60.4 × 52.4 × 25.4mm. A 20mm M2 fastener candidate and blind boot tip pockets
+replace the earlier length assumption. Seal/contact dimensions are unchanged.
+
+The first straight GNSS exit guide interfered by 0.031656mm³; a widened straight
+channel still interfered by 0.013088mm³. Both failures are preserved. The final
+curved channel has zero CAD interference. Restoring 1mm channels yields
+4.399098mm³; restoring the old carrier yields 1.234334mm³. All 85 populated
+envelopes pass four thickness cases, all 34 shell/seal/fastener screens pass,
+and eight exported meshes are closed/oriented/connected. Five previews and both
+pages rendered from the actual review PDF were inspected. Four discriminating
+geometry regressions pass; the 45-file source/evidence checkpoint verifies.
+
+Battery selection remains open. Current VARTA 014-pack data is distinct from
+older 099 documentation, and the larger pack does not fit. Akyga cell ratings
+do not establish its PCM limits. Corrected the inherited 600mA continuous target:
+it is engineering headroom, not Nordic's stated approximately 500mA peak at 3.7V.
+The next pack decision needs a bounded pulse/duty-cycle load, voltage/drop,
+protection/recovery and charge compatibility. No battery was silently substituted.
+
+Delivered a 260-file review package, SHA256
+`c501ab26bbb190fc90ed5a23b79e8e9284c4cc28d2c437ac3e562cda44a05fdb`,
+with the unchanged all-green r05l Gerber/native PCB/evidence and the current r08
+CAD, meshes, drawings and selection limits. No new PCB edit or JLC upload was
+needed. The prior r07 model and all earlier packages remain byte-preserved.
+
+Cable end datums/tolerances, exact bend limit, feed bond, guide strength, opening
+motion, actual pack/NTC attachment, retention/harness/dock, materials, firmware and
+factory/physical qualification remain open. No powered, RF or ingress test,
+supplier message, order, payment or account switch occurred. This is a conditional
+assembly prototype, not a working-device or IP68 release.

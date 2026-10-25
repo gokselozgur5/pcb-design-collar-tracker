@@ -338,6 +338,10 @@ def verify(include_review_bundle=True):
     charge_candidate = verify_charge()
     from package_charge_review import verify_bundle as verify_charge_bundle
     charge_review_bundle = verify_charge_bundle() if include_review_bundle else 'Rebuild in progress'
+    from verify_antenna_candidate import verify as verify_antenna
+    antenna_candidate = verify_antenna()
+    from package_antenna_review import verify_bundle as verify_antenna_bundle
+    antenna_review_bundle = verify_antenna_bundle() if include_review_bundle else 'Rebuild in progress'
     routing_alternatives = [verify_routing(ROOT / 'experiments' / name) for name in [
         'power-r05c-return-corridors', 'power-r05d-joint-routing', 'power-r05e-native-joint',
         'power-r05f-return-reset', 'power-r05g-local-crossings']]
@@ -354,6 +358,8 @@ def verify(include_review_bundle=True):
             'pack_charge_review': pack_charge_review,
             'charge_candidate': charge_candidate,
             'charge_review_bundle': charge_review_bundle,
+            'antenna_candidate': antenna_candidate,
+            'antenna_review_bundle': antenna_review_bundle,
             'routing_alternatives': routing_alternatives,
             'review_bundle':verify_review_bundle() if include_review_bundle else 'Rebuild in progress',
             'populated_review_bundle':verify_review_bundle('release/collar-tracker-r04i-swim-r02-fit-review.json') if include_review_bundle else 'Rebuild in progress',
