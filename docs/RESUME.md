@@ -54,7 +54,13 @@ apply the older r05 value-specific checker to r05k: its immutable report belongs
 to the old values. The new model is `check_power_parts.py`; it includes tolerance,
 TCR, leakage, typical capacitor data and explicit unqualified assumptions.
 
-Next: protected NTC pack and actual LTE/GNSS antenna selection, then their populated
+Next: read `assembly/pack-charge-r01/README.md` and implement the cell-temperature
+charge interlock in a separate circuit successor. The saved r05k /CE is grounded;
+a direct 10k/B3435 NTC permits charging at 50 C, beyond the reviewed pack limit.
+`python3 scripts/check_pack_charge.py` reproduces this finding and intentionally
+returns exit 2; three regressions pass. No pack or NTC has been selected.
+
+Protected pack/actual LTE/GNSS antenna selection follows, then their populated
 fit, harness/dock/positive retention and firmware/factory programming/test. The
 provisional firmware VIO wait is 1 s; the old 600 ms wait fails the new model.
 UVLO is not a zero-current pack disconnect. Review low-cell recharge recovery and
@@ -71,6 +77,7 @@ python3 scripts/verify_selected_parts.py
 python3 scripts/check_power_parts.py
 python3 -m unittest discover -s tests -p test_power_parts.py -v
 python3 scripts/verify_handoff.py
+python3 scripts/package_r05k_review.py --verify
 ```
 
 The active fit profile is `experiments/power-r05k-selected-parts/assembly/fit-profile.json`.

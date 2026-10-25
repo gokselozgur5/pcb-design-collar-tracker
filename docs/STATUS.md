@@ -13,6 +13,16 @@ All authored repository/GitHub content is English. Continue from
 [Candidate BOM](../experiments/power-r05k-selected-parts/assembly/candidate-bom.csv) ·
 [Candidate CPL](../experiments/power-r05k-selected-parts/assembly/candidate-cpl.csv)
 
+[Current review PDF](../release/r05k-review/review.pdf) ·
+[PCB review bundle](../release/collar-tracker-r05k-pcb-review.zip)
+
+**New charge-temperature finding:** the direct 10k/B3435 NTC option permits
+charging at 50°C, above the reviewed candidate pack's 45°C maximum. U3 /CE is
+tied to GND, so firmware alone cannot repair this source. The charge interlock
+is not implemented. See the [source-bound battery review](../assembly/pack-charge-r01/README.md).
+The candidate EEMB pack is also limited to 350mA continuous by its PCM despite
+its 700mA bare-cell rating. No pack or NTC has been selected.
+
 ## Active r05k layout and parts
 
 PCB SHA256: `bea6c52a7f045b5fb21ac9714f3db0c70207f150aab3e9587b891f08e4e2b4d3`.
@@ -43,8 +53,10 @@ The provisional firmware wait is 1 s; the former 600 ms fails the model. Effecti
 capacitance, timer scaling, drift and fast collapse still need assembled validation.
 UVLO leaves pull-up current flowing; protected-cell cutoff/recharge behavior matters.
 
-**Next local work:** select the protected pack with NTC against modem pulse current,
-then select the actual LTE/GNSS antennas and check their occupied volumes. Complete
+**Next local work:** implement a cell-temperature charge interlock that remains
+effective during boot, reset, low-cell recovery and sensor faults. Select the
+protected pack/NTC against the full pack current and charge limits, then select
+the actual LTE/GNSS antennas and check their occupied volumes. Complete
 harness/dock/positive retention/seal definitions, firmware, programming and factory
 functional test. The 65 fitted MPNs are candidates, not supplier procurement or SMT
 acceptance; check their electrical suitability, availability and CPL library rotations.

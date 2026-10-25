@@ -13,6 +13,8 @@ candidate uses a documented 7628 stack and 0.36 mm main port routes; In1.Cu and
 In4.Cu remain dedicated GND. All 128 signal vias pass the local return screen.
 
 [Gerber ZIP](experiments/power-r05k-selected-parts/evidence/collar-tracker-05k-parts-40x32-dfm.zip) ·
+[Current review PDF](release/r05k-review/review.pdf) ·
+[PCB review bundle](release/collar-tracker-r05k-pcb-review.zip) ·
 [R3 before / after](experiments/power-r05j-rf-junctions/evidence/rf-junction-review.pdf) ·
 [JLC report 1](experiments/power-r05k-selected-parts/evidence/jlc-check1/report.pdf) ·
 [JLC report 2](experiments/power-r05k-selected-parts/evidence/jlc-check2/report.pdf)
@@ -24,6 +26,11 @@ ratios. The LTE tuning stubs are reduced, with a longer main feed as the tradeof
 confirmation, module-pad qualification, assembly process and powered timing,
 pack/NTC, antennas and factory programming/test remain open. See the
 [r05k review](experiments/power-r05k-selected-parts/README.md). PCB DFM does not prove a working PCBA.
+
+The [battery review](assembly/pack-charge-r01/README.md) found that a direct
+10k/B3435 NTC permits charging at 50°C while the reviewed pack stops at 45°C.
+Charge enable is grounded; a cell-temperature interlock is not implemented.
+Neither the NTC nor a pack is selected. This does not change the tested Gerber bytes.
 
 All 65 fitted references now have exact candidate MPNs.
 [Candidate BOM](experiments/power-r05k-selected-parts/assembly/candidate-bom.csv) and

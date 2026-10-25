@@ -442,3 +442,28 @@ Their evidence is dated; do not transfer an older pass to a newer source file.
 - Next: Protected NTC pack and actual antennas, then occupied-volume checks,
   harness/dock/positive retention, firmware and factory programming/test.
   No supplier message, order, payment or physical test occurred.
+
+
+## 2026-10-25 — Battery charging mismatch and current PCB review package
+
+- Finding: The direct 10k/B3435 NTC option permits charging at 50 C. The inspected
+  EEMB pack allows 0–45 C charging; r05k U3 /CE is grounded. This is a source-based
+  incompatibility, not a powered test or an implemented correction.
+- Finding: EEMB LP503030-PCM-LD specification ZJQM-RD-SPC-A04005 rev 0.0 lists
+  700mA for the bare cell but only 350mA continuous / 1A for 3s for its PCM.
+  It is not selected; pulse duty cycle, recovery, voltage tolerance and aging remain open.
+- Result: Added a source-bound charge review with manufacturer hashes, a table-point
+  calculation and explicit beta-model sensitivity. Three regressions pass; the
+  standalone check intentionally returns exit 2 for electrical HOLD. Handoff
+  verification reproduces the finding without accepting the circuit.
+- Research: Synzen ZETA SZK-C-0G04 is a narrower 40x10mm GNSS FPC candidate with
+  a 100mm/1.13mm cable. No antenna, cable, battery or enclosure fit change is claimed.
+- Delivery: A 119-file current PCB bundle includes native KiCad, unchanged Gerber,
+  candidate BOM/CPL, two complete JLC reports and the new charge HOLD. ZIP SHA256
+  12d93e0acee77f66a877c1fad46a807d53b1fac592f4b3f85fb52fe546bb66e6.
+  Fresh native top/bottom SVG exports exited 0; their raster views and actual review
+  PDF were inspected. The original tested PCB and Gerber bytes remain unchanged.
+- Next: Implement the actual-cell charge interlock in an isolated successor, with
+  boot/reset/low-cell/sensor-fault behavior. Then finish full pack/NTC selection,
+  antenna/harness/retention/sealed assembly and firmware/factory acceptance.
+  No new supplier upload, message, order, payment, account switch or physical test.
