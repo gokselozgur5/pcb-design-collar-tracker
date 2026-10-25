@@ -46,14 +46,18 @@ assert ground_before == ground_after, 'Router import changed native ground geome
 protected_after = collections.Counter((t.GetNetname(),signature(t)) for t in board.GetTracks()
                                      if t.m_Uuid.AsString() in protected)
 assert protected_before == protected_after, 'Router import changed protected pin escapes'
-for t in list(board.GetTracks()):
-    if t.GetNetname() in rf_nets:
-        board.Delete(t)
-for net, start, end, width, layer in rf:
-    t = k.PCB_TRACK(board)
-    t.SetStart(k.VECTOR2I(*start)); t.SetEnd(k.VECTOR2I(*end))
-    t.SetWidth(width); t.SetLayer(layer); t.SetNet(board.FindNet(net)); t.SetLocked(True)
-    board.Add(t)
+rf_after = [(t.GetNetname(), point(t.GetStart()), point(t.GetEnd()), t.GetWidth(), t.GetLayer())
+            for t in board.GetTracks() if t.GetNetname() in rf_nets]
+rf_unchanged = collections.Counter(rf_after) == collections.Counter(rf)
+if not rf_unchanged:
+    for t in list(board.GetTracks()):
+        if t.GetNetname() in rf_nets:
+            board.Delete(t)
+    for net, start, end, width, layer in rf:
+        t = k.PCB_TRACK(board)
+        t.SetStart(k.VECTOR2I(*start)); t.SetEnd(k.VECTOR2I(*end))
+        t.SetWidth(width); t.SetLayer(layer); t.SetNet(board.FindNet(net)); t.SetLocked(True)
+        board.Add(t)
 placement = json.loads((root / 'build/placement.json').read_text())
 for f in board.GetFootprints():
     x,y,angle,side = placement[f.GetReference()]
@@ -76,6 +80,7 @@ assert k.SaveBoard(str(pcb),board)
 result = {'before_sha256':before_sha,'source_sha256':hashlib.sha256(pcb.read_bytes()).hexdigest(),
           'session':str(session.relative_to(root)),'session_sha256':hashlib.sha256(session.read_bytes()).hexdigest(),
           'ground_items_preserved':sum(ground_before.values()),'rf_segments_restored_exactly':len(rf),
+          'rf_native_ids_preserved':rf_unchanged,
           'protected_escape_items_preserved':sum(protected_before.values()),
           'preserve_native_locks':keep_locked,
           'narrow_segments_widened_to_020':widened,'inner_tracks':0,
