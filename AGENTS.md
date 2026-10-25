@@ -45,7 +45,8 @@ uploads to JLC DFM are in scope. Orders, payments and supplier messages are not.
 - 2 mm return-via spacing is the inherited screening target, not a universal RF rule.
 - “All green” for a new revision requires two fresh JLC runs of the same final ZIP,
   matching hashes/rules, fully analyzed rows, raw results and PDF evidence.
-- No claim that r04 is routed, DRC-clean or all-green until its own evidence exists.
+- No claim that the active revision is routed, DRC-clean or all-green until its
+  own evidence exists. Read STATUS for the current experiment directory.
 - No subagents unless Göksel explicitly requests them.
 
 ## Git and handoff

@@ -63,46 +63,55 @@ mobility behavior still need qualification. These are open product checks.
 
 ## Existing candidate placement
 
-The current overrides are J6 (127,108), D1 (126.8,116.2), J5 (125,125),
-R14 (121.5,119), R15 (126,118), C10 (123,115.7), all on B.Cu.
-D1 and R14 moved to free local ground-via sites. The ground-stage native DRC has
-zero violations/parity and no open GND connections; signal routing remains open.
+The active source is `experiments/paul-nanosim-r04d/hardware/`.
+J6 (127,108), D1 (126.8,116.2), J5 (125,125), R14 (121.5,119),
+R15 (126,118) and C10 (123,115.7) are on B.Cu. Charger U3 is at (105,123)
+on F.Cu; C17 is at (106.2,120.25) on B.Cu, C18 at (103,120.85) and C19
+at (101.8,122.5) on F.Cu. J4 is at (106,126.05) on B.Cu.
+The current stage has no GND opens or copper-clearance violations; six other
+connections and unused track/via branches remain. See STATUS for exact evidence.
 Power trunks are provisionally 0.4 mm, VIO 0.3 mm, signal minimum 0.2 mm;
 via target 0.60/0.20 mm. A width setting is not an ampacity or voltage-drop test.
 
-The initial ground stage connected 81 GND pads through 68 through vias. The current
-local rework uses 67: U3.4 joins the adjacent exposed pad of the same IC, whose via
-remains. All 67 via centers are inside both saved inner fills, and no GND opens or
-inner signal tracks remain. C17's return via moved to (103.2,120.0). The longest
-planned stub is 2.1071 mm; perimeter nRF ground necks are 0.25 mm to leave clearance
-beside the 0.5-mm-pitch contacts. Adjacent IC ground pins may share a local connection;
-the planner does not route a ground bus through separate passive components.
+The initial r04 ground stage connected 81 GND pads through 68 vias. The current
+r04d rework uses 66: its native inventory finds all 66 centers inside both saved
+inner fills, each with one filled outline and no inner tracks. U3.4 joins its own
+exposed GND pad. Perimeter nRF ground necks are 0.25 mm to leave clearance beside
+the 0.5-mm-pitch contacts. Adjacent IC ground pins may share a local connection;
+do not route a ground bus through separate passive components. The original
+2.1071 mm maximum planned stub is historical, not a final r04d measurement.
 
 Preserve the 0.3.4 source. Its RF segments are locked/copied by the WIP builder;
 their original 50 Ω stackup/body/antenna qualification is still open.
 
-## Placement review findings still open
+## Placement review and corrections
 
 The [GCT product page](https://gct.co/connector/sim8051) identifies a push-pull
-socket, with no card-detect switch. The D6 sheet was visually rechecked. Review
-the full card approach/removal volume, not only the solder footprint: D1 at
-(126.8,116.2), C10 and R15 are close to the end of the current socket placement.
-This is a CAD access concern, not a demonstrated physical collision. Confirm the
-entry direction and orient the opening toward a clear board edge, or move parts
-out of its approach. No mechanical access acceptance has been obtained.
+socket, with no card-detect switch. Rechecking the complete D6 component-side
+drawing against native bottom-side pad coordinates resolved an earlier mistake:
+the original angle of 0 degrees already points the opening toward y=100, near
+C1/C2/C3 at y=102.1. D1, C10 and R15 are behind the closed end. The rejected r04c
+180-degree rotation pointed the opening inward and is not used in r04d.
+Do not repeat that rotation. This establishes the drawing direction; final
+enclosure access, card removal and physical fit still need qualification.
 
 The [TI datasheet](https://www.ti.com/lit/ds/symlink/tpd4e1u06.pdf), DCK0006A
 drawing 4214835/D, gives a land/paste example of 0.90 × 0.40 mm, 0.65 mm pitch
-and 2.20 mm between row centers. The current KiCad-derived footprint instead
-uses 1.025 × 0.35 mm lands and 1.675 mm between row centers. TI notes that
-alternate IPC patterns exist; this difference alone is not proof of a defective
-footprint. Resolve it against package tolerances and the assembly process rather
-than describing the current pattern as an exact copy of TI's example.
-Also review connector-to-ESD-to-modem topology and short ESD ground return.
+and 2.20 mm between row centers. r04d now uses that example, with 0.05 mm corner
+radius, matching local library and native footprint. The earlier KiCad-derived
+1.025 × 0.35 mm lands / 1.675 mm row spacing are retained only in older sources.
+This footprint correction does not establish assembly acceptance or ESD layout
+quality. Review connector-to-ESD-to-modem topology and the short ESD ground return
+after the final routing changes.
 
 [Nordic's VDD guidance](https://docs.nordicsemi.com/r/bundle/nwp_056/page/wp/nwp_056/vdd.html)
 sets a routing DCR target below 0.1 Ω and calls for local filtering, decoupling and
 low-impedance grounds. Measure actual path widths/lengths and supply droop; a
 0.4 mm netclass setting does not establish compliance. Battery, ferrite, vias,
 copper thickness and dynamic supply impedance must be distinguished from trace
-resistance alone. This power review has not yet passed.
+resistance alone. `scripts/audit_power_paths.py` estimates centerline copper and
+via-barrel resistance from a hash-matched geometry export; it excludes ferrite,
+IC, contact and cell impedance, pad spreading, transients and thermal behavior.
+The current r04d report explicitly includes the disconnected J5 supply branch.
+The earlier snapshot's estimate is preserved as `power-path-routed1-review.json`.
+Rerun the audit after routing changes; complete power qualification remains open.

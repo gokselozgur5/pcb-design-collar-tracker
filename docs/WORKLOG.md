@@ -62,3 +62,26 @@ Their evidence is dated; do not transfer an older pass to a newer source file.
   power guidance were recorded; they remain review items, not acceptance claims.
 - Next: Resolve charger/SPI fanout and socket/ESD placement. Then complete return,
   power and passive-copper review, native checks and two real same-byte JLC runs.
+
+## 2026-10-25 — Localized charger trial and import regression
+
+- Event: Continued the Paul/nano-SIM work while keeping all repository content
+  and the new handoff in English.
+- Decision: Reject the whole-net r04c rework; retain working remote pin escapes
+  and the original outward-facing SIM orientation in r04d. Use TI's DCK land
+  example. Preserve failed stages and the accepted 0.3.4 source/ZIP.
+- Result: r04d has six open connections and 14 dangling-item warnings, with zero
+  parity or other native DRC violations. All 66 GND via centers lie in both inner
+  fills, no inner tracks remain, and 24 RF segments match the baseline. The
+  29/75 return-via screen and auxiliary J5 supply connection remain open.
+  Rejected 59.98/79.59 mm detours and the three-clearance-error SIM experiment
+  are preserved separately. No new JLC analysis was run.
+- Validation: A no-routing DSN/SES round-trip reproduced an importer defect:
+  old locked signal routes survived beside replacements, adding two co-located
+  drill findings. Matching export/import locks removed those findings while
+  preserving the original six opens, 189 GND items and 28 manual escapes. Native
+  DRC, source hashes, power estimates and replay evidence are tied together in
+  r04d's `evidence/routing-checkpoint.json`.
+- Next: Reconcile the router model's larger incomplete count with actual native
+  connectivity before another search. No routing process remains. Finish the
+  six connections and remaining layout reviews, then run both real JLC checks.

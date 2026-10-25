@@ -258,6 +258,22 @@ First concrete next step:
   resulting native board with DRC.
 - SIM form factor does not change modem technology. Nano-SIM does not remove
   LTE-M/NB-IoT operator compatibility or the 1.8 V UICC requirement.
+- Check connector insertion against the manufacturer's drawing and an actual
+  component-side CAD view. Bottom-side mirroring can reverse an assumed opening
+  direction; a rotation angle alone does not prove access.
+- Preserve working remote pin escapes during local placement changes. Removing
+  whole nets can let later routes block fine-pitch pins that were already usable.
+  Reserve nearby exits together before routing long connections.
+- Test a suspected connectivity API limitation before changing the router around
+  it. KiCad's recursive track connectivity already reached vias in this board;
+  an initial one-step query was insufficient evidence of a missing connection.
+- For a repair route, export and import must use the same lock policy. A no-routing
+  DSN/SES round-trip exposed duplicated locked native copper and two co-located
+  drill holes. Preserve the named escapes, unlock replacement routes on import,
+  and check the result with native DRC before running a longer search.
+- Reconcile router incompletes with native pin connectivity and dangling branches.
+  A higher router count is not automatically that many new electrical opens.
+  Disable a repair's fanout pre-pass explicitly when testing the existing escapes.
 
 Add reusable lessons here. Current tasks and results belong in STATUS and WORKLOG,
 not a growing diary inside this guide.

@@ -9,8 +9,7 @@ and get the new revision through real JLC DFM with zero Danger / zero Warning.
 eSIM is deferred.
 
 The new board has two inner GND planes and local ground connections. Routing is
-unfinished: the current local rework has four open connections and four dangling
-vias in native DRC. **The 0.3.4 all-green result does not apply to this revision.**
+unfinished. **The 0.3.4 all-green result does not apply to this revision.**
 See [STATUS](docs/STATUS.md) for the current source and exact next step.
 
 ## Continue in a new session
@@ -75,7 +74,8 @@ a finished, working PCBA.**
 ## Source revisions
 
 - Validated PCB DFM baseline: `experiments/35x28-clearance-r034/hardware/`.
-- Active nano-SIM work: `experiments/paul-nanosim-r04/hardware/`.
+- Active nano-SIM work: `experiments/paul-nanosim-r04d/hardware/`.
+- Earlier r04 routing and rejected r04c experiment are preserved separately.
 - Legacy 30 × 22 mm / 0.2.1 source: `hardware/`, preserved with its original ZIPs.
 
 The second actual JLC report for 0.2.1 had 2 Danger / 306 Warning; those counts do
@@ -97,7 +97,7 @@ include heart-rate hardware.
 | Path | Purpose |
 |---|---|
 | `experiments/35x28-clearance-r034/hardware/` | Native source that passed local and JLC PCB DFM checks |
-| `experiments/paul-nanosim-r04/` | Unfinished nano-SIM revision, routing and evidence |
+| `experiments/paul-nanosim-r04d/` | Active, unfinished nano-SIM revision, routing and evidence |
 | `scripts/finalize_clearance034.py` | Binds source, local checks, JLC reports and the exact delivered ZIP |
 | `hardware/` | Legacy KiCad project, PCB, five-section A2 schematic and draft BOM |
 | `scripts/build_pcb.py` | Builds the legacy PCB from the real XML netlist |

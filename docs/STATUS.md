@@ -2,83 +2,83 @@
 
 **Active: Paul layout fixes + physical nano-SIM + real JLC DFM all green.**
 
-Repository: `gokselozgur5/pcb-design-collar-tracker`, public. The local directory
-remains `/Users/gok/codex/projects/collar-tracker`. All repository/GitHub content
-must be English. Publication is a checkpoint; the new revision is unfinished.
+Repository: [gokselozgur5/pcb-design-collar-tracker](https://github.com/gokselozgur5/pcb-design-collar-tracker).
+The local directory remains `/Users/gok/codex/projects/collar-tracker`.
+All repository and GitHub content must be English. The new PCB is unfinished.
 
-| Item | State | Evidence/source |
+| Item | Verified state | Evidence/source |
 |---|---|---|
-| Last accepted PCB DFM baseline | 0.3.4, 35 × 28 × 0.8 mm, four copper layers | `experiments/35x28-clearance-r034/hardware/` |
-| Baseline validation | Native DRC/ERC clean under recorded profile; two JLC PCB runs 0/0 | `evidence/release-034/`, `release/` |
-| Production readiness | Open power/RF/BOM/SMT/firmware/fixture/mechanics | `docs/order-readiness-0.3.4.md` |
-| New revision | 54 footprints; nano-SIM socket + ESD; native PCB saved | `experiments/paul-nanosim-r04/hardware/` |
-| Ground-only stage | 81 GND pads, 68 local GND vias; both inner planes filled; zero GND opens | Trial `evidence/ground-plan.json`, `ground-applied.json`, `ground-drc.json` |
-| Ground-stage native DRC | 0 violations / 0 parity issues / 84 non-GND opens | Trial `evidence/ground-drc.json` |
-| First route imported | 14 opens / 3 dangling vias / 0 parity issues; no inner traces | Trial `evidence/routed-1-drc.json`, `routed-1-import.json` |
-| Current local rework | 4 opens / 4 dangling vias / 0 parity issues; no copper-clearance violations | Trial `evidence/routed-5-drc.json`, `routing-checkpoint.json` |
-| Current ground geometry | 81 ground pads, 67 GND vias; all 67 centers inside both inner fills; no inner tracks or GND opens | Trial `evidence/routing-checkpoint.json` |
+| Accepted PCB DFM baseline | 0.3.4, 35 × 28 × 0.8 mm; two JLC PCB runs 0 Danger / 0 Warning | `evidence/release-034/`, `release/` |
+| Baseline integrity | Original source and released ZIP hashes preserved | `scripts/verify_handoff.py` |
+| Active native source | `experiments/paul-nanosim-r04d/hardware/`; 54 footprints, 286 native pads | Trial `evidence/layout-inventory.json` |
+| Ground | 81 GND pads, 66 GND vias; every via center inside both inner GND fills; no inner tracks | Same inventory; native DRC |
+| RF geometry | All 24 baseline RF segments preserved exactly | Same inventory; impedance/body performance remains unqualified |
+| Return-via screen | 29 of 75 non-GND vias outside the inherited 2 mm screen | Same inventory; return-via work remains open |
+| Current routing | Six open connections; seven dangling tracks and seven dangling vias; zero parity or other DRC violations | Trial `evidence/corridor2-drc.json`, `routed-2-drc.json` |
+| Socket orientation | Original bottom-side orientation retained; opening faces the y=100 board edge | GCT D6 drawing and actual pad coordinates |
+| D1 lands | TI DCK example applied: 0.90 × 0.40 mm, 0.65 mm pitch, 2.20 mm row centers | Native footprint and project library |
 | New revision JLC DFM | Not run | Baseline acceptance does not transfer |
+| Production readiness | Power, RF, BOM, SMT, firmware, fixture and mechanics still open | `docs/order-readiness-0.3.4.md`, `docs/pcba-delivery.md` |
 
-## Exact next action
+## Continue from r04d
 
-Resolve the blocked charger exits and SPI_SCK fanout using
-`evidence/routed-5-drc.json`. Open nets are **VBAT, CHG_FAULT, CHG_STAT and SPI_SCK**.
-The four dangling vias are on VBAT, CHG_FAULT, SPI_SCK and BAT_NTC. The BAT_NTC
-net is connected; its unused via/branch needs cleanup with a fresh native check.
-
-`finish_paul_route.py` now includes footprint keepouts, native copper connectivity
-and provisional power widths. Its latest search failed to close all four opens.
-Do not repeat it unchanged or call its grid result native acceptance. Review
-placement and escape topology; preserve the saved stages when trying an alternative.
-Also resolve socket insertion access and D1 land/layout review before accepting
-placement; see the concrete findings in `paul-nanosim.md`.
-
-The builder's SWIG removal failure is resolved: snapshot items before mutation and
-use `Delete`. **Do not rerun it over the existing r04 board.** Use a new `--name`
-for any placement reproduction. `build/ground-base.kicad_pcb` preserves the ground
-stage; `build/routed-1.ses` preserves the first router result.
-
-The first router completed with 19 opens / 12 router violations. Native import
-preserved 190 GND items, restored all 24 original RF segments exactly, and widened
-three sub-0.20 mm segments to 0.20 mm. The actual native result is reported above.
-These checks do not qualify power, RF or complete routing.
-
-The local route first reached three opens, but CHG_FAULT took a 77.33 mm detour.
-That detour was removed. The current four-open stage gives the charger short
-local escapes and preserves the unsuccessful result honestly. U3.4 connects
-locally to its own exposed GND pad; C17's ground via moved clear of the exits.
-Input routing near the connector is now 0.4 mm; complete power qualification is open.
-The later Freerouting repair repeated the same result and was stopped without
-importing a new SES. No router or local-completion job remains running.
+Open nets are **VSYS, CHG_STAT, CHG_FAULT, SPI_SCK, SIM_IO and SIM_CLK**.
+The main charger-to-modem power path is connected; the remaining VSYS opening is
+the auxiliary J5 branch. The current `power-path-review.json` explicitly records
+that disconnected branch. Its other path estimates are preliminary, tied to this
+source hash and exclude component impedance, transients and thermal behavior.
 
 Current PCB SHA256:
-`2e9c0666d6561330a5ad5608c65ae7d49485f0731130f3652b0a99ce19004398`.
-`build/routed-3.kicad_pcb` preserves the three-open detour stage;
-`build/routed-5.kicad_pcb` matches the current source. Do not replace one with the
-other without rechecking its own source hash and DRC.
+`38882bf0111a0190a9a55e756b72be96f91e325de29d909a93c6a57759bbed44`.
+`build/corridor-2.kicad_pcb` preserves this stage. Check live hashes and processes
+before continuing; a checkpoint is not a claim that a background job is complete.
 
-Then complete:
+The latest local planner could not close these six nets without long detours.
+The proposed SIM-corridor change introduced three clearance violations, so it
+was rejected and the native-clear stage restored. The rejected board and its
+DRC are retained under `build/sim-corridor-rejected.kicad_pcb` and `evidence/`.
 
-1. Review socket/ESD pin mapping, land geometry, bottom keepouts and card access.
-2. Finish outer-layer signal/power routing while preserving local GND and RF geometry.
-3. Add return vias; review actual power widths, passive copper balance and labels.
-4. Verify native DRC/ERC/parity, grounds, actual fills and physical geometry.
-5. Export new Gerbers; run JLC twice with unchanged rules and identical final bytes.
-6. Bind evidence to source/ZIP hashes, update STATUS and deliver the absolute path.
+**Next: validate the DSN routing model before another search.** The obstacle-model
+repair repeated 28 unrouted items / 89 router violations across four passes. The
+native-ground model saw 49 unrouted items after fanout; a direct run with fanout
+disabled saw 58 incompletes, including 15 GND. Map these counts to actual native
+connectivity and dangling branches before treating them as missing connections.
+These searches were stopped without importing their routes. No router remains
+running at this checkpoint. Their stop reports are retained in `evidence/`.
 
-## Fixed decisions and limits
+A no-routing/no-fanout DSN/SES round-trip reproduced the same six native opens,
+but exposed an importer bug: native locked signals were kept beside replacement
+SES routes, adding two co-located drill warnings. The importer now matches the
+export lock policy. In an isolated copy, the corrected round-trip preserved 189
+GND items, 24 RF segments and 28 manual escapes, with the original six opens /
+14 dangling-item warnings / zero parity and no added clearance or drill findings.
+See `evidence/import-lock-regression.json`. The active source was not replaced
+by either round-trip copy.
 
-Nano-SIM now, eSIM later. Socket: **GCT SIM8051-6-0-14-00-A / C7363812**;
-ESD: **TI TPD4E1U06DCKR / C194628**. D5 and D6 socket drawings were visually
-inspected; source hashes are in `references/paul-nanosim-r04/sources.json`.
-Factory stock/assembly acceptance is still open.
+## Preserved alternatives
 
-nRF9151 uses LTE-M/NB-IoT and a 1.8 V UICC. Turkish operator/service/mobility
-qualification remains open; a regular phone SIM does not establish compatibility.
-J5 remains a digital expansion port, not a heart-rate sensor.
+- `paul-nanosim-r04`: four-open fallback, source SHA256
+  `2e9c0666d6561330a5ad5608c65ae7d49485f0731130f3652b0a99ce19004398`.
+  Charger topology is older; do not describe it as the active board.
+- `paul-nanosim-r04c`: rejected whole-net rework. It discarded useful remote
+  escapes and incorrectly reversed the SIM opening. Its completed router result
+  had 26 unrouted items / 22 router violations and was not imported.
+- r04d `build/routed-1.kicad_pcb`: four-open intermediate with rejected 59.98 mm
+  VSYS and 79.59 mm CHG_STAT detours. Those routes are absent from the active source.
 
-0.3.4 has one signal-free inner plane; 52 of its 61 non-GND vias are outside the
-historical 2 mm return screen, maximum 7.0902 mm. This is a review gap, not 52
-experimentally demonstrated failures. Its green DFM does not close Paul's feedback.
+Do not rerun a placement builder over an existing experiment. Builders reproduce
+initial stages only; later native snapshots and their evidence preserve the rework.
 
-No order, payment, supplier message, powered test or production approval has occurred.
+## Remaining acceptance
+
+1. Close the six routes and remove unused copper with fresh native connectivity checks.
+2. Review power paths, ESD topology, passive copper balance and short ground returns.
+3. Add nearby return vias, refill both planes and verify their actual connections.
+4. Place useful English labels; inspect real copper, mask, paste, drill and silk output.
+5. Pass native DRC/ERC/parity, then run two fresh JLC analyses of identical final ZIP
+   bytes with unchanged rules. Save raw measurements, UI, PDFs and source hashes.
+6. Update this state, make atomic commits and deliver an absolute artifact path.
+
+Nano-SIM now, eSIM later. J5 is a digital expansion port, not a heart-rate sensor.
+Factory assembly/programming/test is required; no order, payment, supplier message,
+powered test or production approval has occurred.
