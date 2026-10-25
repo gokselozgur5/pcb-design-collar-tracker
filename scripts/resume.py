@@ -1,0 +1,20 @@
+#!/usr/bin/env python3
+"""Show the exact local resume point without changing CAD or contacting services."""
+from pathlib import Path
+import subprocess
+import sys
+from verify_handoff import verify
+
+root = Path(__file__).resolve().parents[1]
+try:
+    result = verify()
+except (ValueError, OSError, KeyError) as error:
+    print(f'Resume preflight failed: {error}', file=sys.stderr)
+    sys.exit(1)
+print(f'Project: {root}')
+print('Baseline: 0.3.4 saved PCB DFM evidence verified; not production acceptance.')
+print('Git:')
+sys.stdout.flush()
+subprocess.run(['git', 'status', '--short', '--branch'], cwd=root, check=True)
+print('\n' + (root / 'docs/STATUS.md').read_text())
+print('Next: read docs/RESUME.md and docs/paul-nanosim.md, then execute the next unfinished step.')

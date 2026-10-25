@@ -1,0 +1,17 @@
+#!/bin/sh
+set -eu
+COLLAR_ROOT=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)
+COLLAR_KICAD_CONTENTS=${COLLAR_KICAD_CONTENTS:-/Volumes/GOKSSD/codex/tools/kicad/extracted/KiCad/KiCad/KiCad.app/Contents}
+COLLAR_KICAD_PYTHON=${COLLAR_KICAD_PYTHON:-$COLLAR_KICAD_CONTENTS/Frameworks/Python.framework/Versions/3.9/bin/python3}
+if [ ! -x "$COLLAR_KICAD_PYTHON" ]; then
+  echo 'KiCad Python unavailable. Mount GOKSSD or set COLLAR_KICAD_PYTHON; see docs/RESUME.md.' >&2
+  exit 1
+fi
+export KICAD_CONFIG_HOME=${KICAD_CONFIG_HOME:-$COLLAR_ROOT/.runtime/kicad/config}
+export XDG_CACHE_HOME=${XDG_CACHE_HOME:-$COLLAR_ROOT/.runtime/kicad/cache}
+if [ -d "$COLLAR_KICAD_CONTENTS/SharedSupport" ]; then
+  export KICAD10_SYMBOL_DIR=${KICAD10_SYMBOL_DIR:-$COLLAR_KICAD_CONTENTS/SharedSupport/symbols}
+  export KICAD10_FOOTPRINT_DIR=${KICAD10_FOOTPRINT_DIR:-$COLLAR_KICAD_CONTENTS/SharedSupport/footprints}
+  export KICAD10_3DMODEL_DIR=${KICAD10_3DMODEL_DIR:-$COLLAR_KICAD_CONTENTS/SharedSupport/3dmodels}
+fi
+exec "$COLLAR_KICAD_PYTHON" "$@"

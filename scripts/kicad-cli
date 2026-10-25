@@ -1,0 +1,16 @@
+#!/bin/sh
+set -eu
+COLLAR_ROOT=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)
+COLLAR_KICAD_CONTENTS=${COLLAR_KICAD_CONTENTS:-/Volumes/GOKSSD/codex/tools/kicad/extracted/KiCad/KiCad/KiCad.app/Contents}
+COLLAR_KICAD_CLI=${COLLAR_KICAD_CLI:-$COLLAR_KICAD_CONTENTS/MacOS/kicad-cli}
+if [ ! -x "$COLLAR_KICAD_CLI" ]; then
+  echo 'KiCad unavailable. Mount GOKSSD or set COLLAR_KICAD_CLI; see docs/RESUME.md.' >&2
+  exit 1
+fi
+export KICAD_CONFIG_HOME=${KICAD_CONFIG_HOME:-$COLLAR_ROOT/.runtime/kicad/config}
+export XDG_CACHE_HOME=${XDG_CACHE_HOME:-$COLLAR_ROOT/.runtime/kicad/cache}
+if [ -d "$COLLAR_KICAD_CONTENTS/SharedSupport" ]; then
+  export KICAD10_SYMBOL_DIR=${KICAD10_SYMBOL_DIR:-$COLLAR_KICAD_CONTENTS/SharedSupport/symbols}
+  export KICAD10_FOOTPRINT_DIR=${KICAD10_FOOTPRINT_DIR:-$COLLAR_KICAD_CONTENTS/SharedSupport/footprints}
+fi
+exec "$COLLAR_KICAD_CLI" "$@"
