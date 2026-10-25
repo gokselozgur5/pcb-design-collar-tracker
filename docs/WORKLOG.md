@@ -43,3 +43,22 @@ Their evidence is dated; do not transfer an older pass to a newer source file.
   evidence. Historical documents retain their original verification limits.
 - Next: Continue the unfinished r04 routing from STATUS. The language change does
   not add new manufacturing or functional acceptance.
+
+## 2026-10-25 — Local routing and charger escape checkpoint
+
+- Event: Continued the authorized PCB work and verified that the English commit
+  was present on the renamed public repository.
+- Decision: Preserve every released baseline. Add footprint-aware routing and
+  retain native checks at each stage; remove an excessive signal detour rather
+  than presenting a lower open-net count as layout completion.
+- Result: Local routing reduced 14 opens to three, but CHG_FAULT took 77.33 mm.
+  Removing that detour and adjusting charger/ground exits leaves four opens and
+  four dangling vias, zero parity issues and no copper-clearance violations.
+  All 67 GND via centers remain in both inner fills; 81 ground pads are connected.
+  A Freerouting repair repeated unchanged results and was stopped without import.
+- Validation: Fresh native DRC and filled-plane check are bound to the current
+  source in `routing-checkpoint.json`. Return-via planner/application scripts are
+  present but unexecuted. Socket access, TI land-pattern differences and Nordic
+  power guidance were recorded; they remain review items, not acceptance claims.
+- Next: Resolve charger/SPI fanout and socket/ESD placement. Then complete return,
+  power and passive-copper review, native checks and two real same-byte JLC runs.

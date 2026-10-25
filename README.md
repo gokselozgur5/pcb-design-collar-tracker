@@ -9,7 +9,7 @@ and get the new revision through real JLC DFM with zero Danger / zero Warning.
 eSIM is deferred.
 
 The new board has two inner GND planes and local ground connections. Routing is
-unfinished: the first imported route has 14 open connections and three dangling
+unfinished: the current local rework has four open connections and four dangling
 vias in native DRC. **The 0.3.4 all-green result does not apply to this revision.**
 See [STATUS](docs/STATUS.md) for the current source and exact next step.
 

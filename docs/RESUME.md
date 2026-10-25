@@ -41,9 +41,10 @@ browser normally if needed; no profile or credentials are distributed in Git.
 ## Working commands
 
 Continue from the saved r04 PCB. First inspect
-`experiments/paul-nanosim-r04/evidence/routed-1-drc.json`: 14 open connections and
-three dangling vias remain after the first import. Do not rerun the builder over
-this board or discard its ground fanout.
+`experiments/paul-nanosim-r04/evidence/routed-5-drc.json`: four open connections and
+four dangling vias remain after local charger rework. `routing-checkpoint.json`
+binds that result to the source hash. No routing job is still running. Do not rerun
+the builder over this board or discard its ground fanout.
 
 To reproduce initial placement in a **new** experiment only:
 
@@ -66,9 +67,28 @@ The first router reported 19 opens / 12 router violations. The native imported
 board reports 14 opens / three dangling vias / zero parity issues. These are
 different checks, not evidence that the remaining routing is accepted.
 
-Before using `finish_size_trial.py`, adapt its hardcoded 0.2 mm power routing and
-add footprint-zone keepouts: it currently considers board zones only. Respect the
-SIM moving-contact areas, U.FL keepouts, local grounds and short power escapes.
+Use `finish_paul_route.py` for the new outer-layer completion helper. It considers
+footprint keepouts, connected copper/pads and 0.4 mm power / 0.3 mm VIO trunks
+with provisional 0.2 mm pad escapes. Native DRC remains mandatory. Its latest
+four-open search failed; inspect topology before rerunning. The original
+`finish_size_trial.py` still has board-zone-only and fixed-width assumptions.
+
+`adjust_charger_escapes.py` records the latest local rework from its exact input
+hash; it is a one-time stage, not a command to replay on the current board.
+The first charger adjustment and intermediate DRC reports are also preserved.
+`build/routed-3.kicad_pcb` has three opens but the rejected 77.33 mm CHG_FAULT
+detour. `build/routed-5.kicad_pcb` matches the current four-open stage.
+
+`export_paul_route.py TRIAL STEM` now preserves rounded native GND obstacle
+geometry and allows rip-up of signal tracks in the exported copy. `route3.dsn`
+was a repair experiment; the repeated router result was not imported. Do not
+treat its ground-obstacle model or router counts as native acceptance.
+
+After routing is resolved, export fresh `evidence/route-geometry.json` with
+`dfm_geometry.py`, then use `plan_return_vias.py TRIAL` with geometry Python and
+`apply_return_vias.py TRIAL` with KiCad Python. Both require matching source
+hashes. These return-via stages are implemented but **not yet executed/accepted**.
+Refill and check actual inner-plane containment and native DRC after applying.
 
 Use `build_size_trial.py`, `import_size_trial.py`, `finish_size_trial.py` and
 `dfm_geometry.py` as existing implementation references. Read before executing:

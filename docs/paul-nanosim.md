@@ -70,11 +70,39 @@ zero violations/parity and no open GND connections; signal routing remains open.
 Power trunks are provisionally 0.4 mm, VIO 0.3 mm, signal minimum 0.2 mm;
 via target 0.60/0.20 mm. A width setting is not an ampacity or voltage-drop test.
 
-81 GND pads now connect through short local stubs to 68 through vias. All 68 via
-centers are inside the filled GND regions on both In1.Cu and In2.Cu. The longest
+The initial ground stage connected 81 GND pads through 68 through vias. The current
+local rework uses 67: U3.4 joins the adjacent exposed pad of the same IC, whose via
+remains. All 67 via centers are inside both saved inner fills, and no GND opens or
+inner signal tracks remain. C17's return via moved to (103.2,120.0). The longest
 planned stub is 2.1071 mm; perimeter nRF ground necks are 0.25 mm to leave clearance
 beside the 0.5-mm-pitch contacts. Adjacent IC ground pins may share a local connection;
 the planner does not route a ground bus through separate passive components.
 
 Preserve the 0.3.4 source. Its RF segments are locked/copied by the WIP builder;
 their original 50 Ω stackup/body/antenna qualification is still open.
+
+## Placement review findings still open
+
+The [GCT product page](https://gct.co/connector/sim8051) identifies a push-pull
+socket, with no card-detect switch. The D6 sheet was visually rechecked. Review
+the full card approach/removal volume, not only the solder footprint: D1 at
+(126.8,116.2), C10 and R15 are close to the end of the current socket placement.
+This is a CAD access concern, not a demonstrated physical collision. Confirm the
+entry direction and orient the opening toward a clear board edge, or move parts
+out of its approach. No mechanical access acceptance has been obtained.
+
+The [TI datasheet](https://www.ti.com/lit/ds/symlink/tpd4e1u06.pdf), DCK0006A
+drawing 4214835/D, gives a land/paste example of 0.90 × 0.40 mm, 0.65 mm pitch
+and 2.20 mm between row centers. The current KiCad-derived footprint instead
+uses 1.025 × 0.35 mm lands and 1.675 mm between row centers. TI notes that
+alternate IPC patterns exist; this difference alone is not proof of a defective
+footprint. Resolve it against package tolerances and the assembly process rather
+than describing the current pattern as an exact copy of TI's example.
+Also review connector-to-ESD-to-modem topology and short ESD ground return.
+
+[Nordic's VDD guidance](https://docs.nordicsemi.com/r/bundle/nwp_056/page/wp/nwp_056/vdd.html)
+sets a routing DCR target below 0.1 Ω and calls for local filtering, decoupling and
+low-impedance grounds. Measure actual path widths/lengths and supply droop; a
+0.4 mm netclass setting does not establish compliance. Battery, ferrite, vias,
+copper thickness and dynamic supply impedance must be distinguished from trace
+resistance alone. This power review has not yet passed.

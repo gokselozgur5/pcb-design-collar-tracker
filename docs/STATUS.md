@@ -15,14 +15,23 @@ must be English. Publication is a checkpoint; the new revision is unfinished.
 | Ground-only stage | 81 GND pads, 68 local GND vias; both inner planes filled; zero GND opens | Trial `evidence/ground-plan.json`, `ground-applied.json`, `ground-drc.json` |
 | Ground-stage native DRC | 0 violations / 0 parity issues / 84 non-GND opens | Trial `evidence/ground-drc.json` |
 | First route imported | 14 opens / 3 dangling vias / 0 parity issues; no inner traces | Trial `evidence/routed-1-drc.json`, `routed-1-import.json` |
+| Current local rework | 4 opens / 4 dangling vias / 0 parity issues; no copper-clearance violations | Trial `evidence/routed-5-drc.json`, `routing-checkpoint.json` |
+| Current ground geometry | 81 ground pads, 67 GND vias; all 67 centers inside both inner fills; no inner tracks or GND opens | Trial `evidence/routing-checkpoint.json` |
 | New revision JLC DFM | Not run | Baseline acceptance does not transfer |
 
 ## Exact next action
 
-Finish the remaining routing from the current r04 PCB, using the actual coordinates
-in `evidence/routed-1-drc.json`. Resolve 14 open connections and three dangling vias.
-Before adapting the old completion helper, add footprint-zone keepouts and appropriate
-power widths; its existing board-zone-only / fixed-0.2-mm assumptions are insufficient.
+Resolve the blocked charger exits and SPI_SCK fanout using
+`evidence/routed-5-drc.json`. Open nets are **VBAT, CHG_FAULT, CHG_STAT and SPI_SCK**.
+The four dangling vias are on VBAT, CHG_FAULT, SPI_SCK and BAT_NTC. The BAT_NTC
+net is connected; its unused via/branch needs cleanup with a fresh native check.
+
+`finish_paul_route.py` now includes footprint keepouts, native copper connectivity
+and provisional power widths. Its latest search failed to close all four opens.
+Do not repeat it unchanged or call its grid result native acceptance. Review
+placement and escape topology; preserve the saved stages when trying an alternative.
+Also resolve socket insertion access and D1 land/layout review before accepting
+placement; see the concrete findings in `paul-nanosim.md`.
 
 The builder's SWIG removal failure is resolved: snapshot items before mutation and
 use `Delete`. **Do not rerun it over the existing r04 board.** Use a new `--name`
@@ -34,8 +43,19 @@ preserved 190 GND items, restored all 24 original RF segments exactly, and widen
 three sub-0.20 mm segments to 0.20 mm. The actual native result is reported above.
 These checks do not qualify power, RF or complete routing.
 
-Current imported PCB SHA256:
-`f225195ee9a4e6b0f508f8fd2e578679c09bd7a38e89e916c5a9fb433f5718c2`.
+The local route first reached three opens, but CHG_FAULT took a 77.33 mm detour.
+That detour was removed. The current four-open stage gives the charger short
+local escapes and preserves the unsuccessful result honestly. U3.4 connects
+locally to its own exposed GND pad; C17's ground via moved clear of the exits.
+Input routing near the connector is now 0.4 mm; complete power qualification is open.
+The later Freerouting repair repeated the same result and was stopped without
+importing a new SES. No router or local-completion job remains running.
+
+Current PCB SHA256:
+`2e9c0666d6561330a5ad5608c65ae7d49485f0731130f3652b0a99ce19004398`.
+`build/routed-3.kicad_pcb` preserves the three-open detour stage;
+`build/routed-5.kicad_pcb` matches the current source. Do not replace one with the
+other without rechecking its own source hash and DRC.
 
 Then complete:
 
