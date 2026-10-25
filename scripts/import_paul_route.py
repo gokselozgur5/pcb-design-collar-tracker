@@ -8,6 +8,9 @@ import sys
 import pcbnew as k
 
 root, session = Path(sys.argv[1]).resolve(), Path(sys.argv[2]).resolve()
+protected_path = Path(sys.argv[sys.argv.index('--protect')+1]) if '--protect' in sys.argv[3:] else None
+protected = set(json.loads(protected_path.read_text())) if protected_path else set()
+keep_locked = '--keep-locked' in sys.argv[3:]
 pcb = root / 'hardware/collar-tracker.kicad_pcb'
 before_sha = hashlib.sha256(pcb.read_bytes()).hexdigest()
 board = k.LoadBoard(str(pcb))
@@ -22,14 +25,27 @@ def signature(t):
 
 
 ground_before = collections.Counter(signature(t) for t in board.GetTracks() if t.GetNetname() == '/GND')
+assert protected <= {t.m_Uuid.AsString() for t in board.GetTracks()}, 'Stale protected-route list'
+protected_before = collections.Counter((t.GetNetname(),signature(t)) for t in board.GetTracks()
+                                      if t.m_Uuid.AsString() in protected)
 rf = []
 for t in board.GetTracks():
     if t.GetNetname() in rf_nets:
         assert t.GetClass() == 'PCB_TRACK'
         rf.append((t.GetNetname(), point(t.GetStart()), point(t.GetEnd()), t.GetWidth(), t.GetLayer()))
+# KiCad retains locked native tracks during SES import. Match the export's
+# lock policy before importing, otherwise its replacement routes are duplicated
+# beside the still-locked originals (including nearly co-located drill holes).
+if not keep_locked:
+    for t in board.GetTracks():
+        t.SetLocked(t.GetNetname() == '/GND' or t.GetNetname() in rf_nets or
+                    t.m_Uuid.AsString() in protected)
 assert k.ImportSpecctraSES(board, str(session))
 ground_after = collections.Counter(signature(t) for t in board.GetTracks() if t.GetNetname() == '/GND')
 assert ground_before == ground_after, 'Router import changed native ground geometry'
+protected_after = collections.Counter((t.GetNetname(),signature(t)) for t in board.GetTracks()
+                                     if t.m_Uuid.AsString() in protected)
+assert protected_before == protected_after, 'Router import changed protected pin escapes'
 for t in list(board.GetTracks()):
     if t.GetNetname() in rf_nets:
         board.Delete(t)
@@ -60,6 +76,8 @@ assert k.SaveBoard(str(pcb),board)
 result = {'before_sha256':before_sha,'source_sha256':hashlib.sha256(pcb.read_bytes()).hexdigest(),
           'session':str(session.relative_to(root)),'session_sha256':hashlib.sha256(session.read_bytes()).hexdigest(),
           'ground_items_preserved':sum(ground_before.values()),'rf_segments_restored_exactly':len(rf),
+          'protected_escape_items_preserved':sum(protected_before.values()),
+          'preserve_native_locks':keep_locked,
           'narrow_segments_widened_to_020':widened,'inner_tracks':0,
           'scope':'Import invariants only; native DRC and remaining opens must be checked.'}
 (root/'evidence'/f'{session.stem}-import.json').write_text(json.dumps(result,indent=2)+'\n')
