@@ -1,0 +1,3 @@
+Recovery: watchdog feed stopped in phase 5
+Recovery requested: Expired or failed progress lease
+PASS production supervisor stops feeding after fault/expiry; late main cannot resume

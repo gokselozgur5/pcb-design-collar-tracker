@@ -1,0 +1,23 @@
+{
+  "result": "PASS",
+  "actual_merged_sha256": "7d7b6d7bad55d9dc22b2e6c40b726065f6b02bc5dd1e17466a976b5d750c11a1",
+  "rejected_mutations": [
+    {
+      "name": "reset-into-storage",
+      "error": "Invalid reset handler: secure"
+    },
+    {
+      "name": "image-overwrites-nvs",
+      "error": "Firmware writes outside code partitions (storage must survive update)"
+    },
+    {
+      "name": "watchdog-disabled",
+      "error": "Compiled watchdog/recovery contract mismatch"
+    },
+    {
+      "name": "watchdog-secure-only",
+      "error": "Compiled watchdog/recovery contract mismatch"
+    }
+  ],
+  "physical_test": false
+}

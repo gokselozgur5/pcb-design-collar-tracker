@@ -1,0 +1,271 @@
+{
+  "result": "BUILD_PASS",
+  "board": "collar_tracker_r05l/nrf9151/ns",
+  "artifacts": {
+    "zephyr/zephyr.elf": {
+      "bytes": 2101216,
+      "sha256": "6de406afcda9c00406d82e56215cd224786352ace3f439737dffed40346f132f"
+    },
+    "zephyr/zephyr.hex": {
+      "bytes": 311222,
+      "sha256": "81d51630bf282d78ab84402ba7c4019e970be16602b2e826c05d77ba0a704e52"
+    },
+    "zephyr/zephyr.dts": {
+      "bytes": 52997,
+      "sha256": "26dc779dd1b995bbf04e5c3b9b91cd592d20045e8a6c669e5eb9d26af659fcaa"
+    },
+    "zephyr/.config": {
+      "bytes": 73814,
+      "sha256": "3288d041a9c3a81f03a1db43453ce123824d2e3b83d87843cf0e70bda4817227"
+    },
+    "zephyr/tfm_merged.hex": {
+      "bytes": 470132,
+      "sha256": "7d7b6d7bad55d9dc22b2e6c40b726065f6b02bc5dd1e17466a976b5d750c11a1"
+    },
+    "tfm/bin/tfm_s.elf": {
+      "bytes": 1037524,
+      "sha256": "a1e2677c9de39aa25a03e98c365257eb5b735370a4951f17925996e2d22d42d7"
+    }
+  },
+  "image_inspection": {
+    "result": "PASS",
+    "merged_hex": "zephyr/tfm_merged.hex",
+    "merged_sha256": "7d7b6d7bad55d9dc22b2e6c40b726065f6b02bc5dd1e17466a976b5d750c11a1",
+    "reset_vectors": {
+      "secure": {
+        "address": 0,
+        "initial_sp": 536872952,
+        "reset_handler": 14801
+      },
+      "application": {
+        "address": 262144,
+        "initial_sp": 537027352,
+        "reset_handler": 276685
+      }
+    },
+    "storage": {
+      "address": 1015808,
+      "bytes": 32768,
+      "sectors": 8
+    },
+    "compiled_contract": [
+      "CONFIG_BUILD_WITH_TFM=y",
+      "CONFIG_TRUSTED_EXECUTION_NONSECURE=y",
+      "CONFIG_USE_DT_CODE_PARTITION=y",
+      "CONFIG_NRF_MODEM_LIB=y",
+      "CONFIG_LTE_NETWORK_MODE_LTE_M_GPS=y",
+      "CONFIG_NVS_DATA_CRC=y",
+      "# CONFIG_SERIAL is not set",
+      "# CONFIG_TFM_SECURE_UART is not set",
+      "# CONFIG_TFM_DUMMY_PROVISIONING is not set"
+    ],
+    "programmed_storage_bytes": 0,
+    "signed_boot": false,
+    "ota": false,
+    "flashed": false,
+    "physical_test": false,
+    "watchdog_contract": [
+      "CONFIG_WATCHDOG=y",
+      "CONFIG_HWINFO=y",
+      "CONFIG_MAIN_THREAD_PRIORITY=5",
+      "CONFIG_NRF_MODEM_LIB_ON_FAULT_APPLICATION_SPECIFIC=y",
+      "# CONFIG_NRF_WDT0_SECURE is not set"
+    ],
+    "hardware_reset_observed": false
+  },
+  "compiled_inputs": {
+    "firmware/boards/goksel/collar_tracker_r05l/Kconfig.collar_tracker_r05l": "4e179db61f67d1fae00f0328e181b10feba649e0175298e4873357aef22c3b52",
+    "firmware/boards/goksel/collar_tracker_r05l/Kconfig.defconfig": "9cf640f0e7e80fa46925cc5d9dd785f982a277dc4a65ba681b320069503b5b3f",
+    "firmware/boards/goksel/collar_tracker_r05l/board.yml": "c2e6fa636fcb36b2b1b7ade29a7c6e5683eb123348d009a310e9736d02cf3d8e",
+    "firmware/boards/goksel/collar_tracker_r05l/collar-memory.dtsi": "c214ec171f5bb92f14025b895e218cb0f29f783021fc5f725b7607cdae803a77",
+    "firmware/boards/goksel/collar_tracker_r05l/collar_tracker_r05l_nrf9151_ns.dts": "0e614e7c38ea3ff7b31cdd5a70108aedf5e4904e4279750229f7ac155fdab2f2",
+    "firmware/boards/goksel/collar_tracker_r05l/collar_tracker_r05l_nrf9151_ns_defconfig": "7e64177e7eff71faf8445b0f0f5384de3c92f1b5975ef7d1edd9df147ff48226",
+    "firmware/dts/bindings/goksel,collar-r05l-io.yaml": "cf15691a203f09a1942e748388b90d1b81d2e8552d34105522b3e58881ad796c",
+    "firmware/factory/src/board_contract.h": "e0b9d0b447b36bfc56c131f30ef09d343bff5b87a99638b59796ae758ef5afcf",
+    "firmware/tracker/src/outbox.c": "86482f57e96d4acf313b57c7476d46efa72761f94040b1668da7fa0dc94198a4",
+    "firmware/tracker/src/outbox.h": "200f13261e0108a01e9590bb4cc5bfc5b52da4ead13d8f2b8f73e3826d1fdc1b",
+    "firmware/tracker-r02/CMakeLists.txt": "0e2d4ae6a7e9d267113a9ba8c6279a688e4b318a2947a9545c8e9e40fb833ece",
+    "firmware/tracker-r02/Kconfig": "f91134127425399c5bced63c3265cec97cc929b77a460fcb09c0666fadc94850",
+    "firmware/tracker-r02/prj.conf": "cf234cc63a5aa477faa6859bc4873c6acc34f97f9e14301cc3643a265c6cd082",
+    "firmware/tracker-r02/src/dns.c": "6e39730a29ab20a029692bba848e4693ab8af8ac1db4065f81fcb24bd1559fa0",
+    "firmware/tracker-r02/src/dns.h": "1393966c54028a660ea406d64c31ca33191b4497e97ef7f67fc74186ef3b18cc",
+    "firmware/tracker-r02/src/main.c": "2492b6ab6c42b6a2501ec2b2f506d961b0463cfde3f59aa7f7dabe4460db201e",
+    "firmware/tracker-r02/src/recovery.c": "84cc640a106287cd0fa83f3297776637d1847091288053762f18267fbbb8a0dd",
+    "firmware/tracker-r02/src/recovery.h": "c55c6362ce9e1b4170c2e94b6b1b6a7ff932dba8cbde8753b5dfa7d0ddc71233",
+    "firmware/tracker-r02/src/supervisor.c": "f54c2d0110d6a69b3d1f9233a403cb9b7eb07f957c652ffc20933057539611a3",
+    "firmware/tracker-r02/src/supervisor.h": "663115e521242dc217263881f4c6532a57a33597fc161d181e66b6332046fa73",
+    "firmware/tracker-r02/src/uplink.c": "bb224113e17075b204466c844e58685173b17d30870158aabd6b38e99d38327c",
+    "firmware/tracker-r02/src/uplink.h": "6d23193481819166a724db26fd34f68a986d0cce23f8b0f0bce91b4947553d3c"
+  },
+  "flashed": false,
+  "physical_test": false,
+  "manufacturing_release": false,
+  "recovery_inspection": {
+    "result": "PASS",
+    "merged_hex": "zephyr/tfm_merged.hex",
+    "merged_sha256": "7d7b6d7bad55d9dc22b2e6c40b726065f6b02bc5dd1e17466a976b5d750c11a1",
+    "reset_vectors": {
+      "secure": {
+        "address": 0,
+        "initial_sp": 536872952,
+        "reset_handler": 14801
+      },
+      "application": {
+        "address": 262144,
+        "initial_sp": 537027352,
+        "reset_handler": 276685
+      }
+    },
+    "storage": {
+      "address": 1015808,
+      "bytes": 32768,
+      "sectors": 8
+    },
+    "compiled_contract": [
+      "CONFIG_BUILD_WITH_TFM=y",
+      "CONFIG_TRUSTED_EXECUTION_NONSECURE=y",
+      "CONFIG_USE_DT_CODE_PARTITION=y",
+      "CONFIG_NRF_MODEM_LIB=y",
+      "CONFIG_LTE_NETWORK_MODE_LTE_M_GPS=y",
+      "CONFIG_NVS_DATA_CRC=y",
+      "# CONFIG_SERIAL is not set",
+      "# CONFIG_TFM_SECURE_UART is not set",
+      "# CONFIG_TFM_DUMMY_PROVISIONING is not set"
+    ],
+    "programmed_storage_bytes": 0,
+    "signed_boot": false,
+    "ota": false,
+    "flashed": false,
+    "physical_test": false,
+    "watchdog_contract": [
+      "CONFIG_WATCHDOG=y",
+      "CONFIG_WDT_NRFX=y",
+      "CONFIG_NRFX_WDT=y",
+      "CONFIG_HWINFO=y",
+      "CONFIG_HWINFO_NRF=y",
+      "CONFIG_MAIN_THREAD_PRIORITY=5",
+      "CONFIG_NRF_MODEM_LIB_ON_FAULT_APPLICATION_SPECIFIC=y",
+      "# CONFIG_NRF_MODEM_LIB_ON_FAULT_RESET_MODEM is not set",
+      "# CONFIG_NRF_WDT0_SECURE is not set"
+    ],
+    "hardware_reset_observed": false
+  },
+  "memory_usage_bytes": {
+    "tfm": {
+      "flash": 64816,
+      "ram": 45388
+    },
+    "application": {
+      "flash": 110608,
+      "ram": 30560
+    },
+    "modem_shared_reserved": 40960
+  },
+  "native_board_check": {
+    "result": "PASS",
+    "schematic_sha256": "0a8d89c01db6d0211a9048467b728214da175750f6b670ebf3d6ffa9adeefb0e",
+    "netlist_sha256": "4c88b83f1af96f3924d63761ab09681049cce83cc0b364aaa669a27b19e9be28",
+    "signals": {
+      "/I2C_SDA": {
+        "package_pin": "56",
+        "gpio": "P0.00"
+      },
+      "/I2C_SCL": {
+        "package_pin": "57",
+        "gpio": "P0.01"
+      },
+      "/ACC_INT": {
+        "package_pin": "58",
+        "gpio": "P0.02"
+      },
+      "/HEALTH_EN": {
+        "package_pin": "68",
+        "gpio": "P0.09"
+      },
+      "/CHG_STAT": {
+        "package_pin": "69",
+        "gpio": "P0.10"
+      },
+      "/CHG_FAULT": {
+        "package_pin": "70",
+        "gpio": "P0.11"
+      },
+      "/FG_ALERT": {
+        "package_pin": "73",
+        "gpio": "P0.13"
+      }
+    },
+    "accelerometer_i2c_address": "0x19",
+    "fuel_gauge_i2c_address": "0x36",
+    "physical_test": false
+  },
+  "compiler_exit": 0,
+  "captured_utc": "2026-10-26T05:42:11.911816+00:00",
+  "unresolved": [
+    "No actual watchdog reset, modem/SIM/DNS or powered-board test",
+    "No physical NVS power-cut test, current measurement or stack-margin measurement",
+    "No signed boot/update, provisioning or factory integration",
+    "No live API/credentials, approved battery, assembly or ingress qualification"
+  ],
+  "inputs": {
+    "firmware/boards/goksel/collar_tracker_r05l/Kconfig.collar_tracker_r05l": "4e179db61f67d1fae00f0328e181b10feba649e0175298e4873357aef22c3b52",
+    "firmware/boards/goksel/collar_tracker_r05l/Kconfig.defconfig": "9cf640f0e7e80fa46925cc5d9dd785f982a277dc4a65ba681b320069503b5b3f",
+    "firmware/boards/goksel/collar_tracker_r05l/board.yml": "c2e6fa636fcb36b2b1b7ade29a7c6e5683eb123348d009a310e9736d02cf3d8e",
+    "firmware/boards/goksel/collar_tracker_r05l/collar-memory.dtsi": "c214ec171f5bb92f14025b895e218cb0f29f783021fc5f725b7607cdae803a77",
+    "firmware/boards/goksel/collar_tracker_r05l/collar_tracker_r05l_nrf9151_ns.dts": "0e614e7c38ea3ff7b31cdd5a70108aedf5e4904e4279750229f7ac155fdab2f2",
+    "firmware/boards/goksel/collar_tracker_r05l/collar_tracker_r05l_nrf9151_ns_defconfig": "7e64177e7eff71faf8445b0f0f5384de3c92f1b5975ef7d1edd9df147ff48226",
+    "firmware/dts/bindings/goksel,collar-r05l-io.yaml": "cf15691a203f09a1942e748388b90d1b81d2e8552d34105522b3e58881ad796c",
+    "firmware/evidence/tracker-r01/build-evidence.json": "c65ddbecb8c856ad0c21532c755a65a413883c0c8efce5d4fc5254aa2b2005d5",
+    "firmware/evidence/tracker-r02/build.txt": "e91adcd48589a7133f94556fa3caea145c97026311948436fe4e5548b798e306",
+    "firmware/evidence/tracker-r02/compiled.config": "3288d041a9c3a81f03a1db43453ce123824d2e3b83d87843cf0e70bda4817227",
+    "firmware/evidence/tracker-r02/compiled.dts": "26dc779dd1b995bbf04e5c3b9b91cd592d20045e8a6c669e5eb9d26af659fcaa",
+    "firmware/evidence/tracker-r02/dns-worker-tests.txt": "17e973bbbe2d607fbf00c5534982bf50795b76392b867d5d13122bdecc38f04d",
+    "firmware/evidence/tracker-r02/expired-main-tests.txt": "af28d7c108534c24d3771eafc5ef73ee8e5daad5d1b8b5d53add239a785ead0b",
+    "firmware/evidence/tracker-r02/image-controls.json": "3447162da528922a6663d6feca56756fd844004e1885e5dab55aab95aeab2bcb",
+    "firmware/evidence/tracker-r02/missing-watchdog-tests.txt": "5bd6c9767c660f4af3c2de58bf248d968a5e10a18ee025c2bce4198227a8c9ef",
+    "firmware/evidence/tracker-r02/modem-fault-tests.txt": "af28d7c108534c24d3771eafc5ef73ee8e5daad5d1b8b5d53add239a785ead0b",
+    "firmware/evidence/tracker-r02/recovery-tests.txt": "4e83f7728d5d5a2ac4b26c2b3dbaf8885e43b308fb6e291084d3157392d87836",
+    "firmware/evidence/tracker-r02/tests.json": "33b585bf40b2fbd1577f9ceafa619a1334311c71b9ae8aec216b352d503e6b4d",
+    "firmware/evidence/tracker-r02/tfm-config.txt": "4b30f3fc41f02f6fdfb99fe8475dc40b70d0aa9db708d329d90aed764a97df77",
+    "firmware/factory/src/board_contract.h": "e0b9d0b447b36bfc56c131f30ef09d343bff5b87a99638b59796ae758ef5afcf",
+    "firmware/toolchain-lock.json": "288621abc680673553bd6e1907c85c9bf0ce081f6391a05c4acf44398dd7ac7b",
+    "firmware/tracker/python-requirements.lock": "5aa8ee667ac85b97b611e20a8e509173f8e0a7c7fb35408369609a8478c8444a",
+    "firmware/tracker/src/outbox.c": "86482f57e96d4acf313b57c7476d46efa72761f94040b1668da7fa0dc94198a4",
+    "firmware/tracker/src/outbox.h": "200f13261e0108a01e9590bb4cc5bfc5b52da4ead13d8f2b8f73e3826d1fdc1b",
+    "firmware/tracker/toolchain-lock.json": "3dfcca33fea992dc4af1eff45afd90e19fdd33b25bbca108bffc5887fe154511",
+    "firmware/tracker-r02/CMakeLists.txt": "0e2d4ae6a7e9d267113a9ba8c6279a688e4b318a2947a9545c8e9e40fb833ece",
+    "firmware/tracker-r02/Kconfig": "f91134127425399c5bced63c3265cec97cc929b77a460fcb09c0666fadc94850",
+    "firmware/tracker-r02/README.md": "dbb5f660060484e5e504325b666f37ed9e9e637d30d49dc613ed96e85a81e337",
+    "firmware/tracker-r02/prj.conf": "cf234cc63a5aa477faa6859bc4873c6acc34f97f9e14301cc3643a265c6cd082",
+    "firmware/tracker-r02/src/dns.c": "6e39730a29ab20a029692bba848e4693ab8af8ac1db4065f81fcb24bd1559fa0",
+    "firmware/tracker-r02/src/dns.h": "1393966c54028a660ea406d64c31ca33191b4497e97ef7f67fc74186ef3b18cc",
+    "firmware/tracker-r02/src/main.c": "2492b6ab6c42b6a2501ec2b2f506d961b0463cfde3f59aa7f7dabe4460db201e",
+    "firmware/tracker-r02/src/recovery.c": "84cc640a106287cd0fa83f3297776637d1847091288053762f18267fbbb8a0dd",
+    "firmware/tracker-r02/src/recovery.h": "c55c6362ce9e1b4170c2e94b6b1b6a7ff932dba8cbde8753b5dfa7d0ddc71233",
+    "firmware/tracker-r02/src/supervisor.c": "f54c2d0110d6a69b3d1f9233a403cb9b7eb07f957c652ffc20933057539611a3",
+    "firmware/tracker-r02/src/supervisor.h": "663115e521242dc217263881f4c6532a57a33597fc161d181e66b6332046fa73",
+    "firmware/tracker-r02/src/uplink.c": "bb224113e17075b204466c844e58685173b17d30870158aabd6b38e99d38327c",
+    "firmware/tracker-r02/src/uplink.h": "6d23193481819166a724db26fd34f68a986d0cce23f8b0f0bce91b4947553d3c",
+    "firmware/tracker-r02/tests/dns_worker_test.c": "4b43aec35dec0fe99e0dc3eb2d96b9a27d8d3ddb2d40c6e57a18ed51aded1bde",
+    "firmware/tracker-r02/tests/host/modem/nrf_modem_lib.h": "51077edeb68362da475f5ded1ef846780b45af19a2d73635658b63df2644f76e",
+    "firmware/tracker-r02/tests/host/zephyr/device.h": "13243137d41da962812442d4eff9a763107006ac9e28d688c4b0a50a92993c41",
+    "firmware/tracker-r02/tests/host/zephyr/drivers/hwinfo.h": "5c256232fe66f02dc4b9bdf794fd42c75380cfdf53996f8cfcab3cfb7d4ffbab",
+    "firmware/tracker-r02/tests/host/zephyr/drivers/watchdog.h": "16da7c22f9624cea254e451adf2347bc7744e005b397d7a5344ea0464a21d532",
+    "firmware/tracker-r02/tests/host/zephyr/kernel.h": "053955e624c664d9cebd00a6fd95ffc73de050064c7a476d2f3e5a86423ec60a",
+    "firmware/tracker-r02/tests/host/zephyr/net/socket.h": "d2c0a745e92c4fec166541329564979d49149ac247cb75c6a719ec429c9f31ae",
+    "firmware/tracker-r02/tests/host/zephyr/sys/atomic.h": "0ba191338a95167c8a7f80a6cfbaff1fc984b4a19525595b3f08c69dda751daa",
+    "firmware/tracker-r02/tests/host/zephyr/sys/printk.h": "f86bf7737e1c3da3c1fe1e858154987d1f9d103964ff2bd302846130af222b5a",
+    "firmware/tracker-r02/tests/host/zephyr/toolchain.h": "8e03d5d442f7037eb2cb66da2218422522304bea31ba2515ba245a6cf7d140f7",
+    "firmware/tracker-r02/tests/recovery_test.c": "300602e7341ee8953fbd7fe4d4dcb199333a3554606961073edf0a684e707ab6",
+    "firmware/tracker-r02/tests/supervisor_test.c": "5da4a0d318c8aae9c0c23b24b96bddd03d14abf7e6e0789b30e511280fe3141c",
+    "scripts/build_tracker_r02.py": "29fb1a74193425a50ef994d79cc8486bc843e33d8185c4df338b18b36eced3d6",
+    "scripts/capture_tracker_r02.py": "57e96e708eb70630ec422d2db464fc2ee64fe146cc4105d5753de19f04a765d1",
+    "scripts/check_firmware_board.py": "39415bd7ffd7e1f9c1411c2a7f984f9baa6e54c271712040aa77ebc6f4b1697d",
+    "scripts/inspect_tracker_image.py": "e6093e16d0bb6569388bfa6f09c22efc12a9e90ca778b0357bf14ce138ae17ee",
+    "scripts/inspect_tracker_r02.py": "08d424600000db9c95ce32ba587bf3e0cc0b2ce1178155c9045fe8b68d04aebb",
+    "scripts/test_tracker_image.py": "e95dd99f12d1bf5579875abeac7fa166baac64e509c5d273b7c251f38f444715",
+    "scripts/test_tracker_r02.py": "54ebd2bd0bf51cdadf8e8d706b331c453631eabe6a414da3ce5c5537a33954c6",
+    "scripts/test_tracker_r02_image.py": "b1b1cb0a0c5632b476af3fd65b75d9186d5cc5d093cb6c0c14dd097bba658a78",
+    "scripts/verify_tracker_r02.py": "9cac962e566562408b13c8ad3ce477640544dcc6afb219afb0395083aaa8aab5"
+  }
+}

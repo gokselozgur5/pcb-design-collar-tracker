@@ -1,0 +1,4 @@
+PASS watchdog deadline edges, sticky failure, long sleep and overflow guards
+PASS pending job ownership, timeout quarantine, late cleanup and stale ticket rejection
+PASS completion/deadline races, resolver errors and malformed addresses
+PASS 30 ordered DNS deadline interleavings

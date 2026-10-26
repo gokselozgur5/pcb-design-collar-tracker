@@ -1,0 +1,57 @@
+{
+  "result": "PASS",
+  "suites": [
+    {
+      "case": "recovery",
+      "exit": 0
+    },
+    {
+      "case": "dns-worker",
+      "exit": 0
+    },
+    {
+      "case": "expired-main",
+      "exit": 0
+    },
+    {
+      "case": "modem-fault",
+      "exit": 0
+    },
+    {
+      "case": "missing-watchdog",
+      "exit": 0
+    }
+  ],
+  "sanitizers": [
+    "address",
+    "undefined"
+  ],
+  "inputs": {
+    "firmware/tracker-r02/src/dns.c": "6e39730a29ab20a029692bba848e4693ab8af8ac1db4065f81fcb24bd1559fa0",
+    "firmware/tracker-r02/src/dns.h": "1393966c54028a660ea406d64c31ca33191b4497e97ef7f67fc74186ef3b18cc",
+    "firmware/tracker-r02/src/main.c": "2492b6ab6c42b6a2501ec2b2f506d961b0463cfde3f59aa7f7dabe4460db201e",
+    "firmware/tracker-r02/src/recovery.c": "84cc640a106287cd0fa83f3297776637d1847091288053762f18267fbbb8a0dd",
+    "firmware/tracker-r02/src/recovery.h": "c55c6362ce9e1b4170c2e94b6b1b6a7ff932dba8cbde8753b5dfa7d0ddc71233",
+    "firmware/tracker-r02/src/supervisor.c": "f54c2d0110d6a69b3d1f9233a403cb9b7eb07f957c652ffc20933057539611a3",
+    "firmware/tracker-r02/src/supervisor.h": "663115e521242dc217263881f4c6532a57a33597fc161d181e66b6332046fa73",
+    "firmware/tracker-r02/src/uplink.c": "bb224113e17075b204466c844e58685173b17d30870158aabd6b38e99d38327c",
+    "firmware/tracker-r02/src/uplink.h": "6d23193481819166a724db26fd34f68a986d0cce23f8b0f0bce91b4947553d3c",
+    "firmware/tracker-r02/tests/dns_worker_test.c": "4b43aec35dec0fe99e0dc3eb2d96b9a27d8d3ddb2d40c6e57a18ed51aded1bde",
+    "firmware/tracker-r02/tests/host/modem/nrf_modem_lib.h": "51077edeb68362da475f5ded1ef846780b45af19a2d73635658b63df2644f76e",
+    "firmware/tracker-r02/tests/host/zephyr/device.h": "13243137d41da962812442d4eff9a763107006ac9e28d688c4b0a50a92993c41",
+    "firmware/tracker-r02/tests/host/zephyr/drivers/hwinfo.h": "5c256232fe66f02dc4b9bdf794fd42c75380cfdf53996f8cfcab3cfb7d4ffbab",
+    "firmware/tracker-r02/tests/host/zephyr/drivers/watchdog.h": "16da7c22f9624cea254e451adf2347bc7744e005b397d7a5344ea0464a21d532",
+    "firmware/tracker-r02/tests/host/zephyr/kernel.h": "053955e624c664d9cebd00a6fd95ffc73de050064c7a476d2f3e5a86423ec60a",
+    "firmware/tracker-r02/tests/host/zephyr/net/socket.h": "d2c0a745e92c4fec166541329564979d49149ac247cb75c6a719ec429c9f31ae",
+    "firmware/tracker-r02/tests/host/zephyr/sys/atomic.h": "0ba191338a95167c8a7f80a6cfbaff1fc984b4a19525595b3f08c69dda751daa",
+    "firmware/tracker-r02/tests/host/zephyr/sys/printk.h": "f86bf7737e1c3da3c1fe1e858154987d1f9d103964ff2bd302846130af222b5a",
+    "firmware/tracker-r02/tests/host/zephyr/toolchain.h": "8e03d5d442f7037eb2cb66da2218422522304bea31ba2515ba245a6cf7d140f7",
+    "firmware/tracker-r02/tests/recovery_test.c": "300602e7341ee8953fbd7fe4d4dcb199333a3554606961073edf0a684e707ab6",
+    "firmware/tracker-r02/tests/supervisor_test.c": "5da4a0d318c8aae9c0c23b24b96bddd03d14abf7e6e0789b30e511280fe3141c"
+  },
+  "scheduler": "POSIX adapter; not the Zephyr scheduler",
+  "real_dns": false,
+  "actual_modem_test": false,
+  "hardware_reset_observed": false,
+  "physical_power_failure_test": false
+}
