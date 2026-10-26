@@ -29,6 +29,15 @@ and run actual SMT analysis. Matching is not stock or SMT acceptance; empty SMT
 counters are not a pass. Factory programming/testing feasibility, approved protected
 pack and physical tests remain open. No supplier enquiry or order was sent.
 
+Prepared the [JLC engineering enquiry](../assembly/supplier-r01/README.md) with
+the exact 6,997,076-byte r02 attachment. It asks for Q1 sourcing, J6 model/manual
+placement review, machine datums and factory programming/test/assembly scope.
+The inspected placement UI offered no custom-model upload; this does not rule out
+engineering support. No substitute was selected or production approval implied.
+The draft is ready for separate sending authorization; the battery enquiry's
+existing pending authorization is unchanged. Do not repeat catalogue searches
+or unchanged PCB DFM as a substitute for the supplier response.
+
 Latest firmware: [tracker r03 prototype](../firmware/tracker-r03/README.md) adds
 P-256 signed boot and a bounded trial to r02's GNSS/LTE-M, persistent outbox,
 authenticated uploads, DNS deadline and watchdog recovery. The real target build,

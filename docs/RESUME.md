@@ -16,6 +16,13 @@ Next obtain Q1 sourcing, the J6 model/placement decision and factory confirmatio
 of the placement datum, then accept all 81 fitted references and run SMT analysis.
 Do not repeat unchanged PCB DFM, drop Q1 or count empty SMT counters as a pass.
 
+The [JLC engineering enquiry](../assembly/supplier-r01/README.md) is prepared
+with the frozen r02 ZIP and exact next questions. It has not been sent and requires
+separate authorization under AGENTS.md. A bounded UI inspection found no direct
+custom-model upload. Seek a controlled supplier answer for Q1 and J6; do not
+restart the same catalogue/model search or invent an assembly acceptance.
+The original BOM and all frozen hardware/firmware/assembly artifacts are unchanged.
+
 The [review ZIP](../release/collar-tracker-r05l-pcba-r02-review.zip) includes the
 unchanged Gerber/native sources, original BOM/CPL, both review revisions and the
 new placement-reference drawing. The actual r02 preview reproduces 80 placements;

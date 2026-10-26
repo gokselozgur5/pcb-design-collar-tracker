@@ -1,0 +1,38 @@
+Subject: PCBA feasibility review — nRF9151 collar tracker, Q1 sourcing and SIM placement
+
+Hi,
+
+Can your PCBA engineering team review the attached collar-tracker package before we order a prototype batch?
+
+The board is 40 x 32mm, six layers, with 81 fitted references on both sides.
+
+Two PCB DFM runs passed with zero errors and warnings, but the SMT review is incomplete.
+
+- Q1 is mandatory: Diodes DMN62D2UDW-7, one per board, currently unmatched in JLC DFM.
+
+  Can you source it, including placement attrition, or confirm a supported sourcing route and minimum quantity?
+
+  DMN62D0UDW-7 / C781251 is a screened candidate only; please do not substitute or omit Q1 without approval.
+
+- J6 is GCT SIM8051-6-0-14-00-A / C7363812, the no-peg nano-SIM socket.
+
+  It matches the BOM but has no usable model in Component Placements; can you supply the correct model and confirm the placement against the included drawing?
+
+- Please confirm the placement datum and stencil/process for the attached r02 CPL, especially J1/J2 U.FL connectors.
+
+  Their CPL offset is specific to the JLC model; the native physical centres are documented separately.
+
+- Can you program NRF9151-LACA-R through the bottom J7 SWD pads using the board's 1.8V logic reference, then run agreed power, sensor, charging and radio tests with per-unit results?
+
+  Please also state whether battery/NTC, antenna and charging-wire attachment plus enclosure assembly are supported, or require a separate assembly partner.
+
+We need assembled, programmed and tested devices without soldering by the end user.
+
+Battery selection, the production image, credentials and numeric test limits are still open; this is a feasibility enquiry, not production approval.
+
+Please confirm the supported scope, minimum prototype quantity, sourcing lead times and fixture/programming/test costs.
+
+The attached ZIP's START-HERE.txt identifies the current BOM/CPL, placement drawing and open items.
+
+Thanks,
+Goksel

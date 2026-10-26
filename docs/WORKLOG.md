@@ -1171,3 +1171,28 @@ then review all 81 fitted references and run SMT analysis. Approved protected pa
 factory programming/testing and physical qualification remain open. No supplier
 message, order, payment, flashing or powered test occurred. The browser was closed;
 account/session data remains ignored. Firmware work stays deferred.
+
+## 2026-10-26 — Prepared PCBA engineering enquiry
+
+Inspected the saved JLC bottom placement page with J6 selected. It still has a
+placeholder; no custom-model upload control was found in that page. This does
+not exclude a supplier engineering route. Reviewed JLC's sourcing, global
+sourcing, programming and contact-form guidance. The original Q1 distributor
+listing is not normally stocked; the previous one-unit D0 observation remains
+insufficient. An onsemi NTJD4401N direct swap was not accepted because its
+datasheet does not guarantee on-resistance at the existing 1.8V screening point.
+No original BOM, native placement or frozen evidence was changed.
+
+Prepared assembly/supplier-r01/request.txt for JLC PCBA Engineering, covering Q1,
+J6, placement datums, programming/testing and complete-device assembly scope.
+The exact existing r02 ZIP is its single attachment: 6,997,076 bytes, 39 members,
+SHA-256 0a56cff3d99c196ac2c967f5055e3c1eda5d70446295cf4aa8c010bb14a1b4a5.
+Its integrity passes and it fits the contact form's displayed 10MB limit.
+Full saved handoff passes; 51 local Markdown targets resolve and source
+whitespace checks pass. These checks do not add SMT or physical acceptance.
+
+Next obtain separate authorization to send this reviewable enquiry, then record
+the actual supplier response before changing sourcing or approving placement.
+The previous battery enquiry remains unsent with its authorization unanswered.
+No supplier message, order, payment, placement approval, flashing or physical
+test occurred. Closed the browser and kept raw/account data ignored.
