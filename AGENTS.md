@@ -85,6 +85,10 @@ uploads to JLC DFM are in scope. Orders, payments and supplier messages are not.
   zero empty. Do not disable warnings or infer bootability from compile success.
   GNSS configuration requires its functional mode enabled; keep interrupt callbacks
   to signaling and do flash/network work in the owning application thread.
+- A DNS caller deadline is not cancellation. Preserve worker/result ownership until
+  completion, free late allocations and prevent overlapping calls. Keep watchdog
+  expiry sticky; a late phase transition must not restore feeding. Distinguish host
+  fault injection from actual modem/SoC reset and measured power behavior.
 
 ## Git and handoff
 

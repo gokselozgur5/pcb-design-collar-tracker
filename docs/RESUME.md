@@ -4,25 +4,32 @@ The current state is in [STATUS](STATUS.md). The next task is implementation,
 not another requirements interview. Read [the Paul/nano-SIM notes](paul-nanosim.md)
 before editing. This handoff does not require private chat history or other projects.
 
-Latest software: [tracker r01](../firmware/tracker/README.md) and its
-[local receiver](../firmware/receiver/README.md). Continue with DNS deadlines,
-modem/watchdog recovery, secure provisioning and signed-update design before
-physical GNSS/LTE-M/TLS/power-cut tests. The prototype stores 64 fixes, uses a
+Latest software: [tracker r02](../firmware/tracker-r02/README.md), with bounded DNS
+caller waiting and watchdog/modem recovery, and the unchanged
+[local receiver](../firmware/receiver/README.md). Target build and host tests pass;
+hardware watchdog reset and real modem behavior are untested. Continue with secure
+provisioning and signed-update/migration support in a new revision before physical
+GNSS/LTE-M/TLS/power-cut tests. The prototype stores 64 fixes, uses a
 300-second default interval, and rejects new fixes when full. No credentials or
 endpoint have been supplied; the receiver exists only as a local test target.
 No hardware has been flashed. The full-device goal remains active and release HOLD.
 
 ```sh
 python3 scripts/verify_tracker_firmware.py
-python3 scripts/test_tracker_firmware.py \
-  --python /Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/venv/bin/python
+python3 scripts/verify_tracker_r02.py
+python3 scripts/test_tracker_r02.py
 ```
 
 The cellular firmware requires the non-secure `collar_tracker_r05l/nrf9151/ns`
 target and TF-M. Its standalone merged image boots at zero; do not reuse a DK
 partition map with an empty bootloader region or flash only the non-secure HEX.
 Use a new empty build directory; see the tracker README for the pinned SDK and
-configuration. Keep `firmware/factory/`, its board and original lock unchanged.
+configuration. Keep the factory, r01 and r02 source/evidence checkpoints unchanged.
+The latest local complete prototype image is
+`/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/build-tracker-r02-final/zephyr/tfm_merged.hex`,
+SHA-256 `7d7b6d7bad55d9dc22b2e6c40b726065f6b02bc5dd1e17466a976b5d750c11a1`.
+It has not been flashed and is not a manufacturing release. No command here
+authorizes flashing, key provisioning, supplier messages or an order.
 
 Latest routing: [r18 thermal-clearance correction](../mechanical/swim-r18-charge-clearance/README.md)
 passes all 27 static PCB poses with expanded charge-wire component and retainer

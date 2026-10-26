@@ -90,6 +90,11 @@ The [factory observation firmware](firmware/README.md) builds for the custom
 nRF9151 board and reports sensor/charger readings over RTT. It has not been
 flashed; the shipping tracking application remains unfinished.
 
+The [tracker r02 prototype](firmware/tracker-r02/README.md) adds DNS deadlines and
+watchdog/modem recovery to GNSS, persistent positions and authenticated uploads.
+The target build and host failure tests pass. Actual modem, reset, power and
+factory tests, credential provisioning and signed updates remain open.
+
 [STATUS](docs/STATUS.md) records the exact source and next action. The earlier r05k,
 r04i and all prior tested files remain preserved. Upload only the Gerber ZIP to PCB
 DFM; the outer review archive also contains native CAD, assembly candidates and reports.

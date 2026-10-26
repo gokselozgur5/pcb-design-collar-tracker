@@ -13,14 +13,17 @@ content is English. Run `python3 scripts/resume.py` before making another revisi
 [Published r16 review](../release/r16-current-review/review.pdf) ·
 [Published r16 bundle](../release/collar-tracker-r05l-r16-review.zip)
 
-Latest firmware: [tracker r01 prototype](../firmware/tracker/README.md) adds GNSS,
-LTE-M, a 64-record persistent outbox and authenticated HTTPS. The separate
+Latest firmware: [tracker r02 prototype](../firmware/tracker-r02/README.md) adds a
+30-second DNS caller deadline and watchdog/modem recovery to r01's GNSS, LTE-M,
+64-record persistent outbox and authenticated HTTPS. The clean target build,
+five host scenarios and four image/configuration controls pass. Hardware reset,
+real modem DNS and power behavior are untested. The separate
 [local reference receiver](../firmware/receiver/README.md) commits idempotent records
 before acknowledging them. Default configuration has no host, identity or keys;
 it only collects offline records. This is not a shipping firmware release.
-Next complete bounded DNS/recovery, provisioning and signed updates, then run
+Next complete provisioning and signed updates in a separate revision, then run
 actual board/modem/SIM tests and measure power. The local receiver is not deployed.
-Preserve the frozen factory image and the unchanged PCB/Gerber/r19 assembly.
+Preserve the frozen factory/r01/r02 evidence and the unchanged PCB/Gerber/r19 assembly.
 
 Latest assembly: [r19 charge-wire support and forming nests](../assembly/internal-charge-r03/README.md)
 and [two-page drawing](../assembly/internal-charge-r03/restraint-sheet.pdf).
@@ -114,7 +117,8 @@ flow; shipping firmware, provisioning, updates and physical tests remain open.
 
 | Check | Current result |
 |---|---|
-| Tracker r01 firmware | Custom NS/TF-M build and linked reset/storage checks pass; 7 local receiver tests, 6 simulated mutation failures, 40 corrupted record bytes and 2 image controls pass; no flashing or actual modem test |
+| Tracker r02 recovery | Custom NS/TF-M build passes; 5 host scenarios, 30 ordered DNS races and 4 image/configuration controls pass; no flashing, actual modem test or observed watchdog reset |
+| Preserved tracker r01 | GNSS/outbox/mTLS prototype; 7 local receiver tests, 6 simulated mutation failures, 40 corrupted record bytes and 2 image controls pass; no powered test |
 | Factory observation firmware | Actual custom-board build passed; two negative compile controls passed; no flashing or powered test |
 | Integrated cable routes r18 | 27/27 static poses; 82 checks per pose including expanded charge envelopes; retainer reliefs and GNSS/charge routes revised; continuous movement and physical qualification open |
 | Internal charge support r19 | Three staking regions and two forming nests; 27/27 static poses and 52 added checks per pose; adhesion, released shape, installation and continuous movement unqualified |

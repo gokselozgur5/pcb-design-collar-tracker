@@ -978,3 +978,43 @@ The 300-second interval and queue policy are provisional; battery runtime is not
 measured. Continue r19 attachment/installation/continuous-motion and physical
 qualification separately. The CT-BAT-001-A enquiry remains unsent with authorization
 pending. Complete-device and ingress release remain HOLD.
+
+## 2026-10-26 — Tracker r02 DNS deadline and watchdog recovery
+
+Implemented r02 separately from the frozen r01 and factory sources. A permanent
+resolver worker retains ownership through timeout, frees late SDK results and
+prevents overlapping calls. Main waits 30 seconds by default, then takes the modem
+offline and drains the worker under a finite cleanup lease. The supervisor checks
+main-progress deadlines every 500ms; fault/expiry stops feeds to a 5-second hardware
+watchdog. Late main progress cannot clear failure. A modem fault callback only sets
+an atomic flag. Watchdog/lockup boot waits 120 seconds before modem initialization.
+Permanent storage validation failure enters service hold without application erase;
+uncertain mutations reset for the unchanged outbox's boot reconciliation.
+
+The clean custom NS/TF-M build passed. Fixed a host/ARM enum signedness difference
+exposed by `-Werror`; warning handling was not weakened. Application flash/RAM:
+110,608/30,560 bytes; TF-M: 64,816/45,388, plus the existing 40KiB modem reservation.
+Actual reset vectors remain 0/0x40000 and no programmed bytes enter persistent
+storage. The complete image SHA-256 is
+`7d7b6d7bad55d9dc22b2e6c40b726065f6b02bc5dd1e17466a976b5d750c11a1`.
+
+Five host scenarios pass with ASAN/UBSAN, including the actual DNS/supervisor sources
+under a POSIX adapter. Policy tests cover 30 ordered completion/deadline races.
+The shortened 1-second DNS case returned after 1,099ms on this host while its fake
+resolver still owned the call; all four test allocations were freed. Fault/expiry
+stop feeding and a missing watchdog rejects initialization. Two real HEX mutations
+and two compiled-config mutations are rejected. These results do not prove Zephyr
+scheduling, modem DNS timing, actual watchdog reset or physical flash recovery.
+
+Saved 59 source/evidence identities in `firmware/evidence/tracker-r02/`, added
+read-only handoff verification and updated continuation instructions. Original PCB,
+JLC results, r19 assembly, r16 review, factory/r01 sources and SDK pins are unchanged.
+No public API deployment, keys, flashing, supplier message or order was performed.
+Next implement provisioning and signed-update/migration support in a new revision;
+then run actual GNSS/LTE-M/TLS, DNS/AT fault, reset, power-cut and current tests.
+Approved pack, assembly, factory/SMT, RF and immersion acceptance remain open.
+
+The full saved handoff passes (41 top-level result fields, not 41 tests). Syntax
+checks pass for eight Python files and 90 local Markdown targets resolve. Source
+whitespace checks pass; the byte-preserved generated TF-M cache retains three
+upstream trailing-space comments. They are kept as captured build evidence.

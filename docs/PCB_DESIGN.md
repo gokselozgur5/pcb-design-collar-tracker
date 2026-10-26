@@ -194,6 +194,15 @@ preconditions such as radio functional mode and interrupt context. Test storage
 failures and duplicate delivery in the real application core, then repeat critical
 power-loss cases on hardware; a host storage model is not a flash qualification.
 
+A caller timeout does not cancel a modem operation. Keep one explicit owner for
+each outstanding SDK result, release late results, and prevent overlapping work
+until it finishes or the entire subsystem resets. Feed a watchdog from bounded
+main-progress leases; an expired lease must stay failed even if main returns late.
+Check the vendor's reset-domain table and compiled peripheral ownership. Exercise
+the actual worker/supervisor with controlled failures, then observe reset and
+persistent-data recovery on hardware. Host adapters do not prove modem or scheduler
+behavior, and sleep/watchdog wakeups belong in measured battery accounting.
+
 Bring-up proceeds through short/resistance checks, polarity, current-limited power,
 rails, reset/debug, firmware, then radio/sensor and end-to-end functions. Test the
 battery, charger and protection against the selected cell's limits. Do not claim
