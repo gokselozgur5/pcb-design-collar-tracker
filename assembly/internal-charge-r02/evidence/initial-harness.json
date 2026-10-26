@@ -1,0 +1,130 @@
+{
+  "revision": "CT-INTERNAL-CHARGE-002-A",
+  "status": "ROUTING_PROTOTYPE_NOT_MANUFACTURING_RELEASE",
+  "coordinate_frame": "Enclosure assembly, mm",
+  "wire": {
+    "mpn": "Alpha 2841/7",
+    "awg": 30,
+    "strands": "7/38 silver-plated copper",
+    "insulation": "PTFE",
+    "outside_diameter_nominal_mm": 0.6096,
+    "outside_diameter_max_mm": 0.6604,
+    "conductor_diameter_nominal_mm": 0.3048,
+    "conductor_diameter_incoming_max_mm": 0.34,
+    "conductor_max_status": "Engineering incoming requirement; manufacturer gives a nominal conductor diameter only.",
+    "minimum_bend_radius_mm": 6.604,
+    "nominal_DCR_ohm_per_1000ft_at_20C": 94,
+    "manufacturer_max_pull_N": 3.91443502142924,
+    "terminal_strip_mm": 1.8,
+    "pcb_strip_mm": 2.4,
+    "strip_length_tolerance_mm": 0.1,
+    "free_route_position_allowance_mm": 0.15,
+    "joint_tip_position_allowance_mm": 0.03
+  },
+  "minimum_gap_mm": 0.2,
+  "pcb_nominal_top_mm": 11.24088,
+  "nominal_pose_index": 13,
+  "wires": [
+    {
+      "colour": "red",
+      "pad": "J3.1",
+      "net": "/VIN_5V",
+      "contact_y_mm": -6,
+      "controls_mm": [
+        [
+          22.45,
+          -3.3,
+          13.3
+        ],
+        [
+          17.74044296456473,
+          -3.3,
+          14.3
+        ],
+        [
+          12.08525005390964,
+          -3.68083801793135,
+          11.873829645495164
+        ],
+        [
+          5.525188811634191,
+          -3.8749629511160366,
+          15.8140414690812
+        ],
+        [
+          -1.496649931629085,
+          -6.969826665662424,
+          16.293358737256387
+        ],
+        [
+          -4.947777990905215,
+          -13.057818902040783,
+          13.217202346534888
+        ],
+        [
+          -13.038125699269777,
+          -14.447651026899885,
+          14.113730607527266
+        ],
+        [
+          -16.75,
+          -12.2,
+          11.48
+        ]
+      ]
+    },
+    {
+      "colour": "black",
+      "pad": "J3.2",
+      "net": "/GND",
+      "contact_y_mm": 6,
+      "controls_mm": [
+        [
+          22.45,
+          6.0,
+          13.3
+        ],
+        [
+          19.55803593672983,
+          6.0,
+          14.3
+        ],
+        [
+          16.955939640579658,
+          5.329523778321827,
+          14.454063935409089
+        ],
+        [
+          13.128980405272001,
+          6.2628796606151775,
+          15.497539248990607
+        ],
+        [
+          10.452751563431695,
+          8.908019884720446,
+          16.338318559052293
+        ],
+        [
+          -9.684571329578068,
+          15.807309034536708,
+          11.48
+        ],
+        [
+          -13.16498840267648,
+          -7.798751141873772,
+          16.884291361159264
+        ],
+        [
+          -14.25,
+          -12.2,
+          11.48
+        ]
+      ]
+    }
+  ],
+  "manufacturing_release": false,
+  "constant_length_motion_accepted": false,
+  "restraint_implemented": false,
+  "factory_joining_accepted": false,
+  "physical_qualification": false
+}

@@ -1,0 +1,261 @@
+{
+  "result": "HOLD",
+  "inputs": {
+    "assembly/internal-charge-r02/harness.json": "19ef9a0511b94e10931392af6224693d53b61ff3cbc35d995d82a9f62d5c375d",
+    "assembly/internal-charge-r02/sources.json": "9c75c82ca18c0a9826474665b3d37c340d7e782caa567f43ba4339fae7d316ce",
+    "scripts/check_internal_harness.py": "e711a695c45a02d96cd409e2c27e3ececfe6c7fc992f036f7e4ef94fc869014c",
+    "scripts/internal_harness_geometry.py": "4352ce37de6ccb6947e42a3aeaae8d65b3bbc67b7966d4fa32ccb7c6099d9153",
+    "mechanical/swim-r11-thermal-fit/antenna-fit.json": "b120bb308406ae69fcfed946b0f926b5af2f7e95394204e02fa772a8842976be",
+    "mechanical/swim-r11-thermal-fit/retention-checks.json": "a21530e03e614c82e8b9046bfc49e520128080923d651d149f2bcc300175ced9",
+    "mechanical/swim-r11-thermal-fit/parameters.json": "6a3e51619b56502d3ccf91c7749f115f585b488fc4a21c867df6318c8f150de9",
+    "mechanical/swim-r11-thermal-fit/retention.json": "9a4b3c0126f3542c8d0bff03cb1c57dfd097c8927ad84b9af780185673585fbd",
+    "mechanical/swim-r16-contact-retention/contact.json": "b9a29ee41791d6cfa1de3bdfc2d1056956ae5ada5817d422daae98f2290a9b6b",
+    "experiments/power-r05l-charge-interlock/evidence/native-netlist.json": "4c88b83f1af96f3924d63761ab09681049cce83cc0b364aaa669a27b19e9be28",
+    "scripts/check_thermal_assembly.py": "e7952082c8c4e71b8d61f2e26aaa996781be2c23173598138ccde2c32e17cc6a",
+    "scripts/thermal_cable_geometry.py": "ce275bc960cd1b384f5e7ad29975da9e67f056a8d12cac58e385d4a93fb473a9"
+  },
+  "checks": [
+    {
+      "name": "native J3 and contact polarity",
+      "pass_": true
+    },
+    {
+      "name": "red continuous bend radius lower bound",
+      "value": 7.437950013792618,
+      "minimum": 6.604,
+      "pass_": true
+    },
+    {
+      "name": "red other populated bodies",
+      "value": 0.3976772965889347,
+      "minimum": 0.2,
+      "pass_": true
+    },
+    {
+      "name": "red to LTE cable",
+      "value": 0.7100851156705552,
+      "minimum": 0.2,
+      "pass_": true
+    },
+    {
+      "name": "red to GNSS cable",
+      "value": 0.6087479945988078,
+      "minimum": 0.2,
+      "pass_": true
+    },
+    {
+      "name": "red carrier, frame and lid posts",
+      "value": 0.388333708278896,
+      "minimum": 0.2,
+      "pass_": true
+    },
+    {
+      "name": "red to LTE CAPH SZK-C-3L30 envelope",
+      "value": 1.671645479426889,
+      "minimum": 0.2,
+      "pass_": true
+    },
+    {
+      "name": "red to GNSS ZETA SZK-C-0G04 envelope",
+      "value": 8.892978894593574,
+      "minimum": 0.2,
+      "pass_": true
+    },
+    {
+      "name": "red lid roof",
+      "value": 2.0716454794268913,
+      "minimum": 0.2,
+      "pass_": true
+    },
+    {
+      "name": "red cavity Y walls",
+      "value": 3.204801080415992,
+      "minimum": 0.2,
+      "pass_": true
+    },
+    {
+      "name": "red endpoint at native pad datum",
+      "value": 1e-08,
+      "minimum": 0,
+      "pass_": true
+    },
+    {
+      "name": "red endpoint at terminal-hole datum",
+      "value": 1e-08,
+      "minimum": 0,
+      "pass_": true
+    },
+    {
+      "name": "black continuous bend radius lower bound",
+      "value": 6.839244525900049,
+      "minimum": 6.604,
+      "pass_": true
+    },
+    {
+      "name": "black other populated bodies",
+      "value": 0.18207121662040682,
+      "minimum": 0.2,
+      "pass_": false
+    },
+    {
+      "name": "black to LTE cable",
+      "value": 0.36840634453028875,
+      "minimum": 0.2,
+      "pass_": true
+    },
+    {
+      "name": "black to GNSS cable",
+      "value": 0.3403377752240219,
+      "minimum": 0.2,
+      "pass_": true
+    },
+    {
+      "name": "black carrier, frame and lid posts",
+      "value": 0.6071126665321195,
+      "minimum": 0.2,
+      "pass_": true
+    },
+    {
+      "name": "black to LTE CAPH SZK-C-3L30 envelope",
+      "value": 2.802347121909126,
+      "minimum": 0.2,
+      "pass_": true
+    },
+    {
+      "name": "black to GNSS ZETA SZK-C-0G04 envelope",
+      "value": 1.7980053075909948,
+      "minimum": 0.2,
+      "pass_": true
+    },
+    {
+      "name": "black lid roof",
+      "value": 2.198005307590997,
+      "minimum": 0.2,
+      "pass_": true
+    },
+    {
+      "name": "black cavity Y walls",
+      "value": 4.80706349689977,
+      "minimum": 0.2,
+      "pass_": true
+    },
+    {
+      "name": "black endpoint at native pad datum",
+      "value": 1e-08,
+      "minimum": 0,
+      "pass_": true
+    },
+    {
+      "name": "black endpoint at terminal-hole datum",
+      "value": 1e-08,
+      "minimum": 0,
+      "pass_": true
+    },
+    {
+      "name": "opposite wire envelopes",
+      "value": 0.523309344013163,
+      "minimum": 0.2,
+      "pass_": true
+    }
+  ],
+  "wires": [
+    {
+      "colour": "red",
+      "length_interval_mm": [
+        43.572782847644206,
+        43.57278655854215
+      ],
+      "continuous_radius_lower_mm": 7.437950013792618,
+      "travel_bound_mm": 0.019035261107906095,
+      "component_limiting": {
+        "ref": "J1",
+        "gap_mm": 0.3976772965889347,
+        "xyz_mm": [
+          -3.241926808279617,
+          -9.901472323623324,
+          14.809754724544998
+        ]
+      },
+      "rf_gaps": [
+        {
+          "name": "LTE",
+          "gap_mm": 0.7100851156705552
+        },
+        {
+          "name": "GNSS",
+          "gap_mm": 0.6087479945988078
+        }
+      ],
+      "mechanical_limiting": {
+        "name": "retainer frame",
+        "gap_mm": 0.388333708278896
+      },
+      "strip_lengths_mm": [
+        1.8,
+        2.4
+      ]
+    },
+    {
+      "colour": "black",
+      "length_interval_mm": [
+        55.40194302742053,
+        55.401955046903105
+      ],
+      "continuous_radius_lower_mm": 6.839244525900049,
+      "travel_bound_mm": 0.045873006200465555,
+      "component_limiting": {
+        "ref": "U3",
+        "gap_mm": 0.18207121662040682,
+        "xyz_mm": [
+          -13.870413967634288,
+          -10.52006846594873,
+          12.968741284694316
+        ]
+      },
+      "rf_gaps": [
+        {
+          "name": "LTE",
+          "gap_mm": 0.36840634453028875
+        },
+        {
+          "name": "GNSS",
+          "gap_mm": 0.3403377752240219
+        }
+      ],
+      "mechanical_limiting": {
+        "name": "retainer frame",
+        "gap_mm": 0.6071126665321195
+      },
+      "strip_lengths_mm": [
+        1.8,
+        2.4
+      ]
+    }
+  ],
+  "nominal_wire_only_resistance_ohm_at_20C": 0.030523706400629437,
+  "wire_only_sensitivity": [
+    {
+      "current_A": 0.1,
+      "drop_V": 0.003052370640062944,
+      "dissipation_W": 0.00030523706400629444
+    },
+    {
+      "current_A": 0.35,
+      "drop_V": 0.010683297240220302,
+      "dissipation_W": 0.0037391540340771055
+    },
+    {
+      "current_A": 0.5,
+      "drop_V": 0.015261853200314719,
+      "dissipation_W": 0.007630926600157359
+    }
+  ],
+  "physical_qualification": false,
+  "manufacturing_release": false,
+  "open": [
+    "Exact body/contact-pocket and solder-joint CAD checks",
+    "Constant cut length across movement and temperature; no free-wire shape guarantee",
+    "Implemented restraint, factory forming/joining and service sequence",
+    "Fault-current/fuse coordination, powered resistance, pull and fatigue tests"
+  ]
+}

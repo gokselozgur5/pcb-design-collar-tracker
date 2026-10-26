@@ -358,6 +358,8 @@ def verify(include_review_bundle=True):
     dock_wire_clamp = verify_dock_wire_clamp(check_baseline=False)
     from verify_contact_retention import verify as verify_contact_retention
     contact_retention = verify_contact_retention(check_baseline=False)
+    from verify_internal_harness import verify as verify_internal_harness
+    internal_harness_candidate = verify_internal_harness()
     from package_current_review import verify_bundle as verify_previous_current_review
     previous_current_review_bundle = verify_previous_current_review()
     from package_clamp_review import verify_bundle as verify_clamp_review
@@ -390,6 +392,7 @@ def verify(include_review_bundle=True):
             'dock_wire_motion': dock_wire_motion,
             'dock_wire_clamp': dock_wire_clamp,
             'contact_retention': contact_retention,
+            'internal_harness_candidate': internal_harness_candidate,
             'clamp_review_bundle': clamp_review_bundle,
             'previous_current_review_bundle': previous_current_review_bundle,
             'current_review_bundle': current_review_bundle,

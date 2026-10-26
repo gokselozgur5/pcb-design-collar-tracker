@@ -1,0 +1,70 @@
+import copy
+import json
+import math
+from pathlib import Path
+import sys
+import unittest
+
+import numpy as np
+
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
+from check_internal_harness import check, OUT
+from internal_harness_geometry import evaluate, physical_radii
+from thermal_cable_geometry import spline
+
+
+class InternalHarnessTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.spec=json.loads((OUT/'harness.json').read_text())
+
+    def test_current_nominal_route_and_terminations(self):
+        result=check(self.spec)
+        self.assertEqual(result['result'],'NOMINAL_ROUTE_SCREEN_PASS')
+        self.assertFalse(result['manufacturing_release'])
+
+    def test_lowered_ground_wire_hits_populated_bodies(self):
+        spec=copy.deepcopy(self.spec)
+        for p in spec['wires'][1]['controls_mm']:p[2]-=1
+        result=check(spec)
+        collision=next(c for c in result['checks'] if c['name']=='black other populated bodies')
+        self.assertFalse(collision['pass_'])
+
+    def test_polarity_swap_is_rejected(self):
+        spec=copy.deepcopy(self.spec)
+        spec['wires'][0]['net'],spec['wires'][1]['net']=spec['wires'][1]['net'],spec['wires'][0]['net']
+        result=check(spec)
+        self.assertFalse(next(c for c in result['checks'] if c['name']=='native J3 and contact polarity')['pass_'])
+
+    def test_original_26_awg_bend_requirement_does_not_fit(self):
+        spec=copy.deepcopy(self.spec)
+        spec['wire']['minimum_bend_radius_mm']=8.382
+        result=check(spec)
+        self.assertFalse(next(c for c in result['checks'] if c['name']=='black continuous bend radius lower bound')['pass_'])
+
+    def test_bezier_bounds_contain_independent_dense_curve(self):
+        control=self.spec['wires'][1]['controls_mm']
+        bounded=evaluate(control,401)
+        xyz,arc,radius,_=spline(control,40001)
+        self.assertLessEqual(bounded['arc_lower'][-1],arc[-1]+1e-8)
+        self.assertGreaterEqual(bounded['arc_upper'][-1],arc[-1]-1e-8)
+        self.assertLessEqual(bounded['radius_lower'],float(radius.min())+1e-8)
+        np.testing.assert_allclose(bounded['xyz'],xyz[::100],atol=1e-12)
+
+    def test_straight_wire_and_stationary_control(self):
+        line=[[0,0,0],[3,0,0],[6,0,0],[9,0,0]]
+        self.assertTrue(math.isinf(evaluate(line)['radius_lower']))
+        with self.assertRaises(ValueError):evaluate([[0,0,0]]*4)
+
+    def test_strip_boundary_includes_position_and_cut_error(self):
+        c=evaluate([[0,0,0],[3,0,0],[6,0,0],[9,0,0]])
+        radius,bare=physical_radii(c,self.spec['wire'])
+        remaining=c['arc_upper'][-1]-c['arc_upper']
+        i=int(np.argmin(abs(remaining-2.2)))
+        # The strip is nominally 2.4mm. A 0.1mm cut error plus 0.15mm
+        # position movement can bring insulation onto this 2.2mm station.
+        self.assertFalse(bare[i])
+        self.assertEqual(radius[i],self.spec['wire']['outside_diameter_max_mm']/2)
+
+
+if __name__=='__main__':unittest.main()

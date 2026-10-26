@@ -1,0 +1,20 @@
+{
+  "manufacturer_document": {
+    "url": "https://www.alphawire.com/disteAPI/SpecPDF/DownloadProductSpecPdf?productPartNumber=2841%2F7",
+    "sha256": "82249a4f9d7550c568bbee0b3e551441dfdf5ca75b56d55d733e2fc5cd231f7a",
+    "read": "Construction and Properties pages, downloaded 2026-10-26",
+    "redistributed": false,
+    "facts": {
+      "conductor_diameter_in_nominal": 0.012,
+      "jacket_diameter_in": [
+        0.022,
+        0.026
+      ],
+      "bend_radius": "10 times cable diameter",
+      "conductor_DCR_ohm_per_1000ft_at_20C_nominal": 94,
+      "pull_lbf_max": 0.88
+    }
+  },
+  "selection": "Only the internal two leads change to 30 AWG. External dock wires remain the preserved 26 AWG candidate. Smaller diameter permits routing within the existing shell; electrical fault, joint and pull qualification remain open.",
+  "voltage_drop_scope": "Wire-only nominal DC calculation; excludes contacts, solder, temperature rise, supply transients and fuse clearing. It is not an ampacity or short-circuit qualification."
+}

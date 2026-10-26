@@ -1,0 +1,61 @@
+{
+  "meshes": [
+    {
+      "file": "red-wire.stl",
+      "sha256": "e6fd2d07112c5f81023289b873f18bdf84e6da814e9aec130df1ec75df6a4bb1",
+      "triangles": 29036,
+      "vertices": 14520,
+      "bounds_mm": [
+        [
+          -17.08997344970703,
+          -13.937478065490723,
+          11.348047256469727
+        ],
+        [
+          22.431978225708008,
+          -3.00484037399292,
+          16.241832733154297
+        ]
+      ],
+      "dimensions_mm": [
+        39.52195167541504,
+        10.932637691497803,
+        4.89378547668457
+      ],
+      "signed_volume_mm3": 11.719237541252335,
+      "bad_edge_count": 0,
+      "collapsed_faces_at_1e_5mm": 0,
+      "connected_surfaces": 1,
+      "closed_oriented_manifold": true
+    },
+    {
+      "file": "black-wire.stl",
+      "sha256": "17493a84316f9ce0ba33f97b95aa20b0529b8a7eb6211bb6648caa75ed83751d",
+      "triangles": 29036,
+      "vertices": 14520,
+      "bounds_mm": [
+        [
+          -14.514829635620117,
+          -12.502111434936523,
+          11.376749992370605
+        ],
+        [
+          22.448230743408203,
+          10.510250091552734,
+          16.274795532226562
+        ]
+      ],
+      "dimensions_mm": [
+        36.96306037902832,
+        23.012361526489258,
+        4.898045539855957
+      ],
+      "signed_volume_mm3": 14.937759268026188,
+      "bad_edge_count": 0,
+      "collapsed_faces_at_1e_5mm": 0,
+      "connected_surfaces": 1,
+      "closed_oriented_manifold": true
+    }
+  ],
+  "physical_qualification": false
+}

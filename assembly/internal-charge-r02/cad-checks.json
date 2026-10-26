@@ -1,0 +1,38 @@
+{
+  "scope": "Actual nominal wire and maximum solder-envelope CAD; source-bound. No motion, strength, powered or physical ingress qualification.",
+  "inputs": {
+    "assembly/internal-charge-r02/harness.json": "6d0c5d325107305b65d477a76410f5fa3bbcdfc4ef73b85943bc937a82bec569",
+    "assembly/internal-charge-r02/harness.scad": "dd846c866a5a99040d0a4116bde032da52eae4f75d6ec86e077e23d36d71de69",
+    "assembly/internal-charge-r02/red-wire.stl": "e6fd2d07112c5f81023289b873f18bdf84e6da814e9aec130df1ec75df6a4bb1",
+    "assembly/internal-charge-r02/black-wire.stl": "17493a84316f9ce0ba33f97b95aa20b0529b8a7eb6211bb6648caa75ed83751d",
+    "assembly/internal-charge-r02/wire-meshes.json": "dfb36f98739352dfac0057fb238c0111c332dbec0492eb630e52820f6a1995d3",
+    "mechanical/swim-r16-contact-retention/body.stl": "dc32b424fd3daeb8c3e94c1a0d80e478be04bc2a9761ffc23ba84dd6373c657b",
+    "mechanical/swim-r16-contact-retention/positive_terminal.stl": "8edf076e834a5829627cfe63d90f30092760bc9a73f1266832797e2fdf1f0a1b",
+    "mechanical/swim-r16-contact-retention/negative_terminal.stl": "586122b1e22faf366a49b3d1c20a00a20c3572963fa665d23888d36f19122b81",
+    "mechanical/swim-r12-pack-retention/carrier.stl": "264977f7f5ace3d91765df91254d112af623e234d92399988934d4e82d6affcb",
+    "mechanical/swim-r11-thermal-fit/retainer.stl": "8825ef3a509be8ff69f04bfcaee53d03e37bd0c4c726ec0d94249faa62bec138"
+  },
+  "controls": [
+    {
+      "name": "body_carrier_components_and_joint_envelopes",
+      "empty": true,
+      "volume_mm3": 0,
+      "diagnostic": "Geometries in cache: 134\nGeometry cache size in bytes: 6319424\nCGAL Polyhedrons in cache: 4\nCGAL cache size in bytes: 92522616\nTotal rendering time: 0:01:25.578\nCurrent top level object is empty.\n"
+    },
+    {
+      "name": "terminal_hole_passage",
+      "empty": true,
+      "volume_mm3": 0,
+      "diagnostic": "Geometries in cache: 6\nGeometry cache size in bytes: 4483920\nCGAL Polyhedrons in cache: 3\nCGAL cache size in bytes: 75962592\nTotal rendering time: 0:00:53.370\nCurrent top level object is empty.\n"
+    },
+    {
+      "name": "lowered_ground_wire_control",
+      "empty": false,
+      "volume_mm3": 1.5375091458712589,
+      "mesh_sha256": "523bd0d5ad9883741875365377f9b9d752bff551724fc33e0edf736b3248d62b",
+      "diagnostic": "Geometries in cache: 119\nGeometry cache size in bytes: 4266664\nCGAL Polyhedrons in cache: 2\nCGAL cache size in bytes: 3531720\nTotal rendering time: 0:00:10.033\n   Top level object is a 3D object:\n   Simple:        yes\n   Vertices:     1181\n   Halfedges:    5964\n   Edges:        2982\n   Halffacets:   3614\n   Facets:       1807\n   Volumes:         4\n"
+    }
+  ],
+  "preview_sha256": "5f43d31d7da3c3af5d031284e3700ac8a54bab69ffdd8f0018b233ccf9c2fc7b",
+  "physical_qualification": false
+}

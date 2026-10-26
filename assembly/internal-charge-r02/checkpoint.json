@@ -1,0 +1,26 @@
+{
+  "revision": "CT-INTERNAL-CHARGE-002-A",
+  "status": "WIP_NOT_MANUFACTURING_RELEASE",
+  "files": {
+    "assembly/internal-charge-r02/README.md": "bafa36a329f888a2e0503650c5c8a2b9ba81f5d7a8665a07ff53e3763d388a42",
+    "assembly/internal-charge-r02/black-wire.stl": "17493a84316f9ce0ba33f97b95aa20b0529b8a7eb6211bb6648caa75ed83751d",
+    "assembly/internal-charge-r02/cad-checks.json": "e77e4cfcb88b0f966934d19a84a9a682e2fd02124bec9e9a74a50cc816ff6687",
+    "assembly/internal-charge-r02/evidence/initial-harness.json": "19ef9a0511b94e10931392af6224693d53b61ff3cbc35d995d82a9f62d5c375d",
+    "assembly/internal-charge-r02/evidence/initial-route-checks.json": "51ac0115c47ff3c8e50d78a111e99e7e5ad03ada25b47cb8d7189075a4e840c7",
+    "assembly/internal-charge-r02/harness.json": "6d0c5d325107305b65d477a76410f5fa3bbcdfc4ef73b85943bc937a82bec569",
+    "assembly/internal-charge-r02/harness.scad": "dd846c866a5a99040d0a4116bde032da52eae4f75d6ec86e077e23d36d71de69",
+    "assembly/internal-charge-r02/motion-screen.json": "4b19372eda7896218acd34145f15ad6f715b38980397b593056903d20f090fbc",
+    "assembly/internal-charge-r02/red-wire.stl": "e6fd2d07112c5f81023289b873f18bdf84e6da814e9aec130df1ec75df6a4bb1",
+    "assembly/internal-charge-r02/review.png": "5f43d31d7da3c3af5d031284e3700ac8a54bab69ffdd8f0018b233ccf9c2fc7b",
+    "assembly/internal-charge-r02/route-checks.json": "f71c1b9bfe22110eab8afe48191cc5df883619fd9e8e516d7ffc67dc173d733a",
+    "assembly/internal-charge-r02/sources.json": "9c75c82ca18c0a9826474665b3d37c340d7e782caa567f43ba4339fae7d316ce",
+    "assembly/internal-charge-r02/wire-meshes.json": "dfb36f98739352dfac0057fb238c0111c332dbec0492eb630e52820f6a1995d3",
+    "requirements-harness.txt": "9b9d956448784cec3ac526c8f80d3a163334ad0e1608ca123b46028156211fe7",
+    "scripts/check_internal_harness.py": "38a8a3303c4627311759642b2a85fe2b87d7e8b62fc9fada3dc0876430204101",
+    "scripts/export_internal_harness.py": "35a23d89b5b0b03b0e6aae6bf0e0e645410312972b61ef7f494c248cd80af111",
+    "scripts/internal_harness_geometry.py": "f3f3315192d15c4f9a7f44b4c9a8db2aa682e0a2910504238a6de2bd50545134",
+    "scripts/screen_internal_harness_motion.py": "c83761f4405ee2aedca7ec99d8171a73dc6c384f58f00fd93d622522919011af",
+    "scripts/verify_internal_harness.py": "7659feb25e30ef9d96787257e83291c2fae3325392a944609579c19e13d9400b",
+    "tests/test_internal_harness.py": "dd783e743e981b055989939f976ad30e8b6808ccfad27d5e8e5b4997d61a2ad0"
+  }
+}
