@@ -6,7 +6,8 @@ comfort across dog sizes and coat types still need physical validation.
 
 **The r05l PCB passed two actual JLC PCB DFM analyses: 0 Danger / 0 Warning / 455 Good each.**
 Both used the same ZIP and unchanged rules, with all 29 rows analyzed. Native
-DRC/ERC/connectivity/parity have zero findings.
+DRC/ERC/connectivity/parity have zero findings. The current r05m Q1 sourcing
+revision preserves those Gerber bytes and also passes fresh native checks.
 
 The 40 × 32mm, six-layer nano-SIM board now implements a hardware hot/cold charging
 interlock independent of the MCU. Original component lands, placements and RF
@@ -25,18 +26,18 @@ remain open. Protected pack/NTC attachment, antenna qualification, harness/dock/
 shipping firmware and factory programming/test are not finished. Supplier procurement, CPL
 rotations and SMT acceptance remain open. PCB DFM does not prove a working device.
 
-[Candidate BOM](experiments/power-r05l-charge-interlock/assembly/candidate-bom.csv) ·
-[Candidate CPL](experiments/power-r05l-charge-interlock/assembly/candidate-cpl.csv) ·
+[Current BOM](assembly/pcba-r03/bom.csv) ·
+[JLC review CPL](assembly/pcba-r03/cpl-jlc-review.csv) ·
 [Charge review](assembly/charge-interlock-r01/README.md) ·
 [r05l source and limits](experiments/power-r05l-charge-interlock/README.md)
 
-The [current PCBA review](assembly/pcba-r02/README.md) retains actual JLC matching
-(43/44 exact MPNs) and 13 angle corrections, then resolves J1/J2's model-origin
-offset against manufacturer lands and the actual supplier preview. Connector/Q1
-pin functions and a placement-reference drawing are included. Q1 sourcing,
-J6's missing model and complete SMT acceptance remain open. The 80-part preview
-is incomplete; all 81 references remain in the local BOM/CPL. The PCB and its
-two clean DFM results are unchanged. [Current review ZIP](release/collar-tracker-r05l-pcba-r02-review.zip).
+The [current PCBA review](assembly/pcba-r03/README.md) selects stocked ROHM
+UM6K34NTCN for Q1. JLC now matches all 44 MPNs; all 81 reference/part/side/position/
+angle entries were verified against the actual supplier read-back. Native copper
+and the Gerber remain unchanged. The first actual SMT run has unresolved findings,
+and J6's full model/pin acceptance remains open. The
+[current review ZIP](release/collar-tracker-r05m-pcba-r03-review.zip) includes the
+non-passing SMT report and its disposition; PCBA order readiness remains NO.
 
 The latest [r16 contact retention](mechanical/swim-r16-contact-retention/README.md)
 adds rear terminal bearing plates and internal pockets without changing the PCB

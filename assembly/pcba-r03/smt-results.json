@@ -1,0 +1,4548 @@
+{
+  "pcb_record": "637366801595977730",
+  "raw_zip_sha256": "03616716551e45fb101a347650c01b2e4fac864faac185994a0ac5f4f0af7017",
+  "actions": [
+    {
+      "categories": [
+        {
+          "description": "\u68c0\u6d4b\u5143\u4ef6\u63d2\u811a\u76f8\u8f83\u4e8e\u63d2\u5b54\u7684\u5c3a\u5bf8\u6765\u8bf4\u662f\u5426\u8fc7\u5927",
+          "details": "\u68c0\u6d4b\u5143\u4ef6\u63d2\u811a\u76f8\u8f83\u4e8e\u63d2\u5b54\u7684\u5c3a\u5bf8\u6765\u8bf4\u662f\u5426\u8fc7\u5927",
+          "language": {
+            "description": {
+              "cn": "\u68c0\u6d4b\u5143\u4ef6\u63d2\u811a\u76f8\u8f83\u4e8e\u63d2\u5b54\u7684\u5c3a\u5bf8\u6765\u8bf4\u662f\u5426\u8fc7\u5927",
+              "en": "Detect misalignment of component through-hole pins to pad holes"
+            },
+            "details": {
+              "cn": "\u68c0\u6d4b\u5143\u4ef6\u63d2\u811a\u76f8\u8f83\u4e8e\u63d2\u5b54\u7684\u5c3a\u5bf8\u6765\u8bf4\u662f\u5426\u8fc7\u5927\u3002",
+              "en": "Misalignment between component through-hole lpins and pad holes can make components difficult to insert. Larger offsets make insertion more difficult. Misalignment is rarely a design issue, usually caused by component positioning/rotation."
+            },
+            "title": {
+              "cn": "\u5143\u4ef6\u63d2\u4ef6\u5c3a\u5bf8\u8fc7\u5927\u9884\u8b66",
+              "en": "Component through-hole"
+            }
+          },
+          "name": "big_tht",
+          "range": [
+            1.0,
+            2.0,
+            3.0
+          ],
+          "title": "\u5143\u4ef6\u63d2\u4ef6\u5c3a\u5bf8\u8fc7\u5927\u9884\u8b66",
+          "type": "CGT_DOUBLE_VALUE"
+        },
+        {
+          "description": "\u5143\u4ef6\u78b0\u649e\u9884\u8b66;\u5143\u4ef61;\u5143\u4ef62",
+          "details": "\u5143\u4ef6\u592a\u8fd1\u4f1a\u5bfc\u81f4\u8d34\u88c5\u78b0\u649e\uff0c\u4e0d\u540c\u5927\u5c0f\u7684\u5143\u4ef6\u5bf9\u5b89\u5168\u95f4\u8ddd\u6709\u4e0d\u540c\u8981\u6c42\uff0c\u672c\u68c0\u6d4b\u9879\u662f\u6839\u636e\u5143\u4ef6\u5927\u5c0f\u6765\u68c0\u6d4b\u5143\u4ef6\u78b0\u649e\u5b89\u5168\u98ce\u9669\uff0c\u5c3a\u5bf8\u8d8a\u5927\u8981\u6c42\u7684\u95f4\u8ddd\u8d8a\u5927\u3002\u68c0\u6d4b\u65b9\u5f0f\u662f\u5143\u4ef6\u6309\u6bd4\u4f8b\u653e\u5927\u8fdb\u884c\u78b0\u649e\uff0c\u7ed3\u679c\u503c\u5c31\u662f\u653e\u5927\u6bd4\u4f8b\uff0c\u6bd4\u5982\uff1a0.06\u8868\u793a\u653e\u5927 6% \u540e\uff0c\u4e24\u5143\u4ef6\u5c31\u78b0\u649e\u4e86\u3002",
+          "language": {
+            "description": {
+              "cn": "\u5143\u4ef6\u78b0\u649e\u9884\u8b66;\u5143\u4ef61;\u5143\u4ef62",
+              "en": "Component collision warning;Component 1;Component 2"
+            },
+            "details": {
+              "cn": "\u5143\u4ef6\u592a\u8fd1\u4f1a\u5bfc\u81f4\u8d34\u88c5\u78b0\u649e\uff0c\u4e0d\u540c\u5927\u5c0f\u7684\u5143\u4ef6\u5bf9\u5b89\u5168\u95f4\u8ddd\u6709\u4e0d\u540c\u8981\u6c42\uff0c\u672c\u68c0\u6d4b\u9879\u662f\u6839\u636e\u5143\u4ef6\u5927\u5c0f\u6765\u68c0\u6d4b\u5143\u4ef6\u78b0\u649e\u5b89\u5168\u98ce\u9669\uff0c\u5c3a\u5bf8\u8d8a\u5927\u8981\u6c42\u7684\u95f4\u8ddd\u8d8a\u5927\u3002\u68c0\u6d4b\u65b9\u5f0f\u662f\u5143\u4ef6\u6309\u6bd4\u4f8b\u653e\u5927\u8fdb\u884c\u78b0\u649e\uff0c\u7ed3\u679c\u503c\u5c31\u662f\u653e\u5927\u6bd4\u4f8b\uff0c\u6bd4\u5982\uff1a0.06\u8868\u793a\u653e\u5927 6% \u540e\uff0c\u4e24\u5143\u4ef6\u5c31\u78b0\u649e\u4e86\u3002",
+              "en": "Components placed too close can collide during assembly. Different sized components require different clearances, with larger sizes needing more spacing. Collision detection inflates components and reports the scale factor when collision occurs, e.g. 0.06 means 6% inflation caused a collision."
+            },
+            "title": {
+              "cn": "\u5143\u4ef6\u78b0\u649e\u9884\u8b66",
+              "en": "Component collision warning"
+            }
+          },
+          "name": "c2c_size",
+          "range": [
+            0.06,
+            0.1,
+            0.15
+          ],
+          "title": "\u5143\u4ef6\u78b0\u649e\u9884\u8b66",
+          "type": "CGT_DOUBLE_VALUE"
+        },
+        {
+          "description": "\u5143\u4ef6\u8ddd\u5143\u4ef6;\u5143\u4ef61;\u5143\u4ef62",
+          "details": "\u4e24\u4e2a\u5143\u4ef6\u95f4\u8ddd\u592a\u8fd1\uff0c\u5728\u751f\u4ea7\u8fc7\u7a0b\u4e2d\u4f1a\u6709\u78b0\u649e\u7684\u98ce\u9669\u3002",
+          "language": {
+            "description": {
+              "cn": "\u5143\u4ef6\u8ddd\u5143\u4ef6;\u5143\u4ef61;\u5143\u4ef62",
+              "en": "Component to component spacing;Component 1;Component 2"
+            },
+            "details": {
+              "cn": "\u4e24\u4e2a\u5143\u4ef6\u95f4\u8ddd\u592a\u8fd1\uff0c\u5728\u751f\u4ea7\u8fc7\u7a0b\u4e2d\u4f1a\u6709\u78b0\u649e\u7684\u98ce\u9669\u3002",
+              "en": "Components spaced too close risk collisions during assembly."
+            },
+            "title": {
+              "cn": "\u5143\u4ef6\u8ddd\u5143\u4ef6",
+              "en": "Component spacing"
+            }
+          },
+          "name": "comp2comp",
+          "range": [
+            8.0,
+            12.0,
+            16.0
+          ],
+          "title": "\u5143\u4ef6\u8ddd\u5143\u4ef6",
+          "type": "CGT_LINE_SEGMENT"
+        },
+        {
+          "description": "\u6d4b\u91cf\u5143\u4ef6\u7684\u8fb9\u754c\u4e0e\u677f\u5b50\u8fb9\u7f18\u7684\u8ddd\u79bb",
+          "details": "\u5143\u4ef6\u8ddd\u677f\u8fb9\u592a\u8fd1\uff0c\u4f1a\u5bfc\u81f4\u4e0e\u8d34\u88c5\u8bbe\u5907\u6709\u78b0\u649e\u7684\u98ce\u9669\u3002",
+          "language": {
+            "description": {
+              "cn": "\u6d4b\u91cf\u5143\u4ef6\u7684\u8fb9\u754c\u4e0e\u677f\u5b50\u8fb9\u7f18\u7684\u8ddd\u79bb",
+              "en": "Measure distance from component outline to the board edge"
+            },
+            "details": {
+              "cn": "\u5143\u4ef6\u8ddd\u677f\u8fb9\u592a\u8fd1\uff0c\u4f1a\u5bfc\u81f4\u4e0e\u8d34\u88c5\u8bbe\u5907\u6709\u78b0\u649e\u7684\u98ce\u9669\u3002",
+              "en": "Components too close to the board edge risk colliding with assembly equipment."
+            },
+            "title": {
+              "cn": "\u5143\u4ef6\u8ddd\u677f\u8fb9\u7684\u8ddd\u79bb",
+              "en": "Component to board edge distance"
+            }
+          },
+          "name": "comp2edge",
+          "range": [
+            20.0,
+            32.0,
+            40.0
+          ],
+          "title": "\u5143\u4ef6\u8ddd\u677f\u8fb9\u7684\u8ddd\u79bb",
+          "type": "CGT_LINE_SEGMENT"
+        },
+        {
+          "description": "\u68c0\u6d4b\u8d34\u88c5\u5143\u4ef6\u710a\u811a\u5230\u5b54\u7684\u8ddd\u79bb",
+          "details": "\u8d34\u88c5\u5143\u4ef6\u710a\u811a\u4e0e\u5468\u8fb9\u7684PTH\u5b54\u592a\u8fd1\uff0c\u4f1a\u5bfc\u81f4\u6d41\u9521\u865a\u710a\u98ce\u9669\u3002",
+          "language": {
+            "description": {
+              "cn": "\u68c0\u6d4b\u8d34\u88c5\u5143\u4ef6\u710a\u811a\u5230\u5b54\u7684\u8ddd\u79bb",
+              "en": "Detect clearance of component leads to holes"
+            },
+            "details": {
+              "cn": "\u8d34\u88c5\u5143\u4ef6\u710a\u811a\u4e0e\u5468\u8fb9\u7684PTH\u5b54\u592a\u8fd1\uff0c\u4f1a\u5bfc\u81f4\u6d41\u9521\u865a\u710a\u98ce\u9669\u3002",
+              "en": "Component leads too close to plated through-holes risk unstable solder joints from solder wicking."
+            },
+            "title": {
+              "cn": "\u5143\u4ef6\u710a\u811a\u5230\u5b54\u7684\u8ddd\u79bb",
+              "en": "Lead to hole distance"
+            }
+          },
+          "name": "comp2hole",
+          "range": [
+            8.0,
+            10.0,
+            12.0
+          ],
+          "title": "\u5143\u4ef6\u710a\u811a\u5230\u5b54\u7684\u8ddd\u79bb",
+          "type": "CGT_LINE_SEGMENT"
+        },
+        {
+          "description": "\u68c0\u6d4b\u5143\u5668\u4ef6\u672c\u4f53\u662f\u5426\u5b58\u5728\u4e1d\u5370\u6587\u5b57",
+          "details": "\u68c0\u6d4b\u5143\u5668\u4ef6\u672c\u4f53\u662f\u5426\u5b58\u5728\u4e1d\u5370\u6587\u5b57",
+          "language": {
+            "description": {
+              "cn": "\u68c0\u6d4b\u5143\u5668\u4ef6\u672c\u4f53\u662f\u5426\u5b58\u5728\u4e1d\u5370\u6587\u5b57",
+              "en": "Detect misalignment of component through-hole pins to pad holes"
+            },
+            "details": {
+              "cn": "\u68c0\u6d4b\u5143\u5668\u4ef6\u672c\u4f53\u662f\u5426\u5b58\u5728\u4e1d\u5370\u6587\u5b57",
+              "en": "Misalignment between component through-hole lpins and pad holes can make components difficult to insert. Larger offsets make insertion more difficult. Misalignment is rarely a design issue, usually caused by component positioning/rotation."
+            },
+            "title": {
+              "cn": "\u5143\u4ef6\u672c\u4f53\u6587\u5b57\u9884\u8b66",
+              "en": "Component through-hole"
+            }
+          },
+          "name": "comp_body_has_ss",
+          "range": null,
+          "title": "\u5143\u4ef6\u672c\u4f53\u6587\u5b57\u9884\u8b66",
+          "type": "CGT_WARNING_VALUE"
+        },
+        {
+          "description": "\u68c0\u6d4b\u540c\u4e00\u5143\u4ef6\u5404\u710a\u811a\u710a\u76d8\u4e4b\u95f4\u7684\u95f4\u8ddd",
+          "details": "\u68c0\u6d4b\u8d34\u7247\u5143\u4ef6\u5404pin\u5bf9\u5e94\u7684\u710a\u76d8\u95f4\u7684\u95f4\u8ddd\uff0c\u95f4\u8ddd\u592a\u5c0f\u5bb9\u6613\u79ef\u9521\u77ed\u8def\u3002",
+          "language": {
+            "description": {
+              "cn": "\u68c0\u6d4b\u540c\u4e00\u5143\u4ef6\u5404\u710a\u811a\u710a\u76d8\u4e4b\u95f4\u7684\u95f4\u8ddd",
+              "en": "Detect clearance between pads of the same component"
+            },
+            "details": {
+              "cn": "\u68c0\u6d4b\u8d34\u7247\u5143\u4ef6\u5404pin\u5bf9\u5e94\u7684\u710a\u76d8\u95f4\u7684\u95f4\u8ddd\uff0c\u95f4\u8ddd\u592a\u5c0f\u5bb9\u6613\u79ef\u9521\u77ed\u8def\u3002",
+              "en": "Checks spacing between pads of the same SMD component, as spacing too tight can cause solder bridging."
+            },
+            "title": {
+              "cn": "\u5143\u4ef6\u710a\u76d8\u95f4\u8ddd",
+              "en": "Coponent pad spacing"
+            }
+          },
+          "name": "comp_p2p",
+          "range": [
+            6.0,
+            8.0,
+            10.0
+          ],
+          "title": "\u5143\u4ef6\u710a\u76d8\u95f4\u8ddd",
+          "type": "CGT_LINE_SEGMENT"
+        },
+        {
+          "description": "\u68c0\u6d4b\u5143\u4ef6\u8d85\u51fa\u677f\u8fb9\u65f6\u4e0e\u677f\u8fb9\u76f8\u4ea4\u5f62\u6210\u7684\u4ea4\u53c9\u7ebf",
+          "details": "\u5143\u4ef6\u5728\u677f\u5b50\u8fb9\u7f18\uff0c\u5e76\u8d85\u51fa\u677f\u5916\uff0c\u5143\u4ef6\u88c5\u914d\u65f6\u5bb9\u6613\u649e\u673a\u5668\u8131\u843d\uff0c\u7279\u6b8a\u8bbe\u8ba1\u7684\u5143\u4ef6\u53ef\u5ffd\u7565\u8fd9\u7c7b\u9519\u8bef\uff08\u6bd4\u5982\uff1aUSB\u63a5\u5934\uff09\u3002\u6ce8\u610f\uff1a\u5f53PCB\u4e0d\u80fd\u8bc6\u522b\u51fa\u5916\u578b\u5c42\u7684\u65f6\u5019\uff0c\u4e0d\u4f1a\u62a5\u544a\u8fd9\u7c7b\u9519\u8bef",
+          "language": {
+            "description": {
+              "cn": "\u68c0\u6d4b\u5143\u4ef6\u8d85\u51fa\u677f\u8fb9\u65f6\u4e0e\u677f\u8fb9\u76f8\u4ea4\u5f62\u6210\u7684\u4ea4\u53c9\u7ebf",
+              "en": "Detect component boundary clipping by the board outline"
+            },
+            "details": {
+              "cn": "\u5143\u4ef6\u5728\u677f\u5b50\u8fb9\u7f18\uff0c\u5e76\u8d85\u51fa\u677f\u5916\uff0c\u5143\u4ef6\u88c5\u914d\u65f6\u5bb9\u6613\u649e\u673a\u5668\u8131\u843d\uff0c\u7279\u6b8a\u8bbe\u8ba1\u7684\u5143\u4ef6\u53ef\u5ffd\u7565\u8fd9\u7c7b\u9519\u8bef\uff08\u6bd4\u5982\uff1aUSB\u63a5\u5934\uff09\u3002\u6ce8\u610f\uff1a\u5f53PCB\u4e0d\u80fd\u8bc6\u522b\u51fa\u5916\u578b\u5c42\u7684\u65f6\u5019\uff0c\u4e0d\u4f1a\u62a5\u544a\u8fd9\u7c7b\u9519\u8bef",
+              "en": "Components overhanging the board edge can collide with assembly equipment and dislodge, unless by special design (like USB connectors). Note: These errors are not reported when no board outline has been detected."
+            },
+            "title": {
+              "cn": "\u5143\u4ef6\u4e0e\u677f\u6846\u76f8\u4ea4",
+              "en": "Component clipped by board outline"
+            }
+          },
+          "name": "comp_x_edge",
+          "range": null,
+          "title": "\u5143\u4ef6\u4e0e\u677f\u6846\u76f8\u4ea4",
+          "type": "CGT_WARNING_VALUE"
+        },
+        {
+          "description": "\u6d4b\u91cfl\u5143\u4ef6\u5f15\u811a\u8fb9\u754c\u662f\u5426\u8d85\u51fa\u4e86\u710a\u76d8\u8fb9\u754c",
+          "details": "\u672c\u9879\u68c0\u6d4b\u5f15\u811a\u5185\u4fa7\u8fb9\u7f18\u662f\u5426\u4f1a\u8d85\u51fa\u710a\u76d8\u8fb9\u7f18\uff0c\u5143\u4ef6\u5f15\u811a\u710a\u63a5\u533a\u57df\u8d85\u51fa\u710a\u76d8\uff0c\u5f71\u54cd\u710a\u63a5\u54c1\u8d28\uff0c\u5982\u679c\u662f\u7279\u6b8a\u8bbe\u8ba1\u53ef\u5ffd\u7565\u3002",
+          "language": {
+            "description": {
+              "cn": "\u6d4b\u91cfl\u5143\u4ef6\u5f15\u811a\u8fb9\u754c\u662f\u5426\u8d85\u51fa\u4e86\u710a\u76d8\u8fb9\u754c",
+              "en": "Measure if component pin edges extend past pad edges"
+            },
+            "details": {
+              "cn": "\u672c\u9879\u68c0\u6d4b\u5f15\u811a\u5185\u4fa7\u8fb9\u7f18\u662f\u5426\u4f1a\u8d85\u51fa\u710a\u76d8\u8fb9\u7f18\uff0c\u5143\u4ef6\u5f15\u811a\u710a\u63a5\u533a\u57df\u8d85\u51fa\u710a\u76d8\uff0c\u5f71\u54cd\u710a\u63a5\u54c1\u8d28\uff0c\u5982\u679c\u662f\u7279\u6b8a\u8bbe\u8ba1\u53ef\u5ffd\u7565\u3002",
+              "en": "Checks if a pin's inner edge extends past its corresponding pad edge, as this can affect solderability if excessive, unless by special design."
+            },
+            "title": {
+              "cn": "PIN\u811a\u5185\u8fb9\u754c",
+              "en": "Pin inner edge"
+            }
+          },
+          "name": "pin_i_edge",
+          "range": null,
+          "title": "PIN\u811a\u5185\u8fb9\u754c",
+          "type": "CGT_ERROR_VALUE"
+        },
+        {
+          "description": "\u6d4b\u91cf\u5143\u4ef6\u5f15\u811a\u8fb9\u754c\u662f\u5426\u8d85\u51fa\u4e86\u710a\u76d8\u8fb9\u754c",
+          "details": "\u672c\u9879\u68c0\u6d4b\u5f15\u811a\u5de6\u4fa7\u8fb9\u7f18\u662f\u5426\u4f1a\u8d85\u51fa\u710a\u76d8\u8fb9\u7f18\uff0c\u5143\u4ef6\u5f15\u811a\u710a\u63a5\u533a\u57df\u8d85\u51fa\u710a\u76d8\uff0c\u5f71\u54cd\u710a\u63a5\u54c1\u8d28\uff0c\u5982\u679c\u662f\u7279\u6b8a\u8bbe\u8ba1\u53ef\u5ffd\u7565\u3002",
+          "language": {
+            "description": {
+              "cn": "\u6d4b\u91cf\u5143\u4ef6\u5f15\u811a\u8fb9\u754c\u662f\u5426\u8d85\u51fa\u4e86\u710a\u76d8\u8fb9\u754c",
+              "en": "Measure if component pin edges extend past pad edges"
+            },
+            "details": {
+              "cn": "\u672c\u9879\u68c0\u6d4b\u5f15\u811a\u5de6\u4fa7\u8fb9\u7f18\u662f\u5426\u4f1a\u8d85\u51fa\u710a\u76d8\u8fb9\u7f18\uff0c\u5143\u4ef6\u5f15\u811a\u710a\u63a5\u533a\u57df\u8d85\u51fa\u710a\u76d8\uff0c\u5f71\u54cd\u710a\u63a5\u54c1\u8d28\uff0c\u5982\u679c\u662f\u7279\u6b8a\u8bbe\u8ba1\u53ef\u5ffd\u7565\u3002",
+              "en": "Checks if a pin's left edge extends past its corresponding pad edge, as this can affect solderability if excessive, unless by special design."
+            },
+            "title": {
+              "cn": "PIN\u811a\u5de6\u8fb9\u754c",
+              "en": "Pin left edge"
+            }
+          },
+          "name": "pin_l_edge",
+          "range": null,
+          "title": "PIN\u811a\u5de6\u8fb9\u754c",
+          "type": "CGT_ERROR_VALUE"
+        },
+        {
+          "description": "\u68c0\u6d4b\u8d34\u88c5\u5143\u4ef6\u7684\u710a\u811a\u662f\u5426\u6709\u710a\u76d8",
+          "details": "\u5927\u591a\u6570PIN\u90fd\u662f\u6709\u710a\u76d8\u7684\uff0c\u51fa\u73b0\u8fd9\u79cd\u60c5\u51b5\u7684\u5927\u90e8\u5206\u662f\u4e00\u822c\u662f\u89d2\u5ea6\u4e0d\u5bf9\uff0c\u6216\u8005\u662f\u5143\u4ef6\u6ca1\u6709\u5bf9\u9f50\uff0c\u5982\u679c\u662f\u7279\u6b8a\u8bbe\u8ba1\u8bf7\u5ffd\u7565\u3002",
+          "language": {
+            "description": {
+              "cn": "\u68c0\u6d4b\u8d34\u88c5\u5143\u4ef6\u7684\u710a\u811a\u662f\u5426\u6709\u710a\u76d8",
+              "en": "Detect if component pins without pads"
+            },
+            "details": {
+              "cn": "\u5927\u591a\u6570PIN\u90fd\u662f\u6709\u710a\u76d8\u7684\uff0c\u51fa\u73b0\u8fd9\u79cd\u60c5\u51b5\u7684\u5927\u90e8\u5206\u662f\u4e00\u822c\u662f\u89d2\u5ea6\u4e0d\u5bf9\uff0c\u6216\u8005\u662f\u5143\u4ef6\u6ca1\u6709\u5bf9\u9f50\uff0c\u5982\u679c\u662f\u7279\u6b8a\u8bbe\u8ba1\u8bf7\u5ffd\u7565\u3002",
+              "en": "Most pins require pads, so missing pads are generally due to misalignment or orientation issues, unless by special design."
+            },
+            "title": {
+              "cn": "PIN\u811a\u65e0\u710a\u76d8",
+              "en": "Pin without pad"
+            }
+          },
+          "name": "pin_non_pad",
+          "range": null,
+          "title": "PIN\u811a\u65e0\u710a\u76d8",
+          "type": "CGT_ERROR_VALUE"
+        },
+        {
+          "description": "\u6d4b\u91cf\u5143\u4ef6\u5f15\u811a\u8fb9\u754c\u662f\u5426\u8d85\u51fa\u4e86\u710a\u76d8\u8fb9\u754c",
+          "details": "\u672c\u9879\u68c0\u6d4b\u5f15\u811a\u5916\u4fa7\u8fb9\u7f18\u662f\u5426\u4f1a\u8d85\u51fa\u710a\u76d8\u8fb9\u7f18\uff0c\u5143\u4ef6\u5f15\u811a\u710a\u63a5\u533a\u57df\u8d85\u51fa\u710a\u76d8\uff0c\u5f71\u54cd\u710a\u63a5\u54c1\u8d28\uff0c\u5982\u679c\u662f\u7279\u6b8a\u8bbe\u8ba1\u53ef\u5ffd\u7565\u3002",
+          "language": {
+            "description": {
+              "cn": "\u6d4b\u91cf\u5143\u4ef6\u5f15\u811a\u8fb9\u754c\u662f\u5426\u8d85\u51fa\u4e86\u710a\u76d8\u8fb9\u754c",
+              "en": "Measure if component pin edges extend past pad edges"
+            },
+            "details": {
+              "cn": "\u672c\u9879\u68c0\u6d4b\u5f15\u811a\u5916\u4fa7\u8fb9\u7f18\u662f\u5426\u4f1a\u8d85\u51fa\u710a\u76d8\u8fb9\u7f18\uff0c\u5143\u4ef6\u5f15\u811a\u710a\u63a5\u533a\u57df\u8d85\u51fa\u710a\u76d8\uff0c\u5f71\u54cd\u710a\u63a5\u54c1\u8d28\uff0c\u5982\u679c\u662f\u7279\u6b8a\u8bbe\u8ba1\u53ef\u5ffd\u7565\u3002",
+              "en": "Checks if a pin's outer edge extends past its corresponding pad edge, as this can affect solderability if excessive, unless by special design."
+            },
+            "title": {
+              "cn": "PIN\u811a\u5916\u8fb9\u754c",
+              "en": "Pin outer edge"
+            }
+          },
+          "name": "pin_o_edge",
+          "range": null,
+          "title": "PIN\u811a\u5916\u8fb9\u754c",
+          "type": "CGT_ERROR_VALUE"
+        },
+        {
+          "description": "\u6d4b\u91cf\u5143\u4ef6\u5f15\u811a\u8fb9\u754c\u662f\u5426\u8d85\u51fa\u4e86\u710a\u76d8\u8fb9\u754c",
+          "details": "\u672c\u9879\u68c0\u6d4b\u5f15\u811a\u53f3\u4fa7\u8fb9\u7f18\u662f\u5426\u4f1a\u8d85\u51fa\u710a\u76d8\u8fb9\u7f18\uff0c\u5143\u4ef6\u5f15\u811a\u710a\u63a5\u533a\u57df\u8d85\u51fa\u710a\u76d8\uff0c\u5f71\u54cd\u710a\u63a5\u54c1\u8d28\uff0c\u5982\u679c\u662f\u7279\u6b8a\u8bbe\u8ba1\u53ef\u5ffd\u7565\u3002",
+          "language": {
+            "description": {
+              "cn": "\u6d4b\u91cf\u5143\u4ef6\u5f15\u811a\u8fb9\u754c\u662f\u5426\u8d85\u51fa\u4e86\u710a\u76d8\u8fb9\u754c",
+              "en": "Measure if component pin edges extend past pad edges"
+            },
+            "details": {
+              "cn": "\u672c\u9879\u68c0\u6d4b\u5f15\u811a\u53f3\u4fa7\u8fb9\u7f18\u662f\u5426\u4f1a\u8d85\u51fa\u710a\u76d8\u8fb9\u7f18\uff0c\u5143\u4ef6\u5f15\u811a\u710a\u63a5\u533a\u57df\u8d85\u51fa\u710a\u76d8\uff0c\u5f71\u54cd\u710a\u63a5\u54c1\u8d28\uff0c\u5982\u679c\u662f\u7279\u6b8a\u8bbe\u8ba1\u53ef\u5ffd\u7565\u3002",
+              "en": "Checks if a pin's right edge extends past its corresponding pad edge, as this can affect solderability if excessive, unless by special design."
+            },
+            "title": {
+              "cn": "PIN\u811a\u53f3\u8fb9\u754c",
+              "en": "Pin right edge"
+            }
+          },
+          "name": "pin_r_edge",
+          "range": null,
+          "title": "PIN\u811a\u53f3\u8fb9\u754c",
+          "type": "CGT_ERROR_VALUE"
+        },
+        {
+          "description": "\u68c0\u6d4b\u5143\u4ef6\u63d2\u811a\u76f8\u8f83\u4e8e\u63d2\u5b54\u7684\u5c3a\u5bf8\u6765\u8bf4\u662f\u5426\u8fc7\u5c0f",
+          "details": "\u68c0\u6d4b\u5143\u4ef6\u63d2\u811a\u76f8\u8f83\u4e8e\u63d2\u5b54\u7684\u5c3a\u5bf8\u6765\u8bf4\u662f\u5426\u8fc7\u5c0f",
+          "language": {
+            "description": {
+              "cn": "\u68c0\u6d4b\u5143\u4ef6\u63d2\u811a\u76f8\u8f83\u4e8e\u63d2\u5b54\u7684\u5c3a\u5bf8\u6765\u8bf4\u662f\u5426\u8fc7\u5c0f",
+              "en": "Detect misalignment of component through-hole pins to pad holes"
+            },
+            "details": {
+              "cn": "\u68c0\u6d4b\u5143\u4ef6\u63d2\u811a\u76f8\u8f83\u4e8e\u63d2\u5b54\u7684\u5c3a\u5bf8\u6765\u8bf4\u662f\u5426\u8fc7\u5c0f",
+              "en": "Misalignment between component through-hole lpins and pad holes can make components difficult to insert. Larger offsets make insertion more difficult. Misalignment is rarely a design issue, usually caused by component positioning/rotation."
+            },
+            "title": {
+              "cn": "\u5143\u4ef6\u63d2\u4ef6\u5c3a\u5bf8\u8fc7\u5c0f\u9884\u8b66",
+              "en": "Component through-hole"
+            }
+          },
+          "name": "small_tht",
+          "range": [
+            5.0,
+            4.0,
+            3.0
+          ],
+          "title": "\u5143\u4ef6\u63d2\u4ef6\u5c3a\u5bf8\u8fc7\u5c0f\u9884\u8b66",
+          "type": "CGT_DOUBLE_VALUE"
+        },
+        {
+          "description": "\u68c0\u6d4b\u5143\u4ef6\u63d2\u811a\u4e0e\u5bf9\u5e94\u7684\u5b54\u7684\u4e2d\u5fc3\u70b9\u7684\u5bf9\u9f50\u6570\u636e",
+          "details": "\u5143\u4ef6\u7684\u63d2\u811apin\u4e0e\u5b54\u4e2d\u5fc3\u5982\u679c\u6709\u504f\u5dee\u4f1a\u5bfc\u81f4\u96be\u4ee5\u63d2\u4ef6\uff0c\u504f\u5dee\u8d8a\u5927\uff0c\u8d8a\u96be\u63d2\u3002\u8bbe\u8ba1\u5c42\u9762\u5f88\u5c11\u4f1a\u72af\u8fd9\u6837\u7684\u9519\u8bef\uff0c\u5927\u591a\u6570\u662f\u5143\u4ef6\u6446\u653e\u6ca1\u6709\u5bf9\u9f50\u5f15\u8d77\u7684\u3002",
+          "language": {
+            "description": {
+              "cn": "\u68c0\u6d4b\u5143\u4ef6\u63d2\u811a\u4e0e\u5bf9\u5e94\u7684\u5b54\u7684\u4e2d\u5fc3\u70b9\u7684\u5bf9\u9f50\u6570\u636e",
+              "en": "Detect misalignment of component through-hole pins to pad holes"
+            },
+            "details": {
+              "cn": "\u5143\u4ef6\u7684\u63d2\u811apin\u4e0e\u5b54\u4e2d\u5fc3\u5982\u679c\u6709\u504f\u5dee\u4f1a\u5bfc\u81f4\u96be\u4ee5\u63d2\u4ef6\uff0c\u504f\u5dee\u8d8a\u5927\uff0c\u8d8a\u96be\u63d2\u3002\u8bbe\u8ba1\u5c42\u9762\u5f88\u5c11\u4f1a\u72af\u8fd9\u6837\u7684\u9519\u8bef\uff0c\u5927\u591a\u6570\u662f\u5143\u4ef6\u6446\u653e\u6ca1\u6709\u5bf9\u9f50\u5f15\u8d77\u7684\u3002",
+              "en": "Misalignment between component through-hole lpins and pad holes can make components difficult to insert. Larger offsets make insertion more difficult. Misalignment is rarely a design issue, usually caused by component positioning/rotation."
+            },
+            "title": {
+              "cn": "\u5143\u4ef6\u63d2\u4ef6\u5b54",
+              "en": "Component through-hole"
+            }
+          },
+          "name": "tht2hole",
+          "range": [
+            8.0,
+            6.0,
+            3.0
+          ],
+          "title": "\u5143\u4ef6\u63d2\u4ef6\u5b54",
+          "type": "CGT_LINE_SEGMENT"
+        },
+        {
+          "description": "\u68c0\u6d4b\u5143\u5668\u4ef6\u7684\u63d2\u5b54\u662f\u5426\u5b58\u5728\u91cd\u53e0\u73b0\u8c61",
+          "details": "\u68c0\u6d4b\u5143\u5668\u4ef6\u7684\u63d2\u5b54\u662f\u5426\u5b58\u5728\u91cd\u53e0\u73b0\u8c61",
+          "language": {
+            "description": {
+              "cn": "\u68c0\u6d4b\u5143\u5668\u4ef6\u7684\u63d2\u5b54\u662f\u5426\u5b58\u5728\u91cd\u53e0\u73b0\u8c61",
+              "en": "Detect misalignment of component through-hole pins to pad holes"
+            },
+            "details": {
+              "cn": "\u68c0\u6d4b\u5143\u5668\u4ef6\u7684\u63d2\u5b54\u662f\u5426\u5b58\u5728\u91cd\u53e0\u73b0\u8c61",
+              "en": "Misalignment between component through-hole lpins and pad holes can make components difficult to insert. Larger offsets make insertion more difficult. Misalignment is rarely a design issue, usually caused by component positioning/rotation."
+            },
+            "title": {
+              "cn": "\u5143\u4ef6\u63d2\u4ef6\u91cd\u53e0\u9884\u8b66",
+              "en": "Component through-hole"
+            }
+          },
+          "name": "tht_hole_overlap",
+          "range": null,
+          "title": "\u5143\u4ef6\u63d2\u4ef6\u91cd\u53e0\u9884\u8b66",
+          "type": "CGT_WARNING_VALUE"
+        },
+        {
+          "description": "\u68c0\u6d4b\u6ca1\u6709\u63d2\u4ef6\u5b54\u7684\u5143\u4ef6\u63d2\u811a",
+          "details": "\u63d2\u4ef6\u7684\u5143\u4ef6\u5f15\u811a\uff0c\u5bf9\u5e94\u7684\u80af\u5b9a\u6709\u4e00\u4e2a\u5b54\uff0c\u4e00\u822c\u8bbe\u8ba1\u5c42\u9762\u4e0d\u4f1a\u51fa\u73b0\u8fd9\u6837\u7684\u9519\u8bef\uff0c\u5927\u591a\u6570\u662f\u5143\u4ef6\u89d2\u5ea6\u653e\u9519\u4e86\u6216\u8005\u6ca1\u6709\u5bf9\u9f50\u5f15\u8d77\u7684\u3002",
+          "language": {
+            "description": {
+              "cn": "\u68c0\u6d4b\u6ca1\u6709\u63d2\u4ef6\u5b54\u7684\u5143\u4ef6\u63d2\u811a",
+              "en": "Detect component through-hole pins without corresponding holes"
+            },
+            "details": {
+              "cn": "\u63d2\u4ef6\u7684\u5143\u4ef6\u5f15\u811a\uff0c\u5bf9\u5e94\u7684\u80af\u5b9a\u6709\u4e00\u4e2a\u5b54\uff0c\u4e00\u822c\u8bbe\u8ba1\u5c42\u9762\u4e0d\u4f1a\u51fa\u73b0\u8fd9\u6837\u7684\u9519\u8bef\uff0c\u5927\u591a\u6570\u662f\u5143\u4ef6\u89d2\u5ea6\u653e\u9519\u4e86\u6216\u8005\u6ca1\u6709\u5bf9\u9f50\u5f15\u8d77\u7684\u3002",
+              "en": "Through-hole component pins should have corresponding holes. Missing holes are generally due to misalignment/orientation issues, not design issues."
+            },
+            "title": {
+              "cn": "\u5143\u4ef6\u63d2\u811a\u65e0\u5b54",
+              "en": "Missing hole for component pin"
+            }
+          },
+          "name": "tht_miss_hole",
+          "range": null,
+          "title": "\u5143\u4ef6\u63d2\u811a\u65e0\u5b54",
+          "type": "CGT_ERROR_VALUE"
+        },
+        {
+          "description": "\u68c0\u6d4b\u8d34\u88c5\u5143\u4ef6\u7684\u710a\u811a\u4e0e\u5bf9\u5e94\u7684\u710a\u76d8\u662f\u5426\u5145\u5206\u63a5\u89e6",
+          "details": "\u5982\u679c\u5f15\u811a\u710a\u63a5\u533a\u57df\u4e0e\u710a\u76d8\u4e0d\u80fd\u5145\u5206\u63a5\u89e6\uff0c\u53ef\u80fd\u4f1a\u5bfc\u81f4\u710a\u63a5\u4e0d\u826f\u3002\u8be5\u68c0\u6d4b\u7ed3\u679c\u7684\u503c\u662f\u4e00\u4e2a\u6bd4\u503c\uff0c\u6bd4\u5982\uff1a0.75 \u8868\u793a\u5f15\u811a\u710a\u63a5\u533a\u57df\u4e0e\u710a\u76d8\u7684\u63a5\u89e6\u9762\u79ef\u5360\u5f15\u811a\u710a\u63a5\u533a\u57df\u9762\u79ef 75%",
+          "language": {
+            "description": {
+              "cn": "\u68c0\u6d4b\u8d34\u88c5\u5143\u4ef6\u7684\u710a\u811a\u4e0e\u5bf9\u5e94\u7684\u710a\u76d8\u662f\u5426\u5145\u5206\u63a5\u89e6",
+              "en": "Detect insufficient overlap between component pins and pads"
+            },
+            "details": {
+              "cn": "\u5982\u679c\u5f15\u811a\u710a\u63a5\u533a\u57df\u4e0e\u710a\u76d8\u4e0d\u80fd\u5145\u5206\u63a5\u89e6\uff0c\u53ef\u80fd\u4f1a\u5bfc\u81f4\u710a\u63a5\u4e0d\u826f\u3002\u8be5\u68c0\u6d4b\u7ed3\u679c\u7684\u503c\u662f\u4e00\u4e2a\u6bd4\u503c\uff0c\u6bd4\u5982\uff1a0.75 \u8868\u793a\u5f15\u811a\u710a\u63a5\u533a\u57df\u4e0e\u710a\u76d8\u7684\u63a5\u89e6\u9762\u79ef\u5360\u5f15\u811a\u710a\u63a5\u533a\u57df\u9762\u79ef 75%",
+              "en": "If the lead/pad overlap area is insufficient, solderability may be affected. The result is a ratio, e.g. 0.75 means the lead/pad overlap is 75% of the lead area."
+            },
+            "title": {
+              "cn": "\u710a\u811a\u548c\u710a\u76d8\u76f8\u4ea4\u533a\u57df",
+              "en": "Lead area overlapping pad"
+            }
+          },
+          "name": "weld2paste",
+          "range": [
+            0.75,
+            0.9,
+            1.0
+          ],
+          "title": "\u710a\u811a\u548c\u710a\u76d8\u76f8\u4ea4\u533a\u57df",
+          "type": "CGT_DOUBLE_VALUE"
+        }
+      ],
+      "description": "\u5143\u4ef6\u7ec4\u88c5\u5206\u6790",
+      "duration_time": 0,
+      "language": {
+        "description": {
+          "cn": "\u5143\u4ef6\u7ec4\u88c5\u5206\u6790",
+          "en": "Component assembly analysis"
+        }
+      },
+      "last_time": 1793006540,
+      "name": "jlc_analysis_smt",
+      "results": [
+        {
+          "disp": [
+            [
+              "component_+_bottom"
+            ],
+            [
+              "component_+_bottom",
+              "collar-tracker-PTH.drl"
+            ],
+            [
+              "component_+_bottom",
+              "collar-tracker-B_Paste.gbp"
+            ],
+            [
+              "component_+_bottom",
+              "collar-tracker-Edge_Cuts.gm1"
+            ],
+            [
+              "component_+_bottom",
+              "collar-tracker-B_Cu.gbl"
+            ]
+          ],
+          "layer": "component_+_bottom",
+          "meas": [
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                1030.511,
+                403.5433,
+                "L",
+                1030.512,
+                425.196
+              ],
+              "name1": "R15",
+              "name2": "D2",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                572.834,
+                218.503,
+                "L",
+                541.338,
+                224.408
+              ],
+              "name1": "U7",
+              "name2": "C26",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                30.511,
+                1087.598,
+                "L",
+                68.897,
+                1087.598
+              ],
+              "name1": "U12",
+              "name2": "C33",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                1079.724,
+                547.247,
+                "L",
+                1079.724,
+                503.936
+              ],
+              "name1": "J6",
+              "name2": "D2",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                531.494,
+                58.998,
+                "L",
+                487.204,
+                58.998
+              ],
+              "name1": "R17",
+              "name2": "C25",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                551.18,
+                98.425,
+                "L",
+                584.058,
+                131.888
+              ],
+              "name1": "R17",
+              "name2": "U7",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                137.738,
+                1122.047,
+                "L",
+                88.583,
+                1122.047
+              ],
+              "name1": "R29",
+              "name2": "C33",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                1413.385,
+                1083.661,
+                "L",
+                1356.299,
+                1083.661
+              ],
+              "name1": "C10",
+              "name2": "D1",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                1250.787,
+                1027.561,
+                "L",
+                1273.621,
+                1083.661
+              ],
+              "name1": "J6",
+              "name2": "D1",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                200.787,
+                635.827,
+                "L",
+                200.787,
+                698.819
+              ],
+              "name1": "C8",
+              "name2": "R2",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                234.251,
+                295.275,
+                "L",
+                167.323,
+                295.275
+              ],
+              "name1": "C17",
+              "name2": "C36",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                413.385,
+                1033.465,
+                "L",
+                492.069,
+                1033.465
+              ],
+              "name1": "R8",
+              "name2": "R9",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                147.637,
+                1023.622,
+                "L",
+                88.583,
+                1082.677
+              ],
+              "name1": "R28",
+              "name2": "C33",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                80.70975,
+                718.5071,
+                "L",
+                165.297,
+                718.505
+              ],
+              "name1": "R1",
+              "name2": "R2",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                572.834,
+                155.511,
+                "L",
+                487.204,
+                127.952
+              ],
+              "name1": "U7",
+              "name2": "C25",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                234.251,
+                324.803,
+                "L",
+                234.251,
+                417.322
+              ],
+              "name1": "C17",
+              "name2": "C4",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                173.228,
+                448.818,
+                "L",
+                95.472,
+                500.0
+              ],
+              "name1": "C4",
+              "name2": "C9",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                177.165,
+                624.015,
+                "L",
+                95.472,
+                578.74
+              ],
+              "name1": "C8",
+              "name2": "C9",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                487.204,
+                127.952,
+                "L",
+                501.968,
+                224.408
+              ],
+              "name1": "C25",
+              "name2": "C26",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                167.322,
+                1023.622,
+                "L",
+                167.322,
+                1122.047
+              ],
+              "name1": "R28",
+              "name2": "R29",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                177.165,
+                635.827,
+                "L",
+                80.709,
+                688.976
+              ],
+              "name1": "C8",
+              "name2": "R1",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                61.024,
+                688.976,
+                "L",
+                61.024,
+                578.74
+              ],
+              "name1": "R1",
+              "name2": "C9",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                30.511,
+                1087.598,
+                "L",
+                137.738,
+                1122.047
+              ],
+              "name1": "U12",
+              "name2": "R29",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                30.511,
+                1038.386,
+                "L",
+                147.637,
+                1023.622
+              ],
+              "name1": "U12",
+              "name2": "R28",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                173.228,
+                417.322,
+                "L",
+                167.323,
+                295.275
+              ],
+              "name1": "C4",
+              "name2": "C36",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                531.495,
+                98.425,
+                "L",
+                531.495,
+                224.408
+              ],
+              "name1": "R17",
+              "name2": "C26",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                165.297,
+                698.819,
+                "L",
+                95.472,
+                578.74
+              ],
+              "name1": "R2",
+              "name2": "C9",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                866.141,
+                364.173,
+                "L",
+                1003.88,
+                383.858
+              ],
+              "name1": "R14",
+              "name2": "R15",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                1003.88,
+                403.544,
+                "L",
+                1003.88,
+                547.247
+              ],
+              "name1": "R15",
+              "name2": "J6",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                866.141,
+                364.173,
+                "L",
+                1013.779,
+                434.054
+              ],
+              "name1": "R14",
+              "name2": "D2",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                1413.385,
+                1078.739,
+                "L",
+                1250.787,
+                1027.561
+              ],
+              "name1": "C10",
+              "name2": "J6",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                177.165,
+                624.015,
+                "L",
+                177.165,
+                448.818
+              ],
+              "name1": "C8",
+              "name2": "C4",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                826.714,
+                344.488,
+                "L",
+                675.79,
+                242.124
+              ],
+              "name1": "R14",
+              "name2": "U7",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                866.141,
+                364.173,
+                "L",
+                875.197,
+                547.247
+              ],
+              "name1": "R14",
+              "name2": "J6",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 3,
+              "disp_num": 3,
+              "meas_shape": [
+                1339.566,
+                1153.543,
+                "L",
+                1339.566,
+                1181.102
+              ],
+              "name1": "D1",
+              "name2": "r1.9685",
+              "type1": 5,
+              "type2": 1
+            },
+            {
+              "cat_num": 3,
+              "disp_num": 3,
+              "meas_shape": [
+                -50.196,
+                1038.386,
+                "L",
+                -78.739,
+                1038.386
+              ],
+              "name1": "U12",
+              "name2": "r1.9685",
+              "type1": 5,
+              "type2": 1
+            },
+            {
+              "cat_num": 3,
+              "disp_num": 3,
+              "meas_shape": [
+                137.738,
+                1141.733,
+                "L",
+                137.738,
+                1181.102
+              ],
+              "name1": "R29",
+              "name2": "r1.9685",
+              "type1": 5,
+              "type2": 1
+            }
+          ],
+          "truncate": [
+            {
+              "cat_num": 2,
+              "orig_num": 34
+            },
+            {
+              "cat_num": 3,
+              "orig_num": 3
+            }
+          ]
+        },
+        {
+          "disp": [
+            [
+              "component_+_top"
+            ],
+            [
+              "component_+_top",
+              "collar-tracker-PTH.drl"
+            ],
+            [
+              "component_+_top",
+              "collar-tracker-F_Paste.gtp"
+            ],
+            [
+              "component_+_top",
+              "collar-tracker-Edge_Cuts.gm1"
+            ],
+            [
+              "component_+_top",
+              "collar-tracker-F_Cu.gtl"
+            ]
+          ],
+          "layer": "component_+_top",
+          "meas": [
+            {
+              "cat_num": 8,
+              "disp_num": 4,
+              "meas_shape": [
+                220.4729,
+                757.8757,
+                "L",
+                220.4723,
+                757.8768
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 8,
+              "disp_num": 4,
+              "meas_shape": [
+                220.4729,
+                738.1897,
+                "L",
+                220.4723,
+                738.1908
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 8,
+              "disp_num": 4,
+              "meas_shape": [
+                220.4729,
+                718.5052,
+                "L",
+                220.4723,
+                718.5063
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 8,
+              "disp_num": 4,
+              "meas_shape": [
+                220.4729,
+                698.8202,
+                "L",
+                220.4723,
+                698.8213
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 8,
+              "disp_num": 4,
+              "meas_shape": [
+                220.4729,
+                679.1352,
+                "L",
+                220.4723,
+                679.1363
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 8,
+              "disp_num": 4,
+              "meas_shape": [
+                220.4729,
+                659.4497,
+                "L",
+                220.4723,
+                659.4508
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 8,
+              "disp_num": 4,
+              "meas_shape": [
+                220.4729,
+                639.7647,
+                "L",
+                220.4723,
+                639.7658
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 8,
+              "disp_num": 4,
+              "meas_shape": [
+                220.4729,
+                620.0797,
+                "L",
+                220.4723,
+                620.0808
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 8,
+              "disp_num": 4,
+              "meas_shape": [
+                220.4729,
+                600.3947,
+                "L",
+                220.4723,
+                600.3958
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 8,
+              "disp_num": 4,
+              "meas_shape": [
+                220.4729,
+                580.7097,
+                "L",
+                220.4723,
+                580.7108
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 8,
+              "disp_num": 4,
+              "meas_shape": [
+                220.4729,
+                561.0252,
+                "L",
+                220.4723,
+                561.0263
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 8,
+              "disp_num": 4,
+              "meas_shape": [
+                220.4729,
+                541.3402,
+                "L",
+                220.4723,
+                541.3413
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 8,
+              "disp_num": 4,
+              "meas_shape": [
+                220.4729,
+                521.6552,
+                "L",
+                220.4723,
+                521.6563
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 8,
+              "disp_num": 4,
+              "meas_shape": [
+                220.4729,
+                501.9702,
+                "L",
+                220.4723,
+                501.9713
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 8,
+              "disp_num": 4,
+              "meas_shape": [
+                220.4729,
+                482.2847,
+                "L",
+                220.4723,
+                482.2858
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 8,
+              "disp_num": 4,
+              "meas_shape": [
+                220.4729,
+                462.5997,
+                "L",
+                220.4723,
+                462.6008
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 8,
+              "disp_num": 4,
+              "meas_shape": [
+                220.4729,
+                442.9147,
+                "L",
+                220.4723,
+                442.9158
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 8,
+              "disp_num": 4,
+              "meas_shape": [
+                220.4729,
+                423.2297,
+                "L",
+                220.4723,
+                423.2308
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 8,
+              "disp_num": 4,
+              "meas_shape": [
+                246.0634,
+                397.6372,
+                "L",
+                246.0634,
+                397.637
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 8,
+              "disp_num": 4,
+              "meas_shape": [
+                265.7484,
+                397.6372,
+                "L",
+                265.7484,
+                397.637
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 8,
+              "disp_num": 4,
+              "meas_shape": [
+                285.4334,
+                397.6372,
+                "L",
+                285.4334,
+                397.637
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 8,
+              "disp_num": 4,
+              "meas_shape": [
+                305.1184,
+                397.6372,
+                "L",
+                305.1184,
+                397.637
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 8,
+              "disp_num": 4,
+              "meas_shape": [
+                324.8034,
+                397.6372,
+                "L",
+                324.8034,
+                397.637
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 8,
+              "disp_num": 4,
+              "meas_shape": [
+                344.4884,
+                397.6372,
+                "L",
+                344.4884,
+                397.637
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 8,
+              "disp_num": 4,
+              "meas_shape": [
+                364.1734,
+                397.6372,
+                "L",
+                364.1734,
+                397.637
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 8,
+              "disp_num": 4,
+              "meas_shape": [
+                383.8584,
+                397.6372,
+                "L",
+                383.8584,
+                397.637
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 8,
+              "disp_num": 4,
+              "meas_shape": [
+                403.5434,
+                397.6372,
+                "L",
+                403.5434,
+                397.637
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 8,
+              "disp_num": 4,
+              "meas_shape": [
+                423.2284,
+                397.6372,
+                "L",
+                423.2284,
+                397.637
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 8,
+              "disp_num": 4,
+              "meas_shape": [
+                442.9134,
+                397.6372,
+                "L",
+                442.9134,
+                397.637
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 8,
+              "disp_num": 4,
+              "meas_shape": [
+                462.5984,
+                397.6372,
+                "L",
+                462.5984,
+                397.637
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 8,
+              "disp_num": 4,
+              "meas_shape": [
+                482.2834,
+                397.6372,
+                "L",
+                482.2834,
+                397.637
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 8,
+              "disp_num": 4,
+              "meas_shape": [
+                501.9684,
+                397.6372,
+                "L",
+                501.9684,
+                397.637
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 8,
+              "disp_num": 4,
+              "meas_shape": [
+                521.6534,
+                397.6372,
+                "L",
+                521.6534,
+                397.637
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 8,
+              "disp_num": 4,
+              "meas_shape": [
+                541.3384,
+                397.6372,
+                "L",
+                541.3384,
+                397.637
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 8,
+              "disp_num": 4,
+              "meas_shape": [
+                561.0234,
+                397.6372,
+                "L",
+                561.0234,
+                397.637
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 8,
+              "disp_num": 4,
+              "meas_shape": [
+                580.7084,
+                397.6372,
+                "L",
+                580.7084,
+                397.637
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 8,
+              "disp_num": 4,
+              "meas_shape": [
+                600.3934,
+                397.6372,
+                "L",
+                600.3934,
+                397.637
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 8,
+              "disp_num": 4,
+              "meas_shape": [
+                620.0784,
+                397.6372,
+                "L",
+                620.0784,
+                397.637
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 8,
+              "disp_num": 4,
+              "meas_shape": [
+                645.6689,
+                423.2287,
+                "L",
+                645.6693,
+                423.2287
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 8,
+              "disp_num": 4,
+              "meas_shape": [
+                645.6689,
+                442.9137,
+                "L",
+                645.6693,
+                442.9137
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 8,
+              "disp_num": 4,
+              "meas_shape": [
+                645.6689,
+                462.5987,
+                "L",
+                645.6693,
+                462.5987
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 8,
+              "disp_num": 4,
+              "meas_shape": [
+                645.6689,
+                482.2837,
+                "L",
+                645.6693,
+                482.2837
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 8,
+              "disp_num": 4,
+              "meas_shape": [
+                645.6689,
+                501.9687,
+                "L",
+                645.6693,
+                501.9687
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 8,
+              "disp_num": 4,
+              "meas_shape": [
+                645.6689,
+                521.6537,
+                "L",
+                645.6693,
+                521.6537
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 8,
+              "disp_num": 4,
+              "meas_shape": [
+                645.6689,
+                541.3387,
+                "L",
+                645.6693,
+                541.3387
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 8,
+              "disp_num": 4,
+              "meas_shape": [
+                645.6689,
+                561.0237,
+                "L",
+                645.6693,
+                561.0237
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 8,
+              "disp_num": 4,
+              "meas_shape": [
+                645.6689,
+                580.7087,
+                "L",
+                645.6693,
+                580.7087
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 8,
+              "disp_num": 4,
+              "meas_shape": [
+                645.6689,
+                600.3937,
+                "L",
+                645.6693,
+                600.3937
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 8,
+              "disp_num": 4,
+              "meas_shape": [
+                645.6689,
+                620.0787,
+                "L",
+                645.6693,
+                620.0787
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 8,
+              "disp_num": 4,
+              "meas_shape": [
+                645.6689,
+                639.7637,
+                "L",
+                645.6693,
+                639.7637
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 9,
+              "disp_num": 4,
+              "meas_shape": [
+                211.6149,
+                751.9702,
+                "L",
+                211.6149,
+                751.9835
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 9,
+              "disp_num": 4,
+              "meas_shape": [
+                211.6149,
+                732.2842,
+                "L",
+                211.6149,
+                732.2985
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 9,
+              "disp_num": 4,
+              "meas_shape": [
+                211.6149,
+                712.6002,
+                "L",
+                211.6149,
+                712.6135
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 9,
+              "disp_num": 4,
+              "meas_shape": [
+                211.6149,
+                692.9152,
+                "L",
+                211.6149,
+                692.9285
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 9,
+              "disp_num": 4,
+              "meas_shape": [
+                211.6149,
+                673.2302,
+                "L",
+                211.6149,
+                673.2435
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 9,
+              "disp_num": 4,
+              "meas_shape": [
+                211.6149,
+                653.5442,
+                "L",
+                211.6149,
+                653.5585
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 9,
+              "disp_num": 4,
+              "meas_shape": [
+                211.6149,
+                633.8592,
+                "L",
+                211.6149,
+                633.8735
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 9,
+              "disp_num": 4,
+              "meas_shape": [
+                211.6149,
+                614.1742,
+                "L",
+                211.6149,
+                614.1885
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 9,
+              "disp_num": 4,
+              "meas_shape": [
+                211.6149,
+                594.4892,
+                "L",
+                211.6149,
+                594.5035
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 9,
+              "disp_num": 4,
+              "meas_shape": [
+                211.6149,
+                574.8042,
+                "L",
+                211.6149,
+                574.8185
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 9,
+              "disp_num": 4,
+              "meas_shape": [
+                211.6149,
+                555.1202,
+                "L",
+                211.6149,
+                555.1335
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 9,
+              "disp_num": 4,
+              "meas_shape": [
+                211.6149,
+                535.4352,
+                "L",
+                211.6149,
+                535.4485
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 9,
+              "disp_num": 4,
+              "meas_shape": [
+                211.6149,
+                515.7502,
+                "L",
+                211.6149,
+                515.7635
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 9,
+              "disp_num": 4,
+              "meas_shape": [
+                211.6149,
+                496.0652,
+                "L",
+                211.6149,
+                496.0785
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 9,
+              "disp_num": 4,
+              "meas_shape": [
+                211.6149,
+                476.3792,
+                "L",
+                211.6149,
+                476.3935
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 9,
+              "disp_num": 4,
+              "meas_shape": [
+                211.6149,
+                456.6942,
+                "L",
+                211.6149,
+                456.7075
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 9,
+              "disp_num": 4,
+              "meas_shape": [
+                211.6149,
+                437.0092,
+                "L",
+                211.6149,
+                437.0225
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 9,
+              "disp_num": 4,
+              "meas_shape": [
+                251.9689,
+                388.7792,
+                "L",
+                251.967,
+                388.7792
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 9,
+              "disp_num": 4,
+              "meas_shape": [
+                271.6539,
+                388.7792,
+                "L",
+                271.653,
+                388.7792
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 9,
+              "disp_num": 4,
+              "meas_shape": [
+                389.7639,
+                388.7792,
+                "L",
+                389.763,
+                388.7792
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 9,
+              "disp_num": 4,
+              "meas_shape": [
+                409.4489,
+                388.7792,
+                "L",
+                409.448,
+                388.7792
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 9,
+              "disp_num": 4,
+              "meas_shape": [
+                429.1339,
+                388.7792,
+                "L",
+                429.133,
+                388.7792
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 9,
+              "disp_num": 4,
+              "meas_shape": [
+                448.8189,
+                388.7792,
+                "L",
+                448.818,
+                388.7792
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 9,
+              "disp_num": 4,
+              "meas_shape": [
+                468.5039,
+                388.7792,
+                "L",
+                468.503,
+                388.7792
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 9,
+              "disp_num": 4,
+              "meas_shape": [
+                654.5269,
+                429.1342,
+                "L",
+                654.5269,
+                429.1335
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 9,
+              "disp_num": 4,
+              "meas_shape": [
+                654.5269,
+                448.8192,
+                "L",
+                654.5269,
+                448.8185
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 9,
+              "disp_num": 4,
+              "meas_shape": [
+                654.5269,
+                468.5042,
+                "L",
+                654.5269,
+                468.5035
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 9,
+              "disp_num": 4,
+              "meas_shape": [
+                654.5269,
+                488.1892,
+                "L",
+                654.5269,
+                488.1885
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 9,
+              "disp_num": 4,
+              "meas_shape": [
+                654.5269,
+                507.8742,
+                "L",
+                654.5269,
+                507.8735
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 9,
+              "disp_num": 4,
+              "meas_shape": [
+                654.5269,
+                527.5592,
+                "L",
+                654.5269,
+                527.5585
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 9,
+              "disp_num": 4,
+              "meas_shape": [
+                654.5269,
+                547.2442,
+                "L",
+                654.5269,
+                547.2435
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 9,
+              "disp_num": 4,
+              "meas_shape": [
+                654.5269,
+                566.9292,
+                "L",
+                654.5269,
+                566.9285
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 9,
+              "disp_num": 4,
+              "meas_shape": [
+                654.5269,
+                586.6142,
+                "L",
+                654.5269,
+                586.6135
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 9,
+              "disp_num": 4,
+              "meas_shape": [
+                654.5269,
+                606.2992,
+                "L",
+                654.5269,
+                606.2985
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 9,
+              "disp_num": 4,
+              "meas_shape": [
+                654.5269,
+                645.6692,
+                "L",
+                654.5269,
+                645.6685
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 9,
+              "disp_num": 4,
+              "meas_shape": [
+                654.5269,
+                665.3542,
+                "L",
+                654.5269,
+                665.3535
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 9,
+              "disp_num": 4,
+              "meas_shape": [
+                654.5269,
+                685.0392,
+                "L",
+                654.5269,
+                685.0385
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 9,
+              "disp_num": 4,
+              "meas_shape": [
+                654.5269,
+                704.7242,
+                "L",
+                654.5269,
+                704.7235
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 9,
+              "disp_num": 4,
+              "meas_shape": [
+                654.5269,
+                724.4092,
+                "L",
+                654.5269,
+                724.4085
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 9,
+              "disp_num": 4,
+              "meas_shape": [
+                654.5269,
+                744.0942,
+                "L",
+                654.5269,
+                744.0935
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 9,
+              "disp_num": 4,
+              "meas_shape": [
+                545.2759,
+                509.8422,
+                "L",
+                545.2759,
+                509.8415
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 9,
+              "disp_num": 4,
+              "meas_shape": [
+                545.2759,
+                622.0482,
+                "L",
+                545.2759,
+                622.0465
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 9,
+              "disp_num": 4,
+              "meas_shape": [
+                545.2749,
+                734.2522,
+                "L",
+                545.2749,
+                734.2505
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 9,
+              "disp_num": 4,
+              "meas_shape": [
+                159.4509,
+                224.4084,
+                "L",
+                159.4509,
+                224.4097
+              ],
+              "name1": "U3",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 9,
+              "disp_num": 4,
+              "meas_shape": [
+                159.4509,
+                208.6584,
+                "L",
+                159.4509,
+                208.6617
+              ],
+              "name1": "U3",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 9,
+              "disp_num": 4,
+              "meas_shape": [
+                234.2549,
+                169.2924,
+                "L",
+                234.2549,
+                169.2913
+              ],
+              "name1": "U3",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 9,
+              "disp_num": 4,
+              "meas_shape": [
+                234.2549,
+                185.0424,
+                "L",
+                234.2549,
+                185.0393
+              ],
+              "name1": "U3",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 9,
+              "disp_num": 4,
+              "meas_shape": [
+                234.2549,
+                200.7924,
+                "L",
+                234.2549,
+                200.7873
+              ],
+              "name1": "U3",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 9,
+              "disp_num": 4,
+              "meas_shape": [
+                949.3068,
+                418.3079,
+                "L",
+                949.3068,
+                417.873
+              ],
+              "name1": "U2",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 9,
+              "disp_num": 4,
+              "meas_shape": [
+                949.3068,
+                438.4889,
+                "L",
+                949.3068,
+                438.483
+              ],
+              "name1": "U2",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                649.606,
+                903.543,
+                "L",
+                649.606,
+                925.196
+              ],
+              "name1": "C6",
+              "name2": "C35",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                657.479,
+                19.742,
+                "L",
+                685.826,
+                19.742
+              ],
+              "name1": "R16",
+              "name2": "R19",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                541.395,
+                1102.362,
+                "L",
+                570.865,
+                1102.362
+              ],
+              "name1": "R27",
+              "name2": "C32",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                153.544,
+                236.22,
+                "L",
+                149.606,
+                265.748
+              ],
+              "name1": "U3",
+              "name2": "C18",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                779.527,
+                417.323,
+                "L",
+                795.275,
+                442.913
+              ],
+              "name1": "C13",
+              "name2": "L1",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                1055.175,
+                297.245,
+                "L",
+                1055.175,
+                332.677
+              ],
+              "name1": "R5",
+              "name2": "R4",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                1397.637,
+                108.268,
+                "L",
+                1378.009,
+                137.795
+              ],
+              "name1": "R22",
+              "name2": "R21",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                866.141,
+                19.685,
+                "L",
+                836.614,
+                39.37
+              ],
+              "name1": "R20",
+              "name2": "C28",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                856.293,
+                482.283,
+                "L",
+                818.897,
+                482.283
+              ],
+              "name1": "U2",
+              "name2": "L1",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                1043.307,
+                391.731,
+                "L",
+                1043.308,
+                352.3627
+              ],
+              "name1": "C15",
+              "name2": "R4",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                354.331,
+                1023.622,
+                "L",
+                393.7,
+                1023.622
+              ],
+              "name1": "C31",
+              "name2": "U10",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                590.551,
+                1082.677,
+                "L",
+                629.921,
+                1082.677
+              ],
+              "name1": "C32",
+              "name2": "U11",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                86.614,
+                226.378,
+                "L",
+                86.614,
+                265.748
+              ],
+              "name1": "C19",
+              "name2": "C18",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                1240.157,
+                -29.527,
+                "L",
+                1257.873,
+                9.353
+              ],
+              "name1": "C29",
+              "name2": "U8",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                216.535,
+                974.409,
+                "L",
+                173.228,
+                974.409
+              ],
+              "name1": "C21",
+              "name2": "U4",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                216.535,
+                1041.339,
+                "L",
+                173.228,
+                1041.339
+              ],
+              "name1": "C20",
+              "name2": "U4",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                725.253,
+                64.961,
+                "L",
+                725.253,
+                20.473
+              ],
+              "name1": "R18",
+              "name2": "R19",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                72.834,
+                687.008,
+                "L",
+                72.834,
+                732.283
+              ],
+              "name1": "C1",
+              "name2": "C2",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                86.614,
+                297.244,
+                "L",
+                86.614,
+                342.519
+              ],
+              "name1": "C18",
+              "name2": "C3",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                303.149,
+                96.457,
+                "L",
+                255.962,
+                96.457
+              ],
+              "name1": "R7",
+              "name2": "R6",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                216.535,
+                1021.653,
+                "L",
+                216.535,
+                974.409
+              ],
+              "name1": "C20",
+              "name2": "C21",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                342.576,
+                76.772,
+                "L",
+                354.33,
+                29.527
+              ],
+              "name1": "R7",
+              "name2": "C27",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                954.719,
+                403.543,
+                "L",
+                1003.937,
+                403.543
+              ],
+              "name1": "U2",
+              "name2": "C15",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                1108.267,
+                352.363,
+                "L",
+                1055.175,
+                352.363
+              ],
+              "name1": "C16",
+              "name2": "R4",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                9.842,
+                1033.464,
+                "L",
+                62.992,
+                1033.464
+              ],
+              "name1": "R30",
+              "name2": "U4",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                285.433,
+                265.747,
+                "L",
+                240.158,
+                236.22
+              ],
+              "name1": "C7",
+              "name2": "U3",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                354.387,
+                935.04,
+                "L",
+                402.558,
+                962.598
+              ],
+              "name1": "R24",
+              "name2": "U10",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                1108.267,
+                314.96,
+                "L",
+                1055.175,
+                297.245
+              ],
+              "name1": "C16",
+              "name2": "R5",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                610.236,
+                883.857,
+                "L",
+                553.149,
+                879.921
+              ],
+              "name1": "C6",
+              "name2": "C5",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                354.331,
+                1062.992,
+                "L",
+                383.858,
+                1112.204
+              ],
+              "name1": "C31",
+              "name2": "C34",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                1338.582,
+                137.795,
+                "L",
+                1324.802,
+                80.709
+              ],
+              "name1": "R21",
+              "name2": "U8",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                570.865,
+                1023.679,
+                "L",
+                570.865,
+                1082.677
+              ],
+              "name1": "R25",
+              "name2": "C32",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                529.527,
+                809.055,
+                "L",
+                529.527,
+                868.109
+              ],
+              "name1": "U1",
+              "name2": "C5",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                1181.102,
+                964.566,
+                "L",
+                1240.157,
+                964.566
+              ],
+              "name1": "U5",
+              "name2": "C23",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                1181.102,
+                885.826,
+                "L",
+                1240.157,
+                885.826
+              ],
+              "name1": "U5",
+              "name2": "C24",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                563.049,
+                372.048,
+                "L",
+                563.049,
+                312.993
+              ],
+              "name1": "U1",
+              "name2": "R3",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                757.817,
+                1003.936,
+                "L",
+                708.661,
+                1038.386
+              ],
+              "name1": "R26",
+              "name2": "U11",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                1397.637,
+                88.583,
+                "L",
+                1340.551,
+                69.391
+              ],
+              "name1": "R22",
+              "name2": "U8",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                570.865,
+                1023.679,
+                "L",
+                629.921,
+                1038.386
+              ],
+              "name1": "R25",
+              "name2": "U11",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                240.158,
+                157.48,
+                "L",
+                240.1595,
+                96.4576
+              ],
+              "name1": "U3",
+              "name2": "R6",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                255.905,
+                954.723,
+                "L",
+                314.96,
+                935.039
+              ],
+              "name1": "C21",
+              "name2": "R24",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                374.016,
+                10.436,
+                "L",
+                437.006,
+                10.436
+              ],
+              "name1": "C27",
+              "name2": "U6",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                1240.157,
+                958.66,
+                "L",
+                1240.157,
+                895.669
+              ],
+              "name1": "C23",
+              "name2": "C24",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                90.551,
+                226.378,
+                "L",
+                153.544,
+                226.378
+              ],
+              "name1": "C19",
+              "name2": "U3",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                657.479,
+                19.742,
+                "L",
+                704.724,
+                64.961
+              ],
+              "name1": "R16",
+              "name2": "R18",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                1369.093,
+                223.937,
+                "L",
+                1369.095,
+                157.4808
+              ],
+              "name1": "Q1",
+              "name2": "R21",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                412.401,
+                1112.204,
+                "L",
+                412.401,
+                1045.276
+              ],
+              "name1": "C34",
+              "name2": "U10",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                501.968,
+                1102.362,
+                "L",
+                463.582,
+                1045.276
+              ],
+              "name1": "R27",
+              "name2": "U10",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                671.258,
+                417.323,
+                "L",
+                740.157,
+                417.323
+              ],
+              "name1": "U1",
+              "name2": "C13",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 2,
+              "disp_num": 0,
+              "meas_shape": [
+                984.251,
+                596.457,
+                "L",
+                1048.157,
+                625.984
+              ],
+              "name1": "C14",
+              "name2": "J2",
+              "type1": 5,
+              "type2": 5
+            },
+            {
+              "cat_num": 3,
+              "disp_num": 3,
+              "meas_shape": [
+                1200.787,
+                -49.213,
+                "L",
+                1200.787,
+                -78.739
+              ],
+              "name1": "C29",
+              "name2": "r1.9685",
+              "type1": 5,
+              "type2": 1
+            },
+            {
+              "cat_num": 11,
+              "disp_num": 4,
+              "meas_shape": [
+                620.0794,
+                801.1812,
+                "L",
+                620.0794,
+                801.181
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 11,
+              "disp_num": 4,
+              "meas_shape": [
+                600.3944,
+                801.1812,
+                "L",
+                600.3944,
+                801.181
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 11,
+              "disp_num": 4,
+              "meas_shape": [
+                580.7094,
+                801.1812,
+                "L",
+                580.7094,
+                801.181
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 11,
+              "disp_num": 4,
+              "meas_shape": [
+                561.0244,
+                801.1812,
+                "L",
+                561.0244,
+                801.181
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 11,
+              "disp_num": 4,
+              "meas_shape": [
+                541.3394,
+                801.1812,
+                "L",
+                541.3394,
+                801.181
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 11,
+              "disp_num": 4,
+              "meas_shape": [
+                521.6544,
+                801.1812,
+                "L",
+                521.6544,
+                801.181
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 11,
+              "disp_num": 4,
+              "meas_shape": [
+                501.9694,
+                801.1812,
+                "L",
+                501.9694,
+                801.181
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 11,
+              "disp_num": 4,
+              "meas_shape": [
+                482.2844,
+                801.1812,
+                "L",
+                482.2844,
+                801.181
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 11,
+              "disp_num": 4,
+              "meas_shape": [
+                462.5994,
+                801.1812,
+                "L",
+                462.5994,
+                801.181
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 11,
+              "disp_num": 4,
+              "meas_shape": [
+                442.9144,
+                801.1812,
+                "L",
+                442.9144,
+                801.181
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 11,
+              "disp_num": 4,
+              "meas_shape": [
+                423.2294,
+                801.1812,
+                "L",
+                423.2294,
+                801.181
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 11,
+              "disp_num": 4,
+              "meas_shape": [
+                403.5444,
+                801.1812,
+                "L",
+                403.5444,
+                801.181
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 11,
+              "disp_num": 4,
+              "meas_shape": [
+                383.8594,
+                801.1812,
+                "L",
+                383.8594,
+                801.181
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 11,
+              "disp_num": 4,
+              "meas_shape": [
+                364.1744,
+                801.1812,
+                "L",
+                364.1744,
+                801.181
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 11,
+              "disp_num": 4,
+              "meas_shape": [
+                344.4894,
+                801.1812,
+                "L",
+                344.4894,
+                801.181
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 11,
+              "disp_num": 4,
+              "meas_shape": [
+                324.8044,
+                801.1812,
+                "L",
+                324.8044,
+                801.181
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 11,
+              "disp_num": 4,
+              "meas_shape": [
+                305.1194,
+                801.1812,
+                "L",
+                305.1194,
+                801.181
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 11,
+              "disp_num": 4,
+              "meas_shape": [
+                285.4344,
+                801.1812,
+                "L",
+                285.4344,
+                801.181
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 11,
+              "disp_num": 4,
+              "meas_shape": [
+                265.7494,
+                801.1812,
+                "L",
+                265.7494,
+                801.181
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 11,
+              "disp_num": 4,
+              "meas_shape": [
+                246.0644,
+                801.1812,
+                "L",
+                246.0644,
+                801.181
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 11,
+              "disp_num": 4,
+              "meas_shape": [
+                576.7719,
+                478.3467,
+                "L",
+                576.7705,
+                478.3467
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 11,
+              "disp_num": 4,
+              "meas_shape": [
+                576.7719,
+                590.5522,
+                "L",
+                576.7705,
+                590.5522
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 11,
+              "disp_num": 4,
+              "meas_shape": [
+                576.7709,
+                702.7562,
+                "L",
+                576.7705,
+                702.7562
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 12,
+              "disp_num": 4,
+              "meas_shape": [
+                211.6149,
+                429.1352,
+                "L",
+                211.6149,
+                429.1335
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 12,
+              "disp_num": 4,
+              "meas_shape": [
+                259.8429,
+                388.7792,
+                "L",
+                259.843,
+                388.7792
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 12,
+              "disp_num": 4,
+              "meas_shape": [
+                279.5279,
+                388.7792,
+                "L",
+                279.529,
+                388.7792
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 12,
+              "disp_num": 4,
+              "meas_shape": [
+                299.2129,
+                388.7792,
+                "L",
+                299.214,
+                388.7792
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 12,
+              "disp_num": 4,
+              "meas_shape": [
+                318.8979,
+                388.7792,
+                "L",
+                318.899,
+                388.7792
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 12,
+              "disp_num": 4,
+              "meas_shape": [
+                338.5829,
+                388.7792,
+                "L",
+                338.584,
+                388.7792
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 12,
+              "disp_num": 4,
+              "meas_shape": [
+                358.2679,
+                388.7792,
+                "L",
+                358.269,
+                388.7792
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 12,
+              "disp_num": 4,
+              "meas_shape": [
+                377.9529,
+                388.7792,
+                "L",
+                377.953,
+                388.7792
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 12,
+              "disp_num": 4,
+              "meas_shape": [
+                397.6379,
+                388.7792,
+                "L",
+                397.638,
+                388.7792
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 12,
+              "disp_num": 4,
+              "meas_shape": [
+                417.3229,
+                388.7792,
+                "L",
+                417.323,
+                388.7792
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 12,
+              "disp_num": 4,
+              "meas_shape": [
+                437.0079,
+                388.7792,
+                "L",
+                437.008,
+                388.7792
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 12,
+              "disp_num": 4,
+              "meas_shape": [
+                456.6929,
+                388.7792,
+                "L",
+                456.693,
+                388.7792
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 12,
+              "disp_num": 4,
+              "meas_shape": [
+                476.3779,
+                388.7792,
+                "L",
+                476.379,
+                388.7792
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 12,
+              "disp_num": 4,
+              "meas_shape": [
+                496.0629,
+                388.7792,
+                "L",
+                496.064,
+                388.7792
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 12,
+              "disp_num": 4,
+              "meas_shape": [
+                515.7479,
+                388.7792,
+                "L",
+                515.749,
+                388.7792
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 12,
+              "disp_num": 4,
+              "meas_shape": [
+                535.4329,
+                388.7792,
+                "L",
+                535.434,
+                388.7792
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 12,
+              "disp_num": 4,
+              "meas_shape": [
+                555.1179,
+                388.7792,
+                "L",
+                555.119,
+                388.7792
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 12,
+              "disp_num": 4,
+              "meas_shape": [
+                574.8029,
+                388.7792,
+                "L",
+                574.804,
+                388.7792
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 12,
+              "disp_num": 4,
+              "meas_shape": [
+                594.4879,
+                388.7792,
+                "L",
+                594.489,
+                388.7792
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 12,
+              "disp_num": 4,
+              "meas_shape": [
+                614.1729,
+                388.7792,
+                "L",
+                614.174,
+                388.7792
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 12,
+              "disp_num": 4,
+              "meas_shape": [
+                654.5269,
+                417.3232,
+                "L",
+                654.5269,
+                417.3235
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 12,
+              "disp_num": 4,
+              "meas_shape": [
+                654.5269,
+                437.0082,
+                "L",
+                654.5269,
+                437.0085
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 12,
+              "disp_num": 4,
+              "meas_shape": [
+                654.5269,
+                456.6932,
+                "L",
+                654.5269,
+                456.6935
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 12,
+              "disp_num": 4,
+              "meas_shape": [
+                654.5269,
+                476.3782,
+                "L",
+                654.5269,
+                476.3785
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 12,
+              "disp_num": 4,
+              "meas_shape": [
+                654.5269,
+                496.0632,
+                "L",
+                654.5269,
+                496.0635
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 12,
+              "disp_num": 4,
+              "meas_shape": [
+                654.5269,
+                515.7482,
+                "L",
+                654.5269,
+                515.7485
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 12,
+              "disp_num": 4,
+              "meas_shape": [
+                654.5269,
+                535.4332,
+                "L",
+                654.5269,
+                535.4335
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 12,
+              "disp_num": 4,
+              "meas_shape": [
+                654.5269,
+                555.1182,
+                "L",
+                654.5269,
+                555.1185
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 12,
+              "disp_num": 4,
+              "meas_shape": [
+                654.5269,
+                574.8032,
+                "L",
+                654.5269,
+                574.8035
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 12,
+              "disp_num": 4,
+              "meas_shape": [
+                654.5269,
+                594.4882,
+                "L",
+                654.5269,
+                594.4885
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 12,
+              "disp_num": 4,
+              "meas_shape": [
+                654.5269,
+                614.1732,
+                "L",
+                654.5269,
+                614.1745
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 12,
+              "disp_num": 4,
+              "meas_shape": [
+                654.5269,
+                633.8582,
+                "L",
+                654.5269,
+                633.8585
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 12,
+              "disp_num": 4,
+              "meas_shape": [
+                654.5269,
+                653.5432,
+                "L",
+                654.5269,
+                653.5435
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 12,
+              "disp_num": 4,
+              "meas_shape": [
+                654.5269,
+                673.2282,
+                "L",
+                654.5269,
+                673.2285
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 12,
+              "disp_num": 4,
+              "meas_shape": [
+                654.5269,
+                692.9132,
+                "L",
+                654.5269,
+                692.9135
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 12,
+              "disp_num": 4,
+              "meas_shape": [
+                654.5269,
+                712.5982,
+                "L",
+                654.5269,
+                712.5985
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 12,
+              "disp_num": 4,
+              "meas_shape": [
+                654.5269,
+                732.2832,
+                "L",
+                654.5269,
+                732.2835
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 12,
+              "disp_num": 4,
+              "meas_shape": [
+                654.5269,
+                751.9682,
+                "L",
+                654.5269,
+                751.9695
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 12,
+              "disp_num": 4,
+              "meas_shape": [
+                625.9849,
+                792.3232,
+                "L",
+                625.983,
+                792.3232
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 12,
+              "disp_num": 4,
+              "meas_shape": [
+                606.2999,
+                792.3232,
+                "L",
+                606.298,
+                792.3232
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 12,
+              "disp_num": 4,
+              "meas_shape": [
+                586.6149,
+                792.3232,
+                "L",
+                586.612,
+                792.3232
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 12,
+              "disp_num": 4,
+              "meas_shape": [
+                566.9299,
+                792.3232,
+                "L",
+                566.927,
+                792.3232
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 12,
+              "disp_num": 4,
+              "meas_shape": [
+                547.2449,
+                792.3232,
+                "L",
+                547.242,
+                792.3232
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 12,
+              "disp_num": 4,
+              "meas_shape": [
+                527.5599,
+                792.3232,
+                "L",
+                527.557,
+                792.3232
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 12,
+              "disp_num": 4,
+              "meas_shape": [
+                507.8749,
+                792.3232,
+                "L",
+                507.872,
+                792.3232
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 12,
+              "disp_num": 4,
+              "meas_shape": [
+                488.1899,
+                792.3232,
+                "L",
+                488.187,
+                792.3232
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 12,
+              "disp_num": 4,
+              "meas_shape": [
+                468.5049,
+                792.3232,
+                "L",
+                468.503,
+                792.3232
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 12,
+              "disp_num": 4,
+              "meas_shape": [
+                448.8199,
+                792.3232,
+                "L",
+                448.818,
+                792.3232
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 12,
+              "disp_num": 4,
+              "meas_shape": [
+                429.1349,
+                792.3232,
+                "L",
+                429.133,
+                792.3232
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 12,
+              "disp_num": 4,
+              "meas_shape": [
+                409.4499,
+                792.3232,
+                "L",
+                409.448,
+                792.3232
+              ],
+              "name1": "U1",
+              "name2": "null",
+              "type1": 5,
+              "type2": 0
+            },
+            {
+              "cat_num": 17,
+              "disp_num": 2,
+              "meas_shape": [
+                "R",
+                877.947,
+                465.944,
+                55.118,
+                26.379,
+                0
+              ],
+              "name1": "U2",
+              "name2": "rect61.024x26.379",
+              "type1": 5,
+              "type2": 0,
+              "value": 0.3190609
+            },
+            {
+              "cat_num": 17,
+              "disp_num": 2,
+              "meas_shape": [
+                "R",
+                1369.88,
+                652.558,
+                21.852,
+                25.591,
+                0
+              ],
+              "name1": "U9",
+              "name2": "rect23.622x25.5906",
+              "type1": 5,
+              "type2": 0,
+              "value": 0.3770607
+            },
+            {
+              "cat_num": 17,
+              "disp_num": 2,
+              "meas_shape": [
+                "R",
+                1048.157,
+                649.606,
+                26.645,
+                23.622,
+                0
+              ],
+              "name1": "J2",
+              "name2": "i274x.RoundRect.d14",
+              "type1": 5,
+              "type2": 0,
+              "value": 0.6177933
+            },
+            {
+              "cat_num": 17,
+              "disp_num": 2,
+              "meas_shape": [
+                "R",
+                654.456,
+                236.22,
+                26.646,
+                23.622,
+                0
+              ],
+              "name1": "J1",
+              "name2": "i274x.RoundRect.d14",
+              "type1": 5,
+              "type2": 0,
+              "value": 0.6178165
+            },
+            {
+              "cat_num": 17,
+              "disp_num": 2,
+              "meas_shape": [
+                "R",
+                180.315,
+                224.605,
+                33.07,
+                55.51,
+                0
+              ],
+              "name1": "U3",
+              "name2": "i274x.RoundRect.d44",
+              "type1": 5,
+              "type2": 0,
+              "value": 0.8485451
+            }
+          ],
+          "truncate": [
+            {
+              "cat_num": 2,
+              "orig_num": 177
+            },
+            {
+              "cat_num": 3,
+              "orig_num": 1
+            },
+            {
+              "cat_num": 8,
+              "orig_num": 64
+            },
+            {
+              "cat_num": 9,
+              "orig_num": 57
+            },
+            {
+              "cat_num": 11,
+              "orig_num": 23
+            },
+            {
+              "cat_num": 12,
+              "orig_num": 75
+            },
+            {
+              "cat_num": 17,
+              "orig_num": 5
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "accepted": false,
+  "note": "Returned measurements are capped at 50 per layer/category; truncate.orig_num preserves actual totals."
+}

@@ -4,14 +4,14 @@ The supplier must deliver assembled, programmed and function-tested units.
 The owner must not be left with battery, charging or antenna soldering work.
 This requirement includes the complete device and its enclosure.
 
-The current r05l PCB is 40 x 32mm with six copper layers. Native DRC/ERC/connectivity
+The current r05m PCB is 40 x 32mm with six copper layers and unchanged r05l copper. Native DRC/ERC/connectivity
 and two real JLC PCB DFM runs pass. Full-device release remains **HOLD**.
-See [STATUS](STATUS.md) and the [current PCBA review](../assembly/pcba-r02/README.md).
+See [STATUS](STATUS.md) and the [current PCBA review](../assembly/pcba-r03/README.md).
 
 | Delivery condition | Current evidence | Remaining work |
 |---|---|---|
-| All board parts assembled | 81 fitted references / 44 exact MPNs; JLC matched 43 MPNs | Source mandatory Q1; approve all placements and SMT/stencil/reflow |
-| Correct component orientation | 13 angle corrections and J1/J2 model-origin correction verified in actual preview; connector/Q1 manufacturer lands checked | J6 model, complete preview/SMT acceptance and factory placement-datum confirmation |
+| All board parts assembled | 81 fitted references / 44 exact MPNs matched; Q1 replaced with stocked ROHM UM6K34NTCN | Resolve actual SMT findings; approve stencil/reflow and assembly |
+| Correct component orientation | All 81 supplier placements read back; prior corrections plus Q1 270-degree supplier angle | Complete J6 model/pin acceptance and factory placement-datum confirmation |
 | Battery and charging ready | J3/J4 coordinates, hardware interlock, pack request and r19 wire support | Approved protected pack/NTC, factory harness attachments and powered charge tests |
 | Working cellular SIM | Fitted physical nano-SIM socket; eSIM deferred | SIM/operator/service and real network qualification for Türkiye |
 | Antennas fitted | CAPH LTE and ZETA GNSS candidates, r18 routes and four lid guides | Cable tolerances, assembly, continuity and RF/body tests |
@@ -26,19 +26,21 @@ approval is implied by these files.
 
 ## Factory handoff
 
-Use [bom.csv](../assembly/pcba-r01/bom.csv) and
-[cpl-jlc-review.csv](../assembly/pcba-r02/cpl-jlc-review.csv) for review with the
+Use [bom.csv](../assembly/pcba-r03/bom.csv) and
+[cpl-jlc-review.csv](../assembly/pcba-r03/cpl-jlc-review.csv) for review with the
 unchanged r05l Gerber ZIP. The native-angle/physical-centre baseline is retained
 separately. The r02 J1/J2 offset belongs to the dated JLC model; the factory must
 confirm its placement datum before machine programming. The board did not move.
-Q1 must remain fitted: the current 80-part preview excludes it and cannot establish
-complete SMT acceptance. Exact library matching does not prove stock or model
+Q1 and J6 must remain fitted: all 81 references are now in the actual supplier
+read-back, but SMT findings and J6 model/pin coverage remain open. Exact matching does not prove stock or model
 accuracy. Resolve model disagreements against the manufacturer's drawing and
 native copper before placement approval.
 
-The [placement-reference drawing](../assembly/pcba-r02/placement-reference.pdf)
-gives connector/Q1 physical centres and pin functions. The alternative Q1 screen
-does not authorize a BOM substitution; it remains an unselected candidate.
+The [placement-reference drawing](../assembly/pcba-r03/placement-reference.svg)
+gives connector/Q1 physical centres and corrected channel names. ROHM UM6K34NTCN
+is selected for the next prototype; the earlier Diodes candidates remain unselected.
+The [actual SMT disposition](../assembly/pcba-r03/smt-disposition.md) owns the
+unresolved findings. No all-green SMT or factory acceptance is claimed.
 
 The [interface table](../assembly/pcba-r01/interface-pads.csv) contains all 23 bare
 interface lands. J7 is VIO_1V8, SWDIO, GND, SWDCLK, DEBUG_RESET and VSYS on pins

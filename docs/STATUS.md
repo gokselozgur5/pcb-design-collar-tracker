@@ -1,10 +1,10 @@
 # Current state — 2026-10-26
 
-**Active r05l: hardware charge-temperature interlock implemented; native DRC/ERC/parity clean; two actual JLC PCB runs at 0 Danger / 0 Warning / 455 Good each.**
+**Active r05m: stocked ROHM Q1 selected; native DRC/ERC/parity clean; copper and Gerber identical to r05l. All 44 MPNs / 81 placements read back from JLC. Actual SMT findings remain unresolved.**
 **Working-device / RF / manufacturing release: HOLD. IP68 remains unqualified.**
 
-Continue from `experiments/power-r05l-charge-interlock/hardware/`.
-The preserved r05k and earlier sources remain immutable. All authored repository/GitHub
+Continue from `experiments/pcba-r05m-rohm-q1/hardware/`.
+The preserved r05l and earlier sources remain immutable. All authored repository/GitHub
 content is English. Run `python3 scripts/resume.py` before making another revision.
 
 [Gerber ZIP](../experiments/power-r05l-charge-interlock/evidence/collar-tracker-05l-charge-final4-40x32-dfm.zip) ·
@@ -13,30 +13,25 @@ content is English. Run `python3 scripts/resume.py` before making another revisi
 [Published r16 review](../release/r16-current-review/review.pdf) ·
 [Published r16 bundle](../release/collar-tracker-r05l-r16-review.zip)
 
-Latest manufacturing work: [PCBA r02 review](../assembly/pcba-r02/README.md)
-and [review ZIP](../release/collar-tracker-r05l-pcba-r02-review.zip).
-J1/J2 native lands match the manufacturer drawing. The dated JLC model's
-0.6320028mm origin offset is corrected in the supplier CPL, retaining r01's
-13 IC/discrete angle corrections. Actual reupload/read-back reproduces all 80
-available placements; top/bottom previews were inspected. Physical board
-positions, PCB, Gerber and the 81-reference BOM remain unchanged. All J6 lands
-and Q1 pin functions were checked against manufacturer data. J6 still lacks a
-usable supplier model; mandatory Q1 `DMN62D2UDW-7` is still unmatched. A screened
-DMN62D0UDW-7 candidate had only one unit in JLC's 07:21 UTC search and was not selected.
-**Next manufacturing step:** obtain Q1 sourcing and the J6 model/placement decision,
-confirm the supplier-specific placement datum, then review all 81 fitted references
-and run actual SMT analysis. Matching is not stock or SMT acceptance; empty SMT
-counters are not a pass. Factory programming/testing feasibility, approved protected
-pack and physical tests remain open. No supplier enquiry or order was sent.
+Latest manufacturing work: [PCBA r03](../assembly/pcba-r03/README.md) and
+[review ZIP](../release/collar-tracker-r05m-pcba-r03-review.zip).
+Q1 is now ROHM UM6K34NTCN / C510056; live JLC stock was 828 at 09:12 UTC,
+26 October 2026, unreserved. Native geometry and nets are byte-equivalent after
+reversing the MPN/datasheet substitutions. Q1 supplier angle is 270 degrees;
+the earlier 13 corrections and U.FL model-origin offsets remain unchanged.
+Actual supplier BOM/CPL downloads match the local bytes. All 81 references,
+44 exact MPNs, sides, centres and angles match; both previews were inspected.
 
-Prepared the [JLC engineering enquiry](../assembly/supplier-r01/README.md) with
-the exact 6,997,076-byte r02 attachment. It asks for Q1 sourcing, J6 model/manual
-placement review, machine datums and factory programming/test/assembly scope.
-The inspected placement UI offered no custom-model upload; this does not rule out
-engineering support. No substitute was selected or production approval implied.
-The draft is ready for separate sending authorization; the battery enquiry's
-existing pending authorization is unchanged. Do not repeat catalogue searches
-or unchanged PCB DFM as a substitute for the supplier response.
+**PCBA order readiness is NO.** The first actual SMT run has unresolved pin-edge,
+paste-overlap and board-edge findings. [Disposition and coverage limits](../assembly/pcba-r03/smt-disposition.md)
+retain the non-passing report; several categories were truncated at 50 results.
+J6 body spacing appears in backend results, but its visual model and explicit pin
+coverage remain incomplete. The native eight-land/manufacturer review still holds.
+**Next:** resolve the actual SMT/model/stencil findings and complete J6 placement
+acceptance. Preserve all frozen revisions; do not repeat unchanged PCB DFM or
+restart firmware/mechanics. Supplier messaging is set aside at the user's request.
+No message, order, payment or powered test was made. The old supplier-r01 enquiry
+is now historical and must not be sent unchanged with its superseded Q1 questions.
 
 Latest firmware: [tracker r03 prototype](../firmware/tracker-r03/README.md) adds
 P-256 signed boot and a bounded trial to r02's GNSS/LTE-M, persistent outbox,
@@ -155,7 +150,7 @@ flow; shipping firmware, provisioning, updates and physical tests remain open.
 | Contact retention r16 | Two custom rear terminals; defined lateral bearing, four meshes and CAD controls; internal harness still HOLD |
 | Board | 40 × 32mm; six Cu layers; 87 footprints |
 | Assembly candidates | 81 fitted references / 44 exact MPNs; BOM/CPL exported |
-| Actual JLC assembly review | 43/44 MPNs; 13 angle corrections plus J1/J2 model-origin correction verified in actual 80-part preview; Q1 sourcing/J6 model and complete SMT acceptance open |
+| Actual JLC assembly review | 44/44 MPNs and all 81 placements verified; Q1 now ROHM; actual SMT findings and J6 complete model/pin acceptance remain open |
 | Native DRC / ERC / opens / parity | Zero findings |
 | Charge circuit | Two VSYS-powered TLV3012B comparators and SN74LVC1G00 NAND drive /CE independently of MCU/VIO |
 | Temperature model | Conditional pass; nominal 6.29–36.21°C sensor window; original 50°C case disabled |

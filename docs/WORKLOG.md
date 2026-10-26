@@ -1196,3 +1196,37 @@ the actual supplier response before changing sourcing or approving placement.
 The previous battery enquiry remains unsent with its authorization unanswered.
 No supplier message, order, payment, placement approval, flashing or physical
 test occurred. Closed the browser and kept raw/account data ignored.
+
+
+## 2026-10-26 — ROHM Q1 selection and first actual SMT run
+
+- Selected UM6K34NTCN / C510056 for the next prototype after manufacturer pin,
+  low-voltage, current and reference-land thermal screens; live JLC stock was 828
+  at 09:12 UTC, unreserved. Native r05m changes only Q1 symbol/MPN/datasheet text.
+  Exact inverse substitutions recover the frozen r05l native files and Gerber is
+  reused byte for byte. Fresh KiCad DRC/ERC/opens/parity report zero; inherited
+  five DRC/four ERC ignored categories are unchanged.
+- Q1 supplier angle is now 270 degrees; existing 13 angle corrections and the
+  U.FL model-origin offsets are preserved. Actual JLC reupload/read-back verifies
+  all 44 exact MPNs and 81 reference/side/coordinate/angle entries. Downloaded
+  BOM/CPL bytes match local hashes. Both previews and the corrected connector/Q1
+  drawing were inspected. Corrected the old prose's D1/D2 naming; native pin nets
+  already matched ROHM.
+- Used the normal Save & Close / DFM check flow to run actual SMT analysis. Kept
+  the original rule hash. The resulting PDF/raw measurements contain unresolved
+  pin-edge, paste-overlap and board-edge findings; some categories are capped at
+  50 returned measurements. Numerical-scale U1 results and split-paste effects
+  are documented as evidence, not blanket waivers. J6 backend body spacing exists
+  despite the visual placeholder; explicit pin/model acceptance remains missing.
+- Froze the r03 review package with actual failures, current native sources and
+  BOM/CPL, unchanged Gerber, old PCB reports and clear file selection. Five Python
+  modules parse, 117 local Markdown targets resolve and full saved handoff passes
+  with 45 top-level fields (not 45 tests). Browser closed normally. No order,
+  payment, supplier message, firmware work, flashing or physical test.
+- PCBA order readiness remains NO. Next resolve actual SMT/model/stencil findings
+  and complete J6 placement acceptance. Supplier messaging remains set aside;
+  the old supplier-r01 enquiry must not be sent with superseded Q1 questions.
+
+The r03 supplier CSVs and downloaded rule snapshot retain their original CRLF bytes.
+Path-specific Git whitespace attributes recognize that separator while preserving ordinary
+trailing-space/blank-line checks; no PCB/SMT rule or uploaded hash changed.

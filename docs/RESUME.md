@@ -4,32 +4,35 @@ The current state is in [STATUS](STATUS.md). The next task is implementation,
 not another requirements interview. Read [the Paul/nano-SIM notes](paul-nanosim.md)
 before editing. This handoff does not require private chat history or other projects.
 
-**Current priority: factory assembly, not another firmware feature.**
-Read [PCBA r02](../assembly/pcba-r02/README.md). Actual JLC matching remains
-43/44 exact MPNs; mandatory Q1 is unmatched. This review's CPL retains r01's
-13 angle corrections and corrects the dated J1/J2 model origin by -0.6320028mm X.
-The physical connector positions and PCB remain unchanged; do not copy this
-model-specific offset into native CAD. Manufacturer lands/pins on J1/J2/J6/Q1
-are checked. J6 still has no usable supplier model. The DMN62D0UDW-7 alternate
-is unselected; its one-unit JLC stock observation does not resolve procurement.
-Next obtain Q1 sourcing, the J6 model/placement decision and factory confirmation
-of the placement datum, then accept all 81 fitted references and run SMT analysis.
-Do not repeat unchanged PCB DFM, drop Q1 or count empty SMT counters as a pass.
+**Current priority: finish assembled-PCB order preparation.**
+Read [PCBA r03](../assembly/pcba-r03/README.md) and its
+[actual SMT disposition](../assembly/pcba-r03/smt-disposition.md).
+Current native source is `experiments/pcba-r05m-rohm-q1/hardware/`.
+Q1 is now ROHM UM6K34NTCN / C510056. The source changes only Q1 metadata;
+all copper/nets/lands and the frozen r05l Gerber remain unchanged. Fresh native
+DRC/ERC/parity pass. Q1 supplier angle is 270 degrees; physical native angle
+is still 90 degrees. Retain earlier IC corrections and the U.FL model-origin offsets.
 
-The [JLC engineering enquiry](../assembly/supplier-r01/README.md) is prepared
-with the frozen r02 ZIP and exact next questions. It has not been sent and requires
-separate authorization under AGENTS.md. A bounded UI inspection found no direct
-custom-model upload. Seek a controlled supplier answer for Q1 and J6; do not
-restart the same catalogue/model search or invent an assembly acceptance.
-The original BOM and all frozen hardware/firmware/assembly artifacts are unchanged.
+All 44 MPNs and 81 placements were read back from JLC; downloaded BOM/CPL bytes
+match the local files. The first actual SMT run returned unresolved pin-edge,
+paste-overlap and component-to-edge findings. Several categories are truncated
+at 50 measurements; never call those complete. J6 remains a visual placeholder,
+although the backend includes its body spacing; explicit pin coverage is absent.
+Next resolve those concrete SMT/model/stencil findings and J6 placement acceptance.
+No new firmware, enclosure work or repeated unchanged PCB DFM is needed.
 
-The [review ZIP](../release/collar-tracker-r05l-pcba-r02-review.zip) includes the
-unchanged Gerber/native sources, original BOM/CPL, both review revisions and the
-new placement-reference drawing. The actual r02 preview reproduces 80 placements;
-Q1 is absent and J6 has only a placeholder. Run
-`python3 scripts/verify_pcba_connectors.py` for the saved manufacturer/origin/read-back
-checks. Handoff also verifies r01. Build/export/package scripts write frozen evidence;
-do not rerun them during normal resume. Use a new revision for further corrections.
+The [r03 review ZIP](../release/collar-tracker-r05m-pcba-r03-review.zip) selects
+current sources/BOM/CPL, unchanged Gerber and the actual non-passing SMT report.
+Run `python3 scripts/verify_pcba_r03.py` for saved source/input/read-back integrity;
+`python3 scripts/verify_handoff.py` also checks all preserved checkpoints.
+Generator/package scripts write frozen evidence; do not rerun them during resume.
+Further corrections belong in a new revision. PCBA order readiness remains NO.
+
+Supplier messaging is set aside at the user's request. Do not repeat a sending
+permission question or send the old supplier-r01 draft: its Q1 sourcing request
+is superseded. No order, payment, supplier acceptance or powered test exists.
+The broader working-device requirements remain in pcba-delivery.md; they do not
+justify restarting unrelated firmware/mechanical work before closing this stage.
 
 Latest software: [tracker r03](../firmware/tracker-r03/README.md), with signed
 MCUboot and a trial guard, and the unchanged [local receiver](../firmware/receiver/README.md).
