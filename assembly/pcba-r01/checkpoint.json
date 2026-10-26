@@ -1,0 +1,28 @@
+{
+  "revision": "pcba-r01",
+  "production_release": false,
+  "files": {
+    "assembly/pcba-r01/README.md": "e3fe9388bd04d1f05e0cec7cfa8642ca34b49798ff1e6a6b101ad43a6f06ed7a",
+    "assembly/pcba-r01/bom.csv": "e0e2782d00ce0d0a01559dd62cda5832a1904598125dc7d9720a735d7bff18d9",
+    "assembly/pcba-r01/contact-export.json": "5f9cfb691b4497e13ef0ac5d0ecba9962e30a8c85a9f73dcab6f3e7855f76796",
+    "assembly/pcba-r01/cpl-jlc-review.csv": "46f4a72547b5607c65bfd7fb53e33b2f65f599997b18a1b7e72a21b5cbf5f01e",
+    "assembly/pcba-r01/cpl.csv": "0d4d71db99c53891dcb0784954c89ad209dbd541e223d12151d448dc39d42e10",
+    "assembly/pcba-r01/file-checks.json": "9fdfd1026d1ad137c060ea51b9d6436f4590fb5c3025c196b382387b8e25be5c",
+    "assembly/pcba-r01/fitted-pads.csv": "b7aa6147280d71b217b4e8f2999c8837ddcb1c30d2af31303fd52a18fb135f7a",
+    "assembly/pcba-r01/interface-pads.csv": "30f8434891c502f93c11b02e98133dcea5746e7aa1bf306975745735475c4986",
+    "assembly/pcba-r01/jlc-library-match.json": "75b8495f1fd5c3f8f50087f825e3bd38f15431a42015823dee9c6aa2904ea029",
+    "assembly/pcba-r01/jlc-preview-positions.json": "3da7bc09e01fbb97b88d207806b0e405435ad310e64d2b60f6ca49114f5b59bb",
+    "assembly/pcba-r01/jlc-reviewed-match.json": "d0a46df06c99d34e155815c859f87a5c32cfdbcf7eb05ffc536bed876a354743",
+    "assembly/pcba-r01/orientation-review.json": "3b0daf46292aab3e196c7678a8c4b33d661312056e9691eb9b883448884a8e6e",
+    "assembly/pcba-r01/pin-one.csv": "7e0e377ff8c759c3c1782827cfd82d744b9d78ca259b5c5432db5cc805cdc573",
+    "assembly/pcba-r01/previews/native-bottom.png": "550de4b096fb0f68d22ce6a4fef0791cc7eb6cba8cc692993f2769895caa0ab7",
+    "assembly/pcba-r01/previews/native-top.png": "f17edbb1f53ac415d848d0802d66b1e2137ba68919312d91e42c2bc3ab9b7f0c",
+    "assembly/pcba-r01/previews/reviewed-bottom.png": "75d228aec532772138c24fc9f6482c347a26d6007c6c0100e33c687fe3a2afdb",
+    "assembly/pcba-r01/previews/reviewed-top.png": "7d4aa108232eb06452be543de928a9549de5c151eef430c4db9a3f09c698b332",
+    "scripts/prepare_pcba_review.py": "107443f0b623f31f01748660be3e3c6b85b6aa2eaef23b2f0497b8099b55d683",
+    "scripts/export_pcba_contacts.py": "d4a817199fd445b626d55be301cc509564f4da3bea7d19bc78673c26ee0c6378",
+    "scripts/review_pcba_orientation.py": "06f0c66bfafa1dddd53ec8b0a41ac733ba36a08066856151c2ea94e2de40564e",
+    "scripts/verify_pcba_review.py": "b6dc331210fdefddbe1dfc1078235dbb15faa38e2c37437cf8064542acb19658",
+    "scripts/package_pcba_review.py": "aed27c3cc5852031145c455a8fdd33b0346fafd80d5327bb0fb1b1ebb336c428"
+  }
+}

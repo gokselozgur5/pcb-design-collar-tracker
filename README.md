@@ -30,6 +30,12 @@ rotations and SMT acceptance remain open. PCB DFM does not prove a working devic
 [Charge review](assembly/charge-interlock-r01/README.md) ·
 [r05l source and limits](experiments/power-r05l-charge-interlock/README.md)
 
+The [current PCBA review](assembly/pcba-r01/README.md) adds actual JLC BOM matching
+(43/44 exact MPNs), supplier placement previews and 13 corrected IC/discrete
+rotations. Q1 sourcing, J6's missing model and the J1/J2 library/package mapping
+remain open. The 80-part supplier preview is incomplete; all 81 references remain
+in the local BOM/CPL. The PCB and its two clean DFM results are unchanged.
+
 The latest [r16 contact retention](mechanical/swim-r16-contact-retention/README.md)
 adds rear terminal bearing plates and internal pockets without changing the PCB
 or outside size. The [internal harness candidate](assembly/internal-charge-r02/README.md)

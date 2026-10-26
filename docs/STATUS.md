@@ -13,6 +13,20 @@ content is English. Run `python3 scripts/resume.py` before making another revisi
 [Published r16 review](../release/r16-current-review/review.pdf) ·
 [Published r16 bundle](../release/collar-tracker-r05l-r16-review.zip)
 
+Latest manufacturing work: [PCBA r01 review](../assembly/pcba-r01/README.md)
+and [review ZIP](../release/collar-tracker-r05l-pcba-r01-review.zip)
+have a supplier-format BOM/CPL for all 81 fitted references, 23 interface pads
+and native pin/land coordinates. Actual JLC matching confirms 43 of 44 exact
+MPNs; Q1 `DMN62D2UDW-7` is unmatched. Its preview contains only 80 mounted
+references. Fourteen IC/discrete footprints were compared against the returned
+library; 13 CPL rotations are corrected in `cpl-jlc-review.csv`. PCB/centres/sides
+are unchanged. J6 has no returned library model; J1/J2 need a separate package
+and origin review. Matching is not stock, complete placement or SMT acceptance.
+**Next manufacturing step:** resolve these four references, verify the complete
+81-part placement and run actual SMT analysis. Do not omit Q1 or interpret empty
+SMT counters as a pass. Then obtain factory programming/testing feasibility and
+the controlled protected-pack response. No supplier enquiry or order was sent.
+
 Latest firmware: [tracker r03 prototype](../firmware/tracker-r03/README.md) adds
 P-256 signed boot and a bounded trial to r02's GNSS/LTE-M, persistent outbox,
 authenticated uploads, DNS deadline and watchdog recovery. The real target build,
@@ -22,9 +36,9 @@ Hardware boot, swap/revert, modem DNS and power behavior are untested. The separ
 [local reference receiver](../firmware/receiver/README.md) commits idempotent records
 before acknowledging them. Default configuration has no host, identity or keys;
 it only collects offline records. This is not a shipping firmware release.
-Next implement offset-aware update staging/delivery in a new revision, with fault
-tests, then production key custody/provisioning and an explicit r02 factory/SWD
-migration. Swap-offset images start at `0x81000`; the pinned NCS FOTA target writes
+Deferred software work is offset-aware staging/delivery, production key custody/
+provisioning and an explicit r02 factory/SWD migration. Manufacturing review takes
+priority now. Swap-offset images start at `0x81000`; the pinned NCS FOTA target writes
 at the slot base and cannot be connected unchanged. Only a local development
 signing key exists; no credentials or endpoint are configured. The receiver is
 not deployed. Preserve factory/r01/r02/r03 and the unchanged PCB/Gerber/r19 assembly.
@@ -130,6 +144,7 @@ flow; shipping firmware, provisioning, updates and physical tests remain open.
 | Contact retention r16 | Two custom rear terminals; defined lateral bearing, four meshes and CAD controls; internal harness still HOLD |
 | Board | 40 × 32mm; six Cu layers; 87 footprints |
 | Assembly candidates | 81 fitted references / 44 exact MPNs; BOM/CPL exported |
+| Actual JLC assembly review | 43/44 exact MPN matches; Q1 unmatched; 13 IC/discrete rotation corrections; J6 model and J1/J2 library review open; no complete SMT acceptance |
 | Native DRC / ERC / opens / parity | Zero findings |
 | Charge circuit | Two VSYS-powered TLV3012B comparators and SN74LVC1G00 NAND drive /CE independently of MCU/VIO |
 | Temperature model | Conditional pass; nominal 6.29–36.21°C sensor window; original 50°C case disabled |

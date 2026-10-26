@@ -177,6 +177,13 @@ web page is not an analysis result.
 The BOM needs exact parts, values/tolerances, packages, references and DNP status.
 Match CPL references, side, coordinates, units, origin and rotation to the supplier
 preview. Do not submit DNP parts or bare contact/test pads as fitted components.
+
+An MPN match is not a package-model match. Compare numbered lands and polarity on
+both sides; supplier libraries can require different zero angles or have missing
+models. Preserve the native CPL and record supplier-specific corrections separately.
+After a BOM/CPL reupload, reload the preview and compare downloaded placements with
+the exact uploaded bytes: a cached preview can retain earlier rotations. Record
+missing fitted references explicitly; an incomplete preview cannot pass full SMT.
 [JLCPCB BOM requirements](https://jlcpcb.com/help/article/bill-of-materials-for-pcb-assembly).
 
 Confirm actual stock, substitutions, bottom-side assembly, stencil and special

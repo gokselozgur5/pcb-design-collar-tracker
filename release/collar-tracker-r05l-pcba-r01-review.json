@@ -1,0 +1,33 @@
+{
+  "package": "release/collar-tracker-r05l-pcba-r01-review.zip",
+  "sha256": "ee58b3a4a8cc11abcf11b3aa33862035d5d807bfa9cd464adcbf876da576abab",
+  "production_release": false,
+  "members": {
+    "assembly/pcba-r01/README.md": "924ff5257af3e5cc1abfb2c0051d8fe8a36e9759c5f5510dd74fae386177a3f4",
+    "assembly/pcba-r01/bom.csv": "e0e2782d00ce0d0a01559dd62cda5832a1904598125dc7d9720a735d7bff18d9",
+    "assembly/pcba-r01/checkpoint.json": "58831d50fe2af8dec7591bb50e6e6b2e792af713b9137551084727094dd3727f",
+    "assembly/pcba-r01/contact-export.json": "5f9cfb691b4497e13ef0ac5d0ecba9962e30a8c85a9f73dcab6f3e7855f76796",
+    "assembly/pcba-r01/cpl-jlc-review.csv": "46f4a72547b5607c65bfd7fb53e33b2f65f599997b18a1b7e72a21b5cbf5f01e",
+    "assembly/pcba-r01/cpl.csv": "0d4d71db99c53891dcb0784954c89ad209dbd541e223d12151d448dc39d42e10",
+    "assembly/pcba-r01/file-checks.json": "9fdfd1026d1ad137c060ea51b9d6436f4590fb5c3025c196b382387b8e25be5c",
+    "assembly/pcba-r01/fitted-pads.csv": "b7aa6147280d71b217b4e8f2999c8837ddcb1c30d2af31303fd52a18fb135f7a",
+    "assembly/pcba-r01/interface-pads.csv": "30f8434891c502f93c11b02e98133dcea5746e7aa1bf306975745735475c4986",
+    "assembly/pcba-r01/jlc-library-match.json": "75b8495f1fd5c3f8f50087f825e3bd38f15431a42015823dee9c6aa2904ea029",
+    "assembly/pcba-r01/jlc-preview-positions.json": "3da7bc09e01fbb97b88d207806b0e405435ad310e64d2b60f6ca49114f5b59bb",
+    "assembly/pcba-r01/jlc-reviewed-match.json": "d0a46df06c99d34e155815c859f87a5c32cfdbcf7eb05ffc536bed876a354743",
+    "assembly/pcba-r01/orientation-review.json": "3b0daf46292aab3e196c7678a8c4b33d661312056e9691eb9b883448884a8e6e",
+    "assembly/pcba-r01/pin-one.csv": "7e0e377ff8c759c3c1782827cfd82d744b9d78ca259b5c5432db5cc805cdc573",
+    "assembly/pcba-r01/previews/native-bottom.png": "550de4b096fb0f68d22ce6a4fef0791cc7eb6cba8cc692993f2769895caa0ab7",
+    "assembly/pcba-r01/previews/native-top.png": "f17edbb1f53ac415d848d0802d66b1e2137ba68919312d91e42c2bc3ab9b7f0c",
+    "assembly/pcba-r01/previews/reviewed-bottom.png": "75d228aec532772138c24fc9f6482c347a26d6007c6c0100e33c687fe3a2afdb",
+    "assembly/pcba-r01/previews/reviewed-top.png": "7d4aa108232eb06452be543de928a9549de5c151eef430c4db9a3f09c698b332",
+    "docs/pcba-delivery.md": "5f41f6a2634d7ee9c07ae51b42fbd93db14d528fa2a0c4121451cb0dfd42ea90",
+    "experiments/power-r05l-charge-interlock/evidence/collar-tracker-05l-charge-final4-40x32-dfm.zip": "c736c5d35ddfe4c4662e57606120f00f7358492e11d5fbb32eaf1d0ff6caf5d2",
+    "experiments/power-r05l-charge-interlock/evidence/jlc-check1/report.pdf": "98ffff69aa139bbb2998cd4b1a1643e6d8a04bc6a3159a2f3bac5a7ea1247982",
+    "experiments/power-r05l-charge-interlock/evidence/jlc-check2/report.pdf": "8bf1bd071947ed00c5d3a12f1f9ddbf3a3979d28c032c3a43c602853f2f3a0c2",
+    "experiments/power-r05l-charge-interlock/hardware/collar-tracker.kicad_dru": "e6523f50e6e0f12cea613a984946bb5d9be0111d7ed8610b04b246e8650651d0",
+    "experiments/power-r05l-charge-interlock/hardware/collar-tracker.kicad_pcb": "241c84d6ba98793c37344e1e46ddc4918e7b05322ba87daea7c9a90ffb8379b3",
+    "experiments/power-r05l-charge-interlock/hardware/collar-tracker.kicad_pro": "7b2a7d53dfd2850ae3cd1452937d2de5bb32d828768fa116adc964212fbe26b8",
+    "experiments/power-r05l-charge-interlock/hardware/collar-tracker.kicad_sch": "0a8d89c01db6d0211a9048467b728214da175750f6b670ebf3d6ffa9adeefb0e"
+  }
+}

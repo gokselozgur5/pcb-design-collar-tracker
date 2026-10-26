@@ -1084,3 +1084,48 @@ Full saved handoff passes (42 top-level fields, not 42 tests). Python syntax,
 87 local Markdown targets and source whitespace checks pass. The raw generated
 TF-M cache/build/simulator logs retain their original whitespace and blank lines
 as captured evidence; source checks exclude only those three raw files.
+
+## 2026-10-26 — Actual supplier assembly review
+
+Returned priority to factory assembly after the PCB delivery/status confusion.
+Preserved r05l native sources, its Gerber and two clean PCB DFM reports, all
+firmware checkpoints and the r19 mechanical assembly. Added an exact-source
+supplier BOM/CPL for 81 fitted references / 44 MPNs, with 58 top and 23 bottom
+placements. Verified the actual Gerber origin/bounds rather than recentering or
+mirroring coordinates. Exported 23 interface lands, 18 pin-1 lands and 364 native
+fitted pad shapes (including unnumbered paste apertures) in one read-only KiCad
+load; source bytes and the native net mapping are unchanged.
+
+Actual JLC matching found 43/44 exact MPNs. Q1 DMN62D2UDW-7 did not match, and
+manual base-part search returned no exact result. Broader search returned other
+parts; no substitute was selected. The initial preview contained only 80 mounted
+references and exposed library/native rotation differences. Compared all numbered
+lands on 14 IC/discrete references and corrected 13 supplier CPL angles. U1 stays
+at zero. Native centres, sides and the complete 81-reference BOM/CPL are retained.
+J6 has an exact MPN match but no returned library model; J1/J2 have different
+library numbering/origin/land arrangement and remain open for manufacturer review.
+
+The corrected upload's in-browser digest equals the local CPL SHA-256
+46f4a72547b5607c65bfd7fb53e33b2f65f599997b18a1b7e72a21b5cbf5f01e.
+Reloaded the supplier page because the existing preview retained old models after
+reupload. The new downloaded placement data reproduces all 80 available centres,
+sides and angles; Q1 is the only missing reference. Inspected both initial and
+corrected top/bottom previews and preserved sanitized data/screenshots. Pin-order
+agreement is not land/stencil/reflow or supplier process acceptance. No complete
+SMT run, placement approval, supplier message, order, powered test or flashing
+occurred. Empty SMT counters and an incomplete 80-part preview are not passes.
+
+Packaged native/Gerber sources, PCB reports and the assembly-review evidence in
+release/collar-tracker-r05l-pcba-r01-review.zip, SHA-256
+ee58b3a4a8cc11abcf11b3aa33862035d5d807bfa9cd464adcbf876da576abab.
+The read-only PCBA verifier checks identities, native nets, reference coverage,
+unapproved substitutions, unchanged centres/sides and actual supplier read-back.
+Full saved handoff passes with 43 top-level fields, not 43 tests. Seven changed
+Python files parse and the reviewed Markdown links resolve. No fresh PCB DRC/DFM
+was necessary for these unchanged native/Gerber bytes.
+
+Next resolve Q1 sourcing and the three connector-library cases, then accept the
+complete 81-part placement and run actual SMT review. Protected-pack approval,
+factory programming/testing feasibility and powered/RF/ingress acceptance remain
+open; the battery enquiry is still unsent. Further OTA development is deferred
+behind manufacturing review. Whole-device release remains HOLD.

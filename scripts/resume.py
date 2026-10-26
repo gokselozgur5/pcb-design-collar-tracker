@@ -20,6 +20,8 @@ print(f"Active: r05l hardware charge interlock; {candidate['native_drc']['unconn
 print(f"Other native violations/warnings: {candidate['native_drc']['violations']}; "
       f"schematic mismatches: {candidate['native_drc']['schematic_parity']}.")
 print('Parts: 81 fitted references / 44 exact candidate MPNs; original 71 footprints and 27 RF segments preserved.')
+print('PCBA r01: actual JLC match 43/44 MPNs; 13 supplier-angle corrections; preview has 80/81 parts, missing mandatory Q1.')
+print('Next manufacturing: resolve Q1, missing J6 model and J1/J2 library mapping, then complete placement/SMT review.')
 print('Power: tolerance/TCR/leakage and typical-capacitance screens pass conditionally; powered and RF acceptance remain HOLD.')
 print('Mechanical: r08 adds CAPH/ZETA prototype antennas, two nominal cable routes and four lid guides; 85 envelopes and four thickness cases checked.')
 print('r09 pack/NTC request study raises the shell by 0.4mm; this is not an approved supplier part or a complete harness.')
@@ -35,7 +37,7 @@ print('Published review: release/r16-current-review/review.pdf and release/colla
 print('Cable end datums/tolerances, feed bond, retention and physical thermal behavior remain unqualified.')
 print('Charge: independent hot/cold comparators and NAND now drive /CE. Corner model passes conditionally; physical startup/thermal tests remain open.')
 print('Tracker r02: DNS caller deadlines and watchdog/modem recovery; target build and host tests only, no flashing or observed hardware reset.')
-print('Next software: provisioning and signed-update/migration support in a new revision, then actual modem/SIM/power-cut/current tests.')
+print('Tracker r03: development-signed boot and bounded trial built/tested; no flashing. Further OTA work is deferred behind manufacturing review.')
 print('Next assembly: continuous/installation motion with r19 attachments, released wire shape and adhesion. Supplier-message approval remains pending.')
 print('Preserved: r04i/swim-r02 review bundle; pack, antennas, assembly and physical qualification remain open.')
 print('Git:')

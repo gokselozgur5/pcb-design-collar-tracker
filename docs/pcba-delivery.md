@@ -1,60 +1,67 @@
 # Working delivery without user soldering
 
-Requirement recorded 2026-10-24: the owner wants a working device from the supplier,
-without manual soldering where possible. This is the design/procurement target.
-0.3.4 passed two JLC PCB DFM runs with 0 Danger / 0 Warning, but is not a production
-ready product. See [order readiness](order-readiness-0.3.4.md) and
-[the DFM fix](clearance-revision-0.3.4.md). Paul's return-via/two-inner-GND approach
-was not completed on 0.3.4; subsequent work is tracked in [STATUS](STATUS.md).
+The supplier must deliver assembled, programmed and function-tested units.
+The owner must not be left with battery, charging or antenna soldering work.
+This requirement includes the complete device and its enclosure.
 
-| Delivery condition | Baseline status | Required work |
+The current r05l PCB is 40 x 32mm with six copper layers. Native DRC/ERC/connectivity
+and two real JLC PCB DFM runs pass. Full-device release remains **HOLD**.
+See [STATUS](STATUS.md) and the [current PCBA review](../assembly/pcba-r01/README.md).
+
+| Delivery condition | Current evidence | Remaining work |
 |---|---|---|
-| All board parts factory assembled | 46 physical parts; 30 missing exact MPNs | Exact BOM, sourcing, CPL/orientation and double-sided assembly |
-| Battery/charging connection ready | J3/J4 bare PCB contacts; cell/NTC open | Compatible protected cell and connection; factory wiring/assembly or a plug-in connection |
-| Working cellular SIM | Baseline J6 only provides contacts; r04 adds nano-SIM, eSIM deferred | Actual SIM/service/operator selection, Turkish use and factory test |
-| GNSS/LTE antennas fitted | J1/J2 U.FL; antennas unselected | Antenna/cable selection, RF/body testing and final-assembly responsibility |
-| Firmware programmed | J7 bottom-side SWD contacts | Pogo fixture, firmware and programming/verification instructions |
-| Function test passed | No powered prototype or test software | Measured acceptance limits, supplier feasibility and per-unit test records |
-| Heart-rate function | J5 digital interface; no selected sensor | Sensor/contact design and reference comparison; absent from this board |
-| Ready in its enclosure | Old mockup used a 30 × 22 mm PCB | 35 × 28 mm board/battery/antenna fit, assembly and sealing validation |
+| All board parts assembled | 81 fitted references / 44 exact MPNs; JLC matched 43 MPNs | Source mandatory Q1; approve all placements and SMT/stencil/reflow |
+| Correct component orientation | 14 IC/discrete footprints compared; 13 supplier-angle corrections | Full preview acceptance, J6 missing model and J1/J2 package/origin review |
+| Battery and charging ready | J3/J4 coordinates, hardware interlock, pack request and r19 wire support | Approved protected pack/NTC, factory harness attachments and powered charge tests |
+| Working cellular SIM | Fitted physical nano-SIM socket; eSIM deferred | SIM/operator/service and real network qualification for Türkiye |
+| Antennas fitted | CAPH LTE and ZETA GNSS candidates, r18 routes and four lid guides | Cable tolerances, assembly, continuity and RF/body tests |
+| Firmware programmed | Factory observation and development-signed tracker r03 builds; J7 coordinates | Approved production image, provisioning, fixture and actual flash/verify/boot |
+| Function test passed | Host checks and target builds; no powered prototype | Physical rail/current/charging/sensor/modem/GNSS tests and per-unit records |
+| Heart rate | J5 digital expansion contacts only | Sensor/contact design and validation; not implemented |
+| Swimming enclosure | Retention, dock and thermal-fit prototypes; IP68 target | Material/process approval, assembly validation and whole-device ingress tests |
 
-**PCB assembly alone does not establish a fully assembled, working product.**
-Battery, antenna and enclosure assembly by the same supplier has not been confirmed.
-If another assembler is needed, retain the requirement that soldering must not be
-passed back to the owner. The factory's assembly process and user hand soldering
-are different concerns.
+The requested battery is not an approved supplier part. Its enquiry is prepared
+but unsent. No order, payment, supplier communication or production programming
+approval is implied by these files.
+
+## Factory handoff
+
+Use [bom.csv](../assembly/pcba-r01/bom.csv) and
+[cpl-jlc-review.csv](../assembly/pcba-r01/cpl-jlc-review.csv) for review with the
+unchanged r05l Gerber ZIP. The native-angle baseline is retained separately.
+Q1 must remain fitted: the current 80-part preview excludes it and cannot establish
+complete SMT acceptance. Exact library matching does not prove stock or model
+accuracy. Resolve model disagreements against the manufacturer's drawing and
+native copper before placement approval.
+
+The [interface table](../assembly/pcba-r01/interface-pads.csv) contains all 23 bare
+interface lands. J7 is VIO_1V8, SWDIO, GND, SWDCLK, DEBUG_RESET and VSYS on pins
+1 through 6. Use the actual 1.8V logic reference and the required external-I/O
+startup sequence. Contact force/access, power and ESD handling need qualification;
+coordinates alone do not make a working fixture.
 
 [JLC's programming service](https://jlcpcb.com/help/article/pcba-programming-service)
-offers post-assembly programming for Standard PCBA, subject to engineering review.
-It requires the part number, interface, firmware and procedure. Support for this
-nRF9151/J7 fixture is unconfirmed. Its [testing description](https://jlcpcb.com/help/article/smt-inspection-and-testing-capabilities)
-describes customized powered tests against customer criteria; this is not assumed
-to be included automatically or guaranteed for this design.
+is subject to engineering review. Confirm nRF9151 support, interface/fixture,
+image format and verification procedure. Its
+[testing description](https://jlcpcb.com/help/article/smt-inspection-and-testing-capabilities)
+does not establish that battery wiring, enclosure assembly or the requested
+powered tests are included for this board. Confirm responsibility for each
+operation before ordering.
 
-## Production acceptance criteria to define
+## First-prototype powered acceptance
 
-1. Current-limited first power-up; rails, leakage/sleep current and loaded behavior.
-   Resolve and measure UVLO and VDD_GPIO sequencing first.
-2. SWD programming, image verification, serial number and boot record. J7 pins:
-   VIO, SWDIO, GND, SWDCLK, DEBUG_RESET, VSYS. Fixture access still needs design.
-3. Charge current/termination, NTC and cell behavior against the chosen cell's limits.
-   The present 100 mA setting is a draft assumption.
-4. Accelerometer communication and manufacturer self-test.
-5. SIM/profile reading, network or appropriate test-system registration, and real
-   transmission to a test server. Do not assume a Turkish profile works at a
-   factory in China; arrange suitable test access.
-6. Controlled antenna/signal/test method for GNSS fix and RF measurements. Random
-   indoor acquisition attempts are not acceptance tests.
-7. If fitted, heart-rate sensor communication plus separate on-animal measurement
-   validation. Factory electronics testing does not establish clinical/contact accuracy.
+1. Current-limited first power-up, rails and VDD_GPIO startup/low-cell recovery.
+2. SWD flash/verify, boot identity, serial/provisioning record and failure recovery.
+3. Charge current, termination, sensor open/short/hot/cold and pack protection
+   against the approved complete-pack specification. Design settings are
+   4.2V / 100mA charging and a 500mA input limit; actual behavior is unmeasured.
+4. Accelerometer/fuel-gauge communication and relevant device self-tests.
+5. SIM detection, registration and authenticated upload/ACK using suitable factory
+   service. A Turkish SIM cannot be assumed to work at the factory.
+6. Controlled GNSS/RF conditions and measured active/sleep current; random indoor
+   acquisition attempts are not acceptance criteria.
+7. Whole-assembly tests using the agreed immersion and dust conditions.
 
-Numeric limits and the fixture are unfinished. Prototype assembly/testing may be
-outsourced, but the first design is not guaranteed to need no revision. The order's
-concrete delivery terms must prevent failed boards being sent to the owner as repair work.
-
-The last two supplier reports cover 0.3.4, dated 2026-10-25 06:39:36 and 06:41:25:
-0 Danger / 0 Warning, PCB DFM only, no SMT analysis. ZIP identity and reports are in
-`release/collar-tracker-0.3.4-verification.json`. All 268 pads are mask-exposed.
-U1 stencil, U2's JLC-adapted mask and U5's 0.010 mm narrowed lands still need
-assembly qualification. DFM files were uploaded; no order, payment or supplier
-message has been made.
+Numeric pass/fail limits, approved hardware, fixture feasibility and actual
+factory records remain open. PCB DFM, SMT review and full-device functional
+acceptance are separate claims.

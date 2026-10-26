@@ -4,11 +4,26 @@ The current state is in [STATUS](STATUS.md). The next task is implementation,
 not another requirements interview. Read [the Paul/nano-SIM notes](paul-nanosim.md)
 before editing. This handoff does not require private chat history or other projects.
 
+**Current priority: factory assembly, not another firmware feature.**
+Read [PCBA r01](../assembly/pcba-r01/README.md). The actual supplier match is
+43/44 exact MPNs; Q1 remains mandatory and unmatched. `cpl-jlc-review.csv` changes
+13 IC/discrete angles while retaining all 81 references, centres and sides.
+J6 has no returned model, and J1/J2 need library/package/origin review. Resolve
+those four references before accepting the complete placement or SMT run.
+The original `cpl.csv` is retained as native-coordinate evidence. Do not replace
+the PCB, repeat its unchanged DFM, drop Q1, or count empty SMT counters as a pass.
+
+The [review ZIP](../release/collar-tracker-r05l-pcba-r01-review.zip) includes the
+unchanged Gerber/native sources, BOM/CPL, pad maps and inspected supplier previews.
+Run `python3 scripts/verify_pcba_review.py` for the saved file/net/read-back checks.
+Preparation/export/package scripts write frozen evidence; do not rerun them during
+a normal resume. Use a new revision for further corrections.
+
 Latest software: [tracker r03](../firmware/tracker-r03/README.md), with signed
 MCUboot and a trial guard, and the unchanged [local receiver](../firmware/receiver/README.md).
 Target build, embedded-key signature checks and host trial/image tests pass.
 Hardware boot, watchdog handoff, swap/revert and real modem behavior are untested.
-Continue with offset-aware staging/delivery in a new revision: swap-offset writes
+When software work resumes, use a new revision for staging/delivery: swap-offset writes
 begin at secondary + 4096 (`0x81000`), while the pinned NCS FOTA target starts at
 the slot base. Resolve that integration explicitly. Production signing-key custody,
 provisioning and factory/SWD migration from the standalone r02 layout remain open.

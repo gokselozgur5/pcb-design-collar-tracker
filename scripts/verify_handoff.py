@@ -374,6 +374,8 @@ def verify(include_review_bundle=True):
     tracker_recovery = verify_tracker_r02()
     from verify_tracker_r03 import verify as verify_tracker_r03
     tracker_signed_boot = verify_tracker_r03()
+    from verify_pcba_review import verify as verify_pcba_review
+    pcba_review = verify_pcba_review()
     from package_current_review import verify_bundle as verify_previous_current_review
     previous_current_review_bundle = verify_previous_current_review()
     from package_clamp_review import verify_bundle as verify_clamp_review
@@ -414,6 +416,7 @@ def verify(include_review_bundle=True):
             'tracker_firmware': tracker_firmware,
             'tracker_recovery': tracker_recovery,
             'tracker_signed_boot': tracker_signed_boot,
+            'pcba_review': pcba_review,
             'clamp_review_bundle': clamp_review_bundle,
             'previous_current_review_bundle': previous_current_review_bundle,
             'current_review_bundle': current_review_bundle,
