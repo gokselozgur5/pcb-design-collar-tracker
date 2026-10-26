@@ -62,36 +62,28 @@ that stack. Outside size, contact positions, seal glands and PCB are unchanged.
 pass. This closes the missing rear-bearing geometry only; load, torque, resistance,
 plating and physical ingress remain unqualified.
 
-**Shared cable routing passes; complete harness assembly is still HOLD.**
-The [r17 integrated routes](../mechanical/swim-r17-cable-integration/README.md)
-pass all 27 static PCB poses with both RF and both charge leads present: 29 RF
-and 49 charge checks per pose. The GNSS path and upper-pose black-wire shapes
-change; existing lid guides, shell, PCB and wire lengths are retained. Minimum
-RF-pair and charge-to-RF gaps are 0.204589mm and 0.214946mm respectively, after
-the declared allowances. This does not establish continuous deformation or
-physical restraint. Next implement restraint/forming and installation/service
-behavior; the saved r16 review ZIP remains preserved.
+**r18 passes all 27 static poses with expanded charge-wire envelopes; complete harness assembly is still HOLD.**
+The [r18 correction](../mechanical/swim-r18-charge-clearance/README.md) fixes an
+omission in r17: charge wires had been checked against nominal components and
+retention, while RF used thermal/movement envelopes. The old geometry fails the
+expanded charge screen at all 27 poses. Its saved 27/27 result establishes only
+the earlier, narrower calculation.
 
-The preserved
-[r02 candidate](../assembly/internal-charge-r02/README.md) includes both nominal
-routes, stripped ends and joint envelopes, with 49 geometry checks, two closed
-wire meshes, three CAD controls and ten regressions. Only the internal wires
-change to Alpha 2841/7 30 AWG; external dock wiring is unchanged.
+Two top reliefs in the retainer and revised GNSS/charge routes resolve those
+screens. The reliefs retain a 0.5mm lower bridge and preserve all capture tabs
+and radial keys. The unchanged lid guides, PCB, enclosure size and numerical
+wire-length targets are retained. Each pose now has 53 charge and 29 RF checks;
+the 0.2mm gap and 6.604mm charge-wire bend limits are unchanged. Four closed
+meshes, five CAD controls and seven regressions pass. The nominal wire/joint
+assembly and changed GNSS witness clear the actual parts.
 
-The first movement proposal fails: one of 27 poses passes, and other poses require
-up to 0.978mm of wire-length change. Several also fail RF/bend screens. A fixed
-cut length, restraint and factory/service process are not accepted. Continue from
-the saved movement diagnostic; do not mistake the nominal fit for a completed
-harness. The newer constant-length search passes all 27 numerical length checks
-and 18 of 27 independent full geometry screens. The remaining nine are all at
-PCB top Z=11.97mm: black-wire RF clearance and, in eight cases, bend radius fail.
-Those failures are resolved in the separate r17 combination above; r02 keeps
-its original RF partner and remains an 18/27 diagnostic. The 0.2mm gap and
-6.604mm bend limits stay fixed. Restraint and continuous motion remain unaccepted.
-
-The route screen now includes the four actual RF guide blocks. All 27 saved
-candidate poses clear those blocks by at least 0.324mm; a deliberate route through
-a guide is rejected. This additional check does not resolve the nine RF/bend failures.
+Source: `mechanical/swim-r18-charge-clearance/routing.json` and
+`retainer-reliefs.json`. Next implement charge-wire restraint and a forming/
+assembly fixture, then continuous/installation/service behavior. The remaining
+bridge needs physical strength/creep acceptance. A numerical fixed length is
+not a production cutting tolerance. The old r02 18/27 and r17 27/27 results and
+the published r16 ZIP remain preserved historical evidence, not complete
+thermal or physical harness acceptance.
 
 The first [factory observation firmware](../firmware/README.md) now builds for the
 actual r05l nRF9151 board. It delays external I/O by 1s, reports accelerometer,
@@ -103,7 +95,7 @@ flashed. The shipping LTE/GNSS tracker application and physical tests remain ope
 | Check | Current result |
 |---|---|
 | Factory observation firmware | Actual custom-board build passed; two negative compile controls passed; no flashing or powered test |
-| Integrated cable routes r17 | 27/27 static poses; 78 checks per pose; existing lid guides retained; restraint/continuous movement and physical qualification open |
+| Integrated cable routes r18 | 27/27 static poses; 82 checks per pose including expanded charge envelopes; retainer reliefs and GNSS/charge routes revised; restraint/continuous movement and physical qualification open |
 | Internal harness r02 | Both nominal routes and joints fit; continuous radius bounds 7.438/6.905mm; 18/27 searched static poses pass; upper-pose RF/bend interference and restraint still HOLD |
 | Contact retention r16 | Two custom rear terminals; defined lateral bearing, four meshes and CAD controls; internal harness still HOLD |
 | Board | 40 × 32mm; six Cu layers; 87 footprints |

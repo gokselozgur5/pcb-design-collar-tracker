@@ -68,6 +68,10 @@ uploads to JLC DFM are in scope. Orders, payments and supplier messages are not.
   SIM access and the closed-lid stack. A seated-board fit is not retention proof.
   Keep sampled cable poses distinct from continuous-motion and physical evidence;
   resolve material expansion before describing an assembly as ready to order.
+- Apply the same declared thermal and retention-movement envelopes to every
+  cable family. A combined result must not mix expanded RF checks with nominal
+  power-wire checks. Keep the failing baseline when correcting an omission;
+  search scores and sampled curvature do not replace independent continuous bounds.
 - No subagents unless Göksel explicitly requests them.
 
 ## Git and handoff

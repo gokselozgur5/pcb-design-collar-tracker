@@ -873,3 +873,28 @@ test or physical water/dust qualification was performed.
   supports the nRF9151 prototype choice; it does not establish subscription
   activation, route coverage, completed-device acceptance or measured energy.
   The controlled local-SIM test remains open. No operator was contacted.
+
+## 2026-10-26 — Correct charge-wire thermal and retainer clearance
+
+- Found that r17 used nominal component/retainer solids for charge wires while
+  RF used expanded envelopes. Preserved r17 and reproduced failure at all 27
+  poses under the expanded charge screen; its earlier 27/27 result remains
+  evidence of the narrower calculation only.
+- Added two retainer top reliefs with a 0.5mm lower bridge, preserving all tabs
+  and radial keys. Adjusted the GNSS lower turn while compensating at the left
+  guide, and revised the charge routes. Actual lid guides, PCB, enclosure size
+  and numerical wire lengths are unchanged. A sparse-search bend failure was
+  rejected; an arc-length-based curve fit resolved the final difficult pose.
+- r18 passes 27/27 static poses, 53 charge plus 29 RF checks per pose. Minimum
+  thermal-component, swept-retention, charge-to-RF and RF-pair gaps are
+  0.204214, 0.289911, 0.232517 and 0.213954mm. The continuous charge-wire bend
+  lower bound is 6.605489mm against the unchanged 6.604mm requirement.
+- Four closed mesh files and five CAD controls pass: no added frame material,
+  3.254999mm³ removed, and empty nominal wire/joint, terminal and GNSS-guide
+  intersections. The actual new assembly preview was inspected. Seven new
+  regressions pass, and read-only verification is part of the normal handoff.
+- Complete-device release remains HOLD. Restraint/forming, continuous and
+  service movement, frame strength/creep, pack/supplier/process approval and
+  factory/powered/RF/ingress qualification remain open. PCB/JLC, firmware and
+  published review archives are unchanged. No supplier message, order, payment,
+  flashing or physical test occurred.

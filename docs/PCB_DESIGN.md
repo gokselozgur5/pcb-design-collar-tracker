@@ -506,3 +506,17 @@ restraint and a factory/service sequence before releasing wire cut instructions.
 A thinner internal wire can meet the geometry without growing the shell, but its
 resistance, maximum pull and fault-current behavior must be reconsidered. Never
 transfer the external harness pull target to a smaller conductor by assumption.
+
+Apply the declared component thermal and retention-movement envelopes to every
+cable family. In r17, RF checks used those envelopes while charge-wire checks
+used nominal solids; the combined green count therefore had a narrower scope
+than the assembly needed. r18 preserves that source and its newly reproduced
+failures, then checks the revised routes against expanded envelopes. Expand
+the actual cut solid so tolerances reduce usable relief space. Removing material
+must also preserve capture features and leave strength/creep acceptance explicit.
+
+Validate an optimizer's routes independently. Sparse curvature samples missed a
+short tight bend in one r18 candidate. Continuous bounds rejected it; refitting
+the curve with control points distributed by arc length produced a tractable
+replacement. A search score, iteration status or convenient representation is
+not geometry acceptance, and static geometry is not physical wire restraint.

@@ -4,18 +4,24 @@ The current state is in [STATUS](STATUS.md). The next task is implementation,
 not another requirements interview. Read [the Paul/nano-SIM notes](paul-nanosim.md)
 before editing. This handoff does not require private chat history or other projects.
 
-Latest routing: [r17 four-cable integration](../mechanical/swim-r17-cable-integration/README.md)
-passes all 27 static PCB poses while retaining the existing shell, lid guides,
-PCB and common wire lengths. Its source is `mechanical/swim-r17-cable-integration/routing.json`.
-The old r02/r11 combination remains a preserved 18/27 diagnostic. Continue from
-r17 to implemented charge-wire restraint, a forming/assembly fixture and
-continuous/installation movement. Do not repeat unchanged-byte JLC DFM or
-restart the now-resolved static routing search. Complete device release and
-physical ingress remain HOLD.
+Latest routing: [r18 thermal-clearance correction](../mechanical/swim-r18-charge-clearance/README.md)
+passes all 27 static PCB poses with expanded charge-wire component and retainer
+envelopes. Source: `mechanical/swim-r18-charge-clearance/routing.json` and
+`retainer-reliefs.json`. The retainer has two top reliefs with a 0.5mm bridge;
+GNSS and charging paths change while actual lid guides, shell, PCB and common
+numerical wire lengths are retained. The prior r17 charge calculation omitted
+these expansion/movement envelopes; its 27/27 result is narrower historical
+evidence. The unchanged old routes fail the expanded screen at every pose.
+
+Continue from r18 to implemented charge-wire restraint, a forming/assembly
+fixture and continuous/installation movement. Validate the remaining frame
+bridge's physical strength/creep. Do not repeat unchanged-byte JLC DFM or
+restart the resolved static search. Complete-device release, factory assembly
+and physical ingress remain HOLD.
 
 ```sh
-python3 scripts/verify_cable_integration.py
-.venv-dfm/bin/python -m unittest discover -s tests -p test_cable_integration.py -v
+python3 scripts/verify_charge_thermal_clearance.py
+.venv-dfm/bin/python -m unittest discover -s tests -p test_charge_thermal_clearance.py -v
 ```
 
 ## Open the project

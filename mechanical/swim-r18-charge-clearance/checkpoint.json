@@ -1,0 +1,24 @@
+{
+  "revision": "r18",
+  "manufacturing_release": false,
+  "files": {
+    "mechanical/swim-r18-charge-clearance/README.md": "af777fee85c75aa55bec221632fa15a4bd7d6c2c9e466523a18046460ce55ef1",
+    "mechanical/swim-r18-charge-clearance/baseline-failures.json": "a719b38e4e1b5313e316c9b0b237492ea9a2756051bff54b3fe25ef640547d10",
+    "mechanical/swim-r18-charge-clearance/black-wire.stl": "ff03d2ee43299c86871021f9c2c9e6bcf99dd58e3bac9622a44fa8a3254f0d2b",
+    "mechanical/swim-r18-charge-clearance/cad-checks.json": "87c259aaaf8c4e2a8746bfff6ff129047ee1c50ee052ac2fcb755c4fd5b7b52d",
+    "mechanical/swim-r18-charge-clearance/checks.json": "1a70612d291bd01bc6b9bb12573276780e3d591ffa25084966b1e958d335c1f5",
+    "mechanical/swim-r18-charge-clearance/gnss-guide-witness.stl": "10ac5b4384fb270754bca4c396746e0d41f1aafb902e17ad5315597e54ff378c",
+    "mechanical/swim-r18-charge-clearance/harness.scad": "2ae6a53b2422ca51c1a4df5bd86a71b8b4b458d88d7f7ec36f550efe956b3a03",
+    "mechanical/swim-r18-charge-clearance/nominal-routing.json": "b5beea5f3129cdef833119b841d0c81edade6cc5790f71ce72c9c700e9a01a0c",
+    "mechanical/swim-r18-charge-clearance/red-wire.stl": "9aed1b3dfbb49b97bb8465d43b9111a4ca29c9b4bd11cbabbddd31f46e8019b4",
+    "mechanical/swim-r18-charge-clearance/retainer-reliefs.json": "4b8d2a3d2912b98cfdfd785d2fbca3c6339328ef453df71d1d006cb69babc4fc",
+    "mechanical/swim-r18-charge-clearance/retainer.scad": "e79790b5c13ef690c4f4513dbf44f8c460c6d3e7d065402287ba3fc14032ebda",
+    "mechanical/swim-r18-charge-clearance/retainer.stl": "7cc04c45431cf636f096f476451969264c6321fc428673f7cf2b0afbd4e18b6c",
+    "mechanical/swim-r18-charge-clearance/review.png": "b010224374cf0d63f9dcb72a7b21a56fdeeee16a6b04ace2ab6c16db15e263d0",
+    "mechanical/swim-r18-charge-clearance/routing.json": "9ffc86168d837151c9854c5bf14313e0aae2fe9b428c3f6a2a4d312733a28167",
+    "scripts/check_charge_thermal_clearance.py": "89f339cd6fb4e349ef6b44bdd63c927c62fb69cfe3a1f612100d3db7f3c4d8d5",
+    "scripts/export_charge_thermal_clearance.py": "9f393fa34ebd2481cac7106764c5fe7a5c97949dff281b0e3510c1a852fe5bf1",
+    "scripts/verify_charge_thermal_clearance.py": "6a7c36782a0c02bf7554cc8560f072c9d682c9efb0401a05daedc87e4fe21f82",
+    "tests/test_charge_thermal_clearance.py": "cc58954b8c8b005e469969768f181997e8e193a677bccf3b5187ae8f86c45e78"
+  }
+}

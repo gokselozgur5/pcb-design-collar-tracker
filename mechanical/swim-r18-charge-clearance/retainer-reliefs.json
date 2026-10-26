@@ -1,0 +1,10 @@
+{
+  "revision": "r18",
+  "minimum_remaining_height_mm": 0.5,
+  "cuts": [
+    {"name": "red charge lead", "xy_mm": [19.9, -5.8, 21.4, -1.4], "bottom_z_mm": 12.0},
+    {"name": "black charge lead", "xy_mm": [19.9, 3.5, 21.4, 8.4], "bottom_z_mm": 12.0}
+  ],
+  "physical_strength_qualified": false,
+  "note": "Geometry candidate only. Preserve all capture tabs and radial keys. Remaining bridge strength/creep and machining capability require acceptance."
+}

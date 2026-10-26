@@ -1,0 +1,181 @@
+{
+  "inputs": {
+    "mechanical/swim-r18-charge-clearance/nominal-routing.json": "b5beea5f3129cdef833119b841d0c81edade6cc5790f71ce72c9c700e9a01a0c",
+    "mechanical/swim-r18-charge-clearance/retainer-reliefs.json": "4b8d2a3d2912b98cfdfd785d2fbca3c6339328ef453df71d1d006cb69babc4fc",
+    "scripts/export_charge_thermal_clearance.py": "9f393fa34ebd2481cac7106764c5fe7a5c97949dff281b0e3510c1a852fe5bf1",
+    "scripts/export_internal_harness.py": "35a23d89b5b0b03b0e6aae6bf0e0e645410312972b61ef7f494c248cd80af111",
+    "scripts/export_cable_integration.py": "4ddb7d5f13a5e8e402a05a37b8fa7706a785c549d043bc0d6f5f180b027337f8",
+    "scripts/internal_harness_geometry.py": "b47134f090f29e9911f959077542a21e867e3b59585178c6994b88e18bf8c77d",
+    "scripts/inspect_enclosure_mesh.py": "650b7923664e55a56af30c605d20fe2cf77a3bedacf71076a153510a92200956",
+    "scripts/check_charge_thermal_clearance.py": "89f339cd6fb4e349ef6b44bdd63c927c62fb69cfe3a1f612100d3db7f3c4d8d5",
+    "assembly/internal-charge-r02/harness.json": "6d0c5d325107305b65d477a76410f5fa3bbcdfc4ef73b85943bc937a82bec569",
+    "assembly/internal-charge-r02/harness.scad": "dd846c866a5a99040d0a4116bde032da52eae4f75d6ec86e077e23d36d71de69",
+    "mechanical/swim-r11-thermal-fit/retainer.stl": "8825ef3a509be8ff69f04bfcaee53d03e37bd0c4c726ec0d94249faa62bec138",
+    "mechanical/swim-r11-thermal-fit/lid.stl": "5c32194b56928f279ef3336c1be4e6aaae1a433d6504f48cb60835bae941ace8",
+    "mechanical/swim-r16-contact-retention/body.stl": "dc32b424fd3daeb8c3e94c1a0d80e478be04bc2a9761ffc23ba84dd6373c657b",
+    "mechanical/swim-r16-contact-retention/positive_terminal.stl": "8edf076e834a5829627cfe63d90f30092760bc9a73f1266832797e2fdf1f0a1b",
+    "mechanical/swim-r16-contact-retention/negative_terminal.stl": "586122b1e22faf366a49b3d1c20a00a20c3572963fa665d23888d36f19122b81",
+    "mechanical/swim-r12-pack-retention/carrier.stl": "264977f7f5ace3d91765df91254d112af623e234d92399988934d4e82d6affcb",
+    "mechanical/swim-r18-charge-clearance/retainer.scad": "e79790b5c13ef690c4f4513dbf44f8c460c6d3e7d065402287ba3fc14032ebda",
+    "mechanical/swim-r18-charge-clearance/harness.scad": "2ae6a53b2422ca51c1a4df5bd86a71b8b4b458d88d7f7ec36f550efe956b3a03"
+  },
+  "meshes": [
+    {
+      "file": "red-wire.stl",
+      "sha256": "9aed1b3dfbb49b97bb8465d43b9111a4ca29c9b4bd11cbabbddd31f46e8019b4",
+      "triangles": 29036,
+      "vertices": 14520,
+      "bounds_mm": [
+        [
+          -17.089982986450195,
+          -13.938827514648438,
+          11.348098754882812
+        ],
+        [
+          22.431978225708008,
+          -3.0048317909240723,
+          16.246814727783203
+        ]
+      ],
+      "dimensions_mm": [
+        39.5219612121582,
+        10.933995723724365,
+        4.898715972900391
+      ],
+      "signed_volume_mm3": 11.719237924957774,
+      "bad_edge_count": 0,
+      "collapsed_faces_at_1e_5mm": 0,
+      "connected_surfaces": 1,
+      "closed_oriented_manifold": true
+    },
+    {
+      "file": "black-wire.stl",
+      "sha256": "ff03d2ee43299c86871021f9c2c9e6bcf99dd58e3bac9622a44fa8a3254f0d2b",
+      "triangles": 29036,
+      "vertices": 14520,
+      "bounds_mm": [
+        [
+          -14.51463794708252,
+          -12.502463340759277,
+          11.376209259033203
+        ],
+        [
+          22.448230743408203,
+          10.261823654174805,
+          16.743255615234375
+        ]
+      ],
+      "dimensions_mm": [
+        36.96286869049072,
+        22.764286994934082,
+        5.367046356201172
+      ],
+      "signed_volume_mm3": 14.937683832070642,
+      "bad_edge_count": 0,
+      "collapsed_faces_at_1e_5mm": 0,
+      "connected_surfaces": 1,
+      "closed_oriented_manifold": true
+    },
+    {
+      "file": "gnss-guide-witness.stl",
+      "sha256": "10ac5b4384fb270754bca4c396746e0d41f1aafb902e17ad5315597e54ff378c",
+      "triangles": 25432,
+      "vertices": 12720,
+      "bounds_mm": [
+        [
+          -16.243738174438477,
+          -0.18322154879570007,
+          14.444576263427734
+        ],
+        [
+          4.757102966308594,
+          5.544729709625244,
+          18.29831886291504
+        ]
+      ],
+      "dimensions_mm": [
+        21.00084114074707,
+        5.727951258420944,
+        3.8537425994873047
+      ],
+      "signed_volume_mm3": 12.940676075682527,
+      "bad_edge_count": 0,
+      "collapsed_faces_at_1e_5mm": 0,
+      "connected_surfaces": 2,
+      "closed_oriented_manifold": true
+    },
+    {
+      "file": "retainer.stl",
+      "sha256": "7cc04c45431cf636f096f476451969264c6321fc428673f7cf2b0afbd4e18b6c",
+      "triangles": 888,
+      "vertices": 444,
+      "bounds_mm": [
+        [
+          -20.899993896484375,
+          -17.149978637695312,
+          0.0
+        ],
+        [
+          20.899993896484375,
+          17.149978637695312,
+          2.09999942779541
+        ]
+      ],
+      "dimensions_mm": [
+        41.79998779296875,
+        34.299957275390625,
+        2.09999942779541
+      ],
+      "signed_volume_mm3": 107.20672006065627,
+      "bad_edge_count": 0,
+      "collapsed_faces_at_1e_5mm": 0,
+      "connected_surfaces": 1,
+      "closed_oriented_manifold": true
+    }
+  ],
+  "controls": [
+    {
+      "name": "added_material",
+      "expected_volume_mm3": 0,
+      "volume_mm3": 0.0,
+      "empty": true,
+      "returncode": 1,
+      "diagnostic": "Geometries in cache: 5\nGeometry cache size in bytes: 64696\nCGAL Polyhedrons in cache: 3\nCGAL cache size in bytes: 619536\nTotal rendering time: 0:00:02.935\nCurrent top level object is empty.\n"
+    },
+    {
+      "name": "removed_material",
+      "expected_volume_mm3": 3.254999999999997,
+      "volume_mm3": 3.2549988460541535,
+      "empty": false,
+      "returncode": 0,
+      "diagnostic": "Geometries in cache: 5\nGeometry cache size in bytes: 64696\nCGAL Polyhedrons in cache: 3\nCGAL cache size in bytes: 642128\nTotal rendering time: 0:00:02.942\n   Top level object is a 3D object:\n   Simple:        yes\n   Vertices:       16\n   Halfedges:      48\n   Edges:          24\n   Halffacets:     24\n   Facets:         12\n   Volumes:         3\n"
+    },
+    {
+      "name": "collision",
+      "expected_volume_mm3": 0,
+      "volume_mm3": 0.0,
+      "empty": true,
+      "returncode": 1,
+      "diagnostic": "Geometries in cache: 134\nGeometry cache size in bytes: 6324032\nCGAL Polyhedrons in cache: 4\nCGAL cache size in bytes: 92603984\nTotal rendering time: 0:01:25.345\nCurrent top level object is empty.\n"
+    },
+    {
+      "name": "metal_collision",
+      "expected_volume_mm3": 0,
+      "volume_mm3": 0.0,
+      "empty": true,
+      "returncode": 1,
+      "diagnostic": "Geometries in cache: 6\nGeometry cache size in bytes: 4483920\nCGAL Polyhedrons in cache: 3\nCGAL cache size in bytes: 75956064\nTotal rendering time: 0:00:49.055\nCurrent top level object is empty.\n"
+    },
+    {
+      "name": "gnss_guide_collision",
+      "expected_volume_mm3": 0,
+      "volume_mm3": 0.0,
+      "empty": true,
+      "returncode": 1,
+      "diagnostic": "Geometries in cache: 3\nGeometry cache size in bytes: 2541768\nCGAL Polyhedrons in cache: 1\nCGAL cache size in bytes: 0\nTotal rendering time: 0:00:15.045\nCurrent top level object is empty.\n"
+    }
+  ],
+  "preview_sha256": "b010224374cf0d63f9dcb72a7b21a56fdeeee16a6b04ace2ab6c16db15e263d0",
+  "physical_qualification": false,
+  "scope": "Nominal CAD only; expanded tolerance geometry is checked separately. Frame strength and actual wire motion remain unqualified."
+}
