@@ -36,6 +36,17 @@ class InternalHarnessTests(unittest.TestCase):
         result=check(spec)
         self.assertFalse(next(c for c in result['checks'] if c['name']=='native J3 and contact polarity')['pass_'])
 
+    def test_charge_lead_cannot_pass_through_an_rf_guide(self):
+        fit=json.loads((BASE/'antenna-fit.json').read_text())['scenarios'][2]
+        clip=fit['clips'][2]
+        x,y,z=clip['center']
+        spec=copy.deepcopy(self.spec)
+        spec['wires'][1]['controls_mm']=[[x+dx,y,z] for dx in [-6,-2,2,6]]
+        result=check(spec)
+        found=next(c for c in result['checks'] if c['name']=='black RF guide '+clip['name'])
+        self.assertFalse(found['pass_'])
+        self.assertLess(found['value'],0)
+
     def test_original_26_awg_bend_requirement_does_not_fit(self):
         spec=copy.deepcopy(self.spec)
         spec['wire']['minimum_bend_radius_mm']=8.382

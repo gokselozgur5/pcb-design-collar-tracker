@@ -64,8 +64,8 @@ plating and physical ingress remain unqualified.
 
 **Internal charging wires are still HOLD.** The new
 [r02 candidate](../assembly/internal-charge-r02/README.md) includes both nominal
-routes, stripped ends and joint envelopes, with 41 geometry checks, two closed
-wire meshes, three CAD controls and eight regressions. Only the internal wires
+routes, stripped ends and joint envelopes, with 49 geometry checks, two closed
+wire meshes, three CAD controls and nine regressions. Only the internal wires
 change to Alpha 2841/7 30 AWG; external dock wiring is unchanged.
 
 The first movement proposal fails: one of 27 poses passes, and other poses require
@@ -78,6 +78,10 @@ PCB top Z=11.97mm: black-wire RF clearance and, in eight cases, bend radius fail
 Next revise the shared antenna/charge-wire routing and affected guides together;
 the 0.2mm gap and 6.604mm bend limits stay fixed. Restraint and continuous motion
 remain unaccepted. The r16 review ZIP remains preserved.
+
+The route screen now includes the four actual RF guide blocks. All 27 saved
+candidate poses clear those blocks by at least 0.324mm; a deliberate route through
+a guide is rejected. This additional check does not resolve the nine RF/bend failures.
 
 The first [factory observation firmware](../firmware/README.md) now builds for the
 actual r05l nRF9151 board. It delays external I/O by 1s, reports accelerometer,

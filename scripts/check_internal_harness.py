@@ -84,6 +84,14 @@ def check(spec, pose_index=None):
             mechanical.append(dict(name=name,gap_mm=gap))
         m=min(mechanical,key=lambda x:x['gap_mm'])
         add(label+' carrier, frame and lid posts',m['gap_mm'],spec['minimum_gap_mm'])
+        # The charge leads do not occupy the RF bores. Keep the entire clip
+        # block as an obstacle, including the 0.1 mm CAD roof overlap, rather
+        # than accidentally treating an unmodelled guide as free space.
+        for clip in fit['clips']:
+            low = np.array(clip['low'])
+            high = np.array(clip['high']) + [0, 0, .1]
+            gap = float((point_box_distance(xyz, low, high)-radius).min())
+            add(label+' RF guide '+clip['name'],gap,spec['minimum_gap_mm'])
         for antenna in p['antenna_reservations']:
             center=np.array(antenna['center']);size=np.array(antenna['size'])
             gap=float((point_box_distance(xyz,center-size/2,center+size/2)-radius).min())

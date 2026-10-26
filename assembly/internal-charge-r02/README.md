@@ -1,7 +1,7 @@
 # Internal charge harness r02 — WIP
 
 Both leads now have explicit routes, stripped ends and solder-joint envelopes.
-The nominal assembly passes 41 geometry checks. The complete harness is still
+The nominal assembly passes 49 geometry checks. The complete harness is still
 **HOLD**: restraint, a fixed-length movement family and the factory process are
 unfinished. The PCB, Gerber, enclosure size and external dock are unchanged.
 
@@ -48,15 +48,19 @@ qualified internal harness test and restraint specification remain required.
 - Continuous Bezier bounds give minimum bend radii of 7.438mm red and 6.905mm
   black. Chord/control-polygon bounds bracket the reported arc lengths.
 - Both full routes, their insulation transitions, other populated bodies,
-  existing RF leads, retention parts, antennas, lid, opposite wire and nonlocal
+  existing RF leads, their four lid guides, retention parts, antennas, lid, opposite wire and nonlocal
   self-clearance are checked. Own J3 copper is identified from the hash-matched
   native export; unowned PCB copper remains an obstacle.
 - Both actual wire meshes are closed and oriented. The CAD intersections with
   the body/carrier/components/joint envelopes and with the terminal metal are
   empty. A deliberately lowered ground wire produces 1.538mm3 of interference.
-- Eight regressions cover source geometry, swapped polarity, the old wire's
-  bend requirement, an actual collision, continuous bounds and strip-position
+- Nine regressions cover source geometry, swapped polarity, the old wire's
+  bend requirement, component/guide collisions, continuous bounds and strip-position
   uncertainty.
+- All four RF guides are screened as complete blocks, including their CAD roof
+  overlap. No bore/slit exclusion is applied to the charge wires. The minimum
+  guide clearance over the saved 27 candidate poses is 0.324mm; this is a static
+  geometry result under the wire-position allowance, not physical flex proof.
 - Nominal wire-only resistance at 20C is about 0.0304 ohm for the pair. The saved
   current sweep is a sensitivity calculation; it excludes joints, contact
   resistance, heating, transients and fuse clearing. It does not establish

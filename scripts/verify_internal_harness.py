@@ -25,7 +25,7 @@ def evidence():
     search=json.loads((OUT/'fixed-length-search.json').read_text())
     searched=json.loads((OUT/'fixed-length-checks.json').read_text())
     require(not spec['manufacturing_release'] and not spec['physical_qualification'],'Unexpected release claim')
-    require(route['result']=='NOMINAL_ROUTE_SCREEN_PASS' and len(route['checks'])==41 and all(c['pass_'] for c in route['checks']),'Nominal route failed or lost checks')
+    require(route['result']=='NOMINAL_ROUTE_SCREEN_PASS' and len(route['checks'])==49 and all(c['pass_'] for c in route['checks']),'Nominal route failed or lost checks')
     require(not route['manufacturing_release'] and not route['physical_qualification'],'Unexpected route qualification')
     for report in [route,cad,motion,search,searched]:
         for name,digest in report['inputs'].items():
@@ -54,7 +54,7 @@ def evidence():
     expected_names={c['name'] for c in route['checks']}
     for i,c in enumerate(searched['poses']):
         require(c['pose_index']==i and c['pcb_pose_mm']==search['poses'][i]['pcb_pose_mm'],'Incorrect searched pose mapping')
-        require({r['name'] for r in c['geometry_checks']}==expected_names and len(c['geometry_checks'])==41,'Lost independent pose checks')
+        require({r['name'] for r in c['geometry_checks']}==expected_names and len(c['geometry_checks'])==49,'Lost independent pose checks')
         tolerance=searched['fixed_length_numerical_tolerance_mm']
         length_pass=all(lo>=target-tolerance and hi<=target+tolerance
                         for (lo,hi),target in zip(c['fixed_length_intervals_mm'],searched['nominal_lengths_mm']))

@@ -818,3 +818,15 @@ test or physical water/dust qualification was performed.
 - Eight regressions pass. Nominal CAD, PCB/Gerber and published r16 bundles are
   unchanged. Next solve RF and charging paths together, then actual restraint
   and installation/service behavior. This is not a production wire cut list.
+
+## 2026-10-26 — Include RF guide blocks in internal harness verification
+
+- Added the four actual lid-guide blocks to both charge-lead screens, including
+  the CAD roof overlap. Their bores and entry slits are not exclusions for these
+  wires. The route screen now has 49 checks per pose.
+- The nominal route and all 27 saved candidates clear the guide blocks; the
+  minimum is 0.324mm. The prior 18/27 result is unchanged because the nine upper
+  RF/bend failures remain. Nine regressions pass, including a deliberate lead
+  through a guide. These are geometric checks, not physical qualification.
+- Preserved the PCB, RF paths, enclosure, nominal wire meshes and release ZIPs.
+  Work continues on the failing upper poses and a common wire cut length.

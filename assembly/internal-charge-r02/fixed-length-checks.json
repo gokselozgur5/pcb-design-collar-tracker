@@ -3,7 +3,7 @@
   "inputs": {
     "assembly/internal-charge-r02/harness.json": "6d0c5d325107305b65d477a76410f5fa3bbcdfc4ef73b85943bc937a82bec569",
     "assembly/internal-charge-r02/sources.json": "9c75c82ca18c0a9826474665b3d37c340d7e782caa567f43ba4339fae7d316ce",
-    "scripts/check_internal_harness.py": "eaa5e05c189f3c272a9a26bab02bafc3519bd4a727ec566bad7776e154502e1a",
+    "scripts/check_internal_harness.py": "801a92ec29cffeb0b50acbe2d7a08556a530278a4f8bce5d6c6fdae8d4f86f68",
     "scripts/internal_harness_geometry.py": "f3f3315192d15c4f9a7f44b4c9a8db2aa682e0a2910504238a6de2bd50545134",
     "mechanical/swim-r11-thermal-fit/antenna-fit.json": "b120bb308406ae69fcfed946b0f926b5af2f7e95394204e02fa772a8842976be",
     "mechanical/swim-r11-thermal-fit/retention-checks.json": "a21530e03e614c82e8b9046bfc49e520128080923d651d149f2bcc300175ced9",
@@ -87,6 +87,30 @@
         {
           "name": "red carrier, frame and lid posts",
           "value": 0.37984850064052755,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide LTE-1",
+          "value": 15.058268502692842,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide LTE-2",
+          "value": 5.227210570995542,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide GNSS-1",
+          "value": 14.674032268212576,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide GNSS-2",
+          "value": 7.425166414786882,
           "minimum": 0.2,
           "pass_": true
         },
@@ -201,6 +225,30 @@
         {
           "name": "black carrier, frame and lid posts",
           "value": 0.4917912219691254,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide LTE-1",
+          "value": 4.450257794953553,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide LTE-2",
+          "value": 2.7932802772592353,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide GNSS-1",
+          "value": 3.6082705980935303,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide GNSS-2",
+          "value": 5.785511650489877,
           "minimum": 0.2,
           "pass_": true
         },
@@ -357,6 +405,30 @@
           "pass_": true
         },
         {
+          "name": "red RF guide LTE-1",
+          "value": 14.995984087429912,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide LTE-2",
+          "value": 5.2298707470781745,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide GNSS-1",
+          "value": 14.636734269134498,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide GNSS-2",
+          "value": 7.323699764418455,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
           "name": "red to LTE CAPH SZK-C-3L30 envelope",
           "value": 2.02111153756916,
           "minimum": 0.2,
@@ -467,6 +539,30 @@
         {
           "name": "black carrier, frame and lid posts",
           "value": 0.4619330295497754,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide LTE-1",
+          "value": 4.418392899851109,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide LTE-2",
+          "value": 2.9033561511076336,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide GNSS-1",
+          "value": 3.5643297836686165,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide GNSS-2",
+          "value": 5.658179105503724,
           "minimum": 0.2,
           "pass_": true
         },
@@ -623,6 +719,30 @@
           "pass_": true
         },
         {
+          "name": "red RF guide LTE-1",
+          "value": 14.809272236198128,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide LTE-2",
+          "value": 5.152047722802072,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide GNSS-1",
+          "value": 14.534082494789347,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide GNSS-2",
+          "value": 9.073145371028081,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
           "name": "red to LTE CAPH SZK-C-3L30 envelope",
           "value": 1.1511976640398605,
           "minimum": 0.2,
@@ -733,6 +853,30 @@
         {
           "name": "black carrier, frame and lid posts",
           "value": 0.4940185606763839,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide LTE-1",
+          "value": 4.135611910430771,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide LTE-2",
+          "value": 2.6583675868920076,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide GNSS-1",
+          "value": 3.4831767723952987,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide GNSS-2",
+          "value": 5.648384526615931,
           "minimum": 0.2,
           "pass_": true
         },
@@ -889,6 +1033,30 @@
           "pass_": true
         },
         {
+          "name": "red RF guide LTE-1",
+          "value": 14.333152454830238,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide LTE-2",
+          "value": 5.17177187607208,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide GNSS-1",
+          "value": 13.929390429695665,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide GNSS-2",
+          "value": 6.69184767198419,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
           "name": "red to LTE CAPH SZK-C-3L30 envelope",
           "value": 2.041341970763679,
           "minimum": 0.2,
@@ -999,6 +1167,30 @@
         {
           "name": "black carrier, frame and lid posts",
           "value": 0.5595011727116772,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide LTE-1",
+          "value": 2.5666680268834314,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide LTE-2",
+          "value": 2.2374156620519883,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide GNSS-1",
+          "value": 1.4663656787117265,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide GNSS-2",
+          "value": 6.068619652767259,
           "minimum": 0.2,
           "pass_": true
         },
@@ -1155,6 +1347,30 @@
           "pass_": true
         },
         {
+          "name": "red RF guide LTE-1",
+          "value": 14.267774503249093,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide LTE-2",
+          "value": 5.160139480116662,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide GNSS-1",
+          "value": 13.890139439387115,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide GNSS-2",
+          "value": 6.724041472388933,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
           "name": "red to LTE CAPH SZK-C-3L30 envelope",
           "value": 1.625384063899311,
           "minimum": 0.2,
@@ -1265,6 +1481,30 @@
         {
           "name": "black carrier, frame and lid posts",
           "value": 0.5819401119341631,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide LTE-1",
+          "value": 4.3115451295939256,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide LTE-2",
+          "value": 0.7744836039203461,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide GNSS-1",
+          "value": 3.522632008181877,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide GNSS-2",
+          "value": 5.725098099319524,
           "minimum": 0.2,
           "pass_": true
         },
@@ -1421,6 +1661,30 @@
           "pass_": true
         },
         {
+          "name": "red RF guide LTE-1",
+          "value": 14.071293023873285,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide LTE-2",
+          "value": 5.583164530669873,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide GNSS-1",
+          "value": 13.781730719492202,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide GNSS-2",
+          "value": 7.447630784403509,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
           "name": "red to LTE CAPH SZK-C-3L30 envelope",
           "value": 1.4250914352787079,
           "minimum": 0.2,
@@ -1531,6 +1795,30 @@
         {
           "name": "black carrier, frame and lid posts",
           "value": 0.533459550418956,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide LTE-1",
+          "value": 3.7917511509987163,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide LTE-2",
+          "value": 2.143034471016055,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide GNSS-1",
+          "value": 3.156730614859804,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide GNSS-2",
+          "value": 6.237127124363388,
           "minimum": 0.2,
           "pass_": true
         },
@@ -1687,6 +1975,30 @@
           "pass_": true
         },
         {
+          "name": "red RF guide LTE-1",
+          "value": 13.611752851064686,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide LTE-2",
+          "value": 5.1111925186753435,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide GNSS-1",
+          "value": 13.186458362295179,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide GNSS-2",
+          "value": 6.013826522905907,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
           "name": "red to LTE CAPH SZK-C-3L30 envelope",
           "value": 2.06123007426106,
           "minimum": 0.2,
@@ -1797,6 +2109,30 @@
         {
           "name": "black carrier, frame and lid posts",
           "value": 0.5622321974932092,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide LTE-1",
+          "value": 1.6932651796284524,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide LTE-2",
+          "value": 2.5518242734546583,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide GNSS-1",
+          "value": 0.3237957607847538,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide GNSS-2",
+          "value": 6.432770904520069,
           "minimum": 0.2,
           "pass_": true
         },
@@ -1953,6 +2289,30 @@
           "pass_": true
         },
         {
+          "name": "red RF guide LTE-1",
+          "value": 13.54297563146284,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide LTE-2",
+          "value": 5.104463321832063,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide GNSS-1",
+          "value": 13.14504347921531,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide GNSS-2",
+          "value": 6.029871827676651,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
           "name": "red to LTE CAPH SZK-C-3L30 envelope",
           "value": 1.7246100957406514,
           "minimum": 0.2,
@@ -2063,6 +2423,30 @@
         {
           "name": "black carrier, frame and lid posts",
           "value": 0.5591022063304218,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide LTE-1",
+          "value": 2.5781207334686607,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide LTE-2",
+          "value": 2.0170560430023103,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide GNSS-1",
+          "value": 1.7039350262099626,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide GNSS-2",
+          "value": 6.883599331415551,
           "minimum": 0.2,
           "pass_": true
         },
@@ -2219,6 +2603,30 @@
           "pass_": true
         },
         {
+          "name": "red RF guide LTE-1",
+          "value": 13.337124423086975,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide LTE-2",
+          "value": 3.710026215606828,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide GNSS-1",
+          "value": 13.031643695686462,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide GNSS-2",
+          "value": 6.121859765518851,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
           "name": "red to LTE CAPH SZK-C-3L30 envelope",
           "value": 1.4503212768331415,
           "minimum": 0.2,
@@ -2329,6 +2737,30 @@
         {
           "name": "black carrier, frame and lid posts",
           "value": 0.5066905662417355,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide LTE-1",
+          "value": 3.132656503471482,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide LTE-2",
+          "value": 2.590626213405252,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide GNSS-1",
+          "value": 2.517267825791925,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide GNSS-2",
+          "value": 6.392473956671717,
           "minimum": 0.2,
           "pass_": true
         },
@@ -2485,6 +2917,30 @@
           "pass_": true
         },
         {
+          "name": "red RF guide LTE-1",
+          "value": 15.041502209438985,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide LTE-2",
+          "value": 5.2336140693107085,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide GNSS-1",
+          "value": 14.629441572857875,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide GNSS-2",
+          "value": 6.911352401462575,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
           "name": "red to LTE CAPH SZK-C-3L30 envelope",
           "value": 1.9273658207069977,
           "minimum": 0.2,
@@ -2595,6 +3051,30 @@
         {
           "name": "black carrier, frame and lid posts",
           "value": 0.5768929778241418,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide LTE-1",
+          "value": 2.6405473837843663,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide LTE-2",
+          "value": 2.395275934494836,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide GNSS-1",
+          "value": 1.4982997342069149,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide GNSS-2",
+          "value": 5.888518460137348,
           "minimum": 0.2,
           "pass_": true
         },
@@ -2751,6 +3231,30 @@
           "pass_": true
         },
         {
+          "name": "red RF guide LTE-1",
+          "value": 14.979149581459318,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide LTE-2",
+          "value": 5.22654422243047,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide GNSS-1",
+          "value": 14.592032118372915,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide GNSS-2",
+          "value": 6.894258018897874,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
           "name": "red to LTE CAPH SZK-C-3L30 envelope",
           "value": 1.7327931203164504,
           "minimum": 0.2,
@@ -2861,6 +3365,30 @@
         {
           "name": "black carrier, frame and lid posts",
           "value": 0.4428408175615604,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide LTE-1",
+          "value": 4.209652872226729,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide LTE-2",
+          "value": 3.1039797254960324,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide GNSS-1",
+          "value": 3.300625497195841,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide GNSS-2",
+          "value": 5.534863890389845,
           "minimum": 0.2,
           "pass_": true
         },
@@ -3017,6 +3545,30 @@
           "pass_": true
         },
         {
+          "name": "red RF guide LTE-1",
+          "value": 14.791803155048722,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide LTE-2",
+          "value": 5.426638787381929,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide GNSS-1",
+          "value": 14.48864813837996,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide GNSS-2",
+          "value": 6.741603006943337,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
           "name": "red to LTE CAPH SZK-C-3L30 envelope",
           "value": 1.4435351742659657,
           "minimum": 0.2,
@@ -3127,6 +3679,30 @@
         {
           "name": "black carrier, frame and lid posts",
           "value": 0.5542600494225377,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide LTE-1",
+          "value": 4.028615691767968,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide LTE-2",
+          "value": 1.9912456664095006,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide GNSS-1",
+          "value": 3.3331115843806356,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide GNSS-2",
+          "value": 5.675924676876597,
           "minimum": 0.2,
           "pass_": true
         },
@@ -3283,6 +3859,30 @@
           "pass_": true
         },
         {
+          "name": "red RF guide LTE-1",
+          "value": 14.315556067385232,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide LTE-2",
+          "value": 5.171418182680976,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide GNSS-1",
+          "value": 13.882463654811488,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide GNSS-2",
+          "value": 6.24139145206505,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
           "name": "red to LTE CAPH SZK-C-3L30 envelope",
           "value": 1.8664068895268378,
           "minimum": 0.2,
@@ -3393,6 +3993,30 @@
         {
           "name": "black carrier, frame and lid posts",
           "value": 0.5657267347588533,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide LTE-1",
+          "value": 2.2100206876057826,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide LTE-2",
+          "value": 2.1474821332082077,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide GNSS-1",
+          "value": 0.9925823406061824,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide GNSS-2",
+          "value": 6.06097939378593,
           "minimum": 0.2,
           "pass_": true
         },
@@ -3549,6 +4173,30 @@
           "pass_": true
         },
         {
+          "name": "red RF guide LTE-1",
+          "value": 14.250099212689468,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide LTE-2",
+          "value": 5.1643550522933035,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide GNSS-1",
+          "value": 13.843082705605399,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide GNSS-2",
+          "value": 6.224097415142852,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
           "name": "red to LTE CAPH SZK-C-3L30 envelope",
           "value": 1.6711959305032311,
           "minimum": 0.2,
@@ -3659,6 +4307,30 @@
         {
           "name": "black carrier, frame and lid posts",
           "value": 0.5707980254369498,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide LTE-1",
+          "value": 2.3545285712646833,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide LTE-2",
+          "value": 2.1136747823854423,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide GNSS-1",
+          "value": 1.3305207477244658,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide GNSS-2",
+          "value": 6.086471312101316,
           "minimum": 0.2,
           "pass_": true
         },
@@ -3815,6 +4487,30 @@
           "pass_": true
         },
         {
+          "name": "red RF guide LTE-1",
+          "value": 14.053362451953094,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide LTE-2",
+          "value": 5.564304098621136,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide GNSS-1",
+          "value": 13.734303019435908,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide GNSS-2",
+          "value": 6.1462665864737,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
           "name": "red to LTE CAPH SZK-C-3L30 envelope",
           "value": 1.433637680928395,
           "minimum": 0.2,
@@ -3925,6 +4621,30 @@
         {
           "name": "black carrier, frame and lid posts",
           "value": 0.5407961358140558,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide LTE-1",
+          "value": 3.605467404697318,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide LTE-2",
+          "value": 2.2605408276390335,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide GNSS-1",
+          "value": 2.9352688046553306,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide GNSS-2",
+          "value": 6.63139305233003,
           "minimum": 0.2,
           "pass_": true
         },
@@ -4081,6 +4801,30 @@
           "pass_": true
         },
         {
+          "name": "red RF guide LTE-1",
+          "value": 13.5932447766193,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide LTE-2",
+          "value": 5.104952272666714,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide GNSS-1",
+          "value": 13.13694301623735,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide GNSS-2",
+          "value": 5.580999111428012,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
           "name": "red to LTE CAPH SZK-C-3L30 envelope",
           "value": 1.8227133921596332,
           "minimum": 0.2,
@@ -4191,6 +4935,30 @@
         {
           "name": "black carrier, frame and lid posts",
           "value": 0.5643180957002223,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide LTE-1",
+          "value": 1.812541804054647,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide LTE-2",
+          "value": 2.3882487529898104,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide GNSS-1",
+          "value": 0.7683766721632168,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide GNSS-2",
+          "value": 6.633222362972496,
           "minimum": 0.2,
           "pass_": true
         },
@@ -4347,6 +5115,30 @@
           "pass_": true
         },
         {
+          "name": "red RF guide LTE-1",
+          "value": 13.5243756775474,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide LTE-2",
+          "value": 5.097239505287163,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide GNSS-1",
+          "value": 13.095375387662028,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide GNSS-2",
+          "value": 5.563204158360311,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
           "name": "red to LTE CAPH SZK-C-3L30 envelope",
           "value": 1.6263438331823112,
           "minimum": 0.2,
@@ -4457,6 +5249,30 @@
         {
           "name": "black carrier, frame and lid posts",
           "value": 0.565792849815771,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide LTE-1",
+          "value": 1.6239749644226666,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide LTE-2",
+          "value": 2.203147151256738,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide GNSS-1",
+          "value": 0.7787652340385388,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide GNSS-2",
+          "value": 6.56411240272046,
           "minimum": 0.2,
           "pass_": true
         },
@@ -4613,6 +5429,30 @@
           "pass_": true
         },
         {
+          "name": "red RF guide LTE-1",
+          "value": 13.319350976082196,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide LTE-2",
+          "value": 3.88594111964861,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide GNSS-1",
+          "value": 12.982663623188985,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide GNSS-2",
+          "value": 5.253270035370061,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
           "name": "red to LTE CAPH SZK-C-3L30 envelope",
           "value": 1.415965226434649,
           "minimum": 0.2,
@@ -4723,6 +5563,30 @@
         {
           "name": "black carrier, frame and lid posts",
           "value": 0.5266377926804845,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide LTE-1",
+          "value": 2.7248131891440703,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide LTE-2",
+          "value": 2.5960366604806997,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide GNSS-1",
+          "value": 2.0347275393682662,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide GNSS-2",
+          "value": 6.798099800322872,
           "minimum": 0.2,
           "pass_": true
         },
@@ -4879,6 +5743,30 @@
           "pass_": true
         },
         {
+          "name": "red RF guide LTE-1",
+          "value": 15.041502209438985,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide LTE-2",
+          "value": 5.2107472155315655,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide GNSS-1",
+          "value": 14.62111649945349,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide GNSS-2",
+          "value": 6.563218769027175,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
           "name": "red to LTE CAPH SZK-C-3L30 envelope",
           "value": 1.6169882040726746,
           "minimum": 0.2,
@@ -4989,6 +5877,30 @@
         {
           "name": "black carrier, frame and lid posts",
           "value": 0.5829976938163904,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide LTE-1",
+          "value": 2.627231878801607,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide LTE-2",
+          "value": 2.3448000474713298,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide GNSS-1",
+          "value": 1.521945009893345,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide GNSS-2",
+          "value": 5.90229834237292,
           "minimum": 0.2,
           "pass_": true
         },
@@ -5145,6 +6057,30 @@
           "pass_": true
         },
         {
+          "name": "red RF guide LTE-1",
+          "value": 14.979149581459316,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide LTE-2",
+          "value": 5.203822253170399,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide GNSS-1",
+          "value": 14.583686162343097,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide GNSS-2",
+          "value": 6.523022110931418,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
           "name": "red to LTE CAPH SZK-C-3L30 envelope",
           "value": 1.4645797026193768,
           "minimum": 0.2,
@@ -5255,6 +6191,30 @@
         {
           "name": "black carrier, frame and lid posts",
           "value": 0.547625836200629,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide LTE-1",
+          "value": 2.579434495182483,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide LTE-2",
+          "value": 2.603953989230829,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide GNSS-1",
+          "value": 1.581259304892193,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide GNSS-2",
+          "value": 5.9266038020645855,
           "minimum": 0.2,
           "pass_": true
         },
@@ -5411,6 +6371,30 @@
           "pass_": true
         },
         {
+          "name": "red RF guide LTE-1",
+          "value": 14.79162551196015,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide LTE-2",
+          "value": 5.142249506867562,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide GNSS-1",
+          "value": 14.480067760858754,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide GNSS-2",
+          "value": 5.765326503188482,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
           "name": "red to LTE CAPH SZK-C-3L30 envelope",
           "value": 1.4268011482037688,
           "minimum": 0.2,
@@ -5521,6 +6505,30 @@
         {
           "name": "black carrier, frame and lid posts",
           "value": 0.5663065986505571,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide LTE-1",
+          "value": 4.293273774649553,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide LTE-2",
+          "value": 1.918186137574099,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide GNSS-1",
+          "value": 3.6085484325479786,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide GNSS-2",
+          "value": 5.86893601475932,
           "minimum": 0.2,
           "pass_": true
         },
@@ -5677,6 +6685,30 @@
           "pass_": true
         },
         {
+          "name": "red RF guide LTE-1",
+          "value": 14.315556067385232,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide LTE-2",
+          "value": 5.136454946365144,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide GNSS-1",
+          "value": 13.873700768429366,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide GNSS-2",
+          "value": 5.858427079158871,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
           "name": "red to LTE CAPH SZK-C-3L30 envelope",
           "value": 1.5831391356251905,
           "minimum": 0.2,
@@ -5787,6 +6819,30 @@
         {
           "name": "black carrier, frame and lid posts",
           "value": 0.5759894763260998,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide LTE-1",
+          "value": 2.51800071857063,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide LTE-2",
+          "value": 2.36808984774479,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide GNSS-1",
+          "value": 1.4486784513229483,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide GNSS-2",
+          "value": 6.434930775361964,
           "minimum": 0.2,
           "pass_": true
         },
@@ -5943,6 +6999,30 @@
           "pass_": true
         },
         {
+          "name": "red RF guide LTE-1",
+          "value": 14.250099212689468,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide LTE-2",
+          "value": 5.126087039407925,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide GNSS-1",
+          "value": 13.834295455760412,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide GNSS-2",
+          "value": 5.841670435603698,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
           "name": "red to LTE CAPH SZK-C-3L30 envelope",
           "value": 1.3747623858762472,
           "minimum": 0.2,
@@ -6053,6 +7133,30 @@
         {
           "name": "black carrier, frame and lid posts",
           "value": 0.5740350286703235,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide LTE-1",
+          "value": 2.3631760921595037,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide LTE-2",
+          "value": 2.4650697703064273,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide GNSS-1",
+          "value": 1.4305937632894208,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide GNSS-2",
+          "value": 6.46401120212122,
           "minimum": 0.2,
           "pass_": true
         },
@@ -6209,6 +7313,30 @@
           "pass_": true
         },
         {
+          "name": "red RF guide LTE-1",
+          "value": 14.05347077855849,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide LTE-2",
+          "value": 5.442298824570782,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide GNSS-1",
+          "value": 13.725557753013504,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide GNSS-2",
+          "value": 5.610927757318593,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
           "name": "red to LTE CAPH SZK-C-3L30 envelope",
           "value": 1.2727098843023437,
           "minimum": 0.2,
@@ -6319,6 +7447,30 @@
         {
           "name": "black carrier, frame and lid posts",
           "value": 0.5285389357414759,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide LTE-1",
+          "value": 3.197891966813569,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide LTE-2",
+          "value": 2.40617130671649,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide GNSS-1",
+          "value": 2.4778597211826474,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide GNSS-2",
+          "value": 6.40032605902371,
           "minimum": 0.2,
           "pass_": true
         },
@@ -6475,6 +7627,30 @@
           "pass_": true
         },
         {
+          "name": "red RF guide LTE-1",
+          "value": 13.5932447766193,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide LTE-2",
+          "value": 5.061457626716899,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide GNSS-1",
+          "value": 13.127694696732535,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide GNSS-2",
+          "value": 5.161205933635426,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
           "name": "red to LTE CAPH SZK-C-3L30 envelope",
           "value": 1.5509963164379015,
           "minimum": 0.2,
@@ -6585,6 +7761,30 @@
         {
           "name": "black carrier, frame and lid posts",
           "value": 0.5619785908528419,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide LTE-1",
+          "value": 2.2484416499643283,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide LTE-2",
+          "value": 2.1937003754452777,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide GNSS-1",
+          "value": 1.3537482975854167,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide GNSS-2",
+          "value": 6.937020105805887,
           "minimum": 0.2,
           "pass_": true
         },
@@ -6741,6 +7941,30 @@
           "pass_": true
         },
         {
+          "name": "red RF guide LTE-1",
+          "value": 13.5243756775474,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide LTE-2",
+          "value": 5.026477778076087,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide GNSS-1",
+          "value": 13.086098413683448,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide GNSS-2",
+          "value": 5.035125808348686,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
           "name": "red to LTE CAPH SZK-C-3L30 envelope",
           "value": 1.3454484928924997,
           "minimum": 0.2,
@@ -6851,6 +8075,30 @@
         {
           "name": "black carrier, frame and lid posts",
           "value": 0.5797809089032016,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide LTE-1",
+          "value": 2.3282489830211444,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide LTE-2",
+          "value": 2.3971738350220875,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide GNSS-1",
+          "value": 1.3795097477852265,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide GNSS-2",
+          "value": 7.091963505682307,
           "minimum": 0.2,
           "pass_": true
         },
@@ -7007,6 +8255,30 @@
           "pass_": true
         },
         {
+          "name": "red RF guide LTE-1",
+          "value": 13.321347905474344,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide LTE-2",
+          "value": 4.415612648956206,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide GNSS-1",
+          "value": 12.975305411905797,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red RF guide GNSS-2",
+          "value": 4.1305756387270405,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
           "name": "red to LTE CAPH SZK-C-3L30 envelope",
           "value": 1.411552828693015,
           "minimum": 0.2,
@@ -7117,6 +8389,30 @@
         {
           "name": "black carrier, frame and lid posts",
           "value": 0.6226123472406204,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide LTE-1",
+          "value": 3.0453758663616766,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide LTE-2",
+          "value": 0.8844456506888725,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide GNSS-1",
+          "value": 2.3450334895184684,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black RF guide GNSS-2",
+          "value": 6.688551621092277,
           "minimum": 0.2,
           "pass_": true
         },

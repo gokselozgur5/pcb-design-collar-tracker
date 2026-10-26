@@ -577,7 +577,7 @@ and factory fixture work; physical testing requires an assembled prototype.
 
 Read `assembly/internal-charge-r02/fixed-length-checks.json` before more searching.
 All 27 candidate curves preserve both nominal lengths within the 0.001mm
-numerical bound; 18 pass all 41 independent route checks. The nine upper poses
+numerical bound; 18 pass all 49 independent route checks. The nine upper poses
 (PCB top 11.97mm) fail black-wire RF separation; eight also fail the continuous
 bend bound. The old linear proposal is preserved separately and still fails.
 `motion-seeds.json` supplies portable starting curves. The numerical search's
@@ -598,6 +598,6 @@ service motion, fault coordination and physical qualification remain open.
 python3 scripts/verify_internal_harness.py
 ```
 
-Eight harness regressions pass, including correlated moving PCB/pad datums and
+Nine harness regressions pass, including an RF-guide collision, correlated moving PCB/pad datums and
 fixed body terminals. Re-record the explicitly unreleased r02 checkpoint only
 after regenerating its source-bound results; published archives stay immutable.

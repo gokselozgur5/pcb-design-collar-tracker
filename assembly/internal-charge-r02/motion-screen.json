@@ -7,7 +7,7 @@
     "scripts/screen_internal_harness_motion.py": "c83761f4405ee2aedca7ec99d8171a73dc6c384f58f00fd93d622522919011af",
     "scripts/internal_harness_geometry.py": "f3f3315192d15c4f9a7f44b4c9a8db2aa682e0a2910504238a6de2bd50545134",
     "scripts/thermal_cable_geometry.py": "ce275bc960cd1b384f5e7ad29975da9e67f056a8d12cac58e385d4a93fb473a9",
-    "scripts/check_internal_harness.py": "eaa5e05c189f3c272a9a26bab02bafc3519bd4a727ec566bad7776e154502e1a"
+    "scripts/check_internal_harness.py": "801a92ec29cffeb0b50acbe2d7a08556a530278a4f8bce5d6c6fdae8d4f86f68"
   },
   "control_translation_weights": [
     0.0,
