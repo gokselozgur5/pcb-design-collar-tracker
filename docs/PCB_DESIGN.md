@@ -488,3 +488,21 @@ extrusions at an oblique thickness step generated near-duplicate vertices even
 with `Simple: yes`. A single blank with one subtractive step preserved dimensions
 and passed the unchanged inspection grid. Keep expected planar contact distinct
 from penetration and include a deliberately shifted positive-volume control.
+
+
+### Internal wire routes, solder lands and movement
+
+Route all conductors together, including actual stripped ends and the adjacent
+pads. Fit the bonded length on the native copper polygon; placing only the wire
+tip at the pad centre is insufficient. Include cut and position uncertainty when
+changing from the insulation envelope to the smaller conductor envelope.
+
+Keep attached parts and endpoints correlated during PCB motion. Sweeping every
+part independently against a stationary attached wire invents collisions. A
+different fitted curve length at every pose is also invalid for one physical
+wire: cut tolerance is not elastic stretch. Use fixed-length cases, actual end
+restraint and a factory/service sequence before releasing wire cut instructions.
+
+A thinner internal wire can meet the geometry without growing the shell, but its
+resistance, maximum pull and fault-current behavior must be reconsidered. Never
+transfer the external harness pull target to a smaller conductor by assumption.

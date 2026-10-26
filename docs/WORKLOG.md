@@ -770,3 +770,25 @@ Rear bearing is a geometric result, not a load/contact-resistance/IP68 approval.
 Both internal wire paths remain HOLD; failed drafts and the exact continuation
 are saved in assembly/internal-charge-r01. No full harness, firmware or physical
 qualification was completed. Current review/package updated to r16; no new native PCB run, DFM upload, supplier message or order.
+
+
+## 2026-10-26 — Internal charge harness r02 candidate
+
+Implemented both nominal internal routes, stripped ends and bounded solder-joint
+envelopes in the unchanged r16 shell. Selected Alpha 2841/7 30 AWG only for the
+internal pair after the 26/28 AWG searches failed the combined constraints. The
+external dock wire, PCB and all published manufacturing files are unchanged.
+
+41 geometry checks include continuous Bezier bend/length bounds, native pad/net
+identity, copper margins, terminal-hole insertion, insulation transitions, other
+components, RF leads, retention parts and self/opposite-wire clearance. Two
+closed wire meshes and three actual CAD controls pass; deliberately lowering the
+ground wire gives 1.538mm3 interference. Seven regressions pass. The first route
+with insufficient component clearance is preserved as evidence.
+
+The simple movement proposal is rejected: only one of 27 poses passes; it needs
+up to 0.978mm of length change and some poses fail RF/bend screens. Nominal lengths
+43.766/54.921mm are not released cut instructions. Next solve a fixed-length
+family, implement restraint and factory/service assembly, then finish the other
+working-device gates. No supplier message, order, new PCB DFM upload, powered
+test or physical water/dust qualification was performed.

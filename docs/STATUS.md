@@ -53,7 +53,7 @@ pad creep, insulation condition and cyclic motion are still unqualified.
 The 1.93mm hard gap and assigned service bounds give 5.50..43.52% local pad
 displacement; this is a geometry screen, not a friction or retention result.
 
-Latest local work: [r16 contact rear retention](../mechanical/swim-r16-contact-retention/README.md)
+Preserved work: [r16 contact rear retention](../mechanical/swim-r16-contact-retention/README.md)
 and [review sheet](../mechanical/swim-r16-contact-retention/contact-retention-sheet.pdf).
 Two custom terminal plates now provide defined rear bearing around the contact
 bores. Two internal pockets and shorter stems/longer rear threads accommodate
@@ -62,13 +62,21 @@ that stack. Outside size, contact positions, seal glands and PCB are unchanged.
 pass. This closes the missing rear-bearing geometry only; load, torque, resistance,
 plating and physical ingress remain unqualified.
 
-**Internal charging wires are still HOLD.** The two-wire route was not completed.
-[Saved draft routes and exact next work](../assembly/internal-charge-r01/README.md)
-prevent a new session from treating catalogue research or a red-only fit as a
-working harness. Firmware is also not implemented. Do not call the device finished.
+**Internal charging wires are still HOLD.** The new
+[r02 candidate](../assembly/internal-charge-r02/README.md) includes both nominal
+routes, stripped ends and joint envelopes, with 41 geometry checks, two closed
+wire meshes, three CAD controls and seven regressions. Only the internal wires
+change to Alpha 2841/7 30 AWG; external dock wiring is unchanged.
+
+The first movement proposal fails: one of 27 poses passes, and other poses require
+up to 0.978mm of wire-length change. Several also fail RF/bend screens. A fixed
+cut length, restraint and factory/service process are not accepted. Continue from
+the saved movement diagnostic; do not mistake the nominal fit for a completed
+harness. Firmware is also not implemented. The r16 review ZIP remains preserved.
 
 | Check | Current result |
 |---|---|
+| Internal harness r02 | Both nominal routes and joints fit; continuous radius bounds 7.438/6.905mm; fixed-length motion and restraint still HOLD |
 | Contact retention r16 | Two custom rear terminals; defined lateral bearing, four meshes and CAD controls; internal harness still HOLD |
 | Board | 40 × 32mm; six Cu layers; 87 footprints |
 | Assembly candidates | 81 fitted references / 44 exact MPNs; BOM/CPL exported |
@@ -125,7 +133,7 @@ clearance control. No supplier part, wire route, adhesive strength or physical
 thermal result is approved by this fit calculation.
 
 **Next independent local step:** close the remaining charging interface: positive
-dock retention or measured magnetic holding, internal J3 wire route and strain relief,
+dock retention or measured magnetic holding, constant-length internal J3 wire motion and strain relief,
 crimp/splice/insulation process and source/fault-current behavior. The r13
 USB cable/fuse/contact selection is a prototype definition, not a qualified power
 path. r15 implements a clamp and assembly fixture, but endpoint slip, pad creep,

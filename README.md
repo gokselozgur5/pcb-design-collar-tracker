@@ -14,8 +14,8 @@ segments are preserved. The board has 87 footprints, including 81 fitted referen
 with 44 exact candidate MPNs. The revised carrier clears the additional components.
 
 [Gerber ZIP](experiments/power-r05l-charge-interlock/evidence/collar-tracker-05l-charge-final4-40x32-dfm.zip) ·
-[Current four-page review](release/r16-current-review/review.pdf) ·
-[Current review bundle](release/collar-tracker-r05l-r16-review.zip) ·
+[Latest published four-page review](release/r16-current-review/review.pdf) ·
+[Published r16 review bundle](release/collar-tracker-r05l-r16-review.zip) ·
 [JLC report 1](experiments/power-r05l-charge-interlock/evidence/jlc-check1/report.pdf) ·
 [JLC report 2](experiments/power-r05l-charge-interlock/evidence/jlc-check2/report.pdf)
 
@@ -32,8 +32,10 @@ rotations and SMT acceptance remain open. PCB DFM does not prove a working devic
 
 The latest [r16 contact retention](mechanical/swim-r16-contact-retention/README.md)
 adds rear terminal bearing plates and internal pockets without changing the PCB
-or outside size. The [internal harness](assembly/internal-charge-r01/README.md)
-remains HOLD: two-wire routing, strain relief and factory joining are unfinished.
+or outside size. The [internal harness candidate](assembly/internal-charge-r02/README.md)
+now includes both nominal routes and solder-joint envelopes. It remains HOLD:
+constant-length movement, restraint and factory joining are unfinished. The
+published r16 review archive remains a preserved snapshot.
 
 The [r08 enclosure](mechanical/swim-r08-antennas/README.md) adds CAPH LTE and ZETA
 GNSS prototype antennas, two nominal 100mm cable assemblies and four lid guides.

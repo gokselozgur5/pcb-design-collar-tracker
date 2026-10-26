@@ -481,7 +481,7 @@ unsent pending message authorization. Pack lead routing, firmware, sourcing/SMT
 and physical powered/RF/water/dust acceptance remain open. No ordering release.
 
 
-## Current contact retention: r16; internal harness remains HOLD
+## Preserved contact retention: r16
 
 Read `mechanical/swim-r16-contact-retention/README.md` and
 `assembly/internal-charge-r01/README.md` before continuing. The old round backing
@@ -514,3 +514,36 @@ catalogue research and cosmetic refinement. Preserve failure status and finish
 one actual acceptance step before reporting it complete. Dock holding/source/fault details,
 approved-pack lead routing, firmware and factory/powered/RF/water/dust acceptance
 remain open. The supplier enquiry is still unsent; no new sending authorization.
+
+## Active internal harness candidate: r02 — WIP
+
+Read `assembly/internal-charge-r02/README.md`, `harness.json`, `route-checks.json`
+and `motion-screen.json`. Both nominal routes and solder envelopes now fit the
+existing shell and PCB. Internal wire is Alpha 2841/7 30 AWG; the external dock
+keeps 26 AWG. The terminal tips are at X=22.4; J3 wire tips have explicit offsets
+to centre the bonded conductor on the native pads. Native pad/net identities,
+insulation transitions, continuous bend bounds and copper clearance are checked.
+
+```sh
+python3 scripts/verify_internal_harness.py
+.venv-dfm/bin/python scripts/check_internal_harness.py
+.venv-dfm/bin/python scripts/screen_internal_harness_motion.py
+.venv-dfm/bin/python -m unittest discover -s tests -p test_internal_harness.py -v
+python3 scripts/verify_handoff.py
+```
+
+The saved linear movement proposal is rejected: it changes the required wire
+length by up to 0.978mm and fails RF/bend screens at multiple poses. Next solve
+the same physical cut length across the inherited 27 poses, then implement
+restraint and the factory/service sequence. Nominal 43.766/54.921mm centreline
+lengths are not production cut instructions. Do not reuse the external 5N pull
+target: the selected internal wire's published maximum tension is about 3.914N.
+
+The current scene is `assembly/internal-charge-r02/harness.scad`, including
+maximum solder envelopes and both RF leads. `review.png` is the assembled view.
+The old r01 failed drafts, r16 mechanical source and published review archives
+remain preserved. The r02 directory is an unreleased candidate; regenerate its
+evidence together and retain coherent revisions in Git. Do not repeatedly rebuild
+the unchanged PCB or its JLC results. Supplier approval, dock holding/source-fault
+details, firmware, factory/SMT and physical powered/RF/water/dust acceptance remain
+open; the battery enquiry is still unsent.
