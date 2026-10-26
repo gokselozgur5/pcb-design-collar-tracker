@@ -14,3 +14,5 @@
 /assembly/pcba-r03/jlc-rules.json whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 # Exact inputs of the rejected datum diagnostic, not order files.
 /assembly/pcba-r04/*.csv whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+# Preserve the original failing OpenSCAD stderr, including its final empty line.
+/mechanical/universal-mount-r01/evidence/initial-flat-pad/export.log whitespace=-blank-at-eof

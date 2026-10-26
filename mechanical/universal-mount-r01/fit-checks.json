@@ -1,0 +1,279 @@
+{
+  "scope": "Nominal CAD intersections of strap envelopes. Does not prove fitted closure, elasticity, strength, grip or every collar.",
+  "cases": {
+    "narrow": {
+      "collar_width": 8,
+      "collar_thickness": 1
+    },
+    "standard": {
+      "collar_width": 25,
+      "collar_thickness": 3
+    },
+    "wide": {
+      "collar_width": 60,
+      "collar_thickness": 8
+    },
+    "rope_small": {
+      "round_collar": true,
+      "rope_diameter": 4
+    },
+    "rope": {
+      "round_collar": true,
+      "rope_diameter": 8
+    },
+    "rope_large": {
+      "round_collar": true,
+      "rope_diameter": 16
+    }
+  },
+  "checks": [
+    {
+      "name": "boot_shell_collision",
+      "parameters": {},
+      "no_intersection": true,
+      "zero_volume_boundary_contact": false,
+      "volume_mm3": 0
+    },
+    {
+      "name": "narrow_strap_boot_collision",
+      "parameters": {
+        "collar_width": 8,
+        "collar_thickness": 1
+      },
+      "no_intersection": true,
+      "zero_volume_boundary_contact": false,
+      "volume_mm3": 0
+    },
+    {
+      "name": "narrow_strap_collar_collision",
+      "parameters": {
+        "collar_width": 8,
+        "collar_thickness": 1
+      },
+      "no_intersection": true,
+      "zero_volume_boundary_contact": false,
+      "volume_mm3": 0
+    },
+    {
+      "name": "narrow_pad_strap_collision",
+      "parameters": {
+        "collar_width": 8,
+        "collar_thickness": 1
+      },
+      "no_intersection": true,
+      "zero_volume_boundary_contact": false,
+      "volume_mm3": 0
+    },
+    {
+      "name": "narrow_pad_collar_collision",
+      "parameters": {
+        "collar_width": 8,
+        "collar_thickness": 1
+      },
+      "no_intersection": true,
+      "zero_volume_boundary_contact": true,
+      "volume_mm3": 0
+    },
+    {
+      "name": "standard_strap_boot_collision",
+      "parameters": {
+        "collar_width": 25,
+        "collar_thickness": 3
+      },
+      "no_intersection": true,
+      "zero_volume_boundary_contact": false,
+      "volume_mm3": 0
+    },
+    {
+      "name": "standard_strap_collar_collision",
+      "parameters": {
+        "collar_width": 25,
+        "collar_thickness": 3
+      },
+      "no_intersection": true,
+      "zero_volume_boundary_contact": false,
+      "volume_mm3": 0
+    },
+    {
+      "name": "standard_pad_strap_collision",
+      "parameters": {
+        "collar_width": 25,
+        "collar_thickness": 3
+      },
+      "no_intersection": true,
+      "zero_volume_boundary_contact": false,
+      "volume_mm3": 0
+    },
+    {
+      "name": "standard_pad_collar_collision",
+      "parameters": {
+        "collar_width": 25,
+        "collar_thickness": 3
+      },
+      "no_intersection": true,
+      "zero_volume_boundary_contact": true,
+      "volume_mm3": 0
+    },
+    {
+      "name": "wide_strap_boot_collision",
+      "parameters": {
+        "collar_width": 60,
+        "collar_thickness": 8
+      },
+      "no_intersection": true,
+      "zero_volume_boundary_contact": false,
+      "volume_mm3": 0
+    },
+    {
+      "name": "wide_strap_collar_collision",
+      "parameters": {
+        "collar_width": 60,
+        "collar_thickness": 8
+      },
+      "no_intersection": true,
+      "zero_volume_boundary_contact": false,
+      "volume_mm3": 0
+    },
+    {
+      "name": "wide_pad_strap_collision",
+      "parameters": {
+        "collar_width": 60,
+        "collar_thickness": 8
+      },
+      "no_intersection": true,
+      "zero_volume_boundary_contact": false,
+      "volume_mm3": 0
+    },
+    {
+      "name": "wide_pad_collar_collision",
+      "parameters": {
+        "collar_width": 60,
+        "collar_thickness": 8
+      },
+      "no_intersection": true,
+      "zero_volume_boundary_contact": true,
+      "volume_mm3": 0
+    },
+    {
+      "name": "rope_small_strap_boot_collision",
+      "parameters": {
+        "round_collar": true,
+        "rope_diameter": 4
+      },
+      "no_intersection": true,
+      "zero_volume_boundary_contact": false,
+      "volume_mm3": 0
+    },
+    {
+      "name": "rope_small_strap_collar_collision",
+      "parameters": {
+        "round_collar": true,
+        "rope_diameter": 4
+      },
+      "no_intersection": true,
+      "zero_volume_boundary_contact": false,
+      "volume_mm3": 0
+    },
+    {
+      "name": "rope_small_pad_strap_collision",
+      "parameters": {
+        "round_collar": true,
+        "rope_diameter": 4
+      },
+      "no_intersection": true,
+      "zero_volume_boundary_contact": false,
+      "volume_mm3": 0
+    },
+    {
+      "name": "rope_small_pad_collar_collision",
+      "parameters": {
+        "round_collar": true,
+        "rope_diameter": 4
+      },
+      "no_intersection": true,
+      "zero_volume_boundary_contact": false,
+      "volume_mm3": 0
+    },
+    {
+      "name": "rope_strap_boot_collision",
+      "parameters": {
+        "round_collar": true,
+        "rope_diameter": 8
+      },
+      "no_intersection": true,
+      "zero_volume_boundary_contact": false,
+      "volume_mm3": 0
+    },
+    {
+      "name": "rope_strap_collar_collision",
+      "parameters": {
+        "round_collar": true,
+        "rope_diameter": 8
+      },
+      "no_intersection": true,
+      "zero_volume_boundary_contact": false,
+      "volume_mm3": 0
+    },
+    {
+      "name": "rope_pad_strap_collision",
+      "parameters": {
+        "round_collar": true,
+        "rope_diameter": 8
+      },
+      "no_intersection": true,
+      "zero_volume_boundary_contact": false,
+      "volume_mm3": 0
+    },
+    {
+      "name": "rope_pad_collar_collision",
+      "parameters": {
+        "round_collar": true,
+        "rope_diameter": 8
+      },
+      "no_intersection": true,
+      "zero_volume_boundary_contact": false,
+      "volume_mm3": 0
+    },
+    {
+      "name": "rope_large_strap_boot_collision",
+      "parameters": {
+        "round_collar": true,
+        "rope_diameter": 16
+      },
+      "no_intersection": true,
+      "zero_volume_boundary_contact": false,
+      "volume_mm3": 0
+    },
+    {
+      "name": "rope_large_strap_collar_collision",
+      "parameters": {
+        "round_collar": true,
+        "rope_diameter": 16
+      },
+      "no_intersection": true,
+      "zero_volume_boundary_contact": false,
+      "volume_mm3": 0
+    },
+    {
+      "name": "rope_large_pad_strap_collision",
+      "parameters": {
+        "round_collar": true,
+        "rope_diameter": 16
+      },
+      "no_intersection": true,
+      "zero_volume_boundary_contact": false,
+      "volume_mm3": 0
+    },
+    {
+      "name": "rope_large_pad_collar_collision",
+      "parameters": {
+        "round_collar": true,
+        "rope_diameter": 16
+      },
+      "no_intersection": true,
+      "zero_volume_boundary_contact": false,
+      "volume_mm3": 0
+    }
+  ],
+  "all_nominal_intersections_empty": true
+}

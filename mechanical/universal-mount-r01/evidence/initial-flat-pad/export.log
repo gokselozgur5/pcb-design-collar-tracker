@@ -1,0 +1,47 @@
+round_pad OK
+boot OK
+body OK
+strap_short OK
+strap_long OK
+Traceback (most recent call last):
+  File "/Users/gok/codex/projects/collar-tracker/scripts/export_universal_mount.py", line 77, in <module>
+    {'solids':solids,'checks':checks,'previews':previews}[args.stage]()
+  File "/Users/gok/codex/projects/collar-tracker/scripts/export_universal_mount.py", line 44, in solids
+    paths=list(pool.map(lambda item:run(*item),specs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/concurrent/futures/_base.py", line 619, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/concurrent/futures/_base.py", line 317, in _result_or_cancel
+    return fut.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/gok/codex/projects/collar-tracker/scripts/export_universal_mount.py", line 44, in <lambda>
+    paths=list(pool.map(lambda item:run(*item),specs))
+                                    ^^^^^^^^^^
+  File "/Users/gok/codex/projects/collar-tracker/scripts/export_universal_mount.py", line 34, in run
+    if 'WARNING:' in log or 'ERROR:' in log:raise RuntimeError(name+': '+log[-1800:])
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: flat_pad: Geometries in cache: 19
+Geometry cache size in bytes: 104696
+CGAL Polyhedrons in cache: 4
+CGAL cache size in bytes: 3043232
+Total rendering time: 0:00:02.246
+   Top level object is a 3D object:
+   Simple:         no
+   Vertices:      792
+   Halfedges:    2376
+   Edges:        1188
+   Halffacets:    840
+   Facets:        420
+   Volumes:        12
+WARNING: Object may not be a valid 2-manifold and may need repair!
+EXPORT-WARNING: Exported object may not be a valid 2-manifold and may need repair
+

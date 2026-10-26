@@ -1,0 +1,77 @@
+{
+  "scope": "Length-only screen of the parametric routing. Hole/button spacing is 5 mm; calculated strain is a demand, not material or retention evidence. Keeper ends 24 mm after the leading strap tip; leave at least 5 mm tail past it. Installed envelopes omit overlapping tail, clasp deformation and contact pressure.",
+  "cases": [
+    {
+      "case": "narrow",
+      "installed_centreline_mm": 37.5,
+      "two_holes_y_mm": [
+        42,
+        47
+      ],
+      "unstrained_loop_mm": 35,
+      "demanded_extension_percent": 7.14,
+      "strap_length_mm": 120,
+      "tail_beyond_keeper_mm": 58.5
+    },
+    {
+      "case": "standard",
+      "installed_centreline_mm": 72.632,
+      "two_holes_y_mm": [
+        77,
+        82
+      ],
+      "unstrained_loop_mm": 70,
+      "demanded_extension_percent": 3.76,
+      "strap_length_mm": 120,
+      "tail_beyond_keeper_mm": 23.368
+    },
+    {
+      "case": "wide",
+      "installed_centreline_mm": 152.598,
+      "two_holes_y_mm": [
+        157,
+        162
+      ],
+      "unstrained_loop_mm": 150,
+      "demanded_extension_percent": 1.73,
+      "strap_length_mm": 220,
+      "tail_beyond_keeper_mm": 43.402
+    },
+    {
+      "case": "rope_small",
+      "installed_centreline_mm": 43.479,
+      "two_holes_y_mm": [
+        47,
+        52
+      ],
+      "unstrained_loop_mm": 40,
+      "demanded_extension_percent": 8.7,
+      "strap_length_mm": 120,
+      "tail_beyond_keeper_mm": 52.521
+    },
+    {
+      "case": "rope",
+      "installed_centreline_mm": 52.405,
+      "two_holes_y_mm": [
+        57,
+        62
+      ],
+      "unstrained_loop_mm": 50,
+      "demanded_extension_percent": 4.81,
+      "strap_length_mm": 120,
+      "tail_beyond_keeper_mm": 43.595
+    },
+    {
+      "case": "rope_large",
+      "installed_centreline_mm": 74.672,
+      "two_holes_y_mm": [
+        77,
+        82
+      ],
+      "unstrained_loop_mm": 70,
+      "demanded_extension_percent": 6.67,
+      "strap_length_mm": 120,
+      "tail_beyond_keeper_mm": 21.328
+    }
+  ]
+}

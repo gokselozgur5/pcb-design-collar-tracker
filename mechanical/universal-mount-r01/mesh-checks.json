@@ -1,0 +1,929 @@
+{
+  "scope": "Exported STL topology and nominal bounds; not strength or waterproof qualification",
+  "meshes": [
+    {
+      "file": "boot.stl",
+      "sha256": "099172a0e9f2d6f452c7d07d8a1b8160d875d9315702a0fd14dcc71428d24b6a",
+      "triangles": 2440,
+      "vertices": 1216,
+      "bounds_mm": [
+        [
+          -30.399993896484375,
+          -26.399993896484375,
+          0.0
+        ],
+        [
+          30.399993896484375,
+          26.399993896484375,
+          27.299999237060547
+        ]
+      ],
+      "dimensions_mm": [
+        60.79998779296875,
+        52.79998779296875,
+        27.299999237060547
+      ],
+      "signed_volume_mm3": 22439.373406945153,
+      "bad_edge_count": 0,
+      "collapsed_faces_at_1e_5mm": 0,
+      "connected_surfaces": 1,
+      "closed_oriented_manifold": true
+    },
+    {
+      "file": "flat_pad.stl",
+      "sha256": "e0d65b20656b60d27513144ea4c2be3623787e9e6d25c2707ca8582527dabc43",
+      "triangles": 1220,
+      "vertices": 612,
+      "bounds_mm": [
+        [
+          -11.0,
+          -22.0,
+          7.629394644936838e-07
+        ],
+        [
+          11.0,
+          22.0,
+          3.6000001430511475
+        ]
+      ],
+      "dimensions_mm": [
+        22.0,
+        44.0,
+        3.599999380111683
+      ],
+      "signed_volume_mm3": 1961.4719851719979,
+      "bad_edge_count": 0,
+      "collapsed_faces_at_1e_5mm": 0,
+      "connected_surfaces": 1,
+      "closed_oriented_manifold": true
+    },
+    {
+      "file": "round_pad.stl",
+      "sha256": "bd3f7a7edcd0097007f0ab0c3fac72122cb4b3291a955b23715fc4c8eb46b7cc",
+      "triangles": 792,
+      "vertices": 398,
+      "bounds_mm": [
+        [
+          -11.0,
+          -11.0,
+          0.0
+        ],
+        [
+          11.0,
+          11.0,
+          7.800000190734863
+        ]
+      ],
+      "dimensions_mm": [
+        22.0,
+        22.0,
+        7.800000190734863
+      ],
+      "signed_volume_mm3": 2516.5891681006715,
+      "bad_edge_count": 0,
+      "collapsed_faces_at_1e_5mm": 0,
+      "connected_surfaces": 1,
+      "closed_oriented_manifold": true
+    },
+    {
+      "file": "strap_short.stl",
+      "sha256": "8904989993a311aff8ed2a614c620c912798ab24046c61f38ab8bebf30dec3a8",
+      "triangles": 3348,
+      "vertices": 1640,
+      "bounds_mm": [
+        [
+          -7.299999237060547,
+          0.0,
+          0.0
+        ],
+        [
+          7.299999237060547,
+          120.0,
+          4.399999618530273
+        ]
+      ],
+      "dimensions_mm": [
+        14.599998474121094,
+        120.0,
+        4.399999618530273
+      ],
+      "signed_volume_mm3": 1752.0418784059111,
+      "bad_edge_count": 0,
+      "collapsed_faces_at_1e_5mm": 0,
+      "connected_surfaces": 1,
+      "closed_oriented_manifold": true
+    },
+    {
+      "file": "strap_long.stl",
+      "sha256": "1b1e373edbf63f00eed1379836ff3abab42789f60898982ab22de47a5cf24d54",
+      "triangles": 5988,
+      "vertices": 2920,
+      "bounds_mm": [
+        [
+          -7.299999237060547,
+          0.0,
+          0.0
+        ],
+        [
+          7.299999237060547,
+          220.0,
+          4.399999618530273
+        ]
+      ],
+      "dimensions_mm": [
+        14.599998474121094,
+        220.0,
+        4.399999618530273
+      ],
+      "signed_volume_mm3": 3015.4785711829427,
+      "bad_edge_count": 0,
+      "collapsed_faces_at_1e_5mm": 0,
+      "connected_surfaces": 1,
+      "closed_oriented_manifold": true
+    },
+    {
+      "file": "body.stl",
+      "sha256": "dc32b424fd3daeb8c3e94c1a0d80e478be04bc2a9761ffc23ba84dd6373c657b",
+      "triangles": 22636,
+      "vertices": 11308,
+      "bounds_mm": [
+        [
+          -28.699996948242188,
+          -24.699996948242188,
+          0.0
+        ],
+        [
+          32.70000076293945,
+          24.699996948242188,
+          18.5
+        ]
+      ],
+      "dimensions_mm": [
+        61.39999771118164,
+        49.399993896484375,
+        18.5
+      ],
+      "signed_volume_mm3": 26516.35776021929,
+      "bad_edge_count": 0,
+      "collapsed_faces_at_1e_5mm": 0,
+      "connected_surfaces": 1,
+      "closed_oriented_manifold": true
+    },
+    {
+      "file": "lid.stl",
+      "sha256": "426d4b1ea79091161c1ac84aa53fba56be7b79436cef1e9c857b9d8e4c93a23d",
+      "triangles": 4932,
+      "vertices": 2460,
+      "bounds_mm": [
+        [
+          -28.699996948242188,
+          -24.699996948242188,
+          13.0
+        ],
+        [
+          28.699996948242188,
+          24.699996948242188,
+          21.0
+        ]
+      ],
+      "dimensions_mm": [
+        57.399993896484375,
+        49.399993896484375,
+        8.0
+      ],
+      "signed_volume_mm3": 7016.173269257638,
+      "bad_edge_count": 0,
+      "collapsed_faces_at_1e_5mm": 0,
+      "connected_surfaces": 1,
+      "closed_oriented_manifold": true
+    },
+    {
+      "file": "carrier.stl",
+      "sha256": "77c7f08ae4bf591a22dfe6e5ef3a82fbf8c8562758d7f659f4c77173bfa50b06",
+      "triangles": 1718,
+      "vertices": 855,
+      "bounds_mm": [
+        [
+          -20.800003051757812,
+          -16.800003051757812,
+          1.800000548362732
+        ],
+        [
+          20.800003051757812,
+          16.800003051757812,
+          11.5
+        ]
+      ],
+      "dimensions_mm": [
+        41.600006103515625,
+        33.600006103515625,
+        9.699999451637268
+      ],
+      "signed_volume_mm3": 650.9594929333721,
+      "bad_edge_count": 0,
+      "collapsed_faces_at_1e_5mm": 0,
+      "connected_surfaces": 1,
+      "closed_oriented_manifold": true
+    },
+    {
+      "file": "retainer.stl",
+      "sha256": "4badf46619d172b3f8f42c486fab4a1ab3c58790b454a5cbefa18c81724380bf",
+      "triangles": 888,
+      "vertices": 444,
+      "bounds_mm": [
+        [
+          -20.899993896484375,
+          -17.149978637695312,
+          10.600000381469727
+        ],
+        [
+          20.899993896484375,
+          17.149978637695312,
+          12.699999809265137
+        ]
+      ],
+      "dimensions_mm": [
+        41.79998779296875,
+        34.299957275390625,
+        2.09999942779541
+      ],
+      "signed_volume_mm3": 107.20672006065652,
+      "bad_edge_count": 0,
+      "collapsed_faces_at_1e_5mm": 0,
+      "connected_surfaces": 1,
+      "closed_oriented_manifold": true
+    },
+    {
+      "file": "battery.stl",
+      "sha256": "f89fdb33246d919d7f63a15492f7c587763167d568f082b241f201ea7d497668",
+      "triangles": 40,
+      "vertices": 24,
+      "bounds_mm": [
+        [
+          -16.0,
+          -15.25,
+          1.7999992370605469
+        ],
+        [
+          16.0,
+          15.25,
+          7.84999942779541
+        ]
+      ],
+      "dimensions_mm": [
+        32.0,
+        30.5,
+        6.050000190734863
+      ],
+      "signed_volume_mm3": 5243.180064315817,
+      "bad_edge_count": 0,
+      "collapsed_faces_at_1e_5mm": 0,
+      "connected_surfaces": 2,
+      "closed_oriented_manifold": true
+    },
+    {
+      "file": "pcb.stl",
+      "sha256": "746cbf94bd29bf5cae74a237a35f313b17a6d9afeb4b076494facc4ee054f585",
+      "triangles": 1372,
+      "vertices": 688,
+      "bounds_mm": [
+        [
+          -20.0,
+          -16.0,
+          8.899999618530273
+        ],
+        [
+          20.0,
+          16.0,
+          13.74087905883789
+        ]
+      ],
+      "dimensions_mm": [
+        40.0,
+        32.0,
+        4.840879440307617
+      ],
+      "signed_volume_mm3": 1794.1504443134668,
+      "bad_edge_count": 0,
+      "collapsed_faces_at_1e_5mm": 0,
+      "connected_surfaces": 1,
+      "closed_oriented_manifold": true
+    },
+    {
+      "file": "contacts.stl",
+      "sha256": "0098c9d1eeff85480503fce614e47bf98ae93a466185dc32d4b35f69053faa4a",
+      "triangles": 2872,
+      "vertices": 1440,
+      "bounds_mm": [
+        [
+          18.0,
+          -10.25,
+          1.25
+        ],
+        [
+          29.5,
+          10.25,
+          9.75
+        ]
+      ],
+      "dimensions_mm": [
+        11.5,
+        20.5,
+        8.5
+      ],
+      "signed_volume_mm3": 510.7676042754396,
+      "bad_edge_count": 0,
+      "collapsed_faces_at_1e_5mm": 0,
+      "connected_surfaces": 2,
+      "closed_oriented_manifold": true
+    },
+    {
+      "file": "gasket.stl",
+      "sha256": "bdc55c4def5857ce63744bc5ece75bced332589551e549af631d222b36148335",
+      "triangles": 21216,
+      "vertices": 10608,
+      "bounds_mm": [
+        [
+          -25.644302368164062,
+          -21.644287109375,
+          17.17675018310547
+        ],
+        [
+          25.644302368164062,
+          21.644287109375,
+          18.517749786376953
+        ]
+      ],
+      "dimensions_mm": [
+        51.288604736328125,
+        43.28857421875,
+        1.3409996032714844
+      ],
+      "signed_volume_mm3": 409.60762680626385,
+      "bad_edge_count": 0,
+      "collapsed_faces_at_1e_5mm": 0,
+      "connected_surfaces": 1,
+      "closed_oriented_manifold": true
+    },
+    {
+      "file": "antennas.stl",
+      "sha256": "4191969137fcfc8e7971fb2054a6d91b5708b9e7cd8f5d9f1440706f064c401f",
+      "triangles": 24,
+      "vertices": 16,
+      "bounds_mm": [
+        [
+          -20.349998474121094,
+          -14.84999942779541,
+          18.099998474121094
+        ],
+        [
+          20.349998474121094,
+          15.649999618530273,
+          18.5
+        ]
+      ],
+      "dimensions_mm": [
+        40.69999694824219,
+        30.499999046325684,
+        0.40000152587890625
+      ],
+      "signed_volume_mm3": 366.99336255631476,
+      "bad_edge_count": 0,
+      "collapsed_faces_at_1e_5mm": 0,
+      "connected_surfaces": 2,
+      "closed_oriented_manifold": true
+    },
+    {
+      "file": "terminals.stl",
+      "sha256": "5d5d291e0023461c98a48b075c6c8a751b1a2f4c3cd93ba3fa9cffc4aa066b9b",
+      "triangles": 2096,
+      "vertices": 1044,
+      "bounds_mm": [
+        [
+          21.599998474121094,
+          -10.5,
+          2.350006103515625
+        ],
+        [
+          22.599998474121094,
+          10.5,
+          14.799986839294434
+        ]
+      ],
+      "dimensions_mm": [
+        1.0,
+        21.0,
+        12.449980735778809
+      ],
+      "signed_volume_mm3": 116.2879189658416,
+      "bad_edge_count": 0,
+      "collapsed_faces_at_1e_5mm": 0,
+      "connected_surfaces": 2,
+      "closed_oriented_manifold": true
+    },
+    {
+      "file": "charge_wires.stl",
+      "sha256": "39163bbd55063549e8c59c8bd48b3cf594d0382cb994b24f2e04d20533c5ed44",
+      "triangles": 58072,
+      "vertices": 29040,
+      "bounds_mm": [
+        [
+          -17.089982986450195,
+          -13.938827514648438,
+          11.348098754882812
+        ],
+        [
+          22.448230743408203,
+          10.261823654174805,
+          16.743255615234375
+        ]
+      ],
+      "dimensions_mm": [
+        39.5382137298584,
+        24.200651168823242,
+        5.3951568603515625
+      ],
+      "signed_volume_mm3": 26.65692220906467,
+      "bad_edge_count": 0,
+      "collapsed_faces_at_1e_5mm": 0,
+      "connected_surfaces": 2,
+      "closed_oriented_manifold": true
+    },
+    {
+      "file": "fasteners.stl",
+      "sha256": "17bc5cefdd18d2096c29479cd74a24100a89b22befdfb878b5f4b7242d0fd2e7",
+      "triangles": 2096,
+      "vertices": 1056,
+      "bounds_mm": [
+        [
+          -27.0,
+          -23.0,
+          -0.5
+        ],
+        [
+          27.0,
+          23.0,
+          20.799999237060547
+        ]
+      ],
+      "dimensions_mm": [
+        54.0,
+        46.0,
+        21.299999237060547
+      ],
+      "signed_volume_mm3": 304.51790362375203,
+      "bad_edge_count": 0,
+      "collapsed_faces_at_1e_5mm": 0,
+      "connected_surfaces": 4,
+      "closed_oriented_manifold": true
+    },
+    {
+      "file": "narrow_collar.stl",
+      "sha256": "3fea762c00d0d32e604ee2377c92207849bff4646fd2015150435bbc30c87304",
+      "triangles": 12,
+      "vertices": 8,
+      "bounds_mm": [
+        [
+          -58.0,
+          -4.0,
+          -8.800000190734863
+        ],
+        [
+          58.0,
+          4.0,
+          -7.800000190734863
+        ]
+      ],
+      "dimensions_mm": [
+        116.0,
+        8.0,
+        1.0
+      ],
+      "signed_volume_mm3": 928.0000000000003,
+      "bad_edge_count": 0,
+      "collapsed_faces_at_1e_5mm": 0,
+      "connected_surfaces": 1,
+      "closed_oriented_manifold": true
+    },
+    {
+      "file": "narrow_installed_straps.stl",
+      "sha256": "71afa18d3fe56aa4ed8a59f49f66cffc2733dd8f522815b3109329e845128058",
+      "triangles": 800,
+      "vertices": 400,
+      "bounds_mm": [
+        [
+          -22.5,
+          -6.6999969482421875,
+          -10.499984741210938
+        ],
+        [
+          22.5,
+          6.699951171875,
+          -0.8000030517578125
+        ]
+      ],
+      "dimensions_mm": [
+        45.0,
+        13.399948120117188,
+        9.699981689453125
+      ],
+      "signed_volume_mm3": 1043.8164911558852,
+      "bad_edge_count": 0,
+      "collapsed_faces_at_1e_5mm": 0,
+      "connected_surfaces": 2,
+      "closed_oriented_manifold": true
+    },
+    {
+      "file": "standard_collar.stl",
+      "sha256": "7ca1698fedac43af211399b1b30a698247d2058419f930bec70e3253a9d66d54",
+      "triangles": 12,
+      "vertices": 8,
+      "bounds_mm": [
+        [
+          -58.0,
+          -12.5,
+          -10.800000190734863
+        ],
+        [
+          58.0,
+          12.5,
+          -7.800000190734863
+        ]
+      ],
+      "dimensions_mm": [
+        116.0,
+        25.0,
+        3.0
+      ],
+      "signed_volume_mm3": 8700.0,
+      "bad_edge_count": 0,
+      "collapsed_faces_at_1e_5mm": 0,
+      "connected_surfaces": 1,
+      "closed_oriented_manifold": true
+    },
+    {
+      "file": "standard_installed_straps.stl",
+      "sha256": "84db94701a07096d73c25b10578b3721a02efa92772350791b166daf0b58cd18",
+      "triangles": 928,
+      "vertices": 464,
+      "bounds_mm": [
+        [
+          -22.5,
+          -14.399810791015625,
+          -12.499984741210938
+        ],
+        [
+          22.5,
+          14.399734497070312,
+          -0.8000030517578125
+        ]
+      ],
+      "dimensions_mm": [
+        45.0,
+        28.799545288085938,
+        11.699981689453125
+      ],
+      "signed_volume_mm3": 2024.732994092628,
+      "bad_edge_count": 0,
+      "collapsed_faces_at_1e_5mm": 0,
+      "connected_surfaces": 2,
+      "closed_oriented_manifold": true
+    },
+    {
+      "file": "wide_collar.stl",
+      "sha256": "5c0b6cd036900b90cf8afed539bd0e67bdc18ef445e1458069384d9279b0789b",
+      "triangles": 12,
+      "vertices": 8,
+      "bounds_mm": [
+        [
+          -58.0,
+          -30.0,
+          -15.800000190734863
+        ],
+        [
+          58.0,
+          30.0,
+          -7.800000190734863
+        ]
+      ],
+      "dimensions_mm": [
+        116.0,
+        60.0,
+        8.0
+      ],
+      "signed_volume_mm3": 55680.0,
+      "bad_edge_count": 0,
+      "collapsed_faces_at_1e_5mm": 0,
+      "connected_surfaces": 1,
+      "closed_oriented_manifold": true
+    },
+    {
+      "file": "wide_installed_straps.stl",
+      "sha256": "65911ef0adae1b34b31a9df1966b8216dab5694dde1c4df8f9e51dbf41e4b599",
+      "triangles": 928,
+      "vertices": 464,
+      "bounds_mm": [
+        [
+          -22.5,
+          -31.899612426757812,
+          -17.499984741210938
+        ],
+        [
+          22.5,
+          31.899734497070312,
+          -0.8000030517578125
+        ]
+      ],
+      "dimensions_mm": [
+        45.0,
+        63.799346923828125,
+        16.699981689453125
+      ],
+      "signed_volume_mm3": 4263.249912685713,
+      "bad_edge_count": 0,
+      "collapsed_faces_at_1e_5mm": 0,
+      "connected_surfaces": 2,
+      "closed_oriented_manifold": true
+    },
+    {
+      "file": "rope_small_collar.stl",
+      "sha256": "c3bb6c8ba916fac2b47235404d8977470672fba27fb3a24ad3b2aa63b5b0db5c",
+      "triangles": 252,
+      "vertices": 128,
+      "bounds_mm": [
+        [
+          -58.0,
+          -2.0,
+          -11.628427505493164
+        ],
+        [
+          58.0,
+          2.0,
+          -7.628427028656006
+        ]
+      ],
+      "dimensions_mm": [
+        116.0,
+        4.0,
+        4.000000476837158
+      ],
+      "signed_volume_mm3": 1455.3584976533857,
+      "bad_edge_count": 0,
+      "collapsed_faces_at_1e_5mm": 0,
+      "connected_surfaces": 1,
+      "closed_oriented_manifold": true
+    },
+    {
+      "file": "rope_small_installed_straps.stl",
+      "sha256": "ebc88d84b47b9c3103dab75b13ad734141dde91910883627061b761911e594cc",
+      "triangles": 1376,
+      "vertices": 688,
+      "bounds_mm": [
+        [
+          -22.5,
+          -6.1999969482421875,
+          -13.217376708984375
+        ],
+        [
+          22.5,
+          6.1999969482421875,
+          -0.8000030517578125
+        ]
+      ],
+      "dimensions_mm": [
+        45.0,
+        12.399993896484375,
+        12.417373657226562
+      ],
+      "signed_volume_mm3": 1213.0285121174527,
+      "bad_edge_count": 0,
+      "collapsed_faces_at_1e_5mm": 0,
+      "connected_surfaces": 2,
+      "closed_oriented_manifold": true
+    },
+    {
+      "file": "rope_collar.stl",
+      "sha256": "653ce106e06f2bdc77208d571d3699ce528ace834ce9b783c6d1ff6062525585",
+      "triangles": 252,
+      "vertices": 128,
+      "bounds_mm": [
+        [
+          -58.0,
+          -4.0,
+          -16.45685386657715
+        ],
+        [
+          58.0,
+          4.0,
+          -8.456853866577148
+        ]
+      ],
+      "dimensions_mm": [
+        116.0,
+        8.0,
+        8.0
+      ],
+      "signed_volume_mm3": 5821.433955478923,
+      "bad_edge_count": 0,
+      "collapsed_faces_at_1e_5mm": 0,
+      "connected_surfaces": 1,
+      "closed_oriented_manifold": true
+    },
+    {
+      "file": "rope_installed_straps.stl",
+      "sha256": "b6abc3b9de987f20290670cafbb9f00ba9b774b976f0999b168714ef2cb3a71b",
+      "triangles": 1392,
+      "vertices": 696,
+      "bounds_mm": [
+        [
+          -22.5,
+          -6.1999969482421875,
+          -18.038192749023438
+        ],
+        [
+          22.5,
+          6.1999969482421875,
+          -0.8000030517578125
+        ]
+      ],
+      "dimensions_mm": [
+        45.0,
+        12.399993896484375,
+        17.238189697265625
+      ],
+      "signed_volume_mm3": 1462.2555790236202,
+      "bad_edge_count": 0,
+      "collapsed_faces_at_1e_5mm": 0,
+      "connected_surfaces": 2,
+      "closed_oriented_manifold": true
+    },
+    {
+      "file": "rope_large_collar.stl",
+      "sha256": "25b66ee7e75867049aae8fa7407ee70efe36a61ec377fa80b53c64d38a9fe828",
+      "triangles": 252,
+      "vertices": 128,
+      "bounds_mm": [
+        [
+          -58.0,
+          -8.0,
+          -26.11370849609375
+        ],
+        [
+          58.0,
+          8.0,
+          -10.11370849609375
+        ]
+      ],
+      "dimensions_mm": [
+        116.0,
+        16.0,
+        16.0
+      ],
+      "signed_volume_mm3": 23285.736050987573,
+      "bad_edge_count": 0,
+      "collapsed_faces_at_1e_5mm": 0,
+      "connected_surfaces": 1,
+      "closed_oriented_manifold": true
+    },
+    {
+      "file": "rope_large_installed_straps.stl",
+      "sha256": "0bff7f606202dd8ad9cee36b2bad9d189317d1f48ddfd08395c396e371bdbadd",
+      "triangles": 1264,
+      "vertices": 632,
+      "bounds_mm": [
+        [
+          -22.5,
+          -9.566116333007812,
+          -27.679824829101562
+        ],
+        [
+          22.5,
+          9.566116333007812,
+          -0.8000030517578125
+        ]
+      ],
+      "dimensions_mm": [
+        45.0,
+        19.132232666015625,
+        26.87982177734375
+      ],
+      "signed_volume_mm3": 2086.491370846048,
+      "bad_edge_count": 0,
+      "collapsed_faces_at_1e_5mm": 0,
+      "connected_surfaces": 2,
+      "closed_oriented_manifold": true
+    },
+    {
+      "file": "pcb_substrate.stl",
+      "sha256": "66bf876ccee4d15ddf2dcf4dc788af0b7ec01904c9d9326edbee471ed786d35b",
+      "triangles": 12,
+      "vertices": 8,
+      "bounds_mm": [
+        [
+          -20.0,
+          -16.0,
+          10.399999618530273
+        ],
+        [
+          20.0,
+          16.0,
+          11.240880012512207
+        ]
+      ],
+      "dimensions_mm": [
+        40.0,
+        32.0,
+        0.8408803939819336
+      ],
+      "signed_volume_mm3": 1076.326904296875,
+      "bad_edge_count": 0,
+      "collapsed_faces_at_1e_5mm": 0,
+      "connected_surfaces": 1,
+      "closed_oriented_manifold": true
+    },
+    {
+      "file": "pcb_components.stl",
+      "sha256": "bed21b290af3625cd3d49f7092e1b3cd5ff76e47b44c2190e1b7b1b27647f7c4",
+      "triangles": 1020,
+      "vertices": 680,
+      "bounds_mm": [
+        [
+          -19.399999618530273,
+          -15.419999122619629,
+          8.899999618530273
+        ],
+        [
+          19.15999984741211,
+          15.469999313354492,
+          13.74087905883789
+        ]
+      ],
+      "dimensions_mm": [
+        38.55999946594238,
+        30.88999843597412,
+        4.840879440307617
+      ],
+      "signed_volume_mm3": 717.8247607197166,
+      "bad_edge_count": 0,
+      "collapsed_faces_at_1e_5mm": 0,
+      "connected_surfaces": 85,
+      "closed_oriented_manifold": true
+    },
+    {
+      "file": "rf.stl",
+      "sha256": "9841fffbc3e5cd4fbdc3f4120576c24abe250b727b72249e4e507e1a15f12cd7",
+      "triangles": 6770,
+      "vertices": 3389,
+      "bounds_mm": [
+        [
+          -16.479751586914062,
+          -12.688220977783203,
+          12.368887901306152
+        ],
+        [
+          16.83629035949707,
+          13.735517501831055,
+          18.25699234008789
+        ]
+      ],
+      "dimensions_mm": [
+        33.31604194641113,
+        26.423738479614258,
+        5.888104438781738
+      ],
+      "signed_volume_mm3": 175.8399963737761,
+      "bad_edge_count": 0,
+      "collapsed_faces_at_1e_5mm": 0,
+      "connected_surfaces": 2,
+      "closed_oriented_manifold": true
+    },
+    {
+      "file": "staking.stl",
+      "sha256": "c80120c1d8da7cfc50a3f4332a4f1f34df913a0589f9d203a0f88a986b3c7ea7",
+      "triangles": 36,
+      "vertices": 24,
+      "bounds_mm": [
+        [
+          -17.200000762939453,
+          -13.050000190734863,
+          11.240880012512207
+        ],
+        [
+          22.450000762939453,
+          6.650000095367432,
+          14.25
+        ]
+      ],
+      "dimensions_mm": [
+        39.650001525878906,
+        19.700000286102295,
+        3.009119987487793
+      ],
+      "signed_volume_mm3": 19.132189841496228,
+      "bad_edge_count": 0,
+      "collapsed_faces_at_1e_5mm": 0,
+      "connected_surfaces": 3,
+      "closed_oriented_manifold": true
+    }
+  ]
+}
