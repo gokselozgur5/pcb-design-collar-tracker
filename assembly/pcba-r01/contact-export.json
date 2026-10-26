@@ -1,0 +1,20 @@
+{
+  "result": "PASS",
+  "source_sha256": "241c84d6ba98793c37344e1e46ddc4918e7b05322ba87daea7c9a90ffb8379b3",
+  "kicad_version": "10.0.7",
+  "exporter_sha256": "d4a817199fd445b626d55be301cc509564f4da3bea7d19bc78673c26ee0c6378",
+  "origin_native_mm": [
+    100,
+    128
+  ],
+  "interface_pad_count": 23,
+  "pin_one_land_count": 18,
+  "fitted_pad_count": 364,
+  "coordinates": "Gerber top-view X right/Y up on both sides; bottom is not mirrored",
+  "scope": "Native pad geometry only; fixture contact, polarity/process and component rotation acceptance remain open",
+  "outputs": {
+    "interface-pads.csv": "30f8434891c502f93c11b02e98133dcea5746e7aa1bf306975745735475c4986",
+    "pin-one.csv": "7e0e377ff8c759c3c1782827cfd82d744b9d78ca259b5c5432db5cc805cdc573",
+    "fitted-pads.csv": "b7aa6147280d71b217b4e8f2999c8837ddcb1c30d2af31303fd52a18fb135f7a"
+  }
+}

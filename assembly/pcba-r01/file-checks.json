@@ -1,0 +1,53 @@
+{
+  "result": "PASS",
+  "scope": "File/identity/coordinate consistency for assembly review only",
+  "pcb_sha256": "241c84d6ba98793c37344e1e46ddc4918e7b05322ba87daea7c9a90ffb8379b3",
+  "gerber_sha256": "c736c5d35ddfe4c4662e57606120f00f7358492e11d5fbb32eaf1d0ff6caf5d2",
+  "fitted_references": 81,
+  "exact_mpns": 44,
+  "sides": {
+    "top": 58,
+    "bottom": 23
+  },
+  "origin_native_mm": [
+    100,
+    128
+  ],
+  "gerber_bounds_mm": [
+    -2,
+    -2,
+    38,
+    30
+  ],
+  "coordinates": "Millimetres, X right and Y up; both sides share Gerber origin; no bottom mirroring",
+  "rotations": "Native KiCad angles modulo 360; supplier package rotations unqualified",
+  "dnp": [
+    "C11",
+    "C12"
+  ],
+  "unplaced_interfaces": [
+    "J3",
+    "J4",
+    "J5",
+    "J7"
+  ],
+  "supplier_part_codes_verified": false,
+  "supplier_rotation_qualified": false,
+  "smt_dfm_accepted": false,
+  "procurement_accepted": false,
+  "production_release": false,
+  "inputs": {
+    "experiments/power-r05l-charge-interlock/hardware/bom.csv": "c5e37c75362fd27b008fc32d9fef383f6660857f5968af63cafa0d59a87c03e4",
+    "experiments/power-r05l-charge-interlock/assembly/native-positions.csv": "83d60d94091907cafa17f560231779078119df961e97673b489e715c28c3d09b",
+    "experiments/power-r05l-charge-interlock/assembly/assembly-check.json": "86854ad62cb9ee640d4efbbcddff9ffa4f8762007c9b5643cb69c857a8c87094",
+    "experiments/power-r05l-charge-interlock/evidence/components.native.json": "448db77589a4f1355f7f7a953590fef540bec405dd1edbf7ffd6e66885c1331c",
+    "experiments/power-r05l-charge-interlock/hardware/collar-tracker.kicad_pcb": "241c84d6ba98793c37344e1e46ddc4918e7b05322ba87daea7c9a90ffb8379b3",
+    "experiments/power-r05l-charge-interlock/hardware/collar-tracker.kicad_sch": "0a8d89c01db6d0211a9048467b728214da175750f6b670ebf3d6ffa9adeefb0e",
+    "experiments/power-r05l-charge-interlock/evidence/collar-tracker-05l-charge-final4-40x32-dfm.zip": "c736c5d35ddfe4c4662e57606120f00f7358492e11d5fbb32eaf1d0ff6caf5d2",
+    "scripts/prepare_pcba_review.py": "107443f0b623f31f01748660be3e3c6b85b6aa2eaef23b2f0497b8099b55d683"
+  },
+  "outputs": {
+    "bom.csv": "e0e2782d00ce0d0a01559dd62cda5832a1904598125dc7d9720a735d7bff18d9",
+    "cpl.csv": "0d4d71db99c53891dcb0784954c89ad209dbd541e223d12151d448dc39d42e10"
+  }
+}
