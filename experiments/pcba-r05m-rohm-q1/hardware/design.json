@@ -1,0 +1,1609 @@
+{
+  "root_uuid": "451a5990-6c32-5202-82bb-1920decebc4e",
+  "parts": [
+    {
+      "ref": "U1",
+      "symbol": "nRF9151-LACA",
+      "value": "nRF9151-LACA",
+      "x": 134.62,
+      "y": 100.33,
+      "nets": {
+        "56": "I2C_SDA",
+        "57": "I2C_SCL",
+        "58": "ACC_INT",
+        "59": "HEALTH_INT",
+        "61": "SPI_SCK",
+        "62": "SPI_MOSI",
+        "63": "SPI_MISO",
+        "64": "HEALTH_CS",
+        "67": "HEALTH_RESET",
+        "68": "HEALTH_EN",
+        "69": "CHG_STAT",
+        "70": "CHG_FAULT",
+        "73": "FG_ALERT",
+        "14": "VDD_NRF",
+        "65": "VIO_1V8",
+        "24": "DEC0",
+        "10": "NRF_ENABLE",
+        "9": "NRF_RESET",
+        "3": "SWDCLK",
+        "4": "SWDIO",
+        "19": "SIM_1V8",
+        "16": "SIM_RST",
+        "18": "SIM_CLK",
+        "17": "SIM_IO",
+        "35": "LTE_RF",
+        "42": "GPS_RF",
+        "52": "COEX0",
+        "1": "GND",
+        "7": "GND",
+        "13": "GND",
+        "15": "GND",
+        "20": "GND",
+        "25": "GND",
+        "30": "GND",
+        "34": "GND",
+        "36": "GND",
+        "38": "GND",
+        "39": "GND",
+        "40": "GND",
+        "41": "GND",
+        "43": "GND",
+        "46": "GND",
+        "51": "GND",
+        "55": "GND",
+        "60": "GND",
+        "66": "GND",
+        "71": "GND",
+        "76": "GND",
+        "105": "GND",
+        "106": "GND",
+        "107": "GND",
+        "108": "GND",
+        "109": "GND",
+        "110": "GND",
+        "111": "GND",
+        "112": "GND",
+        "113": "GND"
+      },
+      "footprint": "Collar033:U1_LGA_9151_12.1x11.1mm",
+      "mpn": "NRF9151-LACA-R",
+      "status": "Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "FB1",
+      "symbol": "L",
+      "value": "22R @100MHz",
+      "x": 250.19,
+      "y": 39.37,
+      "nets": {
+        "1": "VSYS",
+        "2": "VDD_NRF"
+      },
+      "footprint": "Collar033:FB1_L_0603_1608Metric",
+      "mpn": "BLM18SD220SN1D",
+      "status": "Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "C1",
+      "symbol": "C",
+      "value": "1uF /10V",
+      "x": 245.11,
+      "y": 54.61,
+      "nets": {
+        "1": "VSYS",
+        "2": "GND"
+      },
+      "footprint": "Collar033:C1_C_0201_0603Metric",
+      "mpn": "GRM033R61A105ME15D",
+      "status": "Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "C2",
+      "symbol": "C",
+      "value": "1uF /10V",
+      "x": 309.88,
+      "y": 54.61,
+      "nets": {
+        "1": "VSYS",
+        "2": "GND"
+      },
+      "footprint": "Collar033:C2_C_0201_0603Metric",
+      "mpn": "GRM033R61A105ME15D",
+      "status": "Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "C3",
+      "symbol": "C",
+      "value": "47uF /10V",
+      "x": 245.11,
+      "y": 68.58,
+      "nets": {
+        "1": "VDD_NRF",
+        "2": "GND"
+      },
+      "footprint": "Collar033:C3_C_0805_2012Metric",
+      "mpn": "GRM21BR61A476ME15L",
+      "status": "Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "C4",
+      "symbol": "C",
+      "value": "10uF /10V",
+      "x": 309.88,
+      "y": 68.58,
+      "nets": {
+        "1": "VDD_NRF",
+        "2": "GND"
+      },
+      "footprint": "Collar033:C4_C_0603_1608Metric",
+      "mpn": "GRM188R61A106MAALD",
+      "status": "Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "C5",
+      "symbol": "C",
+      "value": "100nF",
+      "x": 245.11,
+      "y": 83.82,
+      "nets": {
+        "1": "VIO_1V8",
+        "2": "GND"
+      },
+      "footprint": "Collar033:C5_C_0201_0603Metric",
+      "mpn": "GRM033R60J104ME19D",
+      "status": "Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "C6",
+      "symbol": "C",
+      "value": "4.7uF",
+      "x": 309.88,
+      "y": 83.82,
+      "nets": {
+        "1": "VIO_1V8",
+        "2": "GND"
+      },
+      "footprint": "Collar033:C6_C_0402_1005Metric",
+      "mpn": "GRM155R60J475ME47D",
+      "status": "Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "C7",
+      "symbol": "C",
+      "value": "4.7uF",
+      "x": 245.11,
+      "y": 99.06,
+      "nets": {
+        "1": "DEC0",
+        "2": "GND"
+      },
+      "footprint": "Collar033:C7_C_0402_1005Metric",
+      "mpn": "GRM155R60J475ME47D",
+      "status": "Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "C8",
+      "symbol": "C",
+      "value": "100nF",
+      "x": 309.88,
+      "y": 99.06,
+      "nets": {
+        "1": "NRF_RESET",
+        "2": "GND"
+      },
+      "footprint": "Collar033:C8_C_0201_0603Metric",
+      "mpn": "GRM033R60J104ME19D",
+      "status": "Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "R1",
+      "symbol": "R",
+      "value": "22k /1%",
+      "x": 245.11,
+      "y": 114.3,
+      "nets": {
+        "1": "POWER_GOOD",
+        "2": "NRF_ENABLE"
+      },
+      "footprint": "Collar033:R1_R_0402_1005Metric",
+      "mpn": "RC0402FR-0722KL",
+      "status": "Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "C9",
+      "symbol": "C",
+      "value": "1uF /16V X7R",
+      "x": 309.88,
+      "y": 114.3,
+      "nets": {
+        "1": "NRF_ENABLE",
+        "2": "GND"
+      },
+      "footprint": "Collar05:C9_C_0805_2012Metric",
+      "mpn": "GRM21BR71C105KA01L",
+      "status": "Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "R2",
+      "symbol": "R",
+      "value": "1k",
+      "x": 245.11,
+      "y": 129.54,
+      "nets": {
+        "1": "NRF_RESET",
+        "2": "DEBUG_RESET"
+      },
+      "footprint": "Collar033:R2_R_0402_1005Metric",
+      "mpn": "RC0402FR-071KL",
+      "status": "Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "C10",
+      "symbol": "C",
+      "value": "100nF",
+      "x": 309.88,
+      "y": 129.54,
+      "nets": {
+        "1": "SIM_1V8",
+        "2": "GND"
+      },
+      "footprint": "Collar033:C10_C_0402_1005Metric",
+      "mpn": "GRM155R71C104KA88D",
+      "status": "Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "R3",
+      "symbol": "R",
+      "value": "0R / tune",
+      "x": 425.45,
+      "y": 41.91,
+      "nets": {
+        "1": "LTE_RF",
+        "2": "LTE_ANT"
+      },
+      "footprint": "Collar033:R3_R_0402_1005Metric",
+      "mpn": "RC0402JR-070RL",
+      "status": "Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "C11",
+      "symbol": "C",
+      "value": "DNP / tune",
+      "x": 490.22,
+      "y": 41.91,
+      "nets": {
+        "1": "LTE_RF",
+        "2": "GND"
+      },
+      "footprint": "Collar033:C11_C_0402_1005Metric",
+      "mpn": "",
+      "status": "candidate",
+      "dnp": true,
+      "onboard": true
+    },
+    {
+      "ref": "C12",
+      "symbol": "C",
+      "value": "DNP / tune",
+      "x": 490.22,
+      "y": 57.15,
+      "nets": {
+        "1": "LTE_ANT",
+        "2": "GND"
+      },
+      "footprint": "Collar033:C12_C_0402_1005Metric",
+      "mpn": "",
+      "status": "candidate",
+      "dnp": true,
+      "onboard": true
+    },
+    {
+      "ref": "J1",
+      "symbol": "Port2",
+      "value": "LTE antenna / 50R",
+      "x": 549.91,
+      "y": 44.45,
+      "nets": {
+        "1": "LTE_ANT",
+        "2": "GND"
+      },
+      "footprint": "Collar033:J1_U.FL_Hirose_U.FL-R-SMT-1_Vertical",
+      "mpn": "U.FL-R-SMT-1(10)",
+      "status": "Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "U2",
+      "symbol": "SKY65943-11",
+      "value": "SKY65943-11",
+      "x": 435.61,
+      "y": 105.41,
+      "nets": {
+        "5": "GNSS_FEM_IN",
+        "3": "VIO_1V8",
+        "2": "GNSS_LNA_EN",
+        "10": "GNSS_FEM_OUT",
+        "7": "FILT_OUT",
+        "8": "AMP_IN",
+        "1": "GND",
+        "4": "GND",
+        "6": "GND",
+        "9": "GND",
+        "11": "GND"
+      },
+      "footprint": "Collar033:U2_SKY65943_DK10171",
+      "mpn": "SKY65943-11",
+      "status": "Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "L1",
+      "symbol": "L",
+      "value": "9.1nH",
+      "x": 505.46,
+      "y": 92.71,
+      "nets": {
+        "1": "FILT_OUT",
+        "2": "AMP_IN"
+      },
+      "footprint": "Collar033:L1_L_0402_1005Metric",
+      "mpn": "LQW15AN9N1J00D",
+      "status": "Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "C13",
+      "symbol": "C",
+      "value": "39pF RF",
+      "x": 505.46,
+      "y": 111.76,
+      "nets": {
+        "1": "GNSS_FEM_OUT",
+        "2": "GPS_RF"
+      },
+      "footprint": "Collar033:C13_C_0402_1005Metric",
+      "mpn": "GJM1555C1H390FB01D",
+      "status": "Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "C14",
+      "symbol": "C",
+      "value": "39pF RF",
+      "x": 505.46,
+      "y": 130.81,
+      "nets": {
+        "1": "GNSS_ANT",
+        "2": "GNSS_FEM_IN"
+      },
+      "footprint": "Collar033:C14_C_0402_1005Metric",
+      "mpn": "GJM1555C1H390FB01D",
+      "status": "Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "J2",
+      "symbol": "Port2",
+      "value": "GNSS antenna / passive",
+      "x": 549.91,
+      "y": 144.78,
+      "nets": {
+        "1": "GNSS_ANT",
+        "2": "GND"
+      },
+      "footprint": "Collar033:J2_U.FL_Hirose_U.FL-R-SMT-1_Vertical",
+      "mpn": "U.FL-R-SMT-1(10)",
+      "status": "Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "R4",
+      "symbol": "R",
+      "value": "1k",
+      "x": 425.45,
+      "y": 144.78,
+      "nets": {
+        "1": "COEX0",
+        "2": "GNSS_LNA_EN"
+      },
+      "footprint": "Collar033:R4_R_0402_1005Metric",
+      "mpn": "RC0402FR-071KL",
+      "status": "Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "R5",
+      "symbol": "R",
+      "value": "100k",
+      "x": 425.45,
+      "y": 160.02,
+      "nets": {
+        "1": "GNSS_LNA_EN",
+        "2": "GND"
+      },
+      "footprint": "Collar033:R5_R_0402_1005Metric",
+      "mpn": "RC0402FR-07100KL",
+      "status": "Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "C15",
+      "symbol": "C",
+      "value": "100nF",
+      "x": 490.22,
+      "y": 160.02,
+      "nets": {
+        "1": "VIO_1V8",
+        "2": "GND"
+      },
+      "footprint": "Collar033:C15_C_0402_1005Metric",
+      "mpn": "GRM155R71C104KA88D",
+      "status": "Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "C16",
+      "symbol": "C",
+      "value": "1uF",
+      "x": 549.91,
+      "y": 176.53,
+      "nets": {
+        "1": "VIO_1V8",
+        "2": "GND"
+      },
+      "footprint": "Collar033:C16_C_0402_1005Metric",
+      "mpn": "GRM155R61A105KE15D",
+      "status": "Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "J3",
+      "symbol": "Port2",
+      "value": "5V charging input",
+      "x": 43.18,
+      "y": 234.95,
+      "nets": {
+        "1": "VIN_5V",
+        "2": "GND"
+      },
+      "footprint": "Collar033:J3_Solder_1x02_P2.5mm",
+      "mpn": "",
+      "status": "onboard contact pads; external device/fixture not selected",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "U3",
+      "symbol": "BQ25185",
+      "value": "BQ25185DLHR",
+      "x": 107.95,
+      "y": 245.11,
+      "nets": {
+        "10": "VIN_5V",
+        "4": "CHARGE_DISABLE",
+        "7": "ILIM_VSET",
+        "8": "ISET",
+        "6": "BAT_NTC",
+        "1": "VSYS",
+        "2": "VBAT",
+        "9": "CHG_STAT",
+        "3": "CHG_FAULT",
+        "5": "GND",
+        "11": "GND"
+      },
+      "footprint": "Collar033:U3_Texas_DLH0010A_WSON-10-1EP_2.2x2mm_P0.4mm_EP0.9x1.5mm",
+      "mpn": "BQ25185DLHR",
+      "status": "Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "J4",
+      "symbol": "Port3",
+      "value": "Protected cell + NTC",
+      "x": 190.5,
+      "y": 238.76,
+      "nets": {
+        "1": "VBAT",
+        "2": "GND",
+        "3": "BAT_NTC"
+      },
+      "footprint": "Collar033:J4_Solder_1x03_P2.5mm",
+      "mpn": "",
+      "status": "onboard contact pads; external device/fixture not selected",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "C17",
+      "symbol": "C",
+      "value": "1uF /10V",
+      "x": 39.37,
+      "y": 275.59,
+      "nets": {
+        "1": "VIN_5V",
+        "2": "GND"
+      },
+      "footprint": "Collar033:C17_C_0402_1005Metric",
+      "mpn": "GRM155R61A105KE15D",
+      "status": "Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "C18",
+      "symbol": "C",
+      "value": "10uF /10V",
+      "x": 110.49,
+      "y": 284.48,
+      "nets": {
+        "1": "VSYS",
+        "2": "GND"
+      },
+      "footprint": "Collar033:C18_C_0603_1608Metric",
+      "mpn": "GRM188R61A106MAALD",
+      "status": "Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "C19",
+      "symbol": "C",
+      "value": "1uF /10V",
+      "x": 190.5,
+      "y": 269.24,
+      "nets": {
+        "1": "VBAT",
+        "2": "GND"
+      },
+      "footprint": "Collar033:C19_C_0402_1005Metric",
+      "mpn": "GRM155R61A105KE15D",
+      "status": "Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "R6",
+      "symbol": "R",
+      "value": "18k /1%",
+      "x": 39.37,
+      "y": 293.37,
+      "nets": {
+        "1": "ILIM_VSET",
+        "2": "GND"
+      },
+      "footprint": "Collar033:R6_R_0402_1005Metric",
+      "mpn": "RC0402FR-0718KL",
+      "status": "Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "R7",
+      "symbol": "R",
+      "value": "3k /1%",
+      "x": 39.37,
+      "y": 309.88,
+      "nets": {
+        "1": "ISET",
+        "2": "GND"
+      },
+      "footprint": "Collar033:R7_R_0402_1005Metric",
+      "mpn": "RC0402FR-073KL",
+      "status": "Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "R8",
+      "symbol": "R",
+      "value": "10k",
+      "x": 190.5,
+      "y": 287.02,
+      "nets": {
+        "1": "CHG_STAT",
+        "2": "VIO_1V8"
+      },
+      "footprint": "Collar033:R8_R_0402_1005Metric",
+      "mpn": "RC0402FR-0710KL",
+      "status": "Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "R9",
+      "symbol": "R",
+      "value": "10k",
+      "x": 190.5,
+      "y": 303.53,
+      "nets": {
+        "1": "CHG_FAULT",
+        "2": "VIO_1V8"
+      },
+      "footprint": "Collar033:R9_R_0402_1005Metric",
+      "mpn": "RC0402FR-0710KL",
+      "status": "Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "U4",
+      "symbol": "TPS7A0218-DBV",
+      "value": "TPS7A0218PDBVR",
+      "x": 110.49,
+      "y": 328.93,
+      "nets": {
+        "1": "VSYS",
+        "3": "VIO_ENABLE",
+        "5": "VIO_1V8",
+        "2": "GND"
+      },
+      "footprint": "Collar033:U4_SOT-23-5",
+      "mpn": "TPS7A0218PDBVR",
+      "status": "Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "C20",
+      "symbol": "C",
+      "value": "1uF",
+      "x": 39.37,
+      "y": 339.09,
+      "nets": {
+        "1": "VSYS",
+        "2": "GND"
+      },
+      "footprint": "Collar033:C20_C_0402_1005Metric",
+      "mpn": "GRM155R61A105KE15D",
+      "status": "Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "C21",
+      "symbol": "C",
+      "value": "1uF",
+      "x": 190.5,
+      "y": 331.47,
+      "nets": {
+        "1": "VIO_1V8",
+        "2": "GND"
+      },
+      "footprint": "Collar033:C21_C_0402_1005Metric",
+      "mpn": "GRM155R61A105KE15D",
+      "status": "Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "U5",
+      "symbol": "LIS2DW12",
+      "value": "LIS2DW12TR",
+      "x": 289.56,
+      "y": 246.38,
+      "nets": {
+        "9": "VIO_1V8",
+        "10": "VIO_1V8",
+        "1": "I2C_SCL",
+        "4": "I2C_SDA",
+        "2": "VIO_1V8",
+        "3": "VIO_1V8",
+        "12": "ACC_INT",
+        "6": "GND",
+        "7": "GND",
+        "8": "GND"
+      },
+      "footprint": "Collar033:U5_LGA-12_2x2mm_P0.5mm",
+      "mpn": "LIS2DW12TR",
+      "status": "Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "C23",
+      "symbol": "C",
+      "value": "100nF",
+      "x": 265.43,
+      "y": 281.94,
+      "nets": {
+        "1": "VIO_1V8",
+        "2": "GND"
+      },
+      "footprint": "Collar033:C23_C_0402_1005Metric",
+      "mpn": "GRM155R71C104KA88D",
+      "status": "Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "C24",
+      "symbol": "C",
+      "value": "100nF",
+      "x": 330.2,
+      "y": 281.94,
+      "nets": {
+        "1": "VIO_1V8",
+        "2": "GND"
+      },
+      "footprint": "Collar033:C24_C_0402_1005Metric",
+      "mpn": "GRM155R71C104KA88D",
+      "status": "Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "R12",
+      "symbol": "R",
+      "value": "4.7k",
+      "x": 265.43,
+      "y": 298.45,
+      "nets": {
+        "1": "I2C_SDA",
+        "2": "VIO_1V8"
+      },
+      "footprint": "Collar033:R12_R_0402_1005Metric",
+      "mpn": "RC0402FR-074K7L",
+      "status": "Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "R13",
+      "symbol": "R",
+      "value": "4.7k",
+      "x": 330.2,
+      "y": 298.45,
+      "nets": {
+        "1": "I2C_SCL",
+        "2": "VIO_1V8"
+      },
+      "footprint": "Collar033:R13_R_0402_1005Metric",
+      "mpn": "RC0402FR-074K7L",
+      "status": "Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "J5",
+      "symbol": "Port12",
+      "value": "DIGITAL health sensor interface",
+      "x": 405.13,
+      "y": 264.16,
+      "nets": {
+        "1": "GND",
+        "2": "VIO_1V8",
+        "3": "VSYS",
+        "4": "I2C_SDA",
+        "5": "I2C_SCL",
+        "6": "HEALTH_INT",
+        "7": "SPI_SCK",
+        "8": "SPI_MOSI",
+        "9": "SPI_MISO",
+        "10": "HEALTH_CS",
+        "11": "HEALTH_RESET",
+        "12": "HEALTH_EN"
+      },
+      "footprint": "Collar033:J5_Contact_2x06_P1.27mm",
+      "mpn": "",
+      "status": "onboard contact pads; external device/fixture not selected",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "R14",
+      "symbol": "R",
+      "value": "100k",
+      "x": 265.43,
+      "y": 318.77,
+      "nets": {
+        "1": "HEALTH_CS",
+        "2": "VIO_1V8"
+      },
+      "footprint": "Collar033:R14_R_0402_1005Metric",
+      "mpn": "RC0402FR-07100KL",
+      "status": "Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "R15",
+      "symbol": "R",
+      "value": "100k",
+      "x": 330.2,
+      "y": 318.77,
+      "nets": {
+        "1": "HEALTH_EN",
+        "2": "GND"
+      },
+      "footprint": "Collar033:R15_R_0402_1005Metric",
+      "mpn": "RC0402FR-07100KL",
+      "status": "Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "J6",
+      "symbol": "SIM8051",
+      "value": "SIM8051-6-0-14-00-A",
+      "x": 515.62,
+      "y": 245.11,
+      "nets": {
+        "1": "SIM_1V8",
+        "2": "SIM_RST",
+        "3": "SIM_CLK",
+        "7": "SIM_IO",
+        "5": "GND",
+        "8": "GND"
+      },
+      "footprint": "Collar04:SIM8051_6_0_14_00_A",
+      "mpn": "SIM8051-6-0-14-00-A",
+      "status": "Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "J7",
+      "symbol": "Port6",
+      "value": "SWD / debug",
+      "x": 515.62,
+      "y": 326.39,
+      "nets": {
+        "1": "VIO_1V8",
+        "2": "SWDIO",
+        "3": "GND",
+        "4": "SWDCLK",
+        "5": "DEBUG_RESET",
+        "6": "VSYS"
+      },
+      "footprint": "Collar033:J7_Contact_2x03_P1.27mm",
+      "mpn": "",
+      "status": "onboard contact pads; external device/fixture not selected",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "#FLG01",
+      "symbol": "PWR_FLAG",
+      "value": "PWR_FLAG",
+      "x": 250.19,
+      "y": 151.13,
+      "nets": {
+        "1": "VDD_NRF"
+      },
+      "footprint": "",
+      "mpn": "",
+      "status": "candidate",
+      "dnp": false,
+      "onboard": false
+    },
+    {
+      "ref": "#FLG02",
+      "symbol": "PWR_FLAG",
+      "value": "PWR_FLAG",
+      "x": 39.37,
+      "y": 251.46,
+      "nets": {
+        "1": "VIN_5V"
+      },
+      "footprint": "",
+      "mpn": "",
+      "status": "candidate",
+      "dnp": false,
+      "onboard": false
+    },
+    {
+      "ref": "#FLG03",
+      "symbol": "PWR_FLAG",
+      "value": "PWR_FLAG",
+      "x": 190.5,
+      "y": 350.52,
+      "nets": {
+        "1": "GND"
+      },
+      "footprint": "",
+      "mpn": "",
+      "status": "candidate",
+      "dnp": false,
+      "onboard": false
+    },
+    {
+      "ref": "D1",
+      "symbol": "TPD4E1U06",
+      "value": "TPD4E1U06DCKR",
+      "x": 515.62,
+      "y": 289.56,
+      "nets": {
+        "1": "SIM_RST",
+        "6": "SIM_1V8",
+        "3": "SIM_CLK",
+        "2": "GND"
+      },
+      "footprint": "Collar04:TPD4E1U06DCKR",
+      "mpn": "TPD4E1U06DCKR",
+      "status": "Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "D2",
+      "symbol": "TPD4E1U06",
+      "value": "TPD4E1U06DCKR",
+      "x": 548.64,
+      "y": 354.33,
+      "nets": {
+        "3": "SIM_IO",
+        "2": "GND"
+      },
+      "footprint": "Collar04:TPD4E1U06DCKR",
+      "mpn": "TPD4E1U06DCKR",
+      "status": "Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "U6",
+      "symbol": "TPS3808-DBV",
+      "value": "TPS3808G01DBVR",
+      "x": 105.41,
+      "y": 444.5,
+      "nets": {
+        "6": "VDD_NRF",
+        "5": "UV_SENSE",
+        "3": "VDD_NRF",
+        "1": "POWER_GOOD",
+        "4": "UV_DELAY",
+        "2": "GND"
+      },
+      "footprint": "Collar05:U6_SOT-23-6",
+      "mpn": "TPS3808G01DBVR",
+      "status": "Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "U7",
+      "symbol": "TPS3808-DBV",
+      "value": "TPS3808G30DBVR",
+      "x": 299.72,
+      "y": 444.5,
+      "nets": {
+        "6": "VDD_NRF",
+        "5": "NRF_ENABLE",
+        "3": "POWER_GOOD",
+        "1": "VIO_ENABLE",
+        "4": "VIO_DELAY",
+        "2": "GND"
+      },
+      "footprint": "Collar05:U7_SOT-23-6",
+      "mpn": "TPS3808G30DBVR",
+      "status": "Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "U8",
+      "symbol": "SN74LVC1G14-DCK",
+      "value": "SN74LVC1G14DCKR",
+      "x": 495.3,
+      "y": 444.5,
+      "nets": {
+        "5": "VDD_NRF",
+        "2": "POWER_GOOD",
+        "4": "POWER_FAULT",
+        "3": "GND"
+      },
+      "footprint": "Collar05:U8_SOT-353_SC-70-5",
+      "mpn": "SN74LVC1G14DCKR",
+      "status": "Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "Q1",
+      "symbol": "UM6K34N",
+      "value": "UM6K34NTCN",
+      "x": 495.3,
+      "y": 510.54,
+      "nets": {
+        "1": "GND",
+        "2": "POWER_FAULT",
+        "6": "VIO_DISCHARGE",
+        "4": "GND",
+        "5": "POWER_FAULT",
+        "3": "VIO_ENABLE"
+      },
+      "footprint": "Collar05:Q1_SOT-363_SC-70-6",
+      "mpn": "UM6K34NTCN",
+      "status": "Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "U9",
+      "symbol": "MAX17048-TDFN",
+      "value": "MAX17048G+T10",
+      "x": 689.61,
+      "y": 444.5,
+      "nets": {
+        "3": "VBAT",
+        "2": "VBAT",
+        "7": "I2C_SCL",
+        "8": "I2C_SDA",
+        "6": "GND",
+        "1": "GND",
+        "4": "GND",
+        "9": "GND",
+        "5": "FG_ALERT"
+      },
+      "footprint": "Collar05:U9_MAX17048_T822_3_90_0065E",
+      "mpn": "MAX17048G+T10",
+      "status": "Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "R16",
+      "symbol": "R",
+      "value": "10k /1%",
+      "x": 44.45,
+      "y": 480.06,
+      "nets": {
+        "1": "VDD_NRF",
+        "2": "POWER_GOOD"
+      },
+      "footprint": "Collar05:R16_R_0402_1005Metric",
+      "mpn": "RC0402FR-0710KL",
+      "status": "Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "R17",
+      "symbol": "R",
+      "value": "200k /0.1%",
+      "x": 44.45,
+      "y": 500.38,
+      "nets": {
+        "1": "VDD_NRF",
+        "2": "UV_SENSE"
+      },
+      "footprint": "Collar05:R17_R_0402_1005Metric",
+      "mpn": "RT0402BRD07200KL",
+      "status": "Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "R18",
+      "symbol": "R",
+      "value": "26.1k /0.1%",
+      "x": 144.78,
+      "y": 500.38,
+      "nets": {
+        "1": "UV_SENSE",
+        "2": "GND"
+      },
+      "footprint": "Collar05:R18_R_0402_1005Metric",
+      "mpn": "RT0402BRD0726K1L",
+      "status": "Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "R19",
+      "symbol": "R",
+      "value": "3.4M /1%",
+      "x": 144.78,
+      "y": 480.06,
+      "nets": {
+        "1": "POWER_GOOD",
+        "2": "UV_SENSE"
+      },
+      "footprint": "Collar05:R19_R_0402_1005Metric",
+      "mpn": "RC0402FR-073M4L",
+      "status": "Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "R20",
+      "symbol": "R",
+      "value": "10k /1%",
+      "x": 299.72,
+      "y": 480.06,
+      "nets": {
+        "1": "VDD_NRF",
+        "2": "VIO_ENABLE"
+      },
+      "footprint": "Collar05:R20_R_0402_1005Metric",
+      "mpn": "RC0402FR-0710KL",
+      "status": "Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "R21",
+      "symbol": "R",
+      "value": "22R /1%",
+      "x": 495.3,
+      "y": 552.45,
+      "nets": {
+        "1": "VIO_1V8",
+        "2": "VIO_DISCHARGE"
+      },
+      "footprint": "Collar05:R21_R_0402_1005Metric",
+      "mpn": "CRCW040222R0FKEDHP",
+      "status": "Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "R22",
+      "symbol": "R",
+      "value": "1M /1%",
+      "x": 590.55,
+      "y": 510.54,
+      "nets": {
+        "1": "POWER_FAULT",
+        "2": "GND"
+      },
+      "footprint": "Collar05:R22_R_0402_1005Metric",
+      "mpn": "RC0402FR-071ML",
+      "status": "Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "R23",
+      "symbol": "R",
+      "value": "100k /1%",
+      "x": 689.61,
+      "y": 500.38,
+      "nets": {
+        "1": "VIO_1V8",
+        "2": "FG_ALERT"
+      },
+      "footprint": "Collar05:R23_R_0402_1005Metric",
+      "mpn": "RC0402FR-07100KL",
+      "status": "Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "C25",
+      "symbol": "C",
+      "value": "1uF /16V X7R",
+      "x": 95.25,
+      "y": 533.4,
+      "nets": {
+        "1": "UV_DELAY",
+        "2": "GND"
+      },
+      "footprint": "Collar05:C25_C_0805_2012Metric",
+      "mpn": "GRM21BR71C105KA01L",
+      "status": "Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "C26",
+      "symbol": "C",
+      "value": "47nF /16V X7R",
+      "x": 299.72,
+      "y": 500.38,
+      "nets": {
+        "1": "VIO_DELAY",
+        "2": "GND"
+      },
+      "footprint": "Collar05:C26_C_0402_1005Metric",
+      "mpn": "GRM155R71C473KA01D",
+      "status": "Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "C27",
+      "symbol": "C",
+      "value": "100nF /16V X7R",
+      "x": 195.58,
+      "y": 444.5,
+      "nets": {
+        "1": "VDD_NRF",
+        "2": "GND"
+      },
+      "footprint": "Collar05:C27_C_0402_1005Metric",
+      "mpn": "GRM155R71C104KA88D",
+      "status": "Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "C28",
+      "symbol": "C",
+      "value": "100nF /16V X7R",
+      "x": 394.97,
+      "y": 444.5,
+      "nets": {
+        "1": "VDD_NRF",
+        "2": "GND"
+      },
+      "footprint": "Collar05:C28_C_0402_1005Metric",
+      "mpn": "GRM155R71C104KA88D",
+      "status": "Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "C29",
+      "symbol": "C",
+      "value": "100nF /16V X7R",
+      "x": 590.55,
+      "y": 444.5,
+      "nets": {
+        "1": "VDD_NRF",
+        "2": "GND"
+      },
+      "footprint": "Collar05:C29_C_0402_1005Metric",
+      "mpn": "GRM155R71C104KA88D",
+      "status": "Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "C30",
+      "symbol": "C",
+      "value": "100nF /16V X7R",
+      "x": 779.78,
+      "y": 444.5,
+      "nets": {
+        "1": "VBAT",
+        "2": "GND"
+      },
+      "footprint": "Collar05:C30_C_0402_1005Metric",
+      "mpn": "GRM155R71C104KA88D",
+      "status": "Exact prototype candidate MPN; electrical, RF and assembly acceptance remain open",
+      "dnp": false,
+      "onboard": true
+    },
+    {
+      "ref": "#FLG04",
+      "symbol": "PWR_FLAG",
+      "value": "PWR_FLAG",
+      "x": 779.78,
+      "y": 480.06,
+      "nets": {
+        "1": "VBAT"
+      },
+      "footprint": "",
+      "mpn": "",
+      "status": "candidate",
+      "dnp": false,
+      "onboard": false
+    },
+    {
+      "ref": "U10",
+      "symbol": "TLV3012B-DCK",
+      "value": "TLV3012BIDCKR / HOT",
+      "x": 105.41,
+      "y": 619.76,
+      "nets": {
+        "1": "CHG_HOT_OK",
+        "2": "GND",
+        "3": "BAT_NTC",
+        "4": "CHG_HOT_LIMIT",
+        "5": "CHG_HOT_REF",
+        "6": "VSYS"
+      },
+      "footprint": "Collar05L:TI_DCK0006A",
+      "mpn": "TLV3012BIDCKR",
+      "status": "Hardware charge-window candidate; assembled temperature/boot/fault qualification required",
+      "dnp": false,
+      "onboard": true,
+      "uuid": "09eaf904-7f31-5ceb-bd34-45fd1177e4a7"
+    },
+    {
+      "ref": "U11",
+      "symbol": "TLV3012B-DCK",
+      "value": "TLV3012BIDCKR / COLD",
+      "x": 304.8,
+      "y": 619.76,
+      "nets": {
+        "1": "CHG_COLD_OK",
+        "2": "GND",
+        "3": "CHG_COLD_LIMIT",
+        "4": "BAT_NTC",
+        "5": "CHG_COLD_REF",
+        "6": "VSYS"
+      },
+      "footprint": "Collar05L:TI_DCK0006A",
+      "mpn": "TLV3012BIDCKR",
+      "status": "Hardware charge-window candidate; assembled temperature/boot/fault qualification required",
+      "dnp": false,
+      "onboard": true,
+      "uuid": "3cbeaa64-5a8a-5ba1-93f9-69f9197b42c8"
+    },
+    {
+      "ref": "U12",
+      "symbol": "SN74LVC1G00-DCK",
+      "value": "SN74LVC1G00DCKR",
+      "x": 505.46,
+      "y": 619.76,
+      "nets": {
+        "1": "CHG_HOT_OK",
+        "2": "CHG_COLD_OK",
+        "3": "GND",
+        "4": "CHARGE_DISABLE",
+        "5": "VSYS"
+      },
+      "footprint": "Collar05L:TI_DCK0005A",
+      "mpn": "SN74LVC1G00DCKR",
+      "status": "Hardware charge-window candidate; assembled temperature/boot/fault qualification required",
+      "dnp": false,
+      "onboard": true,
+      "uuid": "0fd4394b-750b-5217-9452-65a9667dea62"
+    },
+    {
+      "ref": "R24",
+      "symbol": "R",
+      "value": "196k /0.1%",
+      "x": 69.85,
+      "y": 661.67,
+      "nets": {
+        "1": "CHG_HOT_REF",
+        "2": "CHG_HOT_LIMIT"
+      },
+      "footprint": "Collar05:R16_R_0402_1005Metric",
+      "mpn": "RT0402BRD07196KL",
+      "status": "Hardware charge-window candidate; assembled temperature/boot/fault qualification required",
+      "dnp": false,
+      "onboard": true,
+      "uuid": "140a6a81-dae2-5c4b-85bf-29fdb6131024"
+    },
+    {
+      "ref": "R25",
+      "symbol": "R",
+      "value": "49.9k /0.1%",
+      "x": 139.7,
+      "y": 661.67,
+      "nets": {
+        "1": "CHG_HOT_LIMIT",
+        "2": "GND"
+      },
+      "footprint": "Collar05:R16_R_0402_1005Metric",
+      "mpn": "RT0402BRD0749K9L",
+      "status": "Hardware charge-window candidate; assembled temperature/boot/fault qualification required",
+      "dnp": false,
+      "onboard": true,
+      "uuid": "e31db26e-55b5-57c8-b741-a8e2c14bbaac"
+    },
+    {
+      "ref": "R26",
+      "symbol": "R",
+      "value": "27.4k /0.1%",
+      "x": 270.51,
+      "y": 661.67,
+      "nets": {
+        "1": "CHG_COLD_REF",
+        "2": "CHG_COLD_LIMIT"
+      },
+      "footprint": "Collar05:R16_R_0402_1005Metric",
+      "mpn": "RT0402BRD0727K4L",
+      "status": "Hardware charge-window candidate; assembled temperature/boot/fault qualification required",
+      "dnp": false,
+      "onboard": true,
+      "uuid": "04e38b39-3682-5dc0-824a-f6ba4ed12469"
+    },
+    {
+      "ref": "R27",
+      "symbol": "R",
+      "value": "49.9k /0.1%",
+      "x": 340.36,
+      "y": 661.67,
+      "nets": {
+        "1": "CHG_COLD_LIMIT",
+        "2": "GND"
+      },
+      "footprint": "Collar05:R16_R_0402_1005Metric",
+      "mpn": "RT0402BRD0749K9L",
+      "status": "Hardware charge-window candidate; assembled temperature/boot/fault qualification required",
+      "dnp": false,
+      "onboard": true,
+      "uuid": "60cd05b1-28c5-516a-8dc3-4a20e04158fc"
+    },
+    {
+      "ref": "R28",
+      "symbol": "R",
+      "value": "100k",
+      "x": 505.46,
+      "y": 661.67,
+      "nets": {
+        "1": "VSYS",
+        "2": "CHARGE_DISABLE"
+      },
+      "footprint": "Collar05:R16_R_0402_1005Metric",
+      "mpn": "RC0402FR-07100KL",
+      "status": "Hardware charge-window candidate; assembled temperature/boot/fault qualification required",
+      "dnp": false,
+      "onboard": true,
+      "uuid": "04691ba1-4748-5c62-8349-1fe24c10b6f5"
+    },
+    {
+      "ref": "R29",
+      "symbol": "R",
+      "value": "100k",
+      "x": 69.85,
+      "y": 692.15,
+      "nets": {
+        "1": "CHG_HOT_OK",
+        "2": "GND"
+      },
+      "footprint": "Collar05:R16_R_0402_1005Metric",
+      "mpn": "RC0402FR-07100KL",
+      "status": "Hardware charge-window candidate; assembled temperature/boot/fault qualification required",
+      "dnp": false,
+      "onboard": true,
+      "uuid": "478e964e-e317-5a38-9f18-1d8dc6d657e5"
+    },
+    {
+      "ref": "R30",
+      "symbol": "R",
+      "value": "100k",
+      "x": 270.51,
+      "y": 692.15,
+      "nets": {
+        "1": "CHG_COLD_OK",
+        "2": "GND"
+      },
+      "footprint": "Collar05:R16_R_0402_1005Metric",
+      "mpn": "RC0402FR-07100KL",
+      "status": "Hardware charge-window candidate; assembled temperature/boot/fault qualification required",
+      "dnp": false,
+      "onboard": true,
+      "uuid": "c8fea512-f59c-51d0-8c19-a881abd58d7b"
+    },
+    {
+      "ref": "C31",
+      "symbol": "C",
+      "value": "100nF /16V",
+      "x": 139.7,
+      "y": 692.15,
+      "nets": {
+        "1": "VSYS",
+        "2": "GND"
+      },
+      "footprint": "Collar05:C30_C_0402_1005Metric",
+      "mpn": "GRM155R71C104KA88D",
+      "status": "Hardware charge-window candidate; assembled temperature/boot/fault qualification required",
+      "dnp": false,
+      "onboard": true,
+      "uuid": "0bcd13bd-9206-5b62-83ae-a8e61ffe0db4"
+    },
+    {
+      "ref": "C32",
+      "symbol": "C",
+      "value": "100nF /16V",
+      "x": 340.36,
+      "y": 692.15,
+      "nets": {
+        "1": "VSYS",
+        "2": "GND"
+      },
+      "footprint": "Collar05:C30_C_0402_1005Metric",
+      "mpn": "GRM155R71C104KA88D",
+      "status": "Hardware charge-window candidate; assembled temperature/boot/fault qualification required",
+      "dnp": false,
+      "onboard": true,
+      "uuid": "81a9b3f6-608a-5688-a55a-43d88c658059"
+    },
+    {
+      "ref": "C33",
+      "symbol": "C",
+      "value": "100nF /16V",
+      "x": 505.46,
+      "y": 692.15,
+      "nets": {
+        "1": "VSYS",
+        "2": "GND"
+      },
+      "footprint": "Collar05:C30_C_0402_1005Metric",
+      "mpn": "GRM155R71C104KA88D",
+      "status": "Hardware charge-window candidate; assembled temperature/boot/fault qualification required",
+      "dnp": false,
+      "onboard": true,
+      "uuid": "d328b1f7-da10-5f85-80ec-762316d13656"
+    },
+    {
+      "ref": "C34",
+      "symbol": "C",
+      "value": "1nF /50V C0G",
+      "x": 69.85,
+      "y": 721.36,
+      "nets": {
+        "1": "CHG_HOT_REF",
+        "2": "GND"
+      },
+      "footprint": "Collar05:C30_C_0402_1005Metric",
+      "mpn": "GRM1555C1H102JA01D",
+      "status": "Hardware charge-window candidate; assembled temperature/boot/fault qualification required",
+      "dnp": false,
+      "onboard": true,
+      "uuid": "6fd04f2b-4c7f-5b60-bcbd-4d5ecb124fd7"
+    },
+    {
+      "ref": "C35",
+      "symbol": "C",
+      "value": "1nF /50V C0G",
+      "x": 270.51,
+      "y": 721.36,
+      "nets": {
+        "1": "CHG_COLD_REF",
+        "2": "GND"
+      },
+      "footprint": "Collar05:C30_C_0402_1005Metric",
+      "mpn": "GRM1555C1H102JA01D",
+      "status": "Hardware charge-window candidate; assembled temperature/boot/fault qualification required",
+      "dnp": false,
+      "onboard": true,
+      "uuid": "625c9037-0ab4-5b89-a8a5-471068ebf65f"
+    },
+    {
+      "ref": "C36",
+      "symbol": "C",
+      "value": "1nF /50V C0G",
+      "x": 505.46,
+      "y": 721.36,
+      "nets": {
+        "1": "BAT_NTC",
+        "2": "GND"
+      },
+      "footprint": "Collar05:C30_C_0402_1005Metric",
+      "mpn": "GRM1555C1H102JA01D",
+      "status": "Hardware charge-window candidate; assembled temperature/boot/fault qualification required",
+      "dnp": false,
+      "onboard": true,
+      "uuid": "b80cba23-b310-5320-b328-abc925f91391"
+    }
+  ]
+}

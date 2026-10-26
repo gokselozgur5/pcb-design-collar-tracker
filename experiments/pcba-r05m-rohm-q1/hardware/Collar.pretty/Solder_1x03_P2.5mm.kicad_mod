@@ -1,0 +1,83 @@
+(footprint "Solder_1x03_P2.5mm"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(uuid "ab655a46-d991-4a5c-b5d6-0a06061e404f")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Value" "Solder_1x03_P2.5mm"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "dbbd7082-0904-468c-b034-5a372f590a49")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "dc2e9699-67dd-4111-a668-09df0d866d84")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6adc1f2f-eca7-46a9-8e29-f383dc1cfe26")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd exclude_from_pos_files)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -3.5 -1.05)
+		(end 3.5 1.05)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "f4334aaa-4c94-44aa-acfa-26c36cf05505")
+	)
+	(pad "1" smd rect
+		(at -2.5 0)
+		(size 1.5 1.6)
+		(layers "F.Cu" "F.Mask")
+		(thermal_bridge_angle 45)
+		(uuid "eaec1457-04c4-4e08-a89e-f59c80454039")
+	)
+	(pad "2" smd oval
+		(at 0 0)
+		(size 1.5 1.6)
+		(layers "F.Cu" "F.Mask")
+		(thermal_bridge_angle 45)
+		(uuid "5753a433-2200-476b-9049-963957e1753f")
+	)
+	(pad "3" smd oval
+		(at 2.5 0)
+		(size 1.5 1.6)
+		(layers "F.Cu" "F.Mask")
+		(thermal_bridge_angle 45)
+		(uuid "4d7f96e6-b9e7-4ea8-acf9-fff90238c864")
+	)
+	(embedded_fonts no)
+)

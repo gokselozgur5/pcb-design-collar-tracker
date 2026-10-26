@@ -8,3 +8,5 @@
 *.jpg binary
 *.zip binary
 *.stl binary
+# Keep the exact uploaded CSV bytes; CRLF is the CSV writer's record separator.
+/assembly/pcba-r03/*.csv whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

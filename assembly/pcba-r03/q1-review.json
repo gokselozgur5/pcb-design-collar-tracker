@@ -1,0 +1,189 @@
+{
+  "reference": "Q1",
+  "mpn": "UM6K34NTCN",
+  "jlc_code": "C510056",
+  "decision": "Selected for the next assembled prototype; powered qualification remains open",
+  "old_mpn": "DMN62D2UDW-7",
+  "native_copper_nets_lands_unchanged": true,
+  "datasheet": {
+    "publisher": "ROHM",
+    "url": "https://fscdn.rohm.com/en/products/databook/datasheet/discrete/transistor/mosfet/um6k34ntcn-e.pdf",
+    "revision": "20160629 Rev.001",
+    "sha256": "186e95641dcaab1538818db7feabe0e438b425d6c033b03795c5283f74785648",
+    "pages_inspected": [
+      1,
+      2,
+      3,
+      10
+    ]
+  },
+  "stock_observation": {
+    "observed_at_utc": "2026-10-26T09:12:24.780Z",
+    "source": "https://jlcdfm.com/bomMatch",
+    "jlcpcb_stock": 828,
+    "reserved": false,
+    "proof": "previews/q1-stock.png"
+  },
+  "pin_functions": {
+    "1": "S1",
+    "2": "G1",
+    "3": "D2",
+    "4": "S2",
+    "5": "G2",
+    "6": "D1"
+  },
+  "pin_nets": {
+    "1": "/GND",
+    "2": "/POWER_FAULT",
+    "3": "/VIO_ENABLE",
+    "4": "/GND",
+    "5": "/POWER_FAULT",
+    "6": "/VIO_DISCHARGE"
+  },
+  "prior_report_correction": "r02 q1-review.json reversed D1/D2 names on 3/6. Native symbol already names 3 D2 / 6 D1. Both sources and gates are common; no circuit change.",
+  "package_mm": {
+    "pitch": 0.65,
+    "body_length_max": 2.1,
+    "body_width_max": 1.35,
+    "lead_span_max": 2.2,
+    "height_max": 1,
+    "lead_width_min_max": [
+      0.15,
+      0.3
+    ],
+    "existing_pad_width_length": [
+      0.42,
+      0.6
+    ],
+    "existing_row_centres": 1.9
+  },
+  "package_limit": "ROHM page 10 terminal-position areas are not a recommended solder-land drawing; standard UMT6-compatible native lands retained.",
+  "ratings_25C": {
+    "vds_max_V": 50,
+    "vgs_abs_max_V": 8,
+    "id_continuous_mA": 200,
+    "power_total_mW": 150,
+    "power_element_mW": 120,
+    "theta_ja_total_C_W": 833,
+    "theta_ja_element_C_W": 1042,
+    "rds_max_at_1v5_200mA_ohm": 2.8,
+    "rds_max_at_1v2_100mA_ohm": 3.3,
+    "gate_leak_at_8V_uA": 10
+  },
+  "circuit_screen": {
+    "role": "U4 enable pull-down and external 1.8 V rail discharge; not the modem power switch",
+    "max_rail_V": 5.5,
+    "vio_initial_max_V": 1.9,
+    "vio_cap_max_uF": 12,
+    "temperature_C": [
+      -40,
+      85
+    ],
+    "r21_min_ohm": 21.63843,
+    "r20_min_ohm": 9835.65,
+    "initial_current_bound_mA": 87.80674013780113,
+    "stored_energy_uJ": 21.66,
+    "discharge_fet_power_bound_mW": 41.70820156545554,
+    "enable_fet_power_bound_mW": 0.7688866521277191,
+    "combined_fet_power_bound_mW": 42.47708821758325,
+    "power_bound_method": "For any nonnegative channel resistance R, V^2 R/(Rs+R)^2 <= V^2/(4Rs)",
+    "reference_land_element_limit_at_85C_mW": 62.38003838771593,
+    "reference_land_total_limit_at_85C_mW": 78.031212484994,
+    "pulse_800mA_rating_used": false,
+    "limits": "Reference-land thermal comparison, not actual-board thermal proof. 800 mA applies only <=10 us/1% duty. Hot RDS, startup/falling rail, resistor pulse behavior and 12 uF domain remain prototype acceptance items."
+  },
+  "gate_drive_screen": {
+    "source": "https://www.ti.com/lit/ds/symlink/sn74lvc1g14.pdf",
+    "revision": "SCES218AA, October 2025, table 5.5",
+    "minimum_supply_V": 1.65,
+    "minimum_high_at_100uA_V": 1.55,
+    "maximum_low_at_100uA_V": 0.1,
+    "two_gate_leaks_plus_1M_pull_down_at_5v5_uA": 25.5,
+    "limits": "Static load screen using ROHM 25 C leakage; hot leakage, transients and collapse below 1.65 V are not guaranteed here."
+  },
+  "library": {
+    "attribution": "JLCEDA / EasyEDA Official Library",
+    "url": "https://easyeda.com/",
+    "package_uuid": "bc5fef70c1364107a455754d0f326527",
+    "number_response_sha256": "7622e6bdea8197f28c81cfd7f81dad8b04c6e5b9d691962b6d2074fbbdc138b2",
+    "package_response_sha256": "e3b9e40fe04e7f0d72e59bb42cc5caf2078612d1778cb76e191065413d460f0b",
+    "pin_centres_mm": {
+      "2": [
+        0.8998203999999983,
+        0.00010160000000337277
+      ],
+      "3": [
+        0.8998203999999983,
+        0.6500875999999955
+      ],
+      "4": [
+        -0.900023600000005,
+        0.6500875999999955
+      ],
+      "5": [
+        -0.900023600000005,
+        0.00010160000000337277
+      ],
+      "6": [
+        -0.900023600000005,
+        -0.6498844000000032
+      ],
+      "1": [
+        0.8998203999999983,
+        -0.6498844000000032
+      ]
+    },
+    "native_relative_pin_centres_mm": {
+      "1": [
+        -0.6499999999999986,
+        -0.9500000000000002
+      ],
+      "2": [
+        0.0,
+        -0.9500000000000002
+      ],
+      "3": [
+        0.6499999999999986,
+        -0.9500000000000002
+      ],
+      "4": [
+        0.6499999999999986,
+        0.9500000000000002
+      ],
+      "5": [
+        0.0,
+        0.9500000000000002
+      ],
+      "6": [
+        -0.6499999999999986,
+        0.9500000000000002
+      ]
+    },
+    "angle_candidates": [
+      {
+        "angle": 0,
+        "max_mm": 1.6194723090963632,
+        "rms_mm": 1.5085359879233204
+      },
+      {
+        "angle": 90,
+        "max_mm": 2.261153486216874,
+        "rms_mm": 2.132804216720276
+      },
+      {
+        "angle": 180,
+        "max_mm": 1.6195036672483052,
+        "rms_mm": 1.5085359879233204
+      },
+      {
+        "angle": 270,
+        "max_mm": 0.050179733155131453,
+        "rms_mm": 0.050078207433838104
+      }
+    ],
+    "selected_supplier_angle": 270,
+    "native_angle_unchanged": 90,
+    "limit": "0.05 mm library/native row-centre difference is not a pad displacement edit or solder-process qualification."
+  },
+  "production_release": false
+}
