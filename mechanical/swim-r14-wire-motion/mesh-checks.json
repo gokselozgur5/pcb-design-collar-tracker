@@ -1,0 +1,128 @@
+{
+  "inputs": {
+    "mechanical/swim-r14-wire-motion/dock.json": "dfd8a878678d7eaebfbc5191f397f3c0e5c98dfde3cca63c604bbf803174e9c5",
+    "scripts/check_dock_wire_motion.py": "bb325bb19454185c5da909977dca05c54608e9d24648e3cd39efb4430b358ab2",
+    "scripts/check_charge_dock.py": "add13c2a290c24a93913cb3ac27a05e9f264ca0d62147d4e87a806380e91d6b9",
+    "experiments/power-r05l-charge-interlock/evidence/native-netlist.json": "4c88b83f1af96f3924d63761ab09681049cce83cc0b364aaa669a27b19e9be28",
+    "mechanical/swim-r14-wire-motion/parameters.scad": "a198439cd3b3db918a38b99c89a88692d703637be17b05f98ac756f636530569",
+    "mechanical/swim-r14-wire-motion/dock.scad": "9538e95882bc6c2d960f3ec0a31025dc51d532c4ccf8f9a2c49a9a150812aaaa",
+    "scripts/export_dock_wire_motion.py": "96ccada4d93a896716a1bbb32fc2be6171ff714e66e46b10d9fda58cde999069",
+    "scripts/inspect_enclosure_mesh.py": "650b7923664e55a56af30c605d20fe2cf77a3bedacf71076a153510a92200956",
+    "mechanical/swim-r11-thermal-fit/boot.stl": "a68bcfea12b04e540222557f622954fbbfd695a21198ed5da9b51bd7e4087d69",
+    "mechanical/swim-r13-charge-dock/body.stl": "ba450f6395962195230c01041ede151d9c65ba429d94fdf27742498211c27488",
+    "mechanical/swim-r13-charge-dock/lower.stl": "4f820ccf340e382f11c4633f902b6a36f8f377c9406744c058fae1930bd32d7c",
+    "mechanical/swim-r13-charge-dock/upper.stl": "4c0969067f28204983529db17898e10b1db211be6bd1b9d8bb6b644be14f3f75"
+  },
+  "meshes": [
+    {
+      "file": "lower.stl",
+      "sha256": "6f7a4d85233ebad0b4ad6b79806bdffaba77db1254d209ff47b0254d155358d1",
+      "triangles": 2124,
+      "vertices": 1052,
+      "bounds_mm": [
+        [
+          0.0,
+          -18.0,
+          -1.0
+        ],
+        [
+          94.0,
+          18.0,
+          5.5
+        ]
+      ],
+      "dimensions_mm": [
+        94.0,
+        36.0,
+        6.5
+      ],
+      "signed_volume_mm3": 13248.920238975938,
+      "bad_edge_count": 0,
+      "collapsed_faces_at_1e_5mm": 0,
+      "connected_surfaces": 1,
+      "closed_oriented_manifold": true
+    },
+    {
+      "file": "upper.stl",
+      "sha256": "1d285ef0e6640a8229aa2637b405e902652f1d0f8e5b51a3efd18f3436b639c4",
+      "triangles": 2036,
+      "vertices": 1012,
+      "bounds_mm": [
+        [
+          0.0,
+          -18.0,
+          5.5
+        ],
+        [
+          94.0,
+          18.0,
+          15.0
+        ]
+      ],
+      "dimensions_mm": [
+        94.0,
+        36.0,
+        9.5
+      ],
+      "signed_volume_mm3": 23142.561803716453,
+      "bad_edge_count": 0,
+      "collapsed_faces_at_1e_5mm": 0,
+      "connected_surfaces": 1,
+      "closed_oriented_manifold": true
+    }
+  ],
+  "diagnostics": {
+    "lower": "Geometries in cache: 60\nGeometry cache size in bytes: 222816\nCGAL Polyhedrons in cache: 9\nCGAL cache size in bytes: 7615072\nTotal rendering time: 0:00:10.835\n   Top level object is a 3D object:\n   Simple:        yes\n   Vertices:     1052\n   Halfedges:    3158\n   Edges:        1579\n   Halffacets:   1068\n   Facets:        534\n   Volumes:         2\n",
+    "upper": "Geometries in cache: 60\nGeometry cache size in bytes: 222816\nCGAL Polyhedrons in cache: 9\nCGAL cache size in bytes: 7560288\nTotal rendering time: 0:00:11.097\n   Top level object is a 3D object:\n   Simple:        yes\n   Vertices:     1012\n   Halfedges:    3038\n   Edges:        1519\n   Halffacets:   1022\n   Facets:        511\n   Volumes:         2\n"
+  },
+  "controls": [
+    {
+      "case": "pin_interference",
+      "expected_empty": true,
+      "empty": true,
+      "returncode": 1,
+      "interference_volume_mm3": 0
+    },
+    {
+      "case": "collar_interference",
+      "expected_empty": true,
+      "empty": true,
+      "returncode": 1,
+      "interference_volume_mm3": 0
+    },
+    {
+      "case": "wire_interference",
+      "expected_empty": true,
+      "empty": true,
+      "returncode": 1,
+      "interference_volume_mm3": 0
+    },
+    {
+      "case": "stationary_interference",
+      "expected_empty": true,
+      "empty": true,
+      "returncode": 1,
+      "interference_volume_mm3": 0
+    },
+    {
+      "case": "key_reversed",
+      "expected_empty": false,
+      "empty": false,
+      "returncode": 0,
+      "interference_volume_mm3": 3.794999985694858
+    },
+    {
+      "case": "old_housing_control",
+      "expected_empty": false,
+      "empty": false,
+      "returncode": 0,
+      "interference_volume_mm3": 219.5552441656473
+    }
+  ],
+  "previews": {
+    "review.png": "fb16f2ba6d7eef9ca7395e857f140b3cc5bf433d56e948fb9c7af1adfd36cac2",
+    "motion.png": "7ad06461749b4ad724ba49c58372bc4983d9965480eb196cf86cc7cf368d5aaa",
+    "mounted.png": "615cf8bba7aacce77d84ddc4986971499d7b2cb5af4b5eb3e401e4d7d7caad02"
+  },
+  "physical_qualification": false
+}

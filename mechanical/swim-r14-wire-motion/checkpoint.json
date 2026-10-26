@@ -1,0 +1,26 @@
+{
+  "revision": "r14",
+  "production_release": false,
+  "physical_qualification": false,
+  "files": {
+    "mechanical/swim-r14-wire-motion/README.md": "4a54e85463c16b7af7eefef6e39d6bc9f59642735d217a3192414fadf2896028",
+    "mechanical/swim-r14-wire-motion/dock.json": "dfd8a878678d7eaebfbc5191f397f3c0e5c98dfde3cca63c604bbf803174e9c5",
+    "mechanical/swim-r14-wire-motion/dock.scad": "9538e95882bc6c2d960f3ec0a31025dc51d532c4ccf8f9a2c49a9a150812aaaa",
+    "mechanical/swim-r14-wire-motion/checks.json": "5b2bee82b9d2fa7a67e0c02b43bd99a100c56bdc27e6414850472deb729cbfac",
+    "mechanical/swim-r14-wire-motion/parameters.scad": "a198439cd3b3db918a38b99c89a88692d703637be17b05f98ac756f636530569",
+    "mechanical/swim-r14-wire-motion/lower.stl": "6f7a4d85233ebad0b4ad6b79806bdffaba77db1254d209ff47b0254d155358d1",
+    "mechanical/swim-r14-wire-motion/upper.stl": "1d285ef0e6640a8229aa2637b405e902652f1d0f8e5b51a3efd18f3436b639c4",
+    "mechanical/swim-r14-wire-motion/mesh-checks.json": "f3cb7f90502ce120db061939dd55ce2ebea0e617d7490b5fee3321ceb947512c",
+    "mechanical/swim-r14-wire-motion/review.png": "fb16f2ba6d7eef9ca7395e857f140b3cc5bf433d56e948fb9c7af1adfd36cac2",
+    "mechanical/swim-r14-wire-motion/motion.png": "7ad06461749b4ad724ba49c58372bc4983d9965480eb196cf86cc7cf368d5aaa",
+    "mechanical/swim-r14-wire-motion/mounted.png": "615cf8bba7aacce77d84ddc4986971499d7b2cb5af4b5eb3e401e4d7d7caad02",
+    "mechanical/swim-r14-wire-motion/wire-motion-sheet.svg": "e435a2b4ec00336ab098f24cafd3360294ee6905becaa317e737a7e44f221ffd",
+    "mechanical/swim-r14-wire-motion/wire-motion-sheet.pdf": "8d572a0c8fbeca763600ec7c74c98831c1d83c372ca4310de9bf15c282e2373a",
+    "mechanical/swim-r14-wire-motion/wire-motion-sheet.png": "13599884d124b5832c29a825c2eb4dee84ae9fecae31af471eaa1e6065635587",
+    "scripts/check_dock_wire_motion.py": "bb325bb19454185c5da909977dca05c54608e9d24648e3cd39efb4430b358ab2",
+    "scripts/export_dock_wire_motion.py": "96ccada4d93a896716a1bbb32fc2be6171ff714e66e46b10d9fda58cde999069",
+    "scripts/make_dock_wire_sheet.py": "6a62d9692bd1a1e6503ca76c689a1182adf3e8a828158f6d93e0bbd6bb1599b6",
+    "scripts/verify_dock_wire_motion.py": "c8129d52c1167bbac1d1b6f9791ffc78a03ae435707c6ef7452ec38a09e68c20",
+    "tests/test_dock_wire_motion.py": "74ad1fb99d6d221146e4a0de3b18aa4e7dbbcd6ae34b4270a49aa02d49bbadf9"
+  }
+}
