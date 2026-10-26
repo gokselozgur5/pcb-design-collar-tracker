@@ -12,3 +12,5 @@
 /assembly/pcba-r03/*.csv whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 # Preserve the downloaded rule snapshot and its original, verified hash.
 /assembly/pcba-r03/jlc-rules.json whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+# Exact inputs of the rejected datum diagnostic, not order files.
+/assembly/pcba-r04/*.csv whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

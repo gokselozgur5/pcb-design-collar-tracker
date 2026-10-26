@@ -18,12 +18,21 @@ match the local files. The first actual SMT run returned unresolved pin-edge,
 paste-overlap and component-to-edge findings. Several categories are truncated
 at 50 measurements; never call those complete. J6 remains a visual placeholder,
 although the backend includes its body spacing; explicit pin coverage is absent.
-Next resolve those concrete SMT/model/stencil findings and J6 placement acceptance.
+The [r04 datum diagnostic](../assembly/pcba-r04/README.md) rejected removal of the
+U.FL origin correction: it worsened overlap and introduced a lead-to-hole finding.
+Keep r03 CPL; r04's CSV is explicitly rejected, not a new order candidate. The
+diagnostic record is `637366592129687553`; r03 record `637366801595977730` was
+left unchanged. New evidence covers all 57 left-edge and 23 outer-edge findings;
+20 inner/right findings remain unreturned. Manufacturer/source comparisons are
+in r04. Do not rerun this rejected experiment or invent complete SMT acceptance.
+Next complete supplier terminal/model coverage, stencil/reflow and board-edge
+handling acceptance, including J6. No supplier acceptance is recorded.
 No new firmware, enclosure work or repeated unchanged PCB DFM is needed.
 
 The [r03 review ZIP](../release/collar-tracker-r05m-pcba-r03-review.zip) selects
 current sources/BOM/CPL, unchanged Gerber and the actual non-passing SMT report.
 Run `python3 scripts/verify_pcba_r03.py` for saved source/input/read-back integrity;
+`python3 scripts/verify_pcba_r04.py` checks the rejected diagnostic;
 `python3 scripts/verify_handoff.py` also checks all preserved checkpoints.
 Generator/package scripts write frozen evidence; do not rerun them during resume.
 Further corrections belong in a new revision. PCBA order readiness remains NO.

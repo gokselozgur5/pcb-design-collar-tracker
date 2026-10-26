@@ -1,0 +1,146 @@
+{
+  "decision": "REJECTED",
+  "selected_cpl": "assembly/pcba-r03/cpl-jlc-review.csv",
+  "native_source_changed": false,
+  "parts_omitted": false,
+  "rules_changed": false,
+  "diagnostic_record": "637366592129687553",
+  "baseline_record": "637366801595977730",
+  "changed_coordinates": [
+    {
+      "reference": "J1",
+      "old_x_mm": 17.667997,
+      "diagnostic_x_mm": 18.3
+    },
+    {
+      "reference": "J2",
+      "old_x_mm": 27.667997,
+      "diagnostic_x_mm": 28.3
+    }
+  ],
+  "mpns_matched": 44,
+  "placements_verified": 81,
+  "rule_sha256": "f1bebb3b2b5ac2ba0579f882fc0605d169c1d6a3a852a07beb8652b719e0a725",
+  "overlap_before": {
+    "U2": [
+      0.3190609
+    ],
+    "U9": [
+      0.3770607
+    ],
+    "J2": [
+      0.6177933
+    ],
+    "J1": [
+      0.6178165
+    ],
+    "U3": [
+      0.8485451
+    ]
+  },
+  "overlap_diagnostic": {
+    "J2": [
+      0.04052492,
+      0.7638219,
+      0.7638219
+    ],
+    "J1": [
+      0.04054812,
+      0.7638219,
+      0.7638219
+    ],
+    "U2": [
+      0.3190609
+    ],
+    "U9": [
+      0.3770607
+    ],
+    "U3": [
+      0.8485451
+    ]
+  },
+  "new_j2_lead_to_hole_mm": 0.02492655746404613,
+  "pin_edge_union": {
+    "pin_i_edge": {
+      "unique_returned": 55,
+      "backend_total": 64,
+      "unreturned": 9,
+      "per_reference": {
+        "U1": {
+          "count": 50,
+          "max_mm": 3.182610878049012e-05
+        },
+        "U2": {
+          "count": 5,
+          "max_mm": 5.5879999997523554e-05
+        }
+      }
+    },
+    "pin_l_edge": {
+      "unique_returned": 57,
+      "backend_total": 57,
+      "unreturned": 0,
+      "per_reference": {
+        "U1": {
+          "count": 43,
+          "max_mm": 0.000363220000001229
+        },
+        "U3": {
+          "count": 5,
+          "max_mm": 0.0001295399999999688
+        },
+        "U2": {
+          "count": 5,
+          "max_mm": 0.011046460000000695
+        },
+        "U9": {
+          "count": 4,
+          "max_mm": 2.539999999939937e-05
+        }
+      }
+    },
+    "pin_o_edge": {
+      "unique_returned": 23,
+      "backend_total": 23,
+      "unreturned": 0,
+      "per_reference": {
+        "U1": {
+          "count": 23,
+          "max_mm": 3.5559999999736646e-05
+        }
+      }
+    },
+    "pin_r_edge": {
+      "unique_returned": 64,
+      "backend_total": 75,
+      "unreturned": 11,
+      "per_reference": {
+        "U1": {
+          "count": 50,
+          "max_mm": 7.366000000172335e-05
+        },
+        "U9": {
+          "count": 4,
+          "max_mm": 2.539999999939937e-05
+        },
+        "U2": {
+          "count": 5,
+          "max_mm": 0.011046460000000695
+        },
+        "U3": {
+          "count": 5,
+          "max_mm": 0.00011937999999963153
+        }
+      }
+    }
+  },
+  "scope": "Pin-edge union uses unchanged U1/U2/U3/U9 placements. It does not recover all measurements or prove factory acceptance.",
+  "input_sha256": {
+    "assembly/pcba-r04/bom.csv": "e88552155741874800bdc898c589aad28b8c1f4c81958d70d417cdff8794c4fd",
+    "assembly/pcba-r04/rejected-native-centres-cpl.csv": "77779dddb3db567abb7080771e0fe5f939aa78fbbe110e8584f93a0e757702fe",
+    "assembly/pcba-r03/cpl-jlc-review.csv": "a2fe1ea65368941162c2e76dc87ca483a4aca67cd1e6678a36c6cdbb47958dd3"
+  },
+  "source_sha256": "0433ed4e35b32fa361839ef88ebf0a8613f09c8427cba4c445f2c23676f4d439",
+  "gerber_sha256": "c736c5d35ddfe4c4662e57606120f00f7358492e11d5fbb32eaf1d0ff6caf5d2",
+  "production_release": false
+}

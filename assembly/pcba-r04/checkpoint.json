@@ -1,0 +1,14 @@
+{
+  "decision": "REJECTED",
+  "files": {
+    "assembly/pcba-r04/README.md": "61ecca88f2c10d6f8d457e50dde777daf8d3b803cafffe6f55ac35e0a78b72b8",
+    "assembly/pcba-r04/bom.csv": "e88552155741874800bdc898c589aad28b8c1f4c81958d70d417cdff8794c4fd",
+    "assembly/pcba-r04/comparison.json": "2ea8a633e256207f13780bacdd38a1d0ac164f8d872feb9b09878ca06aed1b40",
+    "assembly/pcba-r04/diagnostic-report.pdf": "688c83f014c52e613589f841c7025a13b27c1eb208d409ba2179baa25581b316",
+    "assembly/pcba-r04/diagnostic-smt.png": "62a26fa7a1441f6fae17660a7e85b48f719dc6e8b06c16516bddf81885470ad9",
+    "assembly/pcba-r04/diagnostic-top.png": "3aaa9571ca052a4f71cb0153b76761da31a57d4371318af4a73b243356213366",
+    "assembly/pcba-r04/jlc-preview-positions.json": "75421cfa06cbdf19062c56cddec87535a18352aa326ecb52f7f967dd63c5cdae",
+    "assembly/pcba-r04/rejected-native-centres-cpl.csv": "77779dddb3db567abb7080771e0fe5f939aa78fbbe110e8584f93a0e757702fe",
+    "assembly/pcba-r04/smt-results.json": "6ed718404df2ab2327e6a6723eb41ab6dfcafd168b6d7c30ef5b7293214826f2"
+  }
+}

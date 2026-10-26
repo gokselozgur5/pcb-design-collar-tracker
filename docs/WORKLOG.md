@@ -1230,3 +1230,24 @@ test occurred. Closed the browser and kept raw/account data ignored.
 The r03 supplier CSVs and downloaded rule snapshot retain their original CRLF bytes.
 Path-specific Git whitespace attributes recognize that separator while preserving ordinary
 trailing-space/blank-line checks; no PCB/SMT rule or uploaded hash changed.
+
+## 2026-10-26 — Reject the U.FL datum alternative
+
+- Ran the distinct native-centre experiment on record 637366592129687553 while
+  preserving the selected r03 SMT record. Read-back verified all 44 MPNs and
+  81 placements. Only J1/J2 X changed; native source, Gerber and rules did not.
+- Minimum U.FL overlap fell from 61.78% to 4.05%, four additional ground-overlap
+  warnings appeared, and J2 gained a 0.02493mm lead-to-hole finding. Rejected the
+  alternative and retained the r03 CPL. The diagnostic CSV, screenshot, report
+  and sanitized measurements are explicitly separate from order files.
+- Union of unchanged IC measurements covers 55/64 inner, 57/57 left, 23/23 outer
+  and 64/75 right pin-edge results. Twenty measurements remain unreturned.
+  Source comparisons support the existing land/split-paste intent, but do not
+  establish complete SMT or factory process acceptance. U3's actual rounded
+  paste area is 84.93% of its exposed copper, not an exact TI example copy.
+- Full saved handoff passes with 46 top-level fields; three Python modules parse,
+  59 local Markdown targets resolve and whitespace checks pass. Browser closed;
+  raw captures and account metadata remain ignored. PCBA readiness is still NO.
+  Next requires complete terminal/model coverage, stencil/reflow and board-edge
+  handling acceptance, including J6. Supplier messages remain set aside; no
+  order, payment, new native revision, firmware or mechanical work occurred.

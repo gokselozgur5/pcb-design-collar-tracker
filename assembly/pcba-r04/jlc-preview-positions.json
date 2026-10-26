@@ -1,0 +1,735 @@
+{
+  "source": "https://jlcdfm.com/bomMatch",
+  "raw_response_sha256": "c40e96708cb99b44cd5fce64b92032c7a8ecc63d05509e8305d22b81ba4b005f",
+  "rows": [
+    {
+      "reference": "C1",
+      "side": "Top",
+      "mpn": "GRM033R61A105ME15D",
+      "part_code": "C181054",
+      "x_mm": 2.0,
+      "y_mm": 17.3,
+      "angle": 0.0
+    },
+    {
+      "reference": "C10",
+      "side": "Bottom",
+      "mpn": "GRM155R71C104KA88D",
+      "part_code": "C71629",
+      "x_mm": 36.4,
+      "y_mm": 27.65,
+      "angle": 0.0
+    },
+    {
+      "reference": "C13",
+      "side": "Top",
+      "mpn": "GJM1555C1H390FB01D",
+      "part_code": "C882564",
+      "x_mm": 19.3,
+      "y_mm": 10.35,
+      "angle": 180.0
+    },
+    {
+      "reference": "C14",
+      "side": "Top",
+      "mpn": "GJM1555C1H390FB01D",
+      "part_code": "C882564",
+      "x_mm": 24.5,
+      "y_mm": 14.9,
+      "angle": 180.0
+    },
+    {
+      "reference": "C15",
+      "side": "Top",
+      "mpn": "GRM155R71C104KA88D",
+      "part_code": "C71629",
+      "x_mm": 26.0,
+      "y_mm": 10.2,
+      "angle": 0.0
+    },
+    {
+      "reference": "C16",
+      "side": "Top",
+      "mpn": "GRM155R61A105KE15D",
+      "part_code": "C76999",
+      "x_mm": 28.4,
+      "y_mm": 8.5,
+      "angle": 90.0
+    },
+    {
+      "reference": "C17",
+      "side": "Bottom",
+      "mpn": "GRM155R61A105KE15D",
+      "part_code": "C76999",
+      "x_mm": 6.2,
+      "y_mm": 7.75,
+      "angle": 90.0
+    },
+    {
+      "reference": "C18",
+      "side": "Top",
+      "mpn": "GRM188R61A106MAALD",
+      "part_code": "C703113",
+      "x_mm": 3.0,
+      "y_mm": 7.15,
+      "angle": 0.0
+    },
+    {
+      "reference": "C19",
+      "side": "Top",
+      "mpn": "GRM155R61A105KE15D",
+      "part_code": "C76999",
+      "x_mm": 1.8,
+      "y_mm": 5.5,
+      "angle": 180.0
+    },
+    {
+      "reference": "C2",
+      "side": "Top",
+      "mpn": "GRM033R61A105ME15D",
+      "part_code": "C181054",
+      "x_mm": 2.0,
+      "y_mm": 18.9,
+      "angle": 90.0
+    },
+    {
+      "reference": "C20",
+      "side": "Top",
+      "mpn": "GRM155R61A105KE15D",
+      "part_code": "C76999",
+      "x_mm": 6.0,
+      "y_mm": 26.2,
+      "angle": 0.0
+    },
+    {
+      "reference": "C21",
+      "side": "Top",
+      "mpn": "GRM155R61A105KE15D",
+      "part_code": "C76999",
+      "x_mm": 6.0,
+      "y_mm": 24.5,
+      "angle": 0.0
+    },
+    {
+      "reference": "C23",
+      "side": "Top",
+      "mpn": "GRM155R71C104KA88D",
+      "part_code": "C71629",
+      "x_mm": 32.0,
+      "y_mm": 24.6,
+      "angle": 0.0
+    },
+    {
+      "reference": "C24",
+      "side": "Top",
+      "mpn": "GRM155R71C104KA88D",
+      "part_code": "C71629",
+      "x_mm": 32.0,
+      "y_mm": 22.5,
+      "angle": 0.0
+    },
+    {
+      "reference": "C25",
+      "side": "Bottom",
+      "mpn": "GRM21BR71C105KA01L",
+      "part_code": "C77079",
+      "x_mm": 11.75,
+      "y_mm": 2.25,
+      "angle": 270.0
+    },
+    {
+      "reference": "C26",
+      "side": "Bottom",
+      "mpn": "GRM155R71C473KA01D",
+      "part_code": "C77012",
+      "x_mm": 13.25,
+      "y_mm": 5.95,
+      "angle": 180.0
+    },
+    {
+      "reference": "C27",
+      "side": "Top",
+      "mpn": "GRM155R71C104KA88D",
+      "part_code": "C71629",
+      "x_mm": 9.25,
+      "y_mm": 0.25,
+      "angle": 90.0
+    },
+    {
+      "reference": "C28",
+      "side": "Top",
+      "mpn": "GRM155R71C104KA88D",
+      "part_code": "C71629",
+      "x_mm": 21.0,
+      "y_mm": 1.5,
+      "angle": 90.0
+    },
+    {
+      "reference": "C29",
+      "side": "Top",
+      "mpn": "GRM155R71C104KA88D",
+      "part_code": "C71629",
+      "x_mm": 31.0,
+      "y_mm": -1.0,
+      "angle": 0.0
+    },
+    {
+      "reference": "C3",
+      "side": "Top",
+      "mpn": "GRM21BR61A476ME15L",
+      "part_code": "C124129",
+      "x_mm": 2.0,
+      "y_mm": 9.7,
+      "angle": 90.0
+    },
+    {
+      "reference": "C30",
+      "side": "Top",
+      "mpn": "GRM155R71C104KA88D",
+      "part_code": "C71629",
+      "x_mm": 35.5,
+      "y_mm": 19.5,
+      "angle": 0.0
+    },
+    {
+      "reference": "C31",
+      "side": "Top",
+      "mpn": "GRM155R71C104KA88D",
+      "part_code": "C71629",
+      "x_mm": 8.75,
+      "y_mm": 26.5,
+      "angle": 270.0
+    },
+    {
+      "reference": "C32",
+      "side": "Top",
+      "mpn": "GRM155R71C104KA88D",
+      "part_code": "C71629",
+      "x_mm": 14.75,
+      "y_mm": 28.0,
+      "angle": 90.0
+    },
+    {
+      "reference": "C33",
+      "side": "Bottom",
+      "mpn": "GRM155R71C104KA88D",
+      "part_code": "C71629",
+      "x_mm": 2.0,
+      "y_mm": 28.0,
+      "angle": 90.0
+    },
+    {
+      "reference": "C34",
+      "side": "Top",
+      "mpn": "GRM1555C1H102JA01D",
+      "part_code": "C76947",
+      "x_mm": 10.25,
+      "y_mm": 28.5,
+      "angle": 0.0
+    },
+    {
+      "reference": "C35",
+      "side": "Top",
+      "mpn": "GRM1555C1H102JA01D",
+      "part_code": "C76947",
+      "x_mm": 17.0,
+      "y_mm": 23.75,
+      "angle": 0.0
+    },
+    {
+      "reference": "C36",
+      "side": "Bottom",
+      "mpn": "GRM1555C1H102JA01D",
+      "part_code": "C76947",
+      "x_mm": 4.0,
+      "y_mm": 7.0,
+      "angle": 270.0
+    },
+    {
+      "reference": "C4",
+      "side": "Bottom",
+      "mpn": "GRM188R61A106MAALD",
+      "part_code": "C703113",
+      "x_mm": 5.2,
+      "y_mm": 11.0,
+      "angle": 0.0
+    },
+    {
+      "reference": "C5",
+      "side": "Top",
+      "mpn": "GRM033R60J104ME19D",
+      "part_code": "C408129",
+      "x_mm": 13.75,
+      "y_mm": 22.2,
+      "angle": 0.0
+    },
+    {
+      "reference": "C6",
+      "side": "Top",
+      "mpn": "GRM155R60J475ME47D",
+      "part_code": "C82453",
+      "x_mm": 16.0,
+      "y_mm": 22.7,
+      "angle": 0.0
+    },
+    {
+      "reference": "C7",
+      "side": "Top",
+      "mpn": "GRM155R60J475ME47D",
+      "part_code": "C82453",
+      "x_mm": 7.75,
+      "y_mm": 7.0,
+      "angle": 0.0
+    },
+    {
+      "reference": "C8",
+      "side": "Bottom",
+      "mpn": "GRM033R60J104ME19D",
+      "part_code": "C408129",
+      "x_mm": 4.8,
+      "y_mm": 16.0,
+      "angle": 0.0
+    },
+    {
+      "reference": "C9",
+      "side": "Bottom",
+      "mpn": "GRM21BR71C105KA01L",
+      "part_code": "C77079",
+      "x_mm": 1.8,
+      "y_mm": 13.7,
+      "angle": 270.0
+    },
+    {
+      "reference": "D1",
+      "side": "Bottom",
+      "mpn": "TPD4E1U06DCKR",
+      "part_code": "C194628",
+      "x_mm": 33.4,
+      "y_mm": 28.3,
+      "angle": 90.0
+    },
+    {
+      "reference": "D2",
+      "side": "Bottom",
+      "mpn": "TPD4E1U06DCKR",
+      "part_code": "C194628",
+      "x_mm": 26.8,
+      "y_mm": 11.8,
+      "angle": 90.0
+    },
+    {
+      "reference": "FB1",
+      "side": "Top",
+      "mpn": "BLM18SD220SN1D",
+      "part_code": "C710389",
+      "x_mm": 2.0,
+      "y_mm": 14.0,
+      "angle": 90.0
+    },
+    {
+      "reference": "J1",
+      "side": "Top",
+      "mpn": "U.FL-R-SMT-1(10)",
+      "part_code": "C88373",
+      "x_mm": 18.3,
+      "y_mm": 5.7,
+      "angle": 0.0
+    },
+    {
+      "reference": "J2",
+      "side": "Top",
+      "mpn": "U.FL-R-SMT-1(10)",
+      "part_code": "C88373",
+      "x_mm": 28.3,
+      "y_mm": 16.2,
+      "angle": 0.0
+    },
+    {
+      "reference": "J6",
+      "side": "Bottom",
+      "mpn": "SIM8051-6-0-14-00-A",
+      "part_code": "C7363812",
+      "x_mm": 27.0,
+      "y_mm": 20.0,
+      "angle": 0.0
+    },
+    {
+      "reference": "L1",
+      "side": "Top",
+      "mpn": "LQW15AN9N1J00D",
+      "part_code": "C437364",
+      "x_mm": 20.5,
+      "y_mm": 11.75,
+      "angle": 270.0
+    },
+    {
+      "reference": "Q1",
+      "side": "Top",
+      "mpn": "UM6K34NTCN",
+      "part_code": "C510056",
+      "x_mm": 34.0,
+      "y_mm": 6.75,
+      "angle": 270.0
+    },
+    {
+      "reference": "R1",
+      "side": "Bottom",
+      "mpn": "RC0402FR-0722KL",
+      "part_code": "C82868",
+      "x_mm": 1.8,
+      "y_mm": 18.0,
+      "angle": 90.0
+    },
+    {
+      "reference": "R12",
+      "side": "Top",
+      "mpn": "RC0402FR-074K7L",
+      "part_code": "C105871",
+      "x_mm": 20.5,
+      "y_mm": 28.1,
+      "angle": 0.0
+    },
+    {
+      "reference": "R13",
+      "side": "Top",
+      "mpn": "RC0402FR-074K7L",
+      "part_code": "C105871",
+      "x_mm": 26.4,
+      "y_mm": 28.0,
+      "angle": 0.0
+    },
+    {
+      "reference": "R14",
+      "side": "Bottom",
+      "mpn": "RC0402FR-07100KL",
+      "part_code": "C60491",
+      "x_mm": 21.5,
+      "y_mm": 9.0,
+      "angle": 0.0
+    },
+    {
+      "reference": "R15",
+      "side": "Bottom",
+      "mpn": "RC0402FR-07100KL",
+      "part_code": "C60491",
+      "x_mm": 26.0,
+      "y_mm": 10.0,
+      "angle": 0.0
+    },
+    {
+      "reference": "R16",
+      "side": "Top",
+      "mpn": "RC0402FR-0710KL",
+      "part_code": "C60490",
+      "x_mm": 16.45,
+      "y_mm": 0.0,
+      "angle": 90.0
+    },
+    {
+      "reference": "R17",
+      "side": "Bottom",
+      "mpn": "RT0402BRD07200KL",
+      "part_code": "C728556",
+      "x_mm": 13.75,
+      "y_mm": 2.0,
+      "angle": 270.0
+    },
+    {
+      "reference": "R18",
+      "side": "Top",
+      "mpn": "RT0402BRD0726K1L",
+      "part_code": "C728557",
+      "x_mm": 18.4,
+      "y_mm": 1.9,
+      "angle": 0.0
+    },
+    {
+      "reference": "R19",
+      "side": "Top",
+      "mpn": "RC0402FR-073M4L",
+      "part_code": "C477696",
+      "x_mm": 17.92,
+      "y_mm": 0.27,
+      "angle": 0.0
+    },
+    {
+      "reference": "R2",
+      "side": "Bottom",
+      "mpn": "RC0402FR-071KL",
+      "part_code": "C106235",
+      "x_mm": 4.7,
+      "y_mm": 18.0,
+      "angle": 0.0
+    },
+    {
+      "reference": "R20",
+      "side": "Top",
+      "mpn": "RC0402FR-0710KL",
+      "part_code": "C60490",
+      "x_mm": 22.5,
+      "y_mm": 0.25,
+      "angle": 0.0
+    },
+    {
+      "reference": "R21",
+      "side": "Top",
+      "mpn": "CRCW040222R0FKEDHP",
+      "part_code": "C313374",
+      "x_mm": 34.5,
+      "y_mm": 3.75,
+      "angle": 0.0
+    },
+    {
+      "reference": "R22",
+      "side": "Top",
+      "mpn": "RC0402FR-071ML",
+      "part_code": "C138033",
+      "x_mm": 36.0,
+      "y_mm": 2.5,
+      "angle": 0.0
+    },
+    {
+      "reference": "R23",
+      "side": "Top",
+      "mpn": "RC0402FR-07100KL",
+      "part_code": "C60491",
+      "x_mm": 35.75,
+      "y_mm": 24.5,
+      "angle": 90.0
+    },
+    {
+      "reference": "R24",
+      "side": "Top",
+      "mpn": "RT0402BRD07196KL",
+      "part_code": "C852585",
+      "x_mm": 8.5,
+      "y_mm": 23.5,
+      "angle": 0.0
+    },
+    {
+      "reference": "R25",
+      "side": "Top",
+      "mpn": "RT0402BRD0749K9L",
+      "part_code": "C852808",
+      "x_mm": 14.25,
+      "y_mm": 25.5,
+      "angle": 90.0
+    },
+    {
+      "reference": "R26",
+      "side": "Top",
+      "mpn": "RT0402BRD0727K4L",
+      "part_code": "C852679",
+      "x_mm": 19.75,
+      "y_mm": 25.25,
+      "angle": 180.0
+    },
+    {
+      "reference": "R27",
+      "side": "Top",
+      "mpn": "RT0402BRD0749K9L",
+      "part_code": "C852808",
+      "x_mm": 13.25,
+      "y_mm": 28.25,
+      "angle": 0.0
+    },
+    {
+      "reference": "R28",
+      "side": "Bottom",
+      "mpn": "RC0402FR-07100KL",
+      "part_code": "C60491",
+      "x_mm": 4.0,
+      "y_mm": 25.5,
+      "angle": 270.0
+    },
+    {
+      "reference": "R29",
+      "side": "Bottom",
+      "mpn": "RC0402FR-07100KL",
+      "part_code": "C60491",
+      "x_mm": 4.0,
+      "y_mm": 28.75,
+      "angle": 0.0
+    },
+    {
+      "reference": "R3",
+      "side": "Top",
+      "mpn": "RC0402JR-070RL",
+      "part_code": "C60485",
+      "x_mm": 13.8,
+      "y_mm": 7.7,
+      "angle": 0.0
+    },
+    {
+      "reference": "R30",
+      "side": "Top",
+      "mpn": "RC0402FR-07100KL",
+      "part_code": "C60491",
+      "x_mm": -0.25,
+      "y_mm": 26.0,
+      "angle": 180.0
+    },
+    {
+      "reference": "R4",
+      "side": "Top",
+      "mpn": "RC0402FR-071KL",
+      "part_code": "C106235",
+      "x_mm": 26.3,
+      "y_mm": 8.7,
+      "angle": 0.0
+    },
+    {
+      "reference": "R5",
+      "side": "Top",
+      "mpn": "RC0402FR-07100KL",
+      "part_code": "C60491",
+      "x_mm": 26.3,
+      "y_mm": 7.3,
+      "angle": 0.0
+    },
+    {
+      "reference": "R6",
+      "side": "Top",
+      "mpn": "RC0402FR-0718KL",
+      "part_code": "C138044",
+      "x_mm": 6.0,
+      "y_mm": 2.2,
+      "angle": 0.0
+    },
+    {
+      "reference": "R7",
+      "side": "Top",
+      "mpn": "RC0402FR-073KL",
+      "part_code": "C137987",
+      "x_mm": 8.2,
+      "y_mm": 2.2,
+      "angle": 0.0
+    },
+    {
+      "reference": "R8",
+      "side": "Bottom",
+      "mpn": "RC0402FR-0710KL",
+      "part_code": "C60490",
+      "x_mm": 10.0,
+      "y_mm": 26.0,
+      "angle": 0.0
+    },
+    {
+      "reference": "R9",
+      "side": "Bottom",
+      "mpn": "RC0402FR-0710KL",
+      "part_code": "C60490",
+      "x_mm": 13.0,
+      "y_mm": 26.0,
+      "angle": 0.0
+    },
+    {
+      "reference": "U1",
+      "side": "Top",
+      "mpn": "NRF9151-LACA-R",
+      "part_code": "C42236596",
+      "x_mm": 11.0,
+      "y_mm": 15.0,
+      "angle": 0.0
+    },
+    {
+      "reference": "U10",
+      "side": "Top",
+      "mpn": "TLV3012BIDCKR",
+      "part_code": "C20345925",
+      "x_mm": 11.0,
+      "y_mm": 25.5,
+      "angle": 0.0
+    },
+    {
+      "reference": "U11",
+      "side": "Top",
+      "mpn": "TLV3012BIDCKR",
+      "part_code": "C20345925",
+      "x_mm": 17.0,
+      "y_mm": 27.0,
+      "angle": 0.0
+    },
+    {
+      "reference": "U12",
+      "side": "Bottom",
+      "mpn": "SN74LVC1G00DCKR",
+      "part_code": "C8185",
+      "x_mm": -0.25,
+      "y_mm": 27.0,
+      "angle": 270.0
+    },
+    {
+      "reference": "U2",
+      "side": "Top",
+      "mpn": "SKY65943-11",
+      "part_code": "C2654442",
+      "x_mm": 23.0,
+      "y_mm": 11.5,
+      "angle": 90.0
+    },
+    {
+      "reference": "U3",
+      "side": "Top",
+      "mpn": "BQ25185DLHR",
+      "part_code": "C19725033",
+      "x_mm": 5.0,
+      "y_mm": 5.0,
+      "angle": 270.0
+    },
+    {
+      "reference": "U4",
+      "side": "Top",
+      "mpn": "TPS7A0218PDBVR",
+      "part_code": "C3748843",
+      "x_mm": 3.0,
+      "y_mm": 25.5,
+      "angle": 270.0
+    },
+    {
+      "reference": "U5",
+      "side": "Top",
+      "mpn": "LIS2DW12TR",
+      "part_code": "C189624",
+      "x_mm": 29.0,
+      "y_mm": 23.5,
+      "angle": 270.0
+    },
+    {
+      "reference": "U6",
+      "side": "Top",
+      "mpn": "TPS3808G01DBVR",
+      "part_code": "C19653",
+      "x_mm": 12.5,
+      "y_mm": 1.0,
+      "angle": 180.0
+    },
+    {
+      "reference": "U7",
+      "side": "Bottom",
+      "mpn": "TPS3808G30DBVR",
+      "part_code": "C189211",
+      "x_mm": 16.0,
+      "y_mm": 4.75,
+      "angle": 270.0
+    },
+    {
+      "reference": "U8",
+      "side": "Top",
+      "mpn": "SN74LVC1G14DCKR",
+      "part_code": "C35740",
+      "x_mm": 33.0,
+      "y_mm": 1.0,
+      "angle": 180.0
+    },
+    {
+      "reference": "U9",
+      "side": "Top",
+      "mpn": "MAX17048G+T10",
+      "part_code": "C2682616",
+      "x_mm": 34.75,
+      "y_mm": 16.25,
+      "angle": 180.0
+    }
+  ]
+}

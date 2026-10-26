@@ -27,9 +27,19 @@ paste-overlap and board-edge findings. [Disposition and coverage limits](../asse
 retain the non-passing report; several categories were truncated at 50 results.
 J6 body spacing appears in backend results, but its visual model and explicit pin
 coverage remain incomplete. The native eight-land/manufacturer review still holds.
-**Next:** resolve the actual SMT/model/stencil findings and complete J6 placement
-acceptance. Preserve all frozen revisions; do not repeat unchanged PCB DFM or
-restart firmware/mechanics. Supplier messaging is set aside at the user's request.
+The [r04 datum experiment](../assembly/pcba-r04/README.md) rejected removal of the
+U.FL origin correction: minimum overlap fell from 61.78% to 4.05%, four extra
+ground-overlap warnings appeared, and J2 gained a lead-to-hole finding. Keep the
+r03 CPL. All 81 diagnostic placements were verified; native source/rules stayed
+unchanged. Combining the unchanged IC findings resolves the returned left/outer
+coverage to 57/57 and 23/23, but 20 inner/right measurements remain unreturned.
+Manufacturer comparisons support retaining the current land and split-paste
+geometry; they do not establish factory process acceptance.
+**Next:** complete terminal/model coverage (including J6), stencil/reflow and
+board-edge handling acceptance for the exact assembly. These are supplier model
+and process gates; another unmodified local check is not evidence of acceptance.
+Preserve all frozen revisions; do not repeat unchanged PCB DFM or restart
+firmware/mechanics. Supplier messaging is set aside at the user's request.
 No message, order, payment or powered test was made. The old supplier-r01 enquiry
 is now historical and must not be sent unchanged with its superseded Q1 questions.
 
