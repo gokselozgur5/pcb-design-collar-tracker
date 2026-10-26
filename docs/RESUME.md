@@ -598,6 +598,6 @@ service motion, fault coordination and physical qualification remain open.
 python3 scripts/verify_internal_harness.py
 ```
 
-Nine harness regressions pass, including an RF-guide collision, correlated moving PCB/pad datums and
+Ten harness regressions pass, including continuous bound refinement, an RF-guide collision, correlated moving PCB/pad datums and
 fixed body terminals. Re-record the explicitly unreleased r02 checkpoint only
 after regenerating its source-bound results; published archives stay immutable.

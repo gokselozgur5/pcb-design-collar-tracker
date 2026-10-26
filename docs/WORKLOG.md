@@ -830,3 +830,16 @@ test or physical water/dust qualification was performed.
   through a guide. These are geometric checks, not physical qualification.
 - Preserved the PCB, RF paths, enclosure, nominal wire meshes and release ZIPs.
   Work continues on the failing upper poses and a common wire cut length.
+
+## 2026-10-26 — Refine continuous wire bounds and accept explicit RF candidates
+
+- Added bounded refinement for short spline handles. Every acceptance still
+  uses a continuous Bezier lower bound and the existing 6.604mm limit, never
+  sampled curvature. Clearance sampling can also be refined while retaining
+  its derivative-based travel allowance. Both resolutions are recorded.
+- The route checker can receive explicit RF curves and physical guide data;
+  it records the evaluated inputs and rejects missing identities. Its default
+  still checks the preserved r02/r11 combination, which remains 18/27 and HOLD.
+- Ten harness regressions pass, including a coarse bound that tightens while
+  remaining below independently evaluated dense curvature. Native PCB, nominal
+  wire meshes, guide solids and published release archives are unchanged.

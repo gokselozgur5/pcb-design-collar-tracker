@@ -60,3 +60,23 @@ def physical_radii(curve, spec):
             (remainder + reserve <= spec['pcb_strip_mm']))
     return np.where(bare, spec['conductor_diameter_incoming_max_mm']/2,
                     spec['outside_diameter_max_mm']/2), bare
+
+
+def certify_radius(control, curve, minimum):
+    """Refine a conservative Bezier bound, never substitute sampled curvature.
+
+    Short control handles can make the interval velocity/acceleration bounds
+    loose. Each refinement still bounds every point of the continuous curve;
+    the acceptance radius is unchanged. Other clearance screens retain their
+    original sample spacing and travel allowance.
+    """
+    bound=curve['radius_lower']
+    count=len(curve['xyz'])
+    for requested in [16001,64001]:
+        if bound >= minimum:
+            break
+        finer=evaluate(control,requested)
+        if finer['radius_lower'] > bound:
+            bound=finer['radius_lower']
+            count=len(finer['xyz'])
+    return dict(radius_lower_mm=float(bound),evaluation_points=count)

@@ -9,7 +9,7 @@ import numpy as np
 
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
 from check_internal_harness import BASE, check, OUT
-from internal_harness_geometry import evaluate, physical_radii
+from internal_harness_geometry import evaluate, physical_radii, certify_radius
 from thermal_cable_geometry import spline
 
 
@@ -78,6 +78,16 @@ class InternalHarnessTests(unittest.TestCase):
         line=[[0,0,0],[3,0,0],[6,0,0],[9,0,0]]
         self.assertTrue(math.isinf(evaluate(line)['radius_lower']))
         with self.assertRaises(ValueError):evaluate([[0,0,0]]*4)
+
+    def test_refinement_tightens_a_bound_without_using_sampled_acceptance(self):
+        control=self.spec['wires'][1]['controls_mm']
+        coarse=evaluate(control,41)
+        self.assertLess(coarse['radius_lower'],6.604)
+        bound=certify_radius(control,coarse,6.604)
+        self.assertGreaterEqual(bound['radius_lower_mm'],6.604)
+        self.assertGreater(bound['evaluation_points'],len(coarse['xyz']))
+        dense=float(spline(control,40001)[2].min())
+        self.assertLessEqual(bound['radius_lower_mm'],dense+1e-8)
 
     def test_strip_boundary_includes_position_and_cut_error(self):
         c=evaluate([[0,0,0],[3,0,0],[6,0,0],[9,0,0]])

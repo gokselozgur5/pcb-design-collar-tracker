@@ -3,8 +3,8 @@
   "inputs": {
     "assembly/internal-charge-r02/harness.json": "6d0c5d325107305b65d477a76410f5fa3bbcdfc4ef73b85943bc937a82bec569",
     "assembly/internal-charge-r02/sources.json": "9c75c82ca18c0a9826474665b3d37c340d7e782caa567f43ba4339fae7d316ce",
-    "scripts/check_internal_harness.py": "801a92ec29cffeb0b50acbe2d7a08556a530278a4f8bce5d6c6fdae8d4f86f68",
-    "scripts/internal_harness_geometry.py": "f3f3315192d15c4f9a7f44b4c9a8db2aa682e0a2910504238a6de2bd50545134",
+    "scripts/check_internal_harness.py": "ccd0f64aed8902835c3c7acde9d4b8cf4a009a1ab9ba920a39c3eb55f122dcb1",
+    "scripts/internal_harness_geometry.py": "b47134f090f29e9911f959077542a21e867e3b59585178c6994b88e18bf8c77d",
     "mechanical/swim-r11-thermal-fit/antenna-fit.json": "b120bb308406ae69fcfed946b0f926b5af2f7e95394204e02fa772a8842976be",
     "mechanical/swim-r11-thermal-fit/retention-checks.json": "a21530e03e614c82e8b9046bfc49e520128080923d651d149f2bcc300175ced9",
     "mechanical/swim-r11-thermal-fit/parameters.json": "6a3e51619b56502d3ccf91c7749f115f585b488fc4a21c867df6318c8f150de9",
@@ -828,7 +828,7 @@
         },
         {
           "name": "black continuous bend radius lower bound",
-          "value": 6.377967035954184,
+          "value": 6.38984803422458,
           "minimum": 6.604,
           "pass_": false
         },
@@ -1770,7 +1770,7 @@
         },
         {
           "name": "black continuous bend radius lower bound",
-          "value": 6.437945087578383,
+          "value": 6.450029058578701,
           "minimum": 6.604,
           "pass_": false
         },
@@ -2712,7 +2712,7 @@
         },
         {
           "name": "black continuous bend radius lower bound",
-          "value": 6.48371820012062,
+          "value": 6.496293819174744,
           "minimum": 6.604,
           "pass_": false
         },
@@ -3654,7 +3654,7 @@
         },
         {
           "name": "black continuous bend radius lower bound",
-          "value": 6.378854385644643,
+          "value": 6.391053504735283,
           "minimum": 6.604,
           "pass_": false
         },
@@ -4596,7 +4596,7 @@
         },
         {
           "name": "black continuous bend radius lower bound",
-          "value": 6.558537221615488,
+          "value": 6.571312763606523,
           "minimum": 6.604,
           "pass_": false
         },
@@ -6480,7 +6480,7 @@
         },
         {
           "name": "black continuous bend radius lower bound",
-          "value": 6.502145795907398,
+          "value": 6.514783938417724,
           "minimum": 6.604,
           "pass_": false
         },
@@ -7422,7 +7422,7 @@
         },
         {
           "name": "black continuous bend radius lower bound",
-          "value": 6.480851068680966,
+          "value": 6.494405913284323,
           "minimum": 6.604,
           "pass_": false
         },
@@ -8364,7 +8364,7 @@
         },
         {
           "name": "black continuous bend radius lower bound",
-          "value": 6.464703927934115,
+          "value": 6.478103690063618,
           "minimum": 6.604,
           "pass_": false
         },

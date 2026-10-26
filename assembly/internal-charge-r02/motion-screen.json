@@ -5,9 +5,9 @@
     "mechanical/swim-r11-thermal-fit/retention-checks.json": "a21530e03e614c82e8b9046bfc49e520128080923d651d149f2bcc300175ced9",
     "mechanical/swim-r11-thermal-fit/antenna-fit.json": "b120bb308406ae69fcfed946b0f926b5af2f7e95394204e02fa772a8842976be",
     "scripts/screen_internal_harness_motion.py": "c83761f4405ee2aedca7ec99d8171a73dc6c384f58f00fd93d622522919011af",
-    "scripts/internal_harness_geometry.py": "f3f3315192d15c4f9a7f44b4c9a8db2aa682e0a2910504238a6de2bd50545134",
+    "scripts/internal_harness_geometry.py": "b47134f090f29e9911f959077542a21e867e3b59585178c6994b88e18bf8c77d",
     "scripts/thermal_cable_geometry.py": "ce275bc960cd1b384f5e7ad29975da9e67f056a8d12cac58e385d4a93fb473a9",
-    "scripts/check_internal_harness.py": "801a92ec29cffeb0b50acbe2d7a08556a530278a4f8bce5d6c6fdae8d4f86f68"
+    "scripts/check_internal_harness.py": "ccd0f64aed8902835c3c7acde9d4b8cf4a009a1ab9ba920a39c3eb55f122dcb1"
   },
   "control_translation_weights": [
     0.0,

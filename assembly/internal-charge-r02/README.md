@@ -54,9 +54,13 @@ qualified internal harness test and restraint specification remain required.
 - Both actual wire meshes are closed and oriented. The CAD intersections with
   the body/carrier/components/joint envelopes and with the terminal metal are
   empty. A deliberately lowered ground wire produces 1.538mm3 of interference.
-- Nine regressions cover source geometry, swapped polarity, the old wire's
+- Ten regressions cover source geometry, swapped polarity, the old wire's
   bend requirement, component/guide collisions, continuous bounds and strip-position
   uncertainty.
+- Short spline handles can make the continuous bend bound loose. A failed
+  4,001-point bound is refined at 16,001 and, if needed, 64,001 points. Each
+  result still bounds the whole curve; sampled curvature is never used to
+  accept the bend. The 6.604mm requirement is unchanged.
 - All four RF guides are screened as complete blocks, including their CAD roof
   overlap. No bore/slit exclusion is applied to the charge wires. The minimum
   guide clearance over the saved 27 candidate poses is 0.324mm; this is a static

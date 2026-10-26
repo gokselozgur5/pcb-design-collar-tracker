@@ -10,7 +10,7 @@ from shapely import covers, distance, points
 from shapely.geometry import LineString, Polygon
 
 from check_thermal_assembly import retention_solids
-from internal_harness_geometry import evaluate, physical_radii
+from internal_harness_geometry import evaluate, physical_radii, certify_radius
 from thermal_cable_geometry import spline
 from antenna_cable_geometry import curve_separation
 
@@ -24,7 +24,7 @@ def point_box_distance(xyz, lo, hi):
     return np.linalg.norm(np.maximum(0, np.maximum(lo-xyz, xyz-hi)), axis=-1)
 
 
-def check(spec, pose_index=None):
+def check(spec, pose_index=None, rf_cables=None, rf_clips=None, curve_count=4001):
     fit = json.loads((BASE/'antenna-fit.json').read_text())['scenarios'][2]
     motion = json.loads((BASE/'retention-checks.json').read_text())
     pose = motion['cable_motion']['cases'][spec['nominal_pose_index'] if pose_index is None else pose_index]
@@ -40,7 +40,13 @@ def check(spec, pose_index=None):
     if sha(ROOT/geom['source']) != geom['source_sha256']:
         raise ValueError('Native pad geometry belongs to a different PCB')
     pads={p['pin']:p for p in geom['pads'] if p['ref']=='J3'}
-    rf = [spline(x['control_points_mm'], 4001) for x in pose['cables']]
+    cables = pose['cables'] if rf_cables is None else rf_cables
+    clips = fit['clips'] if rf_clips is None else rf_clips
+    if [c['name'] for c in cables] != ['LTE', 'GNSS']:
+        raise ValueError('Expected both RF cable identities in assembly order')
+    if [c['name'] for c in clips] != [c['name'] for c in fit['clips']]:
+        raise ValueError('Expected all four RF guide identities in assembly order')
+    rf = [spline(x['control_points_mm'], 4001) for x in cables]
     trees = [cKDTree(x[0]) for x in rf]
     rf_radius = p['cable_model']['diameter_mm']/2 + p['cable_model']['centerline_position_allowance_mm']
     solids = sum((list(x) for x in retention_solids(p,r)), [])
@@ -54,14 +60,15 @@ def check(spec, pose_index=None):
     add('PCB strip covers the complete bonded length',spec['wire']['pcb_strip_mm']-spec['wire']['strip_length_tolerance_mm']-spec['wire']['free_route_position_allowance_mm'],spec['joints']['pcb_bonded_length_min_mm'])
     curves = []
     for wi, w in enumerate(spec['wires']):
-        c = evaluate(w['controls_mm'])
+        c = evaluate(w['controls_mm'],curve_count)
         curves.append(c)
         xyz = c['xyz']; step = c['travel_bound']; nominal, bare = physical_radii(c,spec['wire'])
         radius = nominal + spec['wire']['free_route_position_allowance_mm'] + step/2
         label = w['colour']
         self_gap=curve_separation(xyz,xyz,c['arc_lower'],3.)-spec['wire']['outside_diameter_max_mm']-2*spec['wire']['free_route_position_allowance_mm']-step
         add(label+' nonlocal self clearance',self_gap,spec['minimum_gap_mm'])
-        add(label+' continuous bend radius lower bound', c['radius_lower'], spec['wire']['minimum_bend_radius_mm'])
+        bend=certify_radius(w['controls_mm'],c,spec['wire']['minimum_bend_radius_mm'])
+        add(label+' continuous bend radius lower bound', bend['radius_lower_mm'], spec['wire']['minimum_bend_radius_mm'])
         gaps=[]
         for part in fit['parts']:
             if part['ref']=='J3':
@@ -87,7 +94,7 @@ def check(spec, pose_index=None):
         # The charge leads do not occupy the RF bores. Keep the entire clip
         # block as an obstacle, including the 0.1 mm CAD roof overlap, rather
         # than accidentally treating an unmodelled guide as free space.
-        for clip in fit['clips']:
+        for clip in clips:
             low = np.array(clip['low'])
             high = np.array(clip['high']) + [0, 0, .1]
             gap = float((point_box_distance(xyz, low, high)-radius).min())
@@ -143,7 +150,7 @@ def check(spec, pose_index=None):
         add(label+' bonded conductor within solder-height envelope',
             spec['joints']['pcb_fillet_height_max_mm']-(float(bonded[:,2].max())+joint_radius-board_top),0)
         rows.append(dict(colour=label,length_interval_mm=[float(c['arc_lower'][-1]),float(c['arc_upper'][-1])],
-                         continuous_radius_lower_mm=c['radius_lower'],travel_bound_mm=step,
+                         continuous_radius_lower_mm=bend['radius_lower_mm'],bend_bound_evaluation_points=bend['evaluation_points'],clearance_evaluation_points=len(c['xyz']),travel_bound_mm=step,
                          component_limiting=limiting,rf_gaps=rfgaps,mechanical_limiting=m,
                          strip_lengths_mm=[spec['wire']['terminal_strip_mm'],spec['wire']['pcb_strip_mm']]))
     pair=cKDTree(curves[0]['xyz']).query(curves[1]['xyz'])[0].min()
@@ -159,6 +166,7 @@ def check(spec, pose_index=None):
            ROOT/'scripts/check_thermal_assembly.py',ROOT/'scripts/thermal_cable_geometry.py',ROOT/'scripts/antenna_cable_geometry.py',geom_path,ROOT/geom['source']]
     return dict(result=('NOMINAL_ROUTE_SCREEN_PASS' if pose_index is None else 'POSE_ROUTE_SCREEN_PASS') if all(x['pass_'] for x in checks) else 'HOLD',
                 evaluated_pose=pose['pcb_pose_mm'], evaluated_controls=[w['controls_mm'] for w in spec['wires']],
+                evaluated_rf_controls=[c['control_points_mm'] for c in cables], evaluated_rf_clips=clips,
                 inputs={str(path.relative_to(ROOT)):sha(path) for path in paths},checks=checks,wires=rows,
                 nominal_wire_only_resistance_ohm_at_20C=resistance,
                 wire_only_sensitivity=[dict(current_A=i,drop_V=i*resistance,dissipation_W=i*i*resistance) for i in [.1,.35,.5]],

@@ -65,7 +65,7 @@ plating and physical ingress remain unqualified.
 **Internal charging wires are still HOLD.** The new
 [r02 candidate](../assembly/internal-charge-r02/README.md) includes both nominal
 routes, stripped ends and joint envelopes, with 49 geometry checks, two closed
-wire meshes, three CAD controls and nine regressions. Only the internal wires
+wire meshes, three CAD controls and ten regressions. Only the internal wires
 change to Alpha 2841/7 30 AWG; external dock wiring is unchanged.
 
 The first movement proposal fails: one of 27 poses passes, and other poses require
