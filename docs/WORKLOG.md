@@ -863,3 +863,13 @@ test or physical water/dust qualification was performed.
   Next implement restraint/forming and continuous/installation motion. Supplier,
   factory, powered/RF and water/dust acceptance are still open; no order or
   supplier message was sent.
+
+## 2026-10-26 — Primary Turkcell LTE-M evidence
+
+- Inspected Turkcell's 2025 Form 20-F, including the rendered network-evolution
+  page. The operator states that LTE-M and NB-IoT are available on request
+  throughout its 4.5G footprint and lists mobile tracking applications.
+- Added the exact page and PDF identity to the connectivity evidence. This
+  supports the nRF9151 prototype choice; it does not establish subscription
+  activation, route coverage, completed-device acceptance or measured energy.
+  The controlled local-SIM test remains open. No operator was contacted.
