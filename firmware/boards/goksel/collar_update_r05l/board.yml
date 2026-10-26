@@ -1,0 +1,8 @@
+board:
+  name: collar_update_r05l
+  full_name: Collar r05l with signed dual-slot updates
+  vendor: others
+  socs:
+    - name: nrf9151
+      variants:
+        - name: ns

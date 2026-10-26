@@ -1,0 +1,16 @@
+/dts-v1/;
+#include <nordic/nrf9151_laca.dtsi>
+#include <nordic/nrf91xx_partition.dtsi>
+
+/ {
+    model = "Collar r05l immutable bootloader";
+    compatible = "goksel,collar-r05l";
+    chosen {
+        zephyr,sram = &sram0_s;
+        zephyr,flash = &flash0;
+        zephyr,code-partition = &boot_partition;
+        zephyr,sram-secure-partition = &sram0_s;
+        zephyr,sram-non-secure-partition = &sram0_ns;
+    };
+};
+/* No external GPIO, UART or bus is initialized by the bootloader. */
