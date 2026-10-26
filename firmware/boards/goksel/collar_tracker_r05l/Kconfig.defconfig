@@ -1,0 +1,12 @@
+if BOARD_COLLAR_TRACKER_R05L_NRF9151_NS
+
+config BUILD_WITH_TFM
+	default y
+
+config TFM_FLASH_MERGED_BINARY
+	default y
+
+config USE_DT_CODE_PARTITION
+	default y
+
+endif

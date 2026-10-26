@@ -1,0 +1,109 @@
+/*
+ * Copyright 2024 Embeint Inc
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ *
+ * Default memory partitioning for nRF91 devices.
+ */
+
+/* Standalone prototype: TF-M resets at zero. No MCUboot or OTA image.
+ * Secure and non-secure code each have 256 KiB; 0x80000..0xeffff is reserved.
+ * Secure storage and 32 KiB application NVS retain their SDK addresses.
+ */
+&flash0 {
+    partitions {
+        ranges;
+        #address-cells = <1>;
+        #size-cells = <1>;
+        slot0_partition: partition@0 {
+            compatible = "zephyr,mapped-partition";
+            label = "image-0";
+            reg = <0x0 0x80000>;
+            ranges = <0x0 0x0 0x80000>;
+            #address-cells = <1>;
+            #size-cells = <1>;
+            slot0_s_partition: partition@0 {
+                compatible = "zephyr,mapped-partition";
+                label = "image-0-secure";
+                reg = <0x0 0x40000>;
+            };
+            slot0_ns_partition: partition@40000 {
+                compatible = "zephyr,mapped-partition";
+                label = "image-0-nonsecure";
+                reg = <0x40000 0x40000>;
+            };
+        };
+        tfm_ps_partition: partition@f0000 {
+            compatible = "zephyr,mapped-partition";
+            label = "tfm-ps";
+            reg = <0xf0000 0x4000>;
+        };
+        tfm_its_partition: partition@f4000 {
+            compatible = "zephyr,mapped-partition";
+            label = "tfm-its";
+            reg = <0xf4000 0x2000>;
+        };
+        tfm_otp_partition: partition@f6000 {
+            compatible = "zephyr,mapped-partition";
+            label = "tfm-otp";
+            reg = <0xf6000 0x2000>;
+        };
+        storage_partition: partition@f8000 {
+            compatible = "zephyr,mapped-partition";
+            label = "storage";
+            reg = <0xf8000 0x8000>;
+        };
+    };
+};
+
+&sram0 {
+	/*
+	 * Default SRAM planning when building for nRF91xx with
+	 * ARM TrustZone-M support
+	 * - Lowest 88 kB SRAM allocated to Secure image (sram0_s).
+	 * - Upper 168 kB SRAM allocated to Non-Secure image (sram0_ns).
+	 * Of the memory allocated to the Non-Secure image
+	 * - 40 kB SRAM reserved for and used by the modem library (sram0_ns_modem).
+	 * - 128 kB allocated to the application (sram0_ns_app).
+	 */
+	sram0_s: sram@0 {
+		/* Secure image memory */
+		reg = <0x0 DT_SIZE_K(88)>;
+	};
+
+	sram0_ns: sram@16000 {
+		/* Non-Secure image memory */
+		reg = <0x16000 DT_SIZE_K(168)>;
+		#address-cells = <1>;
+		#size-cells = <1>;
+		ranges = <0x0 0x16000 DT_SIZE_K(168)>;
+
+		sram0_ns_modem: sram0_ns@0 {
+			/* Modem (shared) memory */
+			reg = <0x0 DT_SIZE_K(40)>;
+			#address-cells = <1>;
+			#size-cells = <1>;
+			ranges = <0x0 0x0 0xa000>;
+
+			cpuapp_cpucell_ipc_shm_ctrl: sram0_ns_modem@0 {
+				/* Modem IPC control */
+				reg = <0x0 0x4e8>;
+			};
+
+			cpuapp_cpucell_ipc_shm_heap: sram0_ns_modem@4e8 {
+				/* Modem IPC transmit */
+				reg = <0x4e8 0x2080>;
+			};
+
+			cpucell_cpuapp_ipc_shm_heap: sram0_ns_modem@2568 {
+				/* Modem IPC receive */
+				reg = <0x2568 0x2000>;
+			};
+		};
+
+		sram0_ns_app: sram0_ns@a000 {
+			/* Non-Secure application memory */
+			reg = <0xa000 DT_SIZE_K(128)>;
+		};
+	};
+};

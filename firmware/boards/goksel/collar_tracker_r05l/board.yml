@@ -1,0 +1,8 @@
+board:
+  name: collar_tracker_r05l
+  full_name: Collar tracker r05l cellular application
+  vendor: others
+  socs:
+    - name: nrf9151
+      variants:
+        - name: ns

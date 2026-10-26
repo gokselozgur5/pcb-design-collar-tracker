@@ -1,0 +1,59 @@
+{
+  "extends": "../toolchain-lock.json",
+  "modules": [
+    {
+      "name": "mcuboot",
+      "path": "bootloader/mcuboot",
+      "url": "https://github.com/nrfconnect/sdk-mcuboot",
+      "commit": "8122be0de002ede060d37aa39b2a7f18aecc00c3"
+    },
+    {
+      "name": "mbedtls",
+      "path": "modules/crypto/mbedtls",
+      "url": "https://github.com/nrfconnect/sdk-mbedtls",
+      "commit": "804249ddcdcf78a16f9be760b9ff1f65c2f29d9e"
+    },
+    {
+      "name": "oberon-psa-crypto",
+      "path": "modules/crypto/oberon-psa-crypto",
+      "url": "https://github.com/nrfconnect/sdk-oberon-psa-crypto",
+      "commit": "e8db62ed0fba5028e7ae0eba7b1fb63436ae6416"
+    },
+    {
+      "name": "trusted-firmware-m",
+      "path": "modules/tee/tf-m/trusted-firmware-m",
+      "url": "https://github.com/nrfconnect/sdk-trusted-firmware-m",
+      "commit": "b0d724bc0f2f46a396d59280476ec06fad1d4ecd"
+    },
+    {
+      "name": "tf-psa-crypto",
+      "path": "modules/crypto/tf-psa-crypto",
+      "url": "https://github.com/zephyrproject-rtos/tf-psa-crypto",
+      "commit": "fa92349590a54959ee2efc21b668e5afdb144726"
+    },
+    {
+      "name": "qcbor",
+      "path": "modules/tee/tf-m/qcbor",
+      "url": "https://github.com/nrfconnect/sdk-qcbor",
+      "commit": "bfe7b348dda29783c960d7a9cac05abecc4a22ed"
+    },
+    {
+      "name": "t_cose",
+      "path": "modules/tee/tf-m/t_cose",
+      "url": "https://github.com/nrfconnect/sdk-t_cose",
+      "commit": "024c4298f84a82409e0ac0e1d5c2e8ee22cca901"
+    },
+    {
+      "name": "zcbor",
+      "path": "modules/lib/zcbor",
+      "url": "https://github.com/zephyrproject-rtos/zcbor",
+      "commit": "9164bd18dcd88ff9d9ef98279501fc1093571017"
+    },
+    {
+      "name": "cjson",
+      "path": "modules/lib/cjson",
+      "url": "https://github.com/nrfconnect/sdk-cjson",
+      "commit": "c6af068b7f05207b28d68880740e4b9ec1e4b50a"
+    }
+  ]
+}
