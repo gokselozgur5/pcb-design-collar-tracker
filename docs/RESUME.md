@@ -391,7 +391,7 @@ Repository verification checks saved evidence and hashes. It does not rerun KiCa
 JLC, RF tests, SMT assembly or powered hardware tests. State that distinction.
 
 
-## Current charging dock: r13
+## Preserved charging dock: r13
 
 Read `mechanical/swim-r13-charge-dock/README.md` and
 `assembly/charge-harness-r01/README.md`. Actual Mill-Max 0962, Alpha 2843/7,
@@ -418,3 +418,32 @@ force, not the maximum across the whole tolerance stroke. The fuse is not a 500m
 current limiter, and the USB cable does not implement enumeration. No production
 power-path approval exists. Supplier-message approval is still unanswered; no
 message or order has been sent. Firmware and physical acceptance remain unfinished.
+
+## Current charging-wire geometry: r14
+
+Read `mechanical/swim-r14-wire-motion/README.md` and its drawing. The r13 straight
+pigtail layout was not adequate for the conservative contact movement. r14 defines
+40.95 +/- 0.10mm free insulated spans with 0.3858mm minimum remaining slack and a
+8.6961mm continuous radius bound. Full interval envelopes include endpoint, cut
+length and route allowances; the new housing clears them and the old one fails.
+The external dock is now 94 x 36 x 16mm. Wearable meshes and PCB are unchanged.
+
+```sh
+python3 scripts/verify_dock_wire_motion.py
+python3 -m unittest discover -s tests -p test_dock_wire_motion.py -v
+python3 scripts/package_current_review.py --verify
+```
+
+`release/r14-current-review/review.pdf` is the current three-page review.
+`release/collar-tracker-r05l-r14-review.zip` contains the same all-green Gerber,
+native PCB source, candidate BOM/CPL, both JLC reports, current mapped meshes,
+the r14 evidence and the unsent pack request. This is a review selection, not
+a complete repository checkout or a working-device manufacturing release.
+
+Do not interpret the wire curve as an implemented endpoint clamp. Its end planes
+and loop family must be controlled by a factory fixture/strain relief; a free wire
+can buckle outside that family. Crimp insertion and splice overlap are excluded
+from the 40.95mm dimension. Cut preparation, pull/cycle life and dock holding are
+still unresolved. Catalogue research in ignored references did not select a
+torsion spring, compression spring or purchased latch. Continue from the existing
+geometry; do not claim one of those mechanisms was implemented.

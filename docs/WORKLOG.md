@@ -686,3 +686,33 @@ holding, pin-motion wire slack, crimp/splice/sleeve process, internal lugs/J3 ro
 source/fault behavior, pack supplier/lead exit, firmware and physical acceptance
 remain open. No native KiCad process, repeated DFM upload, supplier message,
 order/payment or physical test was performed.
+
+## 2026-10-26 — r14 constant-length dock-wire geometry
+
+Replaced the r13 rear-seated straight pigtails with a bounded, constant-length
+wire family covering the 2.1421mm conservative contact movement. At the assigned
+endpoint/cut limits, residual slack is at least 0.3858mm and the continuous
+bend-radius lower bound is 8.6961mm against the wire's 8.382mm requirement.
+The external dock grows to 94 x 36 x 16mm; PCB, wearable parts, seals and contact
+seats are unchanged. No unused spring/latch catalogue part was selected.
+
+42 analytical checks and twelve regressions pass. The complete interval wire
+envelope, stationary harness, seated pins and wearable clear the housing in CAD;
+the old housing intersects the envelope by 219.5552mm3. The aligned reverse key
+still blocks with 3.7950mm3 intersection. Both new housing meshes are closed and
+have clean CAD diagnostics. This is a geometric study: fixed-end restraint,
+forming/cut process, repeated flex and dock holding remain unfinished.
+
+Prepared one current review package with the unchanged all-green Gerber, native
+PCB source, candidate assembly files, both actual JLC reports, revision-mapped
+wearable meshes, new dock evidence and the unsent battery request. The old review
+packages remain preserved. The complete tracker is not ready for a working-device
+order, and no powered/RF/physical ingress result is claimed.
+
+The actual dock previews and all three review PDF pages were inspected. The
+19-file r14 checkpoint, 50-file review archive and full 30-section saved handoff
+pass; archive SHA256 is
+`17d6c1bcd7c9cb80dcb81152aed5759dd90f17a78eb1396d2eba5fdcbf9193a0`.
+Changed-source syntax/JSON, 66 local links, 22 public text credential-pattern
+screens and whitespace checks pass. No native KiCad process or repeated JLC
+upload was needed. Supplier approval and physical qualification remain open.

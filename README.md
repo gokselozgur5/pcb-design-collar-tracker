@@ -14,8 +14,8 @@ segments are preserved. The board has 87 footprints, including 81 fitted referen
 with 44 exact candidate MPNs. The revised carrier clears the additional components.
 
 [Gerber ZIP](experiments/power-r05l-charge-interlock/evidence/collar-tracker-05l-charge-final4-40x32-dfm.zip) ·
-[Two-page PCB/enclosure review](release/r08-assembly-review/review.pdf) ·
-[Review bundle](release/collar-tracker-r05l-r08-review.zip) ·
+[Current three-page review](release/r14-current-review/review.pdf) ·
+[Current review bundle](release/collar-tracker-r05l-r14-review.zip) ·
 [JLC report 1](experiments/power-r05l-charge-interlock/evidence/jlc-check1/report.pdf) ·
 [JLC report 2](experiments/power-r05l-charge-interlock/evidence/jlc-check2/report.pdf)
 
@@ -59,7 +59,7 @@ checks cover all 85 components, full upward pack/sensor travel, two changed mesh
 and seven CAD controls. Minimum pack size/contact regions, actual strength and
 lead routing still require supplier and physical qualification.
 
-The latest [r13 charging dock](mechanical/swim-r13-charge-dock/README.md) replaces
+The preserved [r13 charging dock](mechanical/swim-r13-charge-dock/README.md) replaces
 an empty alignment block with actual spring contacts, flange stops, fuse/wire
 space and a jacket-retention bay. Its [drawing](mechanical/swim-r13-charge-dock/dock-sheet.pdf)
 and [harness definition](assembly/charge-harness-r01/README.md) identify the pinout,
@@ -67,6 +67,14 @@ source dimensions and remaining process gates. The taller external key blocks th
 aligned reversed approach before the earliest calculated contact. Holding force,
 skewed approaches, power/fault behavior and internal J3 wiring remain unqualified.
 The already all-green PCB is unchanged.
+
+The latest [r14 wire-movement study](mechanical/swim-r14-wire-motion/README.md)
+replaces the straight dock pigtails with a constant-length family covering the
+full conservative contact movement. Its continuous bend-radius bound is 8.6961mm;
+the complete interval envelope clears the new housing and intersects the old one.
+The external dock grows to 94 x 36 x 16mm; the wearable is unchanged. A fixed-end
+clamp/forming process, dock holding and physical flex acceptance remain open.
+The current review package maps all reused parts to their exact source revisions.
 
 [STATUS](docs/STATUS.md) records the exact source and next action. The earlier r05k,
 r04i and all prior tested files remain preserved. Upload only the Gerber ZIP to PCB

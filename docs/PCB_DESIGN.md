@@ -434,3 +434,25 @@ is not holding-force evidence. A fuse marking is not a current-regulation functi
 Imported STLs can be in a print/export frame. Read the generating transformation
 before performing assembly intersections. Preserve a failed frame check as a setup
 error rather than modifying a correct part until the wrong frame turns green.
+
+### Wire movement and evidence boundaries
+
+If an electrical contact can move in its mount, a rear-seated straight wire is not
+a complete harness layout. Check both the shortest and longest endpoint spans
+against controlled cut length. Extra wire can create an excessive bend or collide
+with the housing, so a minimum-length check alone is insufficient.
+
+Distinguish a constant-length curve family from an implemented restraint. A free
+wire does not automatically follow the mathematical family. State the clamp,
+forming fixture, cut preparation and physical cycling work separately. A static
+manufacturer bend limit is not a cyclic-flex-life rating.
+
+For continuous clearance claims, use interval envelopes or another explicit bound;
+rendered/sample poses are illustrative. Bound numerical integration error before
+using it to assert a dimensional limit. Include controls that reject the old
+housing, stretched straight wire, excessive slack and overly tight curves.
+
+When a review uses successor mechanical parts with an unchanged PCB, publish a
+single current package with an exact part/revision map. Keep earlier packages
+immutable and make the remaining manufacturing/physical gates visible in the
+current drawing. A higher test count is not evidence that those gates closed.

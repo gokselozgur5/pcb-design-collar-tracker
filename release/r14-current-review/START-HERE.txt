@@ -1,0 +1,27 @@
+COLLAR TRACKER — r05l PCB / r14 CURRENT REVIEW
+
+Open review.pdf first. Upload only gerber.zip to PCB DFM, not this outer ZIP.
+The unchanged Gerber passed two actual JLC PCB DFM runs at 0 Danger /
+0 Warning / 455 Good each. SMT analysis was off.
+
+This is a review package, NOT an order release or a complete working device.
+PCB DFM, mechanical fit, SMT assembly, functional operation and IP68 are
+separate acceptance steps. No powered / RF / physical ingress test exists.
+
+Current wearable part sources:
+  body: r13 (r12 cradle plus r13 external key)
+  carrier/cap: r12
+  lid, retainer, boot, contacts, contact seals and magnet plugs: r11
+  external dry-dock halves: r14
+STLs use their documented export frames; they are not pre-positioned
+assembly files. Use the repository SCAD sources for assembly coordinates.
+
+Remaining: pack supplier approval and lead exit; dock holding and wire-end
+restraint; internal lugs/J3 wiring; factory terminations and source/fault
+behavior; sourcing/SMT; firmware; assembled powered/RF/water/dust tests.
+The battery enquiry remains unsent. No order/payment is authorized.
+
+Editable source and reproducible verification:
+https://github.com/gokselozgur5/pcb-design-collar-tracker
+Read docs/STATUS.md and docs/RESUME.md. This ZIP is a review selection,
+not a replacement for a complete repository checkout.
