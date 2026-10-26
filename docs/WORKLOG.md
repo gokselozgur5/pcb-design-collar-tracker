@@ -1251,3 +1251,12 @@ trailing-space/blank-line checks; no PCB/SMT rule or uploaded hash changed.
   Next requires complete terminal/model coverage, stencil/reflow and board-edge
   handling acceptance, including J6. Supplier messages remain set aside; no
   order, payment, new native revision, firmware or mechanical work occurred.
+
+## 2026-10-26 — Correct the resume command's stale assembly summary
+
+The preflight already checked r03 but its printed summary still claimed an
+unselected Q1 and only 80 placements. It now reads the verified r03 counts and
+names the active r05m source, rejected r04 diagnostic and actual remaining SMT
+gates. Deferred mechanics and supplier messaging are identified correctly.
+Executed `scripts/resume.py`: full preflight and current-summary assertions pass,
+with empty stderr. No CAD or manufacturing-file bytes changed.

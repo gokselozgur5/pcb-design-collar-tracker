@@ -15,13 +15,15 @@ print(f'Project: {root}')
 print('Baseline: 0.3.4 saved PCB DFM evidence verified; not production acceptance.')
 print('Preserved PCB: r04i native/geometry evidence and two unchanged-rule JLC PCB passes verified.')
 candidate = result['charge_candidate']
-print(f"Active: r05l hardware charge interlock; {candidate['native_drc']['unconnected_items']} open connections; "
-      f"{len(candidate['supplier_records'])} verified same-ZIP JLC PCB passes.")
+print(f"Active: r05m ROHM Q1 revision, unchanged r05l copper; {candidate['native_drc']['unconnected_items']} open connections; "
+      f"{len(candidate['supplier_records'])} preserved same-ZIP JLC PCB passes.")
 print(f"Other native violations/warnings: {candidate['native_drc']['violations']}; "
       f"schematic mismatches: {candidate['native_drc']['schematic_parity']}.")
 print('Parts: 81 fitted references / 44 exact candidate MPNs; original 71 footprints and 27 RF segments preserved.')
-print('PCBA r02: 43/44 MPNs; 13 angle corrections plus J1/J2 model-origin correction; actual preview still has 80/81 references.')
-print('Next manufacturing: Q1 sourcing, missing J6 model and factory datum confirmation, then complete placement/SMT review. No alternate Q1 selected.')
+pcba = result['pcba_rohm']
+print(f"PCBA r03: {pcba['mpns']} exact MPNs and {pcba['verified_placements']} placements verified; Q1 is {pcba['q1']}.")
+print('U.FL diagnostic r04 rejected: removing the model-origin correction worsens overlap and adds a lead-to-hole finding. Keep r03 CPL.')
+print('Next manufacturing: complete SMT terminal/model coverage, stencil/reflow and board-edge handling acceptance. J6 pin coverage remains incomplete; no order release.')
 print('Power: tolerance/TCR/leakage and typical-capacitance screens pass conditionally; powered and RF acceptance remain HOLD.')
 print('Mechanical: r08 adds CAPH/ZETA prototype antennas, two nominal cable routes and four lid guides; 85 envelopes and four thickness cases checked.')
 print('r09 pack/NTC request study raises the shell by 0.4mm; this is not an approved supplier part or a complete harness.')
@@ -38,7 +40,7 @@ print('Cable end datums/tolerances, feed bond, retention and physical thermal be
 print('Charge: independent hot/cold comparators and NAND now drive /CE. Corner model passes conditionally; physical startup/thermal tests remain open.')
 print('Tracker r02: DNS caller deadlines and watchdog/modem recovery; target build and host tests only, no flashing or observed hardware reset.')
 print('Tracker r03: development-signed boot and bounded trial built/tested; no flashing. Further OTA work is deferred behind manufacturing review.')
-print('Next assembly: continuous/installation motion with r19 attachments, released wire shape and adhesion. Supplier-message approval remains pending.')
+print('Deferred assembly: continuous/installation motion with r19 attachments, released wire shape and adhesion. Supplier messaging is set aside.')
 print('Preserved: r04i/swim-r02 review bundle; pack, antennas, assembly and physical qualification remain open.')
 print('Git:')
 sys.stdout.flush()
