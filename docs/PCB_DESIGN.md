@@ -520,3 +520,23 @@ short tight bend in one r18 candidate. Continuous bounds rejected it; refitting
 the curve with control points distributed by arc length produced a tractable
 replacement. A search score, iteration status or convenient representation is
 not geometry acceptance, and static geometry is not physical wire restraint.
+
+### Staking and forming tools
+
+Define the actual substrates carrying an adhesive load. A silicone data sheet
+does not establish adhesion to untreated PTFE, solder mask, a plating finish or
+flux-contaminated joints. Keep each intentional contact explicit; a shared
+insulating block can own two leads, but their electrical separation still needs
+independent evidence. Check both the minimum filled and maximum occupied volumes,
+including the combined placement/service budget.
+
+A shape that clears 27 static poses may still demand deformation after curing.
+Report captured-section displacement instead of treating independently fitted
+curves as a validated elastic motion family. Keep cure, substrate coupons,
+holding force, creep, fatigue and installation acceptance separate from CAD.
+
+Export the actual forming tools. Bound the spline-to-polyline error, account for
+polygon facets and machining allowance, then check the delivered tool against an
+inflated wire witness. Include a physically wrong control. An open-top channel
+helps removal, but does not establish springback, cut-length capability or the
+shape after transfer into the product.

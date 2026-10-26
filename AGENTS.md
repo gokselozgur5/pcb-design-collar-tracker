@@ -72,6 +72,11 @@ uploads to JLC DFM are in scope. Orders, payments and supplier messages are not.
   cable family. A combined result must not mix expanded RF checks with nominal
   power-wire checks. Keep the failing baseline when correcting an omission;
   search scores and sampled curvature do not replace independent continuous bounds.
+- An adhesive envelope is not a qualified strain relief. Name its owning
+  conductors/substrates, retain electrical separation, and do not assume PTFE
+  adhesion. Report deformation demanded by static poses separately from proven
+  material behavior. Forming tools need delivered-solid checks and released-shape
+  acceptance; a numerical route-length tolerance is not a factory cut tolerance.
 - No subagents unless Göksel explicitly requests them.
 
 ## Git and handoff

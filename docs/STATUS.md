@@ -13,6 +13,16 @@ content is English. Run `python3 scripts/resume.py` before making another revisi
 [Published r16 review](../release/r16-current-review/review.pdf) ·
 [Published r16 bundle](../release/collar-tracker-r05l-r16-review.zip)
 
+Latest assembly: [r19 charge-wire support and forming nests](../assembly/internal-charge-r03/README.md)
+and [two-page drawing](../assembly/internal-charge-r03/restraint-sheet.pdf).
+Three insulating staking volumes and two separate bench tools are defined. All
+27 static poses pass 52 added checks; the closest added component gap is 0.22mm.
+Six regressions pass. Physical adhesion, springback, installation and continuous
+motion remain open; the imposed captured-curve change reaches 0.426mm at the
+black PCB lead. This is prototype geometry, not a qualified restraint or release.
+Continue with those actual attachments and the existing r18 routes. The published
+r16 bundle remains preserved; the r19 drawing is a separate current addendum.
+
 Latest battery work: [CT-BAT-001-A request sheet](../assembly/pack-r03/request-sheet.pdf),
 [unsent supplier enquiry](../assembly/pack-r03/supplier-request.txt), and
 [r09 requested-pack fit study](../mechanical/swim-r09-pack-request/README.md).
@@ -78,8 +88,8 @@ meshes, five CAD controls and seven regressions pass. The nominal wire/joint
 assembly and changed GNSS witness clear the actual parts.
 
 Source: `mechanical/swim-r18-charge-clearance/routing.json` and
-`retainer-reliefs.json`. Next implement charge-wire restraint and a forming/
-assembly fixture, then continuous/installation/service behavior. The remaining
+`retainer-reliefs.json`. r19 adds the charge-wire support and forming nests;
+next validate continuous/installation/service behavior with those attachments. The remaining
 bridge needs physical strength/creep acceptance. A numerical fixed length is
 not a production cutting tolerance. The old r02 18/27 and r17 27/27 results and
 the published r16 ZIP remain preserved historical evidence, not complete
@@ -95,7 +105,8 @@ flashed. The shipping LTE/GNSS tracker application and physical tests remain ope
 | Check | Current result |
 |---|---|
 | Factory observation firmware | Actual custom-board build passed; two negative compile controls passed; no flashing or powered test |
-| Integrated cable routes r18 | 27/27 static poses; 82 checks per pose including expanded charge envelopes; retainer reliefs and GNSS/charge routes revised; restraint/continuous movement and physical qualification open |
+| Integrated cable routes r18 | 27/27 static poses; 82 checks per pose including expanded charge envelopes; retainer reliefs and GNSS/charge routes revised; continuous movement and physical qualification open |
+| Internal charge support r19 | Three staking regions and two forming nests; 27/27 static poses and 52 added checks per pose; adhesion, released shape, installation and continuous movement unqualified |
 | Internal harness r02 | Both nominal routes and joints fit; continuous radius bounds 7.438/6.905mm; 18/27 searched static poses pass; upper-pose RF/bend interference and restraint still HOLD |
 | Contact retention r16 | Two custom rear terminals; defined lateral bearing, four meshes and CAD controls; internal harness still HOLD |
 | Board | 40 × 32mm; six Cu layers; 87 footprints |
@@ -153,7 +164,7 @@ clearance control. No supplier part, wire route, adhesive strength or physical
 thermal result is approved by this fit calculation.
 
 **Next independent local step:** close the remaining charging interface: positive
-dock retention or measured magnetic holding, continuous internal J3 wire motion and implemented strain relief,
+dock retention or measured magnetic holding, continuous internal J3 wire motion and qualified r19 support,
 crimp/splice/insulation process and source/fault-current behavior. The r13
 USB cable/fuse/contact selection is a prototype definition, not a qualified power
 path. r15 implements a clamp and assembly fixture, but endpoint slip, pad creep,

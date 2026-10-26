@@ -13,15 +13,24 @@ numerical wire lengths are retained. The prior r17 charge calculation omitted
 these expansion/movement envelopes; its 27/27 result is narrower historical
 evidence. The unchanged old routes fail the expanded screen at every pose.
 
-Continue from r18 to implemented charge-wire restraint, a forming/assembly
-fixture and continuous/installation movement. Validate the remaining frame
-bridge's physical strength/creep. Do not repeat unchanged-byte JLC DFM or
-restart the resolved static search. Complete-device release, factory assembly
-and physical ingress remain HOLD.
+Latest assembly: [r19 charge-wire support](../assembly/internal-charge-r03/README.md)
+defines three insulating staking regions and two open-top forming nests. All 27
+poses pass the added static volume checks. The two-page drawing is
+`assembly/internal-charge-r03/restraint-sheet.pdf`. These are prototype geometry;
+holding force and actual motion are unqualified.
+
+Continue with continuous/installation movement using the r19 attachments, released
+wire shape and physical adhesive/frame qualification. The black PCB captured
+section changes by up to 0.426mm across the independent r18 poses; a static-volume
+pass does not prove that motion can occur with the cured support. Do not repeat
+unchanged-byte JLC DFM or restart the resolved static search. Complete-device
+release, factory assembly and physical ingress remain HOLD.
 
 ```sh
 python3 scripts/verify_charge_thermal_clearance.py
 .venv-dfm/bin/python -m unittest discover -s tests -p test_charge_thermal_clearance.py -v
+python3 scripts/verify_charge_restraint.py
+.venv-dfm/bin/python -m unittest discover -s tests -p test_charge_restraint.py -v
 ```
 
 ## Open the project

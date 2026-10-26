@@ -898,3 +898,38 @@ test or physical water/dust qualification was performed.
   factory/powered/RF/ingress qualification remain open. PCB/JLC, firmware and
   published review archives are unchanged. No supplier message, order, payment,
   flashing or physical test occurred.
+
+
+## 2026-10-26 — r19 internal wire support and forming tools
+
+Added a shared insulating J3 staking volume and two terminal staking volumes on
+the preserved r18 routes. The captured bare sections, actual owning substrates,
+combined placement/service allowance and trial cure/handling process are explicit.
+PTFE adhesion is not relied on. The changed static geometry passes 27/27 poses
+with 52 added checks per pose; the nearest added component gap is 0.22mm at R6.
+Six regression tests reject the prior oversized volume/retainer corner, underfill,
+missing reliefs and invalid ownership/physical claims.
+
+Exported two separate labelled forming nests, their full-radius fit witnesses and
+a two-page reviewed drawing. Seven delivered meshes pass the unchanged closed/
+oriented topology check. Three empty CAD intersections and three positive failure
+controls pass. Minimum floors are 2.0mm; conservative tool clearances are
+0.072991mm red and 0.045949mm black after assigned tool tolerance and continuous
+curve/facet bounds. Manifold 3.5.4 builds the solids; OpenSCAD produces labels and
+renders the delivered models. The package pins its extra dependency. Official Dow
+and historical NASA references were inspected; links/hashes are published and
+PDF caches stay local.
+
+The final r19 verifier and full saved handoff pass (39 top-level result keys, not
+39 tests). All 49 local Markdown links checked, syntax and whitespace checks pass.
+Three final previews and both PDF pages were inspected. The r19 checkpoint is
+frozen. Resume output now points to r16's preserved review and the r19 addendum.
+No PCB/Gerber/firmware/r16 bundle change, new KiCad/JLC run, supplier message, order,
+flashing or physical qualification occurred.
+
+Next: validate continuous and installation motion with the actual attachments.
+The black PCB captured section demands up to 0.426mm change across independent
+static poses; cured-support compliance is not established. Qualify released shape,
+adhesion/creep/fatigue and frame bridges, then continue dock holding/source faults,
+approved pack leads, shipping firmware and factory/powered/RF/ingress tests.
+The battery enquiry remains unsent; full-device release remains HOLD.
