@@ -1,0 +1,188 @@
+{
+  "result": "BUILD_PASS",
+  "board": "collar_tracker_r05l/nrf9151/ns",
+  "artifacts": {
+    "zephyr/zephyr.elf": {
+      "bytes": 2018384,
+      "sha256": "2486fc4f055a4d3050f9312b6803abf8320988de3d34f9487d435b76858ddf96"
+    },
+    "zephyr/zephyr.hex": {
+      "bytes": 298352,
+      "sha256": "378d3cc53caab8bd124039db2e192b3bee7fb239301f14b3d0a69f1288967a98"
+    },
+    "zephyr/zephyr.dts": {
+      "bytes": 52997,
+      "sha256": "26dc779dd1b995bbf04e5c3b9b91cd592d20045e8a6c669e5eb9d26af659fcaa"
+    },
+    "zephyr/.config": {
+      "bytes": 73687,
+      "sha256": "c32c370e500eb8290078bed2a63a22c87ad8a3e7a32e88823b68771ba396880d"
+    },
+    "zephyr/tfm_merged.hex": {
+      "bytes": 457536,
+      "sha256": "38f87835aba1709f31c14800926eb89054842885d4b69931a93f28fa7cddcce8"
+    },
+    "tfm/bin/tfm_s.elf": {
+      "bytes": 1037524,
+      "sha256": "e5cc7afd7a4e8b8453a29cf056f41767a1df39319f469fc96689bec8b3c48859"
+    }
+  },
+  "image_inspection": {
+    "result": "PASS",
+    "merged_hex": "zephyr/tfm_merged.hex",
+    "merged_sha256": "38f87835aba1709f31c14800926eb89054842885d4b69931a93f28fa7cddcce8",
+    "reset_vectors": {
+      "secure": {
+        "address": 0,
+        "initial_sp": 536872952,
+        "reset_handler": 14801
+      },
+      "application": {
+        "address": 262144,
+        "initial_sp": 537023792,
+        "reset_handler": 274565
+      }
+    },
+    "storage": {
+      "address": 1015808,
+      "bytes": 32768,
+      "sectors": 8
+    },
+    "compiled_contract": [
+      "CONFIG_BUILD_WITH_TFM=y",
+      "CONFIG_TRUSTED_EXECUTION_NONSECURE=y",
+      "CONFIG_USE_DT_CODE_PARTITION=y",
+      "CONFIG_NRF_MODEM_LIB=y",
+      "CONFIG_LTE_NETWORK_MODE_LTE_M_GPS=y",
+      "CONFIG_NVS_DATA_CRC=y",
+      "# CONFIG_SERIAL is not set",
+      "# CONFIG_TFM_SECURE_UART is not set",
+      "# CONFIG_TFM_DUMMY_PROVISIONING is not set"
+    ],
+    "programmed_storage_bytes": 0,
+    "signed_boot": false,
+    "ota": false,
+    "flashed": false,
+    "physical_test": false
+  },
+  "compiled_inputs": {
+    "firmware/boards/goksel/collar_tracker_r05l/Kconfig.collar_tracker_r05l": "4e179db61f67d1fae00f0328e181b10feba649e0175298e4873357aef22c3b52",
+    "firmware/boards/goksel/collar_tracker_r05l/Kconfig.defconfig": "9cf640f0e7e80fa46925cc5d9dd785f982a277dc4a65ba681b320069503b5b3f",
+    "firmware/boards/goksel/collar_tracker_r05l/board.yml": "c2e6fa636fcb36b2b1b7ade29a7c6e5683eb123348d009a310e9736d02cf3d8e",
+    "firmware/boards/goksel/collar_tracker_r05l/collar-memory.dtsi": "c214ec171f5bb92f14025b895e218cb0f29f783021fc5f725b7607cdae803a77",
+    "firmware/boards/goksel/collar_tracker_r05l/collar_tracker_r05l_nrf9151_ns.dts": "0e614e7c38ea3ff7b31cdd5a70108aedf5e4904e4279750229f7ac155fdab2f2",
+    "firmware/boards/goksel/collar_tracker_r05l/collar_tracker_r05l_nrf9151_ns_defconfig": "7e64177e7eff71faf8445b0f0f5384de3c92f1b5975ef7d1edd9df147ff48226",
+    "firmware/dts/bindings/goksel,collar-r05l-io.yaml": "cf15691a203f09a1942e748388b90d1b81d2e8552d34105522b3e58881ad796c",
+    "firmware/factory/src/board_contract.h": "e0b9d0b447b36bfc56c131f30ef09d343bff5b87a99638b59796ae758ef5afcf",
+    "firmware/tracker/CMakeLists.txt": "b23b91db782a19e43a32263b843f866e0dcd64e8d701b11deff3b90d9f435266",
+    "firmware/tracker/Kconfig": "1dd52bc1bbb5043338efb945d541c70aee53cfd44357227be85f0d0d646213de",
+    "firmware/tracker/prj.conf": "69c1651eb069e246ac2e05e07eb2d36bc6248ece514d353b0faf5450c31b816b",
+    "firmware/tracker/src/main.c": "741ab2b3f6aab2554c2f7f78e25c5798da42d99029c2de5f2725f88eb42b62cb",
+    "firmware/tracker/src/outbox.c": "86482f57e96d4acf313b57c7476d46efa72761f94040b1668da7fa0dc94198a4",
+    "firmware/tracker/src/outbox.h": "200f13261e0108a01e9590bb4cc5bfc5b52da4ead13d8f2b8f73e3826d1fdc1b",
+    "firmware/tracker/src/uplink.c": "a4caa6aa8a07690be987c80f691d33f8a2d2918e7ad3799cc6a0b564e91d99d9",
+    "firmware/tracker/src/uplink.h": "6d23193481819166a724db26fd34f68a986d0cce23f8b0f0bce91b4947553d3c"
+  },
+  "flashed": false,
+  "physical_test": false,
+  "manufacturing_release": false,
+  "compiler_exit": 0,
+  "native_board_check": {
+    "result": "PASS",
+    "schematic_sha256": "0a8d89c01db6d0211a9048467b728214da175750f6b670ebf3d6ffa9adeefb0e",
+    "netlist_sha256": "4c88b83f1af96f3924d63761ab09681049cce83cc0b364aaa669a27b19e9be28",
+    "signals": {
+      "/I2C_SDA": {
+        "package_pin": "56",
+        "gpio": "P0.00"
+      },
+      "/I2C_SCL": {
+        "package_pin": "57",
+        "gpio": "P0.01"
+      },
+      "/ACC_INT": {
+        "package_pin": "58",
+        "gpio": "P0.02"
+      },
+      "/HEALTH_EN": {
+        "package_pin": "68",
+        "gpio": "P0.09"
+      },
+      "/CHG_STAT": {
+        "package_pin": "69",
+        "gpio": "P0.10"
+      },
+      "/CHG_FAULT": {
+        "package_pin": "70",
+        "gpio": "P0.11"
+      },
+      "/FG_ALERT": {
+        "package_pin": "73",
+        "gpio": "P0.13"
+      }
+    },
+    "accelerometer_i2c_address": "0x19",
+    "fuel_gauge_i2c_address": "0x36",
+    "physical_test": false
+  },
+  "memory_usage_bytes": {
+    "application": {
+      "flash": 106020,
+      "ram": 27000
+    },
+    "tfm": {
+      "flash": 64816,
+      "ram": 45388
+    },
+    "modem_shared_reserved": 40960
+  },
+  "captured_utc": "2026-10-26",
+  "unresolved": [
+    "No powered board or modem/SIM test",
+    "No physical power-cut test",
+    "No application DNS deadline or watchdog recovery",
+    "No provisioning or signed update integration",
+    "No approved battery or ingress qualification"
+  ],
+  "inputs": {
+    "firmware/boards/goksel/collar_tracker_r05l/Kconfig.collar_tracker_r05l": "4e179db61f67d1fae00f0328e181b10feba649e0175298e4873357aef22c3b52",
+    "firmware/boards/goksel/collar_tracker_r05l/Kconfig.defconfig": "9cf640f0e7e80fa46925cc5d9dd785f982a277dc4a65ba681b320069503b5b3f",
+    "firmware/boards/goksel/collar_tracker_r05l/LICENSE.Apache-2.0": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+    "firmware/boards/goksel/collar_tracker_r05l/UPSTREAM.md": "d104980910fd6f3dc9efeee89b49f8d01d3f5935a7fb2a899c1b2762f4509603",
+    "firmware/boards/goksel/collar_tracker_r05l/board.yml": "c2e6fa636fcb36b2b1b7ade29a7c6e5683eb123348d009a310e9736d02cf3d8e",
+    "firmware/boards/goksel/collar_tracker_r05l/collar-memory.dtsi": "c214ec171f5bb92f14025b895e218cb0f29f783021fc5f725b7607cdae803a77",
+    "firmware/boards/goksel/collar_tracker_r05l/collar_tracker_r05l_nrf9151_ns.dts": "0e614e7c38ea3ff7b31cdd5a70108aedf5e4904e4279750229f7ac155fdab2f2",
+    "firmware/boards/goksel/collar_tracker_r05l/collar_tracker_r05l_nrf9151_ns_defconfig": "7e64177e7eff71faf8445b0f0f5384de3c92f1b5975ef7d1edd9df147ff48226",
+    "firmware/dts/bindings/goksel,collar-r05l-io.yaml": "cf15691a203f09a1942e748388b90d1b81d2e8552d34105522b3e58881ad796c",
+    "firmware/evidence/tracker-r01/build.txt": "5193b0a7328b2eed1dfab3edf68f46802f48439930df220812fa4c4abbdfa94a",
+    "firmware/evidence/tracker-r01/compiled.config": "c32c370e500eb8290078bed2a63a22c87ad8a3e7a32e88823b68771ba396880d",
+    "firmware/evidence/tracker-r01/compiled.dts": "26dc779dd1b995bbf04e5c3b9b91cd592d20045e8a6c669e5eb9d26af659fcaa",
+    "firmware/evidence/tracker-r01/image-controls.json": "02db0581e7e010ca7098506ed82bebce14a61c3cf0847e050fc07f9af482258e",
+    "firmware/evidence/tracker-r01/outbox-tests.txt": "8d5abf651886bcd49eda20b3d6d61665c847e98adb134871e97b369bfa891c65",
+    "firmware/evidence/tracker-r01/receiver-tests.txt": "665d4635d2cc1cbd3fae144674105b4ca8b82b65ff7de930f9ba83a285aa5515",
+    "firmware/evidence/tracker-r01/tests.json": "994848d7e68e2b010604f9279df02279fa5458b89b4d7a488fb2d9c36470b744",
+    "firmware/factory/src/board_contract.h": "e0b9d0b447b36bfc56c131f30ef09d343bff5b87a99638b59796ae758ef5afcf",
+    "firmware/receiver/README.md": "87e4e39421f8a3d4be897b8b06d2838766ea5f3ce2c3b0c80d4588d20b26128c",
+    "firmware/receiver/receiver.py": "6d334ac3585197fd8c83b15fea5823540755ee2456a490f037ee685d98e5eaf8",
+    "firmware/receiver/test_receiver.py": "36b9bd25919ad50ff58217bd3b4ea86a9a295840fe094e27c33c7a3a136d6b77",
+    "firmware/toolchain-lock.json": "288621abc680673553bd6e1907c85c9bf0ce081f6391a05c4acf44398dd7ac7b",
+    "firmware/tracker/CMakeLists.txt": "b23b91db782a19e43a32263b843f866e0dcd64e8d701b11deff3b90d9f435266",
+    "firmware/tracker/Kconfig": "1dd52bc1bbb5043338efb945d541c70aee53cfd44357227be85f0d0d646213de",
+    "firmware/tracker/README.md": "77d41e0fa2c91debedafa18a309a47ecdce0e86fdcce3738d8a039652e9572ba",
+    "firmware/tracker/prj.conf": "69c1651eb069e246ac2e05e07eb2d36bc6248ece514d353b0faf5450c31b816b",
+    "firmware/tracker/python-requirements.lock": "5aa8ee667ac85b97b611e20a8e509173f8e0a7c7fb35408369609a8478c8444a",
+    "firmware/tracker/src/main.c": "741ab2b3f6aab2554c2f7f78e25c5798da42d99029c2de5f2725f88eb42b62cb",
+    "firmware/tracker/src/outbox.c": "86482f57e96d4acf313b57c7476d46efa72761f94040b1668da7fa0dc94198a4",
+    "firmware/tracker/src/outbox.h": "200f13261e0108a01e9590bb4cc5bfc5b52da4ead13d8f2b8f73e3826d1fdc1b",
+    "firmware/tracker/src/uplink.c": "a4caa6aa8a07690be987c80f691d33f8a2d2918e7ad3799cc6a0b564e91d99d9",
+    "firmware/tracker/src/uplink.h": "6d23193481819166a724db26fd34f68a986d0cce23f8b0f0bce91b4947553d3c",
+    "firmware/tracker/tests/outbox_test.c": "9840bf8a364e186c39d5c709c4ac9e4b0d495bb0a49382963b94d513c42555f9",
+    "firmware/tracker/toolchain-lock.json": "3dfcca33fea992dc4af1eff45afd90e19fdd33b25bbca108bffc5887fe154511",
+    "scripts/build_tracker_firmware.py": "10f1cfc57facb0b86e41b443b7f06e920565fa24b77cd308fad17ad44db34017",
+    "scripts/check_firmware_board.py": "39415bd7ffd7e1f9c1411c2a7f984f9baa6e54c271712040aa77ebc6f4b1697d",
+    "scripts/inspect_tracker_image.py": "e6093e16d0bb6569388bfa6f09c22efc12a9e90ca778b0357bf14ce138ae17ee",
+    "scripts/test_tracker_firmware.py": "ab3c9b3ac2a7c07bc114d7cd587e57cdf8760b1fd16c23b4f37acf2a70dc25a4",
+    "scripts/test_tracker_image.py": "e95dd99f12d1bf5579875abeac7fa166baac64e509c5d273b7c251f38f444715",
+    "scripts/verify_tracker_firmware.py": "ff21847612af45c52fd4bbd81be50db3f914c0f1f19048bafeb4647e3d141863"
+  }
+}

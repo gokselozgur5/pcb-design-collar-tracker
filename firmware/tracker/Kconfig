@@ -1,0 +1,31 @@
+mainmenu "Collar tracker prototype"
+source "Kconfig.zephyr"
+
+menu "Collar tracker"
+config TRACKER_DEVICE_ID
+	string "Provisioned device identity (must match client certificate CN)"
+	default ""
+config TRACKER_HOST
+	string "HTTPS DNS name (empty disables uplink)"
+	default ""
+config TRACKER_PORT
+	int "HTTPS port"
+	range 1 65535
+	default 443
+config TRACKER_SEC_TAG
+	int "Factory-provisioned modem TLS credential tag"
+	range 0 2147483647
+	default 42
+config TRACKER_INTERVAL_SECONDS
+	int "Minimum start-to-start location interval"
+	range 60 86400
+	default 300
+config TRACKER_FIX_SECONDS
+	int "GNSS acquisition deadline"
+	range 10 300
+	default 90
+config TRACKER_ATTACH_SECONDS
+	int "Network registration deadline"
+	range 10 300
+	default 60
+endmenu

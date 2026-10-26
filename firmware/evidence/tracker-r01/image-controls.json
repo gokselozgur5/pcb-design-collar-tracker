@@ -1,0 +1,15 @@
+{
+  "result": "PASS",
+  "actual_merged_sha256": "38f87835aba1709f31c14800926eb89054842885d4b69931a93f28fa7cddcce8",
+  "rejected_mutations": [
+    {
+      "name": "reset-into-storage",
+      "error": "Invalid reset handler: secure"
+    },
+    {
+      "name": "image-overwrites-nvs",
+      "error": "Firmware writes outside code partitions (storage must survive update)"
+    }
+  ],
+  "physical_test": false
+}

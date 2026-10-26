@@ -1,0 +1,698 @@
+-- west build: generating a build system
+Loading Zephyr default modules (Zephyr base).
+-- Application: /Users/gok/codex/projects/collar-tracker/firmware/tracker
+-- CMake version: 4.1.2
+-- Found Python3: /Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/venv/bin/python (found suitable version "3.12.13", minimum required is "3.12") found components: Interpreter
+-- Cache files will be written to: /Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/cache/zephyr
+-- Zephyr version: 4.4.2 (/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/zephyr)
+-- Found west (found suitable version "1.5.0", minimum required is "0.14.0")
+-- Board: collar_tracker_r05l, qualifiers: nrf9151/ns
+-- Found host-tools: zephyr 1.0.1 (/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/zephyr-sdk-1.0.1)
+-- Found toolchain: zephyr 1.0.1 (/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/zephyr-sdk-1.0.1)
+-- Could NOT find Dtc (missing: DTC) (Required is at least version "1.4.6")
+Hint: The project() command has not yet been called.  It sets up system-specific search paths.
+-- Found BOARD.dts: /Users/gok/codex/projects/collar-tracker/firmware/boards/goksel/collar_tracker_r05l/collar_tracker_r05l_nrf9151_ns.dts
+-- Generated zephyr.dts: /Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/build-tracker-r01-final/zephyr/zephyr.dts
+-- Generated pickled edt: /Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/build-tracker-r01-final/zephyr/edt.pickle
+-- Generated devicetree_generated.h: /Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/build-tracker-r01-final/zephyr/include/generated/zephyr/devicetree_generated.h
+
+warning: Experimental symbol TFM_EXPERIMENTAL is enabled.
+
+Parsing /Users/gok/codex/projects/collar-tracker/firmware/tracker/Kconfig
+Loaded configuration '/Users/gok/codex/projects/collar-tracker/firmware/boards/goksel/collar_tracker_r05l/collar_tracker_r05l_nrf9151_ns_defconfig'
+Merged configuration '/Users/gok/codex/projects/collar-tracker/firmware/tracker/prj.conf'
+Configuration saved to '/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/build-tracker-r01-final/zephyr/.config'
+Kconfig header saved to '/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/build-tracker-r01-final/zephyr/include/generated/zephyr/autoconf.h'
+-- Found GnuLd: /Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/arm-zephyr-eabi/bin/ld.bfd (found version "2.43.1")
+-- The C compiler identification is GNU 14.3.0
+-- The CXX compiler identification is GNU 14.3.0
+-- The ASM compiler identification is GNU
+-- Found assembler: /Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc
+-- Found Python3: /Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/venv/bin/python (found version "3.12.13") found components: Interpreter
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS - Success
+-- Found gen_kobject_list: /Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/zephyr/scripts/build/gen_kobject_list.py
+CMake Warning at /Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/zephyr/CMakeLists.txt:2358 (message):
+  __ASSERT() statements are globally ENABLED
+
+
+-- Configuring done (28.1s)
+-- Generating done (1.8s)
+-- Build files have been written to: /Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/build-tracker-r01-final
+-- west build: building application
+[1/338] Preparing syscall dependency handling
+
+[2/338] Generating ../../zephyr/include/generated/ncs_commit.h
+[3/338] Generating ../../zephyr/include/generated/zephyr_commit.h
+[4/338] Generating ../../zephyr/include/generated/ncs_version.h
+[5/338] Generating misc/generated/syscalls_subdirs.trigger
+[6/338] Generating include/generated/zephyr/version.h
+-- Zephyr version: 4.4.2 (/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/zephyr), build: 33fa6a7aac6a
+[7/338] Generating ../../tfm/CMakeCache.txt
+-- Found Git: /usr/bin/git (found version "2.39.5 (Apple Git-154)")
+-- The C compiler identification is GNU 14.3.0
+-- The CXX compiler identification is GNU 14.3.0
+-- The ASM compiler identification is GNU
+-- Found assembler: /Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc
+-- Found Python3: /Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/venv/bin/python (found version "3.12.13") found components: Interpreter
+-- Found Python3: /Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/venv/bin/python (found suitable version "3.12.13", minimum required is "3.12") found components: Interpreter
+-- Cache files will be written to: /Users/gok/Library/Caches/zephyr
+-- Found Python3: /Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/venv/bin/python (found version "3.12.13") found components: Interpreter
+CMake Warning (dev) at /Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/nrf/modules/trusted-firmware-m/tfm_boards/nrf9120/CMakeLists.txt:24 (install):
+  Policy CMP0177 is not set: install() DESTINATION paths are normalized.  Run
+  "cmake --help-policy CMP0177" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Configuring done (3.9s)
+-- Generating done (0.4s)
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    QCBOR_PATH
+    TFM_CREATE_SIGNING_LAYOUT_OBJECTS
+    T_COSE_PATH
+
+
+-- Build files have been written to: /Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/build-tracker-r01-final/tfm
+[8/338] Generating misc/generated/syscalls.json, misc/generated/struct_tags.json
+[9/338] Generating include/generated/device-api-sections.ld, include/generated/device-api-sections.cmake
+[10/338] Generating include/generated/zephyr/syscall_dispatch.c, include/generated/zephyr/syscall_exports_llext.c, syscall_weakdefs_llext.c, include/generated/zephyr/syscall_list.h
+[11/338] Generating include/generated/zephyr/driver-validation.h
+[12/338] Generating include/generated/zephyr/kobj-types-enum.h, include/generated/zephyr/otype-to-str.h, include/generated/zephyr/otype-to-size.h
+[13/338] Creating directories for 'tfm'
+[14/338] No download step for 'tfm'
+[15/338] No update step for 'tfm'
+[16/338] No patch step for 'tfm'
+[17/338] No configure step for 'tfm'
+[17/338] Performing build step for 'tfm'
+[1/191] Building C object platform/CMakeFiles/platform_crypto_keys.dir/ext/common/syscalls_stub.o
+[2/191] Building C object platform/CMakeFiles/platform_s.dir/ext/target/nordic_nrf/common/core/services/src/tfm_ioctl_core_s_api.o
+[3/191] Building C object platform/CMakeFiles/platform_s.dir/ext/target/nordic_nrf/common/core/nrf_exception_info.o
+[4/191] Building C object platform/CMakeFiles/platform_s.dir/ext/target/nordic_nrf/common/core/nrfx_glue.o
+[5/191] Building C object platform/CMakeFiles/platform_s.dir/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/modules/hal/nordic/nrfx/bsp/stable/mdk/system_nrf91.o
+[6/191] Building C object platform/CMakeFiles/platform_s.dir/ext/target/nordic_nrf/common/core/native_drivers/mpu_armv8m_drv.o
+[7/191] Building C object platform/CMakeFiles/platform_s.dir/ext/target/nordic_nrf/common/core/cmsis_drivers/Driver_Flash.o
+[8/191] Building C object platform/CMakeFiles/platform_s.dir/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/nrf/modules/trusted-firmware-m/tfm_boards/common/dummy_provisioning.o
+[9/191] Building C object platform/CMakeFiles/platform_s.dir/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/nrf/modules/trusted-firmware-m/tfm_boards/common/assert.o
+[10/191] Building C object platform/CMakeFiles/platform_crypto_keys.dir/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/nrf/modules/trusted-firmware-m/tfm_boards/common/crypto_keys.o
+[11/191] Building C object platform/CMakeFiles/platform_s.dir/ext/target/nordic_nrf/common/core/native_drivers/spu.o
+[12/191] Building C object platform/CMakeFiles/platform_s.dir/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/modules/hal/nordic/nrfx/drivers/src/nrfx_nvmc.o
+[13/191] Building C object platform/CMakeFiles/platform_s.dir/ext/common/tfm_hal_ps.o
+[14/191] Building C object platform/CMakeFiles/platform_s.dir/ext/common/tfm_hal_its.o
+[15/191] Building C object platform/CMakeFiles/platform_s.dir/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/nrf/modules/trusted-firmware-m/tfm_boards/common/tfm_hal_platform.o
+[16/191] Building C object platform/CMakeFiles/platform_s.dir/ext/common/template/tfm_rotpk.o
+[17/191] Building C object platform/CMakeFiles/platform_s.dir/ext/common/template/tfm_shared_measurement_data.o
+[18/191] Building C object platform/CMakeFiles/platform_s.dir/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/nrf/lib/hw_unique_key/hw_unique_key_cc3xx_kmu.o
+[19/191] Building C object platform/CMakeFiles/platform_s.dir/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/nrf/lib/hw_unique_key/hw_unique_key_cc3xx.o
+[20/191] Building C object platform/CMakeFiles/platform_s.dir/ext/common/template/nv_counters.o
+[21/191] Building C object platform/CMakeFiles/platform_s.dir/ext/common/tfm_boot_measurement.o
+[22/191] Building C object platform/CMakeFiles/platform_s.dir/ext/common/syscalls_stub.o
+[23/191] Building C object platform/CMakeFiles/platform_s.dir/ext/common/template/otp_flash.o
+[24/191] Building C object platform/CMakeFiles/platform_s.dir/ext/target/nordic_nrf/common/core/services/src/tfm_platform_hal_ioctl.o
+[25/191] Building C object platform/CMakeFiles/platform_s.dir/__/lib/fih/src/fih.o
+[26/191] Linking C static library platform/libplatform_crypto_keys.a
+[27/191] Building C object platform/CMakeFiles/platform_s.dir/__/lib/tfm_log/src/tfm_log.o
+[28/191] Building C object platform/CMakeFiles/platform_s.dir/ext/common/exception_info.o
+[29/191] Building C object secure_fw/partitions/platform/CMakeFiles/tfm_psa_rot_partition_platform.dir/__/__/__/generated/secure_fw/partitions/platform/auto_generated/intermedia_tfm_platform.o
+[30/191] Building C object secure_fw/partitions/platform/CMakeFiles/tfm_psa_rot_partition_platform.dir/__/__/__/platform/ext/common/syscalls_stub.o
+[31/191] Building C object platform/CMakeFiles/platform_s.dir/ext/common/template/flash_otp_nv_counters_backend.o
+[32/191] Building C object secure_fw/partitions/internal_trusted_storage/CMakeFiles/tfm_psa_rot_partition_its.dir/its_utils.o
+[33/191] Building C object platform/CMakeFiles/platform_s.dir/ext/common/tfm_fatal_error.o
+[34/191] Building C object secure_fw/partitions/internal_trusted_storage/CMakeFiles/tfm_psa_rot_partition_its.dir/tfm_its_req_mngr.o
+[35/191] Building C object secure_fw/partitions/platform/CMakeFiles/tfm_psa_rot_partition_platform.dir/platform_sp.o
+[36/191] Building C object secure_fw/partitions/internal_trusted_storage/CMakeFiles/tfm_psa_rot_partition_its.dir/flash/its_flash.o
+[37/191] Building C object platform/CMakeFiles/platform_s.dir/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/nrf/modules/trusted-firmware-m/tfm_boards/common/tfm_hal_reset_halt.o
+[38/191] Building C object platform/CMakeFiles/platform_s.dir/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/nrf/modules/trusted-firmware-m/tfm_boards/src/tfm_ioctl_s_api.o
+[39/191] Building C object secure_fw/partitions/internal_trusted_storage/CMakeFiles/tfm_psa_rot_partition_its.dir/__/__/__/generated/secure_fw/partitions/internal_trusted_storage/auto_generated/intermedia_tfm_internal_trusted_storage.o
+[40/191] Building C object platform/CMakeFiles/platform_s.dir/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/nrf/modules/trusted-firmware-m/tfm_boards/common/ns_fault_service.o
+[41/191] Building C object secure_fw/partitions/internal_trusted_storage/CMakeFiles/tfm_psa_rot_partition_its.dir/flash/its_flash_ram.o
+[42/191] Building C object secure_fw/partitions/internal_trusted_storage/CMakeFiles/tfm_psa_rot_partition_its.dir/tfm_internal_trusted_storage.o
+[43/191] Building C object secure_fw/partitions/internal_trusted_storage/CMakeFiles/tfm_psa_rot_partition_its.dir/flash/its_flash_nand.o
+[44/191] Building C object platform/CMakeFiles/platform_s.dir/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/nrf/modules/trusted-firmware-m/tfm_boards/src/tfm_platform_system.o
+[45/191] Building C object secure_fw/partitions/internal_trusted_storage/CMakeFiles/tfm_psa_rot_partition_its.dir/flash_fs/its_flash_fs_dblock.o
+[46/191] Building C object secure_fw/partitions/internal_trusted_storage/CMakeFiles/tfm_psa_rot_partition_its.dir/flash/its_flash_nor.o
+[47/191] Building C object secure_fw/partitions/internal_trusted_storage/CMakeFiles/tfm_psa_rot_partition_its.dir/__/__/__/platform/ext/common/syscalls_stub.o
+[48/191] Building C object secure_fw/partitions/protected_storage/CMakeFiles/tfm_app_rot_partition_ps.dir/ps_utils.o
+[49/191] Building C object secure_fw/partitions/protected_storage/CMakeFiles/tfm_app_rot_partition_ps.dir/tfm_ps_req_mngr.o
+[50/191] Building C object secure_fw/partitions/protected_storage/CMakeFiles/tfm_app_rot_partition_ps.dir/__/__/__/generated/secure_fw/partitions/protected_storage/auto_generated/intermedia_tfm_protected_storage.o
+[51/191] Building C object secure_fw/partitions/protected_storage/CMakeFiles/tfm_app_rot_partition_ps.dir/tfm_protected_storage.o
+[52/191] Building C object secure_fw/partitions/protected_storage/CMakeFiles/tfm_app_rot_partition_ps.dir/nv_counters/ps_nv_counters.o
+[53/191] Building C object secure_fw/partitions/protected_storage/CMakeFiles/tfm_app_rot_partition_ps.dir/ps_encrypted_object.o
+[54/191] Linking C static library platform/libplatform_s.a
+[55/191] Building C object secure_fw/partitions/internal_trusted_storage/CMakeFiles/tfm_psa_rot_partition_its.dir/flash_fs/its_flash_fs.o
+[56/191] Linking C static library secure_fw/partitions/platform/libtfm_psa_rot_partition_platform.a
+[57/191] Building C object secure_fw/partitions/protected_storage/CMakeFiles/tfm_app_rot_partition_ps.dir/ps_object_system.o
+[58/191] Building C object secure_fw/partitions/protected_storage/CMakeFiles/tfm_app_rot_partition_ps.dir/__/__/__/platform/ext/common/syscalls_stub.o
+[59/191] Building C object secure_fw/partitions/protected_storage/CMakeFiles/tfm_app_rot_partition_ps.dir/ps_object_table.o
+[60/191] Building C object secure_fw/partitions/crypto/tfpsacrypto/nrf_security_src/drivers/nrf_oberon/CMakeFiles/oberon_psa_driver.dir/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/modules/crypto/oberon-psa-crypto/drivers/oberon/oberon_ecdh.o
+[61/191] Building C object secure_fw/partitions/crypto/tfpsacrypto/nrf_security_src/drivers/nrf_oberon/CMakeFiles/oberon_psa_driver.dir/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/modules/crypto/oberon-psa-crypto/drivers/oberon/oberon_helpers.o
+[62/191] Building C object secure_fw/partitions/crypto/tfpsacrypto/nrf_security_src/drivers/nrf_oberon/CMakeFiles/oberon_psa_driver.dir/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/modules/crypto/oberon-psa-crypto/drivers/oberon/oberon_eddsa.o
+[63/191] Building C object secure_fw/partitions/crypto/tfpsacrypto/nrf_security_src/drivers/nrf_oberon/CMakeFiles/oberon_psa_driver.dir/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/modules/crypto/oberon-psa-crypto/drivers/oberon/oberon_ecdsa.o
+[64/191] Building C object secure_fw/partitions/crypto/tfpsacrypto/nrf_security_src/drivers/nrf_oberon/CMakeFiles/oberon_psa_driver.dir/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/modules/crypto/oberon-psa-crypto/drivers/oberon/oberon_ec_keys.o
+[65/191] Building C object secure_fw/partitions/protected_storage/CMakeFiles/tfm_app_rot_partition_ps.dir/__/__/__/generated/secure_fw/partitions/protected_storage/auto_generated/load_info_tfm_protected_storage.o
+[66/191] Building C object secure_fw/partitions/protected_storage/CMakeFiles/tfm_app_rot_partition_ps.dir/__/__/__/generated/secure_fw/partitions/crypto/auto_generated/load_info_tfm_crypto.o
+[67/191] Building C object secure_fw/partitions/crypto/tfpsacrypto/nrf_security_src/drivers/nrf_oberon/CMakeFiles/oberon_psa_driver.dir/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/modules/crypto/oberon-psa-crypto/drivers/oberon/oberon_spake2p.o
+[68/191] Building C object secure_fw/partitions/internal_trusted_storage/CMakeFiles/tfm_psa_rot_partition_its.dir/flash_fs/its_flash_fs_mblock.o
+[69/191] Building C object secure_fw/partitions/crypto/tfpsacrypto/nrf_security_src/drivers/nrf_oberon/CMakeFiles/oberon_psa_driver.dir/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/modules/crypto/oberon-psa-crypto/drivers/oberon/oberon_srp.o
+[70/191] Building C object secure_fw/partitions/protected_storage/CMakeFiles/tfm_app_rot_partition_ps.dir/__/__/__/generated/secure_fw/partitions/platform/auto_generated/load_info_tfm_platform.o
+[71/191] Building C object secure_fw/partitions/crypto/tfpsacrypto/nrf_security_src/drivers/nrf_oberon/CMakeFiles/oberon_psa_driver.dir/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/modules/crypto/oberon-psa-crypto/drivers/oberon/oberon_jpake.o
+[72/191] Building C object secure_fw/partitions/protected_storage/CMakeFiles/tfm_app_rot_partition_ps.dir/__/__/__/generated/secure_fw/partitions/internal_trusted_storage/auto_generated/load_info_tfm_internal_trusted_storage.o
+[73/191] Building C object secure_fw/partitions/protected_storage/CMakeFiles/tfm_app_rot_partition_ps.dir/__/ns_agent_tz/load_info_ns_agent_tz.o
+[74/191] Building C object secure_fw/partitions/protected_storage/CMakeFiles/tfm_app_rot_partition_ps.dir/crypto/ps_crypto_interface.o
+[75/191] Building C object secure_fw/partitions/crypto/tfpsacrypto/nrf_security_src/drivers/nrf_oberon/CMakeFiles/oberon_psa_driver.dir/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/modules/crypto/oberon-psa-crypto/drivers/oberon/oberon_wpa3_sae.o
+[76/191] Linking C static library secure_fw/partitions/internal_trusted_storage/libtfm_psa_rot_partition_its.a
+[77/191] Building C object secure_fw/partitions/crypto/tfpsacrypto/nrf_security_src/drivers/nrf_oberon/CMakeFiles/oberon_psa_driver.dir/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/modules/crypto/oberon-psa-crypto/drivers/oberon/oberon_ml_dsa.o
+[78/191] Building C object secure_fw/partitions/crypto/tfpsacrypto/nrf_security_src/drivers/nrf_oberon/CMakeFiles/oberon_psa_driver.dir/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/modules/crypto/oberon-psa-crypto/drivers/oberon/oberon_ml_kem.o
+[79/191] Building C object secure_fw/partitions/crypto/tfpsacrypto/nrf_security_src/core/nrf_oberon/CMakeFiles/psa_core.dir/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/modules/crypto/oberon-psa-crypto/platform/platform_util.o
+[80/191] Building C object secure_fw/partitions/crypto/tfpsacrypto/nrf_security_src/drivers/nrf_oberon/CMakeFiles/oberon_psa_driver.dir/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/modules/crypto/oberon-psa-crypto/drivers/oberon/oberon_hash.o
+[81/191] Building C object secure_fw/partitions/crypto/tfpsacrypto/nrf_security_src/core/nrf_oberon/CMakeFiles/psa_core.dir/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/modules/crypto/oberon-psa-crypto/platform/platform.o
+[82/191] Linking C static library secure_fw/partitions/protected_storage/libtfm_app_rot_partition_ps.a
+[83/191] Building C object secure_fw/partitions/crypto/tfpsacrypto/nrf_security_src/drivers/nrf_oberon/CMakeFiles/oberon_psa_driver.dir/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/modules/crypto/oberon-psa-crypto/drivers/oberon/oberon_key_derivation.o
+[84/191] Building C object secure_fw/partitions/crypto/tfpsacrypto/nrf_security_src/drivers/nrf_oberon/CMakeFiles/oberon_psa_driver.dir/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/modules/crypto/oberon-psa-crypto/drivers/oberon/oberon_aead.o
+[85/191] Building C object secure_fw/partitions/crypto/tfpsacrypto/nrf_security_src/drivers/nrf_oberon/CMakeFiles/oberon_psa_driver.dir/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/modules/crypto/oberon-psa-crypto/drivers/oberon/oberon_mac.o
+[86/191] Building C object secure_fw/partitions/crypto/tfpsacrypto/nrf_security_src/core/nrf_oberon/CMakeFiles/psa_core.dir/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/modules/crypto/oberon-psa-crypto/core/psa_crypto_client.o
+[87/191] Building C object secure_fw/partitions/crypto/tfpsacrypto/nrf_security_src/core/nrf_oberon/CMakeFiles/psa_core.dir/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/modules/crypto/oberon-psa-crypto/utilities/constant_time.o
+[88/191] Building C object secure_fw/partitions/crypto/tfpsacrypto/nrf_security_src/CMakeFiles/nrf_security_utils.dir/utils/nrf_security_mutexes.o
+[89/191] Building C object secure_fw/partitions/crypto/tfpsacrypto/nrf_security_src/drivers/nrf_oberon/CMakeFiles/oberon_psa_driver.dir/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/modules/crypto/oberon-psa-crypto/drivers/oberon/oberon_rsa.o
+[90/191] Building C object secure_fw/partitions/crypto/tfpsacrypto/nrf_security_src/drivers/nrf_oberon/CMakeFiles/oberon_psa_driver.dir/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/modules/crypto/oberon-psa-crypto/drivers/oberon/oberon_lms.o
+[91/191] Building C object secure_fw/partitions/crypto/tfpsacrypto/nrf_security_src/drivers/nrf_oberon/CMakeFiles/oberon_psa_driver.dir/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/modules/crypto/oberon-psa-crypto/drivers/oberon/oberon_xmss.o
+[92/191] Building C object secure_fw/partitions/crypto/tfpsacrypto/nrf_security_src/core/nrf_oberon/CMakeFiles/psa_core.dir/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/modules/crypto/oberon-psa-crypto/core/psa_crypto_storage.o
+[93/191] Linking C static library secure_fw/partitions/crypto/tfpsacrypto/nrf_security_src/drivers/nrf_oberon/liboberon_psa_driver.a
+[94/191] Building C object secure_fw/partitions/crypto/tfpsacrypto/nrf_security_src/core/nrf_oberon/CMakeFiles/psa_core.dir/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/modules/crypto/oberon-psa-crypto/core/psa_crypto_slot_management.o
+[95/191] Building C object secure_fw/partitions/crypto/tfpsacrypto/nrf_security_src/CMakeFiles/nrf_security_utils.dir/utils/nrf_security_mem_helpers.o
+[96/191] Building C object secure_fw/partitions/crypto/tfpsacrypto/nrf_security_src/CMakeFiles/crypto_service_tfpsacrypto.dir/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/modules/crypto/oberon-psa-crypto/platform/memory_buffer_alloc.o
+[97/191] Building C object secure_fw/partitions/crypto/tfpsacrypto/nrf_security_src/CMakeFiles/nrf_security_utils.dir/utils/nrf_security_events.o
+[98/191] Building C object secure_fw/partitions/crypto/tfpsacrypto/nrf_security_src/CMakeFiles/nrf_security_utils.dir/utils/nrf_security_core.o
+[99/191] Building C object secure_fw/partitions/crypto/CMakeFiles/tfm_psa_rot_partition_crypto.dir/crypto_cipher.o
+[100/191] Building C object secure_fw/partitions/crypto/CMakeFiles/tfm_psa_rot_partition_crypto.dir/crypto_init.o
+[101/191] Building C object secure_fw/partitions/crypto/CMakeFiles/tfm_psa_rot_partition_crypto.dir/crypto_alloc.o
+[102/191] Building C object secure_fw/partitions/crypto/CMakeFiles/tfm_psa_rot_partition_crypto.dir/crypto_hash.o
+[103/191] Building C object secure_fw/partitions/crypto/CMakeFiles/tfm_psa_rot_partition_crypto.dir/crypto_asymmetric.o
+[104/191] Building C object secure_fw/partitions/crypto/CMakeFiles/tfm_psa_rot_partition_crypto.dir/crypto_mac.o
+[105/191] Building C object secure_fw/partitions/crypto/CMakeFiles/tfm_psa_rot_partition_crypto.dir/crypto_aead.o
+[106/191] Building C object secure_fw/partitions/crypto/CMakeFiles/tfm_psa_rot_partition_crypto.dir/crypto_library.o
+[107/191] Building C object secure_fw/partitions/crypto/CMakeFiles/tfm_psa_rot_partition_crypto.dir/__/__/__/generated/secure_fw/partitions/crypto/auto_generated/intermedia_tfm_crypto.o
+[108/191] Building C object secure_fw/partitions/lib/runtime/CMakeFiles/tfm_sprt.dir/__/__/__/__/platform/ext/common/syscalls_stub.o
+[109/191] Building C object secure_fw/partitions/crypto/CMakeFiles/tfm_psa_rot_partition_crypto.dir/crypto_key_derivation.o
+[110/191] Building C object secure_fw/partitions/lib/runtime/CMakeFiles/tfm_sprt.dir/crt_memcmp.o
+[111/191] Building C object secure_fw/partitions/lib/runtime/CMakeFiles/tfm_sprt.dir/crt_memmove.o
+[112/191] Building C object secure_fw/partitions/lib/runtime/CMakeFiles/tfm_sprt.dir/crt_strnlen.o
+[113/191] Building C object secure_fw/partitions/crypto/tfpsacrypto/nrf_security_src/core/nrf_oberon/CMakeFiles/psa_core.dir/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/nrf/subsys/nrf_security/src/psa_crypto_driver_wrappers.o
+[114/191] Building C object secure_fw/partitions/lib/runtime/CMakeFiles/tfm_sprt.dir/crt_strlen.o
+[115/191] Building C object secure_fw/partitions/lib/runtime/CMakeFiles/tfm_sprt.dir/crt_exit.o
+[116/191] Building C object secure_fw/partitions/crypto/CMakeFiles/tfm_psa_rot_partition_crypto.dir/crypto_rng.o
+[117/191] Building C object secure_fw/partitions/lib/runtime/CMakeFiles/tfm_sprt.dir/crt_vprintf.o
+[118/191] Building C object secure_fw/partitions/crypto/CMakeFiles/tfm_psa_rot_partition_crypto.dir/crypto_key_management.o
+[119/191] Building C object secure_fw/partitions/lib/runtime/CMakeFiles/tfm_sprt.dir/service_api.o
+[120/191] Building C object secure_fw/partitions/crypto/CMakeFiles/tfm_psa_rot_partition_crypto.dir/psa_driver_api/tfm_builtin_key_loader.o
+[121/191] Building C object secure_fw/partitions/lib/runtime/CMakeFiles/tfm_sprt.dir/__/__/__/shared/crt_strncmp.o
+[122/191] Building C object secure_fw/partitions/lib/runtime/CMakeFiles/tfm_sprt.dir/__/__/__/shared/crt_memcpy.o
+[123/191] Building C object secure_fw/partitions/lib/runtime/CMakeFiles/tfm_sprt.dir/__/__/__/shared/crt_memset.o
+[124/191] Building C object secure_fw/partitions/lib/runtime/CMakeFiles/tfm_sprt.dir/sprt_partition_metadata_indicator.o
+[125/191] Building C object secure_fw/partitions/crypto/CMakeFiles/tfm_psa_rot_partition_crypto.dir/crypto_pake.o
+[126/191] Building C object secure_fw/partitions/lib/runtime/CMakeFiles/tfm_sprt.dir/crt_start.o
+[127/191] Building C object secure_fw/partitions/lib/runtime/CMakeFiles/tfm_sprt.dir/psa_api_ipc.o
+[128/191] Building C object secure_fw/partitions/lib/runtime/CMakeFiles/tfm_sprt.dir/sfn_common_thread.o
+[129/191] Building C object secure_fw/partitions/crypto/CMakeFiles/tfm_psa_rot_partition_crypto.dir/crypto_key_wrapping.o
+[130/191] Building C object secure_fw/partitions/lib/runtime/CMakeFiles/tfm_sprt.dir/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/nrf/modules/trusted-firmware-m/tfm_boards/common/dummy_tfm_sp_log_raw.o
+[131/191] Building C object secure_fw/partitions/lib/runtime/CMakeFiles/tfm_sprt.dir/__/__/__/__/interface/src/tfm_its_api.o
+[132/191] Building C object secure_fw/partitions/lib/runtime/CMakeFiles/tfm_sprt.dir/__/__/__/__/interface/src/tfm_psa_call.o
+[133/191] Building C object secure_fw/partitions/lib/runtime/CMakeFiles/tfm_sprt.dir/__/__/__/__/interface/src/tfm_platform_api.o
+[134/191] Building C object secure_fw/partitions/lib/runtime/CMakeFiles/tfm_sprt.dir/__/__/__/__/interface/src/tfm_ps_api.o
+[135/191] Building C object secure_fw/partitions/lib/runtime/CMakeFiles/tfm_sprt.dir/assert.o
+[136/191] Building C object secure_fw/partitions/lib/runtime/CMakeFiles/tfm_sprt.dir/__/__/__/__/lib/tfm_log_unpriv/src/tfm_log_unpriv.o
+[137/191] Building C object secure_fw/spm/CMakeFiles/tfm_spm.dir/core/utilities.o
+[138/191] Building C object secure_fw/partitions/lib/runtime/CMakeFiles/tfm_sprt.dir/__/__/__/__/lib/tfm_vprintf/src/tfm_vprintf.o
+[139/191] Building C object secure_fw/partitions/lib/runtime/CMakeFiles/tfm_sprt.dir/__/__/__/spm/core/psa_interface_thread_fn_call.o
+[140/191] Building C object secure_fw/spm/CMakeFiles/tfm_spm.dir/core/arch/tfm_arch.o
+[141/191] Building C object secure_fw/spm/CMakeFiles/tfm_spm.dir/core/tfm_boot_data.o
+[142/191] Building C object secure_fw/spm/CMakeFiles/tfm_spm.dir/core/main.o
+[143/191] Building C object secure_fw/spm/CMakeFiles/tfm_spm.dir/core/psa_api.o
+[144/191] Building C object secure_fw/spm/CMakeFiles/tfm_spm.dir/core/rom_loader.o
+[145/191] Building C object secure_fw/spm/CMakeFiles/tfm_spm.dir/core/psa_call_api.o
+[146/191] Building C object secure_fw/spm/CMakeFiles/tfm_spm.dir/core/spm_ipc.o
+[147/191] Building C object secure_fw/spm/CMakeFiles/tfm_spm.dir/core/psa_version_api.o
+[148/191] Building C object secure_fw/spm/CMakeFiles/tfm_spm.dir/core/tfm_svcalls.o
+[149/191] Building C object secure_fw/spm/CMakeFiles/tfm_spm.dir/core/psa_read_write_skip_api.o
+[150/191] Building C object secure_fw/spm/CMakeFiles/tfm_spm.dir/core/thread.o
+[151/191] Building C object secure_fw/spm/CMakeFiles/tfm_spm.dir/ns_client_ext/tfm_spm_ns_ctx.o
+[152/191] Building C object secure_fw/spm/CMakeFiles/tfm_spm.dir/core/tfm_pools.o
+[153/191] Building C object secure_fw/spm/CMakeFiles/tfm_spm.dir/core/backend_ipc.o
+[154/191] Building C object secure_fw/spm/CMakeFiles/tfm_spm.dir/core/spm_connection_pool.o
+[155/191] Building C object secure_fw/spm/CMakeFiles/tfm_spm.dir/core/arch/tfm_arch_v8m_main.o
+[156/191] Building C object secure_fw/spm/CMakeFiles/tfm_spm.dir/__/__/platform/ext/common/tfm_hal_nvic.o
+[157/191] Building C object secure_fw/spm/CMakeFiles/tfm_spm.dir/__/partitions/ns_agent_tz/ns_agent_tz_v80m.o
+[158/191] Building C object secure_fw/partitions/lib/runtime/CMakeFiles/tfm_sprt.dir/__/__/__/__/interface/src/tfm_crypto_api.o
+[159/191] Building C object secure_fw/spm/CMakeFiles/tfm_spm.dir/__/__/platform/ext/target/nordic_nrf/common/core/tfm_hal_platform_common.o
+[160/191] Building C object secure_fw/spm/CMakeFiles/tfm_spm.dir/__/__/platform/ext/target/nordic_nrf/common/core/target_cfg.o
+[161/191] Building C object secure_fw/spm/CMakeFiles/tfm_spm.dir/__/__/platform/ext/target/nordic_nrf/common/core/faults.o
+[162/191] Building C object secure_fw/spm/CMakeFiles/tfm_spm.dir/__/__/platform/ext/target/nordic_nrf/common/core/secure_peripherals_defs.o
+[163/191] Building C object secure_fw/spm/CMakeFiles/tfm_spm.dir/__/__/platform/ext/common/syscalls_stub.o
+[164/191] Building C object secure_fw/spm/CMakeFiles/tfm_spm.dir/__/__/platform/ext/target/nordic_nrf/common/core/tfm_hal_isolation.o
+[165/191] Building C object secure_fw/spm/CMakeFiles/tfm_spm.dir/__/__/generated/secure_fw/partitions/crypto/auto_generated/load_info_tfm_crypto.o
+[166/191] Building C object secure_fw/spm/CMakeFiles/tfm_spm.dir/__/__/generated/secure_fw/partitions/protected_storage/auto_generated/load_info_tfm_protected_storage.o
+[167/191] Building C object secure_fw/spm/CMakeFiles/tfm_spm.dir/__/__/generated/secure_fw/partitions/internal_trusted_storage/auto_generated/load_info_tfm_internal_trusted_storage.o
+[168/191] Building C object secure_fw/spm/CMakeFiles/tfm_spm.dir/__/__/generated/secure_fw/partitions/platform/auto_generated/load_info_tfm_platform.o
+[169/191] Building C object secure_fw/spm/CMakeFiles/tfm_spm.dir/__/partitions/ns_agent_tz/load_info_ns_agent_tz.o
+[170/191] Building C object secure_fw/CMakeFiles/tfm_s.dir/__/platform/ext/target/nordic_nrf/common/core/startup.o
+[171/191] Building C object secure_fw/CMakeFiles/tfm_s.dir/partitions/ns_agent_tz/psa_api_veneers_v80m.o
+[172/191] Building C object secure_fw/CMakeFiles/tfm_s.dir/__/platform/ext/common/syscalls_stub.o
+[173/191] Building C object platform/target/nrf91/nrf_common/CMakeFiles/tfm_s_scatter.dir/__/__/__/__/generated/platform/ext/common/gcc/tfm_common_s.ld
+[174/191] Building C object secure_fw/CMakeFiles/tfm_s.dir/__/platform/ext/common/faults.o
+[175/191] Building C object secure_fw/spm/CMakeFiles/tfm_spm.dir/__/__/platform/ext/target/nordic_nrf/common/core/target_cfg_53_91.o
+[176/191] Building C object secure_fw/CMakeFiles/tfm_s.dir/__/platform/ext/target/nordic_nrf/common/core/startup_nrf91.o
+[177/191] Building C object secure_fw/CMakeFiles/tfm_s.dir/__/generated/secure_fw/partitions/crypto/auto_generated/load_info_tfm_crypto.o
+[178/191] Building C object secure_fw/CMakeFiles/tfm_s.dir/__/generated/secure_fw/partitions/protected_storage/auto_generated/load_info_tfm_protected_storage.o
+[179/191] Building C object secure_fw/CMakeFiles/tfm_s.dir/__/generated/secure_fw/partitions/internal_trusted_storage/auto_generated/load_info_tfm_internal_trusted_storage.o
+[180/191] Building C object secure_fw/CMakeFiles/tfm_s.dir/__/generated/secure_fw/partitions/platform/auto_generated/load_info_tfm_platform.o
+[181/191] Building C object secure_fw/CMakeFiles/tfm_s.dir/partitions/ns_agent_tz/load_info_ns_agent_tz.o
+[182/191] Building C object secure_fw/partitions/crypto/tfpsacrypto/nrf_security_src/core/nrf_oberon/CMakeFiles/psa_core.dir/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/modules/crypto/oberon-psa-crypto/core/psa_crypto.o
+[183/191] Linking C static library secure_fw/partitions/crypto/tfpsacrypto/nrf_security_src/core/nrf_oberon/libpsa_core.a
+[184/191] Linking C static library secure_fw/partitions/crypto/tfpsacrypto/nrf_security_src/libnrf_security_utils.a
+[185/191] Linking C static library secure_fw/partitions/crypto/tfpsacrypto/nrf_security_src/libcrypto_service_tfpsacrypto.a
+[186/191] Linking C static library secure_fw/partitions/crypto/libtfm_psa_rot_partition_crypto.a
+[187/191] Linking C static library secure_fw/partitions/lib/runtime/libtfm_sprt.a
+[188/191] Linking C static library secure_fw/spm/libtfm_spm.a
+[189/191] Linking C executable bin/tfm_s.axf
+Memory region         Used Size  Region Size  %age Used
+           FLASH:       64816 B       256 KB     24.73%
+             RAM:       45388 B        88 KB     50.37%
+[190/191] Linking C static library secure_fw/libtfm_s_veneers.a
+[191/191] Generating ../bin/tfm_s.bin, ../bin/tfm_s.elf, ../bin/tfm_s.hex
+[19/338] Performing install step for 'tfm'
+-- Install configuration: "MinSizeRel"
+----- Installing platform NS -----
+[20/338] Completed 'tfm'
+[21/338] Building C object zephyr/lib/heap/CMakeFiles/heap_constants.dir/heap_constants.c.obj
+[22/338] Generating ../../include/generated/zephyr/heap_constants.h
+[23/338] Building C object zephyr/CMakeFiles/offsets.dir/arch/arm/core/offsets/offsets.c.obj
+[24/338] Generating include/generated/zephyr/offsets.h
+[25/338] Building C object modules/nrf/subsys/nrf_security/src/CMakeFiles/mbedcrypto.dir/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/modules/crypto/oberon-psa-crypto/utilities/asn1parse.c.obj
+[26/338] Building C object modules/nrf/subsys/nrf_security/src/CMakeFiles/mbedcrypto.dir/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/modules/crypto/oberon-psa-crypto/utilities/pem.c.obj
+[27/338] Building C object modules/nrf/subsys/nrf_security/src/CMakeFiles/mbedcrypto.dir/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/modules/crypto/oberon-psa-crypto/utilities/asn1write.c.obj
+[28/338] Building C object modules/nrf/subsys/nrf_security/src/CMakeFiles/mbedcrypto.dir/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/modules/crypto/oberon-psa-crypto/utilities/pkcs5.c.obj
+[29/338] Building C object modules/nrf/subsys/nrf_security/src/CMakeFiles/mbedcrypto.dir/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/modules/crypto/oberon-psa-crypto/utilities/oid.c.obj
+[30/338] Building C object modules/nrf/subsys/nrf_security/src/CMakeFiles/mbedcrypto.dir/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/modules/crypto/oberon-psa-crypto/legacy_sub/src/bignum.c.obj
+[31/338] Building C object modules/nrf/subsys/nrf_security/src/CMakeFiles/mbedcrypto.dir/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/modules/crypto/oberon-psa-crypto/legacy_sub/src/bignum_core.c.obj
+[32/338] Building C object modules/nrf/subsys/nrf_security/src/CMakeFiles/mbedcrypto.dir/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/modules/crypto/oberon-psa-crypto/legacy_sub/src/ecp.c.obj
+[33/338] Building C object modules/nrf/subsys/nrf_security/src/CMakeFiles/mbedcrypto.dir/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/modules/crypto/oberon-psa-crypto/legacy_sub/src/ecp_curves.c.obj
+[34/338] Building C object modules/nrf/subsys/nrf_security/src/CMakeFiles/nrf_security_utils.dir/utils/nrf_security_mem_helpers.c.obj
+[35/338] Building C object modules/nrf/subsys/nrf_security/src/CMakeFiles/mbedcrypto.dir/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/modules/crypto/oberon-psa-crypto/extras/md.c.obj
+[36/338] Building C object modules/nrf/subsys/nrf_security/src/CMakeFiles/mbedcrypto.dir/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/modules/crypto/oberon-psa-crypto/extras/nist_kw.c.obj
+[37/338] Building C object modules/nrf/subsys/nrf_security/src/CMakeFiles/mbedcrypto.dir/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/modules/crypto/oberon-psa-crypto/extras/pk.c.obj
+[38/338] Building C object modules/nrf/subsys/nrf_security/src/CMakeFiles/mbedcrypto.dir/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/modules/crypto/oberon-psa-crypto/utilities/base64.c.obj
+[39/338] Building C object modules/nrf/subsys/nrf_security/src/CMakeFiles/mbedcrypto.dir/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/modules/crypto/oberon-psa-crypto/legacy_sub/src/psa_util_internal.c.obj
+[40/338] Building C object modules/nrf/subsys/nrf_security/src/CMakeFiles/mbedcrypto.dir/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/modules/crypto/oberon-psa-crypto/platform/memory_buffer_alloc.c.obj
+[41/338] Building C object modules/nrf/subsys/nrf_security/src/CMakeFiles/mbedcrypto.dir/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/modules/crypto/oberon-psa-crypto/extras/pkparse.c.obj
+[42/338] Building C object modules/nrf/subsys/nrf_security/src/CMakeFiles/mbedcrypto.dir/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/modules/crypto/oberon-psa-crypto/extras/pk_rsa.c.obj
+[43/338] Building C object modules/nrf/subsys/nrf_security/src/CMakeFiles/mbedcrypto.dir/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/modules/crypto/oberon-psa-crypto/extras/pk_wrap.c.obj
+[44/338] Building C object modules/nrf/subsys/nrf_security/src/CMakeFiles/mbedcrypto.dir/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/modules/crypto/oberon-psa-crypto/extras/pkwrite.c.obj
+[45/338] Building C object modules/nrf/subsys/nrf_security/src/CMakeFiles/mbedcrypto.dir/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/modules/crypto/oberon-psa-crypto/extras/pk_ecc.c.obj
+[46/338] Building C object modules/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/mbedtls_config.c.obj
+[47/338] Building C object modules/nrf/subsys/nrf_security/src/CMakeFiles/mbedcrypto.dir/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/modules/crypto/oberon-psa-crypto/core/psa_util.c.obj
+[48/338] Building C object modules/nrf/subsys/nrf_security/src/CMakeFiles/mbedcrypto.dir/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/modules/crypto/oberon-psa-crypto/platform/platform_util.c.obj
+[49/338] Building C object modules/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/error.c.obj
+[50/338] Building C object modules/nrf/subsys/nrf_security/src/CMakeFiles/nrf_security_utils.dir/utils/nrf_security_events.c.obj
+[51/338] Building C object modules/nrf/subsys/nrf_security/src/CMakeFiles/nrf_security_utils.dir/utils/nrf_security_core.c.obj
+[52/338] Building C object modules/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/pkcs7.c.obj
+[53/338] Building C object modules/nrf/subsys/nrf_security/src/CMakeFiles/nrf_security_utils.dir/utils/nrf_security_mutexes.c.obj
+[54/338] Building C object modules/nrf/subsys/nrf_security/src/CMakeFiles/mbedcrypto.dir/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/modules/crypto/oberon-psa-crypto/utilities/constant_time.c.obj
+[55/338] Building C object modules/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/x509_create.c.obj
+[56/338] Building C object modules/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/x509_crt.c.obj
+[57/338] Building C object modules/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/x509_crl.c.obj
+[58/338] Building C object modules/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/x509.c.obj
+[59/338] Building C object modules/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/x509_csr.c.obj
+[60/338] Linking C static library modules/nrf/subsys/nrf_security/src/libnrf_security_utils.a
+[61/338] Building C object modules/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/x509_oid.c.obj
+[62/338] Building C object modules/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/x509write.c.obj
+[63/338] Building C object modules/trusted-firmware-m/CMakeFiles/tfm_api.dir/src/zephyr_tfm_log.c.obj
+[64/338] Building C object modules/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/x509write_csr.c.obj
+[65/338] Building C object modules/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/x509write_crt.c.obj
+[66/338] Building C object modules/trusted-firmware-m/CMakeFiles/tfm_api.dir/__/__/tfm/api_ns/interface/src/tfm_platform_api.c.obj
+[67/338] Building C object CMakeFiles/app.dir/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/nrfxlib/nrf_modem/shmem.c.obj
+[68/338] Building C object modules/trusted-firmware-m/CMakeFiles/tfm_api.dir/__/__/tfm/api_ns/interface/src/tfm_ps_api.c.obj
+[69/338] Building C object modules/trusted-firmware-m/CMakeFiles/tfm_api.dir/__/__/tfm/api_ns/interface/src/tfm_its_api.c.obj
+[70/338] Building C object modules/trusted-firmware-m/CMakeFiles/tfm_api.dir/__/__/tfm/api_ns/interface/src/tfm_tz_psa_ns_api.c.obj
+[71/338] Linking C static library modules/nrf/subsys/nrf_security/src/libmbedcrypto.a
+[72/338] Building C object zephyr/arch/common/CMakeFiles/isr_tables.dir/isr_tables.c.obj
+[73/338] Building C object modules/trusted-firmware-m/CMakeFiles/tfm_api.dir/interface/interface.c.obj
+[74/338] Building C object modules/trusted-firmware-m/CMakeFiles/tfm_api.dir/__/__/tfm/api_ns/interface/src/tfm_ioctl_core_ns_api.c.obj
+[75/338] Building C object CMakeFiles/app.dir/src/outbox.c.obj
+[76/338] Building C object zephyr/CMakeFiles/zephyr.dir/lib/libc/validate_libc.c.obj
+[77/338] Building C object CMakeFiles/app.dir/src/uplink.c.obj
+[78/338] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/sem.c.obj
+[79/338] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/clock.c.obj
+[80/338] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/printk.c.obj
+[81/338] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/thread_entry.c.obj
+[82/338] Building C object CMakeFiles/app.dir/src/main.c.obj
+[83/338] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/set.c.obj
+[84/338] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/dec.c.obj
+[85/338] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/cbprintf_packaged.c.obj
+[86/338] Building C object zephyr/CMakeFiles/zephyr.dir/lib/heap/heap.c.obj
+[87/338] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/hex.c.obj
+[88/338] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/bitmask.c.obj
+[89/338] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/assert.c.obj
+[90/338] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/timeutil.c.obj
+[91/338] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/last_section_id.c.obj
+[92/338] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/cbprintf_complete.c.obj
+[93/338] Building C object modules/trusted-firmware-m/CMakeFiles/tfm_api.dir/__/__/tfm/api_ns/interface/src/tfm_crypto_api.c.obj
+[94/338] Building C object zephyr/CMakeFiles/zephyr.dir/misc/generated/configs.c.obj
+[95/338] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/ring_buffer.c.obj
+[96/338] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/getopt/getopt_common.c.obj
+[97/338] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/getopt/getopt.c.obj
+[98/338] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/notify.c.obj
+[99/338] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/storage/flash_map/flash_map_layout.c.obj
+[100/338] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/storage/flash_map/flash_map.c.obj
+[101/338] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/rb.c.obj
+[102/338] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/mem_mgmt/mem_attr.c.obj
+[103/338] Generating linker_zephyr_pre0.cmd
+[104/338] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/storage/flash_map/flash_map_default.c.obj
+[105/338] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/tracing/tracing_none.c.obj
+[106/338] Linking C static library zephyr/arch/common/libisr_tables.a
+[107/338] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/onoff.c.obj
+[108/338] Building C object zephyr/arch/common/CMakeFiles/arch__common.dir/init.c.obj
+[109/338] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/bitarray.c.obj
+[110/338] Building ASM object zephyr/arch/arch/arm/core/CMakeFiles/arch__arm__core.dir/nmi_on_reset.S.obj
+[111/338] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/net/lib/utils/addr_utils.c.obj
+[112/338] Building ASM object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/fault_s.S.obj
+[113/338] Building C object zephyr/CMakeFiles/zephyr.dir/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/nrf/lib/boot_banner/banner.c.obj
+[114/338] Building C object zephyr/arch/common/CMakeFiles/arch__common.dir/sw_isr_common.c.obj
+[115/338] Building C object zephyr/CMakeFiles/zephyr.dir/drivers/flash/flash_util.c.obj
+[116/338] Building ASM object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/reset.S.obj
+[117/338] Building C object zephyr/arch/common/CMakeFiles/arch__common.dir/xip.c.obj
+[118/338] Building ASM object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/vector_table.S.obj
+[119/338] Building C object zephyr/arch/arch/arm/core/CMakeFiles/arch__arm__core.dir/nmi.c.obj
+[120/338] Building C object zephyr/arch/arch/arm/core/CMakeFiles/arch__arm__core.dir/fatal.c.obj
+[121/338] Building ASM object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/svc.S.obj
+[122/338] Building C object zephyr/arch/arch/arm/core/CMakeFiles/arch__arm__core.dir/tls.c.obj
+[123/338] Building C object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/fpu.c.obj
+[124/338] Building ASM object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/swap_helper.S.obj
+[125/338] Building C object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/fault.c.obj
+[126/338] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/kvss/nvs/nvs.c.obj
+[127/338] Building C object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/scb.c.obj
+[128/338] Building ASM object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/__aeabi_read_tp.S.obj
+[129/338] Building C object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/prep_c.c.obj
+[130/338] Building C object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/irq_manage.c.obj
+[131/338] Building C object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/exc_exit.c.obj
+[132/338] Building C object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/cpu_idle.c.obj
+[133/338] Building C object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/thread.c.obj
+[134/338] Building C object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/thread_abort.c.obj
+[135/338] Building C object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/irq_init.c.obj
+[136/338] Building C object zephyr/arch/arch/arm/core/mpu/CMakeFiles/arch__arm__core__mpu.dir/arm_mpu_regions.c.obj
+[137/338] Building C object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/isr_wrapper.c.obj
+[138/338] Building C object zephyr/arch/arch/arm/core/cortex_m/cmse/CMakeFiles/arch__arm__core__cortex_m__cmse.dir/arm_core_cmse.c.obj
+[139/338] Building C object zephyr/arch/arch/arm/core/mpu/CMakeFiles/arch__arm__core__mpu.dir/arm_core_mpu.c.obj
+[140/338] Building C object zephyr/lib/libc/picolibc/CMakeFiles/lib__libc__picolibc.dir/cbprintf.c.obj
+[141/338] Building C object zephyr/lib/libc/picolibc/CMakeFiles/lib__libc__picolibc.dir/assert.c.obj
+[142/338] Building C object zephyr/lib/libc/picolibc/CMakeFiles/lib__libc__picolibc.dir/chk_fail.c.obj
+[143/338] Building C object zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/source/time/time.c.obj
+[144/338] Building C object zephyr/lib/libc/picolibc/CMakeFiles/lib__libc__picolibc.dir/errno_wrap.c.obj
+[145/338] Building C object zephyr/lib/libc/picolibc/CMakeFiles/lib__libc__picolibc.dir/exit.c.obj
+[146/338] Building C object zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/source/stdlib/abort.c.obj
+[147/338] Building C object zephyr/lib/posix/c_lib_ext/CMakeFiles/lib__posix__c_lib_ext.dir/fnmatch.c.obj
+[148/338] Building C object zephyr/arch/arch/arm/core/mpu/CMakeFiles/arch__arm__core__mpu.dir/arm_mpu.c.obj
+[149/338] Building C object zephyr/lib/libc/picolibc/CMakeFiles/lib__libc__picolibc.dir/stdio.c.obj
+[150/338] Building C object zephyr/lib/libc/picolibc/CMakeFiles/lib__libc__picolibc.dir/locks.c.obj
+[151/338] Building C object zephyr/lib/posix/c_lib_ext/CMakeFiles/lib__posix__c_lib_ext.dir/getentropy.c.obj
+[152/338] Building C object zephyr/lib/posix/c_lib_ext/CMakeFiles/lib__posix__c_lib_ext.dir/getopt_shim.c.obj
+[153/338] Building C object zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/source/stdlib/malloc.c.obj
+[154/338] Building C object zephyr/soc/soc/nrf9151/CMakeFiles/soc__nordic.dir/validate_binding_headers.c.obj
+[155/338] Building C object zephyr/soc/soc/nrf9151/CMakeFiles/soc__nordic.dir/validate_base_addresses.c.obj
+[156/338] Building C object zephyr/lib/os/zvfs/CMakeFiles/lib__os__zvfs.dir/zvfs_poll.c.obj
+[157/338] Building C object zephyr/soc/soc/nrf9151/CMakeFiles/soc__nordic.dir/validate_enabled_instances.c.obj
+[158/338] Building C object zephyr/lib/os/zvfs/CMakeFiles/lib__os__zvfs.dir/zvfs_select.c.obj
+[159/338] Building C object zephyr/subsys/crc/CMakeFiles/subsys__crc.dir/crc4_sw.c.obj
+[160/338] Building C object zephyr/soc/soc/nrf9151/CMakeFiles/soc__nordic.dir/nrf91/soc.c.obj
+[161/338] Building C object zephyr/subsys/crc/CMakeFiles/subsys__crc.dir/crc8_sw.c.obj
+[162/338] Building C object zephyr/subsys/crc/CMakeFiles/subsys__crc.dir/crc7_sw.c.obj
+[163/338] Building C object zephyr/subsys/crc/CMakeFiles/subsys__crc.dir/crc24_sw.c.obj
+[164/338] Building C object zephyr/subsys/crc/CMakeFiles/subsys__crc.dir/crc32c_sw.c.obj
+[165/338] Building C object zephyr/subsys/crc/CMakeFiles/subsys__crc.dir/crc16_sw.c.obj
+[166/338] Building C object zephyr/lib/os/zvfs/CMakeFiles/lib__os__zvfs.dir/zvfs_fdtable.c.obj
+[167/338] Building C object zephyr/subsys/crc/CMakeFiles/subsys__crc.dir/crc32_sw.c.obj
+[168/338] Building C object zephyr/subsys/crc/CMakeFiles/subsys__crc.dir/crc32k_4_2_sw.c.obj
+[169/338] Building C object zephyr/lib/net_buf/CMakeFiles/lib__net_buf.dir/buf_simple.c.obj
+[170/338] Building C object zephyr/lib/net_buf/CMakeFiles/lib__net_buf.dir/buf.c.obj
+[171/338] Building C object zephyr/subsys/random/CMakeFiles/subsys__random.dir/random_entropy_device.c.obj
+[172/338] Building C object zephyr/soc/soc/nrf9151/CMakeFiles/soc__nordic.dir/common/soc_secure.c.obj
+[173/338] Building C object zephyr/subsys/net/ip/CMakeFiles/subsys__net__ip.dir/net_timeout.c.obj
+[174/338] Building C object zephyr/subsys/net/CMakeFiles/subsys__net.dir/lib/sockets/sockets_misc.c.obj
+[175/338] Building C object zephyr/subsys/net/l2/offloaded_netdev/CMakeFiles/subsys__net__l2__offloaded_netdev.dir/offloaded_netdev.c.obj
+[176/338] Building C object zephyr/subsys/net/CMakeFiles/subsys__net.dir/lib/sockets/getaddrinfo.c.obj
+[177/338] Building C object zephyr/subsys/net/CMakeFiles/subsys__net.dir/lib/sockets/socket_offload.c.obj
+[178/338] Building C object zephyr/subsys/net/ip/CMakeFiles/subsys__net__ip.dir/net_core.c.obj
+[179/338] Building C object zephyr/subsys/net/lib/http/CMakeFiles/subsys__net__lib__http.dir/http_parser_url.c.obj
+[180/338] Building C object zephyr/soc/soc/nrf9151/CMakeFiles/soc__nordic.dir/common/gpiote_nrfx.c.obj
+[181/338] Building C object zephyr/drivers/entropy/CMakeFiles/drivers__entropy.dir/entropy_psa_crypto.c.obj
+[182/338] Building C object zephyr/subsys/net/CMakeFiles/subsys__net.dir/lib/sockets/sockets.c.obj
+[183/338] Building C object zephyr/drivers/console/CMakeFiles/drivers__console.dir/rtt_console.c.obj
+[184/338] Building C object zephyr/drivers/flash/CMakeFiles/drivers__flash.dir/flash_page_layout.c.obj
+[185/338] Building C object zephyr/drivers/clock_control/CMakeFiles/drivers__clock_control.dir/clock_control_nrf.c.obj
+[186/338] Building C object zephyr/drivers/i2c/CMakeFiles/drivers__i2c.dir/i2c_common.c.obj
+[187/338] Building C object zephyr/drivers/pinctrl/CMakeFiles/drivers__pinctrl.dir/common.c.obj
+[188/338] Building C object zephyr/subsys/net/ip/CMakeFiles/subsys__net__ip.dir/utils.c.obj
+[189/338] Building C object zephyr/subsys/net/lib/http/CMakeFiles/subsys__net__lib__http.dir/http_client.c.obj
+[190/338] Building C object zephyr/drivers/i2c/CMakeFiles/drivers__i2c.dir/i2c_nrfx_twim_common.c.obj
+[191/338] Building C object zephyr/drivers/i2c/CMakeFiles/drivers__i2c.dir/i2c_nrfx_twim.c.obj
+[192/338] Building C object zephyr/drivers/timer/CMakeFiles/drivers__timer.dir/sys_clock_init.c.obj
+[193/338] Building C object zephyr/drivers/flash/CMakeFiles/drivers__flash.dir/soc_flash_nrf.c.obj
+[194/338] Building C object zephyr/subsys/net/lib/http/CMakeFiles/subsys__net__lib__http.dir/http_parser.c.obj
+[195/338] Building C object modules/nrf/lib/nrf_modem_lib/CMakeFiles/..__nrf__lib__nrf_modem_lib.dir/cfun_hooks.c.obj
+[196/338] Building C object modules/nrf/lib/nrf_modem_lib/CMakeFiles/..__nrf__lib__nrf_modem_lib.dir/nrf_modem_lib.c.obj
+[197/338] Building C object zephyr/drivers/timer/CMakeFiles/drivers__timer.dir/nrf_rtc_timer.c.obj
+[198/338] Building C object zephyr/drivers/pinctrl/CMakeFiles/drivers__pinctrl.dir/pinctrl_nrf.c.obj
+[199/338] Building C object zephyr/drivers/gpio/CMakeFiles/drivers__gpio.dir/gpio_nrfx.c.obj
+[200/338] Building C object modules/nrf/lib/nrf_modem_lib/CMakeFiles/..__nrf__lib__nrf_modem_lib.dir/fault.c.obj
+[201/338] Building C object modules/nrf/lib/nrf_modem_lib/CMakeFiles/..__nrf__lib__nrf_modem_lib.dir/nrf_modem_os.c.obj
+[202/338] Building C object modules/nrf/lib/at_parser/CMakeFiles/..__nrf__lib__at_parser.dir/generated/at_match.c.obj
+[203/338] Building C object modules/nrf/lib/nrf_modem_lib/CMakeFiles/..__nrf__lib__nrf_modem_lib.dir/sanity.c.obj
+[204/338] Building C object modules/nrf/lib/at_parser/CMakeFiles/..__nrf__lib__at_parser.dir/at_parser.c.obj
+[205/338] Building C object modules/nrf/lib/at_monitor/CMakeFiles/..__nrf__lib__at_monitor.dir/at_monitor.c.obj
+[206/338] Building C object modules/nrf/lib/lte_link_control/CMakeFiles/..__nrf__lib__lte_link_control.dir/lte_lc_modem_hooks.c.obj
+[207/338] Building C object modules/nrf/lib/lte_link_control/CMakeFiles/..__nrf__lib__lte_link_control.dir/common/work_q.c.obj
+[208/338] Building C object modules/nrf/lib/lte_link_control/CMakeFiles/..__nrf__lib__lte_link_control.dir/common/helpers.c.obj
+[209/338] Building C object modules/nrf/lib/lte_link_control/CMakeFiles/..__nrf__lib__lte_link_control.dir/common/event_handler_list.c.obj
+[210/338] Building C object modules/nrf/subsys/nrf_security/src/zephyr/CMakeFiles/mbedtls_zephyr.dir/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/modules/crypto/oberon-psa-crypto/platform/platform.c.obj
+[211/338] Building C object modules/nrf/lib/lte_link_control/CMakeFiles/..__nrf__lib__lte_link_control.dir/lte_lc.c.obj
+[212/338] Building C object zephyr/subsys/net/ip/CMakeFiles/subsys__net__ip.dir/net_if.c.obj
+[213/338] Building C object modules/nrf/lib/lte_link_control/CMakeFiles/..__nrf__lib__lte_link_control.dir/modules/cfun.c.obj
+[214/338] Building C object modules/nrf/lib/lte_link_control/CMakeFiles/..__nrf__lib__lte_link_control.dir/modules/cscon.c.obj
+[215/338] Building C object modules/nrf/lib/nrf_modem_lib/CMakeFiles/..__nrf__lib__nrf_modem_lib.dir/nrf9x_sockets.c.obj
+[216/338] Linking C static library modules/mbedtls/mbedtls/library/libmbedx509.a
+[217/338] Building C object modules/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/debug.c.obj
+[218/338] Building C object modules/nrf/lib/lte_link_control/CMakeFiles/..__nrf__lib__lte_link_control.dir/modules/cereg.c.obj
+[219/338] Building C object modules/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/mps_reader.c.obj
+[220/338] Building C object modules/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/mps_trace.c.obj
+[221/338] Building C object modules/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/net_sockets.c.obj
+[222/338] Building C object modules/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_cache.c.obj
+[223/338] Building C object modules/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_client.c.obj
+[224/338] Building C object modules/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_ciphersuites.c.obj
+[225/338] Building C object modules/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_cookie.c.obj
+[226/338] Building C object modules/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_debug_helpers_generated.c.obj
+[227/338] Building C object modules/nrf/lib/lte_link_control/CMakeFiles/..__nrf__lib__lte_link_control.dir/modules/xsystemmode.c.obj
+[228/338] Building C object modules/nrf/subsys/nrf_security/src/zephyr/CMakeFiles/mbedtls_zephyr.dir/psa_crypto_init.c.obj
+[229/338] Building C object modules/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_msg.c.obj
+[230/338] Building C object modules/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_tls12_client.c.obj
+[231/338] Building C object modules/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_ticket.c.obj
+[232/338] Building C object modules/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_tls.c.obj
+[233/338] Building C object modules/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_tls12_server.c.obj
+[234/338] Building C object modules/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_tls13_keys.c.obj
+[235/338] Building C object modules/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_tls13_server.c.obj
+[236/338] Linking C static library modules/trusted-firmware-m/libtfm_api.a
+[237/338] Building C object modules/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/version_features.c.obj
+[238/338] Building C object modules/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_tls13_client.c.obj
+[239/338] Building C object modules/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/timing.c.obj
+[240/338] Building C object modules/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_tls13_generic.c.obj
+[241/338] Building C object modules/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/version.c.obj
+[242/338] Building C object modules/nrf/lib/modem_key_mgmt/CMakeFiles/..__nrf__lib__modem_key_mgmt.dir/modem_key_mgmt.c.obj
+[243/338] Building C object modules/hal_nordic/modules/hal_nordic/nrfx/CMakeFiles/nrfx.dir/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/modules/hal/nordic/nrfx/bsp/stable/mdk/system_nrf91.c.obj
+[244/338] Building C object modules/nrf/modules/trusted-firmware-m/CMakeFiles/tfm_api_nrf.dir/tfm_boards/src/tfm_ioctl_ns_api.c.obj
+[245/338] Building C object modules/hal_nordic/modules/hal_nordic/nrfx/CMakeFiles/nrfx.dir/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/modules/hal/nordic/nrfx/drivers/src/nrfx_clock_hfclkaudio.c.obj
+[246/338] Building C object modules/hal_nordic/modules/hal_nordic/nrfx/CMakeFiles/nrfx.dir/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/modules/hal/nordic/nrfx/drivers/src/nrfx_clock_hfclk192m.c.obj
+[247/338] Building C object modules/hal_nordic/modules/hal_nordic/nrfx/CMakeFiles/nrfx.dir/nrfx_glue.c.obj
+[248/338] Building C object modules/hal_nordic/modules/hal_nordic/nrfx/CMakeFiles/nrfx.dir/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/modules/hal/nordic/nrfx/helpers/nrfx_flag32_allocator.c.obj
+[249/338] Building C object modules/hal_nordic/modules/hal_nordic/nrfx/CMakeFiles/nrfx.dir/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/modules/hal/nordic/nrfx/drivers/src/nrfx_clock_xo.c.obj
+[250/338] Building C object modules/hal_nordic/modules/hal_nordic/nrfx/CMakeFiles/nrfx.dir/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/modules/hal/nordic/nrfx/drivers/src/nrfx_clock_hfclk.c.obj
+[251/338] Building C object modules/hal_nordic/modules/hal_nordic/nrfx/CMakeFiles/nrfx.dir/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/modules/hal/nordic/nrfx/drivers/src/nrfx_clock.c.obj
+[252/338] Building C object modules/nrf/modules/trusted-firmware-m/CMakeFiles/..__nrf__modules__trusted-firmware-m.dir/fault.c.obj
+[253/338] Building C object modules/hal_nordic/modules/hal_nordic/nrfx/CMakeFiles/nrfx.dir/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/modules/hal/nordic/nrfx/drivers/src/nrfx_clock_lfclk.c.obj
+[254/338] Building C object modules/hal_nordic/modules/hal_nordic/nrfx/CMakeFiles/nrfx.dir/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/modules/hal/nordic/nrfx/drivers/src/nrfx_clock_xo24m.c.obj
+[255/338] Building C object modules/segger/CMakeFiles/modules__segger.dir/SEGGER_RTT_zephyr.c.obj
+[256/338] Building C object modules/hal_nordic/modules/hal_nordic/nrfx/CMakeFiles/nrfx.dir/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/modules/hal/nordic/nrfx/drivers/src/nrfx_ipc.c.obj
+[257/338] Building C object zephyr/kernel/CMakeFiles/kernel.dir/main_weak.c.obj
+[258/338] Building C object zephyr/kernel/CMakeFiles/kernel.dir/banner.c.obj
+[259/338] Building C object modules/hal_nordic/modules/hal_nordic/nrfx/CMakeFiles/nrfx.dir/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/modules/hal/nordic/nrfx/drivers/src/nrfx_nvmc.c.obj
+[260/338] Building C object modules/segger/CMakeFiles/modules__segger.dir/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/modules/debug/segger/SEGGER/SEGGER_RTT.c.obj
+[261/338] Building C object zephyr/kernel/CMakeFiles/kernel.dir/busy_wait.c.obj
+[262/338] Building C object zephyr/kernel/CMakeFiles/kernel.dir/errno.c.obj
+[263/338] Building C object zephyr/kernel/CMakeFiles/kernel.dir/version.c.obj
+[264/338] Building C object modules/hal_nordic/modules/hal_nordic/nrfx/CMakeFiles/nrfx.dir/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/modules/hal/nordic/nrfx/drivers/src/nrfx_twi_twim.c.obj
+[265/338] Building C object zephyr/kernel/CMakeFiles/kernel.dir/device.c.obj
+[266/338] Building C object zephyr/kernel/CMakeFiles/kernel.dir/fatal.c.obj
+[267/338] Building C object zephyr/kernel/CMakeFiles/kernel.dir/float.c.obj
+[268/338] Building C object zephyr/kernel/CMakeFiles/kernel.dir/kheap.c.obj
+[269/338] Building C object zephyr/kernel/CMakeFiles/kernel.dir/init.c.obj
+[270/338] Building C object zephyr/kernel/CMakeFiles/kernel.dir/mem_slab.c.obj
+[271/338] Building C object zephyr/kernel/CMakeFiles/kernel.dir/idle.c.obj
+[272/338] Building C object modules/hal_nordic/modules/hal_nordic/nrfx/CMakeFiles/nrfx.dir/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/modules/hal/nordic/nrfx/drivers/src/nrfx_twim.c.obj
+[273/338] Building C object zephyr/kernel/CMakeFiles/kernel.dir/mailbox.c.obj
+[274/338] Building C object zephyr/kernel/CMakeFiles/kernel.dir/system_work_q.c.obj
+[275/338] Building C object zephyr/kernel/CMakeFiles/kernel.dir/mutex.c.obj
+[276/338] Building C object zephyr/kernel/CMakeFiles/kernel.dir/sem.c.obj
+[277/338] Building C object zephyr/kernel/CMakeFiles/kernel.dir/stack.c.obj
+[278/338] Building C object zephyr/kernel/CMakeFiles/kernel.dir/msg_q.c.obj
+[279/338] Building C object zephyr/kernel/CMakeFiles/kernel.dir/queue.c.obj
+[280/338] Building C object zephyr/kernel/CMakeFiles/kernel.dir/condvar.c.obj
+[281/338] Building C object zephyr/kernel/CMakeFiles/kernel.dir/spinlock_validate.c.obj
+[282/338] Building C object zephyr/kernel/CMakeFiles/kernel.dir/thread.c.obj
+[283/338] Building C object zephyr/kernel/CMakeFiles/kernel.dir/timeslicing.c.obj
+[284/338] Linking C static library app/libapp.a
+[285/338] Building C object zephyr/kernel/CMakeFiles/kernel.dir/pipe.c.obj
+[286/338] Building C object zephyr/CMakeFiles/zephyr_pre0.dir/misc/empty_file.c.obj
+[287/338] Linking C static library zephyr/arch/common/libarch__common.a
+[288/338] Linking C static library zephyr/libzephyr.a
+[289/338] Linking C static library zephyr/arch/arch/arm/core/libarch__arm__core.a
+[290/338] Linking C static library zephyr/arch/arch/arm/core/cortex_m/cmse/libarch__arm__core__cortex_m__cmse.a
+[291/338] Linking C static library zephyr/arch/arch/arm/core/mpu/libarch__arm__core__mpu.a
+[292/338] Building C object zephyr/kernel/CMakeFiles/kernel.dir/timer.c.obj
+[293/338] Linking C static library zephyr/arch/arch/arm/core/cortex_m/libarch__arm__core__cortex_m.a
+[294/338] Linking C static library zephyr/lib/libc/common/liblib__libc__common.a
+[295/338] Linking C static library zephyr/lib/libc/picolibc/liblib__libc__picolibc.a
+[296/338] Linking C static library zephyr/lib/posix/c_lib_ext/liblib__posix__c_lib_ext.a
+[297/338] Linking C static library zephyr/lib/net_buf/liblib__net_buf.a
+[298/338] Linking C static library zephyr/lib/os/zvfs/liblib__os__zvfs.a
+[299/338] Linking C static library zephyr/soc/soc/nrf9151/libsoc__nordic.a
+[300/338] Linking C static library zephyr/subsys/random/libsubsys__random.a
+[301/338] Linking C static library zephyr/subsys/net/libsubsys__net.a
+[302/338] Building C object zephyr/kernel/CMakeFiles/kernel.dir/timeout.c.obj
+[303/338] Linking C static library zephyr/subsys/crc/libsubsys__crc.a
+[304/338] Linking C static library zephyr/subsys/net/l2/offloaded_netdev/libsubsys__net__l2__offloaded_netdev.a
+[305/338] Linking C static library zephyr/subsys/net/ip/libsubsys__net__ip.a
+[306/338] Linking C static library zephyr/subsys/net/lib/http/libsubsys__net__lib__http.a
+[307/338] Linking C static library zephyr/drivers/clock_control/libdrivers__clock_control.a
+[308/338] Building C object zephyr/kernel/CMakeFiles/kernel.dir/dynamic_disabled.c.obj
+[309/338] Linking C static library zephyr/drivers/console/libdrivers__console.a
+[310/338] Linking C static library zephyr/drivers/flash/libdrivers__flash.a
+[311/338] Linking C static library zephyr/drivers/entropy/libdrivers__entropy.a
+[312/338] Linking C static library zephyr/drivers/gpio/libdrivers__gpio.a
+[313/338] Building C object zephyr/kernel/CMakeFiles/kernel.dir/mempool.c.obj
+[314/338] Linking C static library zephyr/drivers/pinctrl/libdrivers__pinctrl.a
+[315/338] Linking C static library zephyr/drivers/i2c/libdrivers__i2c.a
+[316/338] Linking C static library modules/nrf/lib/at_monitor/lib..__nrf__lib__at_monitor.a
+[317/338] Linking C static library modules/nrf/lib/at_parser/lib..__nrf__lib__at_parser.a
+[318/338] Linking C static library zephyr/drivers/timer/libdrivers__timer.a
+[319/338] Linking C static library modules/nrf/lib/modem_key_mgmt/lib..__nrf__lib__modem_key_mgmt.a
+[320/338] Linking C static library modules/nrf/lib/nrf_modem_lib/lib..__nrf__lib__nrf_modem_lib.a
+[321/338] Linking C static library modules/nrf/modules/trusted-firmware-m/lib..__nrf__modules__trusted-firmware-m.a
+[322/338] Linking C static library modules/nrf/modules/trusted-firmware-m/libtfm_api_nrf.a
+[323/338] Linking C static library modules/nrf/subsys/nrf_security/src/zephyr/libmbedtls_zephyr.a
+[324/338] Linking C static library modules/nrf/lib/lte_link_control/lib..__nrf__lib__lte_link_control.a
+[325/338] Building C object zephyr/kernel/CMakeFiles/kernel.dir/work.c.obj
+[326/338] Linking C static library modules/segger/libmodules__segger.a
+[327/338] Building C object modules/hal_nordic/modules/hal_nordic/nrfx/CMakeFiles/nrfx.dir/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/modules/hal/nordic/nrfx/drivers/src/nrfx_gpiote.c.obj
+[328/338] Linking C static library modules/mbedtls/mbedtls/library/libmbedtls.a
+[329/338] Building C object zephyr/kernel/CMakeFiles/kernel.dir/poll.c.obj
+[330/338] Linking C static library modules/hal_nordic/modules/hal_nordic/nrfx/libnrfx.a
+[331/338] Building C object zephyr/kernel/CMakeFiles/kernel.dir/sched.c.obj
+[332/338] Linking C static library zephyr/kernel/libkernel.a
+[333/338] Linking C executable zephyr/zephyr_pre0.elf; Logical command for additional byproducts on target: zephyr_pre0
+[334/338] Generating linker.cmd
+[335/338] Generating isr_tables.c, isr_tables_vt.ld, isr_tables_swi.ld
+[336/338] Building C object zephyr/CMakeFiles/zephyr_final.dir/misc/empty_file.c.obj
+[337/338] Building C object zephyr/CMakeFiles/zephyr_final.dir/isr_tables.c.obj
+[338/338] Linking C executable zephyr/zephyr.elf
+Memory region         Used Size  Region Size  %age Used
+           FLASH:      106020 B       256 KB     40.44%
+             RAM:       27000 B       128 KB     20.60%
+        IDT_LIST:           0 B        32 KB      0.00%
+Generating files from /Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/build-tracker-r01-final/zephyr/zephyr.elf for board: collar_tracker_r05l/nrf9151/ns
+{
+  "result": "BUILD_PASS",
+  "board": "collar_tracker_r05l/nrf9151/ns",
+  "artifacts": {
+    "zephyr/zephyr.elf": {
+      "bytes": 2018384,
+      "sha256": "2486fc4f055a4d3050f9312b6803abf8320988de3d34f9487d435b76858ddf96"
+    },
+    "zephyr/zephyr.hex": {
+      "bytes": 298352,
+      "sha256": "378d3cc53caab8bd124039db2e192b3bee7fb239301f14b3d0a69f1288967a98"
+    },
+    "zephyr/zephyr.dts": {
+      "bytes": 52997,
+      "sha256": "26dc779dd1b995bbf04e5c3b9b91cd592d20045e8a6c669e5eb9d26af659fcaa"
+    },
+    "zephyr/.config": {
+      "bytes": 73687,
+      "sha256": "c32c370e500eb8290078bed2a63a22c87ad8a3e7a32e88823b68771ba396880d"
+    },
+    "zephyr/tfm_merged.hex": {
+      "bytes": 457536,
+      "sha256": "38f87835aba1709f31c14800926eb89054842885d4b69931a93f28fa7cddcce8"
+    },
+    "tfm/bin/tfm_s.elf": {
+      "bytes": 1037524,
+      "sha256": "e5cc7afd7a4e8b8453a29cf056f41767a1df39319f469fc96689bec8b3c48859"
+    }
+  },
+  "image_inspection": {
+    "result": "PASS",
+    "merged_hex": "zephyr/tfm_merged.hex",
+    "merged_sha256": "38f87835aba1709f31c14800926eb89054842885d4b69931a93f28fa7cddcce8",
+    "reset_vectors": {
+      "secure": {
+        "address": 0,
+        "initial_sp": 536872952,
+        "reset_handler": 14801
+      },
+      "application": {
+        "address": 262144,
+        "initial_sp": 537023792,
+        "reset_handler": 274565
+      }
+    },
+    "storage": {
+      "address": 1015808,
+      "bytes": 32768,
+      "sectors": 8
+    },
+    "compiled_contract": [
+      "CONFIG_BUILD_WITH_TFM=y",
+      "CONFIG_TRUSTED_EXECUTION_NONSECURE=y",
+      "CONFIG_USE_DT_CODE_PARTITION=y",
+      "CONFIG_NRF_MODEM_LIB=y",
+      "CONFIG_LTE_NETWORK_MODE_LTE_M_GPS=y",
+      "CONFIG_NVS_DATA_CRC=y",
+      "# CONFIG_SERIAL is not set",
+      "# CONFIG_TFM_SECURE_UART is not set",
+      "# CONFIG_TFM_DUMMY_PROVISIONING is not set"
+    ],
+    "programmed_storage_bytes": 0,
+    "signed_boot": false,
+    "ota": false,
+    "flashed": false,
+    "physical_test": false
+  },
+  "compiled_inputs": {
+    "firmware/boards/goksel/collar_tracker_r05l/Kconfig.collar_tracker_r05l": "4e179db61f67d1fae00f0328e181b10feba649e0175298e4873357aef22c3b52",
+    "firmware/boards/goksel/collar_tracker_r05l/Kconfig.defconfig": "9cf640f0e7e80fa46925cc5d9dd785f982a277dc4a65ba681b320069503b5b3f",
+    "firmware/boards/goksel/collar_tracker_r05l/board.yml": "c2e6fa636fcb36b2b1b7ade29a7c6e5683eb123348d009a310e9736d02cf3d8e",
+    "firmware/boards/goksel/collar_tracker_r05l/collar-memory.dtsi": "c214ec171f5bb92f14025b895e218cb0f29f783021fc5f725b7607cdae803a77",
+    "firmware/boards/goksel/collar_tracker_r05l/collar_tracker_r05l_nrf9151_ns.dts": "0e614e7c38ea3ff7b31cdd5a70108aedf5e4904e4279750229f7ac155fdab2f2",
+    "firmware/boards/goksel/collar_tracker_r05l/collar_tracker_r05l_nrf9151_ns_defconfig": "7e64177e7eff71faf8445b0f0f5384de3c92f1b5975ef7d1edd9df147ff48226",
+    "firmware/dts/bindings/goksel,collar-r05l-io.yaml": "cf15691a203f09a1942e748388b90d1b81d2e8552d34105522b3e58881ad796c",
+    "firmware/factory/src/board_contract.h": "e0b9d0b447b36bfc56c131f30ef09d343bff5b87a99638b59796ae758ef5afcf",
+    "firmware/tracker/CMakeLists.txt": "b23b91db782a19e43a32263b843f866e0dcd64e8d701b11deff3b90d9f435266",
+    "firmware/tracker/Kconfig": "1dd52bc1bbb5043338efb945d541c70aee53cfd44357227be85f0d0d646213de",
+    "firmware/tracker/prj.conf": "69c1651eb069e246ac2e05e07eb2d36bc6248ece514d353b0faf5450c31b816b",
+    "firmware/tracker/src/main.c": "741ab2b3f6aab2554c2f7f78e25c5798da42d99029c2de5f2725f88eb42b62cb",
+    "firmware/tracker/src/outbox.c": "86482f57e96d4acf313b57c7476d46efa72761f94040b1668da7fa0dc94198a4",
+    "firmware/tracker/src/outbox.h": "200f13261e0108a01e9590bb4cc5bfc5b52da4ead13d8f2b8f73e3826d1fdc1b",
+    "firmware/tracker/src/uplink.c": "a4caa6aa8a07690be987c80f691d33f8a2d2918e7ad3799cc6a0b564e91d99d9",
+    "firmware/tracker/src/uplink.h": "6d23193481819166a724db26fd34f68a986d0cce23f8b0f0bce91b4947553d3c"
+  },
+  "flashed": false,
+  "physical_test": false,
+  "manufacturing_release": false
+}

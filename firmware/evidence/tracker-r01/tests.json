@@ -1,0 +1,22 @@
+{
+  "result": "PASS",
+  "suites": [
+    {
+      "suite": "outbox",
+      "exit": 0
+    },
+    {
+      "suite": "receiver",
+      "exit": 0
+    }
+  ],
+  "sanitizers": [
+    "address",
+    "undefined"
+  ],
+  "receiver_tests": 7,
+  "c_crash_boundaries": 6,
+  "corrupted_record_bytes": 40,
+  "actual_modem_test": false,
+  "physical_power_failure_test": false
+}

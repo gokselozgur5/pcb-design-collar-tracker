@@ -1,0 +1,26 @@
+test_client_certificate_is_required (__main__.ReceiverTests.test_client_certificate_is_required) ... ok
+test_idempotent_c_payload_and_restart (__main__.ReceiverTests.test_idempotent_c_payload_and_restart) ... 127.0.0.1 - - [26/Oct/2026 08:21:54] "POST /v1/positions HTTP/1.1" 200 -
+127.0.0.1 - - [26/Oct/2026 08:21:54] "POST /v1/positions HTTP/1.1" 200 -
+ok
+test_identity_is_bound_to_client_certificate (__main__.ReceiverTests.test_identity_is_bound_to_client_certificate) ... 127.0.0.1 - - [26/Oct/2026 08:21:54] "POST /v1/positions HTTP/1.1" 400 -
+ok
+test_malformed_payloads_and_transport (__main__.ReceiverTests.test_malformed_payloads_and_transport) ... 127.0.0.1 - - [26/Oct/2026 08:21:54] "POST /v1/positions HTTP/1.1" 400 -
+127.0.0.1 - - [26/Oct/2026 08:21:54] "POST /v1/positions HTTP/1.1" 400 -
+127.0.0.1 - - [26/Oct/2026 08:21:54] "POST /v1/positions HTTP/1.1" 400 -
+127.0.0.1 - - [26/Oct/2026 08:21:55] "POST /v1/positions HTTP/1.1" 400 -
+127.0.0.1 - - [26/Oct/2026 08:21:55] "POST /v1/positions HTTP/1.1" 400 -
+127.0.0.1 - - [26/Oct/2026 08:21:55] "POST /v1/positions HTTP/1.1" 400 -
+127.0.0.1 - - [26/Oct/2026 08:21:55] "POST /v1/positions HTTP/1.1" 400 -
+127.0.0.1 - - [26/Oct/2026 08:21:55] "POST /v1/positions HTTP/1.1" 400 -
+ok
+test_range_and_sequence_validation (__main__.ReceiverTests.test_range_and_sequence_validation) ... ok
+test_same_sequence_cannot_replace_location (__main__.ReceiverTests.test_same_sequence_cannot_replace_location) ... 127.0.0.1 - - [26/Oct/2026 08:21:55] "POST /v1/positions HTTP/1.1" 200 -
+127.0.0.1 - - [26/Oct/2026 08:21:55] "POST /v1/positions HTTP/1.1" 409 -
+ok
+test_storage_failure_never_acknowledges (__main__.ReceiverTests.test_storage_failure_never_acknowledges) ... 127.0.0.1 - - [26/Oct/2026 08:21:55] "POST /v1/positions HTTP/1.1" 503 -
+ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 1.950s
+
+OK

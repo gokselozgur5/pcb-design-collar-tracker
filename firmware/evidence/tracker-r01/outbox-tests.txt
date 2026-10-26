@@ -1,0 +1,5 @@
+PASS reboot replay, signed coordinates, stale ACK, non-reused IDs
+PASS full queue retains oldest records and drains in order
+PASS six crash boundaries preserve committed records and sequence ownership
+PASS all record-byte corruptions and missing metadata stop without erasing
+PASS strict ACK, JSON size/identity validation and invalid fixes
