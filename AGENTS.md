@@ -89,6 +89,12 @@ uploads to JLC DFM are in scope. Orders, payments and supplier messages are not.
   completion, free late allocations and prevent overlapping calls. Keep watchdog
   expiry sticky; a late phase transition must not restore feeding. Distinguish host
   fault injection from actual modem/SoC reset and measured power behavior.
+- For signed images, verify against the key embedded in the actual bootloader,
+  reject copied public SDK private keys, and inspect the complete flash image.
+  Match the staging API to the compiled swap mode; swap-offset starts one sector
+  into the secondary slot. Trial confirmation needs bounded health evidence.
+  Keep software downgrade checks distinct from hardware counters/debug protection.
+  Sysbuild child caches need explicit forwarding; inspect every child's cache path.
 
 ## Git and handoff
 

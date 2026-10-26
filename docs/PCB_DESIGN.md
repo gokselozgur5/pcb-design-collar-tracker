@@ -203,6 +203,20 @@ the actual worker/supervisor with controlled failures, then observe reset and
 persistent-data recovery on hardware. Host adapters do not prove modem or scheduler
 behavior, and sleep/watchdog wakeups belong in measured battery accounting.
 
+Signed boot needs more than a successful signing command. Match the image's public
+key to bytes embedded in the built bootloader, verify the actual header/payload
+and check that primary-image validation and boot-region protection are compiled.
+Reject SDK default private keys by public-key identity, including renamed copies.
+Record production key custody separately from a development signature. Retain a
+reviewed migration when adding a bootloader changes the flash layout.
+
+Check staging offsets against the chosen swap algorithm and the actual downloader
+implementation. A nominally supported DFU API can still write at the wrong slot
+offset. Make trial confirmation depend on useful, bounded application evidence;
+exercise missing acknowledgements, confirmation failures and interrupted writes.
+Host bootloader simulation and target signatures are separate evidence; neither
+qualifies physical flash, watchdog handoff or power loss during swap.
+
 Bring-up proceeds through short/resistance checks, polarity, current-limited power,
 rails, reset/debug, firmware, then radio/sensor and end-to-end functions. Test the
 battery, charger and protection against the selected cell's limits. Do not claim

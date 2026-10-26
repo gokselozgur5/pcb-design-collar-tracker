@@ -13,17 +13,21 @@ content is English. Run `python3 scripts/resume.py` before making another revisi
 [Published r16 review](../release/r16-current-review/review.pdf) ·
 [Published r16 bundle](../release/collar-tracker-r05l-r16-review.zip)
 
-Latest firmware: [tracker r02 prototype](../firmware/tracker-r02/README.md) adds a
-30-second DNS caller deadline and watchdog/modem recovery to r01's GNSS, LTE-M,
-64-record persistent outbox and authenticated HTTPS. The clean target build,
-five host scenarios and four image/configuration controls pass. Hardware reset,
-real modem DNS and power behavior are untested. The separate
+Latest firmware: [tracker r03 prototype](../firmware/tracker-r03/README.md) adds
+P-256 signed boot and a bounded trial to r02's GNSS/LTE-M, persistent outbox,
+authenticated uploads, DNS deadline and watchdog recovery. The real target build,
+embedded-key signature inspection, six trial scenarios and nine image/key negative
+controls pass. A trial needs a fresh persisted fix and upload ACK within 600 seconds.
+Hardware boot, swap/revert, modem DNS and power behavior are untested. The separate
 [local reference receiver](../firmware/receiver/README.md) commits idempotent records
 before acknowledging them. Default configuration has no host, identity or keys;
 it only collects offline records. This is not a shipping firmware release.
-Next complete provisioning and signed updates in a separate revision, then run
-actual board/modem/SIM tests and measure power. The local receiver is not deployed.
-Preserve the frozen factory/r01/r02 evidence and the unchanged PCB/Gerber/r19 assembly.
+Next implement offset-aware update staging/delivery in a new revision, with fault
+tests, then production key custody/provisioning and an explicit r02 factory/SWD
+migration. Swap-offset images start at `0x81000`; the pinned NCS FOTA target writes
+at the slot base and cannot be connected unchanged. Only a local development
+signing key exists; no credentials or endpoint are configured. The receiver is
+not deployed. Preserve factory/r01/r02/r03 and the unchanged PCB/Gerber/r19 assembly.
 
 Latest assembly: [r19 charge-wire support and forming nests](../assembly/internal-charge-r03/README.md)
 and [two-page drawing](../assembly/internal-charge-r03/restraint-sheet.pdf).

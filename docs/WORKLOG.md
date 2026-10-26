@@ -1018,3 +1018,69 @@ The full saved handoff passes (41 top-level result fields, not 41 tests). Syntax
 checks pass for eight Python files and 90 local Markdown targets resolve. Source
 whitespace checks pass; the byte-preserved generated TF-M cache retains three
 upstream trailing-space comments. They are kept as captured build evidence.
+
+
+## 2026-10-26 — Signed tracker r03 and bounded trial
+
+Preserved the PCB, JLC evidence, r19 assembly and factory/r01/r02 firmware. Added
+an isolated dual-slot nRF9151 board using the pinned SDK memory map, P-256 MCUboot,
+primary validation, boot flash protection and software version downgrade checks.
+A trial needs a fresh persisted fix, an upload ACK and 30 seconds of uptime within
+600 seconds. Missing evidence or confirmation failure requests watchdog reset;
+actual board trial/revert remains untested. No update transport was added.
+
+The final clean ARM build passes: application flash/RAM 113,396/31,776 bytes,
+TF-M 64,304/45,388 and MCUboot 26,072/16,048; modem shared RAM remains 40KiB.
+Verified both signed outputs with the public key embedded in actual bootloader
+bytes, their common payload, vectors at 0/0x10200/0x50000, and no NVS/secondary
+writes. Complete local prototype HEX SHA-256:
+`babe3feb4888b849945fc905d77a782f7d6efdd54966bb624a438b9221028633`.
+The key is development-only; its private half remains ignored and local.
+
+Six host trial scenarios pass under ASAN/UBSAN, using the actual trial code and
+an accelerated clock; reset exit 42 is a host sentinel. Nine actual image/key
+negative controls pass, including corrupted signatures/payload, another key,
+programmed NVS, missing boot vectors and disabled compiled protection. A renamed
+copy of the SDK public private key is rejected. The simulator preflight now rejects
+`MCUBOOT_SKIP_SLOW_TESTS`; the actual run environment has no skip flag.
+
+The first sysbuild attempts exposed key-argument quoting and nested cache behavior.
+Both direct children and TF-M's nested CMake need explicit cache forwarding.
+Earlier logs selected the external macOS user cache; all four announcements in the
+final build point inside the task SDK. No unrelated external cache was removed.
+The TF-M experimental and CMake policy notices are preserved, not disabled.
+
+MCUboot simulation uses the pinned Nordic bootutil source with ECDSA, primary
+validation, swap-offset and software downgrade prevention. Its upstream Cargo
+feature still restricts downgrade prevention to overwrite mode, although the
+pinned C code implements swap prevention; the supported C flag is supplied
+explicitly. Two NCS-only configuration constants match the actual target config.
+A host-only header supplies MbedTLS OID constants for the SDK's renamed include.
+GCC 15 with explicit installed macOS headers preserves upstream -Wall/-Werror;
+Apple Clang reported unused SDK stubs and GCC's default fixed headers required an
+unavailable SDK header. No SDK source or warning policy was changed. All 18 pinned
+module working trees have no tracked modifications. Host TinyCrypt and upstream
+flash geometries differ from target Nordic Oberon and the collar flash driver.
+
+Next implement offset-aware staging/delivery in a new revision. Swap-offset writes
+start at 0x81000; the pinned NCS FOTA target starts at the slot base and cannot be
+connected unchanged. Review production key custody, provisioning/debug protection
+and an explicit factory/SWD migration from the standalone r02 layout. Preserve NVS
+sequence reservations or change server identity after an intentional full erase.
+Real boot/swap/revert/power cuts, watchdog handoff, modem/SIM/TLS, current, factory,
+approved battery/assembly, RF and ingress acceptance remain open. No flashing,
+deployment, supplier message, order or new KiCad/JLC run occurred.
+
+The MCUboot run completed in 812.69 seconds with 25 registered core tests passing;
+feature-inapplicable cases return early and are not counted as exercised hardware
+coverage. Basic revert, signature rejection, software downgrade rejection, random
+interruptions and exhaustive simulated write-interruption recovery completed.
+The wrapper subsequently failed while looking for Cargo.lock under sim/; the lock
+is at the workspace root. Corrected metadata collection and preserved the original
+traceback alongside the complete passing Cargo output; tests were not rerun.
+Saved 84 source/evidence identities in the r03 checkpoint.
+
+Full saved handoff passes (42 top-level fields, not 42 tests). Python syntax,
+87 local Markdown targets and source whitespace checks pass. The raw generated
+TF-M cache/build/simulator logs retain their original whitespace and blank lines
+as captured evidence; source checks exclude only those three raw files.
