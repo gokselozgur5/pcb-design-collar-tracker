@@ -1,0 +1,7217 @@
+{
+  "result": "HOLD",
+  "inputs": {
+    "assembly/internal-charge-r02/harness.json": "6d0c5d325107305b65d477a76410f5fa3bbcdfc4ef73b85943bc937a82bec569",
+    "assembly/internal-charge-r02/sources.json": "9c75c82ca18c0a9826474665b3d37c340d7e782caa567f43ba4339fae7d316ce",
+    "scripts/check_internal_harness.py": "eaa5e05c189f3c272a9a26bab02bafc3519bd4a727ec566bad7776e154502e1a",
+    "scripts/internal_harness_geometry.py": "f3f3315192d15c4f9a7f44b4c9a8db2aa682e0a2910504238a6de2bd50545134",
+    "mechanical/swim-r11-thermal-fit/antenna-fit.json": "b120bb308406ae69fcfed946b0f926b5af2f7e95394204e02fa772a8842976be",
+    "mechanical/swim-r11-thermal-fit/retention-checks.json": "a21530e03e614c82e8b9046bfc49e520128080923d651d149f2bcc300175ced9",
+    "mechanical/swim-r11-thermal-fit/parameters.json": "6a3e51619b56502d3ccf91c7749f115f585b488fc4a21c867df6318c8f150de9",
+    "mechanical/swim-r11-thermal-fit/retention.json": "9a4b3c0126f3542c8d0bff03cb1c57dfd097c8927ad84b9af780185673585fbd",
+    "mechanical/swim-r16-contact-retention/contact.json": "b9a29ee41791d6cfa1de3bdfc2d1056956ae5ada5817d422daae98f2290a9b6b",
+    "experiments/power-r05l-charge-interlock/evidence/native-netlist.json": "4c88b83f1af96f3924d63761ab09681049cce83cc0b364aaa669a27b19e9be28",
+    "scripts/check_thermal_assembly.py": "e7952082c8c4e71b8d61f2e26aaa996781be2c23173598138ccde2c32e17cc6a",
+    "scripts/thermal_cable_geometry.py": "ce275bc960cd1b384f5e7ad29975da9e67f056a8d12cac58e385d4a93fb473a9",
+    "scripts/antenna_cable_geometry.py": "9be973b21970d964a87b94dcddedfc2521d140c4ce45aec985fbc720cd249125",
+    "experiments/power-r05l-charge-interlock/evidence/route-geometry.json": "81729d50d614be899e831362cbd4e9a7021a3337cb7dbb1841b9563edf46156b",
+    "experiments/power-r05l-charge-interlock/hardware/collar-tracker.kicad_pcb": "241c84d6ba98793c37344e1e46ddc4918e7b05322ba87daea7c9a90ffb8379b3",
+    "assembly/internal-charge-r02/fixed-length-search.json": "332c47bca710278509c8396d4b80c26a032863c54ae2eab3f0a63efe34c90557",
+    "scripts/check_internal_harness_motion.py": "e2f8e01d89953bb3a7ce2f4db0bb398f36fa2aa6f712539d699d2e7bd5337d1e"
+  },
+  "nominal_lengths_mm": [
+    43.76580559524004,
+    54.92090851069824
+  ],
+  "fixed_length_numerical_tolerance_mm": 0.001,
+  "poses": [
+    {
+      "pose_index": 0,
+      "pcb_pose_mm": [
+        -0.76,
+        -0.76,
+        11.02
+      ],
+      "fixed_length_intervals_mm": [
+        [
+          43.76580406845157,
+          43.765807122027915
+        ],
+        [
+          54.920903066939026,
+          54.92091395451441
+        ]
+      ],
+      "fixed_length_pass": true,
+      "geometry_checks": [
+        {
+          "name": "native J3 and contact polarity",
+          "pass_": true
+        },
+        {
+          "name": "PCB strip covers the complete bonded length",
+          "value": 2.15,
+          "minimum": 0.65,
+          "pass_": true
+        },
+        {
+          "name": "red nonlocal self clearance",
+          "value": 2.0023345118705826,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red continuous bend radius lower bound",
+          "value": 7.868380826070411,
+          "minimum": 6.604,
+          "pass_": true
+        },
+        {
+          "name": "red other populated bodies",
+          "value": 0.7613858684318523,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to LTE cable",
+          "value": 0.6058720256333858,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to GNSS cable",
+          "value": 0.36628923055100876,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red carrier, frame and lid posts",
+          "value": 0.37984850064052755,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to LTE CAPH SZK-C-3L30 envelope",
+          "value": 1.8521020950240925,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to GNSS ZETA SZK-C-0G04 envelope",
+          "value": 8.910264099922468,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red lid roof",
+          "value": 2.2521020950240946,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red cavity Y walls",
+          "value": 2.7160299644409887,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red endpoint at native pad datum",
+          "value": 1e-08,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "red endpoint at terminal-hole datum",
+          "value": 9.999996447286321e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "red flat wire tip clears pocket back",
+          "value": 0.08432809669855822,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "red wire insertion into terminal",
+          "value": 0.21999999999999714,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red conductor passes terminal hole",
+          "value": 0.2567452868921814,
+          "minimum": 0.1,
+          "pass_": true
+        },
+        {
+          "name": "red unowned PCB copper clearance",
+          "value": 0.3273535203848971,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red tip offset follows native pad centre",
+          "value": 9.999995917759608e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "red bonded conductor remains on native copper",
+          "value": 0.26598845617754213,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "red bonded conductor within solder-height envelope",
+          "value": 0.27014377984182514,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black nonlocal self clearance",
+          "value": 1.979349070595687,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black continuous bend radius lower bound",
+          "value": 6.879375527864104,
+          "minimum": 6.604,
+          "pass_": true
+        },
+        {
+          "name": "black other populated bodies",
+          "value": 0.29121518314466865,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to LTE cable",
+          "value": 0.33563313404935685,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to GNSS cable",
+          "value": 0.32456038716279084,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black carrier, frame and lid posts",
+          "value": 0.4917912219691254,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to LTE CAPH SZK-C-3L30 envelope",
+          "value": 3.2485210487725773,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to GNSS ZETA SZK-C-0G04 envelope",
+          "value": 0.2909324297833711,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black lid roof",
+          "value": 0.6909324297833732,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black cavity Y walls",
+          "value": 3.8750880134543024,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black endpoint at native pad datum",
+          "value": 1e-08,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black endpoint at terminal-hole datum",
+          "value": 9.999996447286321e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black flat wire tip clears pocket back",
+          "value": 0.06619985369105294,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "black wire insertion into terminal",
+          "value": 0.21999999999999714,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black conductor passes terminal hole",
+          "value": 0.21570328261493515,
+          "minimum": 0.1,
+          "pass_": true
+        },
+        {
+          "name": "black unowned PCB copper clearance",
+          "value": 0.5583574855519089,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black tip offset follows native pad centre",
+          "value": 9.999996218716633e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black bonded conductor remains on native copper",
+          "value": 0.3031000237807244,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "black bonded conductor within solder-height envelope",
+          "value": 0.11095936148008367,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "opposite wire envelopes",
+          "value": 0.4045015311023597,
+          "minimum": 0.2,
+          "pass_": true
+        }
+      ],
+      "pass_": true
+    },
+    {
+      "pose_index": 1,
+      "pcb_pose_mm": [
+        -0.76,
+        -0.76,
+        11.24088
+      ],
+      "fixed_length_intervals_mm": [
+        [
+          43.765804051080394,
+          43.76580713939892
+        ],
+        [
+          54.920903469789174,
+          54.92091355161373
+        ]
+      ],
+      "fixed_length_pass": true,
+      "geometry_checks": [
+        {
+          "name": "native J3 and contact polarity",
+          "pass_": true
+        },
+        {
+          "name": "PCB strip covers the complete bonded length",
+          "value": 2.15,
+          "minimum": 0.65,
+          "pass_": true
+        },
+        {
+          "name": "red nonlocal self clearance",
+          "value": 2.0032501344547478,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red continuous bend radius lower bound",
+          "value": 8.131513228255455,
+          "minimum": 6.604,
+          "pass_": true
+        },
+        {
+          "name": "red other populated bodies",
+          "value": 0.3546885431752081,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to LTE cable",
+          "value": 0.4602283995674697,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to GNSS cable",
+          "value": 0.4309375230525138,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red carrier, frame and lid posts",
+          "value": 0.38003938888060756,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to LTE CAPH SZK-C-3L30 envelope",
+          "value": 2.02111153756916,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to GNSS ZETA SZK-C-0G04 envelope",
+          "value": 8.911410316856681,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red lid roof",
+          "value": 2.4211115375691623,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red cavity Y walls",
+          "value": 2.662730318620026,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red endpoint at native pad datum",
+          "value": 1e-08,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "red endpoint at terminal-hole datum",
+          "value": 9.999996447286321e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "red flat wire tip clears pocket back",
+          "value": 0.08432809669855812,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "red wire insertion into terminal",
+          "value": 0.21999999999999714,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red conductor passes terminal hole",
+          "value": 0.2567452868921814,
+          "minimum": 0.1,
+          "pass_": true
+        },
+        {
+          "name": "red unowned PCB copper clearance",
+          "value": 0.3262362080431257,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red tip offset follows native pad centre",
+          "value": 9.999995917759608e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "red bonded conductor remains on native copper",
+          "value": 0.2651121308066742,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "red bonded conductor within solder-height envelope",
+          "value": 0.2707845727532334,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black nonlocal self clearance",
+          "value": 1.9807618174134685,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black continuous bend radius lower bound",
+          "value": 6.834367457369443,
+          "minimum": 6.604,
+          "pass_": true
+        },
+        {
+          "name": "black other populated bodies",
+          "value": 0.23102172495321177,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to LTE cable",
+          "value": 0.3357048759853645,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to GNSS cable",
+          "value": 0.2973531563450817,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black carrier, frame and lid posts",
+          "value": 0.4619330295497754,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to LTE CAPH SZK-C-3L30 envelope",
+          "value": 3.3427345607371266,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to GNSS ZETA SZK-C-0G04 envelope",
+          "value": 0.2907212714166742,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black lid roof",
+          "value": 0.6907212714166764,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black cavity Y walls",
+          "value": 3.8757248810374483,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black endpoint at native pad datum",
+          "value": 1e-08,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black endpoint at terminal-hole datum",
+          "value": 9.999996447286321e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black flat wire tip clears pocket back",
+          "value": 0.06619985369105277,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "black wire insertion into terminal",
+          "value": 0.21999999999999714,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black conductor passes terminal hole",
+          "value": 0.21570328261493327,
+          "minimum": 0.1,
+          "pass_": true
+        },
+        {
+          "name": "black unowned PCB copper clearance",
+          "value": 0.541709232653429,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black tip offset follows native pad centre",
+          "value": 9.999996218716633e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black bonded conductor remains on native copper",
+          "value": 0.3053146634506384,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "black bonded conductor within solder-height envelope",
+          "value": 0.12030451706351042,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "opposite wire envelopes",
+          "value": 0.39801691377162807,
+          "minimum": 0.2,
+          "pass_": true
+        }
+      ],
+      "pass_": true
+    },
+    {
+      "pose_index": 2,
+      "pcb_pose_mm": [
+        -0.76,
+        -0.76,
+        11.97
+      ],
+      "fixed_length_intervals_mm": [
+        [
+          43.76580321034482,
+          43.765807980139904
+        ],
+        [
+          54.920903608266926,
+          54.92091341313197
+        ]
+      ],
+      "fixed_length_pass": true,
+      "geometry_checks": [
+        {
+          "name": "native J3 and contact polarity",
+          "pass_": true
+        },
+        {
+          "name": "PCB strip covers the complete bonded length",
+          "value": 2.15,
+          "minimum": 0.65,
+          "pass_": true
+        },
+        {
+          "name": "red nonlocal self clearance",
+          "value": 1.9923998299782948,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red continuous bend radius lower bound",
+          "value": 6.779864992017094,
+          "minimum": 6.604,
+          "pass_": true
+        },
+        {
+          "name": "red other populated bodies",
+          "value": 0.20392970455202547,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to LTE cable",
+          "value": 0.26952680548159313,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to GNSS cable",
+          "value": 0.21224502928168879,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red carrier, frame and lid posts",
+          "value": 0.2877850222451575,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to LTE CAPH SZK-C-3L30 envelope",
+          "value": 1.1511976640398605,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to GNSS ZETA SZK-C-0G04 envelope",
+          "value": 8.897965316080553,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red lid roof",
+          "value": 1.5511976640398626,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red cavity Y walls",
+          "value": 2.656622198620807,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red endpoint at native pad datum",
+          "value": 1e-08,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "red endpoint at terminal-hole datum",
+          "value": 9.999996447286321e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "red flat wire tip clears pocket back",
+          "value": 0.08432809669855804,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "red wire insertion into terminal",
+          "value": 0.21999999999999714,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red conductor passes terminal hole",
+          "value": 0.2567452868921814,
+          "minimum": 0.1,
+          "pass_": true
+        },
+        {
+          "name": "red unowned PCB copper clearance",
+          "value": 0.32418270667633,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red tip offset follows native pad centre",
+          "value": 9.999995917759608e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "red bonded conductor remains on native copper",
+          "value": 0.26632269520064256,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "red bonded conductor within solder-height envelope",
+          "value": 0.2700450753387955,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black nonlocal self clearance",
+          "value": 1.9807397309397095,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black continuous bend radius lower bound",
+          "value": 6.377967035954184,
+          "minimum": 6.604,
+          "pass_": false
+        },
+        {
+          "name": "black other populated bodies",
+          "value": 0.20553872301414383,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to LTE cable",
+          "value": 0.1429585676945073,
+          "minimum": 0.2,
+          "pass_": false
+        },
+        {
+          "name": "black to GNSS cable",
+          "value": -0.34328521881343144,
+          "minimum": 0.2,
+          "pass_": false
+        },
+        {
+          "name": "black carrier, frame and lid posts",
+          "value": 0.4940185606763839,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to LTE CAPH SZK-C-3L30 envelope",
+          "value": 2.6994128155003287,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to GNSS ZETA SZK-C-0G04 envelope",
+          "value": 0.26837905624489383,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black lid roof",
+          "value": 0.6683790562448959,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black cavity Y walls",
+          "value": 3.875673309206723,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black endpoint at native pad datum",
+          "value": 1e-08,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black endpoint at terminal-hole datum",
+          "value": 9.999996447286321e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black flat wire tip clears pocket back",
+          "value": 0.06619985369105288,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "black wire insertion into terminal",
+          "value": 0.21999999999999714,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black conductor passes terminal hole",
+          "value": 0.21570328261493504,
+          "minimum": 0.1,
+          "pass_": true
+        },
+        {
+          "name": "black unowned PCB copper clearance",
+          "value": 0.5285440805776634,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black tip offset follows native pad centre",
+          "value": 9.999996218716633e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black bonded conductor remains on native copper",
+          "value": 0.30767044110195,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "black bonded conductor within solder-height envelope",
+          "value": 0.12553951031955113,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "opposite wire envelopes",
+          "value": 0.4136725500672268,
+          "minimum": 0.2,
+          "pass_": true
+        }
+      ],
+      "pass_": false
+    },
+    {
+      "pose_index": 3,
+      "pcb_pose_mm": [
+        -0.76,
+        0,
+        11.02
+      ],
+      "fixed_length_intervals_mm": [
+        [
+          43.765804033755465,
+          43.76580715672412
+        ],
+        [
+          54.9209030050948,
+          54.920914016301566
+        ]
+      ],
+      "fixed_length_pass": true,
+      "geometry_checks": [
+        {
+          "name": "native J3 and contact polarity",
+          "pass_": true
+        },
+        {
+          "name": "PCB strip covers the complete bonded length",
+          "value": 2.15,
+          "minimum": 0.65,
+          "pass_": true
+        },
+        {
+          "name": "red nonlocal self clearance",
+          "value": 2.0041566728692457,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red continuous bend radius lower bound",
+          "value": 8.333591586939608,
+          "minimum": 6.604,
+          "pass_": true
+        },
+        {
+          "name": "red other populated bodies",
+          "value": 0.5529785582979669,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to LTE cable",
+          "value": 0.5935258166170954,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to GNSS cable",
+          "value": 0.6153558179471231,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red carrier, frame and lid posts",
+          "value": 0.3767354172069662,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to LTE CAPH SZK-C-3L30 envelope",
+          "value": 2.041341970763679,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to GNSS ZETA SZK-C-0G04 envelope",
+          "value": 8.892046711487762,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red lid roof",
+          "value": 2.441341970763681,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red cavity Y walls",
+          "value": 3.3918212561999277,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red endpoint at native pad datum",
+          "value": 1e-08,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "red endpoint at terminal-hole datum",
+          "value": 9.999996447286321e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "red flat wire tip clears pocket back",
+          "value": 0.08432809669855804,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "red wire insertion into terminal",
+          "value": 0.21999999999999714,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red conductor passes terminal hole",
+          "value": 0.2567452868921814,
+          "minimum": 0.1,
+          "pass_": true
+        },
+        {
+          "name": "red unowned PCB copper clearance",
+          "value": 0.3268769639784802,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red tip offset follows native pad centre",
+          "value": 9.999996122157688e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "red bonded conductor remains on native copper",
+          "value": 0.2651542570253014,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "red bonded conductor within solder-height envelope",
+          "value": 0.27041667210762665,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black nonlocal self clearance",
+          "value": 1.9837213209677462,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black continuous bend radius lower bound",
+          "value": 6.827647723500839,
+          "minimum": 6.604,
+          "pass_": true
+        },
+        {
+          "name": "black other populated bodies",
+          "value": 0.30263233591523564,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to LTE cable",
+          "value": 0.6503255831800625,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to GNSS cable",
+          "value": 0.3329466581556399,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black carrier, frame and lid posts",
+          "value": 0.5595011727116772,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to LTE CAPH SZK-C-3L30 envelope",
+          "value": 3.200193438789824,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to GNSS ZETA SZK-C-0G04 envelope",
+          "value": 0.9718825891820297,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black lid roof",
+          "value": 1.3718825891820319,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black cavity Y walls",
+          "value": 4.63686821635301,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black endpoint at native pad datum",
+          "value": 1e-08,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black endpoint at terminal-hole datum",
+          "value": 9.999996447286321e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black flat wire tip clears pocket back",
+          "value": 0.06619985369105294,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "black wire insertion into terminal",
+          "value": 0.21999999999999714,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black conductor passes terminal hole",
+          "value": 0.21570328261493515,
+          "minimum": 0.1,
+          "pass_": true
+        },
+        {
+          "name": "black unowned PCB copper clearance",
+          "value": 0.5748532044318961,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black tip offset follows native pad centre",
+          "value": 9.99999644035419e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black bonded conductor remains on native copper",
+          "value": 0.3052624361535092,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "black bonded conductor within solder-height envelope",
+          "value": 0.1076953222577377,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "opposite wire envelopes",
+          "value": 0.4057760701359466,
+          "minimum": 0.2,
+          "pass_": true
+        }
+      ],
+      "pass_": true
+    },
+    {
+      "pose_index": 4,
+      "pcb_pose_mm": [
+        -0.76,
+        0,
+        11.24088
+      ],
+      "fixed_length_intervals_mm": [
+        [
+          43.76580400406492,
+          43.76580718641445
+        ],
+        [
+          54.92092464367048,
+          54.92093485440868
+        ]
+      ],
+      "fixed_length_pass": true,
+      "geometry_checks": [
+        {
+          "name": "native J3 and contact polarity",
+          "pass_": true
+        },
+        {
+          "name": "PCB strip covers the complete bonded length",
+          "value": 2.15,
+          "minimum": 0.65,
+          "pass_": true
+        },
+        {
+          "name": "red nonlocal self clearance",
+          "value": 2.002590781709188,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red continuous bend radius lower bound",
+          "value": 7.907810907140434,
+          "minimum": 6.604,
+          "pass_": true
+        },
+        {
+          "name": "red other populated bodies",
+          "value": 0.601923361629185,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to LTE cable",
+          "value": 0.5421487751034423,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to GNSS cable",
+          "value": 0.4423167967431358,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red carrier, frame and lid posts",
+          "value": 0.3800393353512506,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to LTE CAPH SZK-C-3L30 envelope",
+          "value": 1.625384063899311,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to GNSS ZETA SZK-C-0G04 envelope",
+          "value": 8.884838856684715,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red lid roof",
+          "value": 2.0253840638993132,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red cavity Y walls",
+          "value": 3.436165741053639,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red endpoint at native pad datum",
+          "value": 1e-08,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "red endpoint at terminal-hole datum",
+          "value": 9.999996447286321e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "red flat wire tip clears pocket back",
+          "value": 0.08432809669855812,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "red wire insertion into terminal",
+          "value": 0.21999999999999714,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red conductor passes terminal hole",
+          "value": 0.2567452868921814,
+          "minimum": 0.1,
+          "pass_": true
+        },
+        {
+          "name": "red unowned PCB copper clearance",
+          "value": 0.32601276324556683,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red tip offset follows native pad centre",
+          "value": 9.999996122157688e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "red bonded conductor remains on native copper",
+          "value": 0.2657367446434904,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "red bonded conductor within solder-height envelope",
+          "value": 0.2709159577488063,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black nonlocal self clearance",
+          "value": 1.9820237974465151,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black continuous bend radius lower bound",
+          "value": 6.829747574595782,
+          "minimum": 6.604,
+          "pass_": true
+        },
+        {
+          "name": "black other populated bodies",
+          "value": 0.27981296702982805,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to LTE cable",
+          "value": 0.4555984045360882,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to GNSS cable",
+          "value": 0.32168305204199327,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black carrier, frame and lid posts",
+          "value": 0.5819401119341631,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to LTE CAPH SZK-C-3L30 envelope",
+          "value": 3.1574352409732,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to GNSS ZETA SZK-C-0G04 envelope",
+          "value": 0.2924760765774491,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black lid roof",
+          "value": 0.6924760765774512,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black cavity Y walls",
+          "value": 4.63686209661455,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black endpoint at native pad datum",
+          "value": 1e-08,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black endpoint at terminal-hole datum",
+          "value": 9.999996447286321e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black flat wire tip clears pocket back",
+          "value": 0.06619985369105288,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "black wire insertion into terminal",
+          "value": 0.21999999999999714,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black conductor passes terminal hole",
+          "value": 0.21570328261493504,
+          "minimum": 0.1,
+          "pass_": true
+        },
+        {
+          "name": "black unowned PCB copper clearance",
+          "value": 0.5469352902492557,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black tip offset follows native pad centre",
+          "value": 9.99999644035419e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black bonded conductor remains on native copper",
+          "value": 0.30097081184123864,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "black bonded conductor within solder-height envelope",
+          "value": 0.11068699510241697,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "opposite wire envelopes",
+          "value": 0.40094724597984305,
+          "minimum": 0.2,
+          "pass_": true
+        }
+      ],
+      "pass_": true
+    },
+    {
+      "pose_index": 5,
+      "pcb_pose_mm": [
+        -0.76,
+        0,
+        11.97
+      ],
+      "fixed_length_intervals_mm": [
+        [
+          43.765803435936206,
+          43.76580775454695
+        ],
+        [
+          54.920903373347734,
+          54.92091364804732
+        ]
+      ],
+      "fixed_length_pass": true,
+      "geometry_checks": [
+        {
+          "name": "native J3 and contact polarity",
+          "pass_": true
+        },
+        {
+          "name": "PCB strip covers the complete bonded length",
+          "value": 2.15,
+          "minimum": 0.65,
+          "pass_": true
+        },
+        {
+          "name": "red nonlocal self clearance",
+          "value": 1.9914770100721688,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red continuous bend radius lower bound",
+          "value": 6.785244200359202,
+          "minimum": 6.604,
+          "pass_": true
+        },
+        {
+          "name": "red other populated bodies",
+          "value": 0.21352373433956767,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to LTE cable",
+          "value": 0.33685942588650597,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to GNSS cable",
+          "value": 0.21161236251562113,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red carrier, frame and lid posts",
+          "value": 0.3474544724664476,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to LTE CAPH SZK-C-3L30 envelope",
+          "value": 1.4250914352787079,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to GNSS ZETA SZK-C-0G04 envelope",
+          "value": 9.038623608596444,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red lid roof",
+          "value": 1.82509143527871,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red cavity Y walls",
+          "value": 3.1045734960604077,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red endpoint at native pad datum",
+          "value": 1e-08,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "red endpoint at terminal-hole datum",
+          "value": 9.999996447286321e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "red flat wire tip clears pocket back",
+          "value": 0.08432809669855822,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "red wire insertion into terminal",
+          "value": 0.21999999999999714,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red conductor passes terminal hole",
+          "value": 0.2567452868921832,
+          "minimum": 0.1,
+          "pass_": true
+        },
+        {
+          "name": "red unowned PCB copper clearance",
+          "value": 0.32814753943733765,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red tip offset follows native pad centre",
+          "value": 9.999996122157688e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "red bonded conductor remains on native copper",
+          "value": 0.26756534837308976,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "red bonded conductor within solder-height envelope",
+          "value": 0.2695739709439142,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black nonlocal self clearance",
+          "value": 1.9789047813972724,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black continuous bend radius lower bound",
+          "value": 6.437945087578383,
+          "minimum": 6.604,
+          "pass_": false
+        },
+        {
+          "name": "black other populated bodies",
+          "value": 0.20979282670931876,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to LTE cable",
+          "value": 0.12967033342212986,
+          "minimum": 0.2,
+          "pass_": false
+        },
+        {
+          "name": "black to GNSS cable",
+          "value": -0.22817954105565594,
+          "minimum": 0.2,
+          "pass_": false
+        },
+        {
+          "name": "black carrier, frame and lid posts",
+          "value": 0.533459550418956,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to LTE CAPH SZK-C-3L30 envelope",
+          "value": 2.6441491349043433,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to GNSS ZETA SZK-C-0G04 envelope",
+          "value": 0.2633322127176577,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black lid roof",
+          "value": 0.6633322127176599,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black cavity Y walls",
+          "value": 4.635089957163411,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black endpoint at native pad datum",
+          "value": 1e-08,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black endpoint at terminal-hole datum",
+          "value": 9.999996447286321e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black flat wire tip clears pocket back",
+          "value": 0.06619985369105297,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "black wire insertion into terminal",
+          "value": 0.21999999999999714,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black conductor passes terminal hole",
+          "value": 0.21570328261493515,
+          "minimum": 0.1,
+          "pass_": true
+        },
+        {
+          "name": "black unowned PCB copper clearance",
+          "value": 0.5399692767729694,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black tip offset follows native pad centre",
+          "value": 9.99999644035419e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black bonded conductor remains on native copper",
+          "value": 0.29832587476286593,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "black bonded conductor within solder-height envelope",
+          "value": 0.11666780404711408,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "opposite wire envelopes",
+          "value": 0.4519325439164091,
+          "minimum": 0.2,
+          "pass_": true
+        }
+      ],
+      "pass_": false
+    },
+    {
+      "pose_index": 6,
+      "pcb_pose_mm": [
+        -0.76,
+        0.76,
+        11.02
+      ],
+      "fixed_length_intervals_mm": [
+        [
+          43.76580396524519,
+          43.76580722523551
+        ],
+        [
+          54.92090292834437,
+          54.92091409305197
+        ]
+      ],
+      "fixed_length_pass": true,
+      "geometry_checks": [
+        {
+          "name": "native J3 and contact polarity",
+          "pass_": true
+        },
+        {
+          "name": "PCB strip covers the complete bonded length",
+          "value": 2.15,
+          "minimum": 0.65,
+          "pass_": true
+        },
+        {
+          "name": "red nonlocal self clearance",
+          "value": 2.0046109549923634,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red continuous bend radius lower bound",
+          "value": 8.450562677286742,
+          "minimum": 6.604,
+          "pass_": true
+        },
+        {
+          "name": "red other populated bodies",
+          "value": 0.4381396482127668,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to LTE cable",
+          "value": 0.5528944550634677,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to GNSS cable",
+          "value": 0.7344242430544391,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red carrier, frame and lid posts",
+          "value": 0.3748299561128959,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to LTE CAPH SZK-C-3L30 envelope",
+          "value": 2.06123007426106,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to GNSS ZETA SZK-C-0G04 envelope",
+          "value": 8.86521248573492,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red lid roof",
+          "value": 2.461230074261062,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red cavity Y walls",
+          "value": 4.1173299441135125,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red endpoint at native pad datum",
+          "value": 1e-08,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "red endpoint at terminal-hole datum",
+          "value": 9.999996447286321e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "red flat wire tip clears pocket back",
+          "value": 0.08432809669855804,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "red wire insertion into terminal",
+          "value": 0.21999999999999714,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red conductor passes terminal hole",
+          "value": 0.2567452868921814,
+          "minimum": 0.1,
+          "pass_": true
+        },
+        {
+          "name": "red unowned PCB copper clearance",
+          "value": 0.32612197621122496,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red tip offset follows native pad centre",
+          "value": 9.999996324507787e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "red bonded conductor remains on native copper",
+          "value": 0.26479688989703476,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "red bonded conductor within solder-height envelope",
+          "value": 0.27085118548840126,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black nonlocal self clearance",
+          "value": 1.986827438807384,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black continuous bend radius lower bound",
+          "value": 6.958136891408402,
+          "minimum": 6.604,
+          "pass_": true
+        },
+        {
+          "name": "black other populated bodies",
+          "value": 0.32412060973220136,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to LTE cable",
+          "value": 0.6184596181493206,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to GNSS cable",
+          "value": 0.3822725888146525,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black carrier, frame and lid posts",
+          "value": 0.5622321974932092,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to LTE CAPH SZK-C-3L30 envelope",
+          "value": 3.110018987500032,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to GNSS ZETA SZK-C-0G04 envelope",
+          "value": 1.8931134616490954,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black lid roof",
+          "value": 2.2931134616490976,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black cavity Y walls",
+          "value": 5.39765717889396,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black endpoint at native pad datum",
+          "value": 1e-08,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black endpoint at terminal-hole datum",
+          "value": 9.999996447286321e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black flat wire tip clears pocket back",
+          "value": 0.06619985369105294,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "black wire insertion into terminal",
+          "value": 0.21999999999999714,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black conductor passes terminal hole",
+          "value": 0.21570328261493515,
+          "minimum": 0.1,
+          "pass_": true
+        },
+        {
+          "name": "black unowned PCB copper clearance",
+          "value": 0.5771522043741747,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black tip offset follows native pad centre",
+          "value": 9.999996661937646e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black bonded conductor remains on native copper",
+          "value": 0.30909509990670403,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "black bonded conductor within solder-height envelope",
+          "value": 0.10693925064166021,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "opposite wire envelopes",
+          "value": 0.4026396265166311,
+          "minimum": 0.2,
+          "pass_": true
+        }
+      ],
+      "pass_": true
+    },
+    {
+      "pose_index": 7,
+      "pcb_pose_mm": [
+        -0.76,
+        0.76,
+        11.24088
+      ],
+      "fixed_length_intervals_mm": [
+        [
+          43.76580403182372,
+          43.76580715865591
+        ],
+        [
+          54.9209031779773,
+          54.92091384341865
+        ]
+      ],
+      "fixed_length_pass": true,
+      "geometry_checks": [
+        {
+          "name": "native J3 and contact polarity",
+          "pass_": true
+        },
+        {
+          "name": "PCB strip covers the complete bonded length",
+          "value": 2.15,
+          "minimum": 0.65,
+          "pass_": true
+        },
+        {
+          "name": "red nonlocal self clearance",
+          "value": 2.0048436100427787,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red continuous bend radius lower bound",
+          "value": 8.488087311316415,
+          "minimum": 6.604,
+          "pass_": true
+        },
+        {
+          "name": "red other populated bodies",
+          "value": 0.677354667521495,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to LTE cable",
+          "value": 0.7148852741340768,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to GNSS cable",
+          "value": 0.3656449295776853,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red carrier, frame and lid posts",
+          "value": 0.3776385393819502,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to LTE CAPH SZK-C-3L30 envelope",
+          "value": 1.7246100957406514,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to GNSS ZETA SZK-C-0G04 envelope",
+          "value": 8.859144284983818,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red lid roof",
+          "value": 2.1246100957406537,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red cavity Y walls",
+          "value": 4.133561534671392,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red endpoint at native pad datum",
+          "value": 1e-08,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "red endpoint at terminal-hole datum",
+          "value": 9.999996447286321e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "red flat wire tip clears pocket back",
+          "value": 0.08432809669855804,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "red wire insertion into terminal",
+          "value": 0.21999999999999714,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red conductor passes terminal hole",
+          "value": 0.2567452868921814,
+          "minimum": 0.1,
+          "pass_": true
+        },
+        {
+          "name": "red unowned PCB copper clearance",
+          "value": 0.32728542818649464,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red tip offset follows native pad centre",
+          "value": 9.999996324507787e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "red bonded conductor remains on native copper",
+          "value": 0.26511421387083445,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "red bonded conductor within solder-height envelope",
+          "value": 0.27018218468094557,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black nonlocal self clearance",
+          "value": 1.9819812228765146,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black continuous bend radius lower bound",
+          "value": 6.8722744829118305,
+          "minimum": 6.604,
+          "pass_": true
+        },
+        {
+          "name": "black other populated bodies",
+          "value": 0.3024324269225516,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to LTE cable",
+          "value": 0.3471812121803166,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to GNSS cable",
+          "value": 0.33235726526274795,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black carrier, frame and lid posts",
+          "value": 0.5591022063304218,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to LTE CAPH SZK-C-3L30 envelope",
+          "value": 2.9532968140421776,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to GNSS ZETA SZK-C-0G04 envelope",
+          "value": 1.3991872582462737,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black lid roof",
+          "value": 1.7991872582462758,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black cavity Y walls",
+          "value": 5.396807246087937,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black endpoint at native pad datum",
+          "value": 1e-08,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black endpoint at terminal-hole datum",
+          "value": 9.999996447286321e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black flat wire tip clears pocket back",
+          "value": 0.06619985369105294,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "black wire insertion into terminal",
+          "value": 0.21999999999999714,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black conductor passes terminal hole",
+          "value": 0.21570328261493515,
+          "minimum": 0.1,
+          "pass_": true
+        },
+        {
+          "name": "black unowned PCB copper clearance",
+          "value": 0.5583755310138979,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black tip offset follows native pad centre",
+          "value": 9.999996661937646e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black bonded conductor remains on native copper",
+          "value": 0.30389706840729547,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "black bonded conductor within solder-height envelope",
+          "value": 0.10744541570261679,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "opposite wire envelopes",
+          "value": 0.4098793878517028,
+          "minimum": 0.2,
+          "pass_": true
+        }
+      ],
+      "pass_": true
+    },
+    {
+      "pose_index": 8,
+      "pcb_pose_mm": [
+        -0.76,
+        0.76,
+        11.97
+      ],
+      "fixed_length_intervals_mm": [
+        [
+          43.7658040574247,
+          43.76580713306675
+        ],
+        [
+          54.92090286255683,
+          54.92091415883692
+        ]
+      ],
+      "fixed_length_pass": true,
+      "geometry_checks": [
+        {
+          "name": "native J3 and contact polarity",
+          "pass_": true
+        },
+        {
+          "name": "PCB strip covers the complete bonded length",
+          "value": 2.15,
+          "minimum": 0.65,
+          "pass_": true
+        },
+        {
+          "name": "red nonlocal self clearance",
+          "value": 1.9931957548607557,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red continuous bend radius lower bound",
+          "value": 6.7828494783321736,
+          "minimum": 6.604,
+          "pass_": true
+        },
+        {
+          "name": "red other populated bodies",
+          "value": 0.2259107332641443,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to LTE cable",
+          "value": 0.33664980701720176,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to GNSS cable",
+          "value": 0.28390505455183307,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red carrier, frame and lid posts",
+          "value": 0.4017924475246714,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to LTE CAPH SZK-C-3L30 envelope",
+          "value": 1.4503212768331415,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to GNSS ZETA SZK-C-0G04 envelope",
+          "value": 7.567855594934561,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red lid roof",
+          "value": 1.8503212768331436,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red cavity Y walls",
+          "value": 4.377026964044087,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red endpoint at native pad datum",
+          "value": 1e-08,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "red endpoint at terminal-hole datum",
+          "value": 9.999996447286321e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "red flat wire tip clears pocket back",
+          "value": 0.08432809669855812,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "red wire insertion into terminal",
+          "value": 0.21999999999999714,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red conductor passes terminal hole",
+          "value": 0.2567452868921814,
+          "minimum": 0.1,
+          "pass_": true
+        },
+        {
+          "name": "red unowned PCB copper clearance",
+          "value": 0.3060812215876145,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red tip offset follows native pad centre",
+          "value": 9.999996324507787e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "red bonded conductor remains on native copper",
+          "value": 0.2534158641224842,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "red bonded conductor within solder-height envelope",
+          "value": 0.2733585464895001,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black nonlocal self clearance",
+          "value": 1.9751992217807468,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black continuous bend radius lower bound",
+          "value": 6.48371820012062,
+          "minimum": 6.604,
+          "pass_": false
+        },
+        {
+          "name": "black other populated bodies",
+          "value": 0.214888386882766,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to LTE cable",
+          "value": 0.127215680717188,
+          "minimum": 0.2,
+          "pass_": false
+        },
+        {
+          "name": "black to GNSS cable",
+          "value": -0.11082280858097633,
+          "minimum": 0.2,
+          "pass_": false
+        },
+        {
+          "name": "black carrier, frame and lid posts",
+          "value": 0.5066905662417355,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to LTE CAPH SZK-C-3L30 envelope",
+          "value": 2.5279852776939546,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to GNSS ZETA SZK-C-0G04 envelope",
+          "value": 0.26847287392968033,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black lid roof",
+          "value": 0.6684728739296825,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black cavity Y walls",
+          "value": 5.393340281764863,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black endpoint at native pad datum",
+          "value": 1e-08,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black endpoint at terminal-hole datum",
+          "value": 9.999996447286321e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black flat wire tip clears pocket back",
+          "value": 0.06619985369105294,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "black wire insertion into terminal",
+          "value": 0.21999999999999714,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black conductor passes terminal hole",
+          "value": 0.21570328261493515,
+          "minimum": 0.1,
+          "pass_": true
+        },
+        {
+          "name": "black unowned PCB copper clearance",
+          "value": 0.5385838113808417,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black tip offset follows native pad centre",
+          "value": 9.999996661937646e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black bonded conductor remains on native copper",
+          "value": 0.2918730092981981,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "black bonded conductor within solder-height envelope",
+          "value": 0.10958416650894276,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "opposite wire envelopes",
+          "value": 0.2667656634368852,
+          "minimum": 0.2,
+          "pass_": true
+        }
+      ],
+      "pass_": false
+    },
+    {
+      "pose_index": 9,
+      "pcb_pose_mm": [
+        0,
+        -0.76,
+        11.02
+      ],
+      "fixed_length_intervals_mm": [
+        [
+          43.765803772243274,
+          43.76580741823691
+        ],
+        [
+          54.920902900946025,
+          54.92091412045005
+        ]
+      ],
+      "fixed_length_pass": true,
+      "geometry_checks": [
+        {
+          "name": "native J3 and contact polarity",
+          "pass_": true
+        },
+        {
+          "name": "PCB strip covers the complete bonded length",
+          "value": 2.15,
+          "minimum": 0.65,
+          "pass_": true
+        },
+        {
+          "name": "red nonlocal self clearance",
+          "value": 2.0049200610195625,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red continuous bend radius lower bound",
+          "value": 7.589070593938157,
+          "minimum": 6.604,
+          "pass_": true
+        },
+        {
+          "name": "red other populated bodies",
+          "value": 0.3717944590595957,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to LTE cable",
+          "value": 0.8730515547187063,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to GNSS cable",
+          "value": 0.6439461113252417,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red carrier, frame and lid posts",
+          "value": 0.36936071103898477,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to LTE CAPH SZK-C-3L30 envelope",
+          "value": 1.9273658207069977,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to GNSS ZETA SZK-C-0G04 envelope",
+          "value": 8.916822418962628,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red lid roof",
+          "value": 2.327365820707,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red cavity Y walls",
+          "value": 2.4892416623581597,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red endpoint at native pad datum",
+          "value": 1e-08,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "red endpoint at terminal-hole datum",
+          "value": 9.999996447286321e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "red flat wire tip clears pocket back",
+          "value": 0.08432809669855804,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "red wire insertion into terminal",
+          "value": 0.21999999999999714,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red conductor passes terminal hole",
+          "value": 0.2567452868921814,
+          "minimum": 0.1,
+          "pass_": true
+        },
+        {
+          "name": "red unowned PCB copper clearance",
+          "value": 0.3250514380985484,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red tip offset follows native pad centre",
+          "value": 9.999996225241716e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "red bonded conductor remains on native copper",
+          "value": 0.26409929657752684,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "red bonded conductor within solder-height envelope",
+          "value": 0.2714681602252338,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black nonlocal self clearance",
+          "value": 1.984921153404041,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black continuous bend radius lower bound",
+          "value": 7.123348759824204,
+          "minimum": 6.604,
+          "pass_": true
+        },
+        {
+          "name": "black other populated bodies",
+          "value": 0.3027533178675433,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to LTE cable",
+          "value": 0.5314676528276219,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to GNSS cable",
+          "value": 0.33146711747191965,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black carrier, frame and lid posts",
+          "value": 0.5768929778241418,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to LTE CAPH SZK-C-3L30 envelope",
+          "value": 3.1514263553676174,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to GNSS ZETA SZK-C-0G04 envelope",
+          "value": 1.6395994584602287,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black lid roof",
+          "value": 2.039599458460231,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black cavity Y walls",
+          "value": 3.8768368589426694,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black endpoint at native pad datum",
+          "value": 1e-08,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black endpoint at terminal-hole datum",
+          "value": 9.999996447286321e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black flat wire tip clears pocket back",
+          "value": 0.06619985369105294,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "black wire insertion into terminal",
+          "value": 0.21999999999999714,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black conductor passes terminal hole",
+          "value": 0.21570328261493515,
+          "minimum": 0.1,
+          "pass_": true
+        },
+        {
+          "name": "black unowned PCB copper clearance",
+          "value": 0.5757328394111495,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black tip offset follows native pad centre",
+          "value": 9.999996225241716e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black bonded conductor remains on native copper",
+          "value": 0.3070524037143792,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "black bonded conductor within solder-height envelope",
+          "value": 0.10723834566253854,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "opposite wire envelopes",
+          "value": 0.40108216341416536,
+          "minimum": 0.2,
+          "pass_": true
+        }
+      ],
+      "pass_": true
+    },
+    {
+      "pose_index": 10,
+      "pcb_pose_mm": [
+        0,
+        -0.76,
+        11.24088
+      ],
+      "fixed_length_intervals_mm": [
+        [
+          43.765803791201826,
+          43.76580739927815
+        ],
+        [
+          54.9209031993837,
+          54.92091382203923
+        ]
+      ],
+      "fixed_length_pass": true,
+      "geometry_checks": [
+        {
+          "name": "native J3 and contact polarity",
+          "pass_": true
+        },
+        {
+          "name": "PCB strip covers the complete bonded length",
+          "value": 2.15,
+          "minimum": 0.65,
+          "pass_": true
+        },
+        {
+          "name": "red nonlocal self clearance",
+          "value": 2.005597516005021,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red continuous bend radius lower bound",
+          "value": 7.690492915120872,
+          "minimum": 6.604,
+          "pass_": true
+        },
+        {
+          "name": "red other populated bodies",
+          "value": 0.3679954014666665,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to LTE cable",
+          "value": 0.6730884281142989,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to GNSS cable",
+          "value": 0.437837928604146,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red carrier, frame and lid posts",
+          "value": 0.37157217792368796,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to LTE CAPH SZK-C-3L30 envelope",
+          "value": 1.7327931203164504,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to GNSS ZETA SZK-C-0G04 envelope",
+          "value": 8.91371914943568,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red lid roof",
+          "value": 2.1327931203164523,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red cavity Y walls",
+          "value": 2.4920763794885508,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red endpoint at native pad datum",
+          "value": 1e-08,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "red endpoint at terminal-hole datum",
+          "value": 9.999996447286321e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "red flat wire tip clears pocket back",
+          "value": 0.08432809669855812,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "red wire insertion into terminal",
+          "value": 0.21999999999999714,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red conductor passes terminal hole",
+          "value": 0.2567452868921814,
+          "minimum": 0.1,
+          "pass_": true
+        },
+        {
+          "name": "red unowned PCB copper clearance",
+          "value": 0.3250627757861735,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red tip offset follows native pad centre",
+          "value": 9.999996225241716e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "red bonded conductor remains on native copper",
+          "value": 0.2641227824678758,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "red bonded conductor within solder-height envelope",
+          "value": 0.27146158612179083,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black nonlocal self clearance",
+          "value": 1.9843096259638189,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black continuous bend radius lower bound",
+          "value": 6.834182891576939,
+          "minimum": 6.604,
+          "pass_": true
+        },
+        {
+          "name": "black other populated bodies",
+          "value": 0.2836489064126831,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to LTE cable",
+          "value": 0.3392123812934286,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to GNSS cable",
+          "value": 0.32603351046018186,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black carrier, frame and lid posts",
+          "value": 0.4428408175615604,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to LTE CAPH SZK-C-3L30 envelope",
+          "value": 3.215996886861475,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to GNSS ZETA SZK-C-0G04 envelope",
+          "value": 0.29336703940896464,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black lid roof",
+          "value": 0.6933670394089668,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black cavity Y walls",
+          "value": 3.8775383755094293,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black endpoint at native pad datum",
+          "value": 1e-08,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black endpoint at terminal-hole datum",
+          "value": 9.999996447286321e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black flat wire tip clears pocket back",
+          "value": 0.06619985369105288,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "black wire insertion into terminal",
+          "value": 0.21999999999999714,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black conductor passes terminal hole",
+          "value": 0.21570328261493504,
+          "minimum": 0.1,
+          "pass_": true
+        },
+        {
+          "name": "black unowned PCB copper clearance",
+          "value": 0.5657548381597515,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black tip offset follows native pad centre",
+          "value": 9.999996225241716e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black bonded conductor remains on native copper",
+          "value": 0.30189871480281427,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "black bonded conductor within solder-height envelope",
+          "value": 0.10890865113127934,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "opposite wire envelopes",
+          "value": 0.40215412464604344,
+          "minimum": 0.2,
+          "pass_": true
+        }
+      ],
+      "pass_": true
+    },
+    {
+      "pose_index": 11,
+      "pcb_pose_mm": [
+        0,
+        -0.76,
+        11.97
+      ],
+      "fixed_length_intervals_mm": [
+        [
+          43.765803143503966,
+          43.76580804714893
+        ],
+        [
+          54.92090351354824,
+          54.92091350785037
+        ]
+      ],
+      "fixed_length_pass": true,
+      "geometry_checks": [
+        {
+          "name": "native J3 and contact polarity",
+          "pass_": true
+        },
+        {
+          "name": "PCB strip covers the complete bonded length",
+          "value": 2.15,
+          "minimum": 0.65,
+          "pass_": true
+        },
+        {
+          "name": "red nonlocal self clearance",
+          "value": 1.991764149694316,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red continuous bend radius lower bound",
+          "value": 6.808884682624286,
+          "minimum": 6.604,
+          "pass_": true
+        },
+        {
+          "name": "red other populated bodies",
+          "value": 0.2408791272258275,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to LTE cable",
+          "value": 0.3454452683990718,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to GNSS cable",
+          "value": 0.24457870786932437,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red carrier, frame and lid posts",
+          "value": 0.3099305965888932,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to LTE CAPH SZK-C-3L30 envelope",
+          "value": 1.4435351742659657,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to GNSS ZETA SZK-C-0G04 envelope",
+          "value": 9.00672635505659,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red lid roof",
+          "value": 1.8435351742659678,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red cavity Y walls",
+          "value": 2.484055791229613,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red endpoint at native pad datum",
+          "value": 1e-08,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "red endpoint at terminal-hole datum",
+          "value": 9.999996447286321e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "red flat wire tip clears pocket back",
+          "value": 0.08432809669855804,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "red wire insertion into terminal",
+          "value": 0.21999999999999714,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red conductor passes terminal hole",
+          "value": 0.2567452868921814,
+          "minimum": 0.1,
+          "pass_": true
+        },
+        {
+          "name": "red unowned PCB copper clearance",
+          "value": 0.32822721491717216,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red tip offset follows native pad centre",
+          "value": 9.999996225241716e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "red bonded conductor remains on native copper",
+          "value": 0.26732119799913434,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "red bonded conductor within solder-height envelope",
+          "value": 0.26962914077242606,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black nonlocal self clearance",
+          "value": 1.9813518363734615,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black continuous bend radius lower bound",
+          "value": 6.378854385644643,
+          "minimum": 6.604,
+          "pass_": false
+        },
+        {
+          "name": "black other populated bodies",
+          "value": 0.21266202502170062,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to LTE cable",
+          "value": 0.013270415379911513,
+          "minimum": 0.2,
+          "pass_": false
+        },
+        {
+          "name": "black to GNSS cable",
+          "value": -0.19818493981068405,
+          "minimum": 0.2,
+          "pass_": false
+        },
+        {
+          "name": "black carrier, frame and lid posts",
+          "value": 0.5542600494225377,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to LTE CAPH SZK-C-3L30 envelope",
+          "value": 2.748185674243927,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to GNSS ZETA SZK-C-0G04 envelope",
+          "value": 0.2698856393990522,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black lid roof",
+          "value": 0.6698856393990543,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black cavity Y walls",
+          "value": 3.877435035729973,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black endpoint at native pad datum",
+          "value": 1e-08,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black endpoint at terminal-hole datum",
+          "value": 9.999996447286321e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black flat wire tip clears pocket back",
+          "value": 0.06619985369105288,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "black wire insertion into terminal",
+          "value": 0.21999999999999714,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black conductor passes terminal hole",
+          "value": 0.21570328261493504,
+          "minimum": 0.1,
+          "pass_": true
+        },
+        {
+          "name": "black unowned PCB copper clearance",
+          "value": 0.5425192722404735,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black tip offset follows native pad centre",
+          "value": 9.999996225241716e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black bonded conductor remains on native copper",
+          "value": 0.30770648126729044,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "black bonded conductor within solder-height envelope",
+          "value": 0.12262271282888837,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "opposite wire envelopes",
+          "value": 0.4418670183840566,
+          "minimum": 0.2,
+          "pass_": true
+        }
+      ],
+      "pass_": false
+    },
+    {
+      "pose_index": 12,
+      "pcb_pose_mm": [
+        0,
+        0,
+        11.02
+      ],
+      "fixed_length_intervals_mm": [
+        [
+          43.76580372838997,
+          43.76580746209004
+        ],
+        [
+          54.92090263243589,
+          54.920914388960824
+        ]
+      ],
+      "fixed_length_pass": true,
+      "geometry_checks": [
+        {
+          "name": "native J3 and contact polarity",
+          "pass_": true
+        },
+        {
+          "name": "PCB strip covers the complete bonded length",
+          "value": 2.15,
+          "minimum": 0.65,
+          "pass_": true
+        },
+        {
+          "name": "red nonlocal self clearance",
+          "value": 2.0038263187075436,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red continuous bend radius lower bound",
+          "value": 7.344152137028258,
+          "minimum": 6.604,
+          "pass_": true
+        },
+        {
+          "name": "red other populated bodies",
+          "value": 0.40169221178913755,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to LTE cable",
+          "value": 0.9119267689853103,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to GNSS cable",
+          "value": 0.8199338683209619,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red carrier, frame and lid posts",
+          "value": 0.36810731070596986,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to LTE CAPH SZK-C-3L30 envelope",
+          "value": 1.8664068895268378,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to GNSS ZETA SZK-C-0G04 envelope",
+          "value": 8.896443002612916,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red lid roof",
+          "value": 2.26640688952684,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red cavity Y walls",
+          "value": 3.2224958205027794,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red endpoint at native pad datum",
+          "value": 1e-08,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "red endpoint at terminal-hole datum",
+          "value": 9.999996447286321e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "red flat wire tip clears pocket back",
+          "value": 0.08432809669855804,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "red wire insertion into terminal",
+          "value": 0.21999999999999714,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red conductor passes terminal hole",
+          "value": 0.2567452868921814,
+          "minimum": 0.1,
+          "pass_": true
+        },
+        {
+          "name": "red unowned PCB copper clearance",
+          "value": 0.3250153200172404,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red tip offset follows native pad centre",
+          "value": 9.999996447286321e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "red bonded conductor remains on native copper",
+          "value": 0.2639816551287488,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "red bonded conductor within solder-height envelope",
+          "value": 0.271489288608046,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black nonlocal self clearance",
+          "value": 1.9832208184472477,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black continuous bend radius lower bound",
+          "value": 6.948182880306257,
+          "minimum": 6.604,
+          "pass_": true
+        },
+        {
+          "name": "black other populated bodies",
+          "value": 0.31838298540437043,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to LTE cable",
+          "value": 0.5588862582417611,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to GNSS cable",
+          "value": 0.4853168247653911,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black carrier, frame and lid posts",
+          "value": 0.5657267347588533,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to LTE CAPH SZK-C-3L30 envelope",
+          "value": 3.124904552363441,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to GNSS ZETA SZK-C-0G04 envelope",
+          "value": 1.8159546583945103,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black lid roof",
+          "value": 2.2159546583945122,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black cavity Y walls",
+          "value": 4.637307905964825,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black endpoint at native pad datum",
+          "value": 1e-08,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black endpoint at terminal-hole datum",
+          "value": 9.999996447286321e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black flat wire tip clears pocket back",
+          "value": 0.06619985369105294,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "black wire insertion into terminal",
+          "value": 0.21999999999999714,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black conductor passes terminal hole",
+          "value": 0.21570328261493515,
+          "minimum": 0.1,
+          "pass_": true
+        },
+        {
+          "name": "black unowned PCB copper clearance",
+          "value": 0.5765968720980106,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black tip offset follows native pad centre",
+          "value": 9.999996447286321e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black bonded conductor remains on native copper",
+          "value": 0.3088679135284047,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "black bonded conductor within solder-height envelope",
+          "value": 0.10704204589345534,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "opposite wire envelopes",
+          "value": 0.4027722194404306,
+          "minimum": 0.2,
+          "pass_": true
+        }
+      ],
+      "pass_": true
+    },
+    {
+      "pose_index": 13,
+      "pcb_pose_mm": [
+        0,
+        0,
+        11.24088
+      ],
+      "fixed_length_intervals_mm": [
+        [
+          43.765803747119605,
+          43.76580744336048
+        ],
+        [
+          54.92090266693103,
+          54.92091435446548
+        ]
+      ],
+      "fixed_length_pass": true,
+      "geometry_checks": [
+        {
+          "name": "native J3 and contact polarity",
+          "pass_": true
+        },
+        {
+          "name": "PCB strip covers the complete bonded length",
+          "value": 2.15,
+          "minimum": 0.65,
+          "pass_": true
+        },
+        {
+          "name": "red nonlocal self clearance",
+          "value": 2.004439363168662,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red continuous bend radius lower bound",
+          "value": 7.437950013792618,
+          "minimum": 6.604,
+          "pass_": true
+        },
+        {
+          "name": "red other populated bodies",
+          "value": 0.39722774766527696,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to LTE cable",
+          "value": 0.7096355667468974,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to GNSS cable",
+          "value": 0.60829844567515,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red carrier, frame and lid posts",
+          "value": 0.37029360417289886,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to LTE CAPH SZK-C-3L30 envelope",
+          "value": 1.6711959305032311,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to GNSS ZETA SZK-C-0G04 envelope",
+          "value": 8.892529345669915,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red lid roof",
+          "value": 2.0711959305032335,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red cavity Y walls",
+          "value": 3.2256521607525745,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red endpoint at native pad datum",
+          "value": 1e-08,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "red endpoint at terminal-hole datum",
+          "value": 9.999996447286321e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "red flat wire tip clears pocket back",
+          "value": 0.08432809669855804,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "red wire insertion into terminal",
+          "value": 0.21999999999999714,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red conductor passes terminal hole",
+          "value": 0.2567452868921814,
+          "minimum": 0.1,
+          "pass_": true
+        },
+        {
+          "name": "red unowned PCB copper clearance",
+          "value": 0.3250196564475699,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red tip offset follows native pad centre",
+          "value": 9.999996447286321e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "red bonded conductor remains on native copper",
+          "value": 0.26399535080330594,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "red bonded conductor within solder-height envelope",
+          "value": 0.2714867524585689,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black nonlocal self clearance",
+          "value": 1.9832155206751492,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black continuous bend radius lower bound",
+          "value": 6.935603165383123,
+          "minimum": 6.604,
+          "pass_": true
+        },
+        {
+          "name": "black other populated bodies",
+          "value": 0.30279947842476673,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to LTE cable",
+          "value": 0.35067542898685367,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to GNSS cable",
+          "value": 0.33307362754244724,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black carrier, frame and lid posts",
+          "value": 0.5707980254369498,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to LTE CAPH SZK-C-3L30 envelope",
+          "value": 2.955314987317177,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to GNSS ZETA SZK-C-0G04 envelope",
+          "value": 1.3007629925069573,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black lid roof",
+          "value": 1.7007629925069594,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black cavity Y walls",
+          "value": 4.636920386446201,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black endpoint at native pad datum",
+          "value": 1e-08,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black endpoint at terminal-hole datum",
+          "value": 9.999996447286321e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black flat wire tip clears pocket back",
+          "value": 0.06619985369105294,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "black wire insertion into terminal",
+          "value": 0.21999999999999714,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black conductor passes terminal hole",
+          "value": 0.21570328261493515,
+          "minimum": 0.1,
+          "pass_": true
+        },
+        {
+          "name": "black unowned PCB copper clearance",
+          "value": 0.575420995295689,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black tip offset follows native pad centre",
+          "value": 9.999996447286321e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black bonded conductor remains on native copper",
+          "value": 0.30738215321983253,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "black bonded conductor within solder-height envelope",
+          "value": 0.1074361575035756,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "opposite wire envelopes",
+          "value": 0.40233343873850813,
+          "minimum": 0.2,
+          "pass_": true
+        }
+      ],
+      "pass_": true
+    },
+    {
+      "pose_index": 14,
+      "pcb_pose_mm": [
+        0,
+        0,
+        11.97
+      ],
+      "fixed_length_intervals_mm": [
+        [
+          43.76580337696419,
+          43.765807813663315
+        ],
+        [
+          54.92090337071659,
+          54.920913650656054
+        ]
+      ],
+      "fixed_length_pass": true,
+      "geometry_checks": [
+        {
+          "name": "native J3 and contact polarity",
+          "pass_": true
+        },
+        {
+          "name": "PCB strip covers the complete bonded length",
+          "value": 2.15,
+          "minimum": 0.65,
+          "pass_": true
+        },
+        {
+          "name": "red nonlocal self clearance",
+          "value": 1.9914952770540302,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red continuous bend radius lower bound",
+          "value": 6.8000843710445675,
+          "minimum": 6.604,
+          "pass_": true
+        },
+        {
+          "name": "red other populated bodies",
+          "value": 0.2316912260833645,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to LTE cable",
+          "value": 0.3315124782821915,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to GNSS cable",
+          "value": 0.2422365290480383,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red carrier, frame and lid posts",
+          "value": 0.2984575623933607,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to LTE CAPH SZK-C-3L30 envelope",
+          "value": 1.433637680928395,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to GNSS ZETA SZK-C-0G04 envelope",
+          "value": 8.888714823401976,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red lid roof",
+          "value": 1.8336376809283972,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red cavity Y walls",
+          "value": 3.05163619059515,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red endpoint at native pad datum",
+          "value": 1e-08,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "red endpoint at terminal-hole datum",
+          "value": 9.999996447286321e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "red flat wire tip clears pocket back",
+          "value": 0.08432809669855812,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "red wire insertion into terminal",
+          "value": 0.21999999999999714,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red conductor passes terminal hole",
+          "value": 0.2567452868921814,
+          "minimum": 0.1,
+          "pass_": true
+        },
+        {
+          "name": "red unowned PCB copper clearance",
+          "value": 0.32907052701187367,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red tip offset follows native pad centre",
+          "value": 9.999996447286321e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "red bonded conductor remains on native copper",
+          "value": 0.26699183362626044,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "red bonded conductor within solder-height envelope",
+          "value": 0.26892855639246105,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black nonlocal self clearance",
+          "value": 1.9804393074314044,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black continuous bend radius lower bound",
+          "value": 6.558537221615488,
+          "minimum": 6.604,
+          "pass_": false
+        },
+        {
+          "name": "black other populated bodies",
+          "value": 0.22269382963915535,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to LTE cable",
+          "value": 0.12840691341125693,
+          "minimum": 0.2,
+          "pass_": false
+        },
+        {
+          "name": "black to GNSS cable",
+          "value": -0.06362777991279762,
+          "minimum": 0.2,
+          "pass_": false
+        },
+        {
+          "name": "black carrier, frame and lid posts",
+          "value": 0.5407961358140558,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to LTE CAPH SZK-C-3L30 envelope",
+          "value": 2.6367354834122483,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to GNSS ZETA SZK-C-0G04 envelope",
+          "value": 0.26908521157387294,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black lid roof",
+          "value": 0.669085211573875,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black cavity Y walls",
+          "value": 4.636170013789302,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black endpoint at native pad datum",
+          "value": 1e-08,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black endpoint at terminal-hole datum",
+          "value": 9.999996447286321e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black flat wire tip clears pocket back",
+          "value": 0.06619985369105294,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "black wire insertion into terminal",
+          "value": 0.21999999999999714,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black conductor passes terminal hole",
+          "value": 0.21570328261493515,
+          "minimum": 0.1,
+          "pass_": true
+        },
+        {
+          "name": "black unowned PCB copper clearance",
+          "value": 0.5422009607985544,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black tip offset follows native pad centre",
+          "value": 9.999996447286321e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black bonded conductor remains on native copper",
+          "value": 0.3014499220207529,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "black bonded conductor within solder-height envelope",
+          "value": 0.11582800459284681,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "opposite wire envelopes",
+          "value": 0.4590267131314383,
+          "minimum": 0.2,
+          "pass_": true
+        }
+      ],
+      "pass_": false
+    },
+    {
+      "pose_index": 15,
+      "pcb_pose_mm": [
+        0,
+        0.76,
+        11.02
+      ],
+      "fixed_length_intervals_mm": [
+        [
+          43.76580368639845,
+          43.76580750408153
+        ],
+        [
+          54.92090272521786,
+          54.92091429617853
+        ]
+      ],
+      "fixed_length_pass": true,
+      "geometry_checks": [
+        {
+          "name": "native J3 and contact polarity",
+          "pass_": true
+        },
+        {
+          "name": "PCB strip covers the complete bonded length",
+          "value": 2.15,
+          "minimum": 0.65,
+          "pass_": true
+        },
+        {
+          "name": "red nonlocal self clearance",
+          "value": 2.003210607562936,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red continuous bend radius lower bound",
+          "value": 7.2049225424289425,
+          "minimum": 6.604,
+          "pass_": true
+        },
+        {
+          "name": "red other populated bodies",
+          "value": 0.4231113034134401,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to LTE cable",
+          "value": 0.6467598679879222,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to GNSS cable",
+          "value": 0.9159753322384242,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red carrier, frame and lid posts",
+          "value": 0.3672060351817648,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to LTE CAPH SZK-C-3L30 envelope",
+          "value": 1.8227133921596332,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to GNSS ZETA SZK-C-0G04 envelope",
+          "value": 8.61783538578711,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red lid roof",
+          "value": 2.2227133921596356,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red cavity Y walls",
+          "value": 3.963512244852931,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red endpoint at native pad datum",
+          "value": 1e-08,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "red endpoint at terminal-hole datum",
+          "value": 9.999996447286321e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "red flat wire tip clears pocket back",
+          "value": 0.08432809669855804,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "red wire insertion into terminal",
+          "value": 0.21999999999999714,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red conductor passes terminal hole",
+          "value": 0.2567452868921814,
+          "minimum": 0.1,
+          "pass_": true
+        },
+        {
+          "name": "red unowned PCB copper clearance",
+          "value": 0.32498831084712576,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red tip offset follows native pad centre",
+          "value": 9.999996669330926e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "red bonded conductor remains on native copper",
+          "value": 0.26390005199052524,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "red bonded conductor within solder-height envelope",
+          "value": 0.27150507835955406,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black nonlocal self clearance",
+          "value": 1.985127836006608,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black continuous bend radius lower bound",
+          "value": 6.881239394752151,
+          "minimum": 6.604,
+          "pass_": true
+        },
+        {
+          "name": "black other populated bodies",
+          "value": 0.32602397287438817,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to LTE cable",
+          "value": 0.5995657099572765,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to GNSS cable",
+          "value": 0.6755863331988287,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black carrier, frame and lid posts",
+          "value": 0.5643180957002223,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to LTE CAPH SZK-C-3L30 envelope",
+          "value": 2.9744533725360567,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to GNSS ZETA SZK-C-0G04 envelope",
+          "value": 2.0712925985949964,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black lid roof",
+          "value": 2.4712925985949985,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black cavity Y walls",
+          "value": 5.397381641039363,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black endpoint at native pad datum",
+          "value": 1e-08,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black endpoint at terminal-hole datum",
+          "value": 9.999996447286321e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black flat wire tip clears pocket back",
+          "value": 0.06619985369105294,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "black wire insertion into terminal",
+          "value": 0.21999999999999714,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black conductor passes terminal hole",
+          "value": 0.21570328261493515,
+          "minimum": 0.1,
+          "pass_": true
+        },
+        {
+          "name": "black unowned PCB copper clearance",
+          "value": 0.5785414687227184,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black tip offset follows native pad centre",
+          "value": 9.999996669330926e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black bonded conductor remains on native copper",
+          "value": 0.3088650642750304,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "black bonded conductor within solder-height envelope",
+          "value": 0.10610968546333521,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "opposite wire envelopes",
+          "value": 0.4037217874632306,
+          "minimum": 0.2,
+          "pass_": true
+        }
+      ],
+      "pass_": true
+    },
+    {
+      "pose_index": 16,
+      "pcb_pose_mm": [
+        0,
+        0.76,
+        11.24088
+      ],
+      "fixed_length_intervals_mm": [
+        [
+          43.7658037056318,
+          43.76580748484811
+        ],
+        [
+          54.920902770841444,
+          54.92091425055486
+        ]
+      ],
+      "fixed_length_pass": true,
+      "geometry_checks": [
+        {
+          "name": "native J3 and contact polarity",
+          "pass_": true
+        },
+        {
+          "name": "PCB strip covers the complete bonded length",
+          "value": 2.15,
+          "minimum": 0.65,
+          "pass_": true
+        },
+        {
+          "name": "red nonlocal self clearance",
+          "value": 2.0036703483399223,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red continuous bend radius lower bound",
+          "value": 7.294481371413803,
+          "minimum": 6.604,
+          "pass_": true
+        },
+        {
+          "name": "red other populated bodies",
+          "value": 0.4192659774786233,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to LTE cable",
+          "value": 0.6605734055529271,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to GNSS cable",
+          "value": 0.6958122926454625,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red carrier, frame and lid posts",
+          "value": 0.36939887096969876,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to LTE CAPH SZK-C-3L30 envelope",
+          "value": 1.6263438331823112,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to GNSS ZETA SZK-C-0G04 envelope",
+          "value": 8.567482437290572,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red lid roof",
+          "value": 2.0263438331823136,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red cavity Y walls",
+          "value": 3.966622263848223,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red endpoint at native pad datum",
+          "value": 1e-08,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "red endpoint at terminal-hole datum",
+          "value": 9.999996447286321e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "red flat wire tip clears pocket back",
+          "value": 0.08432809669855804,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "red wire insertion into terminal",
+          "value": 0.21999999999999714,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red conductor passes terminal hole",
+          "value": 0.2567452868921814,
+          "minimum": 0.1,
+          "pass_": true
+        },
+        {
+          "name": "red unowned PCB copper clearance",
+          "value": 0.3249940892577522,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red tip offset follows native pad centre",
+          "value": 9.999996669330926e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "red bonded conductor remains on native copper",
+          "value": 0.26391342219240954,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "red bonded conductor within solder-height envelope",
+          "value": 0.27150171635441045,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black nonlocal self clearance",
+          "value": 1.9853462988995962,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black continuous bend radius lower bound",
+          "value": 6.847286643703015,
+          "minimum": 6.604,
+          "pass_": true
+        },
+        {
+          "name": "black other populated bodies",
+          "value": 0.3284275699092093,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to LTE cable",
+          "value": 0.34307703728089556,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to GNSS cable",
+          "value": 0.47889919005216053,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black carrier, frame and lid posts",
+          "value": 0.565792849815771,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to LTE CAPH SZK-C-3L30 envelope",
+          "value": 2.678508768455247,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to GNSS ZETA SZK-C-0G04 envelope",
+          "value": 2.13345013525997,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black lid roof",
+          "value": 2.5334501352599723,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black cavity Y walls",
+          "value": 5.3973539138112585,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black endpoint at native pad datum",
+          "value": 1e-08,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black endpoint at terminal-hole datum",
+          "value": 9.999996447286321e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black flat wire tip clears pocket back",
+          "value": 0.06619985369105294,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "black wire insertion into terminal",
+          "value": 0.21999999999999714,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black conductor passes terminal hole",
+          "value": 0.21570328261493515,
+          "minimum": 0.1,
+          "pass_": true
+        },
+        {
+          "name": "black unowned PCB copper clearance",
+          "value": 0.5794344084695973,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black tip offset follows native pad centre",
+          "value": 9.999996669330926e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black bonded conductor remains on native copper",
+          "value": 0.30857321589080877,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "black bonded conductor within solder-height envelope",
+          "value": 0.10565044834749782,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "opposite wire envelopes",
+          "value": 0.40354496128643014,
+          "minimum": 0.2,
+          "pass_": true
+        }
+      ],
+      "pass_": true
+    },
+    {
+      "pose_index": 17,
+      "pcb_pose_mm": [
+        0,
+        0.76,
+        11.97
+      ],
+      "fixed_length_intervals_mm": [
+        [
+          43.765806774087494,
+          43.76581022015999
+        ],
+        [
+          54.92090309993285,
+          54.92091392321394
+        ]
+      ],
+      "fixed_length_pass": true,
+      "geometry_checks": [
+        {
+          "name": "native J3 and contact polarity",
+          "pass_": true
+        },
+        {
+          "name": "PCB strip covers the complete bonded length",
+          "value": 2.15,
+          "minimum": 0.65,
+          "pass_": true
+        },
+        {
+          "name": "red nonlocal self clearance",
+          "value": 1.9954389738109466,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red continuous bend radius lower bound",
+          "value": 6.81577049536195,
+          "minimum": 6.604,
+          "pass_": true
+        },
+        {
+          "name": "red other populated bodies",
+          "value": 0.2702183803158329,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to LTE cable",
+          "value": 0.33744283436189565,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to GNSS cable",
+          "value": 0.3127852759804261,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red carrier, frame and lid posts",
+          "value": 0.3552811750488021,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to LTE CAPH SZK-C-3L30 envelope",
+          "value": 1.415965226434649,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to GNSS ZETA SZK-C-0G04 envelope",
+          "value": 7.496682001475477,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red lid roof",
+          "value": 1.815965226434651,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red cavity Y walls",
+          "value": 4.292894287909965,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red endpoint at native pad datum",
+          "value": 1e-08,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "red endpoint at terminal-hole datum",
+          "value": 9.999996447286321e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "red flat wire tip clears pocket back",
+          "value": 0.08432809669855812,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "red wire insertion into terminal",
+          "value": 0.21999999999999714,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red conductor passes terminal hole",
+          "value": 0.2567452868921814,
+          "minimum": 0.1,
+          "pass_": true
+        },
+        {
+          "name": "red unowned PCB copper clearance",
+          "value": 0.3066951810554622,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red tip offset follows native pad centre",
+          "value": 9.999996669330926e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "red bonded conductor remains on native copper",
+          "value": 0.26010760245851466,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "red bonded conductor within solder-height envelope",
+          "value": 0.2770164602622487,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black nonlocal self clearance",
+          "value": 1.9802661030001325,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black continuous bend radius lower bound",
+          "value": 6.606490664704052,
+          "minimum": 6.604,
+          "pass_": true
+        },
+        {
+          "name": "black other populated bodies",
+          "value": 0.23526255624632553,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to LTE cable",
+          "value": 0.1501864066528533,
+          "minimum": 0.2,
+          "pass_": false
+        },
+        {
+          "name": "black to GNSS cable",
+          "value": 0.08834946888331245,
+          "minimum": 0.2,
+          "pass_": false
+        },
+        {
+          "name": "black carrier, frame and lid posts",
+          "value": 0.5266377926804845,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to LTE CAPH SZK-C-3L30 envelope",
+          "value": 2.5677908810824506,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to GNSS ZETA SZK-C-0G04 envelope",
+          "value": 0.2754621708496382,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black lid roof",
+          "value": 0.6754621708496403,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black cavity Y walls",
+          "value": 5.395925766292527,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black endpoint at native pad datum",
+          "value": 1e-08,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black endpoint at terminal-hole datum",
+          "value": 9.999996447286321e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black flat wire tip clears pocket back",
+          "value": 0.06619985369105297,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "black wire insertion into terminal",
+          "value": 0.21999999999999714,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black conductor passes terminal hole",
+          "value": 0.21570328261493515,
+          "minimum": 0.1,
+          "pass_": true
+        },
+        {
+          "name": "black unowned PCB copper clearance",
+          "value": 0.544272285252572,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black tip offset follows native pad centre",
+          "value": 9.999996669330926e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black bonded conductor remains on native copper",
+          "value": 0.3080081362616036,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "black bonded conductor within solder-height envelope",
+          "value": 0.11874849549526378,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "opposite wire envelopes",
+          "value": 0.29080635689089573,
+          "minimum": 0.2,
+          "pass_": true
+        }
+      ],
+      "pass_": false
+    },
+    {
+      "pose_index": 18,
+      "pcb_pose_mm": [
+        0.76,
+        -0.76,
+        11.02
+      ],
+      "fixed_length_intervals_mm": [
+        [
+          43.76580359701201,
+          43.7658075934681
+        ],
+        [
+          54.92090257145589,
+          54.92091444994051
+        ]
+      ],
+      "fixed_length_pass": true,
+      "geometry_checks": [
+        {
+          "name": "native J3 and contact polarity",
+          "pass_": true
+        },
+        {
+          "name": "PCB strip covers the complete bonded length",
+          "value": 2.15,
+          "minimum": 0.65,
+          "pass_": true
+        },
+        {
+          "name": "red nonlocal self clearance",
+          "value": 1.9998841069064832,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red continuous bend radius lower bound",
+          "value": 6.868427448658107,
+          "minimum": 6.604,
+          "pass_": true
+        },
+        {
+          "name": "red other populated bodies",
+          "value": 0.4449872533347617,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to LTE cable",
+          "value": 0.5879146397336652,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to GNSS cable",
+          "value": 0.4299467116612565,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red carrier, frame and lid posts",
+          "value": 0.3700741659248677,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to LTE CAPH SZK-C-3L30 envelope",
+          "value": 1.6169882040726746,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to GNSS ZETA SZK-C-0G04 envelope",
+          "value": 8.909750152481074,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red lid roof",
+          "value": 2.016988204072677,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red cavity Y walls",
+          "value": 2.316114692494962,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red endpoint at native pad datum",
+          "value": 1e-08,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "red endpoint at terminal-hole datum",
+          "value": 9.999996447286321e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "red flat wire tip clears pocket back",
+          "value": 0.08432809669855804,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "red wire insertion into terminal",
+          "value": 0.21999999999999714,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red conductor passes terminal hole",
+          "value": 0.2567452868921814,
+          "minimum": 0.1,
+          "pass_": true
+        },
+        {
+          "name": "red unowned PCB copper clearance",
+          "value": 0.3248230545362466,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red tip offset follows native pad centre",
+          "value": 9.999995917759608e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "red bonded conductor remains on native copper",
+          "value": 0.26335734941444144,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "red bonded conductor within solder-height envelope",
+          "value": 0.2716016783359685,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black nonlocal self clearance",
+          "value": 1.9835649678262792,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black continuous bend radius lower bound",
+          "value": 6.843857733913555,
+          "minimum": 6.604,
+          "pass_": true
+        },
+        {
+          "name": "black other populated bodies",
+          "value": 0.3074049979978388,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to LTE cable",
+          "value": 0.3839667209902547,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to GNSS cable",
+          "value": 0.43613729580784594,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black carrier, frame and lid posts",
+          "value": 0.5829976938163904,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to LTE CAPH SZK-C-3L30 envelope",
+          "value": 3.115226413941233,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to GNSS ZETA SZK-C-0G04 envelope",
+          "value": 1.5887864997109098,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black lid roof",
+          "value": 1.988786499710912,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black cavity Y walls",
+          "value": 3.8763624166070767,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black endpoint at native pad datum",
+          "value": 1e-08,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black endpoint at terminal-hole datum",
+          "value": 9.999996447286321e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black flat wire tip clears pocket back",
+          "value": 0.06619985369105294,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "black wire insertion into terminal",
+          "value": 0.21999999999999714,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black conductor passes terminal hole",
+          "value": 0.21570328261493515,
+          "minimum": 0.1,
+          "pass_": true
+        },
+        {
+          "name": "black unowned PCB copper clearance",
+          "value": 0.5757162032173277,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black tip offset follows native pad centre",
+          "value": 9.999996218716633e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black bonded conductor remains on native copper",
+          "value": 0.30784333543687636,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "black bonded conductor within solder-height envelope",
+          "value": 0.10701026485913023,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "opposite wire envelopes",
+          "value": 0.40817815872802243,
+          "minimum": 0.2,
+          "pass_": true
+        }
+      ],
+      "pass_": true
+    },
+    {
+      "pose_index": 19,
+      "pcb_pose_mm": [
+        0.76,
+        -0.76,
+        11.24088
+      ],
+      "fixed_length_intervals_mm": [
+        [
+          43.76580357591644,
+          43.76580761456375
+        ],
+        [
+          54.920902511525746,
+          54.92091450987102
+        ]
+      ],
+      "fixed_length_pass": true,
+      "geometry_checks": [
+        {
+          "name": "native J3 and contact polarity",
+          "pass_": true
+        },
+        {
+          "name": "PCB strip covers the complete bonded length",
+          "value": 2.15,
+          "minimum": 0.65,
+          "pass_": true
+        },
+        {
+          "name": "red nonlocal self clearance",
+          "value": 1.9993992951231216,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red continuous bend radius lower bound",
+          "value": 6.883794678378908,
+          "minimum": 6.604,
+          "pass_": true
+        },
+        {
+          "name": "red other populated bodies",
+          "value": 0.3586507004817003,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to LTE cable",
+          "value": 0.4540682576196385,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to GNSS cable",
+          "value": 0.3484281572170857,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red carrier, frame and lid posts",
+          "value": 0.3718940918711023,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to LTE CAPH SZK-C-3L30 envelope",
+          "value": 1.4645797026193768,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to GNSS ZETA SZK-C-0G04 envelope",
+          "value": 8.906707382653346,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red lid roof",
+          "value": 1.8645797026193789,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red cavity Y walls",
+          "value": 2.3284981862302474,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red endpoint at native pad datum",
+          "value": 1e-08,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "red endpoint at terminal-hole datum",
+          "value": 9.999996447286321e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "red flat wire tip clears pocket back",
+          "value": 0.08432809669855804,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "red wire insertion into terminal",
+          "value": 0.21999999999999714,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red conductor passes terminal hole",
+          "value": 0.2567452868921814,
+          "minimum": 0.1,
+          "pass_": true
+        },
+        {
+          "name": "red unowned PCB copper clearance",
+          "value": 0.3241377946497336,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red tip offset follows native pad centre",
+          "value": 9.999995917759608e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "red bonded conductor remains on native copper",
+          "value": 0.2633433547271302,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "red bonded conductor within solder-height envelope",
+          "value": 0.271995873685394,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black nonlocal self clearance",
+          "value": 1.9826469835662706,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black continuous bend radius lower bound",
+          "value": 6.91649298494934,
+          "minimum": 6.604,
+          "pass_": true
+        },
+        {
+          "name": "black other populated bodies",
+          "value": 0.30430631053327273,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to LTE cable",
+          "value": 0.45424994856015394,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to GNSS cable",
+          "value": 0.33044722183057335,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black carrier, frame and lid posts",
+          "value": 0.547625836200629,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to LTE CAPH SZK-C-3L30 envelope",
+          "value": 2.9225768349143224,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to GNSS ZETA SZK-C-0G04 envelope",
+          "value": 1.5602272459394961,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black lid roof",
+          "value": 1.9602272459394983,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black cavity Y walls",
+          "value": 3.876265326888105,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black endpoint at native pad datum",
+          "value": 1e-08,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black endpoint at terminal-hole datum",
+          "value": 9.999996447286321e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black flat wire tip clears pocket back",
+          "value": 0.06619985369105294,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "black wire insertion into terminal",
+          "value": 0.21999999999999714,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black conductor passes terminal hole",
+          "value": 0.21570328261493515,
+          "minimum": 0.1,
+          "pass_": true
+        },
+        {
+          "name": "black unowned PCB copper clearance",
+          "value": 0.5752484492766186,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black tip offset follows native pad centre",
+          "value": 9.999996218716633e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black bonded conductor remains on native copper",
+          "value": 0.30751137873634393,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "black bonded conductor within solder-height envelope",
+          "value": 0.10719502575748696,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "opposite wire envelopes",
+          "value": 0.4033123014526843,
+          "minimum": 0.2,
+          "pass_": true
+        }
+      ],
+      "pass_": true
+    },
+    {
+      "pose_index": 20,
+      "pcb_pose_mm": [
+        0.76,
+        -0.76,
+        11.97
+      ],
+      "fixed_length_intervals_mm": [
+        [
+          43.76580298037484,
+          43.76580821143044
+        ],
+        [
+          54.92090342343955,
+          54.92091359820325
+        ]
+      ],
+      "fixed_length_pass": true,
+      "geometry_checks": [
+        {
+          "name": "native J3 and contact polarity",
+          "pass_": true
+        },
+        {
+          "name": "PCB strip covers the complete bonded length",
+          "value": 2.15,
+          "minimum": 0.65,
+          "pass_": true
+        },
+        {
+          "name": "red nonlocal self clearance",
+          "value": 1.9913501698780671,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red continuous bend radius lower bound",
+          "value": 6.810180315832156,
+          "minimum": 6.604,
+          "pass_": true
+        },
+        {
+          "name": "red other populated bodies",
+          "value": 0.2564857461947148,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to LTE cable",
+          "value": 0.33216148787309613,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to GNSS cable",
+          "value": 0.26996613590567237,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red carrier, frame and lid posts",
+          "value": 0.3040589254650999,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to LTE CAPH SZK-C-3L30 envelope",
+          "value": 1.4268011482037688,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to GNSS ZETA SZK-C-0G04 envelope",
+          "value": 8.132649148839894,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red lid roof",
+          "value": 1.826801148203771,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red cavity Y walls",
+          "value": 2.4647197412583286,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red endpoint at native pad datum",
+          "value": 1e-08,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "red endpoint at terminal-hole datum",
+          "value": 9.999996447286321e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "red flat wire tip clears pocket back",
+          "value": 0.08432809669855812,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "red wire insertion into terminal",
+          "value": 0.21999999999999714,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red conductor passes terminal hole",
+          "value": 0.2567452868921814,
+          "minimum": 0.1,
+          "pass_": true
+        },
+        {
+          "name": "red unowned PCB copper clearance",
+          "value": 0.32261845220676355,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red tip offset follows native pad centre",
+          "value": 9.999995917759608e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "red bonded conductor remains on native copper",
+          "value": 0.2604685545708651,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "red bonded conductor within solder-height envelope",
+          "value": 0.26523198033967366,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black nonlocal self clearance",
+          "value": 1.9817400299670043,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black continuous bend radius lower bound",
+          "value": 6.502145795907398,
+          "minimum": 6.604,
+          "pass_": false
+        },
+        {
+          "name": "black other populated bodies",
+          "value": 0.22512025494128002,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to LTE cable",
+          "value": 0.07992283423412255,
+          "minimum": 0.2,
+          "pass_": false
+        },
+        {
+          "name": "black to GNSS cable",
+          "value": -0.05700271551142662,
+          "minimum": 0.2,
+          "pass_": false
+        },
+        {
+          "name": "black carrier, frame and lid posts",
+          "value": 0.5663065986505571,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to LTE CAPH SZK-C-3L30 envelope",
+          "value": 2.6973206839131354,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to GNSS ZETA SZK-C-0G04 envelope",
+          "value": 0.27379144212152956,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black lid roof",
+          "value": 0.6737914421215316,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black cavity Y walls",
+          "value": 3.8775092363761576,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black endpoint at native pad datum",
+          "value": 1e-08,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black endpoint at terminal-hole datum",
+          "value": 9.999996447286321e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black flat wire tip clears pocket back",
+          "value": 0.06619985369105297,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "black wire insertion into terminal",
+          "value": 0.21999999999999714,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black conductor passes terminal hole",
+          "value": 0.21570328261493515,
+          "minimum": 0.1,
+          "pass_": true
+        },
+        {
+          "name": "black unowned PCB copper clearance",
+          "value": 0.5547690551234635,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black tip offset follows native pad centre",
+          "value": 9.999996218716633e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black bonded conductor remains on native copper",
+          "value": 0.30024212364270997,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "black bonded conductor within solder-height envelope",
+          "value": 0.1137289308532321,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "opposite wire envelopes",
+          "value": 0.444930031538021,
+          "minimum": 0.2,
+          "pass_": true
+        }
+      ],
+      "pass_": false
+    },
+    {
+      "pose_index": 21,
+      "pcb_pose_mm": [
+        0.76,
+        0,
+        11.02
+      ],
+      "fixed_length_intervals_mm": [
+        [
+          43.7658035748073,
+          43.76580761567289
+        ],
+        [
+          54.92090248318766,
+          54.92091453820888
+        ]
+      ],
+      "fixed_length_pass": true,
+      "geometry_checks": [
+        {
+          "name": "native J3 and contact polarity",
+          "pass_": true
+        },
+        {
+          "name": "PCB strip covers the complete bonded length",
+          "value": 2.15,
+          "minimum": 0.65,
+          "pass_": true
+        },
+        {
+          "name": "red nonlocal self clearance",
+          "value": 1.999113731478208,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red continuous bend radius lower bound",
+          "value": 6.915232831272096,
+          "minimum": 6.604,
+          "pass_": true
+        },
+        {
+          "name": "red other populated bodies",
+          "value": 0.44650298533043203,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to LTE cable",
+          "value": 0.6686268266376141,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to GNSS cable",
+          "value": 0.6682238280095102,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red carrier, frame and lid posts",
+          "value": 0.37115587776772,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to LTE CAPH SZK-C-3L30 envelope",
+          "value": 1.5831391356251905,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to GNSS ZETA SZK-C-0G04 envelope",
+          "value": 8.755451033012307,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red lid roof",
+          "value": 1.9831391356251926,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red cavity Y walls",
+          "value": 3.052023417251219,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red endpoint at native pad datum",
+          "value": 1e-08,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "red endpoint at terminal-hole datum",
+          "value": 9.999996447286321e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "red flat wire tip clears pocket back",
+          "value": 0.08432809669855804,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "red wire insertion into terminal",
+          "value": 0.21999999999999714,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red conductor passes terminal hole",
+          "value": 0.2567452868921814,
+          "minimum": 0.1,
+          "pass_": true
+        },
+        {
+          "name": "red unowned PCB copper clearance",
+          "value": 0.324788835724077,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red tip offset follows native pad centre",
+          "value": 9.999996122157688e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "red bonded conductor remains on native copper",
+          "value": 0.26326355776092036,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "red bonded conductor within solder-height envelope",
+          "value": 0.2716216665471045,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black nonlocal self clearance",
+          "value": 1.9835173161621016,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black continuous bend radius lower bound",
+          "value": 6.874151988536949,
+          "minimum": 6.604,
+          "pass_": true
+        },
+        {
+          "name": "black other populated bodies",
+          "value": 0.31011192046349506,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to LTE cable",
+          "value": 0.3651870123292336,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to GNSS cable",
+          "value": 0.33290678449778327,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black carrier, frame and lid posts",
+          "value": 0.5759894763260998,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to LTE CAPH SZK-C-3L30 envelope",
+          "value": 3.1110804549584117,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to GNSS ZETA SZK-C-0G04 envelope",
+          "value": 1.709350972052194,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black lid roof",
+          "value": 2.109350972052196,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black cavity Y walls",
+          "value": 4.63657077920146,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black endpoint at native pad datum",
+          "value": 1e-08,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black endpoint at terminal-hole datum",
+          "value": 9.999996447286321e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black flat wire tip clears pocket back",
+          "value": 0.06619985369105294,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "black wire insertion into terminal",
+          "value": 0.21999999999999714,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black conductor passes terminal hole",
+          "value": 0.21570328261493515,
+          "minimum": 0.1,
+          "pass_": true
+        },
+        {
+          "name": "black unowned PCB copper clearance",
+          "value": 0.5759715818611489,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black tip offset follows native pad centre",
+          "value": 9.99999644035419e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black bonded conductor remains on native copper",
+          "value": 0.308098570406385,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "black bonded conductor within solder-height envelope",
+          "value": 0.10698693112071322,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "opposite wire envelopes",
+          "value": 0.40934805363315857,
+          "minimum": 0.2,
+          "pass_": true
+        }
+      ],
+      "pass_": true
+    },
+    {
+      "pose_index": 22,
+      "pcb_pose_mm": [
+        0.76,
+        0,
+        11.24088
+      ],
+      "fixed_length_intervals_mm": [
+        [
+          43.76580360145658,
+          43.76580758902336
+        ],
+        [
+          54.92090252540042,
+          54.92091449599616
+        ]
+      ],
+      "fixed_length_pass": true,
+      "geometry_checks": [
+        {
+          "name": "native J3 and contact polarity",
+          "pass_": true
+        },
+        {
+          "name": "PCB strip covers the complete bonded length",
+          "value": 2.15,
+          "minimum": 0.65,
+          "pass_": true
+        },
+        {
+          "name": "red nonlocal self clearance",
+          "value": 1.9990785370083402,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red continuous bend radius lower bound",
+          "value": 6.939402629027345,
+          "minimum": 6.604,
+          "pass_": true
+        },
+        {
+          "name": "red other populated bodies",
+          "value": 0.4493359819664943,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to LTE cable",
+          "value": 0.4574680764966668,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to GNSS cable",
+          "value": 0.45952466859011815,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red carrier, frame and lid posts",
+          "value": 0.3718943627145868,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to LTE CAPH SZK-C-3L30 envelope",
+          "value": 1.3747623858762472,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to GNSS ZETA SZK-C-0G04 envelope",
+          "value": 8.701610149109259,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red lid roof",
+          "value": 1.7747623858762493,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red cavity Y walls",
+          "value": 3.054966136737017,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red endpoint at native pad datum",
+          "value": 1e-08,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "red endpoint at terminal-hole datum",
+          "value": 9.999996447286321e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "red flat wire tip clears pocket back",
+          "value": 0.08432809669855804,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "red wire insertion into terminal",
+          "value": 0.21999999999999714,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red conductor passes terminal hole",
+          "value": 0.2567452868921814,
+          "minimum": 0.1,
+          "pass_": true
+        },
+        {
+          "name": "red unowned PCB copper clearance",
+          "value": 0.3248090708191397,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red tip offset follows native pad centre",
+          "value": 9.999996122157688e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "red bonded conductor remains on native copper",
+          "value": 0.26329945355253237,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "red bonded conductor within solder-height envelope",
+          "value": 0.2716100204153691,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black nonlocal self clearance",
+          "value": 1.9834848225064574,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black continuous bend radius lower bound",
+          "value": 6.852628289579484,
+          "minimum": 6.604,
+          "pass_": true
+        },
+        {
+          "name": "black other populated bodies",
+          "value": 0.308815569737141,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to LTE cable",
+          "value": 0.35270552284959217,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to GNSS cable",
+          "value": 0.3384399257082806,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black carrier, frame and lid posts",
+          "value": 0.5740350286703235,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to LTE CAPH SZK-C-3L30 envelope",
+          "value": 2.869743721200988,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to GNSS ZETA SZK-C-0G04 envelope",
+          "value": 1.7181087187473179,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black lid roof",
+          "value": 2.11810871874732,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black cavity Y walls",
+          "value": 4.636395248834425,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black endpoint at native pad datum",
+          "value": 1e-08,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black endpoint at terminal-hole datum",
+          "value": 9.999996447286321e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black flat wire tip clears pocket back",
+          "value": 0.06619985369105294,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "black wire insertion into terminal",
+          "value": 0.21999999999999714,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black conductor passes terminal hole",
+          "value": 0.21570328261493515,
+          "minimum": 0.1,
+          "pass_": true
+        },
+        {
+          "name": "black unowned PCB copper clearance",
+          "value": 0.576098596691233,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black tip offset follows native pad centre",
+          "value": 9.99999644035419e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black bonded conductor remains on native copper",
+          "value": 0.3077487086036368,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "black bonded conductor within solder-height envelope",
+          "value": 0.10683568366103313,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "opposite wire envelopes",
+          "value": 0.409342593300695,
+          "minimum": 0.2,
+          "pass_": true
+        }
+      ],
+      "pass_": true
+    },
+    {
+      "pose_index": 23,
+      "pcb_pose_mm": [
+        0.76,
+        0,
+        11.97
+      ],
+      "fixed_length_intervals_mm": [
+        [
+          43.76580334332973,
+          43.76580784714729
+        ],
+        [
+          54.920902916147625,
+          54.92091410525342
+        ]
+      ],
+      "fixed_length_pass": true,
+      "geometry_checks": [
+        {
+          "name": "native J3 and contact polarity",
+          "pass_": true
+        },
+        {
+          "name": "PCB strip covers the complete bonded length",
+          "value": 2.15,
+          "minimum": 0.65,
+          "pass_": true
+        },
+        {
+          "name": "red nonlocal self clearance",
+          "value": 1.9911972974280305,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red continuous bend radius lower bound",
+          "value": 6.8141473279188824,
+          "minimum": 6.604,
+          "pass_": true
+        },
+        {
+          "name": "red other populated bodies",
+          "value": 0.2522057226872962,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to LTE cable",
+          "value": 0.33593418376457185,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to GNSS cable",
+          "value": 0.2672322500474193,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red carrier, frame and lid posts",
+          "value": 0.3098829497274766,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to LTE CAPH SZK-C-3L30 envelope",
+          "value": 1.2727098843023437,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to GNSS ZETA SZK-C-0G04 envelope",
+          "value": 8.824535686579887,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red lid roof",
+          "value": 1.6727098843023458,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red cavity Y walls",
+          "value": 2.9851637235349417,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red endpoint at native pad datum",
+          "value": 1e-08,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "red endpoint at terminal-hole datum",
+          "value": 9.999996447286321e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "red flat wire tip clears pocket back",
+          "value": 0.08432809669855812,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "red wire insertion into terminal",
+          "value": 0.21999999999999714,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red conductor passes terminal hole",
+          "value": 0.2567452868921814,
+          "minimum": 0.1,
+          "pass_": true
+        },
+        {
+          "name": "red unowned PCB copper clearance",
+          "value": 0.3261136141162202,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red tip offset follows native pad centre",
+          "value": 9.999996122157688e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "red bonded conductor remains on native copper",
+          "value": 0.2711441892589459,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "red bonded conductor within solder-height envelope",
+          "value": 0.2713733681801085,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black nonlocal self clearance",
+          "value": 1.9805374583353668,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black continuous bend radius lower bound",
+          "value": 6.480851068680966,
+          "minimum": 6.604,
+          "pass_": false
+        },
+        {
+          "name": "black other populated bodies",
+          "value": 0.24345687778960023,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to LTE cable",
+          "value": 0.04243075674026865,
+          "minimum": 0.2,
+          "pass_": false
+        },
+        {
+          "name": "black to GNSS cable",
+          "value": 0.08404904291846242,
+          "minimum": 0.2,
+          "pass_": false
+        },
+        {
+          "name": "black carrier, frame and lid posts",
+          "value": 0.5285389357414759,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to LTE CAPH SZK-C-3L30 envelope",
+          "value": 2.615687336733967,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to GNSS ZETA SZK-C-0G04 envelope",
+          "value": 0.2705558969466967,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black lid roof",
+          "value": 0.6705558969466988,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black cavity Y walls",
+          "value": 4.637182796743583,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black endpoint at native pad datum",
+          "value": 1e-08,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black endpoint at terminal-hole datum",
+          "value": 9.999996447286321e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black flat wire tip clears pocket back",
+          "value": 0.06619985369105294,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "black wire insertion into terminal",
+          "value": 0.21999999999999714,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black conductor passes terminal hole",
+          "value": 0.21570328261493515,
+          "minimum": 0.1,
+          "pass_": true
+        },
+        {
+          "name": "black unowned PCB copper clearance",
+          "value": 0.5498933548875307,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black tip offset follows native pad centre",
+          "value": 9.99999644035419e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black bonded conductor remains on native copper",
+          "value": 0.3019151490947864,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "black bonded conductor within solder-height envelope",
+          "value": 0.11085695851719746,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "opposite wire envelopes",
+          "value": 0.465165222108441,
+          "minimum": 0.2,
+          "pass_": true
+        }
+      ],
+      "pass_": false
+    },
+    {
+      "pose_index": 24,
+      "pcb_pose_mm": [
+        0.76,
+        0.76,
+        11.02
+      ],
+      "fixed_length_intervals_mm": [
+        [
+          43.765803546801784,
+          43.76580764367826
+        ],
+        [
+          54.920902507040395,
+          54.92091451435604
+        ]
+      ],
+      "fixed_length_pass": true,
+      "geometry_checks": [
+        {
+          "name": "native J3 and contact polarity",
+          "pass_": true
+        },
+        {
+          "name": "PCB strip covers the complete bonded length",
+          "value": 2.15,
+          "minimum": 0.65,
+          "pass_": true
+        },
+        {
+          "name": "red nonlocal self clearance",
+          "value": 1.998920171745543,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red continuous bend radius lower bound",
+          "value": 6.904776717311251,
+          "minimum": 6.604,
+          "pass_": true
+        },
+        {
+          "name": "red other populated bodies",
+          "value": 0.4637240911017156,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to LTE cable",
+          "value": 0.8066466727876458,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to GNSS cable",
+          "value": 0.8266235963873728,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red carrier, frame and lid posts",
+          "value": 0.3710767546101173,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to LTE CAPH SZK-C-3L30 envelope",
+          "value": 1.5509963164379015,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to GNSS ZETA SZK-C-0G04 envelope",
+          "value": 8.130594329293352,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red lid roof",
+          "value": 1.9509963164379036,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red cavity Y walls",
+          "value": 3.8075908596004244,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red endpoint at native pad datum",
+          "value": 1e-08,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "red endpoint at terminal-hole datum",
+          "value": 9.999996447286321e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "red flat wire tip clears pocket back",
+          "value": 0.08432809669855804,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "red wire insertion into terminal",
+          "value": 0.21999999999999714,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red conductor passes terminal hole",
+          "value": 0.2567452868921814,
+          "minimum": 0.1,
+          "pass_": true
+        },
+        {
+          "name": "red unowned PCB copper clearance",
+          "value": 0.32490941387182615,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red tip offset follows native pad centre",
+          "value": 9.999996324507787e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "red bonded conductor remains on native copper",
+          "value": 0.2632504382040466,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "red bonded conductor within solder-height envelope",
+          "value": 0.2715524122325388,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black nonlocal self clearance",
+          "value": 1.9818798242396385,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black continuous bend radius lower bound",
+          "value": 6.844394218157183,
+          "minimum": 6.604,
+          "pass_": true
+        },
+        {
+          "name": "black other populated bodies",
+          "value": 0.3205023676297517,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to LTE cable",
+          "value": 0.40678571091335053,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to GNSS cable",
+          "value": 0.33486658186333823,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black carrier, frame and lid posts",
+          "value": 0.5619785908528419,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to LTE CAPH SZK-C-3L30 envelope",
+          "value": 2.9402711150582426,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to GNSS ZETA SZK-C-0G04 envelope",
+          "value": 2.220638755147737,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black lid roof",
+          "value": 2.620638755147739,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black cavity Y walls",
+          "value": 5.396827504305845,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black endpoint at native pad datum",
+          "value": 1e-08,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black endpoint at terminal-hole datum",
+          "value": 9.999996447286321e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black flat wire tip clears pocket back",
+          "value": 0.06619985369105294,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "black wire insertion into terminal",
+          "value": 0.21999999999999714,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black conductor passes terminal hole",
+          "value": 0.21570328261493515,
+          "minimum": 0.1,
+          "pass_": true
+        },
+        {
+          "name": "black unowned PCB copper clearance",
+          "value": 0.578400132776151,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black tip offset follows native pad centre",
+          "value": 9.999996661937646e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black bonded conductor remains on native copper",
+          "value": 0.3080864027650308,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "black bonded conductor within solder-height envelope",
+          "value": 0.10590381238540414,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "opposite wire envelopes",
+          "value": 0.41054199775452205,
+          "minimum": 0.2,
+          "pass_": true
+        }
+      ],
+      "pass_": true
+    },
+    {
+      "pose_index": 25,
+      "pcb_pose_mm": [
+        0.76,
+        0.76,
+        11.24088
+      ],
+      "fixed_length_intervals_mm": [
+        [
+          43.7658036481887,
+          43.76580754228897
+        ],
+        [
+          54.92090255201346,
+          54.92091446939444
+        ]
+      ],
+      "fixed_length_pass": true,
+      "geometry_checks": [
+        {
+          "name": "native J3 and contact polarity",
+          "pass_": true
+        },
+        {
+          "name": "PCB strip covers the complete bonded length",
+          "value": 2.15,
+          "minimum": 0.65,
+          "pass_": true
+        },
+        {
+          "name": "red nonlocal self clearance",
+          "value": 2.000214235327333,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red continuous bend radius lower bound",
+          "value": 7.170780373673944,
+          "minimum": 6.604,
+          "pass_": true
+        },
+        {
+          "name": "red other populated bodies",
+          "value": 0.5171703682765139,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to LTE cable",
+          "value": 0.5696286986457683,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to GNSS cable",
+          "value": 0.5887254667914982,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red carrier, frame and lid posts",
+          "value": 0.3762373585305741,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to LTE CAPH SZK-C-3L30 envelope",
+          "value": 1.3454484928924997,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to GNSS ZETA SZK-C-0G04 envelope",
+          "value": 7.989250296327645,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red lid roof",
+          "value": 1.7454484928925018,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red cavity Y walls",
+          "value": 3.823785963375784,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red endpoint at native pad datum",
+          "value": 1e-08,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "red endpoint at terminal-hole datum",
+          "value": 9.999996447286321e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "red flat wire tip clears pocket back",
+          "value": 0.08432809669855804,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "red wire insertion into terminal",
+          "value": 0.21999999999999714,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red conductor passes terminal hole",
+          "value": 0.2567452868921814,
+          "minimum": 0.1,
+          "pass_": true
+        },
+        {
+          "name": "red unowned PCB copper clearance",
+          "value": 0.3253562179615598,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red tip offset follows native pad centre",
+          "value": 9.999996324507787e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "red bonded conductor remains on native copper",
+          "value": 0.26321524205756575,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "red bonded conductor within solder-height envelope",
+          "value": 0.2712953432292615,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black nonlocal self clearance",
+          "value": 1.9838306215287738,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black continuous bend radius lower bound",
+          "value": 6.844248524863525,
+          "minimum": 6.604,
+          "pass_": true
+        },
+        {
+          "name": "black other populated bodies",
+          "value": 0.30311818947627506,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to LTE cable",
+          "value": 0.34009300195094394,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to GNSS cable",
+          "value": 0.4902974206759189,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black carrier, frame and lid posts",
+          "value": 0.5797809089032016,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to LTE CAPH SZK-C-3L30 envelope",
+          "value": 2.918041688675026,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to GNSS ZETA SZK-C-0G04 envelope",
+          "value": 1.9189579421605147,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black lid roof",
+          "value": 2.318957942160517,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black cavity Y walls",
+          "value": 5.396672145903605,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black endpoint at native pad datum",
+          "value": 1e-08,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black endpoint at terminal-hole datum",
+          "value": 9.999996447286321e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black flat wire tip clears pocket back",
+          "value": 0.06619985369105294,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "black wire insertion into terminal",
+          "value": 0.21999999999999714,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black conductor passes terminal hole",
+          "value": 0.21570328261493515,
+          "minimum": 0.1,
+          "pass_": true
+        },
+        {
+          "name": "black unowned PCB copper clearance",
+          "value": 0.5757618986442872,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black tip offset follows native pad centre",
+          "value": 9.999996661937646e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black bonded conductor remains on native copper",
+          "value": 0.30788301167262505,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "black bonded conductor within solder-height envelope",
+          "value": 0.1071414207408623,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "opposite wire envelopes",
+          "value": 0.4115289456425133,
+          "minimum": 0.2,
+          "pass_": true
+        }
+      ],
+      "pass_": true
+    },
+    {
+      "pose_index": 26,
+      "pcb_pose_mm": [
+        0.76,
+        0.76,
+        11.97
+      ],
+      "fixed_length_intervals_mm": [
+        [
+          43.76580360232038,
+          43.76580758817081
+        ],
+        [
+          54.92090289539935,
+          54.92091412599895
+        ]
+      ],
+      "fixed_length_pass": true,
+      "geometry_checks": [
+        {
+          "name": "native J3 and contact polarity",
+          "pass_": true
+        },
+        {
+          "name": "PCB strip covers the complete bonded length",
+          "value": 2.15,
+          "minimum": 0.65,
+          "pass_": true
+        },
+        {
+          "name": "red nonlocal self clearance",
+          "value": 1.9991279776717654,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red continuous bend radius lower bound",
+          "value": 6.842745507274413,
+          "minimum": 6.604,
+          "pass_": true
+        },
+        {
+          "name": "red other populated bodies",
+          "value": 0.3112407220146735,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to LTE cable",
+          "value": 0.5095001571685489,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to GNSS cable",
+          "value": 0.3417610481912314,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red carrier, frame and lid posts",
+          "value": 0.4198361986169275,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to LTE CAPH SZK-C-3L30 envelope",
+          "value": 1.411552828693015,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red to GNSS ZETA SZK-C-0G04 envelope",
+          "value": 7.347386671301385,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red lid roof",
+          "value": 1.8115528286930171,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red cavity Y walls",
+          "value": 4.16177708457003,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red endpoint at native pad datum",
+          "value": 1e-08,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "red endpoint at terminal-hole datum",
+          "value": 9.999996447286321e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "red flat wire tip clears pocket back",
+          "value": 0.08432809669855822,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "red wire insertion into terminal",
+          "value": 0.21999999999999714,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red conductor passes terminal hole",
+          "value": 0.2567452868921814,
+          "minimum": 0.1,
+          "pass_": true
+        },
+        {
+          "name": "red unowned PCB copper clearance",
+          "value": 0.3162327608919874,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "red tip offset follows native pad centre",
+          "value": 9.999996324507787e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "red bonded conductor remains on native copper",
+          "value": 0.26252419975918606,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "red bonded conductor within solder-height envelope",
+          "value": 0.27618126239755303,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black nonlocal self clearance",
+          "value": 1.9813104179592997,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black continuous bend radius lower bound",
+          "value": 6.464703927934115,
+          "minimum": 6.604,
+          "pass_": false
+        },
+        {
+          "name": "black other populated bodies",
+          "value": 0.24254344727168764,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to LTE cable",
+          "value": -0.015361845221804261,
+          "minimum": 0.2,
+          "pass_": false
+        },
+        {
+          "name": "black to GNSS cable",
+          "value": 0.32961074868705803,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black carrier, frame and lid posts",
+          "value": 0.6226123472406204,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to LTE CAPH SZK-C-3L30 envelope",
+          "value": 2.6070186224505796,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black to GNSS ZETA SZK-C-0G04 envelope",
+          "value": 0.28191763805811254,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black lid roof",
+          "value": 0.6819176380581147,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black cavity Y walls",
+          "value": 5.397520837802302,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black endpoint at native pad datum",
+          "value": 1e-08,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black endpoint at terminal-hole datum",
+          "value": 9.999996447286321e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black flat wire tip clears pocket back",
+          "value": 0.06619985369105294,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "black wire insertion into terminal",
+          "value": 0.21999999999999714,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black conductor passes terminal hole",
+          "value": 0.21570328261493515,
+          "minimum": 0.1,
+          "pass_": true
+        },
+        {
+          "name": "black unowned PCB copper clearance",
+          "value": 0.5551591202035533,
+          "minimum": 0.2,
+          "pass_": true
+        },
+        {
+          "name": "black tip offset follows native pad centre",
+          "value": 9.999996661937646e-09,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "black bonded conductor remains on native copper",
+          "value": 0.30986818731437005,
+          "minimum": 0.05,
+          "pass_": true
+        },
+        {
+          "name": "black bonded conductor within solder-height envelope",
+          "value": 0.11827808207137314,
+          "minimum": 0,
+          "pass_": true
+        },
+        {
+          "name": "opposite wire envelopes",
+          "value": 0.34321665721152567,
+          "minimum": 0.2,
+          "pass_": true
+        }
+      ],
+      "pass_": false
+    }
+  ],
+  "passing_poses": 18,
+  "total_poses": 27,
+  "physical_qualification": false,
+  "manufacturing_release": false,
+  "continuous_motion_accepted": false,
+  "scope": "Independent continuous bounds for each static curve and correlated PCB pose. Not a proof of continuous deformation, endpoint restraint, service motion, thermal wire-length behavior or physical acceptance. CAD controls cover the published nominal route only."
+}

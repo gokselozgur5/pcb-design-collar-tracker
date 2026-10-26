@@ -24,10 +24,12 @@ def point_box_distance(xyz, lo, hi):
     return np.linalg.norm(np.maximum(0, np.maximum(lo-xyz, xyz-hi)), axis=-1)
 
 
-def check(spec):
+def check(spec, pose_index=None):
     fit = json.loads((BASE/'antenna-fit.json').read_text())['scenarios'][2]
     motion = json.loads((BASE/'retention-checks.json').read_text())
-    pose = motion['cable_motion']['cases'][spec['nominal_pose_index']]
+    pose = motion['cable_motion']['cases'][spec['nominal_pose_index'] if pose_index is None else pose_index]
+    shift = np.array(pose['pcb_pose_mm']) - np.array([0, 0, spec['pcb_nominal_top_mm']])
+    board_top = spec['pcb_nominal_top_mm'] + shift[2]
     p = json.loads((BASE/'parameters.json').read_text())
     r = json.loads((BASE/'retention.json').read_text())
     contacts = json.loads((ROOT/'mechanical/swim-r16-contact-retention/contact.json').read_text())
@@ -65,7 +67,7 @@ def check(spec):
             if part['ref']=='J3':
                 continue  # J3 is the pair of owned solder pads, not a component body.
             a,b,d,e=part['envelope_xy_bounds_mm'];z0,z1=part['envelope_z_mm']
-            ds=point_box_distance(xyz,np.array([a,b,z0]),np.array([d,e,z1]))-radius
+            ds=point_box_distance(xyz,np.array([a,b,z0])+shift,np.array([d,e,z1])+shift)-radius
             idx=int(ds.argmin());gaps.append(dict(ref=part['ref'],gap_mm=float(ds[idx]),xyz_mm=xyz[idx].tolist()))
         limiting=min(gaps,key=lambda x:x['gap_mm'])
         add(label+' other populated bodies',limiting['gap_mm'],spec['minimum_gap_mm'])
@@ -95,6 +97,7 @@ def check(spec):
         end=np.array(w['controls_mm'][-1]);start=np.array(w['controls_mm'][0])
         target=np.array([[-16.75,-12.2,11.48],[-14.25,-12.2,11.48]][wi])
         target[:2]+=w['pcb_tip_offset_mm']
+        target+=shift
         add(label+' endpoint at native pad datum',1e-8-float(np.linalg.norm(end-target)),0)
         hole=np.array([contacts['pocket']['bearing_x_mm']-spec['joints']['terminal_tip_setback_from_pocket_face_mm'],*contacts['terminal']['tail_centers_yz_mm'][wi]])
         add(label+' endpoint at terminal-hole datum',1e-8-float(np.linalg.norm(start-hole)),0)
@@ -115,12 +118,12 @@ def check(spec):
         add(label+' conductor passes terminal hole',radial_gap,spec['joints']['terminal_hole_radial_clearance_min_mm'])
         native=pads[str(wi+1)]
         # Existing PCB-to-case frame: centre X=118, Y=114; board Y is inverted.
-        pad_shape=Polygon([(x-118,114-y) for x,y in native['poly'][0]])
+        pad_shape=Polygon([(x-118+shift[0],114-y+shift[1]) for x,y in native['poly'][0]])
         planar=points(xyz[:,:2])
         owned=covers(pad_shape,planar)&(distance(pad_shape.boundary,planar)>=radius)
-        board_gap=point_box_distance(xyz,np.array([-20,-16,10.4]),np.array([20,16,spec['pcb_nominal_top_mm']]))-radius
+        board_gap=point_box_distance(xyz,np.array([-20,-16,10.4])+shift,np.array([20,16,spec['pcb_nominal_top_mm']])+shift)-radius
         add(label+' unowned PCB copper clearance',float(board_gap[~owned].min()),spec['minimum_gap_mm'])
-        add(label+' tip offset follows native pad centre',1e-8-float(np.linalg.norm(end[:2]-np.array(w['pcb_tip_offset_mm'])-np.array([native['pos'][0]-118,114-native['pos'][1]]))),0)
+        add(label+' tip offset follows native pad centre',1e-8-float(np.linalg.norm(end[:2]-np.array(w['pcb_tip_offset_mm'])-np.array([native['pos'][0]-118,114-native['pos'][1]])-shift[:2])),0)
         remaining=c['arc_upper'][-1]-c['arc_upper']
         bonded=xyz[remaining<=spec['joints']['pcb_bonded_length_min_mm']+step]
         # Include one full travel interval past the stated bond length, so a
@@ -130,7 +133,7 @@ def check(spec):
         edge=float(pad_shape.boundary.distance(projection)) if pad_shape.covers(projection) else -1.
         add(label+' bonded conductor remains on native copper',edge,spec['joints']['pcb_pad_edge_margin_mm'])
         add(label+' bonded conductor within solder-height envelope',
-            spec['joints']['pcb_fillet_height_max_mm']-(float(bonded[:,2].max())+joint_radius-spec['pcb_nominal_top_mm']),0)
+            spec['joints']['pcb_fillet_height_max_mm']-(float(bonded[:,2].max())+joint_radius-board_top),0)
         rows.append(dict(colour=label,length_interval_mm=[float(c['arc_lower'][-1]),float(c['arc_upper'][-1])],
                          continuous_radius_lower_mm=c['radius_lower'],travel_bound_mm=step,
                          component_limiting=limiting,rf_gaps=rfgaps,mechanical_limiting=m,
@@ -146,7 +149,8 @@ def check(spec):
            ROOT/'mechanical/swim-r16-contact-retention/contact.json',
            ROOT/'experiments/power-r05l-charge-interlock/evidence/native-netlist.json',
            ROOT/'scripts/check_thermal_assembly.py',ROOT/'scripts/thermal_cable_geometry.py',ROOT/'scripts/antenna_cable_geometry.py',geom_path,ROOT/geom['source']]
-    return dict(result='NOMINAL_ROUTE_SCREEN_PASS' if all(x['pass_'] for x in checks) else 'HOLD',
+    return dict(result=('NOMINAL_ROUTE_SCREEN_PASS' if pose_index is None else 'POSE_ROUTE_SCREEN_PASS') if all(x['pass_'] for x in checks) else 'HOLD',
+                evaluated_pose=pose['pcb_pose_mm'], evaluated_controls=[w['controls_mm'] for w in spec['wires']],
                 inputs={str(path.relative_to(ROOT)):sha(path) for path in paths},checks=checks,wires=rows,
                 nominal_wire_only_resistance_ohm_at_20C=resistance,
                 wire_only_sensitivity=[dict(current_A=i,drop_V=i*resistance,dissipation_W=i*i*resistance) for i in [.1,.35,.5]],

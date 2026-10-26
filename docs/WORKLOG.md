@@ -805,3 +805,16 @@ test or physical water/dust qualification was performed.
   `firmware/evidence/factory-r01/`.
 - No flashing or powered test occurred. Shipping tracking/radio firmware,
   provisioning, updates and full factory/device acceptance remain unfinished.
+
+## 2026-10-26 — Correlated fixed-length internal wire search
+
+- Added portable starting curves and a constrained two-wire search. Both wire
+  lengths are fixed at all 27 sampled poses; terminal positions and tangent
+  directions stay attached to their owning parts.
+- Extended the independent 41-check route screen to correlated PCB/pad poses.
+  All 27 length intervals pass the numerical tolerance; 18 geometry poses pass.
+  Nine upper poses remain HOLD for black-wire RF clearance, and eight also fail
+  the bend bound. The search score is explicitly separate from acceptance.
+- Eight regressions pass. Nominal CAD, PCB/Gerber and published r16 bundles are
+  unchanged. Next solve RF and charging paths together, then actual restraint
+  and installation/service behavior. This is not a production wire cut list.

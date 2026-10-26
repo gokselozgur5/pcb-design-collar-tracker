@@ -10,8 +10,8 @@ content is English. Run `python3 scripts/resume.py` before making another revisi
 [Gerber ZIP](../experiments/power-r05l-charge-interlock/evidence/collar-tracker-05l-charge-final4-40x32-dfm.zip) ·
 [JLC report 1](../experiments/power-r05l-charge-interlock/evidence/jlc-check1/report.pdf) ·
 [JLC report 2](../experiments/power-r05l-charge-interlock/evidence/jlc-check2/report.pdf) ·
-[Current four-page review](../release/r16-current-review/review.pdf) ·
-[Current review bundle](../release/collar-tracker-r05l-r16-review.zip)
+[Published r16 review](../release/r16-current-review/review.pdf) ·
+[Published r16 bundle](../release/collar-tracker-r05l-r16-review.zip)
 
 Latest battery work: [CT-BAT-001-A request sheet](../assembly/pack-r03/request-sheet.pdf),
 [unsent supplier enquiry](../assembly/pack-r03/supplier-request.txt), and
@@ -65,14 +65,19 @@ plating and physical ingress remain unqualified.
 **Internal charging wires are still HOLD.** The new
 [r02 candidate](../assembly/internal-charge-r02/README.md) includes both nominal
 routes, stripped ends and joint envelopes, with 41 geometry checks, two closed
-wire meshes, three CAD controls and seven regressions. Only the internal wires
+wire meshes, three CAD controls and eight regressions. Only the internal wires
 change to Alpha 2841/7 30 AWG; external dock wiring is unchanged.
 
 The first movement proposal fails: one of 27 poses passes, and other poses require
 up to 0.978mm of wire-length change. Several also fail RF/bend screens. A fixed
 cut length, restraint and factory/service process are not accepted. Continue from
 the saved movement diagnostic; do not mistake the nominal fit for a completed
-harness. The r16 review ZIP remains preserved.
+harness. The newer constant-length search passes all 27 numerical length checks
+and 18 of 27 independent full geometry screens. The remaining nine are all at
+PCB top Z=11.97mm: black-wire RF clearance and, in eight cases, bend radius fail.
+Next revise the shared antenna/charge-wire routing and affected guides together;
+the 0.2mm gap and 6.604mm bend limits stay fixed. Restraint and continuous motion
+remain unaccepted. The r16 review ZIP remains preserved.
 
 The first [factory observation firmware](../firmware/README.md) now builds for the
 actual r05l nRF9151 board. It delays external I/O by 1s, reports accelerometer,
@@ -84,7 +89,7 @@ flashed. The shipping LTE/GNSS tracker application and physical tests remain ope
 | Check | Current result |
 |---|---|
 | Factory observation firmware | Actual custom-board build passed; two negative compile controls passed; no flashing or powered test |
-| Internal harness r02 | Both nominal routes and joints fit; continuous radius bounds 7.438/6.905mm; fixed-length motion and restraint still HOLD |
+| Internal harness r02 | Both nominal routes and joints fit; continuous radius bounds 7.438/6.905mm; 18/27 searched static poses pass; upper-pose RF/bend interference and restraint still HOLD |
 | Contact retention r16 | Two custom rear terminals; defined lateral bearing, four meshes and CAD controls; internal harness still HOLD |
 | Board | 40 × 32mm; six Cu layers; 87 footprints |
 | Assembly candidates | 81 fitted references / 44 exact MPNs; BOM/CPL exported |

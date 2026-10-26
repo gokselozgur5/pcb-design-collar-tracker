@@ -8,7 +8,7 @@ import unittest
 import numpy as np
 
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
-from check_internal_harness import check, OUT
+from check_internal_harness import BASE, check, OUT
 from internal_harness_geometry import evaluate, physical_radii
 from thermal_cable_geometry import spline
 
@@ -41,6 +41,18 @@ class InternalHarnessTests(unittest.TestCase):
         spec['wire']['minimum_bend_radius_mm']=8.382
         result=check(spec)
         self.assertFalse(next(c for c in result['checks'] if c['name']=='black continuous bend radius lower bound')['pass_'])
+
+    def test_pcb_and_pad_move_together_but_terminal_does_not(self):
+        cases=json.loads((BASE/'retention-checks.json').read_text())['cable_motion']['cases']
+        index=next(i for i,c in enumerate(cases) if c['pcb_pose_mm']==[.76,0,self.spec['pcb_nominal_top_mm']])
+        spec=copy.deepcopy(self.spec)
+        for w in spec['wires']:
+            for p in w['controls_mm']:p[0]+=.76
+        rows={c['name']:c for c in check(spec,pose_index=index)['checks']}
+        for colour in ['red','black']:
+            self.assertTrue(rows[colour+' endpoint at native pad datum']['pass_'])
+            self.assertTrue(rows[colour+' bonded conductor remains on native copper']['pass_'])
+            self.assertFalse(rows[colour+' endpoint at terminal-hole datum']['pass_'])
 
     def test_bezier_bounds_contain_independent_dense_curve(self):
         control=self.spec['wires'][1]['controls_mm']

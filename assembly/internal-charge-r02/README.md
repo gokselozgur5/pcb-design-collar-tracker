@@ -54,7 +54,7 @@ qualified internal harness test and restraint specification remain required.
 - Both actual wire meshes are closed and oriented. The CAD intersections with
   the body/carrier/components/joint envelopes and with the terminal metal are
   empty. A deliberately lowered ground wire produces 1.538mm3 of interference.
-- Seven regressions cover source geometry, swapped polarity, the old wire's
+- Eight regressions cover source geometry, swapped polarity, the old wire's
   bend requirement, an actual collision, continuous bounds and strip-position
   uncertainty.
 - Nominal wire-only resistance at 20C is about 0.0304 ohm for the pair. The saved
@@ -70,6 +70,20 @@ collisions. Manufacturing cut tolerance cannot make one wire change length as
 the PCB moves. The next step is a constrained, constant-length route family
 with actual restraint and an installation/service sequence.
 
+The newer [constant-length search](fixed-length-search.json) produces candidate
+curves for all 27 poses using the same 43.765806mm / 54.920909mm length targets.
+The [independent full route checks](fixed-length-checks.json) accept **18 of 27
+static poses**; every pose meets the 0.001mm numerical length tolerance. The
+remaining nine are all at PCB top Z=11.97mm: the black lead fails RF separation
+and, in eight cases, its continuous bend-radius bound. These candidate curves
+have not replaced the nominal CAD meshes, and do not establish continuous flex
+or physical restraint. The optimizer's own score is not the acceptance result.
+
+Next rework the shared RF/charge-wire space at the upper PCB position, including
+any affected lid guides. Recheck RF length, both wire families, pads, components
+and retention together. Keep the existing 0.2mm separation and 6.604mm wire bend
+requirements. Failed local searches do not prove that a route is impossible.
+
 The initial insufficient-clearance route is preserved under `evidence/`.
 This directory is an unreleased working candidate: regenerate its evidence
 together when changing it, and retain each coherent revision in Git. Earlier
@@ -82,6 +96,8 @@ PCB, r16 mechanical files and published review archives remain untouched.
 .venv-dfm/bin/python scripts/check_internal_harness.py
 .venv-dfm/bin/python scripts/export_internal_harness.py
 .venv-dfm/bin/python scripts/screen_internal_harness_motion.py
+.venv-dfm/bin/python scripts/search_internal_harness_motion.py --output assembly/internal-charge-r02/fixed-length-search.json
+.venv-dfm/bin/python scripts/check_internal_harness_motion.py
 .venv-dfm/bin/python -m unittest discover -s tests -p test_internal_harness.py -v
 python3 scripts/verify_internal_harness.py
 ```

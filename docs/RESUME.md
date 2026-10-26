@@ -572,3 +572,32 @@ and does not initialize the modem. Shipping LTE/GNSS, uplink/storage, low-power
 policy, secure update/recovery and provisioning remain separate implementation
 work. First complete the internal harness constraints, then continue the modem
 and factory fixture work; physical testing requires an assembled prototype.
+
+## Internal fixed-length motion search: current continuation
+
+Read `assembly/internal-charge-r02/fixed-length-checks.json` before more searching.
+All 27 candidate curves preserve both nominal lengths within the 0.001mm
+numerical bound; 18 pass all 41 independent route checks. The nine upper poses
+(PCB top 11.97mm) fail black-wire RF separation; eight also fail the continuous
+bend bound. The old linear proposal is preserved separately and still fails.
+`motion-seeds.json` supplies portable starting curves. The numerical search's
+14 zero-penalty candidates are not its independent acceptance count.
+
+Next revise the RF/charge-wire routing together, especially the west-side
+crossings near J3. Current RF paths come from r11 and their four lid guides
+remain fixed; a guide/path change belongs in a new mechanical candidate, with
+the old r11/r16 sources preserved. Check fixed RF lengths and the new full route
+family together. Do not shrink the 0.2mm gap or 6.604mm wire bend requirement.
+The published nominal harness CAD is unchanged; the searched curves have only
+received the independent analytical checks. Endpoint restraint, installation,
+service motion, fault coordination and physical qualification remain open.
+
+```sh
+.venv-dfm/bin/python scripts/search_internal_harness_motion.py --output assembly/internal-charge-r02/fixed-length-search.json
+.venv-dfm/bin/python scripts/check_internal_harness_motion.py
+python3 scripts/verify_internal_harness.py
+```
+
+Eight harness regressions pass, including correlated moving PCB/pad datums and
+fixed body terminals. Re-record the explicitly unreleased r02 checkpoint only
+after regenerating its source-bound results; published archives stay immutable.
