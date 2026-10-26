@@ -4,6 +4,20 @@ The current state is in [STATUS](STATUS.md). The next task is implementation,
 not another requirements interview. Read [the Paul/nano-SIM notes](paul-nanosim.md)
 before editing. This handoff does not require private chat history or other projects.
 
+Latest routing: [r17 four-cable integration](../mechanical/swim-r17-cable-integration/README.md)
+passes all 27 static PCB poses while retaining the existing shell, lid guides,
+PCB and common wire lengths. Its source is `mechanical/swim-r17-cable-integration/routing.json`.
+The old r02/r11 combination remains a preserved 18/27 diagnostic. Continue from
+r17 to implemented charge-wire restraint, a forming/assembly fixture and
+continuous/installation movement. Do not repeat unchanged-byte JLC DFM or
+restart the now-resolved static routing search. Complete device release and
+physical ingress remain HOLD.
+
+```sh
+python3 scripts/verify_cable_integration.py
+.venv-dfm/bin/python -m unittest discover -s tests -p test_cable_integration.py -v
+```
+
 ## Open the project
 
 On the existing Mac:

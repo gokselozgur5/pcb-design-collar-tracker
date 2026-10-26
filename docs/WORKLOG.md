@@ -843,3 +843,23 @@ test or physical water/dust qualification was performed.
 - Ten harness regressions pass, including a coarse bound that tightens while
   remaining below independently evaluated dense curvature. Native PCB, nominal
   wire meshes, guide solids and published release archives are unchanged.
+
+## 2026-10-26 — r17 combined RF and charging routes
+
+- Adjusted the GNSS loop and upper-pose black-wire curves. All four cables now
+  pass together at 27/27 static PCB poses, with 78 geometry checks per pose and
+  common centreline lengths. The actual old guide apertures remain in the model.
+  Minimum RF-pair/charge-to-RF gaps are 0.204589/0.214946mm after allowances.
+- Retained the 0.2mm separation and 6.604mm charge-wire bend limits. Short-handle
+  curves needed tighter continuous bounds; two poses also needed a finer travel
+  bound. The checker records those resolutions and pins input identity.
+- Seven integration regressions pass in addition to the ten shared harness
+  regressions. New-source verification is included in the normal handoff.
+- Nominal RF witnesses clear the existing actual lid. Shifted full-cable
+  negative controls produced tiny STL slivers at the mesh audit resolution;
+  they were not accepted. A known cube inside the guide wall is used for the
+  exact-volume Boolean control instead; no mesh-validity check is relaxed.
+- PCB, enclosure size, guide solids and published r16 ZIP remain unchanged.
+  Next implement restraint/forming and continuous/installation motion. Supplier,
+  factory, powered/RF and water/dust acceptance are still open; no order or
+  supplier message was sent.

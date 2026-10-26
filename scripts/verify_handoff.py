@@ -360,6 +360,8 @@ def verify(include_review_bundle=True):
     contact_retention = verify_contact_retention(check_baseline=False)
     from verify_internal_harness import verify as verify_internal_harness
     internal_harness_candidate = verify_internal_harness()
+    from verify_cable_integration import verify as verify_cable_integration
+    cable_integration_candidate = verify_cable_integration()
     from verify_factory_firmware import verify as verify_factory_firmware
     factory_firmware = verify_factory_firmware()
     from package_current_review import verify_bundle as verify_previous_current_review
@@ -395,6 +397,7 @@ def verify(include_review_bundle=True):
             'dock_wire_clamp': dock_wire_clamp,
             'contact_retention': contact_retention,
             'internal_harness_candidate': internal_harness_candidate,
+            'cable_integration_candidate': cable_integration_candidate,
             'factory_firmware': factory_firmware,
             'clamp_review_bundle': clamp_review_bundle,
             'previous_current_review_bundle': previous_current_review_bundle,

@@ -1,0 +1,18 @@
+{
+  "revision": "r17",
+  "manufacturing_release": false,
+  "files": {
+    "mechanical/swim-r17-cable-integration/README.md": "5e0f855212a5e0c0b2ad6847306169867bebb12f38f6ff999efae52c1660d681",
+    "mechanical/swim-r17-cable-integration/cad-checks.json": "c91b863c2b8b60a7407e41cbf13f1330074b96c933d0414b8f42d2ac86e4ae9c",
+    "mechanical/swim-r17-cable-integration/checks.json": "b1d233ac67a69e8270fa163400ee09c671458d98a428f44ae67d8e677323e16f",
+    "mechanical/swim-r17-cable-integration/gnss-guide-witness.stl": "305d4d9b397c1ccc561611ec1ad237c42cb4ff1dc4f72324386c0b4ddbe2ab70",
+    "mechanical/swim-r17-cable-integration/lte-guide-witness.stl": "89cce4acdb6252a324d2b98ed49c13e3abd6debc517cd9c6f22c6164737952cc",
+    "mechanical/swim-r17-cable-integration/review.png": "96612a975da1b3fe47aca076d04bac0384234992f79f1fbdf3be2c3b6685ea29",
+    "mechanical/swim-r17-cable-integration/routing.json": "fe2162a1a72bc9b327acb366cb5c09ba4c9f0ea5cd4d163c0ccd5662fb752114",
+    "mechanical/swim-r17-cable-integration/routing.scad": "228177f30847bb79e139a4e73cd9a7308b27930adcf1f33a7cd9beeb551a2fdc",
+    "scripts/check_cable_integration.py": "bf282af597b02b5f904c5e47e5e7dcd13b0bcbe219139bd66ba080d369184875",
+    "scripts/export_cable_integration.py": "4ddb7d5f13a5e8e402a05a37b8fa7706a785c549d043bc0d6f5f180b027337f8",
+    "scripts/verify_cable_integration.py": "6295124a8d3ca2ae10027b488fbae911657eb892d77b136b6c4d2730c7c5ee85",
+    "tests/test_cable_integration.py": "1281fb34fb2cffd8a32fa604ba0af5bf0187649bda609e048a1e21e4b900bf0e"
+  }
+}
