@@ -1,0 +1,19 @@
+{
+  "inputs": {
+    "assembly/internal-charge-r03/restraint.json": "63eb96e07c17248a54365decb64ff62ccdfa1280492926dc13a368a897a9bd94",
+    "assembly/internal-charge-r03/checks.json": "c5423a83366862444c96d2203a69712d8572bcd5ffc16dfc6ac663163a76b660",
+    "assembly/internal-charge-r03/cad-checks.json": "82b7c6e4fda9decd56ca33ff9ae4f43fc8d69dd3b7c97b59d9138e07fa49aacd",
+    "assembly/internal-charge-r03/red-fixture-preview.png": "8d57045530bac435abac9fb3b41f15afabfd5d78118fdb595b3034cfa55f7fcc",
+    "assembly/internal-charge-r03/black-fixture-preview.png": "e61deeacace448431a18013888cf8b183950712dd6e604c0801ba78a81bc963f",
+    "assembly/internal-charge-r03/restraint-preview.png": "bf2095340c1b0cebc3774961286bdbc8470d271e6fe8602a48454b21caa8869f",
+    "scripts/make_charge_restraint_sheet.py": "732dda1e573e6dd78a3a03cdbf5aa850393aec2ff4cc554cffb0c2b4981e40f1"
+  },
+  "files": {
+    "restraint-sheet-1.svg": "527e70390622d6e198ab0c6dc119cf7ca22ac997fdf9682130cb0d908480eeca",
+    "restraint-sheet-1.pdf": "fadfb92479db2e8a82dc5d51142fabd46957426feba36c6122a41e17f8d14253",
+    "restraint-sheet-2.svg": "1987a2d1d682721b10b8aa49697d4bb90b395f806ccf3e4188a692dcd8db2aa0",
+    "restraint-sheet-2.pdf": "65a4c93a8794a0dbae8beb6a727361239bd3857e03a8e227df5247ef3d90ef6e",
+    "restraint-sheet.pdf": "d4e64b5fd99170c710fa3b3617315209129146a4f90efe2c818a01337bfdd2d9"
+  },
+  "physical_qualification": false
+}

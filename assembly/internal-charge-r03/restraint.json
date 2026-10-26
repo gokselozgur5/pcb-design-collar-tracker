@@ -1,0 +1,111 @@
+{
+  "revision": "CT-INTERNAL-CHARGE-003-A",
+  "status": "RESTRAINT_AND_FORMING_TOOL_PROTOTYPE",
+  "route_source": "mechanical/swim-r18-charge-clearance/routing.json",
+  "material_candidate": "DOWSIL 3145 RTV MIL-A-46146 Gray",
+  "adhesion_to_PTFE_relied_on": false,
+  "nominal_envelope_position_allowance_mm": 0.05,
+  "minimum_clearance_mm": 0.2,
+  "minimum_bare_conductor_cover_mm": 0.05,
+  "patches": [
+    {
+      "id": "pcb-pair",
+      "wires": [
+        0,
+        1
+      ],
+      "anchor": "pcb",
+      "low_mm": [
+        -17.2,
+        -13.05,
+        11.24088
+      ],
+      "high_mm": [
+        -13.4,
+        -11.12,
+        12.95
+      ],
+      "bare_capture_from_tip_mm": [
+        0.7,
+        1.2
+      ]
+    },
+    {
+      "id": "red-terminal",
+      "anchor": "body",
+      "low_mm": [
+        20.7,
+        -3.95,
+        12.8
+      ],
+      "high_mm": [
+        22.45,
+        -2.65,
+        14.25
+      ],
+      "bare_capture_from_tip_mm": [
+        0.9,
+        1.25
+      ],
+      "wires": [
+        0
+      ]
+    },
+    {
+      "id": "black-terminal",
+      "anchor": "body",
+      "low_mm": [
+        20.7,
+        5.35,
+        12.8
+      ],
+      "high_mm": [
+        22.45,
+        6.65,
+        14.25
+      ],
+      "bare_capture_from_tip_mm": [
+        0.9,
+        1.25
+      ],
+      "wires": [
+        1
+      ]
+    }
+  ],
+  "process": {
+    "temperature_C": [
+      21,
+      25
+    ],
+    "relative_humidity_percent": [
+      40,
+      60
+    ],
+    "planning_cure_hold_hours_min": 168,
+    "release_by_time_alone": false,
+    "cure_and_adhesion_witness_required": true,
+    "assembly_lid_open_battery_absent_during_cure": true,
+    "engineering_pull_target_N": 0.5,
+    "pull_hold_seconds": 60,
+    "maximum_measured_anchor_motion_mm": 0.03
+  },
+  "fixture": {
+    "nominal_pose_index": 13,
+    "groove_extra_radius_mm": 0.14,
+    "minimum_floor_mm": 2.0,
+    "base_margin_mm": 4.0,
+    "base_height_mm": 9.0,
+    "curve_sampling_count": 81,
+    "label": "R19 FORM ONLY - VERIFY AFTER RELEASE",
+    "dimensional_tolerance_mm": 0.05,
+    "wire_cut_length_tolerance_qualified": false,
+    "minimum_radial_clearance_mm": 0.03
+  },
+  "prototype_restraint_geometry_implemented": true,
+  "holding_force_qualified": false,
+  "continuous_motion_accepted": false,
+  "physical_qualification": false,
+  "manufacturing_release": false,
+  "pcb_pair_reason": "One insulating staking block intentionally contacts both J3 conductors and the passing red insulation; no adhesion to PTFE is relied on. Existing wire-to-wire electrical clearance remains mandatory."
+}

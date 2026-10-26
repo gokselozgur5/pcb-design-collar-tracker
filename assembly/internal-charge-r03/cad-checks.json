@@ -1,0 +1,323 @@
+{
+  "inputs": {
+    "assembly/internal-charge-r03/restraint.json": "63eb96e07c17248a54365decb64ff62ccdfa1280492926dc13a368a897a9bd94",
+    "mechanical/swim-r18-charge-clearance/routing.json": "9ffc86168d837151c9854c5bf14313e0aae2fe9b428c3f6a2a4d312733a28167",
+    "scripts/export_charge_restraint.py": "3a963fffc46dbf2b650f646bfe3fd1631ffdf20e96cd6ec7e92d64bb9ac0bd37",
+    "scripts/internal_harness_geometry.py": "b47134f090f29e9911f959077542a21e867e3b59585178c6994b88e18bf8c77d",
+    "scripts/inspect_enclosure_mesh.py": "650b7923664e55a56af30c605d20fe2cf77a3bedacf71076a153510a92200956",
+    "assembly/internal-charge-r02/harness.json": "6d0c5d325107305b65d477a76410f5fa3bbcdfc4ef73b85943bc937a82bec569",
+    "mechanical/swim-r18-charge-clearance/harness.scad": "2ae6a53b2422ca51c1a4df5bd86a71b8b4b458d88d7f7ec36f550efe956b3a03",
+    "mechanical/swim-r16-contact-retention/body.stl": "dc32b424fd3daeb8c3e94c1a0d80e478be04bc2a9761ffc23ba84dd6373c657b",
+    "mechanical/swim-r12-pack-retention/carrier.stl": "264977f7f5ace3d91765df91254d112af623e234d92399988934d4e82d6affcb",
+    "mechanical/swim-r18-charge-clearance/retainer.stl": "7cc04c45431cf636f096f476451969264c6321fc428673f7cf2b0afbd4e18b6c",
+    "mechanical/swim-r18-charge-clearance/red-wire.stl": "9aed1b3dfbb49b97bb8465d43b9111a4ca29c9b4bd11cbabbddd31f46e8019b4",
+    "mechanical/swim-r18-charge-clearance/black-wire.stl": "ff03d2ee43299c86871021f9c2c9e6bcf99dd58e3bac9622a44fa8a3254f0d2b",
+    "mechanical/swim-r16-contact-retention/positive_terminal.stl": "8edf076e834a5829627cfe63d90f30092760bc9a73f1266832797e2fdf1f0a1b",
+    "mechanical/swim-r16-contact-retention/negative_terminal.stl": "586122b1e22faf366a49b3d1c20a00a20c3572963fa665d23888d36f19122b81",
+    "mechanical/swim-r11-thermal-fit/lid.stl": "5c32194b56928f279ef3336c1be4e6aaae1a433d6504f48cb60835bae941ace8",
+    "mechanical/swim-r18-charge-clearance/gnss-guide-witness.stl": "10ac5b4384fb270754bca4c396746e0d41f1aafb902e17ad5315597e54ff378c",
+    "assembly/internal-charge-r03/restraint.scad": "4d6777ec16ab2922ec250274e922946934979a0e075eeeb86dc7842038d42861",
+    "assembly/internal-charge-r03/red-fixture.scad": "ca36ac2e6c2fd3533de783677ba547fe739f5da5fda2842b8b282ae494166c00",
+    "scripts/charge_fixture_csg.py": "391eeaa55e759d2a2f2fef6863128587cb87095d4129a3028e31bbf89662dc3b",
+    "assembly/internal-charge-r03/requirements.txt": "e4245b148efb5d9d36a21313b125f21f36e17b6bceb2e0a825a3e7d75f89d0cb",
+    "assembly/internal-charge-r03/black-fixture.scad": "0a8dd7d89e5585e8e466caa43bd43d3fbb5b36bf1cc1daf578d61421031c81a0"
+  },
+  "meshes": [
+    {
+      "file": "staking-envelopes.stl",
+      "sha256": "931adf02122855d97d5f9bef2c656497436c2d9463566b6bafcf2121820759bf",
+      "triangles": 36,
+      "vertices": 24,
+      "bounds_mm": [
+        [
+          -17.200000762939453,
+          -13.050000190734863,
+          11.240880012512207
+        ],
+        [
+          22.450000762939453,
+          6.650000095367432,
+          14.25
+        ]
+      ],
+      "dimensions_mm": [
+        39.650001525878906,
+        19.700000286102295,
+        3.009119987487793
+      ],
+      "signed_volume_mm3": 19.132189841496228,
+      "bad_edge_count": 0,
+      "collapsed_faces_at_1e_5mm": 0,
+      "connected_surfaces": 3,
+      "closed_oriented_manifold": true
+    },
+    {
+      "file": "red-fixture-witness.stl",
+      "sha256": "e1943a4eb7f24f075c21d810952e20f15f9eee3922ddb5609796b330ea1c5b94",
+      "triangles": 76860,
+      "vertices": 38432,
+      "bounds_mm": [
+        [
+          3.7244629859924316,
+          3.5847201347351074,
+          2.112489938735962
+        ],
+        [
+          43.47450256347656,
+          14.744422912597656,
+          7.344298362731934
+        ]
+      ],
+      "dimensions_mm": [
+        39.75003957748413,
+        11.159702777862549,
+        5.231808423995972
+      ],
+      "signed_volume_mm3": 23.216423538942134,
+      "bad_edge_count": 0,
+      "collapsed_faces_at_1e_5mm": 0,
+      "connected_surfaces": 1,
+      "closed_oriented_manifold": true
+    },
+    {
+      "file": "red-fixture-wire.stl",
+      "sha256": "c75e538de8b16c99728ed7d0c37add0084fa09e832ae546fed3236f5456f9471",
+      "triangles": 76860,
+      "vertices": 38432,
+      "bounds_mm": [
+        [
+          3.796276092529297,
+          3.692119598388672,
+          2.2057197093963623
+        ],
+        [
+          43.45195770263672,
+          14.636980056762695,
+          7.237320899963379
+        ]
+      ],
+      "dimensions_mm": [
+        39.65568161010742,
+        10.944860458374023,
+        5.031601190567017
+      ],
+      "signed_volume_mm3": 12.69169874954123,
+      "bad_edge_count": 0,
+      "collapsed_faces_at_1e_5mm": 0,
+      "connected_surfaces": 1,
+      "closed_oriented_manifold": true
+    },
+    {
+      "file": "red-fixture.stl",
+      "sha256": "45a63da523dcc804559322a700b131280646af681a0cebeeb36f19d9716c31de",
+      "triangles": 3310,
+      "vertices": 1657,
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          47.38800048828125,
+          18.33218002319336,
+          9.0
+        ]
+      ],
+      "dimensions_mm": [
+        47.38800048828125,
+        18.33218002319336,
+        9.0
+      ],
+      "signed_volume_mm3": 7625.368891551248,
+      "bad_edge_count": 0,
+      "collapsed_faces_at_1e_5mm": 0,
+      "connected_surfaces": 1,
+      "closed_oriented_manifold": true
+    },
+    {
+      "file": "black-fixture-witness.stl",
+      "sha256": "83544f87f39c22df4af478afecf18513b4ef95e166c8d956da68bc9e6af8627e",
+      "triangles": 76860,
+      "vertices": 38432,
+      "bounds_mm": [
+        [
+          3.6209521293640137,
+          3.6584653854370117,
+          2.190530300140381
+        ],
+        [
+          40.90549850463867,
+          26.745044708251953,
+          7.840700626373291
+        ]
+      ],
+      "dimensions_mm": [
+        37.28454637527466,
+        23.08657932281494,
+        5.65017032623291
+      ],
+      "signed_volume_mm3": 29.150392317843465,
+      "bad_edge_count": 0,
+      "collapsed_faces_at_1e_5mm": 0,
+      "connected_surfaces": 1,
+      "closed_oriented_manifold": true
+    },
+    {
+      "file": "black-fixture-wire.stl",
+      "sha256": "13d20c4659e97840361ed743bcfbe870c3d627d469a007d2f4daebd1270427ad",
+      "triangles": 76860,
+      "vertices": 38432,
+      "bounds_mm": [
+        [
+          3.719823122024536,
+          3.747551441192627,
+          2.263479471206665
+        ],
+        [
+          40.8714599609375,
+          26.63783073425293,
+          7.733464241027832
+        ]
+      ],
+      "dimensions_mm": [
+        37.151636838912964,
+        22.890279293060303,
+        5.469984769821167
+      ],
+      "signed_volume_mm3": 15.926516580714624,
+      "bad_edge_count": 0,
+      "collapsed_faces_at_1e_5mm": 0,
+      "connected_surfaces": 1,
+      "closed_oriented_manifold": true
+    },
+    {
+      "file": "black-fixture.stl",
+      "sha256": "9510cf4223a97a6cbff35d7dcb35d58b51b14ff8321c233ff8a7c284fe59f96f",
+      "triangles": 3488,
+      "vertices": 1746,
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          44.775001525878906,
+          30.32933807373047,
+          9.0
+        ]
+      ],
+      "dimensions_mm": [
+        44.775001525878906,
+        30.32933807373047,
+        9.0
+      ],
+      "signed_volume_mm3": 12028.69295524006,
+      "bad_edge_count": 0,
+      "collapsed_faces_at_1e_5mm": 0,
+      "connected_surfaces": 1,
+      "closed_oriented_manifold": true
+    }
+  ],
+  "controls": [
+    {
+      "name": "staking-collision",
+      "engine": "Manifold 3.5.4",
+      "status": "Error.NoError",
+      "empty": true,
+      "volume_mm3": 0.0,
+      "triangles": 0
+    },
+    {
+      "name": "displaced-staking-control",
+      "engine": "Manifold 3.5.4",
+      "status": "Error.NoError",
+      "empty": false,
+      "volume_mm3": 0.48255999999999943,
+      "triangles": 12
+    },
+    {
+      "name": "red-fixture-collision",
+      "engine": "Manifold 3.5.4",
+      "status": "Error.NoError",
+      "empty": true,
+      "volume_mm3": 0.0,
+      "triangles": 0
+    },
+    {
+      "name": "red-raised-floor-control",
+      "engine": "Manifold 3.5.4",
+      "status": "Error.NoError",
+      "empty": false,
+      "volume_mm3": 3.3369207663875495,
+      "triangles": 34992
+    },
+    {
+      "name": "black-fixture-collision",
+      "engine": "Manifold 3.5.4",
+      "status": "Error.NoError",
+      "empty": true,
+      "volume_mm3": 0.0,
+      "triangles": 0
+    },
+    {
+      "name": "black-raised-floor-control",
+      "engine": "Manifold 3.5.4",
+      "status": "Error.NoError",
+      "empty": false,
+      "volume_mm3": 4.1406578269082495,
+      "triangles": 34202
+    }
+  ],
+  "forming_tools": [
+    {
+      "colour": "red",
+      "case_to_fixture_translation_mm": [
+        20.988,
+        17.63218002449102,
+        -9.0098
+      ],
+      "size_mm": [
+        47.388,
+        18.33218002449102,
+        9.0
+      ],
+      "continuous_chord_error_bound_mm": 0.012986230226894395,
+      "minimum_clearance_bound_mm": 0.07299114359107126,
+      "minimum_floor_mm": 2.0,
+      "witness_radius_mm": 0.41224248227182325,
+      "vertical_removal_open": true,
+      "wire_length_mm": 43.76580559523901,
+      "length_tolerance_qualified": false
+    },
+    {
+      "colour": "black",
+      "case_to_fixture_translation_mm": [
+        18.375,
+        16.375999999999998,
+        -9.0098
+      ],
+      "size_mm": [
+        44.775,
+        30.329338459996727,
+        9.0
+      ],
+      "continuous_chord_error_bound_mm": 0.04002809493239284,
+      "minimum_clearance_bound_mm": 0.04594927888557281,
+      "minimum_floor_mm": 2.0,
+      "witness_radius_mm": 0.4123602219448872,
+      "vertical_removal_open": true,
+      "wire_length_mm": 54.92090851069464,
+      "length_tolerance_qualified": false
+    }
+  ],
+  "previews": {
+    "red-fixture-preview.png": "8d57045530bac435abac9fb3b41f15afabfd5d78118fdb595b3034cfa55f7fcc",
+    "black-fixture-preview.png": "e61deeacace448431a18013888cf8b183950712dd6e604c0801ba78a81bc963f",
+    "restraint-preview.png": "bf2095340c1b0cebc3774961286bdbc8470d271e6fe8602a48454b21caa8869f"
+  },
+  "physical_qualification": false,
+  "manufacturing_release": false,
+  "scope": "Nominal CAD and continuous tool-path clearance only. No adhesion, springback, fatigue, factory tolerance or movement qualification."
+}

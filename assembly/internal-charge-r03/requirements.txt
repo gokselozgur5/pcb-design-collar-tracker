@@ -1,0 +1,2 @@
+# Additional geometry kernel for the r19 forming tools; use requirements-dfm.txt too.
+manifold3d==3.5.4
