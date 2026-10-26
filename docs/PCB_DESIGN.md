@@ -186,6 +186,14 @@ the exact uploaded bytes: a cached preview can retain earlier rotations. Record
 missing fitted references explicitly; an incomplete preview cannot pass full SMT.
 [JLCPCB BOM requirements](https://jlcpcb.com/help/article/bill-of-materials-for-pcb-assembly).
 
+Connector libraries may number a signal and duplicated ground lands differently.
+Map electrical functions against the manufacturer drawing before comparing geometry.
+Apply each pad's local rotation; width/height alone can suggest a false mismatch.
+Keep the native physical centre separate from a supplier model's origin. If a
+dated model needs a CPL offset, preserve it as a supplier-specific review candidate,
+prove its placement in the actual preview and obtain factory datum confirmation
+before machine programming. Do not move correct native copper to match a library.
+
 Confirm actual stock, substitutions, bottom-side assembly, stencil and special
 processes for the intended order. A datasheet does not establish factory availability.
 

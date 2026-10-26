@@ -20,8 +20,8 @@ print(f"Active: r05l hardware charge interlock; {candidate['native_drc']['unconn
 print(f"Other native violations/warnings: {candidate['native_drc']['violations']}; "
       f"schematic mismatches: {candidate['native_drc']['schematic_parity']}.")
 print('Parts: 81 fitted references / 44 exact candidate MPNs; original 71 footprints and 27 RF segments preserved.')
-print('PCBA r01: actual JLC match 43/44 MPNs; 13 supplier-angle corrections; preview has 80/81 parts, missing mandatory Q1.')
-print('Next manufacturing: resolve Q1, missing J6 model and J1/J2 library mapping, then complete placement/SMT review.')
+print('PCBA r02: 43/44 MPNs; 13 angle corrections plus J1/J2 model-origin correction; actual preview still has 80/81 references.')
+print('Next manufacturing: Q1 sourcing, missing J6 model and factory datum confirmation, then complete placement/SMT review. No alternate Q1 selected.')
 print('Power: tolerance/TCR/leakage and typical-capacitance screens pass conditionally; powered and RF acceptance remain HOLD.')
 print('Mechanical: r08 adds CAPH/ZETA prototype antennas, two nominal cable routes and four lid guides; 85 envelopes and four thickness cases checked.')
 print('r09 pack/NTC request study raises the shell by 0.4mm; this is not an approved supplier part or a complete harness.')

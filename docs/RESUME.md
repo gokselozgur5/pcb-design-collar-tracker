@@ -5,19 +5,24 @@ not another requirements interview. Read [the Paul/nano-SIM notes](paul-nanosim.
 before editing. This handoff does not require private chat history or other projects.
 
 **Current priority: factory assembly, not another firmware feature.**
-Read [PCBA r01](../assembly/pcba-r01/README.md). The actual supplier match is
-43/44 exact MPNs; Q1 remains mandatory and unmatched. `cpl-jlc-review.csv` changes
-13 IC/discrete angles while retaining all 81 references, centres and sides.
-J6 has no returned model, and J1/J2 need library/package/origin review. Resolve
-those four references before accepting the complete placement or SMT run.
-The original `cpl.csv` is retained as native-coordinate evidence. Do not replace
-the PCB, repeat its unchanged DFM, drop Q1, or count empty SMT counters as a pass.
+Read [PCBA r02](../assembly/pcba-r02/README.md). Actual JLC matching remains
+43/44 exact MPNs; mandatory Q1 is unmatched. This review's CPL retains r01's
+13 angle corrections and corrects the dated J1/J2 model origin by -0.6320028mm X.
+The physical connector positions and PCB remain unchanged; do not copy this
+model-specific offset into native CAD. Manufacturer lands/pins on J1/J2/J6/Q1
+are checked. J6 still has no usable supplier model. The DMN62D0UDW-7 alternate
+is unselected; its one-unit JLC stock observation does not resolve procurement.
+Next obtain Q1 sourcing, the J6 model/placement decision and factory confirmation
+of the placement datum, then accept all 81 fitted references and run SMT analysis.
+Do not repeat unchanged PCB DFM, drop Q1 or count empty SMT counters as a pass.
 
-The [review ZIP](../release/collar-tracker-r05l-pcba-r01-review.zip) includes the
-unchanged Gerber/native sources, BOM/CPL, pad maps and inspected supplier previews.
-Run `python3 scripts/verify_pcba_review.py` for the saved file/net/read-back checks.
-Preparation/export/package scripts write frozen evidence; do not rerun them during
-a normal resume. Use a new revision for further corrections.
+The [review ZIP](../release/collar-tracker-r05l-pcba-r02-review.zip) includes the
+unchanged Gerber/native sources, original BOM/CPL, both review revisions and the
+new placement-reference drawing. The actual r02 preview reproduces 80 placements;
+Q1 is absent and J6 has only a placeholder. Run
+`python3 scripts/verify_pcba_connectors.py` for the saved manufacturer/origin/read-back
+checks. Handoff also verifies r01. Build/export/package scripts write frozen evidence;
+do not rerun them during normal resume. Use a new revision for further corrections.
 
 Latest software: [tracker r03](../firmware/tracker-r03/README.md), with signed
 MCUboot and a trial guard, and the unchanged [local receiver](../firmware/receiver/README.md).

@@ -1129,3 +1129,45 @@ complete 81-part placement and run actual SMT review. Protected-pack approval,
 factory programming/testing feasibility and powered/RF/ingress acceptance remain
 open; the battery enquiry is still unsent. Further OTA development is deferred
 behind manufacturing review. Whole-device release remains HOLD.
+
+## 2026-10-26 — Connector origins and mandatory Q1 sourcing
+
+Created PCBA r02 without changing the frozen r01 evidence, native r05l PCB,
+Gerber, BOM or physical placements. Compared the Hirose recommended pattern
+with both U.FL footprints: native signal/ground lands match its nominal dimensions.
+The JLC library numbers signal/grounds differently and its model centre is
+0.6320028mm right of its footprint origin. Applied that supplier-specific X offset
+to J1/J2 in a new review CPL, retaining the thirteen prior angle corrections.
+Its browser-upload SHA equals local SHA
+5aa23f9f2b6a56a33e6bc581511507f6b09b449acc34ac6c0eb6119ab3ffd02f.
+
+Reloaded JLC after upload. The actual downloaded preview reproduces all 80
+available references, coordinates, sides and angles; all 43 matched MPNs remain
+unchanged. Inspected both sides: U.FL models now align, while J6 still shows a
+placeholder and Q1 remains absent. No placement approval or complete SMT run
+was submitted. Factory placement-datum and stencil/process acceptance remain open.
+
+Checked all eight native J6 lands against the GCT D6 component-side drawing,
+including the no-peg variant, unused C6/VPP and both grounded shields. The socket
+opening faces Gerber +Y; insertion proceeds toward -Y. Checked Q1's six terminal
+functions and standard SOT363 lands. Added an original one-page placement drawing,
+source provenance and a candidate screen for DMN62D0UDW-7. Its pin arrangement
+agrees and its 25C 1.8V RDS limit is lower, but the inherited hot/falling-rail
+assumptions remain unqualified. JLC's exact candidate search at 07:21 UTC showed
+only one unit. No substitute was selected; original Q1 stays mandatory in the BOM.
+
+The read-only verifier reproduces manufacturer/native dimensions and functions,
+rejects the prior U.FL origins on both references and checks the actual corrected
+supplier read-back. Full saved handoff passes with 44 top-level fields, not 44
+tests. Five changed Python files parse, 108 local Markdown targets resolve and
+source whitespace checks pass. Clarified the insertion-arrow label after the full
+run, rebuilt the drawing/package and reran the affected r02 verifier successfully.
+Review ZIP release/collar-tracker-r05l-pcba-r02-review.zip has 39 members and SHA
+0a56cff3d99c196ac2c967f5055e3c1eda5d70446295cf4aa8c010bb14a1b4a5.
+Its root START-HERE identifies the current BOM/CPL and remaining release gates.
+
+Next obtain Q1 sourcing and the J6 model/placement decision, confirm factory datums,
+then review all 81 fitted references and run SMT analysis. Approved protected pack,
+factory programming/testing and physical qualification remain open. No supplier
+message, order, payment, flashing or powered test occurred. The browser was closed;
+account/session data remains ignored. Firmware work stays deferred.

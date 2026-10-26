@@ -30,11 +30,13 @@ rotations and SMT acceptance remain open. PCB DFM does not prove a working devic
 [Charge review](assembly/charge-interlock-r01/README.md) ·
 [r05l source and limits](experiments/power-r05l-charge-interlock/README.md)
 
-The [current PCBA review](assembly/pcba-r01/README.md) adds actual JLC BOM matching
-(43/44 exact MPNs), supplier placement previews and 13 corrected IC/discrete
-rotations. Q1 sourcing, J6's missing model and the J1/J2 library/package mapping
-remain open. The 80-part supplier preview is incomplete; all 81 references remain
-in the local BOM/CPL. The PCB and its two clean DFM results are unchanged.
+The [current PCBA review](assembly/pcba-r02/README.md) retains actual JLC matching
+(43/44 exact MPNs) and 13 angle corrections, then resolves J1/J2's model-origin
+offset against manufacturer lands and the actual supplier preview. Connector/Q1
+pin functions and a placement-reference drawing are included. Q1 sourcing,
+J6's missing model and complete SMT acceptance remain open. The 80-part preview
+is incomplete; all 81 references remain in the local BOM/CPL. The PCB and its
+two clean DFM results are unchanged. [Current review ZIP](release/collar-tracker-r05l-pcba-r02-review.zip).
 
 The latest [r16 contact retention](mechanical/swim-r16-contact-retention/README.md)
 adds rear terminal bearing plates and internal pockets without changing the PCB
