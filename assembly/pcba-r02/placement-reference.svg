@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1080" viewBox="0 0 1200 1080">
+<rect width="1200" height="1080" fill="white"/>
+<style>text{font-family:Arial,sans-serif;fill:#172d3d}.title{font-size:26px;font-weight:bold}.note{font-size:17px}.label{font-size:15px}</style>
+<text x="35" y="43" class="title" text-anchor="start">r05l / PCBA r02 — native connector and Q1 placement reference</text>
+<text x="35" y="75" class="note" text-anchor="start">Review only. Dimensions in mm; not a stencil, machine program or assembly approval.</text>
+<text x="35" y="104" class="note" text-anchor="start">Gerber origin unchanged. J6 is shown from the bottom component side (X mirrored).</text>
+<text x="60" y="145" class="note" text-anchor="start">J1 — Top | physical centre (18.3, 5.7)</text>
+<path d="M 285 305 H 315 M 300 290 V 320" stroke="#667788" fill="none"/>
+<circle cx="300" cy="305" r="65" fill="none" stroke="#667788" stroke-dasharray="4 4"/>
+<rect x="166.75" y="272.5" width="68.25" height="65.0" fill="#f8d59e" stroke="#273b4a"/>
+<text x="200.875" y="310.0" class="label" text-anchor="middle">1</text>
+<rect x="228.5" y="175.0" width="143.0" height="68.25" fill="#bce4c7" stroke="#273b4a"/>
+<text x="300.0" y="214.125" class="label" text-anchor="middle">2</text>
+<rect x="228.5" y="366.75" width="143.0" height="68.25" fill="#bce4c7" stroke="#273b4a"/>
+<text x="300.0" y="405.875" class="label" text-anchor="middle">2</text>
+<text x="60" y="475" class="note" text-anchor="start">Pin 1 = RF; both pin-2 lands = GND. Coax centre = crosshair.</text>
+<text x="60" y="501" class="note" text-anchor="start">Only the dated JLC model origin moves -0.632003 mm in X.</text>
+<text x="640" y="145" class="note" text-anchor="start">J2 — Top | physical centre (28.3, 16.2)</text>
+<path d="M 865 305 H 895 M 880 290 V 320" stroke="#667788" fill="none"/>
+<circle cx="880" cy="305" r="65" fill="none" stroke="#667788" stroke-dasharray="4 4"/>
+<rect x="746.75" y="272.5" width="68.25" height="65.0" fill="#f8d59e" stroke="#273b4a"/>
+<text x="780.875" y="310.0" class="label" text-anchor="middle">1</text>
+<rect x="808.5" y="175.0" width="143.0" height="68.25" fill="#bce4c7" stroke="#273b4a"/>
+<text x="880.0" y="214.125" class="label" text-anchor="middle">2</text>
+<rect x="808.5" y="366.75" width="143.0" height="68.25" fill="#bce4c7" stroke="#273b4a"/>
+<text x="880.0" y="405.875" class="label" text-anchor="middle">2</text>
+<text x="640" y="475" class="note" text-anchor="start">Pin 1 = RF; both pin-2 lands = GND. Coax centre = crosshair.</text>
+<text x="640" y="501" class="note" text-anchor="start">Only the dated JLC model origin moves -0.632003 mm in X.</text>
+<text x="60" y="550" class="note" text-anchor="start">J6 — Bottom | physical centre (27, 20)</text>
+<path d="M 285 780 H 315 M 300 765 V 795" stroke="#667788" fill="none"/>
+<rect x="227.04" y="625.1999999999999" width="24.0" height="26.400000000000002" fill="#f8d59e" stroke="#273b4a"/>
+<text x="239.04" y="643.4" class="label" text-anchor="middle">1</text>
+<rect x="288.0" y="625.1999999999999" width="24.0" height="26.400000000000002" fill="#f8d59e" stroke="#273b4a"/>
+<text x="300.0" y="643.4" class="label" text-anchor="middle">2</text>
+<rect x="348.96" y="625.1999999999999" width="24.0" height="26.400000000000002" fill="#f8d59e" stroke="#273b4a"/>
+<text x="360.96" y="643.4" class="label" text-anchor="middle">3</text>
+<rect x="227.04" y="908.4" width="24.0" height="26.400000000000002" fill="#bce4c7" stroke="#273b4a"/>
+<text x="239.04" y="926.6" class="label" text-anchor="middle">5</text>
+<rect x="288.0" y="908.4" width="24.0" height="26.400000000000002" fill="#f8d59e" stroke="#273b4a"/>
+<text x="300.0" y="926.6" class="label" text-anchor="middle">6</text>
+<rect x="348.96" y="908.4" width="24.0" height="26.400000000000002" fill="#f8d59e" stroke="#273b4a"/>
+<text x="360.96" y="926.6" class="label" text-anchor="middle">7</text>
+<rect x="415.2" y="744.0" width="24.0" height="72.0" fill="#bce4c7" stroke="#273b4a"/>
+<text x="427.2" y="785.0" class="label" text-anchor="middle">8</text>
+<rect x="160.8" y="744.0" width="24.0" height="72.0" fill="#bce4c7" stroke="#273b4a"/>
+<text x="172.8" y="785.0" class="label" text-anchor="middle">8</text>
+<text x="60" y="958" class="note" text-anchor="start">1 VCC / 2 RST / 3 CLK / 5 GND / 6 NC / 7 IO / 8 shield</text>
+<path d="M 300 590 v 32 m -8 -10 l 8 10 l 8 -10" stroke="#156789" stroke-width="3" fill="none"/>
+<text x="300" y="578" class="label" text-anchor="middle">Opening at Gerber +Y edge; insert toward -Y</text>
+<text x="60" y="987" class="note" text-anchor="start">No-peg variant. Do not drill locating holes or fit a 180-degree reversal.</text>
+<text x="640" y="550" class="note" text-anchor="start">Q1 — Top | physical centre (34, 6.75)</text>
+<path d="M 865 780 H 895 M 880 765 V 795" stroke="#667788" fill="none"/>
+<rect x="798.3" y="841.75" width="39.9" height="57.0" fill="#bce4c7" stroke="#273b4a"/>
+<text x="818.25" y="875.25" class="label" text-anchor="middle">1</text>
+<rect x="860.05" y="841.75" width="39.9" height="57.0" fill="#f8d59e" stroke="#273b4a"/>
+<text x="880.0" y="875.25" class="label" text-anchor="middle">2</text>
+<rect x="921.8" y="841.75" width="39.9" height="57.0" fill="#f8d59e" stroke="#273b4a"/>
+<text x="941.75" y="875.25" class="label" text-anchor="middle">3</text>
+<rect x="921.8" y="661.25" width="39.9" height="57.0" fill="#bce4c7" stroke="#273b4a"/>
+<text x="941.75" y="694.75" class="label" text-anchor="middle">4</text>
+<rect x="860.05" y="661.25" width="39.9" height="57.0" fill="#f8d59e" stroke="#273b4a"/>
+<text x="880.0" y="694.75" class="label" text-anchor="middle">5</text>
+<rect x="798.3" y="661.25" width="39.9" height="57.0" fill="#f8d59e" stroke="#273b4a"/>
+<text x="818.25" y="694.75" class="label" text-anchor="middle">6</text>
+<text x="640" y="593" class="note" text-anchor="start">Original DMN62D2UDW-7 remains mandatory; candidate not selected.</text>
+<text x="640" y="949" class="note" text-anchor="start">1 S1 / 2 G1 / 3 D1 / 4 S2 / 5 G2 / 6 D2</text>
+<text x="640" y="976" class="note" text-anchor="start">S1/S2: GND; G1/G2: POWER_FAULT</text>
+<text x="640" y="1003" class="note" text-anchor="start">D1: VIO_ENABLE; D2: VIO_DISCHARGE</text>
+<text x="35" y="1052" class="label" text-anchor="start">Reference geometry: native r05l pad export; Hirose U.FL mounting pattern; GCT SIM8051 D6; Diodes SOT363.</text>
+</svg>

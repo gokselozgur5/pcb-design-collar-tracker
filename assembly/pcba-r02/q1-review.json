@@ -1,0 +1,62 @@
+{
+  "reference": "Q1",
+  "original_mpn": "DMN62D2UDW-7",
+  "candidate_mpn": "DMN62D0UDW-7",
+  "candidate_code": "C781251",
+  "status": "SCREENED_CANDIDATE_NOT_SELECTED",
+  "bom_changed": false,
+  "substitution_approved": false,
+  "same_top_view_terminal_arrangement": true,
+  "same_standard_sot363_recommended_land_mm": {
+    "pitch": 0.65,
+    "pad_width": 0.42,
+    "pad_length": 0.6,
+    "row_centres": 1.9,
+    "outside_span": 2.5
+  },
+  "pin_functions": {
+    "1": "S1 / GND",
+    "2": "G1 / POWER_FAULT",
+    "3": "D1 / VIO_ENABLE",
+    "4": "S2 / GND",
+    "5": "G2 / POWER_FAULT",
+    "6": "D2 / VIO_DISCHARGE"
+  },
+  "comparison_at_25C": {
+    "vdss_V_both": 60,
+    "vgs_absolute_V_both": 20,
+    "threshold_V_both": [0.5, 1.0],
+    "rds_max_ohm_at_vgs_1v8_original": 4,
+    "rds_max_ohm_at_vgs_1v8_candidate": 3,
+    "rds_test_current_A": 0.05,
+    "gate_leak_absolute_max_uA_at_vgs_20V_both": 10,
+    "candidate_power_minimum_land_W": 0.32,
+    "candidate_theta_ja_minimum_land_C_per_W": 400
+  },
+  "circuit_screen": {
+    "role": "Pull U4 enable low and discharge its external VIO rail; not the modem supply switch",
+    "source": "assembly/power-parts-r01/selection.json assumptions and native r05l nets",
+    "vio_initial_max_V": 1.9,
+    "vio_cap_max_uF": 12,
+    "discharge_resistor_ohm_nominal": 22,
+    "discharge_resistor_initial_tolerance_fraction": 0.01,
+    "resistor_temperature_drift_included": false,
+    "initial_current_bound_mA_zero_fet_resistance": 87.24,
+    "stored_capacitor_energy_uJ": 21.66,
+    "inherited_hot_rds_assumption_ohm": 6,
+    "hot_rds_assumption_qualified": false,
+    "limits": "The 25C RDS table does not guarantee 6 ohm over temperature or startup with a falling gate rail. Capacitor discharge is a short pulse above the 50mA RDS test current. Powered fault/rail-collapse tests and assembled thermal/current bounds remain required."
+  },
+  "availability_observation": {
+    "observed_at_utc": "2026-10-26T07:21:31.084Z",
+    "source": "https://jlcdfm.com/bomMatch",
+    "method": "Visible Search Parts table; exact candidate row; no Select action",
+    "mpn": "DMN62D0UDW-7",
+    "code": "C781251",
+    "jlcpcb_stock": 1,
+    "idle_parts_stock": 0,
+    "reserved": false,
+    "note": "A dated observation, not an assembly quantity or procurement commitment. Recheck before selecting or ordering."
+  },
+  "decision": "Retain the original exact MPN in BOM and PCB. Ask the factory to source the original or propose a documented alternate with enough stock and placement/process acceptance. One candidate in stock does not resolve factory supply. No supplier message or order has been sent."
+}

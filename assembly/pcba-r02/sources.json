@@ -1,0 +1,47 @@
+{
+  "reviewed_date": "2026-10-26",
+  "sources": [
+    {
+      "id": "hirose-ufl",
+      "publisher": "Hirose Electric",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/ade8681cf25347ad817fa65440db6a2c.pdf?productCode=C88374",
+      "sha256": "3e7b368a3ae1167260baf0352c70629776490ea65e1e860824dac32a26db430a",
+      "inspected": "Manufacturer U.FL catalogue, November 2016, page 3: receptacle and recommended mounting pattern, visually inspected. Manufacturer-authored PDF hosted by LCSC; not an independent second source.",
+      "current_crosscheck_url": "https://www.hirose.com/product/download/?distributor=all&lang=en&series=U.FL&type=catalogue",
+      "current_crosscheck": "Current catalogue page 12, footer October 2026, text dimensions agree. Its image was not retrieved locally; visual measurement uses the archived manufacturer page above.",
+      "packaging_url": "https://support.hirose.com/en/support/solutions/articles/68000029558-what-is-the-reel-type-part-number-of-u-fl-r-smt-1-01-",
+      "packaging_note": "Hirose identifies (10) as a reel version of the same U.FL-R-SMT-1 base part. No MPN/packaging substitution is made. Factory must confirm the exact ordered reel."
+    },
+    {
+      "id": "gct-sim8051",
+      "publisher": "Global Connector Technology",
+      "url": "https://www.mouser.cn/datasheet/2/837/SIM8051-2888021.pdf",
+      "local_path": "references/paul-nanosim-r04/SIM8051-drawing-D6.pdf",
+      "sha256": "4fa95562ce295d7916c8badd8efcfac60280980af34d3ce6f330e888c6da475a",
+      "inspected": "D6, 14 July 2022. Component-side land pattern visually inspected; no-peg variant and native electrical contacts compared."
+    },
+    {
+      "id": "diodes-original",
+      "publisher": "Diodes Incorporated",
+      "url": "https://www.diodes.com/datasheet/download/DMN62D2UDW.pdf",
+      "sha256": "247a9dacd3b933ff621be2f8b7e8a5ab08e88ce91250baf04fe36dd8a343269c",
+      "inspected": "DS44897 Rev. 1-2, September 2023. Pin diagram visually compared; electrical/thermal tables and package dimensions read."
+    },
+    {
+      "id": "diodes-candidate",
+      "publisher": "Diodes Incorporated",
+      "url": "https://www.diodes.com/datasheet/download/DMN62D0UDW.pdf",
+      "sha256": "39f6b948de206a1eec1463dc95805a79d3620f731d24e31536b6a0ee0cce1f07",
+      "inspected": "DS38029 Rev. 3-2, August 2021. Pages 1 and 7 visually inspected; ratings, characteristics and thermal tables read. This is a candidate screen, not a qualified substitution."
+    }
+  ],
+  "library": {
+    "source": "JLCEDA / EasyEDA Official Library",
+    "urls": [
+      "https://easyeda.com/",
+      "https://docs.easyeda.com/en/API/2-Coordinate-System-and-Unit/",
+      "https://docs.easyeda.com/en/DocumentFormat/3-EasyEDA-PCB-File-Format/index.html"
+    ],
+    "note": "Derived dimensions and response hashes only; no account data or complete third-party library is redistributed. Raw units are 10 mil = 0.254mm; canvas Y points down. Pad rotation is applied before comparing global land dimensions."
+  }
+}

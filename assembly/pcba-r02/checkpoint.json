@@ -1,0 +1,20 @@
+{
+  "revision": "pcba-r02",
+  "production_release": false,
+  "files": {
+    "assembly/pcba-r02/README.md": "81e25a3930f890e3f2528095b9eaa7561e23c6aea117cfcc733399914092c263",
+    "assembly/pcba-r02/connector-review.json": "c48876a63942b06ea2d3067df3ffc93092755ec92b70f15c3f99ab727242a653",
+    "assembly/pcba-r02/cpl-jlc-review.csv": "5aa23f9f2b6a56a33e6bc581511507f6b09b449acc34ac6c0eb6119ab3ffd02f",
+    "assembly/pcba-r02/jlc-preview-positions.json": "8dc71daa6f9f57c52946cdc5bb7acd64a0658330d3848aaa35008dc05a21d076",
+    "assembly/pcba-r02/package-readme.txt": "c8e9ef353ee185d0f30f78d43533362d6927855fab39e6a30d1153646e10db12",
+    "assembly/pcba-r02/placement-reference.pdf": "19ec188f60b6053839a1830d39c4dd5bf9433f3de0d3f22c434e7ec5cabc6045",
+    "assembly/pcba-r02/placement-reference.svg": "95da210afaebf098bc06b65c09cb3953dbc02f42b20c3e94ae35444bbca79fc2",
+    "assembly/pcba-r02/previews/bottom.png": "75d228aec532772138c24fc9f6482c347a26d6007c6c0100e33c687fe3a2afdb",
+    "assembly/pcba-r02/previews/top.png": "8df108953668bf3483aafa7b4ed6be24b216b91d31f4507e4d64b5fbb949bbda",
+    "assembly/pcba-r02/q1-review.json": "828a98fd3d7ad8a37737fde2eaaf9ce3b27200fc2629b8107d6f649cea360f6b",
+    "assembly/pcba-r02/sources.json": "166bd313268cdd421b1c2e1da2b4620f1ac031337f15e427e4f0cb029cff44b0",
+    "scripts/review_pcba_connectors.py": "d1dc2b7c28467c50d1344ec2147868ef9a8024dff822892bb3b8403c161bd297",
+    "scripts/verify_pcba_connectors.py": "cc278832473e11cfb1f7bb9d254c3d993abc7a3902b632bf994eed1bd67c8e42",
+    "scripts/package_pcba_connectors.py": "9a5cd6bc70db0c038a765b0f263a2e97cdf446dec6def834756f196bf0ce08c6"
+  }
+}

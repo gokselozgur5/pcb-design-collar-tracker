@@ -1,0 +1,285 @@
+{
+  "revision": "pcba-r02",
+  "production_release": false,
+  "input_sha256": {
+    "assembly/pcba-r01/cpl.csv": "0d4d71db99c53891dcb0784954c89ad209dbd541e223d12151d448dc39d42e10",
+    "assembly/pcba-r01/cpl-jlc-review.csv": "46f4a72547b5607c65bfd7fb53e33b2f65f599997b18a1b7e72a21b5cbf5f01e",
+    "assembly/pcba-r01/fitted-pads.csv": "b7aa6147280d71b217b4e8f2999c8837ddcb1c30d2af31303fd52a18fb135f7a",
+    "assembly/pcba-r01/bom.csv": "e0e2782d00ce0d0a01559dd62cda5832a1904598125dc7d9720a735d7bff18d9"
+  },
+  "coordinate_convention": "Gerber top view, X right/Y up; bottom coordinates are not mirrored",
+  "native_lands": {
+    "J1": [
+      {
+        "pin": "1",
+        "net": "/LTE_ANT",
+        "x_mm": -1.525,
+        "y_mm": 0.0,
+        "width_mm": 1.05,
+        "height_mm": 1.0
+      },
+      {
+        "pin": "2",
+        "net": "/GND",
+        "x_mm": 0.0,
+        "y_mm": 1.475,
+        "width_mm": 2.2,
+        "height_mm": 1.05
+      },
+      {
+        "pin": "2",
+        "net": "/GND",
+        "x_mm": 0.0,
+        "y_mm": -1.475,
+        "width_mm": 2.2,
+        "height_mm": 1.05
+      }
+    ],
+    "J2": [
+      {
+        "pin": "1",
+        "net": "/GNSS_ANT",
+        "x_mm": -1.525,
+        "y_mm": 0.0,
+        "width_mm": 1.05,
+        "height_mm": 1.0
+      },
+      {
+        "pin": "2",
+        "net": "/GND",
+        "x_mm": 0.0,
+        "y_mm": 1.475,
+        "width_mm": 2.2,
+        "height_mm": 1.05
+      },
+      {
+        "pin": "2",
+        "net": "/GND",
+        "x_mm": 0.0,
+        "y_mm": -1.475,
+        "width_mm": 2.2,
+        "height_mm": 1.05
+      }
+    ],
+    "J6": [
+      {
+        "pin": "1",
+        "net": "/SIM_1V8",
+        "x_mm": 2.54,
+        "y_mm": 5.9,
+        "width_mm": 1.0,
+        "height_mm": 1.1
+      },
+      {
+        "pin": "2",
+        "net": "/SIM_RST",
+        "x_mm": 0.0,
+        "y_mm": 5.9,
+        "width_mm": 1.0,
+        "height_mm": 1.1
+      },
+      {
+        "pin": "3",
+        "net": "/SIM_CLK",
+        "x_mm": -2.54,
+        "y_mm": 5.9,
+        "width_mm": 1.0,
+        "height_mm": 1.1
+      },
+      {
+        "pin": "5",
+        "net": "/GND",
+        "x_mm": 2.54,
+        "y_mm": -5.9,
+        "width_mm": 1.0,
+        "height_mm": 1.1
+      },
+      {
+        "pin": "6",
+        "net": "unconnected-(J6-C6_VPP_UNUSED-Pad6)",
+        "x_mm": 0.0,
+        "y_mm": -5.9,
+        "width_mm": 1.0,
+        "height_mm": 1.1
+      },
+      {
+        "pin": "7",
+        "net": "/SIM_IO",
+        "x_mm": -2.54,
+        "y_mm": -5.9,
+        "width_mm": 1.0,
+        "height_mm": 1.1
+      },
+      {
+        "pin": "8",
+        "net": "/GND",
+        "x_mm": -5.3,
+        "y_mm": 0.0,
+        "width_mm": 1.0,
+        "height_mm": 3.0
+      },
+      {
+        "pin": "8",
+        "net": "/GND",
+        "x_mm": 5.3,
+        "y_mm": 0.0,
+        "width_mm": 1.0,
+        "height_mm": 3.0
+      }
+    ],
+    "Q1": [
+      {
+        "pin": "1",
+        "net": "/GND",
+        "x_mm": -0.65,
+        "y_mm": -0.95,
+        "width_mm": 0.42,
+        "height_mm": 0.6
+      },
+      {
+        "pin": "2",
+        "net": "/POWER_FAULT",
+        "x_mm": 0.0,
+        "y_mm": -0.95,
+        "width_mm": 0.42,
+        "height_mm": 0.6
+      },
+      {
+        "pin": "3",
+        "net": "/VIO_ENABLE",
+        "x_mm": 0.65,
+        "y_mm": -0.95,
+        "width_mm": 0.42,
+        "height_mm": 0.6
+      },
+      {
+        "pin": "4",
+        "net": "/GND",
+        "x_mm": 0.65,
+        "y_mm": 0.95,
+        "width_mm": 0.42,
+        "height_mm": 0.6
+      },
+      {
+        "pin": "5",
+        "net": "/POWER_FAULT",
+        "x_mm": 0.0,
+        "y_mm": 0.95,
+        "width_mm": 0.42,
+        "height_mm": 0.6
+      },
+      {
+        "pin": "6",
+        "net": "/VIO_DISCHARGE",
+        "x_mm": -0.65,
+        "y_mm": 0.95,
+        "width_mm": 0.42,
+        "height_mm": 0.6
+      }
+    ]
+  },
+  "ufl": {
+    "references": [
+      "J1",
+      "J2"
+    ],
+    "mpn": "U.FL-R-SMT-1(10)",
+    "code": "C88373",
+    "package_uuid": "8a2cb9f9f4f04056a2a097edbe39f6ba",
+    "source": "JLCEDA / EasyEDA Official Library",
+    "source_urls": [
+      "https://easyeda.com/",
+      "https://docs.easyeda.com/en/API/2-Coordinate-System-and-Unit/"
+    ],
+    "library_response_sha256": {
+      "library-numbers.json": "4ed4382889e66645c0439d0a5be47020110a29cb918d53121f13c6d791d61350",
+      "library-packages.json": "20e732b026e494fc773b3ce4fb64da0f3b3809dff98b5a80e789e50bac60284e"
+    },
+    "library_origin_raw": [
+      395.8375,
+      300.8855
+    ],
+    "model_centre_raw": [
+      398.3257,
+      300.8855
+    ],
+    "model_outline_bbox_centre_raw": [
+      398.3257,
+      300.8855
+    ],
+    "model_offset_mm": [
+      0.6320028000000015,
+      -0.0
+    ],
+    "library_lands": [
+      {
+        "pin": "1",
+        "function": "GND",
+        "x_mm": 0.6249670000000063,
+        "y_mm": 1.49999699999999,
+        "width_mm": 2.1999956000000003,
+        "height_mm": 1.0999978000000006
+      },
+      {
+        "pin": "2",
+        "function": "SIG",
+        "x_mm": -0.6249669999999918,
+        "y_mm": 0.001143000000001848,
+        "width_mm": 1.499997,
+        "height_mm": 1.0999978000000001
+      },
+      {
+        "pin": "3",
+        "function": "GND",
+        "x_mm": 0.6249670000000063,
+        "y_mm": -1.4999970000000045,
+        "width_mm": 2.1999956000000003,
+        "height_mm": 1.0999978000000006
+      }
+    ],
+    "manufacturer_drawing_rotation_degrees": 270,
+    "manufacturer_dimensions_mm": {
+      "ground_outer_span": 4,
+      "ground_inner_gap": 1.9,
+      "ground_length": 2.2,
+      "signal_width": 1,
+      "signal_length": 1.05,
+      "signal_inner_edge": 1
+    },
+    "native_pattern_matches_nominal_manufacturer_drawing": true,
+    "pin_mapping": {
+      "native_1": "library_2: SIG",
+      "native_2_both": "library_1_and_3: GND"
+    },
+    "supplier_cpl_translation_mm": [
+      -0.6320028000000015,
+      0.0
+    ],
+    "scope": "Candidate for this dated JLC model only. Native physical connector centres and PCB remain unchanged. Factory must confirm the placement datum before machine programming."
+  },
+  "sim": {
+    "reference": "J6",
+    "mpn": "SIM8051-6-0-14-00-A",
+    "code": "C7363812",
+    "manufacturer_drawing": "GCT SIM8051 D6, 14 July 2022, component-side land view",
+    "drawing_to_gerber": "Rotate the component-side drawing 180 degrees, then reflect X for the bottom side",
+    "native_pattern_matches_nominal_manufacturer_drawing": true,
+    "native_centre_mm": [
+      27.0,
+      20.0
+    ],
+    "card_opening_side_gerber": "+Y, toward board edge Y=30mm",
+    "card_insertion_direction_gerber": "-Y, from the opening into the socket",
+    "peg_holes": false,
+    "card_detect": false,
+    "unused_contact": "C6/VPP remains electrically unconnected",
+    "library_model_returned": false,
+    "supplier_placement_accepted": false
+  },
+  "q1": {
+    "mpn": "DMN62D2UDW-7",
+    "bom_unchanged": true,
+    "substitution_approved": false
+  },
+  "smt_accepted": false
+}
