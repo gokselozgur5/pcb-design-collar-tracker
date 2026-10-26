@@ -1,0 +1,29 @@
+{
+  "revision": "r15",
+  "production_release": false,
+  "physical_qualification": false,
+  "files": {
+    "mechanical/swim-r15-wire-clamp/README.md": "a2b4b871b18a283692d96ebef49acbeedfd83890cba165c5ccb3dd88fdd399aa",
+    "mechanical/swim-r15-wire-clamp/sources.json": "386fa284a186ae374a85e1faee9a9d7fb20da2f6ff3123dea2bb6dabc18c951b",
+    "mechanical/swim-r15-wire-clamp/dock.json": "d2fdc3b179221d35c5e18270df1c4ee110ccba37ebfdeb6013fb0c65b257590a",
+    "mechanical/swim-r15-wire-clamp/dock.scad": "8310fde0a6fd1f1a7cd33a159b3084fc9e74262f8d6b41f8e7cc042cab947e97",
+    "mechanical/swim-r15-wire-clamp/checks.json": "0b70327e256c72a355c40f4082df971fd6d4ec9d8ea493567d4e64951eb89105",
+    "mechanical/swim-r15-wire-clamp/parameters.scad": "99c0c43b131500e9c08720dfad32c85ceaaa62706aafa4613daf7b9e966e2e1b",
+    "mechanical/swim-r15-wire-clamp/lower.stl": "20db857e47561ead5ab733698ead5c2a992c4a40d511b01be2c1aa09b6d2b194",
+    "mechanical/swim-r15-wire-clamp/upper.stl": "3c2ef2468995704cef3fba09e09d2fb099e77594a89ab02bacad36e0263b02f9",
+    "mechanical/swim-r15-wire-clamp/cap.stl": "5f56dafe88b44bef82e8968fa6b7a24bf817288eb4575efed9aab86dbaf22d18",
+    "mechanical/swim-r15-wire-clamp/fixture.stl": "5ae816fdd40dc3559c70e30823d90f797be8e72ed642a6e594918f5892b70c62",
+    "mechanical/swim-r15-wire-clamp/mesh-checks.json": "717ea39a6ef990cf540b60ce7a42d83068dc4c93003d83e2b60a71df57d72f18",
+    "mechanical/swim-r15-wire-clamp/review.png": "fc9d2067d8ee24658c859df0985d0e939adae7d4f904e614b121201cc0e4908d",
+    "mechanical/swim-r15-wire-clamp/clamp_detail.png": "923edbf492ccc23f370c394b4cb960fc8794ebff6feafe70725ffbee2d61dba7",
+    "mechanical/swim-r15-wire-clamp/fixture_review.png": "7d97cdf98636a8251a7d5ee83be0ee189c739bfbdc91ed32f42bb1acbdedf651",
+    "mechanical/swim-r15-wire-clamp/wire-clamp-sheet.svg": "79c3b20335d9d6e08fadb97c03590a1893fadbfd0778f92b1c7913015e566a03",
+    "mechanical/swim-r15-wire-clamp/wire-clamp-sheet.pdf": "bc7e2c2a408726d5b2abd511ade5fd2dad54fad6ecc00d1c2a1cb4a83877b7e5",
+    "mechanical/swim-r15-wire-clamp/wire-clamp-sheet.png": "4affa1a21d1e000fa6e7257e8eaa9d64723fa493effbaa79f68ab3afb4bc6174",
+    "scripts/check_dock_wire_clamp.py": "beabba0e0220f437d7aa34e77797c34ed6c8375e02013012c79126885168a438",
+    "scripts/export_dock_wire_clamp.py": "1b0b471e3c0596267bb2151a05bc40c8930d4d112854cb471ac7187d7643e418",
+    "scripts/make_dock_clamp_sheet.py": "050f25a1fdbe65dd5759cf26ca5aa54d62d9162f3fca3281f505f6ac95c11479",
+    "scripts/verify_dock_wire_clamp.py": "7a824596e1301cdfdb303b9e6880ed2e9b8cff27dc7924e94f0bdecd89894386",
+    "tests/test_dock_wire_clamp.py": "74297b6ed57869852c59e085af68ad3b042838b8aae85b309b72f730ded8a21e"
+  }
+}

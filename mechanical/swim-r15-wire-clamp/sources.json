@@ -1,0 +1,33 @@
+{
+  "inspected_date": "2026-10-26",
+  "sources": [
+    {
+      "url": "https://www.rogerscorp.com/-/media/project/rogerscorp/documents/elastomeric-material-solutions/bisco/english/data-sheets/180-090-bisco-ht-6210-extra-soft-solid-silicone-data-sheet.pdf",
+      "local_research_path": "references/dock-retention-r15/ht6210.pdf",
+      "sha256": "ddeb75fc9e379d81262dab22e824d63f35cfa3e0ecf70e119468a4f9085cf20f",
+      "notes": "Manufacturer product sheet, 2023 publication 180-090; page 1 visually inspected. Shore OO 62 +/- 4, not a friction or pull-force specification."
+    },
+    {
+      "url": "https://tools.rogerscorp.com/documents/459/hpf/bisco/HT-6000-Series-Thickness-and-Width-Tolerances.aspx",
+      "local_research_path": "references/dock-retention-r15/solid-tolerances.pdf",
+      "sha256": "4a96dd5a565c4d66a4dadf178e18070acf9ea4ed17b0cda5a39635204a3eba4e",
+      "notes": "Manufacturer publication 180-064, 2003; page 1 visually inspected. For 0.026 to 0.040 inch nominal thickness: +/- 0.004 inch. Current batch/converter acceptance still required; width table is not a precision die-cut tolerance."
+    },
+    {
+      "url": "https://www.accu.co.uk/metric-cap-head-screws/3794-SSCF-M2-10-A2",
+      "manufacturer_part": "SSCF-M2-10-A2",
+      "notes": "Official product specification read on 2026-10-26: A2, full M2 x 10 thread, pitch 0.4, head diameter 3.8 +0/-0.18, height 2 +0/-0.14, hex drive 1.5mm. Length tolerance +/-0.20mm is an incoming engineering requirement, not specified by this web page. Availability/torque not accepted."
+    },
+    {
+      "url": "https://www.accu.co.uk/hexagon-nuts/7884-HPN-M2-A2",
+      "manufacturer_part": "HPN-M2-A2",
+      "notes": "Official product specification read on 2026-10-26: A2 DIN 934, AF4 +0/-0.18, height1.6 +0/-0.25, M2 pitch0.4. Stock and factory acceptance not established; axial overlap is not effective thread strength."
+    }
+  ],
+  "not_selected": [
+    {
+      "part": "Southco 81 quarter-turn retention",
+      "reason": "The inspected 2003 catalog specifies a 9.3mm knurled ultrasonic receptacle and a larger blind installation. No current controlled insert/stud fit was accepted. Research does not change the wearable or select a dock latch."
+    }
+  ]
+}
