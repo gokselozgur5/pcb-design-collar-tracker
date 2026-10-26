@@ -1,0 +1,103 @@
+{
+  "result": "BUILD_PASS",
+  "board": "collar_r05l/nrf9151",
+  "artifacts": {
+    "zephyr.elf": {
+      "bytes": 1059636,
+      "sha256": "4f9aa0e429861106826ffffe4267ffdae589407990d21f8500d7a4ee648c5263"
+    },
+    "zephyr.hex": {
+      "bytes": 131893,
+      "sha256": "1ea7dc3608cebe887118877600e4190420cbd0804470321f155bc8c6007a2b86"
+    },
+    "zephyr.dts": {
+      "bytes": 44188,
+      "sha256": "a1d4e653353cfd0fc23e2da2838bc23c551be91d7159f589cbe0377a2391badb"
+    },
+    ".config": {
+      "bytes": 47395,
+      "sha256": "5a9bb1f3b15693eb7670a8b4774d2a51048c168618e019046abb468b7f45ffa1"
+    }
+  },
+  "flashed": false,
+  "physical_test": false,
+  "manufacturing_release": false,
+  "native_board_check": {
+    "result": "PASS",
+    "schematic_sha256": "0a8d89c01db6d0211a9048467b728214da175750f6b670ebf3d6ffa9adeefb0e",
+    "netlist_sha256": "4c88b83f1af96f3924d63761ab09681049cce83cc0b364aaa669a27b19e9be28",
+    "signals": {
+      "/I2C_SDA": {
+        "package_pin": "56",
+        "gpio": "P0.00"
+      },
+      "/I2C_SCL": {
+        "package_pin": "57",
+        "gpio": "P0.01"
+      },
+      "/ACC_INT": {
+        "package_pin": "58",
+        "gpio": "P0.02"
+      },
+      "/HEALTH_EN": {
+        "package_pin": "68",
+        "gpio": "P0.09"
+      },
+      "/CHG_STAT": {
+        "package_pin": "69",
+        "gpio": "P0.10"
+      },
+      "/CHG_FAULT": {
+        "package_pin": "70",
+        "gpio": "P0.11"
+      },
+      "/FG_ALERT": {
+        "package_pin": "73",
+        "gpio": "P0.13"
+      }
+    },
+    "accelerometer_i2c_address": "0x19",
+    "fuel_gauge_i2c_address": "0x36",
+    "physical_test": false
+  },
+  "compiler_exit": 0,
+  "compiled_contract_assertions": 14,
+  "deferred_initialization": {
+    "i2c2": true,
+    "accelerometer": true
+  },
+  "memory_usage_bytes": {
+    "flash": 46872,
+    "ram": 8256
+  },
+  "radio_enabled": false,
+  "inputs": {
+    "firmware/README.md": "8c9d9df7c358f4c22052f51bf50f1b02cc2366ea02fb726729d6092cb0c14e64",
+    "firmware/boards/goksel/collar_r05l/Kconfig.collar_r05l": "ec39f3bd8790424b89b2bf3cb81cd941b75f6ba69e0797b9a14af6c1e89381d3",
+    "firmware/boards/goksel/collar_r05l/board.yml": "42f22d99fec508602853c6b0609332449c1b31af614221109702cc72385778cb",
+    "firmware/boards/goksel/collar_r05l/collar_r05l_nrf9151.dts": "adbd6b1e0d25afca8ba3be48cbd33bbfe7e8e190e108245ef91aac95e7b20ca4",
+    "firmware/boards/goksel/collar_r05l/collar_r05l_nrf9151_defconfig": "5336faf5fe7919dac08dc970ab737512231fe6be19ef3ae19a5738f976878b72",
+    "firmware/dts/bindings/goksel,collar-r05l-io.yaml": "cf15691a203f09a1942e748388b90d1b81d2e8552d34105522b3e58881ad796c",
+    "firmware/dts/bindings/vendor-prefixes.txt": "abeee63c71f2825c40233b48d9fc8ae39175f621ff28aa02ace13cf9dbd3ce95",
+    "firmware/evidence/factory-r01/negative-build.txt": "b7f532154b8b331c2e955ece7d5fa09ee59a13d426318a5f133f5c8a22ff4ec4",
+    "firmware/evidence/factory-r01/negative-control.json": "6d3fcda462304e301dc6cc7f9cb2b2649a2bc7c39cde40abb162f5d02dc7f087",
+    "firmware/evidence/factory-r01/positive-build.txt": "d7052ae1a1dec28150670b0a1f88b820ef51095ef9b5072cd6288c523fe74acf",
+    "firmware/factory/CMakeLists.txt": "a22eb1b146e9e7cf5360e49dd16a0a803309a527e387cf887d5083734f6ed193",
+    "firmware/factory/prj.conf": "38f99cef89fd94a7f1e5f09f86e319f9376b141322c266e49c216f8d7a1cb04f",
+    "firmware/factory/src/board_contract.h": "e0b9d0b447b36bfc56c131f30ef09d343bff5b87a99638b59796ae758ef5afcf",
+    "firmware/factory/src/main.c": "d66efa2b3f9de8a7f27740d8f8230db3243ae363330d64a85f7c719c343d830b",
+    "firmware/requirements-build.txt": "ef085415768dc2c80af559861a1538e1d42c6b2967552c076b5e1c9862544c8f",
+    "firmware/tests/invalid-board.overlay": "43a3bdc63d2147471fd4ba88cc5f5854d7ef5b0e42ed510e80183401e0ffb2d5",
+    "firmware/toolchain-lock.json": "288621abc680673553bd6e1907c85c9bf0ce081f6391a05c4acf44398dd7ac7b",
+    "scripts/build_factory_firmware.py": "4ca5eb0bf386f338b98b5369b26b630f8163dbdfa11a11dd4604f047c4ae1987",
+    "scripts/check_firmware_board.py": "39415bd7ffd7e1f9c1411c2a7f984f9baa6e54c271712040aa77ebc6f4b1697d",
+    "scripts/test_factory_firmware.py": "8a5efc8dc1b5930b7b9d268ccbd4ac8ff236b26e4977692ce04b8991ca277229",
+    "scripts/verify_factory_firmware.py": "cdb6edcce1160bffc1f51d39b71d0b6df085aa9ce60c2f639fff42f3e9b3986f"
+  },
+  "artifact_location": "/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/build-factory-final/zephyr",
+  "artifact_bytes_in_repository": false,
+  "known_build_notices": [
+    "Zephyr assertions intentionally enabled",
+    "Optional dtc executable absent; Python devicetree generation completed"
+  ]
+}

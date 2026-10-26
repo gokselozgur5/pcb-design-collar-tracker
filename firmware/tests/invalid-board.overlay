@@ -1,0 +1,7 @@
+/* Deliberate regression: both mistakes must stop compilation. */
+&board_io {
+	charge-status-gpios = <&gpio0 1 GPIO_ACTIVE_LOW>;
+};
+&i2c2 {
+	/delete-property/ zephyr,deferred-init;
+};

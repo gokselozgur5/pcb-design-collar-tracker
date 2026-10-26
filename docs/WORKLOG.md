@@ -792,3 +792,16 @@ up to 0.978mm of length change and some poses fail RF/bend screens. Nominal leng
 family, implement restraint and factory/service assembly, then finish the other
 working-device gates. No supplier message, order, new PCB DFM upload, powered
 test or physical water/dust qualification was performed.
+
+## 2026-10-26 — First r05l factory observation firmware build
+
+- Added a custom nRF9151 board, source-checked native GPIO/I2C mapping and deferred
+  external-I/O startup after the 1s VIO allowance. The diagnostic reads LIS2DW12,
+  MAX17048 and charger inputs over RTT; it does not initialize the modem.
+- Installed a pinned, portable SDK on the mounted SSD and built the actual board
+  target: 46,872 bytes flash / 8,256 bytes RAM. Seven native mappings and 14
+  compile-time conditions passed. A separate wrong-pin/early-I2C build failed
+  on both intended assertions. Saved logs and input/artifact hashes are in
+  `firmware/evidence/factory-r01/`.
+- No flashing or powered test occurred. Shipping tracking/radio firmware,
+  provisioning, updates and full factory/device acceptance remain unfinished.

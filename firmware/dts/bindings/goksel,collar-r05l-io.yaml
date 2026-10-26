@@ -1,0 +1,16 @@
+description: GPIO signals on the r05l collar tracker
+compatible: "goksel,collar-r05l-io"
+include: base.yaml
+properties:
+  charge-status-gpios:
+    type: phandle-array
+    required: true
+  charge-fault-gpios:
+    type: phandle-array
+    required: true
+  fuel-alert-gpios:
+    type: phandle-array
+    required: true
+  health-enable-gpios:
+    type: phandle-array
+    required: true

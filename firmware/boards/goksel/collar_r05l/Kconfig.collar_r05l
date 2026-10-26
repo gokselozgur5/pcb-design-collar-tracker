@@ -1,0 +1,2 @@
+config BOARD_COLLAR_R05L
+	select SOC_NRF9151_LACA

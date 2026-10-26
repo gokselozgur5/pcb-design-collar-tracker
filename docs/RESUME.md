@@ -547,3 +547,28 @@ evidence together and retain coherent revisions in Git. Do not repeatedly rebuil
 the unchanged PCB or its JLC results. Supplier approval, dock holding/source-fault
 details, firmware, factory/SMT and physical powered/RF/water/dust acceptance remain
 open; the battery enquiry is still unsent.
+
+## Factory observation firmware: first compiled candidate
+
+`firmware/README.md` owns the build and fixture details. The local Apple Silicon
+SDK is `/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1`; mount the SSD before
+using it. SDK source commits and the downloaded compiler hashes are pinned in
+`firmware/toolchain-lock.json`. No `/opt/nordic` install or global CMake export
+was used. Source build and verification helpers are under `scripts/`.
+
+The r05l secure diagnostic image builds with NCS 3.4.1 / Zephyr SDK 1.0.1.
+It consumes 46,872 bytes of flash and 8,256 bytes of RAM. Seven native signal
+mappings, 14 compile-time conditions and the deliberate wrong-pin/early-I2C
+negative build passed. Its HEX remains local at
+`/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/build-factory-final/zephyr/zephyr.hex`.
+No board was flashed. The optional native dtc tool was absent; Python devicetree
+generation succeeded. Zephyr's assertions-enabled notice is intentional.
+
+Do not replace this custom board with the Nordic DK pinout: pins 0/1 carry I2C.
+Keep controller and sensor initialization deferred until the existing 1000ms
+VIO wait. RTT is the diagnostic interface through J7; there is no routed UART.
+The app reads the gauge without resetting/calibrating it, reports sensor errors,
+and does not initialize the modem. Shipping LTE/GNSS, uplink/storage, low-power
+policy, secure update/recovery and provisioning remain separate implementation
+work. First complete the internal harness constraints, then continue the modem
+and factory fixture work; physical testing requires an assembled prototype.

@@ -1,0 +1,74 @@
+{
+  "ncs_version": "v3.4.1",
+  "zephyr_sdk_version": "1.0.1",
+  "toolchain": "gnu macos-aarch64 arm-zephyr-eabi",
+  "west_version": "1.5.0",
+  "modules": [
+    {
+      "name": "manifest",
+      "path": "nrf",
+      "url": "https://github.com/nrfconnect/sdk-nrf.git",
+      "commit": "b20f8619ba9a5530f8c34b0a130d829947cfe55d"
+    },
+    {
+      "name": "zephyr",
+      "path": "zephyr",
+      "url": "https://github.com/nrfconnect/sdk-zephyr",
+      "commit": "33fa6a7aac6a4401d16a67cb9f27a3483fa02dd6"
+    },
+    {
+      "name": "nrfxlib",
+      "path": "nrfxlib",
+      "url": "https://github.com/nrfconnect/sdk-nrfxlib",
+      "commit": "bb715183a57ac501907b63df2079c3fbcd067641"
+    },
+    {
+      "name": "hal_nordic",
+      "path": "modules/hal/nordic",
+      "url": "https://github.com/nrfconnect/sdk-hal_nordic",
+      "commit": "69865c20dc4afbdd27060ad1e81af1b62d31f7af"
+    },
+    {
+      "name": "bsim",
+      "path": "tools/bsim",
+      "url": "https://github.com/BabbleSim/bsim_west",
+      "commit": "a88d3353451387ca490a6a7f7c478a90c4ee05b7"
+    },
+    {
+      "name": "cmsis",
+      "path": "modules/hal/cmsis",
+      "url": "https://github.com/zephyrproject-rtos/cmsis",
+      "commit": "512cc7e895e8491696b61f7ba8066b4a182569b8"
+    },
+    {
+      "name": "cmsis_6",
+      "path": "modules/hal/cmsis_6",
+      "url": "https://github.com/zephyrproject-rtos/CMSIS_6",
+      "commit": "30a859f44ef8ab4dc8f84b03ed586fd16ccf9d74"
+    },
+    {
+      "name": "hal_st",
+      "path": "modules/hal/st",
+      "url": "https://github.com/zephyrproject-rtos/hal_st",
+      "commit": "7a792882847223c72944791e0c48eed6101e6569"
+    },
+    {
+      "name": "segger",
+      "path": "modules/debug/segger",
+      "url": "https://github.com/zephyrproject-rtos/segger",
+      "commit": "50892fdbcf2f570e67baa72b8894a66b16946f72"
+    }
+  ],
+  "downloads": [
+    {
+      "name": "toolchain_gnu_macos-aarch64_arm-zephyr-eabi.tar.xz",
+      "url": "https://github.com/zephyrproject-rtos/sdk-ng/releases/download/v1.0.1/toolchain_gnu_macos-aarch64_arm-zephyr-eabi.tar.xz",
+      "sha256": "4008edb5d4840cd994aedd7f1309bfb63e7243729d57839ebf1cc83c1f17c886"
+    },
+    {
+      "name": "zephyr-sdk-1.0.1_macos-aarch64_minimal.tar.xz",
+      "url": "https://github.com/zephyrproject-rtos/sdk-ng/releases/download/v1.0.1/zephyr-sdk-1.0.1_macos-aarch64_minimal.tar.xz",
+      "sha256": "867063901f39528a6175a80ebc20367bd6cb440593e7e2650eda30392f1f6b65"
+    }
+  ]
+}

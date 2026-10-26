@@ -1,0 +1,98 @@
+-- west build: generating a build system
+Loading Zephyr default modules (Zephyr base).
+-- Application: /Users/gok/codex/projects/collar-tracker/firmware/factory
+-- CMake version: 4.1.2
+-- Found Python3: /Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/venv/bin/python (found suitable version "3.12.13", minimum required is "3.12") found components: Interpreter
+-- Cache files will be written to: /Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/cache/zephyr
+-- Zephyr version: 4.4.2 (/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/zephyr)
+-- Found west (found suitable version "1.5.0", minimum required is "0.14.0")
+-- Board: collar_r05l, qualifiers: nrf9151
+-- Found host-tools: zephyr 1.0.1 (/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/zephyr-sdk-1.0.1)
+-- Found toolchain: zephyr 1.0.1 (/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/zephyr-sdk-1.0.1)
+-- Could NOT find Dtc (missing: DTC) (Required is at least version "1.4.6")
+Hint: The project() command has not yet been called.  It sets up system-specific search paths.
+-- Found BOARD.dts: /Users/gok/codex/projects/collar-tracker/firmware/boards/goksel/collar_r05l/collar_r05l_nrf9151.dts
+-- Found devicetree overlay: /Users/gok/codex/projects/collar-tracker/firmware/tests/invalid-board.overlay
+-- Generated zephyr.dts: /Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/build-factory-invalid-01/zephyr/zephyr.dts
+-- Generated pickled edt: /Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/build-factory-invalid-01/zephyr/edt.pickle
+-- Generated devicetree_generated.h: /Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/build-factory-invalid-01/zephyr/include/generated/zephyr/devicetree_generated.h
+Parsing /Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/zephyr/Kconfig
+Loaded configuration '/Users/gok/codex/projects/collar-tracker/firmware/boards/goksel/collar_r05l/collar_r05l_nrf9151_defconfig'
+Merged configuration '/Users/gok/codex/projects/collar-tracker/firmware/factory/prj.conf'
+Configuration saved to '/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/build-factory-invalid-01/zephyr/.config'
+Kconfig header saved to '/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/build-factory-invalid-01/zephyr/include/generated/zephyr/autoconf.h'
+-- Found GnuLd: /Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/arm-zephyr-eabi/bin/ld.bfd (found version "2.43.1")
+-- The C compiler identification is GNU 14.3.0
+-- The CXX compiler identification is GNU 14.3.0
+-- The ASM compiler identification is GNU
+-- Found assembler: /Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc
+-- Found gen_kobject_list: /Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/zephyr/scripts/build/gen_kobject_list.py
+CMake Warning at /Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/zephyr/CMakeLists.txt:2358 (message):
+  __ASSERT() statements are globally ENABLED
+
+
+-- Configuring done (6.2s)
+-- Generating done (0.3s)
+-- Build files have been written to: /Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/build-factory-invalid-01
+-- west build: building application
+[1/184] Preparing syscall dependency handling
+
+[2/184] Generating ../../zephyr/include/generated/ncs_commit.h
+[3/184] Generating ../../zephyr/include/generated/zephyr_commit.h
+[4/184] Generating ../../zephyr/include/generated/ncs_version.h
+[5/184] Generating misc/generated/syscalls_subdirs.trigger
+[6/184] Generating include/generated/zephyr/version.h
+-- Zephyr version: 4.4.2 (/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/zephyr), build: 33fa6a7aac6a
+[7/184] Generating misc/generated/syscalls.json, misc/generated/struct_tags.json
+[8/184] Generating include/generated/device-api-sections.ld, include/generated/device-api-sections.cmake
+[9/184] Generating include/generated/zephyr/syscall_dispatch.c, include/generated/zephyr/syscall_exports_llext.c, syscall_weakdefs_llext.c, include/generated/zephyr/syscall_list.h
+[10/184] Generating include/generated/zephyr/driver-validation.h
+[11/184] Generating include/generated/zephyr/kobj-types-enum.h, include/generated/zephyr/otype-to-str.h, include/generated/zephyr/otype-to-size.h
+[12/184] Building C object zephyr/lib/heap/CMakeFiles/heap_constants.dir/heap_constants.c.obj
+[13/184] Generating ../../include/generated/zephyr/heap_constants.h
+[14/184] Building C object zephyr/CMakeFiles/offsets.dir/arch/arm/core/offsets/offsets.c.obj
+[15/184] Generating include/generated/zephyr/offsets.h
+[16/184] Building C object zephyr/arch/common/CMakeFiles/isr_tables.dir/isr_tables.c.obj
+[17/184] Building C object zephyr/CMakeFiles/zephyr.dir/lib/libc/validate_libc.c.obj
+[18/184] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/thread_entry.c.obj
+[19/184] Building C object CMakeFiles/app.dir/src/main.c.obj
+FAILED: [code=1] CMakeFiles/app.dir/src/main.c.obj 
+/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc -DKERNEL -DK_HEAP_MEM_POOL_SIZE=0 -DNRF54L_CONFIGURATION_56_ENABLE=0 -DNRF9120_XXAA -DNRF_SKIP_FICR_NS_COPY_TO_RAM -DPICOLIBC_LONG_LONG_PRINTF_SCANF -D_POSIX_THREAD_SAFE_FUNCTIONS=200809L -D__LINUX_ERRNO_EXTENSIONS__ -D__PROGRAM_START -D__ZEPHYR__=1 -I/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/build-factory-invalid-01/zephyr/include/generated/zephyr -I/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/zephyr/include -I/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/build-factory-invalid-01/zephyr/include/generated -I/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/zephyr/soc/nordic -I/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/zephyr/lib/libc/picolibc/include -I/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/zephyr/lib/posix/c_lib_ext/getopt -I/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/zephyr/soc/nordic/nrf91/. -I/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/zephyr/soc/nordic/common/. -I/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/nrf/include -I/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/nrf/tests/include -I/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/nrf/modules/hal_nordic/. -I/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/modules/hal/nordic/nrfx -I/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/modules/hal/nordic/nrfx/drivers/include -I/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/modules/hal/nordic/nrfx/bsp/stable -I/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/modules/hal/nordic/nrfx/bsp/stable/templates -I/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/zephyr/modules/hal_nordic/nrfx/. -I/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/modules/hal/cmsis_6/CMSIS/Core/Include -I/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/zephyr/modules/cmsis_6/. -I/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/modules/hal/st/sensor/stmemsc/lis2dw12_STdC/driver -I/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/modules/hal/st/sensor/inc -I/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/modules/debug/segger/SEGGER -I/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/modules/debug/segger/Config -isystem /Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/zephyr/lib/libc/common/include -isystem /Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/nrfxlib/crypto/nrf_cc310_platform/include -Wall -Wextra -Werror -fno-strict-aliasing -Os -imacros /Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/build-factory-invalid-01/zephyr/include/generated/zephyr/autoconf.h -fno-printf-return-value -fno-common -g -gdwarf-4 -fdiagnostics-color=always -mcpu=cortex-m33 -mthumb -mabi=aapcs -mfp16-format=ieee -mtp=soft --sysroot=/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/arm-zephyr-eabi -imacros /Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/zephyr/include/zephyr/toolchain/zephyr_stdint.h -Wformat -Wformat-security -Wno-format-zero-length -Wdouble-promotion -Wno-pointer-sign -Wpointer-arith -Wexpansion-to-defined -Wno-unused-but-set-variable -Werror=implicit-int -fno-pic -fno-pie -fno-asynchronous-unwind-tables -ftls-model=local-exec -fno-reorder-functions --param=min-pagesize=0 -fno-defer-pop -fmacro-prefix-map=/Users/gok/codex/projects/collar-tracker/firmware/factory=CMAKE_SOURCE_DIR -fmacro-prefix-map=/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/zephyr=ZEPHYR_BASE -fmacro-prefix-map=/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1=WEST_TOPDIR -ffunction-sections -fdata-sections -specs=picolibc.specs -std=c17 -MD -MT CMakeFiles/app.dir/src/main.c.obj -MF CMakeFiles/app.dir/src/main.c.obj.d -o CMakeFiles/app.dir/src/main.c.obj -c /Users/gok/codex/projects/collar-tracker/firmware/factory/src/main.c
+In file included from /Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/zephyr/include/zephyr/toolchain.h:52,
+                 from /Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/zephyr/include/zephyr/sys/__assert.h:11,
+                 from /Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/zephyr/include/zephyr/irq_multilevel.h:15,
+                 from /Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/zephyr/include/zephyr/devicetree.h:21,
+                 from /Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/zephyr/include/zephyr/device.h:12,
+                 from /Users/gok/codex/projects/collar-tracker/firmware/factory/src/main.c:4:
+/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/zephyr/include/zephyr/toolchain/gcc.h:87:36: error: static assertion failed: "CHG_STAT pin mismatch"
+   87 | #define BUILD_ASSERT(EXPR, MSG...) _Static_assert((EXPR), "" MSG)
+      |                                    ^~~~~~~~~~~~~~
+/Users/gok/codex/projects/collar-tracker/firmware/factory/src/board_contract.h:11:1: note: in expansion of macro 'BUILD_ASSERT'
+   11 | BUILD_ASSERT(DT_GPIO_PIN(COLLAR_IO, charge_status_gpios) == 10, "CHG_STAT pin mismatch");
+      | ^~~~~~~~~~~~
+/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/zephyr/include/zephyr/toolchain/gcc.h:87:36: error: static assertion failed: "I2C must wait for VIO"
+   87 | #define BUILD_ASSERT(EXPR, MSG...) _Static_assert((EXPR), "" MSG)
+      |                                    ^~~~~~~~~~~~~~
+/Users/gok/codex/projects/collar-tracker/firmware/factory/src/board_contract.h:25:1: note: in expansion of macro 'BUILD_ASSERT'
+   25 | BUILD_ASSERT(DT_PROP(DT_NODELABEL(i2c2), zephyr_deferred_init), "I2C must wait for VIO");
+      | ^~~~~~~~~~~~
+[20/184] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/printk.c.obj
+[21/184] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/assert.c.obj
+[22/184] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/sem.c.obj
+[23/184] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/dec.c.obj
+[24/184] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/clock.c.obj
+[25/184] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/hex.c.obj
+[26/184] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/cbprintf_complete.c.obj
+[27/184] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/cbprintf_packaged.c.obj
+[28/184] Building C object zephyr/CMakeFiles/zephyr.dir/lib/heap/heap.c.obj
+ninja: build stopped: subcommand failed.
+FATAL ERROR: command exited with status 1: /opt/homebrew/bin/cmake --build /Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/build-factory-invalid-01
+Traceback (most recent call last):
+  File "/Users/gok/codex/projects/collar-tracker/scripts/build_factory_firmware.py", line 55, in <module>
+    print(json.dumps(build(args.sdk_root, args.build_dir, args.overlay), indent=2))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/gok/codex/projects/collar-tracker/scripts/build_factory_firmware.py", line 38, in build
+    subprocess.run(args, env=env, cwd=sdk, check=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/venv/bin/west', 'build', '--no-sysbuild', '-b', 'collar_r05l/nrf9151', '-d', '/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/build-factory-invalid-01', '/Users/gok/codex/projects/collar-tracker/firmware/factory', '--', '-DUSER_CACHE_DIR=/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/cache/zephyr', '-DBOARD_ROOT=/Users/gok/codex/projects/collar-tracker/firmware', '-DDTC_OVERLAY_FILE=/Users/gok/codex/projects/collar-tracker/firmware/tests/invalid-board.overlay']' returned non-zero exit status 1.

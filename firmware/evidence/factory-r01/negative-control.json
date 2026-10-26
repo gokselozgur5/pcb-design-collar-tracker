@@ -1,0 +1,11 @@
+{
+  "result": "PASS",
+  "control": "Incorrect pin and early I2C initialization must fail compilation",
+  "compiler_exit": 1,
+  "diagnostics": {
+    "CHG_STAT pin mismatch": true,
+    "I2C must wait for VIO": true
+  },
+  "firmware_published": false,
+  "physical_test": false
+}

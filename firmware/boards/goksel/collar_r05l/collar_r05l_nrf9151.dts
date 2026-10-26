@@ -1,0 +1,60 @@
+/dts-v1/;
+#include <nordic/nrf9151_laca.dtsi>
+#include <zephyr/dt-bindings/pinctrl/nrf-pinctrl.h>
+#include <zephyr/dt-bindings/gpio/gpio.h>
+
+/ {
+	model = "Collar tracker r05l";
+	compatible = "goksel,collar-r05l";
+	chosen {
+		zephyr,sram = &sram0;
+		zephyr,flash = &flash0;
+	};
+	board_io: board-io {
+		compatible = "goksel,collar-r05l-io";
+		charge-status-gpios = <&gpio0 10 GPIO_ACTIVE_LOW>;
+		charge-fault-gpios = <&gpio0 11 GPIO_ACTIVE_LOW>;
+		fuel-alert-gpios = <&gpio0 13 GPIO_ACTIVE_LOW>;
+		health-enable-gpios = <&gpio0 9 GPIO_ACTIVE_HIGH>;
+	};
+};
+
+&gpio0 { status = "okay"; };
+&gpiote { status = "okay"; };
+
+&pinctrl {
+	board_i2c_default: board-i2c-default {
+		group1 { psels = <NRF_PSEL(TWIM_SDA, 0, 0)>, <NRF_PSEL(TWIM_SCL, 0, 1)>; };
+	};
+	board_i2c_sleep: board-i2c-sleep {
+		group1 {
+			psels = <NRF_PSEL(TWIM_SDA, 0, 0)>, <NRF_PSEL(TWIM_SCL, 0, 1)>;
+			low-power-enable;
+		};
+	};
+};
+
+/* Defer pinctrl and all external bus traffic until VIO has settled. */
+&i2c2 {
+	compatible = "nordic,nrf-twim";
+	status = "okay";
+	zephyr,deferred-init;
+	clock-frequency = <100000>;
+	pinctrl-0 = <&board_i2c_default>;
+	pinctrl-1 = <&board_i2c_sleep>;
+	pinctrl-names = "default", "sleep";
+	accelerometer: accelerometer@19 {
+		compatible = "st,lis2dw12";
+		reg = <0x19>;
+		zephyr,deferred-init;
+		range = <2>;
+		odr = <25>;
+		irq-gpios = <&gpio0 2 GPIO_ACTIVE_HIGH>;
+	};
+	/* The diagnostic reads gauge registers without resetting or calibrating it. */
+	battery_gauge: fuel-gauge@36 {
+		compatible = "maxim,max17048";
+		reg = <0x36>;
+		zephyr,deferred-init;
+	};
+};

@@ -72,10 +72,18 @@ The first movement proposal fails: one of 27 poses passes, and other poses requi
 up to 0.978mm of wire-length change. Several also fail RF/bend screens. A fixed
 cut length, restraint and factory/service process are not accepted. Continue from
 the saved movement diagnostic; do not mistake the nominal fit for a completed
-harness. Firmware is also not implemented. The r16 review ZIP remains preserved.
+harness. The r16 review ZIP remains preserved.
+
+The first [factory observation firmware](../firmware/README.md) now builds for the
+actual r05l nRF9151 board. It delays external I/O by 1s, reports accelerometer,
+gauge and charger inputs over RTT, and leaves the modem uninitialized. The native
+pin contract and 14 compile-time conditions pass; deliberate wrong-pin/early-I2C
+changes fail compilation. Flash/RAM use is 46,872/8,256 bytes. No board has been
+flashed. The shipping LTE/GNSS tracker application and physical tests remain open.
 
 | Check | Current result |
 |---|---|
+| Factory observation firmware | Actual custom-board build passed; two negative compile controls passed; no flashing or powered test |
 | Internal harness r02 | Both nominal routes and joints fit; continuous radius bounds 7.438/6.905mm; fixed-length motion and restraint still HOLD |
 | Contact retention r16 | Two custom rear terminals; defined lateral bearing, four meshes and CAD controls; internal harness still HOLD |
 | Board | 40 × 32mm; six Cu layers; 87 footprints |

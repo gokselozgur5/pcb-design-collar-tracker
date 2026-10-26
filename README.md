@@ -22,7 +22,7 @@ with 44 exact candidate MPNs. The revised carrier clears the additional componen
 **Electrical, RF and manufacturing release remain on hold.** The charge model
 passes with explicit thermal/leakage assumptions; powered startup and sensor tests
 remain open. Protected pack/NTC attachment, antenna qualification, harness/dock/retention,
-firmware and factory programming/test are not finished. Supplier procurement, CPL
+shipping firmware and factory programming/test are not finished. Supplier procurement, CPL
 rotations and SMT acceptance remain open. PCB DFM does not prove a working device.
 
 [Candidate BOM](experiments/power-r05l-charge-interlock/assembly/candidate-bom.csv) ·
@@ -85,6 +85,10 @@ dry dock is 101.5 x 36 x 16mm; the wearable is unchanged. Geometry checks do not
 establish grip on PTFE: pad creep, endpoint slip and flex life remain unqualified.
 Dock holding, internal J3 wiring, pack approval and physical acceptance are open.
 The current review package maps all reused parts to their exact source revisions.
+
+The [factory observation firmware](firmware/README.md) builds for the custom
+nRF9151 board and reports sensor/charger readings over RTT. It has not been
+flashed; the shipping tracking application remains unfinished.
 
 [STATUS](docs/STATUS.md) records the exact source and next action. The earlier r05k,
 r04i and all prior tested files remain preserved. Upload only the Gerber ZIP to PCB
