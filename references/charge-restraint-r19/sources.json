@@ -1,0 +1,17 @@
+{
+  "retrieved": "2026-10-26",
+  "sources": [
+    {
+      "file": "dowsil-3145-gray.pdf",
+      "url": "https://www.dow.com/documents/11/11-1832-01-dowsil-3145-rtv-mil-a-46146-adhesive-gray.pdf",
+      "sha256": "905af2ec4eafd4fe54fe748cab36450a121b4b04cedc375120299baefb38e115",
+      "review": "Dow Form 11-1832-01-0323 S2D, 2023; pages 2-3 reviewed"
+    },
+    {
+      "file": "nasa-8739-1b.pdf",
+      "url": "https://s3vi.ndc.nasa.gov/ssri-kb/static/resources/nasa-std-8739.1b.pdf",
+      "sha256": "a705cced46b838ab1d3da97af0ad94f7d638416e41486d15d5119d96502f268c",
+      "review": "NASA-STD-8739.1B, 2016-06-30, section 9; historical workmanship reference only, no claim of current compliance"
+    }
+  ]
+}
