@@ -448,7 +448,7 @@ still unresolved. Catalogue research in ignored references did not select a
 torsion spring, compression spring or purchased latch. Continue from the existing
 geometry; do not claim one of those mechanisms was implemented.
 
-## Current wire clamp and forming fixture: r15
+## Preserved wire clamp and forming fixture: r15
 
 Read `mechanical/swim-r15-wire-clamp/README.md` and its drawing. A separate cap,
 two hard-stop columns and four silicone pads now implement a fixed-end clamp
@@ -479,3 +479,38 @@ lugs/J3 route, then close termination/source/fault details. The Southco catalogu
 research did not select or implement a latch. The battery request is still
 unsent pending message authorization. Pack lead routing, firmware, sourcing/SMT
 and physical powered/RF/water/dust acceptance remain open. No ordering release.
+
+
+## Current contact retention: r16; internal harness remains HOLD
+
+Read `mechanical/swim-r16-contact-retention/README.md` and
+`assembly/internal-charge-r01/README.md` before continuing. The old round backing
+reservation was smaller than the contact bore. r16 implements two custom rear
+terminal plates and recessed bearing faces at X=22.6mm. Body/contact/terminal
+meshes are r16; carrier/cap r12; lid/frame/boot/contact seals r11; external dock r15.
+The unchanged r05l PCB/Gerber still owns the two actual all-green JLC runs.
+
+```sh
+python3 scripts/verify_contact_retention.py
+.venv-dfm/bin/python -m unittest discover -s tests -p test_contact_retention.py -v
+python3 scripts/package_contact_review.py --verify
+python3 scripts/verify_handoff.py
+```
+
+Current package: `release/collar-tracker-r05l-r16-review.zip`.
+Current PDF: `release/r16-current-review/review.pdf`.
+Older r15 and r14 review archives are preserved dated snapshots.
+
+Next: complete both internal wires together, including stripped ends, insulation,
+fixing/strain relief and board installation/service motion. `route-study.json`
+contains failed drafts only. Do not cut wires to those curves. The fixed native
+J3 pad centres are (-16.75,-12.2) VIN and (-14.25,-12.2) GND; both are on the top
+PCB surface. r16 nominal terminal exits are (21.75,-3.3,13.3) red and
+(21.75,6,13.3) black. A red-only clearance result failed the shared ground-end
+space requirement. The complete harness is not accepted.
+
+Keep continuation focused on the remaining functional path. Avoid open-ended
+catalogue research and cosmetic refinement. Preserve failure status and finish
+one actual acceptance step before reporting it complete. Dock holding/source/fault details,
+approved-pack lead routing, firmware and factory/powered/RF/water/dust acceptance
+remain open. The supplier enquiry is still unsent; no new sending authorization.

@@ -754,3 +754,19 @@ No native KiCad run, repeated JLC upload, supplier message or order was made.
 The 22-file r15 checkpoint and full 32-section saved handoff pass. The actual
 three-page review PDF was inspected. The current 53-file review ZIP is
 9,235,286 bytes; SHA256 `60e835545a58dc3cde28c71ff6c3b959b5b4f32a72354ec0e8de47d6d0c66215`.
+
+
+## 2026-10-26 — r16 rear contact retention; harness still unfinished
+
+Added custom terminal bearing plates and internal pockets after finding that the
+6.4mm round backing reservation could not bridge a 7.34mm bore. The outside shape,
+contact positions, radial glands and all-green r05l PCB remain unchanged. Native
+J3 polarity is bound to the geometry. 26 dimensional/clearance checks, four closed
+meshes, four CAD controls and eight regressions pass. The first terminal mesh
+failed topology at an overlapping thickness step; its source/mesh are preserved.
+Milling the step from one blank fixed the geometry without relaxing inspection.
+
+Rear bearing is a geometric result, not a load/contact-resistance/IP68 approval.
+Both internal wire paths remain HOLD; failed drafts and the exact continuation
+are saved in assembly/internal-charge-r01. No full harness, firmware or physical
+qualification was completed. Current review/package updated to r16; no new native PCB run, DFM upload, supplier message or order.

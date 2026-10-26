@@ -473,3 +473,18 @@ An immutable review archive can contain dated STATUS/RESUME snapshots. Verify
 their embedded hashes against the archive manifest, while checking preserved
 CAD/source/evidence against repository bytes. Requiring historical status prose
 to equal today's status defeats an otherwise intact snapshot.
+
+
+### Rear contact retention and manufacturable meshes
+
+A screw/nut fitting within a reservation does not prove that it retains a contact.
+Compare the complete rear bearing surface with the actual enclosure bore and
+follow the clamp load back to the external head. The collar's old 6.4mm circular
+reservation was smaller than its 7.34mm bore. r16 adds explicit bearing ears;
+force, torque, creep and electrical contact resistance still require qualification.
+
+Inspect exported mesh topology as well as CAD diagnostics. Two overlapping
+extrusions at an oblique thickness step generated near-duplicate vertices even
+with `Simple: yes`. A single blank with one subtractive step preserved dimensions
+and passed the unchanged inspection grid. Keep expected planar contact distinct
+from penetration and include a deliberately shifted positive-volume control.

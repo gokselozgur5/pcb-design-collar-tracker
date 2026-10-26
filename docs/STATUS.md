@@ -10,8 +10,8 @@ content is English. Run `python3 scripts/resume.py` before making another revisi
 [Gerber ZIP](../experiments/power-r05l-charge-interlock/evidence/collar-tracker-05l-charge-final4-40x32-dfm.zip) ·
 [JLC report 1](../experiments/power-r05l-charge-interlock/evidence/jlc-check1/report.pdf) ·
 [JLC report 2](../experiments/power-r05l-charge-interlock/evidence/jlc-check2/report.pdf) ·
-[Current three-page review](../release/r15-current-review/review.pdf) ·
-[Current review bundle](../release/collar-tracker-r05l-r15-review.zip)
+[Current four-page review](../release/r16-current-review/review.pdf) ·
+[Current review bundle](../release/collar-tracker-r05l-r16-review.zip)
 
 Latest battery work: [CT-BAT-001-A request sheet](../assembly/pack-r03/request-sheet.pdf),
 [unsent supplier enquiry](../assembly/pack-r03/supplier-request.txt), and
@@ -53,8 +53,23 @@ pad creep, insulation condition and cyclic motion are still unqualified.
 The 1.93mm hard gap and assigned service bounds give 5.50..43.52% local pad
 displacement; this is a geometry screen, not a friction or retention result.
 
+Latest local work: [r16 contact rear retention](../mechanical/swim-r16-contact-retention/README.md)
+and [review sheet](../mechanical/swim-r16-contact-retention/contact-retention-sheet.pdf).
+Two custom terminal plates now provide defined rear bearing around the contact
+bores. Two internal pockets and shorter stems/longer rear threads accommodate
+that stack. Outside size, contact positions, seal glands and PCB are unchanged.
+26 geometric checks, four closed meshes, four CAD controls and eight regressions
+pass. This closes the missing rear-bearing geometry only; load, torque, resistance,
+plating and physical ingress remain unqualified.
+
+**Internal charging wires are still HOLD.** The two-wire route was not completed.
+[Saved draft routes and exact next work](../assembly/internal-charge-r01/README.md)
+prevent a new session from treating catalogue research or a red-only fit as a
+working harness. Firmware is also not implemented. Do not call the device finished.
+
 | Check | Current result |
 |---|---|
+| Contact retention r16 | Two custom rear terminals; defined lateral bearing, four meshes and CAD controls; internal harness still HOLD |
 | Board | 40 × 32mm; six Cu layers; 87 footprints |
 | Assembly candidates | 81 fitted references / 44 exact MPNs; BOM/CPL exported |
 | Native DRC / ERC / opens / parity | Zero findings |
@@ -110,7 +125,7 @@ clearance control. No supplier part, wire route, adhesive strength or physical
 thermal result is approved by this fit calculation.
 
 **Next independent local step:** close the remaining charging interface: positive
-dock retention or measured magnetic holding, exact internal contact lug and J3 route,
+dock retention or measured magnetic holding, internal J3 wire route and strain relief,
 crimp/splice/insulation process and source/fault-current behavior. The r13
 USB cable/fuse/contact selection is a prototype definition, not a qualified power
 path. r15 implements a clamp and assembly fixture, but endpoint slip, pad creep,

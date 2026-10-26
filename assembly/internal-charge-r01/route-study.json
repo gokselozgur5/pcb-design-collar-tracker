@@ -1,0 +1,114 @@
+{
+  "status": "HOLD_NOT_RELEASED",
+  "coordinate_frame": "Enclosure assembly frame, mm",
+  "wire_candidate": "Alpha 2843/7, red and black, 26 AWG stranded PTFE",
+  "wire_diameter_max_mm": 0.8382,
+  "wire_minimum_bend_radius_mm": 8.382,
+  "pads": [
+    {
+      "pad": "J3.1",
+      "net": "/VIN_5V",
+      "xyz_mm": [
+        -16.75,
+        -12.2,
+        11.48
+      ]
+    },
+    {
+      "pad": "J3.2",
+      "net": "/GND",
+      "xyz_mm": [
+        -14.25,
+        -12.2,
+        11.48
+      ]
+    }
+  ],
+  "terminal_exit_nominal_mm": [
+    [
+      21.75,
+      -3.3,
+      13.3
+    ],
+    [
+      21.75,
+      6,
+      13.3
+    ]
+  ],
+  "draft_controls_mm": {
+    "red": [
+      [
+        21.75,
+        -3.3,
+        13.3
+      ],
+      [
+        17.678702546341427,
+        -3.7669310389360517,
+        13.310427757561646
+      ],
+      [
+        13.070980697739401,
+        -4.755717800444187,
+        12.36977807038663
+      ],
+      [
+        7.632884334539202,
+        -8.263942666824013,
+        15.488802398001992
+      ],
+      [
+        -10.458786591703243,
+        -9.531629228206995,
+        15.299242173248961
+      ],
+      [
+        -16.75,
+        -12.2,
+        11.48
+      ]
+    ],
+    "black": [
+      [
+        21.75,
+        6.0,
+        13.3
+      ],
+      [
+        17.89319566343503,
+        3.7571029581417856,
+        14.526317000056329
+      ],
+      [
+        11.176241430728915,
+        0.393962524504863,
+        13.918593794656822
+      ],
+      [
+        -2.5012609770482963,
+        -4.030516064140615,
+        11.738473402399594
+      ],
+      [
+        -10.867069989840282,
+        -8.71334064564927,
+        11.533136501222312
+      ],
+      [
+        -14.25,
+        -12.2,
+        11.48
+      ]
+    ]
+  },
+  "curve_definition": "Clamped uniform cubic from scripts/thermal_cable_geometry.py; these are failed drafts, not wire cut drawings.",
+  "known_failures": [
+    "Simultaneous clearance to parts, both RF cable routes and the opposite charge lead was not achieved.",
+    "A red-only fit did not keep adequate room at the ground terminal; it is not a complete harness result.",
+    "PCB insertion/service movement, constant cut length, fixing clips and strain relief are unresolved."
+  ],
+  "next": "Continue from the r16 terminal exit and native J3 datums. Check both routes together, including their stripped ends and insulation envelopes, before selecting any cut length. Preserve the unchanged PCB.",
+  "physical_qualification": false,
+  "production_release": false
+}

@@ -1,0 +1,459 @@
+{
+  "production_release": false,
+  "physical_ingress_test": false,
+  "pcb_sha256": "241c84d6ba98793c37344e1e46ddc4918e7b05322ba87daea7c9a90ffb8379b3",
+  "gerber_zip_sha256": "c736c5d35ddfe4c4662e57606120f00f7358492e11d5fbb32eaf1d0ff6caf5d2",
+  "supplier_records": [
+    "637366592129687553",
+    "637366801595977730"
+  ],
+  "dock_revision": "r15",
+  "contact_revision": "r16",
+  "wearable_mesh_revisions": {
+    "body.stl": "swim-r16-contact-retention",
+    "contact.stl": "swim-r16-contact-retention",
+    "positive_terminal.stl": "swim-r16-contact-retention",
+    "negative_terminal.stl": "swim-r16-contact-retention",
+    "carrier.stl": "swim-r12-pack-retention",
+    "lid.stl": "swim-r11-thermal-fit",
+    "retainer.stl": "swim-r11-thermal-fit",
+    "boot.stl": "swim-r11-thermal-fit",
+    "contact_seal.stl": "swim-r11-thermal-fit",
+    "magnet_plug.stl": "swim-r11-thermal-fit"
+  },
+  "files": [
+    {
+      "archive_path": "START-HERE.txt",
+      "repo_path": "release/r16-current-review/START-HERE.txt",
+      "bytes": 1429,
+      "sha256": "911495d8e2402faba4fce246fa06fb37d71e055639691ec0b32f6fba4ca2a668"
+    },
+    {
+      "archive_path": "assembly-review.png",
+      "repo_path": "release/r16-current-review/assembly-review.png",
+      "bytes": 333601,
+      "sha256": "1ae3d58dfb2a9702ffbd8974e74801aa3cc9d47c4477728b278f52e5c4ec1dec"
+    },
+    {
+      "archive_path": "battery-request/README.md",
+      "repo_path": "assembly/pack-r03/README.md",
+      "bytes": 5413,
+      "sha256": "33f3e0a719a619a58e0dbfa097e6db014490490adc1d6087da83957c172ab562"
+    },
+    {
+      "archive_path": "battery-request/request-sheet.pdf",
+      "repo_path": "assembly/pack-r03/request-sheet.pdf",
+      "bytes": 137136,
+      "sha256": "97931fd989ff8990ba39cdcdb9baadf93ff2d7d8334506b2dfb79b9470175227"
+    },
+    {
+      "archive_path": "battery-request/supplier-request.txt",
+      "repo_path": "assembly/pack-r03/supplier-request.txt",
+      "bytes": 1513,
+      "sha256": "87489f9862230d0199d459e9aea0fa499060356e555adcba494e4019eeeb5350"
+    },
+    {
+      "archive_path": "contacts-r16/README.md",
+      "repo_path": "mechanical/swim-r16-contact-retention/README.md",
+      "bytes": 4560,
+      "sha256": "b71886c58443039ddd061cc46a167b9d69de365635791a7261af3b73d6045ea3"
+    },
+    {
+      "archive_path": "contacts-r16/body.stl",
+      "repo_path": "mechanical/swim-r16-contact-retention/body.stl",
+      "bytes": 1131884,
+      "sha256": "dc32b424fd3daeb8c3e94c1a0d80e478be04bc2a9761ffc23ba84dd6373c657b"
+    },
+    {
+      "archive_path": "contacts-r16/checkpoint.json",
+      "repo_path": "mechanical/swim-r16-contact-retention/checkpoint.json",
+      "bytes": 3187,
+      "sha256": "25db3eca8ac0409d45b59a034b92f479f1f56667a9273966dab7de7e3721dcdf"
+    },
+    {
+      "archive_path": "contacts-r16/checks.json",
+      "repo_path": "mechanical/swim-r16-contact-retention/checks.json",
+      "bytes": 13606,
+      "sha256": "03f0952ddb60ab02adfeed388d5080ebf6ec3ec245cac36f6e8f5d6185a4b03f"
+    },
+    {
+      "archive_path": "contacts-r16/contact-retention-sheet.pdf",
+      "repo_path": "mechanical/swim-r16-contact-retention/contact-retention-sheet.pdf",
+      "bytes": 165657,
+      "sha256": "f1e819988be6763f8c89b264264116800529167a58af13b0ca34ee9d69bfb647"
+    },
+    {
+      "archive_path": "contacts-r16/contact-retention-sheet.png",
+      "repo_path": "mechanical/swim-r16-contact-retention/contact-retention-sheet.png",
+      "bytes": 327187,
+      "sha256": "76e1dfd84ec1453084f2c4cc20644deaf74cbb80286fb641275e21edd8756272"
+    },
+    {
+      "archive_path": "contacts-r16/contact-retention-sheet.svg",
+      "repo_path": "mechanical/swim-r16-contact-retention/contact-retention-sheet.svg",
+      "bytes": 207714,
+      "sha256": "b046302d15025eaeb7ba386c564912c263a2a48ef19b8d80861ba319482bc0bf"
+    },
+    {
+      "archive_path": "contacts-r16/contact.json",
+      "repo_path": "mechanical/swim-r16-contact-retention/contact.json",
+      "bytes": 3241,
+      "sha256": "b9a29ee41791d6cfa1de3bdfc2d1056956ae5ada5817d422daae98f2290a9b6b"
+    },
+    {
+      "archive_path": "contacts-r16/contact.stl",
+      "repo_path": "mechanical/swim-r16-contact-retention/contact.stl",
+      "bytes": 71884,
+      "sha256": "97fa9bd7c7fa9e4837ffd9dcc85317dda0e98294f69f7d8046f81624d3c70e98"
+    },
+    {
+      "archive_path": "contacts-r16/contacts.scad",
+      "repo_path": "mechanical/swim-r16-contact-retention/contacts.scad",
+      "bytes": 3948,
+      "sha256": "6c4d6073ccc0a3ebc4cc39893ee1226e904d8181c910b95fca28e8cd28a1b4d1"
+    },
+    {
+      "archive_path": "contacts-r16/mesh-checks.json",
+      "repo_path": "mechanical/swim-r16-contact-retention/mesh-checks.json",
+      "bytes": 8343,
+      "sha256": "78f0c3b843f1449d13fb32199640a4dc1dba7b619b6c573daebf16940340e188"
+    },
+    {
+      "archive_path": "contacts-r16/negative_terminal.stl",
+      "repo_path": "mechanical/swim-r16-contact-retention/negative_terminal.stl",
+      "bytes": 52484,
+      "sha256": "586122b1e22faf366a49b3d1c20a00a20c3572963fa665d23888d36f19122b81"
+    },
+    {
+      "archive_path": "contacts-r16/parameters.scad",
+      "repo_path": "mechanical/swim-r16-contact-retention/parameters.scad",
+      "bytes": 453,
+      "sha256": "d56bde49da187361d50cc0192f4608a12f47070549038964d5c8525d9980ae48"
+    },
+    {
+      "archive_path": "contacts-r16/positive_terminal.stl",
+      "repo_path": "mechanical/swim-r16-contact-retention/positive_terminal.stl",
+      "bytes": 52484,
+      "sha256": "8edf076e834a5829627cfe63d90f30092760bc9a73f1266832797e2fdf1f0a1b"
+    },
+    {
+      "archive_path": "contacts-r16/review.png",
+      "repo_path": "mechanical/swim-r16-contact-retention/review.png",
+      "bytes": 102604,
+      "sha256": "c854c17bf704af43aa69dcad192e0e075089a28cceb0e8af257efb726ea6b67d"
+    },
+    {
+      "archive_path": "contacts-r16/section.png",
+      "repo_path": "mechanical/swim-r16-contact-retention/section.png",
+      "bytes": 50408,
+      "sha256": "79a21c07aa4846521676267d9e8b20b329796a741b750e3c37d331e10febc640"
+    },
+    {
+      "archive_path": "contacts-r16/sources.json",
+      "repo_path": "mechanical/swim-r16-contact-retention/sources.json",
+      "bytes": 3005,
+      "sha256": "17f36483e08823e2987ace5adcdacf4f80abba5d6674d76a2038950a4830626b"
+    },
+    {
+      "archive_path": "dock-r15/README.md",
+      "repo_path": "mechanical/swim-r15-wire-clamp/README.md",
+      "bytes": 7359,
+      "sha256": "a2b4b871b18a283692d96ebef49acbeedfd83890cba165c5ccb3dd88fdd399aa"
+    },
+    {
+      "archive_path": "dock-r15/cap.stl",
+      "repo_path": "mechanical/swim-r15-wire-clamp/cap.stl",
+      "bytes": 26684,
+      "sha256": "5f56dafe88b44bef82e8968fa6b7a24bf817288eb4575efed9aab86dbaf22d18"
+    },
+    {
+      "archive_path": "dock-r15/checkpoint.json",
+      "repo_path": "mechanical/swim-r15-wire-clamp/checkpoint.json",
+      "bytes": 2686,
+      "sha256": "c2e97d4c9661cca2a2702663fd792db77521754c5d7ed95055c4ef0886bb94a5"
+    },
+    {
+      "archive_path": "dock-r15/checks.json",
+      "repo_path": "mechanical/swim-r15-wire-clamp/checks.json",
+      "bytes": 45587,
+      "sha256": "0b70327e256c72a355c40f4082df971fd6d4ec9d8ea493567d4e64951eb89105"
+    },
+    {
+      "archive_path": "dock-r15/clamp_detail.png",
+      "repo_path": "mechanical/swim-r15-wire-clamp/clamp_detail.png",
+      "bytes": 35845,
+      "sha256": "923edbf492ccc23f370c394b4cb960fc8794ebff6feafe70725ffbee2d61dba7"
+    },
+    {
+      "archive_path": "dock-r15/dock.json",
+      "repo_path": "mechanical/swim-r15-wire-clamp/dock.json",
+      "bytes": 6354,
+      "sha256": "d2fdc3b179221d35c5e18270df1c4ee110ccba37ebfdeb6013fb0c65b257590a"
+    },
+    {
+      "archive_path": "dock-r15/dock.scad",
+      "repo_path": "mechanical/swim-r15-wire-clamp/dock.scad",
+      "bytes": 12511,
+      "sha256": "8310fde0a6fd1f1a7cd33a159b3084fc9e74262f8d6b41f8e7cc042cab947e97"
+    },
+    {
+      "archive_path": "dock-r15/fixture.stl",
+      "repo_path": "mechanical/swim-r15-wire-clamp/fixture.stl",
+      "bytes": 96684,
+      "sha256": "5ae816fdd40dc3559c70e30823d90f797be8e72ed642a6e594918f5892b70c62"
+    },
+    {
+      "archive_path": "dock-r15/fixture_review.png",
+      "repo_path": "mechanical/swim-r15-wire-clamp/fixture_review.png",
+      "bytes": 51355,
+      "sha256": "7d97cdf98636a8251a7d5ee83be0ee189c739bfbdc91ed32f42bb1acbdedf651"
+    },
+    {
+      "archive_path": "dock-r15/lower.stl",
+      "repo_path": "mechanical/swim-r15-wire-clamp/lower.stl",
+      "bytes": 154684,
+      "sha256": "20db857e47561ead5ab733698ead5c2a992c4a40d511b01be2c1aa09b6d2b194"
+    },
+    {
+      "archive_path": "dock-r15/mesh-checks.json",
+      "repo_path": "mechanical/swim-r15-wire-clamp/mesh-checks.json",
+      "bytes": 265243,
+      "sha256": "717ea39a6ef990cf540b60ce7a42d83068dc4c93003d83e2b60a71df57d72f18"
+    },
+    {
+      "archive_path": "dock-r15/parameters.scad",
+      "repo_path": "mechanical/swim-r15-wire-clamp/parameters.scad",
+      "bytes": 19668,
+      "sha256": "99c0c43b131500e9c08720dfad32c85ceaaa62706aafa4613daf7b9e966e2e1b"
+    },
+    {
+      "archive_path": "dock-r15/review.png",
+      "repo_path": "mechanical/swim-r15-wire-clamp/review.png",
+      "bytes": 68280,
+      "sha256": "fc9d2067d8ee24658c859df0985d0e939adae7d4f904e614b121201cc0e4908d"
+    },
+    {
+      "archive_path": "dock-r15/sources.json",
+      "repo_path": "mechanical/swim-r15-wire-clamp/sources.json",
+      "bytes": 2239,
+      "sha256": "386fa284a186ae374a85e1faee9a9d7fb20da2f6ff3123dea2bb6dabc18c951b"
+    },
+    {
+      "archive_path": "dock-r15/upper.stl",
+      "repo_path": "mechanical/swim-r15-wire-clamp/upper.stl",
+      "bytes": 102684,
+      "sha256": "3c2ef2468995704cef3fba09e09d2fb099e77594a89ab02bacad36e0263b02f9"
+    },
+    {
+      "archive_path": "dock-r15/wire-clamp-sheet.pdf",
+      "repo_path": "mechanical/swim-r15-wire-clamp/wire-clamp-sheet.pdf",
+      "bytes": 206015,
+      "sha256": "bc7e2c2a408726d5b2abd511ade5fd2dad54fad6ecc00d1c2a1cb4a83877b7e5"
+    },
+    {
+      "archive_path": "dock-r15/wire-clamp-sheet.png",
+      "repo_path": "mechanical/swim-r15-wire-clamp/wire-clamp-sheet.png",
+      "bytes": 182350,
+      "sha256": "4affa1a21d1e000fa6e7257e8eaa9d64723fa493effbaa79f68ab3afb4bc6174"
+    },
+    {
+      "archive_path": "dock-r15/wire-clamp-sheet.svg",
+      "repo_path": "mechanical/swim-r15-wire-clamp/wire-clamp-sheet.svg",
+      "bytes": 211339,
+      "sha256": "79c3b20335d9d6e08fadb97c03590a1893fadbfd0778f92b1c7913015e566a03"
+    },
+    {
+      "archive_path": "gerber.zip",
+      "repo_path": "experiments/power-r05l-charge-interlock/evidence/collar-tracker-05l-charge-final4-40x32-dfm.zip",
+      "bytes": 163809,
+      "sha256": "c736c5d35ddfe4c4662e57606120f00f7358492e11d5fbb32eaf1d0ff6caf5d2"
+    },
+    {
+      "archive_path": "handoff/RESUME.md",
+      "repo_path": "docs/RESUME.md",
+      "bytes": 29414,
+      "sha256": "7a9bd00a26f40560586574b54130f169f196b351b80a74dfa1be5e7be7555e1f"
+    },
+    {
+      "archive_path": "handoff/STATUS.md",
+      "repo_path": "docs/STATUS.md",
+      "bytes": 20016,
+      "sha256": "355c0b9b012728de7b926fe4a5c09f02bed76e2c125cb95d527e3a9b430ca92c"
+    },
+    {
+      "archive_path": "pcb-assembly/candidate-bom.csv",
+      "repo_path": "experiments/power-r05l-charge-interlock/assembly/candidate-bom.csv",
+      "bytes": 5201,
+      "sha256": "215e76eade5a6ee19ceaf0124dfabb0f2425795e2710f040830c283f3c3dfff8"
+    },
+    {
+      "archive_path": "pcb-assembly/candidate-cpl.csv",
+      "repo_path": "experiments/power-r05l-charge-interlock/assembly/candidate-cpl.csv",
+      "bytes": 3468,
+      "sha256": "33802aca79bfb2a50e9ab29c653cc76c65f6d5418b9d709b3de15a2980c7962c"
+    },
+    {
+      "archive_path": "pcb-assembly/native-positions.csv",
+      "repo_path": "experiments/power-r05l-charge-interlock/assembly/native-positions.csv",
+      "bytes": 6270,
+      "sha256": "83d60d94091907cafa17f560231779078119df961e97673b489e715c28c3d09b"
+    },
+    {
+      "archive_path": "pcb-dfm/check1/receipt.json",
+      "repo_path": "experiments/power-r05l-charge-interlock/evidence/jlc-check1/receipt.json",
+      "bytes": 232,
+      "sha256": "60e4207f06413e4e39093b181456ff4b5dd57f3d0c28a4aa3cc3a0584b4fea72"
+    },
+    {
+      "archive_path": "pcb-dfm/check1/report.pdf",
+      "repo_path": "experiments/power-r05l-charge-interlock/evidence/jlc-check1/report.pdf",
+      "bytes": 3440848,
+      "sha256": "98ffff69aa139bbb2998cd4b1a1643e6d8a04bc6a3159a2f3bac5a7ea1247982"
+    },
+    {
+      "archive_path": "pcb-dfm/check1/rows.txt",
+      "repo_path": "experiments/power-r05l-charge-interlock/evidence/jlc-check1/rows.txt",
+      "bytes": 1051,
+      "sha256": "48bcda4c95f44f13b2544078796161315beef34da1709f41619364b8ccab30bb"
+    },
+    {
+      "archive_path": "pcb-dfm/check1/rules.json",
+      "repo_path": "experiments/power-r05l-charge-interlock/evidence/jlc-check1/rules.json",
+      "bytes": 52347,
+      "sha256": "f1bebb3b2b5ac2ba0579f882fc0605d169c1d6a3a852a07beb8652b719e0a725"
+    },
+    {
+      "archive_path": "pcb-dfm/check1/summary.json",
+      "repo_path": "experiments/power-r05l-charge-interlock/evidence/jlc-check1/summary.json",
+      "bytes": 437,
+      "sha256": "624a4e47ece64cc3dc3b7f1760a783fcf26aa1715d71e22b45650474316970a7"
+    },
+    {
+      "archive_path": "pcb-dfm/check2/receipt.json",
+      "repo_path": "experiments/power-r05l-charge-interlock/evidence/jlc-check2/receipt.json",
+      "bytes": 232,
+      "sha256": "da1adfc82d3d72f02cb4718ac3014d81cd0ad539cb02f4ac8aa040ac301bbc3e"
+    },
+    {
+      "archive_path": "pcb-dfm/check2/report.pdf",
+      "repo_path": "experiments/power-r05l-charge-interlock/evidence/jlc-check2/report.pdf",
+      "bytes": 3429425,
+      "sha256": "8bf1bd071947ed00c5d3a12f1f9ddbf3a3979d28c032c3a43c602853f2f3a0c2"
+    },
+    {
+      "archive_path": "pcb-dfm/check2/rows.txt",
+      "repo_path": "experiments/power-r05l-charge-interlock/evidence/jlc-check2/rows.txt",
+      "bytes": 1051,
+      "sha256": "48bcda4c95f44f13b2544078796161315beef34da1709f41619364b8ccab30bb"
+    },
+    {
+      "archive_path": "pcb-dfm/check2/rules.json",
+      "repo_path": "experiments/power-r05l-charge-interlock/evidence/jlc-check2/rules.json",
+      "bytes": 52347,
+      "sha256": "f1bebb3b2b5ac2ba0579f882fc0605d169c1d6a3a852a07beb8652b719e0a725"
+    },
+    {
+      "archive_path": "pcb-dfm/check2/summary.json",
+      "repo_path": "experiments/power-r05l-charge-interlock/evidence/jlc-check2/summary.json",
+      "bytes": 437,
+      "sha256": "42f0360eb462132e15565ae82718f8573b15696d5140d1f5041cd63bf287a793"
+    },
+    {
+      "archive_path": "pcb-review.png",
+      "repo_path": "release/r16-current-review/pcb-review.png",
+      "bytes": 538974,
+      "sha256": "d6bbbc5fc5405a2d3a20957215046051045775c493d8f48742c8e62e0a71eed6"
+    },
+    {
+      "archive_path": "pcb-source/collar-tracker.kicad_dru",
+      "repo_path": "experiments/power-r05l-charge-interlock/hardware/collar-tracker.kicad_dru",
+      "bytes": 245,
+      "sha256": "e6523f50e6e0f12cea613a984946bb5d9be0111d7ed8610b04b246e8650651d0"
+    },
+    {
+      "archive_path": "pcb-source/collar-tracker.kicad_pcb",
+      "repo_path": "experiments/power-r05l-charge-interlock/hardware/collar-tracker.kicad_pcb",
+      "bytes": 1333629,
+      "sha256": "241c84d6ba98793c37344e1e46ddc4918e7b05322ba87daea7c9a90ffb8379b3"
+    },
+    {
+      "archive_path": "pcb-source/collar-tracker.kicad_pro",
+      "repo_path": "experiments/power-r05l-charge-interlock/hardware/collar-tracker.kicad_pro",
+      "bytes": 11992,
+      "sha256": "7b2a7d53dfd2850ae3cd1452937d2de5bb32d828768fa116adc964212fbe26b8"
+    },
+    {
+      "archive_path": "pcb-source/collar-tracker.kicad_sch",
+      "repo_path": "experiments/power-r05l-charge-interlock/hardware/collar-tracker.kicad_sch",
+      "bytes": 205035,
+      "sha256": "0a8d89c01db6d0211a9048467b728214da175750f6b670ebf3d6ffa9adeefb0e"
+    },
+    {
+      "archive_path": "review.pdf",
+      "repo_path": "release/r16-current-review/review.pdf",
+      "bytes": 1170741,
+      "sha256": "7add5b6aa7e5d71e7b9a8d592d7f69fb645baeb6af35cb6ed1418b4b4e3bee2b"
+    },
+    {
+      "archive_path": "wearable-meshes/body.stl",
+      "repo_path": "mechanical/swim-r16-contact-retention/body.stl",
+      "bytes": 1131884,
+      "sha256": "dc32b424fd3daeb8c3e94c1a0d80e478be04bc2a9761ffc23ba84dd6373c657b"
+    },
+    {
+      "archive_path": "wearable-meshes/boot.stl",
+      "repo_path": "mechanical/swim-r11-thermal-fit/boot.stl",
+      "bytes": 138684,
+      "sha256": "a68bcfea12b04e540222557f622954fbbfd695a21198ed5da9b51bd7e4087d69"
+    },
+    {
+      "archive_path": "wearable-meshes/carrier.stl",
+      "repo_path": "mechanical/swim-r12-pack-retention/carrier.stl",
+      "bytes": 85984,
+      "sha256": "264977f7f5ace3d91765df91254d112af623e234d92399988934d4e82d6affcb"
+    },
+    {
+      "archive_path": "wearable-meshes/contact.stl",
+      "repo_path": "mechanical/swim-r16-contact-retention/contact.stl",
+      "bytes": 71884,
+      "sha256": "97fa9bd7c7fa9e4837ffd9dcc85317dda0e98294f69f7d8046f81624d3c70e98"
+    },
+    {
+      "archive_path": "wearable-meshes/contact_seal.stl",
+      "repo_path": "mechanical/swim-r11-thermal-fit/contact_seal.stl",
+      "bytes": 921684,
+      "sha256": "309155bd7fe66d11baa5d0c4c2e9514fffb0d2ed44eb2ef7e21ebc39af609eac"
+    },
+    {
+      "archive_path": "wearable-meshes/lid.stl",
+      "repo_path": "mechanical/swim-r11-thermal-fit/lid.stl",
+      "bytes": 246684,
+      "sha256": "5c32194b56928f279ef3336c1be4e6aaae1a433d6504f48cb60835bae941ace8"
+    },
+    {
+      "archive_path": "wearable-meshes/magnet_plug.stl",
+      "repo_path": "mechanical/swim-r11-thermal-fit/magnet_plug.stl",
+      "bytes": 19884,
+      "sha256": "1bfe436b31b425f5976cf7c830fee9278e13a6979fc562ba9260b005d03105d2"
+    },
+    {
+      "archive_path": "wearable-meshes/negative_terminal.stl",
+      "repo_path": "mechanical/swim-r16-contact-retention/negative_terminal.stl",
+      "bytes": 52484,
+      "sha256": "586122b1e22faf366a49b3d1c20a00a20c3572963fa665d23888d36f19122b81"
+    },
+    {
+      "archive_path": "wearable-meshes/positive_terminal.stl",
+      "repo_path": "mechanical/swim-r16-contact-retention/positive_terminal.stl",
+      "bytes": 52484,
+      "sha256": "8edf076e834a5829627cfe63d90f30092760bc9a73f1266832797e2fdf1f0a1b"
+    },
+    {
+      "archive_path": "wearable-meshes/retainer.stl",
+      "repo_path": "mechanical/swim-r11-thermal-fit/retainer.stl",
+      "bytes": 42884,
+      "sha256": "8825ef3a509be8ff69f04bfcaee53d03e37bd0c4c726ec0d94249faa62bec138"
+    }
+  ],
+  "zip_sha256": "777827582cbab43af6aed969fc290d6bd0e4971c00698f2f11883a92495d5e14"
+}
