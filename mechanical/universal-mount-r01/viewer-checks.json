@@ -1,0 +1,27 @@
+{
+  "file_protocol": true,
+  "network_requests": [],
+  "uncaught_errors": [],
+  "views": [
+    "mounted",
+    "exploded",
+    "underside",
+    "pcb",
+    "parts",
+    "round",
+    "inside"
+  ],
+  "collar_cases": [
+    "narrow",
+    "standard",
+    "wide",
+    "rope_small",
+    "rope",
+    "rope_large"
+  ],
+  "slider": true,
+  "ghost": true,
+  "reference_image": true,
+  "orbit_zoom": true,
+  "mobile_no_horizontal_overflow": true
+}

@@ -1,0 +1,57 @@
+{
+  "native_pcb": "experiments/pcba-r05m-rohm-q1/hardware/collar-tracker.kicad_pcb",
+  "native_sha256": "0433ed4e35b32fa361839ef88ebf0a8613f09c8427cba4c445f2c23676f4d439",
+  "visual_only_additions": [
+    "U1",
+    "U2",
+    "U9",
+    "J6",
+    "U10",
+    "U11",
+    "U12"
+  ],
+  "simplified_bodies_mm": {
+    "U1": [
+      12.1,
+      11.1,
+      1.3,
+      [
+        0.65,
+        0.67,
+        0.7
+      ]
+    ],
+    "U2": [
+      2.5,
+      2.5,
+      0.7,
+      [
+        0.1,
+        0.11,
+        0.13
+      ]
+    ],
+    "U9": [
+      2,
+      2,
+      0.8,
+      [
+        0.1,
+        0.11,
+        0.13
+      ]
+    ],
+    "J6": [
+      9.04,
+      12.3,
+      1.35,
+      [
+        0.65,
+        0.67,
+        0.7
+      ]
+    ]
+  },
+  "fabrication_geometry_changed": false,
+  "limits": "Four bodies are dimensioned visual approximations. Assembly scene uses existing conservative envelopes. Neither is a new mechanical qualification."
+}

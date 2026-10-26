@@ -16,3 +16,5 @@
 /assembly/pcba-r04/*.csv whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 # Preserve the original failing OpenSCAD stderr, including its final empty line.
 /mechanical/universal-mount-r01/evidence/initial-flat-pad/export.log whitespace=-blank-at-eof
+# Vendored renderer bytes are pinned; GLSL strings retain upstream whitespace.
+/mechanical/universal-mount-r01/viewer-assets/three.bundle.mjs linguist-vendored whitespace=-blank-at-eol

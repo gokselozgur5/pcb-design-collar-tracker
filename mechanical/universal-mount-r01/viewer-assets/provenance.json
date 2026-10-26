@@ -1,0 +1,8 @@
+{
+  "library": "three.js",
+  "version": "0.180.0",
+  "license": "MIT",
+  "bundle_url": "https://esm.sh/three@0.180.0/es2022/three.bundle.mjs",
+  "source": "https://github.com/mrdoob/three.js/tree/r180",
+  "sha256": "54be1755799b246169316e9df348310119c2c0288e419a85be6cee86fcc1c61c"
+}
