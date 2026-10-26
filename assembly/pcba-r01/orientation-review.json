@@ -1,0 +1,590 @@
+{
+  "scope": "Supplier model orientation screening; land geometry, solder process and production acceptance remain open",
+  "source": "JLCEDA/EasyEDA Official Library",
+  "source_urls": [
+    "https://lceda.cn/",
+    "https://easyeda.com/",
+    "https://docs.easyeda.com/en/API/2-Coordinate-System-and-Unit/"
+  ],
+  "library_response_sha256": {
+    "library-numbers.json": "4ed4382889e66645c0439d0a5be47020110a29cb918d53121f13c6d791d61350",
+    "library-packages.json": "20e732b026e494fc773b3ce4fb64da0f3b3809dff98b5a80e789e50bac60284e"
+  },
+  "inputs": {
+    "assembly/pcba-r01/cpl.csv": "0d4d71db99c53891dcb0784954c89ad209dbd541e223d12151d448dc39d42e10",
+    "assembly/pcba-r01/fitted-pads.csv": "b7aa6147280d71b217b4e8f2999c8837ddcb1c30d2af31303fd52a18fb135f7a",
+    "assembly/pcba-r01/jlc-library-match.json": "75b8495f1fd5c3f8f50087f825e3bd38f15431a42015823dee9c6aa2904ea029",
+    "scripts/review_pcba_orientation.py": "06f0c66bfafa1dddd53ec8b0a41ac733ba36a08066856151c2ea94e2de40564e"
+  },
+  "changed_references": 13,
+  "rows": [
+    {
+      "reference": "D1",
+      "side": "Bottom",
+      "code": "C194628",
+      "mpn": "TPD4E1U06DCKR",
+      "package_uuid": "afe1b49595704067bed8f2a19294f746",
+      "pad_count": 6,
+      "native_angle": 0.0,
+      "proposed_angle": 90,
+      "library_pin1_mm": [
+        -0.6499860000000499,
+        -0.8399779999999464
+      ],
+      "native_pin1_mm": [
+        -1.1000000000000014,
+        -0.6500000000000021
+      ],
+      "candidates": [
+        {
+          "angle": 90,
+          "rms_mm": 0.2600220002513158,
+          "max_mm": 0.2600220003769462
+        },
+        {
+          "angle": 0,
+          "rms_mm": 1.5744472809893075,
+          "max_mm": 1.760267775277432
+        },
+        {
+          "angle": 180,
+          "rms_mm": 1.5744472809893075,
+          "max_mm": 1.760267775277432
+        },
+        {
+          "angle": 270,
+          "rms_mm": 2.2113699465748717,
+          "max_mm": 2.3352683444692035
+        }
+      ]
+    },
+    {
+      "reference": "D2",
+      "side": "Bottom",
+      "code": "C194628",
+      "mpn": "TPD4E1U06DCKR",
+      "package_uuid": "afe1b49595704067bed8f2a19294f746",
+      "pad_count": 6,
+      "native_angle": 0.0,
+      "proposed_angle": 90,
+      "library_pin1_mm": [
+        -0.6499860000000499,
+        -0.8399779999999464
+      ],
+      "native_pin1_mm": [
+        -1.1000000000000014,
+        -0.6500000000000004
+      ],
+      "candidates": [
+        {
+          "angle": 90,
+          "rms_mm": 0.26002200025131406,
+          "max_mm": 0.2600220003769462
+        },
+        {
+          "angle": 0,
+          "rms_mm": 1.574447280989306,
+          "max_mm": 1.7602677752774318
+        },
+        {
+          "angle": 180,
+          "rms_mm": 1.574447280989306,
+          "max_mm": 1.760267775277432
+        },
+        {
+          "angle": 270,
+          "rms_mm": 2.21136994657487,
+          "max_mm": 2.335268344469202
+        }
+      ]
+    },
+    {
+      "reference": "U1",
+      "side": "Top",
+      "code": "C42236596",
+      "mpn": "NRF9151-LACA-R",
+      "package_uuid": "b9c0159a958e4a2fb531f701192d5247",
+      "pad_count": 113,
+      "native_angle": 0.0,
+      "proposed_angle": 0,
+      "library_pin1_mm": [
+        -5.499861999999948,
+        4.99996460000005
+      ],
+      "native_pin1_mm": [
+        -5.5,
+        5.0
+      ],
+      "candidates": [
+        {
+          "angle": 0,
+          "rms_mm": 0.0001788803495620849,
+          "max_mm": 0.00047291982397824195
+        },
+        {
+          "angle": 270,
+          "rms_mm": 7.898503968357844,
+          "max_mm": 10.51190684030636
+        },
+        {
+          "angle": 90,
+          "rms_mm": 7.898576936904341,
+          "max_mm": 10.511906840306352
+        },
+        {
+          "angle": 180,
+          "rms_mm": 11.17022302975028,
+          "max_mm": 14.865976995114751
+        }
+      ]
+    },
+    {
+      "reference": "U2",
+      "side": "Top",
+      "code": "C2654442",
+      "mpn": "SKY65943-11",
+      "package_uuid": "359ba006112a4122afe2f1098e246b6b",
+      "pad_count": 11,
+      "native_angle": 180.0,
+      "proposed_angle": 90,
+      "library_pin1_mm": [
+        -1.1440160000000048,
+        -1.2000230000000087
+      ],
+      "native_pin1_mm": [
+        1.1875,
+        -1.1434999999999995
+      ],
+      "candidates": [
+        {
+          "angle": 90,
+          "rms_mm": 0.011939807989168926,
+          "max_mm": 0.012533626171233284
+        },
+        {
+          "angle": 180,
+          "rms_mm": 1.9298537100559314,
+          "max_mm": 2.343926572989216
+        },
+        {
+          "angle": 0,
+          "rms_mm": 1.9298537102952338,
+          "max_mm": 2.3439265729892163
+        },
+        {
+          "angle": 270,
+          "rms_mm": 2.7291991730802834,
+          "max_mm": 3.3065152768957518
+        }
+      ]
+    },
+    {
+      "reference": "U3",
+      "side": "Top",
+      "code": "C19725033",
+      "mpn": "BQ25185DLHR",
+      "package_uuid": "836a352767fb4c3eb3950ce67f6fe5ef",
+      "pad_count": 11,
+      "native_angle": 0.0,
+      "proposed_angle": 270,
+      "library_pin1_mm": [
+        -0.7999729999999973,
+        -1.0500360000000037
+      ],
+      "native_pin1_mm": [
+        -1.1,
+        0.7999999999999998
+      ],
+      "candidates": [
+        {
+          "angle": 270,
+          "rms_mm": 0.04773589548087433,
+          "max_mm": 0.050218160589504235
+        },
+        {
+          "angle": 180,
+          "rms_mm": 1.6382584176466637,
+          "max_mm": 1.916354717171378
+        },
+        {
+          "angle": 0,
+          "rms_mm": 1.6382809691561526,
+          "max_mm": 1.9163547171713775
+        },
+        {
+          "angle": 90,
+          "rms_mm": 2.316371399661983,
+          "max_mm": 2.6800314181040874
+        }
+      ]
+    },
+    {
+      "reference": "U4",
+      "side": "Top",
+      "code": "C3748843",
+      "mpn": "TPS7A0218PDBVR",
+      "package_uuid": "82dc0bb42e6440dca9b666a7b0ad6e11",
+      "pad_count": 5,
+      "native_angle": 0.0,
+      "proposed_angle": 270,
+      "library_pin1_mm": [
+        -0.9499599999999445,
+        -1.1000740000000333
+      ],
+      "native_pin1_mm": [
+        -1.1375,
+        0.9499999999999993
+      ],
+      "candidates": [
+        {
+          "angle": 270,
+          "rms_mm": 0.03742601710037436,
+          "max_mm": 0.0374260213754754
+        },
+        {
+          "angle": 0,
+          "rms_mm": 1.9869595508605573,
+          "max_mm": 2.092847690845127
+        },
+        {
+          "angle": 180,
+          "rms_mm": 1.9869595508605578,
+          "max_mm": 2.0928476908451272
+        },
+        {
+          "angle": 90,
+          "rms_mm": 2.8097358962642693,
+          "max_mm": 2.9354020860992684
+        }
+      ]
+    },
+    {
+      "reference": "U5",
+      "side": "Top",
+      "code": "C189624",
+      "mpn": "LIS2DW12TR",
+      "package_uuid": "f08e13443143490b8418cd237bc7a691",
+      "pad_count": 12,
+      "native_angle": 0.0,
+      "proposed_angle": 270,
+      "library_pin1_mm": [
+        -0.7500619999999936,
+        -0.875029999999926
+      ],
+      "native_pin1_mm": [
+        -0.7624999999999993,
+        0.75
+      ],
+      "candidates": [
+        {
+          "angle": 270,
+          "rms_mm": 0.11253001782634053,
+          "max_mm": 0.11253001819963208
+        },
+        {
+          "angle": 0,
+          "rms_mm": 1.3436616966007366,
+          "max_mm": 1.6250775996069033
+        },
+        {
+          "angle": 180,
+          "rms_mm": 1.3436616966007369,
+          "max_mm": 1.6250775996069036
+        },
+        {
+          "angle": 90,
+          "rms_mm": 1.8968896923416354,
+          "max_mm": 2.2207409810115437
+        }
+      ]
+    },
+    {
+      "reference": "U6",
+      "side": "Top",
+      "code": "C19653",
+      "mpn": "TPS3808G01DBVR",
+      "package_uuid": "f3d2a2ecf658447dac746eb15158a989",
+      "pad_count": 6,
+      "native_angle": 0.0,
+      "proposed_angle": 180,
+      "library_pin1_mm": [
+        1.350010000000014,
+        -0.9499599999999445
+      ],
+      "native_pin1_mm": [
+        -1.3000000000000007,
+        0.95
+      ],
+      "candidates": [
+        {
+          "angle": 180,
+          "rms_mm": 0.05001001066454583,
+          "max_mm": 0.05001001599681156
+        },
+        {
+          "angle": 90,
+          "rms_mm": 2.1715915057471964,
+          "max_mm": 2.3264939290056406
+        },
+        {
+          "angle": 270,
+          "rms_mm": 2.1715915057471964,
+          "max_mm": 2.3264939290056406
+        },
+        {
+          "angle": 0,
+          "rms_mm": 3.070686948306532,
+          "max_mm": 3.260736266811578
+        }
+      ]
+    },
+    {
+      "reference": "U7",
+      "side": "Bottom",
+      "code": "C189211",
+      "mpn": "TPS3808G30DBVR",
+      "package_uuid": "f3d2a2ecf658447dac746eb15158a989",
+      "pad_count": 6,
+      "native_angle": 90.0,
+      "proposed_angle": 270,
+      "library_pin1_mm": [
+        1.350010000000014,
+        -0.9499599999999445
+      ],
+      "native_pin1_mm": [
+        0.9499999999999993,
+        -1.2999999999999998
+      ],
+      "candidates": [
+        {
+          "angle": 270,
+          "rms_mm": 0.05001001066454672,
+          "max_mm": 0.05001001599681244
+        },
+        {
+          "angle": 0,
+          "rms_mm": 2.171591505747196,
+          "max_mm": 2.32649392900564
+        },
+        {
+          "angle": 180,
+          "rms_mm": 2.171591505747196,
+          "max_mm": 2.3264939290056406
+        },
+        {
+          "angle": 90,
+          "rms_mm": 3.0706869483065313,
+          "max_mm": 3.260736266811577
+        }
+      ]
+    },
+    {
+      "reference": "U8",
+      "side": "Top",
+      "code": "C35740",
+      "mpn": "SN74LVC1G14DCKR",
+      "package_uuid": "d9c30416c42e488a830d49384b50992c",
+      "pad_count": 5,
+      "native_angle": 0.0,
+      "proposed_angle": 180,
+      "library_pin1_mm": [
+        1.1000740000000333,
+        -0.6500368000000372
+      ],
+      "native_pin1_mm": [
+        -1.1000000000000014,
+        0.6499999999999999
+      ],
+      "candidates": [
+        {
+          "angle": 180,
+          "rms_mm": 9.062803102957245e-05,
+          "max_mm": 9.836178125460477e-05
+        },
+        {
+          "angle": 270,
+          "rms_mm": 1.7595811706805438,
+          "max_mm": 1.8070189068394398
+        },
+        {
+          "angle": 90,
+          "rms_mm": 1.7595938736576413,
+          "max_mm": 1.8070189068394404
+        },
+        {
+          "angle": 0,
+          "rms_mm": 2.488432536399887,
+          "max_mm": 2.5554688976449094
+        }
+      ]
+    },
+    {
+      "reference": "U9",
+      "side": "Top",
+      "code": "C2682616",
+      "mpn": "MAX17048G+T10",
+      "package_uuid": "52f05b8f05964e8097be77bff85821ed",
+      "pad_count": 9,
+      "native_angle": 270.0,
+      "proposed_angle": 180,
+      "library_pin1_mm": [
+        -0.7500619999999936,
+        -0.9375139999999934
+      ],
+      "native_pin1_mm": [
+        0.75,
+        0.9899999999999984
+      ],
+      "candidates": [
+        {
+          "angle": 180,
+          "rms_mm": 0.04948431101313826,
+          "max_mm": 0.05248603901992143
+        },
+        {
+          "angle": 90,
+          "rms_mm": 1.485952894173666,
+          "max_mm": 1.750136355842017
+        },
+        {
+          "angle": 270,
+          "rms_mm": 1.485952894173666,
+          "max_mm": 1.750136355842017
+        },
+        {
+          "angle": 0,
+          "rms_mm": 2.1008720356960686,
+          "max_mm": 2.4424365342911076
+        }
+      ]
+    },
+    {
+      "reference": "U10",
+      "side": "Top",
+      "code": "C20345925",
+      "mpn": "TLV3012BIDCKR",
+      "package_uuid": "afe1b49595704067bed8f2a19294f746",
+      "pad_count": 6,
+      "native_angle": 90.0,
+      "proposed_angle": 0,
+      "library_pin1_mm": [
+        -0.6499860000000499,
+        -0.8399779999999464
+      ],
+      "native_pin1_mm": [
+        -0.6500000000000004,
+        -1.1000000000000014
+      ],
+      "candidates": [
+        {
+          "angle": 0,
+          "rms_mm": 0.2600220002513158,
+          "max_mm": 0.2600220003769462
+        },
+        {
+          "angle": 90,
+          "rms_mm": 1.5744472809893075,
+          "max_mm": 1.7602677752774318
+        },
+        {
+          "angle": 270,
+          "rms_mm": 1.5744472809893075,
+          "max_mm": 1.7602677752774318
+        },
+        {
+          "angle": 180,
+          "rms_mm": 2.2113699465748717,
+          "max_mm": 2.335268344469202
+        }
+      ]
+    },
+    {
+      "reference": "U11",
+      "side": "Top",
+      "code": "C20345925",
+      "mpn": "TLV3012BIDCKR",
+      "package_uuid": "afe1b49595704067bed8f2a19294f746",
+      "pad_count": 6,
+      "native_angle": 90.0,
+      "proposed_angle": 0,
+      "library_pin1_mm": [
+        -0.6499860000000499,
+        -0.8399779999999464
+      ],
+      "native_pin1_mm": [
+        -0.6499999999999986,
+        -1.1000000000000014
+      ],
+      "candidates": [
+        {
+          "angle": 0,
+          "rms_mm": 0.2600220002513158,
+          "max_mm": 0.2600220003769462
+        },
+        {
+          "angle": 90,
+          "rms_mm": 1.574447280989307,
+          "max_mm": 1.760267775277432
+        },
+        {
+          "angle": 270,
+          "rms_mm": 1.574447280989307,
+          "max_mm": 1.760267775277432
+        },
+        {
+          "angle": 180,
+          "rms_mm": 2.211369946574871,
+          "max_mm": 2.3352683444692013
+        }
+      ]
+    },
+    {
+      "reference": "U12",
+      "side": "Bottom",
+      "code": "C8185",
+      "mpn": "SN74LVC1G00DCKR",
+      "package_uuid": "e6f27e526cb94ce78b0cf61041dc926a",
+      "pad_count": 5,
+      "native_angle": 90.0,
+      "proposed_angle": 270,
+      "library_pin1_mm": [
+        0.8442960000000176,
+        -0.6499860000000499
+      ],
+      "native_pin1_mm": [
+        0.65,
+        -1.1000000000000014
+      ],
+      "candidates": [
+        {
+          "angle": 270,
+          "rms_mm": 0.25570400030658835,
+          "max_mm": 0.2557040003832396
+        },
+        {
+          "angle": 0,
+          "rms_mm": 1.6120859703418067,
+          "max_mm": 1.7607390311491895
+        },
+        {
+          "angle": 180,
+          "rms_mm": 1.6120859703418067,
+          "max_mm": 1.7607390311491895
+        },
+        {
+          "angle": 90,
+          "rms_mm": 2.265448700759516,
+          "max_mm": 2.3388566727809987
+        }
+      ]
+    }
+  ],
+  "open_references": {
+    "Q1": "No exact BOM match/model",
+    "J6": "Exact BOM match but no library footprint/model returned",
+    "J1,J2": "Library pin numbering/origin and land arrangement differ; manual manufacturer/package review required"
+  },
+  "supplier_rotation_qualified": false,
+  "smt_accepted": false,
+  "production_release": false
+}

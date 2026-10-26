@@ -1,0 +1,368 @@
+{
+  "observed_at_utc": "2026-10-26 06:47:19 UTC",
+  "source": "https://jlcdfm.com/bomMatch",
+  "pcb_record": "637366801595977730",
+  "input_sha256": {
+    "bom.csv": "e0e2782d00ce0d0a01559dd62cda5832a1904598125dc7d9720a735d7bff18d9",
+    "cpl.csv": "0d4d71db99c53891dcb0784954c89ad209dbd541e223d12151d448dc39d42e10"
+  },
+  "method": "Sanitized visible BOM-match table after uploading the exact files above; no substitutions selected",
+  "summary": "24\nSMT\nclick & hold to rotate\nBill of Materials\nComponent Placements\nTotal  \n44\n  parts detected\n \n43\n  Parts confirmed\n \n1\n  parts not selected\nUpload BOM/CPL\n\tTop Designator\tBottom Designator\tComment\tFootprint\tMatched ",
+  "rows": [
+    {
+      "top": "C1,C2",
+      "bottom": "",
+      "requested_mpn": "GRM033R61A105ME15D",
+      "footprint": "0201",
+      "matched_mpn": "GRM033R61A105ME15D",
+      "part_code": "C181054"
+    },
+    {
+      "top": "C3",
+      "bottom": "",
+      "requested_mpn": "GRM21BR61A476ME15L",
+      "footprint": "0805",
+      "matched_mpn": "GRM21BR61A476ME15L",
+      "part_code": "C124129"
+    },
+    {
+      "top": "C6,C7",
+      "bottom": "",
+      "requested_mpn": "GRM155R60J475ME47D",
+      "footprint": "0402",
+      "matched_mpn": "GRM155R60J475ME47D",
+      "part_code": "C82453"
+    },
+    {
+      "top": "C13,C14",
+      "bottom": "",
+      "requested_mpn": "GJM1555C1H390FB01D",
+      "footprint": "0402",
+      "matched_mpn": "GJM1555C1H390FB01D",
+      "part_code": "C882564"
+    },
+    {
+      "top": "C15,C23,C24,C27,C28,C29,C30,C31,C32",
+      "bottom": "C10,C33",
+      "requested_mpn": "GRM155R71C104KA88D",
+      "footprint": "0402",
+      "matched_mpn": "GRM155R71C104KA88D",
+      "part_code": "C71629"
+    },
+    {
+      "top": "C16,C19,C20,C21",
+      "bottom": "C17",
+      "requested_mpn": "GRM155R61A105KE15D",
+      "footprint": "0402",
+      "matched_mpn": "GRM155R61A105KE15D",
+      "part_code": "C76999"
+    },
+    {
+      "top": "",
+      "bottom": "C25,C9",
+      "requested_mpn": "GRM21BR71C105KA01L",
+      "footprint": "0805",
+      "matched_mpn": "GRM21BR71C105KA01L",
+      "part_code": "C77079"
+    },
+    {
+      "top": "",
+      "bottom": "C26",
+      "requested_mpn": "GRM155R71C473KA01D",
+      "footprint": "0402",
+      "matched_mpn": "GRM155R71C473KA01D",
+      "part_code": "C77012"
+    },
+    {
+      "top": "C34,C35",
+      "bottom": "C36",
+      "requested_mpn": "GRM1555C1H102JA01D",
+      "footprint": "0402",
+      "matched_mpn": "GRM1555C1H102JA01D",
+      "part_code": "C76947"
+    },
+    {
+      "top": "C18",
+      "bottom": "C4",
+      "requested_mpn": "GRM188R61A106MAALD",
+      "footprint": "0603",
+      "matched_mpn": "GRM188R61A106MAALD",
+      "part_code": "C703113"
+    },
+    {
+      "top": "C5",
+      "bottom": "C8",
+      "requested_mpn": "GRM033R60J104ME19D",
+      "footprint": "0201",
+      "matched_mpn": "GRM033R60J104ME19D",
+      "part_code": "C408129"
+    },
+    {
+      "top": "",
+      "bottom": "D1,D2",
+      "requested_mpn": "TPD4E1U06DCKR",
+      "footprint": "TPD4E1U06DCKR",
+      "matched_mpn": "TPD4E1U06DCKR",
+      "part_code": "C194628"
+    },
+    {
+      "top": "FB1",
+      "bottom": "",
+      "requested_mpn": "BLM18SD220SN1D",
+      "footprint": "0603",
+      "matched_mpn": "BLM18SD220SN1D",
+      "part_code": "C710389"
+    },
+    {
+      "top": "J1,J2",
+      "bottom": "",
+      "requested_mpn": "U.FL-R-SMT-1(10)",
+      "footprint": "U.FL_Hirose_U.FL-R-SMT-1_Vertical",
+      "matched_mpn": "U.FL-R-SMT-1(10)",
+      "part_code": "C88373"
+    },
+    {
+      "top": "",
+      "bottom": "J6",
+      "requested_mpn": "SIM8051-6-0-14-00-A",
+      "footprint": "SIM8051_6_0_14_00_A",
+      "matched_mpn": "SIM8051-6-0-14-00-A",
+      "part_code": "C7363812"
+    },
+    {
+      "top": "L1",
+      "bottom": "",
+      "requested_mpn": "LQW15AN9N1J00D",
+      "footprint": "0402",
+      "matched_mpn": "LQW15AN9N1J00D",
+      "part_code": "C437364"
+    },
+    {
+      "top": "",
+      "bottom": "R1",
+      "requested_mpn": "RC0402FR-0722KL",
+      "footprint": "0402",
+      "matched_mpn": "RC0402FR-0722KL",
+      "part_code": "C82868"
+    },
+    {
+      "top": "R3",
+      "bottom": "",
+      "requested_mpn": "RC0402JR-070RL",
+      "footprint": "0402",
+      "matched_mpn": "RC0402JR-070RL",
+      "part_code": "C60485"
+    },
+    {
+      "top": "R6",
+      "bottom": "",
+      "requested_mpn": "RC0402FR-0718KL",
+      "footprint": "0402",
+      "matched_mpn": "RC0402FR-0718KL",
+      "part_code": "C138044"
+    },
+    {
+      "top": "R7",
+      "bottom": "",
+      "requested_mpn": "RC0402FR-073KL",
+      "footprint": "0402",
+      "matched_mpn": "RC0402FR-073KL",
+      "part_code": "C137987"
+    },
+    {
+      "top": "R12,R13",
+      "bottom": "",
+      "requested_mpn": "RC0402FR-074K7L",
+      "footprint": "0402",
+      "matched_mpn": "RC0402FR-074K7L",
+      "part_code": "C105871"
+    },
+    {
+      "top": "R16,R20",
+      "bottom": "R8,R9",
+      "requested_mpn": "RC0402FR-0710KL",
+      "footprint": "0402",
+      "matched_mpn": "RC0402FR-0710KL",
+      "part_code": "C60490"
+    },
+    {
+      "top": "",
+      "bottom": "R17",
+      "requested_mpn": "RT0402BRD07200KL",
+      "footprint": "0402",
+      "matched_mpn": "RT0402BRD07200KL",
+      "part_code": "C728556"
+    },
+    {
+      "top": "R18",
+      "bottom": "",
+      "requested_mpn": "RT0402BRD0726K1L",
+      "footprint": "0402",
+      "matched_mpn": "RT0402BRD0726K1L",
+      "part_code": "C728557"
+    },
+    {
+      "top": "R19",
+      "bottom": "",
+      "requested_mpn": "RC0402FR-073M4L",
+      "footprint": "0402",
+      "matched_mpn": "RC0402FR-073M4L",
+      "part_code": "C477696"
+    },
+    {
+      "top": "R21",
+      "bottom": "",
+      "requested_mpn": "CRCW040222R0FKEDHP",
+      "footprint": "0402",
+      "matched_mpn": "CRCW040222R0FKEDHP",
+      "part_code": "C313374"
+    },
+    {
+      "top": "R22",
+      "bottom": "",
+      "requested_mpn": "RC0402FR-071ML",
+      "footprint": "0402",
+      "matched_mpn": "RC0402FR-071ML",
+      "part_code": "C138033"
+    },
+    {
+      "top": "R23,R30,R5",
+      "bottom": "R14,R15,R28,R29",
+      "requested_mpn": "RC0402FR-07100KL",
+      "footprint": "0402",
+      "matched_mpn": "RC0402FR-07100KL",
+      "part_code": "C60491"
+    },
+    {
+      "top": "R24",
+      "bottom": "",
+      "requested_mpn": "RT0402BRD07196KL",
+      "footprint": "0402",
+      "matched_mpn": "RT0402BRD07196KL",
+      "part_code": "C852585"
+    },
+    {
+      "top": "R25,R27",
+      "bottom": "",
+      "requested_mpn": "RT0402BRD0749K9L",
+      "footprint": "0402",
+      "matched_mpn": "RT0402BRD0749K9L",
+      "part_code": "C852808"
+    },
+    {
+      "top": "R26",
+      "bottom": "",
+      "requested_mpn": "RT0402BRD0727K4L",
+      "footprint": "0402",
+      "matched_mpn": "RT0402BRD0727K4L",
+      "part_code": "C852679"
+    },
+    {
+      "top": "R4",
+      "bottom": "R2",
+      "requested_mpn": "RC0402FR-071KL",
+      "footprint": "0402",
+      "matched_mpn": "RC0402FR-071KL",
+      "part_code": "C106235"
+    },
+    {
+      "top": "U1",
+      "bottom": "",
+      "requested_mpn": "NRF9151-LACA-R",
+      "footprint": "LGA_9151_12.1x11.1mm",
+      "matched_mpn": "NRF9151-LACA-R",
+      "part_code": "C42236596"
+    },
+    {
+      "top": "U2",
+      "bottom": "",
+      "requested_mpn": "SKY65943-11",
+      "footprint": "SKY65943_DK10171",
+      "matched_mpn": "SKY65943-11",
+      "part_code": "C2654442"
+    },
+    {
+      "top": "U3",
+      "bottom": "",
+      "requested_mpn": "BQ25185DLHR",
+      "footprint": "Texas_DLH0010A_WSON-10-1EP_2.2x2mm_P0.4mm_EP0.9x1.5mm",
+      "matched_mpn": "BQ25185DLHR",
+      "part_code": "C19725033"
+    },
+    {
+      "top": "U4",
+      "bottom": "",
+      "requested_mpn": "TPS7A0218PDBVR",
+      "footprint": "SOT-23-5",
+      "matched_mpn": "TPS7A0218PDBVR",
+      "part_code": "C3748843"
+    },
+    {
+      "top": "U5",
+      "bottom": "",
+      "requested_mpn": "LIS2DW12TR",
+      "footprint": "LGA-12_2x2mm_P0.5mm",
+      "matched_mpn": "LIS2DW12TR",
+      "part_code": "C189624"
+    },
+    {
+      "top": "U6",
+      "bottom": "",
+      "requested_mpn": "TPS3808G01DBVR",
+      "footprint": "SOT-23-6",
+      "matched_mpn": "TPS3808G01DBVR",
+      "part_code": "C19653"
+    },
+    {
+      "top": "",
+      "bottom": "U7",
+      "requested_mpn": "TPS3808G30DBVR",
+      "footprint": "SOT-23-6",
+      "matched_mpn": "TPS3808G30DBVR",
+      "part_code": "C189211"
+    },
+    {
+      "top": "U8",
+      "bottom": "",
+      "requested_mpn": "SN74LVC1G14DCKR",
+      "footprint": "SOT-353_SC-70-5",
+      "matched_mpn": "SN74LVC1G14DCKR",
+      "part_code": "C35740"
+    },
+    {
+      "top": "U9",
+      "bottom": "",
+      "requested_mpn": "MAX17048G+T10",
+      "footprint": "MAX17048_T822_3_90_0065E",
+      "matched_mpn": "MAX17048G+T10",
+      "part_code": "C2682616"
+    },
+    {
+      "top": "U10,U11",
+      "bottom": "",
+      "requested_mpn": "TLV3012BIDCKR",
+      "footprint": "TI_DCK0006A",
+      "matched_mpn": "TLV3012BIDCKR",
+      "part_code": "C20345925"
+    },
+    {
+      "top": "",
+      "bottom": "U12",
+      "requested_mpn": "SN74LVC1G00DCKR",
+      "footprint": "TI_DCK0005A",
+      "matched_mpn": "SN74LVC1G00DCKR",
+      "part_code": "C8185"
+    },
+    {
+      "top": "Q1",
+      "bottom": "",
+      "requested_mpn": "DMN62D2UDW-7",
+      "footprint": "SOT-363_SC-70-6",
+      "matched_mpn": null,
+      "part_code": null
+    }
+  ],
+  "procurement_accepted": false,
+  "rotations_accepted": false,
+  "smt_accepted": false
+}

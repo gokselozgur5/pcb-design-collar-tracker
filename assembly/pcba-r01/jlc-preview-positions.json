@@ -1,0 +1,659 @@
+{
+  "observed_at_utc": "2026-10-26T07:00:59.397788+00:00",
+  "pcb_record": "637366801595977730",
+  "source": "JLC placement preview download, sanitized to component geometry",
+  "raw_download_sha256": "bfa2380f3de6877af99d8cb18d817b2e8380d8ca07341536c536cc864551576a",
+  "input_cpl_sha256": "46f4a72547b5607c65bfd7fb53e33b2f65f599997b18a1b7e72a21b5cbf5f01e",
+  "supplier_counts": {
+    "assembler_total_num": 80,
+    "top_assembler_total_num": 57,
+    "bot_assembler_total_num": 23
+  },
+  "missing": [
+    "Q1"
+  ],
+  "placements": [
+    {
+      "reference": "C1",
+      "side": "top",
+      "code": "C181054",
+      "x_mm": 2.0,
+      "y_mm": 17.3,
+      "angle": 0.0
+    },
+    {
+      "reference": "C10",
+      "side": "bottom",
+      "code": "C71629",
+      "x_mm": 36.4,
+      "y_mm": 27.65,
+      "angle": 0.0
+    },
+    {
+      "reference": "C13",
+      "side": "top",
+      "code": "C882564",
+      "x_mm": 19.3,
+      "y_mm": 10.35,
+      "angle": 180.0
+    },
+    {
+      "reference": "C14",
+      "side": "top",
+      "code": "C882564",
+      "x_mm": 24.5,
+      "y_mm": 14.9,
+      "angle": 180.0
+    },
+    {
+      "reference": "C15",
+      "side": "top",
+      "code": "C71629",
+      "x_mm": 26.0,
+      "y_mm": 10.2,
+      "angle": 0.0
+    },
+    {
+      "reference": "C16",
+      "side": "top",
+      "code": "C76999",
+      "x_mm": 28.4,
+      "y_mm": 8.5,
+      "angle": 90.0
+    },
+    {
+      "reference": "C17",
+      "side": "bottom",
+      "code": "C76999",
+      "x_mm": 6.2,
+      "y_mm": 7.75,
+      "angle": 90.0
+    },
+    {
+      "reference": "C18",
+      "side": "top",
+      "code": "C703113",
+      "x_mm": 3.0,
+      "y_mm": 7.15,
+      "angle": 0.0
+    },
+    {
+      "reference": "C19",
+      "side": "top",
+      "code": "C76999",
+      "x_mm": 1.8,
+      "y_mm": 5.5,
+      "angle": 180.0
+    },
+    {
+      "reference": "C2",
+      "side": "top",
+      "code": "C181054",
+      "x_mm": 2.0,
+      "y_mm": 18.9,
+      "angle": 90.0
+    },
+    {
+      "reference": "C20",
+      "side": "top",
+      "code": "C76999",
+      "x_mm": 6.0,
+      "y_mm": 26.2,
+      "angle": 0.0
+    },
+    {
+      "reference": "C21",
+      "side": "top",
+      "code": "C76999",
+      "x_mm": 6.0,
+      "y_mm": 24.5,
+      "angle": 0.0
+    },
+    {
+      "reference": "C23",
+      "side": "top",
+      "code": "C71629",
+      "x_mm": 32.0,
+      "y_mm": 24.6,
+      "angle": 0.0
+    },
+    {
+      "reference": "C24",
+      "side": "top",
+      "code": "C71629",
+      "x_mm": 32.0,
+      "y_mm": 22.5,
+      "angle": 0.0
+    },
+    {
+      "reference": "C25",
+      "side": "bottom",
+      "code": "C77079",
+      "x_mm": 11.75,
+      "y_mm": 2.25,
+      "angle": 270.0
+    },
+    {
+      "reference": "C26",
+      "side": "bottom",
+      "code": "C77012",
+      "x_mm": 13.25,
+      "y_mm": 5.95,
+      "angle": 180.0
+    },
+    {
+      "reference": "C27",
+      "side": "top",
+      "code": "C71629",
+      "x_mm": 9.25,
+      "y_mm": 0.25,
+      "angle": 90.0
+    },
+    {
+      "reference": "C28",
+      "side": "top",
+      "code": "C71629",
+      "x_mm": 21.0,
+      "y_mm": 1.5,
+      "angle": 90.0
+    },
+    {
+      "reference": "C29",
+      "side": "top",
+      "code": "C71629",
+      "x_mm": 31.0,
+      "y_mm": -1.0,
+      "angle": 0.0
+    },
+    {
+      "reference": "C3",
+      "side": "top",
+      "code": "C124129",
+      "x_mm": 2.0,
+      "y_mm": 9.7,
+      "angle": 90.0
+    },
+    {
+      "reference": "C30",
+      "side": "top",
+      "code": "C71629",
+      "x_mm": 35.5,
+      "y_mm": 19.5,
+      "angle": 0.0
+    },
+    {
+      "reference": "C31",
+      "side": "top",
+      "code": "C71629",
+      "x_mm": 8.75,
+      "y_mm": 26.5,
+      "angle": 270.0
+    },
+    {
+      "reference": "C32",
+      "side": "top",
+      "code": "C71629",
+      "x_mm": 14.75,
+      "y_mm": 28.0,
+      "angle": 90.0
+    },
+    {
+      "reference": "C33",
+      "side": "bottom",
+      "code": "C71629",
+      "x_mm": 2.0,
+      "y_mm": 28.0,
+      "angle": 90.0
+    },
+    {
+      "reference": "C34",
+      "side": "top",
+      "code": "C76947",
+      "x_mm": 10.25,
+      "y_mm": 28.5,
+      "angle": 0.0
+    },
+    {
+      "reference": "C35",
+      "side": "top",
+      "code": "C76947",
+      "x_mm": 17.0,
+      "y_mm": 23.75,
+      "angle": 0.0
+    },
+    {
+      "reference": "C36",
+      "side": "bottom",
+      "code": "C76947",
+      "x_mm": 4.0,
+      "y_mm": 7.0,
+      "angle": 270.0
+    },
+    {
+      "reference": "C4",
+      "side": "bottom",
+      "code": "C703113",
+      "x_mm": 5.2,
+      "y_mm": 11.0,
+      "angle": 0.0
+    },
+    {
+      "reference": "C5",
+      "side": "top",
+      "code": "C408129",
+      "x_mm": 13.75,
+      "y_mm": 22.2,
+      "angle": 0.0
+    },
+    {
+      "reference": "C6",
+      "side": "top",
+      "code": "C82453",
+      "x_mm": 16.0,
+      "y_mm": 22.7,
+      "angle": 0.0
+    },
+    {
+      "reference": "C7",
+      "side": "top",
+      "code": "C82453",
+      "x_mm": 7.75,
+      "y_mm": 7.0,
+      "angle": 0.0
+    },
+    {
+      "reference": "C8",
+      "side": "bottom",
+      "code": "C408129",
+      "x_mm": 4.8,
+      "y_mm": 16.0,
+      "angle": 0.0
+    },
+    {
+      "reference": "C9",
+      "side": "bottom",
+      "code": "C77079",
+      "x_mm": 1.8,
+      "y_mm": 13.7,
+      "angle": 270.0
+    },
+    {
+      "reference": "D1",
+      "side": "bottom",
+      "code": "C194628",
+      "x_mm": 33.4,
+      "y_mm": 28.3,
+      "angle": 90.0
+    },
+    {
+      "reference": "D2",
+      "side": "bottom",
+      "code": "C194628",
+      "x_mm": 26.8,
+      "y_mm": 11.8,
+      "angle": 90.0
+    },
+    {
+      "reference": "FB1",
+      "side": "top",
+      "code": "C710389",
+      "x_mm": 2.0,
+      "y_mm": 14.0,
+      "angle": 90.0
+    },
+    {
+      "reference": "J1",
+      "side": "top",
+      "code": "C88373",
+      "x_mm": 18.3,
+      "y_mm": 5.7,
+      "angle": 0.0
+    },
+    {
+      "reference": "J2",
+      "side": "top",
+      "code": "C88373",
+      "x_mm": 28.3,
+      "y_mm": 16.2,
+      "angle": 0.0
+    },
+    {
+      "reference": "J6",
+      "side": "bottom",
+      "code": "C7363812",
+      "x_mm": 27.0,
+      "y_mm": 20.0,
+      "angle": 0.0
+    },
+    {
+      "reference": "L1",
+      "side": "top",
+      "code": "C437364",
+      "x_mm": 20.5,
+      "y_mm": 11.75,
+      "angle": 270.0
+    },
+    {
+      "reference": "R1",
+      "side": "bottom",
+      "code": "C82868",
+      "x_mm": 1.8,
+      "y_mm": 18.0,
+      "angle": 90.0
+    },
+    {
+      "reference": "R12",
+      "side": "top",
+      "code": "C105871",
+      "x_mm": 20.5,
+      "y_mm": 28.1,
+      "angle": 0.0
+    },
+    {
+      "reference": "R13",
+      "side": "top",
+      "code": "C105871",
+      "x_mm": 26.4,
+      "y_mm": 28.0,
+      "angle": 0.0
+    },
+    {
+      "reference": "R14",
+      "side": "bottom",
+      "code": "C60491",
+      "x_mm": 21.5,
+      "y_mm": 9.0,
+      "angle": 0.0
+    },
+    {
+      "reference": "R15",
+      "side": "bottom",
+      "code": "C60491",
+      "x_mm": 26.0,
+      "y_mm": 10.0,
+      "angle": 0.0
+    },
+    {
+      "reference": "R16",
+      "side": "top",
+      "code": "C60490",
+      "x_mm": 16.45,
+      "y_mm": 0.0,
+      "angle": 90.0
+    },
+    {
+      "reference": "R17",
+      "side": "bottom",
+      "code": "C728556",
+      "x_mm": 13.75,
+      "y_mm": 2.0,
+      "angle": 270.0
+    },
+    {
+      "reference": "R18",
+      "side": "top",
+      "code": "C728557",
+      "x_mm": 18.4,
+      "y_mm": 1.9,
+      "angle": 0.0
+    },
+    {
+      "reference": "R19",
+      "side": "top",
+      "code": "C477696",
+      "x_mm": 17.92,
+      "y_mm": 0.27,
+      "angle": 0.0
+    },
+    {
+      "reference": "R2",
+      "side": "bottom",
+      "code": "C106235",
+      "x_mm": 4.7,
+      "y_mm": 18.0,
+      "angle": 0.0
+    },
+    {
+      "reference": "R20",
+      "side": "top",
+      "code": "C60490",
+      "x_mm": 22.5,
+      "y_mm": 0.25,
+      "angle": 0.0
+    },
+    {
+      "reference": "R21",
+      "side": "top",
+      "code": "C313374",
+      "x_mm": 34.5,
+      "y_mm": 3.75,
+      "angle": 0.0
+    },
+    {
+      "reference": "R22",
+      "side": "top",
+      "code": "C138033",
+      "x_mm": 36.0,
+      "y_mm": 2.5,
+      "angle": 0.0
+    },
+    {
+      "reference": "R23",
+      "side": "top",
+      "code": "C60491",
+      "x_mm": 35.75,
+      "y_mm": 24.5,
+      "angle": 90.0
+    },
+    {
+      "reference": "R24",
+      "side": "top",
+      "code": "C852585",
+      "x_mm": 8.5,
+      "y_mm": 23.5,
+      "angle": 0.0
+    },
+    {
+      "reference": "R25",
+      "side": "top",
+      "code": "C852808",
+      "x_mm": 14.25,
+      "y_mm": 25.5,
+      "angle": 90.0
+    },
+    {
+      "reference": "R26",
+      "side": "top",
+      "code": "C852679",
+      "x_mm": 19.75,
+      "y_mm": 25.25,
+      "angle": 180.0
+    },
+    {
+      "reference": "R27",
+      "side": "top",
+      "code": "C852808",
+      "x_mm": 13.25,
+      "y_mm": 28.25,
+      "angle": 0.0
+    },
+    {
+      "reference": "R28",
+      "side": "bottom",
+      "code": "C60491",
+      "x_mm": 4.0,
+      "y_mm": 25.5,
+      "angle": 270.0
+    },
+    {
+      "reference": "R29",
+      "side": "bottom",
+      "code": "C60491",
+      "x_mm": 4.0,
+      "y_mm": 28.75,
+      "angle": 0.0
+    },
+    {
+      "reference": "R3",
+      "side": "top",
+      "code": "C60485",
+      "x_mm": 13.8,
+      "y_mm": 7.7,
+      "angle": 0.0
+    },
+    {
+      "reference": "R30",
+      "side": "top",
+      "code": "C60491",
+      "x_mm": -0.25,
+      "y_mm": 26.0,
+      "angle": 180.0
+    },
+    {
+      "reference": "R4",
+      "side": "top",
+      "code": "C106235",
+      "x_mm": 26.3,
+      "y_mm": 8.7,
+      "angle": 0.0
+    },
+    {
+      "reference": "R5",
+      "side": "top",
+      "code": "C60491",
+      "x_mm": 26.3,
+      "y_mm": 7.3,
+      "angle": 0.0
+    },
+    {
+      "reference": "R6",
+      "side": "top",
+      "code": "C138044",
+      "x_mm": 6.0,
+      "y_mm": 2.2,
+      "angle": 0.0
+    },
+    {
+      "reference": "R7",
+      "side": "top",
+      "code": "C137987",
+      "x_mm": 8.2,
+      "y_mm": 2.2,
+      "angle": 0.0
+    },
+    {
+      "reference": "R8",
+      "side": "bottom",
+      "code": "C60490",
+      "x_mm": 10.0,
+      "y_mm": 26.0,
+      "angle": 0.0
+    },
+    {
+      "reference": "R9",
+      "side": "bottom",
+      "code": "C60490",
+      "x_mm": 13.0,
+      "y_mm": 26.0,
+      "angle": 0.0
+    },
+    {
+      "reference": "U1",
+      "side": "top",
+      "code": "C42236596",
+      "x_mm": 11.0,
+      "y_mm": 15.0,
+      "angle": 0.0
+    },
+    {
+      "reference": "U10",
+      "side": "top",
+      "code": "C20345925",
+      "x_mm": 11.0,
+      "y_mm": 25.5,
+      "angle": 0.0
+    },
+    {
+      "reference": "U11",
+      "side": "top",
+      "code": "C20345925",
+      "x_mm": 17.0,
+      "y_mm": 27.0,
+      "angle": 0.0
+    },
+    {
+      "reference": "U12",
+      "side": "bottom",
+      "code": "C8185",
+      "x_mm": -0.25,
+      "y_mm": 27.0,
+      "angle": 270.0
+    },
+    {
+      "reference": "U2",
+      "side": "top",
+      "code": "C2654442",
+      "x_mm": 23.0,
+      "y_mm": 11.5,
+      "angle": 90.0
+    },
+    {
+      "reference": "U3",
+      "side": "top",
+      "code": "C19725033",
+      "x_mm": 5.0,
+      "y_mm": 5.0,
+      "angle": 270.0
+    },
+    {
+      "reference": "U4",
+      "side": "top",
+      "code": "C3748843",
+      "x_mm": 3.0,
+      "y_mm": 25.5,
+      "angle": 270.0
+    },
+    {
+      "reference": "U5",
+      "side": "top",
+      "code": "C189624",
+      "x_mm": 29.0,
+      "y_mm": 23.5,
+      "angle": 270.0
+    },
+    {
+      "reference": "U6",
+      "side": "top",
+      "code": "C19653",
+      "x_mm": 12.5,
+      "y_mm": 1.0,
+      "angle": 180.0
+    },
+    {
+      "reference": "U7",
+      "side": "bottom",
+      "code": "C189211",
+      "x_mm": 16.0,
+      "y_mm": 4.75,
+      "angle": 270.0
+    },
+    {
+      "reference": "U8",
+      "side": "top",
+      "code": "C35740",
+      "x_mm": 33.0,
+      "y_mm": 1.0,
+      "angle": 180.0
+    },
+    {
+      "reference": "U9",
+      "side": "top",
+      "code": "C2682616",
+      "x_mm": 34.75,
+      "y_mm": 16.25,
+      "angle": 180.0
+    }
+  ],
+  "complete_assembly_accepted": false,
+  "smt_accepted": false
+}
