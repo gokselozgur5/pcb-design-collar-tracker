@@ -1,0 +1,116 @@
+{
+  "revision": "CT-CONTACT-RET-001-A",
+  "status": "PROTOTYPE_NOT_MANUFACTURING_RELEASE",
+  "body_source": "mechanical/swim-r13-charge-dock/body.stl",
+  "pcb_source": "experiments/power-r05l-charge-interlock/hardware/collar-tracker.kicad_pcb",
+  "contact": {
+    "side_x_mm": 28.7,
+    "centers_y_mm": [
+      -6,
+      6
+    ],
+    "center_z_mm": 5.5,
+    "stem_length_mm": 5.9,
+    "thread_length_mm": 4.8,
+    "thread": "M3 x 0.5",
+    "axial_dimension_tolerance_mm": 0.05,
+    "seal_geometry": "Unchanged r11 head, shaft, radial gland and O-ring; the dry-side shoulder and thread length change."
+  },
+  "pocket": {
+    "bearing_x_mm": 22.6,
+    "base_width_mm": 9.8,
+    "base_z_mm": [
+      1.8,
+      9.15
+    ],
+    "tail_radius_mm": 2.1,
+    "tail_top_z_mm": 15.4,
+    "feature_tolerance_mm": 0.05,
+    "minimum_seal_wall_mm": 0.5,
+    "minimum_clearance_mm": 0.2,
+    "corner_radius_mm": 0.3
+  },
+  "terminal": {
+    "part_numbers": [
+      "CT-CHG-TERMINAL-P-A",
+      "CT-CHG-TERMINAL-N-A"
+    ],
+    "material": "CuZn30 / CW505L / C26000, R480 candidate; mill certificate and fabricator acceptance required",
+    "finish": "Matte tin, 3 to 5 micrometres, after machining; engineering requirement, solderability and adhesion unqualified",
+    "base_width_mm": 9.0,
+    "base_z_mm": [
+      2.35,
+      8.65
+    ],
+    "base_thickness_mm": 1.0,
+    "tail_thickness_mm": 0.5,
+    "tail_radius_mm": 1.5,
+    "tail_root_z_mm": 8.0,
+    "tail_centers_yz_mm": [
+      [
+        -3.3,
+        13.3
+      ],
+      [
+        6.0,
+        13.3
+      ]
+    ],
+    "thickness_transition_z_mm": 9.25,
+    "thread_hole_diameter_mm": 3.2,
+    "wire_hole_diameter_mm": 1.2,
+    "dimension_tolerance_mm": 0.05,
+    "edge_break_mm": [
+      0.05,
+      0.1
+    ],
+    "note": "A custom machined terminal also provides the rear bearing. It is not a purchased Keystone 4004. Do not replace it with a circular washer smaller than the bore.",
+    "assembly_position_tolerance_mm": 0.1,
+    "thermal_position_allowance_mm": 0.05,
+    "corner_radius_mm": 0.3
+  },
+  "washer": {
+    "mpn": "HRDW-M3-A2",
+    "outer_diameter_mm": 6.0,
+    "inner_diameter_mm": [
+      3.2,
+      3.38
+    ],
+    "thickness_mm": [
+      0.45,
+      0.55
+    ],
+    "outer_diameter_incoming_max_mm": 6.1
+  },
+  "nut": {
+    "mpn": "HFN-M3-A2",
+    "thickness_mm": [
+      1.55,
+      1.8
+    ],
+    "across_flats_mm": [
+      5.32,
+      5.5
+    ],
+    "rotation_envelope_diameter_mm": 6.4,
+    "installation_torque": "Unqualified; establish with pull, contact resistance, plate/body deformation and loosening tests. No generic steel fastener torque is released."
+  },
+  "polarity": [
+    {
+      "contact_y_mm": -6,
+      "wire": "red",
+      "pad": "J3.1",
+      "net": "/VIN_5V"
+    },
+    {
+      "contact_y_mm": 6,
+      "wire": "black",
+      "pad": "J3.2",
+      "net": "/GND"
+    }
+  ],
+  "factory_assembly": "Pre-assemble and inspect the harness at the factory. Install contacts and terminals with the pack and PCB out of the cavity. Complete tool-access and insertion-motion qualification before a production work instruction. No end-user soldering.",
+  "physical_retention_qualified": false,
+  "physical_ingress_qualified": false,
+  "production_release": false
+}

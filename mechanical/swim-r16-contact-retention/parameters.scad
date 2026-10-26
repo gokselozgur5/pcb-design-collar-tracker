@@ -1,0 +1,20 @@
+// Generated from contact.json. Prototype dimensions, not physical acceptance.
+contact_ys = [-6, 6];
+contact_z = 5.5;
+stem_l = 5.9;
+thread_l = 4.8;
+bearing_x = 22.6;
+pocket_w = 9.8;
+pocket_z = [1.8, 9.15];
+pocket_r = 2.1;
+pocket_top = 15.4;
+terminal_w = 9.0;
+terminal_z = [2.35, 8.65];
+terminal_t = 1.0;
+tail_t = 0.5;
+terminal_r = 1.5;
+tail_root_z = 8.0;
+tail_yz = [[-3.3, 13.3], [6.0, 13.3]];
+transition_z = 9.25;
+terminal_hole = 3.2;
+wire_hole = 1.2;

@@ -1,0 +1,617 @@
+{
+  "checks": [
+    {
+      "name": "shoulder cannot bottom before the terminal bears on the body",
+      "value": 0.1,
+      "minimum": 0.08,
+      "pass_": true
+    },
+    {
+      "name": "thread projects beyond complete maximum nut stack",
+      "value": 1.05,
+      "minimum": 0.5,
+      "pass_": true
+    },
+    {
+      "name": "radial seal retains a full dry-side shaft land",
+      "value": 0.55,
+      "minimum": 0.5,
+      "pass_": true
+    },
+    {
+      "name": "dry pocket remains behind the radial sealing groove",
+      "value": 0.75,
+      "minimum": 0.5,
+      "pass_": true
+    },
+    {
+      "name": "pocket to inner lid-gland wall",
+      "value": 0.525,
+      "minimum": 0.5,
+      "pass_": true
+    },
+    {
+      "name": "pocket roof below lid-gland floor",
+      "value": 1.68,
+      "minimum": 1,
+      "pass_": true
+    },
+    {
+      "name": "pocket preserves the existing floor",
+      "value": 1.8,
+      "minimum": 1.8,
+      "pass_": true
+    },
+    {
+      "name": "terminal hole clears maximum M3 thread",
+      "value": 0.1,
+      "minimum": 0.08,
+      "pass_": true
+    },
+    {
+      "name": "washer hole clears maximum M3 thread",
+      "value": 0.15,
+      "minimum": 0.1,
+      "pass_": true
+    },
+    {
+      "name": "minimum terminal main thickness",
+      "value": 0.95,
+      "minimum": 0.9,
+      "pass_": true
+    },
+    {
+      "name": "minimum terminal tail thickness",
+      "value": 0.45,
+      "minimum": 0.4,
+      "pass_": true
+    },
+    {
+      "name": "nut retains at least three pitches of nominal axial length",
+      "value": 1.55,
+      "minimum": 1.5,
+      "pass_": true
+    },
+    {
+      "name": "terminal base clears pocket floor",
+      "value": 0.3,
+      "minimum": 0.2,
+      "pass_": true
+    },
+    {
+      "name": "terminal base clears pocket side wall",
+      "value": 0.15,
+      "minimum": 0.15,
+      "pass_": true
+    },
+    {
+      "name": "terminal tail clears pocket",
+      "value": 0.35,
+      "minimum": 0.2,
+      "pass_": true
+    },
+    {
+      "name": "terminal tail clears maximum existing frame X envelope",
+      "value": 0.34,
+      "minimum": 0.2,
+      "pass_": true
+    },
+    {
+      "name": "old circular backing reservation has no rear bearing",
+      "value": 0.94,
+      "minimum": 0.9,
+      "pass_": true
+    },
+    {
+      "name": "polarity follows r13 and native J3 pinout",
+      "pass_": true
+    },
+    {
+      "name": "terminal 1 negative-Y bearing area",
+      "value": 4.413424205,
+      "minimum": 1.5,
+      "pass_": true
+    },
+    {
+      "name": "terminal 1 positive-Y bearing area",
+      "value": 4.413424205,
+      "minimum": 1.5,
+      "pass_": true
+    },
+    {
+      "name": "terminal 2 negative-Y bearing area",
+      "value": 4.413424205,
+      "minimum": 1.5,
+      "pass_": true
+    },
+    {
+      "name": "terminal 2 positive-Y bearing area",
+      "value": 4.413424205,
+      "minimum": 1.5,
+      "pass_": true
+    },
+    {
+      "name": "polarity matches the preserved native netlist",
+      "pass_": true
+    },
+    {
+      "name": "all 85 swept populated envelopes clear new metal",
+      "value": 2.146284757,
+      "minimum": 0.2,
+      "pass_": true
+    },
+    {
+      "name": "new metal clears maximum pack/cradle envelope",
+      "value": 0.5,
+      "minimum": 0.2,
+      "pass_": true
+    },
+    {
+      "name": "opposite terminal base metal separation",
+      "value": 2.6,
+      "minimum": 2,
+      "pass_": true
+    }
+  ],
+  "shoulder_x_mm": 22.799999999999997,
+  "thread_tip_x_mm": 17.999999999999996,
+  "maximum_stack_inner_x_mm": 19.15,
+  "physical_retention_qualified": false,
+  "physical_ingress_qualified": false,
+  "production_release": false,
+  "result": "CONTACT_RETENTION_GEOMETRY_PASS",
+  "bearing_areas_mm2": [
+    [
+      4.413424205105931,
+      4.413424205105933
+    ],
+    [
+      4.413424205105934,
+      4.4134242051059305
+    ]
+  ],
+  "old_circular_bearing_area_mm2": 0.0,
+  "native_pinout": {
+    "J3.2": "/GND",
+    "J3.1": "/VIN_5V"
+  },
+  "component_clearances": [
+    {
+      "ref": "C1",
+      "gap_mm": 32.62586770827277,
+      "obstacle": "thread 2"
+    },
+    {
+      "ref": "C10",
+      "gap_mm": 2.1462847565351053,
+      "obstacle": "terminal 2 section 1"
+    },
+    {
+      "ref": "C13",
+      "gap_mm": 15.264966646255136,
+      "obstacle": "thread 1"
+    },
+    {
+      "ref": "C14",
+      "gap_mm": 10.761565426018374,
+      "obstacle": "thread 2"
+    },
+    {
+      "ref": "C15",
+      "gap_mm": 8.96471450865847,
+      "obstacle": "thread 1"
+    },
+    {
+      "ref": "C16",
+      "gap_mm": 7.1556917904560375,
+      "obstacle": "thread 1"
+    },
+    {
+      "ref": "C17",
+      "gap_mm": 28.271627561921505,
+      "obstacle": "thread 1"
+    },
+    {
+      "ref": "C18",
+      "gap_mm": 30.818537440962377,
+      "obstacle": "thread 1"
+    },
+    {
+      "ref": "C19",
+      "gap_mm": 32.48093815798353,
+      "obstacle": "thread 1"
+    },
+    {
+      "ref": "C2",
+      "gap_mm": 32.82790162346658,
+      "obstacle": "thread 2"
+    },
+    {
+      "ref": "C20",
+      "gap_mm": 28.594881260231823,
+      "obstacle": "thread 2"
+    },
+    {
+      "ref": "C21",
+      "gap_mm": 28.42020101765881,
+      "obstacle": "thread 2"
+    },
+    {
+      "ref": "C23",
+      "gap_mm": 4.490333396205567,
+      "obstacle": "nut 2"
+    },
+    {
+      "ref": "C24",
+      "gap_mm": 4.037822125009998,
+      "obstacle": "nut 2"
+    },
+    {
+      "ref": "C25",
+      "gap_mm": 22.436119823750907,
+      "obstacle": "thread 1"
+    },
+    {
+      "ref": "C26",
+      "gap_mm": 20.92147244778037,
+      "obstacle": "thread 1"
+    },
+    {
+      "ref": "C27",
+      "gap_mm": 25.944844954208474,
+      "obstacle": "thread 1"
+    },
+    {
+      "ref": "C28",
+      "gap_mm": 14.50694352315621,
+      "obstacle": "thread 1"
+    },
+    {
+      "ref": "C29",
+      "gap_mm": 7.401605225800995,
+      "obstacle": "nut 1"
+    },
+    {
+      "ref": "C3",
+      "gap_mm": 32.237292845398784,
+      "obstacle": "thread 1"
+    },
+    {
+      "ref": "C30",
+      "gap_mm": 2.2699999999999996,
+      "obstacle": "nut 2"
+    },
+    {
+      "ref": "C31",
+      "gap_mm": 26.231258269172752,
+      "obstacle": "thread 2"
+    },
+    {
+      "ref": "C32",
+      "gap_mm": 20.72413976995244,
+      "obstacle": "thread 2"
+    },
+    {
+      "ref": "C33",
+      "gap_mm": 32.87297154658802,
+      "obstacle": "thread 2"
+    },
+    {
+      "ref": "C34",
+      "gap_mm": 24.880040966433285,
+      "obstacle": "thread 2"
+    },
+    {
+      "ref": "C35",
+      "gap_mm": 17.582940665490643,
+      "obstacle": "thread 2"
+    },
+    {
+      "ref": "C36",
+      "gap_mm": 30.46428934014381,
+      "obstacle": "thread 1"
+    },
+    {
+      "ref": "C4",
+      "gap_mm": 28.452623151502106,
+      "obstacle": "thread 1"
+    },
+    {
+      "ref": "C5",
+      "gap_mm": 21.00259313232645,
+      "obstacle": "thread 2"
+    },
+    {
+      "ref": "C6",
+      "gap_mm": 18.48317907294765,
+      "obstacle": "thread 2"
+    },
+    {
+      "ref": "C7",
+      "gap_mm": 26.574450605798038,
+      "obstacle": "thread 1"
+    },
+    {
+      "ref": "C8",
+      "gap_mm": 29.760359783873554,
+      "obstacle": "thread 2"
+    },
+    {
+      "ref": "C9",
+      "gap_mm": 32.32417581414482,
+      "obstacle": "thread 1"
+    },
+    {
+      "ref": "D1",
+      "gap_mm": 3.6910545947055198,
+      "obstacle": "nut 2"
+    },
+    {
+      "ref": "D2",
+      "gap_mm": 6.774368776830077,
+      "obstacle": "thread 1"
+    },
+    {
+      "ref": "FB1",
+      "gap_mm": 32.61349623903623,
+      "obstacle": "thread 1"
+    },
+    {
+      "ref": "J1",
+      "gap_mm": 14.055003557452409,
+      "obstacle": "thread 1"
+    },
+    {
+      "ref": "J2",
+      "gap_mm": 5.255520906627618,
+      "obstacle": "nut 2"
+    },
+    {
+      "ref": "J3",
+      "gap_mm": 30.770406229819365,
+      "obstacle": "thread 1"
+    },
+    {
+      "ref": "J4",
+      "gap_mm": 25.785476165002986,
+      "obstacle": "thread 1"
+    },
+    {
+      "ref": "J5",
+      "gap_mm": 7.226401696087945,
+      "obstacle": "thread 1"
+    },
+    {
+      "ref": "J6",
+      "gap_mm": 2.4592935977633856,
+      "obstacle": "thread 2"
+    },
+    {
+      "ref": "J7",
+      "gap_mm": 29.258647012464536,
+      "obstacle": "thread 2"
+    },
+    {
+      "ref": "L1",
+      "gap_mm": 14.602157035216672,
+      "obstacle": "thread 1"
+    },
+    {
+      "ref": "Q1",
+      "gap_mm": 2.4310080213771394,
+      "obstacle": "nut 1"
+    },
+    {
+      "ref": "R1",
+      "gap_mm": 32.64945997136145,
+      "obstacle": "thread 2"
+    },
+    {
+      "ref": "R12",
+      "gap_mm": 15.211628985613464,
+      "obstacle": "thread 2"
+    },
+    {
+      "ref": "R13",
+      "gap_mm": 10.282286451883444,
+      "obstacle": "thread 2"
+    },
+    {
+      "ref": "R14",
+      "gap_mm": 12.766249449231355,
+      "obstacle": "thread 1"
+    },
+    {
+      "ref": "R15",
+      "gap_mm": 8.412085025926427,
+      "obstacle": "thread 1"
+    },
+    {
+      "ref": "R16",
+      "gap_mm": 19.09863807933157,
+      "obstacle": "thread 1"
+    },
+    {
+      "ref": "R17",
+      "gap_mm": 21.039935026826775,
+      "obstacle": "thread 1"
+    },
+    {
+      "ref": "R18",
+      "gap_mm": 16.576853666834765,
+      "obstacle": "thread 1"
+    },
+    {
+      "ref": "R19",
+      "gap_mm": 17.433609908302028,
+      "obstacle": "thread 1"
+    },
+    {
+      "ref": "R2",
+      "gap_mm": 29.422426386744778,
+      "obstacle": "thread 2"
+    },
+    {
+      "ref": "R20",
+      "gap_mm": 13.33127857810253,
+      "obstacle": "thread 1"
+    },
+    {
+      "ref": "R21",
+      "gap_mm": 2.993081943492972,
+      "obstacle": "nut 1"
+    },
+    {
+      "ref": "R22",
+      "gap_mm": 2.732123716086078,
+      "obstacle": "terminal 1 section 1"
+    },
+    {
+      "ref": "R23",
+      "gap_mm": 2.856374743688367,
+      "obstacle": "nut 2"
+    },
+    {
+      "ref": "R24",
+      "gap_mm": 25.86646395191965,
+      "obstacle": "thread 2"
+    },
+    {
+      "ref": "R25",
+      "gap_mm": 20.717573807675954,
+      "obstacle": "thread 2"
+    },
+    {
+      "ref": "R26",
+      "gap_mm": 15.134591514654094,
+      "obstacle": "thread 2"
+    },
+    {
+      "ref": "R27",
+      "gap_mm": 21.942502340360857,
+      "obstacle": "thread 2"
+    },
+    {
+      "ref": "R28",
+      "gap_mm": 30.6047477080346,
+      "obstacle": "thread 2"
+    },
+    {
+      "ref": "R29",
+      "gap_mm": 30.75874540422884,
+      "obstacle": "thread 2"
+    },
+    {
+      "ref": "R3",
+      "gap_mm": 20.591433291541406,
+      "obstacle": "thread 1"
+    },
+    {
+      "ref": "R30",
+      "gap_mm": 34.70111541976949,
+      "obstacle": "thread 2"
+    },
+    {
+      "ref": "R4",
+      "gap_mm": 8.660665390141794,
+      "obstacle": "thread 1"
+    },
+    {
+      "ref": "R5",
+      "gap_mm": 8.660665390141794,
+      "obstacle": "thread 1"
+    },
+    {
+      "ref": "R6",
+      "gap_mm": 28.524182783879393,
+      "obstacle": "thread 1"
+    },
+    {
+      "ref": "R7",
+      "gap_mm": 26.36711974198474,
+      "obstacle": "thread 1"
+    },
+    {
+      "ref": "R8",
+      "gap_mm": 24.426115009663427,
+      "obstacle": "thread 2"
+    },
+    {
+      "ref": "R9",
+      "gap_mm": 21.4842987892392,
+      "obstacle": "thread 2"
+    },
+    {
+      "ref": "U1",
+      "gap_mm": 18.007440823170842,
+      "obstacle": "thread 2"
+    },
+    {
+      "ref": "U10",
+      "gap_mm": 23.109171209181206,
+      "obstacle": "thread 2"
+    },
+    {
+      "ref": "U11",
+      "gap_mm": 17.508826905964817,
+      "obstacle": "thread 2"
+    },
+    {
+      "ref": "U12",
+      "gap_mm": 34.11724220658983,
+      "obstacle": "thread 2"
+    },
+    {
+      "ref": "U2",
+      "gap_mm": 11.095600211123626,
+      "obstacle": "thread 1"
+    },
+    {
+      "ref": "U3",
+      "gap_mm": 28.591287000193148,
+      "obstacle": "thread 1"
+    },
+    {
+      "ref": "U4",
+      "gap_mm": 30.340896687535842,
+      "obstacle": "thread 2"
+    },
+    {
+      "ref": "U5",
+      "gap_mm": 6.171486458155685,
+      "obstacle": "thread 2"
+    },
+    {
+      "ref": "U6",
+      "gap_mm": 21.100001798939207,
+      "obstacle": "thread 1"
+    },
+    {
+      "ref": "U7",
+      "gap_mm": 16.95724778503355,
+      "obstacle": "thread 1"
+    },
+    {
+      "ref": "U8",
+      "gap_mm": 4.169391868630867,
+      "obstacle": "nut 1"
+    },
+    {
+      "ref": "U9",
+      "gap_mm": 2.337659372759822,
+      "obstacle": "nut 2"
+    }
+  ],
+  "scope": "Source-bound geometric retention and clearance prototype. Load, torque, contact resistance, harness route/insertion, thermal cycles and ingress require separate acceptance.",
+  "inputs": {
+    "mechanical/swim-r16-contact-retention/contact.json": "b9a29ee41791d6cfa1de3bdfc2d1056956ae5ada5817d422daae98f2290a9b6b",
+    "scripts/check_contact_retention.py": "8861bd2309c138997b2b2d6928f40f762bfddbe712721177a0452c576ba26003",
+    "scripts/audit_populated_fit.py": "955c97a18a41b707ff01a2f03e218bd5d46499681a5d81086f90dc64d2d867f4",
+    "mechanical/swim-r11-thermal-fit/retention.scad": "f41799359d26f646a07c586c030da11a38d6604c57c66c6bfbc9db64ea236563",
+    "mechanical/swim-r11-thermal-fit/checkpoint.json": "6f26b23fb3f0813cb558edd6081d055068c5d2db047eb516849d7f7752da25a8",
+    "experiments/power-r05l-charge-interlock/hardware/collar-tracker.kicad_pcb": "241c84d6ba98793c37344e1e46ddc4918e7b05322ba87daea7c9a90ffb8379b3",
+    "experiments/power-r05l-charge-interlock/evidence/native-netlist.json": "4c88b83f1af96f3924d63761ab09681049cce83cc0b364aaa669a27b19e9be28",
+    "mechanical/swim-r12-pack-retention/checkpoint.json": "3d548931b01df04c44e67d566a4dfc6a48e11d0d40123e1694786fae0cb9bf77",
+    "mechanical/swim-r13-charge-dock/checkpoint.json": "c0d2c20c2018c6cea442f72ca6b1353aad5dd5a01137415134a7d6c846fec422"
+  }
+}

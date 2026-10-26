@@ -1,0 +1,31 @@
+{
+  "revision": "r16",
+  "production_release": false,
+  "physical_qualification": false,
+  "files": {
+    "mechanical/swim-r16-contact-retention/README.md": "b71886c58443039ddd061cc46a167b9d69de365635791a7261af3b73d6045ea3",
+    "mechanical/swim-r16-contact-retention/sources.json": "17f36483e08823e2987ace5adcdacf4f80abba5d6674d76a2038950a4830626b",
+    "mechanical/swim-r16-contact-retention/contact.json": "b9a29ee41791d6cfa1de3bdfc2d1056956ae5ada5817d422daae98f2290a9b6b",
+    "mechanical/swim-r16-contact-retention/contacts.scad": "6c4d6073ccc0a3ebc4cc39893ee1226e904d8181c910b95fca28e8cd28a1b4d1",
+    "mechanical/swim-r16-contact-retention/parameters.scad": "d56bde49da187361d50cc0192f4608a12f47070549038964d5c8525d9980ae48",
+    "mechanical/swim-r16-contact-retention/checks.json": "03f0952ddb60ab02adfeed388d5080ebf6ec3ec245cac36f6e8f5d6185a4b03f",
+    "mechanical/swim-r16-contact-retention/mesh-checks.json": "78f0c3b843f1449d13fb32199640a4dc1dba7b619b6c573daebf16940340e188",
+    "mechanical/swim-r16-contact-retention/body.stl": "dc32b424fd3daeb8c3e94c1a0d80e478be04bc2a9761ffc23ba84dd6373c657b",
+    "mechanical/swim-r16-contact-retention/contact.stl": "97fa9bd7c7fa9e4837ffd9dcc85317dda0e98294f69f7d8046f81624d3c70e98",
+    "mechanical/swim-r16-contact-retention/positive_terminal.stl": "8edf076e834a5829627cfe63d90f30092760bc9a73f1266832797e2fdf1f0a1b",
+    "mechanical/swim-r16-contact-retention/negative_terminal.stl": "586122b1e22faf366a49b3d1c20a00a20c3572963fa665d23888d36f19122b81",
+    "mechanical/swim-r16-contact-retention/review.png": "c854c17bf704af43aa69dcad192e0e075089a28cceb0e8af257efb726ea6b67d",
+    "mechanical/swim-r16-contact-retention/section.png": "79a21c07aa4846521676267d9e8b20b329796a741b750e3c37d331e10febc640",
+    "mechanical/swim-r16-contact-retention/contact-retention-sheet.svg": "b046302d15025eaeb7ba386c564912c263a2a48ef19b8d80861ba319482bc0bf",
+    "mechanical/swim-r16-contact-retention/contact-retention-sheet.pdf": "f1e819988be6763f8c89b264264116800529167a58af13b0ca34ee9d69bfb647",
+    "mechanical/swim-r16-contact-retention/contact-retention-sheet.png": "76e1dfd84ec1453084f2c4cc20644deaf74cbb80286fb641275e21edd8756272",
+    "mechanical/swim-r16-contact-retention/evidence/initial-step/README.md": "3b2827f07c77993f432f454415e525a75c2d94ed8234a9b30fe245d46980b6be",
+    "mechanical/swim-r16-contact-retention/evidence/initial-step/contacts.scad": "29d705424ae802f1020f92ecc5c46a127e165ce0da45bb401d0ebcac48692d08",
+    "mechanical/swim-r16-contact-retention/evidence/initial-step/positive_terminal.stl": "657dc8f1aaa488d129320a825b93a0534694a662c8787d7d0a967d2dab2b208c",
+    "scripts/check_contact_retention.py": "8861bd2309c138997b2b2d6928f40f762bfddbe712721177a0452c576ba26003",
+    "scripts/export_contact_retention.py": "064da8b0e4b8b2601915844c2dcdab7e203339442f1317d9571e140a783c88ca",
+    "scripts/make_contact_retention_sheet.py": "4baf96c35def1c06a575da19afeb6cdc0f5a7e72324009f16e33381470501fa4",
+    "scripts/verify_contact_retention.py": "215f7a2cc450e553e141bba1545a57daa0cb562adf98ab966225b5f4b5a9d817",
+    "tests/test_contact_retention.py": "b89f54b419d58e0edabc6e1f0c12b76160249bc803e10ae0cab2637cd30ff588"
+  }
+}

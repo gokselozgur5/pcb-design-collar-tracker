@@ -1,0 +1,179 @@
+{
+  "inputs": {
+    "mechanical/swim-r16-contact-retention/contact.json": "b9a29ee41791d6cfa1de3bdfc2d1056956ae5ada5817d422daae98f2290a9b6b",
+    "scripts/check_contact_retention.py": "8861bd2309c138997b2b2d6928f40f762bfddbe712721177a0452c576ba26003",
+    "scripts/audit_populated_fit.py": "955c97a18a41b707ff01a2f03e218bd5d46499681a5d81086f90dc64d2d867f4",
+    "mechanical/swim-r11-thermal-fit/retention.scad": "f41799359d26f646a07c586c030da11a38d6604c57c66c6bfbc9db64ea236563",
+    "mechanical/swim-r11-thermal-fit/checkpoint.json": "6f26b23fb3f0813cb558edd6081d055068c5d2db047eb516849d7f7752da25a8",
+    "experiments/power-r05l-charge-interlock/hardware/collar-tracker.kicad_pcb": "241c84d6ba98793c37344e1e46ddc4918e7b05322ba87daea7c9a90ffb8379b3",
+    "experiments/power-r05l-charge-interlock/evidence/native-netlist.json": "4c88b83f1af96f3924d63761ab09681049cce83cc0b364aaa669a27b19e9be28",
+    "mechanical/swim-r12-pack-retention/checkpoint.json": "3d548931b01df04c44e67d566a4dfc6a48e11d0d40123e1694786fae0cb9bf77",
+    "mechanical/swim-r13-charge-dock/checkpoint.json": "c0d2c20c2018c6cea442f72ca6b1353aad5dd5a01137415134a7d6c846fec422",
+    "scripts/export_contact_retention.py": "064da8b0e4b8b2601915844c2dcdab7e203339442f1317d9571e140a783c88ca",
+    "mechanical/swim-r16-contact-retention/contacts.scad": "6c4d6073ccc0a3ebc4cc39893ee1226e904d8181c910b95fca28e8cd28a1b4d1",
+    "mechanical/swim-r16-contact-retention/parameters.scad": "d56bde49da187361d50cc0192f4608a12f47070549038964d5c8525d9980ae48",
+    "scripts/inspect_enclosure_mesh.py": "650b7923664e55a56af30c605d20fe2cf77a3bedacf71076a153510a92200956",
+    "mechanical/swim-r13-charge-dock/body.stl": "ba450f6395962195230c01041ede151d9c65ba429d94fdf27742498211c27488",
+    "mechanical/swim-r12-pack-retention/carrier.stl": "264977f7f5ace3d91765df91254d112af623e234d92399988934d4e82d6affcb",
+    "mechanical/swim-r11-thermal-fit/retainer.stl": "8825ef3a509be8ff69f04bfcaee53d03e37bd0c4c726ec0d94249faa62bec138"
+  },
+  "meshes": [
+    {
+      "file": "body.stl",
+      "sha256": "dc32b424fd3daeb8c3e94c1a0d80e478be04bc2a9761ffc23ba84dd6373c657b",
+      "triangles": 22636,
+      "vertices": 11308,
+      "bounds_mm": [
+        [
+          -28.699996948242188,
+          -24.699996948242188,
+          0.0
+        ],
+        [
+          32.70000076293945,
+          24.699996948242188,
+          18.5
+        ]
+      ],
+      "dimensions_mm": [
+        61.39999771118164,
+        49.399993896484375,
+        18.5
+      ],
+      "signed_volume_mm3": 26516.35776021929,
+      "bad_edge_count": 0,
+      "collapsed_faces_at_1e_5mm": 0,
+      "connected_surfaces": 1,
+      "closed_oriented_manifold": true
+    },
+    {
+      "file": "contact.stl",
+      "sha256": "97fa9bd7c7fa9e4837ffd9dcc85317dda0e98294f69f7d8046f81624d3c70e98",
+      "triangles": 1436,
+      "vertices": 720,
+      "bounds_mm": [
+        [
+          -4.25,
+          -4.25,
+          -10.699999809265137
+        ],
+        [
+          4.25,
+          4.25,
+          0.7999992370605469
+        ]
+      ],
+      "dimensions_mm": [
+        8.5,
+        8.5,
+        11.499999046325684
+      ],
+      "signed_volume_mm3": 255.3837295779457,
+      "bad_edge_count": 0,
+      "collapsed_faces_at_1e_5mm": 0,
+      "connected_surfaces": 1,
+      "closed_oriented_manifold": true
+    },
+    {
+      "file": "positive_terminal.stl",
+      "sha256": "8edf076e834a5829627cfe63d90f30092760bc9a73f1266832797e2fdf1f0a1b",
+      "triangles": 1048,
+      "vertices": 522,
+      "bounds_mm": [
+        [
+          -5.722046125811175e-07,
+          -4.5,
+          6.10351571594947e-06
+        ],
+        [
+          0.9999994039535522,
+          4.5,
+          12.449987411499023
+        ]
+      ],
+      "dimensions_mm": [
+        0.9999999761581648,
+        9.0,
+        12.449981307983307
+      ],
+      "signed_volume_mm3": 58.62278223892609,
+      "bad_edge_count": 0,
+      "collapsed_faces_at_1e_5mm": 0,
+      "connected_surfaces": 1,
+      "closed_oriented_manifold": true
+    },
+    {
+      "file": "negative_terminal.stl",
+      "sha256": "586122b1e22faf366a49b3d1c20a00a20c3572963fa665d23888d36f19122b81",
+      "triangles": 1048,
+      "vertices": 522,
+      "bounds_mm": [
+        [
+          -5.722046125811175e-07,
+          -4.5,
+          6.10351571594947e-06
+        ],
+        [
+          0.9999994039535522,
+          4.5,
+          12.449987411499023
+        ]
+      ],
+      "dimensions_mm": [
+        0.9999999761581648,
+        9.0,
+        12.449981307983307
+      ],
+      "signed_volume_mm3": 57.66513959640011,
+      "bad_edge_count": 0,
+      "collapsed_faces_at_1e_5mm": 0,
+      "connected_surfaces": 1,
+      "closed_oriented_manifold": true
+    }
+  ],
+  "diagnostics": {
+    "contact": "Geometries in cache: 8\nGeometry cache size in bytes: 84160\nCGAL Polyhedrons in cache: 4\nCGAL cache size in bytes: 2326592\nTotal rendering time: 0:00:02.029\n   Top level object is a 3D object:\n   Simple:        yes\n   Vertices:      720\n   Halfedges:    2160\n   Edges:        1080\n   Halffacets:    732\n   Facets:        366\n   Volumes:         2\n",
+    "positive_terminal": "Geometries in cache: 19\nGeometry cache size in bytes: 166480\nCGAL Polyhedrons in cache: 2\nCGAL cache size in bytes: 1404832\nTotal rendering time: 0:00:00.634\n   Top level object is a 3D object:\n   Simple:        yes\n   Vertices:      522\n   Halfedges:    1566\n   Edges:         783\n   Halffacets:    526\n   Facets:        263\n   Volumes:         2\n",
+    "negative_terminal": "Geometries in cache: 19\nGeometry cache size in bytes: 166480\nCGAL Polyhedrons in cache: 2\nCGAL cache size in bytes: 1404832\nTotal rendering time: 0:00:00.612\n   Top level object is a 3D object:\n   Simple:        yes\n   Vertices:      522\n   Halfedges:    1566\n   Edges:         783\n   Halffacets:    526\n   Facets:        263\n   Volumes:         2\n",
+    "body": "Geometries in cache: 22\nGeometry cache size in bytes: 1713864\nCGAL Polyhedrons in cache: 2\nCGAL cache size in bytes: 15832464\nTotal rendering time: 0:00:12.696\n   Top level object is a 3D object:\n   Simple:        yes\n   Vertices:    11308\n   Halfedges:   33924\n   Edges:       16962\n   Halffacets:  11420\n   Facets:       5710\n   Volumes:         2\n"
+  },
+  "controls": [
+    {
+      "case": "retention_collision",
+      "empty": true,
+      "returncode": 1,
+      "volume_mm3": 0,
+      "contact_vertices": [],
+      "diagnostic": "Geometries in cache: 55\nGeometry cache size in bytes: 968832\nCGAL Polyhedrons in cache: 8\nCGAL cache size in bytes: 8290328\nTotal rendering time: 0:00:08.902\nCurrent top level object is empty.\n"
+    },
+    {
+      "case": "body_collision",
+      "empty": true,
+      "returncode": 1,
+      "volume_mm3": 0,
+      "contact_vertices": [],
+      "diagnostic": "Geometries in cache: 53\nGeometry cache size in bytes: 2040232\nCGAL Polyhedrons in cache: 6\nCGAL cache size in bytes: 18642032\nTotal rendering time: 0:00:25.395\nCurrent top level object is empty.\n"
+    },
+    {
+      "case": "old_body_control",
+      "empty": false,
+      "returncode": 0,
+      "volume_mm3": 50.60002594762791,
+      "contact_vertices": [],
+      "diagnostic": "Geometries in cache: 32\nGeometry cache size in bytes: 1888920\nCGAL Polyhedrons in cache: 4\nCGAL cache size in bytes: 4253168\nTotal rendering time: 0:00:14.480\n   Top level object is a 3D object:\n   Simple:        yes\n   Vertices:     1072\n   Halfedges:    3216\n   Edges:        1608\n   Halffacets:   1092\n   Facets:        546\n   Volumes:         6\n"
+    },
+    {
+      "case": "penetration_control",
+      "empty": false,
+      "returncode": 0,
+      "volume_mm3": 6.588926614194172,
+      "contact_vertices": [],
+      "diagnostic": "Geometries in cache: 53\nGeometry cache size in bytes: 2040232\nCGAL Polyhedrons in cache: 8\nCGAL cache size in bytes: 21479712\nTotal rendering time: 0:00:22.354\n   Top level object is a 3D object:\n   Simple:        yes\n   Vertices:     1064\n   Halfedges:    3192\n   Edges:        1596\n   Halffacets:   1084\n   Facets:        542\n   Volumes:         6\n"
+    }
+  ],
+  "previews": {
+    "review.png": "c854c17bf704af43aa69dcad192e0e075089a28cceb0e8af257efb726ea6b67d",
+    "section.png": "79a21c07aa4846521676267d9e8b20b329796a741b750e3c37d331e10febc640"
+  },
+  "physical_qualification": false
+}

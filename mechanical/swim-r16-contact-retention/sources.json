@@ -1,0 +1,42 @@
+{
+  "retrieved": "2026-10-26",
+  "scope": "Prototype terminal, hardware dimensions and rejected catalogue candidates. No purchasing, supplier acceptance or physical result.",
+  "sources": [
+    {
+      "url": "https://www.keyelco.com/product-pdf.cfm?p=1267",
+      "public_manufacturer_document_mirror": "https://store.comet.bg/download-file.php?id=30695",
+      "local_reference_sha256": "ede48407034c15d154012e664fce221951835517033d1cc4676c923a6549b286",
+      "drawing": "Keystone 4004, revision A, 2009-06-25; actual drawing inspected locally",
+      "dimensions_mm": {"ring_outer": 6.35, "stud_hole": 3.45, "wire_hole": 2.36, "hole_centers": 7.92, "overall_length": 13.08, "thickness": 0.41, "general_tolerance": 0.15},
+      "decision": "Not selected. The ring is smaller than the 7.34mm collar bore and cannot supply circular rear bearing. A longer tongue alone does not establish qualified retention.",
+      "redistributed": false
+    },
+    {
+      "url": "https://www.accu.co.uk/metric-flat-washers/404896-HRDW-M3-A2",
+      "inspected": "Manufacturer product specifications",
+      "mpn": "HRDW-M3-A2",
+      "dimensions_mm": {"outer_diameter": 6, "inner_diameter": [3.2, 3.38], "thickness": [0.45, 0.55]},
+      "decision": "Candidate load-spreading washer between nut and custom terminal, not the part that bridges the collar bore. OD <=6.1mm is an additional incoming requirement."
+    },
+    {
+      "url": "https://www.accu.co.uk/thin-hexagon-nuts/73054-HFN-M3-A2",
+      "inspected": "Manufacturer product specifications",
+      "mpn": "HFN-M3-A2",
+      "dimensions_mm": {"across_flats": [5.32, 5.5], "thickness": [1.55, 1.8], "across_points": 6.35, "pitch": 0.5},
+      "decision": "Existing nut candidate retained. Dimensional fit does not qualify torque, resistance or loosening. Hidden stock-status HTML is not availability evidence."
+    },
+    {
+      "url": "https://www.aurubis.com/en/dam/jcr%3A0ab1c76f-1d24-429a-a36f-547fdafc104f/PNA%20226_CuZn30_C26000-E.N.pdf",
+      "inspected": "Manufacturer material table parsed by web tool; no local visual drawing claim",
+      "material": "CuZn30 / CW505L / C26000, R480 candidate",
+      "table_values_MPa": {"tensile": [480, 560], "yield_minimum": 430},
+      "decision": "Basis for a candidate material callout only. Actual 1mm stock, temper certificate, machining/plating and joint strength require fabricator acceptance; no stress or torque qualification is inferred."
+    },
+    {
+      "url": "https://asset.conrad.com/media10/add/160267/c1/-/en/002729725DS00/datablad-2729725-te-connectivity-60007-2-ringkabelsko-tvaersnit-max04-mm-50000-stk-tape-on-full-reel.pdf",
+      "inspected": "TE-authored product specification, 2022-12-07, parsed by web tool",
+      "mpn": "60007-2",
+      "decision": "Not selected. Specified 1.02 to 1.52mm insulation support range does not cover Alpha 2843/7's 0.8382mm maximum diameter. The page also lists inconsistent M3/2.54mm stud data; no drawing-based fit approval was made."
+    }
+  ]
+}
