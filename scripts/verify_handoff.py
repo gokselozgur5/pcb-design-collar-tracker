@@ -354,7 +354,11 @@ def verify(include_review_bundle=True):
     charge_dock_candidate = verify_charge_dock(check_baseline=False)
     from verify_dock_wire_motion import verify as verify_dock_wire_motion
     dock_wire_motion = verify_dock_wire_motion(check_baseline=False)
-    from package_current_review import verify_bundle as verify_current_review
+    from verify_dock_wire_clamp import verify as verify_dock_wire_clamp
+    dock_wire_clamp = verify_dock_wire_clamp(check_baseline=False)
+    from package_current_review import verify_bundle as verify_previous_current_review
+    previous_current_review_bundle = verify_previous_current_review()
+    from package_clamp_review import verify_bundle as verify_current_review
     current_review_bundle = verify_current_review()
     routing_alternatives = [verify_routing(ROOT / 'experiments' / name) for name in [
         'power-r05c-return-corridors', 'power-r05d-joint-routing', 'power-r05e-native-joint',
@@ -380,6 +384,8 @@ def verify(include_review_bundle=True):
             'pack_retention_candidate': pack_retention_candidate,
             'charge_dock_candidate': charge_dock_candidate,
             'dock_wire_motion': dock_wire_motion,
+            'dock_wire_clamp': dock_wire_clamp,
+            'previous_current_review_bundle': previous_current_review_bundle,
             'current_review_bundle': current_review_bundle,
             'routing_alternatives': routing_alternatives,
             'review_bundle':verify_review_bundle() if include_review_bundle else 'Rebuild in progress',

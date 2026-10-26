@@ -14,8 +14,8 @@ segments are preserved. The board has 87 footprints, including 81 fitted referen
 with 44 exact candidate MPNs. The revised carrier clears the additional components.
 
 [Gerber ZIP](experiments/power-r05l-charge-interlock/evidence/collar-tracker-05l-charge-final4-40x32-dfm.zip) ·
-[Current three-page review](release/r14-current-review/review.pdf) ·
-[Current review bundle](release/collar-tracker-r05l-r14-review.zip) ·
+[Current three-page review](release/r15-current-review/review.pdf) ·
+[Current review bundle](release/collar-tracker-r05l-r15-review.zip) ·
 [JLC report 1](experiments/power-r05l-charge-interlock/evidence/jlc-check1/report.pdf) ·
 [JLC report 2](experiments/power-r05l-charge-interlock/evidence/jlc-check2/report.pdf)
 
@@ -68,12 +68,15 @@ aligned reversed approach before the earliest calculated contact. Holding force,
 skewed approaches, power/fault behavior and internal J3 wiring remain unqualified.
 The already all-green PCB is unchanged.
 
-The latest [r14 wire-movement study](mechanical/swim-r14-wire-motion/README.md)
+The preserved [r14 wire-movement study](mechanical/swim-r14-wire-motion/README.md)
 replaces the straight dock pigtails with a constant-length family covering the
 full conservative contact movement. Its continuous bend-radius bound is 8.6961mm;
 the complete interval envelope clears the new housing and intersects the old one.
-The external dock grows to 94 x 36 x 16mm; the wearable is unchanged. A fixed-end
-clamp/forming process, dock holding and physical flex acceptance remain open.
+The new [r15 wire clamp](mechanical/swim-r15-wire-clamp/README.md) adds a separate
+cap, hard stops, four silicone pads and a factory forming fixture. The external
+dry dock is 101.5 x 36 x 16mm; the wearable is unchanged. Geometry checks do not
+establish grip on PTFE: pad creep, endpoint slip and flex life remain unqualified.
+Dock holding, internal J3 wiring, pack approval and physical acceptance are open.
 The current review package maps all reused parts to their exact source revisions.
 
 [STATUS](docs/STATUS.md) records the exact source and next action. The earlier r05k,

@@ -716,3 +716,41 @@ pass; archive SHA256 is
 Changed-source syntax/JSON, 66 local links, 22 public text credential-pattern
 screens and whitespace checks pass. No native KiCad process or repeated JLC
 upload was needed. Supplier approval and physical qualification remain open.
+
+## 2026-10-26 — r15 wire clamp and forming fixture
+
+Implemented the previously missing fixed-end clamp with a separate cap, two
+closing stops and four converted HT-6210 pad candidates. Added a separate open
+forming fixture for the rear-seated nominal pigtails. The dry external dock grows
+from 94 to 101.5 x 36 x 16mm to retain the existing free-wire length and make room
+for the clamp ahead of the splices. Wearable, r05l PCB, Gerber, seals and contact
+seats remain unchanged. The Southco research did not select a latch.
+
+19 clamp and 42 inherited geometry checks pass, with 5.50..43.52% local pad
+displacement at the assigned limits. The first nominal-only pad pocket did not
+allow the largest converted outline; the final 6.2 x 3.2mm pockets and a negative
+control cover that error. Ten regressions pass. Four closed part meshes and
+thirteen CAD controls pass: five clear intersections, three specified contact
+surfaces, and five deliberately bad assemblies with positive interference.
+Contact triangles are checked against their exact planes/footprints; no contact
+band is removed from acceptance checks. Binary STL avoids the ASCII coordinate
+rounding observed in the first planar-contact evaluator. Deliverable meshes have
+no CAD warnings; the zero-thickness analysis surfaces are not exported as parts.
+
+This is a clamp prototype, not measured retention. Pad pressure/friction/creep,
+insulation condition, endpoint slip and cyclic flex are unqualified. Position
+error and slip share the inherited 0.10mm feature budget. The 5N / 60s pull target
+is a proposed acceptance test, not a result. Screw/nut candidates are identified,
+but incoming screw-length tolerance, torque and sourcing remain unaccepted.
+Dock holding, internal lugs/J3 wiring, complete-pack approval, termination/fault
+behavior, firmware and powered/RF/ingress acceptance remain open.
+
+Preserved the r14 review archive. Its embedded STATUS/RESUME documents are dated
+snapshots; their archived hashes remain checked without requiring them to equal
+current prose. CAD/source/evidence bytes still match their repository inputs.
+The new current review includes the unchanged all-green PCB and r15 evidence.
+No native KiCad run, repeated JLC upload, supplier message or order was made.
+
+The 22-file r15 checkpoint and full 32-section saved handoff pass. The actual
+three-page review PDF was inspected. The current 53-file review ZIP is
+9,235,286 bytes; SHA256 `60e835545a58dc3cde28c71ff6c3b959b5b4f32a72354ec0e8de47d6d0c66215`.

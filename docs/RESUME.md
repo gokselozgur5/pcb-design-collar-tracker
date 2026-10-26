@@ -419,14 +419,14 @@ current limiter, and the USB cable does not implement enumeration. No production
 power-path approval exists. Supplier-message approval is still unanswered; no
 message or order has been sent. Firmware and physical acceptance remain unfinished.
 
-## Current charging-wire geometry: r14
+## Preserved charging-wire geometry: r14
 
 Read `mechanical/swim-r14-wire-motion/README.md` and its drawing. The r13 straight
 pigtail layout was not adequate for the conservative contact movement. r14 defines
 40.95 +/- 0.10mm free insulated spans with 0.3858mm minimum remaining slack and a
 8.6961mm continuous radius bound. Full interval envelopes include endpoint, cut
 length and route allowances; the new housing clears them and the old one fails.
-The external dock is now 94 x 36 x 16mm. Wearable meshes and PCB are unchanged.
+That revision's external dock is 94 x 36 x 16mm. Wearable meshes and PCB are unchanged.
 
 ```sh
 python3 scripts/verify_dock_wire_motion.py
@@ -434,7 +434,7 @@ python3 -m unittest discover -s tests -p test_dock_wire_motion.py -v
 python3 scripts/package_current_review.py --verify
 ```
 
-`release/r14-current-review/review.pdf` is the current three-page review.
+`release/r14-current-review/review.pdf` is the preserved r14 review.
 `release/collar-tracker-r05l-r14-review.zip` contains the same all-green Gerber,
 native PCB source, candidate BOM/CPL, both JLC reports, current mapped meshes,
 the r14 evidence and the unsent pack request. This is a review selection, not
@@ -447,3 +447,35 @@ from the 40.95mm dimension. Cut preparation, pull/cycle life and dock holding ar
 still unresolved. Catalogue research in ignored references did not select a
 torsion spring, compression spring or purchased latch. Continue from the existing
 geometry; do not claim one of those mechanisms was implemented.
+
+## Current wire clamp and forming fixture: r15
+
+Read `mechanical/swim-r15-wire-clamp/README.md` and its drawing. A separate cap,
+two hard-stop columns and four silicone pads now implement a fixed-end clamp
+prototype at X=49mm. The separate factory fixture locates the nominal loops
+during assembly. It does not constrain every subsequent flexing shape.
+Only the dry dock grows, to 101.5 x 36 x 16mm; the wearable and PCB are unchanged.
+
+The gap/pad geometry passes at the recorded tolerances, but friction, endpoint
+slip, creep and insulation acceptance require physical testing. The pad service
+allowance is an engineering requirement, not a datasheet lifetime guarantee.
+Do not treat the 5N / 60s prototype pull target as a completed test. Position
+error and later slip share the inherited +/- 0.10mm feature budget.
+
+```sh
+python3 scripts/verify_dock_wire_clamp.py
+python3 -m unittest discover -s tests -p test_dock_wire_clamp.py -v
+python3 scripts/package_clamp_review.py --verify
+python3 scripts/verify_handoff.py
+```
+
+Current review: `release/r15-current-review/review.pdf` and
+`release/collar-tracker-r05l-r15-review.zip`. The unchanged r05l Gerber and both
+actual JLC reports are included. The r14 archive remains intact; its STATUS and
+RESUME copies are historical snapshots, not files required to stay current.
+
+Next independent work: implement dock-to-collar holding and the internal contact
+lugs/J3 route, then close termination/source/fault details. The Southco catalogue
+research did not select or implement a latch. The battery request is still
+unsent pending message authorization. Pack lead routing, firmware, sourcing/SMT
+and physical powered/RF/water/dust acceptance remain open. No ordering release.

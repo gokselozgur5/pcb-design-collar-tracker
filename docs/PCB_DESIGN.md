@@ -456,3 +456,20 @@ When a review uses successor mechanical parts with an unchanged PCB, publish a
 single current package with an exact part/revision map. Keep earlier packages
 immutable and make the remaining manufacturing/physical gates visible in the
 current drawing. A higher test count is not evidence that those gates closed.
+
+A friction clamp needs an implemented gap, pad pockets, closing stops and an
+assembly method. Check incoming pad thickness and outline extremes, not only the
+nominal sheet. Keep pad displacement separate from pressure, friction, creep,
+insulation damage and measured pull strength. A forming fixture does not prove
+that an unrestrained flexible wire follows its nominal curve during service.
+
+Distinguish an intentional bearing face from an interference volume. If CAD
+exports a zero-thickness contact surface, verify every vertex against the intended
+plane and footprint, and include a deliberately penetrating control. Do not
+silently remove a contact band to make an intersection empty. Deliverable parts
+still need closed, valid solid meshes; a planar analysis surface is not a part.
+
+An immutable review archive can contain dated STATUS/RESUME snapshots. Verify
+their embedded hashes against the archive manifest, while checking preserved
+CAD/source/evidence against repository bytes. Requiring historical status prose
+to equal today's status defeats an otherwise intact snapshot.

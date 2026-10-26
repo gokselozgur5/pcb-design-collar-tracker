@@ -31,7 +31,10 @@ def verify_bundle():
         for entry in receipt['files']:
             data=archive.read(entry['archive_path'])
             assert len(data)==entry['bytes'] and hashlib.sha256(data).hexdigest()==entry['sha256']
-            assert sha(ROOT/entry['repo_path'])==entry['sha256'],entry['repo_path']
+            # Handoff documents are dated snapshots in this immutable archive.
+            # Source/CAD/evidence still have to match their preserved repo bytes.
+            if entry['repo_path'] not in {'docs/STATUS.md', 'docs/RESUME.md'}:
+                assert sha(ROOT/entry['repo_path'])==entry['sha256'],entry['repo_path']
     return dict(result='PASS',package=str(PACKAGE),files=len(receipt['files']),sha256=receipt['zip_sha256'])
 
 

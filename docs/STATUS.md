@@ -10,8 +10,8 @@ content is English. Run `python3 scripts/resume.py` before making another revisi
 [Gerber ZIP](../experiments/power-r05l-charge-interlock/evidence/collar-tracker-05l-charge-final4-40x32-dfm.zip) ·
 [JLC report 1](../experiments/power-r05l-charge-interlock/evidence/jlc-check1/report.pdf) ·
 [JLC report 2](../experiments/power-r05l-charge-interlock/evidence/jlc-check2/report.pdf) ·
-[Current three-page review](../release/r14-current-review/review.pdf) ·
-[Current review bundle](../release/collar-tracker-r05l-r14-review.zip)
+[Current three-page review](../release/r15-current-review/review.pdf) ·
+[Current review bundle](../release/collar-tracker-r05l-r15-review.zip)
 
 Latest battery work: [CT-BAT-001-A request sheet](../assembly/pack-r03/request-sheet.pdf),
 [unsent supplier enquiry](../assembly/pack-r03/supplier-request.txt), and
@@ -35,14 +35,23 @@ screen includes unloaded pin movement. The external collar key projects 4.0mm;
 PCB, shell cavity, pack, seals and boot are unchanged. This is a conditional
 geometry prototype, with holding force and electrical/process qualification open.
 
-Latest work: [r14 wire-movement study](../mechanical/swim-r14-wire-motion/README.md)
+Preserved work: [r14 wire-movement study](../mechanical/swim-r14-wire-motion/README.md)
 and [drawing](../mechanical/swim-r14-wire-motion/wire-motion-sheet.pdf).
 Constant-length pigtails cover the conservative 2.1421mm contact movement with
 0.3858mm minimum slack and a 8.6961mm continuous bend-radius lower bound.
 The full interval envelope clears the new housing; the old housing fails.
 Only the external dry dock grows, to 94 x 36 x 16mm. The wearable is unchanged.
-The geometry assumes controlled end planes and loop shape; a fixed-end clamp,
-forming process and physical cycle/pull acceptance are still required.
+r14 assumed controlled end planes and loop shape without implementing a clamp.
+Its preserved calculation remains conditional on those positions and shapes.
+
+Latest work: [r15 wire clamp and assembly fixture](../mechanical/swim-r15-wire-clamp/README.md)
+and [drawing](../mechanical/swim-r15-wire-clamp/wire-clamp-sheet.pdf).
+The dock now has a separate cap, two closing stops and four silicone pads at the
+fixed wire ends, plus a separate factory forming fixture. The external dry dock
+grows to 101.5 x 36 x 16mm; wearable/PCB/seals are unchanged. Physical grip,
+pad creep, insulation condition and cyclic motion are still unqualified.
+The 1.93mm hard gap and assigned service bounds give 5.50..43.52% local pad
+displacement; this is a geometry screen, not a friction or retention result.
 
 | Check | Current result |
 |---|---|
@@ -61,6 +70,7 @@ forming process and physical cycle/pull acceptance are still required.
 | Thermal-fit prototype r11 | 85 swept envelopes; 27 cable poses; nine closed meshes; four radial keys; conditional -10 to +45°C screen with independently varying part temperatures |
 | Charging-dock prototype r13 | 29 analytical checks, three closed meshes, six CAD controls and seven regressions; actual harness candidates |
 | Dock-wire prototype r14 | 42 analytical checks, two closed meshes, six CAD controls and twelve regressions; continuous constant-length wire-family bound |
+| Wire-clamp prototype r15 | Separate cap, four silicone pads and factory fixture; saved geometry and regression evidence; physical restraint remains unqualified |
 | Pack-retention prototype r12 | 85 component envelopes plus raised pack/NTC checks; two changed closed meshes; seven CAD controls; seven regressions |
 | Antenna candidates | Synzen CAPH SZK-C-3L30 LTE and ZETA SZK-C-0G04 GNSS; separate nominal 100mm cable assemblies and four internal lid guides |
 
@@ -100,11 +110,12 @@ clearance control. No supplier part, wire route, adhesive strength or physical
 thermal result is approved by this fit calculation.
 
 **Next independent local step:** close the remaining charging interface: positive
-dock retention or measured magnetic holding, a fixed-end clamp/strain relief for
-the r14 wire loops, exact internal contact lug and J3 route,
+dock retention or measured magnetic holding, exact internal contact lug and J3 route,
 crimp/splice/insulation process and source/fault-current behavior. The r13
 USB cable/fuse/contact selection is a prototype definition, not a qualified power
-path. Midstroke pair force can be 1.569N; force at the largest tolerance stroke and
+path. r15 implements a clamp and assembly fixture, but endpoint slip, pad creep,
+forming accuracy and cyclic flex require physical acceptance. Midstroke pair
+force can be 1.569N; force at the largest tolerance stroke and
 magnetic holding through the walls are not yet established. Pack lead exit and
 supplier approval remain open; the enquiry is still unsent. Then implement firmware
 and factory tests. Do not repeat unchanged-byte PCB DFM or call the device ready.
