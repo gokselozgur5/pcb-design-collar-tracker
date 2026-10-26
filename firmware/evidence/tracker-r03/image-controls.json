@@ -1,0 +1,50 @@
+{
+  "result": "PASS",
+  "actual_complete_sha256": "babe3feb4888b849945fc905d77a782f7d6efdd54966bb624a438b9221028633",
+  "actual_signed_bin_sha256": "9245952707cdce5f73c8af395f9232200c75e40c553e51f6a3e4ebeebaf7cf75",
+  "rejected_mutations": [
+    {
+      "name": "changed-payload",
+      "rejection": "ValueError: Signed image hash mismatch"
+    },
+    {
+      "name": "changed-signature",
+      "rejection": "InvalidSignature: "
+    },
+    {
+      "name": "different-p256-key",
+      "rejection": "ValueError: Signing key hash mismatch"
+    },
+    {
+      "name": "truncated-image",
+      "rejection": "ValueError: Invalid TLV extent"
+    },
+    {
+      "name": "missing-boot-reset",
+      "rejection": "ValueError: Missing bootloader vector"
+    },
+    {
+      "name": "image-overwrites-nvs",
+      "rejection": "ValueError: Image enters trailer/other storage"
+    },
+    {
+      "name": "primary-validation-disabled",
+      "rejection": "ValueError: Compiled contract mismatch: mcuboot/zephyr/.config"
+    },
+    {
+      "name": "boot-protection-disabled",
+      "rejection": "ValueError: Compiled contract mismatch: mcuboot/zephyr/.config"
+    },
+    {
+      "name": "renamed-public-sdk-private-key",
+      "rejection": "ValueError: Public SDK development key rejected, including copied or renamed files"
+    }
+  ],
+  "inputs": {
+    "scripts/test_tracker_r03_image.py": "069087369068f2357cf0296b431786cd16f48dbbb4c8d7a8976f79652fb717c1",
+    "scripts/inspect_tracker_r03.py": "7422512a280c19228e3821a4db52ce0a9de4d0ca9302f467dd232351719b86f1",
+    "scripts/tracker_signing_key.py": "ca5f459d0b00ad52801c4371a0e7421868251863bf61fd478155b86f2bdcc05f"
+  },
+  "actual_bootloader_executed": false,
+  "physical_test": false
+}

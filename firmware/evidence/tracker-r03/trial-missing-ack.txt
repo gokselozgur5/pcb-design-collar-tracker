@@ -1,0 +1,2 @@
+PASS production trial requests reset: Firmware trial deadline expired; leave image unconfirmed; confirmation writes=0
+Firmware trial: require a fresh persisted fix and an acknowledged upload

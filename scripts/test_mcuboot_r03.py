@@ -13,6 +13,8 @@ OUT = ROOT/'.runtime/tracker-r03'
 
 
 def test(sdk, target):
+    if 'MCUBOOT_SKIP_SLOW_TESTS' in os.environ:
+        raise ValueError('Unset MCUBOOT_SKIP_SLOW_TESTS; interruption tests must execute')
     sdk, target = sdk.resolve(), target.resolve()
     if not os.path.ismount('/Volumes/GOKSSD') or not target.is_relative_to('/Volumes/GOKSSD/codex'):
         raise ValueError('Use a target directory on mounted GOKSSD inside codex')
@@ -39,15 +41,20 @@ def test(sdk, target):
     log = OUT/'mcuboot-simulator.txt'
     with log.open('w') as output:
         result = subprocess.run(args, cwd=boot/'sim', env=env, stdout=output, stderr=subprocess.STDOUT)
+    return record_run(boot, log, result.returncode, commit, args, flags, env)
+
+
+def record_run(boot, log, exit_code, commit, args, flags, env):
+    """Record an observed Cargo exit and its log; this does not execute tests."""
     text = log.read_text()
     summaries = re.findall(r'test result: (\w+)\. (\d+) passed; (\d+) failed;', text)
-    if result.returncode != 0 or not summaries or any(s[0] != 'ok' or s[2] != '0' for s in summaries):
+    if exit_code != 0 or not summaries or any(s[0] != 'ok' or s[2] != '0' for s in summaries):
         raise ValueError('MCUboot simulation failed; inspect '+str(log))
-    report = dict(result='PASS', compiler_exit=result.returncode, mcuboot_commit=commit,
+    report = dict(result='PASS', compiler_exit=exit_code, mcuboot_commit=commit,
                   command=args, c_flags=flags, summaries=summaries,
                   compiler=subprocess.check_output([env['CC'], '--version'], text=True).splitlines()[0],
                   rustc=subprocess.check_output([env['RUSTC'], '--version'], text=True).strip(),
-                  cargo_lock_sha256=hashlib.sha256((boot/'sim/Cargo.lock').read_bytes()).hexdigest(),
+                  cargo_lock_sha256=hashlib.sha256((boot/'Cargo.lock').read_bytes()).hexdigest(),
                   mbedtls_commit=subprocess.check_output(['git', 'rev-parse', 'HEAD'], cwd=boot/'ext/mbedtls', text=True).strip(),
                   log_sha256=hashlib.sha256(log.read_bytes()).hexdigest(),
                   host_crypto='TinyCrypt ECDSA P-256; target uses Nordic Oberon',

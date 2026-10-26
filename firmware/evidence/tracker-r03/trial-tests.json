@@ -1,0 +1,65 @@
+{
+  "result": "PASS",
+  "scenarios": [
+    {
+      "case": "policy",
+      "exit": 0,
+      "expected_exit": 0
+    },
+    {
+      "case": "factory",
+      "exit": 0,
+      "expected_exit": 0
+    },
+    {
+      "case": "healthy",
+      "exit": 0,
+      "expected_exit": 0
+    },
+    {
+      "case": "missing-ack",
+      "exit": 42,
+      "expected_exit": 42
+    },
+    {
+      "case": "late-evidence",
+      "exit": 42,
+      "expected_exit": 42
+    },
+    {
+      "case": "confirmation-failed",
+      "exit": 42,
+      "expected_exit": 42
+    }
+  ],
+  "inputs": {
+    "firmware/tracker-r02/src/recovery.h": "c55c6362ce9e1b4170c2e94b6b1b6a7ff932dba8cbde8753b5dfa7d0ddc71233",
+    "firmware/tracker-r02/src/supervisor.h": "663115e521242dc217263881f4c6532a57a33597fc161d181e66b6332046fa73",
+    "firmware/tracker-r02/tests/host/modem/nrf_modem_lib.h": "51077edeb68362da475f5ded1ef846780b45af19a2d73635658b63df2644f76e",
+    "firmware/tracker-r02/tests/host/zephyr/device.h": "13243137d41da962812442d4eff9a763107006ac9e28d688c4b0a50a92993c41",
+    "firmware/tracker-r02/tests/host/zephyr/drivers/hwinfo.h": "5c256232fe66f02dc4b9bdf794fd42c75380cfdf53996f8cfcab3cfb7d4ffbab",
+    "firmware/tracker-r02/tests/host/zephyr/drivers/watchdog.h": "16da7c22f9624cea254e451adf2347bc7744e005b397d7a5344ea0464a21d532",
+    "firmware/tracker-r02/tests/host/zephyr/kernel.h": "053955e624c664d9cebd00a6fd95ffc73de050064c7a476d2f3e5a86423ec60a",
+    "firmware/tracker-r02/tests/host/zephyr/net/socket.h": "d2c0a745e92c4fec166541329564979d49149ac247cb75c6a719ec429c9f31ae",
+    "firmware/tracker-r02/tests/host/zephyr/sys/atomic.h": "0ba191338a95167c8a7f80a6cfbaff1fc984b4a19525595b3f08c69dda751daa",
+    "firmware/tracker-r02/tests/host/zephyr/sys/printk.h": "f86bf7737e1c3da3c1fe1e858154987d1f9d103964ff2bd302846130af222b5a",
+    "firmware/tracker-r02/tests/host/zephyr/toolchain.h": "8e03d5d442f7037eb2cb66da2218422522304bea31ba2515ba245a6cf7d140f7",
+    "firmware/tracker-r03/src/trial.c": "e2bbeb9a592e706dca78b240ff7b4ea75bed6b37cd5a637676f503a75ad16fdf",
+    "firmware/tracker-r03/src/trial.h": "3b77b62350dbaf495a9d04967fb28dae44873e8aecd8ec629f23bd877bacf4ae",
+    "firmware/tracker-r03/src/trial_policy.c": "2d1d76c94552a32ba742a687cb8645241896b3bd5957ab525a63b619e37b95cb",
+    "firmware/tracker-r03/src/trial_policy.h": "7120d8df4ee7045731c17029d0b7d562e59a0746e0dd7a84af941b63db5c75e8",
+    "firmware/tracker-r03/tests/host/zephyr/dfu/mcuboot.h": "b6f46abb2389b02fcb72145c686a9dadbc8908a8f025ba19dc98544fbb34e647",
+    "firmware/tracker-r03/tests/host/zephyr/kernel.h": "11c68fdd37b0a3aac92167ddf454c57fd8484ae8857ae85f3842da02cc775679",
+    "firmware/tracker-r03/tests/mcuboot-host/crypto_oid.h": "992043747909b856d04bfc71f9b1e2ff731bbb85764cbd655d90ff00606928a1",
+    "firmware/tracker-r03/tests/trial_policy_test.c": "1a18ed9c45471458df32733bfd0cee4aac23fbf06243cdef8a2292a86c06d56c",
+    "firmware/tracker-r03/tests/trial_runtime_test.c": "3675cbde29fbb3280f7c8c836f0439d6df7bba2832ee98d04ce9365ab6ed4803"
+  },
+  "sanitizers": [
+    "address",
+    "undefined"
+  ],
+  "accelerated_trial_clock": true,
+  "host_reset_sentinel": 42,
+  "hardware_reset_observed": false,
+  "actual_modem_test": false
+}

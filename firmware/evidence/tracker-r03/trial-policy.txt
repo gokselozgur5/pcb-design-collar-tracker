@@ -1,0 +1,3 @@
+PASS initial image remains stable; trial needs fresh storage, server ACK and minimum uptime
+PASS lost ACK causes expiry; late evidence and a late completion cannot clear failure
+PASS confirmation write margin, failure latch and deadline overflow guards

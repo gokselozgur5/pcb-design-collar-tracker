@@ -1,0 +1,2 @@
+PASS production trial requests reset: Firmware trial confirmation failed; confirmation writes=1
+Firmware trial: require a fresh persisted fix and an acknowledged upload

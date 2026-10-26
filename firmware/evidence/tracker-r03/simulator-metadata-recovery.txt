@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/Users/gok/codex/projects/collar-tracker/scripts/test_mcuboot_r03.py", line 66, in <module>
+    parser.add_argument('--target-dir', type=Path, required=True)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/gok/codex/projects/collar-tracker/scripts/test_mcuboot_r03.py", line 50, in test
+    compiler=subprocess.check_output([env['CC'], '--version'], text=True).splitlines()[0],
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/pathlib.py", line 1050, in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/pathlib.py", line 1044, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/bootloader/mcuboot/sim/Cargo.lock'

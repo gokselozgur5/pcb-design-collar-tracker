@@ -1,0 +1,59 @@
+{
+  "result": "PASS",
+  "compiler_exit": 0,
+  "mcuboot_commit": "8122be0de002ede060d37aa39b2a7f18aecc00c3",
+  "command": [
+    "/Users/gok/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+    "test",
+    "--locked",
+    "--features",
+    "sig-ecdsa,swap-offset,validate-primary-slot"
+  ],
+  "c_flags": [
+    "-isystem",
+    "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include",
+    "-I/Users/gok/codex/projects/collar-tracker/firmware/tracker-r03/tests/mcuboot-host",
+    "-DMCUBOOT_DOWNGRADE_PREVENTION",
+    "-DMCUBOOT_DOWNGRADE_PREVENTION_SECURITY_COUNTER=0",
+    "-DCONFIG_MCUBOOT_MCUBOOT_IMAGE_NUMBER=-1",
+    "-DCONFIG_NCS_MCUBOOT_IMG_VALIDATE_ATTEMPT_COUNT=1"
+  ],
+  "summaries": [
+    [
+      "ok",
+      "0",
+      "0"
+    ],
+    [
+      "ok",
+      "0",
+      "0"
+    ],
+    [
+      "ok",
+      "25",
+      "0"
+    ],
+    [
+      "ok",
+      "0",
+      "0"
+    ]
+  ],
+  "compiler": "gcc-15 (Homebrew GCC 15.2.0) 15.2.0",
+  "rustc": "rustc 1.90.0 (1159e78c4 2025-09-14)",
+  "cargo_lock_sha256": "f7ecf7e9bd2531e4b5ff672700821bed2dffcad3adada9f37b1c74e68c5caaf4",
+  "mbedtls_commit": "2ca6c285a0dd3f33982dd57299012dacab1ff206",
+  "log_sha256": "12a1dc0ddb556187cd9766a427e7f18ee665e660a5ddaaf19c6cd10f46553a2f",
+  "host_crypto": "TinyCrypt ECDSA P-256; target uses Nordic Oberon",
+  "geometry": "Upstream simulator device geometries, not the collar flash driver",
+  "feature_inapplicable_tests_return_early": true,
+  "actual_target_image_executed": false,
+  "hardware_reset_observed": false,
+  "metadata_recovery": {
+    "original_wrapper_exit": 1,
+    "cargo_exit_observed": 0,
+    "reason": "Cargo completed successfully; wrapper failed only while collecting Cargo.lock from sim/ instead of workspace root. Metadata recollected without rerunning tests. Original traceback retained.",
+    "raw_wrapper_output": "simulator-metadata-recovery.txt"
+  }
+}

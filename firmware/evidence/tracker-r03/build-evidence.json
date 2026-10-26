@@ -1,0 +1,376 @@
+{
+  "result": "BUILD_PASS",
+  "board": "collar_update_r05l/nrf9151/ns",
+  "compiled_inputs": {
+    "firmware/boards/goksel/collar_update_r05l/Kconfig.collar_update_r05l": "1333fb9b319e34cd467a1d3905e10d1465a15b9141598529e3ff306d989b1f84",
+    "firmware/boards/goksel/collar_update_r05l/Kconfig.defconfig": "eb218aa9aa6aa7a66385425c10782c463b1853cf5907c9838cfd2acc109478f6",
+    "firmware/boards/goksel/collar_update_r05l/UPSTREAM.md": "534709094e913560645d8a1e8097206c441b8a656131a14ab56f869071d20fd3",
+    "firmware/boards/goksel/collar_update_r05l/board.yml": "906ad4fc15397c589df45f4267888e1a7cf8b4a7d70cf660e294605d213ccdec",
+    "firmware/boards/goksel/collar_update_r05l/collar_update_r05l_nrf9151.dts": "06bdc7d189fbc11f001b26633acd873dc036f02d615c3a95afa430cf2b49020b",
+    "firmware/boards/goksel/collar_update_r05l/collar_update_r05l_nrf9151_defconfig": "1b19fcbee4eb357b36730a93abe9478d0355dc6d001b11d9497c56f02156138f",
+    "firmware/boards/goksel/collar_update_r05l/collar_update_r05l_nrf9151_ns.dts": "3620dbac60f68d2937fa8c3fefd32ea86c7d0a8186863a4471174ffb667b4671",
+    "firmware/boards/goksel/collar_update_r05l/collar_update_r05l_nrf9151_ns_defconfig": "7e64177e7eff71faf8445b0f0f5384de3c92f1b5975ef7d1edd9df147ff48226",
+    "firmware/dts/bindings/goksel,collar-r05l-io.yaml": "cf15691a203f09a1942e748388b90d1b81d2e8552d34105522b3e58881ad796c",
+    "firmware/factory/src/board_contract.h": "e0b9d0b447b36bfc56c131f30ef09d343bff5b87a99638b59796ae758ef5afcf",
+    "firmware/tracker/src/outbox.c": "86482f57e96d4acf313b57c7476d46efa72761f94040b1668da7fa0dc94198a4",
+    "firmware/tracker/src/outbox.h": "200f13261e0108a01e9590bb4cc5bfc5b52da4ead13d8f2b8f73e3826d1fdc1b",
+    "firmware/tracker-r02/src/dns.c": "6e39730a29ab20a029692bba848e4693ab8af8ac1db4065f81fcb24bd1559fa0",
+    "firmware/tracker-r02/src/dns.h": "1393966c54028a660ea406d64c31ca33191b4497e97ef7f67fc74186ef3b18cc",
+    "firmware/tracker-r02/src/main.c": "2492b6ab6c42b6a2501ec2b2f506d961b0463cfde3f59aa7f7dabe4460db201e",
+    "firmware/tracker-r02/src/recovery.c": "84cc640a106287cd0fa83f3297776637d1847091288053762f18267fbbb8a0dd",
+    "firmware/tracker-r02/src/recovery.h": "c55c6362ce9e1b4170c2e94b6b1b6a7ff932dba8cbde8753b5dfa7d0ddc71233",
+    "firmware/tracker-r02/src/supervisor.c": "f54c2d0110d6a69b3d1f9233a403cb9b7eb07f957c652ffc20933057539611a3",
+    "firmware/tracker-r02/src/supervisor.h": "663115e521242dc217263881f4c6532a57a33597fc161d181e66b6332046fa73",
+    "firmware/tracker-r02/src/uplink.c": "bb224113e17075b204466c844e58685173b17d30870158aabd6b38e99d38327c",
+    "firmware/tracker-r02/src/uplink.h": "6d23193481819166a724db26fd34f68a986d0cce23f8b0f0bce91b4947553d3c",
+    "firmware/tracker-r03/CMakeLists.txt": "40d763946b140273b51a2d28f18d3acfc0728a638807e735455c2db70c7ec757",
+    "firmware/tracker-r03/Kconfig": "93219a7a18aa2f14d333f62f3b7730d63df2ee044617e91607d45404301ce9da",
+    "firmware/tracker-r03/Kconfig.sysbuild": "1f842f68b2dd616966496f850ac4d6ce42c93c0c0bb957c1ae1b23ae69a4d18b",
+    "firmware/tracker-r03/README.md": "0d08c7f361af3da8d2e00452359accde11ef35f7d4922838149f9b52e9d6a061",
+    "firmware/tracker-r03/VERSION": "1796a60985bdcf0abeb99eafd55ba4dc1adcf0da7b7fd71b3e8e3a0dbe0f6ee6",
+    "firmware/tracker-r03/prj.conf": "4727c38bb3e0d58de7b087ac2da36ab237729ab9cfcd69c7b11b65b880309f07",
+    "firmware/tracker-r03/src/main.c": "989bf9aa5f3df22bd7b652fec7ba100b49c98055c6113e359714cff9614249f1",
+    "firmware/tracker-r03/src/trial.c": "e2bbeb9a592e706dca78b240ff7b4ea75bed6b37cd5a637676f503a75ad16fdf",
+    "firmware/tracker-r03/src/trial.h": "3b77b62350dbaf495a9d04967fb28dae44873e8aecd8ec629f23bd877bacf4ae",
+    "firmware/tracker-r03/src/trial_policy.c": "2d1d76c94552a32ba742a687cb8645241896b3bd5957ab525a63b619e37b95cb",
+    "firmware/tracker-r03/src/trial_policy.h": "7120d8df4ee7045731c17029d0b7d562e59a0746e0dd7a84af941b63db5c75e8",
+    "firmware/tracker-r03/src/uplink.c": "bb224113e17075b204466c844e58685173b17d30870158aabd6b38e99d38327c",
+    "firmware/tracker-r03/src/uplink.h": "6d23193481819166a724db26fd34f68a986d0cce23f8b0f0bce91b4947553d3c",
+    "firmware/tracker-r03/sysbuild/mcuboot.conf": "ed37c5e2b2dbed167adf673ae6827350bd234d2b87616356fcfa7b04fe08ac9a",
+    "firmware/tracker-r03/sysbuild.cmake": "1f38dd77823e196f6087f94d5f94f079fe4adf31abb2e77714b52b50c3efff78",
+    "firmware/tracker-r03/sysbuild.conf": "bdbbecbe068d2192b4dda131ed9f4cca5691227c3e018c63f948f8f1d23a499c",
+    "firmware/tracker-r03/tests/host/zephyr/dfu/mcuboot.h": "b6f46abb2389b02fcb72145c686a9dadbc8908a8f025ba19dc98544fbb34e647",
+    "firmware/tracker-r03/tests/host/zephyr/kernel.h": "11c68fdd37b0a3aac92167ddf454c57fd8484ae8857ae85f3842da02cc775679",
+    "firmware/tracker-r03/tests/mcuboot-host/crypto_oid.h": "992043747909b856d04bfc71f9b1e2ff731bbb85764cbd655d90ff00606928a1",
+    "firmware/tracker-r03/tests/trial_policy_test.c": "1a18ed9c45471458df32733bfd0cee4aac23fbf06243cdef8a2292a86c06d56c",
+    "firmware/tracker-r03/tests/trial_runtime_test.c": "3675cbde29fbb3280f7c8c836f0439d6df7bba2832ee98d04ce9365ab6ed4803"
+  },
+  "flashed": false,
+  "physical_test": false,
+  "signing": {
+    "algorithm": "ECDSA-P256",
+    "spki_sha256": "7f52efc3621ed0c13166b2e979b35fa64a0b3b8990f9f2d500f4b47307b93b8e",
+    "public_pem": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE0X2hybDqatM3OrTI/pLI1koAhfzK\ni3nZI9PDHJwLg6WlG/ilxREn9mCiijuFOBK4S93F08uHUGNd0pLNMa12YQ==\n-----END PUBLIC KEY-----\n",
+    "production_custody_accepted": false
+  },
+  "image_inspection": {
+    "result": "PASS",
+    "complete_hex": "collar-tracker-r03-prototype.hex",
+    "complete_sha256": "babe3feb4888b849945fc905d77a782f7d6efdd54966bb624a438b9221028633",
+    "signed_hex": {
+      "version": "0.3.0+0",
+      "header_bytes": 512,
+      "payload_bytes": 375028,
+      "signed_content_sha256": "b4b69291daeee42762be809f2d120abdfb374ed9abd3f0f3a9b3409b74b01683",
+      "spki_sha256": "7f52efc3621ed0c13166b2e979b35fa64a0b3b8990f9f2d500f4b47307b93b8e",
+      "signature_bytes": 71,
+      "total_bytes": 375691,
+      "flags": 256,
+      "load_address": 327680
+    },
+    "signed_bin": {
+      "version": "0.3.0+0",
+      "header_bytes": 512,
+      "payload_bytes": 375028,
+      "signed_content_sha256": "b4b69291daeee42762be809f2d120abdfb374ed9abd3f0f3a9b3409b74b01683",
+      "spki_sha256": "7f52efc3621ed0c13166b2e979b35fa64a0b3b8990f9f2d500f4b47307b93b8e",
+      "signature_bytes": 72,
+      "total_bytes": 375692,
+      "flags": 256,
+      "load_address": 327680
+    },
+    "reset_vectors": {
+      "bootloader": {
+        "address": 0,
+        "initial_sp": 536886960,
+        "reset_handler": 8745
+      },
+      "secure": {
+        "address": 66048,
+        "initial_sp": 536872952,
+        "reset_handler": 80849
+      },
+      "application": {
+        "address": 327680,
+        "initial_sp": 537028568,
+        "reset_handler": 343277
+      }
+    },
+    "programmed_storage_bytes": 0,
+    "programmed_secondary_bytes": 0,
+    "storage": {
+      "address": 1015808,
+      "bytes": 32768
+    },
+    "secondary_update_address": 528384,
+    "boot_contract": [
+      "CONFIG_BOOT_SIGNATURE_TYPE_ECDSA_P256=y",
+      "CONFIG_BOOT_ECDSA_NRF_OBERON=y",
+      "CONFIG_BOOT_VALIDATE_SLOT0=y",
+      "CONFIG_BOOT_SWAP_USING_OFFSET=y",
+      "CONFIG_MCUBOOT_DOWNGRADE_PREVENTION=y",
+      "CONFIG_FPROTECT=y",
+      "CONFIG_BOOT_WATCHDOG_FEED=y",
+      "CONFIG_MCUBOOT_MCUBOOT_IMAGE_NUMBER=-1",
+      "CONFIG_NCS_MCUBOOT_IMG_VALIDATE_ATTEMPT_COUNT=1",
+      "CONFIG_MCUBOOT_LOG_LEVEL_OFF=y",
+      "# CONFIG_CONSOLE is not set",
+      "# CONFIG_SERIAL is not set",
+      "# CONFIG_BOOT_BYPASS_KEY_MATCH is not set",
+      "# CONFIG_BOOT_DIRECT_XIP is not set",
+      "# CONFIG_BOOT_RAM_LOAD is not set",
+      "# CONFIG_MCUBOOT_SERIAL is not set",
+      "# CONFIG_MCUBOOT_CHECK_HEADER_LOAD_ADDRESS is not set"
+    ],
+    "application_contract": [
+      "CONFIG_BUILD_WITH_TFM=y",
+      "CONFIG_TRUSTED_EXECUTION_NONSECURE=y",
+      "CONFIG_BOOTLOADER_MCUBOOT=y",
+      "CONFIG_MCUBOOT_BOOTLOADER_MODE_SWAP_USING_OFFSET=y",
+      "CONFIG_MCUBOOT_BOOTLOADER_NO_DOWNGRADE=y",
+      "CONFIG_NVS_DATA_CRC=y",
+      "CONFIG_NRF_MODEM_LIB=y",
+      "CONFIG_LTE_NETWORK_MODE_LTE_M_GPS=y",
+      "# CONFIG_SERIAL is not set",
+      "# CONFIG_TFM_SECURE_UART is not set",
+      "# CONFIG_TFM_DUMMY_PROVISIONING is not set",
+      "CONFIG_TRACKER_HOST=\"\"",
+      "CONFIG_TRACKER_DEVICE_ID=\"\"",
+      "CONFIG_TRACKER_TRIAL_SECONDS=600",
+      "CONFIG_TRACKER_TRIAL_STABLE_SECONDS=30",
+      "CONFIG_WATCHDOG=y",
+      "CONFIG_WDT_NRFX=y",
+      "CONFIG_NRFX_WDT=y",
+      "CONFIG_HWINFO=y",
+      "CONFIG_HWINFO_NRF=y",
+      "CONFIG_MAIN_THREAD_PRIORITY=5",
+      "CONFIG_NRF_MODEM_LIB_ON_FAULT_APPLICATION_SPECIFIC=y",
+      "# CONFIG_NRF_MODEM_LIB_ON_FAULT_RESET_MODEM is not set",
+      "# CONFIG_NRF_WDT0_SECURE is not set"
+    ],
+    "signatures_verified_against_embedded_key": true,
+    "physical_boot_observed": false,
+    "ota_transport_implemented": false,
+    "manufacturing_release": false
+  },
+  "production_key_accepted": false,
+  "manufacturing_release": false,
+  "artifacts": {
+    "mcuboot/zephyr/zephyr.hex": {
+      "sha256": "0d9419ef1889394722997e308454cdb31ae452cc6cc976c522699ae8df4246ba",
+      "bytes": 73433
+    },
+    "mcuboot/zephyr/zephyr.elf": {
+      "sha256": "14843d068d765d90f07570a806ae1c06efcaf9b48d65d4da9f60669aefc84ccc",
+      "bytes": 981280
+    },
+    "mcuboot/zephyr/.config": {
+      "sha256": "a8e569854dbde67f192dcfaceacdc7943e01d4d2cc3820ad2ff40bd830c04860",
+      "bytes": 57317
+    },
+    "mcuboot/zephyr/zephyr.dts": {
+      "sha256": "d245d4f95f97d565b23cd0369308c76e2bdfc4fde476a54b99be8d57c823bff7",
+      "bytes": 48038
+    },
+    "mcuboot/zephyr/autogen-pubkey.c": {
+      "sha256": "2201196e0e4ec0b853b8f6ea67b7e8463915acebfd84b5f7cb43718c417b6d1b",
+      "bytes": 728
+    },
+    "tracker-r03/zephyr/zephyr.signed.hex": {
+      "sha256": "000a10d185b4ce50a64388d9cb0a8f5b398d3ee14b262b9b6f7486008e2af46f",
+      "bytes": 1033262
+    },
+    "tracker-r03/zephyr/zephyr.signed.bin": {
+      "sha256": "9245952707cdce5f73c8af395f9232200c75e40c553e51f6a3e4ebeebaf7cf75",
+      "bytes": 375692
+    },
+    "tracker-r03/zephyr/tfm_merged.hex": {
+      "sha256": "fbd09d7dc93018509787a345403bfc7818db155de70e2aaec5b17bad47973dd0",
+      "bytes": 478632
+    },
+    "tracker-r03/zephyr/zephyr.elf": {
+      "sha256": "797b663939bf778433607378d66d854537771a5016538b013e7cfdf01dc26e16",
+      "bytes": 2156708
+    },
+    "tracker-r03/zephyr/.config": {
+      "sha256": "ce1945720ad43892271393dd7d5e1fd1ce67434a30c544626f9d448559b71fcd",
+      "bytes": 75976
+    },
+    "tracker-r03/zephyr/zephyr.dts": {
+      "sha256": "d3d16043763889cd78fc899a18dfe6341e07acc6c62b16b61f182babfae52bd5",
+      "bytes": 51557
+    },
+    "tracker-r03/tfm/bin/tfm_s.hex": {
+      "sha256": "94b027092c7b119ae108eba3e1cbb6cab58352d98a04633a23f6de9c6fd134bd",
+      "bytes": 170611
+    },
+    "tracker-r03/tfm/bin/tfm_s.elf": {
+      "sha256": "09c63e8b23e3694a716c488fcbb689a0e8567cb48dc33b5804f6ad65b08254e9",
+      "bytes": 1046368
+    },
+    "tracker-r03/tfm/CMakeCache.txt": {
+      "sha256": "522edd1c0eb42372738c9011c80f2e3ee14cb4efa3df1977c61a23b5eada80a2",
+      "bytes": 44322
+    },
+    "collar-tracker-r03-prototype.hex": {
+      "sha256": "babe3feb4888b849945fc905d77a782f7d6efdd54966bb624a438b9221028633",
+      "bytes": 1104982
+    }
+  },
+  "cmake_cache_paths": [
+    "/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/cache/zephyr",
+    "/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/cache/zephyr",
+    "/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/cache/zephyr",
+    "/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/cache/zephyr"
+  ],
+  "memory_usage_bytes": {
+    "tfm": {
+      "flash": 64304,
+      "ram": 45388
+    },
+    "application": {
+      "flash": 113396,
+      "ram": 31776
+    },
+    "mcuboot": {
+      "flash": 26072,
+      "ram": 16048
+    },
+    "modem_shared_reserved": 40960
+  },
+  "native_board_check": {
+    "result": "PASS",
+    "schematic_sha256": "0a8d89c01db6d0211a9048467b728214da175750f6b670ebf3d6ffa9adeefb0e",
+    "netlist_sha256": "4c88b83f1af96f3924d63761ab09681049cce83cc0b364aaa669a27b19e9be28",
+    "signals": {
+      "/I2C_SDA": {
+        "package_pin": "56",
+        "gpio": "P0.00"
+      },
+      "/I2C_SCL": {
+        "package_pin": "57",
+        "gpio": "P0.01"
+      },
+      "/ACC_INT": {
+        "package_pin": "58",
+        "gpio": "P0.02"
+      },
+      "/HEALTH_EN": {
+        "package_pin": "68",
+        "gpio": "P0.09"
+      },
+      "/CHG_STAT": {
+        "package_pin": "69",
+        "gpio": "P0.10"
+      },
+      "/CHG_FAULT": {
+        "package_pin": "70",
+        "gpio": "P0.11"
+      },
+      "/FG_ALERT": {
+        "package_pin": "73",
+        "gpio": "P0.13"
+      }
+    },
+    "accelerometer_i2c_address": "0x19",
+    "fuel_gauge_i2c_address": "0x36",
+    "physical_test": false
+  },
+  "compiler_exit": 0,
+  "captured_utc": "2026-10-26T06:27:39.410882+00:00",
+  "prototype_key_only": true,
+  "ota_transport_implemented": false,
+  "unresolved": [
+    "No actual board boot, signature rejection, watchdog handoff, trial/revert or power-cut test",
+    "No OTA transport/staging; swap-offset requires secondary + 4096 bytes",
+    "No production key custody, credentials, provisioning/debug-lock or r02 migration acceptance",
+    "No real GNSS/LTE-M/TLS/modem, current, factory/SMT, RF or ingress acceptance",
+    "No approved battery, physical assembly/strain-relief or supplier enquiry authorization"
+  ],
+  "inputs": {
+    "firmware/boards/goksel/collar_update_r05l/Kconfig.collar_update_r05l": "1333fb9b319e34cd467a1d3905e10d1465a15b9141598529e3ff306d989b1f84",
+    "firmware/boards/goksel/collar_update_r05l/Kconfig.defconfig": "eb218aa9aa6aa7a66385425c10782c463b1853cf5907c9838cfd2acc109478f6",
+    "firmware/boards/goksel/collar_update_r05l/UPSTREAM.md": "534709094e913560645d8a1e8097206c441b8a656131a14ab56f869071d20fd3",
+    "firmware/boards/goksel/collar_update_r05l/board.yml": "906ad4fc15397c589df45f4267888e1a7cf8b4a7d70cf660e294605d213ccdec",
+    "firmware/boards/goksel/collar_update_r05l/collar_update_r05l_nrf9151.dts": "06bdc7d189fbc11f001b26633acd873dc036f02d615c3a95afa430cf2b49020b",
+    "firmware/boards/goksel/collar_update_r05l/collar_update_r05l_nrf9151_defconfig": "1b19fcbee4eb357b36730a93abe9478d0355dc6d001b11d9497c56f02156138f",
+    "firmware/boards/goksel/collar_update_r05l/collar_update_r05l_nrf9151_ns.dts": "3620dbac60f68d2937fa8c3fefd32ea86c7d0a8186863a4471174ffb667b4671",
+    "firmware/boards/goksel/collar_update_r05l/collar_update_r05l_nrf9151_ns_defconfig": "7e64177e7eff71faf8445b0f0f5384de3c92f1b5975ef7d1edd9df147ff48226",
+    "firmware/dts/bindings/goksel,collar-r05l-io.yaml": "cf15691a203f09a1942e748388b90d1b81d2e8552d34105522b3e58881ad796c",
+    "firmware/evidence/tracker-r03/application.config": "ce1945720ad43892271393dd7d5e1fd1ce67434a30c544626f9d448559b71fcd",
+    "firmware/evidence/tracker-r03/application.dts": "d3d16043763889cd78fc899a18dfe6341e07acc6c62b16b61f182babfae52bd5",
+    "firmware/evidence/tracker-r03/boot-public-key.c": "2201196e0e4ec0b853b8f6ea67b7e8463915acebfd84b5f7cb43718c417b6d1b",
+    "firmware/evidence/tracker-r03/boot.config": "a8e569854dbde67f192dcfaceacdc7943e01d4d2cc3820ad2ff40bd830c04860",
+    "firmware/evidence/tracker-r03/boot.dts": "d245d4f95f97d565b23cd0369308c76e2bdfc4fde476a54b99be8d57c823bff7",
+    "firmware/evidence/tracker-r03/build.txt": "61e6435e29206872e92225f8b1c256c22b9ac3f622dcc18fd1f652952fbd7db9",
+    "firmware/evidence/tracker-r03/image-controls.json": "1ad6b22e52818e7fbaffe83cae0c945653a9b2cdfab14bedd93e4b2f0740da35",
+    "firmware/evidence/tracker-r03/mcuboot-simulator.json": "08af110d2ccfe2cb30c3786da76abb3c3f491787b761e99c4ffd83f2a2d9c211",
+    "firmware/evidence/tracker-r03/mcuboot-simulator.txt": "12a1dc0ddb556187cd9766a427e7f18ee665e660a5ddaaf19c6cd10f46553a2f",
+    "firmware/evidence/tracker-r03/simulator-Cargo.lock": "f7ecf7e9bd2531e4b5ff672700821bed2dffcad3adada9f37b1c74e68c5caaf4",
+    "firmware/evidence/tracker-r03/simulator-metadata-recovery.txt": "089af34e90140977bbe312f2b650de9545b8f1962eb6cfdc493c5a5296784f29",
+    "firmware/evidence/tracker-r03/tfm-config.txt": "522edd1c0eb42372738c9011c80f2e3ee14cb4efa3df1977c61a23b5eada80a2",
+    "firmware/evidence/tracker-r03/trial-confirmation-failed.txt": "4868047139c38f0b890e737f6ce74c52dbfa326b88549d900e55b4a97f95fc10",
+    "firmware/evidence/tracker-r03/trial-factory.txt": "0d7784cc1eadc8d80b9960198602ca823a0c6b1257f15bca4a925f8f546813df",
+    "firmware/evidence/tracker-r03/trial-healthy.txt": "8cf3900a80783438d3321919edf21e82e50143c08db4238cfc8129bf03e58e47",
+    "firmware/evidence/tracker-r03/trial-late-evidence.txt": "ce762c6e136382f36702d3e284ff38069415b7aaa5f605205e495d3cf85d7323",
+    "firmware/evidence/tracker-r03/trial-missing-ack.txt": "a348f4f4dc350f7abf24bbf295da4ee6a014ae5654e9706c3fd8654d78d9b8d2",
+    "firmware/evidence/tracker-r03/trial-policy.txt": "348828f2d3dd8e2eb56a7c31db106361cdec3c0e449bfa8895c89ff8bd0877da",
+    "firmware/evidence/tracker-r03/trial-tests.json": "ae3bd2177a0101c4393d4efbf5508b52cd1b500d47b388e62e597d42b7c66456",
+    "firmware/factory/src/board_contract.h": "e0b9d0b447b36bfc56c131f30ef09d343bff5b87a99638b59796ae758ef5afcf",
+    "firmware/toolchain-lock.json": "288621abc680673553bd6e1907c85c9bf0ce081f6391a05c4acf44398dd7ac7b",
+    "firmware/tracker/python-requirements.lock": "5aa8ee667ac85b97b611e20a8e509173f8e0a7c7fb35408369609a8478c8444a",
+    "firmware/tracker/src/outbox.c": "86482f57e96d4acf313b57c7476d46efa72761f94040b1668da7fa0dc94198a4",
+    "firmware/tracker/src/outbox.h": "200f13261e0108a01e9590bb4cc5bfc5b52da4ead13d8f2b8f73e3826d1fdc1b",
+    "firmware/tracker/toolchain-lock.json": "3dfcca33fea992dc4af1eff45afd90e19fdd33b25bbca108bffc5887fe154511",
+    "firmware/tracker-r02/src/dns.c": "6e39730a29ab20a029692bba848e4693ab8af8ac1db4065f81fcb24bd1559fa0",
+    "firmware/tracker-r02/src/dns.h": "1393966c54028a660ea406d64c31ca33191b4497e97ef7f67fc74186ef3b18cc",
+    "firmware/tracker-r02/src/main.c": "2492b6ab6c42b6a2501ec2b2f506d961b0463cfde3f59aa7f7dabe4460db201e",
+    "firmware/tracker-r02/src/recovery.c": "84cc640a106287cd0fa83f3297776637d1847091288053762f18267fbbb8a0dd",
+    "firmware/tracker-r02/src/recovery.h": "c55c6362ce9e1b4170c2e94b6b1b6a7ff932dba8cbde8753b5dfa7d0ddc71233",
+    "firmware/tracker-r02/src/supervisor.c": "f54c2d0110d6a69b3d1f9233a403cb9b7eb07f957c652ffc20933057539611a3",
+    "firmware/tracker-r02/src/supervisor.h": "663115e521242dc217263881f4c6532a57a33597fc161d181e66b6332046fa73",
+    "firmware/tracker-r02/src/uplink.c": "bb224113e17075b204466c844e58685173b17d30870158aabd6b38e99d38327c",
+    "firmware/tracker-r02/src/uplink.h": "6d23193481819166a724db26fd34f68a986d0cce23f8b0f0bce91b4947553d3c",
+    "firmware/tracker-r02/tests/host/modem/nrf_modem_lib.h": "51077edeb68362da475f5ded1ef846780b45af19a2d73635658b63df2644f76e",
+    "firmware/tracker-r02/tests/host/zephyr/device.h": "13243137d41da962812442d4eff9a763107006ac9e28d688c4b0a50a92993c41",
+    "firmware/tracker-r02/tests/host/zephyr/drivers/hwinfo.h": "5c256232fe66f02dc4b9bdf794fd42c75380cfdf53996f8cfcab3cfb7d4ffbab",
+    "firmware/tracker-r02/tests/host/zephyr/drivers/watchdog.h": "16da7c22f9624cea254e451adf2347bc7744e005b397d7a5344ea0464a21d532",
+    "firmware/tracker-r02/tests/host/zephyr/kernel.h": "053955e624c664d9cebd00a6fd95ffc73de050064c7a476d2f3e5a86423ec60a",
+    "firmware/tracker-r02/tests/host/zephyr/net/socket.h": "d2c0a745e92c4fec166541329564979d49149ac247cb75c6a719ec429c9f31ae",
+    "firmware/tracker-r02/tests/host/zephyr/sys/atomic.h": "0ba191338a95167c8a7f80a6cfbaff1fc984b4a19525595b3f08c69dda751daa",
+    "firmware/tracker-r02/tests/host/zephyr/sys/printk.h": "f86bf7737e1c3da3c1fe1e858154987d1f9d103964ff2bd302846130af222b5a",
+    "firmware/tracker-r02/tests/host/zephyr/toolchain.h": "8e03d5d442f7037eb2cb66da2218422522304bea31ba2515ba245a6cf7d140f7",
+    "firmware/tracker-r03/CMakeLists.txt": "40d763946b140273b51a2d28f18d3acfc0728a638807e735455c2db70c7ec757",
+    "firmware/tracker-r03/Kconfig": "93219a7a18aa2f14d333f62f3b7730d63df2ee044617e91607d45404301ce9da",
+    "firmware/tracker-r03/Kconfig.sysbuild": "1f842f68b2dd616966496f850ac4d6ce42c93c0c0bb957c1ae1b23ae69a4d18b",
+    "firmware/tracker-r03/README.md": "0d08c7f361af3da8d2e00452359accde11ef35f7d4922838149f9b52e9d6a061",
+    "firmware/tracker-r03/VERSION": "1796a60985bdcf0abeb99eafd55ba4dc1adcf0da7b7fd71b3e8e3a0dbe0f6ee6",
+    "firmware/tracker-r03/prj.conf": "4727c38bb3e0d58de7b087ac2da36ab237729ab9cfcd69c7b11b65b880309f07",
+    "firmware/tracker-r03/src/main.c": "989bf9aa5f3df22bd7b652fec7ba100b49c98055c6113e359714cff9614249f1",
+    "firmware/tracker-r03/src/trial.c": "e2bbeb9a592e706dca78b240ff7b4ea75bed6b37cd5a637676f503a75ad16fdf",
+    "firmware/tracker-r03/src/trial.h": "3b77b62350dbaf495a9d04967fb28dae44873e8aecd8ec629f23bd877bacf4ae",
+    "firmware/tracker-r03/src/trial_policy.c": "2d1d76c94552a32ba742a687cb8645241896b3bd5957ab525a63b619e37b95cb",
+    "firmware/tracker-r03/src/trial_policy.h": "7120d8df4ee7045731c17029d0b7d562e59a0746e0dd7a84af941b63db5c75e8",
+    "firmware/tracker-r03/src/uplink.c": "bb224113e17075b204466c844e58685173b17d30870158aabd6b38e99d38327c",
+    "firmware/tracker-r03/src/uplink.h": "6d23193481819166a724db26fd34f68a986d0cce23f8b0f0bce91b4947553d3c",
+    "firmware/tracker-r03/sysbuild/mcuboot.conf": "ed37c5e2b2dbed167adf673ae6827350bd234d2b87616356fcfa7b04fe08ac9a",
+    "firmware/tracker-r03/sysbuild.cmake": "1f38dd77823e196f6087f94d5f94f079fe4adf31abb2e77714b52b50c3efff78",
+    "firmware/tracker-r03/sysbuild.conf": "bdbbecbe068d2192b4dda131ed9f4cca5691227c3e018c63f948f8f1d23a499c",
+    "firmware/tracker-r03/tests/host/zephyr/dfu/mcuboot.h": "b6f46abb2389b02fcb72145c686a9dadbc8908a8f025ba19dc98544fbb34e647",
+    "firmware/tracker-r03/tests/host/zephyr/kernel.h": "11c68fdd37b0a3aac92167ddf454c57fd8484ae8857ae85f3842da02cc775679",
+    "firmware/tracker-r03/tests/mcuboot-host/crypto_oid.h": "992043747909b856d04bfc71f9b1e2ff731bbb85764cbd655d90ff00606928a1",
+    "firmware/tracker-r03/tests/trial_policy_test.c": "1a18ed9c45471458df32733bfd0cee4aac23fbf06243cdef8a2292a86c06d56c",
+    "firmware/tracker-r03/tests/trial_runtime_test.c": "3675cbde29fbb3280f7c8c836f0439d6df7bba2832ee98d04ce9365ab6ed4803",
+    "scripts/build_tracker_r03.py": "62418387eee29da77552ab9183db977b02d90d3dec2f6fb2f2f8b143977a62a4",
+    "scripts/capture_tracker_r03.py": "058b36fdc929734dbbb8c58e369a957b103c8d43bda1ee825fd19d32c2c10b03",
+    "scripts/check_firmware_board.py": "39415bd7ffd7e1f9c1411c2a7f984f9baa6e54c271712040aa77ebc6f4b1697d",
+    "scripts/inspect_tracker_image.py": "e6093e16d0bb6569388bfa6f09c22efc12a9e90ca778b0357bf14ce138ae17ee",
+    "scripts/inspect_tracker_r02.py": "08d424600000db9c95ce32ba587bf3e0cc0b2ce1178155c9045fe8b68d04aebb",
+    "scripts/inspect_tracker_r03.py": "7422512a280c19228e3821a4db52ce0a9de4d0ca9302f467dd232351719b86f1",
+    "scripts/test_mcuboot_r03.py": "afb27e572da83f3b8336589adf6aef0db699451c8c75c70da5c7bfd041d0ff58",
+    "scripts/test_tracker_r03.py": "b3f18475138da6b59fb33db7d99c21e9f731d54b65466e51bfea754810ab19f3",
+    "scripts/test_tracker_r03_image.py": "069087369068f2357cf0296b431786cd16f48dbbb4c8d7a8976f79652fb717c1",
+    "scripts/tracker_signing_key.py": "ca5f459d0b00ad52801c4371a0e7421868251863bf61fd478155b86f2bdcc05f",
+    "scripts/verify_tracker_r03.py": "f0f4ab6cfd52fffe64c1bd29f94cdc346f4fff7e6fd9241fb049ba9d8ab80a41"
+  }
+}

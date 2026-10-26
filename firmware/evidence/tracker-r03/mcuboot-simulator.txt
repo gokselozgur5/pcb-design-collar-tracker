@@ -1,0 +1,59 @@
+   Compiling mcuboot-sys v0.1.0 (/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/bootloader/mcuboot/sim/mcuboot-sys)
+   Compiling serde v1.0.136
+   Compiling aes v0.7.5
+   Compiling untrusted v0.9.0
+   Compiling byteorder v1.4.3
+   Compiling docopt v1.1.1
+   Compiling bootsim v0.1.0 (/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/bootloader/mcuboot/sim)
+    Finished `test` profile [optimized + debuginfo] target(s) in 51.32s
+     Running unittests src/lib.rs (/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/build-mcuboot-simulator-gcc-sdk/debug/deps/bootsim-add29b750015fc3b)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/build-mcuboot-simulator-gcc-sdk/debug/deps/bootsim-86531131902889fc)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/core.rs (/Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/build-mcuboot-simulator-gcc-sdk/debug/deps/core-2616cb35d7fb5f2d)
+
+running 25 tests
+test dependency_combos ... ok
+test bootstrap ... ok
+test direct_xip_first ... ok
+test hw_prot_failed_security_cnt_check ... ok
+test hw_prot_missing_security_cnt ... ok
+test oversized_bootstrap ... ok
+test norevert_newimage ... ok
+test ram_load_corrupt_higher_version_image ... ok
+test oversized_secondary_slot ... ok
+test bad_secondary_slot ... ok
+test ram_load_failed_validation ... ok
+test ram_load_from_flash ... ok
+test ram_load_first ... ok
+test ram_load_missing_header_flag ... ok
+test ram_load_split ... ok
+test ram_load_out_of_bounds ... ok
+test secondary_trailer_leftover ... ok
+test downgrade_prevention ... ok
+test perm_with_random_fails ... ok
+test norevert ... ok
+test status_write_fails_complete ... ok
+test status_write_fails_with_reset ... ok
+test basic_revert ... ok
+test perm_with_fails has been running for over 60 seconds
+test revert_with_fails has been running for over 60 seconds
+test perm_with_fails ... ok
+test revert_with_fails ... ok
+
+test result: ok. 25 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 812.69s
+
+   Doc-tests bootsim
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
