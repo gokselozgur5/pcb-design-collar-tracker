@@ -1260,3 +1260,33 @@ names the active r05m source, rejected r04 diagnostic and actual remaining SMT
 gates. Deferred mechanics and supplier messaging are identified correctly.
 Executed `scripts/resume.py`: full preflight and current-summary assertions pass,
 with empty stderr. No CAD or manufacturing-file bytes changed.
+
+## 2026-10-26 — Deliver the adjustable mount and 3D enclosure design
+
+- Followed the user's new request for PCB/enclosure images and a collar attachment
+  spanning different sizes. Preserved native r05m, existing rigid shell/internals,
+  manufacturing evidence and the separate unresolved PCBA release gates.
+- Added a parametric flexible holder with two 10 mm wrap straps, paired buttons,
+  5 mm-pitch adjustment holes, a keeper, and interchangeable flat/V-groove pads.
+  Exported short/long straps and the complete current assembly. Six nominal
+  examples cover flat 8 × 1, 25 × 3 and 60 × 8 mm, plus round Ø4/8/16 mm.
+- Retained the failing initial pad and three positive collision volumes. Corrected
+  the rib/base junction and contact height. All 25 final interference queries
+  have no positive-volume intersection; exact tangent contact is recorded.
+  All 33 exported meshes are closed/oriented; each of the five new printable
+  parts is one connected surface. Length screening demands 1.73–8.70% extension,
+  not proven material performance. Installed straps remain routing envelopes.
+- Rendered the actual PCB with KiCad using an ignored visual-only copy. Seven
+  missing model references are populated; four bodies are dimensioned substitutes.
+  Native source identity is unchanged. Added an offline 3D viewer with five views,
+  six collar examples, layer separation and transparency. Browser checks pass
+  with network blocked, including camera input and mobile width. Actual rendered
+  assembly, underside, exploded, mount-part, round-collar and PCB views inspected.
+- Delivered a 14,939,665-byte portable ZIP with 87 manifested design files, all
+  required mesh imports, editable mount SCAD, STL, PNG/PDF overview and viewer.
+  ZIP SHA-256: 6d58eb5fded4c901f6ab6e4ec60af4eb155672e39b9e3b94b5bce0dbd9f39985.
+  Opened the viewer and revealed the ZIP locally. Saved handoff passes with 47
+  top-level fields, seven Python sources parse and 118 local Markdown links resolve.
+- This completes the requested prototype CAD/visual package, not physical grip,
+  closure fatigue, all-collar/all-dog fit, swimming protection or order acceptance.
+  Next is an inert fit sample. No order, supplier message, payment or physical test.

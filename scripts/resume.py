@@ -41,6 +41,7 @@ print('Charge: independent hot/cold comparators and NAND now drive /CE. Corner m
 print('Tracker r02: DNS caller deadlines and watchdog/modem recovery; target build and host tests only, no flashing or observed hardware reset.')
 print('Tracker r03: development-signed boot and bounded trial built/tested; no flashing. Further OTA work is deferred behind manufacturing review.')
 print('Deferred assembly: continuous/installation motion with r19 attachments, released wire shape and adhesion. Supplier messaging is set aside.')
+print('Latest user-directed design: universal-mount-r01 offline 3D viewer, overview and portable CAD package. Two adjustable straps and flat/round pads; six nominal examples and 33 closed meshes checked. Physical fit/grip/IP68 remain unqualified.')
 print('Preserved: r04i/swim-r02 review bundle; pack, antennas, assembly and physical qualification remain open.')
 print('Git:')
 sys.stdout.flush()

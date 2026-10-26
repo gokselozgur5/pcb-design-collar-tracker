@@ -1,5 +1,19 @@
 # Current state — 2026-10-26
 
+**Latest user-directed work: the 3D enclosure and adjustable collar mount are delivered as a prototype design.**
+[Open the offline 3D viewer](../mechanical/universal-mount-r01/viewer.html) ·
+[Design overview](../mechanical/universal-mount-r01/design-overview.png) ·
+[Portable CAD/mesh/image ZIP](../release/collar-tracker-3d-universal-mount-r01.zip) ·
+[Dimensions, assembly and limits](../mechanical/universal-mount-r01/README.md).
+The user explicitly redirected work to enclosure visualization and attachment
+across collar sizes. The new flexible holder uses two adjustable wrap straps and
+flat/V-groove pads. Six nominal collar examples, 25 interference queries and
+33 closed meshes are checked. Native r05m PCB, existing rigid enclosure and
+manufacturing artifacts are unchanged. This supersedes the prior instruction
+to defer new mechanical work; it does not resolve manufacturing acceptance.
+Next mechanical step is an inert fit sample for threading, grip, closure and
+comfort. No animal-worn, strength, RF or ingress qualification is claimed.
+
 **Active r05m: stocked ROHM Q1 selected; native DRC/ERC/parity clean; copper and Gerber identical to r05l. All 44 MPNs / 81 placements read back from JLC. Actual SMT findings remain unresolved.**
 **Working-device / RF / manufacturing release: HOLD. IP68 remains unqualified.**
 
@@ -39,7 +53,8 @@ geometry; they do not establish factory process acceptance.
 board-edge handling acceptance for the exact assembly. These are supplier model
 and process gates; another unmodified local check is not evidence of acceptance.
 Preserve all frozen revisions; do not repeat unchanged PCB DFM or restart
-firmware/mechanics. Supplier messaging is set aside at the user's request.
+firmware. The user-requested mount study above is a separate mechanical task.
+Supplier messaging is set aside at the user's request.
 No message, order, payment or powered test was made. The old supplier-r01 enquiry
 is now historical and must not be sent unchanged with its superseded Q1 questions.
 
@@ -53,8 +68,8 @@ Hardware boot, swap/revert, modem DNS and power behavior are untested. The separ
 before acknowledging them. Default configuration has no host, identity or keys;
 it only collects offline records. This is not a shipping firmware release.
 Deferred software work is offset-aware staging/delivery, production key custody/
-provisioning and an explicit r02 factory/SWD migration. Manufacturing review takes
-priority now. Swap-offset images start at `0x81000`; the pinned NCS FOTA target writes
+provisioning and an explicit r02 factory/SWD migration. That software work remains
+deferred. Swap-offset images start at `0x81000`; the pinned NCS FOTA target writes
 at the slot base and cannot be connected unchanged. Only a local development
 signing key exists; no credentials or endpoint are configured. The receiver is
 not deployed. Preserve factory/r01/r02/r03 and the unchanged PCB/Gerber/r19 assembly.

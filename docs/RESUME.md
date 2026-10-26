@@ -4,7 +4,18 @@ The current state is in [STATUS](STATUS.md). The next task is implementation,
 not another requirements interview. Read [the Paul/nano-SIM notes](paul-nanosim.md)
 before editing. This handoff does not require private chat history or other projects.
 
-**Current priority: finish assembled-PCB order preparation.**
+**Latest requested deliverable: 3D enclosure and adjustable collar attachment.**
+The [offline viewer](../mechanical/universal-mount-r01/viewer.html),
+[overview](../mechanical/universal-mount-r01/design-overview.png) and
+[portable design ZIP](../release/collar-tracker-3d-universal-mount-r01.zip) are
+complete as prototype CAD. Read the [mount README](../mechanical/universal-mount-r01/README.md)
+for exact size examples, part selection and limits. The next mechanical step is
+an inert sample to verify threading, lip retention, closure, wet grip and comfort.
+Use `python3 scripts/verify_universal_mount.py` for saved integrity checks; do not
+regenerate released files just to resume. Existing PCB and housing are preserved.
+The user's explicit design request superseded the previous mechanical deferral.
+
+**Separate manufacturing task: order preparation remains held.**
 Read [PCBA r03](../assembly/pcba-r03/README.md) and its
 [actual SMT disposition](../assembly/pcba-r03/smt-disposition.md).
 Current native source is `experiments/pcba-r05m-rohm-q1/hardware/`.
@@ -27,7 +38,7 @@ left unchanged. New evidence covers all 57 left-edge and 23 outer-edge findings;
 in r04. Do not rerun this rejected experiment or invent complete SMT acceptance.
 Next complete supplier terminal/model coverage, stencil/reflow and board-edge
 handling acceptance, including J6. No supplier acceptance is recorded.
-No new firmware, enclosure work or repeated unchanged PCB DFM is needed.
+No new firmware or repeated unchanged PCB DFM is needed for those supplier gates.
 
 The [r03 review ZIP](../release/collar-tracker-r05m-pcba-r03-review.zip) selects
 current sources/BOM/CPL, unchanged Gerber and the actual non-passing SMT report.
@@ -40,8 +51,8 @@ Further corrections belong in a new revision. PCBA order readiness remains NO.
 Supplier messaging is set aside at the user's request. Do not repeat a sending
 permission question or send the old supplier-r01 draft: its Q1 sourcing request
 is superseded. No order, payment, supplier acceptance or powered test exists.
-The broader working-device requirements remain in pcba-delivery.md; they do not
-justify restarting unrelated firmware/mechanical work before closing this stage.
+The broader working-device requirements remain in pcba-delivery.md. Keep those
+gates separate from the explicitly requested 3D mount study above.
 
 Latest software: [tracker r03](../firmware/tracker-r03/README.md), with signed
 MCUboot and a trial guard, and the unchanged [local receiver](../firmware/receiver/README.md).

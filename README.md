@@ -4,6 +4,14 @@ A small GPS and cellular tracker for dog collars, starting with Türkiye.
 The aim is one electronics design with different collar mounts. Fit, weight and
 comfort across dog sizes and coat types still need physical validation.
 
+[Interactive 3D enclosure and adjustable mount](mechanical/universal-mount-r01/viewer.html)
+· [Design overview](mechanical/universal-mount-r01/design-overview.png)
+· [Downloadable CAD/mesh/image package](release/collar-tracker-3d-universal-mount-r01.zip)
+· [Dimensions and assembly](mechanical/universal-mount-r01/README.md).
+Download/open the viewer locally; GitHub's source view does not run it.
+The mount uses two adjustable wrap straps and flat/round collar pads. Six nominal
+examples are checked; physical fit, grip and water protection remain unqualified.
+
 **The r05l PCB passed two actual JLC PCB DFM analyses: 0 Danger / 0 Warning / 455 Good each.**
 Both used the same ZIP and unchanged rules, with all 29 rows analyzed. Native
 DRC/ERC/connectivity/parity have zero findings. The current r05m Q1 sourcing

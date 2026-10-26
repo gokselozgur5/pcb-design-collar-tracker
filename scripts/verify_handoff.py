@@ -382,6 +382,8 @@ def verify(include_review_bundle=True):
     pcba_rohm = verify_pcba_r03()
     from verify_pcba_r04 import verify as verify_pcba_r04
     pcba_datum = verify_pcba_r04()
+    from verify_universal_mount import verify as verify_universal_mount
+    universal_mount = verify_universal_mount()
     from package_current_review import verify_bundle as verify_previous_current_review
     previous_current_review_bundle = verify_previous_current_review()
     from package_clamp_review import verify_bundle as verify_clamp_review
@@ -426,6 +428,7 @@ def verify(include_review_bundle=True):
             'pcba_connectors': pcba_connectors,
             'pcba_rohm': pcba_rohm,
             'pcba_datum': pcba_datum,
+            'universal_mount': universal_mount,
             'clamp_review_bundle': clamp_review_bundle,
             'previous_current_review_bundle': previous_current_review_bundle,
             'current_review_bundle': current_review_bundle,
