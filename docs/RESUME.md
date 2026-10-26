@@ -4,6 +4,26 @@ The current state is in [STATUS](STATUS.md). The next task is implementation,
 not another requirements interview. Read [the Paul/nano-SIM notes](paul-nanosim.md)
 before editing. This handoff does not require private chat history or other projects.
 
+Latest software: [tracker r01](../firmware/tracker/README.md) and its
+[local receiver](../firmware/receiver/README.md). Continue with DNS deadlines,
+modem/watchdog recovery, secure provisioning and signed-update design before
+physical GNSS/LTE-M/TLS/power-cut tests. The prototype stores 64 fixes, uses a
+300-second default interval, and rejects new fixes when full. No credentials or
+endpoint have been supplied; the receiver exists only as a local test target.
+No hardware has been flashed. The full-device goal remains active and release HOLD.
+
+```sh
+python3 scripts/verify_tracker_firmware.py
+python3 scripts/test_tracker_firmware.py \
+  --python /Volumes/GOKSSD/codex/toolchains/collar-ncs-3.4.1/venv/bin/python
+```
+
+The cellular firmware requires the non-secure `collar_tracker_r05l/nrf9151/ns`
+target and TF-M. Its standalone merged image boots at zero; do not reuse a DK
+partition map with an empty bootloader region or flash only the non-secure HEX.
+Use a new empty build directory; see the tracker README for the pinned SDK and
+configuration. Keep `firmware/factory/`, its board and original lock unchanged.
+
 Latest routing: [r18 thermal-clearance correction](../mechanical/swim-r18-charge-clearance/README.md)
 passes all 27 static PCB poses with expanded charge-wire component and retainer
 envelopes. Source: `mechanical/swim-r18-charge-clearance/routing.json` and

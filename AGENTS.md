@@ -78,6 +78,13 @@ uploads to JLC DFM are in scope. Orders, payments and supplier messages are not.
   material behavior. Forming tools need delivered-solid checks and released-shape
   acceptance; a numerical route-length tolerance is not a factory cut tolerance.
 - No subagents unless Göksel explicitly requests them.
+- A firmware link is not a powered-device test. For nRF91 modem work, use the
+  non-secure/TF-M target, preserve external-I/O startup timing, inspect the actual
+  merged reset vectors and exclude persistent storage from programmed bytes.
+  A default bootloader partition map can link successfully while leaving address
+  zero empty. Do not disable warnings or infer bootability from compile success.
+  GNSS configuration requires its functional mode enabled; keep interrupt callbacks
+  to signaling and do flash/network work in the owning application thread.
 
 ## Git and handoff
 

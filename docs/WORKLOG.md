@@ -933,3 +933,48 @@ static poses; cured-support compliance is not established. Qualify released shap
 adhesion/creep/fatigue and frame bridges, then continue dock holding/source faults,
 approved pack leads, shipping firmware and factory/powered/RF/ingress tests.
 The battery enquiry remains unsent; full-device release remains HOLD.
+
+
+## 2026-10-26 — Tracker r01 firmware and local receiver
+
+Added a separate nRF9151 non-secure board, TF-M memory map and pinned modem SDK
+extension without changing the frozen factory firmware or PCB. The application
+collects valid GNSS positions, writes a 64-record NVS outbox, uses LTE-M/mTLS and
+removes records only after an exact server acknowledgment. An empty default host
+and identity leave it offline. Sequence reservations survive reboot without reuse;
+full queues reject the newest fix explicitly. A local-only HTTPS/SQLite receiver
+binds device identity to the client certificate and commits idempotently before ACK.
+
+The final clean custom-board build passed. Application flash/RAM: 106,020/27,000
+bytes; TF-M: 64,816/45,388 bytes; modem shared region reserved separately at 40 KiB.
+The merged HEX SHA-256 is
+`38f87835aba1709f31c14800926eb89054842885d4b69931a93f28fa7cddcce8`.
+Inspection confirmed reset vectors at zero and 0x40000, disabled external UARTs,
+non-secure storage access and no programmed bytes in the NVS region. Two valid-
+checksum image mutations fail inspection. Earlier SDK defaults left the secure
+image at 0x10000 without a bootloader; the explicit standalone map corrects that.
+GNSS configuration now follows functional-mode activation, and its ISR only signals
+main. An incremental SDK reconfigure produced malformed security-option strings;
+the builder requires a new directory. No warnings or checks were disabled.
+
+Seven local receiver tests pass, including real TLS with the actual C-generated
+payload, missing certificates, identity mismatch, duplicate/conflicting records and
+read-only database failure. Host C tests pass with address/undefined sanitizers:
+six injected before/after mutation failures, 40 record-byte corruptions, reboot
+replay, stale ACK, capacity/order and protocol boundaries. These do not exercise
+physical flash or the modem. Full saved handoff passes (40 top-level result keys,
+not 40 tests), as do 51 local documentation links and new Python syntax. A final
+license whitespace normalization was followed by the scoped tracker verifier.
+
+Evidence is frozen in `firmware/evidence/tracker-r01`; compiled source and saved
+configuration identities are included. Firmware binaries remain local. The r19
+assembly, factory firmware, current Gerber/JLC records and r16 review are preserved.
+No credentials, private keys, public service deployment, flashing, supplier message,
+order or physical test was added.
+
+Next software: bounded DNS and modem/watchdog recovery, credential provisioning,
+signed-update/migration design, then actual GNSS/LTE-M/TLS/power-cut/current tests.
+The 300-second interval and queue policy are provisional; battery runtime is not
+measured. Continue r19 attachment/installation/continuous-motion and physical
+qualification separately. The CT-BAT-001-A enquiry remains unsent with authorization
+pending. Complete-device and ingress release remain HOLD.

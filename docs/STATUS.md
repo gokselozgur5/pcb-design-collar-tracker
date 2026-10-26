@@ -13,6 +13,15 @@ content is English. Run `python3 scripts/resume.py` before making another revisi
 [Published r16 review](../release/r16-current-review/review.pdf) ·
 [Published r16 bundle](../release/collar-tracker-r05l-r16-review.zip)
 
+Latest firmware: [tracker r01 prototype](../firmware/tracker/README.md) adds GNSS,
+LTE-M, a 64-record persistent outbox and authenticated HTTPS. The separate
+[local reference receiver](../firmware/receiver/README.md) commits idempotent records
+before acknowledging them. Default configuration has no host, identity or keys;
+it only collects offline records. This is not a shipping firmware release.
+Next complete bounded DNS/recovery, provisioning and signed updates, then run
+actual board/modem/SIM tests and measure power. The local receiver is not deployed.
+Preserve the frozen factory image and the unchanged PCB/Gerber/r19 assembly.
+
 Latest assembly: [r19 charge-wire support and forming nests](../assembly/internal-charge-r03/README.md)
 and [two-page drawing](../assembly/internal-charge-r03/restraint-sheet.pdf).
 Three insulating staking volumes and two separate bench tools are defined. All
@@ -100,10 +109,12 @@ actual r05l nRF9151 board. It delays external I/O by 1s, reports accelerometer,
 gauge and charger inputs over RTT, and leaves the modem uninitialized. The native
 pin contract and 14 compile-time conditions pass; deliberate wrong-pin/early-I2C
 changes fail compilation. Flash/RAM use is 46,872/8,256 bytes. No board has been
-flashed. The shipping LTE/GNSS tracker application and physical tests remain open.
+flashed. The new tracker prototype implements the first LTE/GNSS/uplink/storage
+flow; shipping firmware, provisioning, updates and physical tests remain open.
 
 | Check | Current result |
 |---|---|
+| Tracker r01 firmware | Custom NS/TF-M build and linked reset/storage checks pass; 7 local receiver tests, 6 simulated mutation failures, 40 corrupted record bytes and 2 image controls pass; no flashing or actual modem test |
 | Factory observation firmware | Actual custom-board build passed; two negative compile controls passed; no flashing or powered test |
 | Integrated cable routes r18 | 27/27 static poses; 82 checks per pose including expanded charge envelopes; retainer reliefs and GNSS/charge routes revised; continuous movement and physical qualification open |
 | Internal charge support r19 | Three staking regions and two forming nests; 27/27 static poses and 52 added checks per pose; adhesion, released shape, installation and continuous movement unqualified |

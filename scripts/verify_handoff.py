@@ -368,6 +368,8 @@ def verify(include_review_bundle=True):
     charge_restraint = verify_charge_restraint()
     from verify_factory_firmware import verify as verify_factory_firmware
     factory_firmware = verify_factory_firmware()
+    from verify_tracker_firmware import verify as verify_tracker_firmware
+    tracker_firmware = verify_tracker_firmware()
     from package_current_review import verify_bundle as verify_previous_current_review
     previous_current_review_bundle = verify_previous_current_review()
     from package_clamp_review import verify_bundle as verify_clamp_review
@@ -405,6 +407,7 @@ def verify(include_review_bundle=True):
             'charge_thermal_clearance': charge_thermal_clearance,
             'charge_restraint': charge_restraint,
             'factory_firmware': factory_firmware,
+            'tracker_firmware': tracker_firmware,
             'clamp_review_bundle': clamp_review_bundle,
             'previous_current_review_bundle': previous_current_review_bundle,
             'current_review_bundle': current_review_bundle,

@@ -186,6 +186,14 @@ For programmed delivery, define the firmware image/hash, debug/pogo access,
 programming procedure, serial identity and test fixture. Specify acceptance inputs,
 measurement limits and failed-board handling.
 
+For a multi-image MCU, inspect the linked reset vectors and actual merged image,
+not only a successful compile. Prove that programming bytes exclude the persistent
+data region and that the chosen bootloader/secure/non-secure layout is complete.
+Keep SDK revisions and source identities with the evidence. Check vendor API
+preconditions such as radio functional mode and interrupt context. Test storage
+failures and duplicate delivery in the real application core, then repeat critical
+power-loss cases on hardware; a host storage model is not a flash qualification.
+
 Bring-up proceeds through short/resistance checks, polarity, current-limited power,
 rails, reset/debug, firmware, then radio/sensor and end-to-end functions. Test the
 battery, charger and protection against the selected cell's limits. Do not claim
