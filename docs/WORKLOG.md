@@ -1290,3 +1290,24 @@ with empty stderr. No CAD or manufacturing-file bytes changed.
 - This completes the requested prototype CAD/visual package, not physical grip,
   closure fatigue, all-collar/all-dog fit, swimming protection or order acceptance.
   Next is an inert fit sample. No order, supplier message, payment or physical test.
+
+## 2026-10-28 — Present the project as a concise engineering portfolio
+
+- Replaced the 1,797-word chronological README with a 792-word overview of the
+  product, active hardware, firmware architecture, design decisions, verification
+  and exact entry points. Removed stale current-source labels and workstation-only
+  onboarding from the landing page. Historical evidence remains in its own files.
+- Added two eight-second CAD GIFs (96 frames each; about 3.2 MB combined), a current
+  PCB WebP and an editable delivery/acknowledgment SVG. The reproducible renderer
+  uses an ignored copy of the existing viewer; native PCB, meshes, original viewer
+  and released packages are unchanged. Saved source/output hashes and scope.
+- Inspected first/exploded/mount frames and the architecture diagram. Fixed a
+  ResizeObserver race that cleared the first capture; the renderer now waits for
+  layout and rejects empty poster frames. Both GIFs decode as 960 × 600, 96 frames,
+  eight seconds. The 3D capture made no external network requests or page errors.
+- GitHub's Markdown API renders the document successfully. Local desktop/mobile
+  previews load all four images, report no script errors and have no page overflow
+  at 430 px. All 29 local document/media targets resolve; source syntax and
+  whitespace checks pass. Saved full engineering handoff is checked separately.
+- Presentation completion does not change PCB/SMT, firmware or physical acceptance.
+  The next engineering steps remain the recorded supplier gates and inert fit sample.

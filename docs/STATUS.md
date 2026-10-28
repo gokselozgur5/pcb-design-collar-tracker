@@ -1,4 +1,10 @@
-# Current state — 2026-10-26
+# Current state — 2026-10-28
+
+**Presentation update:** the root README now provides a concise engineering overview,
+with two CAD animations, the current PCB render, a delivery/acknowledgment diagram
+and links to the evidence below. [Media sources](media/README.md) document the
+reproducible renderer. This documentation update changes no CAD, firmware or
+manufacturing release state; the next physical and supplier steps below remain open.
 
 **Latest user-directed work: the 3D enclosure and adjustable collar mount are delivered as a prototype design.**
 [Open the offline 3D viewer](../mechanical/universal-mount-r01/viewer.html) ·
