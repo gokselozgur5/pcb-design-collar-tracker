@@ -1,7 +1,9 @@
 # Resume the PCB work
 
-The current state is in [STATUS](STATUS.md). The next task is implementation,
-not another requirements interview. Read [the Paul/nano-SIM notes](paul-nanosim.md)
+**Paused by the owner on 2026-10-28, pending PCB ordering.**
+Do not start further implementation or manufacturing activity while the owner is
+working on another project. When they return, use [STATUS](STATUS.md) and the
+recorded acceptance gates below. Read [the Paul/nano-SIM notes](paul-nanosim.md)
 before editing. This handoff does not require private chat history or other projects.
 
 **Latest requested deliverable: 3D enclosure and adjustable collar attachment.**

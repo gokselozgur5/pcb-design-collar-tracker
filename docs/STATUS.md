@@ -1,5 +1,11 @@
 # Current state — 2026-10-28
 
+**Project paused at the owner's request, pending PCB ordering.**
+Implementation and manufacturing work stay on hold while attention moves to another
+project. Resume when the owner returns to this project. The completed presentation
+and design package are preserved; the recorded assembly/physical acceptance gaps
+remain open. No order has been placed.
+
 **Presentation update:** the root README now provides a concise engineering overview,
 with two CAD animations, the current PCB render, a delivery/acknowledgment diagram
 and links to the evidence below. [Media sources](media/README.md) document the

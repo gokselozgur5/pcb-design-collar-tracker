@@ -1311,3 +1311,10 @@ with empty stderr. No CAD or manufacturing-file bytes changed.
   whitespace checks pass. Saved full engineering handoff is checked separately.
 - Presentation completion does not change PCB/SMT, firmware or physical acceptance.
   The next engineering steps remain the recorded supplier gates and inert fit sample.
+
+## 2026-10-28 — Pause pending PCB ordering
+
+The owner paused this project until returning to PCB ordering and moved attention
+to another project. Preserved the completed design/README checkpoint and recorded
+the pause in STATUS and RESUME. No new engineering work, order or supplier message
+was initiated. Existing assembly and physical acceptance gates remain open.
