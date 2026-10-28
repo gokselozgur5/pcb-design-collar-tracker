@@ -1,0 +1,72 @@
+{
+  "source": "mechanical/universal-mount-r01/viewer.html",
+  "source_sha256": "a45bf2833219c43a2a65328f3e2469996cbfb9e0a2bb08ffd1793bd24a1ed0de",
+  "method": "Deterministic camera and separation poses of the existing CAD scene; no mesh or native PCB changes.",
+  "render": "Playwright / Three.js",
+  "encoding": "FFmpeg, 960x600, 12 fps, 96 frames, 128-color palette",
+  "limits": "Component envelopes and installed strap routing are simplified; this is not a physical prototype demonstration.",
+  "network_requests": [],
+  "uncaught_errors": [],
+  "sampled_states": [
+    {
+      "kind": "assembly",
+      "frame": 0,
+      "view": "mounted",
+      "collar": "standard",
+      "explode": 0
+    },
+    {
+      "kind": "assembly",
+      "frame": 48,
+      "view": "exploded",
+      "collar": "standard",
+      "explode": 1
+    },
+    {
+      "kind": "mount",
+      "frame": 0,
+      "view": "underside",
+      "collar": "standard",
+      "explode": 0
+    },
+    {
+      "kind": "mount",
+      "frame": 48,
+      "view": "underside",
+      "collar": "wide",
+      "explode": 0
+    }
+  ],
+  "outputs": {
+    "assembly.gif": {
+      "sha256": "d2abd37f99e079d031a4712274837115cd87fd1d2fb0ad6c1721e291788d7ac9",
+      "bytes": 1587330
+    },
+    "mount.gif": {
+      "sha256": "5ff4f631c4628fde58059166a562ac355599c20d43e68e57c44322a74ce066c4",
+      "bytes": 1591017
+    },
+    "assembly-poster.png": {
+      "sha256": "2c8895883e84462366054b2d025b904230cc23527126dd22467bf922c33167d4",
+      "bytes": 30758
+    },
+    "mount-poster.png": {
+      "sha256": "ff66fabcacf0ff96a007fd5a565e0445f721c9a2e81b1ebe9d581c4b465316b1",
+      "bytes": 33192
+    },
+    "pcb.webp": {
+      "sha256": "1dbbb28480bfecb7d5be68b42ec261e973214b5a5c5b384e3701ff5604a66b52",
+      "bytes": 51004
+    }
+  },
+  "diagram": {
+    "source": "docs/media/architecture.svg",
+    "sha256": "4f17944e99f3fe17dd7cb7e2ef6ef8fd44244dee82294c6ad5bbf2bb070618bb",
+    "basis": [
+      "firmware/tracker/README.md",
+      "firmware/tracker-r02/README.md",
+      "firmware/tracker-r03/README.md",
+      "firmware/receiver/README.md"
+    ]
+  }
+}

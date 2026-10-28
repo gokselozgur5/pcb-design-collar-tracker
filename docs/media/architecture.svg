@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 0 1200 430" role="img" aria-labelledby="title desc">
+<title id="title">Persistent position delivery</title>
+<desc id="desc">The device validates a GNSS fix, stores it in NVS and sends it over mutual TLS. The local reference receiver validates and commits to SQLite before returning a matching acknowledgment. Only then does the device remove its oldest record.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="6.5" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#39775d"/></marker></defs>
+<rect width="1200" height="430" rx="20" fill="#f3f7f3"/>
+<g font-family="Arial,Helvetica,sans-serif" fill="#203c2d">
+<text x="32" y="43" font-size="16" font-weight="700" letter-spacing="2">POSITION DELIVERY / ACKNOWLEDGED AFTER COMMIT</text>
+<rect x="25" y="66" width="790" height="273" rx="14" fill="#e5eee7" stroke="#cbd9cf"/>
+<rect x="870" y="66" width="305" height="273" rx="14" fill="#e5eee7" stroke="#cbd9cf"/>
+<text x="48" y="101" font-size="19" font-weight="700">DEVICE</text><text x="48" y="126" font-size="16" fill="#557260">nRF9151 · C / Zephyr</text>
+<text x="893" y="101" font-size="19" font-weight="700">REFERENCE RECEIVER</text><text x="893" y="126" font-size="16" fill="#557260">Python / SQLite · local test target</text>
+<g fill="#fff" stroke="#c5d6c9"><rect x="47" y="149" width="195" height="100" rx="10"/><rect x="291" y="149" width="224" height="100" rx="10"/><rect x="565" y="149" width="225" height="100" rx="10"/><rect x="893" y="149" width="258" height="100" rx="10"/></g>
+<text x="67" y="181" font-size="21" font-weight="700">GNSS fix</text><text x="67" y="211" font-size="17" fill="#557260">Validate location</text><text x="67" y="233" font-size="17" fill="#557260">and timestamp</text>
+<text x="311" y="181" font-size="21" font-weight="700">NVS outbox</text><text x="311" y="211" font-size="17" fill="#557260">Persist before upload</text><text x="311" y="233" font-size="17" fill="#557260">64 records · CRC</text>
+<text x="585" y="181" font-size="21" font-weight="700">LTE-M uplink</text><text x="585" y="211" font-size="17" fill="#557260">mTLS / HTTPS</text><text x="585" y="233" font-size="17" fill="#557260">Oldest record first</text>
+<text x="913" y="181" font-size="21" font-weight="700">Validate → commit</text><text x="913" y="211" font-size="17" fill="#557260">Device + sequence identity</text><text x="913" y="233" font-size="17" fill="#557260">Idempotent storage</text>
+<g fill="none" stroke="#39775d" stroke-width="2.5" marker-end="url(#arrow)"><path d="M244 197 H280"/><path d="M517 197 H554"/><path d="M792 197 H882"/><path d="M1022 251 V294 H402 V260"/></g>
+<rect x="536" y="277" width="370" height="31" rx="7" fill="#f3f7f3"/><text x="553" y="298" font-size="16" fill="#315e45">Matching ACK → remove oldest local record</text>
+<text x="48" y="316" font-size="15" fill="#557260">Connection failure: retain the queued record.</text>
+<rect x="25" y="358" width="1150" height="49" rx="10" fill="#254e39"/>
+<text x="48" y="388" font-size="17" fill="#fff"><tspan font-weight="700">BOOT + RECOVERY</tspan><tspan dx="25">MCUboot / P-256</tspan><tspan dx="25">TF-M + application</tspan><tspan dx="25">Bounded trial</tspan><tspan dx="25">DNS ownership + watchdog leases</tspan></text>
+</g></svg>
