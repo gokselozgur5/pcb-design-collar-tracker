@@ -18,3 +18,10 @@
 /mechanical/universal-mount-r01/evidence/initial-flat-pad/export.log whitespace=-blank-at-eof
 # Vendored renderer bytes are pinned; GLSL strings retain upstream whitespace.
 /mechanical/universal-mount-r01/viewer-assets/three.bundle.mjs linguist-vendored whitespace=-blank-at-eol
+# GitHub Linguist overrides
+*.kicad_pcb linguist-language=KiCad\ Layout
+*.kicad_sch linguist-language=KiCad\ Schematic
+*.kicad_mod linguist-vendored=true
+*.kicad_sym linguist-vendored=true
+mechanical/universal-mount-r01/viewer.html linguist-documentation=false linguist-vendored=true
+mechanical/universal-mount-r01/viewer-assets/viewer.template.html linguist-documentation=false linguist-vendored=true
